@@ -104,6 +104,12 @@
         placeholder="Example: Kraken IPO in 2025? I think it happens after the Fed cuts..."
       ></textarea>
       <div class="row">
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap">
+          <label style="margin: 0; font-weight: 700">Top N</label>
+          <input id="topN" type="number" min="1" max="20" value="5" style="width: 90px" />
+          <label style="margin: 0; font-weight: 700">Threshold</label>
+          <input id="threshold" type="number" min="0" max="1" step="0.05" value="0.6" style="width: 90px" />
+        </div>
         <button id="test" class="secondary">Test Match</button>
       </div>
       <pre

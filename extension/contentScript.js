@@ -29,6 +29,12 @@ function normalizeText(text) {
     .toLowerCase();
 }
 
+function normalizeForMatch(text) {
+  const raw = normalizeText(text);
+  const plain = raw.replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim();
+  return { raw, plain };
+}
+
 function appendUtm(url, term) {
   try {
     const u = new URL(url);
@@ -43,10 +49,10 @@ function appendUtm(url, term) {
 
 function tokenize(text) {
   const tokens = new Set();
-  const s = normalizeText(text);
+  const { raw, plain } = normalizeForMatch(text);
   let cur = "";
-  for (let i = 0; i < s.length; i++) {
-    const ch = s[i];
+  for (let i = 0; i < plain.length; i++) {
+    const ch = plain[i];
     const code = ch.charCodeAt(0);
     const isAlnum = (code >= 48 && code <= 57) || (code >= 97 && code <= 122);
     if (isAlnum) {
@@ -59,7 +65,7 @@ function tokenize(text) {
     }
   }
   if (cur) tokens.add(cur);
-  return { s, tokens };
+  return { raw, plain, tokens };
 }
 
 function buildMatcher(data) {
@@ -70,18 +76,24 @@ function buildMatcher(data) {
   if (eventIndex && typeof eventIndex === "object") {
     for (const [keyword, eventIds] of Object.entries(eventIndex)) {
       if (!keyword || !Array.isArray(eventIds) || eventIds.length === 0) continue;
-      keywordToTargets.push({ keyword: String(keyword).toLowerCase(), eventIds });
+      const keywordLower = String(keyword).toLowerCase().trim();
+      const keywordPlain = normalizeForMatch(keywordLower).plain;
+      const keywordTokens = keywordPlain ? keywordPlain.split(" ") : [];
+      keywordToTargets.push({ keyword: keywordLower, keywordPlain, keywordTokens, eventIds });
     }
   } else {
     for (const [keyword, marketIds] of Object.entries(index)) {
       if (!keyword || !Array.isArray(marketIds) || marketIds.length === 0) continue;
-      keywordToTargets.push({ keyword: String(keyword).toLowerCase(), marketIds });
+      const keywordLower = String(keyword).toLowerCase().trim();
+      const keywordPlain = normalizeForMatch(keywordLower).plain;
+      const keywordTokens = keywordPlain ? keywordPlain.split(" ") : [];
+      keywordToTargets.push({ keyword: keywordLower, keywordPlain, keywordTokens, marketIds });
     }
   }
 
   const firstTokenMap = new Map();
   for (const entry of keywordToTargets) {
-    const firstToken = entry.keyword.split(/\s+/)[0];
+    const firstToken = entry.keywordTokens?.[0] || entry.keyword.split(/\s+/)[0];
     if (!firstToken) continue;
     const list = firstTokenMap.get(firstToken) || [];
     list.push(entry);
@@ -93,6 +105,12 @@ function buildMatcher(data) {
     firstTokenMap,
     keywordToTargetsCount: keywordToTargets.length,
   };
+}
+
+function clamp01(x) {
+  if (x < 0) return 0;
+  if (x > 1) return 1;
+  return x;
 }
 
 function findActionBar(articleEl) {
@@ -265,10 +283,74 @@ function renderHud(anchorEl, match) {
   document.addEventListener("click", onDocClick, true);
 }
 
+function findTokenBoundaryIndex(haystack, needle) {
+  if (!haystack || !needle) return -1;
+  const n = String(needle);
+  let from = 0;
+  while (true) {
+    const idx = haystack.indexOf(n, from);
+    if (idx === -1) return -1;
+    const beforeOk = idx === 0 || haystack[idx - 1] === " ";
+    const afterIdx = idx + n.length;
+    const afterOk = afterIdx === haystack.length || haystack[afterIdx] === " ";
+    if (beforeOk && afterOk) return idx;
+    from = idx + 1;
+  }
+}
+
+function tokensNear(plain, keywordTokens) {
+  const tokens = (keywordTokens || []).filter(Boolean);
+  if (tokens.length < 2 || tokens.length > 3) return false;
+
+  const positions = [];
+  for (const t of tokens) {
+    const pos = findTokenBoundaryIndex(plain, t);
+    if (pos === -1) return false;
+    positions.push(pos);
+  }
+  const min = Math.min(...positions);
+  const max = Math.max(...positions);
+  const span = max - min;
+  return tokens.length === 2 ? span <= 50 : span <= 80;
+}
+
+function scoreEntry({ raw, plain, tokens }, entry) {
+  let score = 0;
+
+  const keywordPlain = entry.keywordPlain || "";
+  const keywordTokens = entry.keywordTokens || [];
+
+  if (keywordPlain && plain.includes(keywordPlain)) {
+    score += 0.85;
+    score += Math.min(0.1, keywordPlain.length / 120);
+  } else if (keywordTokens.length >= 2 && keywordTokens.length <= 3) {
+    let present = 0;
+    for (const t of keywordTokens) {
+      if (tokens.has(t)) present += 1;
+    }
+    if (present === keywordTokens.length) {
+      score += tokensNear(plain, keywordTokens) ? 0.7 : 0.45;
+    } else if (present >= 2) {
+      score += 0.35;
+    }
+  }
+
+  for (const t of keywordTokens) {
+    if (!t || t.length < 3) continue;
+    if (raw.includes(`$${t}`) || raw.includes(`#${t}`)) {
+      score += 0.05;
+      break;
+    }
+  }
+
+  return clamp01(score);
+}
+
 function computeMatchForTweetText(tweetText) {
   if (!state.data || !state.matcher) return null;
 
-  const { s, tokens } = tokenize(tweetText);
+  const tokenized = tokenize(tweetText);
+  const { raw, plain, tokens } = tokenized;
 
   const candidates = [];
   for (const t of tokens) {
@@ -276,36 +358,48 @@ function computeMatchForTweetText(tweetText) {
     if (list) candidates.push(...list);
   }
 
-  let best = null;
-  const seenTargets = new Set();
+  const threshold = 0.6;
+  const targetBest = new Map();
 
   for (const entry of candidates) {
     const keyword = entry.keyword;
     if (!keyword || keyword.length < 2) continue;
-    if (!s.includes(keyword)) continue;
-
-    const score = keyword.length;
-    if (!best || score > best.score) {
-      best = { score, keyword, entry };
-    }
+    const score = scoreEntry({ raw, plain, tokens }, entry);
+    if (score < threshold) continue;
 
     if (state.matcher.mode === "event") {
-      for (const eventId of entry.eventIds) {
-        seenTargets.add(String(eventId));
+      for (const id of entry.eventIds || []) {
+        const eventId = String(id);
+        const existing = targetBest.get(eventId);
+        if (!existing || score > existing.score) {
+          targetBest.set(eventId, {
+            score,
+            keyword: entry.keywordPlain || keyword,
+            id: eventId,
+          });
+        }
       }
     } else {
-      for (const marketId of entry.marketIds) {
-        seenTargets.add(String(marketId));
+      for (const id of entry.marketIds || []) {
+        const marketId = String(id);
+        const existing = targetBest.get(marketId);
+        if (!existing || score > existing.score) {
+          targetBest.set(marketId, {
+            score,
+            keyword: entry.keywordPlain || keyword,
+            id: marketId,
+          });
+        }
       }
     }
   }
 
-  if (seenTargets.size === 0) return null;
+  if (targetBest.size === 0) return null;
 
   if (state.matcher.mode === "event") {
-    const preferredEventId = best?.entry?.eventIds?.[0] ? String(best.entry.eventIds[0]) : null;
-    const eventIds = Array.from(seenTargets);
-    const eventId = preferredEventId && seenTargets.has(preferredEventId) ? preferredEventId : eventIds[0];
+    const ranked = Array.from(targetBest.values()).sort((a, b) => b.score - a.score);
+    const best = ranked[0];
+    const eventId = best.id;
     const event = state.data.events?.[eventId];
     if (!event) return null;
 
@@ -319,20 +413,21 @@ function computeMatchForTweetText(tweetText) {
 
     return {
       mode: "event",
-      keyword: best?.keyword || null,
+      keyword: best.keyword || null,
       title: event.title || "Event",
       markets,
       primaryUrl,
     };
   }
 
-  const marketIds = Array.from(seenTargets);
-  const marketId = marketIds[0];
+  const ranked = Array.from(targetBest.values()).sort((a, b) => b.score - a.score);
+  const best = ranked[0];
+  const marketId = best.id;
   const market = state.data.markets?.[marketId];
   if (!market) return null;
   return {
     mode: "market",
-    keyword: best?.keyword || null,
+    keyword: best.keyword || null,
     title: market.title || "Market",
     markets: [market],
     primaryUrl: market.url || null,
