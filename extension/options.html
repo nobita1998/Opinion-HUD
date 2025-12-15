@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Opinion HUD Options</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        margin: 20px;
+        color: #111;
+      }
+      .card {
+        max-width: 760px;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 16px;
+      }
+      label {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      input {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 10px;
+        border: 1px solid #d1d5db;
+        font-size: 14px;
+      }
+      .row {
+        margin-top: 12px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      button {
+        padding: 10px 12px;
+        border-radius: 10px;
+        border: 0;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .primary {
+        background: #1d9bf0;
+        color: #fff;
+      }
+      .secondary {
+        background: #f3f4f6;
+        color: #111;
+      }
+      .status {
+        margin-top: 12px;
+        font-size: 13px;
+        color: #374151;
+      }
+      code {
+        background: #f3f4f6;
+        padding: 2px 6px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1 style="margin: 0 0 12px 0">Opinion HUD</h1>
+      <p style="margin: 0 0 16px 0">
+        Set the URL to the generated <code>data.json</code> (from the backend pipeline / GitHub Pages / CDN).
+      </p>
+      <label for="dataUrl">Data URL</label>
+      <input id="dataUrl" placeholder="https://your-cdn.example/opinion-hud/data.json" />
+      <div class="row">
+        <button id="save" class="primary">Save</button>
+        <button id="refresh" class="secondary">Refresh Now</button>
+      </div>
+      <div id="status" class="status"></div>
+      <p class="status" style="margin-top: 16px">
+        Tip: during local development you can serve a file via
+        <code>python -m http.server</code> and point Data URL to
+        <code>http://localhost:8000/data.json</code> (then grant permission when prompted).
+      </p>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>
+
