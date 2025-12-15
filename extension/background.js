@@ -36,9 +36,7 @@ async function ensureHostPermissionFor(url) {
   if (!origin) return false;
   const pattern = `${origin}/*`;
   const already = await chrome.permissions.contains({ origins: [pattern] });
-  if (already) return true;
-  const granted = await chrome.permissions.request({ origins: [pattern] });
-  return granted;
+  return already;
 }
 
 async function fetchJson(url) {
@@ -69,9 +67,11 @@ async function refreshData({ force = false } = {}) {
   const hasPermission = await ensureHostPermissionFor(dataUrl);
   if (!hasPermission) {
     if (force) {
-      throw new Error("Host permission not granted for dataUrl origin.");
+      throw new Error(
+        "Host permission not granted for dataUrl origin. Open extension options and click Refresh to grant it."
+      );
     }
-    return { ok: false, reason: "permission_denied" };
+    return { ok: false, reason: "permission_required" };
   }
 
   const data = await fetchJson(dataUrl);
@@ -131,4 +131,3 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
     return true;
   }
 });
-

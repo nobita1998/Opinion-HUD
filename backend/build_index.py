@@ -312,6 +312,76 @@ def _fallback_keywords(event_title, option_titles, rules_text, max_keywords=25):
     return keywords
 
 
+def _title_ngram_keywords(title, max_phrases=12):
+    stop = {
+        "a",
+        "an",
+        "and",
+        "are",
+        "as",
+        "at",
+        "be",
+        "before",
+        "by",
+        "end",
+        "for",
+        "from",
+        "has",
+        "have",
+        "in",
+        "is",
+        "it",
+        "of",
+        "on",
+        "or",
+        "the",
+        "to",
+        "will",
+        "with",
+    }
+
+    words = [w for w in _simple_tokenize(title or "") if w and w not in stop]
+    # Drop extremely short tokens except year-like numbers.
+    filtered = []
+    for w in words:
+        if w.isdigit() and len(w) == 4:
+            filtered.append(w)
+            continue
+        if w.startswith("$") and len(w) >= 3:
+            filtered.append(w)
+            continue
+        if len(w) >= 3:
+            filtered.append(w)
+
+    phrases = []
+    # bigrams
+    for i in range(len(filtered) - 1):
+        a = filtered[i]
+        b = filtered[i + 1]
+        if a == b:
+            continue
+        phrases.append(f"{a} {b}")
+    # trigrams
+    for i in range(len(filtered) - 2):
+        a = filtered[i]
+        b = filtered[i + 1]
+        c = filtered[i + 2]
+        phrases.append(f"{a} {b} {c}")
+
+    out = []
+    for p in phrases:
+        p = _normalize_keyword(p)
+        if not p:
+            continue
+        if len(p) > 60:
+            continue
+        if p not in out:
+            out.append(p)
+        if len(out) >= max_phrases:
+            break
+    return out
+
+
 def _djb2_32(text):
     h = 5381
     for ch in text:
@@ -731,6 +801,13 @@ def build_data(markets, api_key, previous_data=None):
             ai_stats["empty"] += 1
         else:
             ai_stats["non_empty"] += 1
+
+        # Always supplement with deterministic title n-grams so short tweets
+        # like "Kraken IPO..." still match even if the LLM returns only longer phrases.
+        supplement = _title_ngram_keywords(bucket.get("title") or event_id)
+        for s in supplement:
+            if s not in keywords:
+                keywords.append(s)
 
         normalized = []
         for kw in keywords:

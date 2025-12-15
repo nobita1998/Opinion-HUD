@@ -80,8 +80,46 @@
         <code>python -m http.server</code> and point Data URL to
         <code>http://localhost:8000/data.json</code> (then grant permission when prompted).
       </p>
+
+      <hr style="margin: 18px 0; border: 0; border-top: 1px solid #e5e7eb" />
+
+      <h2 style="margin: 0 0 10px 0; font-size: 16px">Test Matching (Local Only)</h2>
+      <p class="status" style="margin-top: 0">
+        Paste tweet text here to test keyword matching against the cached <code>data.json</code>. This does not send
+        any content to a server.
+      </p>
+      <label for="testText">Tweet Text</label>
+      <textarea
+        id="testText"
+        rows="5"
+        style="
+          width: 100%;
+          padding: 10px 12px;
+          border-radius: 10px;
+          border: 1px solid #d1d5db;
+          font-size: 14px;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+            monospace;
+        "
+        placeholder="Example: Kraken IPO in 2025? I think it happens after the Fed cuts..."
+      ></textarea>
+      <div class="row">
+        <button id="test" class="secondary">Test Match</button>
+      </div>
+      <pre
+        id="testResult"
+        class="status"
+        style="
+          white-space: pre-wrap;
+          word-break: break-word;
+          background: #f9fafb;
+          border: 1px solid #e5e7eb;
+          border-radius: 12px;
+          padding: 12px;
+          margin-top: 10px;
+        "
+      ></pre>
     </div>
     <script src="options.js"></script>
   </body>
 </html>
-
