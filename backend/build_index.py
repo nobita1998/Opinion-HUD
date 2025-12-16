@@ -951,10 +951,17 @@ def build_data(markets, api_key, previous_data=None):
                 markets_out[market_id]["keywords"] = normalized
                 markets_out[market_id]["entities"] = normalized_entities
 
+        # Add both keywords and entities to index
         for nkw in normalized:
             event_inverted.setdefault(nkw, set()).add(event_id)
             for market_id in events_out[event_id]["marketIds"]:
                 inverted.setdefault(nkw, set()).add(market_id)
+
+        # Also add entities to index (ensures entity-only matching works)
+        for nent in normalized_entities:
+            event_inverted.setdefault(nent, set()).add(event_id)
+            for market_id in events_out[event_id]["marketIds"]:
+                inverted.setdefault(nent, set()).add(market_id)
 
         if sleep_seconds > 0 and (not reused) and (not SKIP_AI):
             time.sleep(sleep_seconds)

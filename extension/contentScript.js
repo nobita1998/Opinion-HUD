@@ -384,9 +384,11 @@ function scoreEntry({ raw, plain, tokens }, entry) {
   const keywordTokens = entry.keywordTokens || [];
   const isEntity = entry.isEntity || false;
 
-  // ENTITY MATCH - highest priority (overrides all other matching)
+  // ENTITY MATCH - guarantees display, sorted by additional keywords
+  // Entity match ensures market is shown (score >= threshold)
+  // Multi-keyword bonus helps rank when multiple markets match
   if (isEntity && keywordPlain && plain.includes(keywordPlain)) {
-    score = 0.95;
+    score = 0.50; // Exactly at threshold - guarantees display
     reasons.push(`entity:${keywordPlain}`);
     return { score: clamp01(score), reasons };
   }
@@ -441,14 +443,9 @@ function scoreEntry({ raw, plain, tokens }, entry) {
       // At least 2 tokens present
       score += 0.35 + (present - 2) * 0.05;
       reasons.push(`tokens:${present}/${keywordTokens.length}`);
-    } else if (present === 1) {
-      // NEW: Single token match for multi-token keyword
-      const matchedToken = matchedTokens[0];
-      // Score based on token length and specificity
-      const tokenScore = Math.min(0.4, matchedToken.length * 0.06);
-      score += tokenScore;
-      reasons.push(`partial:${matchedToken}`);
     }
+    // REMOVED: Single token match is too weak for multi-token keywords
+    // Requiring at least 2 tokens reduces false positives from generic terms
   }
   // 3. Single-token keyword matching with smart filtering
   else if (keywordTokens.length === 1) {
@@ -503,42 +500,91 @@ function computeMatchForTweetText(tweetText) {
     if (list) candidates.push(...list);
   }
 
-  const threshold = 0.50; // Conservative to avoid false positives
+  // No threshold - entity matches go to pool, score is for sorting only
   const targetBest = new Map();
+  const targetHasEntity = new Map(); // Track which targets matched an entity
 
   for (const entry of candidates) {
     const keyword = entry.keyword;
     if (!keyword || keyword.length < 2) continue;
 
     const { score, reasons } = scoreEntry({ raw, plain, tokens }, entry);
-    if (score < threshold) continue;
+    const isEntityMatch = entry.isEntity || false;
 
     if (state.matcher.mode === "event") {
       for (const id of entry.eventIds || []) {
         const eventId = String(id);
+
+        // Track entity matches
+        if (isEntityMatch && score > 0) {
+          targetHasEntity.set(eventId, true);
+        }
+
         const existing = targetBest.get(eventId);
-        if (!existing || score > existing.score) {
+        if (!existing) {
+          // First keyword match for this event
           targetBest.set(eventId, {
             score,
             keyword: entry.keywordPlain || keyword,
-            reasons,
+            reasons: [...reasons],
             entry,
             id: eventId,
+            matchCount: 1,
+            baseScore: score,
+            matchedKeywords: new Set([keyword]),
           });
+        } else {
+          // Only add bonus if this is a NEW keyword (not already matched)
+          if (!existing.matchedKeywords.has(keyword)) {
+            const MULTI_KEYWORD_BONUS = 0.12;
+            existing.score += score * MULTI_KEYWORD_BONUS;
+            existing.matchCount += 1;
+            existing.reasons.push(...reasons.map(r => `+${r}`));
+            existing.matchedKeywords.add(keyword);
+
+            if (score > existing.baseScore) {
+              existing.baseScore = score;
+              existing.keyword = entry.keywordPlain || keyword;
+            }
+          }
         }
       }
     } else {
       for (const id of entry.marketIds || []) {
         const marketId = String(id);
+
+        // Track entity matches
+        if (isEntityMatch && score > 0) {
+          targetHasEntity.set(marketId, true);
+        }
+
         const existing = targetBest.get(marketId);
-        if (!existing || score > existing.score) {
+        if (!existing) {
+          // First keyword match for this market
           targetBest.set(marketId, {
             score,
             keyword: entry.keywordPlain || keyword,
-            reasons,
+            reasons: [...reasons],
             entry,
             id: marketId,
+            matchCount: 1,
+            baseScore: score,
+            matchedKeywords: new Set([keyword]),
           });
+        } else {
+          // Only add bonus if this is a NEW keyword (not already matched)
+          if (!existing.matchedKeywords.has(keyword)) {
+            const MULTI_KEYWORD_BONUS = 0.12;
+            existing.score += score * MULTI_KEYWORD_BONUS;
+            existing.matchCount += 1;
+            existing.reasons.push(...reasons.map(r => `+${r}`));
+            existing.matchedKeywords.add(keyword);
+
+            if (score > existing.baseScore) {
+              existing.baseScore = score;
+              existing.keyword = entry.keywordPlain || keyword;
+            }
+          }
         }
       }
     }
@@ -546,8 +592,16 @@ function computeMatchForTweetText(tweetText) {
 
   if (targetBest.size === 0) return null;
 
+  // Filter: only keep targets that matched at least one entity
+  const entityMatches = Array.from(targetBest.values()).filter(item =>
+    targetHasEntity.get(item.id)
+  );
+
+  if (entityMatches.length === 0) return null;
+
+  // Sort by score (confidence), return top match
   if (state.matcher.mode === "event") {
-    const ranked = Array.from(targetBest.values()).sort((a, b) => b.score - a.score);
+    const ranked = entityMatches.sort((a, b) => b.score - a.score);
     const best = ranked[0];
     const eventId = best.id;
     const event = state.data.events?.[eventId];
@@ -570,7 +624,7 @@ function computeMatchForTweetText(tweetText) {
     };
   }
 
-  const ranked = Array.from(targetBest.values()).sort((a, b) => b.score - a.score);
+  const ranked = entityMatches.sort((a, b) => b.score - a.score);
   const best = ranked[0];
   const marketId = best.id;
   const market = state.data.markets?.[marketId];
