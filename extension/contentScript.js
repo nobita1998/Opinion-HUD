@@ -35,16 +35,26 @@ function normalizeForMatch(text) {
   return { raw, plain };
 }
 
-function appendUtm(url, term) {
-  try {
-    const u = new URL(url);
-    u.searchParams.set("utm_source", "twitter_extension");
-    u.searchParams.set("utm_medium", "overlay");
-    if (term) u.searchParams.set("utm_term", term);
-    return u.toString();
-  } catch {
-    return url;
-  }
+const OPINION_TRADE_DETAIL_URL = "https://app.opinion.trade/detail";
+
+function buildOpinionTradeUrl({ topicId, isMulti }) {
+  const u = new URL(OPINION_TRADE_DETAIL_URL);
+  u.searchParams.set("topicId", String(topicId));
+  if (isMulti) u.searchParams.set("type", "multi");
+  return u.toString();
+}
+
+function isMultiMarket(marketId, market) {
+  const eventId = market?.eventId ?? null;
+  if (!eventId) return false;
+  return String(eventId) !== String(marketId);
+}
+
+function stripMentions(text) {
+  return String(text || "").replace(
+    /(^|\s)@([a-z0-9_]{1,20})\b/gi,
+    (full, lead, handle) => (/(eth|btc)/i.test(handle) ? `${lead} ` : full)
+  );
 }
 
 function tokenize(text) {
@@ -242,26 +252,24 @@ function renderHud(anchorEl, match) {
     }
     .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
     .title { font-weight: 700; font-size: 14px; line-height: 1.2; }
-    .sub { opacity: 0.85; font-size: 13px; margin-top: 4px; line-height: 1.25; }
     .pill { font-size: 11px; padding: 3px 9px; border-radius: 999px; background: rgba(255,255,255,0.10); }
     .list { margin-top: 10px; display: flex; flex-direction: column; gap: 8px; }
-    .item { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center; }
+    .item { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; }
     .itemTitle { font-size: 13px; line-height: 1.25; }
-    .labels { display: flex; gap: 6px; align-items: center; justify-content: flex-end; }
-    .btn {
+    .tradeBtn {
       border: 0;
-      padding: 10px 18px;
-      border-radius: 12px;
+      padding: 7px 10px;
+      border-radius: 10px;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 12px;
       cursor: pointer;
-      background: #1d9bf0;
+      background: rgba(29, 155, 240, 0.95);
       color: #fff;
       transition: background 0.2s;
     }
-    .btn:hover { background: #1a8cd8; }
-    .btn:active { transform: translateY(1px); }
-    .footer { margin-top: 12px; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+    .tradeBtn:hover { background: #1a8cd8; }
+    .tradeBtn:active { transform: translateY(1px); }
+    .footer { margin-top: 12px; display: flex; justify-content: flex-start; align-items: center; gap: 10px; }
     .term { opacity: 0.75; font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   `;
 
@@ -270,11 +278,8 @@ function renderHud(anchorEl, match) {
 
   const header = document.createElement("div");
   header.className = "row";
-  header.innerHTML = `<div class="title">Market Found</div><div class="pill">${match.mode === "event" ? "Event" : "Market"}</div>`;
-
-  const subtitle = document.createElement("div");
-  subtitle.className = "sub";
-  subtitle.textContent = match.title;
+  const headerTitle = (match.markets?.length || 0) > 1 ? "Markets Found" : "Market Found";
+  header.innerHTML = `<div class="title">${headerTitle}</div><div class="pill">${match.mode === "event" ? "Event" : "Market"}</div>`;
 
   const list = document.createElement("div");
   list.className = "list";
@@ -287,19 +292,15 @@ function renderHud(anchorEl, match) {
     leftCell.className = "itemTitle";
     leftCell.textContent = m.title;
 
-    const rightCell = document.createElement("div");
-    rightCell.className = "labels";
-
-    const yes = document.createElement("span");
-    yes.className = "pill";
-    yes.textContent = m.labels?.yesLabel || "YES";
-
-    const no = document.createElement("span");
-    no.className = "pill";
-    no.textContent = m.labels?.noLabel || "NO";
-
-    rightCell.appendChild(yes);
-    rightCell.appendChild(no);
+    const rightCell = document.createElement("button");
+    rightCell.className = "tradeBtn";
+    rightCell.type = "button";
+    rightCell.textContent = "Trade";
+    rightCell.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (!m.url) return;
+      window.open(m.url, "_blank", "noopener,noreferrer");
+    });
 
     item.appendChild(leftCell);
     item.appendChild(rightCell);
@@ -313,20 +314,9 @@ function renderHud(anchorEl, match) {
   term.className = "term";
   term.textContent = match.keyword ? `Matched: ${match.keyword}` : "";
 
-  const btn = document.createElement("button");
-  btn.className = "btn";
-  btn.textContent = "Trade Now";
-  btn.addEventListener("click", () => {
-    const url = match.primaryUrl;
-    if (!url) return;
-    window.open(appendUtm(url, match.keyword), "_blank", "noopener,noreferrer");
-  });
-
   footer.appendChild(term);
-  footer.appendChild(btn);
 
   hud.appendChild(header);
-  hud.appendChild(subtitle);
   hud.appendChild(list);
   hud.appendChild(footer);
 
@@ -491,7 +481,7 @@ function scoreEntry({ raw, plain, tokens }, entry) {
 function computeMatchForTweetText(tweetText) {
   if (!state.data || !state.matcher) return null;
 
-  const tokenized = tokenize(tweetText);
+  const tokenized = tokenize(stripMentions(tweetText));
   const { raw, plain, tokens } = tokenized;
 
   const candidates = [];
@@ -607,13 +597,25 @@ function computeMatchForTweetText(tweetText) {
     const event = state.data.events?.[eventId];
     if (!event) return null;
 
-    const markets = (event.marketIds || [])
-      .map((id) => state.data.markets?.[id])
+    const markets = ranked
+      .map((item) => {
+        const e = state.data.events?.[item.id];
+        if (!e) return null;
+        const bestMarketId = e.bestMarketId || (e.marketIds || [])[0] || null;
+        const bestMarket = bestMarketId ? state.data.markets?.[bestMarketId] : null;
+        const url = buildOpinionTradeUrl({ topicId: item.id, isMulti: true });
+        return {
+          title: e.title || "Event",
+          labels: bestMarket?.labels || null,
+          topicId: item.id,
+          isMulti: true,
+          url,
+        };
+      })
       .filter(Boolean)
       .slice(0, MAX_MATCHES_ON_SCREEN);
 
-    const primaryMarketId = event.bestMarketId || (event.marketIds || [])[0];
-    const primaryUrl = primaryMarketId ? state.data.markets?.[primaryMarketId]?.url : null;
+    const primaryUrl = buildOpinionTradeUrl({ topicId: eventId, isMulti: true });
 
     return {
       mode: "event",
@@ -626,15 +628,60 @@ function computeMatchForTweetText(tweetText) {
 
   const ranked = entityMatches.sort((a, b) => b.score - a.score);
   const best = ranked[0];
-  const marketId = best.id;
-  const market = state.data.markets?.[marketId];
-  if (!market) return null;
+  const primaryMarketId = best.id;
+
+  const seenTopicIds = new Set();
+  const markets = [];
+  let primaryTopicId = null;
+  let primaryIsMulti = false;
+  let primaryTitle = null;
+
+  for (const item of ranked) {
+    const m = state.data.markets?.[item.id];
+    if (!m) continue;
+
+    const isMulti = isMultiMarket(item.id, m);
+    const topicId = isMulti ? m.eventId : item.id;
+    const topicKey = String(topicId);
+    if (seenTopicIds.has(topicKey)) continue;
+    seenTopicIds.add(topicKey);
+
+    const title = isMulti
+      ? (state.data.events?.[topicId]?.title || m.eventTitle || m.title || "Event")
+      : (m.title || "Market");
+
+    markets.push({
+      title,
+      labels: m.labels || null,
+      topicId,
+      isMulti,
+      url: buildOpinionTradeUrl({ topicId, isMulti }),
+    });
+
+    if (primaryTopicId == null && String(item.id) === String(primaryMarketId)) {
+      primaryTopicId = topicId;
+      primaryIsMulti = isMulti;
+      primaryTitle = title;
+    }
+
+    if (markets.length >= MAX_MATCHES_ON_SCREEN) break;
+  }
+
+  if (!markets.length) return null;
+  if (primaryTopicId == null) {
+    const first = markets[0];
+    primaryTopicId = first.topicId;
+    primaryIsMulti = !!first.isMulti;
+    primaryTitle = first.title;
+  }
+
+  const primaryUrl = buildOpinionTradeUrl({ topicId: primaryTopicId, isMulti: primaryIsMulti });
   return {
     mode: "market",
     keyword: best.keyword || null,
-    title: market.title || "Market",
-    markets: [market],
-    primaryUrl: market.url || null,
+    title: primaryTitle || "Market",
+    markets,
+    primaryUrl,
   };
 }
 
