@@ -74,20 +74,72 @@ function buildMatcher(data) {
 
   const keywordToTargets = [];
   if (eventIndex && typeof eventIndex === "object") {
+    // Build entity lookup for event mode
+    const eventEntityMap = new Map(); // keyword -> Set of eventIds where it's an entity
+    const events = data.events || {};
+    for (const [eventId, event] of Object.entries(events)) {
+      const entities = event.entities || [];
+      for (const entity of entities) {
+        const entityNorm = String(entity).toLowerCase().trim();
+        if (!entityNorm) continue;
+        if (!eventEntityMap.has(entityNorm)) {
+          eventEntityMap.set(entityNorm, new Set());
+        }
+        eventEntityMap.get(entityNorm).add(String(eventId));
+      }
+    }
+
     for (const [keyword, eventIds] of Object.entries(eventIndex)) {
       if (!keyword || !Array.isArray(eventIds) || eventIds.length === 0) continue;
       const keywordLower = String(keyword).toLowerCase().trim();
       const keywordPlain = normalizeForMatch(keywordLower).plain;
       const keywordTokens = keywordPlain ? keywordPlain.split(" ") : [];
-      keywordToTargets.push({ keyword: keywordLower, keywordPlain, keywordTokens, eventIds });
+
+      // Check if this keyword is an entity for any of these events
+      const entityEventIds = eventEntityMap.get(keywordLower);
+      const isEntity = entityEventIds && eventIds.some(id => entityEventIds.has(String(id)));
+
+      keywordToTargets.push({
+        keyword: keywordLower,
+        keywordPlain,
+        keywordTokens,
+        eventIds,
+        isEntity: !!isEntity
+      });
     }
   } else {
+    // Build entity lookup for market mode
+    const marketEntityMap = new Map(); // keyword -> Set of marketIds where it's an entity
+    const markets = data.markets || {};
+    for (const [marketId, market] of Object.entries(markets)) {
+      const entities = market.entities || [];
+      for (const entity of entities) {
+        const entityNorm = String(entity).toLowerCase().trim();
+        if (!entityNorm) continue;
+        if (!marketEntityMap.has(entityNorm)) {
+          marketEntityMap.set(entityNorm, new Set());
+        }
+        marketEntityMap.get(entityNorm).add(String(marketId));
+      }
+    }
+
     for (const [keyword, marketIds] of Object.entries(index)) {
       if (!keyword || !Array.isArray(marketIds) || marketIds.length === 0) continue;
       const keywordLower = String(keyword).toLowerCase().trim();
       const keywordPlain = normalizeForMatch(keywordLower).plain;
       const keywordTokens = keywordPlain ? keywordPlain.split(" ") : [];
-      keywordToTargets.push({ keyword: keywordLower, keywordPlain, keywordTokens, marketIds });
+
+      // Check if this keyword is an entity for any of these markets
+      const entityMarketIds = marketEntityMap.get(keywordLower);
+      const isEntity = entityMarketIds && marketIds.some(id => entityMarketIds.has(String(id)));
+
+      keywordToTargets.push({
+        keyword: keywordLower,
+        keywordPlain,
+        keywordTokens,
+        marketIds,
+        isEntity: !!isEntity
+      });
     }
   }
 
@@ -113,34 +165,37 @@ function clamp01(x) {
   return x;
 }
 
-function findActionBar(articleEl) {
-  return articleEl.querySelector(SELECTORS.actionGroup);
-}
-
 function createIcon() {
-  const icon = document.createElement("span");
+  const icon = document.createElement("div");
   icon.setAttribute(ICON_ATTR, "1");
   icon.setAttribute("role", "button");
   icon.tabIndex = 0;
-  icon.title = "Opinion HUD";
+  icon.title = "Opinion HUD - Click to see markets";
+
+  // Inline button in action bar (like other action buttons)
   icon.style.display = "inline-flex";
   icon.style.alignItems = "center";
   icon.style.justifyContent = "center";
-  icon.style.width = "16px";
-  icon.style.height = "16px";
-  icon.style.marginLeft = "8px";
-  icon.style.opacity = "0.5";
+  icon.style.width = "34px";
+  icon.style.height = "34px";
+  icon.style.borderRadius = "9999px";
   icon.style.cursor = "pointer";
   icon.style.userSelect = "none";
+  icon.style.transition = "background-color 0.2s";
+  icon.style.marginLeft = "auto"; // Push to the right end
 
   icon.innerHTML =
-    '<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">' +
-    '<circle cx="8" cy="8" r="7" fill="currentColor" opacity="0.9"></circle>' +
-    '<text x="8" y="11" text-anchor="middle" font-size="9" font-family="system-ui, -apple-system, Segoe UI, Roboto" fill="#fff">O</text>' +
+    '<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">' +
+    '<circle cx="10" cy="10" r="9" fill="none" stroke="currentColor" stroke-width="1.8" opacity="0.7"></circle>' +
+    '<text x="10" y="14" text-anchor="middle" font-size="12" font-weight="700" font-family="system-ui, -apple-system, Segoe UI, Roboto" fill="currentColor">O</text>' +
     "</svg>";
 
-  icon.addEventListener("mouseenter", () => (icon.style.opacity = "1.0"));
-  icon.addEventListener("mouseleave", () => (icon.style.opacity = "0.5"));
+  icon.addEventListener("mouseenter", () => {
+    icon.style.backgroundColor = "rgba(15, 20, 25, 0.1)";
+  });
+  icon.addEventListener("mouseleave", () => {
+    icon.style.backgroundColor = "transparent";
+  });
   return icon;
 }
 
@@ -159,8 +214,13 @@ function renderHud(anchorEl, match) {
   container.style.zIndex = "2147483647";
 
   const rect = anchorEl.getBoundingClientRect();
-  const top = window.scrollY + rect.bottom + 8;
-  const left = Math.min(window.scrollX + rect.left, window.scrollX + document.documentElement.clientWidth - 300);
+  const hudWidth = 320;
+  const hudHeight = 300; // Approximate height
+
+  // Position HUD above the icon (icon is now in bottom action bar)
+  const top = window.scrollY + rect.top - hudHeight - 8;
+  const left = window.scrollX + rect.right - hudWidth;
+
   container.style.top = `${top}px`;
   container.style.left = `${left}px`;
 
@@ -169,37 +229,39 @@ function renderHud(anchorEl, match) {
   style.textContent = `
     :host { all: initial; }
     .hud {
-      width: 280px;
+      width: 320px;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       color: #e7e9ea;
       background: rgba(15, 20, 25, 0.85);
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 14px;
-      padding: 12px;
+      padding: 14px;
       box-shadow: 0 12px 40px rgba(0,0,0,0.35);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
     }
     .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-    .title { font-weight: 700; font-size: 13px; line-height: 1.2; }
-    .sub { opacity: 0.85; font-size: 12px; margin-top: 4px; line-height: 1.25; }
-    .pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: rgba(255,255,255,0.10); }
+    .title { font-weight: 700; font-size: 14px; line-height: 1.2; }
+    .sub { opacity: 0.85; font-size: 13px; margin-top: 4px; line-height: 1.25; }
+    .pill { font-size: 11px; padding: 3px 9px; border-radius: 999px; background: rgba(255,255,255,0.10); }
     .list { margin-top: 10px; display: flex; flex-direction: column; gap: 8px; }
     .item { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center; }
-    .itemTitle { font-size: 12px; line-height: 1.25; }
+    .itemTitle { font-size: 13px; line-height: 1.25; }
     .labels { display: flex; gap: 6px; align-items: center; justify-content: flex-end; }
     .btn {
       border: 0;
-      padding: 8px 10px;
-      border-radius: 10px;
+      padding: 10px 18px;
+      border-radius: 12px;
       font-weight: 700;
-      font-size: 12px;
+      font-size: 14px;
       cursor: pointer;
       background: #1d9bf0;
       color: #fff;
+      transition: background 0.2s;
     }
+    .btn:hover { background: #1a8cd8; }
     .btn:active { transform: translateY(1px); }
-    .footer { margin-top: 10px; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+    .footer { margin-top: 12px; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
     .term { opacity: 0.75; font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   `;
 
@@ -315,35 +377,118 @@ function tokensNear(plain, keywordTokens) {
 }
 
 function scoreEntry({ raw, plain, tokens }, entry) {
+  const reasons = [];
   let score = 0;
 
   const keywordPlain = entry.keywordPlain || "";
   const keywordTokens = entry.keywordTokens || [];
+  const isEntity = entry.isEntity || false;
 
+  // ENTITY MATCH - highest priority (overrides all other matching)
+  if (isEntity && keywordPlain && plain.includes(keywordPlain)) {
+    score = 0.95;
+    reasons.push(`entity:${keywordPlain}`);
+    return { score: clamp01(score), reasons };
+  }
+
+  // 1. Exact phrase match (highest score) - but filter generic phrases
   if (keywordPlain && plain.includes(keywordPlain)) {
-    score += 0.85;
-    score += Math.min(0.1, keywordPlain.length / 120);
-  } else if (keywordTokens.length >= 2 && keywordTokens.length <= 3) {
-    let present = 0;
-    for (const t of keywordTokens) {
-      if (tokens.has(t)) present += 1;
+    const isSingleWord = !keywordPlain.includes(' ');
+
+    // Reject generic single-word phrases
+    if (isSingleWord) {
+      const isYear = /^\d{4}$/.test(keywordPlain);
+      const isShort = keywordPlain.length <= 3;
+      const commonTerms = [
+        'crypto', 'web3', 'trade', 'market', 'price', 'defi',
+        'token', 'wallet', 'chain', 'coin', 'yield', 'stake',
+        'swap', 'pool', 'mint', 'airdrop'
+      ];
+      const isCommon = keywordPlain.length <= 6 && commonTerms.includes(keywordPlain);
+
+      if (isYear || isShort || isCommon) {
+        // Don't score - it's too generic
+        reasons.push(`rejected:${keywordPlain}`);
+      } else {
+        // Valid single-word brand name - moderate score
+        score += Math.min(0.65, keywordPlain.length * 0.1);
+        reasons.push(`phrase:${keywordPlain}`);
+      }
+    } else {
+      // Multi-word phrases get high score - they're very specific
+      score += 0.85 + Math.min(0.1, keywordPlain.length / 120);
+      reasons.push(`phrase:${keywordPlain}`);
     }
+  }
+  // 2. Multi-token keyword matching
+  else if (keywordTokens.length >= 2) {
+    let present = 0;
+    const matchedTokens = [];
+    for (const t of keywordTokens) {
+      if (tokens.has(t)) {
+        present += 1;
+        matchedTokens.push(t);
+      }
+    }
+
     if (present === keywordTokens.length) {
-      score += tokensNear(plain, keywordTokens) ? 0.7 : 0.45;
+      // All tokens present
+      const near = tokensNear(plain, keywordTokens);
+      score += near ? 0.7 : 0.45;
+      reasons.push("tokens:all");
+      if (near) reasons.push("near");
     } else if (present >= 2) {
-      score += 0.35;
+      // At least 2 tokens present
+      score += 0.35 + (present - 2) * 0.05;
+      reasons.push(`tokens:${present}/${keywordTokens.length}`);
+    } else if (present === 1) {
+      // NEW: Single token match for multi-token keyword
+      const matchedToken = matchedTokens[0];
+      // Score based on token length and specificity
+      const tokenScore = Math.min(0.4, matchedToken.length * 0.06);
+      score += tokenScore;
+      reasons.push(`partial:${matchedToken}`);
+    }
+  }
+  // 3. Single-token keyword matching with smart filtering
+  else if (keywordTokens.length === 1) {
+    const token = keywordTokens[0];
+    if (tokens.has(token)) {
+      const isYear = /^\d{4}$/.test(token);
+      const isShort = token.length <= 3;
+      const commonTerms = [
+        'crypto', 'web3', 'trade', 'market', 'price', 'defi',
+        'token', 'wallet', 'chain', 'coin', 'yield', 'stake',
+        'swap', 'pool', 'mint', 'airdrop'
+      ];
+      const isCommon = token.length <= 6 && commonTerms.includes(token);
+
+      if (isYear || isShort || isCommon) {
+        // Reject generic tokens
+        reasons.push(`rejected:${token}`);
+      } else if (token.length <= 6) {
+        // Medium-length brand names
+        score += Math.min(0.48, token.length * 0.09);
+        reasons.push(`single:${token}`);
+      } else {
+        // Long brand names (7+ chars)
+        score += Math.min(0.70, token.length * 0.09);
+        reasons.push(`single:${token}`);
+      }
     }
   }
 
+  // Bonus for cashtags/hashtags present in raw text.
   for (const t of keywordTokens) {
     if (!t || t.length < 3) continue;
     if (raw.includes(`$${t}`) || raw.includes(`#${t}`)) {
       score += 0.05;
+      reasons.push(`tag:${t}`);
       break;
     }
   }
 
-  return clamp01(score);
+  return { score: clamp01(score), reasons };
 }
 
 function computeMatchForTweetText(tweetText) {
@@ -358,13 +503,14 @@ function computeMatchForTweetText(tweetText) {
     if (list) candidates.push(...list);
   }
 
-  const threshold = 0.6;
+  const threshold = 0.50; // Conservative to avoid false positives
   const targetBest = new Map();
 
   for (const entry of candidates) {
     const keyword = entry.keyword;
     if (!keyword || keyword.length < 2) continue;
-    const score = scoreEntry({ raw, plain, tokens }, entry);
+
+    const { score, reasons } = scoreEntry({ raw, plain, tokens }, entry);
     if (score < threshold) continue;
 
     if (state.matcher.mode === "event") {
@@ -375,6 +521,8 @@ function computeMatchForTweetText(tweetText) {
           targetBest.set(eventId, {
             score,
             keyword: entry.keywordPlain || keyword,
+            reasons,
+            entry,
             id: eventId,
           });
         }
@@ -387,6 +535,8 @@ function computeMatchForTweetText(tweetText) {
           targetBest.set(marketId, {
             score,
             keyword: entry.keywordPlain || keyword,
+            reasons,
+            entry,
             id: marketId,
           });
         }
@@ -434,6 +584,10 @@ function computeMatchForTweetText(tweetText) {
   };
 }
 
+function findActionBar(articleEl) {
+  return articleEl.querySelector(SELECTORS.actionGroup);
+}
+
 function attachIconToTweet(tweetTextEl, match) {
   const articleEl = tweetTextEl.closest(SELECTORS.article);
   if (!articleEl) return;
@@ -441,15 +595,29 @@ function attachIconToTweet(tweetTextEl, match) {
   const actionBar = findActionBar(articleEl);
   if (!actionBar) return;
 
-  let icon = actionBar.querySelector(`span[${ICON_ATTR}]`);
+  // Check if icon already exists
+  let icon = actionBar.querySelector(`div[${ICON_ATTR}]`);
   if (!icon) {
     icon = createIcon();
     actionBar.appendChild(icon);
   }
 
+  // Click to toggle HUD
+  icon.onclick = (e) => {
+    e.stopPropagation();
+    if (state.activeHud) {
+      removeHud();
+    } else {
+      renderHud(icon, match);
+    }
+  };
+
+  // Also support hover
   icon.onmouseenter = () => {
     if (state.hoverTimer) window.clearTimeout(state.hoverTimer);
-    state.hoverTimer = window.setTimeout(() => renderHud(icon, match), HOVER_DELAY_MS);
+    if (!state.activeHud) {
+      state.hoverTimer = window.setTimeout(() => renderHud(icon, match), HOVER_DELAY_MS);
+    }
   };
   icon.onmouseleave = () => {
     if (state.hoverTimer) window.clearTimeout(state.hoverTimer);

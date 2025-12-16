@@ -3,8 +3,8 @@
   "name": "Opinion HUD",
   "version": "0.1.0",
   "description": "Contextual Trading Layer for X, powered by Opinion.",
-  "permissions": ["storage", "alarms", "permissions"],
-  "optional_host_permissions": ["<all_urls>"],
+  "permissions": ["storage", "alarms"],
+  "host_permissions": ["https://nobita1998.github.io/*"],
   "background": {
     "service_worker": "background.js",
     "type": "module"

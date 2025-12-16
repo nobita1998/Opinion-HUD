@@ -66,20 +66,12 @@
     <div class="card">
       <h1 style="margin: 0 0 12px 0">Opinion HUD</h1>
       <p style="margin: 0 0 16px 0">
-        Set the URL to the generated <code>data.json</code> (from the backend pipeline / GitHub Pages / CDN).
+        Data automatically refreshes every hour from <code>https://nobita1998.github.io/Opinion-HUD/data.json</code>
       </p>
-      <label for="dataUrl">Data URL</label>
-      <input id="dataUrl" placeholder="https://your-cdn.example/opinion-hud/data.json" />
       <div class="row">
-        <button id="save" class="primary">Save</button>
-        <button id="refresh" class="secondary">Refresh Now</button>
+        <button id="refresh" class="secondary">Refresh Data Now</button>
       </div>
       <div id="status" class="status"></div>
-      <p class="status" style="margin-top: 16px">
-        Tip: during local development you can serve a file via
-        <code>python -m http.server</code> and point Data URL to
-        <code>http://localhost:8000/data.json</code> (then grant permission when prompted).
-      </p>
 
       <hr style="margin: 18px 0; border: 0; border-top: 1px solid #e5e7eb" />
 
@@ -108,7 +100,7 @@
           <label style="margin: 0; font-weight: 700">Top N</label>
           <input id="topN" type="number" min="1" max="20" value="5" style="width: 90px" />
           <label style="margin: 0; font-weight: 700">Threshold</label>
-          <input id="threshold" type="number" min="0" max="1" step="0.05" value="0.6" style="width: 90px" />
+          <input id="threshold" type="number" min="0" max="1" step="0.05" value="0.50" style="width: 90px" />
         </div>
         <button id="test" class="secondary">Test Match</button>
       </div>
@@ -123,6 +115,53 @@
           border-radius: 12px;
           padding: 12px;
           margin-top: 10px;
+        "
+      ></pre>
+
+      <hr style="margin: 18px 0; border: 0; border-top: 1px solid #e5e7eb" />
+
+      <h2 style="margin: 0 0 10px 0; font-size: 16px">Batch Test (Local Only)</h2>
+      <p class="status" style="margin-top: 0">
+        Paste multiple tweets (one per line) to test matching performance. Empty lines and lines starting with # are
+        ignored.
+      </p>
+      <label for="batchInput">Batch Input</label>
+      <textarea
+        id="batchInput"
+        rows="8"
+        style="
+          width: 100%;
+          padding: 10px 12px;
+          border-radius: 10px;
+          border: 1px solid #d1d5db;
+          font-size: 14px;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+            monospace;
+        "
+        placeholder="随着 @Lighter_xyz 基本确认今年内tge ，FDV 1B这个市场存在被低估可能性
+Trump在PA州的民调领先5个点
+# 这是注释，会被忽略"
+      ></textarea>
+      <div class="row">
+        <div style="display: flex; gap: 10px; align-items: center">
+          <label style="margin: 0; font-weight: 700">Threshold</label>
+          <input id="batchThreshold" type="number" min="0" max="1" step="0.05" value="0.50" style="width: 90px" />
+        </div>
+        <button id="batchTest" class="secondary">Run Batch Test</button>
+      </div>
+      <pre
+        id="batchResult"
+        class="status"
+        style="
+          white-space: pre-wrap;
+          word-break: break-word;
+          background: #f9fafb;
+          border: 1px solid #e5e7eb;
+          border-radius: 12px;
+          padding: 12px;
+          margin-top: 10px;
+          max-height: 500px;
+          overflow-y: auto;
         "
       ></pre>
     </div>

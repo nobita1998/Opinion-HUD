@@ -33,6 +33,7 @@
           env:
             ZHIPU_KEY: ${{ secrets.ZHIPU_KEY }}
             SLEEP_SECONDS: "0.5"
+            DISABLE_INCREMENTAL: "1"
           run: |
             REPO_NAME="${GITHUB_REPOSITORY#*/}"
             export PREVIOUS_DATA_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${REPO_NAME}/data.json"

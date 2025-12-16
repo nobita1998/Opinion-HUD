@@ -1,5 +1,4 @@
 const STORAGE_KEYS = {
-  settings: "opinionHudSettings",
   cachedData: "opinionHudData",
 };
 
@@ -9,11 +8,6 @@ function $(id) {
 
 function setStatus(text) {
   $("status").textContent = text || "";
-}
-
-function normalizeUrl(url) {
-  const trimmed = String(url || "").trim();
-  return trimmed || null;
 }
 
 function normalizeText(text) {
@@ -93,20 +87,72 @@ function buildMatcher(data) {
 
   const keywordToTargets = [];
   if (eventIndex && typeof eventIndex === "object") {
+    // Build entity lookup for event mode
+    const eventEntityMap = new Map(); // keyword -> Set of eventIds where it's an entity
+    const events = data.events || {};
+    for (const [eventId, event] of Object.entries(events)) {
+      const entities = event.entities || [];
+      for (const entity of entities) {
+        const entityNorm = String(entity).toLowerCase().trim();
+        if (!entityNorm) continue;
+        if (!eventEntityMap.has(entityNorm)) {
+          eventEntityMap.set(entityNorm, new Set());
+        }
+        eventEntityMap.get(entityNorm).add(String(eventId));
+      }
+    }
+
     for (const [keyword, eventIds] of Object.entries(eventIndex)) {
       if (!keyword || !Array.isArray(eventIds) || eventIds.length === 0) continue;
       const keywordLower = String(keyword).toLowerCase().trim();
       const keywordPlain = normalizeForMatch(keywordLower).plain;
       const keywordTokens = keywordPlain ? keywordPlain.split(" ") : [];
-      keywordToTargets.push({ keyword: keywordLower, keywordPlain, keywordTokens, eventIds });
+
+      // Check if this keyword is an entity for any of these events
+      const entityEventIds = eventEntityMap.get(keywordLower);
+      const isEntity = entityEventIds && eventIds.some(id => entityEventIds.has(String(id)));
+
+      keywordToTargets.push({
+        keyword: keywordLower,
+        keywordPlain,
+        keywordTokens,
+        eventIds,
+        isEntity: !!isEntity
+      });
     }
   } else {
+    // Build entity lookup for market mode
+    const marketEntityMap = new Map(); // keyword -> Set of marketIds where it's an entity
+    const markets = data.markets || {};
+    for (const [marketId, market] of Object.entries(markets)) {
+      const entities = market.entities || [];
+      for (const entity of entities) {
+        const entityNorm = String(entity).toLowerCase().trim();
+        if (!entityNorm) continue;
+        if (!marketEntityMap.has(entityNorm)) {
+          marketEntityMap.set(entityNorm, new Set());
+        }
+        marketEntityMap.get(entityNorm).add(String(marketId));
+      }
+    }
+
     for (const [keyword, marketIds] of Object.entries(index)) {
       if (!keyword || !Array.isArray(marketIds) || marketIds.length === 0) continue;
       const keywordLower = String(keyword).toLowerCase().trim();
       const keywordPlain = normalizeForMatch(keywordLower).plain;
       const keywordTokens = keywordPlain ? keywordPlain.split(" ") : [];
-      keywordToTargets.push({ keyword: keywordLower, keywordPlain, keywordTokens, marketIds });
+
+      // Check if this keyword is an entity for any of these markets
+      const entityMarketIds = marketEntityMap.get(keywordLower);
+      const isEntity = entityMarketIds && marketIds.some(id => entityMarketIds.has(String(id)));
+
+      keywordToTargets.push({
+        keyword: keywordLower,
+        keywordPlain,
+        keywordTokens,
+        marketIds,
+        isEntity: !!isEntity
+      });
     }
   }
 
@@ -132,25 +178,99 @@ function scoreEntry({ raw, plain, tokens }, entry) {
 
   const keywordPlain = entry.keywordPlain || "";
   const keywordTokens = entry.keywordTokens || [];
+  const isEntity = entry.isEntity || false;
 
+  // ENTITY MATCH - highest priority (overrides all other matching)
+  if (isEntity && keywordPlain && plain.includes(keywordPlain)) {
+    score = 0.95;
+    reasons.push(`entity:${keywordPlain}`);
+    return { score: clamp01(score), reasons };
+  }
+
+  // 1. Exact phrase match (highest score) - but filter generic phrases
   if (keywordPlain && plain.includes(keywordPlain)) {
-    score += 0.85;
-    reasons.push(`phrase:${keywordPlain}`);
-    score += Math.min(0.1, keywordPlain.length / 120);
-  } else if (keywordTokens.length >= 2 && keywordTokens.length <= 3) {
+    const isSingleWord = !keywordPlain.includes(' ');
+
+    // Reject generic single-word phrases
+    if (isSingleWord) {
+      const isYear = /^\d{4}$/.test(keywordPlain);
+      const isShort = keywordPlain.length <= 3;
+      const commonTerms = [
+        'crypto', 'web3', 'trade', 'market', 'price', 'defi',
+        'token', 'wallet', 'chain', 'coin', 'yield', 'stake',
+        'swap', 'pool', 'mint', 'airdrop'
+      ];
+      const isCommon = keywordPlain.length <= 6 && commonTerms.includes(keywordPlain);
+
+      if (isYear || isShort || isCommon) {
+        // Don't score - it's too generic
+        reasons.push(`rejected:${keywordPlain}`);
+      } else {
+        // Valid single-word brand name - moderate score
+        score += Math.min(0.65, keywordPlain.length * 0.1);
+        reasons.push(`phrase:${keywordPlain}`);
+      }
+    } else {
+      // Multi-word phrases get high score - they're very specific
+      score += 0.85 + Math.min(0.1, keywordPlain.length / 120);
+      reasons.push(`phrase:${keywordPlain}`);
+    }
+  }
+  // 2. Multi-token keyword matching
+  else if (keywordTokens.length >= 2) {
     let present = 0;
+    const matchedTokens = [];
     for (const t of keywordTokens) {
-      if (tokens.has(t)) present += 1;
+      if (tokens.has(t)) {
+        present += 1;
+        matchedTokens.push(t);
+      }
     }
 
     if (present === keywordTokens.length) {
+      // All tokens present
       const near = tokensNear(plain, keywordTokens);
       score += near ? 0.7 : 0.45;
       reasons.push("tokens:all");
       if (near) reasons.push("near");
     } else if (present >= 2) {
-      score += 0.35;
+      // At least 2 tokens present
+      score += 0.35 + (present - 2) * 0.05;
       reasons.push(`tokens:${present}/${keywordTokens.length}`);
+    } else if (present === 1) {
+      // NEW: Single token match for multi-token keyword
+      const matchedToken = matchedTokens[0];
+      // Score based on token length and specificity
+      const tokenScore = Math.min(0.4, matchedToken.length * 0.06);
+      score += tokenScore;
+      reasons.push(`partial:${matchedToken}`);
+    }
+  }
+  // 3. Single-token keyword matching with smart filtering
+  else if (keywordTokens.length === 1) {
+    const token = keywordTokens[0];
+    if (tokens.has(token)) {
+      const isYear = /^\d{4}$/.test(token);
+      const isShort = token.length <= 3;
+      const commonTerms = [
+        'crypto', 'web3', 'trade', 'market', 'price', 'defi',
+        'token', 'wallet', 'chain', 'coin', 'yield', 'stake',
+        'swap', 'pool', 'mint', 'airdrop'
+      ];
+      const isCommon = token.length <= 6 && commonTerms.includes(token);
+
+      if (isYear || isShort || isCommon) {
+        // Reject generic tokens
+        reasons.push(`rejected:${token}`);
+      } else if (token.length <= 6) {
+        // Medium-length brand names
+        score += Math.min(0.48, token.length * 0.09);
+        reasons.push(`single:${token}`);
+      } else {
+        // Long brand names (7+ chars)
+        score += Math.min(0.70, token.length * 0.09);
+        reasons.push(`single:${token}`);
+      }
     }
   }
 
@@ -169,7 +289,7 @@ function scoreEntry({ raw, plain, tokens }, entry) {
 
 function computeTopMatchesForText(data, matcher, text, { topN = 5, threshold = 0.6 } = {}) {
   const { plain, tokens } = tokenize(text);
-  if (!plain) return { ok: true, matched: false, reason: "empty_text" };
+  if (!plain) return { ok: true, matched: false, reason: "empty_text", results: [] };
 
   const candidates = [];
   for (const t of tokens) {
@@ -205,7 +325,7 @@ function computeTopMatchesForText(data, matcher, text, { topN = 5, threshold = 0
     }
   }
 
-  if (targetBest.size === 0) return { ok: true, matched: false, reason: "no_candidates" };
+  if (targetBest.size === 0) return { ok: true, matched: false, reason: "no_candidates", results: [] };
 
   const ranked = Array.from(targetBest.values()).sort((a, b) => b.score - a.score).slice(0, topN);
 
@@ -260,7 +380,7 @@ function computeTopMatchesForText(data, matcher, text, { topN = 5, threshold = 0
 }
 
 function computeMatchForText(data, matcher, text) {
-  const top = computeTopMatchesForText(data, matcher, text, { topN: 1, threshold: 0.3 });
+  const top = computeTopMatchesForText(data, matcher, text, { topN: 1, threshold: 0.50 });
   if (!top.matched) return top;
   const m = top.results[0];
 
@@ -289,65 +409,31 @@ function computeMatchForText(data, matcher, text) {
   };
 }
 
-function originPatternFor(url) {
-  try {
-    const u = new URL(url);
-    return `${u.origin}/*`;
-  } catch {
-    return null;
-  }
-}
-
-async function ensurePermissionForDataUrl(dataUrl) {
-  const pattern = originPatternFor(dataUrl);
-  if (!pattern) throw new Error("Invalid Data URL.");
-
-  const already = await chrome.permissions.contains({ origins: [pattern] });
-  if (already) return true;
-
-  const granted = await chrome.permissions.request({ origins: [pattern] });
-  if (!granted) throw new Error("Permission request was denied.");
-  return true;
-}
-
-async function load() {
-  const result = await chrome.storage.local.get(STORAGE_KEYS.settings);
-  const settings = result[STORAGE_KEYS.settings] || {};
-  $("dataUrl").value = settings.dataUrl || "";
-}
-
-async function save() {
-  const dataUrl = normalizeUrl($("dataUrl").value);
-  await chrome.storage.local.set({
-    [STORAGE_KEYS.settings]: { dataUrl },
-  });
-  setStatus("Saved.");
-}
-
 async function refreshNow() {
   setStatus("Refreshing...");
   try {
-    const dataUrl = normalizeUrl($("dataUrl").value);
-    if (!dataUrl) throw new Error("Set Data URL first.");
-    await ensurePermissionForDataUrl(dataUrl);
-
     const resp = await chrome.runtime.sendMessage({ type: "opinionHud.refresh" });
     if (!resp?.ok) {
       setStatus(`Refresh failed: ${resp?.error || "unknown error"}`);
       return;
     }
     const result = resp.result;
-    setStatus(result.updated ? `Updated (version=${result.version}).` : `No change (version=${result.version}).`);
+    setStatus(result.updated ? `Data updated (version ${result.version})` : `Already up to date (version ${result.version})`);
   } catch (err) {
     setStatus(`Refresh failed: ${String(err?.message || err)}`);
   }
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  await load();
-  $("save").addEventListener("click", async () => {
-    await save();
-  });
+  // Check if data is already loaded
+  const result = await chrome.storage.local.get(STORAGE_KEYS.cachedData);
+  const data = result[STORAGE_KEYS.cachedData];
+  if (data?.meta?.version) {
+    setStatus(`Data loaded (version ${data.meta.version})`);
+  } else {
+    setStatus("Waiting for initial data refresh...");
+  }
+
   $("refresh").addEventListener("click", async () => {
     await refreshNow();
   });
@@ -400,6 +486,75 @@ document.addEventListener("DOMContentLoaded", async () => {
       $("testResult").textContent = lines.join("\n").trim();
     } catch (err) {
       $("testResult").textContent = `Test failed: ${String(err?.message || err)}`;
+    }
+  });
+
+  $("batchTest").addEventListener("click", async () => {
+    try {
+      const result = await chrome.storage.local.get(STORAGE_KEYS.cachedData);
+      const data = result[STORAGE_KEYS.cachedData];
+      if (!data) {
+        $("batchResult").textContent = "No cached data. Click \"Refresh Now\" first.";
+        return;
+      }
+
+      const matcher = buildMatcher(data);
+      const batchInput = $("batchInput").value || "";
+      const threshold = clamp01(Number($("batchThreshold")?.value || 0.50));
+
+      // Parse input: one tweet per line, ignore empty lines and comments
+      const tweets = batchInput
+        .split("\n")
+        .map((line) => line.trim())
+        .filter((line) => line && !line.startsWith("#"));
+
+      if (tweets.length === 0) {
+        $("batchResult").textContent = "No tweets to test. Please enter tweets (one per line).";
+        return;
+      }
+
+      const lines = [];
+      lines.push(`=== BATCH TEST RESULTS ===`);
+      lines.push(`Total tweets: ${tweets.length}`);
+      lines.push(`Threshold: ${threshold}`);
+      lines.push("");
+
+      let matched = 0;
+      let notMatched = 0;
+
+      for (let i = 0; i < tweets.length; i++) {
+        const tweet = tweets[i];
+        const top = computeTopMatchesForText(data, matcher, tweet, { topN: 1, threshold });
+
+        lines.push(`[${i + 1}/${tweets.length}] ${tweet.substring(0, 60)}${tweet.length > 60 ? "..." : ""}`);
+
+        if (top.matched && top.results && top.results.length > 0) {
+          matched++;
+          const r = top.results[0];
+          lines.push(`  ✓ MATCHED (score: ${r.score.toFixed(2)})`);
+          lines.push(`    ${r.title}`);
+          lines.push(`    Keyword: ${r.keyword} | Reason: ${r.reasons.join(", ")}`);
+        } else {
+          notMatched++;
+          lines.push(`  ✗ NO MATCH`);
+          if (top.results && top.results.length > 0) {
+            const r = top.results[0];
+            lines.push(`    Best candidate (${r.score.toFixed(2)}): ${r.title}`);
+            lines.push(`    Keyword: ${r.keyword} | Reason: ${r.reasons.join(", ")}`);
+          } else if (top.reason) {
+            lines.push(`    Reason: ${top.reason}`);
+          }
+        }
+        lines.push("");
+      }
+
+      lines.push("=== SUMMARY ===");
+      lines.push(`Matched: ${matched}/${tweets.length} (${((matched / tweets.length) * 100).toFixed(1)}%)`);
+      lines.push(`Not matched: ${notMatched}/${tweets.length} (${((notMatched / tweets.length) * 100).toFixed(1)}%)`);
+
+      $("batchResult").textContent = lines.join("\n");
+    } catch (err) {
+      $("batchResult").textContent = `Batch test failed: ${String(err?.message || err)}`;
     }
   });
 });

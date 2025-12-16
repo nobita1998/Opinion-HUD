@@ -215,6 +215,87 @@ def _extract_json_array(text):
     return keywords
 
 
+def _extract_keywords_and_entities(text):
+    """Extract both keywords and entities from AI response.
+
+    Expected format:
+    {
+      "keywords": ["keyword1", "keyword2", ...],
+      "entities": ["Entity1", "Entity2"]
+    }
+
+    Fallback to legacy array format if object not found.
+    """
+    cleaned = (text or "").strip()
+    if not cleaned:
+        return {"keywords": [], "entities": []}
+
+    # Try to extract JSON from markdown code blocks
+    if "```" in cleaned:
+        parts = cleaned.split("```")
+        for part in parts:
+            candidate = part.strip()
+            # Try object format first
+            if candidate.startswith("{") and candidate.endswith("}"):
+                cleaned = candidate
+                break
+            # Try array format (legacy)
+            if candidate.startswith("[") and candidate.endswith("]"):
+                cleaned = candidate
+                break
+            # Handle json-prefixed code blocks
+            if candidate.startswith("json"):
+                if "{" in candidate and "}" in candidate:
+                    cleaned = candidate[candidate.find("{") : candidate.rfind("}") + 1].strip()
+                    break
+                elif "[" in candidate and "]" in candidate:
+                    cleaned = candidate[candidate.find("[") : candidate.rfind("]") + 1].strip()
+                    break
+
+    try:
+        data = json.loads(cleaned)
+    except json.JSONDecodeError:
+        if DEBUG:
+            preview = cleaned[:500].replace("\n", "\\n")
+            print(f"[warn] LLM output was not valid JSON; preview={preview}", flush=True)
+        return {"keywords": [], "entities": []}
+
+    # Handle new object format
+    if isinstance(data, dict):
+        keywords_raw = data.get("keywords", [])
+        entities_raw = data.get("entities", [])
+
+        keywords = []
+        if isinstance(keywords_raw, list):
+            for item in keywords_raw:
+                if isinstance(item, str):
+                    kw = item.strip()
+                    if kw:
+                        keywords.append(kw)
+
+        entities = []
+        if isinstance(entities_raw, list):
+            for item in entities_raw:
+                if isinstance(item, str):
+                    ent = item.strip()
+                    if ent:
+                        entities.append(ent)
+
+        return {"keywords": keywords, "entities": entities}
+
+    # Handle legacy array format (backwards compatibility)
+    if isinstance(data, list):
+        keywords = []
+        for item in data:
+            if isinstance(item, str):
+                kw = item.strip()
+                if kw:
+                    keywords.append(kw)
+        return {"keywords": keywords, "entities": []}
+
+    return {"keywords": [], "entities": []}
+
+
 def _normalize_keyword(keyword):
     kw = (keyword or "").strip().lower()
     kw = " ".join(kw.split())
@@ -499,20 +580,36 @@ def _zhipu_chat_completion(api_key, messages):
 
 
 def generate_keywords(api_key, title, rules):
+    """Generate keywords and entities for a prediction market.
+
+    Returns:
+        dict with keys:
+        - "keywords": list of keyword strings
+        - "entities": list of 1-2 core entity strings
+    """
     system = (
-        "You generate high-quality matching keywords for a prediction market. "
-        "Return ONLY a JSON array of strings (no prose). "
-        "Include Entities, Synonyms, and Slang terms that might appear in tweets."
+        "You generate high-quality matching keywords and core entities for a prediction market. "
+        "Return ONLY a JSON object (no prose). "
+        "Include keywords (general terms, synonyms, slang) and entities (specific brand/project names)."
     )
     user = (
         f"Market title: {title}\n"
         f"Market rules: {_truncate(rules, 1200)}\n\n"
         "Rules:\n"
-        "- Output must be a JSON array of strings.\n"
-        "- 10 to 15 keywords.\n"
+        "- Output must be a JSON object with 'keywords' and 'entities' fields.\n"
+        "- keywords: 10-15 search terms (entities, synonyms, abbreviations, slang)\n"
+        "- entities: 1-2 CORE identifiers (brand names, project names, specific entities)\n"
+        "  * Entities should be unique identifiers like 'Lighter', 'Kraken', 'Blackpink'\n"
+        "  * Do NOT use generic terms like 'crypto', 'market', 'FDV', 'launch', 'IPO'\n"
+        "  * Extract from the market title, not the rules\n"
         "- Prefer short phrases over sentences.\n"
-        "- Include common abbreviations and nicknames.\n"
         "- Do not include duplicates.\n"
+        "\n"
+        "Example output format:\n"
+        '{\n'
+        '  "keywords": ["lighter", "fdv", "market cap", "launch", "tge"],\n'
+        '  "entities": ["Lighter"]\n'
+        "}\n"
     )
 
     attempt = 0
@@ -526,19 +623,20 @@ def generate_keywords(api_key, title, rules):
                     {"role": "user", "content": user},
                 ],
             )
-            keywords = _extract_json_array(content)
+            result = _extract_keywords_and_entities(content)
             if DEBUG:
                 print(
-                    f"[debug] keywords generated: {len(keywords)} for title={title!r} (attempt {attempt})",
+                    f"[debug] generated for title={title!r}: "
+                    f"keywords={len(result['keywords'])} entities={len(result['entities'])} (attempt {attempt})",
                     flush=True,
                 )
-            return keywords
+            return result
         except KeyboardInterrupt:
             raise
         except Exception as exc:
             if attempt >= max(1, ZHIPU_MAX_RETRIES):
                 print(f"[warn] keyword generation failed (final): {exc}", flush=True)
-                return []
+                return {"keywords": [], "entities": []}
             sleep_for = min(2.0, 0.5 * attempt)
             print(f"[warn] keyword generation failed (retrying): {exc}", flush=True)
             time.sleep(sleep_for)
@@ -766,9 +864,11 @@ def build_data(markets, api_key, previous_data=None):
 
         reused = False
         keywords = []
+        entities = []
         prev = prev_events.get(event_id)
         if isinstance(prev, dict):
             prev_keywords = prev.get("keywords")
+            prev_entities = prev.get("entities")
             prev_sig_core = prev.get("sigCore")
             prev_sig_full = prev.get("sigFull") or prev.get("sig") or prev.get("signature")
             if (
@@ -777,10 +877,14 @@ def build_data(markets, api_key, previous_data=None):
                 and ((prev_sig_core and str(prev_sig_core) == sig_core) or (prev_sig_full and str(prev_sig_full) == sig_full))
             ):
                 keywords = [str(k) for k in prev_keywords if str(k).strip()]
+                if isinstance(prev_entities, list):
+                    entities = [str(e) for e in prev_entities if str(e).strip()]
                 reused = True
             elif ALLOW_LEGACY_REUSE and isinstance(prev_keywords, list) and prev_keywords:
                 if (not prev_sig_core) and (not prev_sig_full) and str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
                     keywords = [str(k) for k in prev_keywords if str(k).strip()]
+                    if isinstance(prev_entities, list):
+                        entities = [str(e) for e in prev_entities if str(e).strip()]
                     reused = True
                     ai_stats["legacyReused"] += 1
 
@@ -790,13 +894,22 @@ def build_data(markets, api_key, previous_data=None):
             if SKIP_AI:
                 ai_stats["skipped"] += 1
                 keywords = _fallback_keywords(bucket.get("title") or event_id, option_titles, rules_text)
+                entities = []
             else:
                 ai_stats["calls"] += 1
                 try:
-                    keywords = generate_keywords(api_key, title=bucket.get("title") or event_id, rules=rules_text)
+                    result = generate_keywords(api_key, title=bucket.get("title") or event_id, rules=rules_text)
+                    if isinstance(result, dict):
+                        keywords = result.get("keywords", [])
+                        entities = result.get("entities", [])
+                    elif isinstance(result, list):
+                        # Backwards compatibility with old array format
+                        keywords = result
+                        entities = []
                 except Exception:
                     ai_stats["errors"] += 1
                     keywords = []
+                    entities = []
         if not keywords:
             ai_stats["empty"] += 1
         else:
@@ -815,11 +928,18 @@ def build_data(markets, api_key, previous_data=None):
             if nkw and nkw not in normalized:
                 normalized.append(nkw)
 
+        normalized_entities = []
+        for ent in entities:
+            nent = _normalize_keyword(ent)
+            if nent and nent not in normalized_entities:
+                normalized_entities.append(nent)
+
         events_out[event_id] = {
             "title": bucket.get("title") or event_id,
             "marketIds": bucket.get("marketIds") or [],
             "bestMarketId": bucket.get("bestMarketId"),
             "keywords": normalized,
+            "entities": normalized_entities,
             "sig": sig_full,
             "sigFull": sig_full,
             "sigCore": sig_core,
@@ -829,6 +949,7 @@ def build_data(markets, api_key, previous_data=None):
         for market_id in events_out[event_id]["marketIds"]:
             if market_id in markets_out:
                 markets_out[market_id]["keywords"] = normalized
+                markets_out[market_id]["entities"] = normalized_entities
 
         for nkw in normalized:
             event_inverted.setdefault(nkw, set()).add(event_id)

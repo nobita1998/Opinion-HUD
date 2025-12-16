@@ -1,4 +1,4 @@
-const DEFAULT_DATA_URL = null;
+const DEFAULT_DATA_URL = "https://nobita1998.github.io/Opinion-HUD/data.json";
 const STORAGE_KEYS = {
   settings: "opinionHudSettings",
   cachedData: "opinionHudData",
