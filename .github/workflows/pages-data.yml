@@ -44,6 +44,9 @@
           run: |
             mkdir -p site
             cp backend/data.json site/data.json
+            cp PRIVACY_POLICY.md site/PRIVACY_POLICY.md
+            cp privacy.html site/privacy.html
+            cp privacy.html site/index.html
 
         - name: Upload artifact
           uses: actions/upload-pages-artifact@v3

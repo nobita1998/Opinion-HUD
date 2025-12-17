@@ -6,6 +6,10 @@ on:
       - main
     paths:
       - 'backend/data.json'
+      - 'PRIVACY_POLICY.md'
+      - 'privacy.html'
+      - '.github/workflows/deploy-only.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read
