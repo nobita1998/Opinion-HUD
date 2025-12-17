@@ -1,9 +1,7 @@
-  name: Build and publish data.json
+  name: Build and publish data.json (manual only)
 
   on:
     workflow_dispatch:
-    schedule:
-      - cron: "0 23 * * *"
 
   permissions:
     contents: read
