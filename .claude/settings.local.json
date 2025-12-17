@@ -12,7 +12,13 @@
       "Bash(git push:*)",
       "Bash(.venv/bin/pip install:*)",
       "Bash(DEBUG=1 python:*)",
-      "Bash(DEBUG=1 .venv/bin/python:*)"
+      "Bash(DEBUG=1 .venv/bin/python:*)",
+      "Bash(while read id)",
+      "Bash(do echo \"Checking event ID: $id\")",
+      "Bash(jq:*)",
+      "Bash(done)",
+      "Bash(curl:*)",
+      "Bash(sips:*)"
     ],
     "deny": [],
     "ask": []

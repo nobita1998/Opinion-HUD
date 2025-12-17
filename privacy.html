@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Opinion HUD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #24292e;
+            background: #f6f8fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #1d9bf0;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: #0969da;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-size: 1.5em;
+            border-bottom: 1px solid #d0d7de;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #24292e;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            font-size: 1.25em;
+        }
+
+        p, ul, ol {
+            margin-bottom: 16px;
+        }
+
+        ul, ol {
+            padding-left: 32px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #24292e;
+            font-weight: 600;
+        }
+
+        a {
+            color: #0969da;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            color: #57606a;
+            font-size: 0.9em;
+            margin-bottom: 24px;
+        }
+
+        .highlight {
+            background: #fff8c5;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .section-box {
+            background: #f6f8fa;
+            border-left: 4px solid #1d9bf0;
+            padding: 16px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        code {
+            background: #f6f8fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            font-size: 0.9em;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #d0d7de;
+            margin: 32px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.25em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for Opinion HUD</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> December 17, 2024</p>
+
+        <h2>Overview</h2>
+        <p>Opinion HUD ("the Extension") is a Chrome browser extension that helps users discover prediction markets on Opinion.trade while browsing X (formerly Twitter). This Privacy Policy explains how we handle data and protect your privacy.</p>
+
+        <h2>Information We Collect</h2>
+
+        <h3>Data We DO NOT Collect</h3>
+        <div class="section-box">
+            <p><strong>Opinion HUD does NOT collect, store, or transmit any personal information, including:</strong></p>
+            <ul>
+                <li>Your tweets or browsing activity</li>
+                <li>Your X (Twitter) account information</li>
+                <li>Your location data</li>
+                <li>Any personally identifiable information (PII)</li>
+                <li>Analytics or usage statistics</li>
+            </ul>
+        </div>
+
+        <h3>Data We DO Use (Local Only)</h3>
+        <p><strong>Market Data from GitHub Pages:</strong></p>
+        <ul>
+            <li>The Extension downloads a public JSON file containing prediction market listings from <code>https://nobita1998.github.io/Opinion-HUD/data.json</code></li>
+            <li>This data is cached locally in your browser using <code>chrome.storage.local</code></li>
+            <li>This data contains only public market information (titles, labels, URLs) - no user data</li>
+        </ul>
+
+        <p><strong>Local Matching:</strong></p>
+        <ul>
+            <li>All text matching and keyword detection happens <span class="highlight">entirely on your device</span></li>
+            <li>Tweet content is <span class="highlight">never</span> sent to any server</li>
+            <li>No data leaves your browser during the matching process</li>
+        </ul>
+
+        <h2>How We Use Data</h2>
+        <ol>
+            <li><strong>Market Data Download:</strong> Fetched every hour to keep market listings up-to-date</li>
+            <li><strong>Local Storage:</strong> Market data is cached in your browser for offline access and performance</li>
+            <li><strong>Pattern Matching:</strong> Tweet text is analyzed locally to detect relevant keywords and display matching markets</li>
+        </ol>
+
+        <h2>Third-Party Services</h2>
+
+        <h3>Opinion.trade</h3>
+        <ul>
+            <li>When you click "Trade" buttons in the Extension, you are redirected to Opinion.trade</li>
+            <li>URLs include a referral parameter <code>?ref=opinion_hud</code> for attribution</li>
+            <li>Opinion.trade has its own privacy policy governing data collected on their platform</li>
+            <li>We do not control or have access to data you provide to Opinion.trade</li>
+        </ul>
+
+        <h3>GitHub Pages</h3>
+        <ul>
+            <li>Market data is hosted on GitHub Pages (a public CDN)</li>
+            <li>GitHub may log standard web server information (IP address, user agent) when fetching <code>data.json</code></li>
+            <li>See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank">GitHub Privacy Statement</a></li>
+        </ul>
+
+        <h3>X (Twitter)</h3>
+        <ul>
+            <li>The Extension runs as a content script on X.com and Twitter.com</li>
+            <li>We do not interact with Twitter's API or access your account</li>
+            <li>X's own privacy policy governs data collected on their platform</li>
+        </ul>
+
+        <h2>Data Security</h2>
+        <ul>
+            <li><strong>No Server Storage:</strong> We operate a "local-first" architecture with no backend servers</li>
+            <li><strong>No Authentication:</strong> The Extension requires no login or account creation</li>
+            <li><strong>Open Source:</strong> Our code is publicly auditable on GitHub</li>
+            <li><strong>Minimal Permissions:</strong> We only request permissions necessary for core functionality:
+                <ul>
+                    <li><code>storage</code>: To cache market data locally</li>
+                    <li><code>alarms</code>: To schedule periodic data updates</li>
+                    <li><code>host_permissions</code> for <code>https://nobita1998.github.io/*</code>: To fetch market data</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Your Rights</h2>
+        <p>Since we do not collect personal data, there is no personal information to:</p>
+        <ul>
+            <li>Access</li>
+            <li>Correct</li>
+            <li>Delete</li>
+            <li>Export</li>
+        </ul>
+
+        <div class="section-box">
+            <p><strong>To stop all data processing:</strong></p>
+            <ul>
+                <li>Simply uninstall the Extension from <code>chrome://extensions</code></li>
+                <li>This will remove all locally cached data</li>
+            </ul>
+        </div>
+
+        <h2>Children's Privacy</h2>
+        <p>Opinion HUD does not knowingly collect data from anyone, including children under 13. Prediction markets may have age restrictions - please review Opinion.trade's terms of service.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Changes will be posted at:</p>
+        <ul>
+            <li><strong>GitHub:</strong> <a href="https://github.com/nobita1998/Opinion-HUD/blob/main/PRIVACY_POLICY.md" target="_blank">https://github.com/nobita1998/Opinion-HUD/blob/main/PRIVACY_POLICY.md</a></li>
+            <li><strong>Extension Updates:</strong> Material changes will be noted in release notes</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>For privacy questions or concerns:</p>
+        <ul>
+            <li><strong>GitHub Issues:</strong> <a href="https://github.com/nobita1998/Opinion-HUD/issues" target="_blank">https://github.com/nobita1998/Opinion-HUD/issues</a></li>
+            <li><strong>Repository:</strong> <a href="https://github.com/nobita1998/Opinion-HUD" target="_blank">https://github.com/nobita1998/Opinion-HUD</a></li>
+        </ul>
+
+        <h2>Consent</h2>
+        <p>By installing and using Opinion HUD, you consent to this Privacy Policy.</p>
+
+        <hr>
+
+        <h2>中文版隐私政策</h2>
+        <p class="last-updated"><strong>最后更新：</strong>2024年12月17日</p>
+
+        <h3>概述</h3>
+        <p>Opinion HUD（"本扩展"）是一款 Chrome 浏览器扩展，帮助用户在浏览 X（原 Twitter）时发现 Opinion.trade 上的预测市场。本隐私政策说明我们如何处理数据并保护您的隐私。</p>
+
+        <h3>我们不收集的信息</h3>
+        <div class="section-box">
+            <p><strong>Opinion HUD 不会收集、存储或传输任何个人信息，包括：</strong></p>
+            <ul>
+                <li>您的推文或浏览活动</li>
+                <li>您的 X (Twitter) 账户信息</li>
+                <li>您的位置数据</li>
+                <li>任何个人身份信息 (PII)</li>
+                <li>分析或使用统计数据</li>
+            </ul>
+        </div>
+
+        <h3>我们使用的数据（仅本地）</h3>
+        <p><strong>来自 GitHub Pages 的市场数据：</strong></p>
+        <ul>
+            <li>扩展从 <code>https://nobita1998.github.io/Opinion-HUD/data.json</code> 下载公开的 JSON 文件</li>
+            <li>此数据使用 <code>chrome.storage.local</code> 在浏览器中本地缓存</li>
+            <li>此数据仅包含公开的市场信息（标题、标签、URL）- 不含用户数据</li>
+        </ul>
+
+        <p><strong>本地匹配：</strong></p>
+        <ul>
+            <li>所有文本匹配和关键词检测<span class="highlight">完全在您的设备上</span>进行</li>
+            <li>推文内容<span class="highlight">从不</span>发送到任何服务器</li>
+            <li>匹配过程中没有数据离开您的浏览器</li>
+        </ul>
+
+        <h3>数据使用方式</h3>
+        <ol>
+            <li><strong>市场数据下载：</strong>每小时获取一次以保持市场列表更新</li>
+            <li><strong>本地存储：</strong>市场数据缓存在浏览器中以供离线访问和提高性能</li>
+            <li><strong>模式匹配：</strong>推文文本在本地分析以检测相关关键词并显示匹配的市场</li>
+        </ol>
+
+        <h3>第三方服务</h3>
+        <p><strong>Opinion.trade</strong></p>
+        <ul>
+            <li>当您点击扩展中的"交易"按钮时，将重定向到 Opinion.trade</li>
+            <li>URL 包含归因参数 <code>?ref=opinion_hud</code></li>
+            <li>Opinion.trade 有自己的隐私政策管理其平台上收集的数据</li>
+        </ul>
+
+        <p><strong>GitHub Pages</strong></p>
+        <ul>
+            <li>市场数据托管在 GitHub Pages（公共 CDN）</li>
+            <li>获取 <code>data.json</code> 时，GitHub 可能记录标准的 Web 服务器信息</li>
+        </ul>
+
+        <p><strong>X (Twitter)</strong></p>
+        <ul>
+            <li>扩展作为内容脚本在 X.com 和 Twitter.com 上运行</li>
+            <li>我们不与 Twitter API 交互或访问您的账户</li>
+        </ul>
+
+        <h3>您的权利</h3>
+        <p>由于我们不收集个人数据，因此没有个人信息需要访问、更正、删除或导出。</p>
+
+        <div class="section-box">
+            <p><strong>停止所有数据处理：</strong></p>
+            <ul>
+                <li>只需从 <code>chrome://extensions</code> 卸载扩展</li>
+                <li>这将删除所有本地缓存的数据</li>
+            </ul>
+        </div>
+
+        <h3>联系方式</h3>
+        <p>如有隐私问题或疑虑：</p>
+        <ul>
+            <li><strong>GitHub Issues:</strong> <a href="https://github.com/nobita1998/Opinion-HUD/issues" target="_blank">https://github.com/nobita1998/Opinion-HUD/issues</a></li>
+        </ul>
+
+        <h3>同意</h3>
+        <p>通过安装和使用 Opinion HUD，您同意本隐私政策。</p>
+    </div>
+</body>
+</html>

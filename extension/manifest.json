@@ -1,8 +1,13 @@
 {
   "manifest_version": 3,
   "name": "Opinion HUD",
-  "version": "0.1.0",
-  "description": "Contextual Trading Layer for X, powered by Opinion.",
+  "version": "1.0.0",
+  "description": "Discover prediction markets on Opinion.trade while browsing X (Twitter). Match tweets with markets using AI-powered semantic matching.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
   "permissions": ["storage", "alarms"],
   "host_permissions": ["https://nobita1998.github.io/*"],
   "background": {
