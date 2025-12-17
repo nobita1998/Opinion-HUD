@@ -9,7 +9,10 @@
       "Bash(ZHIPU_KEY=dummy SKIP_AI=1 python3:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(.venv/bin/pip install:*)",
+      "Bash(DEBUG=1 python:*)",
+      "Bash(DEBUG=1 .venv/bin/python:*)"
     ],
     "deny": [],
     "ask": []

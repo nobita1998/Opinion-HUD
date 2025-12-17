@@ -33,7 +33,11 @@ Load unpacked extension in Chrome:
 ### Backend Data Pipeline (see prd.md sections 4.1-4.3)
 
 **Market Fetching:**
-- API endpoint: `http://opinionanalytics.xyz:10001/api/markets`
+- API endpoint: `https://proxy.opinion.trade:8443/openapi/market`
+- Authentication: Requires `apikey` header with `OPINION_API_KEY`
+- Pagination strategy: First fetch with `limit=1` to get total count, then fetch all with `limit=20` per page (API max limit)
+- Query params: `status=activated`, `sortBy=5` (24h volume), `limit`, `offset`
+- Response structure: `{ errno: 0, errmsg: "", result: { total: N, list: [...] } }`
 - Must recursively flatten `childMarkets` - nested markets are treated as independent tradable entries
 - Filter: `statusEnum == "Activated"` AND `cutoffAt` > current timestamp
 - Field mapping: `marketId`, `title` (prefer `marketTitle` over `title`), `yesLabel`/`noLabel`, `volume`, construct URL as `https://opinion.trade/market/{marketId}`

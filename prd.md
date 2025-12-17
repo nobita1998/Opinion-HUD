@@ -7,7 +7,7 @@
 | **Date** | 2023-10-27 |
 | **Target Platform** | Google Chrome Extension (Desktop) |
 | **Core AI Model** | Zhipu GLM-4.6 (Flash/Plus) |
-| **Data Source** | Opinion Analytics API (`http://opinionanalytics.xyz:10001`) |
+| **Data Source** | Opinion Analytics API (`https://proxy.opinion.trade:8443/openapi/market`) |
 
 ---
 
@@ -44,7 +44,28 @@
 **运行频率：** 每 30 分钟
 
 ### 4.1 数据获取 (Data Fetching)
-* **API Endpoint:** `GET http://opinionanalytics.xyz:10001/api/markets`
+* **API Endpoint:** `GET https://proxy.opinion.trade:8443/openapi/market`
+* **Authentication:** 需要在 HTTP Header 中添加 `apikey: {OPINION_API_KEY}`
+* **Query Parameters:**
+    * `status=activated` - 仅获取激活状态的市场
+    * `sortBy=5` - 按 24h 交易量排序
+    * `limit` - 每页返回数量(最大 20，API 限制)
+    * `offset` - 分页偏移量
+* **Response Structure:**
+    ```json
+    {
+      "errno": 0,
+      "errmsg": "",
+      "result": {
+        "total": 167,
+        "list": [...]
+      }
+    }
+    ```
+* **分页策略:**
+    1. 先用 `limit=1` 请求获取 `result.total` (总市场数)
+    2. 计算需要的页数: `pages = ⌈total / 20⌉`
+    3. 循环请求，每次 `limit=20`，`offset` 递增（API 限制每页最多 20 条）
 * **处理逻辑：**
     1.  **扁平化处理 (Recursion):** 必须检查每个 Market 对象的 `childMarkets` 字段。如果存在子市场，需递归提取，将其视为独立的可交易条目。
     2.  **状态过滤 (Filter):** 仅保留 `statusEnum == "Activated"` 的市场。

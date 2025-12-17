@@ -32,6 +32,7 @@
         - name: Build data.json
           env:
             ZHIPU_KEY: ${{ secrets.ZHIPU_KEY }}
+            OPINION_API_KEY: ${{ secrets.OPINION_API_KEY }}
             SLEEP_SECONDS: "0.5"
             DISABLE_INCREMENTAL: "1"
             ZHIPU_TIMEOUT_SECONDS: "60"

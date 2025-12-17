@@ -6,7 +6,7 @@ import requests
 import zhipuai
 
 
-OPINION_API_URL = "http://opinionanalytics.xyz:10001/api/markets"
+OPINION_API_URL = "https://proxy.opinion.trade:8443/openapi/market"
 FRONTEND_BASE_URL = "https://opinion.trade"
 MODEL_NAME = "glm-4-flash"
 REF_PARAM = "opinion_hud"
@@ -17,6 +17,8 @@ ZHIPU_MAX_RETRIES = int(os.environ.get("ZHIPU_MAX_RETRIES", "2"))
 DISABLE_INCREMENTAL = os.environ.get("DISABLE_INCREMENTAL", "").strip().lower() in ("1", "true", "yes", "y", "on")
 PREVIOUS_DATA_URL = os.environ.get("PREVIOUS_DATA_URL", "").strip() or None
 ALLOW_LEGACY_REUSE = os.environ.get("ALLOW_LEGACY_REUSE", "1").strip().lower() in ("1", "true", "yes", "y", "on")
+OPINION_API_KEY = os.environ.get("OPINION_API_KEY", "").strip()
+OPINION_LIMIT_PER_PAGE = 20  # API max limit per page
 
 
 def _now_epoch_seconds():
@@ -88,12 +90,94 @@ def _flatten_markets(node):
 
 
 def fetch_all_markets():
-    response = requests.get(OPINION_API_URL, timeout=30)
+    """Fetch all markets from Opinion API using pagination.
+
+    Strategy:
+    1. First request with limit=1 to get total count
+    2. Calculate pages needed
+    3. Fetch all markets with limit=20 per page (API max limit)
+    """
+    if not OPINION_API_KEY:
+        print("[warn] OPINION_API_KEY not set, API may fail", flush=True)
+
+    headers = {}
+    if OPINION_API_KEY:
+        headers["apikey"] = OPINION_API_KEY
+
+    # Step 1: Get total count with limit=1
+    params = {
+        "status": "activated",
+        "sortBy": "5",  # Sort by 24h volume
+        "limit": 1,
+        "offset": 0
+    }
+
+    if DEBUG:
+        print(f"[debug] fetching total count from {OPINION_API_URL}", flush=True)
+
+    response = requests.get(OPINION_API_URL, headers=headers, params=params, timeout=30)
     response.raise_for_status()
     payload = response.json()
-    if isinstance(payload, dict) and isinstance(payload.get("data"), list):
-        payload = payload["data"]
-    return _flatten_markets(payload)
+
+    # Debug: print response for troubleshooting
+    if DEBUG:
+        print(f"[debug] API response status: {response.status_code}", flush=True)
+        import json
+        print(f"[debug] API response: {json.dumps(payload, indent=2)[:500]}", flush=True)
+
+    # Parse new API response structure (errno: 0 means success)
+    if not isinstance(payload, dict):
+        raise ValueError(f"Opinion API error: Invalid response format")
+
+    errno = payload.get("errno")
+    if errno != 0:
+        error_msg = payload.get("errmsg", "Unknown error")
+        raise ValueError(f"Opinion API error: {error_msg}")
+
+    result = payload.get("result", {})
+    total = result.get("total", 0)
+
+    if total == 0:
+        print("[warn] no markets found from Opinion API", flush=True)
+        return []
+
+    print(f"[info] found {total} total markets, fetching with pagination...", flush=True)
+
+    # Step 2: Calculate pages needed
+    pages = (total + OPINION_LIMIT_PER_PAGE - 1) // OPINION_LIMIT_PER_PAGE
+
+    # Step 3: Fetch all markets
+    all_markets = []
+    for page in range(pages):
+        offset = page * OPINION_LIMIT_PER_PAGE
+        params["limit"] = OPINION_LIMIT_PER_PAGE
+        params["offset"] = offset
+
+        if DEBUG:
+            print(f"[debug] fetching page {page + 1}/{pages} (offset={offset})", flush=True)
+
+        response = requests.get(OPINION_API_URL, headers=headers, params=params, timeout=30)
+        response.raise_for_status()
+        payload = response.json()
+
+        if not isinstance(payload, dict) or payload.get("errno") != 0:
+            error_msg = payload.get("errmsg", "Unknown error") if isinstance(payload, dict) else "Invalid response"
+            print(f"[warn] failed to fetch page {page + 1}: {error_msg}", flush=True)
+            continue
+
+        market_list = payload.get("result", {}).get("list", [])
+        all_markets.extend(market_list)
+
+        print(f"[info] page {page + 1}/{pages}: received {len(market_list)} markets (total so far: {len(all_markets)})", flush=True)
+
+        # Small delay between requests to be nice to the API
+        if page < pages - 1:
+            time.sleep(0.1)
+
+    print(f"[info] fetched {len(all_markets)} markets from {pages} pages", flush=True)
+
+    # Flatten markets (handle nested childMarkets if any)
+    return _flatten_markets(all_markets)
 
 
 def _market_id(market):
