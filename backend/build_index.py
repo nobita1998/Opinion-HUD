@@ -353,6 +353,12 @@ _ENTITY_STOP_TERMS = {
     "web3",
     "market",
     "markets",
+    "team",
+    "human",
+    "ai",
+    "teamai",
+    "teamhuman",
+    "humanvsai",
     "price",
     "defi",
     "token",
@@ -406,7 +412,15 @@ def _is_valid_entity_term(normalized_term):
     if not term:
         return False
 
+    # Entities must be single-token terms (no spaces).
+    if " " in term:
+        return False
+
     if term in _ENTITY_STOP_TERMS:
+        return False
+
+    # Disallow obvious outcome tokens like "teamai"/"teamhuman".
+    if term.startswith("team") and len(term) <= 12:
         return False
 
     tokens = term.split()
@@ -728,10 +742,11 @@ def generate_keywords(api_key, title, rules, context=None):
         "  * entityGroups is a list of groups; ALL groups are required (AND)\n"
         "  * each group is a list of synonyms; ANY term in the group can satisfy it (OR)\n"
         "  * Put the CANONICAL form FIRST in each group\n"
+        "  * Each term in entityGroups MUST be a SINGLE WORD token (no spaces)\n"
         "  * Use 1-3 groups; keep each group to 1-4 terms\n"
         "  * Entities MUST be unique identifiers: people, orgs, products, tickers (e.g., 'CZ', 'Binance', 'ETH', 'Fed')\n"
         "  * Entities MUST come ONLY from the market title\n"
-        "  * Entities MUST NOT include generic terms ('crypto', 'price', 'market', 'ATH', 'FDV', 'launch', 'IPO', 'rate decision')\n"
+        "  * Entities MUST NOT include generic terms ('crypto', 'price', 'market', 'ATH', 'FDV', 'launch', 'IPO', 'rate decision', 'team', 'human', 'ai')\n"
         "  * Entities MUST NOT include dates, numbers, time windows, months unless they are the core subject\n"
         "  * If the market is about a single asset/ticker, output ONLY that ticker as the sole group\n"
         "  * If the market is about multiple key actors, include ALL as separate required groups\n"
@@ -742,7 +757,7 @@ def generate_keywords(api_key, title, rules, context=None):
         "Entity examples:\n"
         '- Title: "Will ETH all time high by 2025-12-31?" -> entityGroups: [["ETH"]]\n'
         '- Title: "Will CZ return Binance before 2025?" -> entityGroups: [["CZ"], ["Binance"]]\n'
-        '- Title: "US Fed Rate Decision in January?" -> entityGroups: [["Fed", "FOMC", "Federal Reserve"]]\n'
+        '- Title: "US Fed Rate Decision in January?" -> entityGroups: [["Fed", "FOMC", "FederalReserve"]]\n'
         "\n"
         "Example output format:\n"
         '{\n'
@@ -813,7 +828,7 @@ def build_data(markets, api_key, previous_data=None):
 
     processed = 0
     kept = 0
-    duplicate_market_ids = 0
+    duplicate_event_market_ids = 0
     skipped = {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
@@ -901,41 +916,28 @@ def build_data(markets, api_key, previous_data=None):
 
         event_id = parent_event_market_id or (str(parent_event_id).strip() if parent_event_id else None) or market_id
         event_title = parent_event_title or title
-
-        if parent_event_title and parent_event_title != title and parent_event_title not in title:
-            display_title = f"{parent_event_title} - {title}"
-        else:
-            display_title = title
+        event_market_id = event_id
 
         yes_label = market.get("yesLabel")
         no_label = market.get("noLabel")
         volume = _market_volume(market)
-        url = f"{FRONTEND_BASE_URL}/market/{market_id}?ref={REF_PARAM}"
+        # Treat events as the primary "market" for the extension.
+        # Child option markets (e.g. "Team AI") should not become standalone
+        # entries in `markets_out`; instead we aggregate to `event_market_id`.
+        url = f"{FRONTEND_BASE_URL}/market/{event_market_id}?ref={REF_PARAM}"
 
         rules_text = _market_rules(market)
         option_title = title if parent_event_title else None
 
-        if market_id in markets_out:
-            duplicate_market_ids += 1
-            if DEBUG:
-                existing = markets_out.get(market_id) or {}
-                print(
-                    f"[warn] duplicate market_id={market_id}: "
-                    f"existing_title={existing.get('title')!r} new_title={display_title!r}",
-                    flush=True,
-                )
-
-        markets_out[market_id] = {
-            "title": display_title,
-            "url": url,
-            "volume": volume,
-            "labels": {"yesLabel": yes_label, "noLabel": no_label},
-            "eventId": event_id,
-            "eventTitle": event_title,
-            "optionTitle": option_title,
-            "parentEventId": (str(parent_event_id).strip() if parent_event_id else None),
-            "parentEventMarketId": parent_event_market_id,
-        }
+        if event_market_id in markets_out:
+            duplicate_event_market_ids += 1
+        else:
+            markets_out[event_market_id] = {
+                "title": event_title,
+                "url": url,
+                "volume": 0.0,
+                "labels": {"yesLabel": None, "noLabel": None},
+            }
 
         event_bucket = event_accumulator.get(event_id)
         if not event_bucket:
@@ -967,11 +969,19 @@ def build_data(markets, api_key, previous_data=None):
         if volume > event_bucket["bestMarketVolume"]:
             event_bucket["bestMarketId"] = market_id
             event_bucket["bestMarketVolume"] = volume
+            event_bucket["bestLabels"] = {"yesLabel": yes_label, "noLabel": no_label}
 
-    if duplicate_market_ids:
+        # Update aggregated event-level market output.
+        if event_market_id in markets_out:
+            markets_out[event_market_id]["volume"] = max(markets_out[event_market_id].get("volume") or 0.0, volume)
+            # Prefer labels from the current best-volume option.
+            if event_bucket.get("bestMarketId") == market_id:
+                markets_out[event_market_id]["labels"] = {"yesLabel": yes_label, "noLabel": no_label}
+
+    if duplicate_event_market_ids and DEBUG:
         print(
-            f"[warn] encountered {duplicate_market_ids} duplicate market IDs while building output; "
-            f"kept={kept} unique_markets={len(markets_out)}",
+            f"[debug] encountered {duplicate_event_market_ids} repeated event market IDs while building output; "
+            f"kept_market_nodes={kept} unique_event_markets={len(markets_out)}",
             flush=True,
         )
 
@@ -1168,8 +1178,9 @@ def build_data(markets, api_key, previous_data=None):
 
         events_out[event_id] = {
             "title": bucket.get("title") or event_id,
-            "marketIds": bucket.get("marketIds") or [],
-            "bestMarketId": bucket.get("bestMarketId"),
+            "marketIds": [event_id],
+            "bestMarketId": event_id,
+            "bestLabels": bucket.get("bestLabels") or None,
             "keywords": normalized,
             "entities": normalized_entities,
             "entityGroups": normalized_entity_groups,
@@ -1179,17 +1190,17 @@ def build_data(markets, api_key, previous_data=None):
             "reused": reused,
         }
 
-        for market_id in events_out[event_id]["marketIds"]:
-            if market_id in markets_out:
-                markets_out[market_id]["keywords"] = normalized
-                markets_out[market_id]["entities"] = normalized_entities
-                markets_out[market_id]["entityGroups"] = normalized_entity_groups
+        if event_id in markets_out:
+            markets_out[event_id]["keywords"] = normalized
+            markets_out[event_id]["entities"] = normalized_entities
+            markets_out[event_id]["entityGroups"] = normalized_entity_groups
+            if events_out[event_id].get("bestLabels"):
+                markets_out[event_id]["labels"] = events_out[event_id]["bestLabels"]
 
         # Add both keywords and entities to index
         for nkw in normalized:
             event_inverted.setdefault(nkw, set()).add(event_id)
-            for market_id in events_out[event_id]["marketIds"]:
-                inverted.setdefault(nkw, set()).add(market_id)
+            inverted.setdefault(nkw, set()).add(event_id)
 
         # Also add entity terms (AND/OR groups) to index so entity-only matching works.
         entity_terms = set()
@@ -1199,8 +1210,7 @@ def build_data(markets, api_key, previous_data=None):
                     entity_terms.add(term)
         for term in entity_terms:
             event_inverted.setdefault(term, set()).add(event_id)
-            for market_id in events_out[event_id]["marketIds"]:
-                inverted.setdefault(term, set()).add(market_id)
+            inverted.setdefault(term, set()).add(event_id)
 
         if sleep_seconds > 0 and (not reused) and (not SKIP_AI):
             time.sleep(sleep_seconds)
@@ -1216,13 +1226,14 @@ def build_data(markets, api_key, previous_data=None):
             "model": MODEL_NAME,
             "ref": REF_PARAM,
             "debug": DEBUG,
-            "counts": {
-                "seen": processed,
-                "kept": kept,
-                "keywords": len(index_out),
-                "events": event_stats,
-                "skipped": skipped,
-                "ai": ai_stats,
+                "counts": {
+                    "seen": processed,
+                    "kept": kept,
+                    "markets": len(markets_out),
+                    "keywords": len(index_out),
+                    "events": event_stats,
+                    "skipped": skipped,
+                    "ai": ai_stats,
             },
         },
         "events": events_out,
