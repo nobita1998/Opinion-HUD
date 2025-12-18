@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import time
 
 import requests
@@ -12,6 +13,9 @@ MODEL_NAME = "glm-4-flash"
 REF_PARAM = "opinion_hud"
 DEBUG = os.environ.get("DEBUG", "").strip().lower() in ("1", "true", "yes", "y", "on")
 SKIP_AI = os.environ.get("SKIP_AI", "").strip().lower() in ("1", "true", "yes", "y", "on")
+# When enabled, never re-run the LLM for existing events; reuse previous outputs when available,
+# otherwise fall back to deterministic extraction.
+INCREMENTAL_ONLY = os.environ.get("INCREMENTAL_ONLY", "1").strip().lower() in ("1", "true", "yes", "y", "on")
 ZHIPU_TIMEOUT_SECONDS = float(os.environ.get("ZHIPU_TIMEOUT_SECONDS", "30"))
 ZHIPU_MAX_RETRIES = int(os.environ.get("ZHIPU_MAX_RETRIES", "2"))
 DISABLE_INCREMENTAL = os.environ.get("DISABLE_INCREMENTAL", "").strip().lower() in ("1", "true", "yes", "y", "on")
@@ -443,6 +447,46 @@ def _is_valid_entity_term(normalized_term):
     return True
 
 
+def _fallback_entity_groups_from_title(title):
+    raw = str(title or "").strip()
+    if not raw:
+        return []
+
+    lower = raw.lower()
+    groups = []
+
+    if ("fomc" in lower) or ("federal reserve" in lower) or re.search(r"\bfed\b", lower):
+        groups.append(["fed", "fomc", "federalreserve"])
+    if ("bitcoin" in lower) or re.search(r"\bbtc\b", lower):
+        groups.append(["btc", "bitcoin"])
+    if ("ethereum" in lower) or re.search(r"\beth\b", lower):
+        groups.append(["eth", "ethereum"])
+    if "binance" in lower:
+        groups.append(["binance"])
+    if re.search(r"\bcz\b", lower) or ("changpeng zhao" in lower):
+        groups.append(["cz"])
+
+    seen = set()
+    for g in groups:
+        for t in g:
+            seen.add(t)
+
+    # Add up to 2 additional brand-like tokens from the title.
+    for token in _simple_tokenize(raw):
+        token = str(token or "").lstrip("$#")
+        term = _normalize_keyword(token)
+        if not term or term in seen:
+            continue
+        if not _is_valid_entity_term(term):
+            continue
+        groups.append([term])
+        seen.add(term)
+        if len(groups) >= 3:
+            break
+
+    return groups
+
+
 def _simple_tokenize(text):
     if not text:
         return []
@@ -840,6 +884,7 @@ def build_data(markets, api_key, previous_data=None):
     }
     ai_stats = {
         "incremental": (previous_data is not None) and (not DISABLE_INCREMENTAL),
+        "incrementalOnly": INCREMENTAL_ONLY,
         "reused": 0,
         "legacyReused": 0,
         "calls": 0,
@@ -1009,7 +1054,10 @@ def build_data(markets, api_key, previous_data=None):
             if isinstance(prev_keywords, list) and prev_keywords:
                 prev_sig_core = prev.get("sigCore")
                 prev_sig_full = prev.get("sigFull") or prev.get("sig") or prev.get("signature")
-                if has_entity_groups and ((prev_sig_core and str(prev_sig_core) == sig_core) or (prev_sig_full and str(prev_sig_full) == sig_full)):
+                if INCREMENTAL_ONLY and has_entity_groups:
+                    if str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
+                        reusable = True
+                elif has_entity_groups and ((prev_sig_core and str(prev_sig_core) == sig_core) or (prev_sig_full and str(prev_sig_full) == sig_full)):
                     reusable = True
                 elif has_entity_groups and ALLOW_LEGACY_REUSE and (not prev_sig_core) and (not prev_sig_full):
                     if str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
@@ -1018,7 +1066,7 @@ def build_data(markets, api_key, previous_data=None):
         if reusable:
             planned_reuse += 1
         else:
-            if SKIP_AI:
+            if SKIP_AI or INCREMENTAL_ONLY:
                 planned_skip += 1
             else:
                 planned_llm += 1
@@ -1076,6 +1124,13 @@ def build_data(markets, api_key, previous_data=None):
                     if isinstance(prev_entities, list):
                         entities = [str(e) for e in prev_entities if str(e).strip()]
                     reused = True
+            elif INCREMENTAL_ONLY and has_entity_groups and isinstance(prev_keywords, list) and prev_keywords:
+                if str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
+                    keywords = [str(k) for k in prev_keywords if str(k).strip()]
+                    entity_groups = prev_entity_groups
+                    if isinstance(prev_entities, list):
+                        entities = [str(e) for e in prev_entities if str(e).strip()]
+                    reused = True
             elif ALLOW_LEGACY_REUSE and isinstance(prev_keywords, list) and prev_keywords:
                 if (not prev_sig_core) and (not prev_sig_full) and str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
                     if has_entity_groups:
@@ -1089,11 +1144,11 @@ def build_data(markets, api_key, previous_data=None):
         if reused:
             ai_stats["reused"] += 1
         else:
-            if SKIP_AI:
+            if SKIP_AI or INCREMENTAL_ONLY or not api_key:
                 ai_stats["skipped"] += 1
                 keywords = _fallback_keywords(bucket.get("title") or event_id, option_titles, rules_text)
-                entities = []
-                entity_groups = []
+                entity_groups = _fallback_entity_groups_from_title(bucket.get("title") or event_id)
+                entities = [g[0] for g in entity_groups if isinstance(g, list) and g]
             else:
                 ai_stats["calls"] += 1
                 try:
@@ -1246,7 +1301,7 @@ def build_data(markets, api_key, previous_data=None):
 def main():
     print("[info] starting build_index", flush=True)
     api_key = os.environ.get("ZHIPU_KEY")
-    if not api_key:
+    if not api_key and not (SKIP_AI or INCREMENTAL_ONLY):
         print("[error] Missing ZHIPU_KEY environment variable.", flush=True)
         raise ValueError("ZHIPU_KEY is not set")
 
@@ -1254,6 +1309,8 @@ def main():
 
     if SKIP_AI:
         print("[info] SKIP_AI enabled: using fallback keywords (no LLM calls)", flush=True)
+    if INCREMENTAL_ONLY:
+        print("[info] INCREMENTAL_ONLY enabled: reuse previous outputs; no LLM calls", flush=True)
 
     if DEBUG:
         print(
