@@ -587,6 +587,7 @@ function computeMatchForTweetText(tweetText) {
         const existing = targetBest.get(eventId);
         if (!existing) {
           // First keyword match for this event
+          const contributed = score > 0 || entityAddCount > 0;
           targetBest.set(eventId, {
             score: score + entityAddScore,
             keyword: entry.keywordPlain || keyword,
@@ -598,6 +599,7 @@ function computeMatchForTweetText(tweetText) {
             matchCount: 1,
             baseScore: Math.max(score, entityAddCount ? entityScore : 0),
             matchedKeywords: new Set([keyword]),
+            matchedSignals: new Set(contributed ? [keyword] : []),
           });
         } else {
           if (entityAddCount) {
@@ -612,10 +614,13 @@ function computeMatchForTweetText(tweetText) {
           // Only add bonus if this is a NEW keyword (not already matched)
           if (!existing.matchedKeywords.has(keyword)) {
             const MULTI_KEYWORD_BONUS = 0.12;
-            existing.score += score * MULTI_KEYWORD_BONUS;
+            if (score > 0) {
+              existing.score += score * MULTI_KEYWORD_BONUS;
+              existing.reasons.push(...reasons.map(r => `+${r}`));
+            }
             existing.matchCount += 1;
-            existing.reasons.push(...reasons.map(r => `+${r}`));
             existing.matchedKeywords.add(keyword);
+            if (score > 0 || entityAddCount > 0) existing.matchedSignals.add(keyword);
 
             if (score > existing.baseScore) {
               existing.baseScore = score;
@@ -645,6 +650,7 @@ function computeMatchForTweetText(tweetText) {
         const existing = targetBest.get(marketId);
         if (!existing) {
           // First keyword match for this market
+          const contributed = score > 0 || entityAddCount > 0;
           targetBest.set(marketId, {
             score: score + entityAddScore,
             keyword: entry.keywordPlain || keyword,
@@ -656,6 +662,7 @@ function computeMatchForTweetText(tweetText) {
             matchCount: 1,
             baseScore: Math.max(score, entityAddCount ? entityScore : 0),
             matchedKeywords: new Set([keyword]),
+            matchedSignals: new Set(contributed ? [keyword] : []),
           });
         } else {
           if (entityAddCount) {
@@ -670,10 +677,13 @@ function computeMatchForTweetText(tweetText) {
           // Only add bonus if this is a NEW keyword (not already matched)
           if (!existing.matchedKeywords.has(keyword)) {
             const MULTI_KEYWORD_BONUS = 0.12;
-            existing.score += score * MULTI_KEYWORD_BONUS;
+            if (score > 0) {
+              existing.score += score * MULTI_KEYWORD_BONUS;
+              existing.reasons.push(...reasons.map(r => `+${r}`));
+            }
             existing.matchCount += 1;
-            existing.reasons.push(...reasons.map(r => `+${r}`));
             existing.matchedKeywords.add(keyword);
+            if (score > 0 || entityAddCount > 0) existing.matchedSignals.add(keyword);
 
             if (score > existing.baseScore) {
               existing.baseScore = score;
@@ -719,6 +729,7 @@ function computeMatchForTweetText(tweetText) {
           topicId: item.id,
           isMulti: true,
           url,
+          matchedKeywords: Array.from(item.matchedSignals || item.matchedKeywords || []).sort(),
         };
       })
       .filter(Boolean)
@@ -729,6 +740,7 @@ function computeMatchForTweetText(tweetText) {
     return {
       mode: "event",
       keyword: best.keyword || null,
+      matchedKeywords: Array.from(best.matchedSignals || best.matchedKeywords || []).sort(),
       title: event.title || "Event",
       markets,
       primaryUrl,
@@ -765,6 +777,7 @@ function computeMatchForTweetText(tweetText) {
       topicId,
       isMulti,
       url: buildOpinionTradeUrl({ topicId, isMulti }),
+      matchedKeywords: Array.from(item.matchedSignals || item.matchedKeywords || []).sort(),
     });
 
     if (primaryTopicId == null && String(item.id) === String(primaryMarketId)) {
@@ -788,6 +801,7 @@ function computeMatchForTweetText(tweetText) {
   return {
     mode: "market",
     keyword: best.keyword || null,
+    matchedKeywords: Array.from(best.matchedSignals || best.matchedKeywords || []).sort(),
     title: primaryTitle || "Market",
     markets,
     primaryUrl,

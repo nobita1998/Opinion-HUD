@@ -394,6 +394,7 @@ function computeTopMatchesForText(data, matcher, text, { topN = 5, threshold = 0
         const existing = targetBest.get(eventId);
         if (!existing) {
           // First keyword match for this event
+          const contributed = score > 0 || entityAddCount > 0;
           targetBest.set(eventId, {
             score: score + entityAddScore,
             keyword: entry.keywordPlain || keyword,
@@ -405,6 +406,7 @@ function computeTopMatchesForText(data, matcher, text, { topN = 5, threshold = 0
             matchCount: 1,
             baseScore: Math.max(score, entityAddCount ? entityScore : 0),
             matchedKeywords: new Set([keyword]),
+            matchedSignals: new Set(contributed ? [keyword] : []),
           });
         } else {
           if (entityAddCount) {
@@ -419,10 +421,13 @@ function computeTopMatchesForText(data, matcher, text, { topN = 5, threshold = 0
           // Only add bonus if this is a NEW keyword (not already matched)
           if (!existing.matchedKeywords.has(keyword)) {
             const MULTI_KEYWORD_BONUS = 0.12;
-            existing.score += score * MULTI_KEYWORD_BONUS;
+            if (score > 0) {
+              existing.score += score * MULTI_KEYWORD_BONUS;
+              existing.reasons.push(...reasons.map(r => `+${r}`));
+            }
             existing.matchCount += 1;
-            existing.reasons.push(...reasons.map(r => `+${r}`));
             existing.matchedKeywords.add(keyword);
+            if (score > 0 || entityAddCount > 0) existing.matchedSignals.add(keyword);
 
             if (score > existing.baseScore) {
               existing.baseScore = score;
@@ -452,6 +457,7 @@ function computeTopMatchesForText(data, matcher, text, { topN = 5, threshold = 0
         const existing = targetBest.get(marketId);
         if (!existing) {
           // First keyword match for this market
+          const contributed = score > 0 || entityAddCount > 0;
           targetBest.set(marketId, {
             score: score + entityAddScore,
             keyword: entry.keywordPlain || keyword,
@@ -463,6 +469,7 @@ function computeTopMatchesForText(data, matcher, text, { topN = 5, threshold = 0
             matchCount: 1,
             baseScore: Math.max(score, entityAddCount ? entityScore : 0),
             matchedKeywords: new Set([keyword]),
+            matchedSignals: new Set(contributed ? [keyword] : []),
           });
         } else {
           if (entityAddCount) {
@@ -477,10 +484,13 @@ function computeTopMatchesForText(data, matcher, text, { topN = 5, threshold = 0
           // Only add bonus if this is a NEW keyword (not already matched)
           if (!existing.matchedKeywords.has(keyword)) {
             const MULTI_KEYWORD_BONUS = 0.12;
-            existing.score += score * MULTI_KEYWORD_BONUS;
+            if (score > 0) {
+              existing.score += score * MULTI_KEYWORD_BONUS;
+              existing.reasons.push(...reasons.map(r => `+${r}`));
+            }
             existing.matchCount += 1;
-            existing.reasons.push(...reasons.map(r => `+${r}`));
             existing.matchedKeywords.add(keyword);
+            if (score > 0 || entityAddCount > 0) existing.matchedSignals.add(keyword);
 
             if (score > existing.baseScore) {
               existing.baseScore = score;
@@ -524,6 +534,7 @@ function computeTopMatchesForText(data, matcher, text, { topN = 5, threshold = 0
           score: r.score,
           keyword: r.keyword,
           reasons: r.reasons,
+          matchedKeywords: Array.from(r.matchedSignals || r.matchedKeywords || []).sort(),
           mode: "event",
           id: r.eventId,
           title: event.title,
@@ -538,6 +549,7 @@ function computeTopMatchesForText(data, matcher, text, { topN = 5, threshold = 0
         score: r.score,
         keyword: r.keyword,
         reasons: r.reasons,
+        matchedKeywords: Array.from(r.matchedSignals || r.matchedKeywords || []).sort(),
         mode: "market",
         id: r.marketId,
         title: market.title,
@@ -645,6 +657,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       for (const r of top.results) {
         const pass = r.score >= threshold ? "PASS" : "----";
         lines.push(`${pass}  Score: ${r.score.toFixed(2)}  Keyword: ${r.keyword}`);
+        if (Array.isArray(r.matchedKeywords) && r.matchedKeywords.length) {
+          lines.push(`Matched: ${r.matchedKeywords.join(", ")}`);
+        }
         lines.push(`Reason: ${r.reasons.join(", ")}`);
         lines.push(`ID: ${r.id}`);
         lines.push(`Title: ${r.title}`);
@@ -713,6 +728,9 @@ document.addEventListener("DOMContentLoaded", async () => {
           lines.push(`  ✓ MATCHED (score: ${r.score.toFixed(2)})`);
           lines.push(`    ${r.title}`);
           lines.push(`    Keyword: ${r.keyword} | Reason: ${r.reasons.join(", ")}`);
+          if (Array.isArray(r.matchedKeywords) && r.matchedKeywords.length) {
+            lines.push(`    Matched: ${r.matchedKeywords.join(", ")}`);
+          }
         } else {
           notMatched++;
           lines.push(`  ✗ NO MATCH`);
@@ -720,6 +738,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             const r = top.results[0];
             lines.push(`    Best candidate (${r.score.toFixed(2)}): ${r.title}`);
             lines.push(`    Keyword: ${r.keyword} | Reason: ${r.reasons.join(", ")}`);
+            if (Array.isArray(r.matchedKeywords) && r.matchedKeywords.length) {
+              lines.push(`    Matched: ${r.matchedKeywords.join(", ")}`);
+            }
           } else if (top.reason) {
             lines.push(`    Reason: ${top.reason}`);
           }
