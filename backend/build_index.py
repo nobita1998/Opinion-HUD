@@ -234,19 +234,21 @@ def _extract_json_array(text):
 
 
 def _extract_keywords_and_entities(text):
-    """Extract both keywords and entities from AI response.
+    """Extract keywords plus entity groups from AI response.
 
     Expected format:
     {
       "keywords": ["keyword1", "keyword2", ...],
-      "entities": ["Entity1", "Entity2"]
+      "entityGroups": [["entity_or_1", "entity_or_2"], ["another_entity"]]
     }
 
-    Fallback to legacy array format if object not found.
+    Backwards compatibility:
+    - Legacy object format with "entities": ["A", "B"] is treated as AND of singletons: [["A"], ["B"]]
+    - Legacy array format is treated as keywords only.
     """
     cleaned = (text or "").strip()
     if not cleaned:
-        return {"keywords": [], "entities": []}
+        return {"keywords": [], "entities": [], "entityGroups": []}
 
     # Try to extract JSON from markdown code blocks
     if "```" in cleaned:
@@ -276,11 +278,12 @@ def _extract_keywords_and_entities(text):
         if DEBUG:
             preview = cleaned[:500].replace("\n", "\\n")
             print(f"[warn] LLM output was not valid JSON; preview={preview}", flush=True)
-        return {"keywords": [], "entities": []}
+        return {"keywords": [], "entities": [], "entityGroups": []}
 
     # Handle new object format
     if isinstance(data, dict):
         keywords_raw = data.get("keywords", [])
+        entity_groups_raw = data.get("entityGroups") or data.get("entity_groups") or data.get("ENTITY_GROUPS")
         entities_raw = data.get("entities", [])
 
         keywords = []
@@ -291,15 +294,38 @@ def _extract_keywords_and_entities(text):
                     if kw:
                         keywords.append(kw)
 
-        entities = []
-        if isinstance(entities_raw, list):
+        entity_groups = []
+        if isinstance(entity_groups_raw, list):
+            for group in entity_groups_raw:
+                if isinstance(group, list):
+                    g = []
+                    for item in group:
+                        if isinstance(item, str):
+                            term = item.strip()
+                            if term:
+                                g.append(term)
+                    if g:
+                        entity_groups.append(g)
+                elif isinstance(group, str):
+                    term = group.strip()
+                    if term:
+                        entity_groups.append([term])
+
+        # Legacy: "entities": ["A", "B"] means AND of required entities.
+        if not entity_groups and isinstance(entities_raw, list):
             for item in entities_raw:
                 if isinstance(item, str):
                     ent = item.strip()
                     if ent:
-                        entities.append(ent)
+                        entity_groups.append([ent])
 
-        return {"keywords": keywords, "entities": entities}
+        entities = []
+        for group in entity_groups:
+            head = (group[0] if group else "").strip()
+            if head and head not in entities:
+                entities.append(head)
+
+        return {"keywords": keywords, "entities": entities, "entityGroups": entity_groups}
 
     # Handle legacy array format (backwards compatibility)
     if isinstance(data, list):
@@ -309,9 +335,9 @@ def _extract_keywords_and_entities(text):
                 kw = item.strip()
                 if kw:
                     keywords.append(kw)
-        return {"keywords": keywords, "entities": []}
+        return {"keywords": keywords, "entities": [], "entityGroups": []}
 
-    return {"keywords": [], "entities": []}
+    return {"keywords": [], "entities": [], "entityGroups": []}
 
 
 def _normalize_keyword(keyword):
@@ -320,6 +346,87 @@ def _normalize_keyword(keyword):
     if kw.startswith('"') and kw.endswith('"') and len(kw) >= 2:
         kw = kw[1:-1].strip()
     return kw
+
+
+_ENTITY_STOP_TERMS = {
+    "crypto",
+    "web3",
+    "market",
+    "markets",
+    "price",
+    "defi",
+    "token",
+    "airdrop",
+    "launch",
+    "ipo",
+    "tge",
+    "fdv",
+    "ath",
+    "all time high",
+    "rate decision",
+    "fed rate decision",
+    "interest rate",
+    "interest rates",
+    "rate cut",
+    "rate hike",
+}
+
+_ENTITY_MONTHS = {
+    "january",
+    "february",
+    "march",
+    "april",
+    "may",
+    "june",
+    "july",
+    "august",
+    "september",
+    "october",
+    "november",
+    "december",
+}
+
+_ENTITY_TIME_WORDS = {
+    "before",
+    "after",
+    "until",
+    "till",
+    "by",
+    "within",
+}
+
+_ENTITY_ALLOW_SHORT = {
+    # CZ is a common 2-letter identifier on X.
+    "cz",
+}
+
+
+def _is_valid_entity_term(normalized_term):
+    term = _normalize_keyword(normalized_term)
+    if not term:
+        return False
+
+    if term in _ENTITY_STOP_TERMS:
+        return False
+
+    tokens = term.split()
+    if any(tok in _ENTITY_MONTHS for tok in tokens):
+        return False
+
+    if any(tok in _ENTITY_TIME_WORDS for tok in tokens):
+        return False
+
+    if term.isdigit() and len(term) == 4:
+        return False
+
+    if len(term) < 3 and term not in _ENTITY_ALLOW_SHORT:
+        return False
+
+    # Drop date-like strings that include a year and punctuation.
+    if any(ch.isdigit() for ch in term) and ("," in term or "-" in term or "/" in term):
+        return False
+
+    return True
 
 
 def _simple_tokenize(text):
@@ -597,40 +704,67 @@ def _zhipu_chat_completion(api_key, messages):
     return str(resp)
 
 
-def generate_keywords(api_key, title, rules):
+def generate_keywords(api_key, title, rules, context=None):
     """Generate keywords and entities for a prediction market.
 
     Returns:
         dict with keys:
         - "keywords": list of keyword strings
-        - "entities": list of 1-2 core entity strings
+        - "entities": list of 1-3 canonical entity strings (for display/debug)
+        - "entityGroups": list of OR-groups; all groups required (AND)
     """
     system = (
-        "You generate high-quality matching keywords and core entities for a prediction market. "
+        "You generate high-quality matching keywords and strict entity requirements for a prediction market. "
         "Return ONLY a JSON object (no prose). "
-        "Include keywords (general terms, synonyms, slang) and entities (specific brand/project names)."
+        "Include keywords (general terms, synonyms, slang) and entities (specific proper nouns/tickers)."
     )
     user = (
         f"Market title: {title}\n"
         f"Market rules: {_truncate(rules, 1200)}\n\n"
         "Rules:\n"
-        "- Output must be a JSON object with 'keywords' and 'entities' fields.\n"
+        "- Output must be a JSON object with 'keywords' and 'entityGroups' fields (no extra fields).\n"
         "- keywords: 10-15 search terms (entities, synonyms, abbreviations, slang)\n"
-        "- entities: 1-2 CORE identifiers (brand names, project names, specific entities)\n"
-        "  * Entities should be unique identifiers like 'Lighter', 'Kraken', 'Blackpink'\n"
-        "  * Do NOT use generic terms like 'crypto', 'market', 'FDV', 'launch', 'IPO'\n"
-        "  * Extract from the market title, not the rules\n"
+        "- entityGroups: STRICT entity requirements as an AND-of-ORs (CNF)\n"
+        "  * entityGroups is a list of groups; ALL groups are required (AND)\n"
+        "  * each group is a list of synonyms; ANY term in the group can satisfy it (OR)\n"
+        "  * Put the CANONICAL form FIRST in each group\n"
+        "  * Use 1-3 groups; keep each group to 1-4 terms\n"
+        "  * Entities MUST be unique identifiers: people, orgs, products, tickers (e.g., 'CZ', 'Binance', 'ETH', 'Fed')\n"
+        "  * Entities MUST come ONLY from the market title\n"
+        "  * Entities MUST NOT include generic terms ('crypto', 'price', 'market', 'ATH', 'FDV', 'launch', 'IPO', 'rate decision')\n"
+        "  * Entities MUST NOT include dates, numbers, time windows, months unless they are the core subject\n"
+        "  * If the market is about a single asset/ticker, output ONLY that ticker as the sole group\n"
+        "  * If the market is about multiple key actors, include ALL as separate required groups\n"
+        "  * Use canonical short forms: tickers as uppercase (BTC/ETH), names/orgs as commonly used (CZ/Binance)\n"
         "- Prefer short phrases over sentences.\n"
         "- Do not include duplicates.\n"
+        "\n"
+        "Entity examples:\n"
+        '- Title: "Will ETH all time high by 2025-12-31?" -> entityGroups: [["ETH"]]\n'
+        '- Title: "Will CZ return Binance before 2025?" -> entityGroups: [["CZ"], ["Binance"]]\n'
+        '- Title: "US Fed Rate Decision in January?" -> entityGroups: [["Fed", "FOMC", "Federal Reserve"]]\n'
         "\n"
         "Example output format:\n"
         '{\n'
         '  "keywords": ["lighter", "fdv", "market cap", "launch", "tge"],\n'
-        '  "entities": ["Lighter"]\n'
+        '  "entityGroups": [["Lighter"]]\n'
         "}\n"
     )
 
     attempt = 0
+    ctx = context if isinstance(context, dict) else {}
+    ctx_event_id = str(ctx.get("eventId") or "").strip() or None
+    ctx_best_market_id = str(ctx.get("bestMarketId") or "").strip() or None
+    ctx_best_market_url = str(ctx.get("bestMarketUrl") or "").strip() or None
+    ctx_label_parts = []
+    if ctx_event_id:
+        ctx_label_parts.append(f"eventId={ctx_event_id}")
+    if ctx_best_market_id:
+        ctx_label_parts.append(f"bestMarketId={ctx_best_market_id}")
+    if ctx_best_market_url:
+        ctx_label_parts.append(f"url={ctx_best_market_url}")
+    ctx_label = (" " + " ".join(ctx_label_parts)) if ctx_label_parts else ""
+
     while True:
         attempt += 1
         try:
@@ -653,10 +787,19 @@ def generate_keywords(api_key, title, rules):
             raise
         except Exception as exc:
             if attempt >= max(1, ZHIPU_MAX_RETRIES):
-                print(f"[warn] keyword generation failed (final): {exc}", flush=True)
-                return {"keywords": [], "entities": []}
+                safe_title = _truncate(str(title or "").strip(), 160)
+                print(
+                    f"[warn] keyword generation failed (final){ctx_label} title={safe_title!r}: {exc}",
+                    flush=True,
+                )
+                return {"keywords": [], "entities": [], "entityGroups": []}
             sleep_for = min(2.0, 0.5 * attempt)
-            print(f"[warn] keyword generation failed (retrying): {exc}", flush=True)
+            if DEBUG:
+                safe_title = _truncate(str(title or "").strip(), 160)
+                print(
+                    f"[warn] keyword generation failed (retrying){ctx_label} title={safe_title!r}: {exc}",
+                    flush=True,
+                )
             time.sleep(sleep_for)
 
 
@@ -851,12 +994,14 @@ def build_data(markets, api_key, previous_data=None):
         prev = prev_events.get(event_id)
         if isinstance(prev, dict):
             prev_keywords = prev.get("keywords")
+            prev_entity_groups = prev.get("entityGroups") or prev.get("entity_groups")
+            has_entity_groups = isinstance(prev_entity_groups, list) and any(isinstance(g, list) and g for g in prev_entity_groups)
             if isinstance(prev_keywords, list) and prev_keywords:
                 prev_sig_core = prev.get("sigCore")
                 prev_sig_full = prev.get("sigFull") or prev.get("sig") or prev.get("signature")
-                if (prev_sig_core and str(prev_sig_core) == sig_core) or (prev_sig_full and str(prev_sig_full) == sig_full):
+                if has_entity_groups and ((prev_sig_core and str(prev_sig_core) == sig_core) or (prev_sig_full and str(prev_sig_full) == sig_full)):
                     reusable = True
-                elif ALLOW_LEGACY_REUSE and (not prev_sig_core) and (not prev_sig_full):
+                elif has_entity_groups and ALLOW_LEGACY_REUSE and (not prev_sig_core) and (not prev_sig_full):
                     if str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
                         reusable = True
 
@@ -901,10 +1046,13 @@ def build_data(markets, api_key, previous_data=None):
         reused = False
         keywords = []
         entities = []
+        entity_groups = []
         prev = prev_events.get(event_id)
         if isinstance(prev, dict):
             prev_keywords = prev.get("keywords")
             prev_entities = prev.get("entities")
+            prev_entity_groups = prev.get("entityGroups") or prev.get("entity_groups")
+            has_entity_groups = isinstance(prev_entity_groups, list) and any(isinstance(g, list) and g for g in prev_entity_groups)
             prev_sig_core = prev.get("sigCore")
             prev_sig_full = prev.get("sigFull") or prev.get("sig") or prev.get("signature")
             if (
@@ -912,17 +1060,21 @@ def build_data(markets, api_key, previous_data=None):
                 and prev_keywords
                 and ((prev_sig_core and str(prev_sig_core) == sig_core) or (prev_sig_full and str(prev_sig_full) == sig_full))
             ):
-                keywords = [str(k) for k in prev_keywords if str(k).strip()]
-                if isinstance(prev_entities, list):
-                    entities = [str(e) for e in prev_entities if str(e).strip()]
-                reused = True
-            elif ALLOW_LEGACY_REUSE and isinstance(prev_keywords, list) and prev_keywords:
-                if (not prev_sig_core) and (not prev_sig_full) and str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
+                if has_entity_groups:
                     keywords = [str(k) for k in prev_keywords if str(k).strip()]
+                    entity_groups = prev_entity_groups
                     if isinstance(prev_entities, list):
                         entities = [str(e) for e in prev_entities if str(e).strip()]
                     reused = True
-                    ai_stats["legacyReused"] += 1
+            elif ALLOW_LEGACY_REUSE and isinstance(prev_keywords, list) and prev_keywords:
+                if (not prev_sig_core) and (not prev_sig_full) and str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
+                    if has_entity_groups:
+                        keywords = [str(k) for k in prev_keywords if str(k).strip()]
+                        entity_groups = prev_entity_groups
+                        if isinstance(prev_entities, list):
+                            entities = [str(e) for e in prev_entities if str(e).strip()]
+                        reused = True
+                        ai_stats["legacyReused"] += 1
 
         if reused:
             ai_stats["reused"] += 1
@@ -931,21 +1083,40 @@ def build_data(markets, api_key, previous_data=None):
                 ai_stats["skipped"] += 1
                 keywords = _fallback_keywords(bucket.get("title") or event_id, option_titles, rules_text)
                 entities = []
+                entity_groups = []
             else:
                 ai_stats["calls"] += 1
                 try:
-                    result = generate_keywords(api_key, title=bucket.get("title") or event_id, rules=rules_text)
+                    best_market_id = bucket.get("bestMarketId")
+                    best_market_url = (
+                        f"{FRONTEND_BASE_URL}/market/{best_market_id}?ref={REF_PARAM}"
+                        if best_market_id
+                        else None
+                    )
+                    result = generate_keywords(
+                        api_key,
+                        title=bucket.get("title") or event_id,
+                        rules=rules_text,
+                        context={
+                            "eventId": event_id,
+                            "bestMarketId": best_market_id,
+                            "bestMarketUrl": best_market_url,
+                        },
+                    )
                     if isinstance(result, dict):
                         keywords = result.get("keywords", [])
                         entities = result.get("entities", [])
+                        entity_groups = result.get("entityGroups", []) or result.get("entity_groups", [])
                     elif isinstance(result, list):
                         # Backwards compatibility with old array format
                         keywords = result
                         entities = []
+                        entity_groups = []
                 except Exception:
                     ai_stats["errors"] += 1
                     keywords = []
                     entities = []
+                    entity_groups = []
         if not keywords:
             ai_stats["empty"] += 1
         else:
@@ -965,10 +1136,35 @@ def build_data(markets, api_key, previous_data=None):
                 normalized.append(nkw)
 
         normalized_entities = []
-        for ent in entities:
-            nent = _normalize_keyword(ent)
-            if nent and nent not in normalized_entities:
-                normalized_entities.append(nent)
+        normalized_entity_groups = []
+        if isinstance(entity_groups, list) and entity_groups:
+            for group in entity_groups:
+                if not isinstance(group, list):
+                    continue
+                ng = []
+                for term in group:
+                    if not isinstance(term, str):
+                        continue
+                    nterm = _normalize_keyword(term)
+                    if nterm and _is_valid_entity_term(nterm) and nterm not in ng:
+                        ng.append(nterm)
+                if ng:
+                    normalized_entity_groups.append(ng)
+
+        # Backwards compatibility: treat legacy `entities` as AND of singletons.
+        if not normalized_entity_groups and isinstance(entities, list) and entities:
+            for ent in entities:
+                nent = _normalize_keyword(ent)
+                if nent and _is_valid_entity_term(nent):
+                    normalized_entity_groups.append([nent])
+
+        # Canonical entities (for display/debug): first term of each OR-group.
+        seen_entities = set()
+        for group in normalized_entity_groups:
+            head = group[0] if group else ""
+            if head and head not in seen_entities:
+                seen_entities.add(head)
+                normalized_entities.append(head)
 
         events_out[event_id] = {
             "title": bucket.get("title") or event_id,
@@ -976,6 +1172,7 @@ def build_data(markets, api_key, previous_data=None):
             "bestMarketId": bucket.get("bestMarketId"),
             "keywords": normalized,
             "entities": normalized_entities,
+            "entityGroups": normalized_entity_groups,
             "sig": sig_full,
             "sigFull": sig_full,
             "sigCore": sig_core,
@@ -986,6 +1183,7 @@ def build_data(markets, api_key, previous_data=None):
             if market_id in markets_out:
                 markets_out[market_id]["keywords"] = normalized
                 markets_out[market_id]["entities"] = normalized_entities
+                markets_out[market_id]["entityGroups"] = normalized_entity_groups
 
         # Add both keywords and entities to index
         for nkw in normalized:
@@ -993,11 +1191,16 @@ def build_data(markets, api_key, previous_data=None):
             for market_id in events_out[event_id]["marketIds"]:
                 inverted.setdefault(nkw, set()).add(market_id)
 
-        # Also add entities to index (ensures entity-only matching works)
-        for nent in normalized_entities:
-            event_inverted.setdefault(nent, set()).add(event_id)
+        # Also add entity terms (AND/OR groups) to index so entity-only matching works.
+        entity_terms = set()
+        for group in normalized_entity_groups:
+            for term in group:
+                if term:
+                    entity_terms.add(term)
+        for term in entity_terms:
+            event_inverted.setdefault(term, set()).add(event_id)
             for market_id in events_out[event_id]["marketIds"]:
-                inverted.setdefault(nent, set()).add(market_id)
+                inverted.setdefault(term, set()).add(market_id)
 
         if sleep_seconds > 0 and (not reused) and (not SKIP_AI):
             time.sleep(sleep_seconds)

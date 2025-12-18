@@ -14,6 +14,13 @@ const ICON_ATTR = "data-opinion-hud-icon";
 const HOVER_DELAY_MS = 300;
 const MAX_MATCHES_ON_SCREEN = 3;
 
+// These tokens appear in many crypto markets and are too generic to drive ranking.
+// Keep them matchable, but downweight them so more specific entities win.
+const LOW_SIGNAL_TOKENS = new Set(["binance", "btc", "eth"]);
+const LOW_SIGNAL_ENTITY_SCORE = 0.18;
+const LOW_SIGNAL_SCORE_MULTIPLIER = 0.55;
+const DEFAULT_ENTITY_SCORE = 0.5;
+
 const state = {
   data: null,
   matcher: null,
@@ -51,9 +58,14 @@ function isMultiMarket(marketId, market) {
 }
 
 function stripMentions(text) {
+  const keep = state.matcher?.mentionKeepSet || null;
   return String(text || "").replace(
     /(^|\s)@([a-z0-9_]{1,20})\b/gi,
-    (full, lead, handle) => (/(eth|btc)/i.test(handle) ? `${lead} ` : full)
+    (full, lead, handle) => {
+      const h = String(handle || "").toLowerCase();
+      if (keep && keep.has(h)) return full;
+      return `${lead} `;
+    }
   );
 }
 
@@ -83,20 +95,62 @@ function buildMatcher(data) {
   const index = data.index || {};
 
   const keywordToTargets = [];
+  const entityRequiredMaskById = new Map(); // id -> bitmask of required groups (AND)
+  const entityTermMaskById = new Map(); // id -> Map(term -> bitmask of groups it satisfies)
+  const mentionKeepSet = new Set(); // single-token entity terms to preserve from @mention stripping
+
+  function ingestEntityGroups(id, groupsRaw, entitiesRaw) {
+    let groups = [];
+
+    if (Array.isArray(groupsRaw)) {
+      for (const group of groupsRaw) {
+        if (Array.isArray(group)) {
+          const g = group
+            .map((t) => String(t || "").toLowerCase().trim())
+            .filter(Boolean);
+          if (g.length) groups.push(g);
+        } else if (typeof group === "string") {
+          const t = String(group).toLowerCase().trim();
+          if (t) groups.push([t]);
+        }
+      }
+    } else if (Array.isArray(entitiesRaw)) {
+      // Backwards compatibility: entities: ["CZ","Binance"] means AND of required entities.
+      for (const e of entitiesRaw) {
+        const t = String(e || "").toLowerCase().trim();
+        if (t) groups.push([t]);
+      }
+    }
+
+    groups = groups.filter((g) => Array.isArray(g) && g.length);
+    if (!groups.length) return;
+
+    const groupCount = Math.min(groups.length, 20);
+    const requiredMask = (1 << groupCount) - 1;
+    entityRequiredMaskById.set(String(id), requiredMask);
+
+    const termToMask = new Map();
+    for (let i = 0; i < groupCount; i++) {
+      const bit = 1 << i;
+      const group = groups[i];
+      for (const term of group) {
+        if (!term) continue;
+        termToMask.set(term, (termToMask.get(term) || 0) | bit);
+
+        // Keep common entity handles from being stripped as @mentions.
+        // Allow short special cases like "cz".
+        if (!term.includes(" ") && (term.length >= 3 || term === "cz")) {
+          mentionKeepSet.add(term);
+        }
+      }
+    }
+    entityTermMaskById.set(String(id), termToMask);
+  }
+
   if (eventIndex && typeof eventIndex === "object") {
-    // Build entity lookup for event mode
-    const eventEntityMap = new Map(); // keyword -> Set of eventIds where it's an entity
     const events = data.events || {};
     for (const [eventId, event] of Object.entries(events)) {
-      const entities = event.entities || [];
-      for (const entity of entities) {
-        const entityNorm = String(entity).toLowerCase().trim();
-        if (!entityNorm) continue;
-        if (!eventEntityMap.has(entityNorm)) {
-          eventEntityMap.set(entityNorm, new Set());
-        }
-        eventEntityMap.get(entityNorm).add(String(eventId));
-      }
+      ingestEntityGroups(eventId, event.entityGroups, event.entities);
     }
 
     for (const [keyword, eventIds] of Object.entries(eventIndex)) {
@@ -105,32 +159,17 @@ function buildMatcher(data) {
       const keywordPlain = normalizeForMatch(keywordLower).plain;
       const keywordTokens = keywordPlain ? keywordPlain.split(" ") : [];
 
-      // Check if this keyword is an entity for any of these events
-      const entityEventIds = eventEntityMap.get(keywordLower);
-      const isEntity = entityEventIds && eventIds.some(id => entityEventIds.has(String(id)));
-
       keywordToTargets.push({
         keyword: keywordLower,
         keywordPlain,
         keywordTokens,
         eventIds,
-        isEntity: !!isEntity
       });
     }
   } else {
-    // Build entity lookup for market mode
-    const marketEntityMap = new Map(); // keyword -> Set of marketIds where it's an entity
     const markets = data.markets || {};
     for (const [marketId, market] of Object.entries(markets)) {
-      const entities = market.entities || [];
-      for (const entity of entities) {
-        const entityNorm = String(entity).toLowerCase().trim();
-        if (!entityNorm) continue;
-        if (!marketEntityMap.has(entityNorm)) {
-          marketEntityMap.set(entityNorm, new Set());
-        }
-        marketEntityMap.get(entityNorm).add(String(marketId));
-      }
+      ingestEntityGroups(marketId, market.entityGroups, market.entities);
     }
 
     for (const [keyword, marketIds] of Object.entries(index)) {
@@ -139,16 +178,11 @@ function buildMatcher(data) {
       const keywordPlain = normalizeForMatch(keywordLower).plain;
       const keywordTokens = keywordPlain ? keywordPlain.split(" ") : [];
 
-      // Check if this keyword is an entity for any of these markets
-      const entityMarketIds = marketEntityMap.get(keywordLower);
-      const isEntity = entityMarketIds && marketIds.some(id => entityMarketIds.has(String(id)));
-
       keywordToTargets.push({
         keyword: keywordLower,
         keywordPlain,
         keywordTokens,
         marketIds,
-        isEntity: !!isEntity
       });
     }
   }
@@ -166,6 +200,9 @@ function buildMatcher(data) {
     mode: eventIndex ? "event" : "market",
     firstTokenMap,
     keywordToTargetsCount: keywordToTargets.length,
+    entityRequiredMaskById,
+    entityTermMaskById,
+    mentionKeepSet,
   };
 }
 
@@ -173,6 +210,16 @@ function clamp01(x) {
   if (x < 0) return 0;
   if (x > 1) return 1;
   return x;
+}
+
+function countBits32(n) {
+  let v = n >>> 0;
+  let c = 0;
+  while (v) {
+    v &= v - 1;
+    c += 1;
+  }
+  return c;
 }
 
 function createIcon() {
@@ -372,16 +419,7 @@ function scoreEntry({ raw, plain, tokens }, entry) {
 
   const keywordPlain = entry.keywordPlain || "";
   const keywordTokens = entry.keywordTokens || [];
-  const isEntity = entry.isEntity || false;
-
-  // ENTITY MATCH - guarantees display, sorted by additional keywords
-  // Entity match ensures market is shown (score >= threshold)
-  // Multi-keyword bonus helps rank when multiple markets match
-  if (isEntity && keywordPlain && plain.includes(keywordPlain)) {
-    score = 0.50; // Exactly at threshold - guarantees display
-    reasons.push(`entity:${keywordPlain}`);
-    return { score: clamp01(score), reasons };
-  }
+  const hasLowSignalToken = keywordTokens.some((t) => LOW_SIGNAL_TOKENS.has(t));
 
   // 1. Exact phrase match (highest score) - but filter generic phrases
   if (keywordPlain && plain.includes(keywordPlain)) {
@@ -475,7 +513,30 @@ function scoreEntry({ raw, plain, tokens }, entry) {
     }
   }
 
+  if (hasLowSignalToken && score > 0) {
+    score *= LOW_SIGNAL_SCORE_MULTIPLIER;
+    reasons.push("low_signal");
+  }
+
   return { score: clamp01(score), reasons };
+}
+
+function isEntryMentioned({ plain, tokens }, entry) {
+  const keywordPlain = entry.keywordPlain || "";
+  const keywordTokens = (entry.keywordTokens || []).filter(Boolean);
+  if (!keywordTokens.length) return false;
+
+  if (keywordTokens.length === 1) {
+    return tokens.has(keywordTokens[0]);
+  }
+
+  if (keywordPlain && plain.includes(keywordPlain)) return true;
+
+  let present = 0;
+  for (const t of keywordTokens) {
+    if (tokens.has(t)) present += 1;
+  }
+  return present === keywordTokens.length && tokensNear(plain, keywordTokens);
 }
 
 function computeMatchForTweetText(tweetText) {
@@ -492,38 +553,62 @@ function computeMatchForTweetText(tweetText) {
 
   // No threshold - entity matches go to pool, score is for sorting only
   const targetBest = new Map();
-  const targetHasEntity = new Map(); // Track which targets matched an entity
+  const matchedEntityMaskById = new Map(); // id -> bitmask of satisfied groups
+  const requiredEntityMaskById = state.matcher.entityRequiredMaskById || new Map();
+  const entityTermMaskById = state.matcher.entityTermMaskById || new Map();
 
   for (const entry of candidates) {
     const keyword = entry.keyword;
     if (!keyword || keyword.length < 2) continue;
 
     const { score, reasons } = scoreEntry({ raw, plain, tokens }, entry);
-    const isEntityMatch = entry.isEntity || false;
+    const mentioned = isEntryMentioned({ plain, tokens }, entry);
+    const hasLowSignalToken = (entry.keywordTokens || []).some((t) => LOW_SIGNAL_TOKENS.has(t));
+    const entityScore = hasLowSignalToken ? LOW_SIGNAL_ENTITY_SCORE : DEFAULT_ENTITY_SCORE;
 
     if (state.matcher.mode === "event") {
       for (const id of entry.eventIds || []) {
         const eventId = String(id);
-
-        // Track entity matches
-        if (isEntityMatch && score > 0) {
-          targetHasEntity.set(eventId, true);
+        let entityAddCount = 0;
+        if (mentioned) {
+          const termMask = entityTermMaskById.get(eventId)?.get(keyword) || 0;
+          if (termMask) {
+            const prevMask = matchedEntityMaskById.get(eventId) || 0;
+            const newBits = termMask & ~prevMask;
+            if (newBits) {
+              const nextMask = prevMask | newBits;
+              matchedEntityMaskById.set(eventId, nextMask);
+              entityAddCount = countBits32(newBits);
+            }
+          }
         }
+        const entityAddScore = entityAddCount ? entityScore * entityAddCount : 0;
 
         const existing = targetBest.get(eventId);
         if (!existing) {
           // First keyword match for this event
           targetBest.set(eventId, {
-            score,
+            score: score + entityAddScore,
             keyword: entry.keywordPlain || keyword,
-            reasons: [...reasons],
+            reasons: entityAddCount
+              ? [...reasons, hasLowSignalToken ? `entity_low:${keyword}` : `entity:${keyword}`]
+              : [...reasons],
             entry,
             id: eventId,
             matchCount: 1,
-            baseScore: score,
+            baseScore: Math.max(score, entityAddCount ? entityScore : 0),
             matchedKeywords: new Set([keyword]),
           });
         } else {
+          if (entityAddCount) {
+            existing.score += entityAddScore;
+            existing.reasons.push(hasLowSignalToken ? `+entity_low:${keyword}` : `+entity:${keyword}`);
+            if (entityScore > existing.baseScore) {
+              existing.baseScore = entityScore;
+              existing.keyword = entry.keywordPlain || keyword;
+            }
+          }
+
           // Only add bonus if this is a NEW keyword (not already matched)
           if (!existing.matchedKeywords.has(keyword)) {
             const MULTI_KEYWORD_BONUS = 0.12;
@@ -542,26 +627,46 @@ function computeMatchForTweetText(tweetText) {
     } else {
       for (const id of entry.marketIds || []) {
         const marketId = String(id);
-
-        // Track entity matches
-        if (isEntityMatch && score > 0) {
-          targetHasEntity.set(marketId, true);
+        let entityAddCount = 0;
+        if (mentioned) {
+          const termMask = entityTermMaskById.get(marketId)?.get(keyword) || 0;
+          if (termMask) {
+            const prevMask = matchedEntityMaskById.get(marketId) || 0;
+            const newBits = termMask & ~prevMask;
+            if (newBits) {
+              const nextMask = prevMask | newBits;
+              matchedEntityMaskById.set(marketId, nextMask);
+              entityAddCount = countBits32(newBits);
+            }
+          }
         }
+        const entityAddScore = entityAddCount ? entityScore * entityAddCount : 0;
 
         const existing = targetBest.get(marketId);
         if (!existing) {
           // First keyword match for this market
           targetBest.set(marketId, {
-            score,
+            score: score + entityAddScore,
             keyword: entry.keywordPlain || keyword,
-            reasons: [...reasons],
+            reasons: entityAddCount
+              ? [...reasons, hasLowSignalToken ? `entity_low:${keyword}` : `entity:${keyword}`]
+              : [...reasons],
             entry,
             id: marketId,
             matchCount: 1,
-            baseScore: score,
+            baseScore: Math.max(score, entityAddCount ? entityScore : 0),
             matchedKeywords: new Set([keyword]),
           });
         } else {
+          if (entityAddCount) {
+            existing.score += entityAddScore;
+            existing.reasons.push(hasLowSignalToken ? `+entity_low:${keyword}` : `+entity:${keyword}`);
+            if (entityScore > existing.baseScore) {
+              existing.baseScore = entityScore;
+              existing.keyword = entry.keywordPlain || keyword;
+            }
+          }
+
           // Only add bonus if this is a NEW keyword (not already matched)
           if (!existing.matchedKeywords.has(keyword)) {
             const MULTI_KEYWORD_BONUS = 0.12;
@@ -582,10 +687,14 @@ function computeMatchForTweetText(tweetText) {
 
   if (targetBest.size === 0) return null;
 
-  // Filter: only keep targets that matched at least one entity
-  const entityMatches = Array.from(targetBest.values()).filter(item =>
-    targetHasEntity.get(item.id)
-  );
+  // Filter: only keep targets that satisfied all required entity groups:
+  // (a OR b) AND (c OR d) ...
+  const entityMatches = Array.from(targetBest.values()).filter((item) => {
+    const requiredMask = requiredEntityMaskById.get(item.id) || 0;
+    if (!requiredMask) return false;
+    const matchedMask = matchedEntityMaskById.get(item.id) || 0;
+    return (matchedMask & requiredMask) === requiredMask;
+  });
 
   if (entityMatches.length === 0) return null;
 

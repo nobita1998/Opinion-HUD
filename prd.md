@@ -65,7 +65,14 @@
     * 核心实体 (Entity): e.g., "Bitcoin", "Ethereum".
     * 同义词/代号 (Alias): e.g., "BTC", "ETH".
     * **行业黑话/俚语 (Slang):** e.g., "Orange Man" (Trump), "Corn" (BTC).
-* **Output:** 纯 JSON 字符串数组。
+* **Output:** 纯 JSON 对象（无多余文字）：
+    ```json
+    {
+      "keywords": ["..."],
+      "entityGroups": [["fed", "fomc", "federal reserve"], ["binance"], ["cz"]]
+    }
+    ```
+    * `entityGroups` 为 **与/或** 规则：每个 group 内是“或”(OR)，groups 之间是“与”(AND)。
 
 ### 4.3 索引构建 (Index Building)
 * 构建 **倒排索引 (Inverted Index)**：`{ "keyword": ["market_id_1", "market_id_2"] }`。
@@ -92,6 +99,7 @@
 * **Matching:** 读取文本 -> 转换为小写 -> 本地正则匹配 -> 获取 Market ID。
 
 ### 5.3 匹配策略
+* **Entity Gate:** 只有当推文满足该市场/事件的全部 `entityGroups`（AND-of-OR）时才展示。
 * **多词优先:** 如果文本同时匹配 "Trump" 和 "Trump wins PA"，优先展示 "Trump wins PA" (更长/更具体的关键词)。
 * **去重:** 同一屏幕内，同一市场 ID 的图标最多出现 3 次。
 
