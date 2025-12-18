@@ -58,14 +58,9 @@ function isMultiMarket(marketId, market) {
 }
 
 function stripMentions(text) {
-  const keep = state.matcher?.mentionKeepSet || null;
   return String(text || "").replace(
     /(^|\s)@([a-z0-9_]{1,20})\b/gi,
-    (full, lead, handle) => {
-      const h = String(handle || "").toLowerCase();
-      if (keep && keep.has(h)) return full;
-      return `${lead} `;
-    }
+    (_full, lead, handle) => `${lead}${handle}`
   );
 }
 

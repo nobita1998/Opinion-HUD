@@ -31,12 +31,7 @@ function normalizeForMatch(text) {
 }
 
 function stripMentions(text, mentionKeepSet) {
-  const keep = mentionKeepSet || null;
-  return String(text || "").replace(/(^|\s)@([a-z0-9_]{1,20})\b/gi, (full, lead, handle) => {
-    const h = String(handle || "").toLowerCase();
-    if (keep && keep.has(h)) return full;
-    return `${lead} `;
-  });
+  return String(text || "").replace(/(^|\s)@([a-z0-9_]{1,20})\b/gi, (_full, lead, handle) => `${lead}${handle}`);
 }
 
 function tokenize(text) {
