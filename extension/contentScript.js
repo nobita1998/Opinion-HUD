@@ -6,6 +6,7 @@ const SELECTORS = {
   tweetText: 'div[data-testid="tweetText"]',
   article: "article",
   actionGroup: 'div[role="group"]',
+  moreMenuButton: 'button[data-testid="caret"], div[data-testid="caret"]',
 };
 
 const SCANNED_ATTR = "data-opinion-scanned";
@@ -27,7 +28,51 @@ const state = {
   observer: null,
   hoverTimer: null,
   activeHud: null,
+  invalidated: false,
 };
+
+function isExtensionContextInvalidated(err) {
+  const msg = err?.message ? String(err.message) : String(err || "");
+  return /Extension context invalidated/i.test(msg);
+}
+
+function handleInvalidation(err) {
+  if (!isExtensionContextInvalidated(err)) return false;
+  state.invalidated = true;
+  try {
+    state.observer?.disconnect();
+  } catch {
+    // ignore
+  }
+  try {
+    removeHud();
+  } catch {
+    // ignore
+  }
+  return true;
+}
+
+window.addEventListener(
+  "error",
+  (e) => {
+    const err = e?.error || e?.message;
+    if (!isExtensionContextInvalidated(err)) return;
+    handleInvalidation(err);
+    e.preventDefault?.();
+  },
+  true
+);
+
+window.addEventListener(
+  "unhandledrejection",
+  (e) => {
+    const err = e?.reason;
+    if (!isExtensionContextInvalidated(err)) return;
+    handleInvalidation(err);
+    e.preventDefault?.();
+  },
+  true
+);
 
 function normalizeText(text) {
   return String(text || "")
@@ -221,10 +266,11 @@ function createIcon() {
   const icon = document.createElement("div");
   icon.setAttribute(ICON_ATTR, "1");
   icon.setAttribute("role", "button");
+  icon.setAttribute("aria-label", "Opinion HUD");
   icon.tabIndex = 0;
   icon.title = "Opinion HUD - Click to see markets";
 
-  // Inline button in action bar (like other action buttons)
+  // Inline button (styled similar to X's icon buttons)
   icon.style.display = "inline-flex";
   icon.style.alignItems = "center";
   icon.style.justifyContent = "center";
@@ -234,7 +280,8 @@ function createIcon() {
   icon.style.cursor = "pointer";
   icon.style.userSelect = "none";
   icon.style.transition = "background-color 0.2s";
-  icon.style.marginLeft = "auto"; // Push to the right end
+  icon.style.flex = "0 0 auto";
+  icon.style.marginRight = "2px";
 
   icon.innerHTML =
     '<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">' +
@@ -269,9 +316,21 @@ function renderHud(anchorEl, match) {
   const hudWidth = 320;
   const hudHeight = 300; // Approximate height
 
-  // Position HUD above the icon (icon is now in bottom action bar)
-  const top = window.scrollY + rect.top - hudHeight - 8;
-  const left = window.scrollX + rect.right - hudWidth;
+  const margin = 8;
+
+  // Prefer placing below the header icon; fall back to above if needed.
+  let topVp = rect.bottom + margin;
+  if (topVp + hudHeight > window.innerHeight - margin) {
+    topVp = rect.top - hudHeight - margin;
+  }
+  topVp = Math.max(margin, Math.min(topVp, window.innerHeight - hudHeight - margin));
+
+  // Align right edge of HUD with icon, clamped to viewport.
+  let leftVp = rect.right - hudWidth;
+  leftVp = Math.max(margin, Math.min(leftVp, window.innerWidth - hudWidth - margin));
+
+  const top = window.scrollY + topVp;
+  const left = window.scrollX + leftVp;
 
   container.style.top = `${top}px`;
   container.style.left = `${left}px`;
@@ -807,35 +866,55 @@ function findActionBar(articleEl) {
   return articleEl.querySelector(SELECTORS.actionGroup);
 }
 
+function findMoreMenuButton(articleEl) {
+  return articleEl.querySelector(SELECTORS.moreMenuButton);
+}
+
 function attachIconToTweet(tweetTextEl, match) {
+  if (state.invalidated) return;
   const articleEl = tweetTextEl.closest(SELECTORS.article);
   if (!articleEl) return;
 
-  const actionBar = findActionBar(articleEl);
-  if (!actionBar) return;
-
   // Check if icon already exists
-  let icon = actionBar.querySelector(`div[${ICON_ATTR}]`);
+  let icon = articleEl.querySelector(`div[${ICON_ATTR}]`);
   if (!icon) {
     icon = createIcon();
+  }
+
+  const moreBtn = findMoreMenuButton(articleEl);
+  if (moreBtn?.parentElement) {
+    icon.style.marginLeft = "0";
+    moreBtn.insertAdjacentElement("beforebegin", icon);
+  } else {
+    const actionBar = findActionBar(articleEl);
+    if (!actionBar) return;
+    icon.style.marginLeft = "auto"; // Push to the right end in action bar fallback
     actionBar.appendChild(icon);
   }
 
   // Click to toggle HUD
   icon.onclick = (e) => {
-    e.stopPropagation();
-    if (state.activeHud) {
-      removeHud();
-    } else {
-      renderHud(icon, match);
+    try {
+      e.stopPropagation();
+      if (state.activeHud) {
+        removeHud();
+      } else {
+        renderHud(icon, match);
+      }
+    } catch (err) {
+      if (!handleInvalidation(err)) throw err;
     }
   };
 
   // Also support hover
   icon.onmouseenter = () => {
-    if (state.hoverTimer) window.clearTimeout(state.hoverTimer);
-    if (!state.activeHud) {
-      state.hoverTimer = window.setTimeout(() => renderHud(icon, match), HOVER_DELAY_MS);
+    try {
+      if (state.hoverTimer) window.clearTimeout(state.hoverTimer);
+      if (!state.activeHud) {
+        state.hoverTimer = window.setTimeout(() => renderHud(icon, match), HOVER_DELAY_MS);
+      }
+    } catch (err) {
+      if (!handleInvalidation(err)) throw err;
     }
   };
   icon.onmouseleave = () => {
@@ -845,8 +924,16 @@ function attachIconToTweet(tweetTextEl, match) {
 }
 
 function scanTweetTextNode(tweetTextEl) {
+  if (state.invalidated) return;
   if (!(tweetTextEl instanceof HTMLElement)) return;
-  if (tweetTextEl.getAttribute(SCANNED_ATTR) === "true") return;
+  if (tweetTextEl.getAttribute(SCANNED_ATTR) === "true") {
+    const articleEl = tweetTextEl.closest(SELECTORS.article);
+    if (articleEl && !articleEl.querySelector(`div[${ICON_ATTR}]`)) {
+      tweetTextEl.removeAttribute(SCANNED_ATTR);
+    } else {
+      return;
+    }
+  }
   tweetTextEl.setAttribute(SCANNED_ATTR, "true");
 
   const text = tweetTextEl.innerText || tweetTextEl.textContent || "";
@@ -857,42 +944,65 @@ function scanTweetTextNode(tweetTextEl) {
 }
 
 function scanAll() {
+  if (state.invalidated) return;
   const nodes = document.querySelectorAll(SELECTORS.tweetText);
   for (const node of nodes) scanTweetTextNode(node);
 }
 
 async function loadDataFromStorage() {
-  const result = await chrome.storage.local.get(STORAGE_KEYS.cachedData);
-  const data = result[STORAGE_KEYS.cachedData];
-  if (!data) return null;
-  return data;
+  try {
+    const result = await chrome.storage.local.get(STORAGE_KEYS.cachedData);
+    const data = result[STORAGE_KEYS.cachedData];
+    if (!data) return null;
+    return data;
+  } catch (err) {
+    if (handleInvalidation(err)) return null;
+    throw err;
+  }
 }
 
 async function ensureData() {
-  const data = await loadDataFromStorage();
-  if (data) return data;
-
   try {
-    const resp = await chrome.runtime.sendMessage({ type: "opinionHud.refresh" });
-    if (resp?.ok) return await loadDataFromStorage();
-  } catch {
-    // ignore
+    const data = await loadDataFromStorage();
+    if (data) return data;
+
+    try {
+      const resp = await chrome.runtime.sendMessage({ type: "opinionHud.refresh" });
+      if (resp?.ok) return await loadDataFromStorage();
+    } catch (err) {
+      if (handleInvalidation(err)) return null;
+      // ignore refresh failures
+    }
+    return null;
+  } catch (err) {
+    if (handleInvalidation(err)) return null;
+    throw err;
   }
-  return null;
 }
 
 function startObserver() {
+  if (state.invalidated) return;
   if (state.observer) state.observer.disconnect();
-  state.observer = new MutationObserver(() => scanAll());
+  state.observer = new MutationObserver(() => {
+    try {
+      scanAll();
+    } catch (err) {
+      if (!handleInvalidation(err)) throw err;
+    }
+  });
   state.observer.observe(document.body, { childList: true, subtree: true });
 }
 
 async function main() {
-  state.data = await ensureData();
-  if (!state.data) return;
-  state.matcher = buildMatcher(state.data);
-  startObserver();
-  scanAll();
+  try {
+    state.data = await ensureData();
+    if (!state.data || state.invalidated) return;
+    state.matcher = buildMatcher(state.data);
+    startObserver();
+    scanAll();
+  } catch (err) {
+    if (!handleInvalidation(err)) throw err;
+  }
 }
 
 main();

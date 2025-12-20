@@ -9,7 +9,7 @@ import zhipuai
 
 OPINION_API_URL = os.environ.get("OPINION_API_URL", "").strip() or "http://opinion.api.predictscan.dev:10001/api/markets"
 FRONTEND_BASE_URL = "https://opinion.trade"
-MODEL_NAME = "glm-4-flash"
+MODEL_NAME = "GLM-4.6"
 REF_PARAM = "opinion_hud"
 DEBUG = os.environ.get("DEBUG", "").strip().lower() in ("1", "true", "yes", "y", "on")
 SKIP_AI = os.environ.get("SKIP_AI", "").strip().lower() in ("1", "true", "yes", "y", "on")
@@ -379,6 +379,48 @@ _ENTITY_STOP_TERMS = {
     "interest rates",
     "rate cut",
     "rate hike",
+    "yes",
+    "no",
+    "other",
+    "resolution",
+    "settlement",
+    "settled",
+    "increase",
+    "decrease",
+    "no change",
+    "nochange",
+    "unchanged",
+    "hold",
+    "winner",
+    "champion",
+    "acquire",
+    "acquired",
+    "acquirer",
+    "acquisition",
+    "buyout",
+    "takeover",
+    "closing",
+    "close",
+    "deal",
+    "announced",
+    "announce",
+    "official",
+    "announcement",
+    "officialannouncement",
+    "developer",
+    "company",
+    "brand",
+    "investor",
+    "buyer",
+    "seller",
+    "market cap",
+    "marketcap",
+    "valuation",
+    "ticker",
+    "exchange",
+    "nasdaq",
+    "nyse",
+    "sec",
 }
 
 _ENTITY_MONTHS = {
@@ -394,6 +436,18 @@ _ENTITY_MONTHS = {
     "october",
     "november",
     "december",
+    "jan",
+    "feb",
+    "mar",
+    "apr",
+    "jun",
+    "jul",
+    "aug",
+    "sep",
+    "sept",
+    "oct",
+    "nov",
+    "dec",
 }
 
 _ENTITY_TIME_WORDS = {
@@ -410,14 +464,89 @@ _ENTITY_ALLOW_SHORT = {
     "cz",
 }
 
+_GENERIC_ENTITY_TOKENS = {
+    "a",
+    "an",
+    "and",
+    "are",
+    "as",
+    "at",
+    "be",
+    "by",
+    "before",
+    "after",
+    "until",
+    "till",
+    "within",
+    "end",
+    "for",
+    "from",
+    "has",
+    "have",
+    "in",
+    "is",
+    "it",
+    "of",
+    "on",
+    "or",
+    "the",
+    "to",
+    "will",
+    "with",
+    "who",
+    "which",
+    "what",
+    "winner",
+    "champion",
+    "best",
+    "released",
+    "release",
+    "launch",
+    "launched",
+    "announced",
+    "announce",
+    "acquire",
+    "acquired",
+    "acquisition",
+    "buyout",
+    "takeover",
+    "decision",
+    "rate",
+    "rates",
+    "human",
+    "ai",
+    "team",
+    "vs",
+}
+
+_ENTITY_ALLOWED_CONNECTORS = {
+    "a",
+    "an",
+    "and",
+    "of",
+    "the",
+    "to",
+    "in",
+    "on",
+    "for",
+    "at",
+}
+
+_ENTITY_DISALLOWED_QUESTION_WORDS = {
+    "will",
+    "who",
+    "what",
+    "which",
+    "when",
+    "where",
+    "why",
+    "how",
+}
+
 
 def _is_valid_entity_term(normalized_term):
     term = _normalize_keyword(normalized_term)
     if not term:
-        return False
-
-    # Entities must be single-token terms (no spaces).
-    if " " in term:
         return False
 
     if term in _ENTITY_STOP_TERMS:
@@ -428,10 +557,39 @@ def _is_valid_entity_term(normalized_term):
         return False
 
     tokens = term.split()
+    if len(tokens) > 4:
+        return False
+
+    # Disallow obvious question/auxiliary words anywhere in the entity phrase.
+    if any(tok in _ENTITY_DISALLOWED_QUESTION_WORDS for tok in tokens):
+        return False
+
     if any(tok in _ENTITY_MONTHS for tok in tokens):
         return False
 
     if any(tok in _ENTITY_TIME_WORDS for tok in tokens):
+        return False
+
+    if any(tok.isdigit() and len(tok) == 4 for tok in tokens):
+        return False
+
+    # Reject single-token generic words (e.g. "will", "company").
+    if len(tokens) == 1 and tokens[0] in _GENERIC_ENTITY_TOKENS:
+        return False
+
+    # For multi-word entities, allow light connector words, but reject generic content words
+    # that typically encode outcomes or mechanics (e.g. "launch", "acquire", "decision").
+    if len(tokens) >= 2 and any(
+        (tok in _GENERIC_ENTITY_TOKENS) and (tok not in _ENTITY_ALLOWED_CONNECTORS) for tok in tokens
+    ):
+        return False
+
+    # Reject phrases that are composed entirely of generic glue words.
+    if len(tokens) >= 2 and all((tok in _GENERIC_ENTITY_TOKENS) or tok.isdigit() for tok in tokens):
+        return False
+
+    # Reject basis-points tokens like "25bp"/"25bps".
+    if any(re.match(r"^\d{1,3}(?:bp|bps|basispoints?)$", tok) for tok in tokens):
         return False
 
     if term.isdigit() and len(term) == 4:
@@ -440,11 +598,121 @@ def _is_valid_entity_term(normalized_term):
     if len(term) < 3 and term not in _ENTITY_ALLOW_SHORT:
         return False
 
-    # Drop date-like strings that include a year and punctuation.
-    if any(ch.isdigit() for ch in term) and ("," in term or "-" in term or "/" in term):
+    # Drop month+day tokens like "dec31", "dec31st", etc.
+    if any(re.match(r"^(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)\d{1,2}(?:st|nd|rd|th)?$", tok) for tok in tokens):
+        return False
+
+    # Drop date-like strings such as "2025-12-31" or "12/31/2025".
+    if re.search(r"\b(19|20)\d{2}[-/]\d{1,2}[-/]\d{1,2}\b", term):
+        return False
+    if re.search(r"\b\d{1,2}[-/]\d{1,2}[-/](19|20)\d{2}\b", term):
         return False
 
     return True
+
+
+def _compact_alnum(text):
+    return re.sub(r"[^a-z0-9]+", "", str(text or "").lower())
+
+def _allowed_entity_alias_terms_from_title(title):
+    lower = str(title or "").lower()
+    allow = set()
+
+    if ("bitcoin" in lower) or re.search(r"\bbtc\b", lower):
+        allow.update({"btc", "bitcoin"})
+
+    if ("ethereum" in lower) or re.search(r"\beth\b", lower):
+        allow.update({"eth", "ethereum"})
+
+    if ("fomc" in lower) or ("federal reserve" in lower) or re.search(r"\bfed\b", lower):
+        allow.update({"fed", "fomc", "federalreserve", "federal reserve"})
+
+    if "binance" in lower:
+        allow.update({"binance"})
+
+    if re.search(r"\bcz\b", lower) or ("changpeng zhao" in lower) or ("changpengzhao" in lower):
+        allow.update({"cz", "changpengzhao", "changpeng zhao"})
+
+    return allow
+
+
+def _term_is_from_title(term, title, allow_terms):
+    nterm = _normalize_keyword(term)
+    if not nterm:
+        return False
+    if nterm in (allow_terms or set()):
+        return True
+    t_compact = _compact_alnum(title)
+    n_compact = _compact_alnum(nterm)
+    return bool(n_compact and t_compact and n_compact in t_compact)
+
+
+def _normalize_entity_groups(entity_groups, title, allow_terms, max_groups=2, max_terms=4):
+    normalized = []
+    if not isinstance(entity_groups, list) or not entity_groups:
+        return normalized
+
+    for group in entity_groups:
+        if not isinstance(group, list):
+            continue
+        ng = []
+        for term in group:
+            if not isinstance(term, str):
+                continue
+            nterm = _normalize_keyword(term)
+            if not nterm:
+                continue
+            if not _is_valid_entity_term(nterm):
+                continue
+            if not _term_is_from_title(nterm, title, allow_terms):
+                continue
+            if nterm not in ng:
+                ng.append(nterm)
+            if len(ng) >= max_terms:
+                break
+        if ng:
+            normalized.append(ng)
+        if len(normalized) >= max_groups:
+            break
+    return normalized
+
+
+def _collect_invalid_entity_terms(entity_groups, entities, title, allow_terms):
+    bad = []
+
+    def add(term):
+        nterm = _normalize_keyword(term)
+        if not nterm:
+            return
+        if nterm not in bad:
+            bad.append(nterm)
+
+    if isinstance(entity_groups, list):
+        for group in entity_groups:
+            terms = group if isinstance(group, list) else ([group] if isinstance(group, str) else [])
+            for term in terms:
+                if not isinstance(term, str):
+                    continue
+                nterm = _normalize_keyword(term)
+                if not nterm:
+                    continue
+                if not _is_valid_entity_term(nterm):
+                    add(nterm)
+                elif not _term_is_from_title(nterm, title, allow_terms):
+                    add(nterm)
+
+    if isinstance(entities, list):
+        for term in entities:
+            if isinstance(term, str):
+                nterm = _normalize_keyword(term)
+                if not nterm:
+                    continue
+                if not _is_valid_entity_term(nterm):
+                    add(nterm)
+                elif not _term_is_from_title(nterm, title, allow_terms):
+                    add(nterm)
+
+    return bad[:20]
 
 
 def _fallback_entity_groups_from_title(title):
@@ -455,8 +723,29 @@ def _fallback_entity_groups_from_title(title):
     lower = raw.lower()
     groups = []
 
+    if "tiktok" in lower:
+        return [["tiktok"]]
+
+    if "oscars" in lower or "academy awards" in lower:
+        return [["oscars", "academy awards", "oscar"]]
+
+    if "super bowl" in lower:
+        return [["super bowl", "nfl", "super bowl champion"]]
+
+    if "world cup" in lower:
+        return [["world cup", "fifa world cup", "fifa"]]
+
+    if "champions league" in lower:
+        return [["champions league", "uefa champions league", "uefa"]]
+
+    if "premier league" in lower or re.search(r"\bepl\b", lower):
+        return [["premier league", "english premier league", "epl"]]
+
+    if "la liga" in lower or "laliga" in lower:
+        return [["la liga", "laliga"]]
+
     if ("fomc" in lower) or ("federal reserve" in lower) or re.search(r"\bfed\b", lower):
-        groups.append(["fed", "fomc", "federalreserve"])
+        groups.append(["fed", "fomc", "federal reserve", "federalreserve"])
     if ("bitcoin" in lower) or re.search(r"\bbtc\b", lower):
         groups.append(["btc", "bitcoin"])
     if ("ethereum" in lower) or re.search(r"\beth\b", lower):
@@ -464,25 +753,46 @@ def _fallback_entity_groups_from_title(title):
     if "binance" in lower:
         groups.append(["binance"])
     if re.search(r"\bcz\b", lower) or ("changpeng zhao" in lower):
-        groups.append(["cz"])
+        groups.append(["cz", "changpengzhao"])
 
     seen = set()
     for g in groups:
         for t in g:
             seen.add(t)
 
-    # Add up to 2 additional brand-like tokens from the title.
+    candidates = []
     for token in _simple_tokenize(raw):
         token = str(token or "").lstrip("$#")
         term = _normalize_keyword(token)
-        if not term or term in seen:
+        if not term:
             continue
-        if not _is_valid_entity_term(term):
+        candidates.append(term)
+
+    candidates.extend(_title_ngram_keywords(raw, max_phrases=24))
+
+    scored = []
+    for cand in candidates:
+        cand = _normalize_keyword(cand)
+        if not cand or cand in seen:
             continue
-        groups.append([term])
-        seen.add(term)
-        if len(groups) >= 3:
-            break
+        if not _is_valid_entity_term(cand):
+            continue
+        if not _term_is_from_title(cand, raw, allow_terms=set()):
+            continue
+        toks = cand.split()
+        specificity = sum(1 for t in toks if (t not in _GENERIC_ENTITY_TOKENS) and (not t.isdigit()))
+        scored.append((specificity, len(toks), len(cand), cand))
+
+    if scored and len(groups) < 2:
+        scored.sort(
+            key=lambda x: (
+                -x[0],
+                (x[1] if x[0] > 0 else -x[1]),
+                (x[2] if x[0] > 0 else -x[2]),
+            )
+        )
+        best = scored[0][3]
+        groups.append([best])
 
     return groups
 
@@ -509,6 +819,16 @@ def _simple_tokenize(text):
                 nxt_is_ascii_alnum = (48 <= no <= 57) or (65 <= no <= 90) or (97 <= no <= 122)
                 if nxt_is_ascii_alnum:
                     cur.append("/")
+                    continue
+
+        # Keep simple pairs like "gpt-6" together.
+        if ch == "-" and cur:
+            if i + 1 < len(s):
+                nxt = s[i + 1]
+                no = ord(nxt)
+                nxt_is_ascii_alnum = (48 <= no <= 57) or (65 <= no <= 90) or (97 <= no <= 122)
+                if nxt_is_ascii_alnum:
+                    cur.append("-")
                     continue
 
         # Keep "$btc" together.
@@ -772,36 +1092,64 @@ def generate_keywords(api_key, title, rules, context=None):
         - "entityGroups": list of OR-groups; all groups required (AND)
     """
     system = (
-        "You generate high-quality matching keywords and strict entity requirements for a prediction market. "
+        "You generate high-quality matching keywords and strict subject-identifying entity requirements for a prediction market. "
         "Return ONLY a JSON object (no prose). "
-        "Include keywords (general terms, synonyms, slang) and entities (specific proper nouns/tickers)."
+        "Include keywords (general terms, synonyms, slang) and entityGroups (high-precision identifiers)."
     )
+    avoid_terms = None
+    if isinstance(context, dict):
+        avoid_terms = context.get("avoidEntityTerms")
+    avoid_terms_list = []
+    if isinstance(avoid_terms, (list, tuple)):
+        for t in avoid_terms:
+            nt = _normalize_keyword(t)
+            if nt and nt not in avoid_terms_list:
+                avoid_terms_list.append(nt)
+            if len(avoid_terms_list) >= 20:
+                break
+
+    avoid_block = ""
+    if avoid_terms_list:
+        avoid_joined = ", ".join(avoid_terms_list)
+        avoid_block = (
+            "\n"
+            "Previous attempt produced invalid entity terms. DO NOT use any of these in entityGroups:\n"
+            f"- Avoid: {avoid_joined}\n"
+        )
+
     user = (
         f"Market title: {title}\n"
         f"Market rules: {_truncate(rules, 1200)}\n\n"
         "Rules:\n"
         "- Output must be a JSON object with 'keywords' and 'entityGroups' fields (no extra fields).\n"
         "- keywords: 10-15 search terms (entities, synonyms, abbreviations, slang)\n"
-        "- entityGroups: STRICT entity requirements as an AND-of-ORs (CNF)\n"
+        "- entityGroups: STRICT subject-identifying requirements as an AND-of-ORs (CNF)\n"
         "  * entityGroups is a list of groups; ALL groups are required (AND)\n"
         "  * each group is a list of synonyms; ANY term in the group can satisfy it (OR)\n"
         "  * Put the CANONICAL form FIRST in each group\n"
-        "  * Each term in entityGroups MUST be a SINGLE WORD token (no spaces)\n"
-        "  * Use 1-3 groups; keep each group to 1-4 terms\n"
-        "  * Entities MUST be unique identifiers: people, orgs, products, tickers (e.g., 'CZ', 'Binance', 'ETH', 'Fed')\n"
-        "  * Entities MUST come ONLY from the market title\n"
-        "  * Entities MUST NOT include generic terms ('crypto', 'price', 'market', 'ATH', 'FDV', 'launch', 'IPO', 'rate decision', 'team', 'human', 'ai')\n"
-        "  * Entities MUST NOT include dates, numbers, time windows, months unless they are the core subject\n"
-        "  * If the market is about a single asset/ticker, output ONLY that ticker as the sole group\n"
-        "  * If the market is about multiple key actors, include ALL as separate required groups\n"
-        "  * Use canonical short forms: tickers as uppercase (BTC/ETH), names/orgs as commonly used (CZ/Binance)\n"
+        "  * Use 1-2 groups total; keep each group to 1-4 terms\n"
+        "  * Each term should be a short identifier (1-3 words) or a ticker\n"
+        "  * entityGroups terms MUST identify the market's SUBJECT, not its outcomes/options\n"
+        "  * entityGroups terms MUST come from the market title (you may add common aliases like BTC/ETH/Fed for those title entities)\n"
+        "  * NEVER use question/aux words as entities: will, who, what, which, when, where, why, how\n"
+        "  * NEVER use generic/outcome/mechanics terms as entities: yes, no, other, winner, champion, increase, decrease, nochange, hold, resolution, settlement,\n"
+        "    market cap, valuation, launch, ipo, tge, fdv, ath, exchange, nasdaq, nyse, sec\n"
+        "  * DO NOT put candidate options, answer labels, or alternative outcomes into entityGroups\n"
+        "    - Bad: listing teams/nominees/companies as separate required groups for 'Winner' markets\n"
+        "    - Bad: yes/no/other, increase/decrease/nochange, dates, months, times, price thresholds, marketcap/valuation, exchanges, tickers like ETHUSDT\n"
+        "  * If the title is a 'winner/which ...' style multi-option market, use only the overarching subject in the title\n"
+        "    (e.g., Oscars/NBA/Super Bowl/World Cup/TikTok), NOT the candidate list.\n"
+        "  * If the market is about two key subjects that must both be mentioned (e.g., 'X vs Y', 'X acquires Y'), use 2 groups.\n"
+        f"{avoid_block}"
         "- Prefer short phrases over sentences.\n"
         "- Do not include duplicates.\n"
         "\n"
         "Entity examples:\n"
-        '- Title: "Will ETH all time high by 2025-12-31?" -> entityGroups: [["ETH"]]\n'
-        '- Title: "Will CZ return Binance before 2025?" -> entityGroups: [["CZ"], ["Binance"]]\n'
-        '- Title: "US Fed Rate Decision in January?" -> entityGroups: [["Fed", "FOMC", "FederalReserve"]]\n'
+        '- Title: "Will ETH all time high by 2025-12-31?" -> entityGroups: [["ETH", "Ethereum"]]\n'
+        '- Title: "Will CZ return to Binance before 2025?" -> entityGroups: [["CZ", "Changpeng Zhao"], ["Binance"]]\n'
+        '- Title: "US Fed Rate Decision in January?" -> entityGroups: [["Fed", "FOMC", "Federal Reserve"]]\n'
+        '- Title: "Oscars 2026: Best Actor Winner" -> entityGroups: [["Oscars", "Academy Awards", "Oscar"]]\n'
+        '- Title: "Who will acquire TikTok?" -> entityGroups: [["TikTok"]]\n'
         "\n"
         "Example output format:\n"
         '{\n'
@@ -888,6 +1236,7 @@ def build_data(markets, api_key, previous_data=None):
         "reused": 0,
         "legacyReused": 0,
         "calls": 0,
+        "retries": 0,
         "skipped": 0,
         "empty": 0,
         "non_empty": 0,
@@ -908,7 +1257,7 @@ def build_data(markets, api_key, previous_data=None):
 
     event_accumulator = {}
     prev_events = {}
-    if isinstance(previous_data, dict):
+    if (not DISABLE_INCREMENTAL) and isinstance(previous_data, dict):
         prev_events = previous_data.get("events") or {}
         if not isinstance(prev_events, dict):
             prev_events = {}
@@ -1147,20 +1496,25 @@ def build_data(markets, api_key, previous_data=None):
             if SKIP_AI or INCREMENTAL_ONLY or not api_key:
                 ai_stats["skipped"] += 1
                 keywords = _fallback_keywords(bucket.get("title") or event_id, option_titles, rules_text)
-                entity_groups = _fallback_entity_groups_from_title(bucket.get("title") or event_id)
-                entities = [g[0] for g in entity_groups if isinstance(g, list) and g]
+                entity_groups = []
+                entities = []
             else:
                 ai_stats["calls"] += 1
                 try:
+                    title_for_ai = bucket.get("title") or event_id
                     best_market_id = bucket.get("bestMarketId")
                     best_market_url = (
                         f"{FRONTEND_BASE_URL}/market/{best_market_id}?ref={REF_PARAM}"
                         if best_market_id
                         else None
                     )
+                    allow_terms = {_normalize_keyword(t) for t in _allowed_entity_alias_terms_from_title(title_for_ai)}
+
+                    safe_title = _truncate(str(title_for_ai or "").strip(), 160)
+                    print(f"[info] llm: generating entities/keywords for event={event_id} title={safe_title!r}", flush=True)
                     result = generate_keywords(
                         api_key,
-                        title=bucket.get("title") or event_id,
+                        title=title_for_ai,
                         rules=rules_text,
                         context={
                             "eventId": event_id,
@@ -1172,6 +1526,38 @@ def build_data(markets, api_key, previous_data=None):
                         keywords = result.get("keywords", [])
                         entities = result.get("entities", [])
                         entity_groups = result.get("entityGroups", []) or result.get("entity_groups", [])
+                        normalized_try = _normalize_entity_groups(entity_groups, title_for_ai, allow_terms)
+
+                        if not normalized_try:
+                            bad_terms = _collect_invalid_entity_terms(entity_groups, entities, title_for_ai, allow_terms)
+                            ai_stats["retries"] += 1
+                            if bad_terms:
+                                print(
+                                    f"[warn] llm: retrying once for event={event_id} due to invalid entityGroups; avoid={bad_terms}",
+                                    flush=True,
+                                )
+                            else:
+                                print(
+                                    f"[warn] llm: retrying once for event={event_id} due to empty/invalid entityGroups",
+                                    flush=True,
+                                )
+                            retry_ctx = {
+                                "eventId": event_id,
+                                "bestMarketId": best_market_id,
+                                "bestMarketUrl": best_market_url,
+                            }
+                            if bad_terms:
+                                retry_ctx["avoidEntityTerms"] = bad_terms
+                            retry = generate_keywords(
+                                api_key,
+                                title=title_for_ai,
+                                rules=rules_text,
+                                context=retry_ctx,
+                            )
+                            if isinstance(retry, dict):
+                                keywords = retry.get("keywords", keywords)
+                                entities = retry.get("entities", entities)
+                                entity_groups = retry.get("entityGroups", []) or retry.get("entity_groups", [])
                     elif isinstance(result, list):
                         # Backwards compatibility with old array format
                         keywords = result
@@ -1202,6 +1588,8 @@ def build_data(markets, api_key, previous_data=None):
 
         normalized_entities = []
         normalized_entity_groups = []
+        allow_terms = {_normalize_keyword(t) for t in _allowed_entity_alias_terms_from_title(bucket.get("title") or event_id)}
+
         if isinstance(entity_groups, list) and entity_groups:
             for group in entity_groups:
                 if not isinstance(group, list):
@@ -1211,17 +1599,34 @@ def build_data(markets, api_key, previous_data=None):
                     if not isinstance(term, str):
                         continue
                     nterm = _normalize_keyword(term)
-                    if nterm and _is_valid_entity_term(nterm) and nterm not in ng:
+                    if not nterm:
+                        continue
+                    if not _is_valid_entity_term(nterm):
+                        continue
+                    if not _term_is_from_title(nterm, bucket.get("title") or event_id, allow_terms):
+                        continue
+                    if nterm not in ng:
                         ng.append(nterm)
+                    if len(ng) >= 4:
+                        break
                 if ng:
                     normalized_entity_groups.append(ng)
+                if len(normalized_entity_groups) >= 2:
+                    break
 
         # Backwards compatibility: treat legacy `entities` as AND of singletons.
         if not normalized_entity_groups and isinstance(entities, list) and entities:
             for ent in entities:
                 nent = _normalize_keyword(ent)
-                if nent and _is_valid_entity_term(nent):
-                    normalized_entity_groups.append([nent])
+                if not nent:
+                    continue
+                if not _is_valid_entity_term(nent):
+                    continue
+                if not _term_is_from_title(nent, bucket.get("title") or event_id, allow_terms):
+                    continue
+                normalized_entity_groups.append([nent])
+                if len(normalized_entity_groups) >= 2:
+                    break
 
         # Canonical entities (for display/debug): first term of each OR-group.
         seen_entities = set()
@@ -1332,9 +1737,13 @@ def main():
     markets = fetch_all_markets()
     print(f"[info] fetched {len(markets)} market nodes (including parents)", flush=True)
 
-    previous_data = _load_previous_data(output_path)
-    if previous_data is not None:
-        print("[info] incremental: loaded previous data.json for keyword reuse", flush=True)
+    previous_data = None
+    if DISABLE_INCREMENTAL:
+        print("[info] DISABLE_INCREMENTAL enabled: ignoring previous data.json", flush=True)
+    else:
+        previous_data = _load_previous_data(output_path)
+        if previous_data is not None:
+            print("[info] incremental: loaded previous data.json for keyword reuse", flush=True)
     data = build_data(markets, api_key=api_key, previous_data=previous_data)
 
     output_dir = os.path.dirname(output_path)
