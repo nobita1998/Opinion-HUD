@@ -25,16 +25,22 @@ Opinion HUD ("the Extension") is a Chrome browser extension that helps users dis
 - This data is cached locally in your browser using `chrome.storage.local`
 - This data contains only public market information (titles, labels, URLs) - no user data
 
+**Public Market/Order Data (Opinion Analytics API):**
+- When you open the HUD panel, the Extension may request public market metadata and recent trade prices from `https://opinionanalytics.xyz/api`
+- These requests are used only to display option labels and current probabilities in the HUD
+- Tweet content is never sent in these requests
+
 **Local Matching:**
 - All text matching and keyword detection happens **entirely on your device**
 - Tweet content is **never** sent to any server
-- No data leaves your browser during the matching process
+- During matching, no tweet content leaves your browser
 
 ## How We Use Data
 
 1. **Market Data Download:** Fetched every hour to keep market listings up-to-date
 2. **Local Storage:** Market data is cached in your browser for offline access and performance
 3. **Pattern Matching:** Tweet text is analyzed locally to detect relevant keywords and display matching markets
+4. **HUD Price Display:** When the HUD is opened, the Extension fetches public market/order data to show probabilities
 
 ## Third-Party Services
 
@@ -43,6 +49,10 @@ Opinion HUD ("the Extension") is a Chrome browser extension that helps users dis
 - URLs include a referral parameter `?ref=opinion_hud` for attribution
 - Opinion.trade has its own privacy policy governing data collected on their platform
 - We do not control or have access to data you provide to Opinion.trade
+
+### Opinion Analytics API
+- The Extension may call `https://opinionanalytics.xyz/api` to fetch public market metadata and recent trade prices for displaying probabilities
+- These calls do not include tweet content
 
 ### GitHub Pages
 - Market data is hosted on GitHub Pages (a public CDN)
@@ -123,10 +133,15 @@ Opinion HUD（"本扩展"）是一款 Chrome 浏览器扩展，帮助用户在�
 - 此数据使用 `chrome.storage.local` 在浏览器中本地缓存
 - 此数据仅包含公开的市场信息（标题、标签、URL）- 不含用户数据
 
+**公开市场/成交数据（Opinion Analytics API）：**
+- 当你打开 HUD 面板时，扩展可能会从 `https://opinionanalytics.xyz/api` 拉取公开的市场信息与最新成交价
+- 这些请求仅用于在 HUD 中展示选项与概率
+- 请求中不会包含推文内容
+
 **本地匹配：**
 - 所有文本匹配和关键词检测**完全在您的设备上**进行
 - 推文内容**从不**发送到任何服务器
-- 匹配过程中没有数据离开您的浏览器
+- 匹配过程中不会有推文内容离开您的浏览器
 
 ### 数据使用方式
 
@@ -165,3 +180,6 @@ Opinion HUD（"本扩展"）是一款 Chrome 浏览器扩展，帮助用户在�
 ### 同意
 
 通过安装和使用 Opinion HUD，您同意本隐私政策。
+**Opinion Analytics API**
+- 扩展可能会调用 `https://opinionanalytics.xyz/api` 拉取公开市场信息与最新成交价用于展示概率
+- 这些请求不会包含推文内容

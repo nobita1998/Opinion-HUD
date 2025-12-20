@@ -1,4 +1,4 @@
-name: Build and publish data.json
+name: Build and publish site
 
 on:
   push:
@@ -48,9 +48,11 @@ jobs:
         run: |
           mkdir -p site
           cp backend/data.json site/data.json
+          cp index.html site/index.html
+          cp screen.png site/screen.png
+          cp icon-128.png site/icon-128.png
           cp PRIVACY_POLICY.md site/PRIVACY_POLICY.md
           cp privacy.html site/privacy.html
-          cp privacy.html site/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -60,6 +62,10 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4

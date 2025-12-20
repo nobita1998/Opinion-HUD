@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Opinion HUD</title>
+    <meta
+      name="description"
+      content="Opinion HUD 是一个 Chrome 扩展：在 X 网页端的推文附近提示并展示匹配的 Opinion 预测市场，帮助你更快找到相关市场并一键打开交易页。"
+    />
+    <style>
+      :root {
+        --bg0: #0e0e1c;
+        --bg1: #21212e;
+        --fg0: rgba(255, 255, 255, 0.92);
+        --fg1: rgba(255, 255, 255, 0.78);
+        --muted: #a2aebe;
+        --accent: #d4af37;
+        --accent2: #f5d061;
+        --border: rgba(255, 255, 255, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        color: var(--fg0);
+        background: radial-gradient(900px 500px at 20% 5%, rgba(212, 175, 55, 0.18), rgba(14, 14, 28, 0) 60%),
+          radial-gradient(900px 500px at 80% 10%, rgba(245, 208, 97, 0.10), rgba(14, 14, 28, 0) 65%),
+          linear-gradient(180deg, #151524 0%, #0b0b14 100%);
+        min-height: 100vh;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .wrap {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 32px 18px 64px;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 0 22px;
+        text-align: center;
+      }
+
+      .brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .brand img {
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .brand .name {
+        font-weight: 900;
+        letter-spacing: 0.2px;
+        font-size: 34px;
+        line-height: 1.05;
+      }
+
+      .links {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.06);
+        color: var(--fg0);
+        font-weight: 800;
+        font-size: 13px;
+        transition: transform 0.12s, filter 0.2s, background 0.2s;
+      }
+
+      .btn:hover {
+        filter: brightness(1.05);
+      }
+
+      .btn:active {
+        transform: translateY(1px);
+      }
+
+      .btn.primary {
+        border-color: rgba(212, 175, 55, 0.35);
+        background: linear-gradient(135deg, rgba(245, 208, 97, 0.95) 0%, rgba(212, 175, 55, 0.95) 60%, rgba(170, 129, 26, 0.95) 100%);
+        color: rgba(10, 10, 16, 0.92);
+        box-shadow: 0 16px 46px rgba(212, 175, 55, 0.18);
+      }
+
+      .btn.accent {
+        border-color: rgba(212, 175, 55, 0.25);
+        background: rgba(212, 175, 55, 0.10);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 18px;
+        align-items: start;
+        margin-top: 8px;
+      }
+
+      @media (max-width: 900px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .card {
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+        overflow: hidden;
+      }
+
+      .heroText {
+        padding: 22px 22px 20px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 34px;
+        line-height: 1.05;
+        letter-spacing: -0.4px;
+      }
+
+      .sub {
+        margin-top: 10px;
+        color: var(--fg1);
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .bullets {
+        margin: 16px 0 0;
+        padding-left: 18px;
+        color: var(--fg1);
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .bullets li {
+        margin: 6px 0;
+      }
+
+      .heroCtas {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .shot {
+        padding: 14px;
+      }
+
+      .shot img {
+        width: 100%;
+        height: auto;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: block;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        margin-top: 14px;
+      }
+
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .grid .item {
+        padding: 16px;
+      }
+
+      .k {
+        font-weight: 900;
+        font-size: 12px;
+        letter-spacing: 0.2px;
+        opacity: 0.9;
+      }
+
+      .v {
+        margin-top: 8px;
+        color: var(--fg1);
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 2px 6px;
+        border-radius: 8px;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .footer {
+        margin-top: 18px;
+        color: var(--muted);
+        font-size: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .footer a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="nav">
+        <div>
+          <div class="brand">
+            <img src="icon-128.png" alt="Opinion HUD Icon" />
+            <div>
+              <div class="name">Opinion HUD</div>
+              <div style="color: var(--muted); font-size: 16px; margin-top: 8px">Contextual Trading Layer for X</div>
+            </div>
+          </div>
+          <div class="links" style="margin-top: 14px">
+            <a class="btn" href="privacy.html">Privacy</a>
+            <a class="btn accent" href="data.json">data.json</a>
+            <a class="btn primary" href="https://github.com/nobita1998/Opinion-HUD" target="_blank" rel="noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="card heroText">
+          <h1>在 X 上一眼找到可交易的市场</h1>
+          <div class="sub">
+            Opinion HUD 是一个 Chrome 扩展：当推文提到某个项目/事件时，在推文头部显示一个入口，打开面板即可看到匹配的市场与各选项，
+            并一键打开交易页。
+          </div>
+          <ul class="bullets">
+            <li>入口位置：在推文头部 “…” 按钮左侧</li>
+            <li>使用方式：点击入口打开/关闭面板（也支持悬停打开）</li>
+            <li>面板内容：展示匹配市场与选项，并提供 “Trade” 按钮</li>
+          </ul>
+          <div class="heroCtas">
+            <a class="btn primary" href="https://github.com/nobita1998/Opinion-HUD" target="_blank" rel="noreferrer">查看 GitHub</a>
+            <a class="btn" href="https://github.com/nobita1998/Opinion-HUD/issues" target="_blank" rel="noreferrer">反馈问题（Issues）</a>
+          </div>
+        </div>
+
+        <div class="card shot">
+          <img src="screen.png" alt="Opinion HUD Screenshot" />
+          <div style="margin-top: 10px; color: var(--muted); font-size: 12px; line-height: 1.45">
+            图示：在推文右上角打开 HUD，查看匹配市场并点击 Trade。
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card item">
+          <div class="k">如何使用</div>
+          <div class="v">
+            在 X 网页端浏览推文；当出现入口时，点击它即可打开面板并查看匹配市场。
+          </div>
+        </div>
+        <div class="card item">
+          <div class="k">遇到问题</div>
+          <div class="v">
+            如果入口不显示、匹配不准或 UI 异常，请到 GitHub 提交 Issue，并附上页面链接与截图。
+          </div>
+        </div>
+        <div class="card item">
+          <div class="k">隐私</div>
+          <div class="v">
+            推文内容只在本地处理，不上传服务器。详见 <a href="privacy.html">privacy.html</a>。
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>© Opinion HUD — Open source on GitHub</div>
+        <div>
+          <a href="privacy.html">Privacy</a> ·
+          <a href="https://github.com/nobita1998/Opinion-HUD/issues" target="_blank" rel="noreferrer">Issues</a> ·
+          <a href="https://app.opinion.trade/macro" target="_blank" rel="noreferrer">Opinion</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

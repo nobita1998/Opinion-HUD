@@ -155,11 +155,18 @@
             <li>This data contains only public market information (titles, labels, URLs) - no user data</li>
         </ul>
 
+        <p><strong>Public Market/Order Data (Opinion Analytics API):</strong></p>
+        <ul>
+            <li>When you open the HUD panel, the Extension may request public market metadata and recent trade prices from <code>https://opinionanalytics.xyz/api</code></li>
+            <li>These requests are used only to display option labels and current probabilities in the HUD</li>
+            <li>Tweet content is never sent in these requests</li>
+        </ul>
+
         <p><strong>Local Matching:</strong></p>
         <ul>
             <li>All text matching and keyword detection happens <span class="highlight">entirely on your device</span></li>
             <li>Tweet content is <span class="highlight">never</span> sent to any server</li>
-            <li>No data leaves your browser during the matching process</li>
+            <li>During matching, no tweet content leaves your browser</li>
         </ul>
 
         <h2>How We Use Data</h2>
@@ -177,6 +184,12 @@
             <li>URLs include a referral parameter <code>?ref=opinion_hud</code> for attribution</li>
             <li>Opinion.trade has its own privacy policy governing data collected on their platform</li>
             <li>We do not control or have access to data you provide to Opinion.trade</li>
+        </ul>
+
+        <h3>Opinion Analytics API</h3>
+        <ul>
+            <li>The Extension may call <code>https://opinionanalytics.xyz/api</code> to fetch public market metadata and recent trade prices for displaying probabilities</li>
+            <li>These calls do not include tweet content</li>
         </ul>
 
         <h3>GitHub Pages</h3>
