@@ -10,6 +10,7 @@ const SELECTORS = {
 };
 
 const SCANNED_ATTR = "data-opinion-scanned";
+const ARTICLE_SCANNED_ATTR = "data-opinion-article-scanned";
 const ICON_ATTR = "data-opinion-hud-icon";
 
 const HOVER_DELAY_MS = 300;
@@ -318,16 +319,17 @@ function renderHud(anchorEl, match) {
 
   const margin = 8;
 
-  // Prefer placing below the header icon; fall back to above if needed.
-  let topVp = rect.bottom + margin;
-  if (topVp + hudHeight > window.innerHeight - margin) {
-    topVp = rect.top - hudHeight - margin;
+  // Prefer placing to the right of the icon (same horizontal line) so it doesn't
+  // cover tweet content; fall back to the left if needed.
+  let leftVp = rect.right + margin;
+  if (leftVp + hudWidth > window.innerWidth - margin) {
+    leftVp = rect.left - hudWidth - margin;
   }
-  topVp = Math.max(margin, Math.min(topVp, window.innerHeight - hudHeight - margin));
-
-  // Align right edge of HUD with icon, clamped to viewport.
-  let leftVp = rect.right - hudWidth;
   leftVp = Math.max(margin, Math.min(leftVp, window.innerWidth - hudWidth - margin));
+
+  // Keep the HUD aligned with the icon vertically (clamped to viewport).
+  let topVp = rect.top;
+  topVp = Math.max(margin, Math.min(topVp, window.innerHeight - hudHeight - margin));
 
   const top = window.scrollY + topVp;
   const left = window.scrollX + leftVp;
@@ -340,38 +342,63 @@ function renderHud(anchorEl, match) {
   style.textContent = `
     :host { all: initial; }
     .hud {
+      position: relative;
       width: 320px;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: #e7e9ea;
-      background: rgba(15, 20, 25, 0.85);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #fff;
+      background:
+        linear-gradient(180deg, rgba(33, 33, 46, 0.94) 0%, rgba(14, 14, 28, 0.94) 100%) padding-box,
+        linear-gradient(135deg, rgba(135, 91, 247, 0.95) 0%, rgba(204, 250, 21, 0.9) 100%) border-box;
+      border: 1px solid transparent;
       border-radius: 14px;
       padding: 14px;
-      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 16px 56px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06) inset;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
     }
     .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-    .title { font-weight: 700; font-size: 14px; line-height: 1.2; }
-    .pill { font-size: 11px; padding: 3px 9px; border-radius: 999px; background: rgba(255,255,255,0.10); }
+    .title { font-weight: 800; font-size: 14px; line-height: 1.2; letter-spacing: 0.2px; }
+    .pill {
+      font-size: 11px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: rgba(135, 91, 247, 0.18);
+      border: 1px solid rgba(135, 91, 247, 0.28);
+      color: rgba(255,255,255,0.92);
+    }
     .list { margin-top: 10px; display: flex; flex-direction: column; gap: 8px; }
-    .item { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; }
-    .itemTitle { font-size: 13px; line-height: 1.25; }
+    .item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+      padding: 10px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: background 0.18s, border-color 0.18s;
+    }
+    .item:hover {
+      background: rgba(204, 250, 21, 0.06);
+      border-color: rgba(204, 250, 21, 0.20);
+    }
+    .itemTitle { font-size: 13px; line-height: 1.25; color: rgba(255,255,255,0.92); }
     .tradeBtn {
       border: 0;
       padding: 7px 10px;
       border-radius: 10px;
-      font-weight: 700;
+      font-weight: 800;
       font-size: 12px;
       cursor: pointer;
-      background: rgba(29, 155, 240, 0.95);
+      background: linear-gradient(135deg, rgba(135, 91, 247, 0.98) 0%, rgba(120, 57, 238, 0.98) 55%, rgba(105, 39, 218, 0.98) 100%);
       color: #fff;
-      transition: background 0.2s;
+      box-shadow: 0 10px 24px rgba(120, 57, 238, 0.25);
+      transition: transform 0.12s, filter 0.2s;
     }
-    .tradeBtn:hover { background: #1a8cd8; }
+    .tradeBtn:hover { filter: brightness(1.06); }
     .tradeBtn:active { transform: translateY(1px); }
     .footer { margin-top: 12px; display: flex; justify-content: flex-start; align-items: center; gap: 10px; }
-    .term { opacity: 0.75; font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .term { opacity: 0.85; color: #a2aebe; font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   `;
 
   const hud = document.createElement("div");
@@ -863,20 +890,34 @@ function computeMatchForTweetText(tweetText) {
 }
 
 function findActionBar(articleEl) {
-  return articleEl.querySelector(SELECTORS.actionGroup);
+  const groups = articleEl.querySelectorAll(SELECTORS.actionGroup);
+  for (const g of groups) {
+    if (g.closest(SELECTORS.article) === articleEl) return g;
+  }
+  return null;
 }
 
 function findMoreMenuButton(articleEl) {
-  return articleEl.querySelector(SELECTORS.moreMenuButton);
+  const buttons = articleEl.querySelectorAll(SELECTORS.moreMenuButton);
+  for (const btn of buttons) {
+    if (btn.closest(SELECTORS.article) === articleEl) return btn;
+  }
+  return null;
 }
 
-function attachIconToTweet(tweetTextEl, match) {
+function findIconInArticle(articleEl) {
+  const icons = articleEl.querySelectorAll(`div[${ICON_ATTR}]`);
+  for (const icon of icons) {
+    if (icon.closest(SELECTORS.article) === articleEl) return icon;
+  }
+  return null;
+}
+
+function attachIconToArticle(articleEl, match) {
   if (state.invalidated) return;
-  const articleEl = tweetTextEl.closest(SELECTORS.article);
-  if (!articleEl) return;
 
   // Check if icon already exists
-  let icon = articleEl.querySelector(`div[${ICON_ATTR}]`);
+  let icon = findIconInArticle(articleEl);
   if (!icon) {
     icon = createIcon();
   }
@@ -923,12 +964,55 @@ function attachIconToTweet(tweetTextEl, match) {
   };
 }
 
+function findRootArticleForTweetText(tweetTextEl) {
+  let articleEl = tweetTextEl.closest(SELECTORS.article);
+  if (!articleEl) return null;
+
+  // Quote-retweets contain a nested <article> for the quoted tweet. We want the outer one
+  // so we can show a single icon for the whole timeline item (main text + quoted text).
+  while (true) {
+    const parentArticle = articleEl.parentElement?.closest(SELECTORS.article) || null;
+    if (!parentArticle) break;
+    articleEl = parentArticle;
+  }
+  return articleEl;
+}
+
+function scanArticleNode(articleEl) {
+  if (state.invalidated) return;
+  if (!(articleEl instanceof HTMLElement)) return;
+
+  if (articleEl.getAttribute(ARTICLE_SCANNED_ATTR) === "true") {
+    if (!findIconInArticle(articleEl)) {
+      articleEl.removeAttribute(ARTICLE_SCANNED_ATTR);
+    } else {
+      return;
+    }
+  }
+
+  articleEl.setAttribute(ARTICLE_SCANNED_ATTR, "true");
+
+  const tweetTextNodes = Array.from(articleEl.querySelectorAll(SELECTORS.tweetText));
+  const parts = [];
+  for (const el of tweetTextNodes) {
+    if (!(el instanceof HTMLElement)) continue;
+    const t = el.innerText || el.textContent || "";
+    const normalized = String(t || "").trim();
+    if (normalized) parts.push(normalized);
+  }
+
+  const combinedText = parts.join("\n");
+  const match = computeMatchForTweetText(combinedText);
+  if (!match) return;
+  attachIconToArticle(articleEl, match);
+}
+
 function scanTweetTextNode(tweetTextEl) {
   if (state.invalidated) return;
   if (!(tweetTextEl instanceof HTMLElement)) return;
   if (tweetTextEl.getAttribute(SCANNED_ATTR) === "true") {
-    const articleEl = tweetTextEl.closest(SELECTORS.article);
-    if (articleEl && !articleEl.querySelector(`div[${ICON_ATTR}]`)) {
+    const articleEl = findRootArticleForTweetText(tweetTextEl);
+    if (articleEl && !findIconInArticle(articleEl)) {
       tweetTextEl.removeAttribute(SCANNED_ATTR);
     } else {
       return;
@@ -936,11 +1020,9 @@ function scanTweetTextNode(tweetTextEl) {
   }
   tweetTextEl.setAttribute(SCANNED_ATTR, "true");
 
-  const text = tweetTextEl.innerText || tweetTextEl.textContent || "";
-  const match = computeMatchForTweetText(text);
-  if (!match) return;
-
-  attachIconToTweet(tweetTextEl, match);
+  const rootArticle = findRootArticleForTweetText(tweetTextEl);
+  if (!rootArticle) return;
+  scanArticleNode(rootArticle);
 }
 
 function scanAll() {
