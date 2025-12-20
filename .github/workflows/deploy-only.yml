@@ -1,14 +1,6 @@
-name: Deploy data.json to Pages (deploy only)
+name: Deploy data.json to Pages (manual only)
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'backend/data.json'
-      - 'PRIVACY_POLICY.md'
-      - 'privacy.html'
-      - '.github/workflows/deploy-only.yml'
   workflow_dispatch:
 
 permissions:
