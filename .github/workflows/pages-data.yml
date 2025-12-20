@@ -1,6 +1,9 @@
 name: Build and publish data.json
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # Runs at minute 06 of every hour (UTC).
     - cron: "6 * * * *"
