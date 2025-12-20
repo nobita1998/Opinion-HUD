@@ -157,6 +157,51 @@ function createLimiter(max) {
 
 const priceFetchLimiter = createLimiter(MAX_PRICE_FETCH_CONCURRENCY);
 
+function isAbortError(err) {
+  return err?.name === "AbortError" || /aborted/i.test(String(err?.message || ""));
+}
+
+function sleep(ms, signal) {
+  return new Promise((resolve, reject) => {
+    if (signal?.aborted) {
+      reject(new DOMException("Aborted", "AbortError"));
+      return;
+    }
+    let done = false;
+    let id = null;
+    const onAbort = () => {
+      if (done) return;
+      clearTimeout(id);
+      done = true;
+      reject(new DOMException("Aborted", "AbortError"));
+    };
+    id = setTimeout(() => {
+      if (done) return;
+      done = true;
+      signal?.removeEventListener?.("abort", onAbort);
+      resolve();
+    }, ms);
+    signal?.addEventListener?.("abort", onAbort, { once: true });
+  });
+}
+
+async function fetchJsonWithRetry(url, signal, { maxRetries = 3, delaysMs = [450, 900, 1800] } = {}) {
+  let lastErr = null;
+  for (let attempt = 0; attempt <= maxRetries; attempt += 1) {
+    try {
+      return await fetchJson(url, signal);
+    } catch (err) {
+      if (handleInvalidation(err)) throw err;
+      if (isAbortError(err)) throw err;
+      lastErr = err;
+      const delay = delaysMs[Math.min(attempt, delaysMs.length - 1)] ?? 900;
+      if (attempt >= maxRetries) break;
+      await sleep(delay, signal);
+    }
+  }
+  throw lastErr || new Error(`Failed to fetch ${url}`);
+}
+
 async function fetchJson(url, signal) {
   const res = await fetch(url, {
     method: "GET",
@@ -197,7 +242,7 @@ async function getWrapEventsIndex(signal) {
   }
 
   const url = `${OPINION_ANALYTICS_API_BASE}/markets/wrap-events`;
-  const data = await priceFetchLimiter(() => fetchJson(url, signal), signal);
+  const data = await priceFetchLimiter(() => fetchJsonWithRetry(url, signal), signal);
   const list = Array.isArray(data?.data) ? data.data : [];
   const byWrapId = new Map();
   for (const w of list) {

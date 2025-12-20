@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Opinion HUD</title>
     <meta
       name="description"
-      content="Opinion HUD 是一个 Chrome 扩展：在 X 网页端的推文附近提示并展示匹配的 Opinion 预测市场，帮助你更快找到相关市场并一键打开交易页。"
+      content="Opinion HUD is a Chrome extension that helps you discover relevant Opinion prediction markets while browsing X on desktop."
     />
     <style>
       :root {
@@ -115,6 +115,29 @@
       .btn.accent {
         border-color: rgba(212, 175, 55, 0.25);
         background: rgba(212, 175, 55, 0.10);
+      }
+
+      .langSwitch {
+        display: inline-flex;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .langBtn {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        color: var(--fg0);
+        font-weight: 900;
+        font-size: 12px;
+        padding: 10px 12px;
+        cursor: pointer;
+      }
+
+      .langBtn[aria-pressed="true"] {
+        background: rgba(212, 175, 55, 0.18);
       }
 
       .hero {
@@ -254,75 +277,208 @@
             <img src="icon-128.png" alt="Opinion HUD Icon" />
             <div>
               <div class="name">Opinion HUD</div>
-              <div style="color: var(--muted); font-size: 16px; margin-top: 8px">Contextual Trading Layer for X</div>
+              <div style="color: var(--muted); font-size: 16px; margin-top: 8px" data-i18n="subtitle">
+                Contextual Trading Layer for X
+              </div>
             </div>
           </div>
           <div class="links" style="margin-top: 14px">
-            <a class="btn" href="https://nobita1998.github.io/Opinion-HUD/privacy.html">Privacy</a>
+            <a class="btn" href="https://nobita1998.github.io/Opinion-HUD/privacy.html" data-i18n="nav_privacy"
+              >Privacy</a
+            >
             <a class="btn accent" href="data.json">data.json</a>
             <a class="btn primary" href="https://github.com/nobita1998/Opinion-HUD" target="_blank" rel="noreferrer"
               >GitHub</a
             >
+            <div class="langSwitch" role="group" aria-label="Language">
+              <button class="langBtn" type="button" data-lang="en" aria-pressed="true">EN</button>
+              <button class="langBtn" type="button" data-lang="zh-CN" aria-pressed="false">CN</button>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="hero">
         <div class="card heroText">
-          <h1>在 X 上一眼找到可交易的市场</h1>
-          <div class="sub">
-            Opinion HUD 是一个 Chrome 扩展：当推文提到某个项目/事件时，在推文头部显示一个入口，打开面板即可看到匹配的市场与各选项，
-            并一键打开交易页。
+          <h1 data-i18n="hero_title">Discover tradable markets on X</h1>
+          <div class="sub" data-i18n="hero_sub">
+            Opinion HUD adds a small entry next to tweets on X. Open the panel to see matched markets and options, then
+            click Trade to open the market page.
           </div>
           <ul class="bullets">
-            <li>入口位置：在推文头部 “…” 按钮左侧</li>
-            <li>使用方式：点击入口打开/关闭面板（也支持悬停打开）</li>
-            <li>面板内容：展示匹配市场与选项，并提供 “Trade” 按钮</li>
+            <li data-i18n="bullet_1">Button location: to the left of the “…” menu in the tweet header</li>
+            <li data-i18n="bullet_2">Usage: click to open/close the panel (hover also works)</li>
+            <li data-i18n="bullet_3">Panel: shows matched markets/options with a “Trade” button</li>
           </ul>
           <div class="heroCtas">
-            <a class="btn primary" href="https://github.com/nobita1998/Opinion-HUD" target="_blank" rel="noreferrer">查看 GitHub</a>
-            <a class="btn" href="https://github.com/nobita1998/Opinion-HUD/issues" target="_blank" rel="noreferrer">反馈问题（Issues）</a>
+            <a
+              class="btn primary"
+              href="https://github.com/nobita1998/Opinion-HUD"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="cta_github"
+              >View on GitHub</a
+            >
+            <a
+              class="btn"
+              href="https://github.com/nobita1998/Opinion-HUD/issues"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="cta_issues"
+              >Report an issue</a
+            >
           </div>
         </div>
 
         <div class="card shot">
           <img src="screen.png" alt="Opinion HUD Screenshot" />
-          <div style="margin-top: 10px; color: var(--muted); font-size: 12px; line-height: 1.45">
-            图示：在推文右上角打开 HUD，查看匹配市场并点击 Trade。
+          <div style="margin-top: 10px; color: var(--muted); font-size: 12px; line-height: 1.45" data-i18n="shot">
+            Screenshot: open the HUD and click Trade.
           </div>
         </div>
       </div>
 
       <div class="grid">
         <div class="card item">
-          <div class="k">如何使用</div>
-          <div class="v">
-            在 X 网页端浏览推文；当出现入口时，点击它即可打开面板并查看匹配市场。
+          <div class="k" data-i18n="grid_1_k">How to use</div>
+          <div class="v" data-i18n="grid_1_v">
+            Browse X on desktop. When the entry appears on a tweet, click it to open the panel.
           </div>
         </div>
         <div class="card item">
-          <div class="k">遇到问题</div>
-          <div class="v">
-            如果入口不显示、匹配不准或 UI 异常，请到 GitHub 提交 Issue，并附上页面链接与截图。
+          <div class="k" data-i18n="grid_2_k">Having issues?</div>
+          <div class="v" data-i18n="grid_2_v">
+            If the entry doesn't show, matching is off, or the UI looks wrong, please file a GitHub issue with the tweet
+            URL and a screenshot.
           </div>
         </div>
         <div class="card item">
-          <div class="k">隐私</div>
+          <div class="k" data-i18n="grid_3_k">Privacy</div>
           <div class="v">
-            推文内容只在本地处理，不上传服务器。详见
-            <a href="https://nobita1998.github.io/Opinion-HUD/privacy.html">privacy.html</a>。
+            <span data-i18n="privacy_desc_prefix">Tweet content is processed locally and is never uploaded. See</span>
+            <a href="https://nobita1998.github.io/Opinion-HUD/privacy.html">privacy.html</a><span
+              data-i18n="privacy_desc_suffix"
+              >.</span
+            >
           </div>
         </div>
       </div>
 
       <div class="footer">
-        <div>© Opinion HUD — Open source on GitHub</div>
+        <div data-i18n="footer_tagline">© Opinion HUD — Open source on GitHub</div>
         <div>
-          <a href="https://nobita1998.github.io/Opinion-HUD/privacy.html">Privacy</a> ·
-          <a href="https://github.com/nobita1998/Opinion-HUD/issues" target="_blank" rel="noreferrer">Issues</a> ·
+          <a href="https://nobita1998.github.io/Opinion-HUD/privacy.html" data-i18n="nav_privacy">Privacy</a> ·
+          <a
+            href="https://github.com/nobita1998/Opinion-HUD/issues"
+            target="_blank"
+            rel="noreferrer"
+            data-i18n="nav_issues"
+            >Issues</a
+          >
+          ·
           <a href="https://app.opinion.trade/macro" target="_blank" rel="noreferrer">Opinion</a>
         </div>
       </div>
     </div>
+    <script>
+      (() => {
+        const STORAGE_KEY = "opinionHudLang";
+        const DEFAULT_LANG = "en";
+
+        const translations = {
+          en: {
+            meta_description:
+              "Opinion HUD is a Chrome extension that helps you discover relevant Opinion prediction markets while browsing X on desktop.",
+            subtitle: "Contextual Trading Layer for X",
+            nav_privacy: "Privacy",
+            nav_issues: "Issues",
+            hero_title: "Discover tradable markets on X",
+            hero_sub:
+              "Opinion HUD adds a small entry next to tweets on X. Open the panel to see matched markets and options, then click Trade to open the market page.",
+            bullet_1: "Button location: to the left of the “…” menu in the tweet header",
+            bullet_2: "Usage: click to open/close the panel (hover also works)",
+            bullet_3: "Panel: shows matched markets/options with a “Trade” button",
+            cta_github: "View on GitHub",
+            cta_issues: "Report an issue",
+            shot: "Screenshot: open the HUD and click Trade.",
+            grid_1_k: "How to use",
+            grid_1_v: "Browse X on desktop. When the entry appears on a tweet, click it to open the panel.",
+            grid_2_k: "Having issues?",
+            grid_2_v:
+              "If the entry doesn't show, matching is off, or the UI looks wrong, please file a GitHub issue with the tweet URL and a screenshot.",
+            grid_3_k: "Privacy",
+            privacy_desc_prefix: "Tweet content is processed locally and is never uploaded. See",
+            privacy_desc_suffix: ".",
+            footer_tagline: "© Opinion HUD — Open source on GitHub",
+          },
+          "zh-CN": {
+            meta_description:
+              "Opinion HUD 是一个 Chrome 扩展：在 X 网页端的推文附近提示并展示匹配的 Opinion 预测市场，帮助你更快找到相关市场并一键打开交易页。",
+            subtitle: "X 上的上下文交易入口",
+            nav_privacy: "隐私",
+            nav_issues: "反馈",
+            hero_title: "在 X 上一眼找到可交易的市场",
+            hero_sub:
+              "Opinion HUD 是一个 Chrome 扩展：当推文提到某个项目/事件时，在推文头部显示一个入口，打开面板即可看到匹配的市场与各选项，并一键打开交易页。",
+            bullet_1: "入口位置：在推文头部 “…” 按钮左侧",
+            bullet_2: "使用方式：点击入口打开/关闭面板（也支持悬停打开）",
+            bullet_3: "面板内容：展示匹配市场与选项，并提供 “Trade” 按钮",
+            cta_github: "查看 GitHub",
+            cta_issues: "反馈问题（Issues）",
+            shot: "图示：在推文右上角打开 HUD，查看匹配市场并点击 Trade。",
+            grid_1_k: "如何使用",
+            grid_1_v: "在 X 网页端浏览推文；当出现入口时，点击它即可打开面板并查看匹配市场。",
+            grid_2_k: "遇到问题",
+            grid_2_v: "如果入口不显示、匹配不准或 UI 异常，请到 GitHub 提交 Issue，并附上页面链接与截图。",
+            grid_3_k: "隐私",
+            privacy_desc_prefix: "推文内容只在本地处理，不上传服务器。详见",
+            privacy_desc_suffix: "。",
+            footer_tagline: "© Opinion HUD — Open source on GitHub",
+          },
+        };
+
+        function setLang(lang) {
+          const resolved = translations[lang] ? lang : DEFAULT_LANG;
+          const t = translations[resolved];
+
+          document.documentElement.lang = resolved === "zh-CN" ? "zh-CN" : "en";
+          const meta = document.querySelector('meta[name="description"]');
+          if (meta && t.meta_description) meta.setAttribute("content", t.meta_description);
+
+          for (const el of document.querySelectorAll("[data-i18n]")) {
+            const key = el.getAttribute("data-i18n");
+            if (!key) continue;
+            if (Object.prototype.hasOwnProperty.call(t, key)) {
+              el.textContent = t[key];
+            }
+          }
+
+          for (const btn of document.querySelectorAll("button.langBtn[data-lang]")) {
+            const isActive = btn.getAttribute("data-lang") === resolved;
+            btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+          }
+
+          try {
+            localStorage.setItem(STORAGE_KEY, resolved);
+          } catch {
+            // ignore
+          }
+        }
+
+        document.addEventListener("click", (e) => {
+          const btn = e.target.closest?.("button.langBtn[data-lang]");
+          if (!btn) return;
+          setLang(btn.getAttribute("data-lang"));
+        });
+
+        let saved = DEFAULT_LANG;
+        try {
+          saved = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG;
+        } catch {
+          saved = DEFAULT_LANG;
+        }
+        setLang(saved);
+      })();
+    </script>
   </body>
 </html>
