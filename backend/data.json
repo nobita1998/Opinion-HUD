@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": 1766210312,
+    "generatedAt": 1766227127,
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://opinion.trade",
     "model": "GLM-4.6",
@@ -24,15 +24,15 @@
         "missing_title": 0
       },
       "ai": {
-        "incremental": false,
+        "incremental": true,
         "incrementalOnly": false,
-        "reused": 0,
+        "reused": 125,
         "legacyReused": 0,
-        "calls": 125,
-        "retries": 3,
+        "calls": 0,
+        "retries": 0,
         "skipped": 0,
         "empty": 0,
-        "non_empty": 125,
+        "non_empty": 0,
         "errors": 0
       }
     }

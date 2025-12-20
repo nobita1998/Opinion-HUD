@@ -1,7 +1,10 @@
-  name: Build and publish data.json (manual only)
+name: Build and publish data.json
 
-  on:
-    workflow_dispatch:
+on:
+  schedule:
+    # Runs at minute 06 of every hour (UTC).
+    - cron: "6 * * * *"
+  workflow_dispatch:
 
   permissions:
     contents: read
@@ -12,50 +15,48 @@
     group: "pages"
     cancel-in-progress: true
 
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v4
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-        - name: Setup Python
-          uses: actions/setup-python@v5
-          with:
-            python-version: "3.12"
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
-        - name: Install deps
-          run: pip install -r backend/requirements.txt
+      - name: Install deps
+        run: pip install -r backend/requirements.txt
 
-        - name: Build data.json
-          env:
-            ZHIPU_KEY: ${{ secrets.ZHIPU_KEY }}
-            OPINION_API_KEY: ${{ secrets.OPINION_API_KEY }}
-            SLEEP_SECONDS: "0.5"
-            DISABLE_INCREMENTAL: "1"
-            ZHIPU_TIMEOUT_SECONDS: "60"
-            ZHIPU_MAX_RETRIES: "3"
-          run: |
-            REPO_NAME="${GITHUB_REPOSITORY#*/}"
-            export PREVIOUS_DATA_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${REPO_NAME}/data.json"
-            python backend/build_index.py
+      - name: Build data.json
+        env:
+          ZHIPU_KEY: ${{ secrets.ZHIPU_KEY }}
+          SLEEP_SECONDS: "0.5"
+          ZHIPU_TIMEOUT_SECONDS: "60"
+          ZHIPU_MAX_RETRIES: "3"
+        run: |
+          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+          export PREVIOUS_DATA_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${REPO_NAME}/data.json"
+          python backend/build_index.py
 
-        - name: Prepare artifact
-          run: |
-            mkdir -p site
-            cp backend/data.json site/data.json
-            cp PRIVACY_POLICY.md site/PRIVACY_POLICY.md
-            cp privacy.html site/privacy.html
-            cp privacy.html site/index.html
+      - name: Prepare artifact
+        run: |
+          mkdir -p site
+          cp backend/data.json site/data.json
+          cp PRIVACY_POLICY.md site/PRIVACY_POLICY.md
+          cp privacy.html site/privacy.html
+          cp privacy.html site/index.html
 
-        - name: Upload artifact
-          uses: actions/upload-pages-artifact@v3
-          with:
-            path: site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
 
-    deploy:
-      needs: build
-      runs-on: ubuntu-latest
-      steps:
-        - name: Deploy to GitHub Pages
-          uses: actions/deploy-pages@v4
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

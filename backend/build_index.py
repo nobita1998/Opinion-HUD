@@ -15,12 +15,21 @@ DEBUG = os.environ.get("DEBUG", "").strip().lower() in ("1", "true", "yes", "y",
 SKIP_AI = os.environ.get("SKIP_AI", "").strip().lower() in ("1", "true", "yes", "y", "on")
 # When enabled, never re-run the LLM for existing events; reuse previous outputs when available,
 # otherwise fall back to deterministic extraction.
-INCREMENTAL_ONLY = os.environ.get("INCREMENTAL_ONLY", "1").strip().lower() in ("1", "true", "yes", "y", "on")
+# Default is disabled (0) so new/changed events will use the LLM when ZHIPU_KEY is set.
+INCREMENTAL_ONLY = os.environ.get("INCREMENTAL_ONLY", "0").strip().lower() in ("1", "true", "yes", "y", "on")
 ZHIPU_TIMEOUT_SECONDS = float(os.environ.get("ZHIPU_TIMEOUT_SECONDS", "30"))
 ZHIPU_MAX_RETRIES = int(os.environ.get("ZHIPU_MAX_RETRIES", "2"))
 DISABLE_INCREMENTAL = os.environ.get("DISABLE_INCREMENTAL", "").strip().lower() in ("1", "true", "yes", "y", "on")
 PREVIOUS_DATA_URL = os.environ.get("PREVIOUS_DATA_URL", "").strip() or None
 ALLOW_LEGACY_REUSE = os.environ.get("ALLOW_LEGACY_REUSE", "1").strip().lower() in ("1", "true", "yes", "y", "on")
+# Full refresh switch: when enabled, ignore any previous data and rebuild everything.
+ALL_REFRESH = os.environ.get("ALL_REFRESH", "0").strip().lower() in ("1", "true", "yes", "y", "on")
+# When enabled, never modify existing events/markets from previous data.json.
+# Only generate outputs (LLM) for new event IDs not present in previous data.
+#
+# Default is enabled (1). Use `ADD_ONLY_NEW=0` (and optionally `DISABLE_INCREMENTAL=1`)
+# to regenerate everything.
+ADD_ONLY_NEW = os.environ.get("ADD_ONLY_NEW", "1").strip().lower() in ("1", "true", "yes", "y", "on")
 
 
 def _now_epoch_seconds():
@@ -1000,7 +1009,7 @@ def _event_signature_full(event_title, market_ids, option_titles_all, rules_best
 
 
 def _load_previous_data(output_path):
-    if DISABLE_INCREMENTAL:
+    if DISABLE_INCREMENTAL or ALL_REFRESH:
         return None
 
     if PREVIOUS_DATA_URL:
@@ -1257,10 +1266,22 @@ def build_data(markets, api_key, previous_data=None):
 
     event_accumulator = {}
     prev_events = {}
+    prev_markets = {}
     if (not DISABLE_INCREMENTAL) and isinstance(previous_data, dict):
         prev_events = previous_data.get("events") or {}
         if not isinstance(prev_events, dict):
             prev_events = {}
+        prev_markets = previous_data.get("markets") or {}
+        if not isinstance(prev_markets, dict):
+            prev_markets = {}
+
+    add_only_new = (not DISABLE_INCREMENTAL) and (not ALL_REFRESH) and bool(ADD_ONLY_NEW) and bool(prev_events) and bool(prev_markets)
+    existing_event_ids = set(prev_events.keys()) if add_only_new else set()
+    existing_market_ids = set(prev_markets.keys()) if add_only_new else set()
+    if add_only_new:
+        # Seed outputs with previous data. We will only add new event IDs.
+        markets_out = dict(prev_markets)
+        events_out = dict(prev_events)
 
     for market in markets:
         processed += 1
@@ -1367,10 +1388,11 @@ def build_data(markets, api_key, previous_data=None):
 
         # Update aggregated event-level market output.
         if event_market_id in markets_out:
-            markets_out[event_market_id]["volume"] = max(markets_out[event_market_id].get("volume") or 0.0, volume)
-            # Prefer labels from the current best-volume option.
-            if event_bucket.get("bestMarketId") == market_id:
-                markets_out[event_market_id]["labels"] = {"yesLabel": yes_label, "noLabel": no_label}
+            if not (add_only_new and event_market_id in existing_market_ids):
+                markets_out[event_market_id]["volume"] = max(markets_out[event_market_id].get("volume") or 0.0, volume)
+                # Prefer labels from the current best-volume option.
+                if event_bucket.get("bestMarketId") == market_id:
+                    markets_out[event_market_id]["labels"] = {"yesLabel": yes_label, "noLabel": no_label}
 
     if duplicate_event_market_ids and DEBUG:
         print(
@@ -1395,22 +1417,28 @@ def build_data(markets, api_key, previous_data=None):
         bucket["sigFull"] = sig_full
 
         reusable = False
-        prev = prev_events.get(event_id)
-        if isinstance(prev, dict):
-            prev_keywords = prev.get("keywords")
-            prev_entity_groups = prev.get("entityGroups") or prev.get("entity_groups")
-            has_entity_groups = isinstance(prev_entity_groups, list) and any(isinstance(g, list) and g for g in prev_entity_groups)
-            if isinstance(prev_keywords, list) and prev_keywords:
-                prev_sig_core = prev.get("sigCore")
-                prev_sig_full = prev.get("sigFull") or prev.get("sig") or prev.get("signature")
-                if INCREMENTAL_ONLY and has_entity_groups:
-                    if str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
+        if add_only_new and event_id in existing_event_ids:
+            reusable = True
+        else:
+            prev = prev_events.get(event_id)
+            if isinstance(prev, dict):
+                prev_keywords = prev.get("keywords")
+                prev_entity_groups = prev.get("entityGroups") or prev.get("entity_groups")
+                has_entity_groups = isinstance(prev_entity_groups, list) and any(isinstance(g, list) and g for g in prev_entity_groups)
+                if isinstance(prev_keywords, list) and prev_keywords:
+                    prev_sig_core = prev.get("sigCore")
+                    prev_sig_full = prev.get("sigFull") or prev.get("sig") or prev.get("signature")
+                    if INCREMENTAL_ONLY and has_entity_groups:
+                        if str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
+                            reusable = True
+                    elif has_entity_groups and (
+                        (prev_sig_core and str(prev_sig_core) == sig_core)
+                        or (prev_sig_full and str(prev_sig_full) == sig_full)
+                    ):
                         reusable = True
-                elif has_entity_groups and ((prev_sig_core and str(prev_sig_core) == sig_core) or (prev_sig_full and str(prev_sig_full) == sig_full)):
-                    reusable = True
-                elif has_entity_groups and ALLOW_LEGACY_REUSE and (not prev_sig_core) and (not prev_sig_full):
-                    if str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
-                        reusable = True
+                    elif has_entity_groups and ALLOW_LEGACY_REUSE and (not prev_sig_core) and (not prev_sig_full):
+                        if str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
+                            reusable = True
 
         if reusable:
             planned_reuse += 1
@@ -1454,6 +1482,12 @@ def build_data(markets, api_key, previous_data=None):
         keywords = []
         entities = []
         entity_groups = []
+
+        if add_only_new and event_id in existing_event_ids:
+            # Strict add-only mode: keep previous outputs untouched for existing event IDs.
+            ai_stats["reused"] += 1
+            continue
+
         prev = prev_events.get(event_id)
         if isinstance(prev, dict):
             prev_keywords = prev.get("keywords")
@@ -1678,6 +1712,29 @@ def build_data(markets, api_key, previous_data=None):
     index_out = {kw: sorted(list(ids)) for kw, ids in sorted(inverted.items(), key=lambda kv: kv[0])}
     event_index_out = {kw: sorted(list(ids)) for kw, ids in sorted(event_inverted.items(), key=lambda kv: kv[0])}
 
+    if add_only_new:
+        rebuilt = {}
+        for eid, e in events_out.items():
+            if not isinstance(e, dict):
+                continue
+            kws = e.get("keywords")
+            if isinstance(kws, list):
+                for kw in kws:
+                    nkw = _normalize_keyword(kw)
+                    if nkw:
+                        rebuilt.setdefault(nkw, set()).add(eid)
+            groups = e.get("entityGroups") or e.get("entity_groups")
+            if isinstance(groups, list):
+                for group in groups:
+                    if not isinstance(group, list):
+                        continue
+                    for term in group:
+                        nterm = _normalize_keyword(term)
+                        if nterm:
+                            rebuilt.setdefault(nterm, set()).add(eid)
+        index_out = {kw: sorted(list(ids)) for kw, ids in sorted(rebuilt.items(), key=lambda kv: kv[0])}
+        event_index_out = index_out
+
     return {
         "meta": {
             "generatedAt": now,
@@ -1717,6 +1774,9 @@ def main():
     if INCREMENTAL_ONLY:
         print("[info] INCREMENTAL_ONLY enabled: reuse previous outputs; no LLM calls", flush=True)
 
+    if ALL_REFRESH:
+        print("[info] ALL_REFRESH enabled: rebuilding everything (ignore previous data.json)", flush=True)
+
     if DEBUG:
         print(
             "[debug] env MAX_MARKETS=%r SLEEP_SECONDS=%r OUTPUT_PATH=%r"
@@ -1725,6 +1785,7 @@ def main():
         )
         print(f"[debug] SKIP_AI={SKIP_AI}", flush=True)
         print(f"[debug] DISABLE_INCREMENTAL={DISABLE_INCREMENTAL}", flush=True)
+        print(f"[debug] ALL_REFRESH={ALL_REFRESH}", flush=True)
         if PREVIOUS_DATA_URL:
             print("[debug] PREVIOUS_DATA_URL is set", flush=True)
         print(
@@ -1738,7 +1799,7 @@ def main():
     print(f"[info] fetched {len(markets)} market nodes (including parents)", flush=True)
 
     previous_data = None
-    if DISABLE_INCREMENTAL:
+    if DISABLE_INCREMENTAL or ALL_REFRESH:
         print("[info] DISABLE_INCREMENTAL enabled: ignoring previous data.json", flush=True)
     else:
         previous_data = _load_previous_data(output_path)

@@ -19,18 +19,30 @@ python3 -m pip install -r backend/requirements.txt
 
 ## 运行方式
 
-### 全量重刷（推荐：重新调用 LLM）
+### 默认（只新增 + 用 LLM）
+
+脚本默认会读取本地 `backend/data.json`，并且：
+- 已存在的 event/market **不会被修改**
+- 只对新增的 event 通过 LLM 生成 `keywords`/`entityGroups` 并追加
+
+（`ZHIPU_KEY` 需在你的系统环境变量中）
 
 ```bash
-INCREMENTAL_ONLY=0 DISABLE_INCREMENTAL=1 ALLOW_LEGACY_REUSE=0 ZHIPU_KEY=xxx python3 backend/build_index.py
+python3 backend/build_index.py
+```
+
+### 全量重刷（重新生成所有 event）
+
+```bash
+ALL_REFRESH=1 python3 backend/build_index.py
 ```
 
 ### 增量模式（默认：尽量复用旧数据）
 
-默认 `INCREMENTAL_ONLY=1`：复用已有 `backend/data.json` 的 event 结果，不调用 LLM。
+如需强制不调用 LLM（只复用旧数据），可启用 `INCREMENTAL_ONLY=1`：
 
 ```bash
-python3 backend/build_index.py
+INCREMENTAL_ONLY=1 python3 backend/build_index.py
 ```
 
 ## 关键环境变量
