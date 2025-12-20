@@ -27,6 +27,7 @@ jobs:
           mkdir -p site
           cp backend/data.json site/data.json
           cp index.html site/index.html
+          cp how-to-use.html site/how-to-use.html
           cp screen.png site/screen.png
           cp icon-128.png site/icon-128.png
           cp PRIVACY_POLICY.md site/PRIVACY_POLICY.md
