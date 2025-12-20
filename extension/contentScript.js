@@ -29,6 +29,7 @@ const state = {
   observer: null,
   hoverTimer: null,
   activeHud: null,
+  activeHudAbort: null,
   invalidated: false,
 };
 
@@ -89,6 +90,153 @@ function normalizeForMatch(text) {
 }
 
 const OPINION_TRADE_DETAIL_URL = "https://app.opinion.trade/detail";
+const OPINION_ANALYTICS_API_BASE = "https://opinionanalytics.xyz/api";
+
+const PRICE_CACHE_TTL_MS = 60_000;
+const MARKET_ASSET_CACHE_TTL_MS = 10 * 60_000;
+const MARKETS_INDEX_TTL_MS = 10 * 60_000;
+const WRAP_EVENTS_INDEX_TTL_MS = 10 * 60_000;
+const MAX_PRICE_FETCH_CONCURRENCY = 4;
+
+const assetPriceCache = new Map(); // assetId -> { ts, price }
+const marketAssetCache = new Map(); // marketId -> { ts, yesTokenId, noTokenId }
+let marketsIndexCache = null; // { ts, byMarketId: Map<string, { yesTokenId, noTokenId }> }
+let wrapEventsIndexCache = null; // { ts, byWrapId: Map<string, WrapEvent> }
+
+function nowMs() {
+  return Date.now();
+}
+
+function getCached(map, key, ttlMs) {
+  const v = map.get(key);
+  if (!v) return null;
+  if (nowMs() - v.ts > ttlMs) return null;
+  return v;
+}
+
+function formatProbPercent(price01) {
+  const p = Number(price01);
+  if (!Number.isFinite(p)) return null;
+  const clamped = Math.max(0, Math.min(1, p));
+  const percent = (clamped * 100).toFixed(1);
+  return `${percent}%`;
+}
+
+function createLimiter(max) {
+  let active = 0;
+  const queue = [];
+
+  function runNext() {
+    if (active >= max) return;
+    const item = queue.shift();
+    if (!item) return;
+    active += 1;
+    Promise.resolve()
+      .then(item.fn)
+      .then(item.resolve, item.reject)
+      .finally(() => {
+        active -= 1;
+        runNext();
+      });
+  }
+
+  return (fn, signal) =>
+    new Promise((resolve, reject) => {
+      if (signal?.aborted) {
+        reject(new DOMException("Aborted", "AbortError"));
+        return;
+      }
+      const wrapped = () => {
+        if (signal?.aborted) throw new DOMException("Aborted", "AbortError");
+        return fn();
+      };
+      queue.push({ fn: wrapped, resolve, reject });
+      runNext();
+    });
+}
+
+const priceFetchLimiter = createLimiter(MAX_PRICE_FETCH_CONCURRENCY);
+
+async function fetchJson(url, signal) {
+  const res = await fetch(url, {
+    method: "GET",
+    credentials: "omit",
+    cache: "no-store",
+    signal,
+    headers: {
+      accept: "application/json",
+    },
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+  return res.json();
+}
+
+async function getMarketsIndex(signal) {
+  if (marketsIndexCache && nowMs() - marketsIndexCache.ts <= MARKETS_INDEX_TTL_MS) {
+    return marketsIndexCache.byMarketId;
+  }
+
+  const url = `${OPINION_ANALYTICS_API_BASE}/markets`;
+  const data = await priceFetchLimiter(() => fetchJson(url, signal), signal);
+  const list = Array.isArray(data?.data) ? data.data : [];
+  const byMarketId = new Map();
+  for (const m of list) {
+    const marketId = String(m?.marketId || "").trim();
+    if (!marketId) continue;
+    const yesTokenId = String(m?.yesTokenId || "").trim();
+    const noTokenId = String(m?.noTokenId || "").trim();
+    byMarketId.set(marketId, { yesTokenId, noTokenId });
+  }
+  marketsIndexCache = { ts: nowMs(), byMarketId };
+  return byMarketId;
+}
+
+async function getWrapEventsIndex(signal) {
+  if (wrapEventsIndexCache && nowMs() - wrapEventsIndexCache.ts <= WRAP_EVENTS_INDEX_TTL_MS) {
+    return wrapEventsIndexCache.byWrapId;
+  }
+
+  const url = `${OPINION_ANALYTICS_API_BASE}/markets/wrap-events`;
+  const data = await priceFetchLimiter(() => fetchJson(url, signal), signal);
+  const list = Array.isArray(data?.data) ? data.data : [];
+  const byWrapId = new Map();
+  for (const w of list) {
+    const marketId = String(w?.marketId || "").trim();
+    if (!marketId) continue;
+    byWrapId.set(marketId, w);
+  }
+  wrapEventsIndexCache = { ts: nowMs(), byWrapId };
+  return byWrapId;
+}
+
+async function getMarketAssetIds(marketId, signal) {
+  const key = String(marketId);
+  const cached = getCached(marketAssetCache, key, MARKET_ASSET_CACHE_TTL_MS);
+  if (cached) return cached;
+
+  // Prefer /api/markets (index) because /markets/asset-ids/:marketId may be unavailable (500).
+  const marketsIndex = await getMarketsIndex(signal);
+  const ids = marketsIndex.get(key) || null;
+  const yesTokenId = String(ids?.yesTokenId || "");
+  const noTokenId = String(ids?.noTokenId || "");
+  const entry = { ts: nowMs(), yesTokenId, noTokenId };
+  marketAssetCache.set(key, entry);
+  return entry;
+}
+
+async function getLatestAssetPrice(assetId, signal) {
+  const key = String(assetId);
+  const cached = getCached(assetPriceCache, key, PRICE_CACHE_TTL_MS);
+  if (cached) return cached.price;
+
+  const url = `${OPINION_ANALYTICS_API_BASE}/orders/by-asset/${encodeURIComponent(key)}?page=1&pageSize=1&filter=all`;
+  const data = await priceFetchLimiter(() => fetchJson(url, signal), signal);
+  const first = Array.isArray(data?.data) ? data.data[0] : null;
+  const price = first?.price != null ? Number.parseFloat(String(first.price)) : null;
+  const normalized = Number.isFinite(price) ? price : null;
+  assetPriceCache.set(key, { ts: nowMs(), price: normalized });
+  return normalized;
+}
 
 function buildOpinionTradeUrl({ topicId, isMulti }) {
   const u = new URL(OPINION_TRADE_DETAIL_URL);
@@ -300,6 +448,14 @@ function createIcon() {
 }
 
 function removeHud() {
+  if (state.activeHudAbort) {
+    try {
+      state.activeHudAbort.abort();
+    } catch {
+      // ignore
+    }
+    state.activeHudAbort = null;
+  }
   if (state.activeHud) {
     state.activeHud.remove();
     state.activeHud = null;
@@ -312,12 +468,13 @@ function renderHud(anchorEl, match) {
   const container = document.createElement("div");
   container.style.position = "absolute";
   container.style.zIndex = "2147483647";
+  const abortController = new AbortController();
+  state.activeHudAbort = abortController;
 
   const rect = anchorEl.getBoundingClientRect();
   const hudWidth = 320;
-  const hudHeight = 300; // Approximate height
-
   const margin = 8;
+  const hudHeightVp = Math.min(520, Math.max(240, window.innerHeight - margin * 2));
 
   // Prefer placing to the right of the icon (same horizontal line) so it doesn't
   // cover tweet content; fall back to the left if needed.
@@ -329,7 +486,7 @@ function renderHud(anchorEl, match) {
 
   // Keep the HUD aligned with the icon vertically (clamped to viewport).
   let topVp = rect.top;
-  topVp = Math.max(margin, Math.min(topVp, window.innerHeight - hudHeight - margin));
+  topVp = Math.max(margin, Math.min(topVp, window.innerHeight - hudHeightVp - margin));
 
   const top = window.scrollY + topVp;
   const left = window.scrollX + leftVp;
@@ -355,6 +512,10 @@ function renderHud(anchorEl, match) {
       box-shadow: 0 16px 56px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06) inset;
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
+      max-height: ${hudHeightVp}px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
     .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
     .title { font-weight: 800; font-size: 14px; line-height: 1.2; letter-spacing: 0.2px; }
@@ -366,7 +527,23 @@ function renderHud(anchorEl, match) {
       border: 1px solid rgba(135, 91, 247, 0.28);
       color: rgba(255,255,255,0.92);
     }
-    .list { margin-top: 10px; display: flex; flex-direction: column; gap: 8px; }
+    .context {
+      margin-top: 8px;
+      font-size: 12px;
+      line-height: 1.25;
+      font-weight: 700;
+      color: rgba(255,255,255,0.92);
+      opacity: 0.95;
+    }
+    .list {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      overflow-y: auto;
+      flex: 1 1 auto;
+      padding-right: 2px;
+    }
     .item {
       display: grid;
       grid-template-columns: 1fr auto;
@@ -383,6 +560,26 @@ function renderHud(anchorEl, match) {
       border-color: rgba(204, 250, 21, 0.20);
     }
     .itemTitle { font-size: 13px; line-height: 1.25; color: rgba(255,255,255,0.92); }
+    .meta { display: inline-flex; gap: 8px; align-items: center; justify-content: flex-end; }
+    .pricePill {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      color: rgba(255,255,255,0.92);
+      white-space: nowrap;
+    }
+    .pricePill.loading {
+      color: rgba(255,255,255,0.75);
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.10);
+      animation: opinionHudPulse 1.1s ease-in-out infinite;
+    }
+    @keyframes opinionHudPulse {
+      0%, 100% { opacity: 0.55; }
+      50% { opacity: 0.95; }
+    }
     .tradeBtn {
       border: 0;
       padding: 7px 10px;
@@ -397,7 +594,56 @@ function renderHud(anchorEl, match) {
     }
     .tradeBtn:hover { filter: brightness(1.06); }
     .tradeBtn:active { transform: translateY(1px); }
-    .footer { margin-top: 12px; display: flex; justify-content: flex-start; align-items: center; gap: 10px; }
+    .group {
+      padding: 8px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .groupHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    .groupTitle {
+      font-size: 12px;
+      line-height: 1.25;
+      font-weight: 800;
+      color: rgba(255,255,255,0.92);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .optionList { display: flex; flex-direction: column; gap: 8px; }
+    .optionList .item {
+      padding: 7px 8px;
+      border-radius: 10px;
+    }
+    .optionList .itemTitle { font-size: 12px; }
+    .optionList .tradeBtn { padding: 6px 9px; font-size: 11px; border-radius: 9px; }
+    .optionList .pricePill { font-size: 10.5px; padding: 2px 7px; }
+    .binaryLine {
+      display: flex;
+      justify-content: flex-end;
+      padding: 2px 0 0;
+    }
+    .moreBtn {
+      border: 0;
+      padding: 7px 10px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 12px;
+      cursor: pointer;
+      background: rgba(204, 250, 21, 0.12);
+      border: 1px solid rgba(204, 250, 21, 0.22);
+      color: rgba(255,255,255,0.92);
+      transition: filter 0.2s, transform 0.12s;
+    }
+    .moreBtn:hover { filter: brightness(1.06); }
+    .moreBtn:active { transform: translateY(1px); }
+    .footer { margin-top: 10px; display: flex; justify-content: flex-start; align-items: center; gap: 10px; flex: 0 0 auto; }
     .term { opacity: 0.85; color: #a2aebe; font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   `;
 
@@ -409,30 +655,282 @@ function renderHud(anchorEl, match) {
   const headerTitle = (match.markets?.length || 0) > 1 ? "Markets Found" : "Market Found";
   header.innerHTML = `<div class="title">${headerTitle}</div><div class="pill">${match.mode === "event" ? "Event" : "Market"}</div>`;
 
+  const context = document.createElement("div");
+  context.className = "context";
+  context.textContent = match.mode === "market" ? (match.title || "") : "";
+
   const list = document.createElement("div");
   list.className = "list";
 
-  for (const m of match.markets.slice(0, MAX_MATCHES_ON_SCREEN)) {
+  const hudContainer = container;
+
+  function setPillLoading(pillEl, label) {
+    pillEl.className = "pricePill loading";
+    pillEl.textContent = `${label} …`;
+  }
+
+  function setPillValue(pillEl, label, value) {
+    pillEl.className = "pricePill";
+    pillEl.textContent = value ? `${label} ${value}` : `${label} —`;
+  }
+
+  function isHudAlive() {
+    return !abortController.signal.aborted && state.activeHud === hudContainer;
+  }
+
+  async function hydrateBinaryMarketPrices(marketId, yesPill, noPill) {
+    try {
+      const { yesTokenId, noTokenId } = await getMarketAssetIds(marketId, abortController.signal);
+      if (!isHudAlive()) return;
+      const [yesPrice, noPrice] = await Promise.all([
+        yesTokenId ? getLatestAssetPrice(yesTokenId, abortController.signal) : Promise.resolve(null),
+        noTokenId ? getLatestAssetPrice(noTokenId, abortController.signal) : Promise.resolve(null),
+      ]);
+      if (!isHudAlive()) return;
+      setPillValue(yesPill, "YES", formatProbPercent(yesPrice));
+      setPillValue(noPill, "NO", formatProbPercent(noPrice));
+    } catch (err) {
+      if (!isHudAlive()) return;
+      setPillValue(yesPill, "YES", null);
+      setPillValue(noPill, "NO", null);
+    }
+  }
+
+  async function hydrateYesOnlyPrice(marketId, yesPill) {
+    try {
+      const { yesTokenId } = await getMarketAssetIds(marketId, abortController.signal);
+      if (!isHudAlive()) return;
+      const yesPrice = yesTokenId ? await getLatestAssetPrice(yesTokenId, abortController.signal) : null;
+      if (!isHudAlive()) return;
+      setPillValue(yesPill, "YES", formatProbPercent(yesPrice));
+    } catch (err) {
+      if (!isHudAlive()) return;
+      setPillValue(yesPill, "YES", null);
+    }
+  }
+
+  async function hydrateYesOnlyFromAssetId(assetId, yesPill) {
+    try {
+      const yesPrice = assetId ? await getLatestAssetPrice(assetId, abortController.signal) : null;
+      if (!isHudAlive()) return;
+      setPillValue(yesPill, "YES", formatProbPercent(yesPrice));
+    } catch {
+      if (!isHudAlive()) return;
+      setPillValue(yesPill, "YES", null);
+    }
+  }
+
+  async function hydrateBinaryFromAssetIds(yesAssetId, noAssetId, yesPill, noPill) {
+    try {
+      const [yesPrice, noPrice] = await Promise.all([
+        yesAssetId ? getLatestAssetPrice(yesAssetId, abortController.signal) : Promise.resolve(null),
+        noAssetId ? getLatestAssetPrice(noAssetId, abortController.signal) : Promise.resolve(null),
+      ]);
+      if (!isHudAlive()) return;
+      setPillValue(yesPill, "YES", formatProbPercent(yesPrice));
+      setPillValue(noPill, "NO", formatProbPercent(noPrice));
+    } catch {
+      if (!isHudAlive()) return;
+      setPillValue(yesPill, "YES", null);
+      setPillValue(noPill, "NO", null);
+    }
+  }
+
+  function createTradeButton(url) {
+    const btn = document.createElement("button");
+    btn.className = "tradeBtn";
+    btn.type = "button";
+    btn.textContent = "Trade";
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (!url) return;
+      window.open(url, "_blank", "noopener,noreferrer");
+    });
+    return btn;
+  }
+
+  function renderBinaryRow({ title, tradeUrl, marketId }) {
     const item = document.createElement("div");
     item.className = "item";
 
     const leftCell = document.createElement("div");
     leftCell.className = "itemTitle";
-    leftCell.textContent = m.title;
+    leftCell.textContent = title;
 
-    const rightCell = document.createElement("button");
-    rightCell.className = "tradeBtn";
-    rightCell.type = "button";
-    rightCell.textContent = "Trade";
-    rightCell.addEventListener("click", (e) => {
-      e.stopPropagation();
-      if (!m.url) return;
-      window.open(m.url, "_blank", "noopener,noreferrer");
-    });
+    const meta = document.createElement("div");
+    meta.className = "meta";
+
+    const yesPill = document.createElement("div");
+    const noPill = document.createElement("div");
+    setPillLoading(yesPill, "YES");
+    setPillLoading(noPill, "NO");
+
+    meta.appendChild(yesPill);
+    meta.appendChild(noPill);
+    meta.appendChild(createTradeButton(tradeUrl));
 
     item.appendChild(leftCell);
-    item.appendChild(rightCell);
+    item.appendChild(meta);
     list.appendChild(item);
+
+    hydrateBinaryMarketPrices(marketId, yesPill, noPill);
+  }
+
+  function renderWrapEventGroup(eventTitle, eventTradeUrl, wrapId) {
+    const group = document.createElement("div");
+    group.className = "group";
+
+    const groupHeader = document.createElement("div");
+    groupHeader.className = "groupHeader";
+
+    const groupTitle = document.createElement("div");
+    groupTitle.className = "groupTitle";
+    groupTitle.textContent = eventTitle || "Event";
+
+    groupHeader.appendChild(groupTitle);
+    const tradeBtn = createTradeButton(eventTradeUrl);
+    groupHeader.appendChild(tradeBtn);
+    group.appendChild(groupHeader);
+
+    const optionList = document.createElement("div");
+    optionList.className = "optionList";
+
+    const placeholder = document.createElement("div");
+    placeholder.className = "item";
+    const placeholderTitle = document.createElement("div");
+    placeholderTitle.className = "itemTitle";
+    placeholderTitle.textContent = "Loading…";
+    const placeholderMeta = document.createElement("div");
+    placeholderMeta.className = "meta";
+    const placeholderPill = document.createElement("div");
+    setPillLoading(placeholderPill, "YES");
+    placeholderMeta.appendChild(placeholderPill);
+    placeholder.appendChild(placeholderTitle);
+    placeholder.appendChild(placeholderMeta);
+    optionList.appendChild(placeholder);
+
+    group.appendChild(optionList);
+    list.appendChild(group);
+
+    (async () => {
+      try {
+        const idx = await getWrapEventsIndex(abortController.signal);
+        if (!isHudAlive()) return;
+        const wrap = idx.get(String(wrapId)) || null;
+        const childrenRaw = wrap?.markets;
+        const children = Array.isArray(childrenRaw) ? childrenRaw : [];
+
+        optionList.innerHTML = "";
+
+        if (children.length === 0) {
+          const row = document.createElement("div");
+          row.className = "item";
+          const t = document.createElement("div");
+          t.className = "itemTitle";
+          t.textContent = "No options available";
+          const meta = document.createElement("div");
+          meta.className = "meta";
+          meta.appendChild(createTradeButton(eventTradeUrl));
+          row.appendChild(t);
+          row.appendChild(meta);
+          optionList.appendChild(row);
+          return;
+        }
+
+        if (children.length === 1) {
+          const only = children[0] || {};
+          const marketId = String(only.marketId || "");
+          const tradeUrl = buildOpinionTradeUrl({ topicId: marketId, isMulti: false });
+
+          // For single-child events, treat it like a single binary market:
+          // keep the header title, but don't repeat the same title again below.
+          tradeBtn.replaceWith(createTradeButton(tradeUrl));
+
+          const line = document.createElement("div");
+          line.className = "binaryLine";
+
+          const meta = document.createElement("div");
+          meta.className = "meta";
+
+          const yesPill = document.createElement("div");
+          const noPill = document.createElement("div");
+          setPillLoading(yesPill, "YES");
+          setPillLoading(noPill, "NO");
+          meta.appendChild(yesPill);
+          meta.appendChild(noPill);
+
+          line.appendChild(meta);
+          optionList.appendChild(line);
+
+          hydrateBinaryFromAssetIds(String(only.yesTokenId || ""), String(only.noTokenId || ""), yesPill, noPill);
+          return;
+        }
+
+        const top = children.slice(0, MAX_MATCHES_ON_SCREEN);
+        for (const c of top) {
+          const marketId = String(c?.marketId || "");
+          const optionTitle = String(c?.title || marketId || "Option");
+          const tradeUrl = buildOpinionTradeUrl({ topicId: marketId, isMulti: false });
+
+          const optionItem = document.createElement("div");
+          optionItem.className = "item";
+
+          const leftCell = document.createElement("div");
+          leftCell.className = "itemTitle";
+          leftCell.textContent = optionTitle;
+
+          const meta = document.createElement("div");
+          meta.className = "meta";
+
+          const yesPill = document.createElement("div");
+          setPillLoading(yesPill, "YES");
+          meta.appendChild(yesPill);
+          meta.appendChild(createTradeButton(tradeUrl));
+
+          optionItem.appendChild(leftCell);
+          optionItem.appendChild(meta);
+          optionList.appendChild(optionItem);
+
+          hydrateYesOnlyFromAssetId(String(c?.yesTokenId || ""), yesPill);
+        }
+
+        if (children.length > top.length) {
+          const more = document.createElement("button");
+          more.className = "moreBtn";
+          more.type = "button";
+          more.textContent = `View all (${children.length})`;
+          more.addEventListener("click", (e) => {
+            e.stopPropagation();
+            if (!eventTradeUrl) return;
+            window.open(eventTradeUrl, "_blank", "noopener,noreferrer");
+          });
+          optionList.appendChild(more);
+        }
+      } catch (err) {
+        if (!isHudAlive()) return;
+        optionList.innerHTML = "";
+        const row = document.createElement("div");
+        row.className = "item";
+        const t = document.createElement("div");
+        t.className = "itemTitle";
+        t.textContent = "Failed to load options";
+        const meta = document.createElement("div");
+        meta.className = "meta";
+        meta.appendChild(createTradeButton(eventTradeUrl));
+        row.appendChild(t);
+        row.appendChild(meta);
+        optionList.appendChild(row);
+      }
+    })();
+  }
+
+  for (const m of match.markets.slice(0, MAX_MATCHES_ON_SCREEN)) {
+    if (m.isMulti) {
+      renderWrapEventGroup(m.title, m.url, m.topicId);
+      continue;
+    }
+
+    renderBinaryRow({ title: m.title, tradeUrl: m.url, marketId: m.topicId });
   }
 
   const footer = document.createElement("div");
@@ -445,6 +943,7 @@ function renderHud(anchorEl, match) {
   footer.appendChild(term);
 
   hud.appendChild(header);
+  if (context.textContent) hud.appendChild(context);
   hud.appendChild(list);
   hud.appendChild(footer);
 
@@ -807,6 +1306,8 @@ function computeMatchForTweetText(tweetText) {
         return {
           title: e.title || "Event",
           labels: bestMarket?.labels || null,
+          marketIds: Array.isArray(e.marketIds) ? e.marketIds : null,
+          bestMarketId: e.bestMarketId || null,
           topicId: item.id,
           isMulti: true,
           url,
@@ -855,6 +1356,8 @@ function computeMatchForTweetText(tweetText) {
     markets.push({
       title,
       labels: m.labels || null,
+      marketIds: isMulti ? (state.data.events?.[topicId]?.marketIds || null) : null,
+      bestMarketId: isMulti ? (state.data.events?.[topicId]?.bestMarketId || null) : null,
       topicId,
       isMulti,
       url: buildOpinionTradeUrl({ topicId, isMulti }),

@@ -2,10 +2,14 @@
 
 ## Project Structure & Module Organization
 
-- `backend/`: Python backend utilities for the data pipeline described in `prd.md` (fetch markets, enrich keywords, build an index JSON).
+- `backend/`: Python backend utilities for the data pipeline (fetch markets, enrich entities/keywords, build `data.json`).
 - `extension/`: Chrome extension (Manifest V3) source and static assets; icons live in `extension/icons/`.
 - `.github/workflows/`: CI workflows (currently empty; add lint/test automation here).
-- Root docs: `README.md` (high-level) and `prd.md` (architecture + requirements).
+- Docs:
+  - `README.md` (repo overview)
+  - `extension/README.md` (frontend)
+  - `backend/README.md` (backend)
+  - `DEVELOPMENT.md` (architecture + design details)
 
 ## Build, Test, and Development Commands
 
@@ -40,5 +44,4 @@ Extension (manual run):
 ## Security & Configuration Tips
 
 - Never commit secrets (API keys, tokens). Use environment variables or a local `.env` (already gitignored).
-- Keep external endpoints configurable; `prd.md` references the Opinion Analytics API base URL.
-
+- Keep external endpoints configurable; see `DEVELOPMENT.md`.
