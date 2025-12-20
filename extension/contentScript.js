@@ -833,7 +833,8 @@ function renderHud(anchorEl, match) {
     groupTitle.textContent = eventTitle || "Event";
 
     groupHeader.appendChild(groupTitle);
-    const tradeBtn = createTradeButton(eventTradeUrl);
+    const multiTradeUrl = buildOpinionTradeUrl({ topicId: wrapId, isMulti: true });
+    const tradeBtn = createTradeButton(eventTradeUrl || multiTradeUrl);
     groupHeader.appendChild(tradeBtn);
     group.appendChild(groupHeader);
 
@@ -867,6 +868,28 @@ function renderHud(anchorEl, match) {
 
         optionList.innerHTML = "";
 
+        const renderYesOptionRow = (child) => {
+          const optionItem = document.createElement("div");
+          optionItem.className = "item";
+
+          const leftCell = document.createElement("div");
+          leftCell.className = "itemTitle";
+          leftCell.textContent = String(child?.title || child?.marketId || "Option");
+
+          const meta = document.createElement("div");
+          meta.className = "meta";
+
+          const yesPill = document.createElement("div");
+          setPillLoading(yesPill, "YES");
+          meta.appendChild(yesPill);
+
+          optionItem.appendChild(leftCell);
+          optionItem.appendChild(meta);
+
+          hydrateYesOnlyFromAssetId(String(child?.yesTokenId || ""), yesPill);
+          return optionItem;
+        };
+
         if (children.length === 0) {
           const row = document.createElement("div");
           row.className = "item";
@@ -875,7 +898,7 @@ function renderHud(anchorEl, match) {
           t.textContent = "No options available";
           const meta = document.createElement("div");
           meta.className = "meta";
-          meta.appendChild(createTradeButton(eventTradeUrl));
+          meta.appendChild(createTradeButton(eventTradeUrl || multiTradeUrl));
           row.appendChild(t);
           row.appendChild(meta);
           optionList.appendChild(row);
@@ -913,30 +936,7 @@ function renderHud(anchorEl, match) {
 
         const top = children.slice(0, MAX_MATCHES_ON_SCREEN);
         for (const c of top) {
-          const marketId = String(c?.marketId || "");
-          const optionTitle = String(c?.title || marketId || "Option");
-          const tradeUrl = buildOpinionTradeUrl({ topicId: marketId, isMulti: false });
-
-          const optionItem = document.createElement("div");
-          optionItem.className = "item";
-
-          const leftCell = document.createElement("div");
-          leftCell.className = "itemTitle";
-          leftCell.textContent = optionTitle;
-
-          const meta = document.createElement("div");
-          meta.className = "meta";
-
-          const yesPill = document.createElement("div");
-          setPillLoading(yesPill, "YES");
-          meta.appendChild(yesPill);
-          meta.appendChild(createTradeButton(tradeUrl));
-
-          optionItem.appendChild(leftCell);
-          optionItem.appendChild(meta);
-          optionList.appendChild(optionItem);
-
-          hydrateYesOnlyFromAssetId(String(c?.yesTokenId || ""), yesPill);
+          optionList.appendChild(renderYesOptionRow(c));
         }
 
         if (children.length > top.length) {
@@ -946,8 +946,13 @@ function renderHud(anchorEl, match) {
           more.textContent = `View all (${children.length})`;
           more.addEventListener("click", (e) => {
             e.stopPropagation();
-            if (!eventTradeUrl) return;
-            window.open(eventTradeUrl, "_blank", "noopener,noreferrer");
+            if (!isHudAlive()) return;
+            more.disabled = true;
+            more.textContent = "Loading…";
+            for (const c of children.slice(top.length)) {
+              optionList.appendChild(renderYesOptionRow(c));
+            }
+            more.remove();
           });
           optionList.appendChild(more);
         }
@@ -961,7 +966,7 @@ function renderHud(anchorEl, match) {
         t.textContent = "Failed to load options";
         const meta = document.createElement("div");
         meta.className = "meta";
-        meta.appendChild(createTradeButton(eventTradeUrl));
+        meta.appendChild(createTradeButton(eventTradeUrl || multiTradeUrl));
         row.appendChild(t);
         row.appendChild(meta);
         optionList.appendChild(row);
