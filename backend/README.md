@@ -57,6 +57,14 @@ ZHIPU_KEY=... python3 backend/build_poly_gamma.py
 
 默认输出：`backend/polymarket-data.json`
 
+### 运行（测试：限制生成数量）
+
+只生成前 N 个事件（会触发 N 次 AI 调用，并在终端打印每次调用的 start/done 日志）：
+
+```bash
+MAX_EVENT=20 python3 backend/build_poly_gamma.py
+```
+
 ### 运行（无 LLM / 调试）
 
 ```bash
@@ -68,6 +76,7 @@ SKIP_AI=1 POLY_MAX_EVENTS=200 POLY_MIN_VOLUME_NUM=0 POLY_MIN_MINUTES_TO_EXPIRY=0
 - `POLY_GAMMA_API_BASE`：默认 `https://gamma-api.polymarket.com`
 - `POLY_FRONTEND_BASE_URL`：默认 `https://polymarket.com`
 - `OUTPUT_PATH`：输出路径（默认 `backend/polymarket-data.json`）
+- `POLY_EXCLUDE_UPDOWN`：默认 `1`；过滤掉 `xxx-updown-5m/15m/...` 这类短周期 Up/Down 市场（设为 `0` 可包含）
 - `POLY_EVENTS_PAGE_LIMIT`：分页大小（默认 `100`）
 - `POLY_MAX_EVENTS`：调试用采样上限（不设则拉全量）
 - `POLY_MIN_VOLUME_NUM`：最低成交量阈值（默认 `10000`，按 Gamma 的 `volume/volumeNum`）
@@ -85,7 +94,7 @@ SKIP_AI=1 POLY_MAX_EVENTS=200 POLY_MIN_VOLUME_NUM=0 POLY_MIN_MINUTES_TO_EXPIRY=0
 - `ALLOW_LEGACY_REUSE`：默认 `1`；允许在缺少签名字段时按 title 复用旧结果（全量重刷建议设为 `0`）
 - `SKIP_AI`：默认 `0`；开启后用 fallback 关键词生成（不会生成 entityGroups）
 - `PREVIOUS_DATA_URL`：可从远端拉取旧 `data.json` 用于增量复用
-- `MAX_MARKET_NODES` / `MAX_MARKETS` / `MAX_EVENTS`：调试用采样上限
+- `MAX_MARKET_NODES` / `MAX_MARKETS` / `MAX_EVENTS` / `MAX_EVENT`：调试用采样上限
 - `SLEEP_SECONDS`：LLM 调用间隔（默认 `0.2`）
 - `DEBUG`：打印更多日志
 

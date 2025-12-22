@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import time
 from datetime import datetime, timezone
 from typing import Any, Dict, Iterable, List, Optional, Tuple
@@ -19,6 +20,9 @@ SCAN_LOG_EVERY = int(os.environ.get("POLY_SCAN_LOG_EVERY", "200"))
 FETCH_LOG_EVERY_PAGES = int(os.environ.get("POLY_FETCH_LOG_EVERY_PAGES", "5"))
 
 MODEL_NAME = getattr(opinion_build, "MODEL_NAME", "GLM-4.6")
+
+EXCLUDE_UPDOWN = os.environ.get("POLY_EXCLUDE_UPDOWN", "1").strip().lower() in ("1", "true", "yes", "y", "on")
+_UPDOWN_SLUG_RE = re.compile(r".+-updown-\d+m-\d+$", re.IGNORECASE)
 
 
 def _now_epoch_seconds() -> int:
@@ -69,6 +73,16 @@ def _event_is_sports(event: Dict[str, Any]) -> bool:
         if str(tag.get("slug") or "").strip().lower() == "sports":
             return True
     return False
+
+
+def _is_updown_event(event_id: str, title: str) -> bool:
+    eid = str(event_id or "").strip()
+    if not eid:
+        return False
+    if _UPDOWN_SLUG_RE.match(eid):
+        return True
+    t = str(title or "").strip().lower()
+    return ("-updown-" in eid.lower()) and ("up or down" in t)
 
 
 def _extract_option_titles(event: Dict[str, Any], now_epoch_seconds: int, max_items: int = 24) -> List[str]:
@@ -169,6 +183,30 @@ def fetch_all_events(limit: int, max_events: Optional[int] = None) -> List[Dict[
     return out
 
 
+def iter_events(limit: int, max_scan_events: Optional[int] = None) -> Iterable[Dict[str, Any]]:
+    """Stream active Polymarket events from Gamma API."""
+    offset = 0
+    seen = 0
+    pages = 0
+    while True:
+        if max_scan_events is not None and seen >= max_scan_events:
+            return
+        pages += 1
+        if FETCH_LOG_EVERY_PAGES > 0 and pages % FETCH_LOG_EVERY_PAGES == 1:
+            print(f"[info] fetching gamma events page offset={offset} limit={limit}", flush=True)
+        page = fetch_events_page(limit=limit, offset=offset)
+        if not page:
+            return
+        for item in page:
+            if not isinstance(item, dict):
+                continue
+            yield item
+            seen += 1
+            if max_scan_events is not None and seen >= max_scan_events:
+                return
+        offset += limit
+
+
 def _build_event_rules_text(title: str, description: str, option_titles: List[str]) -> str:
     rules = (description or "").strip()
     if option_titles:
@@ -250,8 +288,19 @@ def _build_keywords_and_entities(
 def build_poly_data(events: Iterable[Dict[str, Any]], api_key: Optional[str], previous_data: Optional[Dict[str, Any]]) -> Dict[str, Any]:
     now = _now_epoch_seconds()
 
-    min_volume = float(os.environ.get("POLY_MIN_VOLUME_NUM", "10000"))
-    min_minutes_to_expiry = int(os.environ.get("POLY_MIN_MINUTES_TO_EXPIRY", "60"))
+    max_event_env = os.environ.get("MAX_EVENT", "").strip()
+    max_events_out = int(max_event_env) if max_event_env.isdigit() else None
+    if max_events_out is not None and max_events_out <= 0:
+        max_events_out = None
+
+    # MAX_EVENT is meant for quick local testing; make defaults lenient unless the user explicitly overrides.
+    min_volume_default = "0" if (max_events_out is not None and "POLY_MIN_VOLUME_NUM" not in os.environ) else "10000"
+    min_minutes_default = (
+        "0" if (max_events_out is not None and "POLY_MIN_MINUTES_TO_EXPIRY" not in os.environ) else "60"
+    )
+
+    min_volume = float(os.environ.get("POLY_MIN_VOLUME_NUM", min_volume_default))
+    min_minutes_to_expiry = int(os.environ.get("POLY_MIN_MINUTES_TO_EXPIRY", min_minutes_default))
     min_expiry_epoch = now + (min_minutes_to_expiry * 60)
 
     events_out: Dict[str, Any] = {}
@@ -260,6 +309,7 @@ def build_poly_data(events: Iterable[Dict[str, Any]], api_key: Optional[str], pr
     skipped = {
         "missing_id": 0,
         "missing_title": 0,
+        "updown": 0,
         "closed": 0,
         "archived": 0,
         "expired_or_too_soon": 0,
@@ -298,6 +348,10 @@ def build_poly_data(events: Iterable[Dict[str, Any]], api_key: Optional[str], pr
             skipped["missing_title"] += 1
             continue
 
+        if EXCLUDE_UPDOWN and _is_updown_event(event_id, title):
+            skipped["updown"] += 1
+            continue
+
         end_epoch = _parse_iso_epoch_seconds(event.get("endDate"))
         if end_epoch is not None and end_epoch <= now:
             skipped["event_ended"] += 1
@@ -315,9 +369,9 @@ def build_poly_data(events: Iterable[Dict[str, Any]], api_key: Optional[str], pr
         rules_text = _build_event_rules_text(title, _safe_str(event.get("description")), option_titles)
 
         market_ids = []
-        active_market_count = 0
         markets = event.get("markets")
         if isinstance(markets, list):
+            active_market_count = 0
             for m in markets:
                 if not isinstance(m, dict):
                     continue
@@ -332,9 +386,9 @@ def build_poly_data(events: Iterable[Dict[str, Any]], api_key: Optional[str], pr
                     market_ids.append(mid)
                 if len(market_ids) >= 200:
                     break
-        if active_market_count <= 0:
-            skipped["no_active_markets"] += 1
-            continue
+            if active_market_count <= 0:
+                skipped["no_active_markets"] += 1
+                continue
 
         sig_core = opinion_build._event_signature_core(title, rules_text)
         sig_full = opinion_build._event_signature_full(title, market_ids, option_titles, rules_text)
@@ -408,6 +462,8 @@ def build_poly_data(events: Iterable[Dict[str, Any]], api_key: Optional[str], pr
         kept += 1
         if DEBUG and kept % 50 == 0:
             print(f"[debug] kept {kept} events (scanned {seen})", flush=True)
+        if max_events_out is not None and kept >= max_events_out:
+            break
 
     index_out = {kw: sorted(list(ids)) for kw, ids in sorted(inverted.items(), key=lambda kv: kv[0])}
 
@@ -449,21 +505,41 @@ def main() -> None:
     if not api_key and not (SKIP_AI or INCREMENTAL_ONLY):
         raise ValueError("ZHIPU_KEY is not set (required unless SKIP_AI or INCREMENTAL_ONLY is enabled).")
 
-    previous = opinion_build._load_previous_data(output_path)
+    max_event_env = os.environ.get("MAX_EVENT", "").strip()
+    max_events_out = int(max_event_env) if max_event_env.isdigit() else None
+    if max_events_out is not None and max_events_out <= 0:
+        max_events_out = None
+
+    previous = None if max_events_out is not None else opinion_build._load_previous_data(output_path)
 
     page_limit = int(os.environ.get("POLY_EVENTS_PAGE_LIMIT", "100"))
-    max_events_env = os.environ.get("POLY_MAX_EVENTS", "").strip()
+    max_events_env = (os.environ.get("POLY_MAX_EVENTS", "") or "").strip()
     max_events = int(max_events_env) if max_events_env.isdigit() else None
+    scan_cap = None
+    if max_events_out is not None:
+        # Stream enough candidates so filters don't starve the sample.
+        scan_cap = min(20000, max(2000, max_events_out * 500))
 
-    print(f"[info] fetch: limit={page_limit} max_events={max_events}", flush=True)
     print(
-        f"[info] filters: POLY_MIN_VOLUME_NUM={os.environ.get('POLY_MIN_VOLUME_NUM', '10000')} "
-        f"POLY_MIN_MINUTES_TO_EXPIRY={os.environ.get('POLY_MIN_MINUTES_TO_EXPIRY', '60')}",
+        f"[info] fetch: limit={page_limit} max_events={max_events} MAX_EVENT={max_events_out} scan_cap={scan_cap}",
+        flush=True,
+    )
+    if max_events_out is not None:
+        min_volume_effective = os.environ.get("POLY_MIN_VOLUME_NUM", "0")
+        min_minutes_effective = os.environ.get("POLY_MIN_MINUTES_TO_EXPIRY", "0")
+    else:
+        min_volume_effective = os.environ.get("POLY_MIN_VOLUME_NUM", "10000")
+        min_minutes_effective = os.environ.get("POLY_MIN_MINUTES_TO_EXPIRY", "60")
+    print(
+        f"[info] filters: POLY_MIN_VOLUME_NUM={min_volume_effective} POLY_MIN_MINUTES_TO_EXPIRY={min_minutes_effective}",
         flush=True,
     )
 
-    events = fetch_all_events(limit=page_limit, max_events=max_events)
-    print(f"[info] fetched {len(events)} events", flush=True)
+    if max_events_out is not None:
+        events: Iterable[Dict[str, Any]] = iter_events(limit=page_limit, max_scan_events=scan_cap)
+    else:
+        events = fetch_all_events(limit=page_limit, max_events=max_events)
+        print(f"[info] fetched {len(events)} events", flush=True)
 
     data = build_poly_data(events=events, api_key=api_key, previous_data=previous)
 
@@ -471,6 +547,14 @@ def main() -> None:
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
         f.write("\n")
+
+    counts = (data.get("meta") or {}).get("counts") if isinstance(data, dict) else None
+    if isinstance(counts, dict):
+        skipped = counts.get("skipped")
+        if isinstance(skipped, dict):
+            skipped_summary = " ".join(f"{k}={v}" for k, v in skipped.items() if v)
+            if skipped_summary:
+                print(f"[info] skipped: {skipped_summary}", flush=True)
 
     print(f"[info] wrote {output_path} events={len(data.get('events') or {})} keywords={len(data.get('index') or {})}", flush=True)
 

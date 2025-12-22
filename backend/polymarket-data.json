@@ -1,0 +1,2688 @@
+{
+  "meta": {
+    "generatedAt": 1766413893,
+    "source": "https://gamma-api.polymarket.com/events",
+    "frontendBaseUrl": "https://polymarket.com",
+    "model": "GLM-4.6",
+    "provider": "polymarket",
+    "filters": {
+      "minVolumeNum": 0.0,
+      "minMinutesToExpiry": 0
+    },
+    "debug": false,
+    "counts": {
+      "seen": 120,
+      "kept": 20,
+      "events": 20,
+      "markets": 20,
+      "keywords": 127,
+      "skipped": {
+        "missing_id": 0,
+        "missing_title": 0,
+        "updown": 100,
+        "closed": 0,
+        "archived": 0,
+        "expired_or_too_soon": 0,
+        "event_ended": 0,
+        "no_active_markets": 0,
+        "low_volume": 0
+      }
+    }
+  },
+  "events": {
+    "sp-500-spx-up-or-down-on-december-22": {
+      "title": "S&P 500 (SPX) Up or Down on December 22?",
+      "marketIds": [
+        "sp-500-spx-up-or-down-on-december-22"
+      ],
+      "bestMarketId": "sp-500-spx-up-or-down-on-december-22",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "s&p 500",
+        "spx",
+        "standard and poor's 500",
+        "stock market",
+        "index",
+        "us market",
+        "equity market",
+        "closing price",
+        "december 22",
+        "market movement"
+      ],
+      "entities": [
+        "s&p 500"
+      ],
+      "entityGroups": [
+        [
+          "s&p 500",
+          "spx"
+        ]
+      ],
+      "sig": "fa4385ce",
+      "sigFull": "fa4385ce",
+      "sigCore": "b8df57c0",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "xrp-up-or-down-december-24-9am-et": {
+      "title": "XRP Up or Down - December 24, 9AM ET",
+      "marketIds": [
+        "xrp-up-or-down-december-24-9am-et"
+      ],
+      "bestMarketId": "xrp-up-or-down-december-24-9am-et",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "xrp",
+        "ripple",
+        "xrp/usdt",
+        "binance",
+        "price",
+        "candle",
+        "1h",
+        "open",
+        "close",
+        "up",
+        "down",
+        "december 24",
+        "9am et"
+      ],
+      "entities": [
+        "xrp"
+      ],
+      "entityGroups": [
+        [
+          "xrp"
+        ]
+      ],
+      "sig": "ad326705",
+      "sigFull": "ad326705",
+      "sigCore": "530050c8",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "solana-up-or-down-december-24-9am-et": {
+      "title": "Solana Up or Down - December 24, 9AM ET",
+      "marketIds": [
+        "solana-up-or-down-december-24-9am-et"
+      ],
+      "bestMarketId": "solana-up-or-down-december-24-9am-et",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "sol",
+        "solana",
+        "sol/usdt",
+        "binance",
+        "price",
+        "up",
+        "down",
+        "candle",
+        "1h",
+        "open",
+        "close",
+        "december 24",
+        "9am et"
+      ],
+      "entities": [
+        "solana"
+      ],
+      "entityGroups": [
+        [
+          "solana",
+          "sol"
+        ]
+      ],
+      "sig": "40d1e4a1",
+      "sigFull": "40d1e4a1",
+      "sigCore": "def06d20",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "ethereum-up-or-down-december-24-9am-et": {
+      "title": "Ethereum Up or Down - December 24, 9AM ET",
+      "marketIds": [
+        "ethereum-up-or-down-december-24-9am-et"
+      ],
+      "bestMarketId": "ethereum-up-or-down-december-24-9am-et",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "eth",
+        "ethereum",
+        "eth/usdt",
+        "ethusdt",
+        "crypto",
+        "cryptocurrency",
+        "price",
+        "trading",
+        "binance",
+        "candle",
+        "1h",
+        "up",
+        "down"
+      ],
+      "entities": [
+        "ethereum"
+      ],
+      "entityGroups": [
+        [
+          "ethereum",
+          "eth"
+        ]
+      ],
+      "sig": "d0f4ce70",
+      "sigFull": "d0f4ce70",
+      "sigCore": "70593eae",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "bitcoin-up-or-down-december-24-9am-et": {
+      "title": "Bitcoin Up or Down - December 24, 9AM ET",
+      "marketIds": [
+        "bitcoin-up-or-down-december-24-9am-et"
+      ],
+      "bestMarketId": "bitcoin-up-or-down-december-24-9am-et",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "btc",
+        "bitcoin",
+        "btc/usdt",
+        "bitcoin price",
+        "crypto",
+        "cryptocurrency",
+        "binance",
+        "btcusdt",
+        "bitcoin up or down",
+        "price prediction",
+        "1h candle"
+      ],
+      "entities": [
+        "bitcoin"
+      ],
+      "entityGroups": [
+        [
+          "bitcoin",
+          "btc"
+        ]
+      ],
+      "sig": "5604254b",
+      "sigFull": "5604254b",
+      "sigCore": "f5230f60",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "open-up-or-down-on-december-23-2025": {
+      "title": "Opendoor (OPEN) Up or Down on December 23?",
+      "marketIds": [
+        "open-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "open-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "open",
+        "opendoor",
+        "opendoor technologies",
+        "stock price",
+        "nasdaq",
+        "closing price",
+        "share price",
+        "equity",
+        "trading",
+        "market movement",
+        "december 23",
+        "price action"
+      ],
+      "entities": [
+        "open"
+      ],
+      "entityGroups": [
+        [
+          "open",
+          "opendoor"
+        ]
+      ],
+      "sig": "6d79d716",
+      "sigFull": "6d79d716",
+      "sigCore": "85f2d288",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "pltr-up-or-down-on-december-23-2025": {
+      "title": "Palantir (PLTR) Up or Down on December 23?",
+      "marketIds": [
+        "pltr-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "pltr-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "pltr",
+        "palantir",
+        "stock price",
+        "closing price",
+        "nasdaq",
+        "december 23",
+        "up or down",
+        "price movement",
+        "trading day",
+        "market prediction"
+      ],
+      "entities": [
+        "palantir"
+      ],
+      "entityGroups": [
+        [
+          "palantir",
+          "pltr"
+        ]
+      ],
+      "sig": "c6a577da",
+      "sigFull": "c6a577da",
+      "sigCore": "53479f27",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "nya-up-or-down-on-december-23-2025": {
+      "title": "NYA (NYA) Up or Down on December 23?",
+      "marketIds": [
+        "nya-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "nya-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "nyse composite",
+        "nya",
+        "index",
+        "stock market",
+        "closing price",
+        "december 23",
+        "2025",
+        "up or down",
+        "price movement",
+        "trading day"
+      ],
+      "entities": [
+        "nya"
+      ],
+      "entityGroups": [
+        [
+          "nya"
+        ]
+      ],
+      "sig": "041bd284",
+      "sigFull": "041bd284",
+      "sigCore": "50e8a6fe",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "nflx-up-or-down-on-december-23-2025": {
+      "title": "Netflix (NFLX) Up or Down on December 23?",
+      "marketIds": [
+        "nflx-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "nflx-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "nflx",
+        "netflix",
+        "stock price",
+        "closing price",
+        "nasdaq",
+        "share price",
+        "equity",
+        "ticker",
+        "market movement",
+        "dec 23",
+        "up or down"
+      ],
+      "entities": [
+        "netflix"
+      ],
+      "entityGroups": [
+        [
+          "netflix",
+          "nflx"
+        ]
+      ],
+      "sig": "14abee5c",
+      "sigFull": "14abee5c",
+      "sigCore": "66b95654",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "rut-up-or-down-on-december-23-2025": {
+      "title": "Russell 2000 (RUT) Up or Down on December 23?",
+      "marketIds": [
+        "rut-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "rut-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "rut",
+        "russell 2000",
+        "small cap",
+        "index",
+        "market",
+        "stock",
+        "price",
+        "close",
+        "trading",
+        "december 23"
+      ],
+      "entities": [
+        "rut"
+      ],
+      "entityGroups": [
+        [
+          "rut"
+        ]
+      ],
+      "sig": "eef46753",
+      "sigFull": "eef46753",
+      "sigCore": "a8ec3a76",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "nvda-up-or-down-on-december-23-2025": {
+      "title": "NVIDIA (NVDA) Up or Down on December 23?",
+      "marketIds": [
+        "nvda-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "nvda-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "nvda",
+        "nvidia",
+        "stock price",
+        "closing price",
+        "nasdaq",
+        "dec 23",
+        "december 23",
+        "up or down",
+        "price movement",
+        "trading day",
+        "market prediction"
+      ],
+      "entities": [
+        "nvidia"
+      ],
+      "entityGroups": [
+        [
+          "nvidia",
+          "nvda"
+        ]
+      ],
+      "sig": "01939b96",
+      "sigFull": "01939b96",
+      "sigCore": "1f87e1fc",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "tsla-up-or-down-on-december-23-2025": {
+      "title": "Tesla (TSLA) Up or Down on December 23?",
+      "marketIds": [
+        "tsla-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "tsla-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "tsla",
+        "tesla",
+        "stock price",
+        "closing price",
+        "nasdaq",
+        "market movement",
+        "up or down",
+        "price prediction",
+        "share price",
+        "equity",
+        "trading day"
+      ],
+      "entities": [
+        "tesla"
+      ],
+      "entityGroups": [
+        [
+          "tesla",
+          "tsla"
+        ]
+      ],
+      "sig": "fff1c699",
+      "sigFull": "fff1c699",
+      "sigCore": "1418af16",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "hsi-up-or-down-on-december-23-2025": {
+      "title": "Hang Seng (HSI) Up or Down on December 23?",
+      "marketIds": [
+        "hsi-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "hsi-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "hang seng index",
+        "hsi",
+        "hong kong stock market",
+        "hkex",
+        "hang seng",
+        "hong kong",
+        "stock index",
+        "market performance",
+        "closing price",
+        "trading day"
+      ],
+      "entities": [
+        "hsi"
+      ],
+      "entityGroups": [
+        [
+          "hsi",
+          "hang seng"
+        ]
+      ],
+      "sig": "f66c6130",
+      "sigFull": "f66c6130",
+      "sigCore": "24fd54eb",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "dax-up-or-down-on-december-23-2025": {
+      "title": "DAX (DAX) Up or Down on December 23?",
+      "marketIds": [
+        "dax-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "dax-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "dax",
+        "dax index",
+        "german stock index",
+        "deutscher aktienindex",
+        "frankfurt stock exchange",
+        "xetra",
+        "dax performance",
+        "dax closing price",
+        "dax 40",
+        "gdaxi",
+        "stock market",
+        "blue chip index"
+      ],
+      "entities": [
+        "dax"
+      ],
+      "entityGroups": [
+        [
+          "dax"
+        ]
+      ],
+      "sig": "2780ac6e",
+      "sigFull": "2780ac6e",
+      "sigCore": "61990b9e",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "meta-up-or-down-on-december-23-2025": {
+      "title": "Meta (META) Up or Down on December 23?",
+      "marketIds": [
+        "meta-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "meta-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "meta",
+        "meta platforms",
+        "stock price",
+        "closing price",
+        "nasdaq",
+        "up or down",
+        "price movement",
+        "daily close",
+        "share price"
+      ],
+      "entities": [
+        "meta"
+      ],
+      "entityGroups": [
+        [
+          "meta"
+        ]
+      ],
+      "sig": "eab521a7",
+      "sigFull": "eab521a7",
+      "sigCore": "df3e5843",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "ukx-up-or-down-on-december-23-2025": {
+      "title": "FTSE 100 (UKX) Up or Down on December 23?",
+      "marketIds": [
+        "ukx-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "ukx-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "ftse 100",
+        "ukx",
+        "footsie",
+        "uk stock market",
+        "london stock exchange",
+        "index",
+        "closing price",
+        "up",
+        "down",
+        "market movement",
+        "trading day",
+        "december 23"
+      ],
+      "entities": [
+        "ftse 100"
+      ],
+      "entityGroups": [
+        [
+          "ftse 100",
+          "ukx"
+        ]
+      ],
+      "sig": "2a04270b",
+      "sigFull": "2a04270b",
+      "sigCore": "13c08fda",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "cl-up-or-down-on-december-23-2025": {
+      "title": "Crude Oil (CL) Up or Down on December 23?",
+      "marketIds": [
+        "cl-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "cl-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "crude oil",
+        "cl",
+        "wti",
+        "futures",
+        "cme",
+        "settlement price",
+        "front month",
+        "active month",
+        "energy",
+        "commodities",
+        "oil price",
+        "petroleum"
+      ],
+      "entities": [
+        "crude oil"
+      ],
+      "entityGroups": [
+        [
+          "crude oil"
+        ]
+      ],
+      "sig": "47e255e7",
+      "sigFull": "47e255e7",
+      "sigCore": "90be88ab",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "googl-up-or-down-on-december-23-2025": {
+      "title": "Google (GOOGL) Up or Down on December 23?",
+      "marketIds": [
+        "googl-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "googl-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "googl",
+        "google",
+        "alphabet",
+        "stock price",
+        "closing price",
+        "nasdaq",
+        "share price",
+        "equity",
+        "ticker",
+        "market movement",
+        "up or down",
+        "december 23"
+      ],
+      "entities": [
+        "googl"
+      ],
+      "entityGroups": [
+        [
+          "googl",
+          "google"
+        ]
+      ],
+      "sig": "e8e851e5",
+      "sigFull": "e8e851e5",
+      "sigCore": "1cefffba",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "xrp-up-or-down-december-24-8am-et": {
+      "title": "XRP Up or Down - December 24, 8AM ET",
+      "marketIds": [
+        "xrp-up-or-down-december-24-8am-et"
+      ],
+      "bestMarketId": "xrp-up-or-down-december-24-8am-et",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "xrp",
+        "ripple",
+        "xrp/usdt",
+        "xrp price",
+        "xrp candle",
+        "binance xrp",
+        "xrp up",
+        "xrp down",
+        "xrp 1h",
+        "xrp open",
+        "xrp close",
+        "xrp/usdt pair"
+      ],
+      "entities": [
+        "xrp"
+      ],
+      "entityGroups": [
+        [
+          "xrp"
+        ]
+      ],
+      "sig": "be4ec5e2",
+      "sigFull": "be4ec5e2",
+      "sigCore": "a4861926",
+      "reused": false,
+      "provider": "polymarket"
+    },
+    "dji-up-or-down-on-december-23-2025": {
+      "title": "Dow Jones (DJI) Up or Down on December 23?",
+      "marketIds": [
+        "dji-up-or-down-on-december-23-2025"
+      ],
+      "bestMarketId": "dji-up-or-down-on-december-23-2025",
+      "bestLabels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "dow jones",
+        "dji",
+        "dow 30",
+        "industrial average",
+        "stock market",
+        "index",
+        "closing price",
+        "up",
+        "down",
+        "december 23",
+        "djia"
+      ],
+      "entities": [
+        "dow jones"
+      ],
+      "entityGroups": [
+        [
+          "dow jones",
+          "dji"
+        ]
+      ],
+      "sig": "b2921853",
+      "sigFull": "b2921853",
+      "sigCore": "230323bd",
+      "reused": false,
+      "provider": "polymarket"
+    }
+  },
+  "markets": {
+    "sp-500-spx-up-or-down-on-december-22": {
+      "title": "S&P 500 (SPX) Up or Down on December 22?",
+      "url": "https://polymarket.com/event/sp-500-spx-up-or-down-on-december-22",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "s&p 500",
+        "spx",
+        "standard and poor's 500",
+        "stock market",
+        "index",
+        "us market",
+        "equity market",
+        "closing price",
+        "december 22",
+        "market movement"
+      ],
+      "entities": [
+        "s&p 500"
+      ],
+      "entityGroups": [
+        [
+          "s&p 500",
+          "spx"
+        ]
+      ],
+      "endDate": "2025-12-22T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "finance",
+        "daily",
+        "spx",
+        "indicies",
+        "up-or-down",
+        "hide-from-new"
+      ],
+      "provider": "polymarket"
+    },
+    "xrp-up-or-down-december-24-9am-et": {
+      "title": "XRP Up or Down - December 24, 9AM ET",
+      "url": "https://polymarket.com/event/xrp-up-or-down-december-24-9am-et",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "xrp",
+        "ripple",
+        "xrp/usdt",
+        "binance",
+        "price",
+        "candle",
+        "1h",
+        "open",
+        "close",
+        "up",
+        "down",
+        "december 24",
+        "9am et"
+      ],
+      "entities": [
+        "xrp"
+      ],
+      "entityGroups": [
+        [
+          "xrp"
+        ]
+      ],
+      "endDate": "2025-12-24T15:00:00Z",
+      "isSports": false,
+      "tags": [
+        "crypto",
+        "crypto-prices",
+        "recurring",
+        "hide-from-new",
+        "xrp",
+        "ripple",
+        "1H",
+        "up-or-down"
+      ],
+      "provider": "polymarket"
+    },
+    "solana-up-or-down-december-24-9am-et": {
+      "title": "Solana Up or Down - December 24, 9AM ET",
+      "url": "https://polymarket.com/event/solana-up-or-down-december-24-9am-et",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "sol",
+        "solana",
+        "sol/usdt",
+        "binance",
+        "price",
+        "up",
+        "down",
+        "candle",
+        "1h",
+        "open",
+        "close",
+        "december 24",
+        "9am et"
+      ],
+      "entities": [
+        "solana"
+      ],
+      "entityGroups": [
+        [
+          "solana",
+          "sol"
+        ]
+      ],
+      "endDate": "2025-12-24T15:00:00Z",
+      "isSports": false,
+      "tags": [
+        "crypto",
+        "crypto-prices",
+        "recurring",
+        "hide-from-new",
+        "solana",
+        "1H",
+        "up-or-down"
+      ],
+      "provider": "polymarket"
+    },
+    "ethereum-up-or-down-december-24-9am-et": {
+      "title": "Ethereum Up or Down - December 24, 9AM ET",
+      "url": "https://polymarket.com/event/ethereum-up-or-down-december-24-9am-et",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "eth",
+        "ethereum",
+        "eth/usdt",
+        "ethusdt",
+        "crypto",
+        "cryptocurrency",
+        "price",
+        "trading",
+        "binance",
+        "candle",
+        "1h",
+        "up",
+        "down"
+      ],
+      "entities": [
+        "ethereum"
+      ],
+      "entityGroups": [
+        [
+          "ethereum",
+          "eth"
+        ]
+      ],
+      "endDate": "2025-12-24T15:00:00Z",
+      "isSports": false,
+      "tags": [
+        "crypto",
+        "crypto-prices",
+        "recurring",
+        "hide-from-new",
+        "ethereum",
+        "1H",
+        "up-or-down"
+      ],
+      "provider": "polymarket"
+    },
+    "bitcoin-up-or-down-december-24-9am-et": {
+      "title": "Bitcoin Up or Down - December 24, 9AM ET",
+      "url": "https://polymarket.com/event/bitcoin-up-or-down-december-24-9am-et",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "btc",
+        "bitcoin",
+        "btc/usdt",
+        "bitcoin price",
+        "crypto",
+        "cryptocurrency",
+        "binance",
+        "btcusdt",
+        "bitcoin up or down",
+        "price prediction",
+        "1h candle"
+      ],
+      "entities": [
+        "bitcoin"
+      ],
+      "entityGroups": [
+        [
+          "bitcoin",
+          "btc"
+        ]
+      ],
+      "endDate": "2025-12-24T15:00:00Z",
+      "isSports": false,
+      "tags": [
+        "crypto",
+        "crypto-prices",
+        "recurring",
+        "hide-from-new",
+        "bitcoin",
+        "1H",
+        "up-or-down"
+      ],
+      "provider": "polymarket"
+    },
+    "open-up-or-down-on-december-23-2025": {
+      "title": "Opendoor (OPEN) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/open-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "open",
+        "opendoor",
+        "opendoor technologies",
+        "stock price",
+        "nasdaq",
+        "closing price",
+        "share price",
+        "equity",
+        "trading",
+        "market movement",
+        "december 23",
+        "price action"
+      ],
+      "entities": [
+        "open"
+      ],
+      "entityGroups": [
+        [
+          "open",
+          "opendoor"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "open",
+        "equities",
+        "up-or-down",
+        "daily",
+        "finance",
+        "hide-from-new",
+        "stocks"
+      ],
+      "provider": "polymarket"
+    },
+    "pltr-up-or-down-on-december-23-2025": {
+      "title": "Palantir (PLTR) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/pltr-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "pltr",
+        "palantir",
+        "stock price",
+        "closing price",
+        "nasdaq",
+        "december 23",
+        "up or down",
+        "price movement",
+        "trading day",
+        "market prediction"
+      ],
+      "entities": [
+        "palantir"
+      ],
+      "entityGroups": [
+        [
+          "palantir",
+          "pltr"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "pltr",
+        "equities",
+        "up-or-down",
+        "daily",
+        "finance",
+        "hide-from-new",
+        "stocks"
+      ],
+      "provider": "polymarket"
+    },
+    "nya-up-or-down-on-december-23-2025": {
+      "title": "NYA (NYA) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/nya-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "nyse composite",
+        "nya",
+        "index",
+        "stock market",
+        "closing price",
+        "december 23",
+        "2025",
+        "up or down",
+        "price movement",
+        "trading day"
+      ],
+      "entities": [
+        "nya"
+      ],
+      "entityGroups": [
+        [
+          "nya"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "nya",
+        "up-or-down",
+        "daily",
+        "indicies",
+        "finance",
+        "hide-from-new"
+      ],
+      "provider": "polymarket"
+    },
+    "nflx-up-or-down-on-december-23-2025": {
+      "title": "Netflix (NFLX) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/nflx-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "nflx",
+        "netflix",
+        "stock price",
+        "closing price",
+        "nasdaq",
+        "share price",
+        "equity",
+        "ticker",
+        "market movement",
+        "dec 23",
+        "up or down"
+      ],
+      "entities": [
+        "netflix"
+      ],
+      "entityGroups": [
+        [
+          "netflix",
+          "nflx"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "nflx",
+        "equities",
+        "up-or-down",
+        "daily",
+        "finance",
+        "hide-from-new",
+        "stocks"
+      ],
+      "provider": "polymarket"
+    },
+    "rut-up-or-down-on-december-23-2025": {
+      "title": "Russell 2000 (RUT) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/rut-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "rut",
+        "russell 2000",
+        "small cap",
+        "index",
+        "market",
+        "stock",
+        "price",
+        "close",
+        "trading",
+        "december 23"
+      ],
+      "entities": [
+        "rut"
+      ],
+      "entityGroups": [
+        [
+          "rut"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "rut",
+        "up-or-down",
+        "daily",
+        "indicies",
+        "finance",
+        "hide-from-new"
+      ],
+      "provider": "polymarket"
+    },
+    "nvda-up-or-down-on-december-23-2025": {
+      "title": "NVIDIA (NVDA) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/nvda-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "nvda",
+        "nvidia",
+        "stock price",
+        "closing price",
+        "nasdaq",
+        "dec 23",
+        "december 23",
+        "up or down",
+        "price movement",
+        "trading day",
+        "market prediction"
+      ],
+      "entities": [
+        "nvidia"
+      ],
+      "entityGroups": [
+        [
+          "nvidia",
+          "nvda"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "nvda",
+        "equities",
+        "up-or-down",
+        "daily",
+        "finance",
+        "hide-from-new",
+        "stocks"
+      ],
+      "provider": "polymarket"
+    },
+    "tsla-up-or-down-on-december-23-2025": {
+      "title": "Tesla (TSLA) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/tsla-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "tsla",
+        "tesla",
+        "stock price",
+        "closing price",
+        "nasdaq",
+        "market movement",
+        "up or down",
+        "price prediction",
+        "share price",
+        "equity",
+        "trading day"
+      ],
+      "entities": [
+        "tesla"
+      ],
+      "entityGroups": [
+        [
+          "tesla",
+          "tsla"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "tsla",
+        "equities",
+        "up-or-down",
+        "daily",
+        "finance",
+        "hide-from-new",
+        "stocks"
+      ],
+      "provider": "polymarket"
+    },
+    "hsi-up-or-down-on-december-23-2025": {
+      "title": "Hang Seng (HSI) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/hsi-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "hang seng index",
+        "hsi",
+        "hong kong stock market",
+        "hkex",
+        "hang seng",
+        "hong kong",
+        "stock index",
+        "market performance",
+        "closing price",
+        "trading day"
+      ],
+      "entities": [
+        "hsi"
+      ],
+      "entityGroups": [
+        [
+          "hsi",
+          "hang seng"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "hsi",
+        "up-or-down",
+        "daily",
+        "indicies",
+        "finance",
+        "hide-from-new"
+      ],
+      "provider": "polymarket"
+    },
+    "dax-up-or-down-on-december-23-2025": {
+      "title": "DAX (DAX) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/dax-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "dax",
+        "dax index",
+        "german stock index",
+        "deutscher aktienindex",
+        "frankfurt stock exchange",
+        "xetra",
+        "dax performance",
+        "dax closing price",
+        "dax 40",
+        "gdaxi",
+        "stock market",
+        "blue chip index"
+      ],
+      "entities": [
+        "dax"
+      ],
+      "entityGroups": [
+        [
+          "dax"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "dax",
+        "up-or-down",
+        "daily",
+        "indicies",
+        "finance",
+        "hide-from-new"
+      ],
+      "provider": "polymarket"
+    },
+    "meta-up-or-down-on-december-23-2025": {
+      "title": "Meta (META) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/meta-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "meta",
+        "meta platforms",
+        "stock price",
+        "closing price",
+        "nasdaq",
+        "up or down",
+        "price movement",
+        "daily close",
+        "share price"
+      ],
+      "entities": [
+        "meta"
+      ],
+      "entityGroups": [
+        [
+          "meta"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "meta",
+        "equities",
+        "up-or-down",
+        "daily",
+        "finance",
+        "hide-from-new",
+        "stocks"
+      ],
+      "provider": "polymarket"
+    },
+    "ukx-up-or-down-on-december-23-2025": {
+      "title": "FTSE 100 (UKX) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/ukx-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "ftse 100",
+        "ukx",
+        "footsie",
+        "uk stock market",
+        "london stock exchange",
+        "index",
+        "closing price",
+        "up",
+        "down",
+        "market movement",
+        "trading day",
+        "december 23"
+      ],
+      "entities": [
+        "ftse 100"
+      ],
+      "entityGroups": [
+        [
+          "ftse 100",
+          "ukx"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "ftse",
+        "up-or-down",
+        "daily",
+        "indicies",
+        "finance",
+        "hide-from-new"
+      ],
+      "provider": "polymarket"
+    },
+    "cl-up-or-down-on-december-23-2025": {
+      "title": "Crude Oil (CL) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/cl-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "crude oil",
+        "cl",
+        "wti",
+        "futures",
+        "cme",
+        "settlement price",
+        "front month",
+        "active month",
+        "energy",
+        "commodities",
+        "oil price",
+        "petroleum"
+      ],
+      "entities": [
+        "crude oil"
+      ],
+      "entityGroups": [
+        [
+          "crude oil"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "nymex-crude-oil-futures",
+        "up-or-down",
+        "finance",
+        "commodities",
+        "daily",
+        "hide-from-new"
+      ],
+      "provider": "polymarket"
+    },
+    "googl-up-or-down-on-december-23-2025": {
+      "title": "Google (GOOGL) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/googl-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "googl",
+        "google",
+        "alphabet",
+        "stock price",
+        "closing price",
+        "nasdaq",
+        "share price",
+        "equity",
+        "ticker",
+        "market movement",
+        "up or down",
+        "december 23"
+      ],
+      "entities": [
+        "googl"
+      ],
+      "entityGroups": [
+        [
+          "googl",
+          "google"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "equities",
+        "daily",
+        "googl",
+        "up-or-down",
+        "finance",
+        "hide-from-new",
+        "stocks"
+      ],
+      "provider": "polymarket"
+    },
+    "xrp-up-or-down-december-24-8am-et": {
+      "title": "XRP Up or Down - December 24, 8AM ET",
+      "url": "https://polymarket.com/event/xrp-up-or-down-december-24-8am-et",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "xrp",
+        "ripple",
+        "xrp/usdt",
+        "xrp price",
+        "xrp candle",
+        "binance xrp",
+        "xrp up",
+        "xrp down",
+        "xrp 1h",
+        "xrp open",
+        "xrp close",
+        "xrp/usdt pair"
+      ],
+      "entities": [
+        "xrp"
+      ],
+      "entityGroups": [
+        [
+          "xrp"
+        ]
+      ],
+      "endDate": "2025-12-24T14:00:00Z",
+      "isSports": false,
+      "tags": [
+        "crypto",
+        "crypto-prices",
+        "recurring",
+        "hide-from-new",
+        "xrp",
+        "ripple",
+        "1H",
+        "up-or-down"
+      ],
+      "provider": "polymarket"
+    },
+    "dji-up-or-down-on-december-23-2025": {
+      "title": "Dow Jones (DJI) Up or Down on December 23?",
+      "url": "https://polymarket.com/event/dji-up-or-down-on-december-23-2025",
+      "volume": 0.0,
+      "labels": {
+        "outcomes": [
+          "Up",
+          "Down"
+        ]
+      },
+      "keywords": [
+        "dow jones",
+        "dji",
+        "dow 30",
+        "industrial average",
+        "stock market",
+        "index",
+        "closing price",
+        "up",
+        "down",
+        "december 23",
+        "djia"
+      ],
+      "entities": [
+        "dow jones"
+      ],
+      "entityGroups": [
+        [
+          "dow jones",
+          "dji"
+        ]
+      ],
+      "endDate": "2025-12-23T21:00:00Z",
+      "isSports": false,
+      "tags": [
+        "dji",
+        "up-or-down",
+        "daily",
+        "indicies",
+        "finance",
+        "hide-from-new"
+      ],
+      "provider": "polymarket"
+    }
+  },
+  "index": {
+    "1h": [
+      "ethereum-up-or-down-december-24-9am-et",
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "1h candle": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "2025": [
+      "nya-up-or-down-on-december-23-2025"
+    ],
+    "9am et": [
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "active month": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "alphabet": [
+      "googl-up-or-down-on-december-23-2025"
+    ],
+    "binance": [
+      "bitcoin-up-or-down-december-24-9am-et",
+      "ethereum-up-or-down-december-24-9am-et",
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "binance xrp": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "bitcoin": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "bitcoin price": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "bitcoin up or down": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "blue chip index": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "btc": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "btc/usdt": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "btcusdt": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "candle": [
+      "ethereum-up-or-down-december-24-9am-et",
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "cl": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "close": [
+      "rut-up-or-down-on-december-23-2025",
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "closing price": [
+      "dji-up-or-down-on-december-23-2025",
+      "googl-up-or-down-on-december-23-2025",
+      "hsi-up-or-down-on-december-23-2025",
+      "meta-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025",
+      "sp-500-spx-up-or-down-on-december-22",
+      "tsla-up-or-down-on-december-23-2025",
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "cme": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "commodities": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "crude oil": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "crypto": [
+      "bitcoin-up-or-down-december-24-9am-et",
+      "ethereum-up-or-down-december-24-9am-et"
+    ],
+    "cryptocurrency": [
+      "bitcoin-up-or-down-december-24-9am-et",
+      "ethereum-up-or-down-december-24-9am-et"
+    ],
+    "daily close": [
+      "meta-up-or-down-on-december-23-2025"
+    ],
+    "dax": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "dax 40": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "dax closing price": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "dax index": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "dax performance": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "dec 23": [
+      "nflx-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025"
+    ],
+    "december 22": [
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "december 23": [
+      "dji-up-or-down-on-december-23-2025",
+      "googl-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025",
+      "rut-up-or-down-on-december-23-2025",
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "december 24": [
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "deutscher aktienindex": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "dji": [
+      "dji-up-or-down-on-december-23-2025"
+    ],
+    "djia": [
+      "dji-up-or-down-on-december-23-2025"
+    ],
+    "dow 30": [
+      "dji-up-or-down-on-december-23-2025"
+    ],
+    "dow jones": [
+      "dji-up-or-down-on-december-23-2025"
+    ],
+    "down": [
+      "dji-up-or-down-on-december-23-2025",
+      "ethereum-up-or-down-december-24-9am-et",
+      "solana-up-or-down-december-24-9am-et",
+      "ukx-up-or-down-on-december-23-2025",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "energy": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "equity": [
+      "googl-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "equity market": [
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "eth": [
+      "ethereum-up-or-down-december-24-9am-et"
+    ],
+    "eth/usdt": [
+      "ethereum-up-or-down-december-24-9am-et"
+    ],
+    "ethereum": [
+      "ethereum-up-or-down-december-24-9am-et"
+    ],
+    "ethusdt": [
+      "ethereum-up-or-down-december-24-9am-et"
+    ],
+    "footsie": [
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "frankfurt stock exchange": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "front month": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "ftse 100": [
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "futures": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "gdaxi": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "german stock index": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "googl": [
+      "googl-up-or-down-on-december-23-2025"
+    ],
+    "google": [
+      "googl-up-or-down-on-december-23-2025"
+    ],
+    "hang seng": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "hang seng index": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "hkex": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "hong kong": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "hong kong stock market": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "hsi": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "index": [
+      "dji-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "rut-up-or-down-on-december-23-2025",
+      "sp-500-spx-up-or-down-on-december-22",
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "industrial average": [
+      "dji-up-or-down-on-december-23-2025"
+    ],
+    "london stock exchange": [
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "market": [
+      "rut-up-or-down-on-december-23-2025"
+    ],
+    "market movement": [
+      "googl-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "sp-500-spx-up-or-down-on-december-22",
+      "tsla-up-or-down-on-december-23-2025",
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "market performance": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "market prediction": [
+      "nvda-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025"
+    ],
+    "meta": [
+      "meta-up-or-down-on-december-23-2025"
+    ],
+    "meta platforms": [
+      "meta-up-or-down-on-december-23-2025"
+    ],
+    "nasdaq": [
+      "googl-up-or-down-on-december-23-2025",
+      "meta-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025",
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "netflix": [
+      "nflx-up-or-down-on-december-23-2025"
+    ],
+    "nflx": [
+      "nflx-up-or-down-on-december-23-2025"
+    ],
+    "nvda": [
+      "nvda-up-or-down-on-december-23-2025"
+    ],
+    "nvidia": [
+      "nvda-up-or-down-on-december-23-2025"
+    ],
+    "nya": [
+      "nya-up-or-down-on-december-23-2025"
+    ],
+    "nyse composite": [
+      "nya-up-or-down-on-december-23-2025"
+    ],
+    "oil price": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "open": [
+      "open-up-or-down-on-december-23-2025",
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "opendoor": [
+      "open-up-or-down-on-december-23-2025"
+    ],
+    "opendoor technologies": [
+      "open-up-or-down-on-december-23-2025"
+    ],
+    "palantir": [
+      "pltr-up-or-down-on-december-23-2025"
+    ],
+    "petroleum": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "pltr": [
+      "pltr-up-or-down-on-december-23-2025"
+    ],
+    "price": [
+      "ethereum-up-or-down-december-24-9am-et",
+      "rut-up-or-down-on-december-23-2025",
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "price action": [
+      "open-up-or-down-on-december-23-2025"
+    ],
+    "price movement": [
+      "meta-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025"
+    ],
+    "price prediction": [
+      "bitcoin-up-or-down-december-24-9am-et",
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "ripple": [
+      "xrp-up-or-down-december-24-8am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "russell 2000": [
+      "rut-up-or-down-on-december-23-2025"
+    ],
+    "rut": [
+      "rut-up-or-down-on-december-23-2025"
+    ],
+    "s&p 500": [
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "settlement price": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "share price": [
+      "googl-up-or-down-on-december-23-2025",
+      "meta-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "small cap": [
+      "rut-up-or-down-on-december-23-2025"
+    ],
+    "sol": [
+      "solana-up-or-down-december-24-9am-et"
+    ],
+    "sol/usdt": [
+      "solana-up-or-down-december-24-9am-et"
+    ],
+    "solana": [
+      "solana-up-or-down-december-24-9am-et"
+    ],
+    "spx": [
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "standard and poor's 500": [
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "stock": [
+      "rut-up-or-down-on-december-23-2025"
+    ],
+    "stock index": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "stock market": [
+      "dax-up-or-down-on-december-23-2025",
+      "dji-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "stock price": [
+      "googl-up-or-down-on-december-23-2025",
+      "meta-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025",
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "tesla": [
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "ticker": [
+      "googl-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025"
+    ],
+    "trading": [
+      "ethereum-up-or-down-december-24-9am-et",
+      "open-up-or-down-on-december-23-2025",
+      "rut-up-or-down-on-december-23-2025"
+    ],
+    "trading day": [
+      "hsi-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025",
+      "tsla-up-or-down-on-december-23-2025",
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "tsla": [
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "uk stock market": [
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "ukx": [
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "up": [
+      "dji-up-or-down-on-december-23-2025",
+      "ethereum-up-or-down-december-24-9am-et",
+      "solana-up-or-down-december-24-9am-et",
+      "ukx-up-or-down-on-december-23-2025",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "up or down": [
+      "googl-up-or-down-on-december-23-2025",
+      "meta-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025",
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "us market": [
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "wti": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "xetra": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "xrp": [
+      "xrp-up-or-down-december-24-8am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "xrp 1h": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp candle": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp close": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp down": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp open": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp price": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp up": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp/usdt": [
+      "xrp-up-or-down-december-24-8am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "xrp/usdt pair": [
+      "xrp-up-or-down-december-24-8am-et"
+    ]
+  },
+  "eventIndex": {
+    "1h": [
+      "ethereum-up-or-down-december-24-9am-et",
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "1h candle": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "2025": [
+      "nya-up-or-down-on-december-23-2025"
+    ],
+    "9am et": [
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "active month": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "alphabet": [
+      "googl-up-or-down-on-december-23-2025"
+    ],
+    "binance": [
+      "bitcoin-up-or-down-december-24-9am-et",
+      "ethereum-up-or-down-december-24-9am-et",
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "binance xrp": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "bitcoin": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "bitcoin price": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "bitcoin up or down": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "blue chip index": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "btc": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "btc/usdt": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "btcusdt": [
+      "bitcoin-up-or-down-december-24-9am-et"
+    ],
+    "candle": [
+      "ethereum-up-or-down-december-24-9am-et",
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "cl": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "close": [
+      "rut-up-or-down-on-december-23-2025",
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "closing price": [
+      "dji-up-or-down-on-december-23-2025",
+      "googl-up-or-down-on-december-23-2025",
+      "hsi-up-or-down-on-december-23-2025",
+      "meta-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025",
+      "sp-500-spx-up-or-down-on-december-22",
+      "tsla-up-or-down-on-december-23-2025",
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "cme": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "commodities": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "crude oil": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "crypto": [
+      "bitcoin-up-or-down-december-24-9am-et",
+      "ethereum-up-or-down-december-24-9am-et"
+    ],
+    "cryptocurrency": [
+      "bitcoin-up-or-down-december-24-9am-et",
+      "ethereum-up-or-down-december-24-9am-et"
+    ],
+    "daily close": [
+      "meta-up-or-down-on-december-23-2025"
+    ],
+    "dax": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "dax 40": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "dax closing price": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "dax index": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "dax performance": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "dec 23": [
+      "nflx-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025"
+    ],
+    "december 22": [
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "december 23": [
+      "dji-up-or-down-on-december-23-2025",
+      "googl-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025",
+      "rut-up-or-down-on-december-23-2025",
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "december 24": [
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "deutscher aktienindex": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "dji": [
+      "dji-up-or-down-on-december-23-2025"
+    ],
+    "djia": [
+      "dji-up-or-down-on-december-23-2025"
+    ],
+    "dow 30": [
+      "dji-up-or-down-on-december-23-2025"
+    ],
+    "dow jones": [
+      "dji-up-or-down-on-december-23-2025"
+    ],
+    "down": [
+      "dji-up-or-down-on-december-23-2025",
+      "ethereum-up-or-down-december-24-9am-et",
+      "solana-up-or-down-december-24-9am-et",
+      "ukx-up-or-down-on-december-23-2025",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "energy": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "equity": [
+      "googl-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "equity market": [
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "eth": [
+      "ethereum-up-or-down-december-24-9am-et"
+    ],
+    "eth/usdt": [
+      "ethereum-up-or-down-december-24-9am-et"
+    ],
+    "ethereum": [
+      "ethereum-up-or-down-december-24-9am-et"
+    ],
+    "ethusdt": [
+      "ethereum-up-or-down-december-24-9am-et"
+    ],
+    "footsie": [
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "frankfurt stock exchange": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "front month": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "ftse 100": [
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "futures": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "gdaxi": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "german stock index": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "googl": [
+      "googl-up-or-down-on-december-23-2025"
+    ],
+    "google": [
+      "googl-up-or-down-on-december-23-2025"
+    ],
+    "hang seng": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "hang seng index": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "hkex": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "hong kong": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "hong kong stock market": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "hsi": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "index": [
+      "dji-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "rut-up-or-down-on-december-23-2025",
+      "sp-500-spx-up-or-down-on-december-22",
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "industrial average": [
+      "dji-up-or-down-on-december-23-2025"
+    ],
+    "london stock exchange": [
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "market": [
+      "rut-up-or-down-on-december-23-2025"
+    ],
+    "market movement": [
+      "googl-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "sp-500-spx-up-or-down-on-december-22",
+      "tsla-up-or-down-on-december-23-2025",
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "market performance": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "market prediction": [
+      "nvda-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025"
+    ],
+    "meta": [
+      "meta-up-or-down-on-december-23-2025"
+    ],
+    "meta platforms": [
+      "meta-up-or-down-on-december-23-2025"
+    ],
+    "nasdaq": [
+      "googl-up-or-down-on-december-23-2025",
+      "meta-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025",
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "netflix": [
+      "nflx-up-or-down-on-december-23-2025"
+    ],
+    "nflx": [
+      "nflx-up-or-down-on-december-23-2025"
+    ],
+    "nvda": [
+      "nvda-up-or-down-on-december-23-2025"
+    ],
+    "nvidia": [
+      "nvda-up-or-down-on-december-23-2025"
+    ],
+    "nya": [
+      "nya-up-or-down-on-december-23-2025"
+    ],
+    "nyse composite": [
+      "nya-up-or-down-on-december-23-2025"
+    ],
+    "oil price": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "open": [
+      "open-up-or-down-on-december-23-2025",
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "opendoor": [
+      "open-up-or-down-on-december-23-2025"
+    ],
+    "opendoor technologies": [
+      "open-up-or-down-on-december-23-2025"
+    ],
+    "palantir": [
+      "pltr-up-or-down-on-december-23-2025"
+    ],
+    "petroleum": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "pltr": [
+      "pltr-up-or-down-on-december-23-2025"
+    ],
+    "price": [
+      "ethereum-up-or-down-december-24-9am-et",
+      "rut-up-or-down-on-december-23-2025",
+      "solana-up-or-down-december-24-9am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "price action": [
+      "open-up-or-down-on-december-23-2025"
+    ],
+    "price movement": [
+      "meta-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025"
+    ],
+    "price prediction": [
+      "bitcoin-up-or-down-december-24-9am-et",
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "ripple": [
+      "xrp-up-or-down-december-24-8am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "russell 2000": [
+      "rut-up-or-down-on-december-23-2025"
+    ],
+    "rut": [
+      "rut-up-or-down-on-december-23-2025"
+    ],
+    "s&p 500": [
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "settlement price": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "share price": [
+      "googl-up-or-down-on-december-23-2025",
+      "meta-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "small cap": [
+      "rut-up-or-down-on-december-23-2025"
+    ],
+    "sol": [
+      "solana-up-or-down-december-24-9am-et"
+    ],
+    "sol/usdt": [
+      "solana-up-or-down-december-24-9am-et"
+    ],
+    "solana": [
+      "solana-up-or-down-december-24-9am-et"
+    ],
+    "spx": [
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "standard and poor's 500": [
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "stock": [
+      "rut-up-or-down-on-december-23-2025"
+    ],
+    "stock index": [
+      "hsi-up-or-down-on-december-23-2025"
+    ],
+    "stock market": [
+      "dax-up-or-down-on-december-23-2025",
+      "dji-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "stock price": [
+      "googl-up-or-down-on-december-23-2025",
+      "meta-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "open-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025",
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "tesla": [
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "ticker": [
+      "googl-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025"
+    ],
+    "trading": [
+      "ethereum-up-or-down-december-24-9am-et",
+      "open-up-or-down-on-december-23-2025",
+      "rut-up-or-down-on-december-23-2025"
+    ],
+    "trading day": [
+      "hsi-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025",
+      "tsla-up-or-down-on-december-23-2025",
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "tsla": [
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "uk stock market": [
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "ukx": [
+      "ukx-up-or-down-on-december-23-2025"
+    ],
+    "up": [
+      "dji-up-or-down-on-december-23-2025",
+      "ethereum-up-or-down-december-24-9am-et",
+      "solana-up-or-down-december-24-9am-et",
+      "ukx-up-or-down-on-december-23-2025",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "up or down": [
+      "googl-up-or-down-on-december-23-2025",
+      "meta-up-or-down-on-december-23-2025",
+      "nflx-up-or-down-on-december-23-2025",
+      "nvda-up-or-down-on-december-23-2025",
+      "nya-up-or-down-on-december-23-2025",
+      "pltr-up-or-down-on-december-23-2025",
+      "tsla-up-or-down-on-december-23-2025"
+    ],
+    "us market": [
+      "sp-500-spx-up-or-down-on-december-22"
+    ],
+    "wti": [
+      "cl-up-or-down-on-december-23-2025"
+    ],
+    "xetra": [
+      "dax-up-or-down-on-december-23-2025"
+    ],
+    "xrp": [
+      "xrp-up-or-down-december-24-8am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "xrp 1h": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp candle": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp close": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp down": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp open": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp price": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp up": [
+      "xrp-up-or-down-december-24-8am-et"
+    ],
+    "xrp/usdt": [
+      "xrp-up-or-down-december-24-8am-et",
+      "xrp-up-or-down-december-24-9am-et"
+    ],
+    "xrp/usdt pair": [
+      "xrp-up-or-down-december-24-8am-et"
+    ]
+  }
+}
