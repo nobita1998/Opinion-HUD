@@ -30,6 +30,7 @@ const state = {
   hoverTimer: null,
   activeHud: null,
   activeHudAbort: null,
+  activeHudDocClick: null,
   invalidated: false,
 };
 
@@ -535,6 +536,14 @@ function createIcon() {
 }
 
 function removeHud() {
+  if (state.activeHudDocClick) {
+    try {
+      document.removeEventListener("click", state.activeHudDocClick, true);
+    } catch {
+      // ignore
+    }
+    state.activeHudDocClick = null;
+  }
   if (state.activeHudAbort) {
     try {
       state.activeHudAbort.abort();
@@ -1049,8 +1058,8 @@ function renderHud(anchorEl, match) {
     const path = e.composedPath ? e.composedPath() : [];
     if (path.includes(container) || path.includes(anchorEl)) return;
     removeHud();
-    document.removeEventListener("click", onDocClick, true);
   };
+  state.activeHudDocClick = onDocClick;
   document.addEventListener("click", onDocClick, true);
 }
 
