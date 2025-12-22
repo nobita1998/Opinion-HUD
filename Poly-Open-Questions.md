@@ -2,20 +2,25 @@
 
 目标：在 Opinion HUD 中接入 Polymarket，并实现与当前 Opinion 版本一致的体验（匹配 + 展示实时赔率/概率 + 一键打开主市场页）。
 
+说明：如果采用官方 `https://gamma-api.polymarket.com`（Gamma Markets API），很多“待确认项”可以直接落地或降级处理（尤其是 slug、event 聚合、HTTPS）。体育类也能支持，但跳转建议走统一入口而非硬拼 `/sports/...`。
+
 ## A. 网页跳转（最关键）
 
-1. **API 是否提供可直接打开的网页 URL？**
-   - 是否存在字段：`eventUrl` / `webUrl` / `url` / `slug` / `eventSlug`（在 `GET /api/markets` 或 `GET /api/markets/wrap-events` 中）
-   - 如果有：优先直接使用该 URL，避免自行拼接导致打开错误页面。
+1. **（Gamma 已解决）非体育类跳转**
+   - Gamma 的 `GET /events` / `GET /markets` 都提供 `slug`
+   - 非体育类可直接打开：`https://polymarket.com/event/<event-slug>`
 
-2. **体育类市场的网页路径规则**
+2. **体育类市场的网页路径规则（Gamma 可支持）**
    - 你已验证体育类会走：
      - `https://polymarket.com/sports/nba/games/week/.../nba-...`
      - `https://polymarket.com/sports/laliga/games/week/.../lal-...`
-   - 需要确认：API 是否提供构造该 URL 所需信息（例如 league、week、match code 等），或者是否直接提供 `webUrl`。
+   - Gamma 提供 `GET https://gamma-api.polymarket.com/sports`（包含每个 sport 的 tag IDs），可用于“识别/过滤/分组体育市场”
+   - 跳转推荐：直接打开 `https://polymarket.com/event/<event-slug>`，体育会 307 到正确的 `/sports/...`（浏览器自动跟随）
+   - 如果一定要生成 `/sports/...`：还需要 sport/league code + week 等字段规则；不同联赛不统一，容易拼错（不建议）
 
 3. **非体育类是否稳定为 `/event/<slug>`**
-   - 需要确认：哪些市场类型走 `/event/<slug>`，哪些走其他路由（例如 `/sports/...`、`/markets/...` 等）。
+   - 实测（且符合当前站点路由）：大部分非体育走 `/event/<slug>`
+   - 保险起见：如果打开失败，可降级到搜索页
 
 4. **如果 API 不提供可用 URL 的降级方案**
    - 方案 A：打开搜索页 `https://polymarket.com/search?q=<title>`（保证可用，但非直达）
@@ -23,45 +28,45 @@
 
 ## B. Multi / Event 聚合与展开
 
-5. **wrap-events 的 key 对应关系**
-   - `GET /api/markets/wrap-events` 返回中的 WrapEvent `marketId` 对应：
-     - `parentEventId` 还是 `parentEvent.eventMarketId`？
-   - 这决定前端用哪个 ID 去查子选项。
+5. **（Gamma 已解决）Event 与子 market 展开（体育同样适用）**
+   - `GET https://gamma-api.polymarket.com/events` 的每个 event 里自带 `markets[]`
+   - 因此不需要 `wrap-events`，也不需要再纠结 key 对应关系
 
 6. **multi 的“主市场”定义**
-   - multi/event 的“主市场页”应该跳到：
-     - wrap/event 页面？还是某个子 market？
-   - 你已要求：跳“主市场页”即可（需要明确主市场页的 URL 字段/规则）。
+   - 建议统一跳 event 页面：`https://polymarket.com/event/<event-slug>`
+   - 子 market 行只展示概率即可（不强制每行都有 Trade 跳转）
 
 ## C. 赔率/概率（价格）口径
 
-7. **`orders/by-asset` 的 price 量纲**
-   - `GET /api/orders/by-asset/:assetId` 的 `data[0].price` 是否恒为 `0~1`？
-   - 如果是：展示为 `price * 100` 的百分比（保留 1 位小数）。
-   - 如果不是：需要明确换算规则。
+7. **`outcomePrices` 的量纲与含义（Gamma）**
+   - Gamma 的 market 返回 `outcomes`/`outcomePrices`（通常为 `0~1`）
+   - 待确认：`outcomePrices` 是否可视为你要展示的“现价/概率”（以及它更像 AMM mark 还是 CLOB mid）
 
-8. **“现价”是否应使用最新成交价**
-   - 当前实现取“最新成交价”作为赔率展示。
-   - 如果 Polymarket 有更合适的“现价”（best bid/ask、mid、mark price），需要确定对应 API。
+8. **“现价”口径选择**
+   - Gamma 还提供 `bestBid`/`bestAsk`/`lastTradePrice`（二元市场可用）
+   - 如果你坚持“最新成交价”：用 `lastTradePrice`
+   - 如果你想更稳定：用 `outcomePrices`
+   - 待定：HUD 最终采用哪一个作为默认（以及 multi 的展示口径）
 
 9. **实时更新策略（可选）**
-   - 是否要用 `ws://polymarket.api.predictscan.dev:10002/ws` 订阅 `assetId` 来推送更新，减少轮询？
+   - Gamma 本身是 REST；如果要更实时（尤其是多 market 同时展示），建议后续再对接 Polymarket CLOB API 的价格/推送能力
+   - MVP 可先用 Gamma 的价格字段 + 低频刷新
 
 ## D. 数据源与 CORS/HTTPS
 
 10. **是否允许浏览器端跨域请求（CORS）**
     - Chrome 扩展发起请求通常不受页面 CORS 限制，但仍建议确认服务端响应头与稳定性。
 
-11. **是否有 HTTPS Base URL**
-    - 当前 Base URL 是 HTTP：`http://polymarket.api.predictscan.dev:10002`
-    - 如果要上架 Chrome Web Store，建议确认是否提供 HTTPS（更稳妥，也更容易过审）。
+11. **HTTPS Base URL（Gamma 已解决）**
+    - Gamma API 是 HTTPS：`https://gamma-api.polymarket.com`
 
 ## E. 后端构建 data.json 的字段完整性
 
-12. **可交易市场筛选字段是否可靠**
-    - `statusEnum`、`resolvedAt`、`cutoffAt` 的语义在 Polymarket 数据里是否与 Opinion 一致？
+12. **筛选字段是否可靠（Gamma）**
+    - 建议以 `closed=false` + `endDate` 做有效期筛选
+    - 用 `volumeNum` 做最低成交量阈值
+    - 不做体育：用 `include_tag=true` + `/sports` 的 tag IDs 做排除
 
-13. **体育类/特殊类 market 的 `yesTokenId/noTokenId` 可能为空**
-    - 你贴的样例中有市场 `yesTokenId/noTokenId` 为空字符串。
-    - 需要确认：这是数据缺失、未上链、还是另一种市场类型？应如何在 UI 中处理（显示 “—” / 不展示 / 跳过）。
-
+13. **token/outcome 映射（仍建议确认一次）**
+    - Gamma 返回 `outcomes` / `outcomePrices` / `clobTokenIds` 都是 JSON 字符串数组
+    - 待确认：这三者的顺序是否永远严格对齐（尤其是非 Yes/No 的市场）

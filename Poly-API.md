@@ -9,14 +9,79 @@
 
 ## 基础信息
 
+### 推荐：官方 Gamma Markets API（市场/事件元数据 + 概率）
+
+- Base URL：`https://gamma-api.polymarket.com`
+- 文档：
+  - `https://docs.polymarket.com/developers/gamma-markets-api/fetch-markets-guide`
+  - `https://docs.polymarket.com/developers/gamma-markets-api/get-markets`
+  - `https://docs.polymarket.com/developers/gamma-markets-api/get-events`
+- 关键收益：
+  - 直接提供 `slug`（非体育类可拼 `https://polymarket.com/event/<event-slug>`）
+  - 直接提供 `events[].markets[]`（multi/event 展开不需要 `wrap-events`）
+  - 直接提供 `outcomePrices`（可直接渲染概率；不必额外按 token 拉价）
+  - 提供 `clobTokenIds`（需要更实时/更精细价格时再对接 CLOB）
+
+### 旧方案：Predictscan 代理（当前文档里的 `/api/...`）
+
 - Base URL：`http://polymarket.api.predictscan.dev:10002`
 - 数据格式：JSON（通用响应 `{ success, data }`）
 - WebSocket：`ws://polymarket.api.predictscan.dev:10002/ws`
 
 注意：
-- Base URL 是 HTTP（非 HTTPS）。如果未来要用于 Chrome 插件商店发布，建议确认是否有 HTTPS 入口；同时确认是否允许来自扩展的跨域请求（CORS）。
+- 该 Base URL 是 HTTP（非 HTTPS）。如果未来要用于 Chrome 插件商店发布，建议优先切到官方 `https://gamma-api.polymarket.com`（HTTPS），或确认代理是否有 HTTPS 入口。
 
-## 前端（扩展）需要用到的 API
+## 前端（扩展）需要用到的 API（推荐：Gamma API）
+
+### 0) 可配置过滤（短期 / 体育）
+
+- 短期过滤（建议保留）：`end_date_min=<ISO>`（例如 `now + 24h/72h`）+ `closed=false`
+- 体育开关：
+  - 需要排除体育：`GET https://gamma-api.polymarket.com/sports` 拿体育 tag IDs，再用 `GET /markets?...&include_tag=true` 做客户端排除
+  - 需要包含体育：不做排除；但建议把 sports 放到单独的 UI 分组/排序策略（数量大、更新快）
+
+### 1) Markets 列表（用于匹配、概率展示、token 映射）
+
+- `GET https://gamma-api.polymarket.com/markets`
+  - 推荐参数：
+    - `closed=false`
+    - `limit` / `offset`（分页）
+    - `order` / `ascending`（例如按 `volumeNum` 排序）
+    - `end_date_min`（过滤短期）
+    - `volume_num_min`（过滤低成交）
+    - `include_tag=true`（用于体育过滤）
+  - 关键字段：
+    - `question`、`description`、`endDate`、`volumeNum`
+    - `slug`（market slug）
+    - `events[]`（包含 event 的 `id/slug/title/...`）
+    - `outcomes` / `outcomePrices`（JSON 字符串数组）
+    - `clobTokenIds`（JSON 字符串数组；顺序与 outcomes 对齐）
+
+### 2) Events（用于 multi/event 展开）
+
+- `GET https://gamma-api.polymarket.com/events`（分页；每个 event 里有 `markets[]`）
+- `GET https://gamma-api.polymarket.com/events/slug/<event-slug>`（直查）
+
+### 3) 概率/赔率（默认：直接用 `outcomePrices`）
+
+- binary（`outcomes=["Yes","No"]`）：直接渲染 `outcomePrices[0]`（YES）与 `outcomePrices[1]`（NO）
+- multi：
+  - 若是 “一个 event 里多个二元 market”（GMP）：每个子 market 仍然用 `outcomePrices[0]` 当作该选项的 YES 概率
+  - 若是 “单 market 多 outcomes”：需要 UI 额外支持（先可跳过）
+
+### 4) 跳转 URL
+
+- 统一入口（推荐）：直接打开 `https://polymarket.com/event/<event-slug>`（使用 Gamma event 的 `slug`）
+  - 非体育：通常直接 200
+  - 体育：通常会 307 重定向到实际的 `/sports/...` 路由（浏览器会自动跟随）
+
+> 说明：体育的 `/sports/...` 路由包含 sport/league/week 等信息，不建议客户端硬拼；用 `/event/<slug>` 作为稳定入口更省事。
+
+### 5) 搜索降级（可选）
+
+- `GET https://gamma-api.polymarket.com/public-search?q=<text>`（当 slug/匹配不确定时可用于兜底）
+
+## 前端（扩展）需要用到的 API（旧：Predictscan 代理）
 
 ### 1) 市场 → Token IDs（用于查价格）
 
@@ -74,7 +139,29 @@
 - 连接：`ws://polymarket.api.predictscan.dev:10002/ws`
 - 订阅频道：`assetId`（用 tokenId/assetId 订阅）
 
-## 后端（构建 data.json）需要用到的 API
+## 后端（构建 data.json）需要用到的 API（推荐：Gamma API）
+
+### `GET https://gamma-api.polymarket.com/markets`
+
+用途：获取市场列表（分页），做基础过滤（不短期、非体育、最低成交量），再按 event 聚合，喂给 LLM 生成关键词/实体。
+
+推荐做法：
+- 拉取：`closed=false&limit=...&offset=...&include_tag=true&end_date_min=...&volume_num_min=...`
+- 聚合：优先用 `events[0].id` / `events[0].slug` 作为 event key（一个 market 可能挂在多个 events 时需定义策略）
+- 体育过滤：用 `GET https://gamma-api.polymarket.com/sports` 得到体育 tag IDs，然后过滤 markets 的 `tags[].id`
+
+需要字段（用于筛选/聚合/上下文）：
+- 筛选：
+  - `closed`
+  - `endDate` / `endDateIso`
+  - `volumeNum`
+  - `tags`（需 `include_tag=true`）
+- 聚合：
+  - `events[].id`、`events[].slug`、`events[].title`、`events[].description`
+- 文本上下文：
+  - `question`、`description`
+
+## 后端（构建 data.json）需要用到的 API（旧：Predictscan 代理）
 
 ### `GET /api/markets`
 
@@ -111,12 +198,13 @@ API 文档里给的是数据接口，但插件还需要一个“打开 Polymarke
 实现建议：
 - `tid` 不是必需参数（用于追踪/防缓存），可直接省略，或在前端用 `Date.now()` 生成一个。
 
-仍需你从 API 文档中确认（用于构造 `<event-slug>`）：
+如果你走 **Gamma API**：
+
+- `GET https://gamma-api.polymarket.com/markets` 与 `GET https://gamma-api.polymarket.com/events` 都会返回 `slug`，非体育类可直接打开：`https://polymarket.com/event/<event-slug>`。
+
+如果你仍要走 **Predictscan 代理**（`/api/...`），仍需确认（用于构造 `<event-slug>`）：
 
 - `GET /api/markets` 或 `GET /api/markets/wrap-events` 的返回里是否有可直接使用的 `slug` / `eventSlug` / `eventUrl` 字段？
-  - 你提供的 `/api/markets` 片段里暂时没看到这些字段。
   - 如果 API 不提供 slug/url，则不建议用 `title` 直接 slugify（同名/标点/大小写等会导致打开错误页面）；更稳妥的是让 API 直接返回 `eventUrl`。
-
-另外建议你确认一件实现相关的映射关系（用于 multi 展开）：
 - `/api/markets/wrap-events` 中 wrap 的 `marketId` 到底是 `parentEventId` 还是 `parentEvent.eventMarketId`？
   - 这决定了前端应该用哪个 ID 去 `wrap-events` 查子选项列表。

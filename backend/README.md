@@ -45,6 +45,36 @@ ALL_REFRESH=1 python3 backend/build_index.py
 INCREMENTAL_ONLY=1 python3 backend/build_index.py
 ```
 
+## Polymarket（Gamma API）生成数据
+
+新增脚本：`backend/build_poly_gamma.py`，用于从官方 Gamma Markets API 拉取 Polymarket 的 event/market 元数据并生成 `polymarket-data.json`（用于前端本地匹配与展示）。
+
+### 运行（生产）
+
+```bash
+ZHIPU_KEY=... python3 backend/build_poly_gamma.py
+```
+
+默认输出：`backend/polymarket-data.json`
+
+### 运行（无 LLM / 调试）
+
+```bash
+SKIP_AI=1 POLY_MAX_EVENTS=200 POLY_MIN_VOLUME_NUM=0 POLY_MIN_MINUTES_TO_EXPIRY=0 python3 backend/build_poly_gamma.py
+```
+
+### Polymarket 关键环境变量
+
+- `POLY_GAMMA_API_BASE`：默认 `https://gamma-api.polymarket.com`
+- `POLY_FRONTEND_BASE_URL`：默认 `https://polymarket.com`
+- `OUTPUT_PATH`：输出路径（默认 `backend/polymarket-data.json`）
+- `POLY_EVENTS_PAGE_LIMIT`：分页大小（默认 `100`）
+- `POLY_MAX_EVENTS`：调试用采样上限（不设则拉全量）
+- `POLY_MIN_VOLUME_NUM`：最低成交量阈值（默认 `10000`，按 Gamma 的 `volume/volumeNum`）
+- `POLY_MIN_MINUTES_TO_EXPIRY`：最短到期时间（默认 `60`，用于剔除 5m/15m 等短期市场；如要全量包含可设为 `0`）
+- `POLY_MIN_MINUTES_TO_EXPIRY` 之外，脚本也会强制过滤 `endDate <= now` 的已结束 event/market
+- `ZHIPU_KEY` / `SKIP_AI` / `INCREMENTAL_ONLY` / `PREVIOUS_DATA_URL` / `DEBUG`：与 `build_index.py` 相同语义
+
 ## 关键环境变量
 
 - `OPINION_API_URL`：市场 API，默认 `http://opinion.api.predictscan.dev:10001/api/markets`
