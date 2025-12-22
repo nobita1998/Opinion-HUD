@@ -1,4 +1,5 @@
 const DEFAULT_DATA_URL = "https://nobita1998.github.io/Opinion-HUD/data.json";
+const OPINION_ANALYTICS_ORIGIN = "https://opinionanalytics.xyz";
 const STORAGE_KEYS = {
   settings: "opinionHudSettings",
   cachedData: "opinionHudData",
@@ -43,6 +44,30 @@ async function fetchJson(url) {
   const response = await fetch(url, { cache: "no-store" });
   if (!response.ok) {
     throw new Error(`data fetch failed: ${response.status} ${response.statusText}`);
+  }
+  return await response.json();
+}
+
+function isAllowedOpinionAnalyticsUrl(url) {
+  try {
+    const u = new URL(url);
+    if (u.origin !== OPINION_ANALYTICS_ORIGIN) return false;
+    return u.pathname.startsWith("/api/");
+  } catch {
+    return false;
+  }
+}
+
+async function fetchJsonNoStore(url) {
+  const response = await fetch(url, {
+    method: "GET",
+    credentials: "omit",
+    cache: "no-store",
+    referrerPolicy: "no-referrer",
+    headers: { accept: "application/json" },
+  });
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status} for ${url}`);
   }
   return await response.json();
 }
@@ -120,6 +145,18 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
   if (message.type === "opinionHud.refresh") {
     refreshData({ force: true })
       .then((result) => sendResponse({ ok: true, result }))
+      .catch((error) => sendResponse({ ok: false, error: String(error?.message || error) }));
+    return true;
+  }
+
+  if (message.type === "opinionHud.fetchJson") {
+    const url = String(message.url || "");
+    if (!isAllowedOpinionAnalyticsUrl(url)) {
+      sendResponse({ ok: false, error: "Blocked URL (not allowed)." });
+      return;
+    }
+    fetchJsonNoStore(url)
+      .then((data) => sendResponse({ ok: true, data }))
       .catch((error) => sendResponse({ ok: false, error: String(error?.message || error) }));
     return true;
   }

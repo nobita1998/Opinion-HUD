@@ -202,11 +202,53 @@ async function fetchJsonWithRetry(url, signal, { maxRetries = 3, delaysMs = [450
   throw lastErr || new Error(`Failed to fetch ${url}`);
 }
 
+function sendMessageAsync(message, signal) {
+  return new Promise((resolve, reject) => {
+    if (signal?.aborted) {
+      reject(new DOMException("Aborted", "AbortError"));
+      return;
+    }
+    try {
+      chrome.runtime.sendMessage(message, (response) => {
+        const lastErr = chrome.runtime.lastError;
+        if (lastErr) {
+          const err = new Error(String(lastErr.message || lastErr));
+          if (handleInvalidation(err)) {
+            reject(err);
+            return;
+          }
+          reject(err);
+          return;
+        }
+        resolve(response);
+      });
+    } catch (err) {
+      if (handleInvalidation(err)) {
+        reject(err);
+        return;
+      }
+      reject(err);
+    }
+  });
+}
+
+function shouldProxyOpinionAnalytics(url) {
+  return typeof url === "string" && url.startsWith(`${OPINION_ANALYTICS_API_BASE}/`);
+}
+
 async function fetchJson(url, signal) {
+  if (shouldProxyOpinionAnalytics(url) && typeof chrome?.runtime?.sendMessage === "function") {
+    const res = await sendMessageAsync({ type: "opinionHud.fetchJson", url }, signal);
+    if (!res || typeof res !== "object") throw new Error(`Invalid response for ${url}`);
+    if (!res.ok) throw new Error(res.error || `Failed to fetch ${url}`);
+    return res.data;
+  }
+
   const res = await fetch(url, {
     method: "GET",
     credentials: "omit",
     cache: "no-store",
+    referrerPolicy: "no-referrer",
     signal,
     headers: {
       accept: "application/json",
