@@ -5,8 +5,20 @@ const STORAGE_KEYS = {
 const SELECTORS = {
   tweetText: 'div[data-testid="tweetText"]',
   article: "article",
-  actionGroup: 'div[role="group"]',
-  moreMenuButton: 'button[data-testid="caret"], div[data-testid="caret"]',
+  moreMenuButton: [
+    'button[data-testid="caret"]',
+    'div[data-testid="caret"]',
+    // Seen in some X layouts/experiments.
+    'button[data-testid="tweetActionOverflow"]',
+    'div[data-testid="tweetActionOverflow"]',
+    'button[data-testid="overflow"]',
+    'div[data-testid="overflow"]',
+  ].join(", "),
+  moreMenuIcon: ['svg[data-testid="icon-Overflow"]', 'svg[data-testid="icon-More"]'].join(", "),
+  moreMenuAriaButton: [
+    'button[aria-haspopup="menu"][aria-label]',
+    'div[role="button"][aria-haspopup="menu"][aria-label]',
+  ].join(", "),
 };
 
 const SCANNED_ATTR = "data-opinion-scanned";
@@ -91,7 +103,30 @@ function normalizeForMatch(text) {
 }
 
 const OPINION_TRADE_DETAIL_URL = "https://app.opinion.trade/detail";
-const OPINION_ANALYTICS_API_BASE = "https://opinionanalytics.xyz/api";
+// Use the HTTPS gateway to avoid Chrome HTTPS-first / HSTS "Internal Redirect" issues on the raw HTTP service.
+// (Direct http://opinion.api.predictscan.dev:10001/* may be auto-upgraded and fail in browsers.)
+const OPINION_API_BASE = "https://opinionanalytics.xyz/api";
+
+function joinUrl(base, path) {
+  const b = String(base || "").replace(/\/+$/, "");
+  const p = String(path || "").startsWith("/") ? String(path || "") : `/${path || ""}`;
+  return `${b}${p}`;
+}
+
+function isOpinionApiUrl(url) {
+  const u = String(url || "");
+  return u.startsWith(`${OPINION_API_BASE}/`);
+}
+
+async function fetchOpinionApiJson(path, signal) {
+  const url = joinUrl(OPINION_API_BASE, path);
+  return await fetchJson(url, signal);
+}
+
+async function fetchOpinionApiJsonWithRetry(path, signal) {
+  const url = joinUrl(OPINION_API_BASE, path);
+  return await fetchJsonWithRetry(url, signal);
+}
 
 const PRICE_CACHE_TTL_MS = 60_000;
 const MARKET_ASSET_CACHE_TTL_MS = 10 * 60_000;
@@ -103,6 +138,7 @@ const assetPriceCache = new Map(); // assetId -> { ts, price }
 const marketAssetCache = new Map(); // marketId -> { ts, yesTokenId, noTokenId }
 let marketsIndexCache = null; // { ts, byMarketId: Map<string, { yesTokenId, noTokenId }> }
 let wrapEventsIndexCache = null; // { ts, byWrapId: Map<string, WrapEvent> }
+let wrapEventsIndexInflight = null; // Promise<Map<string, WrapEvent>> | null
 
 function nowMs() {
   return Date.now();
@@ -234,7 +270,7 @@ function sendMessageAsync(message, signal) {
 }
 
 function shouldProxyOpinionAnalytics(url) {
-  return typeof url === "string" && url.startsWith(`${OPINION_ANALYTICS_API_BASE}/`);
+  return typeof url === "string" && isOpinionApiUrl(url);
 }
 
 async function fetchJson(url, signal) {
@@ -264,8 +300,7 @@ async function getMarketsIndex(signal) {
     return marketsIndexCache.byMarketId;
   }
 
-  const url = `${OPINION_ANALYTICS_API_BASE}/markets`;
-  const data = await priceFetchLimiter(() => fetchJson(url, signal), signal);
+  const data = await priceFetchLimiter(() => fetchOpinionApiJson("/markets", signal), signal);
   const list = Array.isArray(data?.data) ? data.data : [];
   const byMarketId = new Map();
   for (const m of list) {
@@ -284,17 +319,28 @@ async function getWrapEventsIndex(signal) {
     return wrapEventsIndexCache.byWrapId;
   }
 
-  const url = `${OPINION_ANALYTICS_API_BASE}/markets/wrap-events`;
-  const data = await priceFetchLimiter(() => fetchJsonWithRetry(url, signal), signal);
-  const list = Array.isArray(data?.data) ? data.data : [];
-  const byWrapId = new Map();
-  for (const w of list) {
-    const marketId = String(w?.marketId || "").trim();
-    if (!marketId) continue;
-    byWrapId.set(marketId, w);
+  if (wrapEventsIndexInflight) {
+    return await wrapEventsIndexInflight;
   }
-  wrapEventsIndexCache = { ts: nowMs(), byWrapId };
-  return byWrapId;
+
+  wrapEventsIndexInflight = (async () => {
+    const data = await fetchOpinionApiJsonWithRetry("/markets/wrap-events", signal);
+    const list = Array.isArray(data?.data) ? data.data : [];
+    const byWrapId = new Map();
+    for (const w of list) {
+      const marketId = String(w?.marketId || "").trim();
+      if (!marketId) continue;
+      byWrapId.set(marketId, w);
+    }
+    wrapEventsIndexCache = { ts: nowMs(), byWrapId };
+    return byWrapId;
+  })();
+
+  try {
+    return await wrapEventsIndexInflight;
+  } finally {
+    wrapEventsIndexInflight = null;
+  }
 }
 
 async function getMarketAssetIds(marketId, signal) {
@@ -317,13 +363,25 @@ async function getLatestAssetPrice(assetId, signal) {
   const cached = getCached(assetPriceCache, key, PRICE_CACHE_TTL_MS);
   if (cached) return cached.price;
 
-  const url = `${OPINION_ANALYTICS_API_BASE}/orders/by-asset/${encodeURIComponent(key)}?page=1&pageSize=1&filter=all`;
-  const data = await priceFetchLimiter(() => fetchJson(url, signal), signal);
-  const first = Array.isArray(data?.data) ? data.data[0] : null;
-  const price = first?.price != null ? Number.parseFloat(String(first.price)) : null;
-  const normalized = Number.isFinite(price) ? price : null;
-  assetPriceCache.set(key, { ts: nowMs(), price: normalized });
-  return normalized;
+  try {
+    const path = `/orders/by-asset/${encodeURIComponent(key)}?page=1&pageSize=1&filter=all`;
+    const data = await priceFetchLimiter(() => fetchOpinionApiJsonWithRetry(path, signal), signal);
+    if (data?.success === false) {
+      assetPriceCache.set(key, { ts: nowMs(), price: null });
+      return null;
+    }
+    const first = Array.isArray(data?.data) ? data.data[0] : null;
+    const price = first?.price != null ? Number.parseFloat(String(first.price)) : null;
+    const normalized = Number.isFinite(price) ? price : null;
+    assetPriceCache.set(key, { ts: nowMs(), price: normalized });
+    return normalized;
+  } catch (err) {
+    // Silently handle errors (e.g., 502) and cache null to avoid repeated failed requests
+    if (!isAbortError(err)) {
+      assetPriceCache.set(key, { ts: nowMs(), price: null });
+    }
+    return null;
+  }
 }
 
 function buildOpinionTradeUrl({ topicId, isMulti }) {
@@ -1493,19 +1551,35 @@ function computeMatchForTweetText(tweetText) {
   };
 }
 
-function findActionBar(articleEl) {
-  const groups = articleEl.querySelectorAll(SELECTORS.actionGroup);
-  for (const g of groups) {
-    if (g.closest(SELECTORS.article) === articleEl) return g;
-  }
-  return null;
-}
-
 function findMoreMenuButton(articleEl) {
   const buttons = articleEl.querySelectorAll(SELECTORS.moreMenuButton);
   for (const btn of buttons) {
     if (btn.closest(SELECTORS.article) === articleEl) return btn;
   }
+
+  const icons = articleEl.querySelectorAll(SELECTORS.moreMenuIcon);
+  for (const icon of icons) {
+    const btn = icon.closest('button, div[role="button"]');
+    if (btn && btn.closest(SELECTORS.article) === articleEl) return btn;
+  }
+
+  const ariaButtons = articleEl.querySelectorAll(SELECTORS.moreMenuAriaButton);
+  for (const btn of ariaButtons) {
+    const label = String(btn.getAttribute("aria-label") || "").trim().toLowerCase();
+    if (!label) continue;
+
+    // Keep the match broad enough for i18n, but narrow enough to avoid picking share/bookmark menus.
+    const looksLikeMore =
+      label.includes("more") ||
+      label.includes("more options") ||
+      label.includes("more actions") ||
+      label.includes("更多");
+    const looksLikeShare = label.includes("share") || label.includes("分享");
+    if (!looksLikeMore || looksLikeShare) continue;
+
+    if (btn.closest(SELECTORS.article) === articleEl) return btn;
+  }
+
   return null;
 }
 
@@ -1517,8 +1591,30 @@ function findIconInArticle(articleEl) {
   return null;
 }
 
+function isIconPlacedNextToMoreButton(articleEl) {
+  const icon = findIconInArticle(articleEl);
+  if (!icon) return false;
+  const moreBtn = findMoreMenuButton(articleEl);
+  if (!moreBtn) return false;
+  return moreBtn.previousElementSibling === icon;
+}
+
 function attachIconToArticle(articleEl, match) {
   if (state.invalidated) return;
+
+  const moreBtn = findMoreMenuButton(articleEl);
+  if (!moreBtn?.parentElement) {
+    const existingIcon = findIconInArticle(articleEl);
+    if (existingIcon) {
+      try {
+        removeHud();
+      } catch {
+        // ignore
+      }
+      existingIcon.remove();
+    }
+    return;
+  }
 
   // Check if icon already exists
   let icon = findIconInArticle(articleEl);
@@ -1526,16 +1622,8 @@ function attachIconToArticle(articleEl, match) {
     icon = createIcon();
   }
 
-  const moreBtn = findMoreMenuButton(articleEl);
-  if (moreBtn?.parentElement) {
-    icon.style.marginLeft = "0";
-    moreBtn.insertAdjacentElement("beforebegin", icon);
-  } else {
-    const actionBar = findActionBar(articleEl);
-    if (!actionBar) return;
-    icon.style.marginLeft = "auto"; // Push to the right end in action bar fallback
-    actionBar.appendChild(icon);
-  }
+  icon.style.marginLeft = "0";
+  moreBtn.insertAdjacentElement("beforebegin", icon);
 
   // Click to toggle HUD
   icon.onclick = (e) => {
@@ -1587,11 +1675,10 @@ function scanArticleNode(articleEl) {
   if (!(articleEl instanceof HTMLElement)) return;
 
   if (articleEl.getAttribute(ARTICLE_SCANNED_ATTR) === "true") {
-    if (!findIconInArticle(articleEl)) {
-      articleEl.removeAttribute(ARTICLE_SCANNED_ATTR);
-    } else {
+    if (isIconPlacedNextToMoreButton(articleEl)) {
       return;
     }
+    articleEl.removeAttribute(ARTICLE_SCANNED_ATTR);
   }
 
   articleEl.setAttribute(ARTICLE_SCANNED_ATTR, "true");
@@ -1616,11 +1703,10 @@ function scanTweetTextNode(tweetTextEl) {
   if (!(tweetTextEl instanceof HTMLElement)) return;
   if (tweetTextEl.getAttribute(SCANNED_ATTR) === "true") {
     const articleEl = findRootArticleForTweetText(tweetTextEl);
-    if (articleEl && !findIconInArticle(articleEl)) {
-      tweetTextEl.removeAttribute(SCANNED_ATTR);
-    } else {
+    if (articleEl && isIconPlacedNextToMoreButton(articleEl)) {
       return;
     }
+    tweetTextEl.removeAttribute(SCANNED_ATTR);
   }
   tweetTextEl.setAttribute(SCANNED_ATTR, "true");
 
@@ -1681,6 +1767,9 @@ function startObserver() {
 
 async function main() {
   try {
+    // Prefetch wrap-events index early so multi option lists show up immediately on first hover/click.
+    getWrapEventsIndex().catch(() => {});
+
     state.data = await ensureData();
     if (!state.data || state.invalidated) return;
     state.matcher = buildMatcher(state.data);
