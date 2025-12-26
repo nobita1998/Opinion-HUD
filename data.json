@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2025-12-26 20:48:15 UTC+8",
+    "generatedAt": "2025-12-26 21:45:08 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://opinion.trade",
     "model": "GLM-4.6",
@@ -8,31 +8,31 @@
     "debug": false,
     "counts": {
       "seen": 719,
-      "kept": 639,
-      "markets": 149,
-      "keywords": 1684,
+      "kept": 580,
+      "markets": 135,
+      "keywords": 1604,
       "events": {
-        "events": 158
+        "events": 144
       },
       "skipped": {
-        "statusEnum": 78,
+        "statusEnum": 79,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 2,
-        "cutoff_zero_kept": 608,
+        "cutoff_expired": 60,
+        "cutoff_zero_kept": 61,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0
       },
       "ai": {
         "incremental": true,
-        "incrementalOnly": false,
-        "reused": 158,
+        "incrementalOnly": true,
+        "reused": 135,
         "legacyReused": 0,
         "calls": 0,
         "retries": 0,
-        "skipped": 0,
+        "skipped": 9,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 9,
         "errors": 0
       }
     }
@@ -482,31 +482,6 @@
       "sigCore": "30a64286",
       "reused": false
     },
-    "209": {
-      "title": "Bitcoin above ... on December 26?(12:00 ET)",
-      "marketIds": [
-        "209"
-      ],
-      "bestMarketId": "209",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin above ... on december 26?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "24b29eb8",
-      "sigFull": "24b29eb8",
-      "sigCore": "aab298fb",
-      "reused": false
-    },
     "3132": {
       "title": "Will Japan conduct a yen-buying FX intervention by Jan 31, 2026 23:59 (UTC)?",
       "marketIds": [
@@ -694,31 +669,6 @@
       "sigCore": "22e022f6",
       "reused": false
     },
-    "206": {
-      "title": "Bitcoin above ... on December 25?(12:00 ET)",
-      "marketIds": [
-        "206"
-      ],
-      "bestMarketId": "206",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin above ... on december 25?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "f81f596e",
-      "sigFull": "f81f596e",
-      "sigCore": "6f725f5a",
-      "reused": false
-    },
     "204": {
       "title": "SpaceX IPO closing market cap above ...?",
       "marketIds": [
@@ -888,31 +838,6 @@
       "sig": "84b90933",
       "sigFull": "84b90933",
       "sigCore": "d08b4ac8",
-      "reused": false
-    },
-    "203": {
-      "title": "Bitcoin above ... on December 24?(12:00 ET)",
-      "marketIds": [
-        "203"
-      ],
-      "bestMarketId": "203",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin above ... on december 24?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "ae322b76",
-      "sigFull": "ae322b76",
-      "sigCore": "343225b9",
       "reused": false
     },
     "3062": {
@@ -1204,31 +1129,6 @@
       "sigCore": "5f0d2ffd",
       "reused": false
     },
-    "199": {
-      "title": "Bitcoin above ... on December 23?(12:00 ET)",
-      "marketIds": [
-        "199"
-      ],
-      "bestMarketId": "199",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin above ... on december 23?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "00522136",
-      "sigFull": "00522136",
-      "sigCore": "f8f1ec18",
-      "reused": false
-    },
     "198": {
       "title": "Tesla launches unsupervised full self driving (FSD) by...?",
       "marketIds": [
@@ -1350,31 +1250,6 @@
       "sigCore": "2abe29e2",
       "reused": false
     },
-    "195": {
-      "title": "Bitcoin above ... on December 22?(12:00 ET)",
-      "marketIds": [
-        "195"
-      ],
-      "bestMarketId": "195",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin above ... on december 22?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "37b1b834",
-      "sigFull": "37b1b834",
-      "sigCore": "bdb1b277",
-      "reused": false
-    },
     "194": {
       "title": "Gensyn FDV above ... one day after launch?",
       "marketIds": [
@@ -1487,31 +1362,6 @@
       "sig": "f6a8c6db",
       "sigFull": "f6a8c6db",
       "sigCore": "086016b8",
-      "reused": false
-    },
-    "191": {
-      "title": "Bitcoin above ... on December 21?(12:00 ET)",
-      "marketIds": [
-        "191"
-      ],
-      "bestMarketId": "191",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin above ... on december 21?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "fc717e93",
-      "sigFull": "fc717e93",
-      "sigCore": "827178d6",
       "reused": false
     },
     "190": {
@@ -1732,31 +1582,6 @@
       "sig": "5df581b3",
       "sigFull": "5df581b3",
       "sigCore": "8fbf0a21",
-      "reused": false
-    },
-    "185": {
-      "title": "Bitcoin above ... on December 20?(12:00 ET)",
-      "marketIds": [
-        "185"
-      ],
-      "bestMarketId": "185",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin above ... on december 20?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "c13144f2",
-      "sigFull": "c13144f2",
-      "sigCore": "47313f35",
       "reused": false
     },
     "184": {
@@ -2007,45 +1832,6 @@
       "sig": "59da2e63",
       "sigFull": "59da2e63",
       "sigCore": "3a186467",
-      "reused": false
-    },
-    "178": {
-      "title": "Aster “Human vs AI”: How many AI models will place in the top 10?",
-      "marketIds": [
-        "178"
-      ],
-      "bestMarketId": "178",
-      "bestLabels": null,
-      "keywords": [
-        "aster “human vs ai”: how many ai models will place in the top 10?",
-        "aster",
-        "human",
-        "how",
-        "many",
-        "models",
-        "place",
-        "top",
-        "1-3",
-        "4-6",
-        "7-10",
-        "options",
-        "aster human",
-        "human how",
-        "how many",
-        "many models",
-        "models place",
-        "place top",
-        "aster human how",
-        "human how many",
-        "how many models",
-        "many models place",
-        "models place top"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "6cad3b90",
-      "sigFull": "6cad3b90",
-      "sigCore": "281e34b1",
       "reused": false
     },
     "177": {
@@ -2340,38 +2126,6 @@
       "sigCore": "18a252c3",
       "reused": false
     },
-    "165": {
-      "title": "Boxing: Jake Paul vs. Anthony Joshua",
-      "marketIds": [
-        "165"
-      ],
-      "bestMarketId": "165",
-      "bestLabels": null,
-      "keywords": [
-        "boxing: jake paul vs. anthony joshua",
-        "boxing",
-        "jake",
-        "paul",
-        "anthony",
-        "joshua",
-        "draw/not",
-        "scored",
-        "options",
-        "boxing jake",
-        "jake paul",
-        "paul anthony",
-        "anthony joshua",
-        "boxing jake paul",
-        "jake paul anthony",
-        "paul anthony joshua"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "f0882821",
-      "sigFull": "f0882821",
-      "sigCore": "a31fbb4a",
-      "reused": false
-    },
     "166": {
       "title": "Bitcoin above ... on December 16?(By 12:00 ET)",
       "marketIds": [
@@ -2585,40 +2339,6 @@
       "sig": "37a8d764",
       "sigFull": "37a8d764",
       "sigCore": "81edcc54",
-      "reused": false
-    },
-    "159": {
-      "title": "Who will acquire TikTok?",
-      "marketIds": [
-        "159"
-      ],
-      "bestMarketId": "159",
-      "bestLabels": null,
-      "keywords": [
-        "who will acquire tiktok?",
-        "who",
-        "acquire",
-        "tiktok",
-        "amazon",
-        "applovin",
-        "meta",
-        "larry",
-        "ellison/oracle",
-        "walmart",
-        "microsoft",
-        "elon",
-        "musk",
-        "twitter",
-        "options",
-        "who acquire",
-        "acquire tiktok",
-        "who acquire tiktok"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "6d9c8696",
-      "sigFull": "6d9c8696",
-      "sigCore": "28abf69f",
       "reused": false
     },
     "158": {
@@ -2858,72 +2578,6 @@
       "sig": "2c8b9acf",
       "sigFull": "2c8b9acf",
       "sigCore": "09e6a707",
-      "reused": false
-    },
-    "154": {
-      "title": "Who Finishes #1 in Aster’s “Human vs AI” Campaign?",
-      "marketIds": [
-        "154"
-      ],
-      "bestMarketId": "154",
-      "bestLabels": null,
-      "keywords": [
-        "who finishes #1 in aster’s “human vs ai” campaign?",
-        "who",
-        "finishes",
-        "aster",
-        "human",
-        "campaign",
-        "options",
-        "who finishes",
-        "finishes aster",
-        "aster human",
-        "human campaign",
-        "who finishes aster",
-        "finishes aster human",
-        "aster human campaign"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "23fc6cde",
-      "sigFull": "23fc6cde",
-      "sigCore": "0d07a67b",
-      "reused": false
-    },
-    "155": {
-      "title": "Aster “Human vs AI”: Which team will achieve the higher ROI?",
-      "marketIds": [
-        "155"
-      ],
-      "bestMarketId": "155",
-      "bestLabels": null,
-      "keywords": [
-        "aster “human vs ai”: which team will achieve the higher roi?",
-        "aster",
-        "human",
-        "which",
-        "team",
-        "achieve",
-        "higher",
-        "roi",
-        "options",
-        "aster human",
-        "human which",
-        "which team",
-        "team achieve",
-        "achieve higher",
-        "higher roi",
-        "aster human which",
-        "human which team",
-        "which team achieve",
-        "team achieve higher",
-        "achieve higher roi"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "c3538fd1",
-      "sigFull": "c3538fd1",
-      "sigCore": "3246ee20",
       "reused": false
     },
     "156": {
@@ -4091,71 +3745,6 @@
       "sig": "e7d6c3a3",
       "sigFull": "e7d6c3a3",
       "sigCore": "38ca89ca",
-      "reused": false
-    },
-    "73": {
-      "title": "ECB Rates Decision (DFR) in Dec?",
-      "marketIds": [
-        "73"
-      ],
-      "bestMarketId": "73",
-      "bestLabels": null,
-      "keywords": [
-        "ecb rates decision (dfr) in dec?",
-        "ecb",
-        "rates",
-        "decision",
-        "dfr",
-        "dec",
-        "bps",
-        "decrease",
-        "change",
-        "increase",
-        "options",
-        "ecb rates",
-        "rates decision",
-        "decision dfr",
-        "dfr dec",
-        "ecb rates decision",
-        "rates decision dfr",
-        "decision dfr dec"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "01c6dec8",
-      "sigFull": "01c6dec8",
-      "sigCore": "c8946320",
-      "reused": false
-    },
-    "74": {
-      "title": "Bank of Japan decision in December?",
-      "marketIds": [
-        "74"
-      ],
-      "bestMarketId": "74",
-      "bestLabels": null,
-      "keywords": [
-        "bank of japan decision in december?",
-        "bank",
-        "japan",
-        "decision",
-        "december",
-        "decrease",
-        "change",
-        "bps",
-        "increase",
-        "options",
-        "bank japan",
-        "japan decision",
-        "decision december",
-        "bank japan decision",
-        "japan decision december"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "1e0a1ca6",
-      "sigFull": "1e0a1ca6",
-      "sigCore": "30fc1d10",
       "reused": false
     },
     "75": {
@@ -5983,28 +5572,6 @@
       "entities": [],
       "entityGroups": []
     },
-    "209": {
-      "title": "Bitcoin above ... on December 26?(12:00 ET)",
-      "url": "https://opinion.trade/market/209?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin above ... on december 26?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
     "3132": {
       "title": "Will Japan conduct a yen-buying FX intervention by Jan 31, 2026 23:59 (UTC)?",
       "url": "https://opinion.trade/market/3132?ref=opinion_hud",
@@ -6180,28 +5747,6 @@
       "entities": [],
       "entityGroups": []
     },
-    "206": {
-      "title": "Bitcoin above ... on December 25?(12:00 ET)",
-      "url": "https://opinion.trade/market/206?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin above ... on december 25?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
     "204": {
       "title": "SpaceX IPO closing market cap above ...?",
       "url": "https://opinion.trade/market/204?ref=opinion_hud",
@@ -6357,28 +5902,6 @@
         "1st pick 2026",
         "pick 2026 nfl",
         "2026 nfl draft"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
-    "203": {
-      "title": "Bitcoin above ... on December 24?(12:00 ET)",
-      "url": "https://opinion.trade/market/203?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin above ... on december 24?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
       ],
       "entities": [],
       "entityGroups": []
@@ -6651,28 +6174,6 @@
       "entities": [],
       "entityGroups": []
     },
-    "199": {
-      "title": "Bitcoin above ... on December 23?(12:00 ET)",
-      "url": "https://opinion.trade/market/199?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin above ... on december 23?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
     "198": {
       "title": "Tesla launches unsupervised full self driving (FSD) by...?",
       "url": "https://opinion.trade/market/198?ref=opinion_hud",
@@ -6785,28 +6286,6 @@
       "entities": [],
       "entityGroups": []
     },
-    "195": {
-      "title": "Bitcoin above ... on December 22?(12:00 ET)",
-      "url": "https://opinion.trade/market/195?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin above ... on december 22?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
     "194": {
       "title": "Gensyn FDV above ... one day after launch?",
       "url": "https://opinion.trade/market/194?ref=opinion_hud",
@@ -6908,28 +6387,6 @@
         "tempo launch",
         "launch token",
         "tempo launch token"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
-    "191": {
-      "title": "Bitcoin above ... on December 21?(12:00 ET)",
-      "url": "https://opinion.trade/market/191?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin above ... on december 21?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
       ],
       "entities": [],
       "entityGroups": []
@@ -7132,28 +6589,6 @@
         "which companies added",
         "companies added 500",
         "added 500 2026"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
-    "185": {
-      "title": "Bitcoin above ... on December 20?(12:00 ET)",
-      "url": "https://opinion.trade/market/185?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin above ... on december 20?(12:00 et)",
-        "bitcoin",
-        "above",
-        "december",
-        "000",
-        "options",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
       ],
       "entities": [],
       "entityGroups": []
@@ -7383,42 +6818,6 @@
         "options",
         "nfc west",
         "west winner"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
-    "178": {
-      "title": "Aster “Human vs AI”: How many AI models will place in the top 10?",
-      "url": "https://opinion.trade/market/178?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "keywords": [
-        "aster “human vs ai”: how many ai models will place in the top 10?",
-        "aster",
-        "human",
-        "how",
-        "many",
-        "models",
-        "place",
-        "top",
-        "1-3",
-        "4-6",
-        "7-10",
-        "options",
-        "aster human",
-        "human how",
-        "how many",
-        "many models",
-        "models place",
-        "place top",
-        "aster human how",
-        "human how many",
-        "how many models",
-        "many models place",
-        "models place top"
       ],
       "entities": [],
       "entityGroups": []
@@ -7685,35 +7084,6 @@
       "entities": [],
       "entityGroups": []
     },
-    "165": {
-      "title": "Boxing: Jake Paul vs. Anthony Joshua",
-      "url": "https://opinion.trade/market/165?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "boxing: jake paul vs. anthony joshua",
-        "boxing",
-        "jake",
-        "paul",
-        "anthony",
-        "joshua",
-        "draw/not",
-        "scored",
-        "options",
-        "boxing jake",
-        "jake paul",
-        "paul anthony",
-        "anthony joshua",
-        "boxing jake paul",
-        "jake paul anthony",
-        "paul anthony joshua"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
     "166": {
       "title": "Bitcoin above ... on December 16?(By 12:00 ET)",
       "url": "https://opinion.trade/market/166?ref=opinion_hud",
@@ -7904,37 +7274,6 @@
         "tiktok sale",
         "sale announced",
         "tiktok sale announced"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
-    "159": {
-      "title": "Who will acquire TikTok?",
-      "url": "https://opinion.trade/market/159?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "who will acquire tiktok?",
-        "who",
-        "acquire",
-        "tiktok",
-        "amazon",
-        "applovin",
-        "meta",
-        "larry",
-        "ellison/oracle",
-        "walmart",
-        "microsoft",
-        "elon",
-        "musk",
-        "twitter",
-        "options",
-        "who acquire",
-        "acquire tiktok",
-        "who acquire tiktok"
       ],
       "entities": [],
       "entityGroups": []
@@ -8153,66 +7492,6 @@
         "fed rate decision",
         "rate decision april",
         "decision april 2026"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
-    "154": {
-      "title": "Who Finishes #1 in Aster’s “Human vs AI” Campaign?",
-      "url": "https://opinion.trade/market/154?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "who finishes #1 in aster’s “human vs ai” campaign?",
-        "who",
-        "finishes",
-        "aster",
-        "human",
-        "campaign",
-        "options",
-        "who finishes",
-        "finishes aster",
-        "aster human",
-        "human campaign",
-        "who finishes aster",
-        "finishes aster human",
-        "aster human campaign"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
-    "155": {
-      "title": "Aster “Human vs AI”: Which team will achieve the higher ROI?",
-      "url": "https://opinion.trade/market/155?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "aster “human vs ai”: which team will achieve the higher roi?",
-        "aster",
-        "human",
-        "which",
-        "team",
-        "achieve",
-        "higher",
-        "roi",
-        "options",
-        "aster human",
-        "human which",
-        "which team",
-        "team achieve",
-        "achieve higher",
-        "higher roi",
-        "aster human which",
-        "human which team",
-        "which team achieve",
-        "team achieve higher",
-        "achieve higher roi"
       ],
       "entities": [],
       "entityGroups": []
@@ -9302,65 +8581,6 @@
         "cap fdv one",
         "fdv one day",
         "one day after"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
-    "73": {
-      "title": "ECB Rates Decision (DFR) in Dec?",
-      "url": "https://opinion.trade/market/73?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "ecb rates decision (dfr) in dec?",
-        "ecb",
-        "rates",
-        "decision",
-        "dfr",
-        "dec",
-        "bps",
-        "decrease",
-        "change",
-        "increase",
-        "options",
-        "ecb rates",
-        "rates decision",
-        "decision dfr",
-        "dfr dec",
-        "ecb rates decision",
-        "rates decision dfr",
-        "decision dfr dec"
-      ],
-      "entities": [],
-      "entityGroups": []
-    },
-    "74": {
-      "title": "Bank of Japan decision in December?",
-      "url": "https://opinion.trade/market/74?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bank of japan decision in december?",
-        "bank",
-        "japan",
-        "decision",
-        "december",
-        "decrease",
-        "change",
-        "bps",
-        "increase",
-        "options",
-        "bank japan",
-        "japan decision",
-        "decision december",
-        "bank japan decision",
-        "japan decision december"
       ],
       "entities": [],
       "entityGroups": []
@@ -10912,20 +10132,10 @@
       "166",
       "170",
       "177",
-      "185",
-      "191",
-      "195",
-      "199",
-      "203",
-      "206",
-      "209",
       "62"
     ],
     "000-4": [
       "62"
-    ],
-    "1-3": [
-      "178"
     ],
     "1-minute": [
       "1277"
@@ -11267,9 +10477,6 @@
     "375": [
       "124"
     ],
-    "4-6": [
-      "178"
-    ],
     "400": [
       "124",
       "62"
@@ -11324,9 +10531,6 @@
     "600b": [
       "158"
     ],
-    "7-10": [
-      "178"
-    ],
     "700b": [
       "158"
     ],
@@ -11362,20 +10566,13 @@
       "177",
       "183",
       "184",
-      "185",
       "187",
       "189",
-      "191",
       "194",
-      "195",
       "197",
-      "199",
-      "203",
       "204",
       "205",
-      "206",
       "207",
-      "209",
       "2668",
       "95",
       "96",
@@ -11389,14 +10586,7 @@
       "162",
       "166",
       "170",
-      "177",
-      "185",
-      "191",
-      "195",
-      "199",
-      "203",
-      "206",
-      "209"
+      "177"
     ],
     "above earthquake": [
       "187",
@@ -11442,21 +10632,6 @@
     ],
     "accident": [
       "211"
-    ],
-    "achieve": [
-      "155"
-    ],
-    "achieve higher": [
-      "155"
-    ],
-    "achieve higher roi": [
-      "155"
-    ],
-    "acquire": [
-      "159"
-    ],
-    "acquire tiktok": [
-      "159"
     ],
     "acquires": [
       "2398"
@@ -11615,7 +10790,6 @@
       "193"
     ],
     "amazon": [
-      "159",
       "193"
     ],
     "amy": [
@@ -11695,12 +10869,6 @@
     "another government shutdown": [
       "3114"
     ],
-    "anthony": [
-      "165"
-    ],
-    "anthony joshua": [
-      "165"
-    ],
     "anthropic": [
       "163",
       "66"
@@ -11760,9 +10928,6 @@
     "apple ceo march": [
       "2368"
     ],
-    "applovin": [
-      "159"
-    ],
     "appropriations": [
       "3114"
     ],
@@ -11813,31 +10978,6 @@
     "assumes": [
       "791"
     ],
-    "aster": [
-      "154",
-      "155",
-      "178"
-    ],
-    "aster human": [
-      "154",
-      "155",
-      "178"
-    ],
-    "aster human campaign": [
-      "154"
-    ],
-    "aster human how": [
-      "178"
-    ],
-    "aster human which": [
-      "155"
-    ],
-    "aster “human vs ai”: how many ai models will place in the top 10?": [
-      "178"
-    ],
-    "aster “human vs ai”: which team will achieve the higher roi?": [
-      "155"
-    ],
     "aston": [
       "80"
     ],
@@ -11879,19 +11019,13 @@
       "95"
     ],
     "bank": [
-      "120",
-      "74"
+      "120"
     ],
     "bank japan": [
-      "120",
-      "74"
+      "120"
     ],
     "bank japan decision": [
-      "120",
-      "74"
-    ],
-    "bank of japan decision in december?": [
-      "74"
+      "120"
     ],
     "bank of japan decision in january?": [
       "120"
@@ -12059,14 +11193,7 @@
       "162",
       "166",
       "170",
-      "177",
-      "185",
-      "191",
-      "195",
-      "199",
-      "203",
-      "206",
-      "209"
+      "177"
     ],
     "bitcoin 2025": [
       "1274"
@@ -12078,14 +11205,7 @@
       "162",
       "166",
       "170",
-      "177",
-      "185",
-      "191",
-      "195",
-      "199",
-      "203",
-      "206",
-      "209"
+      "177"
     ],
     "bitcoin above ... on december 10?(by 12:00 et)": [
       "156"
@@ -12108,27 +11228,6 @@
     "bitcoin above ... on december 19?(by 12:00 et)": [
       "177"
     ],
-    "bitcoin above ... on december 20?(12:00 et)": [
-      "185"
-    ],
-    "bitcoin above ... on december 21?(12:00 et)": [
-      "191"
-    ],
-    "bitcoin above ... on december 22?(12:00 et)": [
-      "195"
-    ],
-    "bitcoin above ... on december 23?(12:00 et)": [
-      "199"
-    ],
-    "bitcoin above ... on december 24?(12:00 et)": [
-      "203"
-    ],
-    "bitcoin above ... on december 25?(12:00 et)": [
-      "206"
-    ],
-    "bitcoin above ... on december 26?(12:00 et)": [
-      "209"
-    ],
     "bitcoin above december": [
       "156",
       "157",
@@ -12136,14 +11235,7 @@
       "162",
       "166",
       "170",
-      "177",
-      "185",
-      "191",
-      "195",
-      "199",
-      "203",
-      "206",
-      "209"
+      "177"
     ],
     "bitcoin hit": [
       "112",
@@ -12193,25 +11285,11 @@
     "boston": [
       "103"
     ],
-    "boxing": [
-      "165"
-    ],
-    "boxing jake": [
-      "165"
-    ],
-    "boxing jake paul": [
-      "165"
-    ],
-    "boxing: jake paul vs. anthony joshua": [
-      "165"
-    ],
     "bps": [
       "120",
       "121",
       "153",
       "61",
-      "73",
-      "74",
       "75",
       "78"
     ],
@@ -12257,9 +11335,6 @@
     ],
     "cambodia ceasefire": [
       "188"
-    ],
-    "campaign": [
-      "154"
     ],
     "candle": [
       "1277",
@@ -12353,8 +11428,6 @@
       "121",
       "153",
       "61",
-      "73",
-      "74",
       "75"
     ],
     "changpeng": [
@@ -12743,7 +11816,6 @@
       "1277",
       "1377",
       "1463",
-      "73",
       "89"
     ],
     "december": [
@@ -12777,19 +11849,12 @@
       "172",
       "174",
       "177",
-      "185",
       "187",
       "188",
-      "191",
       "192",
-      "195",
       "198",
-      "199",
       "201",
       "202",
-      "203",
-      "206",
-      "209",
       "2362",
       "2668",
       "2669",
@@ -12797,7 +11862,6 @@
       "3055",
       "3057",
       "3062",
-      "74",
       "791",
       "793",
       "813",
@@ -12810,8 +11874,6 @@
       "153",
       "1546",
       "61",
-      "73",
-      "74",
       "75"
     ],
     "decision april": [
@@ -12820,15 +11882,8 @@
     "decision april 2026": [
       "153"
     ],
-    "decision december": [
-      "74"
-    ],
     "decision dfr": [
-      "121",
-      "73"
-    ],
-    "decision dfr dec": [
-      "73"
+      "121"
     ],
     "decision dfr february": [
       "121"
@@ -12845,8 +11900,6 @@
       "121",
       "153",
       "61",
-      "73",
-      "74",
       "75"
     ],
     "deepseek": [
@@ -12884,11 +11937,7 @@
       "103"
     ],
     "dfr": [
-      "121",
-      "73"
-    ],
-    "dfr dec": [
-      "73"
+      "121"
     ],
     "dfr february": [
       "121"
@@ -12944,9 +11993,6 @@
     "draft": [
       "3072"
     ],
-    "draw/not": [
-      "165"
-    ],
     "dreams": [
       "210"
     ],
@@ -12995,19 +12041,13 @@
       "180"
     ],
     "ecb": [
-      "121",
-      "73"
+      "121"
     ],
     "ecb rates": [
-      "121",
-      "73"
+      "121"
     ],
     "ecb rates decision": [
-      "121",
-      "73"
-    ],
-    "ecb rates decision (dfr) in dec?": [
-      "73"
+      "121"
     ],
     "ecb rates decision (dfr): february 2026": [
       "121"
@@ -13057,12 +12097,6 @@
     ],
     "elle": [
       "141"
-    ],
-    "ellison/oracle": [
-      "159"
-    ],
-    "elon": [
-      "159"
     ],
     "elordi": [
       "140"
@@ -13310,15 +12344,6 @@
       "1463",
       "813",
       "814"
-    ],
-    "finishes": [
-      "154"
-    ],
-    "finishes aster": [
-      "154"
-    ],
-    "finishes aster human": [
-      "154"
     ],
     "fire": [
       "211"
@@ -13599,7 +12624,6 @@
     "higher": [
       "1277",
       "1377",
-      "155",
       "1721",
       "2668",
       "2669",
@@ -13611,9 +12635,6 @@
     ],
     "higher fdv one": [
       "1721"
-    ],
-    "higher roi": [
-      "155"
     ],
     "highest": [
       "84"
@@ -13678,12 +12699,10 @@
       "103"
     ],
     "how": [
-      "178",
       "196",
       "78"
     ],
     "how many": [
-      "178",
       "78"
     ],
     "how many fed": [
@@ -13691,9 +12710,6 @@
     ],
     "how many fed rate cuts in 2026?": [
       "78"
-    ],
-    "how many models": [
-      "178"
     ],
     "how much": [
       "196"
@@ -13712,26 +12728,6 @@
     ],
     "hudson": [
       "139"
-    ],
-    "human": [
-      "154",
-      "155",
-      "178"
-    ],
-    "human campaign": [
-      "154"
-    ],
-    "human how": [
-      "178"
-    ],
-    "human how many": [
-      "178"
-    ],
-    "human which": [
-      "155"
-    ],
-    "human which team": [
-      "155"
     ],
     "hyperliquid": [
       "1377"
@@ -13781,8 +12777,6 @@
       "121",
       "153",
       "61",
-      "73",
-      "74",
       "75"
     ],
     "infinex": [
@@ -13922,15 +12916,6 @@
     "jafar": [
       "138"
     ],
-    "jake": [
-      "165"
-    ],
-    "jake paul": [
-      "165"
-    ],
-    "jake paul anthony": [
-      "165"
-    ],
     "jan": [
       "1463",
       "3132"
@@ -13952,8 +12937,7 @@
     ],
     "japan": [
       "120",
-      "3132",
-      "74"
+      "3132"
     ],
     "japan conduct": [
       "3132"
@@ -13962,11 +12946,7 @@
       "3132"
     ],
     "japan decision": [
-      "120",
-      "74"
-    ],
-    "japan decision december": [
-      "74"
+      "120"
     ],
     "japan decision january": [
       "120"
@@ -14009,9 +12989,6 @@
     ],
     "josh": [
       "138"
-    ],
-    "joshua": [
-      "165"
     ],
     "ju-min": [
       "131"
@@ -14126,9 +13103,6 @@
     ],
     "largest company end of 2025?": [
       "65"
-    ],
-    "larry": [
-      "159"
     ],
     "launch": [
       "118",
@@ -14364,7 +13338,6 @@
       "3114"
     ],
     "many": [
-      "178",
       "78"
     ],
     "many fed": [
@@ -14372,12 +13345,6 @@
     ],
     "many fed rate": [
       "78"
-    ],
-    "many models": [
-      "178"
-    ],
-    "many models place": [
-      "178"
     ],
     "mar": [
       "89"
@@ -14535,9 +13502,6 @@
     "met": [
       "1951"
     ],
-    "meta": [
-      "159"
-    ],
     "metamask": [
       "118",
       "189",
@@ -14565,7 +13529,6 @@
     ],
     "microsoft": [
       "126",
-      "159",
       "65"
     ],
     "microsoft msft": [
@@ -14611,15 +13574,6 @@
     ],
     "model 2025": [
       "66"
-    ],
-    "models": [
-      "178"
-    ],
-    "models place": [
-      "178"
-    ],
-    "models place top": [
-      "178"
     ],
     "monad": [
       "1721"
@@ -14683,9 +13637,6 @@
     ],
     "munich": [
       "83"
-    ],
-    "musk": [
-      "159"
     ],
     "must": [
       "1270",
@@ -15028,17 +13979,13 @@
       "151",
       "152",
       "153",
-      "154",
-      "155",
       "156",
       "157",
       "158",
-      "159",
       "160",
       "161",
       "162",
       "163",
-      "165",
       "166",
       "167",
       "168",
@@ -15050,37 +13997,29 @@
       "174",
       "175",
       "177",
-      "178",
       "179",
       "180",
       "181",
       "183",
       "184",
-      "185",
       "186",
       "187",
       "188",
       "189",
       "190",
-      "191",
       "192",
       "193",
       "194",
-      "195",
       "196",
       "197",
       "198",
-      "199",
       "200",
       "201",
       "202",
-      "203",
       "204",
       "205",
-      "206",
       "207",
       "208",
-      "209",
       "210",
       "211",
       "212",
@@ -15091,8 +14030,6 @@
       "65",
       "66",
       "67",
-      "73",
-      "74",
       "75",
       "78",
       "79",
@@ -15305,14 +14242,7 @@
     ],
     "paul": [
       "138",
-      "140",
-      "165"
-    ],
-    "paul anthony": [
-      "165"
-    ],
-    "paul anthony joshua": [
-      "165"
+      "140"
     ],
     "penn": [
       "140"
@@ -15374,12 +14304,6 @@
     ],
     "pistons": [
       "103"
-    ],
-    "place": [
-      "178"
-    ],
-    "place top": [
-      "178"
     ],
     "player": [
       "3072"
@@ -15577,16 +14501,13 @@
     ],
     "rates": [
       "120",
-      "121",
-      "73"
+      "121"
     ],
     "rates decision": [
-      "121",
-      "73"
+      "121"
     ],
     "rates decision dfr": [
-      "121",
-      "73"
+      "121"
     ],
     "reached": [
       "1278"
@@ -15772,9 +14693,6 @@
     "rockets": [
       "103"
     ],
-    "roi": [
-      "155"
-    ],
     "role": [
       "791"
     ],
@@ -15849,9 +14767,6 @@
     ],
     "scheduled": [
       "3073"
-    ],
-    "scored": [
-      "165"
     ],
     "scott": [
       "107"
@@ -16225,14 +15140,7 @@
       "141"
     ],
     "team": [
-      "155",
       "212"
-    ],
-    "team achieve": [
-      "155"
-    ],
-    "team achieve higher": [
-      "155"
     ],
     "technologies": [
       "186"
@@ -16380,7 +15288,6 @@
       "169"
     ],
     "tiktok": [
-      "159",
       "160"
     ],
     "tiktok sale": [
@@ -16467,7 +15374,6 @@
       "793"
     ],
     "top": [
-      "178",
       "212",
       "214"
     ],
@@ -16557,9 +15463,6 @@
     ],
     "twitch": [
       "193"
-    ],
-    "twitter": [
-      "159"
     ],
     "type": [
       "1856"
@@ -16719,9 +15622,6 @@
     "wallet": [
       "1274"
     ],
-    "walmart": [
-      "159"
-    ],
     "warner": [
       "2398"
     ],
@@ -16852,7 +15752,6 @@
     "which": [
       "135",
       "136",
-      "155",
       "186",
       "193",
       "3132",
@@ -16899,32 +15798,9 @@
       "135",
       "136"
     ],
-    "which team": [
-      "155"
-    ],
-    "which team achieve": [
-      "155"
-    ],
     "who": [
       "107",
-      "154",
-      "159",
       "1721"
-    ],
-    "who acquire": [
-      "159"
-    ],
-    "who acquire tiktok": [
-      "159"
-    ],
-    "who finishes": [
-      "154"
-    ],
-    "who finishes #1 in aster’s “human vs ai” campaign?": [
-      "154"
-    ],
-    "who finishes aster": [
-      "154"
     ],
     "who higher": [
       "1721"
@@ -16937,9 +15813,6 @@
     ],
     "who trump nominate": [
       "107"
-    ],
-    "who will acquire tiktok?": [
-      "159"
     ],
     "who will trump nominate as fed chair?": [
       "107"
@@ -17430,20 +16303,10 @@
       "166",
       "170",
       "177",
-      "185",
-      "191",
-      "195",
-      "199",
-      "203",
-      "206",
-      "209",
       "62"
     ],
     "000-4": [
       "62"
-    ],
-    "1-3": [
-      "178"
     ],
     "1-minute": [
       "1277"
@@ -17785,9 +16648,6 @@
     "375": [
       "124"
     ],
-    "4-6": [
-      "178"
-    ],
     "400": [
       "124",
       "62"
@@ -17842,9 +16702,6 @@
     "600b": [
       "158"
     ],
-    "7-10": [
-      "178"
-    ],
     "700b": [
       "158"
     ],
@@ -17880,20 +16737,13 @@
       "177",
       "183",
       "184",
-      "185",
       "187",
       "189",
-      "191",
       "194",
-      "195",
       "197",
-      "199",
-      "203",
       "204",
       "205",
-      "206",
       "207",
-      "209",
       "2668",
       "95",
       "96",
@@ -17907,14 +16757,7 @@
       "162",
       "166",
       "170",
-      "177",
-      "185",
-      "191",
-      "195",
-      "199",
-      "203",
-      "206",
-      "209"
+      "177"
     ],
     "above earthquake": [
       "187",
@@ -17960,21 +16803,6 @@
     ],
     "accident": [
       "211"
-    ],
-    "achieve": [
-      "155"
-    ],
-    "achieve higher": [
-      "155"
-    ],
-    "achieve higher roi": [
-      "155"
-    ],
-    "acquire": [
-      "159"
-    ],
-    "acquire tiktok": [
-      "159"
     ],
     "acquires": [
       "2398"
@@ -18133,7 +16961,6 @@
       "193"
     ],
     "amazon": [
-      "159",
       "193"
     ],
     "amy": [
@@ -18213,12 +17040,6 @@
     "another government shutdown": [
       "3114"
     ],
-    "anthony": [
-      "165"
-    ],
-    "anthony joshua": [
-      "165"
-    ],
     "anthropic": [
       "163",
       "66"
@@ -18278,9 +17099,6 @@
     "apple ceo march": [
       "2368"
     ],
-    "applovin": [
-      "159"
-    ],
     "appropriations": [
       "3114"
     ],
@@ -18331,31 +17149,6 @@
     "assumes": [
       "791"
     ],
-    "aster": [
-      "154",
-      "155",
-      "178"
-    ],
-    "aster human": [
-      "154",
-      "155",
-      "178"
-    ],
-    "aster human campaign": [
-      "154"
-    ],
-    "aster human how": [
-      "178"
-    ],
-    "aster human which": [
-      "155"
-    ],
-    "aster “human vs ai”: how many ai models will place in the top 10?": [
-      "178"
-    ],
-    "aster “human vs ai”: which team will achieve the higher roi?": [
-      "155"
-    ],
     "aston": [
       "80"
     ],
@@ -18397,19 +17190,13 @@
       "95"
     ],
     "bank": [
-      "120",
-      "74"
+      "120"
     ],
     "bank japan": [
-      "120",
-      "74"
+      "120"
     ],
     "bank japan decision": [
-      "120",
-      "74"
-    ],
-    "bank of japan decision in december?": [
-      "74"
+      "120"
     ],
     "bank of japan decision in january?": [
       "120"
@@ -18577,14 +17364,7 @@
       "162",
       "166",
       "170",
-      "177",
-      "185",
-      "191",
-      "195",
-      "199",
-      "203",
-      "206",
-      "209"
+      "177"
     ],
     "bitcoin 2025": [
       "1274"
@@ -18596,14 +17376,7 @@
       "162",
       "166",
       "170",
-      "177",
-      "185",
-      "191",
-      "195",
-      "199",
-      "203",
-      "206",
-      "209"
+      "177"
     ],
     "bitcoin above ... on december 10?(by 12:00 et)": [
       "156"
@@ -18626,27 +17399,6 @@
     "bitcoin above ... on december 19?(by 12:00 et)": [
       "177"
     ],
-    "bitcoin above ... on december 20?(12:00 et)": [
-      "185"
-    ],
-    "bitcoin above ... on december 21?(12:00 et)": [
-      "191"
-    ],
-    "bitcoin above ... on december 22?(12:00 et)": [
-      "195"
-    ],
-    "bitcoin above ... on december 23?(12:00 et)": [
-      "199"
-    ],
-    "bitcoin above ... on december 24?(12:00 et)": [
-      "203"
-    ],
-    "bitcoin above ... on december 25?(12:00 et)": [
-      "206"
-    ],
-    "bitcoin above ... on december 26?(12:00 et)": [
-      "209"
-    ],
     "bitcoin above december": [
       "156",
       "157",
@@ -18654,14 +17406,7 @@
       "162",
       "166",
       "170",
-      "177",
-      "185",
-      "191",
-      "195",
-      "199",
-      "203",
-      "206",
-      "209"
+      "177"
     ],
     "bitcoin hit": [
       "112",
@@ -18711,25 +17456,11 @@
     "boston": [
       "103"
     ],
-    "boxing": [
-      "165"
-    ],
-    "boxing jake": [
-      "165"
-    ],
-    "boxing jake paul": [
-      "165"
-    ],
-    "boxing: jake paul vs. anthony joshua": [
-      "165"
-    ],
     "bps": [
       "120",
       "121",
       "153",
       "61",
-      "73",
-      "74",
       "75",
       "78"
     ],
@@ -18775,9 +17506,6 @@
     ],
     "cambodia ceasefire": [
       "188"
-    ],
-    "campaign": [
-      "154"
     ],
     "candle": [
       "1277",
@@ -18871,8 +17599,6 @@
       "121",
       "153",
       "61",
-      "73",
-      "74",
       "75"
     ],
     "changpeng": [
@@ -19261,7 +17987,6 @@
       "1277",
       "1377",
       "1463",
-      "73",
       "89"
     ],
     "december": [
@@ -19295,19 +18020,12 @@
       "172",
       "174",
       "177",
-      "185",
       "187",
       "188",
-      "191",
       "192",
-      "195",
       "198",
-      "199",
       "201",
       "202",
-      "203",
-      "206",
-      "209",
       "2362",
       "2668",
       "2669",
@@ -19315,7 +18033,6 @@
       "3055",
       "3057",
       "3062",
-      "74",
       "791",
       "793",
       "813",
@@ -19328,8 +18045,6 @@
       "153",
       "1546",
       "61",
-      "73",
-      "74",
       "75"
     ],
     "decision april": [
@@ -19338,15 +18053,8 @@
     "decision april 2026": [
       "153"
     ],
-    "decision december": [
-      "74"
-    ],
     "decision dfr": [
-      "121",
-      "73"
-    ],
-    "decision dfr dec": [
-      "73"
+      "121"
     ],
     "decision dfr february": [
       "121"
@@ -19363,8 +18071,6 @@
       "121",
       "153",
       "61",
-      "73",
-      "74",
       "75"
     ],
     "deepseek": [
@@ -19402,11 +18108,7 @@
       "103"
     ],
     "dfr": [
-      "121",
-      "73"
-    ],
-    "dfr dec": [
-      "73"
+      "121"
     ],
     "dfr february": [
       "121"
@@ -19462,9 +18164,6 @@
     "draft": [
       "3072"
     ],
-    "draw/not": [
-      "165"
-    ],
     "dreams": [
       "210"
     ],
@@ -19513,19 +18212,13 @@
       "180"
     ],
     "ecb": [
-      "121",
-      "73"
+      "121"
     ],
     "ecb rates": [
-      "121",
-      "73"
+      "121"
     ],
     "ecb rates decision": [
-      "121",
-      "73"
-    ],
-    "ecb rates decision (dfr) in dec?": [
-      "73"
+      "121"
     ],
     "ecb rates decision (dfr): february 2026": [
       "121"
@@ -19575,12 +18268,6 @@
     ],
     "elle": [
       "141"
-    ],
-    "ellison/oracle": [
-      "159"
-    ],
-    "elon": [
-      "159"
     ],
     "elordi": [
       "140"
@@ -19828,15 +18515,6 @@
       "1463",
       "813",
       "814"
-    ],
-    "finishes": [
-      "154"
-    ],
-    "finishes aster": [
-      "154"
-    ],
-    "finishes aster human": [
-      "154"
     ],
     "fire": [
       "211"
@@ -20117,7 +18795,6 @@
     "higher": [
       "1277",
       "1377",
-      "155",
       "1721",
       "2668",
       "2669",
@@ -20129,9 +18806,6 @@
     ],
     "higher fdv one": [
       "1721"
-    ],
-    "higher roi": [
-      "155"
     ],
     "highest": [
       "84"
@@ -20196,12 +18870,10 @@
       "103"
     ],
     "how": [
-      "178",
       "196",
       "78"
     ],
     "how many": [
-      "178",
       "78"
     ],
     "how many fed": [
@@ -20209,9 +18881,6 @@
     ],
     "how many fed rate cuts in 2026?": [
       "78"
-    ],
-    "how many models": [
-      "178"
     ],
     "how much": [
       "196"
@@ -20230,26 +18899,6 @@
     ],
     "hudson": [
       "139"
-    ],
-    "human": [
-      "154",
-      "155",
-      "178"
-    ],
-    "human campaign": [
-      "154"
-    ],
-    "human how": [
-      "178"
-    ],
-    "human how many": [
-      "178"
-    ],
-    "human which": [
-      "155"
-    ],
-    "human which team": [
-      "155"
     ],
     "hyperliquid": [
       "1377"
@@ -20299,8 +18948,6 @@
       "121",
       "153",
       "61",
-      "73",
-      "74",
       "75"
     ],
     "infinex": [
@@ -20440,15 +19087,6 @@
     "jafar": [
       "138"
     ],
-    "jake": [
-      "165"
-    ],
-    "jake paul": [
-      "165"
-    ],
-    "jake paul anthony": [
-      "165"
-    ],
     "jan": [
       "1463",
       "3132"
@@ -20470,8 +19108,7 @@
     ],
     "japan": [
       "120",
-      "3132",
-      "74"
+      "3132"
     ],
     "japan conduct": [
       "3132"
@@ -20480,11 +19117,7 @@
       "3132"
     ],
     "japan decision": [
-      "120",
-      "74"
-    ],
-    "japan decision december": [
-      "74"
+      "120"
     ],
     "japan decision january": [
       "120"
@@ -20527,9 +19160,6 @@
     ],
     "josh": [
       "138"
-    ],
-    "joshua": [
-      "165"
     ],
     "ju-min": [
       "131"
@@ -20644,9 +19274,6 @@
     ],
     "largest company end of 2025?": [
       "65"
-    ],
-    "larry": [
-      "159"
     ],
     "launch": [
       "118",
@@ -20882,7 +19509,6 @@
       "3114"
     ],
     "many": [
-      "178",
       "78"
     ],
     "many fed": [
@@ -20890,12 +19516,6 @@
     ],
     "many fed rate": [
       "78"
-    ],
-    "many models": [
-      "178"
-    ],
-    "many models place": [
-      "178"
     ],
     "mar": [
       "89"
@@ -21053,9 +19673,6 @@
     "met": [
       "1951"
     ],
-    "meta": [
-      "159"
-    ],
     "metamask": [
       "118",
       "189",
@@ -21083,7 +19700,6 @@
     ],
     "microsoft": [
       "126",
-      "159",
       "65"
     ],
     "microsoft msft": [
@@ -21129,15 +19745,6 @@
     ],
     "model 2025": [
       "66"
-    ],
-    "models": [
-      "178"
-    ],
-    "models place": [
-      "178"
-    ],
-    "models place top": [
-      "178"
     ],
     "monad": [
       "1721"
@@ -21201,9 +19808,6 @@
     ],
     "munich": [
       "83"
-    ],
-    "musk": [
-      "159"
     ],
     "must": [
       "1270",
@@ -21546,17 +20150,13 @@
       "151",
       "152",
       "153",
-      "154",
-      "155",
       "156",
       "157",
       "158",
-      "159",
       "160",
       "161",
       "162",
       "163",
-      "165",
       "166",
       "167",
       "168",
@@ -21568,37 +20168,29 @@
       "174",
       "175",
       "177",
-      "178",
       "179",
       "180",
       "181",
       "183",
       "184",
-      "185",
       "186",
       "187",
       "188",
       "189",
       "190",
-      "191",
       "192",
       "193",
       "194",
-      "195",
       "196",
       "197",
       "198",
-      "199",
       "200",
       "201",
       "202",
-      "203",
       "204",
       "205",
-      "206",
       "207",
       "208",
-      "209",
       "210",
       "211",
       "212",
@@ -21609,8 +20201,6 @@
       "65",
       "66",
       "67",
-      "73",
-      "74",
       "75",
       "78",
       "79",
@@ -21823,14 +20413,7 @@
     ],
     "paul": [
       "138",
-      "140",
-      "165"
-    ],
-    "paul anthony": [
-      "165"
-    ],
-    "paul anthony joshua": [
-      "165"
+      "140"
     ],
     "penn": [
       "140"
@@ -21892,12 +20475,6 @@
     ],
     "pistons": [
       "103"
-    ],
-    "place": [
-      "178"
-    ],
-    "place top": [
-      "178"
     ],
     "player": [
       "3072"
@@ -22095,16 +20672,13 @@
     ],
     "rates": [
       "120",
-      "121",
-      "73"
+      "121"
     ],
     "rates decision": [
-      "121",
-      "73"
+      "121"
     ],
     "rates decision dfr": [
-      "121",
-      "73"
+      "121"
     ],
     "reached": [
       "1278"
@@ -22290,9 +20864,6 @@
     "rockets": [
       "103"
     ],
-    "roi": [
-      "155"
-    ],
     "role": [
       "791"
     ],
@@ -22367,9 +20938,6 @@
     ],
     "scheduled": [
       "3073"
-    ],
-    "scored": [
-      "165"
     ],
     "scott": [
       "107"
@@ -22743,14 +21311,7 @@
       "141"
     ],
     "team": [
-      "155",
       "212"
-    ],
-    "team achieve": [
-      "155"
-    ],
-    "team achieve higher": [
-      "155"
     ],
     "technologies": [
       "186"
@@ -22898,7 +21459,6 @@
       "169"
     ],
     "tiktok": [
-      "159",
       "160"
     ],
     "tiktok sale": [
@@ -22985,7 +21545,6 @@
       "793"
     ],
     "top": [
-      "178",
       "212",
       "214"
     ],
@@ -23075,9 +21634,6 @@
     ],
     "twitch": [
       "193"
-    ],
-    "twitter": [
-      "159"
     ],
     "type": [
       "1856"
@@ -23237,9 +21793,6 @@
     "wallet": [
       "1274"
     ],
-    "walmart": [
-      "159"
-    ],
     "warner": [
       "2398"
     ],
@@ -23370,7 +21923,6 @@
     "which": [
       "135",
       "136",
-      "155",
       "186",
       "193",
       "3132",
@@ -23417,32 +21969,9 @@
       "135",
       "136"
     ],
-    "which team": [
-      "155"
-    ],
-    "which team achieve": [
-      "155"
-    ],
     "who": [
       "107",
-      "154",
-      "159",
       "1721"
-    ],
-    "who acquire": [
-      "159"
-    ],
-    "who acquire tiktok": [
-      "159"
-    ],
-    "who finishes": [
-      "154"
-    ],
-    "who finishes #1 in aster’s “human vs ai” campaign?": [
-      "154"
-    ],
-    "who finishes aster": [
-      "154"
     ],
     "who higher": [
       "1721"
@@ -23455,9 +21984,6 @@
     ],
     "who trump nominate": [
       "107"
-    ],
-    "who will acquire tiktok?": [
-      "159"
     ],
     "who will trump nominate as fed chair?": [
       "107"

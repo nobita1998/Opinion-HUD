@@ -9,6 +9,7 @@ import zhipuai
 
 
 OPINION_API_URL = os.environ.get("OPINION_API_URL", "").strip() or "http://opinion.api.predictscan.dev:10001/api/markets"
+OPINION_WRAP_EVENTS_URL = "https://opinionanalytics.xyz/api/markets/wrap-events"
 FRONTEND_BASE_URL = "https://opinion.trade"
 MODEL_NAME = "GLM-4.6"
 REF_PARAM = "opinion_hud"
@@ -126,6 +127,47 @@ def fetch_all_markets():
     if not isinstance(payload, list):
         raise ValueError("Predictscan market API error: Invalid response format (expected list)")
     return _flatten_markets(payload)
+
+
+def fetch_parent_events():
+    """Fetch parent event details from wrap-events API to check cutoffAt for multi-markets."""
+    if DEBUG:
+        print(f"[debug] fetching parent events from {OPINION_WRAP_EVENTS_URL}", flush=True)
+    try:
+        response = requests.get(OPINION_WRAP_EVENTS_URL, timeout=30)
+        response.raise_for_status()
+        payload = response.json()
+
+        # Extract data array
+        if isinstance(payload, dict) and isinstance(payload.get("data"), list):
+            events_list = payload["data"]
+        elif isinstance(payload, list):
+            events_list = payload
+        else:
+            if DEBUG:
+                print("[debug] wrap-events: unexpected format, returning empty dict", flush=True)
+            return {}
+
+        # Build event_id -> event_details mapping
+        parent_events = {}
+        for event in events_list:
+            if not isinstance(event, dict):
+                continue
+            event_id = event.get("eventId") or event.get("marketId")
+            if event_id:
+                parent_events[str(event_id)] = {
+                    "cutoffAt": event.get("cutoffAt"),
+                    "statusEnum": event.get("statusEnum"),
+                    "resolvedAt": event.get("resolvedAt"),
+                    "title": event.get("title"),
+                }
+
+        if DEBUG:
+            print(f"[debug] fetched {len(parent_events)} parent events", flush=True)
+        return parent_events
+    except Exception as exc:
+        print(f"[warn] failed to fetch parent events from wrap-events API: {exc}", flush=True)
+        return {}
 
 
 def _market_id(market):
@@ -1227,8 +1269,9 @@ def generate_keywords(api_key, title, rules, context=None):
             time.sleep(sleep_for)
 
 
-def build_data(markets, api_key, previous_data=None):
+def build_data(markets, api_key, previous_data=None, parent_events=None):
     now = _now_epoch_seconds()
+    parent_events = parent_events or {}
 
     markets_out = {}
     events_out = {}
@@ -1293,6 +1336,8 @@ def build_data(markets, api_key, previous_data=None):
 
     # Track resolved event IDs to remove them from output later
     resolved_event_ids = set()
+    # Track all event IDs seen in current API response (to detect missing events in incremental mode)
+    current_api_event_ids = set()
 
     for market in markets:
         processed += 1
@@ -1308,6 +1353,10 @@ def build_data(markets, api_key, previous_data=None):
         parent_event_market_id = _market_parent_event_market_id(market)
         parent_event_id = market.get("parentEventId")
         event_id = parent_event_market_id or (str(parent_event_id).strip() if parent_event_id else None) or market_id
+
+        # Record this event_id as seen in current API (regardless of status)
+        if event_id and add_only_new:
+            current_api_event_ids.add(event_id)
 
         if market.get("statusEnum") != "Activated":
             skipped["statusEnum"] += 1
@@ -1325,6 +1374,16 @@ def build_data(markets, api_key, previous_data=None):
             continue
 
         cutoff = _parse_cutoff_epoch_seconds(market.get("cutoffAt"))
+        # If child market has cutoffAt=0, check parent event's cutoffAt
+        if cutoff is None or cutoff == 0:
+            raw_cutoff = market.get("cutoffAt")
+            if raw_cutoff in (0, 0.0, "0", "0.0") and event_id and event_id in parent_events:
+                parent_cutoff = _parse_cutoff_epoch_seconds(parent_events[event_id].get("cutoffAt"))
+                if parent_cutoff is not None and parent_cutoff > 0:
+                    cutoff = parent_cutoff
+                    if DEBUG:
+                        print(f"[debug] using parent event {event_id} cutoffAt: {cutoff}", flush=True)
+
         if cutoff is None:
             raw_cutoff = market.get("cutoffAt")
             if raw_cutoff in (0, 0.0, "0", "0.0"):
@@ -1741,6 +1800,28 @@ def build_data(markets, api_key, previous_data=None):
         if removed_count > 0:
             print(f"[info] removed {removed_count} resolved/expired events from output", flush=True)
 
+    # In incremental mode, also remove events that are no longer in current API response
+    if add_only_new and current_api_event_ids:
+        missing_event_ids = set(events_out.keys()) - current_api_event_ids
+        if DEBUG:
+            print(f"[debug] current_api_event_ids count: {len(current_api_event_ids)}", flush=True)
+            print(f"[debug] events_out count: {len(events_out)}", flush=True)
+            print(f"[debug] missing_event_ids count: {len(missing_event_ids)}", flush=True)
+            print(f"[debug] '154' in current_api_event_ids: {'154' in current_api_event_ids}", flush=True)
+            print(f"[debug] '154' in events_out: {'154' in events_out}", flush=True)
+            if missing_event_ids:
+                print(f"[debug] missing_event_ids sample: {sorted(list(missing_event_ids))[:10]}", flush=True)
+        if missing_event_ids:
+            missing_count = 0
+            for event_id in missing_event_ids:
+                if event_id in events_out:
+                    del events_out[event_id]
+                    missing_count += 1
+                if event_id in markets_out:
+                    del markets_out[event_id]
+            if missing_count > 0:
+                print(f"[info] removed {missing_count} events no longer in API response", flush=True)
+
     index_out = {kw: sorted(list(ids)) for kw, ids in sorted(inverted.items(), key=lambda kv: kv[0])}
     event_index_out = {kw: sorted(list(ids)) for kw, ids in sorted(event_inverted.items(), key=lambda kv: kv[0])}
 
@@ -1831,6 +1912,9 @@ def main():
     markets = fetch_all_markets()
     print(f"[info] fetched {len(markets)} market nodes (including parents)", flush=True)
 
+    print("[info] fetching parent events for cutoff validation...", flush=True)
+    parent_events = fetch_parent_events()
+
     previous_data = None
     if DISABLE_INCREMENTAL or ALL_REFRESH:
         print("[info] DISABLE_INCREMENTAL enabled: ignoring previous data.json", flush=True)
@@ -1838,7 +1922,7 @@ def main():
         previous_data = _load_previous_data(output_path)
         if previous_data is not None:
             print("[info] incremental: loaded previous data.json for keyword reuse", flush=True)
-    data = build_data(markets, api_key=api_key, previous_data=previous_data)
+    data = build_data(markets, api_key=api_key, previous_data=previous_data, parent_events=parent_events)
 
     output_dir = os.path.dirname(output_path)
     if output_dir:
