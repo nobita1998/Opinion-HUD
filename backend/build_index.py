@@ -2,6 +2,7 @@ import json
 import os
 import re
 import time
+from datetime import datetime, timezone, timedelta
 
 import requests
 import zhipuai
@@ -34,6 +35,13 @@ ADD_ONLY_NEW = os.environ.get("ADD_ONLY_NEW", "1").strip().lower() in ("1", "tru
 
 def _now_epoch_seconds():
     return int(time.time())
+
+
+def _format_utc8_time(epoch_seconds):
+    """Format Unix timestamp as UTC+8 time string (YYYY-MM-DD HH:MM:SS UTC+8)."""
+    utc8 = timezone(timedelta(hours=8))
+    dt = datetime.fromtimestamp(epoch_seconds, tz=utc8)
+    return dt.strftime("%Y-%m-%d %H:%M:%S UTC+8")
 
 
 def _parse_cutoff_epoch_seconds(value):
@@ -1761,7 +1769,7 @@ def build_data(markets, api_key, previous_data=None):
 
     return {
         "meta": {
-            "generatedAt": now,
+            "generatedAt": _format_utc8_time(now),
             "source": OPINION_API_URL,
             "frontendBaseUrl": FRONTEND_BASE_URL,
             "model": MODEL_NAME,
