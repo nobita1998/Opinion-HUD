@@ -1791,7 +1791,8 @@ def main():
         print("[error] Missing ZHIPU_KEY environment variable.", flush=True)
         raise ValueError("ZHIPU_KEY is not set")
 
-    output_path = os.environ.get("OUTPUT_PATH") or os.path.join(os.path.dirname(__file__), "data.json")
+    # Default output path: project root directory (one level up from backend/)
+    output_path = os.environ.get("OUTPUT_PATH") or os.path.join(os.path.dirname(os.path.dirname(__file__)), "data.json")
 
     if SKIP_AI:
         print("[info] SKIP_AI enabled: using fallback keywords (no LLM calls)", flush=True)
