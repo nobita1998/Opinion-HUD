@@ -1807,8 +1807,6 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
             print(f"[debug] current_api_event_ids count: {len(current_api_event_ids)}", flush=True)
             print(f"[debug] events_out count: {len(events_out)}", flush=True)
             print(f"[debug] missing_event_ids count: {len(missing_event_ids)}", flush=True)
-            print(f"[debug] '154' in current_api_event_ids: {'154' in current_api_event_ids}", flush=True)
-            print(f"[debug] '154' in events_out: {'154' in events_out}", flush=True)
             if missing_event_ids:
                 print(f"[debug] missing_event_ids sample: {sorted(list(missing_event_ids))[:10]}", flush=True)
         if missing_event_ids:
