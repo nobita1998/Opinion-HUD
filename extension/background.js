@@ -1,5 +1,6 @@
 const DEFAULT_DATA_URL = "https://nobita1998.github.io/Opinion-HUD/data.json";
-const OPINION_ANALYTICS_ORIGIN = "https://opinionanalytics.xyz";
+const OPINION_API_ORIGINS = new Set(["https://opinionanalytics.xyz"]);
+const FETCH_TIMEOUT_MS = 8000;
 const STORAGE_KEYS = {
   settings: "opinionHudSettings",
   cachedData: "opinionHudData",
@@ -41,7 +42,11 @@ async function ensureHostPermissionFor(url) {
 }
 
 async function fetchJson(url) {
-  const response = await fetch(url, { cache: "no-store" });
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  const response = await fetch(url, { cache: "no-store", signal: controller.signal }).finally(() =>
+    clearTimeout(timeoutId)
+  );
   if (!response.ok) {
     throw new Error(`data fetch failed: ${response.status} ${response.statusText}`);
   }
@@ -51,7 +56,7 @@ async function fetchJson(url) {
 function isAllowedOpinionAnalyticsUrl(url) {
   try {
     const u = new URL(url);
-    if (u.origin !== OPINION_ANALYTICS_ORIGIN) return false;
+    if (!OPINION_API_ORIGINS.has(u.origin)) return false;
     return u.pathname.startsWith("/api/");
   } catch {
     return false;
@@ -59,13 +64,16 @@ function isAllowedOpinionAnalyticsUrl(url) {
 }
 
 async function fetchJsonNoStore(url) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
   const response = await fetch(url, {
     method: "GET",
     credentials: "omit",
     cache: "no-store",
     referrerPolicy: "no-referrer",
     headers: { accept: "application/json" },
-  });
+    signal: controller.signal,
+  }).finally(() => clearTimeout(timeoutId));
   if (!response.ok) {
     throw new Error(`HTTP ${response.status} for ${url}`);
   }

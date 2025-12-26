@@ -31,12 +31,12 @@ HUD 中的概率不是来自 `data.json`，而是打开面板时按需请求：
 
 体验设计：
 - 概率先显示 loading（`YES …` / `NO …`），请求完成后替换为 `xx.x%`
-- 内存缓存：price 60s、wrap-events 10min，并发请求上限 4
+- 内存缓存：price 60s、wrap-events 10min（wrap-events 会在 content script 启动时预取，避免首次打开 multi 还要等待）
 - 请求失败/无成交显示 `—`
 
 ## UI 行为（当前实现）
 
-- 图标位置：注入到推文 header 的 “…” 按钮左侧（找不到时回退到 action bar）
+- 图标位置：注入到推文 header 的 “…” 按钮左侧（找不到时不显示，避免插错位置）
 - 面板位置：优先显示在图标右侧、与图标同一水平线；空间不够则回退到左侧
 - 面板高度：自适应 viewport，内容区可滚动（避免多个 multi 叠加撑出屏幕）
 - Quote retweet：在外层 tweet item（outer `<article>`）聚合主贴 + 引用贴文本做一次匹配，只显示一个图标

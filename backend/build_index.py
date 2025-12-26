@@ -1283,6 +1283,9 @@ def build_data(markets, api_key, previous_data=None):
         markets_out = dict(prev_markets)
         events_out = dict(prev_events)
 
+    # Track resolved event IDs to remove them from output later
+    resolved_event_ids = set()
+
     for market in markets:
         processed += 1
         if max_market_nodes is not None and processed > max_market_nodes:
@@ -1292,13 +1295,25 @@ def build_data(markets, api_key, previous_data=None):
         if scan_log_every > 0 and processed % scan_log_every == 0:
             print(f"[info] scanned {processed} market nodes (kept {kept})", flush=True)
 
+        market_id = _market_id(market)
+        parent_event_title = _market_parent_event_title(market)
+        parent_event_market_id = _market_parent_event_market_id(market)
+        parent_event_id = market.get("parentEventId")
+        event_id = parent_event_market_id or (str(parent_event_id).strip() if parent_event_id else None) or market_id
+
         if market.get("statusEnum") != "Activated":
             skipped["statusEnum"] += 1
+            # Track resolved/inactive events to remove from previous data
+            if event_id and add_only_new:
+                resolved_event_ids.add(event_id)
             continue
 
         resolved_at = _parse_cutoff_epoch_seconds(market.get("resolvedAt"))
         if resolved_at is not None and resolved_at > 0:
             skipped["resolved"] += 1
+            # Track resolved events to remove from previous data
+            if event_id and add_only_new:
+                resolved_event_ids.add(event_id)
             continue
 
         cutoff = _parse_cutoff_epoch_seconds(market.get("cutoffAt"))
@@ -1311,9 +1326,11 @@ def build_data(markets, api_key, previous_data=None):
                 continue
         elif cutoff <= now:
             skipped["cutoff_expired"] += 1
+            # Track expired events to remove from previous data
+            if event_id and add_only_new:
+                resolved_event_ids.add(event_id)
             continue
 
-        market_id = _market_id(market)
         if not market_id:
             skipped["missing_id"] += 1
             continue
@@ -1325,11 +1342,6 @@ def build_data(markets, api_key, previous_data=None):
 
         kept += 1
 
-        parent_event_title = _market_parent_event_title(market)
-        parent_event_market_id = _market_parent_event_market_id(market)
-        parent_event_id = market.get("parentEventId")
-
-        event_id = parent_event_market_id or (str(parent_event_id).strip() if parent_event_id else None) or market_id
         event_title = parent_event_title or title
         event_market_id = event_id
 
@@ -1708,6 +1720,18 @@ def build_data(markets, api_key, previous_data=None):
 
         if sleep_seconds > 0 and (not reused) and (not SKIP_AI):
             time.sleep(sleep_seconds)
+
+    # Remove resolved/expired events from output
+    if resolved_event_ids:
+        removed_count = 0
+        for event_id in resolved_event_ids:
+            if event_id in events_out:
+                del events_out[event_id]
+                removed_count += 1
+            if event_id in markets_out:
+                del markets_out[event_id]
+        if removed_count > 0:
+            print(f"[info] removed {removed_count} resolved/expired events from output", flush=True)
 
     index_out = {kw: sorted(list(ids)) for kw, ids in sorted(inverted.items(), key=lambda kv: kv[0])}
     event_index_out = {kw: sorted(list(ids)) for kw, ids in sorted(event_inverted.items(), key=lambda kv: kv[0])}
