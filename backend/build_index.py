@@ -1509,6 +1509,20 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
     for event_id, bucket in event_accumulator.items():
         if max_events is not None and event_stats["events"] >= max_events:
             break
+
+        # Skip sub-markets that are not parent events
+        # Only process:
+        # 1. Events in parent_events (parent wrap events)
+        # 2. Independent binary markets (event_id == single marketId, not in parent_events)
+        market_ids = bucket.get("marketIds") or []
+        is_parent_event = event_id in parent_events
+        is_independent_binary = len(market_ids) == 1 and event_id == market_ids[0] and event_id not in parent_events
+
+        if not (is_parent_event or is_independent_binary):
+            if DEBUG:
+                print(f"[debug] skipping sub-market event_id={event_id} title='{bucket.get('title')}' (not a parent event or independent binary market)", flush=True)
+            continue
+
         event_stats["events"] += 1
         if event_stats["events"] == 1:
             to_run = min(total_events, max_events) if max_events is not None else total_events
