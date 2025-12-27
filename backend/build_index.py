@@ -1510,17 +1510,30 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         if max_events is not None and event_stats["events"] >= max_events:
             break
 
-        # Skip sub-markets that are not parent events
+        # Skip sub-markets that are not true parent events
         # Only process:
-        # 1. Events in parent_events (parent wrap events)
-        # 2. Independent binary markets (event_id == single marketId, not in parent_events)
+        # 1. True parent events (parent_events with multiple sub-markets or different sub-market ID)
+        # 2. Independent binary markets (single marketId, not a sub-market of any parent)
         market_ids = bucket.get("marketIds") or []
-        is_parent_event = event_id in parent_events
-        is_independent_binary = len(market_ids) == 1 and event_id == market_ids[0] and event_id not in parent_events
 
-        if not (is_parent_event or is_independent_binary):
+        # Check if this is a true multi-choice parent event
+        is_true_parent_event = False
+        if event_id in parent_events:
+            parent_data = parent_events[event_id]
+            sub_markets = parent_data.get("subMarkets") or []
+            # True parent if: multiple sub-markets OR single sub-market with different ID
+            if len(sub_markets) > 1:
+                is_true_parent_event = True
+            elif len(sub_markets) == 1 and sub_markets[0].get("marketId") != event_id:
+                is_true_parent_event = True
+            # else: single sub-market with same ID = binary market, not a true parent
+
+        # Independent binary market: single marketId, not in parent_events
+        is_independent_binary = len(market_ids) == 1 and event_id == market_ids[0] and not is_true_parent_event
+
+        if not (is_true_parent_event or is_independent_binary):
             if DEBUG:
-                print(f"[debug] skipping sub-market event_id={event_id} title='{bucket.get('title')}' (not a parent event or independent binary market)", flush=True)
+                print(f"[debug] skipping sub-market event_id={event_id} title='{bucket.get('title')}' (not a true parent event or independent binary market)", flush=True)
             continue
 
         event_stats["events"] += 1
