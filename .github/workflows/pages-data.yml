@@ -4,13 +4,15 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'data.json'  # 防止 data.json 更新触发无限循环
   schedule:
     # Runs at minute 06 of every hour (UTC).
     - cron: "6 * * * *"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write  # 允许提交 data.json
   pages: write
   id-token: write
 
@@ -43,6 +45,20 @@ jobs:
           REPO_NAME="${GITHUB_REPOSITORY#*/}"
           export PREVIOUS_DATA_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${REPO_NAME}/data.json"
           python backend/build_index.py
+
+      - name: Commit updated data.json
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data.json
+          # 仅在有变更时提交
+          git diff --staged --quiet || git commit -m "chore: update data.json [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
 
       - name: Prepare artifact
         run: |

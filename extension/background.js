@@ -1,4 +1,4 @@
-const DEFAULT_DATA_URL = "https://nobita1998.github.io/Opinion-HUD/data.json";
+const DEFAULT_DATA_URL = "https://opinionhud.xyz/data.json";
 const OPINION_API_ORIGINS = new Set(["https://opinionanalytics.xyz"]);
 const FETCH_TIMEOUT_MS = 8000;
 const STORAGE_KEYS = {
