@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2025-12-27 15:28:00 UTC+8",
+    "generatedAt": "2025-12-27 16:37:25 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://opinion.trade",
     "model": "GLM-4.6",
     "ref": "opinion_hud",
     "debug": false,
     "counts": {
-      "seen": 743,
-      "kept": 603,
-      "markets": 141,
-      "keywords": 1604,
+      "seen": 751,
+      "kept": 611,
+      "markets": 142,
+      "keywords": 1621,
       "events": {
-        "events": 150
+        "events": 151
       },
       "skipped": {
         "statusEnum": 80,
@@ -28,11 +28,11 @@
         "incrementalOnly": false,
         "reused": 141,
         "legacyReused": 0,
-        "calls": 9,
+        "calls": 10,
         "retries": 0,
         "skipped": 0,
         "empty": 0,
-        "non_empty": 9,
+        "non_empty": 10,
         "errors": 0
       }
     }
@@ -5780,6 +5780,50 @@
       "sigFull": "cf797655",
       "sigCore": "6e0efe53",
       "reused": false
+    },
+    "217": {
+      "title": "Logan Paul’s Pikachu Illustrator Sale Price",
+      "marketIds": [
+        "217"
+      ],
+      "bestMarketId": "217",
+      "bestLabels": null,
+      "keywords": [
+        "logan paul",
+        "pikachu illustrator",
+        "pokemon card",
+        "sale price",
+        "auction",
+        "psa 10",
+        "charizard",
+        "rare pokemon",
+        "collectible",
+        "grading",
+        "investment",
+        "market value",
+        "paul pikachu",
+        "illustrator sale",
+        "logan paul pikachu",
+        "paul pikachu illustrator",
+        "pikachu illustrator sale",
+        "illustrator sale price"
+      ],
+      "entities": [
+        "logan paul",
+        "pikachu illustrator"
+      ],
+      "entityGroups": [
+        [
+          "logan paul"
+        ],
+        [
+          "pikachu illustrator"
+        ]
+      ],
+      "sig": "e3998a57",
+      "sigFull": "e3998a57",
+      "sigCore": "9944f60b",
+      "reused": false
     }
   },
   "markets": {
@@ -11102,6 +11146,47 @@
           "season 5"
         ]
       ]
+    },
+    "217": {
+      "title": "Logan Paul’s Pikachu Illustrator Sale Price",
+      "url": "https://opinion.trade/market/217?ref=opinion_hud",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "logan paul",
+        "pikachu illustrator",
+        "pokemon card",
+        "sale price",
+        "auction",
+        "psa 10",
+        "charizard",
+        "rare pokemon",
+        "collectible",
+        "grading",
+        "investment",
+        "market value",
+        "paul pikachu",
+        "illustrator sale",
+        "logan paul pikachu",
+        "paul pikachu illustrator",
+        "pikachu illustrator sale",
+        "illustrator sale price"
+      ],
+      "entities": [
+        "logan paul",
+        "pikachu illustrator"
+      ],
+      "entityGroups": [
+        [
+          "logan paul"
+        ],
+        [
+          "pikachu illustrator"
+        ]
+      ]
     }
   },
   "index": {
@@ -11717,6 +11802,9 @@
     "attack": [
       "3039"
     ],
+    "auction": [
+      "217"
+    ],
     "autonomous": [
       "198"
     ],
@@ -12192,6 +12280,9 @@
     "character death": [
       "215"
     ],
+    "charizard": [
+      "217"
+    ],
     "charlie heaton": [
       "3221"
     ],
@@ -12324,6 +12415,9 @@
     ],
     "coinmarketcap": [
       "1721"
+    ],
+    "collectible": [
+      "217"
     ],
     "come back to china": [
       "1856"
@@ -13442,6 +13536,9 @@
     "gpt6": [
       "89"
     ],
+    "grading": [
+      "217"
+    ],
     "great earthquake": [
       "2668",
       "2669"
@@ -13638,6 +13735,12 @@
     "ieepa": [
       "1546"
     ],
+    "illustrator sale": [
+      "217"
+    ],
+    "illustrator sale price": [
+      "217"
+    ],
     "impeached": [
       "3062"
     ],
@@ -13714,6 +13817,9 @@
     ],
     "invade venezuela": [
       "128"
+    ],
+    "investment": [
+      "217"
     ],
     "ipo": [
       "152",
@@ -14175,6 +14281,12 @@
     "local elections party": [
       "130"
     ],
+    "logan paul": [
+      "217"
+    ],
+    "logan paul pikachu": [
+      "217"
+    ],
     "lol": [
       "213"
     ],
@@ -14338,6 +14450,7 @@
       "814"
     ],
     "market value": [
+      "217",
       "65"
     ],
     "marty supreme": [
@@ -14981,6 +15094,12 @@
     "paul mescal": [
       "140"
     ],
+    "paul pikachu": [
+      "217"
+    ],
+    "paul pikachu illustrator": [
+      "217"
+    ],
     "pdx": [
       "175"
     ],
@@ -15030,6 +15149,12 @@
     "picture winner": [
       "133"
     ],
+    "pikachu illustrator": [
+      "217"
+    ],
+    "pikachu illustrator sale": [
+      "217"
+    ],
     "playoffs": [
       "103",
       "179",
@@ -15041,6 +15166,9 @@
     ],
     "pm": [
       "150"
+    ],
+    "pokemon card": [
+      "217"
     ],
     "policy board": [
       "120"
@@ -15177,6 +15305,9 @@
     "progressive party": [
       "130"
     ],
+    "psa 10": [
+      "217"
+    ],
     "psg": [
       "83"
     ],
@@ -15251,6 +15382,9 @@
     ],
     "ranking": [
       "214"
+    ],
+    "rare pokemon": [
+      "217"
     ],
     "rate cut": [
       "120",
@@ -15504,6 +15638,9 @@
     ],
     "sale announced": [
       "160"
+    ],
+    "sale price": [
+      "217"
     ],
     "sam altman": [
       "108",
@@ -17431,6 +17568,9 @@
     "attack": [
       "3039"
     ],
+    "auction": [
+      "217"
+    ],
     "autonomous": [
       "198"
     ],
@@ -17906,6 +18046,9 @@
     "character death": [
       "215"
     ],
+    "charizard": [
+      "217"
+    ],
     "charlie heaton": [
       "3221"
     ],
@@ -18038,6 +18181,9 @@
     ],
     "coinmarketcap": [
       "1721"
+    ],
+    "collectible": [
+      "217"
     ],
     "come back to china": [
       "1856"
@@ -19156,6 +19302,9 @@
     "gpt6": [
       "89"
     ],
+    "grading": [
+      "217"
+    ],
     "great earthquake": [
       "2668",
       "2669"
@@ -19352,6 +19501,12 @@
     "ieepa": [
       "1546"
     ],
+    "illustrator sale": [
+      "217"
+    ],
+    "illustrator sale price": [
+      "217"
+    ],
     "impeached": [
       "3062"
     ],
@@ -19428,6 +19583,9 @@
     ],
     "invade venezuela": [
       "128"
+    ],
+    "investment": [
+      "217"
     ],
     "ipo": [
       "152",
@@ -19889,6 +20047,12 @@
     "local elections party": [
       "130"
     ],
+    "logan paul": [
+      "217"
+    ],
+    "logan paul pikachu": [
+      "217"
+    ],
     "lol": [
       "213"
     ],
@@ -20052,6 +20216,7 @@
       "814"
     ],
     "market value": [
+      "217",
       "65"
     ],
     "marty supreme": [
@@ -20695,6 +20860,12 @@
     "paul mescal": [
       "140"
     ],
+    "paul pikachu": [
+      "217"
+    ],
+    "paul pikachu illustrator": [
+      "217"
+    ],
     "pdx": [
       "175"
     ],
@@ -20744,6 +20915,12 @@
     "picture winner": [
       "133"
     ],
+    "pikachu illustrator": [
+      "217"
+    ],
+    "pikachu illustrator sale": [
+      "217"
+    ],
     "playoffs": [
       "103",
       "179",
@@ -20755,6 +20932,9 @@
     ],
     "pm": [
       "150"
+    ],
+    "pokemon card": [
+      "217"
     ],
     "policy board": [
       "120"
@@ -20891,6 +21071,9 @@
     "progressive party": [
       "130"
     ],
+    "psa 10": [
+      "217"
+    ],
     "psg": [
       "83"
     ],
@@ -20965,6 +21148,9 @@
     ],
     "ranking": [
       "214"
+    ],
+    "rare pokemon": [
+      "217"
     ],
     "rate cut": [
       "120",
@@ -21218,6 +21404,9 @@
     ],
     "sale announced": [
       "160"
+    ],
+    "sale price": [
+      "217"
     ],
     "sam altman": [
       "108",
