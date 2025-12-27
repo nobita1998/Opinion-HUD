@@ -1,0 +1,24 @@
+{
+  "name": "opinion-hud-api",
+  "version": "1.0.0",
+  "description": "Vercel serverless API for Opinion HUD - proxy to Opinion.Trade OpenAPI",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod",
+    "setup": "node scripts/setup-keychain.js",
+    "test-key": "node scripts/test-keychain.js"
+  },
+  "keywords": [
+    "opinion",
+    "prediction-market",
+    "vercel",
+    "serverless"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.7.0",
+    "keytar": "^7.9.0"
+  }
+}

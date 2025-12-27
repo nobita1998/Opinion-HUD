@@ -4,7 +4,7 @@ Opinion HUD 是一个 Chrome 扩展（Manifest V3），用于在 **X 网页端**
 
 核心特性：
 - 本地优先：推文内容只在本地匹配，不上传服务器
-- 后端预处理：用 LLM（`GLM-4.6`）为市场生成 `keywords` + `entityGroups`
+- 后端预处理：用 LLM（`glm-4.5-air`）为市场生成 `keywords` + `entityGroups`
 - 前端极速匹配：`MutationObserver` + 倒排索引 + entity gate（AND-of-OR）
 - HUD 展示：展示市场/选项，概率从 Opinion Analytics API 拉取并带 loading
 
@@ -24,10 +24,10 @@ source .venv/bin/activate
 python3 -m pip install -r backend/requirements.txt
 
 # 全量重刷（会调用 LLM）
-INCREMENTAL_ONLY=0 DISABLE_INCREMENTAL=1 ALLOW_LEGACY_REUSE=0 ZHIPU_KEY=xxx python3 backend/build_index.py
+FULL_AI_REFRESH=1 ZHIPU_KEY=xxx python3 backend/build_index.py
 ```
 
-输出默认写入 `backend/data.json`（可用 `OUTPUT_PATH` 修改）。
+输出默认写入项目根目录 `data.json`（可用 `OUTPUT_PATH` 修改）。
 
 ### 2) 加载扩展（extension）
 

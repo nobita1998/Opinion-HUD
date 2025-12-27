@@ -4,10 +4,10 @@
 
 从 Opinion Markets API 拉取市场数据，并生成供前端匹配用的 `data.json`：
 - 以 “Event（父事件）” 为主键聚合市场
-- 使用 LLM（`GLM-4.6`）为每个 event 生成 `keywords` 与 `entityGroups`
+- 使用 LLM（`glm-4.5-air`）为每个 event 生成 `keywords` 与 `entityGroups`
 - 构建倒排索引 `eventIndex`（关键词/实体 -> eventId 列表）
 
-输出文件默认写入：`backend/data.json`
+输出文件默认写入：项目根目录的 `data.json`
 
 ## 环境准备
 
@@ -21,7 +21,7 @@ python3 -m pip install -r backend/requirements.txt
 
 ### 默认（只新增 + 用 LLM）
 
-脚本默认会读取本地 `backend/data.json`，并且：
+脚本默认会读取本地 `data.json`（项目根目录），并且：
 - 已存在的 event/market **不会被修改**
 - 只对新增的 event 通过 LLM 生成 `keywords`/`entityGroups` 并追加
 
@@ -34,15 +34,7 @@ python3 backend/build_index.py
 ### 全量重刷（重新生成所有 event）
 
 ```bash
-ALL_REFRESH=1 python3 backend/build_index.py
-```
-
-### 增量模式（默认：尽量复用旧数据）
-
-如需强制不调用 LLM（只复用旧数据），可启用 `INCREMENTAL_ONLY=1`：
-
-```bash
-INCREMENTAL_ONLY=1 python3 backend/build_index.py
+FULL_AI_REFRESH=1 python3 backend/build_index.py
 ```
 
 ## Polymarket（Gamma API）生成数据
@@ -73,25 +65,21 @@ SKIP_AI=1 POLY_MAX_EVENTS=200 POLY_MIN_VOLUME_NUM=0 POLY_MIN_MINUTES_TO_EXPIRY=0
 - `POLY_MIN_VOLUME_NUM`：最低成交量阈值（默认 `10000`，按 Gamma 的 `volume/volumeNum`）
 - `POLY_MIN_MINUTES_TO_EXPIRY`：最短到期时间（默认 `60`，用于剔除 5m/15m 等短期市场；如要全量包含可设为 `0`）
 - `POLY_MIN_MINUTES_TO_EXPIRY` 之外，脚本也会强制过滤 `endDate <= now` 的已结束 event/market
-- `ZHIPU_KEY` / `SKIP_AI` / `INCREMENTAL_ONLY` / `PREVIOUS_DATA_URL` / `DEBUG`：与 `build_index.py` 相同语义
+- `ZHIPU_KEY` / `SKIP_AI` / `INCREMENTAL_ONLY` / `DEBUG`：脚本自身使用的控制开关
 
 ## 关键环境变量
 
 - `OPINION_API_URL`：市场 API，默认 `http://opinion.api.predictscan.dev:10001/api/markets`
-- `OUTPUT_PATH`：输出路径（默认 `backend/data.json`）
-- `ZHIPU_KEY`：LLM API key（当 `INCREMENTAL_ONLY=0` 且 `SKIP_AI=0` 时必填）
-- `INCREMENTAL_ONLY`：默认 `1`；开启后不调用 LLM，尽量复用旧输出
-- `DISABLE_INCREMENTAL`：默认 `0`；开启后不读取旧 `data.json`
-- `ALLOW_LEGACY_REUSE`：默认 `1`；允许在缺少签名字段时按 title 复用旧结果（全量重刷建议设为 `0`）
-- `SKIP_AI`：默认 `0`；开启后用 fallback 关键词生成（不会生成 entityGroups）
-- `PREVIOUS_DATA_URL`：可从远端拉取旧 `data.json` 用于增量复用
-- `MAX_MARKET_NODES` / `MAX_MARKETS` / `MAX_EVENTS`：调试用采样上限
+- `OUTPUT_PATH`：输出路径（默认项目根目录 `data.json`）
+- `ZHIPU_KEY`：LLM API key（不设置时，新 event 会用 fallback 关键词生成）
+- `FULL_AI_REFRESH`：默认 `0`；设为 `1` 时对全部 event 重新调用 LLM 重刷
+- `MAX_MARKETS` / `MAX_EVENTS`：调试用采样上限
 - `SLEEP_SECONDS`：LLM 调用间隔（默认 `0.2`）
 - `DEBUG`：打印更多日志
 
 ## 输出数据结构（概要）
 
-`backend/data.json` 主要字段：
+`data.json` 主要字段：
 - `meta`：生成时间、数据源、模型名、统计信息
 - `events[eventId]`：event 聚合对象（`title`、`keywords`、`entityGroups`、`bestMarketId` 等）
 - `markets[eventId]`：前端兼容字段（当前实现将 event 也作为 market 输出）

@@ -1,5 +1,5 @@
 const DEFAULT_DATA_URL = "https://opinionhud.xyz/data.json";
-const OPINION_API_ORIGINS = new Set(["https://opinionanalytics.xyz"]);
+const OPINION_API_ORIGINS = new Set(["https://api.opinionhud.xyz"]);
 const FETCH_TIMEOUT_MS = 8000;
 const STORAGE_KEYS = {
   settings: "opinionHudSettings",
@@ -159,13 +159,22 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
 
   if (message.type === "opinionHud.fetchJson") {
     const url = String(message.url || "");
+    console.log('[OpinionHUD BG] fetchJson request for URL:', url);
     if (!isAllowedOpinionAnalyticsUrl(url)) {
+      console.error('[OpinionHUD BG] URL blocked:', url);
       sendResponse({ ok: false, error: "Blocked URL (not allowed)." });
       return;
     }
+    console.log('[OpinionHUD BG] fetching from:', url);
     fetchJsonNoStore(url)
-      .then((data) => sendResponse({ ok: true, data }))
-      .catch((error) => sendResponse({ ok: false, error: String(error?.message || error) }));
+      .then((data) => {
+        console.log('[OpinionHUD BG] fetch success, data:', data);
+        sendResponse({ ok: true, data });
+      })
+      .catch((error) => {
+        console.error('[OpinionHUD BG] fetch error:', error);
+        sendResponse({ ok: false, error: String(error?.message || error) });
+      });
     return true;
   }
 

@@ -6,7 +6,7 @@ This doc summarizes which Opinion APIs are used by the backend pipeline and the 
 
 ### `GET http://opinion.api.predictscan.dev:10001/api/markets`
 
-- Purpose: Fetch the full market list (including `childMarkets`) to build `backend/data.json` (events/markets + keyword/entity index).
+- Purpose: Fetch the full market list (including `childMarkets`) to build `data.json` (events/markets + keyword/entity index).
 - Consumed fields:
   - Filtering:
     - `statusEnum` (only keep `Activated`)
@@ -25,18 +25,17 @@ This doc summarizes which Opinion APIs are used by the backend pipeline and the 
 
 Notes:
 - Backend does **not** fetch prices/probabilities. It only builds the local match index and the market/event metadata used by the extension.
-- The output `backend/data.json` includes:
+- The output `data.json` includes:
   - `events`: per-event keywords/entities/entityGroups (LLM-generated)
   - `markets`: per-event aggregated market title/url/labels/volume
   - `index` / `eventIndex`: inverted indices for matching
 
-### `GET ${PREVIOUS_DATA_URL}` (optional)
+### Previous `data.json` (local)
 
-- Purpose: Load previous `data.json` to support “add only new” behavior and reuse existing LLM outputs.
+- Purpose: Load previous `data.json` (project root) to support “only AI for new” behavior and reuse existing LLM outputs.
 - Consumed fields:
   - `events[eventId].keywords`, `events[eventId].entities`, `events[eventId].entityGroups`
-  - `events[eventId].sigCore` / `sigFull` (signature-based reuse)
-  - `markets[eventId]` (seed output when `ADD_ONLY_NEW=1`)
+  - `markets[eventId]` (seed output when `FULL_AI_REFRESH=0`)
 
 ## Extension (`extension/contentScript.js`)
 
@@ -82,4 +81,3 @@ The extension fetches live market structure + latest prices from `https://opinio
 ### Not used (known issue)
 
 - `GET /markets/asset-ids/:marketId` is intentionally **not used** due to server-side 500 errors (`operator does not exist: text = integer`).
-

@@ -11,27 +11,15 @@ import zhipuai
 OPINION_API_URL = os.environ.get("OPINION_API_URL", "").strip() or "http://opinion.api.predictscan.dev:10001/api/markets"
 OPINION_WRAP_EVENTS_URL = "https://opinionanalytics.xyz/api/markets/wrap-events"
 FRONTEND_BASE_URL = "https://opinion.trade"
-MODEL_NAME = "GLM-4.6"
+MODEL_NAME = "glm-4.5-air"
 REF_PARAM = "opinion_hud"
 DEBUG = os.environ.get("DEBUG", "").strip().lower() in ("1", "true", "yes", "y", "on")
-SKIP_AI = os.environ.get("SKIP_AI", "").strip().lower() in ("1", "true", "yes", "y", "on")
-# When enabled, never re-run the LLM for existing events; reuse previous outputs when available,
-# otherwise fall back to deterministic extraction.
-# Default is disabled (0) so new/changed events will use the LLM when ZHIPU_KEY is set.
-INCREMENTAL_ONLY = os.environ.get("INCREMENTAL_ONLY", "0").strip().lower() in ("1", "true", "yes", "y", "on")
+# When enabled, re-run the LLM for all events from the current API response.
+# When disabled (default), reuse previous outputs and only run the LLM for new events
+# not present in the previous data.
+FULL_AI_REFRESH = os.environ.get("FULL_AI_REFRESH", "0").strip().lower() in ("1", "true", "yes", "y", "on")
 ZHIPU_TIMEOUT_SECONDS = float(os.environ.get("ZHIPU_TIMEOUT_SECONDS", "30"))
 ZHIPU_MAX_RETRIES = int(os.environ.get("ZHIPU_MAX_RETRIES", "2"))
-DISABLE_INCREMENTAL = os.environ.get("DISABLE_INCREMENTAL", "").strip().lower() in ("1", "true", "yes", "y", "on")
-PREVIOUS_DATA_URL = os.environ.get("PREVIOUS_DATA_URL", "").strip() or None
-ALLOW_LEGACY_REUSE = os.environ.get("ALLOW_LEGACY_REUSE", "1").strip().lower() in ("1", "true", "yes", "y", "on")
-# Full refresh switch: when enabled, ignore any previous data and rebuild everything.
-ALL_REFRESH = os.environ.get("ALL_REFRESH", "0").strip().lower() in ("1", "true", "yes", "y", "on")
-# When enabled, never modify existing events/markets from previous data.json.
-# Only generate outputs (LLM) for new event IDs not present in previous data.
-#
-# Default is enabled (1). Use `ADD_ONLY_NEW=0` (and optionally `DISABLE_INCREMENTAL=1`)
-# to regenerate everything.
-ADD_ONLY_NEW = os.environ.get("ADD_ONLY_NEW", "1").strip().lower() in ("1", "true", "yes", "y", "on")
 
 
 def _now_epoch_seconds():
@@ -155,11 +143,25 @@ def fetch_parent_events():
                 continue
             event_id = event.get("eventId") or event.get("marketId")
             if event_id:
+                # Extract sub-markets information for multi-choice markets
+                sub_markets = []
+                markets_list = event.get("markets") or []
+                if isinstance(markets_list, list):
+                    for sub_market in markets_list:
+                        if isinstance(sub_market, dict):
+                            sub_markets.append({
+                                "marketId": sub_market.get("marketId"),
+                                "title": sub_market.get("title") or sub_market.get("marketTitle"),
+                                "yesTokenId": sub_market.get("yesTokenId"),
+                                "noTokenId": sub_market.get("noTokenId"),
+                            })
+
                 parent_events[str(event_id)] = {
                     "cutoffAt": event.get("cutoffAt"),
                     "statusEnum": event.get("statusEnum"),
                     "resolvedAt": event.get("resolvedAt"),
                     "title": event.get("title"),
+                    "subMarkets": sub_markets if sub_markets else None,
                 }
 
         if DEBUG:
@@ -1059,21 +1061,6 @@ def _event_signature_full(event_title, market_ids, option_titles_all, rules_best
 
 
 def _load_previous_data(output_path):
-    if DISABLE_INCREMENTAL or ALL_REFRESH:
-        return None
-
-    if PREVIOUS_DATA_URL:
-        try:
-            resp = requests.get(PREVIOUS_DATA_URL, timeout=30)
-            resp.raise_for_status()
-            data = resp.json()
-            if isinstance(data, dict):
-                return data
-        except Exception as exc:
-            if DEBUG:
-                print(f"[warn] failed to load PREVIOUS_DATA_URL: {exc}", flush=True)
-            return None
-
     try:
         if output_path and os.path.exists(output_path):
             with open(output_path, "r", encoding="utf-8") as f:
@@ -1291,13 +1278,13 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         "missing_title": 0,
     }
     ai_stats = {
-        "incremental": (previous_data is not None) and (not DISABLE_INCREMENTAL),
-        "incrementalOnly": INCREMENTAL_ONLY,
+        "previousLoaded": isinstance(previous_data, dict),
+        "fullAiRefresh": bool(FULL_AI_REFRESH),
+        "onlyAiForNew": False,
         "reused": 0,
-        "legacyReused": 0,
         "calls": 0,
         "retries": 0,
-        "skipped": 0,
+        "fallback": 0,
         "empty": 0,
         "non_empty": 0,
         "errors": 0,
@@ -1308,17 +1295,21 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
 
     max_markets_env = os.environ.get("MAX_MARKETS")
     max_markets = int(max_markets_env) if (max_markets_env and max_markets_env.isdigit()) else None
-    max_market_nodes_env = os.environ.get("MAX_MARKET_NODES")
-    max_market_nodes = int(max_market_nodes_env) if (max_market_nodes_env and max_market_nodes_env.isdigit()) else None
     max_events_env = os.environ.get("MAX_EVENTS")
     max_events = int(max_events_env) if (max_events_env and max_events_env.isdigit()) else None
     sleep_seconds = float(os.environ.get("SLEEP_SECONDS", "0.2"))
     scan_log_every = int(os.environ.get("SCAN_LOG_EVERY", "100"))
 
+    if max_markets is not None or max_events is not None:
+        print(
+            "[info] sampling enabled: MAX_MARKETS=%r MAX_EVENTS=%r" % (max_markets_env, max_events_env),
+            flush=True,
+        )
+
     event_accumulator = {}
     prev_events = {}
     prev_markets = {}
-    if (not DISABLE_INCREMENTAL) and isinstance(previous_data, dict):
+    if isinstance(previous_data, dict):
         prev_events = previous_data.get("events") or {}
         if not isinstance(prev_events, dict):
             prev_events = {}
@@ -1326,13 +1317,13 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         if not isinstance(prev_markets, dict):
             prev_markets = {}
 
-    add_only_new = (not DISABLE_INCREMENTAL) and (not ALL_REFRESH) and bool(ADD_ONLY_NEW) and bool(prev_events) and bool(prev_markets)
-    existing_event_ids = set(prev_events.keys()) if add_only_new else set()
-    existing_market_ids = set(prev_markets.keys()) if add_only_new else set()
-    if add_only_new:
-        # Seed outputs with previous data. We will only add new event IDs.
+    only_ai_for_new = (not FULL_AI_REFRESH) and bool(prev_events) and bool(prev_markets)
+    existing_event_ids = set(prev_events.keys()) if only_ai_for_new else set()
+    existing_market_ids = set(prev_markets.keys()) if only_ai_for_new else set()
+    if only_ai_for_new:
         markets_out = dict(prev_markets)
         events_out = dict(prev_events)
+    ai_stats["onlyAiForNew"] = bool(only_ai_for_new)
 
     # Track resolved event IDs to remove them from output later
     resolved_event_ids = set()
@@ -1341,8 +1332,6 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
 
     for market in markets:
         processed += 1
-        if max_market_nodes is not None and processed > max_market_nodes:
-            break
         if max_markets is not None and kept >= max_markets:
             break
         if scan_log_every > 0 and processed % scan_log_every == 0:
@@ -1355,13 +1344,13 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         event_id = parent_event_market_id or (str(parent_event_id).strip() if parent_event_id else None) or market_id
 
         # Record this event_id as seen in current API (regardless of status)
-        if event_id and add_only_new:
+        if event_id and only_ai_for_new:
             current_api_event_ids.add(event_id)
 
         if market.get("statusEnum") != "Activated":
             skipped["statusEnum"] += 1
             # Track resolved/inactive events to remove from previous data
-            if event_id and add_only_new:
+            if event_id and only_ai_for_new:
                 resolved_event_ids.add(event_id)
             continue
 
@@ -1369,7 +1358,7 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         if resolved_at is not None and resolved_at > 0:
             skipped["resolved"] += 1
             # Track resolved events to remove from previous data
-            if event_id and add_only_new:
+            if event_id and only_ai_for_new:
                 resolved_event_ids.add(event_id)
             continue
 
@@ -1394,7 +1383,7 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         elif cutoff <= now:
             skipped["cutoff_expired"] += 1
             # Track expired events to remove from previous data
-            if event_id and add_only_new:
+            if event_id and only_ai_for_new:
                 resolved_event_ids.add(event_id)
             continue
 
@@ -1423,12 +1412,18 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         rules_text = _market_rules(market)
         option_title = title if parent_event_title else None
 
+        # Extract token IDs from market data
+        yes_token_id = market.get("yesTokenId")
+        no_token_id = market.get("noTokenId")
+
         if event_market_id in markets_out:
             duplicate_event_market_ids += 1
         else:
             markets_out[event_market_id] = {
                 "title": event_title,
                 "url": url,
+                "yesTokenId": yes_token_id,
+                "noTokenId": no_token_id,
                 "volume": 0.0,
                 "labels": {"yesLabel": None, "noLabel": None},
             }
@@ -1467,7 +1462,7 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
 
         # Update aggregated event-level market output.
         if event_market_id in markets_out:
-            if not (add_only_new and event_market_id in existing_market_ids):
+            if not (only_ai_for_new and event_market_id in existing_market_ids):
                 markets_out[event_market_id]["volume"] = max(markets_out[event_market_id].get("volume") or 0.0, volume)
                 # Prefer labels from the current best-volume option.
                 if event_bucket.get("bestMarketId") == market_id:
@@ -1483,7 +1478,7 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
     total_events = len(event_accumulator)
     planned_reuse = 0
     planned_llm = 0
-    planned_skip = 0
+    planned_fallback = 0
     for event_id, bucket in event_accumulator.items():
         sig_core = _event_signature_core(bucket.get("title") or event_id, bucket.get("rulesBest") or "")
         sig_full = _event_signature_full(
@@ -1495,41 +1490,19 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         bucket["sigCore"] = sig_core
         bucket["sigFull"] = sig_full
 
-        reusable = False
-        if add_only_new and event_id in existing_event_ids:
-            reusable = True
-        else:
-            prev = prev_events.get(event_id)
-            if isinstance(prev, dict):
-                prev_keywords = prev.get("keywords")
-                prev_entity_groups = prev.get("entityGroups") or prev.get("entity_groups")
-                has_entity_groups = isinstance(prev_entity_groups, list) and any(isinstance(g, list) and g for g in prev_entity_groups)
-                if isinstance(prev_keywords, list) and prev_keywords:
-                    prev_sig_core = prev.get("sigCore")
-                    prev_sig_full = prev.get("sigFull") or prev.get("sig") or prev.get("signature")
-                    if INCREMENTAL_ONLY and has_entity_groups:
-                        if str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
-                            reusable = True
-                    elif has_entity_groups and (
-                        (prev_sig_core and str(prev_sig_core) == sig_core)
-                        or (prev_sig_full and str(prev_sig_full) == sig_full)
-                    ):
-                        reusable = True
-                    elif has_entity_groups and ALLOW_LEGACY_REUSE and (not prev_sig_core) and (not prev_sig_full):
-                        if str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
-                            reusable = True
+        reusable = bool(only_ai_for_new and event_id in existing_event_ids)
 
         if reusable:
             planned_reuse += 1
         else:
-            if SKIP_AI or INCREMENTAL_ONLY:
-                planned_skip += 1
+            if not api_key:
+                planned_fallback += 1
             else:
                 planned_llm += 1
 
     if total_events:
         print(
-            f"[info] events: total={total_events} reuse={planned_reuse} llm={planned_llm} skip_ai={planned_skip}",
+            f"[info] events: total={total_events} reuse={planned_reuse} llm={planned_llm} fallback={planned_fallback}",
             flush=True,
         )
 
@@ -1562,125 +1535,88 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         entities = []
         entity_groups = []
 
-        if add_only_new and event_id in existing_event_ids:
-            # Strict add-only mode: keep previous outputs untouched for existing event IDs.
+        if only_ai_for_new and event_id in existing_event_ids:
+            # Only-AI-for-new mode: keep previous outputs untouched for existing event IDs.
             ai_stats["reused"] += 1
             continue
 
-        prev = prev_events.get(event_id)
-        if isinstance(prev, dict):
-            prev_keywords = prev.get("keywords")
-            prev_entities = prev.get("entities")
-            prev_entity_groups = prev.get("entityGroups") or prev.get("entity_groups")
-            has_entity_groups = isinstance(prev_entity_groups, list) and any(isinstance(g, list) and g for g in prev_entity_groups)
-            prev_sig_core = prev.get("sigCore")
-            prev_sig_full = prev.get("sigFull") or prev.get("sig") or prev.get("signature")
-            if (
-                isinstance(prev_keywords, list)
-                and prev_keywords
-                and ((prev_sig_core and str(prev_sig_core) == sig_core) or (prev_sig_full and str(prev_sig_full) == sig_full))
-            ):
-                if has_entity_groups:
-                    keywords = [str(k) for k in prev_keywords if str(k).strip()]
-                    entity_groups = prev_entity_groups
-                    if isinstance(prev_entities, list):
-                        entities = [str(e) for e in prev_entities if str(e).strip()]
-                    reused = True
-            elif INCREMENTAL_ONLY and has_entity_groups and isinstance(prev_keywords, list) and prev_keywords:
-                if str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
-                    keywords = [str(k) for k in prev_keywords if str(k).strip()]
-                    entity_groups = prev_entity_groups
-                    if isinstance(prev_entities, list):
-                        entities = [str(e) for e in prev_entities if str(e).strip()]
-                    reused = True
-            elif ALLOW_LEGACY_REUSE and isinstance(prev_keywords, list) and prev_keywords:
-                if (not prev_sig_core) and (not prev_sig_full) and str(prev.get("title") or "").strip() == str(bucket.get("title") or "").strip():
-                    if has_entity_groups:
-                        keywords = [str(k) for k in prev_keywords if str(k).strip()]
-                        entity_groups = prev_entity_groups
-                        if isinstance(prev_entities, list):
-                            entities = [str(e) for e in prev_entities if str(e).strip()]
-                        reused = True
-                        ai_stats["legacyReused"] += 1
-
-        if reused:
-            ai_stats["reused"] += 1
+        if not api_key:
+            ai_stats["fallback"] += 1
+            keywords = _fallback_keywords(bucket.get("title") or event_id, option_titles, rules_text)
+            entity_groups = []
+            entities = []
         else:
-            if SKIP_AI or INCREMENTAL_ONLY or not api_key:
-                ai_stats["skipped"] += 1
-                keywords = _fallback_keywords(bucket.get("title") or event_id, option_titles, rules_text)
-                entity_groups = []
-                entities = []
-            else:
-                ai_stats["calls"] += 1
-                try:
-                    title_for_ai = bucket.get("title") or event_id
-                    best_market_id = bucket.get("bestMarketId")
-                    best_market_url = (
-                        f"{FRONTEND_BASE_URL}/market/{best_market_id}?ref={REF_PARAM}"
-                        if best_market_id
-                        else None
-                    )
-                    allow_terms = {_normalize_keyword(t) for t in _allowed_entity_alias_terms_from_title(title_for_ai)}
+            ai_stats["calls"] += 1
+            try:
+                title_for_ai = bucket.get("title") or event_id
+                best_market_id = bucket.get("bestMarketId")
+                best_market_url = (
+                    f"{FRONTEND_BASE_URL}/market/{best_market_id}?ref={REF_PARAM}"
+                    if best_market_id
+                    else None
+                )
+                allow_terms = {_normalize_keyword(t) for t in _allowed_entity_alias_terms_from_title(title_for_ai)}
 
-                    safe_title = _truncate(str(title_for_ai or "").strip(), 160)
-                    print(f"[info] llm: generating entities/keywords for event={event_id} title={safe_title!r}", flush=True)
-                    result = generate_keywords(
-                        api_key,
-                        title=title_for_ai,
-                        rules=rules_text,
-                        context={
+                safe_title = _truncate(str(title_for_ai or "").strip(), 160)
+                print(f"[info] llm: generating entities/keywords for event={event_id} title={safe_title!r}", flush=True)
+                result = generate_keywords(
+                    api_key,
+                    title=title_for_ai,
+                    rules=rules_text,
+                    context={
+                        "eventId": event_id,
+                        "bestMarketId": best_market_id,
+                        "bestMarketUrl": best_market_url,
+                    },
+                )
+                if isinstance(result, dict):
+                    keywords = result.get("keywords", [])
+                    entities = result.get("entities", [])
+                    entity_groups = result.get("entityGroups", []) or result.get("entity_groups", [])
+                    normalized_try = _normalize_entity_groups(entity_groups, title_for_ai, allow_terms)
+
+                    if not normalized_try:
+                        bad_terms = _collect_invalid_entity_terms(entity_groups, entities, title_for_ai, allow_terms)
+                        ai_stats["retries"] += 1
+                        if bad_terms:
+                            print(
+                                f"[warn] llm: retrying once for event={event_id} due to invalid entityGroups; avoid={bad_terms}",
+                                flush=True,
+                            )
+                        else:
+                            print(
+                                f"[warn] llm: retrying once for event={event_id} due to empty/invalid entityGroups",
+                                flush=True,
+                            )
+                        retry_ctx = {
                             "eventId": event_id,
                             "bestMarketId": best_market_id,
                             "bestMarketUrl": best_market_url,
-                        },
-                    )
-                    if isinstance(result, dict):
-                        keywords = result.get("keywords", [])
-                        entities = result.get("entities", [])
-                        entity_groups = result.get("entityGroups", []) or result.get("entity_groups", [])
-                        normalized_try = _normalize_entity_groups(entity_groups, title_for_ai, allow_terms)
-
-                        if not normalized_try:
-                            bad_terms = _collect_invalid_entity_terms(entity_groups, entities, title_for_ai, allow_terms)
-                            ai_stats["retries"] += 1
-                            if bad_terms:
-                                print(
-                                    f"[warn] llm: retrying once for event={event_id} due to invalid entityGroups; avoid={bad_terms}",
-                                    flush=True,
-                                )
-                            else:
-                                print(
-                                    f"[warn] llm: retrying once for event={event_id} due to empty/invalid entityGroups",
-                                    flush=True,
-                                )
-                            retry_ctx = {
-                                "eventId": event_id,
-                                "bestMarketId": best_market_id,
-                                "bestMarketUrl": best_market_url,
-                            }
-                            if bad_terms:
-                                retry_ctx["avoidEntityTerms"] = bad_terms
-                            retry = generate_keywords(
-                                api_key,
-                                title=title_for_ai,
-                                rules=rules_text,
-                                context=retry_ctx,
-                            )
-                            if isinstance(retry, dict):
-                                keywords = retry.get("keywords", keywords)
-                                entities = retry.get("entities", entities)
-                                entity_groups = retry.get("entityGroups", []) or retry.get("entity_groups", [])
-                    elif isinstance(result, list):
-                        # Backwards compatibility with old array format
-                        keywords = result
-                        entities = []
-                        entity_groups = []
-                except Exception:
-                    ai_stats["errors"] += 1
-                    keywords = []
+                        }
+                        if bad_terms:
+                            retry_ctx["avoidEntityTerms"] = bad_terms
+                        retry = generate_keywords(
+                            api_key,
+                            title=title_for_ai,
+                            rules=rules_text,
+                            context=retry_ctx,
+                        )
+                        if isinstance(retry, dict):
+                            keywords = retry.get("keywords", keywords)
+                            entities = retry.get("entities", entities)
+                            entity_groups = retry.get("entityGroups", []) or retry.get("entity_groups", [])
+                elif isinstance(result, list):
+                    # Backwards compatibility with old array format
+                    keywords = result
                     entities = []
                     entity_groups = []
+            except Exception as exc:
+                ai_stats["errors"] += 1
+                if DEBUG:
+                    print(f"[warn] llm error for event={event_id}: {exc}", flush=True)
+                keywords = _fallback_keywords(bucket.get("title") or event_id, option_titles, rules_text)
+                entities = []
+                entity_groups = []
         if not keywords:
             ai_stats["empty"] += 1
         else:
@@ -1785,7 +1721,7 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
             event_inverted.setdefault(term, set()).add(event_id)
             inverted.setdefault(term, set()).add(event_id)
 
-        if sleep_seconds > 0 and (not reused) and (not SKIP_AI):
+        if sleep_seconds > 0 and api_key:
             time.sleep(sleep_seconds)
 
     # Remove resolved/expired events from output
@@ -1800,8 +1736,8 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         if removed_count > 0:
             print(f"[info] removed {removed_count} resolved/expired events from output", flush=True)
 
-    # In incremental mode, also remove events that are no longer in current API response
-    if add_only_new and current_api_event_ids:
+    # When seeding from previous data, also remove events that are no longer in current API response
+    if only_ai_for_new and current_api_event_ids:
         missing_event_ids = set(events_out.keys()) - current_api_event_ids
         if DEBUG:
             print(f"[debug] current_api_event_ids count: {len(current_api_event_ids)}", flush=True)
@@ -1823,7 +1759,7 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
     index_out = {kw: sorted(list(ids)) for kw, ids in sorted(inverted.items(), key=lambda kv: kv[0])}
     event_index_out = {kw: sorted(list(ids)) for kw, ids in sorted(event_inverted.items(), key=lambda kv: kv[0])}
 
-    if add_only_new:
+    if only_ai_for_new:
         rebuilt = {}
         for eid, e in events_out.items():
             if not isinstance(e, dict):
@@ -1845,6 +1781,76 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
                             rebuilt.setdefault(nterm, set()).add(eid)
         index_out = {kw: sorted(list(ids)) for kw, ids in sorted(rebuilt.items(), key=lambda kv: kv[0])}
         event_index_out = index_out
+
+    # Process multi-choice markets: add type and subMarkets fields
+    multi_market_count = 0
+    for market_id, market_data in markets_out.items():
+        if not isinstance(market_data, dict):
+            continue
+
+        # Check if this market is a multi-choice market (has multiple subMarkets in parent_events)
+        parent_event_data = parent_events.get(market_id) if parent_events else None
+        if parent_event_data and isinstance(parent_event_data, dict):
+            sub_markets_data = parent_event_data.get("subMarkets")
+            if sub_markets_data and isinstance(sub_markets_data, list):
+                # Only mark as multi-choice if there are multiple sub-markets
+                # Single sub-market with same marketId as eventId = binary market
+                if len(sub_markets_data) > 1:
+                    # Multiple sub-markets = true multi-choice market
+                    market_data["type"] = "multi"
+                    market_data["subMarkets"] = sub_markets_data
+                    multi_market_count += 1
+                elif len(sub_markets_data) == 1 and sub_markets_data[0].get("marketId") != market_id:
+                    # Single sub-market but different ID = also multi-choice
+                    market_data["type"] = "multi"
+                    market_data["subMarkets"] = sub_markets_data
+                    multi_market_count += 1
+                # else: Single sub-market with same ID = binary market, don't add type/subMarkets
+
+    if multi_market_count > 0 and DEBUG:
+        print(f"[debug] processed {multi_market_count} multi-choice markets with subMarkets", flush=True)
+
+    # Data integrity validation
+    validation_errors = []
+    for market_id, market_data in markets_out.items():
+        if not isinstance(market_data, dict):
+            continue
+
+        market_type = market_data.get("type")
+        if market_type == "multi":
+            # Multi-choice market must have subMarkets
+            sub_markets = market_data.get("subMarkets")
+            if not sub_markets or not isinstance(sub_markets, list) or len(sub_markets) == 0:
+                validation_errors.append(f"Multi-choice market {market_id} missing or empty subMarkets")
+            else:
+                # Validate each sub-market
+                for i, sub_market in enumerate(sub_markets):
+                    if not isinstance(sub_market, dict):
+                        continue
+                    sub_market_id = sub_market.get("marketId")
+                    yes_token_id = sub_market.get("yesTokenId")
+                    if not yes_token_id:
+                        validation_errors.append(
+                            f"Sub-market {i} of market {market_id} (sub_market_id={sub_market_id}) missing yesTokenId"
+                        )
+        else:
+            # Binary market should have yesTokenId and noTokenId
+            # Note: We use a warning instead of error since some markets might legitimately not have tokenIds
+            yes_token_id = market_data.get("yesTokenId")
+            no_token_id = market_data.get("noTokenId")
+            if not yes_token_id or not no_token_id:
+                if DEBUG:
+                    print(
+                        f"[debug] binary market {market_id} missing tokenIds: yesTokenId={yes_token_id}, noTokenId={no_token_id}",
+                        flush=True,
+                    )
+
+    if validation_errors:
+        print(f"[warn] data validation found {len(validation_errors)} errors:", flush=True)
+        for error in validation_errors[:10]:  # Show first 10 errors
+            print(f"  - {error}", flush=True)
+        if len(validation_errors) > 10:
+            print(f"  ... and {len(validation_errors) - 10} more errors", flush=True)
 
     return {
         "meta": {
@@ -1873,21 +1879,21 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
 
 def main():
     print("[info] starting build_index", flush=True)
+    # 已在环境变量中配置
     api_key = os.environ.get("ZHIPU_KEY")
-    if not api_key and not (SKIP_AI or INCREMENTAL_ONLY):
-        print("[error] Missing ZHIPU_KEY environment variable.", flush=True)
+    if FULL_AI_REFRESH and not api_key:
+        print("[error] FULL_AI_REFRESH=1 requires ZHIPU_KEY.", flush=True)
         raise ValueError("ZHIPU_KEY is not set")
+    if not api_key:
+        print("[warn] ZHIPU_KEY not set: new events will use deterministic fallback keywords.", flush=True)
 
     # Default output path: project root directory (one level up from backend/)
     output_path = os.environ.get("OUTPUT_PATH") or os.path.join(os.path.dirname(os.path.dirname(__file__)), "data.json")
 
-    if SKIP_AI:
-        print("[info] SKIP_AI enabled: using fallback keywords (no LLM calls)", flush=True)
-    if INCREMENTAL_ONLY:
-        print("[info] INCREMENTAL_ONLY enabled: reuse previous outputs; no LLM calls", flush=True)
-
-    if ALL_REFRESH:
-        print("[info] ALL_REFRESH enabled: rebuilding everything (ignore previous data.json)", flush=True)
+    if FULL_AI_REFRESH:
+        print("[info] mode: FULL_AI_REFRESH=1 (LLM for all events)", flush=True)
+    else:
+        print("[info] mode: FULL_AI_REFRESH=0 (LLM only for new events)", flush=True)
 
     if DEBUG:
         print(
@@ -1895,11 +1901,7 @@ def main():
             % (os.environ.get("MAX_MARKETS"), os.environ.get("SLEEP_SECONDS"), os.environ.get("OUTPUT_PATH")),
             flush=True,
         )
-        print(f"[debug] SKIP_AI={SKIP_AI}", flush=True)
-        print(f"[debug] DISABLE_INCREMENTAL={DISABLE_INCREMENTAL}", flush=True)
-        print(f"[debug] ALL_REFRESH={ALL_REFRESH}", flush=True)
-        if PREVIOUS_DATA_URL:
-            print("[debug] PREVIOUS_DATA_URL is set", flush=True)
+        print(f"[debug] FULL_AI_REFRESH={FULL_AI_REFRESH}", flush=True)
         print(
             "[debug] ZHIPU_TIMEOUT_SECONDS=%s ZHIPU_MAX_RETRIES=%s"
             % (ZHIPU_TIMEOUT_SECONDS, ZHIPU_MAX_RETRIES),
@@ -1913,13 +1915,9 @@ def main():
     print("[info] fetching parent events for cutoff validation...", flush=True)
     parent_events = fetch_parent_events()
 
-    previous_data = None
-    if DISABLE_INCREMENTAL or ALL_REFRESH:
-        print("[info] DISABLE_INCREMENTAL enabled: ignoring previous data.json", flush=True)
-    else:
-        previous_data = _load_previous_data(output_path)
-        if previous_data is not None:
-            print("[info] incremental: loaded previous data.json for keyword reuse", flush=True)
+    previous_data = _load_previous_data(os.path.join(os.path.dirname(os.path.dirname(__file__)), "data.json"))
+    if previous_data is not None:
+        print("[info] loaded previous data for reuse", flush=True)
     data = build_data(markets, api_key=api_key, previous_data=previous_data, parent_events=parent_events)
 
     output_dir = os.path.dirname(output_path)

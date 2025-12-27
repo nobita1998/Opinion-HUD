@@ -103,9 +103,8 @@ function normalizeForMatch(text) {
 }
 
 const OPINION_TRADE_DETAIL_URL = "https://app.opinion.trade/detail";
-// Use the HTTPS gateway to avoid Chrome HTTPS-first / HSTS "Internal Redirect" issues on the raw HTTP service.
-// (Direct http://opinion.api.predictscan.dev:10001/* may be auto-upgraded and fail in browsers.)
-const OPINION_API_BASE = "https://opinionanalytics.xyz/api";
+// Use our own Vercel serverless API (proxies to Opinion.Trade OpenAPI)
+const OPINION_API_BASE = "https://api.opinionhud.xyz/api";
 
 function joinUrl(base, path) {
   const b = String(base || "").replace(/\/+$/, "");
@@ -130,15 +129,10 @@ async function fetchOpinionApiJsonWithRetry(path, signal) {
 
 const PRICE_CACHE_TTL_MS = 60_000;
 const MARKET_ASSET_CACHE_TTL_MS = 10 * 60_000;
-const MARKETS_INDEX_TTL_MS = 10 * 60_000;
-const WRAP_EVENTS_INDEX_TTL_MS = 10 * 60_000;
 const MAX_PRICE_FETCH_CONCURRENCY = 4;
 
 const assetPriceCache = new Map(); // assetId -> { ts, price }
 const marketAssetCache = new Map(); // marketId -> { ts, yesTokenId, noTokenId }
-let marketsIndexCache = null; // { ts, byMarketId: Map<string, { yesTokenId, noTokenId }> }
-let wrapEventsIndexCache = null; // { ts, byWrapId: Map<string, WrapEvent> }
-let wrapEventsIndexInflight = null; // Promise<Map<string, WrapEvent>> | null
 
 function nowMs() {
   return Date.now();
@@ -275,7 +269,9 @@ function shouldProxyOpinionAnalytics(url) {
 
 async function fetchJson(url, signal) {
   if (shouldProxyOpinionAnalytics(url) && typeof chrome?.runtime?.sendMessage === "function") {
+    console.log('[OpinionHUD] sending message to background for URL:', url.slice(0, 50) + '...');
     const res = await sendMessageAsync({ type: "opinionHud.fetchJson", url }, signal);
+    console.log('[OpinionHUD] background response:', res);
     if (!res || typeof res !== "object") throw new Error(`Invalid response for ${url}`);
     if (!res.ok) throw new Error(res.error || `Failed to fetch ${url}`);
     return res.data;
@@ -295,64 +291,15 @@ async function fetchJson(url, signal) {
   return res.json();
 }
 
-async function getMarketsIndex(signal) {
-  if (marketsIndexCache && nowMs() - marketsIndexCache.ts <= MARKETS_INDEX_TTL_MS) {
-    return marketsIndexCache.byMarketId;
-  }
-
-  const data = await priceFetchLimiter(() => fetchOpinionApiJson("/markets", signal), signal);
-  const list = Array.isArray(data?.data) ? data.data : [];
-  const byMarketId = new Map();
-  for (const m of list) {
-    const marketId = String(m?.marketId || "").trim();
-    if (!marketId) continue;
-    const yesTokenId = String(m?.yesTokenId || "").trim();
-    const noTokenId = String(m?.noTokenId || "").trim();
-    byMarketId.set(marketId, { yesTokenId, noTokenId });
-  }
-  marketsIndexCache = { ts: nowMs(), byMarketId };
-  return byMarketId;
-}
-
-async function getWrapEventsIndex(signal) {
-  if (wrapEventsIndexCache && nowMs() - wrapEventsIndexCache.ts <= WRAP_EVENTS_INDEX_TTL_MS) {
-    return wrapEventsIndexCache.byWrapId;
-  }
-
-  if (wrapEventsIndexInflight) {
-    return await wrapEventsIndexInflight;
-  }
-
-  wrapEventsIndexInflight = (async () => {
-    const data = await fetchOpinionApiJsonWithRetry("/markets/wrap-events", signal);
-    const list = Array.isArray(data?.data) ? data.data : [];
-    const byWrapId = new Map();
-    for (const w of list) {
-      const marketId = String(w?.marketId || "").trim();
-      if (!marketId) continue;
-      byWrapId.set(marketId, w);
-    }
-    wrapEventsIndexCache = { ts: nowMs(), byWrapId };
-    return byWrapId;
-  })();
-
-  try {
-    return await wrapEventsIndexInflight;
-  } finally {
-    wrapEventsIndexInflight = null;
-  }
-}
-
 async function getMarketAssetIds(marketId, signal) {
   const key = String(marketId);
   const cached = getCached(marketAssetCache, key, MARKET_ASSET_CACHE_TTL_MS);
   if (cached) return cached;
 
-  // Prefer /api/markets (index) because /markets/asset-ids/:marketId may be unavailable (500).
-  const marketsIndex = await getMarketsIndex(signal);
-  const ids = marketsIndex.get(key) || null;
-  const yesTokenId = String(ids?.yesTokenId || "");
-  const noTokenId = String(ids?.noTokenId || "");
+  // Read tokenIds directly from data.json (already loaded in state.data)
+  const market = state.data?.markets?.[key];
+  const yesTokenId = String(market?.yesTokenId || "");
+  const noTokenId = String(market?.noTokenId || "");
   const entry = { ts: nowMs(), yesTokenId, noTokenId };
   marketAssetCache.set(key, entry);
   return entry;
@@ -361,10 +308,14 @@ async function getMarketAssetIds(marketId, signal) {
 async function getLatestAssetPrice(assetId, signal) {
   const key = String(assetId);
   const cached = getCached(assetPriceCache, key, PRICE_CACHE_TTL_MS);
-  if (cached) return cached.price;
+  if (cached) {
+    console.log('[OpinionHUD] using cached price for:', key.slice(0, 20) + '...');
+    return cached.price;
+  }
 
   try {
-    const path = `/orders/by-asset/${encodeURIComponent(key)}?page=1&pageSize=1&filter=all`;
+    const path = `/token/${encodeURIComponent(key)}`;
+    console.log('[OpinionHUD] fetching price from API, path:', path.slice(0, 30) + '...');
     const data = await priceFetchLimiter(() => fetchOpinionApiJsonWithRetry(path, signal), signal);
     if (data?.success === false) {
       assetPriceCache.set(key, { ts: nowMs(), price: null });
@@ -617,6 +568,7 @@ function removeHud() {
 }
 
 function renderHud(anchorEl, match) {
+  console.log('[OpinionHUD] renderHud called, match:', match);
   removeHud();
 
   const container = document.createElement("div");
@@ -865,10 +817,13 @@ function renderHud(anchorEl, match) {
 
   async function hydrateYesOnlyFromAssetId(assetId, yesPill) {
     try {
+      console.log('[OpinionHUD] hydrateYesOnlyFromAssetId called, assetId:', assetId ? 'present' : 'empty');
       const yesPrice = assetId ? await getLatestAssetPrice(assetId, abortController.signal) : null;
+      console.log('[OpinionHUD] price fetched:', yesPrice);
       if (!isHudAlive()) return;
       setPillValue(yesPill, "YES", formatProbPercent(yesPrice));
-    } catch {
+    } catch (err) {
+      console.error('[OpinionHUD] error in hydrateYesOnlyFromAssetId:', err);
       if (!isHudAlive()) return;
       setPillValue(yesPill, "YES", null);
     }
@@ -969,11 +924,14 @@ function renderHud(anchorEl, match) {
 
     (async () => {
       try {
-        const idx = await getWrapEventsIndex(abortController.signal);
+        // Read subMarkets directly from data.json (already loaded in state.data)
         if (!isHudAlive()) return;
-        const wrap = idx.get(String(wrapId)) || null;
-        const childrenRaw = wrap?.markets;
+        console.log('[OpinionHUD] renderWrapEventGroup wrapId:', wrapId);
+        const market = state.data?.markets?.[String(wrapId)];
+        console.log('[OpinionHUD] market found:', !!market);
+        const childrenRaw = market?.subMarkets;
         const children = Array.isArray(childrenRaw) ? childrenRaw : [];
+        console.log('[OpinionHUD] children count:', children.length);
 
         optionList.innerHTML = "";
 
@@ -995,7 +953,9 @@ function renderHud(anchorEl, match) {
           optionItem.appendChild(leftCell);
           optionItem.appendChild(meta);
 
-          hydrateYesOnlyFromAssetId(String(child?.yesTokenId || ""), yesPill);
+          const assetId = String(child?.yesTokenId || "");
+          console.log('[OpinionHUD] hydrating assetId:', assetId ? assetId.slice(0, 20) + '...' : '(empty)');
+          hydrateYesOnlyFromAssetId(assetId, yesPill);
           return optionItem;
         };
 
@@ -1084,6 +1044,7 @@ function renderHud(anchorEl, match) {
   }
 
   for (const m of match.markets.slice(0, MAX_MATCHES_ON_SCREEN)) {
+    console.log('[OpinionHUD] processing market:', { isMulti: m.isMulti, topicId: m.topicId, title: m.title });
     if (m.isMulti) {
       renderWrapEventGroup(m.title, m.url, m.topicId);
       continue;
@@ -1767,9 +1728,6 @@ function startObserver() {
 
 async function main() {
   try {
-    // Prefetch wrap-events index early so multi option lists show up immediately on first hover/click.
-    getWrapEventsIndex().catch(() => {});
-
     state.data = await ensureData();
     if (!state.data || state.invalidated) return;
     state.matcher = buildMatcher(state.data);

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opinion HUD API 测试</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      padding: 40px;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+      font-weight: 500;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+
+    button {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .result {
+      margin-top: 30px;
+      padding: 20px;
+      background: #f7f9fc;
+      border-radius: 8px;
+      border-left: 4px solid #667eea;
+    }
+
+    .result h3 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    pre {
+      background: #2d3748;
+      color: #68d391;
+      padding: 16px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .error {
+      border-left-color: #f56565;
+      background: #fff5f5;
+    }
+
+    .error pre {
+      color: #fc8181;
+    }
+
+    .loading {
+      text-align: center;
+      color: #667eea;
+      font-weight: 500;
+    }
+
+    .example-tokens {
+      background: #edf2f7;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .example-tokens p {
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    .example-tokens code {
+      background: white;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      color: #667eea;
+      cursor: pointer;
+    }
+
+    .example-tokens code:hover {
+      background: #667eea;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Opinion HUD API 测试工具</h1>
+
+    <div class="input-group">
+      <label for="apiBase">API Base URL:</label>
+      <input
+        type="text"
+        id="apiBase"
+        value="http://localhost:3000"
+        placeholder="例如: https://your-app.vercel.app"
+      >
+    </div>
+
+    <div class="input-group">
+      <label for="tokenId">Token ID:</label>
+      <input
+        type="text"
+        id="tokenId"
+        placeholder="输入 ERC-1155 Token ID"
+        value="68227038457866748595233145251243944054564947305383894629176574093714476769147"
+      >
+
+      <div class="example-tokens">
+        <p><strong>示例 Token IDs (点击复制):</strong></p>
+        <p>
+          <strong>Market 3062 (Trump):</strong><br>
+          <code onclick="copyToken(this)">68227038457866748595233145251243944054564947305383894629176574093714476769147</code> (YES)<br>
+          <code onclick="copyToken(this)">23295406450705254064374249781739843340364170407721892525550504746101807113177</code> (NO)
+        </p>
+        <p>
+          <strong>Market 217 (Pikachu &gt;$5m):</strong><br>
+          <code onclick="copyToken(this)">113485738141713319431123088732645191218832539669273333341350183815439329436948</code> (YES)
+        </p>
+      </div>
+    </div>
+
+    <button onclick="testAPI()" id="testBtn">
+      🚀 测试 API
+    </button>
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function copyToken(element) {
+      const tokenId = element.textContent;
+      document.getElementById('tokenId').value = tokenId;
+      element.style.background = '#48bb78';
+      element.style.color = 'white';
+      setTimeout(() => {
+        element.style.background = '';
+        element.style.color = '';
+      }, 300);
+    }
+
+    async function testAPI() {
+      const apiBase = document.getElementById('apiBase').value.trim();
+      const tokenId = document.getElementById('tokenId').value.trim();
+      const resultDiv = document.getElementById('result');
+      const testBtn = document.getElementById('testBtn');
+
+      if (!tokenId) {
+        alert('请输入 Token ID');
+        return;
+      }
+
+      testBtn.disabled = true;
+      testBtn.textContent = '⏳ 请求中...';
+
+      resultDiv.innerHTML = '<div class="result loading">正在请求 API...</div>';
+
+      const url = `${apiBase}/api/token/${tokenId}`;
+      const startTime = Date.now();
+
+      try {
+        const response = await fetch(url);
+        const duration = Date.now() - startTime;
+        const data = await response.json();
+
+        const isError = !response.ok || !data.success;
+
+        resultDiv.innerHTML = `
+          <div class="result ${isError ? 'error' : ''}">
+            <h3>${isError ? '❌ 请求失败' : '✅ 请求成功'}</h3>
+            <p><strong>Status:</strong> ${response.status} ${response.statusText}</p>
+            <p><strong>Duration:</strong> ${duration}ms</p>
+            <p><strong>URL:</strong> <code>${url}</code></p>
+            <p><strong>Response:</strong></p>
+            <pre>${JSON.stringify(data, null, 2)}</pre>
+          </div>
+        `;
+      } catch (error) {
+        resultDiv.innerHTML = `
+          <div class="result error">
+            <h3>❌ 网络错误</h3>
+            <p><strong>Error:</strong> ${error.message}</p>
+            <p><strong>URL:</strong> <code>${url}</code></p>
+            <pre>${error.stack}</pre>
+          </div>
+        `;
+      } finally {
+        testBtn.disabled = false;
+        testBtn.textContent = '🚀 测试 API';
+      }
+    }
+
+    // 支持回车键提交
+    document.getElementById('tokenId').addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        testAPI();
+      }
+    });
+  </script>
+</body>
+</html>
