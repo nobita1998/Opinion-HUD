@@ -11,7 +11,7 @@ import zhipuai
 OPINION_API_URL = os.environ.get("OPINION_API_URL", "").strip() or "http://opinion.api.predictscan.dev:10001/api/markets"
 OPINION_WRAP_EVENTS_URL = "https://opinionanalytics.xyz/api/markets/wrap-events"
 FRONTEND_BASE_URL = "https://opinion.trade"
-MODEL_NAME = "glm-4-flash"
+MODEL_NAME = "GLM-4.5-Flash"
 REF_PARAM = "opinion_hud"
 DEBUG = os.environ.get("DEBUG", "").strip().lower() in ("1", "true", "yes", "y", "on")
 # When enabled, re-run the LLM for all events from the current API response.
