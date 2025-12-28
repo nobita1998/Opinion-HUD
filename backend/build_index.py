@@ -1446,6 +1446,14 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
 
         if event_market_id in markets_out:
             duplicate_event_market_ids += 1
+            # Update tokenIds even if market already exists (fix missing tokenIds in old data)
+            if yes_token_id:
+                markets_out[event_market_id]["yesTokenId"] = yes_token_id
+            if no_token_id:
+                markets_out[event_market_id]["noTokenId"] = no_token_id
+            # Update URL if needed
+            if url:
+                markets_out[event_market_id]["url"] = url
         else:
             markets_out[event_market_id] = {
                 "title": event_title,
@@ -1745,25 +1753,27 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
                 seen_entities.add(head)
                 normalized_entities.append(head)
 
-        events_out[event_id] = {
-            "title": bucket.get("title") or event_id,
-            "marketIds": [event_id],
-            "bestMarketId": event_id,
-            "bestLabels": bucket.get("bestLabels") or None,
-            "keywords": normalized,
-            "entities": normalized_entities,
-            "entityGroups": normalized_entity_groups,
-            "sig": sig_full,
-            "sigFull": sig_full,
-            "sigCore": sig_core,
-            "reused": reused,
-        }
+        # Only add true parent events to events_out (not independent binary markets)
+        if is_true_parent_event:
+            events_out[event_id] = {
+                "title": bucket.get("title") or event_id,
+                "marketIds": [event_id],
+                "bestMarketId": event_id,
+                "bestLabels": bucket.get("bestLabels") or None,
+                "keywords": normalized,
+                "entities": normalized_entities,
+                "entityGroups": normalized_entity_groups,
+                "sig": sig_full,
+                "sigFull": sig_full,
+                "sigCore": sig_core,
+                "reused": reused,
+            }
 
         if event_id in markets_out:
             markets_out[event_id]["keywords"] = normalized
             markets_out[event_id]["entities"] = normalized_entities
             markets_out[event_id]["entityGroups"] = normalized_entity_groups
-            if events_out[event_id].get("bestLabels"):
+            if event_id in events_out and events_out[event_id].get("bestLabels"):
                 markets_out[event_id]["labels"] = events_out[event_id]["bestLabels"]
 
         # Add both keywords and entities to index
@@ -1869,6 +1879,18 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
 
     if multi_market_count > 0 and DEBUG:
         print(f"[debug] processed {multi_market_count} multi-choice markets with subMarkets", flush=True)
+
+    # Mark remaining markets as binary (those without type field)
+    binary_market_count = 0
+    for market_id, market_data in markets_out.items():
+        if not isinstance(market_data, dict):
+            continue
+        if "type" not in market_data or market_data.get("type") is None:
+            market_data["type"] = "binary"
+            binary_market_count += 1
+
+    if binary_market_count > 0 and DEBUG:
+        print(f"[debug] marked {binary_market_count} binary markets with type='binary'", flush=True)
 
     # Data integrity validation
     validation_errors = []

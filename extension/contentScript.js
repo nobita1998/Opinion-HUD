@@ -343,9 +343,14 @@ function buildOpinionTradeUrl({ topicId, isMulti }) {
 }
 
 function isMultiMarket(marketId, market) {
+  // Check type field first (new data.json format)
+  if (market?.type === "multi") return true;
+
+  // Fallback to eventId-based detection (legacy format)
   const eventId = market?.eventId ?? null;
-  if (!eventId) return false;
-  return String(eventId) !== String(marketId);
+  if (eventId && String(eventId) !== String(marketId)) return true;
+
+  return false;
 }
 
 function stripMentions(text) {
@@ -769,6 +774,7 @@ function renderHud(anchorEl, match) {
   list.className = "list";
 
   const hudContainer = container;
+  state.activeHud = container;
 
   function setPillLoading(pillEl, label) {
     pillEl.className = "pricePill loading";
@@ -1071,7 +1077,6 @@ function renderHud(anchorEl, match) {
   shadow.appendChild(hud);
 
   document.documentElement.appendChild(container);
-  state.activeHud = container;
 
   const onDocClick = (e) => {
     const path = e.composedPath ? e.composedPath() : [];
@@ -1464,7 +1469,7 @@ function computeMatchForTweetText(tweetText) {
     if (!m) continue;
 
     const isMulti = isMultiMarket(item.id, m);
-    const topicId = isMulti ? m.eventId : item.id;
+    const topicId = isMulti ? (m.eventId || item.id) : item.id;
     const topicKey = String(topicId);
     if (seenTopicIds.has(topicKey)) continue;
     seenTopicIds.add(topicKey);
