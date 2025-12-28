@@ -1567,24 +1567,21 @@ def generate_keywords(api_key, title, rules, context=None):
         f"Market rules: {_truncate(rules, 1200)}\n\n"
         "Rules:\n"
         "- Output must be a JSON object with 'keywords' and 'entityGroups' fields (no extra fields).\n"
-        "- keywords: 15-25 search terms in BOTH English AND Chinese (where applicable)\n"
-        "  * Include English terms: entities, synonyms, abbreviations, slang\n"
-        "  * For international entities (countries, companies, people, events), add Chinese translations\n"
-        "  * For common concepts (war, election, rate cut), add Chinese equivalents\n"
-        "  * Examples of bilingual keywords:\n"
-        "    - Countries: Russia, 俄罗斯, Ukraine, 乌克兰, 俄乌战争\n"
-        "    - Finance: FOMC, Fed, 美联储, interest rate, 利率, rate cut, 降息\n"
-        "    - Crypto: Bitcoin, 比特币, Ethereum, 以太坊\n"
-        "    - People: Trump, 川普, Putin, 普京, Musk, 马斯克\n"
-        "    - Companies: Tesla, 特斯拉, Apple, 苹果, Binance, 币安\n"
-        "    - Events: Olympics, 奥运会, World Cup, 世界杯, Oscars, 奥斯卡\n"
-        "- entityGroups: STRICT subject-identifying requirements as an AND-of-ORs (CNF)\n"
+        "- keywords: 10-15 English search terms (entities, synonyms, abbreviations, slang)\n"
+        "  * Keep keywords in English only for now\n"
+        "- entityGroups: STRICT subject-identifying requirements as an AND-of-ORs (CNF) with bilingual support\n"
         "  * entityGroups is a list of groups; ALL groups are required (AND)\n"
         "  * each group is a list of synonyms; ANY term in the group can satisfy it (OR)\n"
-        "  * Put the CANONICAL English form FIRST in each group, then add Chinese translations\n"
-        "  * Use 1-2 groups total; keep each group to 2-6 terms (including Chinese)\n"
+        "  * Put the CANONICAL English form FIRST in each group, then add Chinese translations for major entities\n"
+        "  * Use 1-2 groups total; keep each group to 2-6 terms (including Chinese translations)\n"
         "  * Each term should be a short identifier (1-3 words) or a ticker\n"
-        "  * Include Chinese translations for major entities in entityGroups\n"
+        "  * IMPORTANT: Include Chinese translations in entityGroups for well-known entities:\n"
+        "    - Countries: Russia → 俄罗斯, Ukraine → 乌克兰, China → 中国\n"
+        "    - Crypto: Bitcoin → 比特币, Ethereum → 以太坊\n"
+        "    - People: Trump → 川普, Putin → 普京, Musk → 马斯克\n"
+        "    - Companies: Tesla → 特斯拉, Apple → 苹果, Binance → 币安\n"
+        "    - Institutions: Fed/FOMC → 美联储\n"
+        "    - Events: Olympics → 奥运会, Oscars → 奥斯卡\n"
         "  * entityGroups terms MUST identify the market's SUBJECT, not its outcomes/options\n"
         "  * entityGroups terms MUST come from the market title (you may add common aliases)\n"
         "  * NEVER use question/aux words as entities: will, who, what, which, when, where, why, how\n"
@@ -1600,7 +1597,7 @@ def generate_keywords(api_key, title, rules, context=None):
         "- Prefer short phrases over sentences.\n"
         "- Do not include duplicates.\n"
         "\n"
-        "Entity examples (with Chinese support):\n"
+        "Entity examples (with Chinese in entityGroups):\n"
         '- Title: "Will ETH all time high by 2025-12-31?" -> entityGroups: [["ETH", "Ethereum", "以太坊"]]\n'
         '- Title: "Will CZ return to Binance before 2025?" -> entityGroups: [["CZ", "Changpeng Zhao", "赵长鹏"], ["Binance", "币安"]]\n'
         '- Title: "US Fed Rate Decision in January?" -> entityGroups: [["Fed", "FOMC", "Federal Reserve", "美联储"]]\n'
@@ -1609,9 +1606,9 @@ def generate_keywords(api_key, title, rules, context=None):
         '- Title: "Who will acquire TikTok?" -> entityGroups: [["TikTok", "抖音"]]\n'
         '- Title: "Tesla stock above $300?" -> entityGroups: [["Tesla", "特斯拉"]]\n'
         "\n"
-        "Example output format (bilingual):\n"
+        "Example output format:\n"
         '{\n'
-        '  "keywords": ["Russia", "俄罗斯", "Ukraine", "乌克兰", "war", "战争", "ceasefire", "停火", "peace", "和平"],\n'
+        '  "keywords": ["Russia", "Ukraine", "war", "ceasefire", "peace", "conflict"],\n'
         '  "entityGroups": [["Russia", "俄罗斯"], ["Ukraine", "乌克兰"]]\n'
         "}\n"
     )
@@ -1669,48 +1666,25 @@ def generate_keywords(api_key, title, rules, context=None):
 
 
 def augment_with_chinese(keywords, entities, entity_groups):
-    """Augment LLM-generated keywords and entityGroups with Chinese translations from dictionary.
+    """Augment LLM-generated entityGroups with Chinese translations from dictionary.
 
     This function uses predefined Chinese-English dictionaries to add missing Chinese translations
-    to keywords and entity groups, complementing the LLM's bilingual output.
+    to entity groups only (not keywords), complementing the LLM's bilingual output.
 
     Args:
-        keywords: List of keyword strings (may already include some Chinese from LLM)
+        keywords: List of keyword strings (returned unchanged)
         entities: List of canonical entity strings (for backward compatibility)
         entity_groups: List of entity groups (AND-of-OR structure)
 
     Returns:
-        Tuple of (augmented_keywords, augmented_entity_groups)
+        Tuple of (keywords, augmented_entity_groups)
     """
     if not isinstance(keywords, list):
         keywords = []
     if not isinstance(entity_groups, list):
         entity_groups = []
 
-    # Use sets to track what we've already added (avoid duplicates)
-    keywords_set = set(_normalize_keyword(k) for k in keywords if k)
-    new_keywords = list(keywords)  # Start with original keywords
-
-    # Augment keywords with Chinese translations
-    for kw in list(keywords):
-        kw_normalized = _normalize_keyword(kw)
-        if not kw_normalized:
-            continue
-
-        # Check if this keyword matches any entry in our dictionaries
-        # Try both exact match and partial match (for phrases)
-        for en_key, cn_translations in CN_EN_KEYWORD_MAP.items():
-            en_key_lower = en_key.lower()
-            kw_lower = kw_normalized.lower()
-
-            # Exact match or keyword contains the key
-            if en_key_lower == kw_lower or en_key_lower in kw_lower or kw_lower in en_key_lower:
-                for cn_term in cn_translations:
-                    cn_normalized = _normalize_keyword(cn_term)
-                    if cn_normalized and cn_normalized not in keywords_set:
-                        new_keywords.append(cn_term)
-                        keywords_set.add(cn_normalized)
-
+    # Keywords are returned unchanged - we only augment entityGroups
     # Augment entityGroups with Chinese translations
     new_entity_groups = []
     for group in entity_groups:
@@ -1759,16 +1733,12 @@ def augment_with_chinese(keywords, entities, entity_groups):
         new_entity_groups = entity_groups
 
     if DEBUG:
-        added_keywords = len(new_keywords) - len(keywords)
-        if added_keywords > 0:
-            print(f"[debug] augment_with_chinese: added {added_keywords} Chinese keywords", flush=True)
-
         for i, (old_group, new_group) in enumerate(zip(entity_groups, new_entity_groups)):
             added_entities = len(new_group) - len(old_group)
             if added_entities > 0:
                 print(f"[debug] augment_with_chinese: added {added_entities} Chinese terms to entityGroup[{i}]", flush=True)
 
-    return new_keywords, new_entity_groups
+    return keywords, new_entity_groups
 
 
 def build_data(markets, api_key, previous_data=None, parent_events=None):
