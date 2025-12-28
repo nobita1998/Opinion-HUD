@@ -1357,6 +1357,8 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
     resolved_event_ids = set()
     # Track all event IDs seen in current API response (to detect missing events in incremental mode)
     current_api_event_ids = set()
+    # Track pseudo-parent event IDs (binary markets wrapped as events) to remove them from events_out
+    pseudo_parent_event_ids = set()
 
     for market in markets:
         processed += 1
@@ -1572,6 +1574,7 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
             # else: single sub-market with same ID = binary market, not a true parent
             elif len(sub_markets) == 1 and sub_markets[0].get("marketId") == event_id:
                 # This is a pseudo-parent (binary market wrapped as event), skip it
+                pseudo_parent_event_ids.add(event_id)
                 if DEBUG:
                     print(f"[debug] skipping pseudo-parent event_id={event_id} title='{bucket.get('title')}' (single sub-market with same ID)", flush=True)
                 continue
@@ -1800,6 +1803,17 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
 
         if sleep_seconds > 0 and api_key:
             time.sleep(sleep_seconds)
+
+    # Remove pseudo-parent events (binary markets wrapped as events) from events_out
+    # These should only exist in markets_out, not events_out
+    if pseudo_parent_event_ids:
+        removed_pseudo_count = 0
+        for event_id in pseudo_parent_event_ids:
+            if event_id in events_out:
+                del events_out[event_id]
+                removed_pseudo_count += 1
+        if removed_pseudo_count > 0:
+            print(f"[info] removed {removed_pseudo_count} pseudo-parent events from events output", flush=True)
 
     # Remove resolved/expired events from output
     if resolved_event_ids:
