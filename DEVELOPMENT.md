@@ -124,3 +124,36 @@ HUD 的概率来自 Opinion Analytics API（按需请求）：
 
 - 数据管道建议用定时任务生成 `backend/data.json` 并发布到静态 CDN（如 GitHub Pages）
 - 扩展默认从 GitHub Pages 拉取索引；更新索引不需要重新发版扩展
+
+## 8. Git 工作流程
+
+### 8.1 处理 data.json 冲突
+
+由于 GitHub Actions 定时任务会自动更新 `data.json` 并提交到 main 分支，本地开发时经常会遇到 push 被拒绝的情况。标准处理流程：
+
+```bash
+# 1. 提交本地修改
+git add backend/build_index.py extension/contentScript.js data.json
+git commit -m "your commit message"
+
+# 2. 拉取远程更新并 rebase
+git pull --rebase origin main
+
+# 3. 如果 data.json 有冲突，使用本地版本（我们的更新是基于最新数据生成的）
+git checkout --ours data.json
+git add data.json
+git rebase --continue
+
+# 4. 推送到远程
+git push origin main
+```
+
+**原理说明**：
+- GitHub Actions 每小时会运行 `python backend/build_index.py` 并提交新的 data.json
+- 本地开发时也会更新 data.json（通过 SKIP_AI 模式或完整构建）
+- 两者基于同一数据源（Opinion API），内容应该一致或本地更新
+- 使用 `--ours` 保留本地版本是安全的，因为本地版本包含了最新的代码逻辑改进
+
+**最佳实践**：
+- 在提交前运行 `SKIP_AI=1 python3 backend/build_index.py` 确保 data.json 是最新的
+- 这样可以避免不必要的冲突，同时保留现有的 LLM 生成的关键词
