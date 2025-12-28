@@ -678,6 +678,18 @@ function renderHud(anchorEl, match) {
       background: rgba(204, 250, 21, 0.06);
       border-color: rgba(204, 250, 21, 0.20);
     }
+    .item.binaryItem {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 8px;
+    }
+    .item.binaryItem .itemTitle {
+      margin-bottom: 2px;
+    }
+    .item.binaryItem .meta {
+      justify-content: flex-end;
+    }
     .itemTitle { font-size: 13px; line-height: 1.25; color: rgba(255,255,255,0.92); }
     .meta { display: inline-flex; gap: 8px; align-items: center; justify-content: flex-end; }
     .pricePill {
@@ -731,9 +743,8 @@ function renderHud(anchorEl, match) {
       line-height: 1.25;
       font-weight: 800;
       color: rgba(255,255,255,0.92);
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
     .optionList { display: flex; flex-direction: column; gap: 8px; }
     .optionList .item {
@@ -874,7 +885,7 @@ function renderHud(anchorEl, match) {
 
   function renderBinaryRow({ title, tradeUrl, marketId }) {
     const item = document.createElement("div");
-    item.className = "item";
+    item.className = "item binaryItem";
 
     const leftCell = document.createElement("div");
     leftCell.className = "itemTitle";

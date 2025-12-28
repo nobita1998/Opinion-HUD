@@ -18,6 +18,8 @@ DEBUG = os.environ.get("DEBUG", "").strip().lower() in ("1", "true", "yes", "y",
 # When disabled (default), reuse previous outputs and only run the LLM for new events
 # not present in the previous data.
 FULL_AI_REFRESH = os.environ.get("FULL_AI_REFRESH", "0").strip().lower() in ("1", "true", "yes", "y", "on")
+# When enabled, skip all LLM calls and use fallback keywords for new events
+SKIP_AI = os.environ.get("SKIP_AI", "0").strip().lower() in ("1", "true", "yes", "y", "on")
 ZHIPU_TIMEOUT_SECONDS = float(os.environ.get("ZHIPU_TIMEOUT_SECONDS", "30"))
 ZHIPU_MAX_RETRIES = int(os.environ.get("ZHIPU_MAX_RETRIES", "2"))
 
@@ -1304,6 +1306,7 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
+        "title_pattern_filtered": 0,
     }
     ai_stats = {
         "previousLoaded": isinstance(previous_data, dict),
@@ -1389,6 +1392,17 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
                 resolved_event_ids.add(event_id)
             continue
 
+        # Also check parent event's statusEnum if this is a child market
+        # Only skip if parent is explicitly Resolved (not just Created/inactive)
+        if is_child_market and event_id and event_id in parent_events:
+            parent_status = parent_events[event_id].get("statusEnum")
+            if parent_status == "Resolved":
+                skipped["statusEnum"] += 1
+                # Skip this child market if parent event is resolved
+                if event_id and only_ai_for_new:
+                    resolved_event_ids.add(event_id)
+                continue
+
         resolved_at = _parse_cutoff_epoch_seconds(market.get("resolvedAt"))
         if resolved_at is not None and resolved_at > 0:
             skipped["resolved"] += 1
@@ -1431,6 +1445,18 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         title = _market_title(market)
         if not title:
             skipped["missing_title"] += 1
+            continue
+
+        # Filter out markets matching specific title patterns (e.g., incorrect data)
+        # "Bitcoin above ... on December XX" markets have wrong cutoffAt (2026 instead of 2025)
+        # Check both market title and parent event title for multi-choice markets
+        event_title_to_check = parent_event_title or title
+        if event_title_to_check.startswith("Bitcoin above ... on "):
+            skipped["title_pattern_filtered"] = skipped.get("title_pattern_filtered", 0) + 1
+            # Mark these events for removal from previous data
+            # Always mark for removal, even for child markets (so parent event gets removed)
+            if event_id and only_ai_for_new:
+                resolved_event_ids.add(event_id)
             continue
 
         kept += 1
@@ -1618,6 +1644,11 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
             ai_stats["reused"] += 1
             continue
 
+        # If SKIP_AI is enabled, skip new events (don't generate keywords for them)
+        if SKIP_AI and event_id not in existing_event_ids:
+            ai_stats["skipped_new"] += 1
+            continue
+
         if not api_key:
             ai_stats["fallback"] += 1
             keywords = _fallback_keywords(bucket.get("title") or event_id, option_titles, rules_text)
@@ -1635,59 +1666,66 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
                 )
                 allow_terms = {_normalize_keyword(t) for t in _allowed_entity_alias_terms_from_title(title_for_ai)}
 
-                safe_title = _truncate(str(title_for_ai or "").strip(), 160)
-                print(f"[info] llm: generating entities/keywords for event={event_id} title={safe_title!r}", flush=True)
-                result = generate_keywords(
-                    api_key,
-                    title=title_for_ai,
-                    rules=rules_text,
-                    context={
-                        "eventId": event_id,
-                        "bestMarketId": best_market_id,
-                        "bestMarketUrl": best_market_url,
-                    },
-                )
-                if isinstance(result, dict):
-                    keywords = result.get("keywords", [])
-                    entities = result.get("entities", [])
-                    entity_groups = result.get("entityGroups", []) or result.get("entity_groups", [])
-                    normalized_try = _normalize_entity_groups(entity_groups, title_for_ai, allow_terms)
-
-                    if not normalized_try:
-                        bad_terms = _collect_invalid_entity_terms(entity_groups, entities, title_for_ai, allow_terms)
-                        ai_stats["retries"] += 1
-                        if bad_terms:
-                            print(
-                                f"[warn] llm: retrying once for event={event_id} due to invalid entityGroups; avoid={bad_terms}",
-                                flush=True,
-                            )
-                        else:
-                            print(
-                                f"[warn] llm: retrying once for event={event_id} due to empty/invalid entityGroups",
-                                flush=True,
-                            )
-                        retry_ctx = {
+                # Skip LLM if SKIP_AI is enabled
+                if SKIP_AI:
+                    keywords = _fallback_keywords(bucket.get("title") or event_id, option_titles, rules_text)
+                    entities = []
+                    entity_groups = []
+                    ai_stats["fallback"] += 1
+                else:
+                    safe_title = _truncate(str(title_for_ai or "").strip(), 160)
+                    print(f"[info] llm: generating entities/keywords for event={event_id} title={safe_title!r}", flush=True)
+                    result = generate_keywords(
+                        api_key,
+                        title=title_for_ai,
+                        rules=rules_text,
+                        context={
                             "eventId": event_id,
                             "bestMarketId": best_market_id,
                             "bestMarketUrl": best_market_url,
-                        }
-                        if bad_terms:
-                            retry_ctx["avoidEntityTerms"] = bad_terms
-                        retry = generate_keywords(
-                            api_key,
-                            title=title_for_ai,
-                            rules=rules_text,
-                            context=retry_ctx,
-                        )
-                        if isinstance(retry, dict):
-                            keywords = retry.get("keywords", keywords)
-                            entities = retry.get("entities", entities)
-                            entity_groups = retry.get("entityGroups", []) or retry.get("entity_groups", [])
-                elif isinstance(result, list):
-                    # Backwards compatibility with old array format
-                    keywords = result
-                    entities = []
-                    entity_groups = []
+                        },
+                    )
+                    if isinstance(result, dict):
+                        keywords = result.get("keywords", [])
+                        entities = result.get("entities", [])
+                        entity_groups = result.get("entityGroups", []) or result.get("entity_groups", [])
+                        normalized_try = _normalize_entity_groups(entity_groups, title_for_ai, allow_terms)
+
+                        if not normalized_try:
+                            bad_terms = _collect_invalid_entity_terms(entity_groups, entities, title_for_ai, allow_terms)
+                            ai_stats["retries"] += 1
+                            if bad_terms:
+                                print(
+                                    f"[warn] llm: retrying once for event={event_id} due to invalid entityGroups; avoid={bad_terms}",
+                                    flush=True,
+                                )
+                            else:
+                                print(
+                                    f"[warn] llm: retrying once for event={event_id} due to empty/invalid entityGroups",
+                                    flush=True,
+                                )
+                            retry_ctx = {
+                                "eventId": event_id,
+                                "bestMarketId": best_market_id,
+                                "bestMarketUrl": best_market_url,
+                            }
+                            if bad_terms:
+                                retry_ctx["avoidEntityTerms"] = bad_terms
+                            retry = generate_keywords(
+                                api_key,
+                                title=title_for_ai,
+                                rules=rules_text,
+                                context=retry_ctx,
+                            )
+                            if isinstance(retry, dict):
+                                keywords = retry.get("keywords", keywords)
+                                entities = retry.get("entities", entities)
+                                entity_groups = retry.get("entityGroups", []) or retry.get("entity_groups", [])
+                    elif isinstance(result, list):
+                        # Backwards compatibility with old array format
+                        keywords = result
+                        entities = []
+                        entity_groups = []
             except Exception as exc:
                 ai_stats["errors"] += 1
                 if DEBUG:
@@ -2015,7 +2053,9 @@ def main():
     # Default output path: project root directory (one level up from backend/)
     output_path = os.environ.get("OUTPUT_PATH") or os.path.join(os.path.dirname(os.path.dirname(__file__)), "data.json")
 
-    if FULL_AI_REFRESH:
+    if SKIP_AI:
+        print("[info] mode: SKIP_AI=1 (no LLM calls, using fallback keywords only)", flush=True)
+    elif FULL_AI_REFRESH:
         print("[info] mode: FULL_AI_REFRESH=1 (LLM for all events)", flush=True)
     else:
         print("[info] mode: FULL_AI_REFRESH=0 (LLM only for new events)", flush=True)
