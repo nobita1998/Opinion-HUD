@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2025-12-28 17:30:51 UTC+8",
+    "generatedAt": "2025-12-28 17:33:18 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://opinion.trade",
     "model": "GLM-4.7",
@@ -10,7 +10,7 @@
       "seen": 792,
       "kept": 646,
       "markets": 159,
-      "keywords": 1757,
+      "keywords": 1758,
       "events": {
         "events": 119
       },
@@ -27,12 +27,12 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 119,
-        "calls": 0,
+        "reused": 110,
+        "calls": 9,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 9,
         "errors": 0
       }
     }
@@ -6050,22 +6050,20 @@
       "bestMarketId": "182",
       "bestLabels": null,
       "keywords": [
-        "nfl",
-        "american football",
-        "division",
-        "champion",
-        "title",
-        "playoffs",
-        "green bay packers",
-        "chicago bears",
-        "minnesota vikings",
-        "detroit lions",
-        "season",
-        "regular season",
-        "nfc",
-        "north",
-        "super bowl",
         "nfc north",
+        "nfl",
+        "national football conference",
+        "football",
+        "division",
+        "divisional winner",
+        "division champion",
+        "american football",
+        "gridiron",
+        "nfc north title",
+        "regular season",
+        "playoff spot",
+        "conference",
+        "north division",
         "north winner",
         "nfc north winner"
       ],
@@ -6090,21 +6088,21 @@
       "bestMarketId": "164",
       "bestLabels": null,
       "keywords": [
-        "btc",
         "crypto",
-        "digital gold",
-        "satoshi",
-        "blockchain",
+        "cryptocurrency",
+        "digital asset",
         "price action",
         "trading",
+        "market",
         "volatility",
-        "candle",
         "resistance",
         "support",
-        "pump",
-        "dump",
-        "halving",
-        "spot etf",
+        "breakout",
+        "rally",
+        "technical analysis",
+        "candlestick",
+        "bull run",
+        "bear market",
         "bitcoin above",
         "above december",
         "bitcoin above december"
@@ -6131,22 +6129,20 @@
       "bestMarketId": "81",
       "bestLabels": null,
       "keywords": [
+        "super bowl",
         "nfl",
-        "football",
+        "vince lombardi trophy",
+        "big game",
         "american football",
-        "lombardi trophy",
+        "sb 60",
+        "super bowl lx",
+        "championship",
+        "playoffs",
         "afc",
         "nfc",
-        "playoffs",
-        "championship",
-        "winner",
-        "betting",
-        "odds",
-        "sunday",
-        "final",
-        "season",
-        "conference",
-        "super bowl",
+        "gridiron",
+        "pro football",
+        "finals",
         "bowl champion",
         "champion 2026",
         "super bowl champion",
@@ -6157,7 +6153,8 @@
       ],
       "entityGroups": [
         [
-          "super bowl"
+          "super bowl",
+          "superbowl"
         ]
       ],
       "sig": "788383c4",
@@ -6173,14 +6170,12 @@
       "bestMarketId": "159",
       "bestLabels": null,
       "keywords": [
-        "bytedance",
-        "m&a",
+        "tiktok",
         "acquisition",
         "buyout",
-        "takeover",
-        "social media",
+        "bytedance",
         "divestiture",
-        "forced sale",
+        "cfius",
         "elon musk",
         "x",
         "amazon",
@@ -6188,6 +6183,8 @@
         "meta",
         "walmart",
         "applovin",
+        "oracle",
+        "forced sale",
         "who acquire",
         "acquire tiktok",
         "who acquire tiktok"
@@ -6213,21 +6210,21 @@
       "bestMarketId": "64",
       "bestLabels": null,
       "keywords": [
-        "eth",
-        "ether",
         "crypto",
-        "blockchain",
+        "cryptocurrency",
+        "price",
+        "trading",
+        "prediction",
+        "2025",
         "altcoin",
+        "blockchain",
         "defi",
-        "smart contracts",
-        "pos",
         "gas fees",
-        "vitalik",
-        "buterin",
-        "market cap",
-        "ath",
-        "candlestick",
+        "volatility",
+        "chart",
         "resistance",
+        "support",
+        "candlestick",
         "what price",
         "price ethereum",
         "ethereum hit",
@@ -6263,17 +6260,17 @@
         "btc",
         "crypto",
         "cryptocurrency",
-        "price target",
-        "2025 forecast",
-        "ath",
-        "all-time high",
-        "bull market",
-        "halving",
         "digital gold",
+        "price prediction",
+        "2025",
+        "btc/usd",
+        "halving",
+        "bull market",
         "satoshi",
+        "hodl",
+        "blockchain",
+        "crypto market",
         "trading",
-        "volatility",
-        "market outlook",
         "what price",
         "price bitcoin",
         "bitcoin hit",
@@ -6307,18 +6304,18 @@
         "war",
         "conflict",
         "invasion",
-        "military intervention",
+        "airstrike",
         "hostilities",
         "combat",
-        "skirmish",
-        "clash",
-        "naval blockade",
-        "air strike",
-        "troops",
+        "intervention",
         "escalation",
-        "geopolitical tension",
+        "skirmish",
+        "blockade",
+        "military action",
         "armed conflict",
-        "kinetic action",
+        "troops",
+        "naval",
+        "drone",
         "venezuela military",
         "military engagement",
         "venezuela military engagement"
@@ -6350,15 +6347,15 @@
         "stock",
         "shares",
         "equity",
-        "nasdaq",
-        "price target",
+        "price",
         "trading",
-        "big tech",
-        "market cap",
-        "class a",
-        "ticker",
-        "tech giant",
-        "stock price",
+        "tech",
+        "nasdaq",
+        "valuation",
+        "earnings",
+        "options",
+        "rally",
+        "dip",
         "what google",
         "google googl",
         "googl hit",
@@ -6393,19 +6390,18 @@
       "keywords": [
         "solana",
         "sol",
+        "cryptocurrency",
         "crypto",
         "altcoin",
-        "blockchain",
-        "price action",
+        "price prediction",
+        "price target",
         "trading",
-        "token",
-        "defi",
-        "layer 1",
-        "l1",
-        "smart contracts",
-        "volatility",
-        "market",
-        "prediction",
+        "blockchain",
+        "sol price",
+        "2025 forecast",
+        "bullish",
+        "bearish",
+        "market price",
         "what price",
         "price solana",
         "solana hit",
@@ -16113,22 +16109,20 @@
         "noLabel": "NO"
       },
       "keywords": [
-        "nfl",
-        "american football",
-        "division",
-        "champion",
-        "title",
-        "playoffs",
-        "green bay packers",
-        "chicago bears",
-        "minnesota vikings",
-        "detroit lions",
-        "season",
-        "regular season",
-        "nfc",
-        "north",
-        "super bowl",
         "nfc north",
+        "nfl",
+        "national football conference",
+        "football",
+        "division",
+        "divisional winner",
+        "division champion",
+        "american football",
+        "gridiron",
+        "nfc north title",
+        "regular season",
+        "playoff spot",
+        "conference",
+        "north division",
         "north winner",
         "nfc north winner"
       ],
@@ -16173,21 +16167,21 @@
         "noLabel": "NO"
       },
       "keywords": [
-        "btc",
         "crypto",
-        "digital gold",
-        "satoshi",
-        "blockchain",
+        "cryptocurrency",
+        "digital asset",
         "price action",
         "trading",
+        "market",
         "volatility",
-        "candle",
         "resistance",
         "support",
-        "pump",
-        "dump",
-        "halving",
-        "spot etf",
+        "breakout",
+        "rally",
+        "technical analysis",
+        "candlestick",
+        "bull run",
+        "bear market",
         "bitcoin above",
         "above december",
         "bitcoin above december"
@@ -16252,22 +16246,20 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "super bowl",
         "nfl",
-        "football",
+        "vince lombardi trophy",
+        "big game",
         "american football",
-        "lombardi trophy",
+        "sb 60",
+        "super bowl lx",
+        "championship",
+        "playoffs",
         "afc",
         "nfc",
-        "playoffs",
-        "championship",
-        "winner",
-        "betting",
-        "odds",
-        "sunday",
-        "final",
-        "season",
-        "conference",
-        "super bowl",
+        "gridiron",
+        "pro football",
+        "finals",
         "bowl champion",
         "champion 2026",
         "super bowl champion",
@@ -16278,7 +16270,8 @@
       ],
       "entityGroups": [
         [
-          "super bowl"
+          "super bowl",
+          "superbowl"
         ]
       ],
       "type": "multi",
@@ -16368,14 +16361,12 @@
         "noLabel": "NO"
       },
       "keywords": [
-        "bytedance",
-        "m&a",
+        "tiktok",
         "acquisition",
         "buyout",
-        "takeover",
-        "social media",
+        "bytedance",
         "divestiture",
-        "forced sale",
+        "cfius",
         "elon musk",
         "x",
         "amazon",
@@ -16383,6 +16374,8 @@
         "meta",
         "walmart",
         "applovin",
+        "oracle",
+        "forced sale",
         "who acquire",
         "acquire tiktok",
         "who acquire tiktok"
@@ -16452,21 +16445,21 @@
         "noLabel": "NO"
       },
       "keywords": [
-        "eth",
-        "ether",
         "crypto",
-        "blockchain",
+        "cryptocurrency",
+        "price",
+        "trading",
+        "prediction",
+        "2025",
         "altcoin",
+        "blockchain",
         "defi",
-        "smart contracts",
-        "pos",
         "gas fees",
-        "vitalik",
-        "buterin",
-        "market cap",
-        "ath",
-        "candlestick",
+        "volatility",
+        "chart",
         "resistance",
+        "support",
+        "candlestick",
         "what price",
         "price ethereum",
         "ethereum hit",
@@ -16528,17 +16521,17 @@
         "btc",
         "crypto",
         "cryptocurrency",
-        "price target",
-        "2025 forecast",
-        "ath",
-        "all-time high",
-        "bull market",
-        "halving",
         "digital gold",
+        "price prediction",
+        "2025",
+        "btc/usd",
+        "halving",
+        "bull market",
         "satoshi",
+        "hodl",
+        "blockchain",
+        "crypto market",
         "trading",
-        "volatility",
-        "market outlook",
         "what price",
         "price bitcoin",
         "bitcoin hit",
@@ -16604,18 +16597,18 @@
         "war",
         "conflict",
         "invasion",
-        "military intervention",
+        "airstrike",
         "hostilities",
         "combat",
-        "skirmish",
-        "clash",
-        "naval blockade",
-        "air strike",
-        "troops",
+        "intervention",
         "escalation",
-        "geopolitical tension",
+        "skirmish",
+        "blockade",
+        "military action",
         "armed conflict",
-        "kinetic action",
+        "troops",
+        "naval",
+        "drone",
         "venezuela military",
         "military engagement",
         "venezuela military engagement"
@@ -16667,15 +16660,15 @@
         "stock",
         "shares",
         "equity",
-        "nasdaq",
-        "price target",
+        "price",
         "trading",
-        "big tech",
-        "market cap",
-        "class a",
-        "ticker",
-        "tech giant",
-        "stock price",
+        "tech",
+        "nasdaq",
+        "valuation",
+        "earnings",
+        "options",
+        "rally",
+        "dip",
         "what google",
         "google googl",
         "googl hit",
@@ -16754,19 +16747,18 @@
       "keywords": [
         "solana",
         "sol",
+        "cryptocurrency",
         "crypto",
         "altcoin",
-        "blockchain",
-        "price action",
+        "price prediction",
+        "price target",
         "trading",
-        "token",
-        "defi",
-        "layer 1",
-        "l1",
-        "smart contracts",
-        "volatility",
-        "market",
-        "prediction",
+        "blockchain",
+        "sol price",
+        "2025 forecast",
+        "bullish",
+        "bearish",
+        "market price",
         "what price",
         "price solana",
         "solana hit",
@@ -16874,7 +16866,9 @@
     ],
     "2025": [
       "108",
-      "1270"
+      "1270",
+      "58",
+      "64"
     ],
     "2025 after": [
       "1384"
@@ -16886,8 +16880,8 @@
     "2025 forecast": [
       "123",
       "125",
-      "58",
-      "62"
+      "62",
+      "85"
     ],
     "2025 movies": [
       "84"
@@ -17283,9 +17277,6 @@
     "ai trading competition": [
       "200"
     ],
-    "air strike": [
-      "144"
-    ],
     "airdrop": [
       "118",
       "119",
@@ -17300,6 +17291,7 @@
       "99"
     ],
     "airstrike": [
+      "144",
       "3039",
       "3057"
     ],
@@ -17333,7 +17325,6 @@
     ],
     "all-time high": [
       "112",
-      "58",
       "814"
     ],
     "alphabet": [
@@ -17480,8 +17471,6 @@
       "112",
       "1277",
       "1377",
-      "58",
-      "64",
       "813",
       "814"
     ],
@@ -17594,6 +17583,12 @@
     "bea": [
       "1951"
     ],
+    "bear market": [
+      "164"
+    ],
+    "bearish": [
+      "85"
+    ],
     "bears": [
       "224"
     ],
@@ -17664,14 +17659,11 @@
     "best supporting actress": [
       "141"
     ],
-    "betting": [
-      "81"
-    ],
     "bianca": [
       "3158"
     ],
-    "big tech": [
-      "110"
+    "big game": [
+      "81"
     ],
     "biggest company": [
       "65"
@@ -17772,12 +17764,14 @@
     "blackpink release album": [
       "2178"
     ],
+    "blockade": [
+      "144"
+    ],
     "blockbuster": [
       "84"
     ],
     "blockchain": [
       "1277",
-      "164",
       "166",
       "167",
       "168",
@@ -17788,6 +17782,7 @@
       "201",
       "207",
       "208",
+      "58",
       "64",
       "67",
       "85",
@@ -17848,6 +17843,9 @@
     "break the buck": [
       "1463"
     ],
+    "breakout": [
+      "164"
+    ],
     "bridge hack": [
       "1384"
     ],
@@ -17889,7 +17887,8 @@
     "btc/usd": [
       "145",
       "166",
-      "170"
+      "170",
+      "58"
     ],
     "buccaneers": [
       "224"
@@ -17904,14 +17903,15 @@
       "58"
     ],
     "bull run": [
+      "164",
       "166",
       "813"
     ],
+    "bullish": [
+      "85"
+    ],
     "bureau of economic analysis": [
       "1951"
-    ],
-    "buterin": [
-      "64"
     ],
     "buyout": [
       "159",
@@ -17931,10 +17931,10 @@
       "188"
     ],
     "candle": [
-      "1377",
-      "164"
+      "1377"
     ],
     "candlestick": [
+      "164",
       "64"
     ],
     "cap above": [
@@ -17998,9 +17998,11 @@
     "certiorari": [
       "1546"
     ],
+    "cfius": [
+      "159"
+    ],
     "champion": [
       "103",
-      "182",
       "200",
       "213",
       "79"
@@ -18044,6 +18046,9 @@
     "charlie heaton": [
       "3221"
     ],
+    "chart": [
+      "64"
+    ],
     "charts": [
       "214"
     ],
@@ -18054,9 +18059,6 @@
     "chelsea": [
       "80",
       "83"
-    ],
-    "chicago bears": [
-      "182"
     ],
     "chief executive": [
       "193"
@@ -18113,12 +18115,6 @@
     ],
     "clair obscur: expedition 33": [
       "151"
-    ],
-    "clash": [
-      "144"
-    ],
-    "class a": [
-      "110"
     ],
     "claude": [
       "200"
@@ -18238,7 +18234,7 @@
     ],
     "conference": [
       "181",
-      "81"
+      "182"
     ],
     "conference championship": [
       "223",
@@ -18363,7 +18359,8 @@
     ],
     "crypto market": [
       "145",
-      "170"
+      "170",
+      "58"
     ],
     "crypto theft": [
       "1384"
@@ -18379,10 +18376,13 @@
       "145",
       "156",
       "157",
+      "164",
       "166",
       "170",
       "58",
-      "814"
+      "64",
+      "814",
+      "85"
     ],
     "cup winner": [
       "79"
@@ -18535,8 +18535,7 @@
       "200"
     ],
     "defi": [
-      "64",
-      "85"
+      "64"
     ],
     "defi exploit": [
       "1384"
@@ -18576,9 +18575,6 @@
     "deposit facility rate": [
       "121"
     ],
-    "detroit lions": [
-      "182"
-    ],
     "dfr": [
       "121"
     ],
@@ -18598,6 +18594,7 @@
       "215"
     ],
     "digital asset": [
+      "164",
       "172"
     ],
     "digital currency": [
@@ -18605,10 +18602,12 @@
     ],
     "digital gold": [
       "145",
-      "164",
       "166",
       "170",
       "58"
+    ],
+    "dip": [
+      "110"
     ],
     "diplomacy": [
       "127"
@@ -18655,7 +18654,8 @@
       "182"
     ],
     "division champion": [
-      "179"
+      "179",
+      "182"
     ],
     "division title": [
       "180"
@@ -18664,6 +18664,9 @@
       "179",
       "180",
       "181"
+    ],
+    "divisional winner": [
+      "182"
     ],
     "dojo": [
       "198"
@@ -18697,6 +18700,9 @@
     "driving fsd": [
       "198"
     ],
+    "drone": [
+      "144"
+    ],
     "drone strike": [
       "3039",
       "3057"
@@ -18704,9 +18710,6 @@
     "duffer brothers": [
       "215",
       "3223"
-    ],
-    "dump": [
-      "164"
     ],
     "dungeons & dragons": [
       "3224"
@@ -18723,6 +18726,9 @@
     "eagles": [
       "180",
       "224"
+    ],
+    "earnings": [
+      "110"
     ],
     "earthquake": [
       "187",
@@ -19101,7 +19107,6 @@
     ],
     "final": [
       "79",
-      "81",
       "83"
     ],
     "final season": [
@@ -19109,7 +19114,8 @@
     ],
     "finals": [
       "103",
-      "213"
+      "213",
+      "81"
     ],
     "fired": [
       "193",
@@ -19173,10 +19179,10 @@
     "football": [
       "179",
       "181",
+      "182",
       "224",
       "79",
       "80",
-      "81",
       "83"
     ],
     "football fun": [
@@ -19296,9 +19302,6 @@
     "geological survey": [
       "2668"
     ],
-    "geopolitical tension": [
-      "144"
-    ],
     "girl group": [
       "132",
       "2178"
@@ -19415,8 +19418,9 @@
       "2668",
       "2669"
     ],
-    "green bay packers": [
-      "182"
+    "gridiron": [
+      "182",
+      "81"
     ],
     "grok": [
       "200"
@@ -19458,7 +19462,6 @@
       "132"
     ],
     "halving": [
-      "164",
       "58"
     ],
     "hamnet": [
@@ -19533,6 +19536,9 @@
     ],
     "hit december 2025": [
       "110"
+    ],
+    "hodl": [
+      "58"
     ],
     "hollow knight: silksong": [
       "151"
@@ -19706,6 +19712,9 @@
     ],
     "international football": [
       "79"
+    ],
+    "intervention": [
+      "144"
     ],
     "intervention jan": [
       "3132"
@@ -19894,9 +19903,6 @@
     "kiev": [
       "202"
     ],
-    "kinetic action": [
-      "144"
-    ],
     "kingdom come: deliverance ii": [
       "151"
     ],
@@ -19989,9 +19995,6 @@
     "kyiv": [
       "1278",
       "202"
-    ],
-    "l1": [
-      "85"
     ],
     "l2": [
       "119",
@@ -20090,9 +20093,6 @@
     ],
     "launches unsupervised full": [
       "198"
-    ],
-    "layer 1": [
-      "85"
     ],
     "layer 2": [
       "119",
@@ -20218,9 +20218,6 @@
     "lol lpl 2026": [
       "212"
     ],
-    "lombardi trophy": [
-      "81"
-    ],
     "lower chamber": [
       "135"
     ],
@@ -20265,9 +20262,6 @@
     ],
     "luka doncic": [
       "115"
-    ],
-    "m&a": [
-      "159"
     ],
     "machine learning": [
       "66"
@@ -20327,14 +20321,13 @@
       "157",
       "161",
       "162",
+      "164",
       "166",
       "170",
       "177",
-      "813",
-      "85"
+      "813"
     ],
     "market cap": [
-      "110",
       "152",
       "158",
       "1721",
@@ -20350,7 +20343,6 @@
       "207",
       "219",
       "220",
-      "64",
       "65",
       "67",
       "88",
@@ -20370,9 +20362,6 @@
     "market leader": [
       "65"
     ],
-    "market outlook": [
-      "58"
-    ],
     "market performance": [
       "126"
     ],
@@ -20380,7 +20369,8 @@
       "122",
       "124",
       "125",
-      "814"
+      "814",
+      "85"
     ],
     "market value": [
       "217",
@@ -20506,7 +20496,8 @@
       "136"
     ],
     "military action": [
-      "128"
+      "128",
+      "144"
     ],
     "military engagement": [
       "144"
@@ -20515,8 +20506,7 @@
       "1278"
     ],
     "military intervention": [
-      "128",
-      "144"
+      "128"
     ],
     "military standoff": [
       "188"
@@ -20526,9 +20516,6 @@
     ],
     "minji": [
       "132"
-    ],
-    "minnesota vikings": [
-      "182"
     ],
     "minsk agreements": [
       "127"
@@ -20644,6 +20631,7 @@
       "1951"
     ],
     "national football conference": [
+      "182",
       "224"
     ],
     "national football league": [
@@ -20654,7 +20642,7 @@
       "1270",
       "175"
     ],
-    "naval blockade": [
+    "naval": [
       "144"
     ],
     "nba": [
@@ -20731,7 +20719,6 @@
     ],
     "nfc": [
       "181",
-      "182",
       "224",
       "81"
     ],
@@ -20751,6 +20738,9 @@
       "180"
     ],
     "nfc north": [
+      "182"
+    ],
+    "nfc north title": [
       "182"
     ],
     "nfc north winner": [
@@ -20814,7 +20804,7 @@
     "nominees": [
       "139"
     ],
-    "north": [
+    "north division": [
       "182"
     ],
     "north winner": [
@@ -20841,9 +20831,6 @@
     ],
     "nvidia nvda close": [
       "123"
-    ],
-    "odds": [
-      "81"
     ],
     "offering": [
       "163",
@@ -20946,6 +20933,12 @@
     ],
     "opm": [
       "3114"
+    ],
+    "options": [
+      "110"
+    ],
+    "oracle": [
+      "159"
     ],
     "oscar": [
       "133",
@@ -21166,11 +21159,13 @@
     "pikachu illustrator sale": [
       "217"
     ],
+    "playoff spot": [
+      "182"
+    ],
     "playoffs": [
       "103",
       "179",
       "181",
-      "182",
       "213",
       "223",
       "224",
@@ -21215,9 +21210,6 @@
     "pope leo xiv": [
       "108"
     ],
-    "pos": [
-      "64"
-    ],
     "post-launch": [
       "95",
       "97"
@@ -21246,7 +21238,7 @@
       "139",
       "177",
       "220",
-      "85"
+      "64"
     ],
     "prediction market": [
       "208",
@@ -21276,6 +21268,7 @@
     ],
     "price": [
       "1098",
+      "110",
       "112",
       "1277",
       "1377",
@@ -21294,6 +21287,7 @@
       "216",
       "219",
       "220",
+      "64",
       "67",
       "813",
       "814",
@@ -21301,8 +21295,7 @@
       "97"
     ],
     "price action": [
-      "164",
-      "85"
+      "164"
     ],
     "price bitcoin": [
       "145",
@@ -21324,6 +21317,10 @@
     "price gold close": [
       "62"
     ],
+    "price prediction": [
+      "58",
+      "85"
+    ],
     "price solana": [
       "85"
     ],
@@ -21331,15 +21328,17 @@
       "85"
     ],
     "price target": [
-      "110",
       "123",
-      "58"
+      "85"
     ],
     "prime minister": [
       "150"
     ],
     "primera división": [
       "82"
+    ],
+    "pro football": [
+      "81"
     ],
     "profile": [
       "3222"
@@ -21377,9 +21376,6 @@
     ],
     "publicly traded": [
       "169"
-    ],
-    "pump": [
-      "164"
     ],
     "pump fun": [
       "174"
@@ -21421,6 +21417,10 @@
     ],
     "raise tariffs 2025": [
       "196"
+    ],
+    "rally": [
+      "110",
+      "164"
     ],
     "rams": [
       "179",
@@ -21703,7 +21703,6 @@
     ],
     "satoshi": [
       "1274",
-      "164",
       "166",
       "58"
     ],
@@ -21712,6 +21711,9 @@
     ],
     "satoshi move any": [
       "1274"
+    ],
+    "sb 60": [
+      "81"
     ],
     "scaling": [
       "208"
@@ -21732,9 +21734,7 @@
     "season": [
       "103",
       "115",
-      "182",
-      "3223",
-      "81"
+      "3223"
     ],
     "season 5": [
       "215"
@@ -21854,10 +21854,6 @@
     "smart contract exploit": [
       "1384"
     ],
-    "smart contracts": [
-      "64",
-      "85"
-    ],
     "snapshot": [
       "174"
     ],
@@ -21866,10 +21862,10 @@
       "80",
       "83"
     ],
-    "social media": [
-      "159"
-    ],
     "sol": [
+      "85"
+    ],
+    "sol price": [
       "85"
     ],
     "solana": [
@@ -21952,9 +21948,6 @@
     ],
     "special military operation": [
       "127"
-    ],
-    "spot etf": [
-      "164"
     ],
     "spot gold": [
       "62"
@@ -22044,7 +22037,6 @@
       "171"
     ],
     "stock price": [
-      "110",
       "122",
       "123",
       "124",
@@ -22083,11 +22075,7 @@
     "strikes iran march": [
       "3039"
     ],
-    "sunday": [
-      "81"
-    ],
     "super bowl": [
-      "182",
       "223",
       "224",
       "81"
@@ -22095,8 +22083,15 @@
     "super bowl champion": [
       "81"
     ],
+    "super bowl lx": [
+      "81"
+    ],
+    "superbowl": [
+      "81"
+    ],
     "support": [
-      "164"
+      "164",
+      "64"
     ],
     "supporting actor": [
       "140"
@@ -22149,9 +22144,6 @@
     "taiwan": [
       "3073"
     ],
-    "takeover": [
-      "159"
-    ],
     "tampa bay buccaneers": [
       "181"
     ],
@@ -22175,8 +22167,11 @@
     "tariffs 2025": [
       "196"
     ],
-    "tech giant": [
+    "tech": [
       "110"
+    ],
+    "technical analysis": [
+      "164"
     ],
     "tectonic": [
       "187"
@@ -22302,7 +22297,6 @@
       "216"
     ],
     "ticker": [
-      "110",
       "169"
     ],
     "tiktok": [
@@ -22350,7 +22344,6 @@
     ],
     "title": [
       "103",
-      "182",
       "213"
     ],
     "title winner": [
@@ -22368,7 +22361,6 @@
       "219",
       "220",
       "814",
-      "85",
       "96",
       "97",
       "98",
@@ -22485,6 +22477,7 @@
       "219",
       "220",
       "58",
+      "64",
       "813",
       "85",
       "88"
@@ -22772,6 +22765,7 @@
       "3158"
     ],
     "valuation": [
+      "110",
       "152",
       "158",
       "1721",
@@ -22840,16 +22834,15 @@
     "viewership": [
       "214"
     ],
+    "vince lombardi trophy": [
+      "81"
+    ],
     "visit china": [
       "142"
     ],
-    "vitalik": [
-      "64"
-    ],
     "volatility": [
       "164",
-      "58",
-      "85"
+      "64"
     ],
     "volodymyr zelenskyy": [
       "202"
@@ -23046,8 +23039,7 @@
       "151",
       "200",
       "213",
-      "79",
-      "81"
+      "79"
     ],
     "winner 2026": [
       "80",
@@ -23206,7 +23198,9 @@
     ],
     "2025": [
       "108",
-      "1270"
+      "1270",
+      "58",
+      "64"
     ],
     "2025 after": [
       "1384"
@@ -23218,8 +23212,8 @@
     "2025 forecast": [
       "123",
       "125",
-      "58",
-      "62"
+      "62",
+      "85"
     ],
     "2025 movies": [
       "84"
@@ -23615,9 +23609,6 @@
     "ai trading competition": [
       "200"
     ],
-    "air strike": [
-      "144"
-    ],
     "airdrop": [
       "118",
       "119",
@@ -23632,6 +23623,7 @@
       "99"
     ],
     "airstrike": [
+      "144",
       "3039",
       "3057"
     ],
@@ -23665,7 +23657,6 @@
     ],
     "all-time high": [
       "112",
-      "58",
       "814"
     ],
     "alphabet": [
@@ -23812,8 +23803,6 @@
       "112",
       "1277",
       "1377",
-      "58",
-      "64",
       "813",
       "814"
     ],
@@ -23926,6 +23915,12 @@
     "bea": [
       "1951"
     ],
+    "bear market": [
+      "164"
+    ],
+    "bearish": [
+      "85"
+    ],
     "bears": [
       "224"
     ],
@@ -23996,14 +23991,11 @@
     "best supporting actress": [
       "141"
     ],
-    "betting": [
-      "81"
-    ],
     "bianca": [
       "3158"
     ],
-    "big tech": [
-      "110"
+    "big game": [
+      "81"
     ],
     "biggest company": [
       "65"
@@ -24104,12 +24096,14 @@
     "blackpink release album": [
       "2178"
     ],
+    "blockade": [
+      "144"
+    ],
     "blockbuster": [
       "84"
     ],
     "blockchain": [
       "1277",
-      "164",
       "166",
       "167",
       "168",
@@ -24120,6 +24114,7 @@
       "201",
       "207",
       "208",
+      "58",
       "64",
       "67",
       "85",
@@ -24180,6 +24175,9 @@
     "break the buck": [
       "1463"
     ],
+    "breakout": [
+      "164"
+    ],
     "bridge hack": [
       "1384"
     ],
@@ -24221,7 +24219,8 @@
     "btc/usd": [
       "145",
       "166",
-      "170"
+      "170",
+      "58"
     ],
     "buccaneers": [
       "224"
@@ -24236,14 +24235,15 @@
       "58"
     ],
     "bull run": [
+      "164",
       "166",
       "813"
     ],
+    "bullish": [
+      "85"
+    ],
     "bureau of economic analysis": [
       "1951"
-    ],
-    "buterin": [
-      "64"
     ],
     "buyout": [
       "159",
@@ -24263,10 +24263,10 @@
       "188"
     ],
     "candle": [
-      "1377",
-      "164"
+      "1377"
     ],
     "candlestick": [
+      "164",
       "64"
     ],
     "cap above": [
@@ -24330,9 +24330,11 @@
     "certiorari": [
       "1546"
     ],
+    "cfius": [
+      "159"
+    ],
     "champion": [
       "103",
-      "182",
       "200",
       "213",
       "79"
@@ -24376,6 +24378,9 @@
     "charlie heaton": [
       "3221"
     ],
+    "chart": [
+      "64"
+    ],
     "charts": [
       "214"
     ],
@@ -24386,9 +24391,6 @@
     "chelsea": [
       "80",
       "83"
-    ],
-    "chicago bears": [
-      "182"
     ],
     "chief executive": [
       "193"
@@ -24445,12 +24447,6 @@
     ],
     "clair obscur: expedition 33": [
       "151"
-    ],
-    "clash": [
-      "144"
-    ],
-    "class a": [
-      "110"
     ],
     "claude": [
       "200"
@@ -24570,7 +24566,7 @@
     ],
     "conference": [
       "181",
-      "81"
+      "182"
     ],
     "conference championship": [
       "223",
@@ -24695,7 +24691,8 @@
     ],
     "crypto market": [
       "145",
-      "170"
+      "170",
+      "58"
     ],
     "crypto theft": [
       "1384"
@@ -24711,10 +24708,13 @@
       "145",
       "156",
       "157",
+      "164",
       "166",
       "170",
       "58",
-      "814"
+      "64",
+      "814",
+      "85"
     ],
     "cup winner": [
       "79"
@@ -24867,8 +24867,7 @@
       "200"
     ],
     "defi": [
-      "64",
-      "85"
+      "64"
     ],
     "defi exploit": [
       "1384"
@@ -24908,9 +24907,6 @@
     "deposit facility rate": [
       "121"
     ],
-    "detroit lions": [
-      "182"
-    ],
     "dfr": [
       "121"
     ],
@@ -24930,6 +24926,7 @@
       "215"
     ],
     "digital asset": [
+      "164",
       "172"
     ],
     "digital currency": [
@@ -24937,10 +24934,12 @@
     ],
     "digital gold": [
       "145",
-      "164",
       "166",
       "170",
       "58"
+    ],
+    "dip": [
+      "110"
     ],
     "diplomacy": [
       "127"
@@ -24987,7 +24986,8 @@
       "182"
     ],
     "division champion": [
-      "179"
+      "179",
+      "182"
     ],
     "division title": [
       "180"
@@ -24996,6 +24996,9 @@
       "179",
       "180",
       "181"
+    ],
+    "divisional winner": [
+      "182"
     ],
     "dojo": [
       "198"
@@ -25029,6 +25032,9 @@
     "driving fsd": [
       "198"
     ],
+    "drone": [
+      "144"
+    ],
     "drone strike": [
       "3039",
       "3057"
@@ -25036,9 +25042,6 @@
     "duffer brothers": [
       "215",
       "3223"
-    ],
-    "dump": [
-      "164"
     ],
     "dungeons & dragons": [
       "3224"
@@ -25055,6 +25058,9 @@
     "eagles": [
       "180",
       "224"
+    ],
+    "earnings": [
+      "110"
     ],
     "earthquake": [
       "187",
@@ -25433,7 +25439,6 @@
     ],
     "final": [
       "79",
-      "81",
       "83"
     ],
     "final season": [
@@ -25441,7 +25446,8 @@
     ],
     "finals": [
       "103",
-      "213"
+      "213",
+      "81"
     ],
     "fired": [
       "193",
@@ -25505,10 +25511,10 @@
     "football": [
       "179",
       "181",
+      "182",
       "224",
       "79",
       "80",
-      "81",
       "83"
     ],
     "football fun": [
@@ -25628,9 +25634,6 @@
     "geological survey": [
       "2668"
     ],
-    "geopolitical tension": [
-      "144"
-    ],
     "girl group": [
       "132",
       "2178"
@@ -25747,8 +25750,9 @@
       "2668",
       "2669"
     ],
-    "green bay packers": [
-      "182"
+    "gridiron": [
+      "182",
+      "81"
     ],
     "grok": [
       "200"
@@ -25790,7 +25794,6 @@
       "132"
     ],
     "halving": [
-      "164",
       "58"
     ],
     "hamnet": [
@@ -25865,6 +25868,9 @@
     ],
     "hit december 2025": [
       "110"
+    ],
+    "hodl": [
+      "58"
     ],
     "hollow knight: silksong": [
       "151"
@@ -26038,6 +26044,9 @@
     ],
     "international football": [
       "79"
+    ],
+    "intervention": [
+      "144"
     ],
     "intervention jan": [
       "3132"
@@ -26226,9 +26235,6 @@
     "kiev": [
       "202"
     ],
-    "kinetic action": [
-      "144"
-    ],
     "kingdom come: deliverance ii": [
       "151"
     ],
@@ -26321,9 +26327,6 @@
     "kyiv": [
       "1278",
       "202"
-    ],
-    "l1": [
-      "85"
     ],
     "l2": [
       "119",
@@ -26422,9 +26425,6 @@
     ],
     "launches unsupervised full": [
       "198"
-    ],
-    "layer 1": [
-      "85"
     ],
     "layer 2": [
       "119",
@@ -26550,9 +26550,6 @@
     "lol lpl 2026": [
       "212"
     ],
-    "lombardi trophy": [
-      "81"
-    ],
     "lower chamber": [
       "135"
     ],
@@ -26597,9 +26594,6 @@
     ],
     "luka doncic": [
       "115"
-    ],
-    "m&a": [
-      "159"
     ],
     "machine learning": [
       "66"
@@ -26659,14 +26653,13 @@
       "157",
       "161",
       "162",
+      "164",
       "166",
       "170",
       "177",
-      "813",
-      "85"
+      "813"
     ],
     "market cap": [
-      "110",
       "152",
       "158",
       "1721",
@@ -26682,7 +26675,6 @@
       "207",
       "219",
       "220",
-      "64",
       "65",
       "67",
       "88",
@@ -26702,9 +26694,6 @@
     "market leader": [
       "65"
     ],
-    "market outlook": [
-      "58"
-    ],
     "market performance": [
       "126"
     ],
@@ -26712,7 +26701,8 @@
       "122",
       "124",
       "125",
-      "814"
+      "814",
+      "85"
     ],
     "market value": [
       "217",
@@ -26838,7 +26828,8 @@
       "136"
     ],
     "military action": [
-      "128"
+      "128",
+      "144"
     ],
     "military engagement": [
       "144"
@@ -26847,8 +26838,7 @@
       "1278"
     ],
     "military intervention": [
-      "128",
-      "144"
+      "128"
     ],
     "military standoff": [
       "188"
@@ -26858,9 +26848,6 @@
     ],
     "minji": [
       "132"
-    ],
-    "minnesota vikings": [
-      "182"
     ],
     "minsk agreements": [
       "127"
@@ -26976,6 +26963,7 @@
       "1951"
     ],
     "national football conference": [
+      "182",
       "224"
     ],
     "national football league": [
@@ -26986,7 +26974,7 @@
       "1270",
       "175"
     ],
-    "naval blockade": [
+    "naval": [
       "144"
     ],
     "nba": [
@@ -27063,7 +27051,6 @@
     ],
     "nfc": [
       "181",
-      "182",
       "224",
       "81"
     ],
@@ -27083,6 +27070,9 @@
       "180"
     ],
     "nfc north": [
+      "182"
+    ],
+    "nfc north title": [
       "182"
     ],
     "nfc north winner": [
@@ -27146,7 +27136,7 @@
     "nominees": [
       "139"
     ],
-    "north": [
+    "north division": [
       "182"
     ],
     "north winner": [
@@ -27173,9 +27163,6 @@
     ],
     "nvidia nvda close": [
       "123"
-    ],
-    "odds": [
-      "81"
     ],
     "offering": [
       "163",
@@ -27278,6 +27265,12 @@
     ],
     "opm": [
       "3114"
+    ],
+    "options": [
+      "110"
+    ],
+    "oracle": [
+      "159"
     ],
     "oscar": [
       "133",
@@ -27498,11 +27491,13 @@
     "pikachu illustrator sale": [
       "217"
     ],
+    "playoff spot": [
+      "182"
+    ],
     "playoffs": [
       "103",
       "179",
       "181",
-      "182",
       "213",
       "223",
       "224",
@@ -27547,9 +27542,6 @@
     "pope leo xiv": [
       "108"
     ],
-    "pos": [
-      "64"
-    ],
     "post-launch": [
       "95",
       "97"
@@ -27578,7 +27570,7 @@
       "139",
       "177",
       "220",
-      "85"
+      "64"
     ],
     "prediction market": [
       "208",
@@ -27608,6 +27600,7 @@
     ],
     "price": [
       "1098",
+      "110",
       "112",
       "1277",
       "1377",
@@ -27626,6 +27619,7 @@
       "216",
       "219",
       "220",
+      "64",
       "67",
       "813",
       "814",
@@ -27633,8 +27627,7 @@
       "97"
     ],
     "price action": [
-      "164",
-      "85"
+      "164"
     ],
     "price bitcoin": [
       "145",
@@ -27656,6 +27649,10 @@
     "price gold close": [
       "62"
     ],
+    "price prediction": [
+      "58",
+      "85"
+    ],
     "price solana": [
       "85"
     ],
@@ -27663,15 +27660,17 @@
       "85"
     ],
     "price target": [
-      "110",
       "123",
-      "58"
+      "85"
     ],
     "prime minister": [
       "150"
     ],
     "primera división": [
       "82"
+    ],
+    "pro football": [
+      "81"
     ],
     "profile": [
       "3222"
@@ -27709,9 +27708,6 @@
     ],
     "publicly traded": [
       "169"
-    ],
-    "pump": [
-      "164"
     ],
     "pump fun": [
       "174"
@@ -27753,6 +27749,10 @@
     ],
     "raise tariffs 2025": [
       "196"
+    ],
+    "rally": [
+      "110",
+      "164"
     ],
     "rams": [
       "179",
@@ -28035,7 +28035,6 @@
     ],
     "satoshi": [
       "1274",
-      "164",
       "166",
       "58"
     ],
@@ -28044,6 +28043,9 @@
     ],
     "satoshi move any": [
       "1274"
+    ],
+    "sb 60": [
+      "81"
     ],
     "scaling": [
       "208"
@@ -28064,9 +28066,7 @@
     "season": [
       "103",
       "115",
-      "182",
-      "3223",
-      "81"
+      "3223"
     ],
     "season 5": [
       "215"
@@ -28186,10 +28186,6 @@
     "smart contract exploit": [
       "1384"
     ],
-    "smart contracts": [
-      "64",
-      "85"
-    ],
     "snapshot": [
       "174"
     ],
@@ -28198,10 +28194,10 @@
       "80",
       "83"
     ],
-    "social media": [
-      "159"
-    ],
     "sol": [
+      "85"
+    ],
+    "sol price": [
       "85"
     ],
     "solana": [
@@ -28284,9 +28280,6 @@
     ],
     "special military operation": [
       "127"
-    ],
-    "spot etf": [
-      "164"
     ],
     "spot gold": [
       "62"
@@ -28376,7 +28369,6 @@
       "171"
     ],
     "stock price": [
-      "110",
       "122",
       "123",
       "124",
@@ -28415,11 +28407,7 @@
     "strikes iran march": [
       "3039"
     ],
-    "sunday": [
-      "81"
-    ],
     "super bowl": [
-      "182",
       "223",
       "224",
       "81"
@@ -28427,8 +28415,15 @@
     "super bowl champion": [
       "81"
     ],
+    "super bowl lx": [
+      "81"
+    ],
+    "superbowl": [
+      "81"
+    ],
     "support": [
-      "164"
+      "164",
+      "64"
     ],
     "supporting actor": [
       "140"
@@ -28481,9 +28476,6 @@
     "taiwan": [
       "3073"
     ],
-    "takeover": [
-      "159"
-    ],
     "tampa bay buccaneers": [
       "181"
     ],
@@ -28507,8 +28499,11 @@
     "tariffs 2025": [
       "196"
     ],
-    "tech giant": [
+    "tech": [
       "110"
+    ],
+    "technical analysis": [
+      "164"
     ],
     "tectonic": [
       "187"
@@ -28634,7 +28629,6 @@
       "216"
     ],
     "ticker": [
-      "110",
       "169"
     ],
     "tiktok": [
@@ -28682,7 +28676,6 @@
     ],
     "title": [
       "103",
-      "182",
       "213"
     ],
     "title winner": [
@@ -28700,7 +28693,6 @@
       "219",
       "220",
       "814",
-      "85",
       "96",
       "97",
       "98",
@@ -28817,6 +28809,7 @@
       "219",
       "220",
       "58",
+      "64",
       "813",
       "85",
       "88"
@@ -29104,6 +29097,7 @@
       "3158"
     ],
     "valuation": [
+      "110",
       "152",
       "158",
       "1721",
@@ -29172,16 +29166,15 @@
     "viewership": [
       "214"
     ],
+    "vince lombardi trophy": [
+      "81"
+    ],
     "visit china": [
       "142"
     ],
-    "vitalik": [
-      "64"
-    ],
     "volatility": [
       "164",
-      "58",
-      "85"
+      "64"
     ],
     "volodymyr zelenskyy": [
       "202"
@@ -29378,8 +29371,7 @@
       "151",
       "200",
       "213",
-      "79",
-      "81"
+      "79"
     ],
     "winner 2026": [
       "80",
