@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2025-12-28 21:36:35 UTC+8",
+    "generatedAt": "2025-12-28 21:47:05 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://opinion.trade",
     "model": "GLM-4.7",
@@ -8,11 +8,11 @@
     "debug": false,
     "counts": {
       "seen": 792,
-      "kept": 646,
-      "markets": 159,
-      "keywords": 1758,
+      "kept": 597,
+      "markets": 150,
+      "keywords": 1732,
       "events": {
-        "events": 119
+        "events": 110
       },
       "skipped": {
         "statusEnum": 81,
@@ -21,13 +21,14 @@
         "cutoff_zero_kept": 70,
         "resolved": 0,
         "missing_id": 0,
-        "missing_title": 0
+        "missing_title": 0,
+        "title_pattern_filtered": 49
       },
       "ai": {
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 119,
+        "reused": 110,
         "calls": 0,
         "retries": 0,
         "fallback": 0,
@@ -357,43 +358,6 @@
       "sigCore": "0b168bb7",
       "reused": false
     },
-    "177": {
-      "title": "Bitcoin above ... on December 19?(By 12:00 ET)",
-      "marketIds": [
-        "177"
-      ],
-      "bestMarketId": "177",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "price",
-        "trading",
-        "market",
-        "december 19",
-        "12:00 et",
-        "above",
-        "threshold",
-        "prediction",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "sig": "75bdb5f5",
-      "sigFull": "75bdb5f5",
-      "sigCore": "38982d58",
-      "reused": false
-    },
     "175": {
       "title": "Will Paradex launch a token by ...?",
       "marketIds": [
@@ -581,45 +545,6 @@
       "sigCore": "03ad58a2",
       "reused": false
     },
-    "170": {
-      "title": "Bitcoin above ... on December 17?(By 12:00 ET)",
-      "marketIds": [
-        "170"
-      ],
-      "bestMarketId": "170",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "cryptocurrency",
-        "price",
-        "trading",
-        "market",
-        "digital gold",
-        "btc price",
-        "bitcoin price",
-        "crypto market",
-        "btc/usd",
-        "bitcoin usd",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "sig": "8fb458ad",
-      "sigFull": "8fb458ad",
-      "sigCore": "12e46956",
-      "reused": false
-    },
     "169": {
       "title": "What will SpaceX's public ticker be?",
       "marketIds": [
@@ -728,45 +653,6 @@
       "sig": "6f5087ab",
       "sigFull": "6f5087ab",
       "sigCore": "18a252c3",
-      "reused": false
-    },
-    "166": {
-      "title": "Bitcoin above ... on December 16?(By 12:00 ET)",
-      "marketIds": [
-        "166"
-      ],
-      "bestMarketId": "166",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "cryptocurrency",
-        "price",
-        "trading",
-        "market",
-        "bull run",
-        "digital gold",
-        "satoshi",
-        "blockchain",
-        "btc/usd",
-        "exchange rate",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "sig": "e25838e9",
-      "sigFull": "e25838e9",
-      "sigCore": "800a8755",
       "reused": false
     },
     "163": {
@@ -888,84 +774,6 @@
       "sigCore": "02538811",
       "reused": false
     },
-    "162": {
-      "title": "Bitcoin above ... on December 13?(By 12:00 ET)",
-      "marketIds": [
-        "162"
-      ],
-      "bestMarketId": "162",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "price",
-        "trading",
-        "market",
-        "above",
-        "december 13",
-        "12:00 et",
-        "94k",
-        "86k",
-        "90k",
-        "92k",
-        "88k",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "sig": "2ffd69b0",
-      "sigFull": "2ffd69b0",
-      "sigCore": "c77ce152",
-      "reused": false
-    },
-    "161": {
-      "title": "Bitcoin above ... on December 12?(By 12:00 ET)",
-      "marketIds": [
-        "161"
-      ],
-      "bestMarketId": "161",
-      "bestLabels": null,
-      "keywords": [
-        "btc",
-        "bitcoin",
-        "crypto",
-        "price",
-        "trading",
-        "market",
-        "above",
-        "december 12",
-        "12:00 et",
-        "threshold",
-        "level",
-        "target",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "sig": "b172eea8",
-      "sigFull": "b172eea8",
-      "sigCore": "34a2ff51",
-      "reused": false
-    },
     "160": {
       "title": "TikTok sale announced by...?",
       "marketIds": [
@@ -1046,48 +854,6 @@
       "sig": "48767441",
       "sigFull": "48767441",
       "sigCore": "f93e270d",
-      "reused": false
-    },
-    "157": {
-      "title": "Bitcoin above ... on December 11?(By 12:00 ET)",
-      "marketIds": [
-        "157"
-      ],
-      "bestMarketId": "157",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "cryptocurrency",
-        "price",
-        "trading",
-        "market",
-        "above",
-        "december 11",
-        "12:00 et",
-        "96k",
-        "94k",
-        "92k",
-        "90k",
-        "88k",
-        "86k",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "sig": "bd16204a",
-      "sigFull": "bd16204a",
-      "sigCore": "a1c91d50",
       "reused": false
     },
     "97": {
@@ -2586,44 +2352,6 @@
       "sig": "2c8b9acf",
       "sigFull": "2c8b9acf",
       "sigCore": "09e6a707",
-      "reused": false
-    },
-    "156": {
-      "title": "Bitcoin above ... on December 10?(By 12:00 ET)",
-      "marketIds": [
-        "156"
-      ],
-      "bestMarketId": "156",
-      "bestLabels": null,
-      "keywords": [
-        "btc",
-        "bitcoin",
-        "crypto",
-        "price",
-        "trading",
-        "market",
-        "usd",
-        "us dollar",
-        "digital currency",
-        "cryptocurrency",
-        "spot price",
-        "exchange rate",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "sig": "b909ef4d",
-      "sigFull": "b909ef4d",
-      "sigCore": "0eef3b4f",
       "reused": false
     },
     "61": {
@@ -4178,42 +3906,6 @@
       "sigCore": "03450c07",
       "reused": false
     },
-    "216": {
-      "title": "Bitcoin above ... on December 26?(12:00 ET)",
-      "marketIds": [
-        "216"
-      ],
-      "bestMarketId": "216",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "price",
-        "trading",
-        "december 26",
-        "12:00 et",
-        "above",
-        "threshold",
-        "prediction market",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "sig": "24b29eb8",
-      "sigFull": "24b29eb8",
-      "sigCore": "aab298fb",
-      "reused": false
-    },
     "215": {
       "title": "Who will die in Stranger Things: Season 5?",
       "marketIds": [
@@ -4556,47 +4248,6 @@
       "sig": "07fe23ea",
       "sigFull": "07fe23ea",
       "sigCore": "4ffb536f",
-      "reused": false
-    },
-    "164": {
-      "title": "Bitcoin above ... on December 15?(By 12:00 ET)",
-      "marketIds": [
-        "164"
-      ],
-      "bestMarketId": "164",
-      "bestLabels": null,
-      "keywords": [
-        "crypto",
-        "cryptocurrency",
-        "digital asset",
-        "price action",
-        "trading",
-        "market",
-        "volatility",
-        "resistance",
-        "support",
-        "breakout",
-        "rally",
-        "technical analysis",
-        "candlestick",
-        "bull run",
-        "bear market",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "sig": "9336ae19",
-      "sigFull": "9336ae19",
-      "sigCore": "ed30a554",
       "reused": false
     },
     "81": {
@@ -5563,75 +5214,6 @@
       "yesTokenId": "104711475262427879379267104315081581272177288532048014526232473209650289646619",
       "noTokenId": "108649531528279062573870341679052876554456979866731334514663223104173073332619"
     },
-    "177": {
-      "title": "Bitcoin above ... on December 19?(By 12:00 ET)",
-      "url": "https://opinion.trade/market/177?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "price",
-        "trading",
-        "market",
-        "december 19",
-        "12:00 et",
-        "above",
-        "threshold",
-        "prediction",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2637",
-          "title": "84,000",
-          "yesTokenId": "78714195383145853755490546658761170208130409764996639731659589264505480283173",
-          "noTokenId": "111372962890899158180367405644269349479399202195338759008703686089192268363320"
-        },
-        {
-          "marketId": "2638",
-          "title": "86,000",
-          "yesTokenId": "61813946122021976028342986103501857640430894218648325007583746063951420872188",
-          "noTokenId": "85641559669381888430289515906985500955098759686184045041235277653800449219566"
-        },
-        {
-          "marketId": "2639",
-          "title": "88,000",
-          "yesTokenId": "51280614253504079266993429531367333957839705654359030511706415780076106566712",
-          "noTokenId": "41690169522834690505876518059834368759836193820491725542365217089362246490875"
-        },
-        {
-          "marketId": "2640",
-          "title": "90,000",
-          "yesTokenId": "78902066759367507709591673580283694545898319821095344731273063678853017532265",
-          "noTokenId": "87153674027084652336968856045652817049267940311916397200806200857152328897286"
-        },
-        {
-          "marketId": "2641",
-          "title": "92,000",
-          "yesTokenId": "61375898772345352763947215302117101192032436629372889800771980181633855931532",
-          "noTokenId": "47598972841911553615245279105730970647696492603040380667999788195818695371792"
-        }
-      ],
-      "yesTokenId": "61813946122021976028342986103501857640430894218648325007583746063951420872188",
-      "noTokenId": "85641559669381888430289515906985500955098759686184045041235277653800449219566"
-    },
     "175": {
       "title": "Will Paradex launch a token by ...?",
       "url": "https://opinion.trade/market/175?ref=opinion_hud",
@@ -5937,83 +5519,6 @@
       "yesTokenId": "6059135867880071878220126072279319738283915779009411592158331505001305613812",
       "noTokenId": "11138109899680876573648906995629265789643063583550485233791132155944078676167"
     },
-    "170": {
-      "title": "Bitcoin above ... on December 17?(By 12:00 ET)",
-      "url": "https://opinion.trade/market/170?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "cryptocurrency",
-        "price",
-        "trading",
-        "market",
-        "digital gold",
-        "btc price",
-        "bitcoin price",
-        "crypto market",
-        "btc/usd",
-        "bitcoin usd",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2583",
-          "title": "84,000",
-          "yesTokenId": "85466028170008991267665329740665776717310355552219270536768784037175955481771",
-          "noTokenId": "9454032988833496283350074560485046123068178163249283070571241915271840474651"
-        },
-        {
-          "marketId": "2584",
-          "title": "86,000",
-          "yesTokenId": "36584924423490533235523118540773243702099273362613087889838814062939401247907",
-          "noTokenId": "60372520385081352788934203277560391607565186188701118692388905360165243453674"
-        },
-        {
-          "marketId": "2585",
-          "title": "88,000",
-          "yesTokenId": "59676706693526599307702933756926349311364885586969610206251098154682031213933",
-          "noTokenId": "72835334340482179519890188231823501685191273241887593171271359634933539154723"
-        },
-        {
-          "marketId": "2586",
-          "title": "90,000",
-          "yesTokenId": "23319819697454574414268859132138625564854028398919933641161546677986583371526",
-          "noTokenId": "45113089671837649286201526122443949166087019934455462069215792379831738682403"
-        },
-        {
-          "marketId": "2587",
-          "title": "92,000",
-          "yesTokenId": "18628173277934976369628860787775099714227422608690657174365044828977191158930",
-          "noTokenId": "50356108056233380206820465886704562605085236051929685001528067942112929590863"
-        },
-        {
-          "marketId": "2588",
-          "title": "94,000",
-          "yesTokenId": "10280721989212864815884499912987605438499027693659489917718748705298065030610",
-          "noTokenId": "7775851961405463388176342822786026296553999030928504005464968742185863227889"
-        }
-      ],
-      "yesTokenId": "85466028170008991267665329740665776717310355552219270536768784037175955481771",
-      "noTokenId": "9454032988833496283350074560485046123068178163249283070571241915271840474651"
-    },
     "169": {
       "title": "What will SpaceX's public ticker be?",
       "url": "https://opinion.trade/market/169?ref=opinion_hud",
@@ -6219,83 +5724,6 @@
       ],
       "yesTokenId": "99186205221790643173381886436314691893618093027056421457572330309331456551538",
       "noTokenId": "79521704038751323329715849165718857463342550779731950420415035959360563777583"
-    },
-    "166": {
-      "title": "Bitcoin above ... on December 16?(By 12:00 ET)",
-      "url": "https://opinion.trade/market/166?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "cryptocurrency",
-        "price",
-        "trading",
-        "market",
-        "bull run",
-        "digital gold",
-        "satoshi",
-        "blockchain",
-        "btc/usd",
-        "exchange rate",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2550",
-          "title": "82,000",
-          "yesTokenId": "59931125657561355606532646917600570420406648332430421883250155421704139741663",
-          "noTokenId": "6919169712616551824746242128855310584371217844266764717513926001320254994323"
-        },
-        {
-          "marketId": "2551",
-          "title": "84,000",
-          "yesTokenId": "60398314699072658841541282235300742839348192230534616795877373955459291621548",
-          "noTokenId": "39485931843531052753623377821367519390017144704573608335669636507114993293469"
-        },
-        {
-          "marketId": "2552",
-          "title": "86,000",
-          "yesTokenId": "21371582508965572989069106877048376569572554284582971766186773827512545074995",
-          "noTokenId": "77146605372331199926035513791135060916471532010510628709660755407250822922551"
-        },
-        {
-          "marketId": "2553",
-          "title": "88,000",
-          "yesTokenId": "78500055513653782489511654342001350491661009390971706335229732284381206103084",
-          "noTokenId": "104544581483833947993799372778222424678125326040905395501337780486109050250690"
-        },
-        {
-          "marketId": "2554",
-          "title": "90,000",
-          "yesTokenId": "32918936227075686155781244244311996129621909533766127862567251107776084579981",
-          "noTokenId": "49406763527613724588259881457884999692852994772102980303281352389347831040317"
-        },
-        {
-          "marketId": "2555",
-          "title": "92,000",
-          "yesTokenId": "26875792989282203196103390666133979332519709438448577551928091348132561952859",
-          "noTokenId": "66508412765743747928789668322350338625268047917216151069293250489296340528783"
-        }
-      ],
-      "yesTokenId": "32918936227075686155781244244311996129621909533766127862567251107776084579981",
-      "noTokenId": "49406763527613724588259881457884999692852994772102980303281352389347831040317"
     },
     "163": {
       "title": "IPOs before 2027?",
@@ -6530,154 +5958,6 @@
       "yesTokenId": "103121659626042396217317912692799764743956137373195307788691486315601431129916",
       "noTokenId": "38661843432527246914601695597239774317191394277966803421933469378924694331750"
     },
-    "162": {
-      "title": "Bitcoin above ... on December 13?(By 12:00 ET)",
-      "url": "https://opinion.trade/market/162?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "price",
-        "trading",
-        "market",
-        "above",
-        "december 13",
-        "12:00 et",
-        "94k",
-        "86k",
-        "90k",
-        "92k",
-        "88k",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2494",
-          "title": "86,000",
-          "yesTokenId": "85728095250778360915182658580144097124520714329265650110189237573047276846237",
-          "noTokenId": "28137150141362548224591797026321562804546765611384295986678159977973094337125"
-        },
-        {
-          "marketId": "2495",
-          "title": "88,000",
-          "yesTokenId": "59425497218337325185775680011874263356034300738709420601262872453824752390333",
-          "noTokenId": "80011565699363733706909327116999181420139486768900680918756331488806849497167"
-        },
-        {
-          "marketId": "2496",
-          "title": "90,000",
-          "yesTokenId": "51639611099593003993147461026417509023319832462455089265176603441881064861659",
-          "noTokenId": "99848415207301567308793459619822518767012305151100672950947846139836665744865"
-        },
-        {
-          "marketId": "2497",
-          "title": "92,000",
-          "yesTokenId": "32914606372941220335704382478258289998465350891016032715148634679335959842601",
-          "noTokenId": "24229786114897451053197417618552836413529842384174478397088739842758728703681"
-        },
-        {
-          "marketId": "2498",
-          "title": "94,000",
-          "yesTokenId": "17709009214773545478618508797888200317055493415737042566579252994164790135020",
-          "noTokenId": "15737112288301293297635191815772280990017218133546463808086360657270172645076"
-        }
-      ],
-      "yesTokenId": "85728095250778360915182658580144097124520714329265650110189237573047276846237",
-      "noTokenId": "28137150141362548224591797026321562804546765611384295986678159977973094337125"
-    },
-    "161": {
-      "title": "Bitcoin above ... on December 12?(By 12:00 ET)",
-      "url": "https://opinion.trade/market/161?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "btc",
-        "bitcoin",
-        "crypto",
-        "price",
-        "trading",
-        "market",
-        "above",
-        "december 12",
-        "12:00 et",
-        "threshold",
-        "level",
-        "target",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2479",
-          "title": "84,000",
-          "yesTokenId": "102322390512651527145388762471406582648373941112450646928145850322891051779263",
-          "noTokenId": "28305687330452243779476004252429286525119166687710596995217221024442026745500"
-        },
-        {
-          "marketId": "2480",
-          "title": "86,000",
-          "yesTokenId": "55253555094047592997120879201346773001081828129077398226064584800228615296298",
-          "noTokenId": "58448189864255249674443409570665283748062674788998020500138854804146951906095"
-        },
-        {
-          "marketId": "2481",
-          "title": "88,000",
-          "yesTokenId": "372724310108086191538666102594632533053813544412218508015298693755668591076",
-          "noTokenId": "866851806148579068885649035594644496512995936457616753767997248144030788920"
-        },
-        {
-          "marketId": "2482",
-          "title": "90,000",
-          "yesTokenId": "101329215472484470211611358319002711442178878414417302732787903929535332273283",
-          "noTokenId": "107633146110195494640035411420127176354041772730211043525412532614204406093305"
-        },
-        {
-          "marketId": "2483",
-          "title": "92,000",
-          "yesTokenId": "2725671662741161166923462193913183662079461801750378743630769445923953799056",
-          "noTokenId": "70103140045497417831353036886916253092308977496191877703095492861085112283681"
-        },
-        {
-          "marketId": "2484",
-          "title": "94,000",
-          "yesTokenId": "94579549199347801936352889861757907943280389621403583326455131976947674547280",
-          "noTokenId": "70401063614658369943344362860382975051888888538844077014775969768481255331060"
-        }
-      ],
-      "yesTokenId": "102322390512651527145388762471406582648373941112450646928145850322891051779263",
-      "noTokenId": "28305687330452243779476004252429286525119166687710596995217221024442026745500"
-    },
     "160": {
       "title": "TikTok sale announced by...?",
       "url": "https://opinion.trade/market/160?ref=opinion_hud",
@@ -6823,86 +6103,6 @@
       ],
       "yesTokenId": "81133869454353425371884378785476335431555212749441345139648022233974747899951",
       "noTokenId": "26453059385360584418250340236724565650792296092995463511714569740861521954510"
-    },
-    "157": {
-      "title": "Bitcoin above ... on December 11?(By 12:00 ET)",
-      "url": "https://opinion.trade/market/157?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "cryptocurrency",
-        "price",
-        "trading",
-        "market",
-        "above",
-        "december 11",
-        "12:00 et",
-        "96k",
-        "94k",
-        "92k",
-        "90k",
-        "88k",
-        "86k",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2433",
-          "title": "86,000",
-          "yesTokenId": "86364487375322130468040647337467491644318082167931265192609369913848896972390",
-          "noTokenId": "10623589493514742975868046760969914911718852659760549282380305269170407872532"
-        },
-        {
-          "marketId": "2434",
-          "title": "88,000",
-          "yesTokenId": "74729399745149452039613226822668869793421919263178299756537616479387555170581",
-          "noTokenId": "8366967466218103029115556016625856562498899027482808980355066415061849944659"
-        },
-        {
-          "marketId": "2435",
-          "title": "90,000",
-          "yesTokenId": "82571852926293522025791772610506822623560009653292432612746438132809332627595",
-          "noTokenId": "53834924300673609237363070620214023333082728138763025714141633974059798068521"
-        },
-        {
-          "marketId": "2436",
-          "title": "92,000",
-          "yesTokenId": "111034959794144831018929930726254003223205032370171434282282993519809328825706",
-          "noTokenId": "50278371397792988319024357870392015145918382268968793667893250690685563181352"
-        },
-        {
-          "marketId": "2437",
-          "title": "94,000",
-          "yesTokenId": "68377167872675008564507218998421131179195138612119661791862096049007073150075",
-          "noTokenId": "113112831543710435169466690401513567646924464086571166779153643805671018507690"
-        },
-        {
-          "marketId": "2438",
-          "title": "96,000",
-          "yesTokenId": "88932658755533875701645779291909465003054825097826018378746628176973345636551",
-          "noTokenId": "108067248980390607998420606676500099858305229022670462978394384584663442874170"
-        }
-      ],
-      "yesTokenId": "74729399745149452039613226822668869793421919263178299756537616479387555170581",
-      "noTokenId": "8366967466218103029115556016625856562498899027482808980355066415061849944659"
     },
     "97": {
       "title": "Based FDV above ... one day after launch?",
@@ -9559,82 +8759,6 @@
       ],
       "yesTokenId": "102199363949148120639586433737388679713840622325481929783532147335336378497899",
       "noTokenId": "35987538259839269660120484801844810053274043280090258210031804321745647724658"
-    },
-    "156": {
-      "title": "Bitcoin above ... on December 10?(By 12:00 ET)",
-      "url": "https://opinion.trade/market/156?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "btc",
-        "bitcoin",
-        "crypto",
-        "price",
-        "trading",
-        "market",
-        "usd",
-        "us dollar",
-        "digital currency",
-        "cryptocurrency",
-        "spot price",
-        "exchange rate",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2413",
-          "title": "90,000",
-          "yesTokenId": "94536895932593914796444938689459390126601250275308396540175772060153350692403",
-          "noTokenId": "99843496252766450560872321211200550443964240601757241383191917513255187730210"
-        },
-        {
-          "marketId": "2414",
-          "title": "92,000",
-          "yesTokenId": "61192931534071365796181671795440901395164522031338483284227231479299976179678",
-          "noTokenId": "50107351587090110556993694294576554207170215170745427479514073169390649596715"
-        },
-        {
-          "marketId": "2415",
-          "title": "94,000",
-          "yesTokenId": "101309038629096314630997719217105622209721560966096629036047490110149185608789",
-          "noTokenId": "80295052796515794452869699530001723427804720907270158920834142546461223933446"
-        },
-        {
-          "marketId": "2416",
-          "title": "96,000",
-          "yesTokenId": "13563353050398863086525172542433460695350880900677673911981813982633986662157",
-          "noTokenId": "42406142188641652548973029663158892764235517982665316671126587162152807334495"
-        },
-        {
-          "marketId": "2417",
-          "title": "98,000",
-          "yesTokenId": "44252500687182499122035294559585213467846715469725225985438866451876945847082",
-          "noTokenId": "101139627402442306131250485340725402237068281615413427226006850647736209876309"
-        },
-        {
-          "marketId": "2418",
-          "title": "100,000",
-          "yesTokenId": "112860320539213195826409901542362532182305842462879545475903647018536338356818",
-          "noTokenId": "29181718177707797193742563969981752143026972898398372349321495310428896824263"
-        }
-      ],
-      "yesTokenId": "94536895932593914796444938689459390126601250275308396540175772060153350692403",
-      "noTokenId": "99843496252766450560872321211200550443964240601757241383191917513255187730210"
     },
     "2368": {
       "title": "Tim Cook out as Apple CEO by March 31?",
@@ -13695,74 +12819,6 @@
       "yesTokenId": "11219556098677973668574401989175429747336216013953227777676161165230983845905",
       "noTokenId": "110024104830806207449041134066579670982887093665126913470323308489454149758986"
     },
-    "216": {
-      "title": "Bitcoin above ... on December 26?(12:00 ET)",
-      "url": "https://opinion.trade/market/216?ref=opinion_hud",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "price",
-        "trading",
-        "december 26",
-        "12:00 et",
-        "above",
-        "threshold",
-        "prediction market",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3225",
-          "title": "84,000",
-          "yesTokenId": "114270015439795527858233957542979270813800407844191895735956425041845242143055",
-          "noTokenId": "108591795535393130738519687590829288001401907267949229837567587018775044243139"
-        },
-        {
-          "marketId": "3226",
-          "title": "86,000",
-          "yesTokenId": "34185402125997563730991160516834666543573139500580861300617430635045613011469",
-          "noTokenId": "91639762602957350517956910098246760715047639883793798240696878408049777663675"
-        },
-        {
-          "marketId": "3227",
-          "title": "88,000",
-          "yesTokenId": "11200726713249961349344406298310421350339012882601669907616958384018754677719",
-          "noTokenId": "55015712801306882241905328659301247020471142742127992385069171633636983230015"
-        },
-        {
-          "marketId": "3228",
-          "title": "90,000",
-          "yesTokenId": "81167180963461521739466482123422089519722425733057651635962061806857034882005",
-          "noTokenId": "77040988496070538576873230257030153099515729634018065929785567921486299926349"
-        },
-        {
-          "marketId": "3229",
-          "title": "92,000",
-          "yesTokenId": "22781712870046933721984168117334106095119600908174112178282288489715369797329",
-          "noTokenId": "54658835028491111066116295434072308911409037396324369188672015082917823941512"
-        }
-      ],
-      "yesTokenId": "114270015439795527858233957542979270813800407844191895735956425041845242143055",
-      "noTokenId": "108591795535393130738519687590829288001401907267949229837567587018775044243139"
-    },
     "3224": {
       "title": "Dustin Henderson",
       "url": "https://opinion.trade/market/3224?ref=opinion_hud",
@@ -14634,85 +13690,6 @@
         }
       ]
     },
-    "164": {
-      "title": "Bitcoin above ... on December 15?(By 12:00 ET)",
-      "url": "https://opinion.trade/market/164?ref=opinion_hud",
-      "yesTokenId": "15374826912212965817336945765548701252770521182767669020128624064143306263139",
-      "noTokenId": "44161538323800731743246405485490004039586475886074009217377242770460497464519",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "crypto",
-        "cryptocurrency",
-        "digital asset",
-        "price action",
-        "trading",
-        "market",
-        "volatility",
-        "resistance",
-        "support",
-        "breakout",
-        "rally",
-        "technical analysis",
-        "candlestick",
-        "bull run",
-        "bear market",
-        "bitcoin above",
-        "above december",
-        "bitcoin above december"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2531",
-          "title": "84,000",
-          "yesTokenId": "82861506709249677172800084928847611312095577320916391835119507547745924571277",
-          "noTokenId": "6258637290222052835203354972162065927331053998507784894005970076086478461629"
-        },
-        {
-          "marketId": "2532",
-          "title": "86,000",
-          "yesTokenId": "15374826912212965817336945765548701252770521182767669020128624064143306263139",
-          "noTokenId": "44161538323800731743246405485490004039586475886074009217377242770460497464519"
-        },
-        {
-          "marketId": "2533",
-          "title": "88,000",
-          "yesTokenId": "67645213932799976091164677509228440373945228417821932949850499730685542264481",
-          "noTokenId": "101271200315770419126774440201434821430845720495734925898012182480134909759762"
-        },
-        {
-          "marketId": "2534",
-          "title": "90,000",
-          "yesTokenId": "25164335137326136007130219538327307637779269191039611420562318738086440499600",
-          "noTokenId": "8955878677842488269533337806205693787297251152068724997015562595491510936335"
-        },
-        {
-          "marketId": "2535",
-          "title": "92,000",
-          "yesTokenId": "6471932670152643896795616948087916759998851727137317519496289483550705588427",
-          "noTokenId": "74255207727003489726096449590261150074810494626916279512040685921923218709159"
-        },
-        {
-          "marketId": "2536",
-          "title": "94,000",
-          "yesTokenId": "65144450089300841229244121180106301367788902135755826296210987675560970267726",
-          "noTokenId": "52317599961597088212996021937068923431235065174330357997473217790106041143498"
-        }
-      ]
-    },
     "81": {
       "title": "Super Bowl Champion 2026",
       "url": "https://opinion.trade/market/81?ref=opinion_hud",
@@ -15305,13 +14282,6 @@
     "100 million": [
       "1384"
     ],
-    "12:00 et": [
-      "157",
-      "161",
-      "162",
-      "177",
-      "216"
-    ],
     "14193": [
       "1546"
     ],
@@ -15514,31 +14484,8 @@
     "8.0": [
       "2669"
     ],
-    "86k": [
-      "157",
-      "162"
-    ],
-    "88k": [
-      "157",
-      "162"
-    ],
     "9.0 magnitude": [
       "2668"
-    ],
-    "90k": [
-      "157",
-      "162"
-    ],
-    "92k": [
-      "157",
-      "162"
-    ],
-    "94k": [
-      "157",
-      "162"
-    ],
-    "96k": [
-      "157"
     ],
     "98 cents": [
       "1463"
@@ -15561,24 +14508,6 @@
     ],
     "aapl close 2025": [
       "122"
-    ],
-    "above": [
-      "157",
-      "161",
-      "162",
-      "177",
-      "216"
-    ],
-    "above december": [
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
-      "177",
-      "216"
     ],
     "above earthquake": [
       "187",
@@ -16061,9 +14990,6 @@
     "bea": [
       "1951"
     ],
-    "bear market": [
-      "164"
-    ],
     "bearish": [
       "85"
     ],
@@ -16172,41 +15098,10 @@
       "112",
       "1274",
       "145",
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
-      "177",
-      "216",
       "58"
     ],
     "bitcoin 2025": [
       "1274"
-    ],
-    "bitcoin above": [
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
-      "177",
-      "216"
-    ],
-    "bitcoin above december": [
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
-      "177",
-      "216"
     ],
     "bitcoin hit": [
       "112",
@@ -16226,12 +15121,10 @@
       "111"
     ],
     "bitcoin price": [
-      "145",
-      "170"
+      "145"
     ],
     "bitcoin usd": [
-      "145",
-      "170"
+      "145"
     ],
     "blackpink": [
       "2178"
@@ -16250,7 +15143,6 @@
     ],
     "blockchain": [
       "1277",
-      "166",
       "167",
       "168",
       "1721",
@@ -16321,9 +15213,6 @@
     "break the buck": [
       "1463"
     ],
-    "breakout": [
-      "164"
-    ],
     "bridge hack": [
       "1384"
     ],
@@ -16341,20 +15230,10 @@
       "112",
       "1274",
       "145",
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
-      "177",
-      "216",
       "58"
     ],
     "btc price": [
-      "145",
-      "170"
+      "145"
     ],
     "btc trading": [
       "145"
@@ -16364,8 +15243,6 @@
     ],
     "btc/usd": [
       "145",
-      "166",
-      "170",
       "58"
     ],
     "buccaneers": [
@@ -16381,8 +15258,6 @@
       "58"
     ],
     "bull run": [
-      "164",
-      "166",
       "813"
     ],
     "bullish": [
@@ -16412,7 +15287,6 @@
       "1377"
     ],
     "candlestick": [
-      "164",
       "64"
     ],
     "cap above": [
@@ -16796,22 +15670,13 @@
       "1274",
       "1277",
       "145",
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
       "167",
       "168",
-      "170",
       "1721",
       "173",
-      "177",
       "192",
       "194",
       "207",
-      "216",
       "219",
       "220",
       "58",
@@ -16837,7 +15702,6 @@
     ],
     "crypto market": [
       "145",
-      "170",
       "58"
     ],
     "crypto theft": [
@@ -16852,11 +15716,6 @@
     "cryptocurrency": [
       "112",
       "145",
-      "156",
-      "157",
-      "164",
-      "166",
-      "170",
       "58",
       "64",
       "814",
@@ -16963,23 +15822,8 @@
     "dec 31": [
       "1377"
     ],
-    "december 11": [
-      "157"
-    ],
-    "december 12": [
-      "161"
-    ],
-    "december 13": [
-      "162"
-    ],
-    "december 19": [
-      "177"
-    ],
     "december 2025": [
       "110"
-    ],
-    "december 26": [
-      "216"
     ],
     "december price": [
       "145"
@@ -17072,16 +15916,10 @@
       "215"
     ],
     "digital asset": [
-      "164",
       "172"
-    ],
-    "digital currency": [
-      "156"
     ],
     "digital gold": [
       "145",
-      "166",
-      "170",
       "58"
     ],
     "dip": [
@@ -17400,10 +16238,6 @@
     ],
     "exchange hack": [
       "1384"
-    ],
-    "exchange rate": [
-      "156",
-      "166"
     ],
     "executive orders": [
       "1546"
@@ -18621,9 +17455,6 @@
     "leonardo dicaprio": [
       "137"
     ],
-    "level": [
-      "161"
-    ],
     "liga winner": [
       "82"
     ],
@@ -18795,14 +17626,6 @@
     ],
     "market": [
       "123",
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
-      "177",
       "813"
     ],
     "market cap": [
@@ -19714,13 +18537,11 @@
     ],
     "prediction": [
       "139",
-      "177",
       "220",
       "64"
     ],
     "prediction market": [
-      "208",
-      "216"
+      "208"
     ],
     "premier league": [
       "80"
@@ -19751,18 +18572,10 @@
       "1277",
       "1377",
       "1463",
-      "156",
-      "157",
-      "161",
-      "162",
-      "166",
-      "170",
       "173",
-      "177",
       "183",
       "184",
       "197",
-      "216",
       "219",
       "220",
       "64",
@@ -19771,9 +18584,6 @@
       "814",
       "88",
       "97"
-    ],
-    "price action": [
-      "164"
     ],
     "price bitcoin": [
       "145",
@@ -19897,8 +18707,7 @@
       "196"
     ],
     "rally": [
-      "110",
-      "164"
+      "110"
     ],
     "rams": [
       "179",
@@ -20052,7 +18861,6 @@
       "193"
     ],
     "resistance": [
-      "164",
       "64"
     ],
     "retaliation": [
@@ -20181,7 +18989,6 @@
     ],
     "satoshi": [
       "1274",
-      "166",
       "58"
     ],
     "satoshi move": [
@@ -20430,9 +19237,6 @@
     "spot gold": [
       "62"
     ],
-    "spot price": [
-      "156"
-    ],
     "spot trading": [
       "1721"
     ],
@@ -20568,7 +19372,6 @@
       "81"
     ],
     "support": [
-      "164",
       "64"
     ],
     "supporting actor": [
@@ -20626,8 +19429,7 @@
       "181"
     ],
     "target": [
-      "112",
-      "161"
+      "112"
     ],
     "tariff": [
       "196"
@@ -20647,9 +19449,6 @@
     ],
     "tech": [
       "110"
-    ],
-    "technical analysis": [
-      "164"
     ],
     "tectonic": [
       "187"
@@ -20768,11 +19567,6 @@
     ],
     "thor": [
       "3158"
-    ],
-    "threshold": [
-      "161",
-      "177",
-      "216"
     ],
     "ticker": [
       "169"
@@ -20939,19 +19733,10 @@
       "122",
       "123",
       "1277",
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
       "173",
-      "177",
       "183",
       "184",
       "204",
-      "216",
       "219",
       "220",
       "58",
@@ -21150,9 +19935,6 @@
     "us attack": [
       "3057"
     ],
-    "us dollar": [
-      "156"
-    ],
     "us fed": [
       "75"
     ],
@@ -21199,8 +19981,7 @@
       "142"
     ],
     "usd": [
-      "1463",
-      "156"
+      "1463"
     ],
     "usd fdv": [
       "183"
@@ -21319,7 +20100,6 @@
       "142"
     ],
     "volatility": [
-      "164",
       "64"
     ],
     "volodymyr zelenskyy": [
@@ -21622,13 +20402,6 @@
     ]
   },
   "eventIndex": {
-    "12:00 et": [
-      "157",
-      "161",
-      "162",
-      "177",
-      "216"
-    ],
     "150000": [
       "112"
     ],
@@ -21779,29 +20552,6 @@
     "7.0": [
       "187"
     ],
-    "86k": [
-      "157",
-      "162"
-    ],
-    "88k": [
-      "157",
-      "162"
-    ],
-    "90k": [
-      "157",
-      "162"
-    ],
-    "92k": [
-      "157",
-      "162"
-    ],
-    "94k": [
-      "157",
-      "162"
-    ],
-    "96k": [
-      "157"
-    ],
     "98th oscars": [
       "133",
       "140",
@@ -21819,24 +20569,6 @@
     ],
     "aapl close 2025": [
       "122"
-    ],
-    "above": [
-      "157",
-      "161",
-      "162",
-      "177",
-      "216"
-    ],
-    "above december": [
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
-      "177",
-      "216"
     ],
     "above earthquake": [
       "187"
@@ -22204,9 +20936,6 @@
     "bayern": [
       "83"
     ],
-    "bear market": [
-      "164"
-    ],
     "bearish": [
       "85"
     ],
@@ -22290,38 +21019,7 @@
       "111",
       "112",
       "145",
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
-      "177",
-      "216",
       "58"
-    ],
-    "bitcoin above": [
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
-      "177",
-      "216"
-    ],
-    "bitcoin above december": [
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
-      "177",
-      "216"
     ],
     "bitcoin hit": [
       "112",
@@ -22341,12 +21039,10 @@
       "111"
     ],
     "bitcoin price": [
-      "145",
-      "170"
+      "145"
     ],
     "bitcoin usd": [
-      "145",
-      "170"
+      "145"
     ],
     "blockade": [
       "144"
@@ -22355,7 +21051,6 @@
       "84"
     ],
     "blockchain": [
-      "166",
       "167",
       "168",
       "173",
@@ -22400,9 +21095,6 @@
       "61",
       "75"
     ],
-    "breakout": [
-      "164"
-    ],
     "broncos": [
       "223"
     ],
@@ -22410,20 +21102,10 @@
       "111",
       "112",
       "145",
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
-      "177",
-      "216",
       "58"
     ],
     "btc price": [
-      "145",
-      "170"
+      "145"
     ],
     "btc trading": [
       "145"
@@ -22433,8 +21115,6 @@
     ],
     "btc/usd": [
       "145",
-      "166",
-      "170",
       "58"
     ],
     "buccaneers": [
@@ -22445,10 +21125,6 @@
     ],
     "bull market": [
       "58"
-    ],
-    "bull run": [
-      "164",
-      "166"
     ],
     "bullish": [
       "85"
@@ -22468,7 +21144,6 @@
       "188"
     ],
     "candlestick": [
-      "164",
       "64"
     ],
     "cap above": [
@@ -22720,21 +21395,12 @@
     "crypto": [
       "112",
       "145",
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
       "167",
       "168",
-      "170",
       "173",
-      "177",
       "192",
       "194",
       "207",
-      "216",
       "219",
       "220",
       "58",
@@ -22751,7 +21417,6 @@
     ],
     "crypto market": [
       "145",
-      "170",
       "58"
     ],
     "crypto token": [
@@ -22762,11 +21427,6 @@
     "cryptocurrency": [
       "112",
       "145",
-      "156",
-      "157",
-      "164",
-      "166",
-      "170",
       "58",
       "64",
       "85"
@@ -22856,23 +21516,8 @@
       "96",
       "98"
     ],
-    "december 11": [
-      "157"
-    ],
-    "december 12": [
-      "161"
-    ],
-    "december 13": [
-      "162"
-    ],
-    "december 19": [
-      "177"
-    ],
     "december 2025": [
       "110"
-    ],
-    "december 26": [
-      "216"
     ],
     "december price": [
       "145"
@@ -22952,16 +21597,10 @@
       "215"
     ],
     "digital asset": [
-      "164",
       "172"
-    ],
-    "digital currency": [
-      "156"
     ],
     "digital gold": [
       "145",
-      "166",
-      "170",
       "58"
     ],
     "dip": [
@@ -23182,10 +21821,6 @@
     ],
     "european cup": [
       "83"
-    ],
-    "exchange rate": [
-      "156",
-      "166"
     ],
     "exit": [
       "193"
@@ -24059,9 +22694,6 @@
     "leonardo dicaprio": [
       "137"
     ],
-    "level": [
-      "161"
-    ],
     "liga winner": [
       "82"
     ],
@@ -24213,15 +22845,7 @@
       "75"
     ],
     "market": [
-      "123",
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
-      "177"
+      "123"
     ],
     "market cap": [
       "152",
@@ -24951,13 +23575,11 @@
     ],
     "prediction": [
       "139",
-      "177",
       "220",
       "64"
     ],
     "prediction market": [
-      "208",
-      "216"
+      "208"
     ],
     "premier league": [
       "80"
@@ -24974,27 +23596,16 @@
     "price": [
       "110",
       "112",
-      "156",
-      "157",
-      "161",
-      "162",
-      "166",
-      "170",
       "173",
-      "177",
       "183",
       "184",
       "197",
-      "216",
       "219",
       "220",
       "64",
       "67",
       "88",
       "97"
-    ],
-    "price action": [
-      "164"
     ],
     "price bitcoin": [
       "145",
@@ -25101,8 +23712,7 @@
       "196"
     ],
     "rally": [
-      "110",
-      "164"
+      "110"
     ],
     "rams": [
       "179",
@@ -25205,7 +23815,6 @@
       "193"
     ],
     "resistance": [
-      "164",
       "64"
     ],
     "retroactive": [
@@ -25281,7 +23890,6 @@
       "171"
     ],
     "satoshi": [
-      "166",
       "58"
     ],
     "sb 60": [
@@ -25494,9 +24102,6 @@
     "spot gold": [
       "62"
     ],
-    "spot price": [
-      "156"
-    ],
     "spx": [
       "186"
     ],
@@ -25601,7 +24206,6 @@
       "81"
     ],
     "support": [
-      "164",
       "64"
     ],
     "supporting actor": [
@@ -25623,8 +24227,7 @@
       "181"
     ],
     "target": [
-      "112",
-      "161"
+      "112"
     ],
     "tariff": [
       "196"
@@ -25643,9 +24246,6 @@
     ],
     "tech": [
       "110"
-    ],
-    "technical analysis": [
-      "164"
     ],
     "tectonic": [
       "187"
@@ -25742,11 +24342,6 @@
     ],
     "this week": [
       "214"
-    ],
-    "threshold": [
-      "161",
-      "177",
-      "216"
     ],
     "ticker": [
       "169"
@@ -25878,19 +24473,10 @@
       "110",
       "122",
       "123",
-      "156",
-      "157",
-      "161",
-      "162",
-      "164",
-      "166",
-      "170",
       "173",
-      "177",
       "183",
       "184",
       "204",
-      "216",
       "219",
       "220",
       "58",
@@ -26047,9 +24633,6 @@
       "160",
       "214"
     ],
-    "us dollar": [
-      "156"
-    ],
     "us fed": [
       "75"
     ],
@@ -26082,9 +24665,6 @@
     ],
     "us-china relations": [
       "142"
-    ],
-    "usd": [
-      "156"
     ],
     "usd fdv": [
       "183"
@@ -26162,7 +24742,6 @@
       "142"
     ],
     "volatility": [
-      "164",
       "64"
     ],
     "volodymyr zelenskyy": [
