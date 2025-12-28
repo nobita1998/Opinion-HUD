@@ -1371,6 +1371,10 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         parent_event_id = market.get("parentEventId")
         event_id = parent_event_market_id or (str(parent_event_id).strip() if parent_event_id else None) or market_id
 
+        # Determine if this is a child market (sub-market of a multi-choice event)
+        # Only independent markets (not child markets) should trigger event removal
+        is_child_market = parent_event_id and str(parent_event_id).strip() and (market_id != event_id)
+
         # Record this event_id as seen in current API (regardless of status)
         if event_id and only_ai_for_new:
             current_api_event_ids.add(event_id)
@@ -1378,7 +1382,8 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         if market.get("statusEnum") != "Activated":
             skipped["statusEnum"] += 1
             # Track resolved/inactive events to remove from previous data
-            if event_id and only_ai_for_new:
+            # Only mark independent markets (non-child markets) for removal
+            if event_id and only_ai_for_new and not is_child_market:
                 resolved_event_ids.add(event_id)
             continue
 
@@ -1386,7 +1391,8 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         if resolved_at is not None and resolved_at > 0:
             skipped["resolved"] += 1
             # Track resolved events to remove from previous data
-            if event_id and only_ai_for_new:
+            # Only mark independent markets (non-child markets) for removal
+            if event_id and only_ai_for_new and not is_child_market:
                 resolved_event_ids.add(event_id)
             continue
 
@@ -1411,7 +1417,8 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         elif cutoff <= now:
             skipped["cutoff_expired"] += 1
             # Track expired events to remove from previous data
-            if event_id and only_ai_for_new:
+            # Only mark independent markets (non-child markets) for removal
+            if event_id and only_ai_for_new and not is_child_market:
                 resolved_event_ids.add(event_id)
             continue
 
