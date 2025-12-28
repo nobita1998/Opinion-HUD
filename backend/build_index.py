@@ -1851,7 +1851,8 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
     event_index_out = {kw: sorted(list(ids)) for kw, ids in sorted(event_inverted.items(), key=lambda kv: kv[0])}
 
     if only_ai_for_new:
-        rebuilt = {}
+        # Rebuild event index from events_out (multi-choice events only)
+        event_rebuilt = {}
         for eid, e in events_out.items():
             if not isinstance(e, dict):
                 continue
@@ -1860,7 +1861,7 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
                 for kw in kws:
                     nkw = _normalize_keyword(kw)
                     if nkw:
-                        rebuilt.setdefault(nkw, set()).add(eid)
+                        event_rebuilt.setdefault(nkw, set()).add(eid)
             groups = e.get("entityGroups") or e.get("entity_groups")
             if isinstance(groups, list):
                 for group in groups:
@@ -1869,9 +1870,30 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
                     for term in group:
                         nterm = _normalize_keyword(term)
                         if nterm:
-                            rebuilt.setdefault(nterm, set()).add(eid)
-        index_out = {kw: sorted(list(ids)) for kw, ids in sorted(rebuilt.items(), key=lambda kv: kv[0])}
-        event_index_out = index_out
+                            event_rebuilt.setdefault(nterm, set()).add(eid)
+        event_index_out = {kw: sorted(list(ids)) for kw, ids in sorted(event_rebuilt.items(), key=lambda kv: kv[0])}
+
+        # Rebuild market index from ALL markets (including binary markets not in events_out)
+        market_rebuilt = {}
+        for mid, m in markets_out.items():
+            if not isinstance(m, dict):
+                continue
+            kws = m.get("keywords")
+            if isinstance(kws, list):
+                for kw in kws:
+                    nkw = _normalize_keyword(kw)
+                    if nkw:
+                        market_rebuilt.setdefault(nkw, set()).add(mid)
+            groups = m.get("entityGroups") or m.get("entity_groups")
+            if isinstance(groups, list):
+                for group in groups:
+                    if not isinstance(group, list):
+                        continue
+                    for term in group:
+                        nterm = _normalize_keyword(term)
+                        if nterm:
+                            market_rebuilt.setdefault(nterm, set()).add(mid)
+        index_out = {kw: sorted(list(ids)) for kw, ids in sorted(market_rebuilt.items(), key=lambda kv: kv[0])}
 
     # Process multi-choice markets: add type and subMarkets fields
     multi_market_count = 0

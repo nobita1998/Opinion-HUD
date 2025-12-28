@@ -438,12 +438,15 @@ function buildMatcher(data) {
     entityTermMaskById.set(String(id), termToMask);
   }
 
+  // Use both eventIndex (for multi-choice events) and index (for all markets including binary)
   if (eventIndex && typeof eventIndex === "object") {
+    // Ingest entity groups from events
     const events = data.events || {};
     for (const [eventId, event] of Object.entries(events)) {
       ingestEntityGroups(eventId, event.entityGroups, event.entities);
     }
 
+    // Build keyword mapping for events
     for (const [keyword, eventIds] of Object.entries(eventIndex)) {
       if (!keyword || !Array.isArray(eventIds) || eventIds.length === 0) continue;
       const keywordLower = String(keyword).toLowerCase().trim();
@@ -457,12 +460,17 @@ function buildMatcher(data) {
         eventIds,
       });
     }
-  } else {
+  }
+
+  // Always use market index if available (includes binary markets not in events)
+  if (index && typeof index === "object") {
+    // Ingest entity groups from markets
     const markets = data.markets || {};
     for (const [marketId, market] of Object.entries(markets)) {
       ingestEntityGroups(marketId, market.entityGroups, market.entities);
     }
 
+    // Build keyword mapping for markets
     for (const [keyword, marketIds] of Object.entries(index)) {
       if (!keyword || !Array.isArray(marketIds) || marketIds.length === 0) continue;
       const keywordLower = String(keyword).toLowerCase().trim();
@@ -1271,129 +1279,70 @@ function computeMatchForTweetText(tweetText) {
     const hasLowSignalToken = (entry.keywordTokens || []).some((t) => LOW_SIGNAL_TOKENS.has(t));
     const entityScore = hasLowSignalToken ? LOW_SIGNAL_ENTITY_SCORE : DEFAULT_ENTITY_SCORE;
 
-    if (state.matcher.mode === "event") {
-      for (const id of entry.eventIds || []) {
-        const eventId = String(id);
-        let entityAddCount = 0;
-        if (mentioned) {
-          const termMask = entityTermMaskById.get(eventId)?.get(keyword) || 0;
-          if (termMask) {
-            const prevMask = matchedEntityMaskById.get(eventId) || 0;
-            const newBits = termMask & ~prevMask;
-            if (newBits) {
-              const nextMask = prevMask | newBits;
-              matchedEntityMaskById.set(eventId, nextMask);
-              entityAddCount = countBits32(newBits);
-            }
-          }
-        }
-        const entityAddScore = entityAddCount ? entityScore * entityAddCount : 0;
+    // Process both eventIds and marketIds from the entry
+    const idsToProcess = [
+      ...(entry.eventIds || []).map(id => ({ id: String(id), type: 'event' })),
+      ...(entry.marketIds || []).map(id => ({ id: String(id), type: 'market' }))
+    ];
 
-        const existing = targetBest.get(eventId);
-        if (!existing) {
-          // First keyword match for this event
-          const contributed = score > 0 || entityAddCount > 0;
-          targetBest.set(eventId, {
-            score: score + entityAddScore,
-            keyword: entry.keywordPlain || keyword,
-            reasons: entityAddCount
-              ? [...reasons, hasLowSignalToken ? `entity_low:${keyword}` : `entity:${keyword}`]
-              : [...reasons],
-            entry,
-            id: eventId,
-            matchCount: 1,
-            baseScore: Math.max(score, entityAddCount ? entityScore : 0),
-            matchedKeywords: new Set([keyword]),
-            matchedSignals: new Set(contributed ? [keyword] : []),
-          });
-        } else {
-          if (entityAddCount) {
-            existing.score += entityAddScore;
-            existing.reasons.push(hasLowSignalToken ? `+entity_low:${keyword}` : `+entity:${keyword}`);
-            if (entityScore > existing.baseScore) {
-              existing.baseScore = entityScore;
-              existing.keyword = entry.keywordPlain || keyword;
-            }
-          }
-
-          // Only add bonus if this is a NEW keyword (not already matched)
-          if (!existing.matchedKeywords.has(keyword)) {
-            const MULTI_KEYWORD_BONUS = 0.12;
-            if (score > 0) {
-              existing.score += score * MULTI_KEYWORD_BONUS;
-              existing.reasons.push(...reasons.map(r => `+${r}`));
-            }
-            existing.matchCount += 1;
-            existing.matchedKeywords.add(keyword);
-            if (score > 0 || entityAddCount > 0) existing.matchedSignals.add(keyword);
-
-            if (score > existing.baseScore) {
-              existing.baseScore = score;
-              existing.keyword = entry.keywordPlain || keyword;
-            }
+    for (const { id, type } of idsToProcess) {
+      let entityAddCount = 0;
+      if (mentioned) {
+        const termMask = entityTermMaskById.get(id)?.get(keyword) || 0;
+        if (termMask) {
+          const prevMask = matchedEntityMaskById.get(id) || 0;
+          const newBits = termMask & ~prevMask;
+          if (newBits) {
+            const nextMask = prevMask | newBits;
+            matchedEntityMaskById.set(id, nextMask);
+            entityAddCount = countBits32(newBits);
           }
         }
       }
-    } else {
-      for (const id of entry.marketIds || []) {
-        const marketId = String(id);
-        let entityAddCount = 0;
-        if (mentioned) {
-          const termMask = entityTermMaskById.get(marketId)?.get(keyword) || 0;
-          if (termMask) {
-            const prevMask = matchedEntityMaskById.get(marketId) || 0;
-            const newBits = termMask & ~prevMask;
-            if (newBits) {
-              const nextMask = prevMask | newBits;
-              matchedEntityMaskById.set(marketId, nextMask);
-              entityAddCount = countBits32(newBits);
-            }
+      const entityAddScore = entityAddCount ? entityScore * entityAddCount : 0;
+
+      const existing = targetBest.get(id);
+      if (!existing) {
+        // First keyword match for this event/market
+        const contributed = score > 0 || entityAddCount > 0;
+        targetBest.set(id, {
+          score: score + entityAddScore,
+          keyword: entry.keywordPlain || keyword,
+          reasons: entityAddCount
+            ? [...reasons, hasLowSignalToken ? `entity_low:${keyword}` : `entity:${keyword}`]
+            : [...reasons],
+          entry,
+          id,
+          type,
+          matchCount: 1,
+          baseScore: Math.max(score, entityAddCount ? entityScore : 0),
+          matchedKeywords: new Set([keyword]),
+          matchedSignals: new Set(contributed ? [keyword] : []),
+        });
+      } else {
+        if (entityAddCount) {
+          existing.score += entityAddScore;
+          existing.reasons.push(hasLowSignalToken ? `+entity_low:${keyword}` : `+entity:${keyword}`);
+          if (entityScore > existing.baseScore) {
+            existing.baseScore = entityScore;
+            existing.keyword = entry.keywordPlain || keyword;
           }
         }
-        const entityAddScore = entityAddCount ? entityScore * entityAddCount : 0;
 
-        const existing = targetBest.get(marketId);
-        if (!existing) {
-          // First keyword match for this market
-          const contributed = score > 0 || entityAddCount > 0;
-          targetBest.set(marketId, {
-            score: score + entityAddScore,
-            keyword: entry.keywordPlain || keyword,
-            reasons: entityAddCount
-              ? [...reasons, hasLowSignalToken ? `entity_low:${keyword}` : `entity:${keyword}`]
-              : [...reasons],
-            entry,
-            id: marketId,
-            matchCount: 1,
-            baseScore: Math.max(score, entityAddCount ? entityScore : 0),
-            matchedKeywords: new Set([keyword]),
-            matchedSignals: new Set(contributed ? [keyword] : []),
-          });
-        } else {
-          if (entityAddCount) {
-            existing.score += entityAddScore;
-            existing.reasons.push(hasLowSignalToken ? `+entity_low:${keyword}` : `+entity:${keyword}`);
-            if (entityScore > existing.baseScore) {
-              existing.baseScore = entityScore;
-              existing.keyword = entry.keywordPlain || keyword;
-            }
+        // Only add bonus if this is a NEW keyword (not already matched)
+        if (!existing.matchedKeywords.has(keyword)) {
+          const MULTI_KEYWORD_BONUS = 0.12;
+          if (score > 0) {
+            existing.score += score * MULTI_KEYWORD_BONUS;
+            existing.reasons.push(...reasons.map(r => `+${r}`));
           }
+          existing.matchCount += 1;
+          existing.matchedKeywords.add(keyword);
+          if (score > 0 || entityAddCount > 0) existing.matchedSignals.add(keyword);
 
-          // Only add bonus if this is a NEW keyword (not already matched)
-          if (!existing.matchedKeywords.has(keyword)) {
-            const MULTI_KEYWORD_BONUS = 0.12;
-            if (score > 0) {
-              existing.score += score * MULTI_KEYWORD_BONUS;
-              existing.reasons.push(...reasons.map(r => `+${r}`));
-            }
-            existing.matchCount += 1;
-            existing.matchedKeywords.add(keyword);
-            if (score > 0 || entityAddCount > 0) existing.matchedSignals.add(keyword);
-
-            if (score > existing.baseScore) {
-              existing.baseScore = score;
-              existing.keyword = entry.keywordPlain || keyword;
-            }
+          if (score > existing.baseScore) {
+            existing.baseScore = score;
+            existing.keyword = entry.keywordPlain || keyword;
           }
         }
       }
@@ -1413,50 +1362,9 @@ function computeMatchForTweetText(tweetText) {
 
   if (entityMatches.length === 0) return null;
 
-  // Sort by score (confidence), return top match
-  if (state.matcher.mode === "event") {
-    const ranked = entityMatches.sort((a, b) => b.score - a.score);
-    const best = ranked[0];
-    const eventId = best.id;
-    const event = state.data.events?.[eventId];
-    if (!event) return null;
-
-    const markets = ranked
-      .map((item) => {
-        const e = state.data.events?.[item.id];
-        if (!e) return null;
-        const bestMarketId = e.bestMarketId || (e.marketIds || [])[0] || null;
-        const bestMarket = bestMarketId ? state.data.markets?.[bestMarketId] : null;
-        const url = buildOpinionTradeUrl({ topicId: item.id, isMulti: true });
-        return {
-          title: e.title || "Event",
-          labels: bestMarket?.labels || null,
-          marketIds: Array.isArray(e.marketIds) ? e.marketIds : null,
-          bestMarketId: e.bestMarketId || null,
-          topicId: item.id,
-          isMulti: true,
-          url,
-          matchedKeywords: Array.from(item.matchedSignals || item.matchedKeywords || []).sort(),
-        };
-      })
-      .filter(Boolean)
-      .slice(0, MAX_MATCHES_ON_SCREEN);
-
-    const primaryUrl = buildOpinionTradeUrl({ topicId: eventId, isMulti: true });
-
-    return {
-      mode: "event",
-      keyword: best.keyword || null,
-      matchedKeywords: Array.from(best.matchedSignals || best.matchedKeywords || []).sort(),
-      title: event.title || "Event",
-      markets,
-      primaryUrl,
-    };
-  }
-
+  // Sort by score and build market list (handles both events and markets)
   const ranked = entityMatches.sort((a, b) => b.score - a.score);
   const best = ranked[0];
-  const primaryMarketId = best.id;
 
   const seenTopicIds = new Set();
   const markets = [];
@@ -1465,31 +1373,52 @@ function computeMatchForTweetText(tweetText) {
   let primaryTitle = null;
 
   for (const item of ranked) {
-    const m = state.data.markets?.[item.id];
-    if (!m) continue;
+    let topicId, isMulti, title, labels, marketIds, bestMarketId;
 
-    const isMulti = isMultiMarket(item.id, m);
-    const topicId = isMulti ? (m.eventId || item.id) : item.id;
+    // Handle both event-type and market-type matches
+    if (item.type === 'event') {
+      // This is a multi-choice event
+      const e = state.data.events?.[item.id];
+      if (!e) continue;
+
+      topicId = item.id;
+      isMulti = true;
+      title = e.title || "Event";
+      bestMarketId = e.bestMarketId || (e.marketIds || [])[0] || null;
+      const bestMarket = bestMarketId ? state.data.markets?.[bestMarketId] : null;
+      labels = bestMarket?.labels || null;
+      marketIds = Array.isArray(e.marketIds) ? e.marketIds : null;
+    } else {
+      // This is a market (could be binary or multi-choice)
+      const m = state.data.markets?.[item.id];
+      if (!m) continue;
+
+      isMulti = isMultiMarket(item.id, m);
+      topicId = isMulti ? (m.eventId || item.id) : item.id;
+      title = isMulti
+        ? (state.data.events?.[topicId]?.title || m.eventTitle || m.title || "Event")
+        : (m.title || "Market");
+      labels = m.labels || null;
+      marketIds = isMulti ? (state.data.events?.[topicId]?.marketIds || null) : null;
+      bestMarketId = isMulti ? (state.data.events?.[topicId]?.bestMarketId || null) : null;
+    }
+
     const topicKey = String(topicId);
     if (seenTopicIds.has(topicKey)) continue;
     seenTopicIds.add(topicKey);
 
-    const title = isMulti
-      ? (state.data.events?.[topicId]?.title || m.eventTitle || m.title || "Event")
-      : (m.title || "Market");
-
     markets.push({
       title,
-      labels: m.labels || null,
-      marketIds: isMulti ? (state.data.events?.[topicId]?.marketIds || null) : null,
-      bestMarketId: isMulti ? (state.data.events?.[topicId]?.bestMarketId || null) : null,
+      labels,
+      marketIds,
+      bestMarketId,
       topicId,
       isMulti,
       url: buildOpinionTradeUrl({ topicId, isMulti }),
       matchedKeywords: Array.from(item.matchedSignals || item.matchedKeywords || []).sort(),
     });
 
-    if (primaryTopicId == null && String(item.id) === String(primaryMarketId)) {
+    if (primaryTopicId == null && String(item.id) === String(best.id)) {
       primaryTopicId = topicId;
       primaryIsMulti = isMulti;
       primaryTitle = title;
@@ -1508,10 +1437,10 @@ function computeMatchForTweetText(tweetText) {
 
   const primaryUrl = buildOpinionTradeUrl({ topicId: primaryTopicId, isMulti: primaryIsMulti });
   return {
-    mode: "market",
+    mode: primaryIsMulti ? "event" : "market",
     keyword: best.keyword || null,
     matchedKeywords: Array.from(best.matchedSignals || best.matchedKeywords || []).sort(),
-    title: primaryTitle || "Market",
+    title: primaryTitle || (primaryIsMulti ? "Event" : "Market"),
     markets,
     primaryUrl,
   };
