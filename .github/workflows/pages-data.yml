@@ -54,11 +54,19 @@ jobs:
           # 仅在有变更时提交
           git diff --staged --quiet || git commit -m "chore: update data.json [$(date -u '+%Y-%m-%d %H:%M UTC')]"
 
+      - name: Pull latest changes
+        run: |
+          git pull --rebase origin main || true
+          # If there's a conflict on data.json, use our version
+          if [ -f data.json ]; then
+            git checkout --ours data.json 2>/dev/null || true
+            git add data.json 2>/dev/null || true
+            git rebase --continue 2>/dev/null || true
+          fi
+
       - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+        run: |
+          git push origin main
 
       - name: Prepare artifact
         run: |
