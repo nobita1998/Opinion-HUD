@@ -1989,6 +1989,14 @@ def main():
 
     print(f"[info] wrote {output_path}", flush=True)
 
+    # Also write to backend/data.json for deploy-only workflow
+    backend_output_path = os.path.join(os.path.dirname(__file__), "data.json")
+    if os.path.abspath(backend_output_path) != os.path.abspath(output_path):
+        with open(backend_output_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        print(f"[info] also wrote {backend_output_path}", flush=True)
+
 
 if __name__ == "__main__":
     main()
