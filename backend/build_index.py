@@ -1061,15 +1061,43 @@ def _event_signature_full(event_title, market_ids, option_titles_all, rules_best
 
 
 def _load_previous_data(output_path):
+    """Load previous data.json for incremental updates.
+
+    Priority:
+    1. If PREVIOUS_DATA_URL env var is set, try to download from that URL
+    2. If download fails or env var not set, try to load from local file (output_path)
+    3. If both fail, return None (full rebuild)
+    """
+    # Try loading from remote URL first (for GitHub Actions)
+    previous_data_url = os.environ.get("PREVIOUS_DATA_URL", "").strip()
+    if previous_data_url:
+        try:
+            print(f"[info] attempting to load previous data from URL: {previous_data_url}", flush=True)
+            response = requests.get(previous_data_url, timeout=30)
+            if response.status_code == 200:
+                data = response.json()
+                if isinstance(data, dict):
+                    print("[info] successfully loaded previous data from URL", flush=True)
+                    return data
+            elif response.status_code == 404:
+                print("[info] previous data not found at URL (404), will do full rebuild", flush=True)
+            else:
+                print(f"[warn] failed to fetch previous data from URL: HTTP {response.status_code}", flush=True)
+        except Exception as exc:
+            print(f"[warn] failed to load previous data from URL: {exc}", flush=True)
+
+    # Fallback to local file
     try:
         if output_path and os.path.exists(output_path):
             with open(output_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
             if isinstance(data, dict):
+                print("[info] loaded previous data from local file", flush=True)
                 return data
     except Exception as exc:
         if DEBUG:
-            print(f"[warn] failed to load previous data.json: {exc}", flush=True)
+            print(f"[warn] failed to load previous data from local file: {exc}", flush=True)
+
     return None
 
 
