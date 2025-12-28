@@ -24,6 +24,375 @@ ZHIPU_TIMEOUT_SECONDS = float(os.environ.get("ZHIPU_TIMEOUT_SECONDS", "30"))
 ZHIPU_MAX_RETRIES = int(os.environ.get("ZHIPU_MAX_RETRIES", "2"))
 
 
+# ============================================================================
+# Chinese-English Translation Dictionary for Common Entities
+# Used to augment LLM-generated keywords with Chinese translations
+# ============================================================================
+
+# Entity translations (for entityGroups)
+CN_EN_ENTITY_MAP = {
+    # Countries & Regions
+    "Russia": ["俄罗斯", "俄国"],
+    "Russian": ["俄罗斯", "俄国", "俄"],
+    "Ukraine": ["乌克兰"],
+    "Ukrainian": ["乌克兰"],
+    "China": ["中国"],
+    "Chinese": ["中国", "中"],
+    "USA": ["美国", "美"],
+    "US": ["美国", "美"],
+    "United States": ["美国"],
+    "America": ["美国", "美"],
+    "American": ["美国", "美"],
+    "Japan": ["日本"],
+    "Japanese": ["日本"],
+    "Korea": ["韩国"],
+    "South Korea": ["韩国"],
+    "North Korea": ["朝鲜"],
+    "EU": ["欧盟"],
+    "Europe": ["欧洲"],
+    "UK": ["英国"],
+    "Britain": ["英国"],
+    "France": ["法国"],
+    "Germany": ["德国"],
+    "Israel": ["以色列"],
+    "Palestine": ["巴勒斯坦"],
+    "Iran": ["伊朗"],
+    "Taiwan": ["台湾"],
+
+    # Cryptocurrencies
+    "Bitcoin": ["比特币"],
+    "BTC": ["比特币"],
+    "Ethereum": ["以太坊"],
+    "ETH": ["以太坊"],
+    "Solana": ["索拉纳"],
+    "SOL": ["索拉纳"],
+    "XRP": ["瑞波币"],
+    "Ripple": ["瑞波"],
+    "Dogecoin": ["狗狗币"],
+    "DOGE": ["狗狗币"],
+    "Cardano": ["卡尔达诺"],
+    "ADA": ["卡尔达诺"],
+    "Polkadot": ["波卡"],
+    "DOT": ["波卡"],
+    "Binance Coin": ["币安币"],
+    "BNB": ["币安币"],
+
+    # Institutions & Organizations
+    "Fed": ["美联储", "联储"],
+    "Federal Reserve": ["美联储", "联邦储备"],
+    "FOMC": ["美联储会议", "联储会议"],
+    "SEC": ["美国证监会", "证监会"],
+    "FBI": ["美国联邦调查局", "联邦调查局"],
+    "CIA": ["美国中情局", "中情局"],
+    "NASA": ["美国航天局", "航天局"],
+    "UN": ["联合国"],
+    "United Nations": ["联合国"],
+    "IMF": ["国际货币基金组织"],
+    "WHO": ["世卫组织", "世界卫生组织"],
+    "WTO": ["世贸组织", "世界贸易组织"],
+    "NATO": ["北约"],
+    "OPEC": ["欧佩克"],
+
+    # People (Politicians)
+    "Trump": ["川普", "特朗普"],
+    "Donald Trump": ["川普", "特朗普"],
+    "Biden": ["拜登"],
+    "Joe Biden": ["拜登"],
+    "Putin": ["普京"],
+    "Vladimir Putin": ["普京"],
+    "Zelenskyy": ["泽连斯基"],
+    "Zelensky": ["泽连斯基"],
+    "Xi": ["习近平"],
+    "Xi Jinping": ["习近平"],
+    "Obama": ["奥巴马"],
+    "Clinton": ["克林顿"],
+    "Bush": ["布什"],
+
+    # People (Tech & Business)
+    "Elon Musk": ["马斯克", "埃隆马斯克"],
+    "Musk": ["马斯克"],
+    "Mark Zuckerberg": ["扎克伯格"],
+    "Zuckerberg": ["扎克伯格"],
+    "Bill Gates": ["比尔盖茨", "盖茨"],
+    "Gates": ["盖茨"],
+    "Jeff Bezos": ["贝索斯"],
+    "Bezos": ["贝索斯"],
+    "Tim Cook": ["库克"],
+    "Cook": ["库克"],
+    "Steve Jobs": ["乔布斯"],
+    "Jobs": ["乔布斯"],
+    "Jack Ma": ["马云"],
+    "CZ": ["赵长鹏", "CZ"],
+    "Changpeng Zhao": ["赵长鹏"],
+    "SBF": ["SBF", "班克曼"],
+    "Sam Bankman-Fried": ["班克曼"],
+    "Vitalik": ["V神", "维塔利克"],
+    "Vitalik Buterin": ["V神", "维塔利克"],
+
+    # Companies (Tech)
+    "Apple": ["苹果"],
+    "Microsoft": ["微软"],
+    "Google": ["谷歌"],
+    "Amazon": ["亚马逊"],
+    "Meta": ["Meta", "脸书"],
+    "Facebook": ["脸书", "Facebook"],
+    "Tesla": ["特斯拉"],
+    "Netflix": ["网飞", "奈飞"],
+    "Nvidia": ["英伟达"],
+    "AMD": ["AMD", "超威"],
+    "Intel": ["英特尔"],
+    "Samsung": ["三星"],
+    "Huawei": ["华为"],
+    "Xiaomi": ["小米"],
+    "ByteDance": ["字节跳动"],
+    "TikTok": ["TikTok", "抖音"],
+    "Twitter": ["推特"],
+    "X": ["X", "推特"],
+
+    # Companies (Finance & Crypto)
+    "Binance": ["币安"],
+    "Coinbase": ["Coinbase", "Coinbase交易所"],
+    "FTX": ["FTX"],
+    "Kraken": ["Kraken"],
+    "BlackRock": ["贝莱德"],
+    "JPMorgan": ["摩根大通"],
+    "Goldman Sachs": ["高盛"],
+    "Morgan Stanley": ["摩根士丹利"],
+    "Berkshire Hathaway": ["伯克希尔"],
+
+    # Events & Awards
+    "Olympics": ["奥运会", "奥运"],
+    "Olympic Games": ["奥运会", "奥运"],
+    "World Cup": ["世界杯"],
+    "FIFA World Cup": ["世界杯"],
+    "Super Bowl": ["超级碗"],
+    "NBA": ["NBA", "美国职业篮球"],
+    "NBA Finals": ["NBA总决赛"],
+    "Oscars": ["奥斯卡"],
+    "Academy Awards": ["奥斯卡", "学院奖"],
+    "Grammy": ["格莱美"],
+    "Emmy": ["艾美奖"],
+    "Nobel Prize": ["诺贝尔奖"],
+    "Champions League": ["欧冠", "欧洲冠军联赛"],
+
+    # Products & Services
+    "iPhone": ["苹果手机", "iPhone"],
+    "iPad": ["iPad", "苹果平板"],
+    "ChatGPT": ["ChatGPT"],
+    "GPT": ["GPT"],
+    "Claude": ["Claude"],
+    "Gemini": ["Gemini", "双子座"],
+}
+
+# Keyword translations (for general keywords)
+CN_EN_KEYWORD_MAP = {
+    # War & Conflict
+    "war": ["战争", "战事"],
+    "conflict": ["冲突", "战争"],
+    "ceasefire": ["停火", "停战", "和平协议"],
+    "peace": ["和平", "和谈"],
+    "peace treaty": ["和平协议", "和约"],
+    "treaty": ["条约", "协议"],
+    "invasion": ["入侵", "侵略"],
+    "attack": ["攻击", "袭击"],
+    "military": ["军事", "军队"],
+    "army": ["军队", "陆军"],
+    "weapon": ["武器"],
+    "nuclear": ["核", "核武器"],
+    "sanction": ["制裁"],
+    "sanctions": ["制裁"],
+
+    # Politics & Government
+    "election": ["选举", "大选"],
+    "vote": ["投票", "选举"],
+    "president": ["总统"],
+    "prime minister": ["总理", "首相"],
+    "government": ["政府"],
+    "congress": ["国会"],
+    "parliament": ["议会"],
+    "senator": ["参议员"],
+    "representative": ["众议员", "代表"],
+    "party": ["政党", "党派"],
+    "democrat": ["民主党"],
+    "republican": ["共和党"],
+    "policy": ["政策"],
+    "legislation": ["立法", "法律"],
+    "bill": ["法案"],
+    "law": ["法律"],
+    "regulation": ["监管", "法规"],
+    "impeachment": ["弹劾"],
+    "resignation": ["辞职"],
+
+    # Economy & Finance
+    "interest rate": ["利率", "利息"],
+    "rate": ["利率", "汇率"],
+    "rate cut": ["降息"],
+    "rate hike": ["加息"],
+    "cut": ["降息", "削减"],
+    "hike": ["加息", "上调"],
+    "inflation": ["通货膨胀", "通胀"],
+    "recession": ["衰退", "经济衰退"],
+    "GDP": ["GDP", "国内生产总值"],
+    "unemployment": ["失业", "失业率"],
+    "job": ["就业", "工作"],
+    "jobs": ["就业", "工作"],
+    "employment": ["就业"],
+    "stock": ["股票"],
+    "stock market": ["股市", "股票市场"],
+    "market": ["市场"],
+    "price": ["价格"],
+    "rally": ["上涨", "反弹"],
+    "crash": ["崩盘", "暴跌"],
+    "bull market": ["牛市"],
+    "bear market": ["熊市"],
+    "tariff": ["关税"],
+    "trade war": ["贸易战"],
+    "trade": ["贸易", "交易"],
+    "export": ["出口"],
+    "import": ["进口"],
+    "currency": ["货币"],
+    "dollar": ["美元"],
+    "yuan": ["人民币"],
+    "yen": ["日元"],
+
+    # Crypto & Blockchain
+    "cryptocurrency": ["加密货币", "数字货币"],
+    "crypto": ["加密货币", "币圈"],
+    "blockchain": ["区块链"],
+    "DeFi": ["DeFi", "去中心化金融"],
+    "NFT": ["NFT", "数字藏品"],
+    "token": ["代币", "通证"],
+    "coin": ["币", "代币"],
+    "mining": ["挖矿"],
+    "halving": ["减半"],
+    "all-time high": ["历史新高", "新高"],
+    "ATH": ["历史新高"],
+    "all-time low": ["历史新低"],
+    "ATL": ["历史新低"],
+    "wallet": ["钱包"],
+    "exchange": ["交易所"],
+    "staking": ["质押"],
+    "yield": ["收益"],
+    "airdrop": ["空投"],
+    "whitepaper": ["白皮书"],
+    "mainnet": ["主网"],
+    "testnet": ["测试网"],
+
+    # Business & Corporate
+    "acquisition": ["收购", "并购"],
+    "acquire": ["收购"],
+    "merger": ["合并", "并购"],
+    "buyout": ["收购"],
+    "takeover": ["收购", "接管"],
+    "IPO": ["上市", "首次公开募股"],
+    "listing": ["上市"],
+    "delisting": ["退市"],
+    "earnings": ["财报", "收益"],
+    "revenue": ["营收", "收入"],
+    "profit": ["利润"],
+    "loss": ["亏损"],
+    "bankruptcy": ["破产"],
+    "CEO": ["首席执行官", "CEO"],
+    "founder": ["创始人"],
+    "layoff": ["裁员"],
+    "layoffs": ["裁员"],
+    "hire": ["招聘"],
+    "hiring": ["招聘"],
+    "valuation": ["估值"],
+    "market cap": ["市值"],
+    "FDV": ["完全稀释估值", "FDV"],
+    "fully diluted valuation": ["完全稀释估值"],
+
+    # Technology
+    "AI": ["AI", "人工智能"],
+    "artificial intelligence": ["人工智能"],
+    "machine learning": ["机器学习"],
+    "LLM": ["大语言模型", "LLM"],
+    "launch": ["发布", "推出", "上线"],
+    "release": ["发布", "发行"],
+    "update": ["更新", "升级"],
+    "upgrade": ["升级"],
+    "version": ["版本"],
+    "beta": ["测试版", "Beta"],
+    "app": ["应用", "App"],
+    "software": ["软件"],
+    "hardware": ["硬件"],
+    "chip": ["芯片"],
+    "processor": ["处理器"],
+    "smartphone": ["智能手机", "手机"],
+    "phone": ["手机"],
+    "computer": ["电脑", "计算机"],
+    "laptop": ["笔记本电脑"],
+    "tablet": ["平板电脑", "平板"],
+
+    # Sports
+    "championship": ["冠军", "锦标赛"],
+    "winner": ["冠军", "获胜者"],
+    "champion": ["冠军"],
+    "final": ["决赛"],
+    "finals": ["总决赛"],
+    "semifinal": ["半决赛"],
+    "quarter-final": ["四分之一决赛"],
+    "match": ["比赛"],
+    "game": ["比赛", "游戏"],
+    "tournament": ["锦标赛", "比赛"],
+    "season": ["赛季"],
+    "playoff": ["季后赛"],
+    "playoffs": ["季后赛"],
+    "team": ["球队", "团队"],
+    "player": ["球员", "选手"],
+    "coach": ["教练"],
+    "medal": ["奖牌"],
+    "gold medal": ["金牌"],
+    "silver medal": ["银牌"],
+    "bronze medal": ["铜牌"],
+
+    # Entertainment
+    "movie": ["电影"],
+    "film": ["电影"],
+    "actor": ["演员"],
+    "actress": ["女演员"],
+    "director": ["导演"],
+    "box office": ["票房"],
+    "album": ["专辑"],
+    "song": ["歌曲"],
+    "music": ["音乐"],
+    "artist": ["艺术家", "歌手"],
+    "singer": ["歌手"],
+    "concert": ["演唱会"],
+    "tour": ["巡演", "巡回演出"],
+    "award": ["奖项"],
+    "nominee": ["提名"],
+    "nomination": ["提名"],
+
+    # General
+    "yes": ["是", "对"],
+    "no": ["不", "否"],
+    "before": ["之前", "早于"],
+    "after": ["之后", "晚于"],
+    "by": ["在", "到"],
+    "reach": ["达到", "触及"],
+    "above": ["超过", "高于"],
+    "below": ["低于", "以下"],
+    "over": ["超过"],
+    "under": ["低于"],
+    "increase": ["增长", "上涨"],
+    "decrease": ["下降", "下跌"],
+    "rise": ["上涨", "上升"],
+    "fall": ["下跌", "下降"],
+    "growth": ["增长"],
+    "decline": ["下降", "衰退"],
+    "announce": ["宣布"],
+    "announcement": ["公告", "宣布"],
+    "report": ["报告", "报道"],
+    "news": ["新闻"],
+    "decision": ["决定"],
+    "deal": ["交易", "协议"],
+    "agreement": ["协议"],
+    "contract": ["合同", "合约"],
+}
+
+
 def _now_epoch_seconds():
     return int(time.time())
 
@@ -1198,15 +1567,26 @@ def generate_keywords(api_key, title, rules, context=None):
         f"Market rules: {_truncate(rules, 1200)}\n\n"
         "Rules:\n"
         "- Output must be a JSON object with 'keywords' and 'entityGroups' fields (no extra fields).\n"
-        "- keywords: 10-15 search terms (entities, synonyms, abbreviations, slang)\n"
+        "- keywords: 15-25 search terms in BOTH English AND Chinese (where applicable)\n"
+        "  * Include English terms: entities, synonyms, abbreviations, slang\n"
+        "  * For international entities (countries, companies, people, events), add Chinese translations\n"
+        "  * For common concepts (war, election, rate cut), add Chinese equivalents\n"
+        "  * Examples of bilingual keywords:\n"
+        "    - Countries: Russia, 俄罗斯, Ukraine, 乌克兰, 俄乌战争\n"
+        "    - Finance: FOMC, Fed, 美联储, interest rate, 利率, rate cut, 降息\n"
+        "    - Crypto: Bitcoin, 比特币, Ethereum, 以太坊\n"
+        "    - People: Trump, 川普, Putin, 普京, Musk, 马斯克\n"
+        "    - Companies: Tesla, 特斯拉, Apple, 苹果, Binance, 币安\n"
+        "    - Events: Olympics, 奥运会, World Cup, 世界杯, Oscars, 奥斯卡\n"
         "- entityGroups: STRICT subject-identifying requirements as an AND-of-ORs (CNF)\n"
         "  * entityGroups is a list of groups; ALL groups are required (AND)\n"
         "  * each group is a list of synonyms; ANY term in the group can satisfy it (OR)\n"
-        "  * Put the CANONICAL form FIRST in each group\n"
-        "  * Use 1-2 groups total; keep each group to 1-4 terms\n"
+        "  * Put the CANONICAL English form FIRST in each group, then add Chinese translations\n"
+        "  * Use 1-2 groups total; keep each group to 2-6 terms (including Chinese)\n"
         "  * Each term should be a short identifier (1-3 words) or a ticker\n"
+        "  * Include Chinese translations for major entities in entityGroups\n"
         "  * entityGroups terms MUST identify the market's SUBJECT, not its outcomes/options\n"
-        "  * entityGroups terms MUST come from the market title (you may add common aliases like BTC/ETH/Fed for those title entities)\n"
+        "  * entityGroups terms MUST come from the market title (you may add common aliases)\n"
         "  * NEVER use question/aux words as entities: will, who, what, which, when, where, why, how\n"
         "  * NEVER use generic/outcome/mechanics terms as entities: yes, no, other, winner, champion, increase, decrease, nochange, hold, resolution, settlement,\n"
         "    market cap, valuation, launch, ipo, tge, fdv, ath, exchange, nasdaq, nyse, sec\n"
@@ -1220,17 +1600,19 @@ def generate_keywords(api_key, title, rules, context=None):
         "- Prefer short phrases over sentences.\n"
         "- Do not include duplicates.\n"
         "\n"
-        "Entity examples:\n"
-        '- Title: "Will ETH all time high by 2025-12-31?" -> entityGroups: [["ETH", "Ethereum"]]\n'
-        '- Title: "Will CZ return to Binance before 2025?" -> entityGroups: [["CZ", "Changpeng Zhao"], ["Binance"]]\n'
-        '- Title: "US Fed Rate Decision in January?" -> entityGroups: [["Fed", "FOMC", "Federal Reserve"]]\n'
-        '- Title: "Oscars 2026: Best Actor Winner" -> entityGroups: [["Oscars", "Academy Awards", "Oscar"]]\n'
-        '- Title: "Who will acquire TikTok?" -> entityGroups: [["TikTok"]]\n'
+        "Entity examples (with Chinese support):\n"
+        '- Title: "Will ETH all time high by 2025-12-31?" -> entityGroups: [["ETH", "Ethereum", "以太坊"]]\n'
+        '- Title: "Will CZ return to Binance before 2025?" -> entityGroups: [["CZ", "Changpeng Zhao", "赵长鹏"], ["Binance", "币安"]]\n'
+        '- Title: "US Fed Rate Decision in January?" -> entityGroups: [["Fed", "FOMC", "Federal Reserve", "美联储"]]\n'
+        '- Title: "Russia x Ukraine ceasefire by ...?" -> entityGroups: [["Russia", "俄罗斯"], ["Ukraine", "乌克兰"]]\n'
+        '- Title: "Oscars 2026: Best Actor Winner" -> entityGroups: [["Oscars", "Academy Awards", "Oscar", "奥斯卡"]]\n'
+        '- Title: "Who will acquire TikTok?" -> entityGroups: [["TikTok", "抖音"]]\n'
+        '- Title: "Tesla stock above $300?" -> entityGroups: [["Tesla", "特斯拉"]]\n'
         "\n"
-        "Example output format:\n"
+        "Example output format (bilingual):\n"
         '{\n'
-        '  "keywords": ["lighter", "fdv", "market cap", "launch", "tge"],\n'
-        '  "entityGroups": [["Lighter"]]\n'
+        '  "keywords": ["Russia", "俄罗斯", "Ukraine", "乌克兰", "war", "战争", "ceasefire", "停火", "peace", "和平"],\n'
+        '  "entityGroups": [["Russia", "俄罗斯"], ["Ukraine", "乌克兰"]]\n'
         "}\n"
     )
 
@@ -1284,6 +1666,109 @@ def generate_keywords(api_key, title, rules, context=None):
                     flush=True,
                 )
             time.sleep(sleep_for)
+
+
+def augment_with_chinese(keywords, entities, entity_groups):
+    """Augment LLM-generated keywords and entityGroups with Chinese translations from dictionary.
+
+    This function uses predefined Chinese-English dictionaries to add missing Chinese translations
+    to keywords and entity groups, complementing the LLM's bilingual output.
+
+    Args:
+        keywords: List of keyword strings (may already include some Chinese from LLM)
+        entities: List of canonical entity strings (for backward compatibility)
+        entity_groups: List of entity groups (AND-of-OR structure)
+
+    Returns:
+        Tuple of (augmented_keywords, augmented_entity_groups)
+    """
+    if not isinstance(keywords, list):
+        keywords = []
+    if not isinstance(entity_groups, list):
+        entity_groups = []
+
+    # Use sets to track what we've already added (avoid duplicates)
+    keywords_set = set(_normalize_keyword(k) for k in keywords if k)
+    new_keywords = list(keywords)  # Start with original keywords
+
+    # Augment keywords with Chinese translations
+    for kw in list(keywords):
+        kw_normalized = _normalize_keyword(kw)
+        if not kw_normalized:
+            continue
+
+        # Check if this keyword matches any entry in our dictionaries
+        # Try both exact match and partial match (for phrases)
+        for en_key, cn_translations in CN_EN_KEYWORD_MAP.items():
+            en_key_lower = en_key.lower()
+            kw_lower = kw_normalized.lower()
+
+            # Exact match or keyword contains the key
+            if en_key_lower == kw_lower or en_key_lower in kw_lower or kw_lower in en_key_lower:
+                for cn_term in cn_translations:
+                    cn_normalized = _normalize_keyword(cn_term)
+                    if cn_normalized and cn_normalized not in keywords_set:
+                        new_keywords.append(cn_term)
+                        keywords_set.add(cn_normalized)
+
+    # Augment entityGroups with Chinese translations
+    new_entity_groups = []
+    for group in entity_groups:
+        if not isinstance(group, list):
+            continue
+
+        new_group = list(group)  # Start with original group
+        group_terms_set = set(_normalize_keyword(t) for t in new_group if t)
+
+        for term in list(group):
+            term_normalized = _normalize_keyword(term)
+            if not term_normalized:
+                continue
+
+            # Check entity map for this term
+            for en_key, cn_translations in CN_EN_ENTITY_MAP.items():
+                en_key_lower = en_key.lower()
+                term_lower = term_normalized.lower()
+
+                # Exact match or term contains the key
+                if en_key_lower == term_lower or (len(en_key_lower) >= 3 and en_key_lower in term_lower):
+                    for cn_term in cn_translations:
+                        cn_normalized = _normalize_keyword(cn_term)
+                        if cn_normalized and cn_normalized not in group_terms_set:
+                            new_group.append(cn_term)
+                            group_terms_set.add(cn_normalized)
+
+            # Also check keyword map for entity terms
+            for en_key, cn_translations in CN_EN_KEYWORD_MAP.items():
+                en_key_lower = en_key.lower()
+                term_lower = term_normalized.lower()
+
+                # Exact match
+                if en_key_lower == term_lower:
+                    for cn_term in cn_translations:
+                        cn_normalized = _normalize_keyword(cn_term)
+                        if cn_normalized and cn_normalized not in group_terms_set:
+                            new_group.append(cn_term)
+                            group_terms_set.add(cn_normalized)
+
+        if new_group:
+            new_entity_groups.append(new_group)
+
+    # If we didn't create new groups (empty input), preserve original structure
+    if not new_entity_groups and entity_groups:
+        new_entity_groups = entity_groups
+
+    if DEBUG:
+        added_keywords = len(new_keywords) - len(keywords)
+        if added_keywords > 0:
+            print(f"[debug] augment_with_chinese: added {added_keywords} Chinese keywords", flush=True)
+
+        for i, (old_group, new_group) in enumerate(zip(entity_groups, new_entity_groups)):
+            added_entities = len(new_group) - len(old_group)
+            if added_entities > 0:
+                print(f"[debug] augment_with_chinese: added {added_entities} Chinese terms to entityGroup[{i}]", flush=True)
+
+    return new_keywords, new_entity_groups
 
 
 def build_data(markets, api_key, previous_data=None, parent_events=None):
@@ -1689,6 +2174,9 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
                         keywords = result.get("keywords", [])
                         entities = result.get("entities", [])
                         entity_groups = result.get("entityGroups", []) or result.get("entity_groups", [])
+
+                        # Augment with Chinese translations from dictionary
+                        keywords, entity_groups = augment_with_chinese(keywords, entities, entity_groups)
                         normalized_try = _normalize_entity_groups(entity_groups, title_for_ai, allow_terms)
 
                         if not normalized_try:
@@ -1721,6 +2209,9 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
                                 keywords = retry.get("keywords", keywords)
                                 entities = retry.get("entities", entities)
                                 entity_groups = retry.get("entityGroups", []) or retry.get("entity_groups", [])
+
+                                # Augment retry result with Chinese translations
+                                keywords, entity_groups = augment_with_chinese(keywords, entities, entity_groups)
                     elif isinstance(result, list):
                         # Backwards compatibility with old array format
                         keywords = result
