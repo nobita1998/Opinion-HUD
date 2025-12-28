@@ -50,7 +50,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data.json
+          git add -f data.json
           # 仅在有变更时提交
           git diff --staged --quiet || git commit -m "chore: update data.json [$(date -u '+%Y-%m-%d %H:%M UTC')]"
 
