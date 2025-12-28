@@ -1572,7 +1572,7 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         event_stats["events"] += 1
         if event_stats["events"] == 1:
             to_run = min(total_events, max_events) if max_events is not None else total_events
-            print(f"[info] resolving keywords for {to_run} events (from {kept} markets)", flush=True)
+            print(f"[info] processing {to_run} events (from {kept} markets): {planned_reuse} reused, {planned_llm} need LLM", flush=True)
         if event_stats["events"] % 10 == 0:
             print(f"[info] events keyworded: {event_stats['events']}", flush=True)
 
