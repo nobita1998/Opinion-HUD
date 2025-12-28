@@ -1527,6 +1527,11 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
             elif len(sub_markets) == 1 and sub_markets[0].get("marketId") != event_id:
                 is_true_parent_event = True
             # else: single sub-market with same ID = binary market, not a true parent
+            elif len(sub_markets) == 1 and sub_markets[0].get("marketId") == event_id:
+                # This is a pseudo-parent (binary market wrapped as event), skip it
+                if DEBUG:
+                    print(f"[debug] skipping pseudo-parent event_id={event_id} title='{bucket.get('title')}' (single sub-market with same ID)", flush=True)
+                continue
 
         # Independent binary market: single marketId, not in parent_events
         is_independent_binary = len(market_ids) == 1 and event_id == market_ids[0] and not is_true_parent_event
