@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2025-12-29 22:47:37 UTC+8",
+    "generatedAt": "2025-12-29 23:08:05 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://opinion.trade",
     "model": "GLM-4.7",
@@ -10,7 +10,7 @@
       "seen": 826,
       "kept": 623,
       "markets": 156,
-      "keywords": 1401,
+      "keywords": 1430,
       "events": {
         "events": 115
       },
@@ -31,10 +31,10 @@
         "reused": 103,
         "regenerated_empty_entitygroups": 12,
         "calls": 12,
-        "retries": 12,
+        "retries": 5,
         "fallback": 0,
-        "empty": 12,
-        "non_empty": 0,
+        "empty": 4,
+        "non_empty": 8,
         "errors": 0
       }
     }
@@ -2235,6 +2235,20 @@
       "bestMarketId": "173",
       "bestLabels": null,
       "keywords": [
+        "opensea",
+        "nft marketplace",
+        "token launch",
+        "airdrop",
+        "valuation",
+        "crypto trading",
+        "digital collectibles",
+        "ethereum nfts",
+        "marketplace",
+        "token generation event",
+        "tokenomics",
+        "listing",
+        "trading volume",
+        "web3 marketplace",
         "opensea fdv",
         "fdv above",
         "above one",
@@ -2247,8 +2261,14 @@
         "one day after",
         "day after launch"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "opensea"
+      ],
+      "entityGroups": [
+        [
+          "opensea"
+        ]
+      ],
       "sig": "9f549944",
       "sigFull": "9f549944",
       "sigCore": "c2782c48",
@@ -2262,12 +2282,33 @@
       "bestMarketId": "172",
       "bestLabels": null,
       "keywords": [
+        "theo",
+        "token launch",
+        "airdrop",
+        "crypto",
+        "cryptocurrency",
+        "tge",
+        "ico",
+        "listing",
+        "trading",
+        "debut",
+        "release",
+        "project",
+        "blockchain",
+        "smart contract",
+        "presale",
         "theo launch",
         "launch token",
         "theo launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "theo"
+      ],
+      "entityGroups": [
+        [
+          "theo"
+        ]
+      ],
       "sig": "33188b67",
       "sigFull": "33188b67",
       "sigCore": "16605c63",
@@ -2281,10 +2322,32 @@
       "bestMarketId": "171",
       "bestLabels": null,
       "keywords": [
+        "openai",
+        "chatgpt",
+        "sam altman",
+        "artificial intelligence",
+        "public offering",
+        "stock market",
+        "listing",
+        "shares",
+        "valuation",
+        "ipo",
+        "going public",
+        "ticker",
+        "debut",
+        "equity",
+        "offering",
         "openai ipo"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "openai"
+      ],
+      "entityGroups": [
+        [
+          "openai",
+          "开放人工智能"
+        ]
+      ],
       "sig": "5632b83f",
       "sigFull": "5632b83f",
       "sigCore": "03ad58a2",
@@ -4615,6 +4678,21 @@
       "bestMarketId": "97",
       "bestLabels": null,
       "keywords": [
+        "fdv",
+        "fully diluted valuation",
+        "market cap",
+        "valuation",
+        "launch",
+        "tge",
+        "token",
+        "crypto",
+        "price",
+        "based",
+        "memecoin",
+        "airdrop",
+        "listing",
+        "debut",
+        "trading",
         "based fdv",
         "fdv above",
         "above one",
@@ -4627,8 +4705,15 @@
         "one day after",
         "day after launch"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "based"
+      ],
+      "entityGroups": [
+        [
+          "based",
+          "$based"
+        ]
+      ],
       "sig": "eea09a51",
       "sigFull": "eea09a51",
       "sigCore": "a35197fc",
@@ -4642,6 +4727,21 @@
       "bestMarketId": "96",
       "bestLabels": null,
       "keywords": [
+        "standx",
+        "token",
+        "crypto",
+        "valuation",
+        "fdv",
+        "fully diluted valuation",
+        "market cap",
+        "launch",
+        "tge",
+        "listing",
+        "trading",
+        "debut",
+        "price",
+        "airdrop",
+        "presale",
         "standx fdv",
         "fdv above",
         "above one",
@@ -4654,8 +4754,14 @@
         "one day after",
         "day after launch"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "standx"
+      ],
+      "entityGroups": [
+        [
+          "standx"
+        ]
+      ],
       "sig": "d55ebf34",
       "sigFull": "d55ebf34",
       "sigCore": "eccb0d8f",
@@ -4669,6 +4775,21 @@
       "bestMarketId": "95",
       "bestLabels": null,
       "keywords": [
+        "backpack",
+        "backpack exchange",
+        "crypto",
+        "token",
+        "airdrop",
+        "valuation",
+        "fdv",
+        "fully diluted",
+        "market cap",
+        "trading",
+        "listing",
+        "defi",
+        "blockchain",
+        "launch",
+        "tokenomics",
         "backpack fdv",
         "fdv above",
         "above one",
@@ -4681,8 +4802,14 @@
         "one day after",
         "day after launch"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "backpack"
+      ],
+      "entityGroups": [
+        [
+          "backpack"
+        ]
+      ],
       "sig": "809f5cfd",
       "sigFull": "809f5cfd",
       "sigCore": "0b6865cd",
@@ -4696,10 +4823,34 @@
       "bestMarketId": "89",
       "bestLabels": null,
       "keywords": [
+        "gpt-6",
+        "gpt6",
+        "openai",
+        "generative pre-trained transformer 6",
+        "agi",
+        "artificial general intelligence",
+        "llm",
+        "large language model",
+        "ai model",
+        "next generation ai",
+        "chatgpt 6",
+        "sam altman",
+        "model launch",
+        "ai release",
+        "neural network",
         "gpt-6 released"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "gpt-6"
+      ],
+      "entityGroups": [
+        [
+          "gpt-6",
+          "gpt6",
+          "gpt 6",
+          "gpt"
+        ]
+      ],
       "sig": "e773439a",
       "sigFull": "e773439a",
       "sigCore": "02fb392d",
@@ -4758,6 +4909,21 @@
       "bestMarketId": "85",
       "bestLabels": null,
       "keywords": [
+        "solana",
+        "sol",
+        "crypto",
+        "blockchain",
+        "altcoin",
+        "smart contracts",
+        "defi",
+        "nft",
+        "price prediction",
+        "trading",
+        "investment",
+        "volatility",
+        "bull run",
+        "token",
+        "cryptocurrency",
         "what price",
         "price solana",
         "solana hit",
@@ -4766,8 +4932,16 @@
         "price solana hit",
         "solana hit 2025"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "solana"
+      ],
+      "entityGroups": [
+        [
+          "solana",
+          "sol",
+          "索拉纳"
+        ]
+      ],
       "sig": "2be7d420",
       "sigFull": "2be7d420",
       "sigCore": "a18b62bb",
@@ -9055,6 +9229,20 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "opensea",
+        "nft marketplace",
+        "token launch",
+        "airdrop",
+        "valuation",
+        "crypto trading",
+        "digital collectibles",
+        "ethereum nfts",
+        "marketplace",
+        "token generation event",
+        "tokenomics",
+        "listing",
+        "trading volume",
+        "web3 marketplace",
         "opensea fdv",
         "fdv above",
         "above one",
@@ -9067,8 +9255,14 @@
         "one day after",
         "day after launch"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "opensea"
+      ],
+      "entityGroups": [
+        [
+          "opensea"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -9114,12 +9308,33 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "theo",
+        "token launch",
+        "airdrop",
+        "crypto",
+        "cryptocurrency",
+        "tge",
+        "ico",
+        "listing",
+        "trading",
+        "debut",
+        "release",
+        "project",
+        "blockchain",
+        "smart contract",
+        "presale",
         "theo launch",
         "launch token",
         "theo launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "theo"
+      ],
+      "entityGroups": [
+        [
+          "theo"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -9165,10 +9380,32 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "openai",
+        "chatgpt",
+        "sam altman",
+        "artificial intelligence",
+        "public offering",
+        "stock market",
+        "listing",
+        "shares",
+        "valuation",
+        "ipo",
+        "going public",
+        "ticker",
+        "debut",
+        "equity",
+        "offering",
         "openai ipo"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "openai"
+      ],
+      "entityGroups": [
+        [
+          "openai",
+          "开放人工智能"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -13475,6 +13712,21 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "fdv",
+        "fully diluted valuation",
+        "market cap",
+        "valuation",
+        "launch",
+        "tge",
+        "token",
+        "crypto",
+        "price",
+        "based",
+        "memecoin",
+        "airdrop",
+        "listing",
+        "debut",
+        "trading",
         "based fdv",
         "fdv above",
         "above one",
@@ -13487,8 +13739,15 @@
         "one day after",
         "day after launch"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "based"
+      ],
+      "entityGroups": [
+        [
+          "based",
+          "$based"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -13540,6 +13799,21 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "standx",
+        "token",
+        "crypto",
+        "valuation",
+        "fdv",
+        "fully diluted valuation",
+        "market cap",
+        "launch",
+        "tge",
+        "listing",
+        "trading",
+        "debut",
+        "price",
+        "airdrop",
+        "presale",
         "standx fdv",
         "fdv above",
         "above one",
@@ -13552,8 +13826,14 @@
         "one day after",
         "day after launch"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "standx"
+      ],
+      "entityGroups": [
+        [
+          "standx"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -13611,6 +13891,21 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "backpack",
+        "backpack exchange",
+        "crypto",
+        "token",
+        "airdrop",
+        "valuation",
+        "fdv",
+        "fully diluted",
+        "market cap",
+        "trading",
+        "listing",
+        "defi",
+        "blockchain",
+        "launch",
+        "tokenomics",
         "backpack fdv",
         "fdv above",
         "above one",
@@ -13623,8 +13918,14 @@
         "one day after",
         "day after launch"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "backpack"
+      ],
+      "entityGroups": [
+        [
+          "backpack"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -13670,10 +13971,34 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "gpt-6",
+        "gpt6",
+        "openai",
+        "generative pre-trained transformer 6",
+        "agi",
+        "artificial general intelligence",
+        "llm",
+        "large language model",
+        "ai model",
+        "next generation ai",
+        "chatgpt 6",
+        "sam altman",
+        "model launch",
+        "ai release",
+        "neural network",
         "gpt-6 released"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "gpt-6"
+      ],
+      "entityGroups": [
+        [
+          "gpt-6",
+          "gpt6",
+          "gpt 6",
+          "gpt"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -13784,6 +14109,21 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "solana",
+        "sol",
+        "crypto",
+        "blockchain",
+        "altcoin",
+        "smart contracts",
+        "defi",
+        "nft",
+        "price prediction",
+        "trading",
+        "investment",
+        "volatility",
+        "bull run",
+        "token",
+        "cryptocurrency",
         "what price",
         "price solana",
         "solana hit",
@@ -13792,8 +14132,16 @@
         "price solana hit",
         "solana hit 2025"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "solana"
+      ],
+      "entityGroups": [
+        [
+          "solana",
+          "sol",
+          "索拉纳"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -14032,6 +14380,9 @@
     }
   },
   "index": {
+    "$based": [
+      "97"
+    ],
     "2025": [
       "122",
       "124",
@@ -14311,7 +14662,8 @@
     ],
     "agi": [
       "152",
-      "66"
+      "66",
+      "89"
     ],
     "ai": [
       "198",
@@ -14322,10 +14674,14 @@
       "194"
     ],
     "ai model": [
-      "129"
+      "129",
+      "89"
     ],
     "ai race": [
       "66"
+    ],
+    "ai release": [
+      "89"
     ],
     "ai stock": [
       "123"
@@ -14338,6 +14694,8 @@
       "119",
       "167",
       "168",
+      "172",
+      "173",
       "174",
       "175",
       "184",
@@ -14351,7 +14709,10 @@
       "220",
       "228",
       "229",
-      "67"
+      "67",
+      "95",
+      "96",
+      "97"
     ],
     "airstrike": [
       "144"
@@ -14368,7 +14729,8 @@
       "125"
     ],
     "altcoin": [
-      "64"
+      "64",
+      "85"
     ],
     "american football": [
       "179",
@@ -14436,8 +14798,12 @@
       "188",
       "226"
     ],
+    "artificial general intelligence": [
+      "89"
+    ],
     "artificial intelligence": [
       "129",
+      "171",
       "183",
       "66"
     ],
@@ -14498,6 +14864,12 @@
     "awards season": [
       "138"
     ],
+    "backpack": [
+      "95"
+    ],
+    "backpack exchange": [
+      "95"
+    ],
     "backpack fdv": [
       "95"
     ],
@@ -14537,6 +14909,9 @@
     ],
     "base network": [
       "119"
+    ],
+    "based": [
+      "97"
     ],
     "based fdv": [
       "97"
@@ -14651,13 +15026,16 @@
       "112",
       "119",
       "167",
+      "172",
       "183",
       "192",
       "194",
       "205",
       "208",
       "229",
-      "64"
+      "64",
+      "85",
+      "95"
     ],
     "boj": [
       "120",
@@ -14696,6 +15074,9 @@
     ],
     "bull market": [
       "58"
+    ],
+    "bull run": [
+      "85"
     ],
     "bullion": [
       "227",
@@ -14816,7 +15197,11 @@
       "129"
     ],
     "chatgpt": [
-      "152"
+      "152",
+      "171"
+    ],
+    "chatgpt 6": [
+      "89"
     ],
     "chief executive officer": [
       "193"
@@ -15020,6 +15405,7 @@
       "119",
       "145",
       "167",
+      "172",
       "174",
       "183",
       "184",
@@ -15033,7 +15419,11 @@
       "229",
       "58",
       "64",
-      "67"
+      "67",
+      "85",
+      "95",
+      "96",
+      "97"
     ],
     "crypto exchange": [
       "143"
@@ -15043,6 +15433,9 @@
       "175",
       "228"
     ],
+    "crypto trading": [
+      "173"
+    ],
     "crypto wallet": [
       "118",
       "189"
@@ -15050,8 +15443,10 @@
     "cryptocurrency": [
       "112",
       "145",
+      "172",
       "58",
-      "64"
+      "64",
+      "85"
     ],
     "cup winner": [
       "79"
@@ -15128,8 +15523,12 @@
       "143",
       "158",
       "169",
+      "171",
+      "172",
       "219",
-      "220"
+      "220",
+      "96",
+      "97"
     ],
     "december": [
       "145"
@@ -15173,7 +15572,9 @@
       "192",
       "197",
       "64",
-      "67"
+      "67",
+      "85",
+      "95"
     ],
     "degen": [
       "174"
@@ -15215,6 +15616,9 @@
     ],
     "die stranger things": [
       "215"
+    ],
+    "digital collectibles": [
+      "173"
     ],
     "digital gold": [
       "112",
@@ -15397,6 +15801,7 @@
       "152",
       "158",
       "169",
+      "171",
       "204",
       "65"
     ],
@@ -15450,6 +15855,9 @@
     ],
     "ethereum layer network": [
       "208"
+    ],
+    "ethereum nfts": [
+      "173"
     ],
     "ethereum wallet": [
       "189"
@@ -15527,7 +15935,10 @@
       "194",
       "207",
       "219",
-      "220"
+      "220",
+      "95",
+      "96",
+      "97"
     ],
     "fdv above": [
       "173",
@@ -15731,11 +16142,14 @@
     ],
     "fully diluted": [
       "183",
-      "189"
+      "189",
+      "95"
     ],
     "fully diluted valuation": [
       "219",
-      "220"
+      "220",
+      "96",
+      "97"
     ],
     "fun airdrop": [
       "174"
@@ -15784,6 +16198,9 @@
       "129",
       "66"
     ],
+    "generative pre-trained transformer 6": [
+      "89"
+    ],
     "gensyn": [
       "194"
     ],
@@ -15808,6 +16225,7 @@
     "going public": [
       "143",
       "158",
+      "171",
       "190",
       "204",
       "205"
@@ -15878,9 +16296,19 @@
       "121"
     ],
     "gpt": [
-      "66"
+      "66",
+      "89"
+    ],
+    "gpt 6": [
+      "89"
+    ],
+    "gpt-6": [
+      "89"
     ],
     "gpt-6 released": [
+      "89"
+    ],
+    "gpt6": [
       "89"
     ],
     "grand slam": [
@@ -16022,6 +16450,7 @@
     ],
     "ico": [
       "167",
+      "172",
       "192"
     ],
     "idf": [
@@ -16131,6 +16560,9 @@
       "227",
       "62"
     ],
+    "investment": [
+      "85"
+    ],
     "iphone": [
       "122"
     ],
@@ -16139,6 +16571,7 @@
       "152",
       "158",
       "169",
+      "171",
       "190",
       "204",
       "205"
@@ -16319,7 +16752,8 @@
     ],
     "large language model": [
       "129",
-      "66"
+      "66",
+      "89"
     ],
     "largest company": [
       "65"
@@ -16339,7 +16773,10 @@
       "201",
       "207",
       "220",
-      "229"
+      "229",
+      "95",
+      "96",
+      "97"
     ],
     "launch its": [
       "208"
@@ -16486,6 +16923,9 @@
       "167",
       "168",
       "169",
+      "171",
+      "172",
+      "173",
       "175",
       "190",
       "192",
@@ -16497,7 +16937,10 @@
       "219",
       "220",
       "229",
-      "67"
+      "67",
+      "95",
+      "96",
+      "97"
     ],
     "live": [
       "132"
@@ -16505,7 +16948,8 @@
     "llm": [
       "129",
       "200",
-      "66"
+      "66",
+      "89"
     ],
     "local election": [
       "131"
@@ -16624,7 +17068,10 @@
       "220",
       "65",
       "67",
-      "88"
+      "88",
+      "95",
+      "96",
+      "97"
     ],
     "market cap above": [
       "204",
@@ -16643,6 +17090,9 @@
     ],
     "market outlook": [
       "64"
+    ],
+    "marketplace": [
+      "173"
     ],
     "matches": [
       "79"
@@ -16681,7 +17131,8 @@
       "174"
     ],
     "memecoin": [
-      "174"
+      "174",
+      "97"
     ],
     "men australian": [
       "222"
@@ -16776,6 +17227,9 @@
     ],
     "model benchmark": [
       "66"
+    ],
+    "model launch": [
+      "89"
     ],
     "monetary easing": [
       "121"
@@ -16922,6 +17376,9 @@
     "network poly": [
       "208"
     ],
+    "neural network": [
+      "89"
+    ],
     "new listings": [
       "186"
     ],
@@ -16945,6 +17402,9 @@
     ],
     "newsmaker": [
       "108"
+    ],
+    "next generation ai": [
+      "89"
     ],
     "nfc": [
       "179",
@@ -17011,6 +17471,12 @@
       "224",
       "81"
     ],
+    "nft": [
+      "85"
+    ],
+    "nft marketplace": [
+      "173"
+    ],
     "nicolas maduro": [
       "116"
     ],
@@ -17065,7 +17531,8 @@
       "169"
     ],
     "offering": [
-      "152"
+      "152",
+      "171"
     ],
     "okbet": [
       "200"
@@ -17117,7 +17584,9 @@
       "222"
     ],
     "openai": [
-      "152"
+      "152",
+      "171",
+      "89"
     ],
     "openai ipo": [
       "152",
@@ -17125,6 +17594,9 @@
     ],
     "openai ipo closing": [
       "152"
+    ],
+    "opensea": [
+      "173"
     ],
     "opensea fdv": [
       "173"
@@ -17402,8 +17874,10 @@
     ],
     "presale": [
       "167",
+      "172",
       "174",
-      "201"
+      "201",
+      "96"
     ],
     "president": [
       "116",
@@ -17423,7 +17897,9 @@
       "219",
       "220",
       "64",
-      "67"
+      "67",
+      "96",
+      "97"
     ],
     "price bitcoin": [
       "145",
@@ -17446,7 +17922,8 @@
       "62"
     ],
     "price prediction": [
-      "58"
+      "58",
+      "85"
     ],
     "price solana": [
       "85"
@@ -17473,6 +17950,7 @@
       "213"
     ],
     "project": [
+      "172",
       "197",
       "201",
       "220",
@@ -17501,6 +17979,7 @@
       "143",
       "158",
       "169",
+      "171",
       "190",
       "205"
     ],
@@ -17615,6 +18094,7 @@
       "115"
     ],
     "release": [
+      "172",
       "201",
       "229"
     ],
@@ -17717,7 +18197,9 @@
       "217"
     ],
     "sam altman": [
-      "152"
+      "152",
+      "171",
+      "89"
     ],
     "santa clara": [
       "81"
@@ -17830,7 +18312,8 @@
       "143",
       "152",
       "158",
-      "169"
+      "169",
+      "171"
     ],
     "shock": [
       "187"
@@ -17866,11 +18349,13 @@
       "222"
     ],
     "smart contract": [
+      "172",
       "192",
       "229"
     ],
     "smart contracts": [
-      "64"
+      "64",
+      "85"
     ],
     "snapshot": [
       "174"
@@ -17887,8 +18372,12 @@
     "socialism": [
       "116"
     ],
+    "sol": [
+      "85"
+    ],
     "solana": [
-      "174"
+      "174",
+      "85"
     ],
     "solana hit": [
       "85"
@@ -17986,6 +18475,9 @@
       "180",
       "182"
     ],
+    "standx": [
+      "96"
+    ],
     "standx fdv": [
       "96"
     ],
@@ -18046,6 +18538,7 @@
       "123",
       "152",
       "169",
+      "171",
       "186"
     ],
     "stock price": [
@@ -18189,6 +18682,7 @@
     "tge": [
       "167",
       "168",
+      "172",
       "175",
       "192",
       "194",
@@ -18198,7 +18692,9 @@
       "220",
       "228",
       "229",
-      "67"
+      "67",
+      "96",
+      "97"
     ],
     "thailand": [
       "188"
@@ -18211,6 +18707,9 @@
     ],
     "the big game": [
       "81"
+    ],
+    "theo": [
+      "172"
     ],
     "theo launch": [
       "172"
@@ -18227,7 +18726,8 @@
     "ticker": [
       "143",
       "158",
-      "169"
+      "169",
+      "171"
     ],
     "tightening": [
       "120",
@@ -18291,7 +18791,11 @@
       "208",
       "220",
       "229",
-      "67"
+      "67",
+      "85",
+      "95",
+      "96",
+      "97"
     ],
     "token distribution": [
       "174"
@@ -18304,12 +18808,15 @@
     ],
     "token generation event": [
       "168",
+      "173",
       "175",
       "228"
     ],
     "token launch": [
       "118",
       "168",
+      "172",
+      "173",
       "175",
       "189",
       "192",
@@ -18325,9 +18832,11 @@
       "119",
       "167",
       "168",
+      "173",
       "175",
       "189",
-      "194"
+      "194",
+      "95"
     ],
     "tokyo": [
       "230"
@@ -18378,6 +18887,7 @@
       "126",
       "145",
       "169",
+      "172",
       "183",
       "184",
       "197",
@@ -18387,7 +18897,11 @@
       "227",
       "58",
       "62",
-      "67"
+      "67",
+      "85",
+      "95",
+      "96",
+      "97"
     ],
     "trading bot": [
       "200"
@@ -18403,6 +18917,9 @@
     ],
     "trading platform": [
       "175"
+    ],
+    "trading volume": [
+      "173"
     ],
     "transaction": [
       "160"
@@ -18594,6 +19111,8 @@
       "143",
       "152",
       "158",
+      "171",
+      "173",
       "183",
       "184",
       "189",
@@ -18606,7 +19125,10 @@
       "219",
       "220",
       "65",
-      "67"
+      "67",
+      "95",
+      "96",
+      "97"
     ],
     "valve": [
       "151"
@@ -18646,7 +19168,8 @@
     "volatility": [
       "112",
       "145",
-      "58"
+      "58",
+      "85"
     ],
     "volodymyr": [
       "202"
@@ -18690,6 +19213,9 @@
       "189",
       "201",
       "205"
+    ],
+    "web3 marketplace": [
+      "173"
     ],
     "west division": [
       "179"
@@ -18987,7 +19513,8 @@
       "108"
     ],
     "开放人工智能": [
-      "152"
+      "152",
+      "171"
     ],
     "微策略": [
       "111"
@@ -19058,6 +19585,9 @@
     ],
     "科迪亚克": [
       "197"
+    ],
+    "索拉纳": [
+      "85"
     ],
     "罗根·保罗": [
       "217"
@@ -19122,6 +19652,9 @@
     ]
   },
   "eventIndex": {
+    "$based": [
+      "97"
+    ],
     "2025": [
       "122",
       "124",
@@ -19401,7 +19934,8 @@
     ],
     "agi": [
       "152",
-      "66"
+      "66",
+      "89"
     ],
     "ai": [
       "198",
@@ -19412,10 +19946,14 @@
       "194"
     ],
     "ai model": [
-      "129"
+      "129",
+      "89"
     ],
     "ai race": [
       "66"
+    ],
+    "ai release": [
+      "89"
     ],
     "ai stock": [
       "123"
@@ -19428,6 +19966,8 @@
       "119",
       "167",
       "168",
+      "172",
+      "173",
       "174",
       "175",
       "184",
@@ -19441,7 +19981,10 @@
       "220",
       "228",
       "229",
-      "67"
+      "67",
+      "95",
+      "96",
+      "97"
     ],
     "airstrike": [
       "144"
@@ -19458,7 +20001,8 @@
       "125"
     ],
     "altcoin": [
-      "64"
+      "64",
+      "85"
     ],
     "american football": [
       "179",
@@ -19526,8 +20070,12 @@
       "188",
       "226"
     ],
+    "artificial general intelligence": [
+      "89"
+    ],
     "artificial intelligence": [
       "129",
+      "171",
       "183",
       "66"
     ],
@@ -19588,6 +20136,12 @@
     "awards season": [
       "138"
     ],
+    "backpack": [
+      "95"
+    ],
+    "backpack exchange": [
+      "95"
+    ],
     "backpack fdv": [
       "95"
     ],
@@ -19627,6 +20181,9 @@
     ],
     "base network": [
       "119"
+    ],
+    "based": [
+      "97"
     ],
     "based fdv": [
       "97"
@@ -19741,13 +20298,16 @@
       "112",
       "119",
       "167",
+      "172",
       "183",
       "192",
       "194",
       "205",
       "208",
       "229",
-      "64"
+      "64",
+      "85",
+      "95"
     ],
     "boj": [
       "120",
@@ -19786,6 +20346,9 @@
     ],
     "bull market": [
       "58"
+    ],
+    "bull run": [
+      "85"
     ],
     "bullion": [
       "227",
@@ -19906,7 +20469,11 @@
       "129"
     ],
     "chatgpt": [
-      "152"
+      "152",
+      "171"
+    ],
+    "chatgpt 6": [
+      "89"
     ],
     "chief executive officer": [
       "193"
@@ -20110,6 +20677,7 @@
       "119",
       "145",
       "167",
+      "172",
       "174",
       "183",
       "184",
@@ -20123,7 +20691,11 @@
       "229",
       "58",
       "64",
-      "67"
+      "67",
+      "85",
+      "95",
+      "96",
+      "97"
     ],
     "crypto exchange": [
       "143"
@@ -20133,6 +20705,9 @@
       "175",
       "228"
     ],
+    "crypto trading": [
+      "173"
+    ],
     "crypto wallet": [
       "118",
       "189"
@@ -20140,8 +20715,10 @@
     "cryptocurrency": [
       "112",
       "145",
+      "172",
       "58",
-      "64"
+      "64",
+      "85"
     ],
     "cup winner": [
       "79"
@@ -20218,8 +20795,12 @@
       "143",
       "158",
       "169",
+      "171",
+      "172",
       "219",
-      "220"
+      "220",
+      "96",
+      "97"
     ],
     "december": [
       "145"
@@ -20263,7 +20844,9 @@
       "192",
       "197",
       "64",
-      "67"
+      "67",
+      "85",
+      "95"
     ],
     "degen": [
       "174"
@@ -20305,6 +20888,9 @@
     ],
     "die stranger things": [
       "215"
+    ],
+    "digital collectibles": [
+      "173"
     ],
     "digital gold": [
       "112",
@@ -20487,6 +21073,7 @@
       "152",
       "158",
       "169",
+      "171",
       "204",
       "65"
     ],
@@ -20540,6 +21127,9 @@
     ],
     "ethereum layer network": [
       "208"
+    ],
+    "ethereum nfts": [
+      "173"
     ],
     "ethereum wallet": [
       "189"
@@ -20617,7 +21207,10 @@
       "194",
       "207",
       "219",
-      "220"
+      "220",
+      "95",
+      "96",
+      "97"
     ],
     "fdv above": [
       "173",
@@ -20821,11 +21414,14 @@
     ],
     "fully diluted": [
       "183",
-      "189"
+      "189",
+      "95"
     ],
     "fully diluted valuation": [
       "219",
-      "220"
+      "220",
+      "96",
+      "97"
     ],
     "fun airdrop": [
       "174"
@@ -20874,6 +21470,9 @@
       "129",
       "66"
     ],
+    "generative pre-trained transformer 6": [
+      "89"
+    ],
     "gensyn": [
       "194"
     ],
@@ -20898,6 +21497,7 @@
     "going public": [
       "143",
       "158",
+      "171",
       "190",
       "204",
       "205"
@@ -20968,9 +21568,19 @@
       "121"
     ],
     "gpt": [
-      "66"
+      "66",
+      "89"
+    ],
+    "gpt 6": [
+      "89"
+    ],
+    "gpt-6": [
+      "89"
     ],
     "gpt-6 released": [
+      "89"
+    ],
+    "gpt6": [
       "89"
     ],
     "grand slam": [
@@ -21112,6 +21722,7 @@
     ],
     "ico": [
       "167",
+      "172",
       "192"
     ],
     "idf": [
@@ -21221,6 +21832,9 @@
       "227",
       "62"
     ],
+    "investment": [
+      "85"
+    ],
     "iphone": [
       "122"
     ],
@@ -21229,6 +21843,7 @@
       "152",
       "158",
       "169",
+      "171",
       "190",
       "204",
       "205"
@@ -21409,7 +22024,8 @@
     ],
     "large language model": [
       "129",
-      "66"
+      "66",
+      "89"
     ],
     "largest company": [
       "65"
@@ -21429,7 +22045,10 @@
       "201",
       "207",
       "220",
-      "229"
+      "229",
+      "95",
+      "96",
+      "97"
     ],
     "launch its": [
       "208"
@@ -21576,6 +22195,9 @@
       "167",
       "168",
       "169",
+      "171",
+      "172",
+      "173",
       "175",
       "190",
       "192",
@@ -21587,7 +22209,10 @@
       "219",
       "220",
       "229",
-      "67"
+      "67",
+      "95",
+      "96",
+      "97"
     ],
     "live": [
       "132"
@@ -21595,7 +22220,8 @@
     "llm": [
       "129",
       "200",
-      "66"
+      "66",
+      "89"
     ],
     "local election": [
       "131"
@@ -21714,7 +22340,10 @@
       "220",
       "65",
       "67",
-      "88"
+      "88",
+      "95",
+      "96",
+      "97"
     ],
     "market cap above": [
       "204",
@@ -21733,6 +22362,9 @@
     ],
     "market outlook": [
       "64"
+    ],
+    "marketplace": [
+      "173"
     ],
     "matches": [
       "79"
@@ -21771,7 +22403,8 @@
       "174"
     ],
     "memecoin": [
-      "174"
+      "174",
+      "97"
     ],
     "men australian": [
       "222"
@@ -21866,6 +22499,9 @@
     ],
     "model benchmark": [
       "66"
+    ],
+    "model launch": [
+      "89"
     ],
     "monetary easing": [
       "121"
@@ -22012,6 +22648,9 @@
     "network poly": [
       "208"
     ],
+    "neural network": [
+      "89"
+    ],
     "new listings": [
       "186"
     ],
@@ -22035,6 +22674,9 @@
     ],
     "newsmaker": [
       "108"
+    ],
+    "next generation ai": [
+      "89"
     ],
     "nfc": [
       "179",
@@ -22101,6 +22743,12 @@
       "224",
       "81"
     ],
+    "nft": [
+      "85"
+    ],
+    "nft marketplace": [
+      "173"
+    ],
     "nicolas maduro": [
       "116"
     ],
@@ -22155,7 +22803,8 @@
       "169"
     ],
     "offering": [
-      "152"
+      "152",
+      "171"
     ],
     "okbet": [
       "200"
@@ -22207,7 +22856,9 @@
       "222"
     ],
     "openai": [
-      "152"
+      "152",
+      "171",
+      "89"
     ],
     "openai ipo": [
       "152",
@@ -22215,6 +22866,9 @@
     ],
     "openai ipo closing": [
       "152"
+    ],
+    "opensea": [
+      "173"
     ],
     "opensea fdv": [
       "173"
@@ -22492,8 +23146,10 @@
     ],
     "presale": [
       "167",
+      "172",
       "174",
-      "201"
+      "201",
+      "96"
     ],
     "president": [
       "116",
@@ -22513,7 +23169,9 @@
       "219",
       "220",
       "64",
-      "67"
+      "67",
+      "96",
+      "97"
     ],
     "price bitcoin": [
       "145",
@@ -22536,7 +23194,8 @@
       "62"
     ],
     "price prediction": [
-      "58"
+      "58",
+      "85"
     ],
     "price solana": [
       "85"
@@ -22563,6 +23222,7 @@
       "213"
     ],
     "project": [
+      "172",
       "197",
       "201",
       "220",
@@ -22591,6 +23251,7 @@
       "143",
       "158",
       "169",
+      "171",
       "190",
       "205"
     ],
@@ -22705,6 +23366,7 @@
       "115"
     ],
     "release": [
+      "172",
       "201",
       "229"
     ],
@@ -22807,7 +23469,9 @@
       "217"
     ],
     "sam altman": [
-      "152"
+      "152",
+      "171",
+      "89"
     ],
     "santa clara": [
       "81"
@@ -22920,7 +23584,8 @@
       "143",
       "152",
       "158",
-      "169"
+      "169",
+      "171"
     ],
     "shock": [
       "187"
@@ -22956,11 +23621,13 @@
       "222"
     ],
     "smart contract": [
+      "172",
       "192",
       "229"
     ],
     "smart contracts": [
-      "64"
+      "64",
+      "85"
     ],
     "snapshot": [
       "174"
@@ -22977,8 +23644,12 @@
     "socialism": [
       "116"
     ],
+    "sol": [
+      "85"
+    ],
     "solana": [
-      "174"
+      "174",
+      "85"
     ],
     "solana hit": [
       "85"
@@ -23076,6 +23747,9 @@
       "180",
       "182"
     ],
+    "standx": [
+      "96"
+    ],
     "standx fdv": [
       "96"
     ],
@@ -23136,6 +23810,7 @@
       "123",
       "152",
       "169",
+      "171",
       "186"
     ],
     "stock price": [
@@ -23279,6 +23954,7 @@
     "tge": [
       "167",
       "168",
+      "172",
       "175",
       "192",
       "194",
@@ -23288,7 +23964,9 @@
       "220",
       "228",
       "229",
-      "67"
+      "67",
+      "96",
+      "97"
     ],
     "thailand": [
       "188"
@@ -23301,6 +23979,9 @@
     ],
     "the big game": [
       "81"
+    ],
+    "theo": [
+      "172"
     ],
     "theo launch": [
       "172"
@@ -23317,7 +23998,8 @@
     "ticker": [
       "143",
       "158",
-      "169"
+      "169",
+      "171"
     ],
     "tightening": [
       "120",
@@ -23381,7 +24063,11 @@
       "208",
       "220",
       "229",
-      "67"
+      "67",
+      "85",
+      "95",
+      "96",
+      "97"
     ],
     "token distribution": [
       "174"
@@ -23394,12 +24080,15 @@
     ],
     "token generation event": [
       "168",
+      "173",
       "175",
       "228"
     ],
     "token launch": [
       "118",
       "168",
+      "172",
+      "173",
       "175",
       "189",
       "192",
@@ -23415,9 +24104,11 @@
       "119",
       "167",
       "168",
+      "173",
       "175",
       "189",
-      "194"
+      "194",
+      "95"
     ],
     "tokyo": [
       "230"
@@ -23468,6 +24159,7 @@
       "126",
       "145",
       "169",
+      "172",
       "183",
       "184",
       "197",
@@ -23477,7 +24169,11 @@
       "227",
       "58",
       "62",
-      "67"
+      "67",
+      "85",
+      "95",
+      "96",
+      "97"
     ],
     "trading bot": [
       "200"
@@ -23493,6 +24189,9 @@
     ],
     "trading platform": [
       "175"
+    ],
+    "trading volume": [
+      "173"
     ],
     "transaction": [
       "160"
@@ -23684,6 +24383,8 @@
       "143",
       "152",
       "158",
+      "171",
+      "173",
       "183",
       "184",
       "189",
@@ -23696,7 +24397,10 @@
       "219",
       "220",
       "65",
-      "67"
+      "67",
+      "95",
+      "96",
+      "97"
     ],
     "valve": [
       "151"
@@ -23736,7 +24440,8 @@
     "volatility": [
       "112",
       "145",
-      "58"
+      "58",
+      "85"
     ],
     "volodymyr": [
       "202"
@@ -23780,6 +24485,9 @@
       "189",
       "201",
       "205"
+    ],
+    "web3 marketplace": [
+      "173"
     ],
     "west division": [
       "179"
@@ -24077,7 +24785,8 @@
       "108"
     ],
     "开放人工智能": [
-      "152"
+      "152",
+      "171"
     ],
     "微策略": [
       "111"
@@ -24148,6 +24857,9 @@
     ],
     "科迪亚克": [
       "197"
+    ],
+    "索拉纳": [
+      "85"
     ],
     "罗根·保罗": [
       "217"
