@@ -271,9 +271,7 @@ function shouldProxyOpinionAnalytics(url) {
 
 async function fetchJson(url, signal) {
   if (shouldProxyOpinionAnalytics(url) && typeof chrome?.runtime?.sendMessage === "function") {
-    console.log('[OpinionHUD] sending message to background for URL:', url.slice(0, 50) + '...');
     const res = await sendMessageAsync({ type: "opinionHud.fetchJson", url }, signal);
-    console.log('[OpinionHUD] background response:', res);
     if (!res || typeof res !== "object") throw new Error(`Invalid response for ${url}`);
     if (!res.ok) throw new Error(res.error || `Failed to fetch ${url}`);
     return res.data;
@@ -311,13 +309,11 @@ async function getLatestAssetPrice(assetId, signal) {
   const key = String(assetId);
   const cached = getCached(assetPriceCache, key, PRICE_CACHE_TTL_MS);
   if (cached) {
-    console.log('[OpinionHUD] using cached price for:', key.slice(0, 20) + '...');
     return cached.price;
   }
 
   try {
     const path = `/token/${encodeURIComponent(key)}`;
-    console.log('[OpinionHUD] fetching price from API, path:', path.slice(0, 30) + '...');
     const data = await priceFetchLimiter(() => fetchOpinionApiJsonWithRetry(path, signal), signal);
     if (data?.success === false) {
       assetPriceCache.set(key, { ts: nowMs(), price: null });
@@ -634,7 +630,6 @@ function removeHud() {
 }
 
 function renderHud(anchorEl, match) {
-  console.log('[OpinionHUD] renderHud called, match:', match);
   removeHud();
 
   const container = document.createElement("div");
@@ -895,13 +890,10 @@ function renderHud(anchorEl, match) {
 
   async function hydrateYesOnlyFromAssetId(assetId, yesPill) {
     try {
-      console.log('[OpinionHUD] hydrateYesOnlyFromAssetId called, assetId:', assetId ? 'present' : 'empty');
       const yesPrice = assetId ? await getLatestAssetPrice(assetId, abortController.signal) : null;
-      console.log('[OpinionHUD] price fetched:', yesPrice);
       if (!isHudAlive()) return;
       setPillValue(yesPill, "YES", formatProbPercent(yesPrice));
     } catch (err) {
-      console.error('[OpinionHUD] error in hydrateYesOnlyFromAssetId:', err);
       if (!isHudAlive()) return;
       setPillValue(yesPill, "YES", null);
     }
@@ -1004,12 +996,9 @@ function renderHud(anchorEl, match) {
       try {
         // Read subMarkets directly from data.json (already loaded in state.data)
         if (!isHudAlive()) return;
-        console.log('[OpinionHUD] renderWrapEventGroup wrapId:', wrapId);
         const market = state.data?.markets?.[String(wrapId)];
-        console.log('[OpinionHUD] market found:', !!market);
         const childrenRaw = market?.subMarkets;
         const children = Array.isArray(childrenRaw) ? childrenRaw : [];
-        console.log('[OpinionHUD] children count:', children.length);
 
         optionList.innerHTML = "";
 
@@ -1032,7 +1021,6 @@ function renderHud(anchorEl, match) {
           optionItem.appendChild(meta);
 
           const assetId = String(child?.yesTokenId || "");
-          console.log('[OpinionHUD] hydrating assetId:', assetId ? assetId.slice(0, 20) + '...' : '(empty)');
           hydrateYesOnlyFromAssetId(assetId, yesPill);
           return optionItem;
         };
@@ -1122,7 +1110,6 @@ function renderHud(anchorEl, match) {
   }
 
   for (const m of match.markets.slice(0, MAX_MATCHES_ON_SCREEN)) {
-    console.log('[OpinionHUD] processing market:', { isMulti: m.isMulti, topicId: m.topicId, title: m.title });
     if (m.isMulti) {
       renderWrapEventGroup(m.title, m.url, m.topicId);
       continue;

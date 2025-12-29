@@ -133,8 +133,8 @@ chrome.runtime.onInstalled.addListener(async () => {
   await chrome.alarms.create(ALARM_NAME, { periodInMinutes: REFRESH_MINUTES });
   try {
     await refreshData({ force: false });
-  } catch {
-    // Fail silently; content script will still run with empty cache.
+  } catch (error) {
+    console.error('[OpinionHUD BG] Initial data refresh failed:', error?.message);
   }
 });
 
@@ -142,8 +142,8 @@ chrome.alarms.onAlarm.addListener(async (alarm) => {
   if (alarm.name !== ALARM_NAME) return;
   try {
     await refreshData({ force: false });
-  } catch {
-    // Silent refresh failure.
+  } catch (error) {
+    console.error('[OpinionHUD BG] Scheduled refresh failed:', error?.message);
   }
 });
 
@@ -159,25 +159,30 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
 
   if (message.type === "opinionHud.fetchJson") {
     const url = String(message.url || "");
-    console.log('[OpinionHUD BG] fetchJson request for URL:', url);
     if (!isAllowedOpinionAnalyticsUrl(url)) {
       console.error('[OpinionHUD BG] URL blocked:', url);
       sendResponse({ ok: false, error: "Blocked URL (not allowed)." });
       return;
     }
-    console.log('[OpinionHUD BG] fetching from:', url);
     fetchJsonNoStore(url)
       .then((data) => {
-        console.log('[OpinionHUD BG] fetch success, data:', data);
         sendResponse({ ok: true, data });
       })
       .catch((error) => {
-        console.error('[OpinionHUD BG] fetch error:', {
-          name: error?.name,
-          message: error?.message,
-          error: error
+        const errorName = error?.name || 'Unknown';
+        const errorMessage = error?.message || '';
+
+        console.error('[OpinionHUD BG] Fetch error:', {
+          name: errorName,
+          message: errorMessage,
+          url: url
         });
-        sendResponse({ ok: false, error: String(error?.message || error) });
+
+        let errorMsg = errorMessage || errorName || 'Unknown error';
+        if (errorName === 'AbortError') {
+          errorMsg = `Request timeout after ${FETCH_TIMEOUT_MS}ms`;
+        }
+        sendResponse({ ok: false, error: errorMsg });
       });
     return true;
   }
