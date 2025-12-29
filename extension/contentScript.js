@@ -98,7 +98,9 @@ function normalizeText(text) {
 
 function normalizeForMatch(text) {
   const raw = normalizeText(text);
-  const plain = raw.replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim();
+  // Support Chinese characters (CJK Unified Ideographs U+4E00–U+9FFF)
+  // Keep alphanumeric AND Chinese characters, replace other chars with space
+  const plain = raw.replace(/[^a-z0-9\u4e00-\u9fff]+/g, " ").replace(/\s+/g, " ").trim();
   return { raw, plain };
 }
 
@@ -364,20 +366,71 @@ function tokenize(text) {
   const tokens = new Set();
   const { raw, plain } = normalizeForMatch(text);
   let cur = "";
+  let curType = null; // 'ascii' or 'cjk'
+
+  function addCJKToken(cjkStr) {
+    if (!cjkStr) return;
+    // Add the full token
+    tokens.add(cjkStr);
+    // For CJK strings, also add all n-grams (n=1,2,3,4) for better matching
+    // This allows "日本银行加息" to match keyword "日本银行"
+    const maxNGram = Math.min(4, cjkStr.length);
+    for (let n = 1; n <= maxNGram; n++) {
+      for (let i = 0; i <= cjkStr.length - n; i++) {
+        tokens.add(cjkStr.substring(i, i + n));
+      }
+    }
+  }
+
   for (let i = 0; i < plain.length; i++) {
     const ch = plain[i];
     const code = ch.charCodeAt(0);
-    const isAlnum = (code >= 48 && code <= 57) || (code >= 97 && code <= 122);
-    if (isAlnum) {
+    const isAsciiAlnum = (code >= 48 && code <= 57) || (code >= 97 && code <= 122);
+    const isCJK = (code >= 0x4e00 && code <= 0x9fff);
+
+    if (isAsciiAlnum) {
+      // ASCII alphanumeric - continue building ASCII token
+      if (curType === 'cjk' && cur) {
+        // Save previous CJK token with n-grams
+        addCJKToken(cur);
+        cur = "";
+      }
       cur += ch;
+      curType = 'ascii';
       continue;
     }
+
+    if (isCJK) {
+      // CJK character - continue building CJK token
+      if (curType === 'ascii' && cur) {
+        // Save previous ASCII token
+        tokens.add(cur);
+        cur = "";
+      }
+      cur += ch;
+      curType = 'cjk';
+      continue;
+    }
+
+    // Separator - save current token if any
     if (cur) {
-      tokens.add(cur);
+      if (curType === 'cjk') {
+        addCJKToken(cur);
+      } else {
+        tokens.add(cur);
+      }
       cur = "";
+      curType = null;
     }
   }
-  if (cur) tokens.add(cur);
+
+  if (cur) {
+    if (curType === 'cjk') {
+      addCJKToken(cur);
+    } else {
+      tokens.add(cur);
+    }
+  }
   return { raw, plain, tokens };
 }
 
