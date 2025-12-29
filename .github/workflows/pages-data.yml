@@ -8,7 +8,7 @@ on:
       - 'data.json'  # 防止 data.json 更新触发无限循环
   schedule:
     # Runs at minute 06 of every hour (UTC).
-    - cron: "6 * * * *"
+    - cron: "6 */8 * * *"
   workflow_dispatch:
 
 permissions:
