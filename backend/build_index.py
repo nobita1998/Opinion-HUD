@@ -1772,6 +1772,7 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         "fullAiRefresh": bool(FULL_AI_REFRESH),
         "onlyAiForNew": False,
         "reused": 0,
+        "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
         "fallback": 0,
@@ -2099,9 +2100,17 @@ def build_data(markets, api_key, previous_data=None, parent_events=None):
         entity_groups = []
 
         if only_ai_for_new and event_id in existing_event_ids:
-            # Only-AI-for-new mode: keep previous outputs untouched for existing event IDs.
-            ai_stats["reused"] += 1
-            continue
+            # Check if previous event has entityGroups
+            prev_entity_groups = prev_events.get(event_id, {}).get("entityGroups") or []
+            if prev_entity_groups:
+                # Only-AI-for-new mode: keep previous outputs untouched for existing event IDs with entityGroups.
+                ai_stats["reused"] += 1
+                continue
+            else:
+                # Previous event exists but has no entityGroups - regenerate with LLM
+                ai_stats["regenerated_empty_entitygroups"] += 1
+                if DEBUG:
+                    print(f"[debug] event={event_id} exists but has empty entityGroups, regenerating with LLM", flush=True)
 
         # If SKIP_AI is enabled, skip new events (don't generate keywords for them)
         if SKIP_AI and event_id not in existing_event_ids:
