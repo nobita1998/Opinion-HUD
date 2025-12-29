@@ -1,0 +1,88 @@
+name: Full Refresh Data (Manual)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r backend/requirements.txt
+
+      - name: Build data.json (FULL REFRESH)
+        env:
+          ZHIPU_KEY: ${{ secrets.ZHIPU_KEY }}
+          FULL_AI_REFRESH: "1"
+          SLEEP_SECONDS: "0.5"
+          ZHIPU_TIMEOUT_SECONDS: "60"
+          ZHIPU_MAX_RETRIES: "3"
+        run: |
+          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+          export PREVIOUS_DATA_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${REPO_NAME}/data.json"
+          python backend/build_index.py
+
+      - name: Commit updated data.json
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -f data.json
+          # 仅在有变更时提交
+          git diff --staged --quiet || git commit -m "chore: full refresh data.json [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+
+      - name: Pull latest changes
+        run: |
+          git pull --rebase origin main || true
+          # If there's a conflict on data.json, use our version
+          if [ -f data.json ]; then
+            git checkout --ours data.json 2>/dev/null || true
+            git add data.json 2>/dev/null || true
+            git rebase --continue 2>/dev/null || true
+          fi
+
+      - name: Push changes
+        run: |
+          git push origin main
+
+      - name: Prepare artifact
+        run: |
+          mkdir -p site
+          cp data.json site/data.json
+          cp index.html site/index.html
+          cp screen.png site/screen.png
+          cp icon-128.png site/icon-128.png
+          cp PRIVACY_POLICY.md site/PRIVACY_POLICY.md
+          cp privacy.html site/privacy.html
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
