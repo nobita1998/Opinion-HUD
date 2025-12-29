@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2025-12-29 20:13:25 UTC+8",
+    "generatedAt": "2025-12-29 21:51:33 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://opinion.trade",
     "model": "GLM-4.7",
@@ -10,7 +10,7 @@
       "seen": 826,
       "kept": 623,
       "markets": 156,
-      "keywords": 1347,
+      "keywords": 1401,
       "events": {
         "events": 115
       },
@@ -26,14 +26,15 @@
       },
       "ai": {
         "previousLoaded": true,
-        "fullAiRefresh": true,
-        "onlyAiForNew": false,
-        "reused": 0,
-        "calls": 115,
-        "retries": 20,
+        "fullAiRefresh": false,
+        "onlyAiForNew": true,
+        "reused": 96,
+        "regenerated_empty_entitygroups": 19,
+        "calls": 19,
+        "retries": 13,
         "fallback": 0,
-        "empty": 19,
-        "non_empty": 96,
+        "empty": 12,
+        "non_empty": 7,
         "errors": 0
       }
     }
@@ -172,12 +173,34 @@
       "bestMarketId": "228",
       "bestLabels": null,
       "keywords": [
+        "ethgas",
+        "ethereum gas",
+        "gas fees",
+        "gas tracker",
+        "gas oracle",
+        "token launch",
+        "airdrop",
+        "tge",
+        "token generation event",
+        "erc20",
+        "crypto token",
+        "gas optimization",
+        "eth gas",
+        "gas token",
+        "gas protocol",
         "ethgas launch",
         "launch token",
         "ethgas launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "ethgas"
+      ],
+      "entityGroups": [
+        [
+          "ethgas",
+          "以太坊"
+        ]
+      ],
       "sig": "75891a52",
       "sigFull": "75891a52",
       "sigCore": "87406a2f",
@@ -2275,14 +2298,36 @@
       "bestMarketId": "169",
       "bestLabels": null,
       "keywords": [
+        "spacex",
+        "ticker",
+        "stock symbol",
+        "ipo",
+        "public offering",
+        "listing",
+        "stock market",
+        "nasdaq",
+        "nyse",
+        "trading",
+        "debut",
+        "equity",
+        "shares",
+        "public company",
+        "exchange",
         "what spacex",
         "spacex public",
         "public ticker",
         "what spacex public",
         "spacex public ticker"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "spacex"
+      ],
+      "entityGroups": [
+        [
+          "spacex",
+          "太空探索技术公司"
+        ]
+      ],
       "sig": "63d0d080",
       "sigFull": "63d0d080",
       "sigCore": "ecd914cb",
@@ -2296,12 +2341,33 @@
       "bestMarketId": "168",
       "bestLabels": null,
       "keywords": [
+        "abstract",
+        "abstract chain",
+        "token launch",
+        "airdrop",
+        "tge",
+        "token generation event",
+        "l2",
+        "layer 2",
+        "crypto token",
+        "abstract ecosystem",
+        "tokenomics",
+        "mainnet",
+        "native token",
+        "listing",
+        "governance token",
         "abstract launch",
         "launch token",
         "abstract launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "abstract"
+      ],
+      "entityGroups": [
+        [
+          "abstract"
+        ]
+      ],
       "sig": "6e318808",
       "sigFull": "6e318808",
       "sigCore": "55a2e507",
@@ -2315,12 +2381,33 @@
       "bestMarketId": "167",
       "bestLabels": null,
       "keywords": [
+        "pacifica",
+        "token",
+        "launch",
+        "crypto",
+        "airdrop",
+        "tge",
+        "blockchain",
+        "listing",
+        "pacifica token",
+        "pacifica coin",
+        "tokenomics",
+        "ico",
+        "ido",
+        "sale",
+        "presale",
         "pacifica launch",
         "launch token",
         "pacifica launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "pacifica"
+      ],
+      "entityGroups": [
+        [
+          "pacifica"
+        ]
+      ],
       "sig": "6f5087ab",
       "sigFull": "6f5087ab",
       "sigCore": "18a252c3",
@@ -4626,6 +4713,18 @@
       "bestMarketId": "88",
       "bestLabels": null,
       "keywords": [
+        "lighter",
+        "lighter token",
+        "lighter crypto",
+        "lighter airdrop",
+        "lighter launch",
+        "lighter fdv",
+        "lighter price",
+        "lighter valuation",
+        "lighter tge",
+        "lighter listing",
+        "lighter market cap",
+        "lighter project",
         "lighter market",
         "market cap",
         "cap fdv",
@@ -4633,14 +4732,19 @@
         "one day",
         "day after",
         "after launch",
-        "lighter market cap",
         "market cap fdv",
         "cap fdv one",
         "fdv one day",
         "one day after"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "lighter"
+      ],
+      "entityGroups": [
+        [
+          "lighter"
+        ]
+      ],
       "sig": "6d2573c4",
       "sigFull": "6d2573c4",
       "sigCore": "f9362afe",
@@ -4698,16 +4802,37 @@
       "bestMarketId": "83",
       "bestLabels": null,
       "keywords": [
-        "uefa champions",
+        "uefa",
         "champions league",
+        "ucl",
+        "european cup",
+        "soccer",
+        "football",
+        "european football",
+        "club competition",
+        "final",
+        "trophy",
+        "european soccer",
+        "top tier",
+        "knockout stage",
+        "group stage",
+        "uefa champions",
         "league winner",
         "winner 2026",
         "uefa champions league",
         "champions league winner",
         "league winner 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "uefa champions league"
+      ],
+      "entityGroups": [
+        [
+          "uefa champions league",
+          "champions league",
+          "欧洲冠军联赛"
+        ]
+      ],
       "sig": "e613318a",
       "sigFull": "e613318a",
       "sigCore": "c98608cd",
@@ -4721,12 +4846,34 @@
       "bestMarketId": "82",
       "bestLabels": null,
       "keywords": [
+        "la liga",
+        "laliga",
+        "spanish football",
+        "primera division",
+        "la liga 2026",
+        "santander league",
+        "spain league",
+        "real madrid",
+        "barcelona",
+        "atletico madrid",
+        "spanish soccer",
+        "la liga season",
+        "el clasico",
+        "la liga title",
+        "spain top flight",
         "liga winner",
         "winner 2026",
         "liga winner 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "la liga"
+      ],
+      "entityGroups": [
+        [
+          "la liga",
+          "laliga"
+        ]
+      ],
       "sig": "547d6f14",
       "sigFull": "547d6f14",
       "sigCore": "3ab4a881",
@@ -5014,12 +5161,34 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "ethgas",
+        "ethereum gas",
+        "gas fees",
+        "gas tracker",
+        "gas oracle",
+        "token launch",
+        "airdrop",
+        "tge",
+        "token generation event",
+        "erc20",
+        "crypto token",
+        "gas optimization",
+        "eth gas",
+        "gas token",
+        "gas protocol",
         "ethgas launch",
         "launch token",
         "ethgas launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "ethgas"
+      ],
+      "entityGroups": [
+        [
+          "ethgas",
+          "以太坊"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -9033,14 +9202,36 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "spacex",
+        "ticker",
+        "stock symbol",
+        "ipo",
+        "public offering",
+        "listing",
+        "stock market",
+        "nasdaq",
+        "nyse",
+        "trading",
+        "debut",
+        "equity",
+        "shares",
+        "public company",
+        "exchange",
         "what spacex",
         "spacex public",
         "public ticker",
         "what spacex public",
         "spacex public ticker"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "spacex"
+      ],
+      "entityGroups": [
+        [
+          "spacex",
+          "太空探索技术公司"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -9104,12 +9295,33 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "abstract",
+        "abstract chain",
+        "token launch",
+        "airdrop",
+        "tge",
+        "token generation event",
+        "l2",
+        "layer 2",
+        "crypto token",
+        "abstract ecosystem",
+        "tokenomics",
+        "mainnet",
+        "native token",
+        "listing",
+        "governance token",
         "abstract launch",
         "launch token",
         "abstract launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "abstract"
+      ],
+      "entityGroups": [
+        [
+          "abstract"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -9137,12 +9349,33 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "pacifica",
+        "token",
+        "launch",
+        "crypto",
+        "airdrop",
+        "tge",
+        "blockchain",
+        "listing",
+        "pacifica token",
+        "pacifica coin",
+        "tokenomics",
+        "ico",
+        "ido",
+        "sale",
+        "presale",
         "pacifica launch",
         "launch token",
         "pacifica launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "pacifica"
+      ],
+      "entityGroups": [
+        [
+          "pacifica"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -13480,6 +13713,18 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "lighter",
+        "lighter token",
+        "lighter crypto",
+        "lighter airdrop",
+        "lighter launch",
+        "lighter fdv",
+        "lighter price",
+        "lighter valuation",
+        "lighter tge",
+        "lighter listing",
+        "lighter market cap",
+        "lighter project",
         "lighter market",
         "market cap",
         "cap fdv",
@@ -13487,14 +13732,19 @@
         "one day",
         "day after",
         "after launch",
-        "lighter market cap",
         "market cap fdv",
         "cap fdv one",
         "fdv one day",
         "one day after"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "lighter"
+      ],
+      "entityGroups": [
+        [
+          "lighter"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -13636,16 +13886,37 @@
         "noLabel": "NO"
       },
       "keywords": [
-        "uefa champions",
+        "uefa",
         "champions league",
+        "ucl",
+        "european cup",
+        "soccer",
+        "football",
+        "european football",
+        "club competition",
+        "final",
+        "trophy",
+        "european soccer",
+        "top tier",
+        "knockout stage",
+        "group stage",
+        "uefa champions",
         "league winner",
         "winner 2026",
         "uefa champions league",
         "champions league winner",
         "league winner 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "uefa champions league"
+      ],
+      "entityGroups": [
+        [
+          "uefa champions league",
+          "champions league",
+          "欧洲冠军联赛"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -13709,12 +13980,34 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "la liga",
+        "laliga",
+        "spanish football",
+        "primera division",
+        "la liga 2026",
+        "santander league",
+        "spain league",
+        "real madrid",
+        "barcelona",
+        "atletico madrid",
+        "spanish soccer",
+        "la liga season",
+        "el clasico",
+        "la liga title",
+        "spain top flight",
         "liga winner",
         "winner 2026",
         "liga winner 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "la liga"
+      ],
+      "entityGroups": [
+        [
+          "la liga",
+          "laliga"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -13911,6 +14204,15 @@
       "97",
       "98"
     ],
+    "abstract": [
+      "168"
+    ],
+    "abstract chain": [
+      "168"
+    ],
+    "abstract ecosystem": [
+      "168"
+    ],
     "abstract launch": [
       "168"
     ],
@@ -14034,6 +14336,8 @@
     "airdrop": [
       "118",
       "119",
+      "167",
+      "168",
       "174",
       "175",
       "184",
@@ -14045,6 +14349,7 @@
       "207",
       "219",
       "220",
+      "228",
       "229",
       "67"
     ],
@@ -14143,6 +14448,9 @@
       "145",
       "58"
     ],
+    "atletico madrid": [
+      "82"
+    ],
     "atp": [
       "222"
     ],
@@ -14214,6 +14522,9 @@
     "bank of japan": [
       "120",
       "230"
+    ],
+    "barcelona": [
+      "82"
     ],
     "base": [
       "119"
@@ -14339,6 +14650,7 @@
     "blockchain": [
       "112",
       "119",
+      "167",
       "183",
       "192",
       "194",
@@ -14591,6 +14903,9 @@
     "closing price": [
       "123"
     ],
+    "club competition": [
+      "83"
+    ],
     "coinbase": [
       "119"
     ],
@@ -14704,6 +15019,7 @@
       "112",
       "119",
       "145",
+      "167",
       "174",
       "183",
       "184",
@@ -14723,7 +15039,9 @@
       "143"
     ],
     "crypto token": [
-      "175"
+      "168",
+      "175",
+      "228"
     ],
     "crypto wallet": [
       "118",
@@ -14809,6 +15127,7 @@
     "debut": [
       "143",
       "158",
+      "169",
       "219",
       "220"
     ],
@@ -15023,6 +15342,9 @@
     "editor's pick": [
       "108"
     ],
+    "el clasico": [
+      "82"
+    ],
     "election": [
       "116",
       "131"
@@ -15074,11 +15396,13 @@
       "126",
       "152",
       "158",
+      "169",
       "204",
       "65"
     ],
     "erc20": [
-      "118"
+      "118",
+      "228"
     ],
     "escalation": [
       "226"
@@ -15091,6 +15415,9 @@
       "118",
       "208",
       "64"
+    ],
+    "eth gas": [
+      "228"
     ],
     "ethan hawke": [
       "137"
@@ -15105,6 +15432,9 @@
       "208",
       "64",
       "67"
+    ],
+    "ethereum gas": [
+      "228"
     ],
     "ethereum hit": [
       "64"
@@ -15124,6 +15454,9 @@
     "ethereum wallet": [
       "189"
     ],
+    "ethgas": [
+      "228"
+    ],
     "ethgas launch": [
       "228"
     ],
@@ -15136,6 +15469,15 @@
     "european central bank": [
       "121"
     ],
+    "european cup": [
+      "83"
+    ],
+    "european football": [
+      "83"
+    ],
+    "european soccer": [
+      "83"
+    ],
     "eurozone": [
       "121"
     ],
@@ -15145,6 +15487,9 @@
     ],
     "evm": [
       "67"
+    ],
+    "exchange": [
+      "169"
     ],
     "executive": [
       "193"
@@ -15291,6 +15636,9 @@
     "film editing winner": [
       "211"
     ],
+    "final": [
+      "83"
+    ],
     "finale": [
       "215"
     ],
@@ -15347,7 +15695,8 @@
       "223",
       "224",
       "79",
-      "80"
+      "80",
+      "83"
     ],
     "football fun": [
       "207"
@@ -15410,7 +15759,23 @@
       "190"
     ],
     "gas fees": [
+      "228",
       "64"
+    ],
+    "gas optimization": [
+      "228"
+    ],
+    "gas oracle": [
+      "228"
+    ],
+    "gas protocol": [
+      "228"
+    ],
+    "gas token": [
+      "228"
+    ],
+    "gas tracker": [
+      "228"
     ],
     "gemini": [
       "66"
@@ -15506,6 +15871,7 @@
       "184"
     ],
     "governance token": [
+      "168",
       "175"
     ],
     "governing council": [
@@ -15539,6 +15905,9 @@
     ],
     "grossing movie 2025": [
       "84"
+    ],
+    "group stage": [
+      "83"
     ],
     "halving": [
       "145",
@@ -15652,12 +16021,14 @@
       "132"
     ],
     "ico": [
+      "167",
       "192"
     ],
     "idf": [
       "226"
     ],
     "ido": [
+      "167",
       "192",
       "201",
       "229"
@@ -15767,6 +16138,7 @@
       "143",
       "152",
       "158",
+      "169",
       "190",
       "204",
       "205"
@@ -15873,6 +16245,9 @@
     "kill": [
       "215"
     ],
+    "knockout stage": [
+      "83"
+    ],
     "kodiak": [
       "197"
     ],
@@ -15914,14 +16289,30 @@
     ],
     "l2": [
       "119",
+      "168",
       "208",
       "67"
+    ],
+    "la liga": [
+      "82"
+    ],
+    "la liga 2026": [
+      "82"
+    ],
+    "la liga season": [
+      "82"
+    ],
+    "la liga title": [
+      "82"
     ],
     "labour leader": [
       "150"
     ],
     "labour party": [
       "150"
+    ],
+    "laliga": [
+      "82"
     ],
     "large cap": [
       "186"
@@ -15941,6 +16332,7 @@
     ],
     "launch": [
       "129",
+      "167",
       "183",
       "184",
       "197",
@@ -15982,6 +16374,7 @@
     ],
     "layer 2": [
       "119",
+      "168",
       "208"
     ],
     "layer network": [
@@ -16042,10 +16435,43 @@
     "liga winner 2026": [
       "82"
     ],
+    "lighter": [
+      "88"
+    ],
+    "lighter airdrop": [
+      "88"
+    ],
+    "lighter crypto": [
+      "88"
+    ],
+    "lighter fdv": [
+      "88"
+    ],
+    "lighter launch": [
+      "88"
+    ],
+    "lighter listing": [
+      "88"
+    ],
     "lighter market": [
       "88"
     ],
     "lighter market cap": [
+      "88"
+    ],
+    "lighter price": [
+      "88"
+    ],
+    "lighter project": [
+      "88"
+    ],
+    "lighter tge": [
+      "88"
+    ],
+    "lighter token": [
+      "88"
+    ],
+    "lighter valuation": [
       "88"
     ],
     "lions vs vikings": [
@@ -16057,6 +16483,9 @@
     "listing": [
       "152",
       "158",
+      "167",
+      "168",
+      "169",
       "175",
       "190",
       "192",
@@ -16150,6 +16579,7 @@
     ],
     "mainnet": [
       "119",
+      "168",
       "208",
       "229",
       "67"
@@ -16429,6 +16859,7 @@
       "125",
       "126",
       "143",
+      "169",
       "65"
     ],
     "national basketball association": [
@@ -16447,6 +16878,7 @@
       "160"
     ],
     "native token": [
+      "168",
       "175"
     ],
     "natural disaster": [
@@ -16629,7 +17061,8 @@
       "123"
     ],
     "nyse": [
-      "143"
+      "143",
+      "169"
     ],
     "offering": [
       "152"
@@ -16765,10 +17198,19 @@
     "ownership": [
       "160"
     ],
+    "pacifica": [
+      "167"
+    ],
+    "pacifica coin": [
+      "167"
+    ],
     "pacifica launch": [
       "167"
     ],
     "pacifica launch token": [
+      "167"
+    ],
+    "pacifica token": [
       "167"
     ],
     "panthers": [
@@ -16959,6 +17401,7 @@
       "80"
     ],
     "presale": [
+      "167",
       "174",
       "201"
     ],
@@ -17016,6 +17459,9 @@
       "112",
       "123"
     ],
+    "primera division": [
+      "82"
+    ],
     "pro basketball": [
       "103"
     ],
@@ -17044,6 +17490,9 @@
     "psuv": [
       "116"
     ],
+    "public company": [
+      "169"
+    ],
     "public debut": [
       "152",
       "204"
@@ -17051,6 +17500,7 @@
     "public offering": [
       "143",
       "158",
+      "169",
       "190",
       "205"
     ],
@@ -17138,6 +17588,9 @@
     ],
     "ratings": [
       "214"
+    ],
+    "real madrid": [
+      "82"
     ],
     "rebalancing": [
       "186"
@@ -17254,6 +17707,7 @@
       "111",
       "159",
       "160",
+      "167",
       "217"
     ],
     "sale announced": [
@@ -17267,6 +17721,9 @@
     ],
     "santa clara": [
       "81"
+    ],
+    "santander league": [
+      "82"
     ],
     "satoshi": [
       "112"
@@ -17372,7 +17829,8 @@
       "126",
       "143",
       "152",
-      "158"
+      "158",
+      "169"
     ],
     "shock": [
       "187"
@@ -17420,7 +17878,8 @@
     "soccer": [
       "207",
       "79",
-      "80"
+      "80",
+      "83"
     ],
     "social media": [
       "159"
@@ -17458,6 +17917,7 @@
     ],
     "spacex": [
       "158",
+      "169",
       "204"
     ],
     "spacex ipo": [
@@ -17473,6 +17933,18 @@
     ],
     "spacex public ticker": [
       "169"
+    ],
+    "spain league": [
+      "82"
+    ],
+    "spain top flight": [
+      "82"
+    ],
+    "spanish football": [
+      "82"
+    ],
+    "spanish soccer": [
+      "82"
     ],
     "speaker": [
       "135"
@@ -17573,11 +18045,15 @@
     "stock market": [
       "123",
       "152",
+      "169",
       "186"
     ],
     "stock price": [
       "158",
       "65"
+    ],
+    "stock symbol": [
+      "169"
     ],
     "stranger things": [
       "214",
@@ -17711,6 +18187,8 @@
       "124"
     ],
     "tge": [
+      "167",
+      "168",
       "175",
       "192",
       "194",
@@ -17718,6 +18196,7 @@
       "201",
       "219",
       "220",
+      "228",
       "229",
       "67"
     ],
@@ -17747,7 +18226,8 @@
     ],
     "ticker": [
       "143",
-      "158"
+      "158",
+      "169"
     ],
     "tightening": [
       "120",
@@ -17802,6 +18282,7 @@
     ],
     "token": [
       "118",
+      "167",
       "183",
       "184",
       "197",
@@ -17822,15 +18303,19 @@
       "192"
     ],
     "token generation event": [
-      "175"
+      "168",
+      "175",
+      "228"
     ],
     "token launch": [
       "118",
+      "168",
       "175",
       "189",
       "192",
       "194",
-      "219"
+      "219",
+      "228"
     ],
     "token sale": [
       "175"
@@ -17838,6 +18323,8 @@
     "tokenomics": [
       "118",
       "119",
+      "167",
+      "168",
       "175",
       "189",
       "194"
@@ -17863,6 +18350,9 @@
     "top netflix show": [
       "214"
     ],
+    "top tier": [
+      "83"
+    ],
     "tour": [
       "132"
     ],
@@ -17887,6 +18377,7 @@
       "125",
       "126",
       "145",
+      "169",
       "183",
       "184",
       "197",
@@ -17930,7 +18421,8 @@
       "103",
       "115",
       "79",
-      "80"
+      "80",
+      "83"
     ],
     "trove": [
       "219"
@@ -17989,8 +18481,14 @@
     "u.s. senate": [
       "136"
     ],
+    "ucl": [
+      "83"
+    ],
     "ueda": [
       "120"
+    ],
+    "uefa": [
+      "83"
     ],
     "uefa champions": [
       "83"
@@ -18400,6 +18898,7 @@
       "66"
     ],
     "以太坊": [
+      "228",
       "64",
       "67"
     ],
@@ -18444,6 +18943,7 @@
     ],
     "太空探索技术公司": [
       "158",
+      "169",
       "204"
     ],
     "奥斯卡": [
@@ -18520,6 +19020,9 @@
     ],
     "标普500": [
       "186"
+    ],
+    "欧洲冠军联赛": [
+      "83"
     ],
     "欧洲央行": [
       "121"
@@ -18791,6 +19294,15 @@
       "97",
       "98"
     ],
+    "abstract": [
+      "168"
+    ],
+    "abstract chain": [
+      "168"
+    ],
+    "abstract ecosystem": [
+      "168"
+    ],
     "abstract launch": [
       "168"
     ],
@@ -18914,6 +19426,8 @@
     "airdrop": [
       "118",
       "119",
+      "167",
+      "168",
       "174",
       "175",
       "184",
@@ -18925,6 +19439,7 @@
       "207",
       "219",
       "220",
+      "228",
       "229",
       "67"
     ],
@@ -19023,6 +19538,9 @@
       "145",
       "58"
     ],
+    "atletico madrid": [
+      "82"
+    ],
     "atp": [
       "222"
     ],
@@ -19094,6 +19612,9 @@
     "bank of japan": [
       "120",
       "230"
+    ],
+    "barcelona": [
+      "82"
     ],
     "base": [
       "119"
@@ -19219,6 +19740,7 @@
     "blockchain": [
       "112",
       "119",
+      "167",
       "183",
       "192",
       "194",
@@ -19471,6 +19993,9 @@
     "closing price": [
       "123"
     ],
+    "club competition": [
+      "83"
+    ],
     "coinbase": [
       "119"
     ],
@@ -19584,6 +20109,7 @@
       "112",
       "119",
       "145",
+      "167",
       "174",
       "183",
       "184",
@@ -19603,7 +20129,9 @@
       "143"
     ],
     "crypto token": [
-      "175"
+      "168",
+      "175",
+      "228"
     ],
     "crypto wallet": [
       "118",
@@ -19689,6 +20217,7 @@
     "debut": [
       "143",
       "158",
+      "169",
       "219",
       "220"
     ],
@@ -19903,6 +20432,9 @@
     "editor's pick": [
       "108"
     ],
+    "el clasico": [
+      "82"
+    ],
     "election": [
       "116",
       "131"
@@ -19954,11 +20486,13 @@
       "126",
       "152",
       "158",
+      "169",
       "204",
       "65"
     ],
     "erc20": [
-      "118"
+      "118",
+      "228"
     ],
     "escalation": [
       "226"
@@ -19971,6 +20505,9 @@
       "118",
       "208",
       "64"
+    ],
+    "eth gas": [
+      "228"
     ],
     "ethan hawke": [
       "137"
@@ -19985,6 +20522,9 @@
       "208",
       "64",
       "67"
+    ],
+    "ethereum gas": [
+      "228"
     ],
     "ethereum hit": [
       "64"
@@ -20004,6 +20544,9 @@
     "ethereum wallet": [
       "189"
     ],
+    "ethgas": [
+      "228"
+    ],
     "ethgas launch": [
       "228"
     ],
@@ -20016,6 +20559,15 @@
     "european central bank": [
       "121"
     ],
+    "european cup": [
+      "83"
+    ],
+    "european football": [
+      "83"
+    ],
+    "european soccer": [
+      "83"
+    ],
     "eurozone": [
       "121"
     ],
@@ -20025,6 +20577,9 @@
     ],
     "evm": [
       "67"
+    ],
+    "exchange": [
+      "169"
     ],
     "executive": [
       "193"
@@ -20171,6 +20726,9 @@
     "film editing winner": [
       "211"
     ],
+    "final": [
+      "83"
+    ],
     "finale": [
       "215"
     ],
@@ -20227,7 +20785,8 @@
       "223",
       "224",
       "79",
-      "80"
+      "80",
+      "83"
     ],
     "football fun": [
       "207"
@@ -20290,7 +20849,23 @@
       "190"
     ],
     "gas fees": [
+      "228",
       "64"
+    ],
+    "gas optimization": [
+      "228"
+    ],
+    "gas oracle": [
+      "228"
+    ],
+    "gas protocol": [
+      "228"
+    ],
+    "gas token": [
+      "228"
+    ],
+    "gas tracker": [
+      "228"
     ],
     "gemini": [
       "66"
@@ -20386,6 +20961,7 @@
       "184"
     ],
     "governance token": [
+      "168",
       "175"
     ],
     "governing council": [
@@ -20419,6 +20995,9 @@
     ],
     "grossing movie 2025": [
       "84"
+    ],
+    "group stage": [
+      "83"
     ],
     "halving": [
       "145",
@@ -20532,12 +21111,14 @@
       "132"
     ],
     "ico": [
+      "167",
       "192"
     ],
     "idf": [
       "226"
     ],
     "ido": [
+      "167",
       "192",
       "201",
       "229"
@@ -20647,6 +21228,7 @@
       "143",
       "152",
       "158",
+      "169",
       "190",
       "204",
       "205"
@@ -20753,6 +21335,9 @@
     "kill": [
       "215"
     ],
+    "knockout stage": [
+      "83"
+    ],
     "kodiak": [
       "197"
     ],
@@ -20794,14 +21379,30 @@
     ],
     "l2": [
       "119",
+      "168",
       "208",
       "67"
+    ],
+    "la liga": [
+      "82"
+    ],
+    "la liga 2026": [
+      "82"
+    ],
+    "la liga season": [
+      "82"
+    ],
+    "la liga title": [
+      "82"
     ],
     "labour leader": [
       "150"
     ],
     "labour party": [
       "150"
+    ],
+    "laliga": [
+      "82"
     ],
     "large cap": [
       "186"
@@ -20821,6 +21422,7 @@
     ],
     "launch": [
       "129",
+      "167",
       "183",
       "184",
       "197",
@@ -20862,6 +21464,7 @@
     ],
     "layer 2": [
       "119",
+      "168",
       "208"
     ],
     "layer network": [
@@ -20922,10 +21525,43 @@
     "liga winner 2026": [
       "82"
     ],
+    "lighter": [
+      "88"
+    ],
+    "lighter airdrop": [
+      "88"
+    ],
+    "lighter crypto": [
+      "88"
+    ],
+    "lighter fdv": [
+      "88"
+    ],
+    "lighter launch": [
+      "88"
+    ],
+    "lighter listing": [
+      "88"
+    ],
     "lighter market": [
       "88"
     ],
     "lighter market cap": [
+      "88"
+    ],
+    "lighter price": [
+      "88"
+    ],
+    "lighter project": [
+      "88"
+    ],
+    "lighter tge": [
+      "88"
+    ],
+    "lighter token": [
+      "88"
+    ],
+    "lighter valuation": [
       "88"
     ],
     "lions vs vikings": [
@@ -20937,6 +21573,9 @@
     "listing": [
       "152",
       "158",
+      "167",
+      "168",
+      "169",
       "175",
       "190",
       "192",
@@ -21030,6 +21669,7 @@
     ],
     "mainnet": [
       "119",
+      "168",
       "208",
       "229",
       "67"
@@ -21309,6 +21949,7 @@
       "125",
       "126",
       "143",
+      "169",
       "65"
     ],
     "national basketball association": [
@@ -21327,6 +21968,7 @@
       "160"
     ],
     "native token": [
+      "168",
       "175"
     ],
     "natural disaster": [
@@ -21509,7 +22151,8 @@
       "123"
     ],
     "nyse": [
-      "143"
+      "143",
+      "169"
     ],
     "offering": [
       "152"
@@ -21645,10 +22288,19 @@
     "ownership": [
       "160"
     ],
+    "pacifica": [
+      "167"
+    ],
+    "pacifica coin": [
+      "167"
+    ],
     "pacifica launch": [
       "167"
     ],
     "pacifica launch token": [
+      "167"
+    ],
+    "pacifica token": [
       "167"
     ],
     "panthers": [
@@ -21839,6 +22491,7 @@
       "80"
     ],
     "presale": [
+      "167",
       "174",
       "201"
     ],
@@ -21896,6 +22549,9 @@
       "112",
       "123"
     ],
+    "primera division": [
+      "82"
+    ],
     "pro basketball": [
       "103"
     ],
@@ -21924,6 +22580,9 @@
     "psuv": [
       "116"
     ],
+    "public company": [
+      "169"
+    ],
     "public debut": [
       "152",
       "204"
@@ -21931,6 +22590,7 @@
     "public offering": [
       "143",
       "158",
+      "169",
       "190",
       "205"
     ],
@@ -22018,6 +22678,9 @@
     ],
     "ratings": [
       "214"
+    ],
+    "real madrid": [
+      "82"
     ],
     "rebalancing": [
       "186"
@@ -22134,6 +22797,7 @@
       "111",
       "159",
       "160",
+      "167",
       "217"
     ],
     "sale announced": [
@@ -22147,6 +22811,9 @@
     ],
     "santa clara": [
       "81"
+    ],
+    "santander league": [
+      "82"
     ],
     "satoshi": [
       "112"
@@ -22252,7 +22919,8 @@
       "126",
       "143",
       "152",
-      "158"
+      "158",
+      "169"
     ],
     "shock": [
       "187"
@@ -22300,7 +22968,8 @@
     "soccer": [
       "207",
       "79",
-      "80"
+      "80",
+      "83"
     ],
     "social media": [
       "159"
@@ -22338,6 +23007,7 @@
     ],
     "spacex": [
       "158",
+      "169",
       "204"
     ],
     "spacex ipo": [
@@ -22353,6 +23023,18 @@
     ],
     "spacex public ticker": [
       "169"
+    ],
+    "spain league": [
+      "82"
+    ],
+    "spain top flight": [
+      "82"
+    ],
+    "spanish football": [
+      "82"
+    ],
+    "spanish soccer": [
+      "82"
     ],
     "speaker": [
       "135"
@@ -22453,11 +23135,15 @@
     "stock market": [
       "123",
       "152",
+      "169",
       "186"
     ],
     "stock price": [
       "158",
       "65"
+    ],
+    "stock symbol": [
+      "169"
     ],
     "stranger things": [
       "214",
@@ -22591,6 +23277,8 @@
       "124"
     ],
     "tge": [
+      "167",
+      "168",
       "175",
       "192",
       "194",
@@ -22598,6 +23286,7 @@
       "201",
       "219",
       "220",
+      "228",
       "229",
       "67"
     ],
@@ -22627,7 +23316,8 @@
     ],
     "ticker": [
       "143",
-      "158"
+      "158",
+      "169"
     ],
     "tightening": [
       "120",
@@ -22682,6 +23372,7 @@
     ],
     "token": [
       "118",
+      "167",
       "183",
       "184",
       "197",
@@ -22702,15 +23393,19 @@
       "192"
     ],
     "token generation event": [
-      "175"
+      "168",
+      "175",
+      "228"
     ],
     "token launch": [
       "118",
+      "168",
       "175",
       "189",
       "192",
       "194",
-      "219"
+      "219",
+      "228"
     ],
     "token sale": [
       "175"
@@ -22718,6 +23413,8 @@
     "tokenomics": [
       "118",
       "119",
+      "167",
+      "168",
       "175",
       "189",
       "194"
@@ -22743,6 +23440,9 @@
     "top netflix show": [
       "214"
     ],
+    "top tier": [
+      "83"
+    ],
     "tour": [
       "132"
     ],
@@ -22767,6 +23467,7 @@
       "125",
       "126",
       "145",
+      "169",
       "183",
       "184",
       "197",
@@ -22810,7 +23511,8 @@
       "103",
       "115",
       "79",
-      "80"
+      "80",
+      "83"
     ],
     "trove": [
       "219"
@@ -22869,8 +23571,14 @@
     "u.s. senate": [
       "136"
     ],
+    "ucl": [
+      "83"
+    ],
     "ueda": [
       "120"
+    ],
+    "uefa": [
+      "83"
     ],
     "uefa champions": [
       "83"
@@ -23280,6 +23988,7 @@
       "66"
     ],
     "以太坊": [
+      "228",
       "64",
       "67"
     ],
@@ -23324,6 +24033,7 @@
     ],
     "太空探索技术公司": [
       "158",
+      "169",
       "204"
     ],
     "奥斯卡": [
@@ -23400,6 +24110,9 @@
     ],
     "标普500": [
       "186"
+    ],
+    "欧洲冠军联赛": [
+      "83"
     ],
     "欧洲央行": [
       "121"
