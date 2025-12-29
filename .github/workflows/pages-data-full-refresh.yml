@@ -31,7 +31,7 @@ jobs:
         env:
           ZHIPU_KEY: ${{ secrets.ZHIPU_KEY }}
           FULL_AI_REFRESH: "1"
-          SLEEP_SECONDS: "0.5"
+          SLEEP_SECONDS: "1.5"
           ZHIPU_TIMEOUT_SECONDS: "60"
           ZHIPU_MAX_RETRIES: "3"
         run: |
