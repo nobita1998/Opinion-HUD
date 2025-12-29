@@ -1074,6 +1074,10 @@ def _term_is_from_title(term, title, allow_terms):
         return False
     if nterm in (allow_terms or set()):
         return True
+    # Allow Chinese characters (these are dictionary translations, not from title)
+    # Chinese character range: U+4E00 to U+9FFF
+    if any('\u4e00' <= ch <= '\u9fff' for ch in nterm):
+        return True
     t_compact = _compact_alnum(title)
     n_compact = _compact_alnum(nterm)
     return bool(n_compact and t_compact and n_compact in t_compact)
