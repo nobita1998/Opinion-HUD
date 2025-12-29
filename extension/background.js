@@ -1,6 +1,6 @@
 const DEFAULT_DATA_URL = "https://opinionhud.xyz/data.json";
 const OPINION_API_ORIGINS = new Set(["https://api.opinionhud.xyz"]);
-const FETCH_TIMEOUT_MS = 8000;
+const FETCH_TIMEOUT_MS = 15000; // Increased from 8s to 15s for slow API responses
 const STORAGE_KEYS = {
   settings: "opinionHudSettings",
   cachedData: "opinionHudData",
@@ -172,7 +172,11 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
         sendResponse({ ok: true, data });
       })
       .catch((error) => {
-        console.error('[OpinionHUD BG] fetch error:', error);
+        console.error('[OpinionHUD BG] fetch error:', {
+          name: error?.name,
+          message: error?.message,
+          error: error
+        });
         sendResponse({ ok: false, error: String(error?.message || error) });
       });
     return true;
