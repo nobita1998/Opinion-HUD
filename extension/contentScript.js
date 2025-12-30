@@ -368,9 +368,10 @@ function tokenize(text) {
     if (!cjkStr) return;
     // Add the full token
     tokens.add(cjkStr);
-    // For CJK strings, also add all n-grams (n=1,2,3,4) for better matching
+    // For CJK strings, also add all n-grams (n=1,2,...,8) for better matching
     // This allows "日本银行加息" to match keyword "日本银行"
-    const maxNGram = Math.min(4, cjkStr.length);
+    // Increased to 8 to support longer entity names like "日本中央银行" (5 chars)
+    const maxNGram = Math.min(8, cjkStr.length);
     for (let n = 1; n <= maxNGram; n++) {
       for (let i = 0; i <= cjkStr.length - n; i++) {
         tokens.add(cjkStr.substring(i, i + n));
@@ -1291,7 +1292,14 @@ function isEntryMentioned({ plain, tokens }, entry) {
   if (!keywordTokens.length) return false;
 
   if (keywordTokens.length === 1) {
-    return tokens.has(keywordTokens[0]);
+    const token = keywordTokens[0];
+    if (tokens.has(token)) return true;
+    // For CJK single-token keywords, also check plain.includes() as fallback
+    // This handles cases where keyword length exceeds n-gram limit
+    if (keywordPlain && /[\u4e00-\u9fff]/.test(token) && plain.includes(keywordPlain)) {
+      return true;
+    }
+    return false;
   }
 
   if (keywordPlain && plain.includes(keywordPlain)) return true;

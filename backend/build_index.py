@@ -10,7 +10,7 @@ import zhipuai
 
 OPINION_API_URL = os.environ.get("OPINION_API_URL", "").strip() or "http://opinion.api.predictscan.dev:10001/api/markets"
 OPINION_WRAP_EVENTS_URL = "https://opinionanalytics.xyz/api/markets/wrap-events"
-FRONTEND_BASE_URL = "https://opinion.trade"
+FRONTEND_BASE_URL = "https://app.opinion.trade"
 MODEL_NAME = "GLM-4.7"
 REF_PARAM = "opinion_hud"
 DEBUG = os.environ.get("DEBUG", "").strip().lower() in ("1", "true", "yes", "y", "on")
@@ -182,6 +182,72 @@ CN_EN_ENTITY_MAP = {
     "GPT": ["GPT"],
     "Claude": ["Claude"],
     "Gemini": ["Gemini", "双子座"],
+}
+
+# Entity Alias Map: canonical term -> list of aliases (abbreviations, variants)
+# Used to augment entityGroups so that common abbreviations also trigger matches
+ENTITY_ALIAS_MAP = {
+    # Central Banks & Monetary Policy
+    "bank of japan": ["boj", "日银", "日本央行", "日本银行"],
+    "boj": ["bank of japan", "日银", "日本央行", "日本银行"],
+    "federal reserve": ["fed", "fomc", "美联储", "联储"],
+    "fed": ["federal reserve", "fomc", "美联储", "联储"],
+    "fomc": ["fed", "federal reserve", "美联储"],
+    "ecb": ["european central bank", "欧洲央行"],
+    "european central bank": ["ecb", "欧洲央行"],
+    "pboc": ["people's bank of china", "中国人民银行", "央行"],
+
+    # Cryptocurrencies
+    "bitcoin": ["btc", "比特币"],
+    "btc": ["bitcoin", "比特币"],
+    "ethereum": ["eth", "以太坊"],
+    "eth": ["ethereum", "以太坊"],
+    "solana": ["sol", "索拉纳"],
+    "sol": ["solana", "索拉纳"],
+    "xrp": ["ripple", "瑞波币"],
+    "ripple": ["xrp", "瑞波"],
+    "dogecoin": ["doge", "狗狗币"],
+    "doge": ["dogecoin", "狗狗币"],
+    "bnb": ["binance coin", "币安币"],
+
+    # Exchanges & Crypto Companies
+    "binance": ["bnb", "币安"],
+    "coinbase": ["cb"],
+    "ftx": ["ftx"],
+
+    # People
+    "elon musk": ["musk", "马斯克"],
+    "musk": ["elon musk", "马斯克"],
+    "changpeng zhao": ["cz", "赵长鹏"],
+    "cz": ["changpeng zhao", "赵长鹏"],
+    "vitalik buterin": ["vitalik", "v神", "维塔利克"],
+    "vitalik": ["vitalik buterin", "v神"],
+    "donald trump": ["trump", "川普", "特朗普"],
+    "trump": ["donald trump", "川普", "特朗普"],
+    "joe biden": ["biden", "拜登"],
+    "biden": ["joe biden", "拜登"],
+
+    # Companies
+    "tesla": ["tsla", "特斯拉"],
+    "apple": ["aapl", "苹果"],
+    "nvidia": ["nvda", "英伟达"],
+    "microsoft": ["msft", "微软"],
+    "google": ["goog", "googl", "alphabet", "谷歌"],
+    "amazon": ["amzn", "亚马逊"],
+    "meta": ["fb", "facebook", "脸书"],
+
+    # Sports & Events
+    "super bowl": ["superbowl", "超级碗"],
+    "nba finals": ["nba总决赛"],
+    "world cup": ["世界杯"],
+    "champions league": ["ucl", "欧冠"],
+    "olympics": ["olympic games", "奥运会", "奥运"],
+    "oscars": ["academy awards", "奥斯卡"],
+
+    # Organizations
+    "sec": ["securities and exchange commission", "美国证监会"],
+    "fbi": ["federal bureau of investigation", "联邦调查局"],
+    "nato": ["north atlantic treaty organization", "北约"],
 }
 
 # Keyword translations (for general keywords)
@@ -1670,10 +1736,14 @@ def generate_keywords(api_key, title, rules, context=None):
 
 
 def augment_with_chinese(keywords, entities, entity_groups):
-    """Augment LLM-generated entityGroups with Chinese translations from dictionary.
+    """Augment LLM-generated entityGroups with Chinese translations and aliases from dictionaries.
 
-    This function uses predefined Chinese-English dictionaries to add missing Chinese translations
-    to entity groups only (not keywords), complementing the LLM's bilingual output.
+    This function uses predefined dictionaries to add:
+    1. Chinese translations (from CN_EN_ENTITY_MAP and CN_EN_KEYWORD_MAP)
+    2. Common aliases/abbreviations (from ENTITY_ALIAS_MAP)
+
+    This ensures that common abbreviations like "BOJ" trigger matches when "Bank of Japan"
+    is in the entityGroups.
 
     Args:
         keywords: List of keyword strings (returned unchanged)
@@ -1689,7 +1759,7 @@ def augment_with_chinese(keywords, entities, entity_groups):
         entity_groups = []
 
     # Keywords are returned unchanged - we only augment entityGroups
-    # Augment entityGroups with Chinese translations
+    # Augment entityGroups with Chinese translations and aliases
     new_entity_groups = []
     for group in entity_groups:
         if not isinstance(group, list):
@@ -1703,7 +1773,7 @@ def augment_with_chinese(keywords, entities, entity_groups):
             if not term_normalized:
                 continue
 
-            # Check entity map for this term
+            # Check entity map for Chinese translations
             for en_key, cn_translations in CN_EN_ENTITY_MAP.items():
                 en_key_lower = en_key.lower()
                 term_lower = term_normalized.lower()
@@ -1716,7 +1786,7 @@ def augment_with_chinese(keywords, entities, entity_groups):
                             new_group.append(cn_term)
                             group_terms_set.add(cn_normalized)
 
-            # Also check keyword map for entity terms
+            # Check keyword map for entity terms
             for en_key, cn_translations in CN_EN_KEYWORD_MAP.items():
                 en_key_lower = en_key.lower()
                 term_lower = term_normalized.lower()
@@ -1729,6 +1799,19 @@ def augment_with_chinese(keywords, entities, entity_groups):
                             new_group.append(cn_term)
                             group_terms_set.add(cn_normalized)
 
+            # Check alias map for abbreviations and variants
+            for canonical, aliases in ENTITY_ALIAS_MAP.items():
+                canonical_lower = canonical.lower()
+                term_lower = term_normalized.lower()
+
+                # Exact match with canonical term
+                if canonical_lower == term_lower:
+                    for alias in aliases:
+                        alias_normalized = _normalize_keyword(alias)
+                        if alias_normalized and alias_normalized not in group_terms_set:
+                            new_group.append(alias)
+                            group_terms_set.add(alias_normalized)
+
         if new_group:
             new_entity_groups.append(new_group)
 
@@ -1740,7 +1823,7 @@ def augment_with_chinese(keywords, entities, entity_groups):
         for i, (old_group, new_group) in enumerate(zip(entity_groups, new_entity_groups)):
             added_entities = len(new_group) - len(old_group)
             if added_entities > 0:
-                print(f"[debug] augment_with_chinese: added {added_entities} Chinese terms to entityGroup[{i}]", flush=True)
+                print(f"[debug] augment_with_chinese: added {added_entities} terms (Chinese + aliases) to entityGroup[{i}]", flush=True)
 
     return keywords, new_entity_groups
 
