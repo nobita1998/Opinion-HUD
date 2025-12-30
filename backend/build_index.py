@@ -1683,7 +1683,6 @@ def generate_keywords(api_key, title, rules, context=None):
         "}\n"
     )
 
-    attempt = 0
     ctx = context if isinstance(context, dict) else {}
     ctx_event_id = str(ctx.get("eventId") or "").strip() or None
     ctx_best_market_id = str(ctx.get("bestMarketId") or "").strip() or None
@@ -1697,42 +1696,32 @@ def generate_keywords(api_key, title, rules, context=None):
         ctx_label_parts.append(f"url={ctx_best_market_url}")
     ctx_label = (" " + " ".join(ctx_label_parts)) if ctx_label_parts else ""
 
-    while True:
-        attempt += 1
-        try:
-            content = _zhipu_chat_completion(
-                api_key=api_key,
-                messages=[
-                    {"role": "system", "content": system},
-                    {"role": "user", "content": user},
-                ],
+    # No retry - 429 rate limit errors are better handled by not retrying
+    try:
+        content = _zhipu_chat_completion(
+            api_key=api_key,
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+        )
+        result = _extract_keywords_and_entities(content)
+        if DEBUG:
+            print(
+                f"[debug] generated for title={title!r}: "
+                f"keywords={len(result['keywords'])} entities={len(result['entities'])}",
+                flush=True,
             )
-            result = _extract_keywords_and_entities(content)
-            if DEBUG:
-                print(
-                    f"[debug] generated for title={title!r}: "
-                    f"keywords={len(result['keywords'])} entities={len(result['entities'])} (attempt {attempt})",
-                    flush=True,
-                )
-            return result
-        except KeyboardInterrupt:
-            raise
-        except Exception as exc:
-            if attempt >= max(1, ZHIPU_MAX_RETRIES):
-                safe_title = _truncate(str(title or "").strip(), 160)
-                print(
-                    f"[warn] keyword generation failed (final){ctx_label} title={safe_title!r}: {exc}",
-                    flush=True,
-                )
-                return {"keywords": [], "entities": [], "entityGroups": []}
-            sleep_for = min(2.0, 0.5 * attempt)
-            if DEBUG:
-                safe_title = _truncate(str(title or "").strip(), 160)
-                print(
-                    f"[warn] keyword generation failed (retrying){ctx_label} title={safe_title!r}: {exc}",
-                    flush=True,
-                )
-            time.sleep(sleep_for)
+        return result
+    except KeyboardInterrupt:
+        raise
+    except Exception as exc:
+        safe_title = _truncate(str(title or "").strip(), 160)
+        print(
+            f"[warn] keyword generation failed{ctx_label} title={safe_title!r}: {exc}",
+            flush=True,
+        )
+        return {"keywords": [], "entities": [], "entityGroups": []}
 
 
 def augment_with_chinese(keywords, entities, entity_groups):
