@@ -131,10 +131,12 @@ async function fetchOpinionApiJsonWithRetry(path, signal) {
 
 const PRICE_CACHE_TTL_MS = 60_000;
 const MARKET_ASSET_CACHE_TTL_MS = 10 * 60_000;
+const PRICE_HISTORY_CACHE_TTL_MS = 5 * 60_000; // 5 minutes for price history
 const MAX_PRICE_FETCH_CONCURRENCY = 4;
 
 const assetPriceCache = new Map(); // assetId -> { ts, price }
 const marketAssetCache = new Map(); // marketId -> { ts, yesTokenId, noTokenId }
+const priceHistoryCache = new Map(); // tokenId -> { ts, data }
 
 function nowMs() {
   return Date.now();
@@ -333,11 +335,709 @@ async function getLatestAssetPrice(assetId, signal) {
   }
 }
 
+/**
+ * Extract tweet posting time from article element
+ * @param {HTMLElement} articleEl - The article element containing the tweet
+ * @returns {number|null} - Unix timestamp in milliseconds, or null if not found
+ */
+function extractTweetTime(articleEl) {
+  if (!articleEl) return null;
+  const timeEl = articleEl.querySelector('time[datetime]');
+  if (!timeEl) return null;
+  const datetime = timeEl.getAttribute('datetime');
+  if (!datetime) return null;
+  const date = new Date(datetime);
+  if (isNaN(date.getTime())) return null;
+  return date.getTime();
+}
+
+/**
+ * Fetch price history for a token
+ * @param {string} tokenId - ERC-1155 token ID
+ * @param {AbortSignal} signal - Abort signal
+ * @returns {Promise<Array|null>} - Array of { price, timestamp } or null
+ */
+async function getPriceHistory(tokenId, signal) {
+  const key = String(tokenId);
+  const cached = getCached(priceHistoryCache, key, PRICE_HISTORY_CACHE_TTL_MS);
+  // Only use cache if it has data (not null)
+  if (cached && cached.data && cached.data.length > 0) {
+    return cached.data;
+  }
+
+  // Try intervals in order: 1h (reliable) -> max (fallback) -> 1m (might be empty)
+  const intervals = ['1h', 'max', '1m'];
+
+  for (const interval of intervals) {
+    try {
+      const path = `/token/price-history/${encodeURIComponent(key)}?interval=${interval}`;
+      const response = await priceFetchLimiter(
+        () => fetchOpinionApiJsonWithRetry(path, signal),
+        signal
+      );
+      if (response?.success && Array.isArray(response?.data) && response.data.length > 0) {
+        priceHistoryCache.set(key, { ts: nowMs(), data: response.data });
+        return response.data;
+      }
+    } catch (err) {
+      if (isAbortError(err)) return null;
+      // Continue to next interval
+    }
+  }
+
+  // All intervals failed - don't cache null, try again next time
+  return null;
+}
+
+/**
+ * Find the price at tweet time (CALL price)
+ * Returns the price closest to the tweet timestamp, using tweet time as the timestamp
+ * @param {Array} priceHistory - Array of { price, timestamp }
+ * @param {number} tweetTimestamp - Tweet time in milliseconds
+ * @returns {{ price: number, timestamp: number }|null}
+ */
+function findCallPrice(priceHistory, tweetTimestamp) {
+  if (!priceHistory || !priceHistory.length || !tweetTimestamp) return null;
+
+  // Sort by timestamp ascending (oldest first)
+  const sorted = [...priceHistory].sort((a, b) => a.timestamp - b.timestamp);
+
+  // Find price point closest to tweet timestamp
+  let closestPoint = null;
+  let closestDiff = Infinity;
+
+  for (const point of sorted) {
+    const diff = Math.abs(point.timestamp - tweetTimestamp);
+    if (diff < closestDiff) {
+      closestDiff = diff;
+      closestPoint = point;
+    }
+  }
+
+  if (closestPoint) {
+    // Return with tweet timestamp (not data point timestamp) for display
+    return { price: closestPoint.price, timestamp: tweetTimestamp };
+  }
+
+  return null;
+}
+
+/**
+ * Calculate price change between call price and current price
+ * @param {number} callPrice - Price at call time (0-1)
+ * @param {number} currentPrice - Current price (0-1)
+ * @returns {{ callPrice: number, currentPrice: number, changePercent: number, changeDisplay: string }|null}
+ */
+function calculatePriceChange(callPrice, currentPrice) {
+  if (callPrice == null || currentPrice == null) return null;
+  if (!Number.isFinite(callPrice) || !Number.isFinite(currentPrice)) return null;
+  if (callPrice === 0) return null;
+
+  const changePercent = ((currentPrice - callPrice) / callPrice) * 100;
+  return {
+    callPrice,
+    currentPrice,
+    changePercent,
+    changeDisplay: changePercent >= 0
+      ? `+${changePercent.toFixed(1)}%`
+      : `${changePercent.toFixed(1)}%`
+  };
+}
+
+/**
+ * Format price change display string
+ * @param {number} callPrice - Price at call time (0-1)
+ * @param {number} currentPrice - Current price (0-1)
+ * @returns {{ text: string, isProfit: boolean, changePercent: number }|null}
+ */
+function formatPriceChangeDisplay(callPrice, currentPrice) {
+  const change = calculatePriceChange(callPrice, currentPrice);
+  if (!change) return null;
+
+  const callPercent = (change.callPrice * 100).toFixed(1);
+  const nowPercent = (change.currentPrice * 100).toFixed(1);
+
+  return {
+    text: `call @${callPercent}%, now @${nowPercent}%, ${change.changeDisplay}`,
+    isProfit: change.changePercent > 0,
+    changePercent: change.changePercent
+  };
+}
+
 function buildOpinionTradeUrl({ topicId, isMulti }) {
   const u = new URL(OPINION_TRADE_DETAIL_URL);
   u.searchParams.set("topicId", String(topicId));
   if (isMulti) u.searchParams.set("type", "multi");
   return u.toString();
+}
+
+// ============================================
+// Share Chart - Canvas Drawing Functions
+// ============================================
+
+const CHART_CONFIG = {
+  width: 600,
+  height: 400,
+  scale: 4, // 4x pixel density for 2K resolution (2400x1600 actual, displays at 600x400)
+  // Split layout: left 60% for chart, right 40% for decoration
+  chartAreaWidth: 360, // 60% of 600
+  decorAreaX: 370,     // Start of decoration area
+  decorAreaWidth: 220, // Right side width
+  padding: { top: 60, right: 20, bottom: 60, left: 45 },
+  bgColor: '#0a0a0a',
+  bgGradientStart: '#0f1419',
+  bgGradientEnd: '#000000',
+  textColor: '#ffffff',
+  textMuted: 'rgba(255, 255, 255, 0.35)',
+  gridColor: 'rgba(255, 255, 255, 0.03)', // Much lighter grid
+  profitColor: '#00d26a',
+  lossColor: '#ff6b6b',
+  brandColor: '#f97316',  // Orange
+  accentColor: '#fb923c', // Light orange
+};
+
+// Owl mascot images cache
+const OWL_IMAGE_BASE = 'https://opinionhud.xyz/assets';
+const owlImages = {
+  up: null,
+  down: null,
+  theme: null,
+  loaded: false
+};
+
+/**
+ * Load owl mascot images from opinionhud.xyz
+ * @returns {Promise<void>}
+ */
+async function loadOwlImages() {
+  if (owlImages.loaded) return;
+
+  const loadImage = (name) => {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.onload = () => resolve(img);
+      img.onerror = () => resolve(null);
+      img.src = `${OWL_IMAGE_BASE}/${name}.png`;
+    });
+  };
+
+  const [up, down, theme] = await Promise.all([
+    loadImage('up'),
+    loadImage('down'),
+    loadImage('theme')
+  ]);
+
+  owlImages.up = up;
+  owlImages.down = down;
+  owlImages.theme = theme;
+  owlImages.loaded = true;
+}
+
+/**
+ * Draw owl mascot image on canvas
+ * @param {CanvasRenderingContext2D} ctx
+ * @param {number} centerX - Center X position
+ * @param {number} centerY - Center Y position
+ * @param {string} type - 'up', 'down', or 'theme'
+ * @param {number} size - Size to draw (default 140)
+ */
+function drawOwlImage(ctx, centerX, centerY, type, size = 140) {
+  const img = owlImages[type];
+  if (!img) return;
+
+  ctx.drawImage(
+    img,
+    centerX - size / 2,
+    centerY - size / 2,
+    size,
+    size
+  );
+}
+
+/**
+ * Draw decorative stars
+ */
+function drawStars(ctx, centerX, centerY, radius, count, color) {
+  ctx.fillStyle = color;
+  for (let i = 0; i < count; i++) {
+    const angle = (Math.PI * 2 / count) * i + Math.random() * 0.5;
+    const dist = radius * (0.6 + Math.random() * 0.4);
+    const x = centerX + Math.cos(angle) * dist;
+    const y = centerY + Math.sin(angle) * dist;
+    const size = 2 + Math.random() * 3;
+
+    // Draw 4-point star
+    ctx.beginPath();
+    ctx.moveTo(x, y - size);
+    ctx.lineTo(x + size * 0.3, y);
+    ctx.lineTo(x, y + size);
+    ctx.lineTo(x - size * 0.3, y);
+    ctx.closePath();
+    ctx.fill();
+  }
+}
+
+/**
+ * Draw a rounded rectangle speech bubble
+ */
+function drawBubble(ctx, x, y, width, height, radius, tailX, tailY, fillColor, strokeColor) {
+  ctx.fillStyle = fillColor;
+  ctx.strokeStyle = strokeColor;
+  ctx.lineWidth = 2;
+
+  ctx.beginPath();
+  // Top left
+  ctx.moveTo(x + radius, y);
+  // Top edge
+  ctx.lineTo(x + width - radius, y);
+  // Top right corner
+  ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+  // Right edge
+  ctx.lineTo(x + width, y + height - radius);
+  // Bottom right corner
+  ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+  // Bottom edge with tail
+  if (tailX > x && tailX < x + width) {
+    ctx.lineTo(tailX + 10, y + height);
+    ctx.lineTo(tailX, tailY);
+    ctx.lineTo(tailX - 10, y + height);
+  }
+  ctx.lineTo(x + radius, y + height);
+  // Bottom left corner
+  ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+  // Left edge
+  ctx.lineTo(x, y + radius);
+  // Top left corner
+  ctx.quadraticCurveTo(x, y, x + radius, y);
+  ctx.closePath();
+
+  ctx.fill();
+  ctx.stroke();
+}
+
+/**
+ * Draw the share chart on canvas
+ * @param {CanvasRenderingContext2D} ctx
+ * @param {Object} data - { title, priceHistory, callPrice, callTime, currentPrice, currentTime, changePercent, tweetTime }
+ */
+function drawShareChart(ctx, data) {
+  const { width, height } = CHART_CONFIG;
+
+  // Determine profit/loss early for styling
+  const isProfit = data.changePercent >= 0;
+  const lineColor = isProfit ? CHART_CONFIG.profitColor : CHART_CONFIG.lossColor;
+
+  // === BACKGROUND (Night sky theme for owl) ===
+  const bgGradient = ctx.createLinearGradient(0, 0, 0, height);
+  bgGradient.addColorStop(0, '#0a0a1a');
+  bgGradient.addColorStop(0.5, '#12122a');
+  bgGradient.addColorStop(1, '#0a0a1a');
+  ctx.fillStyle = bgGradient;
+  ctx.fillRect(0, 0, width, height);
+
+  // Decorative stars in background
+  ctx.save();
+  Math.seedrandom && Math.seedrandom('opinion-hud'); // Consistent random if available
+  for (let i = 0; i < 30; i++) {
+    const x = (i * 73 + 17) % width;
+    const y = (i * 47 + 23) % height;
+    const size = 1 + (i % 3);
+    const alpha = 0.2 + (i % 5) * 0.1;
+    ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+    ctx.beginPath();
+    ctx.arc(x, y, size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+  ctx.restore();
+
+  // Subtle glow behind owl area
+  const glowGradient = ctx.createRadialGradient(width / 2, height / 2 + 20, 0, width / 2, height / 2 + 20, 180);
+  glowGradient.addColorStop(0, isProfit ? 'rgba(0, 210, 106, 0.08)' : 'rgba(255, 107, 107, 0.08)');
+  glowGradient.addColorStop(1, 'transparent');
+  ctx.fillStyle = glowGradient;
+  ctx.fillRect(0, 0, width, height);
+
+  // Border with rounded corners effect
+  ctx.strokeStyle = CHART_CONFIG.brandColor;
+  ctx.lineWidth = 3;
+  ctx.strokeRect(2, 2, width - 4, height - 4);
+
+  // Inner subtle border
+  ctx.strokeStyle = 'rgba(249, 115, 22, 0.2)';
+  ctx.lineWidth = 1;
+  ctx.strokeRect(6, 6, width - 12, height - 12);
+
+  // === TITLE (Top, with decorative elements) ===
+  const titleY = 38;
+  ctx.fillStyle = CHART_CONFIG.textColor;
+  ctx.font = 'bold 16px system-ui, -apple-system, sans-serif';
+  ctx.textAlign = 'center';
+  const titleText = data.title.length > 42 ? data.title.substring(0, 39) + '...' : data.title;
+  ctx.fillText(titleText, width / 2, titleY);
+
+  // Small decorative line under title
+  ctx.strokeStyle = CHART_CONFIG.brandColor;
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(width / 2 - 60, titleY + 10);
+  ctx.lineTo(width / 2 + 60, titleY + 10);
+  ctx.stroke();
+
+  // === OWL MASCOT (Center, larger) ===
+  const owlY = height / 2 + 15;
+  const owlType = isProfit ? 'up' : 'down';
+  drawOwlImage(ctx, width / 2, owlY, owlType, 160);
+
+  // === PRICE BUBBLES (Left and Right of owl) ===
+  const bubbleWidth = 100;
+  const bubbleHeight = 70;
+  const bubbleY = height / 2 - 30;
+
+  // CALL bubble (left side)
+  const callBubbleX = 30;
+  drawBubble(
+    ctx,
+    callBubbleX, bubbleY,
+    bubbleWidth, bubbleHeight,
+    12,
+    callBubbleX + bubbleWidth, bubbleY + bubbleHeight + 15,
+    'rgba(249, 115, 22, 0.15)',
+    CHART_CONFIG.brandColor
+  );
+
+  // CALL label
+  ctx.fillStyle = CHART_CONFIG.brandColor;
+  ctx.font = 'bold 11px system-ui';
+  ctx.textAlign = 'center';
+  ctx.fillText('CALL', callBubbleX + bubbleWidth / 2, bubbleY + 20);
+
+  // CALL price
+  ctx.fillStyle = CHART_CONFIG.textColor;
+  ctx.font = 'bold 22px system-ui';
+  const callPriceText = data.callPrice != null ? (data.callPrice * 100).toFixed(1) + '%' : '—';
+  ctx.fillText(callPriceText, callBubbleX + bubbleWidth / 2, bubbleY + 48);
+
+  // CALL time
+  if (data.tweetTime) {
+    const callDate = new Date(data.tweetTime);
+    const callTimeStr = callDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
+    ctx.fillStyle = CHART_CONFIG.textMuted;
+    ctx.font = '9px system-ui';
+    ctx.fillText(callTimeStr, callBubbleX + bubbleWidth / 2, bubbleY + 63);
+  }
+
+  // NOW bubble (right side)
+  const nowBubbleX = width - bubbleWidth - 30;
+  const nowBgColor = isProfit ? 'rgba(0, 210, 106, 0.15)' : 'rgba(255, 107, 107, 0.15)';
+  drawBubble(
+    ctx,
+    nowBubbleX, bubbleY,
+    bubbleWidth, bubbleHeight,
+    12,
+    nowBubbleX, bubbleY + bubbleHeight + 15,
+    nowBgColor,
+    lineColor
+  );
+
+  // NOW label
+  ctx.fillStyle = lineColor;
+  ctx.font = 'bold 11px system-ui';
+  ctx.textAlign = 'center';
+  ctx.fillText('NOW', nowBubbleX + bubbleWidth / 2, bubbleY + 20);
+
+  // NOW price
+  ctx.fillStyle = CHART_CONFIG.textColor;
+  ctx.font = 'bold 22px system-ui';
+  const nowPriceText = data.currentPrice != null ? (data.currentPrice * 100).toFixed(1) + '%' : '—';
+  ctx.fillText(nowPriceText, nowBubbleX + bubbleWidth / 2, bubbleY + 48);
+
+  // NOW time
+  const nowDate = new Date();
+  const nowTimeStr = nowDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
+  ctx.fillStyle = CHART_CONFIG.textMuted;
+  ctx.font = '9px system-ui';
+  ctx.fillText(nowTimeStr, nowBubbleX + bubbleWidth / 2, bubbleY + 63);
+
+  // === CHANGE PERCENTAGE (Bottom center, prominent) ===
+  const changeText = data.changePercent >= 0
+    ? `+${data.changePercent.toFixed(1)}%`
+    : `${data.changePercent.toFixed(1)}%`;
+
+  const changeBadgeY = height - 75;
+  const changeBadgeX = width / 2;
+  const badgeWidth = 120;
+  const badgeHeight = 38;
+
+  // Badge background with glow
+  const badgeGlow = ctx.createRadialGradient(changeBadgeX, changeBadgeY + badgeHeight / 2, 0, changeBadgeX, changeBadgeY + badgeHeight / 2, 80);
+  badgeGlow.addColorStop(0, isProfit ? 'rgba(0, 210, 106, 0.2)' : 'rgba(255, 107, 107, 0.2)');
+  badgeGlow.addColorStop(1, 'transparent');
+  ctx.fillStyle = badgeGlow;
+  ctx.fillRect(changeBadgeX - 80, changeBadgeY - 10, 160, badgeHeight + 20);
+
+  // Badge
+  ctx.fillStyle = isProfit ? 'rgba(0, 210, 106, 0.2)' : 'rgba(255, 107, 107, 0.2)';
+  ctx.beginPath();
+  if (ctx.roundRect) {
+    ctx.roundRect(changeBadgeX - badgeWidth / 2, changeBadgeY, badgeWidth, badgeHeight, 19);
+  } else {
+    ctx.rect(changeBadgeX - badgeWidth / 2, changeBadgeY, badgeWidth, badgeHeight);
+  }
+  ctx.fill();
+
+  // Badge border
+  ctx.strokeStyle = lineColor;
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Change text
+  ctx.fillStyle = lineColor;
+  ctx.font = 'bold 20px system-ui';
+  ctx.textAlign = 'center';
+  ctx.fillText(changeText, changeBadgeX, changeBadgeY + 26);
+
+  // === FOOTER ===
+  const footerY = height - 18;
+
+  // Tweet date with moon icon feel
+  if (data.tweetTime) {
+    const tweetDate = new Date(data.tweetTime);
+    const dateStr = tweetDate.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric'
+    });
+    ctx.fillStyle = CHART_CONFIG.textMuted;
+    ctx.font = '10px system-ui';
+    ctx.textAlign = 'left';
+    ctx.fillText(`🌙 ${dateStr}`, 15, footerY);
+  }
+
+  // Brand
+  ctx.fillStyle = CHART_CONFIG.brandColor;
+  ctx.font = 'bold 12px system-ui';
+  ctx.textAlign = 'right';
+  ctx.fillText('Opinion HUD', width - 15, footerY);
+}
+
+/**
+ * Generate share image and return dataURL
+ */
+async function generateShareImage(title, priceHistory, callPrice, callTime, currentPrice, changePercent, tweetTime) {
+  // Load owl images first
+  await loadOwlImages();
+
+  const scale = CHART_CONFIG.scale;
+  const canvas = document.createElement('canvas');
+  // Use higher resolution canvas for sharper image
+  canvas.width = CHART_CONFIG.width * scale;
+  canvas.height = CHART_CONFIG.height * scale;
+  const ctx = canvas.getContext('2d');
+
+  // Scale all drawing operations
+  ctx.scale(scale, scale);
+
+  // NOW time is current time, not last data point time
+  const nowTime = Date.now();
+
+  drawShareChart(ctx, {
+    title,
+    priceHistory,
+    nowTime, // Pass actual current time
+    callPrice,
+    callTime,
+    currentPrice,
+    currentTime: Date.now(),
+    changePercent,
+    tweetTime
+  });
+
+  return canvas.toDataURL('image/png');
+}
+
+/**
+ * Copy image to clipboard
+ */
+async function copyImageToClipboard(dataUrl) {
+  try {
+    const response = await fetch(dataUrl);
+    const blob = await response.blob();
+    await navigator.clipboard.write([
+      new ClipboardItem({ 'image/png': blob })
+    ]);
+    return true;
+  } catch (err) {
+    console.error('[OpinionHUD] Failed to copy image:', err);
+    return false;
+  }
+}
+
+/**
+ * Download image as file
+ */
+function downloadImage(dataUrl, filename) {
+  const link = document.createElement('a');
+  link.href = dataUrl;
+  link.download = filename || 'opinion-hud-chart.png';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+/**
+ * Show image preview popup in shadow DOM
+ */
+function showImagePreview(dataUrl, title, shadowRoot) {
+  // Remove existing preview if any
+  const existing = shadowRoot.querySelector('.imagePreview');
+  if (existing) existing.remove();
+
+  const overlay = document.createElement('div');
+  overlay.className = 'imagePreview';
+  overlay.innerHTML = `
+    <div class="previewBackdrop"></div>
+    <div class="previewContent">
+      <button class="previewClose" type="button">×</button>
+      <img src="${dataUrl}" alt="Share Chart" class="previewImage" />
+      <div class="previewActions">
+        <button class="previewBtn copyImageBtn" type="button">📋 Copy</button>
+        <button class="previewBtn downloadBtn" type="button">💾 Download</button>
+      </div>
+    </div>
+  `;
+
+  // Add styles for preview
+  const previewStyle = shadowRoot.querySelector('.previewStyle');
+  if (!previewStyle) {
+    const style = document.createElement('style');
+    style.className = 'previewStyle';
+    style.textContent = `
+      .imagePreview {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2147483647;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .previewBackdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(4px);
+      }
+      .previewContent {
+        position: relative;
+        background: #141414;
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+        border: 1px solid rgba(249, 115, 22, 0.3);
+        max-width: 90vw;
+        max-height: 90vh;
+      }
+      .previewClose {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+        border: none;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        font-size: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s;
+      }
+      .previewClose:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .previewImage {
+        display: block;
+        width: 600px;
+        max-width: 100%;
+        border-radius: 8px;
+      }
+      .previewActions {
+        display: flex;
+        gap: 12px;
+        margin-top: 16px;
+        justify-content: center;
+      }
+      .previewBtn {
+        padding: 10px 24px;
+        border: none;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .copyImageBtn {
+        background: rgba(249, 115, 22, 0.2);
+        color: #fff;
+        border: 1px solid rgba(249, 115, 22, 0.4);
+      }
+      .copyImageBtn:hover {
+        background: rgba(249, 115, 22, 0.4);
+      }
+      .copyImageBtn.copied {
+        background: rgba(34, 197, 94, 0.3);
+        border-color: rgba(34, 197, 94, 0.5);
+      }
+      .downloadBtn {
+        background: rgba(251, 146, 60, 0.15);
+        color: #fff;
+        border: 1px solid rgba(251, 146, 60, 0.3);
+      }
+      .downloadBtn:hover {
+        background: rgba(251, 146, 60, 0.3);
+      }
+    `;
+    shadowRoot.appendChild(style);
+  }
+
+  shadowRoot.appendChild(overlay);
+
+  // Event handlers
+  const backdrop = overlay.querySelector('.previewBackdrop');
+  const closeBtn = overlay.querySelector('.previewClose');
+  const copyBtn = overlay.querySelector('.copyImageBtn');
+  const downloadBtn = overlay.querySelector('.downloadBtn');
+
+  const close = () => overlay.remove();
+  backdrop.addEventListener('click', close);
+  closeBtn.addEventListener('click', close);
+
+  copyBtn.addEventListener('click', async () => {
+    const success = await copyImageToClipboard(dataUrl);
+    if (success) {
+      copyBtn.textContent = '✓ Copied!';
+      copyBtn.classList.add('copied');
+      setTimeout(() => {
+        copyBtn.textContent = '📋 Copy';
+        copyBtn.classList.remove('copied');
+      }, 2000);
+    } else {
+      copyBtn.textContent = '❌ Failed';
+      setTimeout(() => {
+        copyBtn.textContent = '📋 Copy';
+      }, 2000);
+    }
+  });
+
+  downloadBtn.addEventListener('click', () => {
+    const filename = `opinion-hud-${title.replace(/[^a-z0-9]/gi, '-').substring(0, 30)}.png`;
+    downloadImage(dataUrl, filename);
+  });
 }
 
 function isMultiMarket(marketId, market) {
@@ -630,7 +1330,7 @@ function removeHud() {
   }
 }
 
-function renderHud(anchorEl, match) {
+function renderHud(anchorEl, match, articleEl = null) {
   removeHud();
 
   const container = document.createElement("div");
@@ -639,10 +1339,13 @@ function renderHud(anchorEl, match) {
   const abortController = new AbortController();
   state.activeHudAbort = abortController;
 
+  // Extract tweet time for price tracking
+  const tweetTime = articleEl ? extractTweetTime(articleEl) : null;
+
   const rect = anchorEl.getBoundingClientRect();
-  const hudWidth = 320;
+  const hudWidth = 380;
   const margin = 8;
-  const hudHeightVp = Math.min(520, Math.max(240, window.innerHeight - margin * 2));
+  const hudHeightVp = Math.min(600, Math.max(280, window.innerHeight - margin * 2));
 
   // Prefer placing to the right of the icon (same horizontal line) so it doesn't
   // cover tweet content; fall back to the left if needed.
@@ -668,7 +1371,7 @@ function renderHud(anchorEl, match) {
     :host { all: initial; }
     .hud {
       position: relative;
-      width: 320px;
+      width: 380px;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       color: #fff;
       background:
@@ -756,6 +1459,32 @@ function renderHud(anchorEl, match) {
       border-color: rgba(255,255,255,0.10);
       animation: opinionHudPulse 1.1s ease-in-out infinite;
     }
+    .pricePill.clickable,
+    .pricePill.clickable * {
+      cursor: pointer !important;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .pricePill.clickable {
+      transition: all 0.15s ease;
+    }
+    .pricePill.clickable:hover {
+      background: rgba(249, 115, 22, 0.35) !important;
+      border-color: rgba(249, 115, 22, 0.7) !important;
+      color: #fff !important;
+      transform: scale(1.05);
+      box-shadow: 0 0 8px rgba(249, 115, 22, 0.4);
+    }
+    .pricePill.sharing {
+      background: rgba(249, 115, 22, 0.25) !important;
+      border-color: rgba(249, 115, 22, 0.5) !important;
+      animation: opinionHudSharePulse 0.8s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes opinionHudSharePulse {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.02); }
+    }
     @keyframes opinionHudPulse {
       0%, 100% { opacity: 0.55; }
       50% { opacity: 0.95; }
@@ -824,6 +1553,59 @@ function renderHud(anchorEl, match) {
     .moreBtn:active { transform: translateY(1px); }
     .footer { margin-top: 10px; display: flex; justify-content: flex-start; align-items: center; gap: 10px; flex: 0 0 auto; }
     .term { opacity: 0.85; color: #a2aebe; font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .priceChange {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 6px;
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 11px;
+      line-height: 1.3;
+    }
+    .priceChange.profit {
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      color: #22c55e;
+    }
+    .priceChange.loss {
+      background: rgba(239, 68, 68, 0.12);
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      color: #ef4444;
+    }
+    .priceChange.neutral {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .priceChange.loading {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      color: rgba(255, 255, 255, 0.6);
+      animation: opinionHudPulse 1.1s ease-in-out infinite;
+    }
+    .priceChangeLabel {
+      font-weight: 700;
+      flex: 1;
+    }
+    .copyBtn {
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      background: rgba(135, 91, 247, 0.25);
+      border: none;
+      color: rgba(255, 255, 255, 0.9);
+      transition: all 0.15s;
+    }
+    .copyBtn:hover {
+      background: rgba(135, 91, 247, 0.4);
+    }
+    .copyBtn.copied {
+      background: rgba(34, 197, 94, 0.4);
+    }
   `;
 
   const hud = document.createElement("div");
@@ -845,12 +1627,13 @@ function renderHud(anchorEl, match) {
   state.activeHud = container;
 
   function setPillLoading(pillEl, label) {
-    pillEl.className = "pricePill loading";
+    pillEl.classList.add("pricePill", "loading");
     pillEl.textContent = `${label} …`;
   }
 
   function setPillValue(pillEl, label, value) {
-    pillEl.className = "pricePill";
+    pillEl.classList.remove("loading");
+    pillEl.classList.add("pricePill");
     pillEl.textContent = value ? `${label} ${value}` : `${label} —`;
   }
 
@@ -929,6 +1712,79 @@ function renderHud(anchorEl, match) {
     return btn;
   }
 
+  /**
+   * Generate share text for clipboard
+   */
+  function generateShareText(title, callPrice, currentPrice, tweetTimeMs) {
+    const display = formatPriceChangeDisplay(callPrice, currentPrice);
+    if (!display) return null;
+    const tweetDate = tweetTimeMs ? new Date(tweetTimeMs).toLocaleString() : 'Unknown';
+    return `Opinion HUD - Call Tracker
+${title}
+${display.text}
+Tweet: ${tweetDate}
+https://opinionhud.xyz`;
+  }
+
+  /**
+   * Handle click on a price pill to generate share image
+   */
+  // Minimum tweet age for sharing (10 minutes)
+  const MIN_TWEET_AGE_MS = 10 * 60 * 1000;
+
+  // Check if tweet is old enough for sharing
+  function canShare() {
+    if (!tweetTime) return false;
+    return (Date.now() - tweetTime) >= MIN_TWEET_AGE_MS;
+  }
+
+  async function handlePillShareClick(title, tokenId, pillEl) {
+    if (!tweetTime || !tokenId) return;
+
+    // Show loading state on pill
+    if (pillEl) {
+      pillEl.classList.add("sharing");
+    }
+
+    try {
+      const [history, currentPrice] = await Promise.all([
+        getPriceHistory(tokenId, abortController.signal),
+        getLatestAssetPrice(tokenId, abortController.signal)
+      ]);
+
+      if (!isHudAlive()) return;
+
+      const callPoint = findCallPrice(history, tweetTime);
+
+      if (callPoint && currentPrice != null) {
+        const display = formatPriceChangeDisplay(callPoint.price, currentPrice);
+        if (display) {
+          const dataUrl = generateShareImage(
+            title,
+            history,
+            callPoint.price,
+            callPoint.timestamp,
+            currentPrice,
+            display.changePercent,
+            tweetTime
+          );
+          showImagePreview(dataUrl, title, shadow);
+          return;
+        }
+      }
+
+      alert('No price data available for this market');
+    } catch (err) {
+      if (!isHudAlive()) return;
+      console.error('[OpinionHUD] Share error:', err);
+    } finally {
+      // Remove loading state
+      if (pillEl) {
+        pillEl.classList.remove("sharing");
+      }
+    }
+  }
+
   function renderBinaryRow({ title, tradeUrl, marketId }) {
     const item = document.createElement("div");
     item.className = "item binaryItem";
@@ -940,13 +1796,36 @@ function renderHud(anchorEl, match) {
     const meta = document.createElement("div");
     meta.className = "meta";
 
-    const yesPill = document.createElement("div");
-    const noPill = document.createElement("div");
-    setPillLoading(yesPill, "YES");
-    setPillLoading(noPill, "NO");
+    const market = state.data?.markets?.[String(marketId)];
+    const yesTokenId = String(market?.yesTokenId || "");
+    const noTokenId = String(market?.noTokenId || "");
 
+    // Create clickable YES pill
+    const yesPill = document.createElement("div");
+    setPillLoading(yesPill, "YES");
+    if (canShare() && yesTokenId) {
+      yesPill.classList.add("clickable");
+      yesPill.title = "Click to share YES";
+      yesPill.addEventListener("click", (e) => {
+        e.stopPropagation();
+        handlePillShareClick(title + " (YES)", yesTokenId, yesPill);
+      });
+    }
     meta.appendChild(yesPill);
+
+    // Create clickable NO pill
+    const noPill = document.createElement("div");
+    setPillLoading(noPill, "NO");
+    if (canShare() && noTokenId) {
+      noPill.classList.add("clickable");
+      noPill.title = "Click to share NO";
+      noPill.addEventListener("click", (e) => {
+        e.stopPropagation();
+        handlePillShareClick(title + " (NO)", noTokenId, noPill);
+      });
+    }
     meta.appendChild(noPill);
+
     meta.appendChild(createTradeButton(tradeUrl));
 
     item.appendChild(leftCell);
@@ -1014,15 +1893,44 @@ function renderHud(anchorEl, match) {
           const meta = document.createElement("div");
           meta.className = "meta";
 
+          const yesTokenId = String(child?.yesTokenId || "");
+          const noTokenId = String(child?.noTokenId || "");
+          const childTitle = child?.title || "Option";
+          // Include event title for context: "Event - Child (YES)"
+          const shareTitle = eventTitle ? `${eventTitle} - ${childTitle}` : childTitle;
+
+          // Create clickable YES pill
           const yesPill = document.createElement("div");
           setPillLoading(yesPill, "YES");
+          if (canShare() && yesTokenId) {
+            yesPill.classList.add("clickable");
+            yesPill.title = "Click to share YES";
+            yesPill.addEventListener("click", (e) => {
+              e.stopPropagation();
+              handlePillShareClick(shareTitle + " (YES)", yesTokenId, yesPill);
+            });
+          }
           meta.appendChild(yesPill);
+
+          // Create clickable NO pill
+          const noPill = document.createElement("div");
+          setPillLoading(noPill, "NO");
+          if (canShare() && noTokenId) {
+            noPill.classList.add("clickable");
+            noPill.title = "Click to share NO";
+            noPill.addEventListener("click", (e) => {
+              e.stopPropagation();
+              handlePillShareClick(shareTitle + " (NO)", noTokenId, noPill);
+            });
+          }
+          meta.appendChild(noPill);
 
           optionItem.appendChild(leftCell);
           optionItem.appendChild(meta);
 
-          const assetId = String(child?.yesTokenId || "");
-          hydrateYesOnlyFromAssetId(assetId, yesPill);
+          // Hydrate both YES and NO prices
+          hydrateBinaryFromAssetIds(yesTokenId, noTokenId, yesPill, noPill);
+
           return optionItem;
         };
 
@@ -1056,17 +1964,44 @@ function renderHud(anchorEl, match) {
           const meta = document.createElement("div");
           meta.className = "meta";
 
+          const yesTokenId = String(only.yesTokenId || "");
+          const noTokenId = String(only.noTokenId || "");
+          // Include child title if different from event title
+          const childTitle = only.title || "";
+          const shareTitle = (childTitle && childTitle !== eventTitle)
+            ? `${eventTitle} - ${childTitle}`
+            : eventTitle;
+
+          // Create clickable YES pill
           const yesPill = document.createElement("div");
-          const noPill = document.createElement("div");
           setPillLoading(yesPill, "YES");
-          setPillLoading(noPill, "NO");
+          if (canShare() && yesTokenId) {
+            yesPill.classList.add("clickable");
+            yesPill.title = "Click to share YES";
+            yesPill.addEventListener("click", (e) => {
+              e.stopPropagation();
+              handlePillShareClick(shareTitle + " (YES)", yesTokenId, yesPill);
+            });
+          }
           meta.appendChild(yesPill);
+
+          // Create clickable NO pill
+          const noPill = document.createElement("div");
+          setPillLoading(noPill, "NO");
+          if (canShare() && noTokenId) {
+            noPill.classList.add("clickable");
+            noPill.title = "Click to share NO";
+            noPill.addEventListener("click", (e) => {
+              e.stopPropagation();
+              handlePillShareClick(shareTitle + " (NO)", noTokenId, noPill);
+            });
+          }
           meta.appendChild(noPill);
 
           line.appendChild(meta);
           optionList.appendChild(line);
 
-          hydrateBinaryFromAssetIds(String(only.yesTokenId || ""), String(only.noTokenId || ""), yesPill, noPill);
+          hydrateBinaryFromAssetIds(yesTokenId, noTokenId, yesPill, noPill);
           return;
         }
 
@@ -1586,7 +2521,7 @@ function attachIconToArticle(articleEl, match) {
       if (state.activeHud) {
         removeHud();
       } else {
-        renderHud(icon, match);
+        renderHud(icon, match, articleEl);
       }
     } catch (err) {
       if (!handleInvalidation(err)) throw err;
@@ -1598,7 +2533,7 @@ function attachIconToArticle(articleEl, match) {
     try {
       if (state.hoverTimer) window.clearTimeout(state.hoverTimer);
       if (!state.activeHud) {
-        state.hoverTimer = window.setTimeout(() => renderHud(icon, match), HOVER_DELAY_MS);
+        state.hoverTimer = window.setTimeout(() => renderHud(icon, match, articleEl), HOVER_DELAY_MS);
       }
     } catch (err) {
       if (!handleInvalidation(err)) throw err;
