@@ -20,8 +20,14 @@
   "content_scripts": [
     {
       "matches": ["https://x.com/*"],
-      "js": ["contentScript.js"],
+      "js": ["matcher.js", "contentScript.js"],
       "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*.png", "assets/*.jpg"],
+      "matches": ["https://x.com/*"]
     }
   ],
   "options_page": "options.html"

@@ -1,3 +1,25 @@
+// Import shared matcher functions from matcher.js (loaded before this script)
+if (!window.OpinionMatcher) {
+  console.error('[OpinionHUD] matcher.js not loaded - OpinionMatcher is undefined');
+}
+const {
+  normalizeText,
+  normalizeForMatch,
+  stripMentions,
+  tokenize,
+  clamp01,
+  countBits32,
+  findTokenBoundaryIndex,
+  tokensNear,
+  buildMatcher,
+  scoreEntry,
+  isEntryMentioned,
+  LOW_SIGNAL_TOKENS,
+  LOW_SIGNAL_ENTITY_SCORE,
+  LOW_SIGNAL_SCORE_MULTIPLIER,
+  DEFAULT_ENTITY_SCORE,
+} = window.OpinionMatcher || {};
+
 const STORAGE_KEYS = {
   cachedData: "opinionHudData",
 };
@@ -27,19 +49,14 @@ const ICON_ATTR = "data-opinion-hud-icon";
 
 const HOVER_DELAY_MS = 300;
 const MAX_MATCHES_ON_SCREEN = 3;
-
-// These tokens appear in many crypto markets and are too generic to drive ranking.
-// Keep them matchable, but downweight them so more specific entities win.
-const LOW_SIGNAL_TOKENS = new Set(["binance", "btc", "eth"]);
-const LOW_SIGNAL_ENTITY_SCORE = 0.18;
-const LOW_SIGNAL_SCORE_MULTIPLIER = 0.55;
-const DEFAULT_ENTITY_SCORE = 0.5;
+const SCAN_DEBOUNCE_MS = 150;
 
 const state = {
   data: null,
   matcher: null,
   observer: null,
   hoverTimer: null,
+  scanDebounceTimer: null,
   activeHud: null,
   activeHudAbort: null,
   activeHudDocClick: null,
@@ -88,21 +105,6 @@ window.addEventListener(
   },
   true
 );
-
-function normalizeText(text) {
-  return String(text || "")
-    .replace(/\s+/g, " ")
-    .trim()
-    .toLowerCase();
-}
-
-function normalizeForMatch(text) {
-  const raw = normalizeText(text);
-  // Support Chinese characters (CJK Unified Ideographs U+4E00–U+9FFF)
-  // Keep alphanumeric AND Chinese characters, replace other chars with space
-  const plain = raw.replace(/[^a-z0-9\u4e00-\u9fff]+/g, " ").replace(/\s+/g, " ").trim();
-  return { raw, plain };
-}
 
 const OPINION_TRADE_DETAIL_URL = "https://app.opinion.trade/detail";
 // Use our own Vercel serverless API (proxies to Opinion.Trade OpenAPI)
@@ -352,6 +354,36 @@ function extractTweetTime(articleEl) {
 }
 
 /**
+ * Extract tweet author handle and avatar from article element
+ * @param {HTMLElement} articleEl - The article element containing the tweet
+ * @returns {{handle: string|null, avatarUrl: string|null}}
+ */
+function extractTweetAuthor(articleEl) {
+  if (!articleEl) return { handle: null, avatarUrl: null };
+
+  let handle = null;
+  let avatarUrl = null;
+
+  // Look for the author link in tweet header (e.g., href="/elonmusk")
+  const authorLink = articleEl.querySelector('a[role="link"][href^="/"]');
+  if (authorLink) {
+    const href = authorLink.getAttribute('href');
+    const match = href.match(/^\/([a-zA-Z0-9_]+)/);
+    if (match && match[1] && !['home', 'explore', 'search', 'notifications', 'messages', 'i'].includes(match[1])) {
+      handle = match[1];
+    }
+  }
+
+  // Look for avatar image
+  const avatarImg = articleEl.querySelector('img[src*="profile_images"]');
+  if (avatarImg) {
+    avatarUrl = avatarImg.src;
+  }
+
+  return { handle, avatarUrl };
+}
+
+/**
  * Fetch price history for a token
  * @param {string} tokenId - ERC-1155 token ID
  * @param {AbortSignal} signal - Abort signal
@@ -476,384 +508,266 @@ function buildOpinionTradeUrl({ topicId, isMulti }) {
 // ============================================
 
 const CHART_CONFIG = {
-  width: 600,
-  height: 400,
-  scale: 4, // 4x pixel density for 2K resolution (2400x1600 actual, displays at 600x400)
-  // Split layout: left 60% for chart, right 40% for decoration
-  chartAreaWidth: 360, // 60% of 600
-  decorAreaX: 370,     // Start of decoration area
-  decorAreaWidth: 220, // Right side width
-  padding: { top: 60, right: 20, bottom: 60, left: 45 },
-  bgColor: '#0a0a0a',
-  bgGradientStart: '#0f1419',
-  bgGradientEnd: '#000000',
+  width: 632,   // Logical width (2528/4)
+  height: 424,  // Logical height (1696/4)
+  scale: 4,     // 4x for retina
   textColor: '#ffffff',
-  textMuted: 'rgba(255, 255, 255, 0.35)',
-  gridColor: 'rgba(255, 255, 255, 0.03)', // Much lighter grid
+  textMuted: 'rgba(255, 255, 255, 0.5)',
   profitColor: '#00d26a',
-  lossColor: '#ff6b6b',
-  brandColor: '#f97316',  // Orange
-  accentColor: '#fb923c', // Light orange
+  lossColor: '#ff4d4d',
+  brandColor: '#f97316',
 };
 
-// Owl mascot images cache
-const OWL_IMAGE_BASE = 'https://opinionhud.xyz/assets';
-const owlImages = {
-  up: null,
-  down: null,
-  theme: null,
-  loaded: false
-};
+// Background image cache
+let bgImageCache = null;
 
 /**
- * Load owl mascot images from opinionhud.xyz
- * @returns {Promise<void>}
+ * Load background image from extension assets
  */
-async function loadOwlImages() {
-  if (owlImages.loaded) return;
+async function loadBackgroundImage() {
+  if (bgImageCache) return bgImageCache;
 
-  const loadImage = (name) => {
-    return new Promise((resolve) => {
-      const img = new Image();
-      img.crossOrigin = 'anonymous';
-      img.onload = () => resolve(img);
-      img.onerror = () => resolve(null);
-      img.src = `${OWL_IMAGE_BASE}/${name}.png`;
-    });
-  };
-
-  const [up, down, theme] = await Promise.all([
-    loadImage('up'),
-    loadImage('down'),
-    loadImage('theme')
-  ]);
-
-  owlImages.up = up;
-  owlImages.down = down;
-  owlImages.theme = theme;
-  owlImages.loaded = true;
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => {
+      bgImageCache = img;
+      resolve(img);
+    };
+    img.onerror = () => resolve(null);
+    img.src = chrome.runtime.getURL('assets/background.jpg');
+  });
 }
 
 /**
- * Draw owl mascot image on canvas
- * @param {CanvasRenderingContext2D} ctx
- * @param {number} centerX - Center X position
- * @param {number} centerY - Center Y position
- * @param {string} type - 'up', 'down', or 'theme'
- * @param {number} size - Size to draw (default 140)
+ * Wrap text to fit within maxWidth, returning array of lines
  */
-function drawOwlImage(ctx, centerX, centerY, type, size = 140) {
-  const img = owlImages[type];
-  if (!img) return;
+function wrapText(ctx, text, maxWidth) {
+  const words = text.split(' ');
+  const lines = [];
+  let currentLine = '';
 
-  ctx.drawImage(
-    img,
-    centerX - size / 2,
-    centerY - size / 2,
-    size,
-    size
-  );
+  for (const word of words) {
+    const testLine = currentLine ? `${currentLine} ${word}` : word;
+    const metrics = ctx.measureText(testLine);
+
+    if (metrics.width > maxWidth && currentLine) {
+      lines.push(currentLine);
+      currentLine = word;
+    } else {
+      currentLine = testLine;
+    }
+  }
+
+  if (currentLine) {
+    lines.push(currentLine);
+  }
+
+  return lines;
 }
 
 /**
- * Draw decorative stars
+ * Generate interpretation text based on price movement
  */
-function drawStars(ctx, centerX, centerY, radius, count, color) {
-  ctx.fillStyle = color;
-  for (let i = 0; i < count; i++) {
-    const angle = (Math.PI * 2 / count) * i + Math.random() * 0.5;
-    const dist = radius * (0.6 + Math.random() * 0.4);
-    const x = centerX + Math.cos(angle) * dist;
-    const y = centerY + Math.sin(angle) * dist;
-    const size = 2 + Math.random() * 3;
+function getInterpretationText(changePercent) {
+  const absChange = Math.abs(changePercent);
+  const isProfit = changePercent >= 0;
 
-    // Draw 4-point star
-    ctx.beginPath();
-    ctx.moveTo(x, y - size);
-    ctx.lineTo(x + size * 0.3, y);
-    ctx.lineTo(x, y + size);
-    ctx.lineTo(x - size * 0.3, y);
-    ctx.closePath();
-    ctx.fill();
-  }
-}
-
-/**
- * Draw a rounded rectangle speech bubble
- */
-function drawBubble(ctx, x, y, width, height, radius, tailX, tailY, fillColor, strokeColor) {
-  ctx.fillStyle = fillColor;
-  ctx.strokeStyle = strokeColor;
-  ctx.lineWidth = 2;
-
-  ctx.beginPath();
-  // Top left
-  ctx.moveTo(x + radius, y);
-  // Top edge
-  ctx.lineTo(x + width - radius, y);
-  // Top right corner
-  ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
-  // Right edge
-  ctx.lineTo(x + width, y + height - radius);
-  // Bottom right corner
-  ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
-  // Bottom edge with tail
-  if (tailX > x && tailX < x + width) {
-    ctx.lineTo(tailX + 10, y + height);
-    ctx.lineTo(tailX, tailY);
-    ctx.lineTo(tailX - 10, y + height);
-  }
-  ctx.lineTo(x + radius, y + height);
-  // Bottom left corner
-  ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
-  // Left edge
-  ctx.lineTo(x, y + radius);
-  // Top left corner
-  ctx.quadraticCurveTo(x, y, x + radius, y);
-  ctx.closePath();
-
-  ctx.fill();
-  ctx.stroke();
-}
-
-/**
- * Draw the share chart on canvas
- * @param {CanvasRenderingContext2D} ctx
- * @param {Object} data - { title, priceHistory, callPrice, callTime, currentPrice, currentTime, changePercent, tweetTime }
- */
-function drawShareChart(ctx, data) {
-  const { width, height } = CHART_CONFIG;
-
-  // Determine profit/loss early for styling
-  const isProfit = data.changePercent >= 0;
-  const lineColor = isProfit ? CHART_CONFIG.profitColor : CHART_CONFIG.lossColor;
-
-  // === BACKGROUND (Night sky theme for owl) ===
-  const bgGradient = ctx.createLinearGradient(0, 0, 0, height);
-  bgGradient.addColorStop(0, '#0a0a1a');
-  bgGradient.addColorStop(0.5, '#12122a');
-  bgGradient.addColorStop(1, '#0a0a1a');
-  ctx.fillStyle = bgGradient;
-  ctx.fillRect(0, 0, width, height);
-
-  // Decorative stars in background
-  ctx.save();
-  Math.seedrandom && Math.seedrandom('opinion-hud'); // Consistent random if available
-  for (let i = 0; i < 30; i++) {
-    const x = (i * 73 + 17) % width;
-    const y = (i * 47 + 23) % height;
-    const size = 1 + (i % 3);
-    const alpha = 0.2 + (i % 5) * 0.1;
-    ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
-    ctx.beginPath();
-    ctx.arc(x, y, size, 0, Math.PI * 2);
-    ctx.fill();
-  }
-  ctx.restore();
-
-  // Subtle glow behind owl area
-  const glowGradient = ctx.createRadialGradient(width / 2, height / 2 + 20, 0, width / 2, height / 2 + 20, 180);
-  glowGradient.addColorStop(0, isProfit ? 'rgba(0, 210, 106, 0.08)' : 'rgba(255, 107, 107, 0.08)');
-  glowGradient.addColorStop(1, 'transparent');
-  ctx.fillStyle = glowGradient;
-  ctx.fillRect(0, 0, width, height);
-
-  // Border with rounded corners effect
-  ctx.strokeStyle = CHART_CONFIG.brandColor;
-  ctx.lineWidth = 3;
-  ctx.strokeRect(2, 2, width - 4, height - 4);
-
-  // Inner subtle border
-  ctx.strokeStyle = 'rgba(249, 115, 22, 0.2)';
-  ctx.lineWidth = 1;
-  ctx.strokeRect(6, 6, width - 12, height - 12);
-
-  // === TITLE (Top, with decorative elements) ===
-  const titleY = 38;
-  ctx.fillStyle = CHART_CONFIG.textColor;
-  ctx.font = 'bold 16px system-ui, -apple-system, sans-serif';
-  ctx.textAlign = 'center';
-  const titleText = data.title.length > 42 ? data.title.substring(0, 39) + '...' : data.title;
-  ctx.fillText(titleText, width / 2, titleY);
-
-  // Small decorative line under title
-  ctx.strokeStyle = CHART_CONFIG.brandColor;
-  ctx.lineWidth = 2;
-  ctx.beginPath();
-  ctx.moveTo(width / 2 - 60, titleY + 10);
-  ctx.lineTo(width / 2 + 60, titleY + 10);
-  ctx.stroke();
-
-  // === OWL MASCOT (Center, larger) ===
-  const owlY = height / 2 + 15;
-  const owlType = isProfit ? 'up' : 'down';
-  drawOwlImage(ctx, width / 2, owlY, owlType, 160);
-
-  // === PRICE BUBBLES (Left and Right of owl) ===
-  const bubbleWidth = 100;
-  const bubbleHeight = 70;
-  const bubbleY = height / 2 - 30;
-
-  // CALL bubble (left side)
-  const callBubbleX = 30;
-  drawBubble(
-    ctx,
-    callBubbleX, bubbleY,
-    bubbleWidth, bubbleHeight,
-    12,
-    callBubbleX + bubbleWidth, bubbleY + bubbleHeight + 15,
-    'rgba(249, 115, 22, 0.15)',
-    CHART_CONFIG.brandColor
-  );
-
-  // CALL label
-  ctx.fillStyle = CHART_CONFIG.brandColor;
-  ctx.font = 'bold 11px system-ui';
-  ctx.textAlign = 'center';
-  ctx.fillText('CALL', callBubbleX + bubbleWidth / 2, bubbleY + 20);
-
-  // CALL price
-  ctx.fillStyle = CHART_CONFIG.textColor;
-  ctx.font = 'bold 22px system-ui';
-  const callPriceText = data.callPrice != null ? (data.callPrice * 100).toFixed(1) + '%' : '—';
-  ctx.fillText(callPriceText, callBubbleX + bubbleWidth / 2, bubbleY + 48);
-
-  // CALL time
-  if (data.tweetTime) {
-    const callDate = new Date(data.tweetTime);
-    const callTimeStr = callDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
-    ctx.fillStyle = CHART_CONFIG.textMuted;
-    ctx.font = '9px system-ui';
-    ctx.fillText(callTimeStr, callBubbleX + bubbleWidth / 2, bubbleY + 63);
-  }
-
-  // NOW bubble (right side)
-  const nowBubbleX = width - bubbleWidth - 30;
-  const nowBgColor = isProfit ? 'rgba(0, 210, 106, 0.15)' : 'rgba(255, 107, 107, 0.15)';
-  drawBubble(
-    ctx,
-    nowBubbleX, bubbleY,
-    bubbleWidth, bubbleHeight,
-    12,
-    nowBubbleX, bubbleY + bubbleHeight + 15,
-    nowBgColor,
-    lineColor
-  );
-
-  // NOW label
-  ctx.fillStyle = lineColor;
-  ctx.font = 'bold 11px system-ui';
-  ctx.textAlign = 'center';
-  ctx.fillText('NOW', nowBubbleX + bubbleWidth / 2, bubbleY + 20);
-
-  // NOW price
-  ctx.fillStyle = CHART_CONFIG.textColor;
-  ctx.font = 'bold 22px system-ui';
-  const nowPriceText = data.currentPrice != null ? (data.currentPrice * 100).toFixed(1) + '%' : '—';
-  ctx.fillText(nowPriceText, nowBubbleX + bubbleWidth / 2, bubbleY + 48);
-
-  // NOW time
-  const nowDate = new Date();
-  const nowTimeStr = nowDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
-  ctx.fillStyle = CHART_CONFIG.textMuted;
-  ctx.font = '9px system-ui';
-  ctx.fillText(nowTimeStr, nowBubbleX + bubbleWidth / 2, bubbleY + 63);
-
-  // === CHANGE PERCENTAGE (Bottom center, prominent) ===
-  const changeText = data.changePercent >= 0
-    ? `+${data.changePercent.toFixed(1)}%`
-    : `${data.changePercent.toFixed(1)}%`;
-
-  const changeBadgeY = height - 75;
-  const changeBadgeX = width / 2;
-  const badgeWidth = 120;
-  const badgeHeight = 38;
-
-  // Badge background with glow
-  const badgeGlow = ctx.createRadialGradient(changeBadgeX, changeBadgeY + badgeHeight / 2, 0, changeBadgeX, changeBadgeY + badgeHeight / 2, 80);
-  badgeGlow.addColorStop(0, isProfit ? 'rgba(0, 210, 106, 0.2)' : 'rgba(255, 107, 107, 0.2)');
-  badgeGlow.addColorStop(1, 'transparent');
-  ctx.fillStyle = badgeGlow;
-  ctx.fillRect(changeBadgeX - 80, changeBadgeY - 10, 160, badgeHeight + 20);
-
-  // Badge
-  ctx.fillStyle = isProfit ? 'rgba(0, 210, 106, 0.2)' : 'rgba(255, 107, 107, 0.2)';
-  ctx.beginPath();
-  if (ctx.roundRect) {
-    ctx.roundRect(changeBadgeX - badgeWidth / 2, changeBadgeY, badgeWidth, badgeHeight, 19);
+  if (absChange < 3) {
+    return 'Minimal movement — market holding steady.';
+  } else if (absChange < 10) {
+    return isProfit
+      ? 'Not a breakout — steady accumulation on the YES side.'
+      : 'Gradual repricing — sentiment cooling slightly.';
+  } else if (absChange < 20) {
+    return isProfit
+      ? 'Market moving gradually, not impulsively.'
+      : 'Notable shift — traders reconsidering positions.';
   } else {
-    ctx.rect(changeBadgeX - badgeWidth / 2, changeBadgeY, badgeWidth, badgeHeight);
+    return isProfit
+      ? 'Significant momentum — conviction building.'
+      : 'Sharp correction — sentiment reversing.';
   }
+}
+
+/**
+ * Draw share card with background image and text overlay
+ */
+function drawShareChart(ctx, data, bgImage) {
+  const { width, height } = CHART_CONFIG;
+  const isProfit = data.changePercent >= 0;
+  const accentColor = isProfit ? CHART_CONFIG.profitColor : CHART_CONFIG.lossColor;
+
+  // === DRAW BACKGROUND IMAGE ===
+  if (bgImage) {
+    ctx.drawImage(bgImage, 0, 0, width, height);
+  } else {
+    ctx.fillStyle = '#0a0a14';
+    ctx.fillRect(0, 0, width, height);
+  }
+
+  let currentY = 42;
+
+  // === TOP: Market Title (with word wrap) ===
+  ctx.fillStyle = CHART_CONFIG.textColor;
+  ctx.font = 'bold 24px system-ui, -apple-system, sans-serif';
+  ctx.textAlign = 'center';
+
+  const maxTitleWidth = width - 80;
+  const titleLines = wrapText(ctx, data.title, maxTitleWidth);
+  const titleLineHeight = 30;
+
+  for (const line of titleLines) {
+    ctx.fillText(line, width / 2, currentY);
+    currentY += titleLineHeight;
+  }
+
+  // === Direction: YES or NO ===
+  currentY += 16;
+  ctx.fillStyle = accentColor;
+  ctx.font = 'bold 20px system-ui';
+  ctx.fillText(data.direction || 'YES', width / 2, currentY);
+
+  // === CENTER: Price Cards (Vertical) ===
+  currentY += 45;
+  const callPrice = data.callPrice != null ? (data.callPrice * 100).toFixed(1) : '—';
+  const nowPrice = data.currentPrice != null ? (data.currentPrice * 100).toFixed(1) : '—';
+
+  const cardWidth = 200;
+  const cardHeight = 70;
+  const cardX = (width - cardWidth) / 2;
+  const cardRadius = 12;
+
+  // CALL card (top)
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.08)';
+  ctx.beginPath();
+  ctx.roundRect(cardX, currentY, cardWidth, cardHeight, cardRadius);
   ctx.fill();
 
-  // Badge border
-  ctx.strokeStyle = lineColor;
-  ctx.lineWidth = 2;
-  ctx.stroke();
-
-  // Change text
-  ctx.fillStyle = lineColor;
-  ctx.font = 'bold 20px system-ui';
+  ctx.fillStyle = CHART_CONFIG.textMuted;
+  ctx.font = 'bold 14px system-ui';
   ctx.textAlign = 'center';
-  ctx.fillText(changeText, changeBadgeX, changeBadgeY + 26);
+  ctx.fillText('CALL', width / 2, currentY + 22);
 
-  // === FOOTER ===
-  const footerY = height - 18;
+  ctx.fillStyle = CHART_CONFIG.textColor;
+  ctx.font = 'bold 36px system-ui';
+  ctx.fillText(`${callPrice}%`, width / 2, currentY + 56);
 
-  // Tweet date with moon icon feel
-  if (data.tweetTime) {
-    const tweetDate = new Date(data.tweetTime);
-    const dateStr = tweetDate.toLocaleDateString('en-US', {
-      month: 'short',
-      day: 'numeric',
-      year: 'numeric'
-    });
-    ctx.fillStyle = CHART_CONFIG.textMuted;
-    ctx.font = '10px system-ui';
-    ctx.textAlign = 'left';
-    ctx.fillText(`🌙 ${dateStr}`, 15, footerY);
+  // NOW card (bottom)
+  currentY += cardHeight + 14;
+
+  ctx.fillStyle = isProfit ? 'rgba(0, 210, 106, 0.15)' : 'rgba(255, 77, 77, 0.15)';
+  ctx.beginPath();
+  ctx.roundRect(cardX, currentY, cardWidth, cardHeight, cardRadius);
+  ctx.fill();
+
+  ctx.fillStyle = CHART_CONFIG.textMuted;
+  ctx.font = 'bold 14px system-ui';
+  ctx.fillText('NOW', width / 2, currentY + 22);
+
+  ctx.fillStyle = accentColor;
+  ctx.font = 'bold 36px system-ui';
+  ctx.fillText(`${nowPrice}%`, width / 2, currentY + 56);
+
+  currentY += cardHeight;
+
+  // === AUTHOR with Avatar (below price change) ===
+  if (data.tweetAuthor) {
+    currentY += 55;
+    const avatarSize = 36;
+    const authorText = `@${data.tweetAuthor}`;
+
+    ctx.font = 'bold 18px system-ui';
+    const textWidth = ctx.measureText(authorText).width;
+    const totalWidth = data.avatarImage ? avatarSize + 10 + textWidth : textWidth;
+    const startX = (width - totalWidth) / 2;
+
+    // Draw avatar (circular, vertically centered with text)
+    if (data.avatarImage) {
+      // Text vertical center is approximately baseline - fontSize * 0.35
+      const textCenterY = currentY - 18 * 0.35;
+      const avatarCenterY = textCenterY;
+      const avatarY = avatarCenterY - avatarSize / 2;
+
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(startX + avatarSize / 2, avatarCenterY, avatarSize / 2, 0, Math.PI * 2);
+      ctx.closePath();
+      ctx.clip();
+      ctx.drawImage(data.avatarImage, startX, avatarY, avatarSize, avatarSize);
+      ctx.restore();
+
+      // Draw author text
+      ctx.fillStyle = CHART_CONFIG.textColor;
+      ctx.font = 'bold 18px system-ui';
+      ctx.textAlign = 'left';
+      ctx.fillText(authorText, startX + avatarSize + 10, currentY);
+    } else {
+      // No avatar, just text centered
+      ctx.fillStyle = CHART_CONFIG.textColor;
+      ctx.font = 'bold 18px system-ui';
+      ctx.textAlign = 'center';
+      ctx.fillText(authorText, width / 2, currentY);
+    }
   }
 
-  // Brand
+  // === FOOTER: Brand ===
+  ctx.textAlign = 'left';
   ctx.fillStyle = CHART_CONFIG.brandColor;
-  ctx.font = 'bold 12px system-ui';
+  ctx.font = 'bold 16px system-ui';
+  ctx.fillText('Opinion HUD', 24, height - 24);
+
   ctx.textAlign = 'right';
-  ctx.fillText('Opinion HUD', width - 15, footerY);
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+  ctx.font = '13px system-ui';
+  ctx.fillText('opinionhud.xyz', width - 24, height - 24);
+}
+
+/**
+ * Load an image from URL
+ */
+function loadImage(url) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = () => resolve(img);
+    img.onerror = () => resolve(null);
+    img.src = url;
+  });
 }
 
 /**
  * Generate share image and return dataURL
  */
-async function generateShareImage(title, priceHistory, callPrice, callTime, currentPrice, changePercent, tweetTime) {
-  // Load owl images first
-  await loadOwlImages();
+async function generateShareImage(title, direction, callPrice, currentPrice, changePercent, tweetAuthor, avatarUrl) {
+  const [bgImage, avatarImage] = await Promise.all([
+    loadBackgroundImage(),
+    avatarUrl ? loadImage(avatarUrl) : Promise.resolve(null)
+  ]);
 
   const scale = CHART_CONFIG.scale;
   const canvas = document.createElement('canvas');
-  // Use higher resolution canvas for sharper image
   canvas.width = CHART_CONFIG.width * scale;
   canvas.height = CHART_CONFIG.height * scale;
   const ctx = canvas.getContext('2d');
 
-  // Scale all drawing operations
   ctx.scale(scale, scale);
-
-  // NOW time is current time, not last data point time
-  const nowTime = Date.now();
 
   drawShareChart(ctx, {
     title,
-    priceHistory,
-    nowTime, // Pass actual current time
+    direction,
     callPrice,
-    callTime,
     currentPrice,
-    currentTime: Date.now(),
     changePercent,
-    tweetTime
-  });
+    tweetAuthor,
+    avatarImage
+  }, bgImage);
 
-  return canvas.toDataURL('image/png');
+  try {
+    return canvas.toDataURL('image/png');
+  } catch (e) {
+    console.error('[OpinionHUD] Canvas toDataURL failed:', e);
+    return null;
+  }
 }
 
 /**
@@ -887,8 +801,12 @@ function downloadImage(dataUrl, filename) {
 
 /**
  * Show image preview popup in shadow DOM
+ * @param {string} dataUrl - Image data URL
+ * @param {string} title - Market title
+ * @param {object} shadowRoot - Shadow DOM root
+ * @param {object} priceData - Price data for sharing { thenPrice, nowPrice, changePercent }
  */
-function showImagePreview(dataUrl, title, shadowRoot) {
+function showImagePreview(dataUrl, title, shadowRoot, priceData = null, tweetAuthor = null, tweetTime = null) {
   // Remove existing preview if any
   const existing = shadowRoot.querySelector('.imagePreview');
   if (existing) existing.remove();
@@ -901,9 +819,10 @@ function showImagePreview(dataUrl, title, shadowRoot) {
       <button class="previewClose" type="button">×</button>
       <img src="${dataUrl}" alt="Share Chart" class="previewImage" />
       <div class="previewActions">
-        <button class="previewBtn copyImageBtn" type="button">📋 Copy</button>
-        <button class="previewBtn downloadBtn" type="button">💾 Download</button>
+        <button class="previewBtn downloadBtn" type="button">Download</button>
+        <button class="previewBtn shareXBtn" type="button">Share to X</button>
       </div>
+      <div class="shareXHint" style="display:none;">Image copied! Paste it in the X compose window (Ctrl+V / ⌘V)</div>
     </div>
   `;
 
@@ -981,18 +900,6 @@ function showImagePreview(dataUrl, title, shadowRoot) {
         cursor: pointer;
         transition: all 0.2s;
       }
-      .copyImageBtn {
-        background: rgba(249, 115, 22, 0.2);
-        color: #fff;
-        border: 1px solid rgba(249, 115, 22, 0.4);
-      }
-      .copyImageBtn:hover {
-        background: rgba(249, 115, 22, 0.4);
-      }
-      .copyImageBtn.copied {
-        background: rgba(34, 197, 94, 0.3);
-        border-color: rgba(34, 197, 94, 0.5);
-      }
       .downloadBtn {
         background: rgba(251, 146, 60, 0.15);
         color: #fff;
@@ -1000,6 +907,24 @@ function showImagePreview(dataUrl, title, shadowRoot) {
       }
       .downloadBtn:hover {
         background: rgba(251, 146, 60, 0.3);
+      }
+      .shareXBtn {
+        background: rgba(29, 155, 240, 0.2);
+        color: #fff;
+        border: 1px solid rgba(29, 155, 240, 0.4);
+      }
+      .shareXBtn:hover {
+        background: rgba(29, 155, 240, 0.4);
+      }
+      .shareXHint {
+        margin-top: 12px;
+        padding: 10px 16px;
+        background: rgba(34, 197, 94, 0.15);
+        border: 1px solid rgba(34, 197, 94, 0.3);
+        border-radius: 8px;
+        color: #86efac;
+        font-size: 13px;
+        text-align: center;
       }
     `;
     shadowRoot.appendChild(style);
@@ -1010,33 +935,112 @@ function showImagePreview(dataUrl, title, shadowRoot) {
   // Event handlers
   const backdrop = overlay.querySelector('.previewBackdrop');
   const closeBtn = overlay.querySelector('.previewClose');
-  const copyBtn = overlay.querySelector('.copyImageBtn');
   const downloadBtn = overlay.querySelector('.downloadBtn');
 
   const close = () => overlay.remove();
   backdrop.addEventListener('click', close);
   closeBtn.addEventListener('click', close);
 
-  copyBtn.addEventListener('click', async () => {
-    const success = await copyImageToClipboard(dataUrl);
-    if (success) {
-      copyBtn.textContent = '✓ Copied!';
-      copyBtn.classList.add('copied');
-      setTimeout(() => {
-        copyBtn.textContent = '📋 Copy';
-        copyBtn.classList.remove('copied');
-      }, 2000);
-    } else {
-      copyBtn.textContent = '❌ Failed';
-      setTimeout(() => {
-        copyBtn.textContent = '📋 Copy';
-      }, 2000);
-    }
-  });
-
   downloadBtn.addEventListener('click', () => {
     const filename = `opinion-hud-${title.replace(/[^a-z0-9]/gi, '-').substring(0, 30)}.png`;
     downloadImage(dataUrl, filename);
+  });
+
+  // Share to X button
+  const shareXBtn = overlay.querySelector('.shareXBtn');
+  const shareXHint = overlay.querySelector('.shareXHint');
+
+  shareXBtn.addEventListener('click', () => {
+    // Build tweet text with clear structure
+    let tweetText = '';
+    if (priceData) {
+      const { thenPrice, nowPrice, changePercent } = priceData;
+      const sign = changePercent >= 0 ? '+' : '';
+
+      // Parse title to extract market name, option name (for multi), and direction
+      // Format: "Event Title - Option Name (YES)" or "Market Title (YES)"
+      let eventTitle = '';
+      let optionName = '';
+      let direction = '';
+
+      let remaining = title;
+      const dirMatch = remaining.match(/\s*\((YES|NO)\)\s*$/i);
+      if (dirMatch) {
+        remaining = remaining.replace(dirMatch[0], '').trim();
+        direction = dirMatch[1].toUpperCase();
+      }
+
+      // Check for multi-market format: "Event - Option"
+      const dashMatch = remaining.match(/^(.+?)\s*[-–—]\s*(.+)$/);
+      if (dashMatch) {
+        eventTitle = dashMatch[1].trim();
+        optionName = dashMatch[2].trim();
+      } else {
+        eventTitle = remaining;
+      }
+
+      // Calculate time elapsed
+      let timeStr = '';
+      if (tweetTime) {
+        const elapsed = Date.now() - tweetTime;
+        const hours = Math.floor(elapsed / (1000 * 60 * 60));
+        const days = Math.floor(hours / 24);
+        if (days >= 1) {
+          timeStr = days === 1 ? '1d' : `${days}d`;
+        } else if (hours >= 1) {
+          timeStr = hours === 1 ? '1h' : `${hours}h`;
+        } else {
+          const mins = Math.max(1, Math.floor(elapsed / (1000 * 60)));
+          timeStr = `${mins}m`;
+        }
+      }
+
+      // Format text based on binary vs multi market
+      if (optionName) {
+        // Multi market: Event Title > [YES] Option Name
+        tweetText = eventTitle;
+        tweetText += `\n> `;
+        if (direction) tweetText += `[${direction}] `;
+        tweetText += optionName;
+      } else {
+        // Binary market: [YES] Market Title
+        if (direction) {
+          tweetText = `[${direction}] ${eventTitle}`;
+        } else {
+          tweetText = eventTitle;
+        }
+      }
+
+      // Price line: 57.8% -> 64.2% (+11.1% in 7h)
+      tweetText += `\n\n${(thenPrice * 100).toFixed(1)}% -> ${(nowPrice * 100).toFixed(1)}%`;
+      tweetText += ` (${sign}${Math.abs(changePercent).toFixed(1)}%`;
+      if (timeStr) tweetText += ` in ${timeStr}`;
+      tweetText += `)`;
+
+      // Attribution
+      if (tweetAuthor) {
+        tweetText += `\n\nObserved from @${tweetAuthor}`;
+      }
+    } else if (tweetAuthor) {
+      tweetText = `@${tweetAuthor} mentioned "${title}"`;
+    } else {
+      tweetText = title;
+    }
+    tweetText += '\n\nopinionhud.xyz';
+
+    const tweetUrl = `https://x.com/intent/post?text=${encodeURIComponent(tweetText)}`;
+
+    // Copy image to clipboard BEFORE opening new tab (clipboard API requires focus)
+    copyImageToClipboard(dataUrl).then(success => {
+      if (success) {
+        shareXHint.style.display = 'block';
+      }
+    });
+
+    // Small delay to ensure clipboard write starts before losing focus
+    setTimeout(() => {
+      window.open(tweetUrl, '_blank', 'noopener,noreferrer');
+    }, 100);
   });
 }
 
@@ -1049,226 +1053,6 @@ function isMultiMarket(marketId, market) {
   if (eventId && String(eventId) !== String(marketId)) return true;
 
   return false;
-}
-
-function stripMentions(text) {
-  return String(text || "").replace(
-    /(^|\s)@([a-z0-9_]{1,20})\b/gi,
-    (_full, lead, handle) => `${lead}${handle}`
-  );
-}
-
-function tokenize(text) {
-  const tokens = new Set();
-  const { raw, plain } = normalizeForMatch(text);
-  let cur = "";
-  let curType = null; // 'ascii' or 'cjk'
-
-  function addCJKToken(cjkStr) {
-    if (!cjkStr) return;
-    // Add the full token
-    tokens.add(cjkStr);
-    // For CJK strings, also add all n-grams (n=1,2,...,8) for better matching
-    // This allows "日本银行加息" to match keyword "日本银行"
-    // Increased to 8 to support longer entity names like "日本中央银行" (5 chars)
-    const maxNGram = Math.min(8, cjkStr.length);
-    for (let n = 1; n <= maxNGram; n++) {
-      for (let i = 0; i <= cjkStr.length - n; i++) {
-        tokens.add(cjkStr.substring(i, i + n));
-      }
-    }
-  }
-
-  for (let i = 0; i < plain.length; i++) {
-    const ch = plain[i];
-    const code = ch.charCodeAt(0);
-    const isAsciiAlnum = (code >= 48 && code <= 57) || (code >= 97 && code <= 122);
-    const isCJK = (code >= 0x4e00 && code <= 0x9fff);
-
-    if (isAsciiAlnum) {
-      // ASCII alphanumeric - continue building ASCII token
-      if (curType === 'cjk' && cur) {
-        // Save previous CJK token with n-grams
-        addCJKToken(cur);
-        cur = "";
-      }
-      cur += ch;
-      curType = 'ascii';
-      continue;
-    }
-
-    if (isCJK) {
-      // CJK character - continue building CJK token
-      if (curType === 'ascii' && cur) {
-        // Save previous ASCII token
-        tokens.add(cur);
-        cur = "";
-      }
-      cur += ch;
-      curType = 'cjk';
-      continue;
-    }
-
-    // Separator - save current token if any
-    if (cur) {
-      if (curType === 'cjk') {
-        addCJKToken(cur);
-      } else {
-        tokens.add(cur);
-      }
-      cur = "";
-      curType = null;
-    }
-  }
-
-  if (cur) {
-    if (curType === 'cjk') {
-      addCJKToken(cur);
-    } else {
-      tokens.add(cur);
-    }
-  }
-  return { raw, plain, tokens };
-}
-
-function buildMatcher(data) {
-  const eventIndex = data.eventIndex || null;
-  const index = data.index || {};
-
-  const keywordToTargets = [];
-  const entityRequiredMaskById = new Map(); // id -> bitmask of required groups (AND)
-  const entityTermMaskById = new Map(); // id -> Map(term -> bitmask of groups it satisfies)
-  const mentionKeepSet = new Set(); // single-token entity terms to preserve from @mention stripping
-
-  function ingestEntityGroups(id, groupsRaw, entitiesRaw) {
-    let groups = [];
-
-    if (Array.isArray(groupsRaw)) {
-      for (const group of groupsRaw) {
-        if (Array.isArray(group)) {
-          const g = group
-            .map((t) => String(t || "").toLowerCase().trim())
-            .filter(Boolean);
-          if (g.length) groups.push(g);
-        } else if (typeof group === "string") {
-          const t = String(group).toLowerCase().trim();
-          if (t) groups.push([t]);
-        }
-      }
-    } else if (Array.isArray(entitiesRaw)) {
-      // Backwards compatibility: entities: ["CZ","Binance"] means AND of required entities.
-      for (const e of entitiesRaw) {
-        const t = String(e || "").toLowerCase().trim();
-        if (t) groups.push([t]);
-      }
-    }
-
-    groups = groups.filter((g) => Array.isArray(g) && g.length);
-    if (!groups.length) return;
-
-    const groupCount = Math.min(groups.length, 20);
-    const requiredMask = (1 << groupCount) - 1;
-    entityRequiredMaskById.set(String(id), requiredMask);
-
-    const termToMask = new Map();
-    for (let i = 0; i < groupCount; i++) {
-      const bit = 1 << i;
-      const group = groups[i];
-      for (const term of group) {
-        if (!term) continue;
-        termToMask.set(term, (termToMask.get(term) || 0) | bit);
-
-        // Keep common entity handles from being stripped as @mentions.
-        // Allow short special cases like "cz".
-        if (!term.includes(" ") && (term.length >= 3 || term === "cz")) {
-          mentionKeepSet.add(term);
-        }
-      }
-    }
-    entityTermMaskById.set(String(id), termToMask);
-  }
-
-  // Use both eventIndex (for multi-choice events) and index (for all markets including binary)
-  if (eventIndex && typeof eventIndex === "object") {
-    // Ingest entity groups from events
-    const events = data.events || {};
-    for (const [eventId, event] of Object.entries(events)) {
-      ingestEntityGroups(eventId, event.entityGroups, event.entities);
-    }
-
-    // Build keyword mapping for events
-    for (const [keyword, eventIds] of Object.entries(eventIndex)) {
-      if (!keyword || !Array.isArray(eventIds) || eventIds.length === 0) continue;
-      const keywordLower = String(keyword).toLowerCase().trim();
-      const keywordPlain = normalizeForMatch(keywordLower).plain;
-      const keywordTokens = keywordPlain ? keywordPlain.split(" ") : [];
-
-      keywordToTargets.push({
-        keyword: keywordLower,
-        keywordPlain,
-        keywordTokens,
-        eventIds,
-      });
-    }
-  }
-
-  // Always use market index if available (includes binary markets not in events)
-  if (index && typeof index === "object") {
-    // Ingest entity groups from markets
-    const markets = data.markets || {};
-    for (const [marketId, market] of Object.entries(markets)) {
-      ingestEntityGroups(marketId, market.entityGroups, market.entities);
-    }
-
-    // Build keyword mapping for markets
-    for (const [keyword, marketIds] of Object.entries(index)) {
-      if (!keyword || !Array.isArray(marketIds) || marketIds.length === 0) continue;
-      const keywordLower = String(keyword).toLowerCase().trim();
-      const keywordPlain = normalizeForMatch(keywordLower).plain;
-      const keywordTokens = keywordPlain ? keywordPlain.split(" ") : [];
-
-      keywordToTargets.push({
-        keyword: keywordLower,
-        keywordPlain,
-        keywordTokens,
-        marketIds,
-      });
-    }
-  }
-
-  const firstTokenMap = new Map();
-  for (const entry of keywordToTargets) {
-    const firstToken = entry.keywordTokens?.[0] || entry.keyword.split(/\s+/)[0];
-    if (!firstToken) continue;
-    const list = firstTokenMap.get(firstToken) || [];
-    list.push(entry);
-    firstTokenMap.set(firstToken, list);
-  }
-
-  return {
-    mode: eventIndex ? "event" : "market",
-    firstTokenMap,
-    keywordToTargetsCount: keywordToTargets.length,
-    entityRequiredMaskById,
-    entityTermMaskById,
-    mentionKeepSet,
-  };
-}
-
-function clamp01(x) {
-  if (x < 0) return 0;
-  if (x > 1) return 1;
-  return x;
-}
-
-function countBits32(n) {
-  let v = n >>> 0;
-  let c = 0;
-  while (v) {
-    v &= v - 1;
-    c += 1;
-  }
-  return c;
 }
 
 function createIcon() {
@@ -1339,8 +1123,11 @@ function renderHud(anchorEl, match, articleEl = null) {
   const abortController = new AbortController();
   state.activeHudAbort = abortController;
 
-  // Extract tweet time for price tracking
+  // Extract tweet time and author for price tracking
   const tweetTime = articleEl ? extractTweetTime(articleEl) : null;
+  const { handle: tweetAuthor, avatarUrl: tweetAvatarUrl } = articleEl
+    ? extractTweetAuthor(articleEl)
+    : { handle: null, avatarUrl: null };
 
   const rect = anchorEl.getBoundingClientRect();
   const hudWidth = 380;
@@ -1741,7 +1528,6 @@ https://opinionhud.xyz`;
   async function handlePillShareClick(title, tokenId, pillEl) {
     if (!tweetTime || !tokenId) return;
 
-    // Show loading state on pill
     if (pillEl) {
       pillEl.classList.add("sharing");
     }
@@ -1759,17 +1545,32 @@ https://opinionhud.xyz`;
       if (callPoint && currentPrice != null) {
         const display = formatPriceChangeDisplay(callPoint.price, currentPrice);
         if (display) {
-          const dataUrl = generateShareImage(
-            title,
-            history,
+          // Parse title to extract market name and direction
+          let marketTitle = title;
+          let direction = 'YES';
+          const dirMatch = title.match(/\s*\((YES|NO)\)\s*$/i);
+          if (dirMatch) {
+            marketTitle = title.replace(dirMatch[0], '').trim();
+            direction = dirMatch[1].toUpperCase();
+          }
+
+          const dataUrl = await generateShareImage(
+            marketTitle,
+            direction,
             callPoint.price,
-            callPoint.timestamp,
             currentPrice,
             display.changePercent,
-            tweetTime
+            tweetAuthor,
+            tweetAvatarUrl
           );
-          showImagePreview(dataUrl, title, shadow);
-          return;
+          if (dataUrl) {
+            showImagePreview(dataUrl, title, shadow, {
+              thenPrice: callPoint.price,
+              nowPrice: currentPrice,
+              changePercent: display.changePercent
+            }, tweetAuthor, tweetTime);
+            return;
+          }
         }
       }
 
@@ -1778,7 +1579,6 @@ https://opinionhud.xyz`;
       if (!isHudAlive()) return;
       console.error('[OpinionHUD] Share error:', err);
     } finally {
-      // Remove loading state
       if (pillEl) {
         pillEl.classList.remove("sharing");
       }
@@ -2080,170 +1880,6 @@ https://opinionhud.xyz`;
   };
   state.activeHudDocClick = onDocClick;
   document.addEventListener("click", onDocClick, true);
-}
-
-function findTokenBoundaryIndex(haystack, needle) {
-  if (!haystack || !needle) return -1;
-  const n = String(needle);
-  let from = 0;
-  while (true) {
-    const idx = haystack.indexOf(n, from);
-    if (idx === -1) return -1;
-    const beforeOk = idx === 0 || haystack[idx - 1] === " ";
-    const afterIdx = idx + n.length;
-    const afterOk = afterIdx === haystack.length || haystack[afterIdx] === " ";
-    if (beforeOk && afterOk) return idx;
-    from = idx + 1;
-  }
-}
-
-function tokensNear(plain, keywordTokens) {
-  const tokens = (keywordTokens || []).filter(Boolean);
-  if (tokens.length < 2 || tokens.length > 3) return false;
-
-  const positions = [];
-  for (const t of tokens) {
-    const pos = findTokenBoundaryIndex(plain, t);
-    if (pos === -1) return false;
-    positions.push(pos);
-  }
-  const min = Math.min(...positions);
-  const max = Math.max(...positions);
-  const span = max - min;
-  return tokens.length === 2 ? span <= 50 : span <= 80;
-}
-
-function scoreEntry({ raw, plain, tokens }, entry) {
-  const reasons = [];
-  let score = 0;
-
-  const keywordPlain = entry.keywordPlain || "";
-  const keywordTokens = entry.keywordTokens || [];
-  const hasLowSignalToken = keywordTokens.some((t) => LOW_SIGNAL_TOKENS.has(t));
-
-  // 1. Exact phrase match (highest score) - but filter generic phrases
-  if (keywordPlain && plain.includes(keywordPlain)) {
-    const isSingleWord = !keywordPlain.includes(' ');
-
-    // Reject generic single-word phrases
-    if (isSingleWord) {
-      const isYear = /^\d{4}$/.test(keywordPlain);
-      const isShort = keywordPlain.length <= 3;
-      const commonTerms = [
-        'crypto', 'web3', 'trade', 'market', 'price', 'defi',
-        'token', 'wallet', 'chain', 'coin', 'yield', 'stake',
-        'swap', 'pool', 'mint', 'airdrop'
-      ];
-      const isCommon = keywordPlain.length <= 6 && commonTerms.includes(keywordPlain);
-
-      if (isYear || isShort || isCommon) {
-        // Don't score - it's too generic
-        reasons.push(`rejected:${keywordPlain}`);
-      } else {
-        // Valid single-word brand name - moderate score
-        score += Math.min(0.65, keywordPlain.length * 0.1);
-        reasons.push(`phrase:${keywordPlain}`);
-      }
-    } else {
-      // Multi-word phrases get high score - they're very specific
-      score += 0.85 + Math.min(0.1, keywordPlain.length / 120);
-      reasons.push(`phrase:${keywordPlain}`);
-    }
-  }
-  // 2. Multi-token keyword matching
-  else if (keywordTokens.length >= 2) {
-    let present = 0;
-    const matchedTokens = [];
-    for (const t of keywordTokens) {
-      if (tokens.has(t)) {
-        present += 1;
-        matchedTokens.push(t);
-      }
-    }
-
-    if (present === keywordTokens.length) {
-      // All tokens present
-      const near = tokensNear(plain, keywordTokens);
-      score += near ? 0.7 : 0.45;
-      reasons.push("tokens:all");
-      if (near) reasons.push("near");
-    } else if (present >= 2) {
-      // At least 2 tokens present
-      score += 0.35 + (present - 2) * 0.05;
-      reasons.push(`tokens:${present}/${keywordTokens.length}`);
-    }
-    // REMOVED: Single token match is too weak for multi-token keywords
-    // Requiring at least 2 tokens reduces false positives from generic terms
-  }
-  // 3. Single-token keyword matching with smart filtering
-  else if (keywordTokens.length === 1) {
-    const token = keywordTokens[0];
-    if (tokens.has(token)) {
-      const isYear = /^\d{4}$/.test(token);
-      const isShort = token.length <= 3;
-      const commonTerms = [
-        'crypto', 'web3', 'trade', 'market', 'price', 'defi',
-        'token', 'wallet', 'chain', 'coin', 'yield', 'stake',
-        'swap', 'pool', 'mint', 'airdrop'
-      ];
-      const isCommon = token.length <= 6 && commonTerms.includes(token);
-
-      if (isYear || isShort || isCommon) {
-        // Reject generic tokens
-        reasons.push(`rejected:${token}`);
-      } else if (token.length <= 6) {
-        // Medium-length brand names
-        score += Math.min(0.48, token.length * 0.09);
-        reasons.push(`single:${token}`);
-      } else {
-        // Long brand names (7+ chars)
-        score += Math.min(0.70, token.length * 0.09);
-        reasons.push(`single:${token}`);
-      }
-    }
-  }
-
-  // Bonus for cashtags/hashtags present in raw text.
-  for (const t of keywordTokens) {
-    if (!t || t.length < 3) continue;
-    if (raw.includes(`$${t}`) || raw.includes(`#${t}`)) {
-      score += 0.05;
-      reasons.push(`tag:${t}`);
-      break;
-    }
-  }
-
-  if (hasLowSignalToken && score > 0) {
-    score *= LOW_SIGNAL_SCORE_MULTIPLIER;
-    reasons.push("low_signal");
-  }
-
-  return { score: clamp01(score), reasons };
-}
-
-function isEntryMentioned({ plain, tokens }, entry) {
-  const keywordPlain = entry.keywordPlain || "";
-  const keywordTokens = (entry.keywordTokens || []).filter(Boolean);
-  if (!keywordTokens.length) return false;
-
-  if (keywordTokens.length === 1) {
-    const token = keywordTokens[0];
-    if (tokens.has(token)) return true;
-    // For CJK single-token keywords, also check plain.includes() as fallback
-    // This handles cases where keyword length exceeds n-gram limit
-    if (keywordPlain && /[\u4e00-\u9fff]/.test(token) && plain.includes(keywordPlain)) {
-      return true;
-    }
-    return false;
-  }
-
-  if (keywordPlain && plain.includes(keywordPlain)) return true;
-
-  let present = 0;
-  for (const t of keywordTokens) {
-    if (tokens.has(t)) present += 1;
-  }
-  return present === keywordTokens.length && tokensNear(plain, keywordTokens);
 }
 
 function computeMatchForTweetText(tweetText) {
@@ -2641,16 +2277,24 @@ async function ensureData() {
   }
 }
 
-function startObserver() {
-  if (state.invalidated) return;
-  if (state.observer) state.observer.disconnect();
-  state.observer = new MutationObserver(() => {
+function debouncedScanAll() {
+  if (state.scanDebounceTimer) {
+    clearTimeout(state.scanDebounceTimer);
+  }
+  state.scanDebounceTimer = setTimeout(() => {
+    state.scanDebounceTimer = null;
     try {
       scanAll();
     } catch (err) {
       if (!handleInvalidation(err)) throw err;
     }
-  });
+  }, SCAN_DEBOUNCE_MS);
+}
+
+function startObserver() {
+  if (state.invalidated) return;
+  if (state.observer) state.observer.disconnect();
+  state.observer = new MutationObserver(debouncedScanAll);
   state.observer.observe(document.body, { childList: true, subtree: true });
 }
 
