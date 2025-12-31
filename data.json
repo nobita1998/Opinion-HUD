@@ -1,24 +1,24 @@
 {
   "meta": {
-    "generatedAt": "2025-12-31 16:41:13 UTC+8",
+    "generatedAt": "2025-12-31 22:57:05 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
     "ref": "opinion_hud",
     "debug": false,
     "counts": {
-      "seen": 900,
-      "kept": 602,
-      "markets": 174,
-      "keywords": 1527,
+      "seen": 903,
+      "kept": 605,
+      "markets": 177,
+      "keywords": 1543,
       "events": {
-        "events": 113
+        "events": 114
       },
       "skipped": {
         "statusEnum": 96,
         "cutoff_missing_or_invalid": 0,
         "cutoff_expired": 147,
-        "cutoff_zero_kept": 77,
+        "cutoff_zero_kept": 79,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 111,
+        "reused": 113,
         "regenerated_empty_entitygroups": 0,
-        "calls": 2,
+        "calls": 1,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 2,
+        "non_empty": 1,
         "errors": 0
       }
     }
@@ -5482,14 +5482,64 @@
       "sigFull": "9c74fa5d",
       "sigCore": "cdb28537",
       "reused": false
+    },
+    "242": {
+      "title": "Khamenei out as Supreme Leader of Iran by ...?",
+      "marketIds": [
+        "242"
+      ],
+      "bestMarketId": "242",
+      "bestLabels": null,
+      "keywords": [
+        "khamenei",
+        "iran",
+        "supreme leader",
+        "ayatollah",
+        "ali khamenei",
+        "succession",
+        "resignation",
+        "tehran",
+        "islamic republic",
+        "regime change",
+        "cleric",
+        "leadership",
+        "death",
+        "removal",
+        "politics",
+        "khamenei out",
+        "out supreme",
+        "leader iran",
+        "khamenei out supreme",
+        "out supreme leader",
+        "supreme leader iran"
+      ],
+      "entities": [
+        "khamenei",
+        "supreme leader"
+      ],
+      "entityGroups": [
+        [
+          "khamenei",
+          "哈梅内伊"
+        ],
+        [
+          "supreme leader",
+          "iran",
+          "最高领袖"
+        ]
+      ],
+      "sig": "0959a9cd",
+      "sigFull": "0959a9cd",
+      "sigCore": "29a921b9",
+      "reused": false
     }
   },
   "markets": {
     "230": {
       "title": "Bank of Japan Decision in March?",
       "url": "https://app.opinion.trade/market/230?ref=opinion_hud",
-      "yesTokenId": "2827846251613766004406684609881214698035387143529868376251861912769240338851",
-      "noTokenId": "34737336250599813085421949148691317784605135744276247571182747061237445273356",
+      "yesTokenId": "49806328595737114552465562164287212527706095705458679080347395398812836583794",
+      "noTokenId": "72016222535839390082968944895838163314147684005398185837532281695024662503788",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5757,8 +5807,8 @@
     "228": {
       "title": "Will ETHGAS launch a token by ...?",
       "url": "https://app.opinion.trade/market/228?ref=opinion_hud",
-      "yesTokenId": "83708309985502190442718796844420809991444795539454268174079211599810931735941",
-      "noTokenId": "14995690888457732065721092176265023939654069238080177233306738671219843009116",
+      "yesTokenId": "46158188879087246978237367302504828909412041118653023298659706615318935150357",
+      "noTokenId": "9922803516909109949631611680349663522426719068342258933429093539119484600078",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5824,8 +5874,8 @@
     "227": {
       "title": "Will Silver hit ... by end of January?",
       "url": "https://app.opinion.trade/market/227?ref=opinion_hud",
-      "yesTokenId": "78938134709405185929701623862783857107694534221926081617090644465984048576608",
-      "noTokenId": "7074744244578807931410735739464233480292948700027505117400100138332253851337",
+      "yesTokenId": "82430086018580495970541579359425454811641113206731584860815196159108692084181",
+      "noTokenId": "54531180597809543613125985080125583247462568043038189794315515516079086772074",
       "volume": 0.0,
       "labels": {
         "yesLabel": "",
@@ -5926,8 +5976,8 @@
     "226": {
       "title": "Israel x Iran ceasefire broken by...?",
       "url": "https://app.opinion.trade/market/226?ref=opinion_hud",
-      "yesTokenId": "47062050506028745524329299661522909680782432896355545055649402613277823432134",
-      "noTokenId": "49601187976214391003018186780568158130430327519634969953883390406024245662584",
+      "yesTokenId": "1219112381288056901027283762463790890119213354827936704262477508628698772427",
+      "noTokenId": "89347424375919392434870031749975988065377094517049095113552531083838105618029",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5992,8 +6042,8 @@
     "224": {
       "title": "NFC Champion 2026",
       "url": "https://app.opinion.trade/market/224?ref=opinion_hud",
-      "yesTokenId": "38657130334280847167773231097148316435880408478785580470665778028877349028432",
-      "noTokenId": "76358356250593868109323897414097719403074824529781695137952201832419595383875",
+      "yesTokenId": "30627615055536305286566169732569340107032122966724835425430562383070641789144",
+      "noTokenId": "79863139610606003662199701530533040996878658819596258518208335529539435878684",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9578,8 +9628,8 @@
     "174": {
       "title": "Pump.fun airdrop by ....?",
       "url": "https://app.opinion.trade/market/174?ref=opinion_hud",
-      "yesTokenId": "3245078889210221132031633328611995243271249966318123211160190130357159715411",
-      "noTokenId": "8899676117633104076540378514352655706150929023028639452597368459759441298048",
+      "yesTokenId": "108974621305523979415298574778712706062999368407052994117557392222232910208322",
+      "noTokenId": "100658168825566251552512771056749490588333653800978120409073075536566526831540",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9784,8 +9834,8 @@
     "171": {
       "title": "OpenAI IPO by...?",
       "url": "https://app.opinion.trade/market/171?ref=opinion_hud",
-      "yesTokenId": "6059135867880071878220126072279319738283915779009411592158331505001305613812",
-      "noTokenId": "11138109899680876573648906995629265789643063583550485233791132155944078676167",
+      "yesTokenId": "67797064011664553985611987694764090712915012213554730877439699244613155036935",
+      "noTokenId": "37076655403141810723292530021595531675081399539819129560717102398257140312999",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9990,8 +10040,8 @@
     "167": {
       "title": "Will Pacifica launch a token by ...?",
       "url": "https://app.opinion.trade/market/167?ref=opinion_hud",
-      "yesTokenId": "99186205221790643173381886436314691893618093027056421457572330309331456551538",
-      "noTokenId": "79521704038751323329715849165718857463342550779731950420415035959360563777583",
+      "yesTokenId": "7274576938117869642882720024688336554929238940813442084166665830660427519789",
+      "noTokenId": "54161957450775061826065879042472591369124418084845297540076170295740825648310",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10062,8 +10112,8 @@
     "163": {
       "title": "IPOs before 2027?",
       "url": "https://app.opinion.trade/market/163?ref=opinion_hud",
-      "yesTokenId": "11774163108915621548522264633257074866425698474877342230214646257892440762974",
-      "noTokenId": "84587078093179539777792175873437239802361500054016536532223764807355029614966",
+      "yesTokenId": "12458895370411880901817398381616597522273148284388618939284765919028785449371",
+      "noTokenId": "2290313531238293552275507951814589580628596677400198364406886923347159745549",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10354,8 +10404,8 @@
     "159": {
       "title": "Who will acquire TikTok?",
       "url": "https://app.opinion.trade/market/159?ref=opinion_hud",
-      "yesTokenId": "98449047592955535703110181362528179531513447245456266967920927815985835271341",
-      "noTokenId": "73801641313799426951640047643095080040358239758287873121073820136054683880750",
+      "yesTokenId": "83422412544484516779272857305192222174457634494733737879715082063012385989853",
+      "noTokenId": "74145672800457902249853816556543940362372066837207682905894231774783193934781",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10438,8 +10488,8 @@
     "158": {
       "title": "SpaceX IPO Closing Market Cap",
       "url": "https://app.opinion.trade/market/158?ref=opinion_hud",
-      "yesTokenId": "87713237741266709414203056969159327735836822004159744186199220272642869290666",
-      "noTokenId": "66568671381733798013077711240728187876621263069586954122252415077352699294339",
+      "yesTokenId": "106819863414249716222481072231466495622719444901594784051268830638812537774224",
+      "noTokenId": "59493274427498312154237533782967661253626089839403290558487202696502940800977",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -14775,8 +14825,8 @@
     "82": {
       "title": "La Liga Winner 2026",
       "url": "https://app.opinion.trade/market/82?ref=opinion_hud",
-      "yesTokenId": "65688048373563443008718614162380514152579919598085136899026713638378561074699",
-      "noTokenId": "64745931635614380486089897616268028148525889403650276145970028645059943762665",
+      "yesTokenId": "99953551128995958729211325693869795258523478733856226723150164515743944411274",
+      "noTokenId": "106554581233328099217008486957349010954924689302061373837178162165502971420420",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -14992,8 +15042,8 @@
     "234": {
       "title": "Will Nansen launch a token by ...?",
       "url": "https://app.opinion.trade/market/234?ref=opinion_hud",
-      "yesTokenId": "72379689033837772624561528952286089261926066666758511403261054712855099789783",
-      "noTokenId": "101746785351718498645275463482533469807556338402388999984090081872192421917734",
+      "yesTokenId": "95021116774030237012252900809537722656013308667603305368893512092366639239281",
+      "noTokenId": "109068237909965667181747501994977816936601600543463819246746856888120206453707",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -15124,8 +15174,8 @@
     "232": {
       "title": "Will Perena launch a token by ...?",
       "url": "https://app.opinion.trade/market/232?ref=opinion_hud",
-      "yesTokenId": "102341396616975183960138827700082404215375920296986674518243750424750714013201",
-      "noTokenId": "41284881932805785960054700744541840506562299614814100225032272513413135565713",
+      "yesTokenId": "16896346954520677410762499309528635166489540047711889053488109309294157900515",
+      "noTokenId": "35364817953320639438942656142564109729266731837146161343549784342752062102119",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -15484,8 +15534,8 @@
     "241": {
       "title": "What will Gold settle at in January?",
       "url": "https://app.opinion.trade/market/241?ref=opinion_hud",
-      "yesTokenId": "107669046623252327871771834174063386350866163719270496082047318757272142178045",
-      "noTokenId": "112067396078671576330637188997554681493512491925647101495218451188843505607934",
+      "yesTokenId": "8076707663817857107843696848049034345603328647528153159981438098187322175913",
+      "noTokenId": "49499262399986282511746706303909628315656270592575782381230471469946981397990",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -15629,6 +15679,88 @@
           "title": "Matthew Stafford",
           "yesTokenId": "108793378940771714436739312735681081116073263401046583156266372722868687827822",
           "noTokenId": "69998954799596494709613597712257762853353561600741962280150956404911534126980"
+        }
+      ]
+    },
+    "3508": {
+      "title": "June 30, 2026",
+      "url": "https://app.opinion.trade/market/3508?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "3509": {
+      "title": "December 31, 2026",
+      "url": "https://app.opinion.trade/market/3509?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "242": {
+      "title": "Khamenei out as Supreme Leader of Iran by ...?",
+      "url": "https://app.opinion.trade/market/242?ref=opinion_hud",
+      "yesTokenId": "46646560600103097960006351814951402159152789456497818361055535357395234270425",
+      "noTokenId": "25955867801676629307421288220458181447137318072855182834681496661144963432913",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "khamenei",
+        "iran",
+        "supreme leader",
+        "ayatollah",
+        "ali khamenei",
+        "succession",
+        "resignation",
+        "tehran",
+        "islamic republic",
+        "regime change",
+        "cleric",
+        "leadership",
+        "death",
+        "removal",
+        "politics",
+        "khamenei out",
+        "out supreme",
+        "leader iran",
+        "khamenei out supreme",
+        "out supreme leader",
+        "supreme leader iran"
+      ],
+      "entities": [
+        "khamenei",
+        "supreme leader"
+      ],
+      "entityGroups": [
+        [
+          "khamenei",
+          "哈梅内伊"
+        ],
+        [
+          "supreme leader",
+          "iran",
+          "最高领袖"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "3507",
+          "title": "March 31, 2026",
+          "yesTokenId": "46646560600103097960006351814951402159152789456497818361055535357395234270425",
+          "noTokenId": "25955867801676629307421288220458181447137318072855182834681496661144963432913"
         }
       ]
     }
@@ -15996,6 +16128,9 @@
     "algorithm": [
       "200"
     ],
+    "ali khamenei": [
+      "242"
+    ],
     "all-time high": [
       "145",
       "58"
@@ -16152,6 +16287,9 @@
     ],
     "awards season": [
       "138"
+    ],
+    "ayatollah": [
+      "242"
     ],
     "backpack": [
       "95"
@@ -16591,6 +16729,9 @@
       "237",
       "66"
     ],
+    "cleric": [
+      "242"
+    ],
     "close": [
       "122",
       "125",
@@ -16872,7 +17013,8 @@
       "160"
     ],
     "death": [
-      "215"
+      "215",
+      "242"
     ],
     "debut": [
       "143",
@@ -18013,7 +18155,8 @@
       "163"
     ],
     "iran": [
-      "226"
+      "226",
+      "242"
     ],
     "iran ceasefire": [
       "226"
@@ -18023,6 +18166,9 @@
     ],
     "irgc": [
       "226"
+    ],
+    "islamic republic": [
+      "242"
     ],
     "israel": [
       "226"
@@ -18093,6 +18239,15 @@
     ],
     "keir starmer": [
       "150"
+    ],
+    "khamenei": [
+      "242"
+    ],
+    "khamenei out": [
+      "242"
+    ],
+    "khamenei out supreme": [
+      "242"
     ],
     "kill": [
       "215"
@@ -18258,11 +18413,15 @@
     "lck联赛": [
       "213"
     ],
+    "leader iran": [
+      "242"
+    ],
     "leaderboard": [
       "237"
     ],
     "leadership": [
-      "193"
+      "193",
+      "242"
     ],
     "league of legends": [
       "212",
@@ -19168,6 +19327,12 @@
     "out 2027": [
       "193"
     ],
+    "out supreme": [
+      "242"
+    ],
+    "out supreme leader": [
+      "242"
+    ],
     "out ukraine": [
       "202"
     ],
@@ -19353,7 +19518,8 @@
     ],
     "politics": [
       "131",
-      "202"
+      "202",
+      "242"
     ],
     "poly": [
       "208",
@@ -19645,7 +19811,8 @@
     ],
     "regime change": [
       "128",
-      "202"
+      "202",
+      "242"
     ],
     "regional elections": [
       "130"
@@ -19664,7 +19831,8 @@
       "129"
     ],
     "removal": [
-      "202"
+      "202",
+      "242"
     ],
     "renate reinsve": [
       "139"
@@ -19680,7 +19848,8 @@
       "116",
       "150",
       "193",
-      "202"
+      "202",
+      "242"
     ],
     "resolution": [
       "127"
@@ -20150,6 +20319,9 @@
     "streaming": [
       "214"
     ],
+    "succession": [
+      "242"
+    ],
     "summer split": [
       "212",
       "213"
@@ -20184,6 +20356,12 @@
     ],
     "supporting role": [
       "141"
+    ],
+    "supreme leader": [
+      "242"
+    ],
+    "supreme leader iran": [
+      "242"
     ],
     "synthetix": [
       "184"
@@ -20226,6 +20404,9 @@
     ],
     "tectonic": [
       "187"
+    ],
+    "tehran": [
+      "242"
     ],
     "temblor": [
       "187"
@@ -21100,6 +21281,9 @@
     "参议院": [
       "136"
     ],
+    "哈梅内伊": [
+      "242"
+    ],
     "喷火龙": [
       "239"
     ],
@@ -21202,6 +21386,9 @@
     ],
     "最有价值的公司": [
       "236"
+    ],
+    "最高领袖": [
+      "242"
     ],
     "柬埔寨": [
       "188"
@@ -21685,6 +21872,9 @@
     "algorithm": [
       "200"
     ],
+    "ali khamenei": [
+      "242"
+    ],
     "all-time high": [
       "145",
       "58"
@@ -21841,6 +22031,9 @@
     ],
     "awards season": [
       "138"
+    ],
+    "ayatollah": [
+      "242"
     ],
     "backpack": [
       "95"
@@ -22280,6 +22473,9 @@
       "237",
       "66"
     ],
+    "cleric": [
+      "242"
+    ],
     "close": [
       "122",
       "125",
@@ -22561,7 +22757,8 @@
       "160"
     ],
     "death": [
-      "215"
+      "215",
+      "242"
     ],
     "debut": [
       "143",
@@ -23702,7 +23899,8 @@
       "163"
     ],
     "iran": [
-      "226"
+      "226",
+      "242"
     ],
     "iran ceasefire": [
       "226"
@@ -23712,6 +23910,9 @@
     ],
     "irgc": [
       "226"
+    ],
+    "islamic republic": [
+      "242"
     ],
     "israel": [
       "226"
@@ -23782,6 +23983,15 @@
     ],
     "keir starmer": [
       "150"
+    ],
+    "khamenei": [
+      "242"
+    ],
+    "khamenei out": [
+      "242"
+    ],
+    "khamenei out supreme": [
+      "242"
     ],
     "kill": [
       "215"
@@ -23947,11 +24157,15 @@
     "lck联赛": [
       "213"
     ],
+    "leader iran": [
+      "242"
+    ],
     "leaderboard": [
       "237"
     ],
     "leadership": [
-      "193"
+      "193",
+      "242"
     ],
     "league of legends": [
       "212",
@@ -24857,6 +25071,12 @@
     "out 2027": [
       "193"
     ],
+    "out supreme": [
+      "242"
+    ],
+    "out supreme leader": [
+      "242"
+    ],
     "out ukraine": [
       "202"
     ],
@@ -25042,7 +25262,8 @@
     ],
     "politics": [
       "131",
-      "202"
+      "202",
+      "242"
     ],
     "poly": [
       "208",
@@ -25334,7 +25555,8 @@
     ],
     "regime change": [
       "128",
-      "202"
+      "202",
+      "242"
     ],
     "regional elections": [
       "130"
@@ -25353,7 +25575,8 @@
       "129"
     ],
     "removal": [
-      "202"
+      "202",
+      "242"
     ],
     "renate reinsve": [
       "139"
@@ -25369,7 +25592,8 @@
       "116",
       "150",
       "193",
-      "202"
+      "202",
+      "242"
     ],
     "resolution": [
       "127"
@@ -25839,6 +26063,9 @@
     "streaming": [
       "214"
     ],
+    "succession": [
+      "242"
+    ],
     "summer split": [
       "212",
       "213"
@@ -25873,6 +26100,12 @@
     ],
     "supporting role": [
       "141"
+    ],
+    "supreme leader": [
+      "242"
+    ],
+    "supreme leader iran": [
+      "242"
     ],
     "synthetix": [
       "184"
@@ -25915,6 +26148,9 @@
     ],
     "tectonic": [
       "187"
+    ],
+    "tehran": [
+      "242"
     ],
     "temblor": [
       "187"
@@ -26789,6 +27025,9 @@
     "参议院": [
       "136"
     ],
+    "哈梅内伊": [
+      "242"
+    ],
     "喷火龙": [
       "239"
     ],
@@ -26891,6 +27130,9 @@
     ],
     "最有价值的公司": [
       "236"
+    ],
+    "最高领袖": [
+      "242"
     ],
     "柬埔寨": [
       "188"
