@@ -976,6 +976,28 @@ function showImagePreview(dataUrl, title, shadowRoot, priceData = null, tweetAut
       const { thenPrice, nowPrice, changePercent } = priceData;
       const sign = changePercent >= 0 ? '+' : '';
 
+      // Parse title to extract market name, option name (for multi), and direction
+      // Format: "Event Title - Option Name (YES)" or "Market Title (YES)"
+      let eventTitle = '';
+      let optionName = '';
+      let direction = '';
+
+      let remaining = title;
+      const dirMatch = remaining.match(/\s*\((YES|NO)\)\s*$/i);
+      if (dirMatch) {
+        remaining = remaining.replace(dirMatch[0], '').trim();
+        direction = dirMatch[1].toUpperCase();
+      }
+
+      // Check for multi-market format: "Event - Option"
+      const dashMatch = remaining.match(/^(.+?)\s*[-–—]\s*(.+)$/);
+      if (dashMatch) {
+        eventTitle = dashMatch[1].trim();
+        optionName = dashMatch[2].trim();
+      } else {
+        eventTitle = remaining;
+      }
+
       // Calculate time elapsed
       let timeStr = '';
       if (tweetTime) {
@@ -992,16 +1014,36 @@ function showImagePreview(dataUrl, title, shadowRoot, priceData = null, tweetAut
         }
       }
 
-      // Simple format: price change with time
-      tweetText = `${(thenPrice * 100).toFixed(1)}% → ${(nowPrice * 100).toFixed(1)}%`;
+      // Format text based on binary vs multi market
+      if (optionName) {
+        // Multi market: Event Title > [YES] Option Name
+        tweetText = eventTitle;
+        tweetText += `\n> `;
+        if (direction) tweetText += `[${direction}] `;
+        tweetText += optionName;
+      } else {
+        // Binary market: [YES] Market Title
+        if (direction) {
+          tweetText = `[${direction}] ${eventTitle}`;
+        } else {
+          tweetText = eventTitle;
+        }
+      }
+
+      // Price line: 57.8% -> 64.2% (+11.1% in 7h)
+      tweetText += `\n\n${(thenPrice * 100).toFixed(1)}% -> ${(nowPrice * 100).toFixed(1)}%`;
       tweetText += ` (${sign}${Math.abs(changePercent).toFixed(1)}%`;
       if (timeStr) tweetText += ` in ${timeStr}`;
       tweetText += `)`;
-    }
 
-    // Attribution
-    if (tweetAuthor) {
-      tweetText += `\n\nObserved from @${tweetAuthor}`;
+      // Attribution
+      if (tweetAuthor) {
+        tweetText += `\n\nObserved from @${tweetAuthor}`;
+      }
+    } else if (tweetAuthor) {
+      tweetText = `@${tweetAuthor} mentioned "${title}"`;
+    } else {
+      tweetText = title;
     }
 
     // Add original tweet link
