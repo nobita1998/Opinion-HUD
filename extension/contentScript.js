@@ -384,6 +384,24 @@ function extractTweetAuthor(articleEl) {
 }
 
 /**
+ * Extract tweet URL from article element
+ * @param {HTMLElement} articleEl - The article element containing the tweet
+ * @returns {string|null}
+ */
+function extractTweetUrl(articleEl) {
+  if (!articleEl) return null;
+  // Tweet URL is in the time element's parent link: /username/status/123456
+  const timeEl = articleEl.querySelector('time[datetime]');
+  if (!timeEl) return null;
+  const linkEl = timeEl.closest('a[href*="/status/"]');
+  if (!linkEl) return null;
+  const href = linkEl.getAttribute('href');
+  if (!href) return null;
+  // Return full URL
+  return `https://x.com${href}`;
+}
+
+/**
  * Fetch price history for a token
  * @param {string} tokenId - ERC-1155 token ID
  * @param {AbortSignal} signal - Abort signal
@@ -805,8 +823,9 @@ function downloadImage(dataUrl, filename) {
  * @param {string} title - Market title
  * @param {object} shadowRoot - Shadow DOM root
  * @param {object} priceData - Price data for sharing { thenPrice, nowPrice, changePercent }
+ * @param {string} tweetUrl - Original tweet URL
  */
-function showImagePreview(dataUrl, title, shadowRoot, priceData = null, tweetAuthor = null, tweetTime = null) {
+function showImagePreview(dataUrl, title, shadowRoot, priceData = null, tweetAuthor = null, tweetTime = null, tweetUrl = null) {
   // Remove existing preview if any
   const existing = shadowRoot.querySelector('.imagePreview');
   if (existing) existing.remove();
@@ -957,28 +976,6 @@ function showImagePreview(dataUrl, title, shadowRoot, priceData = null, tweetAut
       const { thenPrice, nowPrice, changePercent } = priceData;
       const sign = changePercent >= 0 ? '+' : '';
 
-      // Parse title to extract market name, option name (for multi), and direction
-      // Format: "Event Title - Option Name (YES)" or "Market Title (YES)"
-      let eventTitle = '';
-      let optionName = '';
-      let direction = '';
-
-      let remaining = title;
-      const dirMatch = remaining.match(/\s*\((YES|NO)\)\s*$/i);
-      if (dirMatch) {
-        remaining = remaining.replace(dirMatch[0], '').trim();
-        direction = dirMatch[1].toUpperCase();
-      }
-
-      // Check for multi-market format: "Event - Option"
-      const dashMatch = remaining.match(/^(.+?)\s*[-–—]\s*(.+)$/);
-      if (dashMatch) {
-        eventTitle = dashMatch[1].trim();
-        optionName = dashMatch[2].trim();
-      } else {
-        eventTitle = remaining;
-      }
-
       // Calculate time elapsed
       let timeStr = '';
       if (tweetTime) {
@@ -995,40 +992,26 @@ function showImagePreview(dataUrl, title, shadowRoot, priceData = null, tweetAut
         }
       }
 
-      // Format text based on binary vs multi market
-      if (optionName) {
-        // Multi market: Event Title > [YES] Option Name
-        tweetText = eventTitle;
-        tweetText += `\n> `;
-        if (direction) tweetText += `[${direction}] `;
-        tweetText += optionName;
-      } else {
-        // Binary market: [YES] Market Title
-        if (direction) {
-          tweetText = `[${direction}] ${eventTitle}`;
-        } else {
-          tweetText = eventTitle;
-        }
-      }
-
-      // Price line: 57.8% -> 64.2% (+11.1% in 7h)
-      tweetText += `\n\n${(thenPrice * 100).toFixed(1)}% -> ${(nowPrice * 100).toFixed(1)}%`;
+      // Simple format: price change with time
+      tweetText = `${(thenPrice * 100).toFixed(1)}% → ${(nowPrice * 100).toFixed(1)}%`;
       tweetText += ` (${sign}${Math.abs(changePercent).toFixed(1)}%`;
       if (timeStr) tweetText += ` in ${timeStr}`;
       tweetText += `)`;
-
-      // Attribution
-      if (tweetAuthor) {
-        tweetText += `\n\nObserved from @${tweetAuthor}`;
-      }
-    } else if (tweetAuthor) {
-      tweetText = `@${tweetAuthor} mentioned "${title}"`;
-    } else {
-      tweetText = title;
     }
+
+    // Attribution
+    if (tweetAuthor) {
+      tweetText += `\n\nObserved from @${tweetAuthor}`;
+    }
+
+    // Add original tweet link
+    if (tweetUrl) {
+      tweetText += `\n${tweetUrl}`;
+    }
+
     tweetText += '\n\nopinionhud.xyz';
 
-    const tweetUrl = `https://x.com/intent/post?text=${encodeURIComponent(tweetText)}`;
+    const shareUrl = `https://x.com/intent/post?text=${encodeURIComponent(tweetText)}`;
 
     // Copy image to clipboard BEFORE opening new tab (clipboard API requires focus)
     copyImageToClipboard(dataUrl).then(success => {
@@ -1039,7 +1022,7 @@ function showImagePreview(dataUrl, title, shadowRoot, priceData = null, tweetAut
 
     // Small delay to ensure clipboard write starts before losing focus
     setTimeout(() => {
-      window.open(tweetUrl, '_blank', 'noopener,noreferrer');
+      window.open(shareUrl, '_blank', 'noopener,noreferrer');
     }, 100);
   });
 }
@@ -1123,11 +1106,12 @@ function renderHud(anchorEl, match, articleEl = null) {
   const abortController = new AbortController();
   state.activeHudAbort = abortController;
 
-  // Extract tweet time and author for price tracking
+  // Extract tweet time, author and URL for price tracking and sharing
   const tweetTime = articleEl ? extractTweetTime(articleEl) : null;
   const { handle: tweetAuthor, avatarUrl: tweetAvatarUrl } = articleEl
     ? extractTweetAuthor(articleEl)
     : { handle: null, avatarUrl: null };
+  const originalTweetUrl = articleEl ? extractTweetUrl(articleEl) : null;
 
   const rect = anchorEl.getBoundingClientRect();
   const hudWidth = 380;
@@ -1568,7 +1552,7 @@ https://opinionhud.xyz`;
               thenPrice: callPoint.price,
               nowPrice: currentPrice,
               changePercent: display.changePercent
-            }, tweetAuthor, tweetTime);
+            }, tweetAuthor, tweetTime, originalTweetUrl);
             return;
           }
         }
