@@ -999,9 +999,14 @@ function showImagePreview(dataUrl, title, shadowRoot, priceData = null, tweetAut
       tweetText += `)`;
     }
 
+    // Attribution
+    if (tweetAuthor) {
+      tweetText += `\n\nObserved from @${tweetAuthor}`;
+    }
+
     // Add original tweet link
     if (tweetUrl) {
-      tweetText += `\n\n${tweetUrl}`;
+      tweetText += `\n${tweetUrl}`;
     }
 
     tweetText += '\n\nopinionhud.xyz';
