@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-01-03 00:37:32 UTC+8",
+    "generatedAt": "2026-01-03 10:18:49 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
     "ref": "opinion_hud",
     "debug": false,
     "counts": {
-      "seen": 922,
-      "kept": 667,
-      "markets": 178,
-      "keywords": 1794,
+      "seen": 924,
+      "kept": 669,
+      "markets": 180,
+      "keywords": 2136,
       "events": {
-        "events": 45
+        "events": 47
       },
       "skipped": {
         "statusEnum": 149,
@@ -30,11 +30,11 @@
         "onlyAiForNew": true,
         "reused": 0,
         "regenerated_empty_entitygroups": 0,
-        "calls": 45,
-        "retries": 41,
+        "calls": 47,
+        "retries": 0,
         "fallback": 0,
-        "empty": 39,
-        "non_empty": 6,
+        "empty": 0,
+        "non_empty": 47,
         "errors": 0
       }
     }
@@ -5587,8 +5587,8 @@
     "230": {
       "title": "Bank of Japan Decision in March?",
       "url": "https://app.opinion.trade/market/230?ref=opinion_hud",
-      "yesTokenId": "2827846251613766004406684609881214698035387143529868376251861912769240338851",
-      "noTokenId": "34737336250599813085421949148691317784605135744276247571182747061237445273356",
+      "yesTokenId": "49806328595737114552465562164287212527706095705458679080347395398812836583794",
+      "noTokenId": "72016222535839390082968944895838163314147684005398185837532281695024662503788",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5791,8 +5791,8 @@
     "229": {
       "title": "Will Exponent launch a token by ...?",
       "url": "https://app.opinion.trade/market/229?ref=opinion_hud",
-      "yesTokenId": "3460375970891495126122752527934713410119654188774210039937802416282732845337",
-      "noTokenId": "82705578281233708439036408253263604094090177413725054219931573996346155352722",
+      "yesTokenId": "35312435012894555674539783058151251874657539918824654041349035822265306231125",
+      "noTokenId": "16083431755229291179841959276332498817162248905139740671871370917581347447162",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5923,8 +5923,8 @@
     "227": {
       "title": "Will Silver hit ... by end of January?",
       "url": "https://app.opinion.trade/market/227?ref=opinion_hud",
-      "yesTokenId": "78938134709405185929701623862783857107694534221926081617090644465984048576608",
-      "noTokenId": "7074744244578807931410735739464233480292948700027505117400100138332253851337",
+      "yesTokenId": "106192753718405248236978163860439147811450587009394816151974079482281872375157",
+      "noTokenId": "112298457632025832780026801472504627846850806200984171028907747842881336852493",
       "volume": 0.0,
       "labels": {
         "yesLabel": "",
@@ -6091,8 +6091,8 @@
     "224": {
       "title": "NFC Champion 2026",
       "url": "https://app.opinion.trade/market/224?ref=opinion_hud",
-      "yesTokenId": "30627615055536305286566169732569340107032122966724835425430562383070641789144",
-      "noTokenId": "79863139610606003662199701530533040996878658819596258518208335529539435878684",
+      "yesTokenId": "38657130334280847167773231097148316435880408478785580470665778028877349028432",
+      "noTokenId": "76358356250593868109323897414097719403074824529781695137952201832419595383875",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -6181,8 +6181,8 @@
     "223": {
       "title": "AFC Champion 2026",
       "url": "https://app.opinion.trade/market/223?ref=opinion_hud",
-      "yesTokenId": "39753949563087094155455725289790769518777716799222346671085411278365498098207",
-      "noTokenId": "60167308695435499754772649212313288501009294303153937939320320087301752155215",
+      "yesTokenId": "100241035589259038511396787432619410422623659941847161688014768576293179212398",
+      "noTokenId": "45280283431791764210268607688560591296261303549359034955276512816382212478597",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -6438,10 +6438,32 @@
       },
       "type": "binary",
       "keywords": [
+        "recession",
+        "us economy",
+        "economic downturn",
+        "gdp contraction",
+        "bear market",
+        "nber",
+        "real gdp",
+        "negative growth",
+        "economic crisis",
+        "hard landing",
+        "depression",
+        "stagnation",
+        "slowdown",
+        "contraction",
+        "business cycle",
         "recession 2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "recession"
+      ],
+      "entityGroups": [
+        [
+          "recession",
+          "经济衰退"
+        ]
+      ]
     },
     "219": {
       "title": "Trove FDV above ... one day after launch?",
@@ -6533,14 +6555,42 @@
       },
       "type": "binary",
       "keywords": [
+        "bitcoin",
+        "sha-256",
+        "quantum computing",
+        "google willow",
+        "cryptography",
+        "hashing algorithm",
+        "post-quantum",
+        "encryption",
+        "blockchain upgrade",
+        "hard fork",
+        "mining algorithm",
+        "proof of work",
+        "quantum resistance",
+        "cryptographic vulnerability",
+        "algorithm change",
         "bitcoin replace",
         "replace sha-256",
         "sha-256 2027",
         "bitcoin replace sha-256",
         "replace sha-256 2027"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "bitcoin",
+        "sha-256"
+      ],
+      "entityGroups": [
+        [
+          "bitcoin",
+          "btc",
+          "比特币"
+        ],
+        [
+          "sha-256",
+          "sha256"
+        ]
+      ]
     },
     "3257": {
       "title": "Microstrategy delisted from MSCI index by March 31?",
@@ -6554,6 +6604,20 @@
       },
       "type": "binary",
       "keywords": [
+        "microstrategy",
+        "mstr",
+        "msci",
+        "delisting",
+        "removal",
+        "index",
+        "msci world",
+        "msci usa",
+        "exclusion",
+        "rebalancing",
+        "stock",
+        "ticker",
+        "announcement",
+        "official",
         "microstrategy delisted",
         "delisted msci",
         "msci index",
@@ -6562,8 +6626,19 @@
         "delisted msci index",
         "msci index march"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "microstrategy",
+        "msci"
+      ],
+      "entityGroups": [
+        [
+          "microstrategy",
+          "微策略"
+        ],
+        [
+          "msci"
+        ]
+      ]
     },
     "217": {
       "title": "Logan Paul’s Pikachu Illustrator Sale Price",
@@ -6826,10 +6901,30 @@
       },
       "type": "binary",
       "keywords": [
+        "jonathan byers",
+        "stranger things",
+        "charlie heaton",
+        "netflix",
+        "will byers",
+        "joyce byers",
+        "nancy wheeler",
+        "hawkins",
+        "upside down",
+        "season 5",
+        "tv show",
+        "duffer brothers",
+        "horror",
+        "sci-fi"
+      ],
+      "entities": [
         "jonathan byers"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entityGroups": [
+        [
+          "jonathan byers",
+          "乔纳森·拜尔斯"
+        ]
+      ]
     },
     "3222": {
       "title": "Holly Wheeler",
@@ -6843,10 +6938,31 @@
       },
       "type": "binary",
       "keywords": [
+        "holly wheeler",
+        "stranger things",
+        "netflix",
+        "hawkins",
+        "wheeler family",
+        "nancy wheeler",
+        "mike wheeler",
+        "karen wheeler",
+        "ted wheeler",
+        "duffer brothers",
+        "sci-fi",
+        "horror",
+        "season 5",
+        "st",
+        "upside down"
+      ],
+      "entities": [
         "holly wheeler"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entityGroups": [
+        [
+          "holly wheeler",
+          "霍莉·惠勒"
+        ]
+      ]
     },
     "3223": {
       "title": "Nancy Wheeler",
@@ -6860,10 +6976,33 @@
       },
       "type": "binary",
       "keywords": [
+        "nancy wheeler",
+        "stranger things",
+        "hawkins",
+        "jonathan byers",
+        "steve harrington",
+        "the post",
+        "vecna",
+        "upside down",
+        "netflix",
+        "duffer brothers",
+        "season 5",
+        "horror",
+        "sci-fi",
+        "80s",
+        "eleven"
+      ],
+      "entities": [
         "nancy wheeler"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entityGroups": [
+        [
+          "nancy wheeler",
+          "nancy",
+          "南茜·惠勒",
+          "南希·惠勒"
+        ]
+      ]
     },
     "3224": {
       "title": "Dustin Henderson",
@@ -6877,10 +7016,32 @@
       },
       "type": "binary",
       "keywords": [
+        "dustin henderson",
+        "stranger things",
+        "gaten matarazzo",
+        "hawkins",
+        "netflix",
+        "character",
+        "tv show",
+        "sci-fi",
+        "season 5",
+        "hellfire club",
+        "demodogs",
+        "gaten",
+        "dustin",
+        "henderson"
+      ],
+      "entities": [
         "dustin henderson"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entityGroups": [
+        [
+          "dustin henderson",
+          "dustin",
+          "达斯汀·亨德森",
+          "达斯汀"
+        ]
+      ]
     },
     "214": {
       "title": "What will be the top US Netflix show this week?",
@@ -6963,8 +7124,8 @@
     "213": {
       "title": "LoL: LCK 2026 Season Winner",
       "url": "https://app.opinion.trade/market/213?ref=opinion_hud",
-      "yesTokenId": "10575169940350673038329941282694993448649009946715875489267217836660242353416",
-      "noTokenId": "30731372030458147040263688259634213641967524788160964732342063860785107739513",
+      "yesTokenId": "7682515701098904209876418405456250608177487753685388267961214555958228311932",
+      "noTokenId": "11144765504299840815200126351230533546272772674037386081391185597469275201831",
       "volume": 0.0,
       "labels": {
         "yesLabel": "",
@@ -7789,10 +7950,31 @@
       },
       "type": "binary",
       "keywords": [
+        "tessa thompson",
+        "tessa",
+        "thompson",
+        "actress",
+        "valkyrie",
+        "charlotte hale",
+        "bianca",
+        "hollywood",
+        "celebrity",
+        "star",
+        "westworld",
+        "creed",
+        "thor",
+        "marvel",
+        "american actress"
+      ],
+      "entities": [
         "tessa thompson"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entityGroups": [
+        [
+          "tessa thompson",
+          "泰莎·汤普森"
+        ]
+      ]
     },
     "3132": {
       "title": "Will Japan conduct a yen-buying FX intervention by Jan 31, 2026 23:59 (UTC)?",
@@ -7806,6 +7988,20 @@
       },
       "type": "binary",
       "keywords": [
+        "japan",
+        "yen",
+        "fx intervention",
+        "currency intervention",
+        "foreign exchange",
+        "mof",
+        "ministry of finance",
+        "usd/jpy",
+        "dollar",
+        "yen-buying",
+        "market intervention",
+        "safeguard",
+        "support",
+        "exchange rate",
         "japan conduct",
         "conduct yen-buying",
         "yen-buying intervention",
@@ -7818,8 +8014,18 @@
         "intervention jan 2026",
         "jan 2026 utc"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "japan",
+        "yen"
+      ],
+      "entityGroups": [
+        [
+          "japan"
+        ],
+        [
+          "yen"
+        ]
+      ]
     },
     "208": {
       "title": "Will Polymarket launch its own Ethereum Layer 2 network (“POLY”) by ...?",
@@ -7998,16 +8204,43 @@
       },
       "type": "binary",
       "keywords": [
+        "us government",
+        "federal government",
+        "shutdown",
+        "government shutdown",
+        "appropriations",
+        "lapse in appropriations",
+        "opm",
+        "office of personnel management",
+        "furlough",
+        "federal employees",
+        "budget impasse",
+        "continuing resolution",
+        "partial shutdown",
+        "federal shutdown",
+        "government closure",
         "there another",
         "another government",
-        "government shutdown",
         "shutdown january",
         "there another government",
         "another government shutdown",
         "government shutdown january"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "us government",
+        "shutdown"
+      ],
+      "entityGroups": [
+        [
+          "us government",
+          "美国政府",
+          "美联储"
+        ],
+        [
+          "shutdown",
+          "government shutdown"
+        ]
+      ]
     },
     "204": {
       "title": "SpaceX IPO closing market cap above ...?",
@@ -8170,17 +8403,42 @@
       "type": "binary",
       "keywords": [
         "alex honnold",
-        "honnold free",
-        "free solo",
-        "solo taipei",
         "taipei 101",
+        "free solo",
+        "free soloing",
+        "climb",
+        "livestream",
+        "netflix",
+        "skyscraper",
+        "spire",
+        "ascent",
+        "honnold",
+        "taiwan",
+        "daredevil",
+        "rock climbing",
+        "taipei",
+        "honnold free",
+        "solo taipei",
         "alex honnold free",
         "honnold free solo",
         "free solo taipei",
         "solo taipei 101"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "alex honnold",
+        "taipei 101"
+      ],
+      "entityGroups": [
+        [
+          "alex honnold",
+          "honnold",
+          "亚历克斯·霍诺德"
+        ],
+        [
+          "taipei 101",
+          "台北101"
+        ]
+      ]
     },
     "3072": {
       "title": "Will the 1st pick in the 2026 NFL draft be a QB?",
@@ -8194,16 +8452,36 @@
       },
       "type": "binary",
       "keywords": [
+        "2026 nfl draft",
         "1st pick",
+        "first overall",
+        "quarterback",
+        "qb",
+        "signal caller",
+        "top pick",
+        "number one pick",
+        "draft order",
+        "draft prospects",
+        "college football",
+        "heisman",
+        "underclassmen",
+        "draft eligibility",
+        "draft class",
         "pick 2026",
         "2026 nfl",
         "nfl draft",
         "1st pick 2026",
-        "pick 2026 nfl",
-        "2026 nfl draft"
+        "pick 2026 nfl"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "2026年nfl选秀"
+      ],
+      "entityGroups": [
+        [
+          "2026年nfl选秀",
+          "2026年选秀"
+        ]
+      ]
     },
     "3062": {
       "title": "Trump out as President before 2027?",
@@ -8217,14 +8495,36 @@
       },
       "type": "binary",
       "keywords": [
+        "trump",
+        "president",
+        "resignation",
+        "resign",
+        "removal",
+        "25th amendment",
+        "impeachment",
+        "potus",
+        "white house",
+        "vice president",
+        "cabinet",
+        "inability",
+        "office",
+        "removed from office",
+        "step down",
         "trump out",
         "out president",
         "president 2027",
         "trump out president",
         "out president 2027"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "trump"
+      ],
+      "entityGroups": [
+        [
+          "trump",
+          "特朗普"
+        ]
+      ]
     },
     "202": {
       "title": "Zelenskyy out as Ukraine president by...?",
@@ -8307,6 +8607,21 @@
       },
       "type": "binary",
       "keywords": [
+        "trump",
+        "donald trump",
+        "jd vance",
+        "vance",
+        "endorsement",
+        "endorse",
+        "2028 election",
+        "gop primary",
+        "republican nomination",
+        "presidential candidate",
+        "backing",
+        "support",
+        "running mate",
+        "maga",
+        "vp",
         "trump endorse",
         "endorse vance",
         "vance president",
@@ -8315,8 +8630,20 @@
         "endorse vance president",
         "vance president 2027"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "trump",
+        "jd vance"
+      ],
+      "entityGroups": [
+        [
+          "trump",
+          "特朗普"
+        ],
+        [
+          "jd vance",
+          "vance"
+        ]
+      ]
     },
     "201": {
       "title": "Will fomo.family launch a token by ___ ?",
@@ -8480,6 +8807,21 @@
       },
       "type": "binary",
       "keywords": [
+        "israel",
+        "iran",
+        "strike",
+        "attack",
+        "missile",
+        "drone",
+        "air strike",
+        "bombing",
+        "idf",
+        "irgc",
+        "war",
+        "conflict",
+        "escalation",
+        "retaliation",
+        "tehran",
         "israel strikes",
         "strikes iran",
         "iran march",
@@ -8488,8 +8830,19 @@
         "strikes iran march",
         "iran march 2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "israel",
+        "iran"
+      ],
+      "entityGroups": [
+        [
+          "israel",
+          "以色列"
+        ],
+        [
+          "iran"
+        ]
+      ]
     },
     "198": {
       "title": "Tesla launches unsupervised full self driving (FSD) by...?",
@@ -9513,12 +9866,34 @@
       },
       "type": "binary",
       "keywords": [
+        "earthquake",
+        "quake",
+        "seismic",
+        "magnitude 9",
+        "megaquake",
+        "tremor",
+        "richter scale",
+        "tectonic",
+        "usgs",
+        "great earthquake",
+        "epicenter",
+        "fault line",
+        "seismology",
+        "shock",
+        "temblor",
         "above earthquake",
         "earthquake 2027",
         "above earthquake 2027"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "earthquake"
+      ],
+      "entityGroups": [
+        [
+          "earthquake",
+          "quake"
+        ]
+      ]
     },
     "2670": {
       "title": "Will Jesus Christ return before 2027?",
@@ -9533,13 +9908,35 @@
       "type": "binary",
       "keywords": [
         "jesus christ",
+        "second coming",
+        "parousia",
+        "rapture",
+        "messiah",
+        "end times",
+        "eschatology",
+        "apocalypse",
+        "revelation",
+        "christianity",
+        "bible prophecy",
+        "resurrection",
+        "return of christ",
+        "armageddon",
+        "tribulation",
         "christ return",
         "return 2027",
         "jesus christ return",
         "christ return 2027"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "jesus christ"
+      ],
+      "entityGroups": [
+        [
+          "jesus christ",
+          "jesus",
+          "耶稣基督"
+        ]
+      ]
     },
     "182": {
       "title": "NFC North Winner",
@@ -9770,8 +10167,8 @@
     "175": {
       "title": "Will Paradex launch a token by ...?",
       "url": "https://app.opinion.trade/market/175?ref=opinion_hud",
-      "yesTokenId": "13766909382150257467446436655331969926914504546602223743763739138754304589478",
-      "noTokenId": "63395900141993403526958685664529082221506856445119714541728475531415538149222",
+      "yesTokenId": "18568430249427019270202984814264355629680365141486647833183735458121155587578",
+      "noTokenId": "102176097149550958526874937355121726987634345361642536993334849398604218528098",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9964,8 +10361,8 @@
     "172": {
       "title": "Will Theo launch a token by...?",
       "url": "https://app.opinion.trade/market/172?ref=opinion_hud",
-      "yesTokenId": "92375133487601817273158619948385305146873016707564055643756591303201381212443",
-      "noTokenId": "4385122133632746527311038178320506001405940456672877158842798635848963655328",
+      "yesTokenId": "73764339915444905030961119041603992297312539851945003520426191019310355846703",
+      "noTokenId": "28782738786873284373059160801664071037912608618148201421302800412955369494446",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10036,8 +10433,8 @@
     "171": {
       "title": "OpenAI IPO by...?",
       "url": "https://app.opinion.trade/market/171?ref=opinion_hud",
-      "yesTokenId": "67797064011664553985611987694764090712915012213554730877439699244613155036935",
-      "noTokenId": "37076655403141810723292530021595531675081399539819129560717102398257140312999",
+      "yesTokenId": "19452222592396133352264721269935422965461316076668302263117070986899503411033",
+      "noTokenId": "21150968920966124130656489205211600494996379993297866947580008213486056111439",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10095,8 +10492,8 @@
     "169": {
       "title": "What will SpaceX's public ticker be?",
       "url": "https://app.opinion.trade/market/169?ref=opinion_hud",
-      "yesTokenId": "50904882888793289490788408545877265203885894272105486090811257985455299396618",
-      "noTokenId": "4884819733724555915009755083677517133481514084871846441040696488058963729428",
+      "yesTokenId": "110868385577292227688526078780284454399508634662256468596093748938799638769267",
+      "noTokenId": "73884790313079723042021802489832073259432205064036477373399041011955361219856",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10242,8 +10639,8 @@
     "167": {
       "title": "Will Pacifica launch a token by ...?",
       "url": "https://app.opinion.trade/market/167?ref=opinion_hud",
-      "yesTokenId": "7274576938117869642882720024688336554929238940813442084166665830660427519789",
-      "noTokenId": "54161957450775061826065879042472591369124418084845297540076170295740825648310",
+      "yesTokenId": "32065787976819552003106616532225079593269022927721443608771641942377734210432",
+      "noTokenId": "47770110368240473507905289892193841488749862288834357077189641561917951653078",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10606,8 +11003,8 @@
     "159": {
       "title": "Who will acquire TikTok?",
       "url": "https://app.opinion.trade/market/159?ref=opinion_hud",
-      "yesTokenId": "11689998972972281307974877574820366461564395335077851056678237617081961636394",
-      "noTokenId": "23692892241156136090244889911326805027720431146198956540402068923921840057299",
+      "yesTokenId": "9929712126215759499654705526714885169164434442307133179699319167314958802942",
+      "noTokenId": "4248780853991230046175901363232506355273597013066417570858180351769573554929",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10690,8 +11087,8 @@
     "158": {
       "title": "SpaceX IPO Closing Market Cap",
       "url": "https://app.opinion.trade/market/158?ref=opinion_hud",
-      "yesTokenId": "81133869454353425371884378785476335431555212749441345139648022233974747899951",
-      "noTokenId": "26453059385360584418250340236724565650792296092995463511714569740861521954510",
+      "yesTokenId": "87713237741266709414203056969159327735836822004159744186199220272642869290666",
+      "noTokenId": "66568671381733798013077711240728187876621263069586954122252415077352699294339",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11614,12 +12011,39 @@
       },
       "type": "binary",
       "keywords": [
+        "gold",
+        "ethereum",
+        "eth",
+        "xau",
+        "$5000",
+        "5k",
+        "price target",
+        "rally",
+        "comex",
+        "binance",
+        "crypto",
+        "precious metal",
+        "breakout",
+        "ath",
+        "resistance",
         "first gold",
         "gold eth",
         "first gold eth"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "gold",
+        "ethereum"
+      ],
+      "entityGroups": [
+        [
+          "gold"
+        ],
+        [
+          "ethereum",
+          "eth",
+          "以太坊"
+        ]
+      ]
     },
     "1546": {
       "title": "Supreme Court rules in favor of Trump's tariffs?",
@@ -11634,6 +12058,20 @@
       "type": "binary",
       "keywords": [
         "supreme court",
+        "scotus",
+        "trump",
+        "tariffs",
+        "trade war",
+        "ieepa",
+        "federal circuit",
+        "customs duties",
+        "import taxes",
+        "executive order",
+        "legal ruling",
+        "appeal",
+        "trade policy",
+        "v.o.s. selections",
+        "court decision",
         "court rules",
         "rules favor",
         "favor trump",
@@ -11643,8 +12081,20 @@
         "rules favor trump",
         "favor trump tariffs"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "supreme court",
+        "trump"
+      ],
+      "entityGroups": [
+        [
+          "supreme court",
+          "最高法院"
+        ],
+        [
+          "trump",
+          "特朗普"
+        ]
+      ]
     },
     "1721": {
       "title": "Monad vs MegaETH — who has the higher FDV one day after launch?",
@@ -11658,6 +12108,21 @@
       },
       "type": "binary",
       "keywords": [
+        "monad",
+        "megaeth",
+        "blockchain",
+        "l1",
+        "layer 1",
+        "evm",
+        "parallel execution",
+        "ethereum",
+        "scaling",
+        "token",
+        "airdrop",
+        "crypto",
+        "defi",
+        "smart contract",
+        "tge",
         "monad megaeth",
         "megaeth who",
         "who higher",
@@ -11671,8 +12136,20 @@
         "who higher fdv",
         "higher fdv one"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "monad",
+        "megaeth"
+      ],
+      "entityGroups": [
+        [
+          "monad",
+          "蒙纳德"
+        ],
+        [
+          "megaeth",
+          "以太坊"
+        ]
+      ]
     },
     "1951": {
       "title": "US recession in 2025?",
@@ -11686,10 +12163,32 @@
       },
       "type": "binary",
       "keywords": [
+        "recession",
+        "economic downturn",
+        "contraction",
+        "negative growth",
+        "gdp decline",
+        "bear market",
+        "depression",
+        "slump",
+        "stagnation",
+        "nber",
+        "bea",
+        "real gdp",
+        "us economy",
+        "financial crisis",
+        "hard landing",
         "recession 2025"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "recession"
+      ],
+      "entityGroups": [
+        [
+          "recession",
+          "经济衰退"
+        ]
+      ]
     },
     "1856": {
       "title": "Will Zhao Bei return to China before Jia Yueting ?",
@@ -11704,17 +12203,38 @@
       "type": "binary",
       "keywords": [
         "zhao bei",
+        "jia yueting",
+        "china",
+        "return",
+        "mainland",
+        "exile",
+        "fugitive",
+        "leeco",
+        "faraday future",
+        "debt",
+        "extradition",
+        "back",
         "bei return",
         "return china",
         "china jia",
-        "jia yueting",
         "zhao bei return",
         "bei return china",
         "return china jia",
         "china jia yueting"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "zhao bei",
+        "jia yueting"
+      ],
+      "entityGroups": [
+        [
+          "zhao bei"
+        ],
+        [
+          "jia yueting",
+          "贾跃亭"
+        ]
+      ]
     },
     "2178": {
       "title": "Will Blackpink release an album by February 28?",
@@ -11728,14 +12248,35 @@
       },
       "type": "binary",
       "keywords": [
+        "blackpink",
+        "bp",
+        "blʌͻkpiиk",
+        "album",
+        "comeback",
+        "release",
+        "k-pop",
+        "yg entertainment",
+        "new music",
+        "studio album",
+        "lp",
+        "girl group",
+        "blinks",
+        "single album",
+        "repackage",
         "blackpink release",
         "release album",
         "album february",
         "blackpink release album",
         "release album february"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "blackpink"
+      ],
+      "entityGroups": [
+        [
+          "blackpink"
+        ]
+      ]
     },
     "2398": {
       "title": "Will Netflix close Warner Bros. acquisition by end of 2026?",
@@ -11749,9 +12290,21 @@
       },
       "type": "binary",
       "keywords": [
+        "netflix",
+        "warner bros",
+        "wbd",
+        "hbo",
+        "max",
+        "acquisition",
+        "merger",
+        "buyout",
+        "takeover",
+        "deal",
+        "streaming",
+        "consolidation",
+        "m&a",
         "netflix close",
         "close warner",
-        "warner bros",
         "bros acquisition",
         "acquisition 2026",
         "netflix close warner",
@@ -11759,8 +12312,19 @@
         "warner bros acquisition",
         "bros acquisition 2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "netflix",
+        "warner bros."
+      ],
+      "entityGroups": [
+        [
+          "netflix"
+        ],
+        [
+          "warner bros.",
+          "华纳兄弟"
+        ]
+      ]
     },
     "2368": {
       "title": "Tim Cook out as Apple CEO by March 31?",
@@ -11775,6 +12339,20 @@
       "type": "binary",
       "keywords": [
         "tim cook",
+        "apple",
+        "ceo",
+        "resignation",
+        "resign",
+        "fired",
+        "step down",
+        "departure",
+        "successor",
+        "aapl",
+        "ousted",
+        "replaced",
+        "leadership change",
+        "exit",
+        "leave",
         "cook out",
         "out apple",
         "apple ceo",
@@ -11784,8 +12362,19 @@
         "out apple ceo",
         "apple ceo march"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "tim cook",
+        "apple"
+      ],
+      "entityGroups": [
+        [
+          "tim cook",
+          "蒂姆·库克"
+        ],
+        [
+          "apple"
+        ]
+      ]
     },
     "153": {
       "title": "US Fed Rate Decision: April 2026",
@@ -15120,12 +15709,33 @@
       },
       "type": "binary",
       "keywords": [
+        "kraken",
+        "kraken exchange",
+        "ipo",
+        "initial public offering",
+        "public listing",
+        "stock market debut",
+        "going public",
+        "shares",
+        "q1 2026",
+        "1q2026",
+        "valuation",
+        "ticker",
+        "crypto exchange",
+        "listing",
         "kraken ipo",
         "ipo 1q2026",
         "kraken ipo 1q2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "kraken"
+      ],
+      "entityGroups": [
+        [
+          "kraken",
+          "kraken交易所"
+        ]
+      ]
     },
     "3364": {
       "title": "Ethereum all time high in 1Q2026?",
@@ -15139,16 +15749,39 @@
       },
       "type": "binary",
       "keywords": [
+        "ethereum",
+        "eth",
+        "ether",
+        "crypto",
+        "cryptocurrency",
+        "all time high",
+        "ath",
+        "new high",
+        "record high",
+        "price peak",
+        "breakout",
+        "rally",
+        "pump",
+        "blockchain",
+        "altcoin",
         "ethereum all",
         "all time",
         "time high",
         "high 1q2026",
         "ethereum all time",
-        "all time high",
         "time high 1q2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "ethereum"
+      ],
+      "entityGroups": [
+        [
+          "ethereum",
+          "eth",
+          "ether",
+          "以太坊"
+        ]
+      ]
     },
     "3361": {
       "title": "Hyperliquid all time high by March 31st, 2026?",
@@ -15162,6 +15795,21 @@
       },
       "type": "binary",
       "keywords": [
+        "hyperliquid",
+        "hype",
+        "hype token",
+        "defi",
+        "perpetuals",
+        "dex",
+        "crypto",
+        "trading",
+        "futures",
+        "price",
+        "blockchain",
+        "l1",
+        "airdrop",
+        "tokenomics",
+        "market",
         "hyperliquid all",
         "all time",
         "time high",
@@ -15174,8 +15822,15 @@
         "high march 31st",
         "march 31st 2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "hyperliquid"
+      ],
+      "entityGroups": [
+        [
+          "hyperliquid",
+          "hype"
+        ]
+      ]
     },
     "3360": {
       "title": "A crypto hack over $100m in 1Q2026?",
@@ -15189,6 +15844,21 @@
       },
       "type": "binary",
       "keywords": [
+        "hack",
+        "exploit",
+        "theft",
+        "rugpull",
+        "bridge exploit",
+        "defi hack",
+        "crypto theft",
+        "rekt",
+        "drain",
+        "flash loan attack",
+        "smart contract bug",
+        "private key compromise",
+        "exit scam",
+        "bridge hack",
+        "heist",
         "crypto hack",
         "hack over",
         "over $100m",
@@ -15197,8 +15867,16 @@
         "hack over $100m",
         "over $100m 1q2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "crypto hack"
+      ],
+      "entityGroups": [
+        [
+          "crypto hack",
+          "加密货币黑客攻击",
+          "加密货币漏洞利用"
+        ]
+      ]
     },
     "3359": {
       "title": "USDT depeg in 1Q2026?",
@@ -15212,12 +15890,35 @@
       },
       "type": "binary",
       "keywords": [
+        "usdt",
+        "tether",
+        "stablecoin",
+        "depeg",
+        "peg",
+        "dollar",
+        "collapse",
+        "crash",
+        "price",
+        "crypto",
+        "tether usd",
+        "tether token",
+        "stablecoin depeg",
+        "tether price",
+        "1:1",
         "usdt depeg",
         "depeg 1q2026",
         "usdt depeg 1q2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "usdt"
+      ],
+      "entityGroups": [
+        [
+          "usdt",
+          "泰达币",
+          "以太坊"
+        ]
+      ]
     },
     "3356": {
       "title": "Megaquake by March 31st, 2026?",
@@ -15231,14 +15932,37 @@
       },
       "type": "binary",
       "keywords": [
+        "earthquake",
+        "megaquake",
+        "seismic",
+        "tremor",
+        "magnitude 8",
+        "great earthquake",
+        "tectonic",
+        "fault line",
+        "richter scale",
+        "epicenter",
+        "temblor",
+        "quake",
+        "seismic activity",
+        "natural disaster",
+        "shock",
         "megaquake march",
         "march 31st",
         "31st 2026",
         "megaquake march 31st",
         "march 31st 2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "megaquake"
+      ],
+      "entityGroups": [
+        [
+          "megaquake",
+          "超级地震",
+          "特大地震"
+        ]
+      ]
     },
     "3357": {
       "title": "Another critical Cloudflare incident by March 31, 2026?",
@@ -15252,6 +15976,21 @@
       },
       "type": "binary",
       "keywords": [
+        "cloudflare",
+        "outage",
+        "downtime",
+        "incident",
+        "critical",
+        "status page",
+        "service disruption",
+        "502 error",
+        "503 error",
+        "5xx error",
+        "server error",
+        "network failure",
+        "red status",
+        "cloudflare status",
+        "system failure",
         "another critical",
         "critical cloudflare",
         "cloudflare incident",
@@ -15262,8 +16001,14 @@
         "cloudflare incident march",
         "incident march 2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "cloudflare"
+      ],
+      "entityGroups": [
+        [
+          "cloudflare"
+        ]
+      ]
     },
     "3355": {
       "title": "US strike on Syria by March 31st, 2026?",
@@ -15277,6 +16022,21 @@
       },
       "type": "binary",
       "keywords": [
+        "us",
+        "syria",
+        "airstrike",
+        "missile",
+        "drone",
+        "bombing",
+        "pentagon",
+        "assad",
+        "damascus",
+        "military",
+        "attack",
+        "intervention",
+        "coalition",
+        "defense",
+        "escalation",
         "strike syria",
         "syria march",
         "march 31st",
@@ -15285,8 +16045,15 @@
         "syria march 31st",
         "march 31st 2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "syria"
+      ],
+      "entityGroups": [
+        [
+          "syria",
+          "叙利亚"
+        ]
+      ]
     },
     "3369": {
       "title": "Will CZ return to Binance in 1Q2026?",
@@ -15300,12 +16067,39 @@
       },
       "type": "binary",
       "keywords": [
+        "cz",
+        "changpeng zhao",
+        "binance",
+        "ceo",
+        "return",
+        "comeback",
+        "rehire",
+        "executive",
+        "zhao",
+        "bnb",
+        "permanent role",
+        "advisory",
+        "crypto exchange",
+        "founder",
+        "leadership",
         "return binance",
         "binance 1q2026",
         "return binance 1q2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "cz",
+        "binance"
+      ],
+      "entityGroups": [
+        [
+          "cz",
+          "changpeng zhao",
+          "赵长鹏"
+        ],
+        [
+          "binance"
+        ]
+      ]
     },
     "3368": {
       "title": "BNB all time high in 1Q2026?",
@@ -15319,16 +16113,36 @@
       },
       "type": "binary",
       "keywords": [
+        "bnb",
+        "binance coin",
+        "bnb price",
+        "ath",
+        "all time high",
+        "q1 2026",
+        "crypto",
+        "altcoin",
+        "bnb token",
+        "binance",
+        "rally",
+        "pump",
+        "new high",
+        "record high",
         "bnb all",
         "all time",
         "time high",
         "high 1q2026",
         "bnb all time",
-        "all time high",
         "time high 1q2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "bnb"
+      ],
+      "entityGroups": [
+        [
+          "bnb",
+          "币安币"
+        ]
+      ]
     },
     "3367": {
       "title": "Will BNB hit $1500 in 2026?",
@@ -15342,14 +16156,36 @@
       },
       "type": "binary",
       "keywords": [
+        "bnb",
+        "binance coin",
+        "crypto",
+        "cryptocurrency",
+        "price",
+        "trading",
+        "altcoin",
+        "token",
+        "bullish",
+        "rally",
+        "ath",
+        "resistance",
+        "breakout",
+        "usdt",
+        "volatility",
         "bnb hit",
         "hit $1500",
         "$1500 2026",
         "bnb hit $1500",
         "hit $1500 2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "bnb"
+      ],
+      "entityGroups": [
+        [
+          "bnb",
+          "币安币"
+        ]
+      ]
     },
     "3366": {
       "title": "Will Base launch a token in 2026?",
@@ -15363,14 +16199,36 @@
       },
       "type": "binary",
       "keywords": [
+        "base",
+        "coinbase",
+        "l2",
+        "layer 2",
+        "token launch",
+        "airdrop",
+        "native token",
+        "governance token",
+        "base chain",
+        "op stack",
+        "mainnet",
+        "ecosystem",
+        "base network",
+        "smart contract",
+        "rollup",
         "base launch",
         "launch token",
         "token 2026",
         "base launch token",
         "launch token 2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "base"
+      ],
+      "entityGroups": [
+        [
+          "base",
+          "base链"
+        ]
+      ]
     },
     "3365": {
       "title": "Will Satoshi move any Bitcoin in 2026?",
@@ -15384,6 +16242,21 @@
       },
       "type": "binary",
       "keywords": [
+        "satoshi",
+        "nakamoto",
+        "bitcoin",
+        "btc",
+        "move",
+        "transfer",
+        "spend",
+        "outflow",
+        "swap",
+        "wallet",
+        "arkham",
+        "genesis",
+        "coins",
+        "address",
+        "blockchain",
         "satoshi move",
         "move any",
         "any bitcoin",
@@ -15392,14 +16265,27 @@
         "move any bitcoin",
         "any bitcoin 2026"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "satoshi",
+        "bitcoin"
+      ],
+      "entityGroups": [
+        [
+          "satoshi",
+          "中本聪"
+        ],
+        [
+          "bitcoin",
+          "btc",
+          "比特币"
+        ]
+      ]
     },
     "234": {
       "title": "Will Nansen launch a token by ...?",
       "url": "https://app.opinion.trade/market/234?ref=opinion_hud",
-      "yesTokenId": "72379689033837772624561528952286089261926066666758511403261054712855099789783",
-      "noTokenId": "101746785351718498645275463482533469807556338402388999984090081872192421917734",
+      "yesTokenId": "95021116774030237012252900809537722656013308667603305368893512092366639239281",
+      "noTokenId": "109068237909965667181747501994977816936601600543463819246746856888120206453707",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -15839,10 +16725,30 @@
       },
       "type": "binary",
       "keywords": [
-        "june 2026"
+        "date",
+        "deadline",
+        "2026",
+        "mid-year",
+        "calendar",
+        "schedule",
+        "expiration",
+        "timeline",
+        "future",
+        "target",
+        "end of june",
+        "q2 2026",
+        "june 2026",
+        "specific date",
+        "timeframe"
       ],
-      "entities": [],
-      "entityGroups": []
+      "entities": [
+        "2026年6月30日"
+      ],
+      "entityGroups": [
+        [
+          "2026年6月30日"
+        ]
+      ]
     },
     "3448": {
       "title": "March 31, 2026",
@@ -15856,20 +16762,21 @@
       },
       "type": "binary",
       "keywords": [
-        "march 31 2026",
-        "2026-03-31",
-        "3/31/26",
-        "end of march",
-        "q1 2026",
-        "first quarter 2026",
-        "date",
-        "time",
-        "schedule",
-        "calendar",
-        "march 2026",
-        "31st march",
         "2026",
-        "spring 2026"
+        "march 31",
+        "deadline",
+        "target date",
+        "timeline",
+        "schedule",
+        "future",
+        "q1 2026",
+        "end of quarter",
+        "calendar",
+        "expiration",
+        "due date",
+        "date",
+        "timeframe",
+        "march 2026"
       ],
       "entities": [
         "2026年3月31日"
@@ -15893,27 +16800,28 @@
       "type": "binary",
       "keywords": [
         "200 million",
-        "200m",
-        "valuation",
         "funding",
-        "capital",
-        "investment",
-        "milestone",
-        "price target",
+        "valuation",
         "market cap",
+        "investment",
+        "capital",
         "round",
-        "settlement",
-        "grant",
-        "budget",
-        "revenue",
-        "financing"
+        "milestone",
+        "jackpot",
+        "200m",
+        "money",
+        "amount",
+        "raise",
+        "target"
       ],
       "entities": [
         "$200m"
       ],
       "entityGroups": [
         [
-          "$200m"
+          "$200m",
+          "200m",
+          "2亿美元"
         ]
       ]
     },
@@ -15930,19 +16838,19 @@
       "type": "binary",
       "keywords": [
         "300 million",
-        "300m",
         "valuation",
-        "market cap",
         "funding",
-        "price",
-        "target",
+        "market cap",
+        "price target",
         "milestone",
-        "jackpot",
-        "value",
         "capital",
+        "investment",
         "round",
+        "300m",
+        "300,000,000",
+        "financial goal",
         "threshold",
-        "limit"
+        "target"
       ],
       "entities": [
         "$300m"
@@ -15950,7 +16858,6 @@
       "entityGroups": [
         [
           "$300m",
-          "300m",
           "3亿美元"
         ]
       ]
@@ -15958,8 +16865,8 @@
     "241": {
       "title": "What will Gold settle at in January?",
       "url": "https://app.opinion.trade/market/241?ref=opinion_hud",
-      "yesTokenId": "8076707663817857107843696848049034345603328647528153159981438098187322175913",
-      "noTokenId": "49499262399986282511746706303909628315656270592575782381230471469946981397990",
+      "yesTokenId": "72171039594088283154813543797034385734219701997288879380279268177598544043409",
+      "noTokenId": "68097988781237584349404750954004400834504490892618235246295702834636322323520",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -16120,18 +17027,18 @@
       "keywords": [
         "june 30 2026",
         "2026-06-30",
-        "6/30/26",
-        "mid-year 2026",
-        "end of q2 2026",
-        "h1 2026",
         "deadline",
         "target date",
         "expiration",
         "settlement date",
-        "future date",
+        "june 30th",
+        "mid-year 2026",
+        "q2 2026",
         "2026",
         "date",
-        "calendar",
+        "timeframe",
+        "milestone",
+        "end of june",
         "june 2026"
       ],
       "entities": [
@@ -16155,21 +17062,20 @@
       },
       "type": "binary",
       "keywords": [
-        "date",
-        "deadline",
-        "target date",
-        "end of year",
         "2026",
+        "december",
+        "deadline",
+        "date",
         "future",
-        "calendar",
         "timeline",
-        "expiration",
+        "end of year",
         "new year's eve",
-        "12/31/26",
-        "time horizon",
-        "cutoff",
-        "schedule",
-        "milestone",
+        "2026-12-31",
+        "target date",
+        "expiration",
+        "resolution date",
+        "calendar",
+        "q4 2026",
         "december 2026"
       ],
       "entities": [
@@ -16253,19 +17159,19 @@
       "keywords": [
         "200 million",
         "funding",
-        "valuation",
-        "box office",
-        "revenue",
-        "milestone",
+        "round",
         "investment",
         "capital",
+        "valuation",
+        "milestone",
+        "raise",
+        "venture",
+        "finance",
         "money",
-        "amount",
-        "round",
-        "dollars",
-        "usd",
-        "target",
-        "budget"
+        "deal",
+        "series",
+        "seed",
+        "ipo"
       ],
       "entities": [
         "$200m"
@@ -16273,7 +17179,7 @@
       "entityGroups": [
         [
           "$200m",
-          "200m"
+          "2亿美元"
         ]
       ]
     },
@@ -16367,8 +17273,8 @@
     "165": {
       "title": "Boxing: Jake Paul vs. Anthony Joshua",
       "url": "https://app.opinion.trade/market/165?ref=opinion_hud",
-      "yesTokenId": "109700888226377072602333973753881277613989866309983366796525701295863474027743",
-      "noTokenId": "86560868070631332774212509994473071671544177887371629839114752517407269926280",
+      "yesTokenId": "112992676989062078340225584292952551316883255722322431902263417746805782802919",
+      "noTokenId": "32461632258668303400686031558706327373181579946771601415406989478569951367260",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -16435,6 +17341,89 @@
         "noLabel": "NO"
       },
       "type": "binary"
+    },
+    "3575": {
+      "title": "Ethereum Up or Down on January 3?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/3575?ref=opinion_hud",
+      "yesTokenId": "78037292310221433267093633760952516975329740431948272234715762932732274652957",
+      "noTokenId": "56785309127296038269832259877862485741765446631513824068118909963227312580857",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "keywords": [
+        "ethereum",
+        "eth",
+        "ether",
+        "crypto",
+        "cryptocurrency",
+        "price",
+        "trading",
+        "market",
+        "candle",
+        "close",
+        "volatility",
+        "movement",
+        "digital asset",
+        "altcoin",
+        "ethereum down",
+        "down january",
+        "ethereum down january"
+      ],
+      "entities": [
+        "ethereum"
+      ],
+      "entityGroups": [
+        [
+          "ethereum",
+          "eth",
+          "以太坊"
+        ]
+      ],
+      "type": "binary"
+    },
+    "3571": {
+      "title": "Bitcoin Up or Down on January 3?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/3571?ref=opinion_hud",
+      "yesTokenId": "79746206937680793708751718201038452338964545147223712491948264011489386403885",
+      "noTokenId": "45077949809569133606850449094300701152439220636879764684485098331957249500714",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "keywords": [
+        "bitcoin",
+        "btc",
+        "crypto",
+        "cryptocurrency",
+        "price",
+        "trading",
+        "candlestick",
+        "volatility",
+        "binance",
+        "usdt",
+        "digital asset",
+        "blockchain",
+        "spot market",
+        "exchange",
+        "tether",
+        "bitcoin down",
+        "down january",
+        "bitcoin down january"
+      ],
+      "entities": [
+        "bitcoin"
+      ],
+      "entityGroups": [
+        [
+          "bitcoin",
+          "btc",
+          "比特币"
+        ]
+      ],
+      "type": "binary"
     }
   },
   "index": {
@@ -16451,11 +17440,17 @@
     "$300m": [
       "3506"
     ],
+    "$5000": [
+      "1098"
+    ],
     "$based": [
       "97"
     ],
-    "12/31/26": [
-      "3509"
+    "1:1": [
+      "3359"
+    ],
+    "1q2026": [
+      "3362"
     ],
     "1st edition": [
       "239"
@@ -16474,8 +17469,7 @@
       "3525"
     ],
     "200m": [
-      "3505",
-      "3525"
+      "3505"
     ],
     "2025": [
       "122",
@@ -16519,6 +17513,7 @@
       "224",
       "240",
       "3448",
+      "3449",
       "3508",
       "3509",
       "78",
@@ -16613,11 +17608,11 @@
     "2026 utc": [
       "3132"
     ],
-    "2026-03-31": [
-      "3448"
-    ],
     "2026-06-30": [
       "3508"
+    ],
+    "2026-12-31": [
+      "3509"
     ],
     "2026年12月31日": [
       "3509"
@@ -16626,12 +17621,29 @@
       "3448"
     ],
     "2026年6月30日": [
+      "3449",
       "3508"
     ],
-    "3/31/26": [
-      "3448"
+    "2026年nfl选秀": [
+      "3072"
+    ],
+    "2026年选秀": [
+      "3072"
+    ],
+    "2028 election": [
+      "3055"
+    ],
+    "25th amendment": [
+      "3062"
+    ],
+    "2亿美元": [
+      "3505",
+      "3525"
     ],
     "300 million": [
+      "3506"
+    ],
+    "300,000,000": [
       "3506"
     ],
     "300m": [
@@ -16642,20 +17654,29 @@
       "3356",
       "3361"
     ],
-    "31st march": [
-      "3448"
-    ],
     "3亿美元": [
       "3506"
     ],
     "500 2026": [
       "186"
     ],
-    "6/30/26": [
-      "3508"
+    "502 error": [
+      "3357"
+    ],
+    "503 error": [
+      "3357"
+    ],
+    "5k": [
+      "1098"
+    ],
+    "5xx error": [
+      "3357"
     ],
     "7.0": [
       "187"
+    ],
+    "80s": [
+      "3223"
     ],
     "98th academy awards": [
       "211"
@@ -16665,7 +17686,8 @@
       "210"
     ],
     "aapl": [
-      "122"
+      "122",
+      "2368"
     ],
     "aapl close": [
       "122"
@@ -16750,7 +17772,8 @@
     ],
     "acquisition": [
       "159",
-      "160"
+      "160",
+      "2398"
     ],
     "acquisition 2026": [
       "2398"
@@ -16763,7 +17786,8 @@
       "140"
     ],
     "actress": [
-      "141"
+      "141",
+      "3158"
     ],
     "actress winner": [
       "139",
@@ -16775,11 +17799,17 @@
     "added 500 2026": [
       "186"
     ],
+    "address": [
+      "3365"
+    ],
     "administration": [
       "202"
     ],
     "ador": [
       "132"
+    ],
+    "advisory": [
+      "3369"
     ],
     "aerospace": [
       "204"
@@ -16853,12 +17883,16 @@
     "ai trading": [
       "200"
     ],
+    "air strike": [
+      "3039"
+    ],
     "airdrop": [
       "118",
       "119",
       "167",
       "168",
       "172",
+      "1721",
       "173",
       "174",
       "175",
@@ -16877,6 +17911,8 @@
       "233",
       "234",
       "244",
+      "3361",
+      "3366",
       "67",
       "95",
       "96",
@@ -16884,10 +17920,14 @@
       "99"
     ],
     "airstrike": [
-      "144"
+      "144",
+      "3355"
     ],
     "ai模型": [
       "237"
+    ],
+    "album": [
+      "2178"
     ],
     "album february": [
       "2178"
@@ -16900,6 +17940,9 @@
     ],
     "algorithm": [
       "200"
+    ],
+    "algorithm change": [
+      "3256"
     ],
     "ali khamenei": [
       "242"
@@ -16923,8 +17966,15 @@
       "125"
     ],
     "altcoin": [
+      "3364",
+      "3367",
+      "3368",
+      "3575",
       "64",
       "85"
+    ],
+    "american actress": [
+      "3158"
     ],
     "american football": [
       "179",
@@ -16940,14 +17990,15 @@
       "223"
     ],
     "amount": [
-      "3525"
+      "3505"
     ],
     "ampas": [
       "133",
       "141"
     ],
     "announcement": [
-      "233"
+      "233",
+      "3257"
     ],
     "annual awards": [
       "151"
@@ -16989,11 +18040,18 @@
     "ap mvp": [
       "240"
     ],
+    "apocalypse": [
+      "2670"
+    ],
     "app": [
       "159"
     ],
+    "appeal": [
+      "1546"
+    ],
     "apple": [
-      "122"
+      "122",
+      "2368"
     ],
     "apple aapl": [
       "122"
@@ -17007,6 +18065,9 @@
     "apple ceo march": [
       "2368"
     ],
+    "appropriations": [
+      "3114"
+    ],
     "april 2026": [
       "153"
     ],
@@ -17018,6 +18079,12 @@
     ],
     "arena trading competition": [
       "200"
+    ],
+    "arkham": [
+      "3365"
+    ],
+    "armageddon": [
+      "2670"
     ],
     "armed conflict": [
       "144"
@@ -17040,8 +18107,18 @@
     "asc": [
       "210"
     ],
+    "ascent": [
+      "3073"
+    ],
+    "assad": [
+      "3355"
+    ],
     "ath": [
+      "1098",
       "145",
+      "3364",
+      "3367",
+      "3368",
       "58"
     ],
     "atletico madrid": [
@@ -17049,6 +18126,10 @@
     ],
     "atp": [
       "222"
+    ],
+    "attack": [
+      "3039",
+      "3355"
     ],
     "auction": [
       "217",
@@ -17099,6 +18180,12 @@
     "ayatollah": [
       "242"
     ],
+    "back": [
+      "1856"
+    ],
+    "backing": [
+      "3055"
+    ],
     "backpack": [
       "95"
     ],
@@ -17134,7 +18221,11 @@
       "82"
     ],
     "base": [
-      "119"
+      "119",
+      "3366"
+    ],
+    "base chain": [
+      "3366"
     ],
     "base launch": [
       "119",
@@ -17145,7 +18236,8 @@
       "3366"
     ],
     "base network": [
-      "119"
+      "119",
+      "3366"
     ],
     "based": [
       "97"
@@ -17157,7 +18249,8 @@
       "97"
     ],
     "base链": [
-      "119"
+      "119",
+      "3366"
     ],
     "basketball": [
       "103",
@@ -17165,6 +18258,13 @@
     ],
     "basketball league": [
       "103"
+    ],
+    "bea": [
+      "1951"
+    ],
+    "bear market": [
+      "1951",
+      "3265"
     ],
     "bei return": [
       "1856"
@@ -17246,6 +18346,12 @@
     "betting": [
       "207"
     ],
+    "bianca": [
+      "3158"
+    ],
+    "bible prophecy": [
+      "2670"
+    ],
     "big tech": [
       "65"
     ],
@@ -17255,17 +18361,36 @@
     "biggest company": [
       "65"
     ],
+    "binance": [
+      "1098",
+      "3368",
+      "3369",
+      "3571"
+    ],
     "binance 1q2026": [
       "3369"
+    ],
+    "binance coin": [
+      "3367",
+      "3368"
     ],
     "bitcoin": [
       "111",
       "112",
       "145",
+      "3256",
+      "3365",
+      "3571",
       "58"
     ],
     "bitcoin 2026": [
       "3365"
+    ],
+    "bitcoin down": [
+      "3571"
+    ],
+    "bitcoin down january": [
+      "3571"
     ],
     "bitcoin hit": [
       "112",
@@ -17287,10 +18412,16 @@
     "bitcoin replace sha-256": [
       "3256"
     ],
+    "blackpink": [
+      "2178"
+    ],
     "blackpink release": [
       "2178"
     ],
     "blackpink release album": [
+      "2178"
+    ],
+    "blinks": [
       "2178"
     ],
     "blockbuster": [
@@ -17301,6 +18432,7 @@
       "119",
       "167",
       "172",
+      "1721",
       "183",
       "192",
       "194",
@@ -17308,6 +18440,10 @@
       "208",
       "229",
       "233",
+      "3361",
+      "3364",
+      "3365",
+      "3571",
       "64",
       "85",
       "95",
@@ -17315,6 +18451,17 @@
     ],
     "blockchain analytics": [
       "234"
+    ],
+    "blockchain upgrade": [
+      "3256"
+    ],
+    "blʌͻkpiиk": [
+      "2178"
+    ],
+    "bnb": [
+      "3367",
+      "3368",
+      "3369"
     ],
     "bnb all": [
       "3368"
@@ -17328,9 +18475,19 @@
     "bnb hit $1500": [
       "3367"
     ],
+    "bnb price": [
+      "3368"
+    ],
+    "bnb token": [
+      "3368"
+    ],
     "boj": [
       "120",
       "230"
+    ],
+    "bombing": [
+      "3039",
+      "3355"
     ],
     "border conflict": [
       "188"
@@ -17348,7 +18505,6 @@
       "81"
     ],
     "box office": [
-      "3525",
       "84"
     ],
     "box office hit": [
@@ -17357,8 +18513,22 @@
     "box office record": [
       "84"
     ],
+    "bp": [
+      "2178"
+    ],
     "breach": [
       "226"
+    ],
+    "breakout": [
+      "1098",
+      "3364",
+      "3367"
+    ],
+    "bridge exploit": [
+      "3360"
+    ],
+    "bridge hack": [
+      "3360"
     ],
     "bros acquisition": [
       "2398"
@@ -17374,14 +18544,16 @@
       "111",
       "112",
       "145",
+      "3256",
+      "3365",
+      "3571",
       "58"
     ],
     "buccaneers": [
       "181"
     ],
-    "budget": [
-      "3505",
-      "3525"
+    "budget impasse": [
+      "3114"
     ],
     "bull market": [
       "58"
@@ -17394,23 +18566,33 @@
       "241",
       "62"
     ],
+    "bullish": [
+      "3367"
+    ],
     "bunnies": [
       "132"
     ],
     "business": [
       "236"
     ],
+    "business cycle": [
+      "3265"
+    ],
     "buyout": [
       "159",
-      "160"
+      "160",
+      "2398"
     ],
     "bytedance": [
       "159",
       "160"
     ],
+    "cabinet": [
+      "3062"
+    ],
     "calendar": [
       "3448",
-      "3508",
+      "3449",
       "3509"
     ],
     "cambodia": [
@@ -17421,6 +18603,12 @@
     ],
     "campaign": [
       "131"
+    ],
+    "candle": [
+      "3575"
+    ],
+    "candlestick": [
+      "3571"
     ],
     "cap above": [
       "204",
@@ -17461,6 +18649,9 @@
     "ceasefire broken": [
       "226"
     ],
+    "celebrity": [
+      "3158"
+    ],
     "central bank": [
       "107",
       "120",
@@ -17470,7 +18661,9 @@
       "78"
     ],
     "ceo": [
-      "193"
+      "193",
+      "2368",
+      "3369"
     ],
     "ceo march": [
       "2368"
@@ -17515,8 +18708,12 @@
       "103",
       "179"
     ],
+    "changpeng zhao": [
+      "3369"
+    ],
     "character": [
-      "215"
+      "215",
+      "3224"
     ],
     "charizard": [
       "239"
@@ -17526,6 +18723,12 @@
     ],
     "charizard sale price": [
       "239"
+    ],
+    "charlie heaton": [
+      "3221"
+    ],
+    "charlotte hale": [
+      "3158"
     ],
     "charts": [
       "214"
@@ -17548,6 +18751,7 @@
     ],
     "china": [
       "142",
+      "1856",
       "212"
     ],
     "china jia": [
@@ -17563,6 +18767,9 @@
       "2670"
     ],
     "christ return 2027": [
+      "2670"
+    ],
+    "christianity": [
       "2670"
     ],
     "christine lagarde": [
@@ -17614,10 +18821,14 @@
     "cleric": [
       "242"
     ],
+    "climb": [
+      "3073"
+    ],
     "close": [
       "122",
       "125",
-      "126"
+      "126",
+      "3575"
     ],
     "close 2025": [
       "122",
@@ -17653,23 +18864,47 @@
     "closing price": [
       "123"
     ],
+    "cloudflare": [
+      "3357"
+    ],
     "cloudflare incident": [
       "3357"
     ],
     "cloudflare incident march": [
       "3357"
     ],
+    "cloudflare status": [
+      "3357"
+    ],
     "club competition": [
       "83"
     ],
+    "coalition": [
+      "3355"
+    ],
     "coinbase": [
-      "119"
+      "119",
+      "3366"
+    ],
+    "coins": [
+      "3365"
+    ],
+    "collapse": [
+      "3359"
     ],
     "collectible": [
       "217"
     ],
+    "college football": [
+      "3072"
+    ],
     "comeback": [
-      "132"
+      "132",
+      "2178",
+      "3369"
+    ],
+    "comex": [
+      "1098"
     ],
     "commodity": [
       "227",
@@ -17734,7 +18969,8 @@
       "127",
       "128",
       "144",
-      "226"
+      "226",
+      "3039"
     ],
     "conflict resolution": [
       "188"
@@ -17757,6 +18993,9 @@
     "consensys ipo closing": [
       "205"
     ],
+    "consolidation": [
+      "2398"
+    ],
     "constituency": [
       "130"
     ],
@@ -17765,6 +19004,13 @@
     ],
     "contest": [
       "200"
+    ],
+    "continuing resolution": [
+      "3114"
+    ],
+    "contraction": [
+      "1951",
+      "3265"
     ],
     "cook out": [
       "2368"
@@ -17780,6 +19026,9 @@
     ],
     "coup": [
       "116"
+    ],
+    "court decision": [
+      "1546"
     ],
     "court rules": [
       "1546"
@@ -17797,6 +19046,15 @@
       "61",
       "75"
     ],
+    "crash": [
+      "3359"
+    ],
+    "creed": [
+      "3158"
+    ],
+    "critical": [
+      "3357"
+    ],
     "critical cloudflare": [
       "3357"
     ],
@@ -17804,12 +19062,14 @@
       "3357"
     ],
     "crypto": [
+      "1098",
       "111",
       "112",
       "119",
       "145",
       "167",
       "172",
+      "1721",
       "174",
       "183",
       "184",
@@ -17822,6 +19082,13 @@
       "220",
       "229",
       "233",
+      "3359",
+      "3361",
+      "3364",
+      "3367",
+      "3368",
+      "3571",
+      "3575",
       "58",
       "64",
       "67",
@@ -17836,7 +19103,9 @@
       "234"
     ],
     "crypto exchange": [
-      "143"
+      "143",
+      "3362",
+      "3369"
     ],
     "crypto hack": [
       "3360"
@@ -17846,6 +19115,9 @@
     ],
     "crypto research": [
       "234"
+    ],
+    "crypto theft": [
+      "3360"
     ],
     "crypto token": [
       "168",
@@ -17865,17 +19137,31 @@
       "112",
       "145",
       "172",
+      "3364",
+      "3367",
+      "3571",
+      "3575",
       "58",
       "64",
       "85"
     ],
+    "cryptographic vulnerability": [
+      "3256"
+    ],
+    "cryptography": [
+      "3256"
+    ],
     "cup winner": [
       "79"
+    ],
+    "currency intervention": [
+      "3132"
     ],
     "customs collections": [
       "196"
     ],
     "customs duties": [
+      "1546",
       "196"
     ],
     "customs revenue": [
@@ -17883,9 +19169,6 @@
     ],
     "cut": [
       "211"
-    ],
-    "cutoff": [
-      "3509"
     ],
     "cuts 2026": [
       "78"
@@ -17896,14 +19179,24 @@
     "cynthia erivo": [
       "139"
     ],
+    "cz": [
+      "3369"
+    ],
     "dallas cowboys": [
       "180"
+    ],
+    "damascus": [
+      "3355"
     ],
     "daniel day-lewis": [
       "137"
     ],
+    "daredevil": [
+      "3073"
+    ],
     "date": [
       "3448",
+      "3449",
       "3508",
       "3509"
     ],
@@ -17945,16 +19238,23 @@
       "127"
     ],
     "deadline": [
+      "3448",
+      "3449",
       "3508",
       "3509"
     ],
     "deal": [
       "159",
-      "160"
+      "160",
+      "2398",
+      "3525"
     ],
     "death": [
       "215",
       "242"
+    ],
+    "debt": [
+      "1856"
     ],
     "debut": [
       "143",
@@ -17969,7 +19269,8 @@
       "97"
     ],
     "december": [
-      "145"
+      "145",
+      "3509"
     ],
     "december 2025": [
       "110"
@@ -18009,18 +19310,26 @@
     "deepseek": [
       "237"
     ],
+    "defense": [
+      "3355"
+    ],
     "defi": [
       "112",
       "118",
+      "1721",
       "184",
       "192",
       "197",
       "232",
       "244",
+      "3361",
       "64",
       "67",
       "85",
       "95"
+    ],
+    "defi hack": [
+      "3360"
     ],
     "degen": [
       "174"
@@ -18031,15 +19340,25 @@
     "delisted msci index": [
       "3257"
     ],
+    "delisting": [
+      "3257"
+    ],
     "demacia": [
       "212"
     ],
     "democrats": [
       "135"
     ],
+    "demodogs": [
+      "3224"
+    ],
     "departure": [
       "116",
-      "193"
+      "193",
+      "2368"
+    ],
+    "depeg": [
+      "3359"
     ],
     "depeg 1q2026": [
       "3359"
@@ -18047,9 +19366,14 @@
     "deposit facility rate": [
       "121"
     ],
+    "depression": [
+      "1951",
+      "3265"
+    ],
     "dex": [
       "175",
-      "184"
+      "184",
+      "3361"
     ],
     "dfr": [
       "121"
@@ -18071,6 +19395,10 @@
     ],
     "die stranger things": [
       "215"
+    ],
+    "digital asset": [
+      "3571",
+      "3575"
     ],
     "digital collectibles": [
       "173"
@@ -18135,11 +19463,13 @@
     "divisional title": [
       "182"
     ],
-    "dollars": [
-      "3525"
+    "dollar": [
+      "3132",
+      "3359"
     ],
     "donald trump": [
-      "142"
+      "142",
+      "3055"
     ],
     "dot plot": [
       "61",
@@ -18151,17 +19481,52 @@
     "dovish": [
       "78"
     ],
+    "down january": [
+      "3571",
+      "3575"
+    ],
     "downing street": [
       "150"
+    ],
+    "downtime": [
+      "3357"
+    ],
+    "draft class": [
+      "3072"
+    ],
+    "draft eligibility": [
+      "3072"
+    ],
+    "draft order": [
+      "3072"
+    ],
+    "draft prospects": [
+      "3072"
+    ],
+    "drain": [
+      "3360"
     ],
     "driving fsd": [
       "198"
     ],
+    "drone": [
+      "3039",
+      "3355"
+    ],
+    "due date": [
+      "3448"
+    ],
     "duffer brothers": [
-      "215"
+      "215",
+      "3221",
+      "3222",
+      "3223"
     ],
     "dump": [
       "111"
+    ],
+    "dustin": [
+      "3224"
     ],
     "dustin henderson": [
       "3224"
@@ -18170,7 +19535,9 @@
       "126"
     ],
     "earthquake": [
-      "187"
+      "187",
+      "2668",
+      "3356"
     ],
     "earthquake 2027": [
       "2668"
@@ -18192,8 +19559,16 @@
     "ecb rates decision": [
       "121"
     ],
+    "economic crisis": [
+      "3265"
+    ],
+    "economic downturn": [
+      "1951",
+      "3265"
+    ],
     "ecosystem": [
-      "119"
+      "119",
+      "3366"
     ],
     "edgex": [
       "98"
@@ -18235,6 +19610,9 @@
     "elections party winner": [
       "130"
     ],
+    "eleven": [
+      "3223"
+    ],
     "elon musk": [
       "129",
       "198",
@@ -18246,19 +19624,32 @@
     "emma stone": [
       "139"
     ],
-    "end of march": [
-      "3448"
+    "encryption": [
+      "3256"
     ],
-    "end of q2 2026": [
+    "end of june": [
+      "3449",
       "3508"
+    ],
+    "end of quarter": [
+      "3448"
     ],
     "end of year": [
       "3509"
+    ],
+    "end times": [
+      "2670"
+    ],
+    "endorse": [
+      "3055"
     ],
     "endorse vance": [
       "3055"
     ],
     "endorse vance president": [
+      "3055"
+    ],
+    "endorsement": [
       "3055"
     ],
     "english football": [
@@ -18274,7 +19665,9 @@
       "236"
     ],
     "epicenter": [
-      "187"
+      "187",
+      "2668",
+      "3356"
     ],
     "epl": [
       "80"
@@ -18303,15 +19696,23 @@
       "228"
     ],
     "escalation": [
-      "226"
+      "226",
+      "3039",
+      "3355"
+    ],
+    "eschatology": [
+      "2670"
     ],
     "esports": [
       "212",
       "213"
     ],
     "eth": [
+      "1098",
       "118",
       "208",
+      "3364",
+      "3575",
       "64"
     ],
     "eth gas": [
@@ -18321,13 +19722,19 @@
       "137"
     ],
     "ether": [
+      "3364",
+      "3575",
       "64"
     ],
     "ethereum": [
+      "1098",
       "118",
       "119",
+      "1721",
       "205",
       "208",
+      "3364",
+      "3575",
       "64",
       "67"
     ],
@@ -18336,6 +19743,12 @@
     ],
     "ethereum all time": [
       "3364"
+    ],
+    "ethereum down": [
+      "3575"
+    ],
+    "ethereum down january": [
+      "3575"
     ],
     "ethereum gas": [
       "228"
@@ -18394,21 +19807,45 @@
       "198"
     ],
     "evm": [
+      "1721",
       "67"
     ],
     "exchange": [
-      "169"
+      "169",
+      "3571"
+    ],
+    "exchange rate": [
+      "3132"
+    ],
+    "exclusion": [
+      "3257"
     ],
     "executive": [
-      "193"
+      "193",
+      "3369"
+    ],
+    "executive order": [
+      "1546"
+    ],
+    "exile": [
+      "1856"
     ],
     "exit": [
       "163",
-      "193"
+      "193",
+      "2368"
+    ],
+    "exit scam": [
+      "3360"
     ],
     "expiration": [
+      "3448",
+      "3449",
       "3508",
       "3509"
+    ],
+    "exploit": [
+      "3360"
     ],
     "exponent": [
       "229"
@@ -18419,6 +19856,9 @@
     "exponent launch token": [
       "229"
     ],
+    "extradition": [
+      "1856"
+    ],
     "family": [
       "201"
     ],
@@ -18428,11 +19868,18 @@
     "family launch token": [
       "201"
     ],
+    "faraday future": [
+      "1856"
+    ],
     "fatality": [
       "215"
     ],
     "fault": [
       "187"
+    ],
+    "fault line": [
+      "2668",
+      "3356"
     ],
     "favor trump": [
       "1546"
@@ -18523,10 +19970,19 @@
       "61",
       "75"
     ],
+    "federal circuit": [
+      "1546"
+    ],
+    "federal employees": [
+      "3114"
+    ],
     "federal funds rate": [
       "153",
       "75",
       "78"
+    ],
+    "federal government": [
+      "3114"
     ],
     "federal reserve": [
       "107",
@@ -18537,6 +19993,9 @@
     ],
     "federal revenue": [
       "196"
+    ],
+    "federal shutdown": [
+      "3114"
     ],
     "fifa": [
       "79"
@@ -18582,13 +20041,18 @@
     ],
     "finance": [
       "112",
-      "197"
+      "197",
+      "3525"
     ],
-    "financing": [
-      "3505"
+    "financial crisis": [
+      "1951"
+    ],
+    "financial goal": [
+      "3506"
     ],
     "fired": [
-      "193"
+      "193",
+      "2368"
     ],
     "first gold": [
       "1098"
@@ -18599,8 +20063,11 @@
     "first grand slam": [
       "222"
     ],
-    "first quarter 2026": [
-      "3448"
+    "first overall": [
+      "3072"
+    ],
+    "flash loan attack": [
+      "3360"
     ],
     "float": [
       "163",
@@ -18664,6 +20131,12 @@
       "125",
       "126"
     ],
+    "foreign exchange": [
+      "3132"
+    ],
+    "founder": [
+      "3369"
+    ],
     "frankfurt": [
       "121"
     ],
@@ -18673,8 +20146,14 @@
     "free solo taipei": [
       "3073"
     ],
+    "free soloing": [
+      "3073"
+    ],
     "fsd": [
       "198"
+    ],
+    "fugitive": [
+      "1856"
     ],
     "full self": [
       "198"
@@ -18707,14 +20186,20 @@
       "3506",
       "3525"
     ],
+    "furlough": [
+      "3114"
+    ],
     "future": [
+      "3448",
+      "3449",
       "3509"
     ],
-    "future date": [
-      "3508"
-    ],
     "futures": [
-      "241"
+      "241",
+      "3361"
+    ],
+    "fx intervention": [
+      "3132"
     ],
     "game of the year": [
       "151"
@@ -18747,6 +20232,18 @@
     "gas tracker": [
       "228"
     ],
+    "gaten": [
+      "3224"
+    ],
+    "gaten matarazzo": [
+      "3224"
+    ],
+    "gdp contraction": [
+      "3265"
+    ],
+    "gdp decline": [
+      "1951"
+    ],
     "gem mint": [
       "239"
     ],
@@ -18760,6 +20257,9 @@
     ],
     "generative pre-trained transformer 6": [
       "89"
+    ],
+    "genesis": [
+      "3365"
     ],
     "gensyn": [
       "194"
@@ -18780,7 +20280,8 @@
       "144"
     ],
     "girl group": [
-      "132"
+      "132",
+      "2178"
     ],
     "global box office": [
       "84"
@@ -18792,9 +20293,11 @@
       "171",
       "190",
       "204",
-      "205"
+      "205",
+      "3362"
     ],
     "gold": [
+      "1098",
       "241",
       "62"
     ],
@@ -18852,8 +20355,14 @@
     "google googl hit": [
       "110"
     ],
+    "google willow": [
+      "3256"
+    ],
     "gop": [
       "135"
+    ],
+    "gop primary": [
+      "3055"
     ],
     "goty": [
       "151"
@@ -18867,10 +20376,14 @@
       "168",
       "175",
       "232",
-      "234"
+      "234",
+      "3366"
     ],
     "governing council": [
       "121"
+    ],
+    "government closure": [
+      "3114"
     ],
     "government shutdown": [
       "3114"
@@ -18898,8 +20411,9 @@
     "grand slam": [
       "222"
     ],
-    "grant": [
-      "3505"
+    "great earthquake": [
+      "2668",
+      "3356"
     ],
     "gridiron": [
       "182",
@@ -18925,8 +20439,8 @@
     "group stage": [
       "83"
     ],
-    "h1 2026": [
-      "3508"
+    "hack": [
+      "3360"
     ],
     "hack over": [
       "3360"
@@ -18947,14 +20461,43 @@
     "hard court": [
       "222"
     ],
+    "hard fork": [
+      "3256"
+    ],
+    "hard landing": [
+      "1951",
+      "3265"
+    ],
+    "hashing algorithm": [
+      "3256"
+    ],
     "hassett": [
       "107"
     ],
     "hawkins": [
-      "215"
+      "215",
+      "3221",
+      "3222",
+      "3223",
+      "3224"
+    ],
+    "hbo": [
+      "2398"
     ],
     "hedge": [
       "227"
+    ],
+    "heisman": [
+      "3072"
+    ],
+    "heist": [
+      "3360"
+    ],
+    "hellfire club": [
+      "3224"
+    ],
+    "henderson": [
+      "3224"
     ],
     "high 1q2026": [
       "3364",
@@ -19016,10 +20559,14 @@
       "138",
       "139",
       "140",
-      "141"
+      "141",
+      "3158"
     ],
     "holographic": [
       "217"
+    ],
+    "honnold": [
+      "3073"
     ],
     "honnold free": [
       "3073"
@@ -19036,6 +20583,11 @@
     "hoops": [
       "103",
       "115"
+    ],
+    "horror": [
+      "3221",
+      "3222",
+      "3223"
     ],
     "host": [
       "79"
@@ -19079,6 +20631,15 @@
     "hybe": [
       "132"
     ],
+    "hype": [
+      "3361"
+    ],
+    "hype token": [
+      "3361"
+    ],
+    "hyperliquid": [
+      "3361"
+    ],
     "hyperliquid all": [
       "3361"
     ],
@@ -19092,7 +20653,8 @@
       "233"
     ],
     "idf": [
-      "226"
+      "226",
+      "3039"
     ],
     "ido": [
       "167",
@@ -19103,6 +20665,9 @@
     ],
     "idol": [
       "132"
+    ],
+    "ieepa": [
+      "1546"
     ],
     "ieo": [
       "229",
@@ -19118,13 +20683,23 @@
       "217"
     ],
     "impeachment": [
-      "202"
+      "202",
+      "3062"
     ],
     "import duties": [
       "196"
     ],
     "import tax": [
       "196"
+    ],
+    "import taxes": [
+      "1546"
+    ],
+    "inability": [
+      "3062"
+    ],
+    "incident": [
+      "3357"
     ],
     "incident march": [
       "3357"
@@ -19134,6 +20709,9 @@
     ],
     "inclusion": [
       "186"
+    ],
+    "index": [
+      "3257"
     ],
     "index addition": [
       "186"
@@ -19181,7 +20759,8 @@
       "158",
       "163",
       "190",
-      "204"
+      "204",
+      "3362"
     ],
     "interest rate": [
       "61",
@@ -19200,7 +20779,8 @@
     ],
     "intervention": [
       "128",
-      "144"
+      "144",
+      "3355"
     ],
     "intervention jan": [
       "3132"
@@ -19222,6 +20802,7 @@
     ],
     "investment": [
       "3505",
+      "3506",
       "3525",
       "85"
     ],
@@ -19237,7 +20818,9 @@
       "171",
       "190",
       "204",
-      "205"
+      "205",
+      "3362",
+      "3525"
     ],
     "ipo 1q2026": [
       "3362"
@@ -19261,7 +20844,8 @@
     ],
     "iran": [
       "226",
-      "242"
+      "242",
+      "3039"
     ],
     "iran ceasefire": [
       "226"
@@ -19276,13 +20860,15 @@
       "3039"
     ],
     "irgc": [
-      "226"
+      "226",
+      "3039"
     ],
     "islamic republic": [
       "242"
     ],
     "israel": [
-      "226"
+      "226",
+      "3039"
     ],
     "israel iran": [
       "226"
@@ -19303,12 +20889,15 @@
       "208"
     ],
     "jackpot": [
-      "3506"
+      "3505"
     ],
     "jan 2026": [
       "3132"
     ],
     "jan 2026 utc": [
+      "3132"
+    ],
+    "japan": [
       "3132"
     ],
     "japan conduct": [
@@ -19334,6 +20923,9 @@
     "jason citron": [
       "190"
     ],
+    "jd vance": [
+      "3055"
+    ],
     "jerome powell": [
       "107",
       "153",
@@ -19346,6 +20938,9 @@
     ],
     "jessie buckley": [
       "139"
+    ],
+    "jesus": [
+      "2670"
     ],
     "jesus christ": [
       "2670"
@@ -19361,10 +20956,14 @@
       "1856"
     ],
     "jonathan byers": [
-      "3221"
+      "3221",
+      "3223"
     ],
     "joseph lubin": [
       "205"
+    ],
+    "joyce byers": [
+      "3221"
     ],
     "june 2026": [
       "3449",
@@ -19376,11 +20975,18 @@
     "june 30 2026": [
       "3508"
     ],
+    "june 30th": [
+      "3508"
+    ],
     "k-pop": [
-      "132"
+      "132",
+      "2178"
     ],
     "kain warwick": [
       "184"
+    ],
+    "karen wheeler": [
+      "3222"
     ],
     "kate hudson": [
       "139"
@@ -19434,7 +21040,11 @@
       "130"
     ],
     "kraken": [
-      "143"
+      "143",
+      "3362"
+    ],
+    "kraken exchange": [
+      "3362"
     ],
     "kraken ipo": [
       "143",
@@ -19444,15 +21054,21 @@
       "3362"
     ],
     "kraken交易所": [
-      "143"
+      "143",
+      "3362"
     ],
     "kyiv": [
       "202"
+    ],
+    "l1": [
+      "1721",
+      "3361"
     ],
     "l2": [
       "119",
       "168",
       "208",
+      "3366",
       "67"
     ],
     "la liga": [
@@ -19475,6 +21091,9 @@
     ],
     "laliga": [
       "82"
+    ],
+    "lapse in appropriations": [
+      "3114"
     ],
     "large cap": [
       "186"
@@ -19552,10 +21171,14 @@
     "launchpad": [
       "174"
     ],
+    "layer 1": [
+      "1721"
+    ],
     "layer 2": [
       "119",
       "168",
-      "208"
+      "208",
+      "3366"
     ],
     "layer network": [
       "208"
@@ -19580,7 +21203,11 @@
     ],
     "leadership": [
       "193",
-      "242"
+      "242",
+      "3369"
+    ],
+    "leadership change": [
+      "2368"
     ],
     "league of legends": [
       "212",
@@ -19597,12 +21224,21 @@
     "league winners": [
       "80"
     ],
+    "leave": [
+      "2368"
+    ],
     "leave office": [
       "150",
       "202"
     ],
     "leaving": [
       "193"
+    ],
+    "leeco": [
+      "1856"
+    ],
+    "legal ruling": [
+      "1546"
     ],
     "legislation": [
       "160"
@@ -19661,9 +21297,6 @@
     "lighter valuation": [
       "88"
     ],
-    "limit": [
-      "3506"
-    ],
     "lions vs vikings": [
       "214"
     ],
@@ -19692,6 +21325,7 @@
       "229",
       "232",
       "233",
+      "3362",
       "67",
       "95",
       "96",
@@ -19701,6 +21335,9 @@
     ],
     "live": [
       "132"
+    ],
+    "livestream": [
+      "3073"
     ],
     "llm": [
       "129",
@@ -19762,6 +21399,9 @@
     "lower chamber": [
       "135"
     ],
+    "lp": [
+      "2178"
+    ],
     "lpl": [
       "212"
     ],
@@ -19770,6 +21410,9 @@
     ],
     "lpl 2026 season": [
       "212"
+    ],
+    "m&a": [
+      "2398"
     ],
     "mac": [
       "122"
@@ -19786,11 +21429,23 @@
     "maduro out": [
       "116"
     ],
+    "maga": [
+      "3055"
+    ],
     "magnificent seven": [
       "65"
     ],
     "magnitude": [
       "187"
+    ],
+    "magnitude 8": [
+      "3356"
+    ],
+    "magnitude 9": [
+      "2668"
+    ],
+    "mainland": [
+      "1856"
     ],
     "mainnet": [
       "119",
@@ -19799,6 +21454,7 @@
       "229",
       "232",
       "233",
+      "3366",
       "67"
     ],
     "major": [
@@ -19824,7 +21480,7 @@
       "3357",
       "3448"
     ],
-    "march 31 2026": [
+    "march 31": [
       "3448"
     ],
     "march 31st": [
@@ -19844,6 +21500,8 @@
       "145",
       "183",
       "197",
+      "3361",
+      "3575",
       "58"
     ],
     "market cap": [
@@ -19884,6 +21542,9 @@
     "market entry": [
       "186"
     ],
+    "market intervention": [
+      "3132"
+    ],
     "market outlook": [
       "64"
     ],
@@ -19893,11 +21554,17 @@
     "marketplace": [
       "173"
     ],
+    "marvel": [
+      "3158"
+    ],
     "matches": [
       "79"
     ],
     "maurice podoloff trophy": [
       "115"
+    ],
+    "max": [
+      "2398"
     ],
     "mayor": [
       "131"
@@ -19912,6 +21579,7 @@
       "131"
     ],
     "megaeth": [
+      "1721",
       "67"
     ],
     "megaeth market": [
@@ -19925,6 +21593,10 @@
     ],
     "megaeth who higher": [
       "1721"
+    ],
+    "megaquake": [
+      "2668",
+      "3356"
     ],
     "megaquake march": [
       "3356"
@@ -19955,7 +21627,11 @@
       "222"
     ],
     "merger": [
-      "159"
+      "159",
+      "2398"
+    ],
+    "messiah": [
+      "2670"
     ],
     "meta": [
       "118",
@@ -19997,7 +21673,8 @@
       "126"
     ],
     "microstrategy": [
-      "111"
+      "111",
+      "3257"
     ],
     "microstrategy delisted": [
       "3257"
@@ -20011,6 +21688,9 @@
     "microstrategy sells any": [
       "111"
     ],
+    "mid-year": [
+      "3449"
+    ],
     "mid-year 2026": [
       "3508"
     ],
@@ -20021,11 +21701,17 @@
       "135",
       "136"
     ],
+    "mike wheeler": [
+      "3222"
+    ],
     "milestone": [
       "3505",
       "3506",
-      "3509",
+      "3508",
       "3525"
+    ],
+    "military": [
+      "3355"
     ],
     "military engagement": [
       "144"
@@ -20033,11 +21719,21 @@
     "military intervention": [
       "128"
     ],
+    "mining algorithm": [
+      "3256"
+    ],
+    "ministry of finance": [
+      "3132"
+    ],
     "mint": [
       "201"
     ],
     "mint condition": [
       "217"
+    ],
+    "missile": [
+      "3039",
+      "3355"
     ],
     "ml": [
       "194"
@@ -20066,6 +21762,12 @@
     "model performance": [
       "237"
     ],
+    "mof": [
+      "3132"
+    ],
+    "monad": [
+      "1721"
+    ],
     "monad megaeth": [
       "1721"
     ],
@@ -20089,6 +21791,7 @@
       "153"
     ],
     "money": [
+      "3505",
       "3525"
     ],
     "most influential": [
@@ -20104,11 +21807,17 @@
     "motion pictures": [
       "138"
     ],
+    "move": [
+      "3365"
+    ],
     "move any": [
       "3365"
     ],
     "move any bitcoin": [
       "3365"
+    ],
+    "movement": [
+      "3575"
     ],
     "movie 2025": [
       "84"
@@ -20129,10 +21838,19 @@
       "141",
       "211"
     ],
+    "msci": [
+      "3257"
+    ],
     "msci index": [
       "3257"
     ],
     "msci index march": [
+      "3257"
+    ],
+    "msci usa": [
+      "3257"
+    ],
+    "msci world": [
       "3257"
     ],
     "msft": [
@@ -20148,7 +21866,8 @@
       "212"
     ],
     "mstr": [
-      "111"
+      "111",
+      "3257"
     ],
     "much revenue": [
       "196"
@@ -20173,7 +21892,15 @@
       "115",
       "240"
     ],
+    "nakamoto": [
+      "3365"
+    ],
+    "nancy": [
+      "3223"
+    ],
     "nancy wheeler": [
+      "3221",
+      "3222",
       "3223"
     ],
     "nansen": [
@@ -20224,10 +21951,12 @@
     "native token": [
       "168",
       "175",
+      "3366",
       "99"
     ],
     "natural disaster": [
-      "187"
+      "187",
+      "3356"
     ],
     "naval blockade": [
       "144"
@@ -20245,6 +21974,14 @@
     "nba mvp 2026": [
       "115"
     ],
+    "nber": [
+      "1951",
+      "3265"
+    ],
+    "negative growth": [
+      "1951",
+      "3265"
+    ],
     "negative rates": [
       "230"
     ],
@@ -20253,7 +21990,13 @@
     ],
     "netflix": [
       "214",
-      "215"
+      "215",
+      "2398",
+      "3073",
+      "3221",
+      "3222",
+      "3223",
+      "3224"
     ],
     "netflix close": [
       "2398"
@@ -20270,14 +22013,24 @@
     "network": [
       "208"
     ],
+    "network failure": [
+      "3357"
+    ],
     "network poly": [
       "208"
     ],
     "neural network": [
       "89"
     ],
+    "new high": [
+      "3364",
+      "3368"
+    ],
     "new listings": [
       "186"
+    ],
+    "new music": [
+      "2178"
     ],
     "new year's eve": [
       "3509"
@@ -20415,6 +22168,9 @@
     "north winner": [
       "182"
     ],
+    "number one pick": [
+      "3072"
+    ],
     "nvda": [
       "123"
     ],
@@ -20444,6 +22200,15 @@
       "152",
       "163",
       "171"
+    ],
+    "office": [
+      "3062"
+    ],
+    "office of personnel management": [
+      "3114"
+    ],
+    "official": [
+      "3257"
     ],
     "okbet": [
       "200"
@@ -20495,7 +22260,8 @@
       "98"
     ],
     "op stack": [
-      "119"
+      "119",
+      "3366"
     ],
     "open winner": [
       "222"
@@ -20521,6 +22287,9 @@
     ],
     "opensea fdv above": [
       "173"
+    ],
+    "opm": [
+      "3114"
     ],
     "opposition": [
       "116"
@@ -20567,7 +22336,8 @@
     ],
     "ousted": [
       "150",
-      "193"
+      "193",
+      "2368"
     ],
     "ouster": [
       "116",
@@ -20599,6 +22369,12 @@
     ],
     "out ukraine president": [
       "202"
+    ],
+    "outage": [
+      "3357"
+    ],
+    "outflow": [
+      "3365"
     ],
     "over $100m": [
       "3360"
@@ -20642,6 +22418,15 @@
     "paradex launch token": [
       "175"
     ],
+    "parallel execution": [
+      "1721"
+    ],
+    "parousia": [
+      "2670"
+    ],
+    "partial shutdown": [
+      "3114"
+    ],
     "party win": [
       "135",
       "136"
@@ -20683,6 +22468,12 @@
     "peace treaty": [
       "127"
     ],
+    "peg": [
+      "3359"
+    ],
+    "pentagon": [
+      "3355"
+    ],
     "perena": [
       "232"
     ],
@@ -20708,8 +22499,14 @@
       "123",
       "132"
     ],
+    "permanent role": [
+      "3369"
+    ],
     "perp dex": [
       "175"
+    ],
+    "perpetuals": [
+      "3361"
     ],
     "perps": [
       "184"
@@ -20815,11 +22612,15 @@
     "post-production": [
       "211"
     ],
+    "post-quantum": [
+      "3256"
+    ],
     "postseason": [
       "224"
     ],
     "potus": [
-      "142"
+      "142",
+      "3062"
     ],
     "powell": [
       "107",
@@ -20834,6 +22635,7 @@
       "142"
     ],
     "precious metal": [
+      "1098",
       "241",
       "62"
     ],
@@ -20872,11 +22674,15 @@
     "president": [
       "116",
       "142",
-      "202"
+      "202",
+      "3062"
     ],
     "president 2027": [
       "3055",
       "3062"
+    ],
+    "presidential candidate": [
+      "3055"
     ],
     "price": [
       "110",
@@ -20890,7 +22696,11 @@
       "207",
       "219",
       "220",
-      "3506",
+      "3359",
+      "3361",
+      "3367",
+      "3571",
+      "3575",
       "64",
       "67",
       "96",
@@ -20920,6 +22730,9 @@
     "price gold close": [
       "62"
     ],
+    "price peak": [
+      "3364"
+    ],
     "price prediction": [
       "58",
       "85"
@@ -20931,13 +22744,17 @@
       "85"
     ],
     "price target": [
+      "1098",
       "110",
       "112",
       "123",
-      "3505"
+      "3506"
     ],
     "primera division": [
       "82"
+    ],
+    "private key compromise": [
+      "3360"
     ],
     "pro basketball": [
       "103"
@@ -20956,6 +22773,9 @@
       "220",
       "229",
       "98"
+    ],
+    "proof of work": [
+      "3256"
     ],
     "protectionism": [
       "196"
@@ -20979,7 +22799,8 @@
       "204"
     ],
     "public listing": [
-      "163"
+      "163",
+      "3362"
     ],
     "public offering": [
       "143",
@@ -20991,6 +22812,10 @@
     ],
     "public ticker": [
       "169"
+    ],
+    "pump": [
+      "3364",
+      "3368"
     ],
     "pump fun": [
       "174"
@@ -21006,13 +22831,36 @@
     ],
     "q1 2026": [
       "186",
+      "3362",
+      "3368",
       "3448"
     ],
+    "q2 2026": [
+      "3449",
+      "3508"
+    ],
+    "q4 2026": [
+      "3509"
+    ],
+    "qb": [
+      "3072"
+    ],
     "quake": [
-      "187"
+      "187",
+      "2668",
+      "3356"
     ],
     "qualification": [
       "79"
+    ],
+    "quantum computing": [
+      "3256"
+    ],
+    "quantum resistance": [
+      "3256"
+    ],
+    "quarterback": [
+      "3072"
     ],
     "qwen": [
       "237",
@@ -21030,6 +22878,10 @@
     "rainbow wallet": [
       "244"
     ],
+    "raise": [
+      "3505",
+      "3525"
+    ],
     "raise tariffs": [
       "196"
     ],
@@ -21037,12 +22889,19 @@
       "196"
     ],
     "rally": [
-      "145"
+      "1098",
+      "145",
+      "3364",
+      "3367",
+      "3368"
     ],
     "ranking": [
       "214",
       "236",
       "65"
+    ],
+    "rapture": [
+      "2670"
     ],
     "rare card": [
       "217"
@@ -21089,11 +22948,20 @@
     "ratings": [
       "214"
     ],
+    "real gdp": [
+      "1951",
+      "3265"
+    ],
     "real madrid": [
       "82"
     ],
     "rebalancing": [
-      "186"
+      "186",
+      "3257"
+    ],
+    "recession": [
+      "1951",
+      "3265"
     ],
     "recession 2025": [
       "1951"
@@ -21103,6 +22971,13 @@
     ],
     "recognition": [
       "108"
+    ],
+    "record high": [
+      "3364",
+      "3368"
+    ],
+    "red status": [
+      "3357"
     ],
     "refinancing rate": [
       "121"
@@ -21122,9 +22997,16 @@
       "115",
       "240"
     ],
+    "rehire": [
+      "3369"
+    ],
+    "rekt": [
+      "3360"
+    ],
     "release": [
       "172",
       "201",
+      "2178",
       "229",
       "233"
     ],
@@ -21139,10 +23021,18 @@
     ],
     "removal": [
       "202",
-      "242"
+      "242",
+      "3062",
+      "3257"
+    ],
+    "removed from office": [
+      "3062"
     ],
     "renate reinsve": [
       "139"
+    ],
+    "repackage": [
+      "2178"
     ],
     "replace sha-256": [
       "3256"
@@ -21151,24 +23041,49 @@
       "3256"
     ],
     "replaced": [
-      "193"
+      "193",
+      "2368"
+    ],
+    "republican nomination": [
+      "3055"
     ],
     "resign": [
       "150",
-      "202"
+      "202",
+      "2368",
+      "3062"
     ],
     "resignation": [
       "116",
       "150",
       "193",
       "202",
-      "242"
+      "2368",
+      "242",
+      "3062"
+    ],
+    "resistance": [
+      "1098",
+      "3367"
     ],
     "resolution": [
       "127"
     ],
+    "resolution date": [
+      "3509"
+    ],
+    "resurrection": [
+      "2670"
+    ],
+    "retaliation": [
+      "3039"
+    ],
     "retroactive": [
       "174"
+    ],
+    "return": [
+      "1856",
+      "3369"
     ],
     "return 2027": [
       "2670"
@@ -21185,9 +23100,11 @@
     "return china jia": [
       "1856"
     ],
-    "revenue": [
-      "3505",
-      "3525"
+    "return of christ": [
+      "2670"
+    ],
+    "revelation": [
+      "2670"
     ],
     "revenue raise": [
       "196"
@@ -21200,6 +23117,10 @@
     ],
     "richter": [
       "187"
+    ],
+    "richter scale": [
+      "2668",
+      "3356"
     ],
     "rieder": [
       "107"
@@ -21217,8 +23138,12 @@
     "robotaxi": [
       "198"
     ],
+    "rock climbing": [
+      "3073"
+    ],
     "rollup": [
       "208",
+      "3366",
       "67"
     ],
     "rose byrne": [
@@ -21229,11 +23154,17 @@
       "3506",
       "3525"
     ],
+    "rugpull": [
+      "3360"
+    ],
     "rules favor": [
       "1546"
     ],
     "rules favor trump": [
       "1546"
+    ],
+    "running mate": [
+      "3055"
     ],
     "russia": [
       "127"
@@ -21257,6 +23188,9 @@
       "227",
       "241",
       "62"
+    ],
+    "safeguard": [
+      "3132"
     ],
     "sale": [
       "111",
@@ -21284,7 +23218,8 @@
       "82"
     ],
     "satoshi": [
-      "112"
+      "112",
+      "3365"
     ],
     "satoshi move": [
       "3365"
@@ -21299,11 +23234,21 @@
       "236"
     ],
     "scaling": [
+      "1721",
       "208"
     ],
     "schedule": [
       "3448",
-      "3509"
+      "3449"
+    ],
+    "sci-fi": [
+      "3221",
+      "3222",
+      "3223",
+      "3224"
+    ],
+    "scotus": [
+      "1546"
     ],
     "season": [
       "179",
@@ -21314,7 +23259,11 @@
       "240"
     ],
     "season 5": [
-      "215"
+      "215",
+      "3221",
+      "3222",
+      "3223",
+      "3224"
     ],
     "season winner": [
       "212",
@@ -21323,11 +23272,23 @@
     "sec": [
       "143"
     ],
+    "second coming": [
+      "2670"
+    ],
+    "seed": [
+      "3525"
+    ],
     "seismic": [
-      "187"
+      "187",
+      "2668",
+      "3356"
     ],
     "seismic activity": [
-      "187"
+      "187",
+      "3356"
+    ],
+    "seismology": [
+      "2668"
     ],
     "self driving": [
       "198"
@@ -21383,18 +23344,32 @@
     "seoul mayoral election": [
       "131"
     ],
+    "series": [
+      "3525"
+    ],
+    "server error": [
+      "3357"
+    ],
+    "service disruption": [
+      "3357"
+    ],
     "settle january": [
       "241"
     ],
     "settlement": [
       "127",
-      "241",
-      "3505"
+      "241"
     ],
     "settlement date": [
       "3508"
     ],
+    "sha-256": [
+      "3256"
+    ],
     "sha-256 2027": [
+      "3256"
+    ],
+    "sha256": [
       "3256"
     ],
     "shadowless": [
@@ -21418,10 +23393,13 @@
       "158",
       "163",
       "169",
-      "171"
+      "171",
+      "3362"
     ],
     "shock": [
-      "187"
+      "187",
+      "2668",
+      "3356"
     ],
     "short-term rates": [
       "120"
@@ -21432,11 +23410,17 @@
     "show this week": [
       "214"
     ],
+    "shutdown": [
+      "3114"
+    ],
     "shutdown january": [
       "3114"
     ],
     "sidechain": [
       "208"
+    ],
+    "signal caller": [
+      "3072"
     ],
     "silver": [
       "227"
@@ -21450,19 +23434,36 @@
     "silver price": [
       "227"
     ],
+    "single album": [
+      "2178"
+    ],
     "sino-us": [
       "142"
     ],
     "size": [
       "236"
     ],
+    "skyscraper": [
+      "3073"
+    ],
     "slam": [
       "222"
     ],
+    "slowdown": [
+      "3265"
+    ],
+    "slump": [
+      "1951"
+    ],
     "smart contract": [
       "172",
+      "1721",
       "192",
-      "229"
+      "229",
+      "3366"
+    ],
+    "smart contract bug": [
+      "3360"
     ],
     "smart contracts": [
       "64",
@@ -21560,11 +23561,20 @@
     "speaker": [
       "135"
     ],
+    "specific date": [
+      "3449"
+    ],
     "speculation": [
       "118",
       "197",
       "98",
       "99"
+    ],
+    "spend": [
+      "3365"
+    ],
+    "spire": [
+      "3073"
     ],
     "spot etf": [
       "145",
@@ -21573,12 +23583,12 @@
     "spot gold": [
       "62"
     ],
+    "spot market": [
+      "3571"
+    ],
     "spot price": [
       "227",
       "241"
-    ],
-    "spring 2026": [
-      "3448"
     ],
     "spring split": [
       "212",
@@ -21588,10 +23598,21 @@
       "186"
     ],
     "st": [
-      "215"
+      "215",
+      "3222"
+    ],
+    "stablecoin": [
+      "3359"
+    ],
+    "stablecoin depeg": [
+      "3359"
     ],
     "stage": [
       "132"
+    ],
+    "stagnation": [
+      "1951",
+      "3265"
     ],
     "staking": [
       "184"
@@ -21612,6 +23633,9 @@
     "standx fdv above": [
       "96"
     ],
+    "star": [
+      "3158"
+    ],
     "starlink": [
       "204"
     ],
@@ -21623,6 +23647,9 @@
     ],
     "state visit": [
       "142"
+    ],
+    "status page": [
+      "3357"
     ],
     "steam": [
       "151"
@@ -21641,10 +23668,15 @@
     ],
     "step down": [
       "150",
-      "202"
+      "202",
+      "2368",
+      "3062"
     ],
     "stepped down": [
       "193"
+    ],
+    "steve harrington": [
+      "3223"
     ],
     "stock": [
       "110",
@@ -21654,7 +23686,8 @@
       "126",
       "190",
       "204",
-      "205"
+      "205",
+      "3257"
     ],
     "stock debut": [
       "158"
@@ -21670,6 +23703,9 @@
       "171",
       "186"
     ],
+    "stock market debut": [
+      "3362"
+    ],
     "stock price": [
       "158",
       "236",
@@ -21680,7 +23716,11 @@
     ],
     "stranger things": [
       "214",
-      "215"
+      "215",
+      "3221",
+      "3222",
+      "3223",
+      "3224"
     ],
     "stranger things season": [
       "215"
@@ -21689,7 +23729,11 @@
       "200"
     ],
     "streaming": [
-      "214"
+      "214",
+      "2398"
+    ],
+    "strike": [
+      "3039"
     ],
     "strike syria": [
       "3355"
@@ -21703,8 +23747,14 @@
     "strikes iran march": [
       "3039"
     ],
+    "studio album": [
+      "2178"
+    ],
     "succession": [
       "242"
+    ],
+    "successor": [
+      "2368"
     ],
     "summer split": [
       "212",
@@ -21725,6 +23775,10 @@
     ],
     "super bowl lx": [
       "81"
+    ],
+    "support": [
+      "3055",
+      "3132"
     ],
     "supporting actor": [
       "140"
@@ -21753,8 +23807,14 @@
     "supreme leader iran": [
       "242"
     ],
+    "swap": [
+      "3365"
+    ],
     "synthetix": [
       "184"
+    ],
+    "syria": [
+      "3355"
     ],
     "syria march": [
       "3355"
@@ -21762,20 +23822,32 @@
     "syria march 31st": [
       "3355"
     ],
+    "system failure": [
+      "3357"
+    ],
+    "taipei": [
+      "3073"
+    ],
     "taipei 101": [
       "3073"
     ],
+    "taiwan": [
+      "3073"
+    ],
     "takeover": [
-      "159"
+      "159",
+      "2398"
     ],
     "tampa bay": [
       "181"
     ],
     "target": [
-      "3506",
-      "3525"
+      "3449",
+      "3505",
+      "3506"
     ],
     "target date": [
+      "3448",
       "3508",
       "3509"
     ],
@@ -21783,6 +23855,7 @@
       "196"
     ],
     "tariffs": [
+      "1546",
       "196"
     ],
     "tariffs 2025": [
@@ -21810,13 +23883,21 @@
       "65"
     ],
     "tectonic": [
-      "187"
+      "187",
+      "2668",
+      "3356"
+    ],
+    "ted wheeler": [
+      "3222"
     ],
     "tehran": [
-      "242"
+      "242",
+      "3039"
     ],
     "temblor": [
-      "187"
+      "187",
+      "2668",
+      "3356"
     ],
     "tempo": [
       "192"
@@ -21858,13 +23939,30 @@
     "tesla tsla close": [
       "124"
     ],
+    "tessa": [
+      "3158"
+    ],
     "tessa thompson": [
       "3158"
+    ],
+    "tether": [
+      "3359",
+      "3571"
+    ],
+    "tether price": [
+      "3359"
+    ],
+    "tether token": [
+      "3359"
+    ],
+    "tether usd": [
+      "3359"
     ],
     "tge": [
       "167",
       "168",
       "172",
+      "1721",
       "175",
       "192",
       "194",
@@ -21896,6 +23994,12 @@
     "the big game": [
       "81"
     ],
+    "the post": [
+      "3223"
+    ],
+    "theft": [
+      "3360"
+    ],
     "theo": [
       "172"
     ],
@@ -21917,6 +24021,12 @@
     "this week": [
       "214"
     ],
+    "thompson": [
+      "3158"
+    ],
+    "thor": [
+      "3158"
+    ],
     "threshold": [
       "3506"
     ],
@@ -21924,7 +24034,9 @@
       "143",
       "158",
       "169",
-      "171"
+      "171",
+      "3257",
+      "3362"
     ],
     "tightening": [
       "120",
@@ -21948,8 +24060,7 @@
       "2368"
     ],
     "time": [
-      "108",
-      "3448"
+      "108"
     ],
     "time 100": [
       "108"
@@ -21975,16 +24086,20 @@
     "time high march": [
       "3361"
     ],
-    "time horizon": [
-      "3509"
-    ],
     "time magazine": [
       "108"
     ],
     "time's choice": [
       "108"
     ],
+    "timeframe": [
+      "3448",
+      "3449",
+      "3508"
+    ],
     "timeline": [
+      "3448",
+      "3449",
       "3509"
     ],
     "timothée chalamet": [
@@ -22003,6 +24118,7 @@
     "token": [
       "118",
       "167",
+      "1721",
       "183",
       "184",
       "197",
@@ -22011,6 +24127,7 @@
       "208",
       "220",
       "229",
+      "3367",
       "67",
       "85",
       "95",
@@ -22054,7 +24171,8 @@
       "232",
       "233",
       "234",
-      "244"
+      "244",
+      "3366"
     ],
     "token sale": [
       "175"
@@ -22070,6 +24188,7 @@
       "194",
       "232",
       "244",
+      "3361",
       "95",
       "99"
     ],
@@ -22103,6 +24222,9 @@
     "top netflix show": [
       "214"
     ],
+    "top pick": [
+      "3072"
+    ],
     "top tier": [
       "83"
     ],
@@ -22114,12 +24236,14 @@
       "79"
     ],
     "trade policy": [
+      "1546",
       "196"
     ],
     "trade talks": [
       "142"
     ],
     "trade war": [
+      "1546",
       "196"
     ],
     "trading": [
@@ -22140,6 +24264,10 @@
       "220",
       "227",
       "241",
+      "3361",
+      "3367",
+      "3571",
+      "3575",
       "58",
       "62",
       "67",
@@ -22173,12 +24301,20 @@
     "transaction": [
       "160"
     ],
+    "transfer": [
+      "3365"
+    ],
     "treasury": [
       "107",
       "111"
     ],
     "tremor": [
-      "187"
+      "187",
+      "2668",
+      "3356"
+    ],
+    "tribulation": [
+      "2670"
     ],
     "trillion": [
       "236",
@@ -22215,7 +24351,10 @@
     ],
     "trump": [
       "107",
-      "142"
+      "142",
+      "1546",
+      "3055",
+      "3062"
     ],
     "trump endorse": [
       "3055"
@@ -22255,6 +24394,10 @@
     ],
     "turnover": [
       "193"
+    ],
+    "tv show": [
+      "3221",
+      "3224"
     ],
     "u.s.": [
       "196"
@@ -22296,6 +24439,9 @@
     "ukraine president": [
       "202"
     ],
+    "underclassmen": [
+      "3072"
+    ],
     "united states": [
       "128",
       "196"
@@ -22319,12 +24465,16 @@
       "136"
     ],
     "upside down": [
-      "215"
+      "215",
+      "3221",
+      "3222",
+      "3223"
     ],
     "us": [
       "128",
       "144",
-      "196"
+      "196",
+      "3355"
     ],
     "us central bank": [
       "75"
@@ -22337,7 +24487,12 @@
     ],
     "us economy": [
       "153",
+      "1951",
+      "3265",
       "61"
+    ],
+    "us government": [
+      "3114"
     ],
     "us house": [
       "135"
@@ -22358,9 +24513,6 @@
       "128",
       "196"
     ],
-    "usd": [
-      "3525"
-    ],
     "usd ai": [
       "183"
     ],
@@ -22373,14 +24525,31 @@
     "usd.ai": [
       "183"
     ],
+    "usd/jpy": [
+      "3132"
+    ],
+    "usdt": [
+      "3359",
+      "3367",
+      "3571"
+    ],
     "usdt depeg": [
       "3359"
     ],
     "usdt depeg 1q2026": [
       "3359"
     ],
+    "usgs": [
+      "2668"
+    ],
     "utility token": [
       "99"
+    ],
+    "v.o.s. selections": [
+      "1546"
+    ],
+    "valkyrie": [
+      "3158"
     ],
     "valuation": [
       "110",
@@ -22406,6 +24575,7 @@
       "220",
       "236",
       "244",
+      "3362",
       "3505",
       "3506",
       "3525",
@@ -22416,17 +24586,20 @@
       "97",
       "98"
     ],
-    "value": [
-      "3506"
-    ],
     "valve": [
       "151"
+    ],
+    "vance": [
+      "3055"
     ],
     "vance president": [
       "3055"
     ],
     "vance president 2027": [
       "3055"
+    ],
+    "vecna": [
+      "3223"
     ],
     "venezuela": [
       "116",
@@ -22439,8 +24612,14 @@
     "venezuela military engagement": [
       "144"
     ],
+    "venture": [
+      "3525"
+    ],
     "version 5": [
       "129"
+    ],
+    "vice president": [
+      "3062"
     ],
     "video sharing": [
       "159"
@@ -22463,6 +24642,9 @@
     "volatility": [
       "112",
       "145",
+      "3367",
+      "3571",
+      "3575",
       "58",
       "85"
     ],
@@ -22476,6 +24658,9 @@
       "130",
       "151"
     ],
+    "vp": [
+      "3055"
+    ],
     "wagner moura": [
       "137"
     ],
@@ -22487,6 +24672,9 @@
     "waller": [
       "107"
     ],
+    "wallet": [
+      "3365"
+    ],
     "wallet profiler": [
       "234"
     ],
@@ -22495,12 +24683,16 @@
       "128",
       "144",
       "188",
-      "226"
+      "226",
+      "3039"
     ],
     "warner bros": [
       "2398"
     ],
     "warner bros acquisition": [
+      "2398"
+    ],
+    "warner bros.": [
       "2398"
     ],
     "warsh": [
@@ -22511,6 +24703,9 @@
     ],
     "washington commanders": [
       "180"
+    ],
+    "wbd": [
+      "2398"
     ],
     "wealth": [
       "236"
@@ -22530,6 +24725,9 @@
     ],
     "west winner": [
       "179"
+    ],
+    "westworld": [
+      "3158"
     ],
     "what apple": [
       "122"
@@ -22601,6 +24799,9 @@
     "what top netflix": [
       "214"
     ],
+    "wheeler family": [
+      "3222"
+    ],
     "which ceos": [
       "193"
     ],
@@ -22629,6 +24830,9 @@
       "135",
       "136"
     ],
+    "white house": [
+      "3062"
+    ],
     "white metal": [
       "227"
     ],
@@ -22655,6 +24859,9 @@
     ],
     "who trump nominate": [
       "107"
+    ],
+    "will byers": [
+      "3221"
     ],
     "win house": [
       "135"
@@ -22696,6 +24903,7 @@
       "129"
     ],
     "xau": [
+      "1098",
       "241",
       "62"
     ],
@@ -22714,11 +24922,20 @@
     "yellow metal": [
       "62"
     ],
+    "yen": [
+      "3132"
+    ],
+    "yen-buying": [
+      "3132"
+    ],
     "yen-buying intervention": [
       "3132"
     ],
     "yen-buying intervention jan": [
       "3132"
+    ],
+    "yg entertainment": [
+      "2178"
     ],
     "yield curve control": [
       "120",
@@ -22737,6 +24954,9 @@
     "zelenskyy out ukraine": [
       "202"
     ],
+    "zhao": [
+      "3369"
+    ],
     "zhao bei": [
       "1856"
     ],
@@ -22750,6 +24970,9 @@
       "237",
       "66"
     ],
+    "中本聪": [
+      "3365"
+    ],
     "乌克兰": [
       "127",
       "202"
@@ -22757,11 +24980,22 @@
     "乌克兰总统": [
       "202"
     ],
+    "乔纳森·拜尔斯": [
+      "3221"
+    ],
+    "亚历克斯·霍诺德": [
+      "3073"
+    ],
     "人工智能": [
       "66"
     ],
     "以太坊": [
+      "1098",
+      "1721",
       "228",
+      "3359",
+      "3364",
+      "3575",
       "64",
       "67"
     ],
@@ -22772,7 +25006,8 @@
       "208"
     ],
     "以色列": [
-      "226"
+      "226",
+      "3039"
     ],
     "众议院": [
       "135"
@@ -22789,8 +25024,29 @@
     "共识系统": [
       "205"
     ],
+    "加密货币漏洞利用": [
+      "3360"
+    ],
+    "加密货币黑客攻击": [
+      "3360"
+    ],
+    "华纳兄弟": [
+      "2398"
+    ],
+    "南希·惠勒": [
+      "3223"
+    ],
+    "南茜·惠勒": [
+      "3223"
+    ],
     "参议院": [
       "136"
+    ],
+    "叙利亚": [
+      "3355"
+    ],
+    "台北101": [
+      "3073"
     ],
     "哈梅内伊": [
       "242"
@@ -22852,6 +25108,10 @@
       "118",
       "189"
     ],
+    "币安币": [
+      "3367",
+      "3368"
+    ],
     "市值第一": [
       "65"
     ],
@@ -22869,7 +25129,8 @@
       "244"
     ],
     "微策略": [
-      "111"
+      "111",
+      "3257"
     ],
     "怪奇物语": [
       "215"
@@ -22901,6 +25162,9 @@
     "最有价值的公司": [
       "236"
     ],
+    "最高法院": [
+      "1546"
+    ],
     "最高领袖": [
       "242"
     ],
@@ -22920,10 +25184,19 @@
       "111",
       "112",
       "145",
+      "3256",
+      "3365",
+      "3571",
       "58"
     ],
     "波利市场": [
       "208"
+    ],
+    "泰莎·汤普森": [
+      "3158"
+    ],
+    "泰达币": [
+      "3359"
     ],
     "泽连斯基": [
       "202"
@@ -22934,13 +25207,19 @@
     "澳大利亚网球公开赛": [
       "222"
     ],
+    "特大地震": [
+      "3356"
+    ],
     "特斯拉": [
       "124",
       "198"
     ],
     "特朗普": [
       "107",
-      "142"
+      "142",
+      "1546",
+      "3055",
+      "3062"
     ],
     "皮卡丘插画": [
       "217"
@@ -22956,6 +25235,10 @@
     ],
     "索拉纳": [
       "85"
+    ],
+    "经济衰退": [
+      "1951",
+      "3265"
     ],
     "罗根·保罗": [
       "217"
@@ -22974,6 +25257,9 @@
     "美国国家橄榄球联盟": [
       "240"
     ],
+    "美国政府": [
+      "3114"
+    ],
     "美国职业篮球": [
       "103",
       "115"
@@ -22988,12 +25274,16 @@
     "美联储": [
       "107",
       "153",
+      "3114",
       "61",
       "75",
       "78"
     ],
     "美联储主席": [
       "107"
+    ],
+    "耶稣基督": [
+      "2670"
     ],
     "联邦储备": [
       "107"
@@ -23010,8 +25300,32 @@
     "英雄联盟职业联赛": [
       "212"
     ],
+    "蒂姆·库克": [
+      "2368"
+    ],
+    "蒙纳德": [
+      "1721"
+    ],
+    "贾跃亭": [
+      "1856"
+    ],
+    "赵长鹏": [
+      "3369"
+    ],
+    "超级地震": [
+      "3356"
+    ],
     "超级碗": [
       "81"
+    ],
+    "达斯汀": [
+      "3224"
+    ],
+    "达斯汀·亨德森": [
+      "3224"
+    ],
+    "霍莉·惠勒": [
+      "3222"
     ],
     "韩国英雄联盟职业联赛": [
       "213"
