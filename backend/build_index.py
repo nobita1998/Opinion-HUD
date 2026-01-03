@@ -9,7 +9,7 @@ import zhipuai
 
 
 OPINION_API_URL = os.environ.get("OPINION_API_URL", "").strip() or "http://opinion.api.predictscan.dev:10001/api/markets"
-OPINION_WRAP_EVENTS_URL = "https://opinionanalytics.xyz/api/markets/wrap-events"
+OPINION_WRAP_EVENTS_URL = "http://opinion.api.predictscan.dev:10001/api/markets/wrap-events"
 FRONTEND_BASE_URL = "https://app.opinion.trade"
 MODEL_NAME = "GLM-4.7"
 REF_PARAM = "opinion_hud"
