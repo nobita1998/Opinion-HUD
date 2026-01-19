@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-01-19 16:48:23 UTC+8",
+    "generatedAt": "2026-01-20 00:44:42 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -10,7 +10,7 @@
       "seen": 1000,
       "kept": 700,
       "markets": 225,
-      "keywords": 2332,
+      "keywords": 2343,
       "events": {
         "events": 131
       },
@@ -29,12 +29,12 @@
         "fullAiRefresh": false,
         "onlyAiForNew": true,
         "reused": 130,
-        "regenerated_empty_entitygroups": 0,
+        "regenerated_empty_entitygroups": 1,
         "calls": 1,
-        "retries": 1,
+        "retries": 0,
         "fallback": 0,
-        "empty": 1,
-        "non_empty": 0,
+        "empty": 0,
+        "non_empty": 1,
         "errors": 0
       }
     }
@@ -6888,12 +6888,33 @@
       "bestMarketId": "132",
       "bestLabels": null,
       "keywords": [
+        "newjeans",
+        "k-pop",
+        "girl group",
+        "comeback",
+        "concert",
+        "performance",
+        "live show",
+        "stage",
+        "ador",
+        "hybe",
+        "minji",
+        "hanni",
+        "danielle",
+        "haerin",
+        "hyein",
         "newjeans perform",
         "perform again",
         "newjeans perform again"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "newjeans"
+      ],
+      "entityGroups": [
+        [
+          "newjeans"
+        ]
+      ],
       "sig": "89bf8940",
       "sigFull": "89bf8940",
       "sigCore": "08617cac",
@@ -21456,12 +21477,33 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "newjeans",
+        "k-pop",
+        "girl group",
+        "comeback",
+        "concert",
+        "performance",
+        "live show",
+        "stage",
+        "ador",
+        "hybe",
+        "minji",
+        "hanni",
+        "danielle",
+        "haerin",
+        "hyein",
         "newjeans perform",
         "perform again",
         "newjeans perform again"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "newjeans"
+      ],
+      "entityGroups": [
+        [
+          "newjeans"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -21882,6 +21924,9 @@
     ],
     "administration": [
       "202"
+    ],
+    "ador": [
+      "132"
     ],
     "adp": [
       "273"
@@ -23148,6 +23193,7 @@
       "3072"
     ],
     "comeback": [
+      "132",
       "2178",
       "3369"
     ],
@@ -23192,6 +23238,9 @@
     ],
     "composer": [
       "284"
+    ],
+    "concert": [
+      "132"
     ],
     "conduct yen-buying": [
       "3132"
@@ -23453,6 +23502,9 @@
     ],
     "daniel day-lewis": [
       "137"
+    ],
+    "danielle": [
+      "132"
     ],
     "daredevil": [
       "3073"
@@ -24643,6 +24695,7 @@
       "144"
     ],
     "girl group": [
+      "132",
       "2178"
     ],
     "global box office": [
@@ -24890,6 +24943,9 @@
     "hack over $100m": [
       "3360"
     ],
+    "haerin": [
+      "132"
+    ],
     "halving": [
       "145",
       "246",
@@ -24897,6 +24953,9 @@
     ],
     "hammer & chisel": [
       "190"
+    ],
+    "hanni": [
+      "132"
     ],
     "happy slam": [
       "222"
@@ -25082,6 +25141,12 @@
     ],
     "how much revenue": [
       "196"
+    ],
+    "hybe": [
+      "132"
+    ],
+    "hyein": [
+      "132"
     ],
     "hype": [
       "3361"
@@ -25468,6 +25533,7 @@
       "3508"
     ],
     "k-pop": [
+      "132",
       "2178"
     ],
     "kain warwick": [
@@ -25833,6 +25899,9 @@
       "97",
       "98",
       "99"
+    ],
+    "live show": [
+      "132"
     ],
     "livestream": [
       "3073"
@@ -26284,6 +26353,9 @@
     "ministry of finance": [
       "3132"
     ],
+    "minji": [
+      "132"
+    ],
     "mint": [
       "201"
     ],
@@ -26642,6 +26714,9 @@
     ],
     "new york giants": [
       "180"
+    ],
+    "newjeans": [
+      "132"
     ],
     "newjeans perform": [
       "132"
@@ -27155,7 +27230,8 @@
       "132"
     ],
     "performance": [
-      "123"
+      "123",
+      "132"
     ],
     "permanent role": [
       "3369"
@@ -28411,6 +28487,9 @@
     ],
     "stablecoin depeg": [
       "3359"
+    ],
+    "stage": [
+      "132"
     ],
     "stagnation": [
       "3265"
@@ -30618,6 +30697,9 @@
     "administration": [
       "202"
     ],
+    "ador": [
+      "132"
+    ],
     "adp": [
       "273"
     ],
@@ -31595,6 +31677,9 @@
     "collectible": [
       "217"
     ],
+    "comeback": [
+      "132"
+    ],
     "commodity": [
       "227",
       "241",
@@ -31633,6 +31718,9 @@
     ],
     "composer": [
       "284"
+    ],
+    "concert": [
+      "132"
     ],
     "conference": [
       "179",
@@ -31815,6 +31903,9 @@
     ],
     "daniel day-lewis": [
       "137"
+    ],
+    "danielle": [
+      "132"
     ],
     "day after": [
       "173",
@@ -32738,6 +32829,9 @@
     "geopolitics": [
       "144"
     ],
+    "girl group": [
+      "132"
+    ],
     "global box office": [
       "84"
     ],
@@ -32949,6 +33043,9 @@
     "group stage": [
       "83"
     ],
+    "haerin": [
+      "132"
+    ],
     "halving": [
       "145",
       "246",
@@ -32956,6 +33053,9 @@
     ],
     "hammer & chisel": [
       "190"
+    ],
+    "hanni": [
+      "132"
     ],
     "happy slam": [
       "222"
@@ -33073,6 +33173,12 @@
     ],
     "how much revenue": [
       "196"
+    ],
+    "hybe": [
+      "132"
+    ],
+    "hyein": [
+      "132"
     ],
     "ico": [
       "167",
@@ -33338,6 +33444,9 @@
     ],
     "june 2026 elections": [
       "130"
+    ],
+    "k-pop": [
+      "132"
     ],
     "kain warwick": [
       "184"
@@ -33660,6 +33769,9 @@
       "97",
       "98",
       "99"
+    ],
+    "live show": [
+      "132"
     ],
     "llm": [
       "129",
@@ -34012,6 +34124,9 @@
       "128",
       "274"
     ],
+    "minji": [
+      "132"
+    ],
     "mint": [
       "201"
     ],
@@ -34284,6 +34399,9 @@
     ],
     "new york giants": [
       "180"
+    ],
+    "newjeans": [
+      "132"
     ],
     "newjeans perform": [
       "132"
@@ -34740,7 +34858,8 @@
       "132"
     ],
     "performance": [
-      "123"
+      "123",
+      "132"
     ],
     "perp dex": [
       "175"
@@ -35697,6 +35816,9 @@
     ],
     "st": [
       "215"
+    ],
+    "stage": [
+      "132"
     ],
     "staking": [
       "184"
