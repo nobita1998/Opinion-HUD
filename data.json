@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-01-21 10:29:44 UTC+8",
+    "generatedAt": "2026-01-21 16:47:24 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -10,7 +10,7 @@
       "seen": 1000,
       "kept": 692,
       "markets": 226,
-      "keywords": 2340,
+      "keywords": 2350,
       "events": {
         "events": 131
       },
@@ -28,12 +28,12 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 129,
-        "regenerated_empty_entitygroups": 0,
-        "calls": 2,
+        "reused": 130,
+        "regenerated_empty_entitygroups": 1,
+        "calls": 1,
         "retries": 1,
         "fallback": 0,
-        "empty": 1,
+        "empty": 0,
         "non_empty": 1,
         "errors": 0
       }
@@ -6839,6 +6839,21 @@
       "bestMarketId": "136",
       "bestLabels": null,
       "keywords": [
+        "senate",
+        "us senate",
+        "2026 election",
+        "midterms",
+        "senate race",
+        "upper chamber",
+        "congress",
+        "senate control",
+        "senate majority",
+        "capitol hill",
+        "legislative",
+        "election results",
+        "ballot",
+        "politics",
+        "dc",
         "which party",
         "party win",
         "win senate",
@@ -6847,8 +6862,17 @@
         "party win senate",
         "win senate 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "u.s. senate"
+      ],
+      "entityGroups": [
+        [
+          "u.s. senate",
+          "us senate",
+          "senate",
+          "美国参议院"
+        ]
+      ],
       "sig": "b25fd94c",
       "sigFull": "b25fd94c",
       "sigCore": "2ed68868",
@@ -21381,6 +21405,21 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "senate",
+        "us senate",
+        "2026 election",
+        "midterms",
+        "senate race",
+        "upper chamber",
+        "congress",
+        "senate control",
+        "senate majority",
+        "capitol hill",
+        "legislative",
+        "election results",
+        "ballot",
+        "politics",
+        "dc",
         "which party",
         "party win",
         "win senate",
@@ -21389,8 +21428,17 @@
         "party win senate",
         "win senate 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "u.s. senate"
+      ],
+      "entityGroups": [
+        [
+          "u.s. senate",
+          "us senate",
+          "senate",
+          "美国参议院"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -21588,7 +21636,8 @@
       "141"
     ],
     "2026 election": [
-      "135"
+      "135",
+      "136"
     ],
     "2026 elections": [
       "130"
@@ -22373,7 +22422,8 @@
     ],
     "ballot": [
       "130",
-      "135"
+      "135",
+      "136"
     ],
     "ban": [
       "159",
@@ -22823,7 +22873,8 @@
       "3525"
     ],
     "capitol hill": [
-      "135"
+      "135",
+      "136"
     ],
     "capture": [
       "250"
@@ -23225,7 +23276,8 @@
       "188"
     ],
     "congress": [
-      "135"
+      "135",
+      "136"
     ],
     "consensys": [
       "118",
@@ -23489,6 +23541,9 @@
       "96",
       "97",
       "98"
+    ],
+    "dc": [
+      "136"
     ],
     "de-escalation": [
       "127"
@@ -23892,6 +23947,9 @@
     "election": [
       "116",
       "131"
+    ],
+    "election results": [
+      "136"
     ],
     "election winner": [
       "131"
@@ -25758,7 +25816,8 @@
       "160"
     ],
     "legislative": [
-      "135"
+      "135",
+      "136"
     ],
     "levi's stadium": [
       "81"
@@ -26262,7 +26321,8 @@
       "226"
     ],
     "midterms": [
-      "135"
+      "135",
+      "136"
     ],
     "mike wheeler": [
       "3222"
@@ -27260,6 +27320,7 @@
     ],
     "politics": [
       "131",
+      "136",
       "202",
       "242"
     ],
@@ -28084,7 +28145,19 @@
       "123",
       "268"
     ],
+    "senate": [
+      "136"
+    ],
     "senate 2026": [
+      "136"
+    ],
+    "senate control": [
+      "136"
+    ],
+    "senate majority": [
+      "136"
+    ],
+    "senate race": [
       "136"
     ],
     "seoul": [
@@ -29300,6 +29373,9 @@
     "u.s. house": [
       "135"
     ],
+    "u.s. senate": [
+      "136"
+    ],
     "ucl": [
       "83"
     ],
@@ -29355,6 +29431,9 @@
     "update": [
       "129"
     ],
+    "upper chamber": [
+      "136"
+    ],
     "upside down": [
       "215",
       "3221",
@@ -29391,6 +29470,9 @@
     ],
     "us jobs": [
       "273"
+    ],
+    "us senate": [
+      "136"
     ],
     "us stocks": [
       "186",
@@ -30246,6 +30328,9 @@
     "美国众议院": [
       "135"
     ],
+    "美国参议院": [
+      "136"
+    ],
     "美国国家橄榄球联盟": [
       "240"
     ],
@@ -30424,7 +30509,8 @@
       "141"
     ],
     "2026 election": [
-      "135"
+      "135",
+      "136"
     ],
     "2026 elections": [
       "130"
@@ -31029,7 +31115,8 @@
     ],
     "ballot": [
       "130",
-      "135"
+      "135",
+      "136"
     ],
     "ban": [
       "159",
@@ -31352,7 +31439,8 @@
       "88"
     ],
     "capitol hill": [
-      "135"
+      "135",
+      "136"
     ],
     "capture": [
       "250"
@@ -31677,7 +31765,8 @@
       "188"
     ],
     "congress": [
-      "135"
+      "135",
+      "136"
     ],
     "consensys": [
       "118",
@@ -31859,6 +31948,9 @@
       "96",
       "97",
       "98"
+    ],
+    "dc": [
+      "136"
     ],
     "de-escalation": [
       "127"
@@ -32171,6 +32263,9 @@
     "election": [
       "116",
       "131"
+    ],
+    "election results": [
+      "136"
     ],
     "election winner": [
       "131"
@@ -33608,7 +33703,8 @@
       "160"
     ],
     "legislative": [
-      "135"
+      "135",
+      "136"
     ],
     "levi's stadium": [
       "81"
@@ -34027,7 +34123,8 @@
       "226"
     ],
     "midterms": [
-      "135"
+      "135",
+      "136"
     ],
     "military": [
       "257",
@@ -34855,6 +34952,7 @@
     ],
     "politics": [
       "131",
+      "136",
       "202",
       "242"
     ],
@@ -35461,7 +35559,19 @@
       "123",
       "268"
     ],
+    "senate": [
+      "136"
+    ],
     "senate 2026": [
+      "136"
+    ],
+    "senate control": [
+      "136"
+    ],
+    "senate majority": [
+      "136"
+    ],
+    "senate race": [
       "136"
     ],
     "seoul": [
@@ -36417,6 +36527,9 @@
     "u.s. house": [
       "135"
     ],
+    "u.s. senate": [
+      "136"
+    ],
     "ucl": [
       "83"
     ],
@@ -36469,6 +36582,9 @@
     "update": [
       "129"
     ],
+    "upper chamber": [
+      "136"
+    ],
     "upside down": [
       "215"
     ],
@@ -36498,6 +36614,9 @@
     ],
     "us jobs": [
       "273"
+    ],
+    "us senate": [
+      "136"
     ],
     "us stocks": [
       "186",
@@ -37192,6 +37311,9 @@
     ],
     "美国众议院": [
       "135"
+    ],
+    "美国参议院": [
+      "136"
     ],
     "美国国家橄榄球联盟": [
       "240"
