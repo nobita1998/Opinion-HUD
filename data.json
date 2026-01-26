@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-01-26 10:38:28 UTC+8",
+    "generatedAt": "2026-01-26 16:49:04 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,33 +8,33 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 542,
-      "markets": 194,
-      "keywords": 2061,
+      "kept": 540,
+      "markets": 187,
+      "keywords": 1916,
       "events": {
-        "events": 109
+        "events": 101
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 404,
-        "cutoff_zero_kept": 53,
+        "cutoff_expired": 411,
+        "cutoff_zero_kept": 55,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
-        "title_pattern_filtered": 54
+        "title_pattern_filtered": 49
       },
       "ai": {
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 108,
-        "regenerated_empty_entitygroups": 1,
-        "calls": 1,
-        "retries": 1,
+        "reused": 92,
+        "regenerated_empty_entitygroups": 0,
+        "calls": 9,
+        "retries": 8,
         "fallback": 0,
-        "empty": 1,
-        "non_empty": 0,
+        "empty": 7,
+        "non_empty": 2,
         "errors": 0
       }
     }
@@ -4567,81 +4567,162 @@
       "sigCore": "2f1a2fa5",
       "reused": false
     },
-    "152": {
-      "title": "OpenAI IPO Closing Market Cap",
+    "304": {
+      "title": "2026 Women’s Australian Open Winner",
       "marketIds": [
-        "152"
+        "304"
       ],
-      "bestMarketId": "152",
+      "bestMarketId": "304",
       "bestLabels": null,
       "keywords": [
-        "openai",
-        "ipo",
-        "initial public offering",
-        "valuation",
-        "market capitalization",
-        "stock price",
-        "listing",
-        "going public",
-        "sam altman",
-        "chatgpt",
-        "agi",
-        "microsoft",
-        "public debut",
-        "share price",
-        "ticker",
-        "openai ipo",
-        "ipo closing",
-        "closing market",
-        "market cap",
-        "openai ipo closing",
-        "ipo closing market",
-        "closing market cap"
+        "2026 women",
+        "women australian",
+        "australian open",
+        "open winner",
+        "2026 women australian",
+        "women australian open",
+        "australian open winner"
       ],
-      "entities": [
-        "openai"
-      ],
-      "entityGroups": [
-        [
-          "openai",
-          "开放人工智能"
-        ]
-      ],
-      "sig": "f7b5f866",
-      "sigFull": "f7b5f866",
-      "sigCore": "3b3ecb25",
+      "entities": [],
+      "entityGroups": [],
+      "sig": "8fce1803",
+      "sigFull": "8fce1803",
+      "sigCore": "f558e48f",
       "reused": false
     },
-    "153": {
-      "title": "US Fed Rate Decision: April 2026",
+    "302": {
+      "title": "Will Israel strike Lebanon on ...?",
       "marketIds": [
-        "153"
+        "302"
       ],
-      "bestMarketId": "153",
+      "bestMarketId": "302",
       "bestLabels": null,
       "keywords": [
-        "federal reserve",
+        "israel strike",
+        "strike lebanon",
+        "israel strike lebanon"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "99c9a616",
+      "sigFull": "99c9a616",
+      "sigCore": "1685c349",
+      "reused": false
+    },
+    "303": {
+      "title": "How long will the Government Shutdown last?",
+      "marketIds": [
+        "303"
+      ],
+      "bestMarketId": "303",
+      "bestLabels": null,
+      "keywords": [
+        "how long",
+        "long government",
+        "government shutdown",
+        "shutdown last",
+        "how long government",
+        "long government shutdown",
+        "government shutdown last"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "5d94e068",
+      "sigFull": "5d94e068",
+      "sigCore": "7227cac5",
+      "reused": false
+    },
+    "301": {
+      "title": "Next President of Vietnam",
+      "marketIds": [
+        "301"
+      ],
+      "bestMarketId": "301",
+      "bestLabels": null,
+      "keywords": [
+        "next president",
+        "president vietnam",
+        "next president vietnam"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "b8e75b5f",
+      "sigFull": "b8e75b5f",
+      "sigCore": "b0e78fd0",
+      "reused": false
+    },
+    "300": {
+      "title": "Jerome Powell out as Fed Chair by ...?",
+      "marketIds": [
+        "300"
+      ],
+      "bestMarketId": "300",
+      "bestLabels": null,
+      "keywords": [
+        "jerome powell",
+        "powell out",
+        "out fed",
+        "fed chair",
+        "jerome powell out",
+        "powell out fed",
+        "out fed chair"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "5c8e6c30",
+      "sigFull": "5c8e6c30",
+      "sigCore": "db57ab75",
+      "reused": false
+    },
+    "61": {
+      "title": "US Fed Rate Decision in January?",
+      "marketIds": [
+        "61"
+      ],
+      "bestMarketId": "61",
+      "bestLabels": null,
+      "keywords": [
+        "fed rate",
+        "rate decision",
+        "decision january",
+        "fed rate decision",
+        "rate decision january"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "4c71b8a3",
+      "sigFull": "4c71b8a3",
+      "sigCore": "29ccc4db",
+      "reused": false
+    },
+    "75": {
+      "title": "US Fed Rate Decision in March?",
+      "marketIds": [
+        "75"
+      ],
+      "bestMarketId": "75",
+      "bestLabels": null,
+      "keywords": [
         "fed",
+        "federal reserve",
         "fomc",
         "interest rate",
         "rate cut",
         "rate hike",
         "monetary policy",
         "jerome powell",
-        "central bank",
-        "federal funds rate",
-        "inflation",
         "cpi",
+        "inflation",
+        "basis points",
+        "central bank",
         "us economy",
-        "dot plot",
-        "powell",
+        "discount rate",
+        "federal funds rate",
         "fed rate",
         "rate decision",
-        "decision april",
-        "april 2026",
+        "decision march",
         "fed rate decision",
-        "rate decision april",
-        "decision april 2026"
+        "rate decision march"
       ],
       "entities": [
         "fed"
@@ -4654,647 +4735,81 @@
           "美联储"
         ]
       ],
-      "sig": "2c8b9acf",
-      "sigFull": "2c8b9acf",
-      "sigCore": "09e6a707",
+      "sig": "e7014d94",
+      "sigFull": "e7014d94",
+      "sigCore": "cb3bebcc",
       "reused": false
     },
-    "150": {
-      "title": "Starmer out by...?",
+    "78": {
+      "title": "How many Fed rate cuts in 2026?",
       "marketIds": [
-        "150"
+        "78"
       ],
-      "bestMarketId": "150",
+      "bestMarketId": "78",
       "bestLabels": null,
       "keywords": [
-        "keir starmer",
-        "starmer",
-        "uk prime minister",
-        "labour party",
-        "pm",
-        "resignation",
-        "step down",
-        "ousted",
-        "uk politics",
-        "downing street",
-        "labour leader",
-        "number 10",
-        "general election",
-        "vote of no confidence",
-        "sacked",
-        "starmer out"
+        "fed",
+        "federal reserve",
+        "fomc",
+        "rate cut",
+        "interest rate",
+        "monetary policy",
+        "easing",
+        "dovish",
+        "powell",
+        "inflation",
+        "federal funds rate",
+        "discount rate",
+        "jerome powell",
+        "central bank",
+        "rate decision",
+        "how many",
+        "many fed",
+        "fed rate",
+        "rate cuts",
+        "cuts 2026",
+        "how many fed",
+        "many fed rate",
+        "fed rate cuts",
+        "rate cuts 2026"
       ],
       "entities": [
-        "starmer"
+        "fed"
       ],
       "entityGroups": [
         [
-          "starmer",
-          "基尔·斯塔默",
-          "斯塔默"
+          "fed",
+          "federal reserve",
+          "fomc",
+          "美联储"
         ]
       ],
-      "sig": "5f562230",
-      "sigFull": "5f562230",
-      "sigCore": "91b4af94",
+      "sig": "42c135b4",
+      "sigFull": "42c135b4",
+      "sigCore": "1c69fe17",
       "reused": false
     },
-    "144": {
-      "title": "US x Venezuela military engagement by...?",
+    "79": {
+      "title": "2026 FIFA World Cup Winner",
       "marketIds": [
-        "144"
+        "79"
       ],
-      "bestMarketId": "144",
+      "bestMarketId": "79",
       "bestLabels": null,
       "keywords": [
-        "us",
-        "usa",
-        "united states",
-        "venezuela",
-        "military engagement",
-        "war",
-        "conflict",
-        "invasion",
-        "attack",
-        "intervention",
-        "hostilities",
-        "combat",
-        "clash",
-        "armed conflict",
-        "venezuela military",
-        "venezuela military engagement"
-      ],
-      "entities": [
-        "venezuela"
-      ],
-      "entityGroups": [
-        [
-          "venezuela",
-          "委内瑞拉"
-        ]
-      ],
-      "sig": "9ba723f2",
-      "sigFull": "9ba723f2",
-      "sigCore": "0f16cb93",
-      "reused": false
-    },
-    "143": {
-      "title": "Kraken IPO by ...?",
-      "marketIds": [
-        "143"
-      ],
-      "bestMarketId": "143",
-      "bestLabels": null,
-      "keywords": [
-        "kraken",
-        "crypto exchange",
-        "public listing",
-        "stock market",
-        "going public",
-        "shares",
-        "direct listing",
-        "sec filing",
-        "valuation",
-        "payward",
-        "exchange",
-        "ipo",
-        "ticker",
-        "debut",
-        "offering",
-        "kraken ipo"
-      ],
-      "entities": [
-        "kraken"
-      ],
-      "entityGroups": [
-        [
-          "kraken",
-          "kraken交易所"
-        ]
-      ],
-      "sig": "b4179e58",
-      "sigFull": "b4179e58",
-      "sigCore": "549e4d02",
-      "reused": false
-    },
-    "142": {
-      "title": "Will Trump visit China by...?",
-      "marketIds": [
-        "142"
-      ],
-      "bestMarketId": "142",
-      "bestLabels": null,
-      "keywords": [
-        "trump",
-        "china",
-        "visit",
-        "beijing",
-        "diplomatic",
-        "trip",
-        "state visit",
-        "us-china",
-        "relations",
-        "summit",
-        "potus",
-        "xi jinping",
-        "diplomacy",
-        "meeting",
-        "xi",
-        "trump visit",
-        "visit china",
-        "trump visit china"
-      ],
-      "entities": [
-        "trump",
-        "china"
-      ],
-      "entityGroups": [
-        [
-          "trump",
-          "特朗普"
-        ],
-        [
-          "china"
-        ]
-      ],
-      "sig": "6b107836",
-      "sigFull": "6b107836",
-      "sigCore": "dd78d8c0",
-      "reused": false
-    },
-    "141": {
-      "title": "Oscars 2026: Best Supporting Actress Winner",
-      "marketIds": [
-        "141"
-      ],
-      "bestMarketId": "141",
-      "bestLabels": null,
-      "keywords": [
-        "oscars",
-        "academy awards",
-        "best supporting actress",
-        "2026",
-        "film awards",
-        "cinema",
-        "movies",
-        "nominees",
-        "actress",
-        "hollywood",
-        "red carpet",
-        "golden statue",
-        "98th oscars",
-        "motion pictures",
-        "oscars 2026",
-        "2026 best",
-        "best supporting",
-        "supporting actress",
-        "actress winner",
-        "oscars 2026 best",
-        "2026 best supporting",
-        "supporting actress winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "oscar",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "sig": "61ae0d9b",
-      "sigFull": "61ae0d9b",
-      "sigCore": "4b220b3a",
-      "reused": false
-    },
-    "140": {
-      "title": "Oscars 2026: Best Supporting Actor Winner",
-      "marketIds": [
-        "140"
-      ],
-      "bestMarketId": "140",
-      "bestLabels": null,
-      "keywords": [
-        "oscars",
-        "academy awards",
-        "best supporting actor",
-        "2026",
-        "film awards",
-        "cinema",
-        "actors",
-        "nominees",
-        "ceremony",
-        "ampas",
-        "movies",
-        "hollywood",
-        "golden statuette",
-        "acting award",
-        "red carpet",
-        "oscars 2026",
-        "2026 best",
-        "best supporting",
-        "supporting actor",
-        "actor winner",
-        "oscars 2026 best",
-        "2026 best supporting",
-        "supporting actor winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "oscar",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "sig": "2f052ec1",
-      "sigFull": "2f052ec1",
-      "sigCore": "38e5939e",
-      "reused": false
-    },
-    "137": {
-      "title": "Oscars 2026: Best Actor Winner",
-      "marketIds": [
-        "137"
-      ],
-      "bestMarketId": "137",
-      "bestLabels": null,
-      "keywords": [
-        "oscars 2026",
-        "academy awards 2026",
-        "best actor",
-        "leading actor",
-        "oscar winner",
-        "academy award",
-        "film awards",
-        "hollywood",
-        "ceremony",
-        "nominees",
-        "acting",
-        "98th oscars",
-        "cinema",
-        "motion pictures",
-        "red carpet",
-        "2026 best",
-        "actor winner",
-        "oscars 2026 best",
-        "2026 best actor",
-        "best actor winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "oscar",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "sig": "67afba60",
-      "sigFull": "67afba60",
-      "sigCore": "0167b563",
-      "reused": false
-    },
-    "136": {
-      "title": "Which party will win the U.S. Senate in 2026?",
-      "marketIds": [
-        "136"
-      ],
-      "bestMarketId": "136",
-      "bestLabels": null,
-      "keywords": [
-        "senate",
-        "us senate",
-        "united states senate",
-        "2026 election",
-        "midterms",
-        "senate race",
-        "upper chamber",
-        "congress",
-        "legislative",
-        "majority",
-        "capitol hill",
-        "senate control",
-        "senate seats",
-        "elections",
-        "politics",
-        "which party",
-        "party win",
-        "win senate",
-        "senate 2026",
-        "which party win",
-        "party win senate",
-        "win senate 2026"
-      ],
-      "entities": [
-        "u.s. senate"
-      ],
-      "entityGroups": [
-        [
-          "u.s. senate",
-          "us senate",
-          "美国参议院"
-        ]
-      ],
-      "sig": "912665a8",
-      "sigFull": "912665a8",
-      "sigCore": "2ed68868",
-      "reused": false
-    },
-    "135": {
-      "title": "Which party will win the U.S. House in 2026?",
-      "marketIds": [
-        "135"
-      ],
-      "bestMarketId": "135",
-      "bestLabels": null,
-      "keywords": [
-        "us house",
-        "house of representatives",
-        "2026 midterms",
-        "house election",
-        "congress",
-        "house control",
-        "lower chamber",
-        "congressional",
-        "capitol hill",
-        "house majority",
-        "house seats",
-        "legislature",
-        "representatives",
-        "midterm election",
-        "house race",
-        "which party",
-        "party win",
-        "win house",
-        "house 2026",
-        "which party win",
-        "party win house",
-        "win house 2026"
-      ],
-      "entities": [
-        "u.s. house",
-        "2026年"
-      ],
-      "entityGroups": [
-        [
-          "u.s. house",
-          "美国众议院",
-          "众议院"
-        ],
-        [
-          "2026年",
-          "2026年选举"
-        ]
-      ],
-      "sig": "a432b48c",
-      "sigFull": "a432b48c",
-      "sigCore": "e7097f4c",
-      "reused": false
-    },
-    "132": {
-      "title": "Will NewJeans perform again by ...?",
-      "marketIds": [
-        "132"
-      ],
-      "bestMarketId": "132",
-      "bestLabels": null,
-      "keywords": [
-        "newjeans",
-        "k-pop",
-        "girl group",
-        "concert",
-        "performance",
-        "comeback",
-        "live",
-        "stage",
-        "ador",
-        "min hee-jin",
-        "bunnies",
-        "tour",
-        "music",
-        "live performance",
-        "korean pop",
-        "newjeans perform",
-        "perform again",
-        "newjeans perform again"
-      ],
-      "entities": [
-        "newjeans"
-      ],
-      "entityGroups": [
-        [
-          "newjeans",
-          "newjeans组合"
-        ]
-      ],
-      "sig": "89bf8940",
-      "sigFull": "89bf8940",
-      "sigCore": "08617cac",
-      "reused": false
-    },
-    "131": {
-      "title": "2026 Seoul Mayoral Election Winner",
-      "marketIds": [
-        "131"
-      ],
-      "bestMarketId": "131",
-      "bestLabels": null,
-      "keywords": [
-        "seoul",
-        "mayor",
-        "election",
-        "2026",
-        "south korea",
-        "politics",
-        "vote",
-        "campaign",
-        "local election",
-        "municipal",
-        "ballot",
-        "seoul city",
-        "civic",
-        "race",
-        "poll",
-        "2026 seoul",
-        "seoul mayoral",
-        "mayoral election",
-        "election winner",
-        "2026 seoul mayoral",
-        "seoul mayoral election",
-        "mayoral election winner"
-      ],
-      "entities": [
-        "seoul mayoral election"
-      ],
-      "entityGroups": [
-        [
-          "seoul mayoral election",
-          "seoul mayor",
-          "首尔市长选举",
-          "首尔市长"
-        ]
-      ],
-      "sig": "922cd6b5",
-      "sigFull": "922cd6b5",
-      "sigCore": "743a7327",
-      "reused": false
-    },
-    "130": {
-      "title": "2026 South Korean Local Elections: Party Winner",
-      "marketIds": [
-        "130"
-      ],
-      "bestMarketId": "130",
-      "bestLabels": null,
-      "keywords": [
-        "south korea",
-        "korea",
-        "local elections",
-        "municipal elections",
-        "regional elections",
-        "local polls",
-        "korean politics",
-        "civic elections",
-        "provincial elections",
-        "metropolitan elections",
-        "council elections",
-        "2026 elections",
-        "korean vote",
-        "local government elections",
-        "2026 south",
-        "south korean",
-        "korean local",
-        "elections party",
-        "party winner",
-        "2026 south korean",
-        "south korean local",
-        "korean local elections",
-        "local elections party",
-        "elections party winner"
-      ],
-      "entities": [
-        "south korea",
-        "local elections"
-      ],
-      "entityGroups": [
-        [
-          "south korea",
-          "korea"
-        ],
-        [
-          "local elections",
-          "地方选举"
-        ]
-      ],
-      "sig": "51e6b760",
-      "sigFull": "51e6b760",
-      "sigCore": "ab7cdd05",
-      "reused": false
-    },
-    "129": {
-      "title": "Grok 5 released by...?",
-      "marketIds": [
-        "129"
-      ],
-      "bestMarketId": "129",
-      "bestLabels": null,
-      "keywords": [
-        "grok 5",
-        "grok",
-        "xai",
-        "ai model",
-        "llm",
-        "large language model",
-        "elon musk",
-        "x",
-        "twitter",
-        "artificial intelligence",
-        "chatbot",
-        "generative ai",
-        "update",
-        "version 5",
-        "release",
-        "grok released"
-      ],
-      "entities": [
-        "grok 5"
-      ],
-      "entityGroups": [
-        [
-          "grok 5",
-          "grok-5",
-          "格罗克 5"
-        ]
-      ],
-      "sig": "b92ef6bf",
-      "sigFull": "b92ef6bf",
-      "sigCore": "0148eaab",
-      "reused": false
-    },
-    "128": {
-      "title": "Will the U.S. invade Venezuela by...?",
-      "marketIds": [
-        "128"
-      ],
-      "bestMarketId": "128",
-      "bestLabels": null,
-      "keywords": [
-        "us",
-        "usa",
-        "united states",
-        "venezuela",
-        "invasion",
-        "military intervention",
-        "war",
-        "conflict",
-        "caracas",
-        "maduro",
-        "regime change",
-        "intervention",
-        "troops",
-        "deployment",
-        "operation",
-        "invade venezuela"
-      ],
-      "entities": [
-        "venezuela"
-      ],
-      "entityGroups": [
-        [
-          "venezuela",
-          "委内瑞拉"
-        ]
-      ],
-      "sig": "fd6a8635",
-      "sigFull": "fd6a8635",
-      "sigCore": "ac5704a1",
-      "reused": false
-    },
-    "127": {
-      "title": "Russia x Ukraine ceasefire by ...?",
-      "marketIds": [
-        "127"
-      ],
-      "bestMarketId": "127",
-      "bestLabels": null,
-      "keywords": [
-        "russia ukraine",
-        "ukraine ceasefire",
-        "russia ukraine ceasefire"
+        "2026 fifa",
+        "fifa world",
+        "world cup",
+        "cup winner",
+        "2026 fifa world",
+        "fifa world cup",
+        "world cup winner"
       ],
       "entities": [],
       "entityGroups": [],
-      "sig": "41ffe1be",
-      "sigFull": "41ffe1be",
-      "sigCore": "ea9ab303",
+      "sig": "1af2d09c",
+      "sigFull": "1af2d09c",
+      "sigCore": "2684753d",
       "reused": false
     }
   },
@@ -5372,8 +4887,8 @@
     "229": {
       "title": "Will Exponent launch a token by ...?",
       "url": "https://app.opinion.trade/market/229?ref=opinion_hud",
-      "yesTokenId": "115702856232653468399424977587683133912717133410511075608407480423528045892108",
-      "noTokenId": "47258376111758653751833936573974637458624001086058989436969424841600379938255",
+      "yesTokenId": "35312435012894555674539783058151251874657539918824654041349035822265306231125",
+      "noTokenId": "16083431755229291179841959276332498817162248905139740671871370917581347447162",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5782,8 +5297,8 @@
     "222": {
       "title": "2026 Men's Australian Open Winner",
       "url": "https://app.opinion.trade/market/222?ref=opinion_hud",
-      "yesTokenId": "68087172610554274638226732235885933041593128691934221197568495110385465635635",
-      "noTokenId": "64577943242976889766632440991206514906722876271028100915910622389812397307553",
+      "yesTokenId": "5841777524912799911686489680621025231260681953989292512757327612553713369228",
+      "noTokenId": "64344099329391618910350584391575213797350489347270647407750665766451908245116",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5863,8 +5378,8 @@
     "220": {
       "title": "Fogo FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/220?ref=opinion_hud",
-      "yesTokenId": "78481179014038604690491576798208789689643477963145344263047946559818857595076",
-      "noTokenId": "85632078660875032730575360234194300660770599514580933727692386824851381684551",
+      "yesTokenId": "81093765560098822370392760811745881364004861400469768924184551996542241414436",
+      "noTokenId": "83574676688654189515176946037905840306798931513924556793491370742275611437712",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -6079,8 +5594,8 @@
     "217": {
       "title": "Logan Paul’s Pikachu Illustrator Sale Price",
       "url": "https://app.opinion.trade/market/217?ref=opinion_hud",
-      "yesTokenId": "93435953815215320700598632988882838098234557514206527089879439125622229414856",
-      "noTokenId": "4450528832134893234200795655594851476245001419829315873418983393546117933257",
+      "yesTokenId": "53647924542344405029573840902671185339851514238912476637970950176486675203792",
+      "noTokenId": "92817814660786166169649289307538404540546357225977922304804743187565485202236",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -6560,8 +6075,8 @@
     "213": {
       "title": "LoL: LCK 2026 Season Winner",
       "url": "https://app.opinion.trade/market/213?ref=opinion_hud",
-      "yesTokenId": "95680397316618465550493039583079560685825112728624397004650825712466309116228",
-      "noTokenId": "53333759767228973750143071041675661540397554036067065819400126916280837782309",
+      "yesTokenId": "10575169940350673038329941282694993448649009946715875489267217836660242353416",
+      "noTokenId": "30731372030458147040263688259634213641967524788160964732342063860785107739513",
       "volume": 0.0,
       "labels": {
         "yesLabel": "",
@@ -6938,8 +6453,8 @@
     "211": {
       "title": "Oscars 2026: Best Film Editing Winner",
       "url": "https://app.opinion.trade/market/211?ref=opinion_hud",
-      "yesTokenId": "98806218536517606985079376611528023470492439727581698053717195048206087003100",
-      "noTokenId": "73415241981539668320609037271728826348499786448468502943085382734888078985522",
+      "yesTokenId": "91547029013374205728743956837572171332949746726626652884609894558155654335655",
+      "noTokenId": "7990063303919447377831312098189189955167427235533588751652030413502849465917",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7032,8 +6547,8 @@
     "210": {
       "title": "Oscars 2026: Best Cinematography Winner",
       "url": "https://app.opinion.trade/market/210?ref=opinion_hud",
-      "yesTokenId": "73628395073490911128467691468822460545024104027714302745334690941902770842300",
-      "noTokenId": "27800423150729886263105054094239335723111031988118727923907796263815385050418",
+      "yesTokenId": "88336067347195853173637484455809966290960199220096053818084012105273064665247",
+      "noTokenId": "9005394338599128964636553593773716029861893596611889890098224993106468178677",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7127,8 +6642,8 @@
     "133": {
       "title": "Oscars 2026: Best Picture Winner",
       "url": "https://app.opinion.trade/market/133?ref=opinion_hud",
-      "yesTokenId": "105388411368108830456957901936489201717115318116506671315952011000460771461941",
-      "noTokenId": "42362856914625277606278908950857697872699971953894941575034602556881295063343",
+      "yesTokenId": "17828794585070893261133472179271761288721127692882594516363615117232199242765",
+      "noTokenId": "111172107587335227979856667389274301337908348186822776054423212092069837996687",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7209,8 +6724,8 @@
     "138": {
       "title": "Oscars 2026: Best Director Winner",
       "url": "https://app.opinion.trade/market/138?ref=opinion_hud",
-      "yesTokenId": "79819285130341161621395884454898779900974528486208136193303785936968103124224",
-      "noTokenId": "56833571775817983863340201739667361346787837560080387221469481128397007518151",
+      "yesTokenId": "83202940911455020211599477075907670745109101129958506709829025440531607613090",
+      "noTokenId": "16672002632424853407556690671930994684441968931848499178372012487261269280392",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7382,8 +6897,8 @@
     "208": {
       "title": "Will Polymarket launch its own Ethereum Layer 2 network (“POLY”) by ...?",
       "url": "https://app.opinion.trade/market/208?ref=opinion_hud",
-      "yesTokenId": "75467241709236517794139987604582783775982550593772061414056416165940300825147",
-      "noTokenId": "97418237283555501983834789808368058878207969041024815807343305053817791932009",
+      "yesTokenId": "8643119553258704607376014481195862847259618676390014649604649985229550971789",
+      "noTokenId": "42024829358961544665730504577228828797422193815281238252555203924253326625470",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7597,8 +7112,8 @@
     "204": {
       "title": "SpaceX IPO closing market cap above ...?",
       "url": "https://app.opinion.trade/market/204?ref=opinion_hud",
-      "yesTokenId": "34304594573901624858575269181161897434023273444512318138665769881277544209160",
-      "noTokenId": "58176639515574264807355866449162668798031672341521602726415240405160726819726",
+      "yesTokenId": "86256912765521622635120347374016401024369428912213333164922554395701211563262",
+      "noTokenId": "21721494202774104733982418588256426635204532054965563657697687736433241315604",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7680,8 +7195,8 @@
     "205": {
       "title": "Consensys IPO closing market cap above ... ?",
       "url": "https://app.opinion.trade/market/205?ref=opinion_hud",
-      "yesTokenId": "84878198386279846327306051660424503082988144709133395026322095966444437854107",
-      "noTokenId": "98613906687613983864686358297392784854352495886246110432737567840718749989908",
+      "yesTokenId": "80779226918228515512838063786010424793947417141218825296182765347746636514521",
+      "noTokenId": "5708594107297344682792636340903776936928171314456338530783463111638482169735",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7950,8 +7465,8 @@
     "201": {
       "title": "Will fomo.family launch a token by ___ ?",
       "url": "https://app.opinion.trade/market/201?ref=opinion_hud",
-      "yesTokenId": "54871009167005272283412933302381006764826814224963616443514991572243849811146",
-      "noTokenId": "46638163211971103065505456085061542069261530047052224182752620793643318495262",
+      "yesTokenId": "74869393098280057015800038917531403824736933794293363807219391199100722704649",
+      "noTokenId": "76154192021670909498720677998701476182900681512825503652041816734845778575501",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8025,8 +7540,8 @@
     "200": {
       "title": "Okbet Arena AI trading competition winner?",
       "url": "https://app.opinion.trade/market/200?ref=opinion_hud",
-      "yesTokenId": "84050668144771462745725102411563575263355837446216186466529103827844959435083",
-      "noTokenId": "24558569876224631606533686112546365365987311573982132420492104862671596454999",
+      "yesTokenId": "23531842956787102371605943484234618811255982077472632998524817288703118131297",
+      "noTokenId": "88465730185411082082239142264490271451192709305786100998502230745675173003633",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8149,8 +7664,8 @@
     "198": {
       "title": "Tesla launches unsupervised full self driving (FSD) by...?",
       "url": "https://app.opinion.trade/market/198?ref=opinion_hud",
-      "yesTokenId": "17893743605751990972476886646950993194134129002122279084592338091400481634516",
-      "noTokenId": "63490749654450106024704110595021227982048884636361550722824212826912841842664",
+      "yesTokenId": "42775512786737624035356919131000594910450436840502841216641108330177509188500",
+      "noTokenId": "62442147543838431015363545858792112648809702136395416785726337990899395197187",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8223,8 +7738,8 @@
     "197": {
       "title": "Kodiak FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/197?ref=opinion_hud",
-      "yesTokenId": "51796065210255981432196398943618437629798951633209025177337587299149785667097",
-      "noTokenId": "92629319482577394167402823185919558824604467585257204331742689021110187051836",
+      "yesTokenId": "19037805518397926821130972135629232376348159302894790032914686939700145766374",
+      "noTokenId": "34490761044029206979252502992918139758545050944494727920915188259808165611736",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8304,8 +7819,8 @@
     "196": {
       "title": "How much revenue will the U.S. raise from tariffs in 2025?",
       "url": "https://app.opinion.trade/market/196?ref=opinion_hud",
-      "yesTokenId": "35513231639220004155539972249688601367978586874260018267891931866327496090530",
-      "noTokenId": "41474915856048334352183715970634308525944998923613111859944785870062124469780",
+      "yesTokenId": "115580781933473891667481628972108047648885700764395115414102413900997673022935",
+      "noTokenId": "39864616306090558492347240346196144487731033049240731983534766717832576722417",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8380,8 +7895,8 @@
     "194": {
       "title": "Gensyn FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/194?ref=opinion_hud",
-      "yesTokenId": "11722322982244494487818915990415421206388594060265792465798641133772321549380",
-      "noTokenId": "7935863620145767791353498814021916276664044285847282013968000617074097525356",
+      "yesTokenId": "56767893362677020829304643748172509978615483872871384445629570830002650690235",
+      "noTokenId": "85260151156883712176705462234171033554692519628528211158746466129205397434985",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8467,8 +7982,8 @@
     "193": {
       "title": "Which CEOs will be out before 2027?",
       "url": "https://app.opinion.trade/market/193?ref=opinion_hud",
-      "yesTokenId": "66632965122079078968682389728469520180922910146294725526377082052660199151982",
-      "noTokenId": "22685291342792421289483490443378961162780793359445473883452663656588372179090",
+      "yesTokenId": "15524284528954882996422114918752272773388587244244056669458062662864940861459",
+      "noTokenId": "82132264800578277346090628179396996351512785037078073538615733662600111361295",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8547,8 +8062,8 @@
     "192": {
       "title": "Will Tempo launch a token by ... ?",
       "url": "https://app.opinion.trade/market/192?ref=opinion_hud",
-      "yesTokenId": "75192569508047345193433302784411853143853590654275860009127757165010980963415",
-      "noTokenId": "99275758990759055548719302345033642426971723909069033428285922177443693692203",
+      "yesTokenId": "13383701888787539140130119020982985492804052467854289947031996864351681409967",
+      "noTokenId": "17958343401580878436865536495943485799344672129503972274042135070821626284677",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8694,8 +8209,8 @@
     "183": {
       "title": "USD.AI FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/183?ref=opinion_hud",
-      "yesTokenId": "76256902687500594614940088593890708231185572799863883891052493729220991501650",
-      "noTokenId": "73210717967802974013753028182863136835998721082745400965656713001378871486707",
+      "yesTokenId": "48190219237872911512960979099380182102595204575961702103202444325083082222417",
+      "noTokenId": "36731827017685841838864180804148286799271962415311947666050895195412767911341",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8791,8 +8306,8 @@
     "189": {
       "title": "Metamask FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/189?ref=opinion_hud",
-      "yesTokenId": "100080071397204692052228805914233551822256357995148666924515668779994317393933",
-      "noTokenId": "79747172728705285085741624346842929856150694572364820082004902372191767596713",
+      "yesTokenId": "106789011093481255866712623019317791586598025414843627348045288241127765889612",
+      "noTokenId": "104638484966754950727033063162742860610679899752317981621273549677472754268788",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8871,8 +8386,8 @@
     "188": {
       "title": "Thailand x Cambodia ceasefire by...?",
       "url": "https://app.opinion.trade/market/188?ref=opinion_hud",
-      "yesTokenId": "86823127422019814322351918204417933479217695736607027556107516771994623397765",
-      "noTokenId": "51920611594357996554452201405597394947316447295031125972610065816998122923984",
+      "yesTokenId": "32467383079296745427935664084881336221538318478842524198816826042128366673212",
+      "noTokenId": "47536145334872373731998508211772329735289874306723551433089116092974510770357",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8991,8 +8506,8 @@
     "186": {
       "title": "Which companies added to S&P 500 in Q1 2026?",
       "url": "https://app.opinion.trade/market/186?ref=opinion_hud",
-      "yesTokenId": "27117368319334299973114017159617243145375993940991608158010818727956749662912",
-      "noTokenId": "50645587025780395625489520289801510851507175371312107126410783074600772080982",
+      "yesTokenId": "96292414718636886359675465618566577818638089959314652684966773187053378603753",
+      "noTokenId": "49638420934379054659181718688694385250654865497915554155532566469516340792495",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9475,8 +8990,8 @@
     "175": {
       "title": "Will Paradex launch a token by ...?",
       "url": "https://app.opinion.trade/market/175?ref=opinion_hud",
-      "yesTokenId": "1763828268016259264970804589176396067896880536926288352897911193933510904452",
-      "noTokenId": "115245837850662144871453626940907600918924793397105180851679815708933499199575",
+      "yesTokenId": "18568430249427019270202984814264355629680365141486647833183735458121155587578",
+      "noTokenId": "102176097149550958526874937355121726987634345361642536993334849398604218528098",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9669,8 +9184,8 @@
     "172": {
       "title": "Will Theo launch a token by...?",
       "url": "https://app.opinion.trade/market/172?ref=opinion_hud",
-      "yesTokenId": "92375133487601817273158619948385305146873016707564055643756591303201381212443",
-      "noTokenId": "4385122133632746527311038178320506001405940456672877158842798635848963655328",
+      "yesTokenId": "96737472983091752662347806900040398608047103675632526331190230660674721842538",
+      "noTokenId": "65669882188192030458835930238268316746570741375471400151338036374251323403832",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9741,8 +9256,8 @@
     "171": {
       "title": "OpenAI IPO by...?",
       "url": "https://app.opinion.trade/market/171?ref=opinion_hud",
-      "yesTokenId": "19452222592396133352264721269935422965461316076668302263117070986899503411033",
-      "noTokenId": "21150968920966124130656489205211600494996379993297866947580008213486056111439",
+      "yesTokenId": "67797064011664553985611987694764090712915012213554730877439699244613155036935",
+      "noTokenId": "37076655403141810723292530021595531675081399539819129560717102398257140312999",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9800,8 +9315,8 @@
     "169": {
       "title": "What will SpaceX's public ticker be?",
       "url": "https://app.opinion.trade/market/169?ref=opinion_hud",
-      "yesTokenId": "50904882888793289490788408545877265203885894272105486090811257985455299396618",
-      "noTokenId": "4884819733724555915009755083677517133481514084871846441040696488058963729428",
+      "yesTokenId": "110868385577292227688526078780284454399508634662256468596093748938799638769267",
+      "noTokenId": "73884790313079723042021802489832073259432205064036477373399041011955361219856",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10019,8 +9534,8 @@
     "163": {
       "title": "IPOs before 2027?",
       "url": "https://app.opinion.trade/market/163?ref=opinion_hud",
-      "yesTokenId": "109795486871553108655565534281497204230407769239032818402335152237147338411868",
-      "noTokenId": "51482743100765113426993079274052654194832467936234942166297081592222676556997",
+      "yesTokenId": "51577172381489764938448336156173847527050731624853986335406866881084594920191",
+      "noTokenId": "74011356753856861394021579169374505248673043798738863213691382610575961317978",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10089,8 +9604,8 @@
     "139": {
       "title": "Oscars 2026: Best Actress Winner",
       "url": "https://app.opinion.trade/market/139?ref=opinion_hud",
-      "yesTokenId": "80727044516930100287208897850023105083684179142528159116561894656997818104344",
-      "noTokenId": "89677528972072574644468752440323883339576539142248233420983915652392219590721",
+      "yesTokenId": "72480556588670022484502033564019045568066935090178321620349450460300387641975",
+      "noTokenId": "63042876432609790987288364612034657437261293254426059869085209087746733863524",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10263,8 +9778,8 @@
     "160": {
       "title": "TikTok sale announced by...?",
       "url": "https://app.opinion.trade/market/160?ref=opinion_hud",
-      "yesTokenId": "100012373098823528451941860277329319437286672217757923480329426193179176350375",
-      "noTokenId": "41146366427952163826933963342932409143020611853380108795346041621338015032028",
+      "yesTokenId": "106861778294683670458818451425978839302314912116029382507552518074281166656021",
+      "noTokenId": "12649145350094699011955996557366965302581917181797435747740368668265819361391",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10317,8 +9832,8 @@
     "159": {
       "title": "Who will acquire TikTok?",
       "url": "https://app.opinion.trade/market/159?ref=opinion_hud",
-      "yesTokenId": "56999361883953505128187732805050633320781683002957878674986981911127041825554",
-      "noTokenId": "56289588845640151318260131266074029803434391327212087334649249557396662635188",
+      "yesTokenId": "9929712126215759499654705526714885169164434442307133179699319167314958802942",
+      "noTokenId": "4248780853991230046175901363232506355273597013066417570858180351769573554929",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10401,8 +9916,8 @@
     "158": {
       "title": "SpaceX IPO Closing Market Cap",
       "url": "https://app.opinion.trade/market/158?ref=opinion_hud",
-      "yesTokenId": "81133869454353425371884378785476335431555212749441345139648022233974747899951",
-      "noTokenId": "26453059385360584418250340236724565650792296092995463511714569740861521954510",
+      "yesTokenId": "87713237741266709414203056969159327735836822004159744186199220272642869290666",
+      "noTokenId": "66568671381733798013077711240728187876621263069586954122252415077352699294339",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10496,8 +10011,8 @@
     "67": {
       "title": "MegaETH market cap (FDV) one day after launch?",
       "url": "https://app.opinion.trade/market/67?ref=opinion_hud",
-      "yesTokenId": "90006296183798829073805384581022234290835004793535313505505491477483227587272",
-      "noTokenId": "91834639899647516738376929717597531971033917175195205232850827386484009512343",
+      "yesTokenId": "56075537608696890660202638997977372439235457734662933706914199872025224516885",
+      "noTokenId": "113711705318671481848429981467630738343113384456262621048210805039440580367649",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10981,8 +10496,8 @@
     "97": {
       "title": "Based FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/97?ref=opinion_hud",
-      "yesTokenId": "284679873053967010454886450661750817340851662225511551625886965804015338526",
-      "noTokenId": "10505831853931331351816589839326686005390441643280866228510466806303031215492",
+      "yesTokenId": "103065046385710902706404747699714968136201015746980082918918931398515681794115",
+      "noTokenId": "29510226056407547475541816750956901126393582667643830899728331000861186994214",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11705,8 +11220,8 @@
     "234": {
       "title": "Will Nansen launch a token by ...?",
       "url": "https://app.opinion.trade/market/234?ref=opinion_hud",
-      "yesTokenId": "95021116774030237012252900809537722656013308667603305368893512092366639239281",
-      "noTokenId": "109068237909965667181747501994977816936601600543463819246746856888120206453707",
+      "yesTokenId": "72379689033837772624561528952286089261926066666758511403261054712855099789783",
+      "noTokenId": "101746785351718498645275463482533469807556338402388999984090081872192421917734",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11771,8 +11286,8 @@
     "233": {
       "title": "Will Loopscale launch a token by ...?",
       "url": "https://app.opinion.trade/market/233?ref=opinion_hud",
-      "yesTokenId": "80336183150254028240342189814661707446964820297850067926359130498911384294300",
-      "noTokenId": "9024174701895937369350239229856062750576724219528602115130543489670585709495",
+      "yesTokenId": "12573996177000118938520311806062645788340247899747384369411279678217875295018",
+      "noTokenId": "17412779732187498983240521290686761298024312920204666753469581204345021098754",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11837,8 +11352,8 @@
     "232": {
       "title": "Will Perena launch a token by ...?",
       "url": "https://app.opinion.trade/market/232?ref=opinion_hud",
-      "yesTokenId": "102341396616975183960138827700082404215375920296986674518243750424750714013201",
-      "noTokenId": "41284881932805785960054700744541840506562299614814100225032272513413135565713",
+      "yesTokenId": "109300971089528206112417565419216034289378114953355426339725975652940366596799",
+      "noTokenId": "76243752292297420774619265337710669750211496356151229167532414157844015918183",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11902,8 +11417,8 @@
     "237": {
       "title": "Which company has the best AI model end of January?",
       "url": "https://app.opinion.trade/market/237?ref=opinion_hud",
-      "yesTokenId": "89657117743508986099090169199060746331866650793323532545267845339608448147930",
-      "noTokenId": "64397493699003406817662245292006195016169120700870371419749629820709578770558",
+      "yesTokenId": "85973970591700996526592046748280684400584538452986906428187593270185761232505",
+      "noTokenId": "52229037625839225018365898181371461906847395869874857121104635886869639227206",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11999,8 +11514,8 @@
     "236": {
       "title": "Largest Company end of January?",
       "url": "https://app.opinion.trade/market/236?ref=opinion_hud",
-      "yesTokenId": "98598345105724425231996460905770028258241598282916200865021903631858879368659",
-      "noTokenId": "73032218533883501840491186035840211294006503910193843191671845582502015322254",
+      "yesTokenId": "95641519694439319356945363912806402101397154646601140484919954248331033556438",
+      "noTokenId": "11311397825609479921415757177032639753602233851666924012544765856280043671895",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -12067,8 +11582,8 @@
     "239": {
       "title": "Logan Paul 1st edition Charizard Sale Price?",
       "url": "https://app.opinion.trade/market/239?ref=opinion_hud",
-      "yesTokenId": "69374899816513985165697081759229368011165322364964388870071550851156779392899",
-      "noTokenId": "91918259957598915256611952104420103565087020978419582957032383593833491884226",
+      "yesTokenId": "110484417544122823254761095699021553128360240846413769466616010240032054172225",
+      "noTokenId": "95227050999252317067302742391483645374450121456113471742654035589764749333159",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -12286,8 +11801,8 @@
     "241": {
       "title": "What will Gold settle at in January?",
       "url": "https://app.opinion.trade/market/241?ref=opinion_hud",
-      "yesTokenId": "2235882637449838152420499903864798232910205834395726078338926129886503367683",
-      "noTokenId": "43205358902520555386604254503588064325185018067688581562635395671091764356825",
+      "yesTokenId": "72171039594088283154813543797034385734219701997288879380279268177598544043409",
+      "noTokenId": "68097988781237584349404750954004400834504490892618235246295702834636322323520",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -12378,8 +11893,8 @@
     "240": {
       "title": "NFL MVP 2026",
       "url": "https://app.opinion.trade/market/240?ref=opinion_hud",
-      "yesTokenId": "108793378940771714436739312735681081116073263401046583156266372722868687827822",
-      "noTokenId": "69998954799596494709613597712257762853353561600741962280150956404911534126980",
+      "yesTokenId": "61754362683938734152219853505995649599955864896942900088190916922958203283920",
+      "noTokenId": "69407422471847883619011144001099842189784322456179581811143435340028614766093",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -12569,6 +12084,12 @@
           "title": "January 31, 2026",
           "yesTokenId": "72927601919195815555150777625424417913613132629479275905731692286661416530979",
           "noTokenId": "52361990462230568142630360308469818571101867534949974755905891689086609105385"
+        },
+        {
+          "marketId": "4621",
+          "title": "February 28, 2026",
+          "yesTokenId": "9593714686487679569287697449720896235254889229552955426360587542298963149882",
+          "noTokenId": "48208707186470954000102943903001961400164444583184563612220001380890920601981"
         }
       ]
     },
@@ -12613,8 +12134,8 @@
     "244": {
       "title": "Rainbow FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/244?ref=opinion_hud",
-      "yesTokenId": "12549639591346865267942131494968975215908815975773047659387838480955640174287",
-      "noTokenId": "62238173344579892487830687241569812881923562932084149617248654141718971040918",
+      "yesTokenId": "46450326756643760048118875978732320287636973493790202582838768356107193939859",
+      "noTokenId": "75168183388386261629800577068753411798096451036313793123821485988440407378074",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -12924,8 +12445,8 @@
     "246": {
       "title": "What price will Bitcoin hit in January?",
       "url": "https://app.opinion.trade/market/246?ref=opinion_hud",
-      "yesTokenId": "63396292190799699427168451098114718237799355289181563379579247696713739311748",
-      "noTokenId": "74402766133809349799583816159532144714133317156835495413605399949140274883243",
+      "yesTokenId": "68674514222657276966758814747548920098317200899832669541294698577798170731999",
+      "noTokenId": "46389077292069062847782985150132267867607989965046314531281235334806144219932",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -13020,8 +12541,8 @@
     "248": {
       "title": "What price will Ethena hit in January?",
       "url": "https://app.opinion.trade/market/248?ref=opinion_hud",
-      "yesTokenId": "2163858915414098334303509926012554989744572191504123205795956343892683744859",
-      "noTokenId": "1123898453758942623957701957542173231277255293088234363273823339931701870970",
+      "yesTokenId": "114559239401757360129032680729376536347244454383659317096119038757931149445703",
+      "noTokenId": "75686142557483783702016309788756883093195800281753861947255927334692472538930",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -13275,8 +12796,8 @@
     "251": {
       "title": "What price will BNB hit in January?",
       "url": "https://app.opinion.trade/market/251?ref=opinion_hud",
-      "yesTokenId": "107126888529696866806164420120525394326194224350368413673254550810569299077697",
-      "noTokenId": "93743342193457625288683962191244322405978360513620142191419765690636375207173",
+      "yesTokenId": "14975784414593316983890804921721696621148206502565731530771070757630332694074",
+      "noTokenId": "75229726058014341662225380177239027141650583439128242433703138464317687238763",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -13607,8 +13128,8 @@
     "265": {
       "title": "Will Google (GOOGL) close above ___ end of January?",
       "url": "https://app.opinion.trade/market/265?ref=opinion_hud",
-      "yesTokenId": "42150121970724177213499832001069868961908420626034494425852790149788821757601",
-      "noTokenId": "40829735069189658731053566104536155776626400556214658706118756952232371850912",
+      "yesTokenId": "5356131775015918136190143452595990555328558938459060130283271753420013789011",
+      "noTokenId": "64236637879892987982097174409196693070706127041174369699237091681259374862343",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -13697,8 +13218,8 @@
     "266": {
       "title": "Will Apple (AAPL) close above ... end of January?",
       "url": "https://app.opinion.trade/market/266?ref=opinion_hud",
-      "yesTokenId": "20922227887388513981156732491222304696788887473411931104347473927320990028636",
-      "noTokenId": "71382249652849794958639436196131408732024696745853090906332419119189731349646",
+      "yesTokenId": "112113061858567765528146721765697447133093633445667745689070358238719172020226",
+      "noTokenId": "67789234242495176319377173017426536684276316614011359726899974999260075329397",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -13780,8 +13301,8 @@
     "264": {
       "title": "Will Tesla (TSLA) close above ... end of January?",
       "url": "https://app.opinion.trade/market/264?ref=opinion_hud",
-      "yesTokenId": "19828711158046110571540937294721304154719227606907058599284703386742663079826",
-      "noTokenId": "106835748826183198609698516356551255243966198191226905928489836584203700844586",
+      "yesTokenId": "7673511210082109123277276711459393893090171917141464157623640905260691093650",
+      "noTokenId": "14723231273801709017992771269612817391453628135657478692723995387882977064657",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -13876,8 +13397,8 @@
     "263": {
       "title": "S&P 500 (SPX) above ... end of January?",
       "url": "https://app.opinion.trade/market/263?ref=opinion_hud",
-      "yesTokenId": "108179217215079430622734107017952848169394981496184614541129086195618071853904",
-      "noTokenId": "84341545771344534534441581490475693870624815116920803755570435963478041089908",
+      "yesTokenId": "39012990535481130180228756827349203770579604460054504863510658179628341387026",
+      "noTokenId": "99411375273180098044770928525165625749017603706533804608193110741916204476685",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -13958,8 +13479,8 @@
     "262": {
       "title": "What price will Gold hit by end of January?",
       "url": "https://app.opinion.trade/market/262?ref=opinion_hud",
-      "yesTokenId": "86063260147967523390616414699154399933540531357670618913592935633924419237005",
-      "noTokenId": "45726810014728301402944182172771620547311183001048938196524971996128954983919",
+      "yesTokenId": "110641117710923880585256521976562686707728002792517527096423903589546342290586",
+      "noTokenId": "19333405971253834664438276896392101654481368533140392962069542107919800042214",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -14040,8 +13561,8 @@
     "273": {
       "title": "How many jobs added in the U.S. in January?",
       "url": "https://app.opinion.trade/market/273?ref=opinion_hud",
-      "yesTokenId": "106597808199982633155234960886671138207116585171578570475907150866997493044445",
-      "noTokenId": "67735686214089675262469547829348164743129295164013816178684505909137110796990",
+      "yesTokenId": "100646476012119158724338462454924810102714079147450729627506568869965539167565",
+      "noTokenId": "97767100975828434860162453071757288957687427786111849364534346789348835230675",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -14210,8 +13731,8 @@
     "268": {
       "title": "Will NVIDIA (NVDA) close above ... end of January?",
       "url": "https://app.opinion.trade/market/268?ref=opinion_hud",
-      "yesTokenId": "100062215999670794340611492190908246106535544234281261510656111532456180235662",
-      "noTokenId": "104846215497802274767545314167024873086415569011840574432301820910152959043185",
+      "yesTokenId": "84542846429719259231128727045551948886106044010562282136083171563769736192920",
+      "noTokenId": "62780485855591713892139519641271801173310006339717257208082905961998723403812",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -14377,8 +13898,8 @@
     "269": {
       "title": "Will Amazon (AMZN) close above ... end of January?",
       "url": "https://app.opinion.trade/market/269?ref=opinion_hud",
-      "yesTokenId": "39130600826303729830422417274505362523562269645536159294410674395334652256903",
-      "noTokenId": "81145235486560048653091807881522946252979042861921042617494293614013961258415",
+      "yesTokenId": "54157925737251385979070784906242639236415888177140175280420062265816900186914",
+      "noTokenId": "70999850463163106273815909994008403372169852399316965530682212176124412221201",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -14461,8 +13982,8 @@
     "270": {
       "title": "Will Meta (META) close above ... end of January?",
       "url": "https://app.opinion.trade/market/270?ref=opinion_hud",
-      "yesTokenId": "1830961287743251004031608562997382931355713941790599569319385397867674092853",
-      "noTokenId": "33484458575398714160257376691896982050992884476964349488473057260235606477283",
+      "yesTokenId": "100228783681519188656936220355582508766942436704543654913748803042010145697965",
+      "noTokenId": "50515519865072360822551821114168227819770803409191157319007222270466586702609",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -14541,8 +14062,8 @@
     "277": {
       "title": "Will Netflix (NFLX) close above ... end of January?",
       "url": "https://app.opinion.trade/market/277?ref=opinion_hud",
-      "yesTokenId": "80818018116705277453257310484384630971851704759290372627139810391146661486851",
-      "noTokenId": "87155833833025381338550978839541432084661997076774316136953331370968566432097",
+      "yesTokenId": "5705377783232539722878288598793800568250019111365886913468489839331601412773",
+      "noTokenId": "55094748013236069765371664272368609557326980428761985780215776955893316797925",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -14618,8 +14139,8 @@
     "276": {
       "title": "Who will Trump meet with in January?",
       "url": "https://app.opinion.trade/market/276?ref=opinion_hud",
-      "yesTokenId": "85339539670088512054891458745697684681254715570964071010304517651821507400917",
-      "noTokenId": "111973733175384354651822854735001431526784878310731362635918952024479617735008",
+      "yesTokenId": "47658722542825613187253512019109808657688802268717704013669125168867153961640",
+      "noTokenId": "46455477015547303182598058182563240012562791489052621547369671892376821298191",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -14781,8 +14302,8 @@
     "275": {
       "title": "\"Avatar: Fire and Ash\" total domestic gross by January 31?",
       "url": "https://app.opinion.trade/market/275?ref=opinion_hud",
-      "yesTokenId": "73030735245264021853369042382108254343644248361223446602161085166016349421263",
-      "noTokenId": "54980365941051290078780534275411808733456059349481318069141621047200657856022",
+      "yesTokenId": "30875586315812832253569827310235758446324746069425271171032710110547066579862",
+      "noTokenId": "27644056597350625565994130072746276047373272152495084184521334332167363909202",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -14862,8 +14383,8 @@
     "280": {
       "title": "Grammys: Song of the Year Winner",
       "url": "https://app.opinion.trade/market/280?ref=opinion_hud",
-      "yesTokenId": "47413124557404470680986872696864974187233241607792161388270651447900527824535",
-      "noTokenId": "86927695436189200752368111567006467489536590190869707506304952251741753993250",
+      "yesTokenId": "1239838467292847480952845718692745414512212611519394657215401886430138382112",
+      "noTokenId": "92869451203744049598909392971563741253922915932521165795093499063257201833087",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -14953,8 +14474,8 @@
     "279": {
       "title": "Grammys: Album of the Year Winner",
       "url": "https://app.opinion.trade/market/279?ref=opinion_hud",
-      "yesTokenId": "64733150584322125722003233285494477530358760996325343685184765685388775025733",
-      "noTokenId": "41233460754629728040858659801059953254316210313973137789956108108969595649032",
+      "yesTokenId": "41908323092283597092360270347867361771963987727119316154904983386722691932217",
+      "noTokenId": "34619872225964431376555980278172978737888423454721013583461638923380152844691",
       "volume": 0.0,
       "labels": {
         "yesLabel": "",
@@ -15058,8 +14579,8 @@
     "282": {
       "title": "Grammys: Best New Artist Winner",
       "url": "https://app.opinion.trade/market/282?ref=opinion_hud",
-      "yesTokenId": "9662893591279817286340241189708598273105469565621729074476452855496005990902",
-      "noTokenId": "33543560862927636751086507043450398558518844462132922101470511616632813654648",
+      "yesTokenId": "114024776243580574730843453545263526780319718223888028859607187646299804968337",
+      "noTokenId": "14190303139443704438878962912708140943688232499256030270924832777641448352102",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -15151,8 +14672,8 @@
     "284": {
       "title": "Grammys: Songwriter of the Year Winner",
       "url": "https://app.opinion.trade/market/284?ref=opinion_hud",
-      "yesTokenId": "81327388839550420734358699937733161431724355270079951157167351290699413052586",
-      "noTokenId": "34524737894391646363022416589943360543664748566493402386269426065826314353754",
+      "yesTokenId": "13258774085442911941618582049210342436223837360979763385918955276326340531880",
+      "noTokenId": "84048836577271197005019034552418403222400675790953767378222264486736541795944",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -15226,8 +14747,8 @@
     "283": {
       "title": "Grammys: Record of the Year Winner",
       "url": "https://app.opinion.trade/market/283?ref=opinion_hud",
-      "yesTokenId": "50591236788212966996407171775413929534598264549193905434796317855517017862805",
-      "noTokenId": "111688755463951774918980977783457411770418476195192399330297031614448203974020",
+      "yesTokenId": "112001413295709575624856092295995797259654120830209665643625739650074403869142",
+      "noTokenId": "70449165081164266704316500200523164705666823766855887921671824008074990193780",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -15343,8 +14864,8 @@
     "288": {
       "title": "Argentina Official USD Exchange Rate end of January?",
       "url": "https://app.opinion.trade/market/288?ref=opinion_hud",
-      "yesTokenId": "106670154424135003560295689831318982069245345102496089269038547209895494277940",
-      "noTokenId": "78551853111467847665556326604633718162866370029796870871496777193566328232347",
+      "yesTokenId": "28450319648961219851036957278598540928290752782969058434675489214592848818195",
+      "noTokenId": "88766786978786500147743508254054398986491784642641737436471591799315288298235",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -15473,8 +14994,8 @@
     "287": {
       "title": "What will Silver settle at in January?",
       "url": "https://app.opinion.trade/market/287?ref=opinion_hud",
-      "yesTokenId": "24190328520883907163442490472975238358459195738833125086120560429420841877084",
-      "noTokenId": "33627480742634886558214728910836780390079260497551151273254935994583266205340",
+      "yesTokenId": "89757510905996204543987083886609702092186626289142785790642564510951948725020",
+      "noTokenId": "108182179372304455095518060776739769472787923957003671719206551676433331094356",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -15744,128 +15265,411 @@
       },
       "type": "binary"
     },
-    "152": {
-      "title": "OpenAI IPO Closing Market Cap",
-      "url": "https://app.opinion.trade/market/152?ref=opinion_hud",
-      "yesTokenId": "85611905299766678992352259862185633394372174234823571903802202452504129140974",
-      "noTokenId": "29193837690688492592529493642486016263508306966857597719524348890402406519879",
+    "4568": {
+      "title": "Bitcoin Up or Down on January 26?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/4568?ref=opinion_hud",
+      "yesTokenId": "84407900334375298879590623286215851409111794320267752515743540638637440638410",
+      "noTokenId": "38215646560042464317141731071973059859170254504161504894824141951393703046031",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "4614": {
+      "title": "BNB Up or Down - Hourly (Jan 26, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4614?ref=opinion_hud",
+      "yesTokenId": "90921836218391798558581107244965580450011859632166262175434572661260469408159",
+      "noTokenId": "62054930651525813401899609152506061679940421137744573740858671169530576815685",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "4615": {
+      "title": "BTC Up or Down - Hourly (Jan 26, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4615?ref=opinion_hud",
+      "yesTokenId": "49106166327227653728119695861930964422225075991079293929835877855311968291420",
+      "noTokenId": "101832170425859684112053911573513817864742356782380511633358669610864422653569",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "4616": {
+      "title": "ETH Up or Down - Hourly (Jan 26, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4616?ref=opinion_hud",
+      "yesTokenId": "15972762405807614516094996844248253299657036759570201463766242563051350284614",
+      "noTokenId": "30605670781022760453558478004706826121361545029220600566111789364019870452730",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "304": {
+      "title": "2026 Women’s Australian Open Winner",
+      "url": "https://app.opinion.trade/market/304?ref=opinion_hud",
+      "yesTokenId": "103661151599194190335350025330635016055031030899518486062955473300746411790243",
+      "noTokenId": "55974542836236557133639419966454209912833202303537420931288272926241064102622",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
         "noLabel": "NO"
       },
       "keywords": [
-        "openai",
-        "ipo",
-        "initial public offering",
-        "valuation",
-        "market capitalization",
-        "stock price",
-        "listing",
-        "going public",
-        "sam altman",
-        "chatgpt",
-        "agi",
-        "microsoft",
-        "public debut",
-        "share price",
-        "ticker",
-        "openai ipo",
-        "ipo closing",
-        "closing market",
-        "market cap",
-        "openai ipo closing",
-        "ipo closing market",
-        "closing market cap"
+        "2026 women",
+        "women australian",
+        "australian open",
+        "open winner",
+        "2026 women australian",
+        "women australian open",
+        "australian open winner"
       ],
-      "entities": [
-        "openai"
-      ],
-      "entityGroups": [
-        [
-          "openai",
-          "开放人工智能"
-        ]
-      ],
+      "entities": [],
+      "entityGroups": [],
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "2375",
-          "title": "No IPO before 2027",
-          "yesTokenId": "85611905299766678992352259862185633394372174234823571903802202452504129140974",
-          "noTokenId": "29193837690688492592529493642486016263508306966857597719524348890402406519879"
+          "marketId": "4643",
+          "title": "Aryna Sabalenka",
+          "yesTokenId": "18401695110006732152735586614700375766965035330585116578805332170603078972997",
+          "noTokenId": "26296889331346578791534038448614678519497590935147581638300624778496804854954"
         },
         {
-          "marketId": "2376",
-          "title": "<500B",
-          "yesTokenId": "32387746984574585831587641832817877626687219321070161292523887775808439162595",
-          "noTokenId": "107676103739232583276021827926360255524705338174104290344581854097997554990337"
+          "marketId": "4644",
+          "title": "Iga Świątek",
+          "yesTokenId": "30016539023857563840906723957302138781049050983103376425261841416672513870416",
+          "noTokenId": "21728952008110284330379287884796575371445169116886805828093696353959945611264"
         },
         {
-          "marketId": "2377",
-          "title": "500–750B",
-          "yesTokenId": "2858609859939259778891825444292664376348974024768659592616413375332511955624",
-          "noTokenId": "27600530975662675182829794155631768450687069670885395296704381940424611902780"
+          "marketId": "4645",
+          "title": "Elena Rybakina",
+          "yesTokenId": "98033892657497786803730484696250299519881905053492984342826387301585034273742",
+          "noTokenId": "45794607172522859523748614098602867524594572436260668373875960408355984466155"
         },
         {
-          "marketId": "2378",
-          "title": "750B–1T",
-          "yesTokenId": "7587145110271801660280877382321706900136610084932339836681043957349352403103",
-          "noTokenId": "63445104332786824486242876042360236459805252895599356695638195581392683668272"
+          "marketId": "4646",
+          "title": "Coco Gauff",
+          "yesTokenId": "78801705155105391286156361643057074079903529893805961028312355258916016550841",
+          "noTokenId": "24823208701204577727966929695799080077062389523413666678013904189693509519441"
         },
         {
-          "marketId": "2379",
-          "title": "1T–1.25T",
-          "yesTokenId": "103944030490794667597546272828016870375754473933526317567250124574383233491855",
-          "noTokenId": "100678357872901659403419194551473518111896913467711999944800825226756238416643"
+          "marketId": "4647",
+          "title": "Amanda Anisimova",
+          "yesTokenId": "2564023845537589797392123152399577145374747994757272715427269690223461810074",
+          "noTokenId": "1106898519012509914849054320065314973979533995126473783332981695682250692795"
         },
         {
-          "marketId": "2380",
-          "title": "1.25T–1.5T",
-          "yesTokenId": "95505088804782148577911868481092133543526378964032472737637132537601595918337",
-          "noTokenId": "26836552226177728900915987511310827444385319233691915442419220594672862510583"
+          "marketId": "4648",
+          "title": "Jessica Pegula",
+          "yesTokenId": "114530690976943573514264796118621120369467433848789643443719483584242603187825",
+          "noTokenId": "77818986982343112182440296333615972998193621845884770047869827395419623628065"
         },
         {
-          "marketId": "2381",
-          "title": "1.5T+",
-          "yesTokenId": "74866932764056827396825646215513218042516481475355463785442137181898684534136",
-          "noTokenId": "41725026727962273497218343247654652095935591971878015226242814141125561886356"
+          "marketId": "4649",
+          "title": "Elina Svitolina",
+          "yesTokenId": "103661151599194190335350025330635016055031030899518486062955473300746411790243",
+          "noTokenId": "55974542836236557133639419966454209912833202303537420931288272926241064102622"
         }
       ]
     },
-    "153": {
-      "title": "US Fed Rate Decision: April 2026",
-      "url": "https://app.opinion.trade/market/153?ref=opinion_hud",
-      "yesTokenId": "26869390662999164835933645800366723744009561177551644021130681241849699870070",
-      "noTokenId": "40775943399350642971650458923306881956816558179016329123163413856130575572289",
+    "302": {
+      "title": "Will Israel strike Lebanon on ...?",
+      "url": "https://app.opinion.trade/market/302?ref=opinion_hud",
+      "yesTokenId": "105238870435188573968519995082424206640795615337285041742499755607717699388838",
+      "noTokenId": "112038563529181868053415989997256835181832838039658365497881734012944902198551",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
         "noLabel": "NO"
       },
       "keywords": [
-        "federal reserve",
+        "israel strike",
+        "strike lebanon",
+        "israel strike lebanon"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "4631",
+          "title": "January 26",
+          "yesTokenId": "82879294441314873491670671209256117149899097150565863554124106764062634417524",
+          "noTokenId": "48244719802623618474833887617027426008903390021062820364679248056756596136771"
+        },
+        {
+          "marketId": "4632",
+          "title": "January 27",
+          "yesTokenId": "61995741993889647388836772256580498556303088533527368807348783645578821154241",
+          "noTokenId": "104323234203618398414236539100461061529744666692345163392290958572781376905059"
+        },
+        {
+          "marketId": "4633",
+          "title": "January 28",
+          "yesTokenId": "85804474144445919985814796550212156908248350294615392116754861217035863567812",
+          "noTokenId": "85116219362962517689743785750573725896379767112975359526080140607635257150797"
+        },
+        {
+          "marketId": "4634",
+          "title": "January 29",
+          "yesTokenId": "95277643596797912784465689067372690158204860640688646625426289121110238694574",
+          "noTokenId": "34437411491929881359203612484266900044391404404039861410209128794246688660103"
+        },
+        {
+          "marketId": "4635",
+          "title": "January 30",
+          "yesTokenId": "15177174613261066416785046881940615068801207860940731489456933576592979877752",
+          "noTokenId": "27710594764587017289526691085920794133819356193583280897063176773576811566360"
+        },
+        {
+          "marketId": "4636",
+          "title": "January 31",
+          "yesTokenId": "105238870435188573968519995082424206640795615337285041742499755607717699388838",
+          "noTokenId": "112038563529181868053415989997256835181832838039658365497881734012944902198551"
+        }
+      ]
+    },
+    "303": {
+      "title": "How long will the Government Shutdown last?",
+      "url": "https://app.opinion.trade/market/303?ref=opinion_hud",
+      "yesTokenId": "16391180401605864023534511306227443711358613342395474173168922604264433942447",
+      "noTokenId": "43841558691318176650206070719800464383633192518055921151650214614039386560603",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "how long",
+        "long government",
+        "government shutdown",
+        "shutdown last",
+        "how long government",
+        "long government shutdown",
+        "government shutdown last"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "4637",
+          "title": "1+ day",
+          "yesTokenId": "87084675109125125582433074548170996099035269350073528490663574199998877467012",
+          "noTokenId": "50635060887464460334054474271862411581498957381572642481421654672381467395652"
+        },
+        {
+          "marketId": "4638",
+          "title": "3+ day",
+          "yesTokenId": "16391180401605864023534511306227443711358613342395474173168922604264433942447",
+          "noTokenId": "43841558691318176650206070719800464383633192518055921151650214614039386560603"
+        },
+        {
+          "marketId": "4639",
+          "title": "7+ day",
+          "yesTokenId": "94248872378982681473790199480804446863400900772505990694764095085879269196491",
+          "noTokenId": "20022836814266036182922895981324551832983263381936614524808134060713089448648"
+        },
+        {
+          "marketId": "4640",
+          "title": "14+ day",
+          "yesTokenId": "9547115884329255969409329305456744585822228611190810261403242602943827409799",
+          "noTokenId": "113048414606838953224931220743963347036517200740548754109865493161507606383893"
+        },
+        {
+          "marketId": "4641",
+          "title": "30+ day",
+          "yesTokenId": "47957274933698648808930145329516771083013189708558228767597747412395796331637",
+          "noTokenId": "108203170091106597824350166465051086274753970104688810615738232711217346438628"
+        },
+        {
+          "marketId": "4642",
+          "title": "60+ day",
+          "yesTokenId": "10669683607400733758518858582764205110523269465639837401654487991702461646834",
+          "noTokenId": "11175600105816819635897491317770117504923045542652266151482281851098340967625"
+        }
+      ]
+    },
+    "301": {
+      "title": "Next President of Vietnam",
+      "url": "https://app.opinion.trade/market/301?ref=opinion_hud",
+      "yesTokenId": "79118787260498449641475959599832473662553472226371222621642021012134067661919",
+      "noTokenId": "108907103029366242567670576311370106006191525492702479718705698041301496357819",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "next president",
+        "president vietnam",
+        "next president vietnam"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "4627",
+          "title": "Tô Lâm",
+          "yesTokenId": "20121702758174135909412179198597937873474579217564371328727097456313842330950",
+          "noTokenId": "72505837956417797501490630133823343847932369110851021524705692503835093567146"
+        },
+        {
+          "marketId": "4628",
+          "title": "Phan Văn Giang",
+          "yesTokenId": "87436128372020025698350970327722962874064028584750640760724276317615823734013",
+          "noTokenId": "51401434671995444292385565108080626338651232666768839436609747826710067924287"
+        },
+        {
+          "marketId": "4629",
+          "title": "Trần Thanh Mẫn",
+          "yesTokenId": "38146254764526453970453126485946994060500770926637217796860761056415596965380",
+          "noTokenId": "63589328380185045391210688486294368600278004571049634965388910774297488453784"
+        },
+        {
+          "marketId": "4630",
+          "title": "Trần Cẩm Tú",
+          "yesTokenId": "79118787260498449641475959599832473662553472226371222621642021012134067661919",
+          "noTokenId": "108907103029366242567670576311370106006191525492702479718705698041301496357819"
+        }
+      ]
+    },
+    "300": {
+      "title": "Jerome Powell out as Fed Chair by ...?",
+      "url": "https://app.opinion.trade/market/300?ref=opinion_hud",
+      "yesTokenId": "8640735568489742699862308108808508907694326335233420424431844992308492579189",
+      "noTokenId": "31314590922723989866845036580904313796860979182586640805576257543402977483172",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "jerome powell",
+        "powell out",
+        "out fed",
+        "fed chair",
+        "jerome powell out",
+        "powell out fed",
+        "out fed chair"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "4622",
+          "title": "March 31",
+          "yesTokenId": "8640735568489742699862308108808508907694326335233420424431844992308492579189",
+          "noTokenId": "31314590922723989866845036580904313796860979182586640805576257543402977483172"
+        },
+        {
+          "marketId": "4623",
+          "title": "May 14",
+          "yesTokenId": "3333645714346663746673151776368832408455244553012825406686548412757459311004",
+          "noTokenId": "99743470613174645128881202635605673705753061576997090030503957037184313038213"
+        }
+      ]
+    },
+    "4620": {
+      "title": "Will the US acquire part of Greenland in 2026?",
+      "url": "https://app.opinion.trade/market/4620?ref=opinion_hud",
+      "yesTokenId": "43636924351967682755749909300538048600827597112691110639303306016059672093923",
+      "noTokenId": "75160780251325144119548373116631046877512038458555042251221758130940024100883",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "type": "binary"
+    },
+    "61": {
+      "title": "US Fed Rate Decision in January?",
+      "url": "https://app.opinion.trade/market/61?ref=opinion_hud",
+      "yesTokenId": "63124475118157998442544532616143671713390176049177017950009177431474968101028",
+      "noTokenId": "57213930402091026580700847535316199022291037265654598613067304763082644691809",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "fed rate",
+        "rate decision",
+        "decision january",
+        "fed rate decision",
+        "rate decision january"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "1226",
+          "title": "50+ bps decrease",
+          "yesTokenId": "81024628910751981763519807907590668671806518176027426382238767181543126274163",
+          "noTokenId": "112796040680499184493768367425897772037344047715371428672472988730438104274752"
+        },
+        {
+          "marketId": "1227",
+          "title": "25 bps decrease",
+          "yesTokenId": "14508742604992130021622926967815994509816548111666323480851158982552139878650",
+          "noTokenId": "65249422041906348839852601437494284924037104094199669792527632521178980725293"
+        },
+        {
+          "marketId": "1228",
+          "title": "No change",
+          "yesTokenId": "2143159161202125048874231389446126453176029523509098173398615213184865950982",
+          "noTokenId": "109305198116462541626137377301271622644337693346929198722456377784888192205758"
+        },
+        {
+          "marketId": "1229",
+          "title": "Increase",
+          "yesTokenId": "63124475118157998442544532616143671713390176049177017950009177431474968101028",
+          "noTokenId": "57213930402091026580700847535316199022291037265654598613067304763082644691809"
+        }
+      ]
+    },
+    "75": {
+      "title": "US Fed Rate Decision in March?",
+      "url": "https://app.opinion.trade/market/75?ref=opinion_hud",
+      "yesTokenId": "103534200913828460239990377776151413467086907798074013057280936285480574944448",
+      "noTokenId": "79918290396302990792782000706293883943646884974890514969409744357720461509903",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
         "fed",
+        "federal reserve",
         "fomc",
         "interest rate",
         "rate cut",
         "rate hike",
         "monetary policy",
         "jerome powell",
-        "central bank",
-        "federal funds rate",
-        "inflation",
         "cpi",
+        "inflation",
+        "basis points",
+        "central bank",
         "us economy",
-        "dot plot",
-        "powell",
+        "discount rate",
+        "federal funds rate",
         "fed rate",
         "rate decision",
-        "decision april",
-        "april 2026",
+        "decision march",
         "fed rate decision",
-        "rate decision april",
-        "decision april 2026"
+        "rate decision march"
       ],
       "entities": [
         "fed"
@@ -15881,1058 +15685,220 @@
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "2383",
+          "marketId": "1304",
           "title": "50+ bps decrease",
-          "yesTokenId": "26869390662999164835933645800366723744009561177551644021130681241849699870070",
-          "noTokenId": "40775943399350642971650458923306881956816558179016329123163413856130575572289"
+          "yesTokenId": "49355591055450656302538846036275794217714647748317343440108732708594962823250",
+          "noTokenId": "101008955442974655206405808778155551361162365938238336424046150024284910649954"
         },
         {
-          "marketId": "2384",
+          "marketId": "1305",
           "title": "25 bps decrease",
-          "yesTokenId": "39776778426400138591294370874782062049478401116641485723813822685421674902180",
-          "noTokenId": "68158302306250136949909260453686802283500073564421809969437576425938803094906"
+          "yesTokenId": "106558697216798819333461096455848404193242601861726553031229801156760936486295",
+          "noTokenId": "24382171216212231769951181103743869004517757189973835016038060044436445447507"
         },
         {
-          "marketId": "2385",
+          "marketId": "1306",
           "title": "No change",
-          "yesTokenId": "82731354980021996522415245721164125548933506481078263487205196210894726681736",
-          "noTokenId": "74981000144996286528662530359803457223877572857888101352748940628958207261903"
+          "yesTokenId": "112571176996269647170357446032937779692323287949501633841533840929277468097380",
+          "noTokenId": "7047737589574536776076795106884436098831851040768624198544745529781556061201"
         },
         {
-          "marketId": "2386",
+          "marketId": "1307",
           "title": "Increase",
-          "yesTokenId": "102199363949148120639586433737388679713840622325481929783532147335336378497899",
-          "noTokenId": "35987538259839269660120484801844810053274043280090258210031804321745647724658"
+          "yesTokenId": "103534200913828460239990377776151413467086907798074013057280936285480574944448",
+          "noTokenId": "79918290396302990792782000706293883943646884974890514969409744357720461509903"
         }
       ]
     },
-    "150": {
-      "title": "Starmer out by...?",
-      "url": "https://app.opinion.trade/market/150?ref=opinion_hud",
-      "yesTokenId": "8434131573039405726447368126890828044786319272337905794710718609238604094487",
-      "noTokenId": "78793549261807636449024581544594597330502541329185180317790107651332788261958",
+    "78": {
+      "title": "How many Fed rate cuts in 2026?",
+      "url": "https://app.opinion.trade/market/78?ref=opinion_hud",
+      "yesTokenId": "59811075968124785627599025502257118121320441552396197432682635891395620417003",
+      "noTokenId": "101466719676050817231256324050444209217473634787009528298001058332064069999345",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
         "noLabel": "NO"
       },
       "keywords": [
-        "keir starmer",
-        "starmer",
-        "uk prime minister",
-        "labour party",
-        "pm",
-        "resignation",
-        "step down",
-        "ousted",
-        "uk politics",
-        "downing street",
-        "labour leader",
-        "number 10",
-        "general election",
-        "vote of no confidence",
-        "sacked",
-        "starmer out"
+        "fed",
+        "federal reserve",
+        "fomc",
+        "rate cut",
+        "interest rate",
+        "monetary policy",
+        "easing",
+        "dovish",
+        "powell",
+        "inflation",
+        "federal funds rate",
+        "discount rate",
+        "jerome powell",
+        "central bank",
+        "rate decision",
+        "how many",
+        "many fed",
+        "fed rate",
+        "rate cuts",
+        "cuts 2026",
+        "how many fed",
+        "many fed rate",
+        "fed rate cuts",
+        "rate cuts 2026"
       ],
       "entities": [
-        "starmer"
+        "fed"
       ],
       "entityGroups": [
         [
-          "starmer",
-          "基尔·斯塔默",
-          "斯塔默"
+          "fed",
+          "federal reserve",
+          "fomc",
+          "美联储"
         ]
       ],
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "2366",
-          "title": "June 30, 2026",
-          "yesTokenId": "8434131573039405726447368126890828044786319272337905794710718609238604094487",
-          "noTokenId": "78793549261807636449024581544594597330502541329185180317790107651332788261958"
+          "marketId": "1345",
+          "title": "0 (0 bps)",
+          "yesTokenId": "6404829329840465181064736796864044142281420398565014085984146771179791283427",
+          "noTokenId": "65611019345671677871768057029430972234494268130766599668467768282436228863769"
         },
         {
-          "marketId": "2367",
-          "title": "December 31, 2026",
-          "yesTokenId": "30822982325264430086852620730840518581850229857183869242275557945951172324046",
-          "noTokenId": "38963932780906540363109247799097676402090390705396650950183721237182147511527"
+          "marketId": "1346",
+          "title": "1 (25 bps)",
+          "yesTokenId": "87221035256724112521884616425110689618510604737525837665600757831604860081699",
+          "noTokenId": "24042584299232816762066098576822940800148368345133941716423449217737083401878"
         },
         {
-          "marketId": "2365",
-          "title": "December 31, 2025",
-          "yesTokenId": "13979425935123126573734836928569269509277455322014963969080231472653655310460",
-          "noTokenId": "57280719185621227534553342726694805893432130841663501059859148389452947632433"
+          "marketId": "1347",
+          "title": "2 (50 bps)",
+          "yesTokenId": "113238769132068877749282591826944509462561343056849726370650683628614966385372",
+          "noTokenId": "2366833762770503588620879353801244946539238582918572711328765578691383389746"
+        },
+        {
+          "marketId": "1348",
+          "title": "3 (75 bps)",
+          "yesTokenId": "99714401812715793578869667450897946227140497909746774220370457685604990071286",
+          "noTokenId": "3144384261513073832299389704955009308754370236840018071587493757934200560390"
+        },
+        {
+          "marketId": "1349",
+          "title": "4 (100 bps)",
+          "yesTokenId": "6184245186950926466692931178017784356827694199329242555435511222388237438109",
+          "noTokenId": "103611272235957115780344574285023328194712152439747172003391912689766930278154"
+        },
+        {
+          "marketId": "1350",
+          "title": "5 (125 bps)",
+          "yesTokenId": "70475724476163126377829032010120273492646534860807243445006711389850099814274",
+          "noTokenId": "78795034840034647908341213482580024793283071165863159629594759765596341263981"
+        },
+        {
+          "marketId": "1351",
+          "title": "6 (150 bps)",
+          "yesTokenId": "47630475545920005262416477924495253323197385749902632410490043426083041384144",
+          "noTokenId": "86124495778141184053490448457820450848519797338556970361256381852079916115307"
+        },
+        {
+          "marketId": "1352",
+          "title": "7 (175 bps)",
+          "yesTokenId": "70010766220059604989662129460865466302574904927654834125855820572459625873690",
+          "noTokenId": "94312394120877874266506310353940325029694893877094998946034603701922234520279"
+        },
+        {
+          "marketId": "1353",
+          "title": "8+ (200+ bps)",
+          "yesTokenId": "59811075968124785627599025502257118121320441552396197432682635891395620417003",
+          "noTokenId": "101466719676050817231256324050444209217473634787009528298001058332064069999345"
         }
       ]
     },
-    "144": {
-      "title": "US x Venezuela military engagement by...?",
-      "url": "https://app.opinion.trade/market/144?ref=opinion_hud",
-      "yesTokenId": "19715242686302074824004408373794665372992329396066729480807997995730905860879",
-      "noTokenId": "6985193349085838242924738741671355579016848393787494137811998486439419681640",
+    "79": {
+      "title": "2026 FIFA World Cup Winner",
+      "url": "https://app.opinion.trade/market/79?ref=opinion_hud",
+      "yesTokenId": "12183947116145259219391511115660869215418425013633123896412238820708881237687",
+      "noTokenId": "26198907524969520558250396522242808604638812860426626320509444399751338524187",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
         "noLabel": "NO"
       },
       "keywords": [
-        "us",
-        "usa",
-        "united states",
-        "venezuela",
-        "military engagement",
-        "war",
-        "conflict",
-        "invasion",
-        "attack",
-        "intervention",
-        "hostilities",
-        "combat",
-        "clash",
-        "armed conflict",
-        "venezuela military",
-        "venezuela military engagement"
-      ],
-      "entities": [
-        "venezuela"
-      ],
-      "entityGroups": [
-        [
-          "venezuela",
-          "委内瑞拉"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2257",
-          "title": "December 31, 2025",
-          "yesTokenId": "19715242686302074824004408373794665372992329396066729480807997995730905860879",
-          "noTokenId": "6985193349085838242924738741671355579016848393787494137811998486439419681640"
-        },
-        {
-          "marketId": "2256",
-          "title": "December 15, 2025",
-          "yesTokenId": "67310166428871557934324939947779742743355592725102289390146903979892318490420",
-          "noTokenId": "47731572978275142880534468109995668678791640478046426592321878572734473193638"
-        },
-        {
-          "marketId": "2258",
-          "title": "March 31, 2026",
-          "yesTokenId": "55589900021359924402196129326287237935542212697831492905086095535290620574453",
-          "noTokenId": "56252213917789013845763693154083838146675067687269607354935155225581764474319"
-        },
-        {
-          "marketId": "3450",
-          "title": "January 15, 2026",
-          "yesTokenId": "75681074464489520683796122727372581390891900598485579376773188839785272238858",
-          "noTokenId": "93388110014154464990864453508141966154428985404961251874922008701826453291995"
-        },
-        {
-          "marketId": "3451",
-          "title": "January 31, 2026",
-          "yesTokenId": "38287202561408737672738361034023597186033773734100022815437480558585376639128",
-          "noTokenId": "23639799360090546100695602082590239874880196393904685055317523513823513553735"
-        }
-      ]
-    },
-    "143": {
-      "title": "Kraken IPO by ...?",
-      "url": "https://app.opinion.trade/market/143?ref=opinion_hud",
-      "yesTokenId": "111053278289134432535994361357927081961829975596973109749197840308458085863929",
-      "noTokenId": "80012745417609167445165182863367368713870569549946546144276927528207278913036",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "kraken",
-        "crypto exchange",
-        "public listing",
-        "stock market",
-        "going public",
-        "shares",
-        "direct listing",
-        "sec filing",
-        "valuation",
-        "payward",
-        "exchange",
-        "ipo",
-        "ticker",
-        "debut",
-        "offering",
-        "kraken ipo"
-      ],
-      "entities": [
-        "kraken"
-      ],
-      "entityGroups": [
-        [
-          "kraken",
-          "kraken交易所"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2254",
-          "title": "March 31, 2026",
-          "yesTokenId": "111053278289134432535994361357927081961829975596973109749197840308458085863929",
-          "noTokenId": "80012745417609167445165182863367368713870569549946546144276927528207278913036"
-        },
-        {
-          "marketId": "2255",
-          "title": "December 31, 2026",
-          "yesTokenId": "82558554860674055162716213173232472776041141046354491031884876520189751064150",
-          "noTokenId": "5985233315763780440000978528159011046366734715086770710642151405651822216490"
-        }
-      ]
-    },
-    "142": {
-      "title": "Will Trump visit China by...?",
-      "url": "https://app.opinion.trade/market/142?ref=opinion_hud",
-      "yesTokenId": "39616772829290049744480046852180813323083349914307374171745511723836442735736",
-      "noTokenId": "63630611316791438358188405776233223453006272879547487515661903089659061998269",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "trump",
-        "china",
-        "visit",
-        "beijing",
-        "diplomatic",
-        "trip",
-        "state visit",
-        "us-china",
-        "relations",
-        "summit",
-        "potus",
-        "xi jinping",
-        "diplomacy",
-        "meeting",
-        "xi",
-        "trump visit",
-        "visit china",
-        "trump visit china"
-      ],
-      "entities": [
-        "trump",
-        "china"
-      ],
-      "entityGroups": [
-        [
-          "trump",
-          "特朗普"
-        ],
-        [
-          "china"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2252",
-          "title": "March 31, 2026",
-          "yesTokenId": "39616772829290049744480046852180813323083349914307374171745511723836442735736",
-          "noTokenId": "63630611316791438358188405776233223453006272879547487515661903089659061998269"
-        },
-        {
-          "marketId": "2253",
-          "title": "April 30, 2026",
-          "yesTokenId": "16937619144752322188552468113733969531609356757167356667053402152873453678865",
-          "noTokenId": "22482845826990591018766058677032016040721642609580706922829927469832421262995"
-        }
-      ]
-    },
-    "141": {
-      "title": "Oscars 2026: Best Supporting Actress Winner",
-      "url": "https://app.opinion.trade/market/141?ref=opinion_hud",
-      "yesTokenId": "43294999161838371441115878093984920443232857622101286733393997968909907262637",
-      "noTokenId": "39722863153488611406852536754216285299828766051828449758906251492870257806008",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "oscars",
-        "academy awards",
-        "best supporting actress",
-        "2026",
-        "film awards",
-        "cinema",
-        "movies",
-        "nominees",
-        "actress",
-        "hollywood",
-        "red carpet",
-        "golden statue",
-        "98th oscars",
-        "motion pictures",
-        "oscars 2026",
-        "2026 best",
-        "best supporting",
-        "supporting actress",
-        "actress winner",
-        "oscars 2026 best",
-        "2026 best supporting",
-        "supporting actress winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "oscar",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2238",
-          "title": "Teyana Taylor",
-          "yesTokenId": "43294999161838371441115878093984920443232857622101286733393997968909907262637",
-          "noTokenId": "39722863153488611406852536754216285299828766051828449758906251492870257806008"
-        },
-        {
-          "marketId": "2240",
-          "title": "Amy Madigan",
-          "yesTokenId": "109739633344087300628808723605555902151820513937500097929113163388164341809582",
-          "noTokenId": "92030697870123974505991115391299439791277353409807223644705694258915877173138"
-        },
-        {
-          "marketId": "2241",
-          "title": "Inga Ibsdotter Lilleaas",
-          "yesTokenId": "72692841045141451897458970362646275356228004736329351653769108937401646656541",
-          "noTokenId": "51116936398339229187167156209203388412573105278827826668805000466827217489738"
-        },
-        {
-          "marketId": "2242",
-          "title": "Elle Fanning",
-          "yesTokenId": "93048686676841481281127140701100955025125011434317655715899809512982942775710",
-          "noTokenId": "57099097587818980245856878783196136922046474658647571088056270561405686202850"
-        },
-        {
-          "marketId": "2397",
-          "title": "Wunmi Mosaku",
-          "yesTokenId": "97239877419356126043691405328882556064369931124890918378539497343921719661479",
-          "noTokenId": "32474820384492557899303611431774223661181745957139437269008014382023660518130"
-        },
-        {
-          "marketId": "2239",
-          "title": "Ariana Grande",
-          "yesTokenId": "71449848721765937520677804435356482810222035179224889766623236972723508618247",
-          "noTokenId": "44546980758391003531376586761215384074413684205151311412916797572627723816681"
-        },
-        {
-          "marketId": "3159",
-          "title": "Gwyneth Paltrow",
-          "yesTokenId": "115692226825101080868130936323207045515255202002916563906682108526313231393838",
-          "noTokenId": "49509115394471159945577683019022841252203954847155374985502814888925175167698"
-        }
-      ]
-    },
-    "140": {
-      "title": "Oscars 2026: Best Supporting Actor Winner",
-      "url": "https://app.opinion.trade/market/140?ref=opinion_hud",
-      "yesTokenId": "24648700470720061685674651243929522176633024716156683455551701377481904411279",
-      "noTokenId": "58456892753005492739204910389687670052651078343325591928766963978272612410289",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "oscars",
-        "academy awards",
-        "best supporting actor",
-        "2026",
-        "film awards",
-        "cinema",
-        "actors",
-        "nominees",
-        "ceremony",
-        "ampas",
-        "movies",
-        "hollywood",
-        "golden statuette",
-        "acting award",
-        "red carpet",
-        "oscars 2026",
-        "2026 best",
-        "best supporting",
-        "supporting actor",
-        "actor winner",
-        "oscars 2026 best",
-        "2026 best supporting",
-        "supporting actor winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "oscar",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2234",
-          "title": "Sean Penn",
-          "yesTokenId": "31965302510427336767263064028952989543398671786130232394440034387551882153823",
-          "noTokenId": "30182997035861954352876795905259604669580144625560856345733577287311525293690"
-        },
-        {
-          "marketId": "2235",
-          "title": "Stellan Skarsgård",
-          "yesTokenId": "46439340232397097715711679951053503256371670095743117185170043627644851696421",
-          "noTokenId": "66583877991793346221053935326496114757865074012250226165564071910745313926989"
-        },
-        {
-          "marketId": "2237",
-          "title": "Jacob Elordi",
-          "yesTokenId": "9060392901405033563839543298105496482208116020547407092551091948122800698857",
-          "noTokenId": "109666767223849708436473697647809013391190067214942275797165965708574565025333"
-        },
-        {
-          "marketId": "2396",
-          "title": "Benicio Del Toro",
-          "yesTokenId": "24648700470720061685674651243929522176633024716156683455551701377481904411279",
-          "noTokenId": "58456892753005492739204910389687670052651078343325591928766963978272612410289"
-        },
-        {
-          "marketId": "2236",
-          "title": "Paul Mescal",
-          "yesTokenId": "43284608864709812256491079639765177274323194771199463910885831358519943161752",
-          "noTokenId": "33319395592891728388982504052478322027654920077358055632555094379100575123972"
-        }
-      ]
-    },
-    "137": {
-      "title": "Oscars 2026: Best Actor Winner",
-      "url": "https://app.opinion.trade/market/137?ref=opinion_hud",
-      "yesTokenId": "98192237708120745839441407715017101628124467835334730222890809173221339596610",
-      "noTokenId": "11790702062535203819614738970307376169381916941324595932602081872378601164094",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "oscars 2026",
-        "academy awards 2026",
-        "best actor",
-        "leading actor",
-        "oscar winner",
-        "academy award",
-        "film awards",
-        "hollywood",
-        "ceremony",
-        "nominees",
-        "acting",
-        "98th oscars",
-        "cinema",
-        "motion pictures",
-        "red carpet",
-        "2026 best",
-        "actor winner",
-        "oscars 2026 best",
-        "2026 best actor",
-        "best actor winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "oscar",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2219",
-          "title": "Timothée Chalamet",
-          "yesTokenId": "98192237708120745839441407715017101628124467835334730222890809173221339596610",
-          "noTokenId": "11790702062535203819614738970307376169381916941324595932602081872378601164094"
-        },
-        {
-          "marketId": "2220",
-          "title": "Leonardo DiCaprio",
-          "yesTokenId": "35697497734329698665907229165952844948395469536142260347146980196068857732658",
-          "noTokenId": "8002915050770741022268949909177827833650577445648607077896503012584244874158"
-        },
-        {
-          "marketId": "2221",
-          "title": "Ethan Hawke",
-          "yesTokenId": "99097784155649404467260447923285510061223902361812192131159114999638713414161",
-          "noTokenId": "45819901418302663274303112305410232020693775686944661663081636846398146079623"
-        },
-        {
-          "marketId": "2222",
-          "title": "Wagner Moura",
-          "yesTokenId": "114868289875678058122897497255267758161671203929519260363966264256379226283848",
-          "noTokenId": "70965116822108460316280656051167403786754379500462807866706683007729832381778"
-        },
-        {
-          "marketId": "2223",
-          "title": "Michael B. Jordan",
-          "yesTokenId": "114650040027013483693595734598537727349902231264608222886366463291549783417715",
-          "noTokenId": "62060470932162137938094572871229520418053461358225896544903545641052158926895"
-        },
-        {
-          "marketId": "2224",
-          "title": "Daniel Day-Lewis",
-          "yesTokenId": "7937702747981647033913460441031706832701649135803786943530295455455153005092",
-          "noTokenId": "59219127248289400202851958796197853658917542702983412136572002015878314780661"
-        }
-      ]
-    },
-    "136": {
-      "title": "Which party will win the U.S. Senate in 2026?",
-      "url": "https://app.opinion.trade/market/136?ref=opinion_hud",
-      "yesTokenId": "16012777544132158148267690078103162180870393327429798904433438646817664004969",
-      "noTokenId": "27609975783466638038744065196977731253235132198556565297258343232269770872070",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "senate",
-        "us senate",
-        "united states senate",
-        "2026 election",
-        "midterms",
-        "senate race",
-        "upper chamber",
-        "congress",
-        "legislative",
-        "majority",
-        "capitol hill",
-        "senate control",
-        "senate seats",
-        "elections",
-        "politics",
-        "which party",
-        "party win",
-        "win senate",
-        "senate 2026",
-        "which party win",
-        "party win senate",
-        "win senate 2026"
-      ],
-      "entities": [
-        "u.s. senate"
-      ],
-      "entityGroups": [
-        [
-          "u.s. senate",
-          "us senate",
-          "美国参议院"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2212",
-          "title": "Republican Party",
-          "yesTokenId": "16012777544132158148267690078103162180870393327429798904433438646817664004969",
-          "noTokenId": "27609975783466638038744065196977731253235132198556565297258343232269770872070"
-        },
-        {
-          "marketId": "2213",
-          "title": "Democratic Party",
-          "yesTokenId": "98222412116596673452269591271576490983039168849833709734870678264368595569564",
-          "noTokenId": "25628292850634492423691047958507373754184730995257771675026476157408033231381"
-        }
-      ]
-    },
-    "135": {
-      "title": "Which party will win the U.S. House in 2026?",
-      "url": "https://app.opinion.trade/market/135?ref=opinion_hud",
-      "yesTokenId": "51569806581881685379602121347917812479416702052876609944151868625590653469005",
-      "noTokenId": "31290686804936654748450657977156255375950477346841781765665138051520530678885",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "us house",
-        "house of representatives",
-        "2026 midterms",
-        "house election",
-        "congress",
-        "house control",
-        "lower chamber",
-        "congressional",
-        "capitol hill",
-        "house majority",
-        "house seats",
-        "legislature",
-        "representatives",
-        "midterm election",
-        "house race",
-        "which party",
-        "party win",
-        "win house",
-        "house 2026",
-        "which party win",
-        "party win house",
-        "win house 2026"
-      ],
-      "entities": [
-        "u.s. house",
-        "2026年"
-      ],
-      "entityGroups": [
-        [
-          "u.s. house",
-          "美国众议院",
-          "众议院"
-        ],
-        [
-          "2026年",
-          "2026年选举"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2210",
-          "title": "Democratic Party",
-          "yesTokenId": "51569806581881685379602121347917812479416702052876609944151868625590653469005",
-          "noTokenId": "31290686804936654748450657977156255375950477346841781765665138051520530678885"
-        },
-        {
-          "marketId": "2211",
-          "title": "Republican Party",
-          "yesTokenId": "45736915626379070846440265862067724055830478306566523493868335167335171235293",
-          "noTokenId": "88947256101731408790141773268946685203129892759960367302683470668746698621077"
-        }
-      ]
-    },
-    "132": {
-      "title": "Will NewJeans perform again by ...?",
-      "url": "https://app.opinion.trade/market/132?ref=opinion_hud",
-      "yesTokenId": "47285018604502376574819437892653745924031949216234966522677867568787073990368",
-      "noTokenId": "71391424808700728222670890276275537064305675135282591854149515314726004354291",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "newjeans",
-        "k-pop",
-        "girl group",
-        "concert",
-        "performance",
-        "comeback",
-        "live",
-        "stage",
-        "ador",
-        "min hee-jin",
-        "bunnies",
-        "tour",
-        "music",
-        "live performance",
-        "korean pop",
-        "newjeans perform",
-        "perform again",
-        "newjeans perform again"
-      ],
-      "entities": [
-        "newjeans"
-      ],
-      "entityGroups": [
-        [
-          "newjeans",
-          "newjeans组合"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2193",
-          "title": "March 31, 2026",
-          "yesTokenId": "47285018604502376574819437892653745924031949216234966522677867568787073990368",
-          "noTokenId": "71391424808700728222670890276275537064305675135282591854149515314726004354291"
-        },
-        {
-          "marketId": "2192",
-          "title": "December 31, 2025",
-          "yesTokenId": "106638355417599836048961203125833935628578882979861051324675418638634455441586",
-          "noTokenId": "30863318882185936560229704920621830596103191717445652064419501139400991542945"
-        }
-      ]
-    },
-    "131": {
-      "title": "2026 Seoul Mayoral Election Winner",
-      "url": "https://app.opinion.trade/market/131?ref=opinion_hud",
-      "yesTokenId": "94949750864338749586435394255486707081990027705914956801391650250156309401465",
-      "noTokenId": "39931280999733991468874236963266712118876275360198594775393075731152644375469",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "seoul",
-        "mayor",
-        "election",
-        "2026",
-        "south korea",
-        "politics",
-        "vote",
-        "campaign",
-        "local election",
-        "municipal",
-        "ballot",
-        "seoul city",
-        "civic",
-        "race",
-        "poll",
-        "2026 seoul",
-        "seoul mayoral",
-        "mayoral election",
-        "election winner",
-        "2026 seoul mayoral",
-        "seoul mayoral election",
-        "mayoral election winner"
-      ],
-      "entities": [
-        "seoul mayoral election"
-      ],
-      "entityGroups": [
-        [
-          "seoul mayoral election",
-          "seoul mayor",
-          "首尔市长选举",
-          "首尔市长"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2183",
-          "title": "Oh Se-hoon",
-          "yesTokenId": "94949750864338749586435394255486707081990027705914956801391650250156309401465",
-          "noTokenId": "39931280999733991468874236963266712118876275360198594775393075731152644375469"
-        },
-        {
-          "marketId": "2184",
-          "title": "Chong Won-oh",
-          "yesTokenId": "40074885342960165318727086202608492199540147145545126597377892153924423789723",
-          "noTokenId": "92821079611195853399861259959750988413582790966410600314083595808366402232195"
-        },
-        {
-          "marketId": "2185",
-          "title": "Park Ju-min",
-          "yesTokenId": "45941646698328077437158609731912212824617761330889751538890144780080449902002",
-          "noTokenId": "114628638680624293211109283816481262162166041897043502577510423441719447543876"
-        },
-        {
-          "marketId": "2186",
-          "title": "Na Kyung-won",
-          "yesTokenId": "61832591177592579460865327055742322209471164446357772058411835241389069459584",
-          "noTokenId": "34899007849380872345644237161424384972436816179699002508068718557283430908134"
-        },
-        {
-          "marketId": "2187",
-          "title": "Jeon Hyun-heui",
-          "yesTokenId": "8987904543458176901087014051105095795899919842491525395417592458468405679040",
-          "noTokenId": "71190359759293839737961428411364580510336413544944174835282435795522564414805"
-        }
-      ]
-    },
-    "130": {
-      "title": "2026 South Korean Local Elections: Party Winner",
-      "url": "https://app.opinion.trade/market/130?ref=opinion_hud",
-      "yesTokenId": "83312605486775989875124026479193668639209368141481290332058438096914693173579",
-      "noTokenId": "23139673516083819266913387047840858519878682687113836655659674131364672873851",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "south korea",
-        "korea",
-        "local elections",
-        "municipal elections",
-        "regional elections",
-        "local polls",
-        "korean politics",
-        "civic elections",
-        "provincial elections",
-        "metropolitan elections",
-        "council elections",
-        "2026 elections",
-        "korean vote",
-        "local government elections",
-        "2026 south",
-        "south korean",
-        "korean local",
-        "elections party",
-        "party winner",
-        "2026 south korean",
-        "south korean local",
-        "korean local elections",
-        "local elections party",
-        "elections party winner"
-      ],
-      "entities": [
-        "south korea",
-        "local elections"
-      ],
-      "entityGroups": [
-        [
-          "south korea",
-          "korea"
-        ],
-        [
-          "local elections",
-          "地方选举"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2179",
-          "title": "Democratic Party of Korea (DP)",
-          "yesTokenId": "83312605486775989875124026479193668639209368141481290332058438096914693173579",
-          "noTokenId": "23139673516083819266913387047840858519878682687113836655659674131364672873851"
-        },
-        {
-          "marketId": "2180",
-          "title": "People Power Party (PPP)",
-          "yesTokenId": "45142410240243433455803783287318856274961209196441287740719190836967661433367",
-          "noTokenId": "91951061969733542711838736067134600345639402312502528537990641149476375761243"
-        },
-        {
-          "marketId": "2181",
-          "title": "Rebuilding Korea Party (RKP)",
-          "yesTokenId": "22265968143792536982256899440101447824813440695533822755697215059790720648012",
-          "noTokenId": "69256356136883109399698308941877506407606773953630000569511194041288221113349"
-        },
-        {
-          "marketId": "2182",
-          "title": "Progressive Party (PP)",
-          "yesTokenId": "63497789008044882416418514937096208556717358172821110315605623452926047613619",
-          "noTokenId": "102251353621468857484202427734063368873594679891589852057672372468712406519511"
-        }
-      ]
-    },
-    "129": {
-      "title": "Grok 5 released by...?",
-      "url": "https://app.opinion.trade/market/129?ref=opinion_hud",
-      "yesTokenId": "97618704669060253271671833053318705991502950033675883689169065441535063843617",
-      "noTokenId": "106110130273827439072769063295502872142742611277608369658691477835317696963246",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "grok 5",
-        "grok",
-        "xai",
-        "ai model",
-        "llm",
-        "large language model",
-        "elon musk",
-        "x",
-        "twitter",
-        "artificial intelligence",
-        "chatbot",
-        "generative ai",
-        "update",
-        "version 5",
-        "release",
-        "grok released"
-      ],
-      "entities": [
-        "grok 5"
-      ],
-      "entityGroups": [
-        [
-          "grok 5",
-          "grok-5",
-          "格罗克 5"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2176",
-          "title": "March 31, 2026",
-          "yesTokenId": "97618704669060253271671833053318705991502950033675883689169065441535063843617",
-          "noTokenId": "106110130273827439072769063295502872142742611277608369658691477835317696963246"
-        },
-        {
-          "marketId": "2175",
-          "title": "December 31, 2025",
-          "yesTokenId": "110328919157941971861934941596736432131635495613278758477121927926667508454145",
-          "noTokenId": "82367769093888111397771953370808062347328029953345151473793607677557705442033"
-        }
-      ]
-    },
-    "128": {
-      "title": "Will the U.S. invade Venezuela by...?",
-      "url": "https://app.opinion.trade/market/128?ref=opinion_hud",
-      "yesTokenId": "99404769904842467235905033522819579656684871241156527504708249210636373628857",
-      "noTokenId": "102387845162148657591753029728616395972863875512319618222170093881690174434138",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "us",
-        "usa",
-        "united states",
-        "venezuela",
-        "invasion",
-        "military intervention",
-        "war",
-        "conflict",
-        "caracas",
-        "maduro",
-        "regime change",
-        "intervention",
-        "troops",
-        "deployment",
-        "operation",
-        "invade venezuela"
-      ],
-      "entities": [
-        "venezuela"
-      ],
-      "entityGroups": [
-        [
-          "venezuela",
-          "委内瑞拉"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2174",
-          "title": "March 31, 2026",
-          "yesTokenId": "99404769904842467235905033522819579656684871241156527504708249210636373628857",
-          "noTokenId": "102387845162148657591753029728616395972863875512319618222170093881690174434138"
-        },
-        {
-          "marketId": "2173",
-          "title": "December 31, 2025",
-          "yesTokenId": "107540507812415197738456753772651880581290548232292968354548090095232464523628",
-          "noTokenId": "100394971363333502691712452014923356845398741396976656573470672111024564596413"
-        }
-      ]
-    },
-    "127": {
-      "title": "Russia x Ukraine ceasefire by ...?",
-      "url": "https://app.opinion.trade/market/127?ref=opinion_hud",
-      "yesTokenId": "78381026976476115833055080478490551839895275231264784619886223581624346309363",
-      "noTokenId": "99825187359825171260211051442758311720257284812022777962499414901509159818077",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "russia ukraine",
-        "ukraine ceasefire",
-        "russia ukraine ceasefire"
+        "2026 fifa",
+        "fifa world",
+        "world cup",
+        "cup winner",
+        "2026 fifa world",
+        "fifa world cup",
+        "world cup winner"
       ],
       "entities": [],
       "entityGroups": [],
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "2170",
-          "title": "January 31, 2026",
-          "yesTokenId": "78381026976476115833055080478490551839895275231264784619886223581624346309363",
-          "noTokenId": "99825187359825171260211051442758311720257284812022777962499414901509159818077"
+          "marketId": "1354",
+          "title": "Spain",
+          "yesTokenId": "109837041531451287161298527022447290894418066118946287563639981764887484653488",
+          "noTokenId": "53890611075397845232795119166448103024225386474242667766205597834982635707811"
         },
         {
-          "marketId": "2171",
-          "title": "March 31, 2026",
-          "yesTokenId": "35215363908564904586912111088829797268873572870429585060303776832501151491604",
-          "noTokenId": "91093603825622145449284936315298416924224843270649058400053653740195616700508"
+          "marketId": "1355",
+          "title": "France",
+          "yesTokenId": "58781511683741460840279113789011242305724778311984051984446170088352196682803",
+          "noTokenId": "39686998853200107672712866106128952465934053280184538999515234841489052010039"
         },
         {
-          "marketId": "2172",
-          "title": "December 31, 2026",
-          "yesTokenId": "99083834088473598560188529954599857129243503683779350264469385059880814485315",
-          "noTokenId": "41081322274213817220348528194603313357188691528323585772955003646539623579183"
+          "marketId": "1356",
+          "title": "England",
+          "yesTokenId": "87569949602057212313192823940772607523019984506139576806575322774190770115297",
+          "noTokenId": "88892816475389402504366901635471047203268297685219108104280248248864376759607"
+        },
+        {
+          "marketId": "1357",
+          "title": "Brazil",
+          "yesTokenId": "8190765351886206947407577443427415459065908410563993440934563622292691129486",
+          "noTokenId": "60665244945662695646969821625540953149661752807780716550203411448381496425227"
+        },
+        {
+          "marketId": "1358",
+          "title": "Argentina",
+          "yesTokenId": "76797181949753720644089803358469473836635939135749252012471686329193516696967",
+          "noTokenId": "26659404716729581304823258685507342308989872803470783991843835413600002370036"
+        },
+        {
+          "marketId": "1359",
+          "title": "Portugal",
+          "yesTokenId": "102155942478165027496030029269682056525357447147080949345312646221371535419800",
+          "noTokenId": "66182096721084076205251007122003178994751700629598290155509486203620001233152"
+        },
+        {
+          "marketId": "1360",
+          "title": "Germany",
+          "yesTokenId": "3130914182080581747547684695021247023483555203450871692729596777830675465938",
+          "noTokenId": "52819175245924976285571406839545523393303633789376165270092914079947104244477"
+        },
+        {
+          "marketId": "1361",
+          "title": "Netherlands",
+          "yesTokenId": "12183947116145259219391511115660869215418425013633123896412238820708881237687",
+          "noTokenId": "26198907524969520558250396522242808604638812860426626320509444399751338524187"
+        },
+        {
+          "marketId": "1362",
+          "title": "Norway",
+          "yesTokenId": "66927770418674676184087744146504344405626752230018728097765855453181337401906",
+          "noTokenId": "58626751301711211048277464777586155387539018448189798214529251849219137131667"
+        },
+        {
+          "marketId": "1363",
+          "title": "Italy",
+          "yesTokenId": "94776209237310350601704075622457341463176819695003402062280099887697695648762",
+          "noTokenId": "16465818463788735164718163894799714585391012832603496327574464924966980939010"
         }
       ]
-    },
-    "4596": {
-      "title": "BTC Up or Down - Hourly (Jan 26, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4596?ref=opinion_hud",
-      "yesTokenId": "63092947704716202093540079312052351954762803861353694761994596062890676885539",
-      "noTokenId": "18522819236183554163024898742673336835691451558910584327777137953935349585959",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "4595": {
-      "title": "BNB Up or Down - Hourly (Jan 26, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4595?ref=opinion_hud",
-      "yesTokenId": "3504126261333446407244549656542810658343533998508553983200249863525425839225",
-      "noTokenId": "49566001387946228577854789934221340324445434420609288352730058851337895970948",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "4597": {
-      "title": "ETH Up or Down - Hourly (Jan 26, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4597?ref=opinion_hud",
-      "yesTokenId": "28001719714141920414825534054343511969851782014282669938838777004031075138007",
-      "noTokenId": "95356111904189791216344068727146146494332879161073870292712505739193913838582",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "4568": {
-      "title": "Bitcoin Up or Down on January 26?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/4568?ref=opinion_hud",
-      "yesTokenId": "84407900334375298879590623286215851409111794320267752515743540638637440638410",
-      "noTokenId": "38215646560042464317141731071973059859170254504161504894824141951393703046031",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
     }
   },
   "index": {
@@ -16984,12 +15950,9 @@
       "80"
     ],
     "2026": [
-      "131",
       "133",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "212",
       "213",
@@ -17002,16 +15965,10 @@
     ],
     "2026 best": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
-    ],
-    "2026 best actor": [
-      "137"
     ],
     "2026 best actress": [
       "139"
@@ -17028,24 +15985,17 @@
     "2026 best picture": [
       "133"
     ],
-    "2026 best supporting": [
-      "140",
-      "141"
+    "2026 fifa": [
+      "79"
     ],
-    "2026 election": [
-      "136"
-    ],
-    "2026 elections": [
-      "130"
+    "2026 fifa world": [
+      "79"
     ],
     "2026 men": [
       "222"
     ],
     "2026 men australian": [
       "222"
-    ],
-    "2026 midterms": [
-      "135"
     ],
     "2026 nfl": [
       "3072"
@@ -17063,29 +16013,20 @@
       "212",
       "213"
     ],
-    "2026 seoul": [
-      "131"
-    ],
-    "2026 seoul mayoral": [
-      "131"
-    ],
-    "2026 south": [
-      "130"
-    ],
-    "2026 south korean": [
-      "130"
-    ],
     "2026 utc": [
       "3132"
+    ],
+    "2026 women": [
+      "304"
+    ],
+    "2026 women australian": [
+      "304"
     ],
     "2026-06-30": [
       "3508"
     ],
     "2026-12-31": [
       "3509"
-    ],
-    "2026年": [
-      "135"
     ],
     "2026年12月31日": [
       "3509"
@@ -17099,9 +16040,6 @@
     ],
     "2026年nfl选秀": [
       "3072"
-    ],
-    "2026年选举": [
-      "135"
     ],
     "2026年选秀": [
       "3072"
@@ -17163,8 +16101,6 @@
       "211"
     ],
     "98th oscars": [
-      "137",
-      "141",
       "210"
     ],
     "aapl": [
@@ -17241,20 +16177,12 @@
       "210",
       "280"
     ],
-    "academy award": [
-      "137"
-    ],
     "academy awards": [
       "133",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
-    ],
-    "academy awards 2026": [
-      "137"
     ],
     "accolades": [
       "115"
@@ -17276,26 +16204,11 @@
     "acquisition 2026": [
       "2398"
     ],
-    "acting": [
-      "137"
-    ],
-    "acting award": [
-      "140"
-    ],
-    "actor winner": [
-      "137",
-      "140"
-    ],
-    "actors": [
-      "140"
-    ],
     "actress": [
-      "141",
       "3158"
     ],
     "actress winner": [
-      "139",
-      "141"
+      "139"
     ],
     "added 500": [
       "186"
@@ -17311,9 +16224,6 @@
     ],
     "administration": [
       "202"
-    ],
-    "ador": [
-      "132"
     ],
     "adp": [
       "273"
@@ -17362,7 +16272,6 @@
       "287"
     ],
     "agi": [
-      "152",
       "237"
     ],
     "ai": [
@@ -17373,9 +16282,6 @@
     ],
     "ai compute": [
       "194"
-    ],
-    "ai model": [
-      "129"
     ],
     "ai performance": [
       "293"
@@ -17501,8 +16407,7 @@
       "3505"
     ],
     "ampas": [
-      "133",
-      "140"
+      "133"
     ],
     "amzn": [
       "269"
@@ -17584,9 +16489,6 @@
     "appropriations": [
       "3114"
     ],
-    "april 2026": [
-      "153"
-    ],
     "arena": [
       "200"
     ],
@@ -17611,9 +16513,6 @@
     "armageddon": [
       "2670"
     ],
-    "armed conflict": [
-      "144"
-    ],
     "armistice": [
       "188",
       "226"
@@ -17622,7 +16521,6 @@
       "288"
     ],
     "artificial intelligence": [
-      "129",
       "171",
       "183",
       "237"
@@ -17661,7 +16559,6 @@
       "222"
     ],
     "attack": [
-      "144",
       "257",
       "271",
       "3039"
@@ -17671,10 +16568,12 @@
       "239"
     ],
     "australian open": [
-      "222"
+      "222",
+      "304"
     ],
     "australian open winner": [
-      "222"
+      "222",
+      "304"
     ],
     "automated trading": [
       "200"
@@ -17754,9 +16653,6 @@
     "backpack fdv above": [
       "95"
     ],
-    "ballot": [
-      "131"
-    ],
     "ban": [
       "159",
       "160"
@@ -17800,6 +16696,9 @@
     "base链": [
       "3366"
     ],
+    "basis points": [
+      "75"
+    ],
     "basketball": [
       "115"
     ],
@@ -17815,18 +16714,9 @@
     "bei return china": [
       "1856"
     ],
-    "beijing": [
-      "142"
-    ],
     "benchmark": [
       "237",
       "263"
-    ],
-    "best actor": [
-      "137"
-    ],
-    "best actor winner": [
-      "137"
     ],
     "best actress": [
       "139"
@@ -17872,16 +16762,6 @@
     ],
     "best picture winner": [
       "133"
-    ],
-    "best supporting": [
-      "140",
-      "141"
-    ],
-    "best supporting actor": [
-      "140"
-    ],
-    "best supporting actress": [
-      "141"
     ],
     "betting": [
       "207"
@@ -18080,9 +16960,6 @@
     "bullish": [
       "3367"
     ],
-    "bunnies": [
-      "132"
-    ],
     "business": [
       "236"
     ],
@@ -18112,9 +16989,6 @@
     "cambodia ceasefire": [
       "188"
     ],
-    "campaign": [
-      "131"
-    ],
     "cap above": [
       "204",
       "205"
@@ -18130,10 +17004,6 @@
       "3506",
       "3525"
     ],
-    "capitol hill": [
-      "135",
-      "136"
-    ],
     "capture": [
       "250"
     ],
@@ -18144,8 +17014,7 @@
       "250"
     ],
     "caracas": [
-      "116",
-      "128"
+      "116"
     ],
     "carolina": [
       "181"
@@ -18167,7 +17036,8 @@
       "3158"
     ],
     "central bank": [
-      "153"
+      "75",
+      "78"
     ],
     "ceo": [
       "193",
@@ -18185,10 +17055,8 @@
     ],
     "ceremony": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
       "279",
       "280",
       "282",
@@ -18239,21 +17107,16 @@
     "charts": [
       "214"
     ],
-    "chatbot": [
-      "129"
-    ],
     "chatbot arena": [
       "237"
     ],
     "chatgpt": [
-      "152",
       "171"
     ],
     "chief executive officer": [
       "193"
     ],
     "china": [
-      "142",
       "1856",
       "212"
     ],
@@ -18277,10 +17140,7 @@
     ],
     "cinema": [
       "133",
-      "137",
       "138",
-      "140",
-      "141",
       "210",
       "211",
       "275"
@@ -18300,17 +17160,10 @@
     "city": [
       "250"
     ],
-    "civic": [
-      "131"
-    ],
-    "civic elections": [
-      "130"
-    ],
     "claim": [
       "174"
     ],
     "clash": [
-      "144",
       "188"
     ],
     "claude": [
@@ -18357,14 +17210,12 @@
       "264"
     ],
     "closing market": [
-      "152",
       "158",
       "190",
       "204",
       "205"
     ],
     "closing market cap": [
-      "152",
       "158",
       "190",
       "204",
@@ -18400,11 +17251,7 @@
     "college football": [
       "3072"
     ],
-    "combat": [
-      "144"
-    ],
     "comeback": [
-      "132",
       "2178",
       "3369"
     ],
@@ -18444,9 +17291,6 @@
     "composer": [
       "284"
     ],
-    "concert": [
-      "132"
-    ],
     "conduct yen-buying": [
       "3132"
     ],
@@ -18467,8 +17311,6 @@
       "223"
     ],
     "conflict": [
-      "128",
-      "144",
       "226",
       "257",
       "271",
@@ -18477,13 +17319,6 @@
     ],
     "conflict resolution": [
       "188"
-    ],
-    "congress": [
-      "135",
-      "136"
-    ],
-    "congressional": [
-      "135"
     ],
     "consensys": [
       "189",
@@ -18525,9 +17360,6 @@
     "corporation": [
       "236"
     ],
-    "council elections": [
-      "130"
-    ],
     "coup": [
       "116"
     ],
@@ -18544,7 +17376,7 @@
       "214"
     ],
     "cpi": [
-      "153"
+      "75"
     ],
     "crash": [
       "3359"
@@ -18596,7 +17428,6 @@
       "234"
     ],
     "crypto exchange": [
-      "143",
       "3362",
       "3369"
     ],
@@ -18639,6 +17470,9 @@
     "cryptography": [
       "3256"
     ],
+    "cup winner": [
+      "79"
+    ],
     "currency": [
       "288"
     ],
@@ -18657,6 +17491,9 @@
     ],
     "cut": [
       "211"
+    ],
+    "cuts 2026": [
+      "78"
     ],
     "cybercab": [
       "198"
@@ -18723,7 +17560,6 @@
       "1856"
     ],
     "debut": [
-      "143",
       "158",
       "163",
       "169",
@@ -18747,14 +17583,12 @@
     "decentralized exchange": [
       "175"
     ],
-    "decision april": [
-      "153"
-    ],
-    "decision april 2026": [
-      "153"
+    "decision january": [
+      "61"
     ],
     "decision march": [
-      "230"
+      "230",
+      "75"
     ],
     "deepseek": [
       "237"
@@ -18807,9 +17641,6 @@
     "depeg 1q2026": [
       "3359"
     ],
-    "deployment": [
-      "128"
-    ],
     "depression": [
       "3265"
     ],
@@ -18848,20 +17679,13 @@
       "265"
     ],
     "diplomacy": [
-      "142",
       "276"
-    ],
-    "diplomatic": [
-      "142"
     ],
     "diplomatic relations": [
       "188"
     ],
     "diplomatic visit": [
       "276"
-    ],
-    "direct listing": [
-      "143"
     ],
     "directing": [
       "138"
@@ -18883,6 +17707,10 @@
     ],
     "discord ipo closing": [
       "190"
+    ],
+    "discount rate": [
+      "75",
+      "78"
     ],
     "dispute": [
       "188"
@@ -18924,14 +17752,11 @@
     "donetsk": [
       "250"
     ],
-    "dot plot": [
-      "153"
-    ],
     "douyin": [
       "159"
     ],
-    "downing street": [
-      "150"
+    "dovish": [
+      "78"
     ],
     "downtime": [
       "3357"
@@ -18996,7 +17821,8 @@
       "2668"
     ],
     "easing": [
-      "230"
+      "230",
+      "78"
     ],
     "east winner": [
       "180"
@@ -19029,20 +17855,7 @@
       "211"
     ],
     "election": [
-      "116",
-      "131"
-    ],
-    "election winner": [
-      "131"
-    ],
-    "elections": [
-      "136"
-    ],
-    "elections party": [
-      "130"
-    ],
-    "elections party winner": [
-      "130"
+      "116"
     ],
     "electric vehicle": [
       "264"
@@ -19054,7 +17867,6 @@
       "264"
     ],
     "elon musk": [
-      "129",
       "198",
       "204"
     ],
@@ -19221,7 +18033,6 @@
       "67"
     ],
     "exchange": [
-      "143",
       "169"
     ],
     "exchange rate": [
@@ -19352,13 +18163,23 @@
       "67"
     ],
     "fed": [
-      "153"
+      "75",
+      "78"
+    ],
+    "fed chair": [
+      "300"
     ],
     "fed rate": [
-      "153"
+      "61",
+      "75",
+      "78"
+    ],
+    "fed rate cuts": [
+      "78"
     ],
     "fed rate decision": [
-      "153"
+      "61",
+      "75"
     ],
     "federal circuit": [
       "1546"
@@ -19367,13 +18188,15 @@
       "3114"
     ],
     "federal funds rate": [
-      "153"
+      "75",
+      "78"
     ],
     "federal government": [
       "3114"
     ],
     "federal reserve": [
-      "153"
+      "75",
+      "78"
     ],
     "federal revenue": [
       "196"
@@ -19381,15 +18204,18 @@
     "federal shutdown": [
       "3114"
     ],
+    "fifa world": [
+      "79"
+    ],
+    "fifa world cup": [
+      "79"
+    ],
     "film": [
       "133",
       "275"
     ],
     "film awards": [
-      "137",
       "138",
-      "140",
-      "141",
       "210"
     ],
     "film editing": [
@@ -19456,7 +18282,8 @@
       "220"
     ],
     "fomc": [
-      "153"
+      "75",
+      "78"
     ],
     "fomo": [
       "201"
@@ -19586,12 +18413,6 @@
     "gemini": [
       "237"
     ],
-    "general election": [
-      "150"
-    ],
-    "generative ai": [
-      "129"
-    ],
     "genesis": [
       "3365"
     ],
@@ -19611,12 +18432,9 @@
       "194"
     ],
     "girl group": [
-      "132",
       "2178"
     ],
     "going public": [
-      "143",
-      "152",
       "158",
       "163",
       "171",
@@ -19657,12 +18475,8 @@
     "gold settle january": [
       "241"
     ],
-    "golden statue": [
-      "141"
-    ],
     "golden statuette": [
-      "133",
-      "140"
+      "133"
     ],
     "goog": [
       "265"
@@ -19709,10 +18523,14 @@
       "3114"
     ],
     "government shutdown": [
+      "303",
       "3114"
     ],
     "government shutdown january": [
       "3114"
+    ],
+    "government shutdown last": [
+      "303"
     ],
     "gpt": [
       "237"
@@ -19778,17 +18596,7 @@
       "182"
     ],
     "grok": [
-      "129",
       "237"
-    ],
-    "grok 5": [
-      "129"
-    ],
-    "grok released": [
-      "129"
-    ],
-    "grok-5": [
-      "129"
     ],
     "gross january": [
       "275"
@@ -19890,11 +18698,8 @@
     ],
     "hollywood": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "3158"
     ],
     "holographic": [
@@ -19915,33 +18720,21 @@
       "3223"
     ],
     "hostilities": [
-      "144",
       "188",
       "226"
     ],
-    "house 2026": [
-      "135"
+    "how long": [
+      "303"
     ],
-    "house control": [
-      "135"
-    ],
-    "house election": [
-      "135"
-    ],
-    "house majority": [
-      "135"
-    ],
-    "house of representatives": [
-      "135"
-    ],
-    "house race": [
-      "135"
-    ],
-    "house seats": [
-      "135"
+    "how long government": [
+      "303"
     ],
     "how many": [
-      "273"
+      "273",
+      "78"
+    ],
+    "how many fed": [
+      "78"
     ],
     "how many jobs": [
       "273"
@@ -20064,9 +18857,10 @@
       "184"
     ],
     "inflation": [
-      "153",
       "227",
-      "288"
+      "288",
+      "75",
+      "78"
     ],
     "inflation hedge": [
       "241",
@@ -20079,7 +18873,6 @@
       "205"
     ],
     "initial public offering": [
-      "152",
       "158",
       "163",
       "190",
@@ -20087,14 +18880,11 @@
       "3362"
     ],
     "interest rate": [
-      "153"
+      "75",
+      "78"
     ],
     "interest rates": [
       "230"
-    ],
-    "intervention": [
-      "128",
-      "144"
     ],
     "intervention jan": [
       "3132"
@@ -20102,12 +18892,7 @@
     "intervention jan 2026": [
       "3132"
     ],
-    "invade venezuela": [
-      "128"
-    ],
     "invasion": [
-      "128",
-      "144",
       "250",
       "274"
     ],
@@ -20127,8 +18912,6 @@
       "266"
     ],
     "ipo": [
-      "143",
-      "152",
       "158",
       "163",
       "169",
@@ -20143,14 +18926,12 @@
       "3362"
     ],
     "ipo closing": [
-      "152",
       "158",
       "190",
       "204",
       "205"
     ],
     "ipo closing market": [
-      "152",
       "158",
       "190",
       "204",
@@ -20198,6 +18979,12 @@
     ],
     "israel iran ceasefire": [
       "226"
+    ],
+    "israel strike": [
+      "302"
+    ],
+    "israel strike lebanon": [
+      "302"
     ],
     "israel strikes": [
       "3039"
@@ -20257,7 +19044,12 @@
       "3055"
     ],
     "jerome powell": [
-      "153"
+      "300",
+      "75",
+      "78"
+    ],
+    "jerome powell out": [
+      "300"
     ],
     "jessie buckley": [
       "139"
@@ -20313,7 +19105,6 @@
       "3508"
     ],
     "k-pop": [
-      "132",
       "2178"
     ],
     "kain warwick": [
@@ -20327,9 +19118,6 @@
     ],
     "kazuo ueda": [
       "230"
-    ],
-    "keir starmer": [
-      "150"
     ],
     "khamenei": [
       "242",
@@ -20359,43 +19147,22 @@
     "kodiak fdv above": [
       "197"
     ],
-    "korea": [
-      "130"
-    ],
     "korean league": [
       "213"
     ],
-    "korean local": [
-      "130"
-    ],
-    "korean local elections": [
-      "130"
-    ],
-    "korean politics": [
-      "130"
-    ],
-    "korean pop": [
-      "132"
-    ],
-    "korean vote": [
-      "130"
-    ],
     "kraken": [
-      "143",
       "3362"
     ],
     "kraken exchange": [
       "3362"
     ],
     "kraken ipo": [
-      "143",
       "3362"
     ],
     "kraken ipo 1q2026": [
       "3362"
     ],
     "kraken交易所": [
-      "143",
       "3362"
     ],
     "kyiv": [
@@ -20414,12 +19181,6 @@
     "labor market": [
       "273"
     ],
-    "labour leader": [
-      "150"
-    ],
-    "labour party": [
-      "150"
-    ],
     "lapse in appropriations": [
       "3114"
     ],
@@ -20427,7 +19188,6 @@
       "186"
     ],
     "large language model": [
-      "129",
       "237"
     ],
     "largest company": [
@@ -20519,9 +19279,6 @@
     "leadership change": [
       "2368"
     ],
-    "leading actor": [
-      "137"
-    ],
     "league of legends": [
       "212",
       "213"
@@ -20556,17 +19313,10 @@
     "legislation": [
       "160"
     ],
-    "legislative": [
-      "136"
-    ],
-    "legislature": [
-      "135"
-    ],
     "lions vs vikings": [
       "214"
     ],
     "listing": [
-      "152",
       "158",
       "167",
       "168",
@@ -20591,31 +19341,9 @@
       "95",
       "97"
     ],
-    "live": [
-      "132"
-    ],
-    "live performance": [
-      "132"
-    ],
     "llm": [
-      "129",
       "200",
       "237"
-    ],
-    "local election": [
-      "131"
-    ],
-    "local elections": [
-      "130"
-    ],
-    "local elections party": [
-      "130"
-    ],
-    "local government elections": [
-      "130"
-    ],
-    "local polls": [
-      "130"
     ],
     "logan paul": [
       "217",
@@ -20643,6 +19371,12 @@
     "lol lpl 2026": [
       "212"
     ],
+    "long government": [
+      "303"
+    ],
+    "long government shutdown": [
+      "303"
+    ],
     "loopscale": [
       "233"
     ],
@@ -20651,9 +19385,6 @@
     ],
     "loopscale launch token": [
       "233"
-    ],
-    "lower chamber": [
-      "135"
     ],
     "lp": [
       "2178"
@@ -20680,8 +19411,7 @@
       "194"
     ],
     "maduro": [
-      "116",
-      "128"
+      "116"
     ],
     "maduro out": [
       "116"
@@ -20716,11 +19446,14 @@
     "major quake": [
       "187"
     ],
-    "majority": [
-      "136"
-    ],
     "man vs baby": [
       "214"
+    ],
+    "many fed": [
+      "78"
+    ],
+    "many fed rate": [
+      "78"
     ],
     "many jobs": [
       "273"
@@ -20765,7 +19498,6 @@
       "3361"
     ],
     "market cap": [
-      "152",
       "158",
       "190",
       "194",
@@ -20791,7 +19523,6 @@
       "67"
     ],
     "market capitalization": [
-      "152",
       "158"
     ],
     "market entry": [
@@ -20818,15 +19549,6 @@
     "max": [
       "2398"
     ],
-    "mayor": [
-      "131"
-    ],
-    "mayoral election": [
-      "131"
-    ],
-    "mayoral election winner": [
-      "131"
-    ],
     "medical travel": [
       "258"
     ],
@@ -20834,7 +19556,6 @@
       "276"
     ],
     "meeting": [
-      "142",
       "276"
     ],
     "megaeth": [
@@ -20922,14 +19643,10 @@
     "meta平台": [
       "270"
     ],
-    "metropolitan elections": [
-      "130"
-    ],
     "mexico": [
       "274"
     ],
     "microsoft": [
-      "152",
       "267"
     ],
     "microsoft msft": [
@@ -20956,12 +19673,6 @@
     "middle east": [
       "226"
     ],
-    "midterm election": [
-      "135"
-    ],
-    "midterms": [
-      "136"
-    ],
     "mike wheeler": [
       "3222"
     ],
@@ -20978,15 +19689,8 @@
     "military attack": [
       "274"
     ],
-    "military engagement": [
-      "144"
-    ],
     "military intervention": [
-      "128",
       "274"
-    ],
-    "min hee-jin": [
-      "132"
     ],
     "mining algorithm": [
       "3256"
@@ -21033,9 +19737,10 @@
       "1721"
     ],
     "monetary policy": [
-      "153",
       "230",
-      "288"
+      "288",
+      "75",
+      "78"
     ],
     "money": [
       "3505",
@@ -21049,9 +19754,7 @@
       "211"
     ],
     "motion pictures": [
-      "137",
-      "138",
-      "141"
+      "138"
     ],
     "move": [
       "3365"
@@ -21071,8 +19774,6 @@
     "movies": [
       "133",
       "138",
-      "140",
-      "141",
       "211"
     ],
     "msci": [
@@ -21111,14 +19812,7 @@
     "much revenue raise": [
       "196"
     ],
-    "municipal": [
-      "131"
-    ],
-    "municipal elections": [
-      "130"
-    ],
     "music": [
-      "132",
       "279",
       "284"
     ],
@@ -21298,17 +19992,11 @@
     "new york giants": [
       "180"
     ],
-    "newjeans": [
-      "132"
+    "next president": [
+      "301"
     ],
-    "newjeans perform": [
-      "132"
-    ],
-    "newjeans perform again": [
-      "132"
-    ],
-    "newjeans组合": [
-      "132"
+    "next president vietnam": [
+      "301"
     ],
     "nfc": [
       "179",
@@ -21411,11 +20099,8 @@
     ],
     "nominees": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "151",
       "282",
       "283",
@@ -21432,9 +20117,6 @@
     ],
     "north winner": [
       "182"
-    ],
-    "number 10": [
-      "150"
     ],
     "number one pick": [
       "3072"
@@ -21467,7 +20149,6 @@
       "250"
     ],
     "offering": [
-      "143",
       "163",
       "171"
     ],
@@ -21534,19 +20215,15 @@
       "3366"
     ],
     "open winner": [
-      "222"
+      "222",
+      "304"
     ],
     "openai": [
-      "152",
       "163",
       "171"
     ],
     "openai ipo": [
-      "152",
       "171"
-    ],
-    "openai ipo closing": [
-      "152"
     ],
     "opening weekend": [
       "275"
@@ -21560,9 +20237,6 @@
     "opensea fdv above": [
       "173"
     ],
-    "operation": [
-      "128"
-    ],
     "opm": [
       "3114"
     ],
@@ -21573,43 +20247,28 @@
       "267"
     ],
     "oscar": [
-      "137",
       "138",
-      "140",
-      "141",
       "210",
       "211"
     ],
-    "oscar winner": [
-      "137"
-    ],
     "oscars": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
     ],
     "oscars 2026": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
     ],
     "oscars 2026 best": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
     ],
@@ -21618,7 +20277,6 @@
       "287"
     ],
     "ousted": [
-      "150",
       "193",
       "2368"
     ],
@@ -21634,6 +20292,12 @@
     ],
     "out apple ceo": [
       "2368"
+    ],
+    "out fed": [
+      "300"
+    ],
+    "out fed chair": [
+      "300"
     ],
     "out president": [
       "3062"
@@ -21716,19 +20380,6 @@
     "participation rate": [
       "273"
     ],
-    "party win": [
-      "135",
-      "136"
-    ],
-    "party win house": [
-      "135"
-    ],
-    "party win senate": [
-      "136"
-    ],
-    "party winner": [
-      "130"
-    ],
     "paul 1st": [
       "239"
     ],
@@ -21740,9 +20391,6 @@
     ],
     "paul pikachu illustrator": [
       "217"
-    ],
-    "payward": [
-      "143"
     ],
     "pc gaming": [
       "151"
@@ -21777,12 +20425,6 @@
     ],
     "perena protocol": [
       "232"
-    ],
-    "perform again": [
-      "132"
-    ],
-    "performance": [
-      "132"
     ],
     "permanent role": [
       "3369"
@@ -21839,9 +20481,6 @@
       "223",
       "224"
     ],
-    "pm": [
-      "150"
-    ],
     "pokemon": [
       "239"
     ],
@@ -21858,13 +20497,8 @@
       "230"
     ],
     "politics": [
-      "131",
-      "136",
       "202",
       "242"
-    ],
-    "poll": [
-      "131"
     ],
     "poly": [
       "208"
@@ -21891,12 +20525,17 @@
       "224"
     ],
     "potus": [
-      "142",
       "276",
       "3062"
     ],
     "powell": [
-      "153"
+      "78"
+    ],
+    "powell out": [
+      "300"
+    ],
+    "powell out fed": [
+      "300"
     ],
     "precious metal": [
       "1098",
@@ -21941,6 +20580,9 @@
     "president 2027": [
       "3055",
       "3062"
+    ],
+    "president vietnam": [
+      "301"
     ],
     "presidential candidate": [
       "3055"
@@ -22043,9 +20685,6 @@
     "protocol": [
       "184"
     ],
-    "provincial elections": [
-      "130"
-    ],
     "psa 10": [
       "217",
       "239"
@@ -22057,11 +20696,9 @@
       "169"
     ],
     "public debut": [
-      "152",
       "204"
     ],
     "public listing": [
-      "143",
       "163",
       "3362"
     ],
@@ -22127,9 +20764,6 @@
     "qwen": [
       "237"
     ],
-    "race": [
-      "131"
-    ],
     "rainbow": [
       "244"
     ],
@@ -22171,18 +20805,30 @@
       "217"
     ],
     "rate cut": [
-      "153",
-      "230"
+      "230",
+      "75",
+      "78"
+    ],
+    "rate cuts": [
+      "78"
+    ],
+    "rate cuts 2026": [
+      "78"
     ],
     "rate decision": [
-      "153"
+      "61",
+      "75",
+      "78"
     ],
-    "rate decision april": [
-      "153"
+    "rate decision january": [
+      "61"
+    ],
+    "rate decision march": [
+      "75"
     ],
     "rate hike": [
-      "153",
-      "230"
+      "230",
+      "75"
     ],
     "rate january": [
       "288"
@@ -22224,11 +20870,6 @@
       "283",
       "284"
     ],
-    "red carpet": [
-      "137",
-      "140",
-      "141"
-    ],
     "red status": [
       "3357"
     ],
@@ -22240,12 +20881,8 @@
       "258"
     ],
     "regime change": [
-      "128",
       "202",
       "242"
-    ],
-    "regional elections": [
-      "130"
     ],
     "regular season": [
       "115",
@@ -22257,11 +20894,7 @@
     "rekt": [
       "3360"
     ],
-    "relations": [
-      "142"
-    ],
     "release": [
-      "129",
       "172",
       "201",
       "2178",
@@ -22299,9 +20932,6 @@
       "193",
       "2368"
     ],
-    "representatives": [
-      "135"
-    ],
     "republican nomination": [
       "3055"
     ],
@@ -22312,7 +20942,6 @@
     ],
     "resignation": [
       "116",
-      "150",
       "193",
       "202",
       "2368",
@@ -22432,12 +21061,6 @@
     "russia capture all": [
       "250"
     ],
-    "russia ukraine": [
-      "127"
-    ],
-    "russia ukraine ceasefire": [
-      "127"
-    ],
     "s&p 500": [
       "186",
       "263"
@@ -22449,7 +21072,6 @@
       "215"
     ],
     "sacked": [
-      "150",
       "193"
     ],
     "safe haven": [
@@ -22474,7 +21096,6 @@
       "239"
     ],
     "sam altman": [
-      "152",
       "171"
     ],
     "satoshi": [
@@ -22530,9 +21151,6 @@
       "212",
       "213"
     ],
-    "sec filing": [
-      "143"
-    ],
     "second coming": [
       "2670"
     ],
@@ -22565,36 +21183,6 @@
     ],
     "semiconductor": [
       "268"
-    ],
-    "senate": [
-      "136"
-    ],
-    "senate 2026": [
-      "136"
-    ],
-    "senate control": [
-      "136"
-    ],
-    "senate race": [
-      "136"
-    ],
-    "senate seats": [
-      "136"
-    ],
-    "seoul": [
-      "131"
-    ],
-    "seoul city": [
-      "131"
-    ],
-    "seoul mayor": [
-      "131"
-    ],
-    "seoul mayoral": [
-      "131"
-    ],
-    "seoul mayoral election": [
-      "131"
     ],
     "sequel": [
       "275"
@@ -22638,11 +21226,9 @@
       "277"
     ],
     "share price": [
-      "152",
       "190"
     ],
     "shares": [
-      "143",
       "158",
       "163",
       "169",
@@ -22668,6 +21254,9 @@
     ],
     "shutdown january": [
       "3114"
+    ],
+    "shutdown last": [
+      "303"
     ],
     "sidechain": [
       "208"
@@ -22780,16 +21369,6 @@
     "south division": [
       "181"
     ],
-    "south korea": [
-      "130",
-      "131"
-    ],
-    "south korean": [
-      "130"
-    ],
-    "south korean local": [
-      "130"
-    ],
     "south winner": [
       "181"
     ],
@@ -22858,9 +21437,6 @@
     "stablecoin depeg": [
       "3359"
     ],
-    "stage": [
-      "132"
-    ],
     "stagnation": [
       "3265"
     ],
@@ -22883,14 +21459,7 @@
     "starlink": [
       "204"
     ],
-    "starmer": [
-      "150"
-    ],
-    "starmer out": [
-      "150"
-    ],
     "state visit": [
-      "142",
       "276"
     ],
     "status page": [
@@ -22912,7 +21481,6 @@
       "151"
     ],
     "step down": [
-      "150",
       "202",
       "2368",
       "3062"
@@ -22941,7 +21509,6 @@
       "158"
     ],
     "stock market": [
-      "143",
       "163",
       "169",
       "171",
@@ -22952,7 +21519,6 @@
       "3362"
     ],
     "stock price": [
-      "152",
       "158",
       "236"
     ],
@@ -22984,6 +21550,9 @@
       "274",
       "3039"
     ],
+    "strike lebanon": [
+      "302"
+    ],
     "strike mexico": [
       "274"
     ],
@@ -23010,7 +21579,6 @@
       "213"
     ],
     "summit": [
-      "142",
       "276"
     ],
     "summoner's rift": [
@@ -23022,18 +21590,6 @@
     "support": [
       "3055",
       "3132"
-    ],
-    "supporting actor": [
-      "140"
-    ],
-    "supporting actor winner": [
-      "140"
-    ],
-    "supporting actress": [
-      "141"
-    ],
-    "supporting actress winner": [
-      "141"
     ],
     "supreme court": [
       "1546"
@@ -23262,8 +21818,6 @@
       "3506"
     ],
     "ticker": [
-      "143",
-      "152",
       "158",
       "169",
       "171",
@@ -23418,9 +21972,6 @@
     "total domestic gross": [
       "275"
     ],
-    "tour": [
-      "132"
-    ],
     "tournament": [
       "200"
     ],
@@ -23505,12 +22056,6 @@
     "trillion": [
       "236"
     ],
-    "trip": [
-      "142"
-    ],
-    "troops": [
-      "128"
-    ],
     "trophy": [
       "115",
       "240",
@@ -23530,7 +22075,6 @@
       "226"
     ],
     "trump": [
-      "142",
       "1546",
       "276",
       "3055",
@@ -23557,12 +22101,6 @@
     "trump tariffs": [
       "1546"
     ],
-    "trump visit": [
-      "142"
-    ],
-    "trump visit china": [
-      "142"
-    ],
     "tsla": [
       "264"
     ],
@@ -23579,31 +22117,13 @@
       "3221",
       "3224"
     ],
-    "twitter": [
-      "129"
-    ],
     "u.s.": [
       "196",
       "273"
     ],
-    "u.s. house": [
-      "135"
-    ],
-    "u.s. senate": [
-      "136"
-    ],
-    "uk politics": [
-      "150"
-    ],
-    "uk prime minister": [
-      "150"
-    ],
     "ukraine": [
       "202",
       "250"
-    ],
-    "ukraine ceasefire": [
-      "127"
     ],
     "ukraine president": [
       "202"
@@ -23615,13 +22135,8 @@
       "273"
     ],
     "united states": [
-      "128",
-      "144",
       "196",
       "274"
-    ],
-    "united states senate": [
-      "136"
     ],
     "unsupervised": [
       "198"
@@ -23632,12 +22147,6 @@
     "unsupervised full self": [
       "198"
     ],
-    "update": [
-      "129"
-    ],
-    "upper chamber": [
-      "136"
-    ],
     "upside down": [
       "215",
       "3221",
@@ -23645,8 +22154,6 @@
       "3223"
     ],
     "us": [
-      "128",
-      "144",
       "196",
       "257",
       "271",
@@ -23656,20 +22163,14 @@
       "214"
     ],
     "us economy": [
-      "153",
-      "3265"
+      "3265",
+      "75"
     ],
     "us government": [
       "3114"
     ],
-    "us house": [
-      "135"
-    ],
     "us jobs": [
       "273"
-    ],
-    "us senate": [
-      "136"
     ],
     "us stocks": [
       "186",
@@ -23678,9 +22179,6 @@
     "us treasury": [
       "196"
     ],
-    "us-china": [
-      "142"
-    ],
     "us/israel strikes": [
       "271"
     ],
@@ -23688,8 +22186,6 @@
       "271"
     ],
     "usa": [
-      "128",
-      "144",
       "196",
       "274"
     ],
@@ -23740,8 +22236,6 @@
       "3158"
     ],
     "valuation": [
-      "143",
-      "152",
       "158",
       "163",
       "171",
@@ -23785,21 +22279,10 @@
       "3223"
     ],
     "venezuela": [
-      "116",
-      "128",
-      "144"
-    ],
-    "venezuela military": [
-      "144"
-    ],
-    "venezuela military engagement": [
-      "144"
+      "116"
     ],
     "venture": [
       "3525"
-    ],
-    "version 5": [
-      "129"
     ],
     "vice president": [
       "3062"
@@ -23813,12 +22296,6 @@
     "violation": [
       "226"
     ],
-    "visit": [
-      "142"
-    ],
-    "visit china": [
-      "142"
-    ],
     "volatility": [
       "246",
       "247",
@@ -23828,12 +22305,6 @@
     ],
     "volodymyr": [
       "202"
-    ],
-    "vote": [
-      "131"
-    ],
-    "vote of no confidence": [
-      "150"
     ],
     "voting": [
       "151",
@@ -23859,8 +22330,6 @@
       "234"
     ],
     "war": [
-      "128",
-      "144",
       "188",
       "226",
       "250",
@@ -23976,14 +22445,6 @@
     "which company best": [
       "237"
     ],
-    "which party": [
-      "135",
-      "136"
-    ],
-    "which party win": [
-      "135",
-      "136"
-    ],
     "which team": [
       "293"
     ],
@@ -24025,18 +22486,6 @@
     "will byers": [
       "3221"
     ],
-    "win house": [
-      "135"
-    ],
-    "win house 2026": [
-      "135"
-    ],
-    "win senate": [
-      "136"
-    ],
-    "win senate 2026": [
-      "136"
-    ],
     "winner": [
       "139",
       "279"
@@ -24044,21 +22493,27 @@
     "winner 2026": [
       "80"
     ],
+    "women australian": [
+      "304"
+    ],
+    "women australian open": [
+      "304"
+    ],
     "workforce": [
       "273"
+    ],
+    "world cup": [
+      "79"
+    ],
+    "world cup winner": [
+      "79"
     ],
     "worlds": [
       "212"
     ],
-    "x": [
-      "129"
-    ],
     "xag": [
       "227",
       "287"
-    ],
-    "xai": [
-      "129"
     ],
     "xau": [
       "1098",
@@ -24067,12 +22522,6 @@
     ],
     "xauusd": [
       "262"
-    ],
-    "xi": [
-      "142"
-    ],
-    "xi jinping": [
-      "142"
     ],
     "year winner": [
       "279",
@@ -24170,9 +22619,6 @@
       "271",
       "3039"
     ],
-    "众议院": [
-      "135"
-    ],
     "俄罗斯": [
       "250"
     ],
@@ -24213,12 +22659,6 @@
     "国联西区": [
       "179"
     ],
-    "地方选举": [
-      "130"
-    ],
-    "基尔·斯塔默": [
-      "150"
-    ],
     "墨西哥": [
       "274"
     ],
@@ -24232,25 +22672,15 @@
     ],
     "奥斯卡": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
     ],
-    "委内瑞拉": [
-      "128",
-      "144"
-    ],
     "学院奖": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
     ],
@@ -24263,7 +22693,6 @@
       "3368"
     ],
     "开放人工智能": [
-      "152",
       "171"
     ],
     "彩虹钱包": [
@@ -24274,9 +22703,6 @@
     ],
     "怪奇物语": [
       "215"
-    ],
-    "斯塔默": [
-      "150"
     ],
     "日本央行": [
       "230"
@@ -24306,9 +22732,6 @@
     "标普500": [
       "186",
       "263"
-    ],
-    "格罗克 5": [
-      "129"
     ],
     "格莱美": [
       "279",
@@ -24348,7 +22771,6 @@
       "264"
     ],
     "特朗普": [
-      "142",
       "1546",
       "276",
       "3055",
@@ -24379,12 +22801,6 @@
       "115",
       "237"
     ],
-    "美国众议院": [
-      "135"
-    ],
-    "美国参议院": [
-      "136"
-    ],
     "美国国家橄榄球联盟": [
       "240"
     ],
@@ -24398,8 +22814,9 @@
       "115"
     ],
     "美联储": [
-      "153",
-      "3114"
+      "3114",
+      "75",
+      "78"
     ],
     "耶稣基督": [
       "2670"
@@ -24452,12 +22869,6 @@
     "韩国英雄联盟职业联赛": [
       "213"
     ],
-    "首尔市长": [
-      "131"
-    ],
-    "首尔市长选举": [
-      "131"
-    ],
     "首席执行官": [
       "193"
     ],
@@ -24479,12 +22890,9 @@
       "80"
     ],
     "2026": [
-      "131",
       "133",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "212",
       "213",
@@ -24493,16 +22901,10 @@
     ],
     "2026 best": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
-    ],
-    "2026 best actor": [
-      "137"
     ],
     "2026 best actress": [
       "139"
@@ -24519,24 +22921,17 @@
     "2026 best picture": [
       "133"
     ],
-    "2026 best supporting": [
-      "140",
-      "141"
+    "2026 fifa": [
+      "79"
     ],
-    "2026 election": [
-      "136"
-    ],
-    "2026 elections": [
-      "130"
+    "2026 fifa world": [
+      "79"
     ],
     "2026 men": [
       "222"
     ],
     "2026 men australian": [
       "222"
-    ],
-    "2026 midterms": [
-      "135"
     ],
     "2026 season": [
       "115",
@@ -24548,23 +22943,11 @@
       "212",
       "213"
     ],
-    "2026 seoul": [
-      "131"
+    "2026 women": [
+      "304"
     ],
-    "2026 seoul mayoral": [
-      "131"
-    ],
-    "2026 south": [
-      "130"
-    ],
-    "2026 south korean": [
-      "130"
-    ],
-    "2026年": [
-      "135"
-    ],
-    "2026年选举": [
-      "135"
+    "2026 women australian": [
+      "304"
     ],
     "500 2026": [
       "186"
@@ -24582,8 +22965,6 @@
       "211"
     ],
     "98th oscars": [
-      "137",
-      "141",
       "210"
     ],
     "aapl": [
@@ -24655,20 +23036,12 @@
       "210",
       "280"
     ],
-    "academy award": [
-      "137"
-    ],
     "academy awards": [
       "133",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
-    ],
-    "academy awards 2026": [
-      "137"
     ],
     "accolades": [
       "115"
@@ -24686,25 +23059,8 @@
       "159",
       "160"
     ],
-    "acting": [
-      "137"
-    ],
-    "acting award": [
-      "140"
-    ],
-    "actor winner": [
-      "137",
-      "140"
-    ],
-    "actors": [
-      "140"
-    ],
-    "actress": [
-      "141"
-    ],
     "actress winner": [
-      "139",
-      "141"
+      "139"
     ],
     "added 500": [
       "186"
@@ -24717,9 +23073,6 @@
     ],
     "administration": [
       "202"
-    ],
-    "ador": [
-      "132"
     ],
     "adp": [
       "273"
@@ -24764,7 +23117,6 @@
       "287"
     ],
     "agi": [
-      "152",
       "237"
     ],
     "ai": [
@@ -24775,9 +23127,6 @@
     ],
     "ai compute": [
       "194"
-    ],
-    "ai model": [
-      "129"
     ],
     "ai performance": [
       "293"
@@ -24871,8 +23220,7 @@
       "223"
     ],
     "ampas": [
-      "133",
-      "140"
+      "133"
     ],
     "amzn": [
       "269"
@@ -24919,9 +23267,6 @@
     "apple aapl close": [
       "266"
     ],
-    "april 2026": [
-      "153"
-    ],
     "arena": [
       "200"
     ],
@@ -24940,9 +23285,6 @@
     "argentina official usd": [
       "288"
     ],
-    "armed conflict": [
-      "144"
-    ],
     "armistice": [
       "188",
       "226"
@@ -24951,7 +23293,6 @@
       "288"
     ],
     "artificial intelligence": [
-      "129",
       "171",
       "183",
       "237"
@@ -24984,7 +23325,6 @@
       "222"
     ],
     "attack": [
-      "144",
       "257",
       "271"
     ],
@@ -24993,10 +23333,12 @@
       "239"
     ],
     "australian open": [
-      "222"
+      "222",
+      "304"
     ],
     "australian open winner": [
-      "222"
+      "222",
+      "304"
     ],
     "automated trading": [
       "200"
@@ -25070,9 +23412,6 @@
     "backpack fdv above": [
       "95"
     ],
-    "ballot": [
-      "131"
-    ],
     "ban": [
       "159",
       "160"
@@ -25098,24 +23437,18 @@
     "based fdv above": [
       "97"
     ],
+    "basis points": [
+      "75"
+    ],
     "basketball": [
       "115"
     ],
     "bcra": [
       "288"
     ],
-    "beijing": [
-      "142"
-    ],
     "benchmark": [
       "237",
       "263"
-    ],
-    "best actor": [
-      "137"
-    ],
-    "best actor winner": [
-      "137"
     ],
     "best actress": [
       "139"
@@ -25161,16 +23494,6 @@
     ],
     "best picture winner": [
       "133"
-    ],
-    "best supporting": [
-      "140",
-      "141"
-    ],
-    "best supporting actor": [
-      "140"
-    ],
-    "best supporting actress": [
-      "141"
     ],
     "betting": [
       "207"
@@ -25276,9 +23599,6 @@
       "262",
       "287"
     ],
-    "bunnies": [
-      "132"
-    ],
     "business": [
       "236"
     ],
@@ -25296,9 +23616,6 @@
     "cambodia ceasefire": [
       "188"
     ],
-    "campaign": [
-      "131"
-    ],
     "cap above": [
       "204",
       "205"
@@ -25308,10 +23625,6 @@
     ],
     "cap fdv one": [
       "67"
-    ],
-    "capitol hill": [
-      "135",
-      "136"
     ],
     "capture": [
       "250"
@@ -25323,8 +23636,7 @@
       "250"
     ],
     "caracas": [
-      "116",
-      "128"
+      "116"
     ],
     "carolina": [
       "181"
@@ -25343,7 +23655,8 @@
       "226"
     ],
     "central bank": [
-      "153"
+      "75",
+      "78"
     ],
     "ceo": [
       "193"
@@ -25356,10 +23669,8 @@
     ],
     "ceremony": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
       "279",
       "280",
       "282",
@@ -25400,21 +23711,16 @@
     "charts": [
       "214"
     ],
-    "chatbot": [
-      "129"
-    ],
     "chatbot arena": [
       "237"
     ],
     "chatgpt": [
-      "152",
       "171"
     ],
     "chief executive officer": [
       "193"
     ],
     "china": [
-      "142",
       "212"
     ],
     "christmas gameday": [
@@ -25422,10 +23728,7 @@
     ],
     "cinema": [
       "133",
-      "137",
       "138",
-      "140",
-      "141",
       "210",
       "211",
       "275"
@@ -25445,17 +23748,10 @@
     "city": [
       "250"
     ],
-    "civic": [
-      "131"
-    ],
-    "civic elections": [
-      "130"
-    ],
     "claim": [
       "174"
     ],
     "clash": [
-      "144",
       "188"
     ],
     "claude": [
@@ -25496,14 +23792,12 @@
       "264"
     ],
     "closing market": [
-      "152",
       "158",
       "190",
       "204",
       "205"
     ],
     "closing market cap": [
-      "152",
       "158",
       "190",
       "204",
@@ -25514,12 +23808,6 @@
     ],
     "collectible": [
       "217"
-    ],
-    "combat": [
-      "144"
-    ],
-    "comeback": [
-      "132"
     ],
     "commodity": [
       "227",
@@ -25554,9 +23842,6 @@
     "composer": [
       "284"
     ],
-    "concert": [
-      "132"
-    ],
     "conference": [
       "179",
       "180",
@@ -25571,8 +23856,6 @@
       "223"
     ],
     "conflict": [
-      "128",
-      "144",
       "226",
       "257",
       "271",
@@ -25580,13 +23863,6 @@
     ],
     "conflict resolution": [
       "188"
-    ],
-    "congress": [
-      "135",
-      "136"
-    ],
-    "congressional": [
-      "135"
     ],
     "consensys": [
       "189",
@@ -25613,9 +23889,6 @@
     "corporation": [
       "236"
     ],
-    "council elections": [
-      "130"
-    ],
     "coup": [
       "116"
     ],
@@ -25623,7 +23896,7 @@
       "214"
     ],
     "cpi": [
-      "153"
+      "75"
     ],
     "crypto": [
       "167",
@@ -25652,9 +23925,6 @@
     "crypto analytics": [
       "234"
     ],
-    "crypto exchange": [
-      "143"
-    ],
     "crypto research": [
       "234"
     ],
@@ -25677,6 +23947,9 @@
       "251",
       "260"
     ],
+    "cup winner": [
+      "79"
+    ],
     "currency": [
       "288"
     ],
@@ -25691,6 +23964,9 @@
     ],
     "cut": [
       "211"
+    ],
+    "cuts 2026": [
+      "78"
     ],
     "cybercab": [
       "198"
@@ -25736,7 +24012,6 @@
       "242"
     ],
     "debut": [
-      "143",
       "158",
       "163",
       "169",
@@ -25754,14 +24029,12 @@
     "decentralized exchange": [
       "175"
     ],
-    "decision april": [
-      "153"
-    ],
-    "decision april 2026": [
-      "153"
+    "decision january": [
+      "61"
     ],
     "decision march": [
-      "230"
+      "230",
+      "75"
     ],
     "deepseek": [
       "237"
@@ -25789,9 +24062,6 @@
       "116",
       "193",
       "258"
-    ],
-    "deployment": [
-      "128"
     ],
     "devaluation": [
       "288"
@@ -25827,20 +24097,13 @@
       "265"
     ],
     "diplomacy": [
-      "142",
       "276"
-    ],
-    "diplomatic": [
-      "142"
     ],
     "diplomatic relations": [
       "188"
     ],
     "diplomatic visit": [
       "276"
-    ],
-    "direct listing": [
-      "143"
     ],
     "directing": [
       "138"
@@ -25862,6 +24125,10 @@
     ],
     "discord ipo closing": [
       "190"
+    ],
+    "discount rate": [
+      "75",
+      "78"
     ],
     "dispute": [
       "188"
@@ -25900,14 +24167,11 @@
     "donetsk": [
       "250"
     ],
-    "dot plot": [
-      "153"
-    ],
     "douyin": [
       "159"
     ],
-    "downing street": [
-      "150"
+    "dovish": [
+      "78"
     ],
     "driving fsd": [
       "198"
@@ -25934,7 +24198,8 @@
       "187"
     ],
     "easing": [
-      "230"
+      "230",
+      "78"
     ],
     "east winner": [
       "180"
@@ -25958,20 +24223,7 @@
       "211"
     ],
     "election": [
-      "116",
-      "131"
-    ],
-    "election winner": [
-      "131"
-    ],
-    "elections": [
-      "136"
-    ],
-    "elections party": [
-      "130"
-    ],
-    "elections party winner": [
-      "130"
+      "116"
     ],
     "electric vehicle": [
       "264"
@@ -25980,7 +24232,6 @@
       "264"
     ],
     "elon musk": [
-      "129",
       "198",
       "204"
     ],
@@ -26100,7 +24351,6 @@
       "67"
     ],
     "exchange": [
-      "143",
       "169"
     ],
     "exchange rate": [
@@ -26192,32 +24442,47 @@
       "67"
     ],
     "fed": [
-      "153"
+      "75",
+      "78"
+    ],
+    "fed chair": [
+      "300"
     ],
     "fed rate": [
-      "153"
+      "61",
+      "75",
+      "78"
+    ],
+    "fed rate cuts": [
+      "78"
     ],
     "fed rate decision": [
-      "153"
+      "61",
+      "75"
     ],
     "federal funds rate": [
-      "153"
+      "75",
+      "78"
     ],
     "federal reserve": [
-      "153"
+      "75",
+      "78"
     ],
     "federal revenue": [
       "196"
+    ],
+    "fifa world": [
+      "79"
+    ],
+    "fifa world cup": [
+      "79"
     ],
     "film": [
       "133",
       "275"
     ],
     "film awards": [
-      "137",
       "138",
-      "140",
-      "141",
       "210"
     ],
     "film editing": [
@@ -26267,7 +24532,8 @@
       "220"
     ],
     "fomc": [
-      "153"
+      "75",
+      "78"
     ],
     "fomo": [
       "201"
@@ -26362,12 +24628,6 @@
     "gemini": [
       "237"
     ],
-    "general election": [
-      "150"
-    ],
-    "generative ai": [
-      "129"
-    ],
     "gensyn": [
       "194"
     ],
@@ -26383,12 +24643,7 @@
     "gensyn 协议": [
       "194"
     ],
-    "girl group": [
-      "132"
-    ],
     "going public": [
-      "143",
-      "152",
       "158",
       "163",
       "171",
@@ -26424,12 +24679,8 @@
     "gold settle january": [
       "241"
     ],
-    "golden statue": [
-      "141"
-    ],
     "golden statuette": [
-      "133",
-      "140"
+      "133"
     ],
     "goog": [
       "265"
@@ -26464,6 +24715,12 @@
       "175",
       "232",
       "234"
+    ],
+    "government shutdown": [
+      "303"
+    ],
+    "government shutdown last": [
+      "303"
     ],
     "gpt": [
       "237"
@@ -26525,17 +24782,7 @@
       "182"
     ],
     "grok": [
-      "129",
       "237"
-    ],
-    "grok 5": [
-      "129"
-    ],
-    "grok released": [
-      "129"
-    ],
-    "grok-5": [
-      "129"
     ],
     "gross january": [
       "275"
@@ -26575,11 +24822,8 @@
     ],
     "hollywood": [
       "133",
-      "137",
       "138",
-      "139",
-      "140",
-      "141"
+      "139"
     ],
     "holographic": [
       "217"
@@ -26594,33 +24838,21 @@
       "115"
     ],
     "hostilities": [
-      "144",
       "188",
       "226"
     ],
-    "house 2026": [
-      "135"
+    "how long": [
+      "303"
     ],
-    "house control": [
-      "135"
-    ],
-    "house election": [
-      "135"
-    ],
-    "house majority": [
-      "135"
-    ],
-    "house of representatives": [
-      "135"
-    ],
-    "house race": [
-      "135"
-    ],
-    "house seats": [
-      "135"
+    "how long government": [
+      "303"
     ],
     "how many": [
-      "273"
+      "273",
+      "78"
+    ],
+    "how many fed": [
+      "78"
     ],
     "how many jobs": [
       "273"
@@ -26704,9 +24936,10 @@
       "184"
     ],
     "inflation": [
-      "153",
       "227",
-      "288"
+      "288",
+      "75",
+      "78"
     ],
     "inflation hedge": [
       "241",
@@ -26719,28 +24952,19 @@
       "205"
     ],
     "initial public offering": [
-      "152",
       "158",
       "163",
       "190",
       "204"
     ],
     "interest rate": [
-      "153"
+      "75",
+      "78"
     ],
     "interest rates": [
       "230"
     ],
-    "intervention": [
-      "128",
-      "144"
-    ],
-    "invade venezuela": [
-      "128"
-    ],
     "invasion": [
-      "128",
-      "144",
       "250",
       "274"
     ],
@@ -26755,8 +24979,6 @@
       "266"
     ],
     "ipo": [
-      "143",
-      "152",
       "158",
       "163",
       "169",
@@ -26766,14 +24988,12 @@
       "205"
     ],
     "ipo closing": [
-      "152",
       "158",
       "190",
       "204",
       "205"
     ],
     "ipo closing market": [
-      "152",
       "158",
       "190",
       "204",
@@ -26813,6 +25033,12 @@
     "israel iran ceasefire": [
       "226"
     ],
+    "israel strike": [
+      "302"
+    ],
+    "israel strike lebanon": [
+      "302"
+    ],
     "its own": [
       "208"
     ],
@@ -26844,7 +25070,12 @@
       "190"
     ],
     "jerome powell": [
-      "153"
+      "300",
+      "75",
+      "78"
+    ],
+    "jerome powell out": [
+      "300"
     ],
     "jessie buckley": [
       "139"
@@ -26870,9 +25101,6 @@
     "joseph lubin": [
       "205"
     ],
-    "k-pop": [
-      "132"
-    ],
     "kain warwick": [
       "184"
     ],
@@ -26881,9 +25109,6 @@
     ],
     "kazuo ueda": [
       "230"
-    ],
-    "keir starmer": [
-      "150"
     ],
     "khamenei": [
       "242",
@@ -26913,35 +25138,8 @@
     "kodiak fdv above": [
       "197"
     ],
-    "korea": [
-      "130"
-    ],
     "korean league": [
       "213"
-    ],
-    "korean local": [
-      "130"
-    ],
-    "korean local elections": [
-      "130"
-    ],
-    "korean politics": [
-      "130"
-    ],
-    "korean pop": [
-      "132"
-    ],
-    "korean vote": [
-      "130"
-    ],
-    "kraken": [
-      "143"
-    ],
-    "kraken ipo": [
-      "143"
-    ],
-    "kraken交易所": [
-      "143"
     ],
     "kyiv": [
       "202"
@@ -26954,17 +25152,10 @@
     "labor market": [
       "273"
     ],
-    "labour leader": [
-      "150"
-    ],
-    "labour party": [
-      "150"
-    ],
     "large cap": [
       "186"
     ],
     "large language model": [
-      "129",
       "237"
     ],
     "largest company": [
@@ -27044,9 +25235,6 @@
       "193",
       "242"
     ],
-    "leading actor": [
-      "137"
-    ],
     "league of legends": [
       "212",
       "213"
@@ -27072,17 +25260,10 @@
     "legislation": [
       "160"
     ],
-    "legislative": [
-      "136"
-    ],
-    "legislature": [
-      "135"
-    ],
     "lions vs vikings": [
       "214"
     ],
     "listing": [
-      "152",
       "158",
       "167",
       "168",
@@ -27106,31 +25287,9 @@
       "95",
       "97"
     ],
-    "live": [
-      "132"
-    ],
-    "live performance": [
-      "132"
-    ],
     "llm": [
-      "129",
       "200",
       "237"
-    ],
-    "local election": [
-      "131"
-    ],
-    "local elections": [
-      "130"
-    ],
-    "local elections party": [
-      "130"
-    ],
-    "local government elections": [
-      "130"
-    ],
-    "local polls": [
-      "130"
     ],
     "logan paul": [
       "217",
@@ -27158,6 +25317,12 @@
     "lol lpl 2026": [
       "212"
     ],
+    "long government": [
+      "303"
+    ],
+    "long government shutdown": [
+      "303"
+    ],
     "loopscale": [
       "233"
     ],
@@ -27166,9 +25331,6 @@
     ],
     "loopscale launch token": [
       "233"
-    ],
-    "lower chamber": [
-      "135"
     ],
     "lpl": [
       "212"
@@ -27189,8 +25351,7 @@
       "194"
     ],
     "maduro": [
-      "116",
-      "128"
+      "116"
     ],
     "maduro out": [
       "116"
@@ -27212,11 +25373,14 @@
     "major quake": [
       "187"
     ],
-    "majority": [
-      "136"
-    ],
     "man vs baby": [
       "214"
+    ],
+    "many fed": [
+      "78"
+    ],
+    "many fed rate": [
+      "78"
     ],
     "many jobs": [
       "273"
@@ -27244,7 +25408,6 @@
       "287"
     ],
     "market cap": [
-      "152",
       "158",
       "190",
       "194",
@@ -27268,7 +25431,6 @@
       "67"
     ],
     "market capitalization": [
-      "152",
       "158"
     ],
     "market entry": [
@@ -27286,15 +25448,6 @@
     "maurice podoloff trophy": [
       "115"
     ],
-    "mayor": [
-      "131"
-    ],
-    "mayoral election": [
-      "131"
-    ],
-    "mayoral election winner": [
-      "131"
-    ],
     "medical travel": [
       "258"
     ],
@@ -27302,7 +25455,6 @@
       "276"
     ],
     "meeting": [
-      "142",
       "276"
     ],
     "megaeth": [
@@ -27369,14 +25521,10 @@
     "meta平台": [
       "270"
     ],
-    "metropolitan elections": [
-      "130"
-    ],
     "mexico": [
       "274"
     ],
     "microsoft": [
-      "152",
       "267"
     ],
     "microsoft msft": [
@@ -27388,12 +25536,6 @@
     "middle east": [
       "226"
     ],
-    "midterm election": [
-      "135"
-    ],
-    "midterms": [
-      "136"
-    ],
     "military": [
       "257",
       "271"
@@ -27401,15 +25543,8 @@
     "military attack": [
       "274"
     ],
-    "military engagement": [
-      "144"
-    ],
     "military intervention": [
-      "128",
       "274"
-    ],
-    "min hee-jin": [
-      "132"
     ],
     "mint": [
       "201"
@@ -27437,9 +25572,10 @@
       "237"
     ],
     "monetary policy": [
-      "153",
       "230",
-      "288"
+      "288",
+      "75",
+      "78"
     ],
     "most valuable player": [
       "115",
@@ -27449,9 +25585,7 @@
       "211"
     ],
     "motion pictures": [
-      "137",
-      "138",
-      "141"
+      "138"
     ],
     "movie": [
       "275"
@@ -27462,8 +25596,6 @@
     "movies": [
       "133",
       "138",
-      "140",
-      "141",
       "211"
     ],
     "msft": [
@@ -27484,14 +25616,7 @@
     "much revenue raise": [
       "196"
     ],
-    "municipal": [
-      "131"
-    ],
-    "municipal elections": [
-      "130"
-    ],
     "music": [
-      "132",
       "279",
       "284"
     ],
@@ -27628,17 +25753,11 @@
     "new york giants": [
       "180"
     ],
-    "newjeans": [
-      "132"
+    "next president": [
+      "301"
     ],
-    "newjeans perform": [
-      "132"
-    ],
-    "newjeans perform again": [
-      "132"
-    ],
-    "newjeans组合": [
-      "132"
+    "next president vietnam": [
+      "301"
     ],
     "nfc": [
       "179",
@@ -27738,11 +25857,8 @@
     ],
     "nominees": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "151",
       "282",
       "283",
@@ -27759,9 +25875,6 @@
     ],
     "north winner": [
       "182"
-    ],
-    "number 10": [
-      "150"
     ],
     "nvda": [
       "268"
@@ -27791,7 +25904,6 @@
       "250"
     ],
     "offering": [
-      "143",
       "163",
       "171"
     ],
@@ -27845,19 +25957,15 @@
       "97"
     ],
     "open winner": [
-      "222"
+      "222",
+      "304"
     ],
     "openai": [
-      "152",
       "163",
       "171"
     ],
     "openai ipo": [
-      "152",
       "171"
-    ],
-    "openai ipo closing": [
-      "152"
     ],
     "opening weekend": [
       "275"
@@ -27871,9 +25979,6 @@
     "opensea fdv above": [
       "173"
     ],
-    "operation": [
-      "128"
-    ],
     "opposition": [
       "116"
     ],
@@ -27881,43 +25986,28 @@
       "267"
     ],
     "oscar": [
-      "137",
       "138",
-      "140",
-      "141",
       "210",
       "211"
     ],
-    "oscar winner": [
-      "137"
-    ],
     "oscars": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
     ],
     "oscars 2026": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
     ],
     "oscars 2026 best": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
     ],
@@ -27926,7 +26016,6 @@
       "287"
     ],
     "ousted": [
-      "150",
       "193"
     ],
     "ouster": [
@@ -27935,6 +26024,12 @@
     ],
     "out 2027": [
       "193"
+    ],
+    "out fed": [
+      "300"
+    ],
+    "out fed chair": [
+      "300"
     ],
     "out supreme": [
       "242"
@@ -27990,19 +26085,6 @@
     "participation rate": [
       "273"
     ],
-    "party win": [
-      "135",
-      "136"
-    ],
-    "party win house": [
-      "135"
-    ],
-    "party win senate": [
-      "136"
-    ],
-    "party winner": [
-      "130"
-    ],
     "paul 1st": [
       "239"
     ],
@@ -28014,9 +26096,6 @@
     ],
     "paul pikachu illustrator": [
       "217"
-    ],
-    "payward": [
-      "143"
     ],
     "pc gaming": [
       "151"
@@ -28048,12 +26127,6 @@
     ],
     "perena protocol": [
       "232"
-    ],
-    "perform again": [
-      "132"
-    ],
-    "performance": [
-      "132"
     ],
     "perp dex": [
       "175"
@@ -28098,9 +26171,6 @@
       "223",
       "224"
     ],
-    "pm": [
-      "150"
-    ],
     "pokemon": [
       "239"
     ],
@@ -28117,13 +26187,8 @@
       "230"
     ],
     "politics": [
-      "131",
-      "136",
       "202",
       "242"
-    ],
-    "poll": [
-      "131"
     ],
     "poly": [
       "208"
@@ -28147,11 +26212,16 @@
       "224"
     ],
     "potus": [
-      "142",
       "276"
     ],
     "powell": [
-      "153"
+      "78"
+    ],
+    "powell out": [
+      "300"
+    ],
+    "powell out fed": [
+      "300"
     ],
     "precious metal": [
       "241",
@@ -28190,6 +26260,9 @@
       "116",
       "202",
       "276"
+    ],
+    "president vietnam": [
+      "301"
     ],
     "price": [
       "183",
@@ -28273,9 +26346,6 @@
     "protocol": [
       "184"
     ],
-    "provincial elections": [
-      "130"
-    ],
     "psa 10": [
       "217",
       "239"
@@ -28287,11 +26357,9 @@
       "169"
     ],
     "public debut": [
-      "152",
       "204"
     ],
     "public listing": [
-      "143",
       "163"
     ],
     "public offering": [
@@ -28328,9 +26396,6 @@
     "qwen": [
       "237"
     ],
-    "race": [
-      "131"
-    ],
     "rainbow": [
       "244"
     ],
@@ -28361,18 +26426,30 @@
       "217"
     ],
     "rate cut": [
-      "153",
-      "230"
+      "230",
+      "75",
+      "78"
+    ],
+    "rate cuts": [
+      "78"
+    ],
+    "rate cuts 2026": [
+      "78"
     ],
     "rate decision": [
-      "153"
+      "61",
+      "75",
+      "78"
     ],
-    "rate decision april": [
-      "153"
+    "rate decision january": [
+      "61"
+    ],
+    "rate decision march": [
+      "75"
     ],
     "rate hike": [
-      "153",
-      "230"
+      "230",
+      "75"
     ],
     "rate january": [
       "288"
@@ -28400,11 +26477,6 @@
       "283",
       "284"
     ],
-    "red carpet": [
-      "137",
-      "140",
-      "141"
-    ],
     "reed hastings": [
       "277"
     ],
@@ -28413,22 +26485,14 @@
       "258"
     ],
     "regime change": [
-      "128",
       "202",
       "242"
-    ],
-    "regional elections": [
-      "130"
     ],
     "regular season": [
       "115",
       "240"
     ],
-    "relations": [
-      "142"
-    ],
     "release": [
-      "129",
       "172",
       "201",
       "229",
@@ -28444,15 +26508,11 @@
     "replaced": [
       "193"
     ],
-    "representatives": [
-      "135"
-    ],
     "resign": [
       "202"
     ],
     "resignation": [
       "116",
-      "150",
       "193",
       "202",
       "242",
@@ -28512,12 +26572,6 @@
     "russia capture all": [
       "250"
     ],
-    "russia ukraine": [
-      "127"
-    ],
-    "russia ukraine ceasefire": [
-      "127"
-    ],
     "s&p 500": [
       "186",
       "263"
@@ -28529,7 +26583,6 @@
       "215"
     ],
     "sacked": [
-      "150",
       "193"
     ],
     "safe haven": [
@@ -28551,7 +26604,6 @@
       "239"
     ],
     "sam altman": [
-      "152",
       "171"
     ],
     "satoshi": [
@@ -28584,9 +26636,6 @@
       "212",
       "213"
     ],
-    "sec filing": [
-      "143"
-    ],
     "seismic": [
       "187"
     ],
@@ -28607,36 +26656,6 @@
     ],
     "semiconductor": [
       "268"
-    ],
-    "senate": [
-      "136"
-    ],
-    "senate 2026": [
-      "136"
-    ],
-    "senate control": [
-      "136"
-    ],
-    "senate race": [
-      "136"
-    ],
-    "senate seats": [
-      "136"
-    ],
-    "seoul": [
-      "131"
-    ],
-    "seoul city": [
-      "131"
-    ],
-    "seoul mayor": [
-      "131"
-    ],
-    "seoul mayoral": [
-      "131"
-    ],
-    "seoul mayoral election": [
-      "131"
     ],
     "sequel": [
       "275"
@@ -28659,11 +26678,9 @@
       "277"
     ],
     "share price": [
-      "152",
       "190"
     ],
     "shares": [
-      "143",
       "158",
       "163",
       "169",
@@ -28680,6 +26697,9 @@
     ],
     "show this week": [
       "214"
+    ],
+    "shutdown last": [
+      "303"
     ],
     "sidechain": [
       "208"
@@ -28778,16 +26798,6 @@
     "south division": [
       "181"
     ],
-    "south korea": [
-      "130",
-      "131"
-    ],
-    "south korean": [
-      "130"
-    ],
-    "south korean local": [
-      "130"
-    ],
     "south winner": [
       "181"
     ],
@@ -28843,9 +26853,6 @@
     "st": [
       "215"
     ],
-    "stage": [
-      "132"
-    ],
     "staking": [
       "184"
     ],
@@ -28862,14 +26869,7 @@
     "starlink": [
       "204"
     ],
-    "starmer": [
-      "150"
-    ],
-    "starmer out": [
-      "150"
-    ],
     "state visit": [
-      "142",
       "276"
     ],
     "steam": [
@@ -28888,7 +26888,6 @@
       "151"
     ],
     "step down": [
-      "150",
       "202"
     ],
     "stepped down": [
@@ -28911,7 +26910,6 @@
       "158"
     ],
     "stock market": [
-      "143",
       "163",
       "169",
       "171",
@@ -28919,7 +26917,6 @@
       "263"
     ],
     "stock price": [
-      "152",
       "158",
       "236"
     ],
@@ -28945,6 +26942,9 @@
       "271",
       "274"
     ],
+    "strike lebanon": [
+      "302"
+    ],
     "strike mexico": [
       "274"
     ],
@@ -28961,7 +26961,6 @@
       "213"
     ],
     "summit": [
-      "142",
       "276"
     ],
     "summoner's rift": [
@@ -28969,18 +26968,6 @@
     ],
     "super bowl": [
       "224"
-    ],
-    "supporting actor": [
-      "140"
-    ],
-    "supporting actor winner": [
-      "140"
-    ],
-    "supporting actress": [
-      "141"
-    ],
-    "supporting actress winner": [
-      "141"
     ],
     "supreme leader": [
       "242",
@@ -29137,8 +27124,6 @@
       "214"
     ],
     "ticker": [
-      "143",
-      "152",
       "158",
       "169",
       "171",
@@ -29255,9 +27240,6 @@
     "total domestic gross": [
       "275"
     ],
-    "tour": [
-      "132"
-    ],
     "tournament": [
       "200"
     ],
@@ -29330,12 +27312,6 @@
     "trillion": [
       "236"
     ],
-    "trip": [
-      "142"
-    ],
-    "troops": [
-      "128"
-    ],
     "trophy": [
       "115",
       "240",
@@ -29355,7 +27331,6 @@
       "226"
     ],
     "trump": [
-      "142",
       "276"
     ],
     "trump meet": [
@@ -29363,12 +27338,6 @@
     ],
     "trump meet january": [
       "276"
-    ],
-    "trump visit": [
-      "142"
-    ],
-    "trump visit china": [
-      "142"
     ],
     "tsla": [
       "264"
@@ -29382,31 +27351,13 @@
     "turnover": [
       "193"
     ],
-    "twitter": [
-      "129"
-    ],
     "u.s.": [
       "196",
       "273"
     ],
-    "u.s. house": [
-      "135"
-    ],
-    "u.s. senate": [
-      "136"
-    ],
-    "uk politics": [
-      "150"
-    ],
-    "uk prime minister": [
-      "150"
-    ],
     "ukraine": [
       "202",
       "250"
-    ],
-    "ukraine ceasefire": [
-      "127"
     ],
     "ukraine president": [
       "202"
@@ -29415,13 +27366,8 @@
       "273"
     ],
     "united states": [
-      "128",
-      "144",
       "196",
       "274"
-    ],
-    "united states senate": [
-      "136"
     ],
     "unsupervised": [
       "198"
@@ -29432,18 +27378,10 @@
     "unsupervised full self": [
       "198"
     ],
-    "update": [
-      "129"
-    ],
-    "upper chamber": [
-      "136"
-    ],
     "upside down": [
       "215"
     ],
     "us": [
-      "128",
-      "144",
       "196",
       "257",
       "271",
@@ -29453,16 +27391,10 @@
       "214"
     ],
     "us economy": [
-      "153"
-    ],
-    "us house": [
-      "135"
+      "75"
     ],
     "us jobs": [
       "273"
-    ],
-    "us senate": [
-      "136"
     ],
     "us stocks": [
       "186",
@@ -29471,9 +27403,6 @@
     "us treasury": [
       "196"
     ],
-    "us-china": [
-      "142"
-    ],
     "us/israel strikes": [
       "271"
     ],
@@ -29481,8 +27410,6 @@
       "271"
     ],
     "usa": [
-      "128",
-      "144",
       "196",
       "274"
     ],
@@ -29511,8 +27438,6 @@
       "248"
     ],
     "valuation": [
-      "143",
-      "152",
       "158",
       "163",
       "171",
@@ -29540,18 +27465,7 @@
       "151"
     ],
     "venezuela": [
-      "116",
-      "128",
-      "144"
-    ],
-    "venezuela military": [
-      "144"
-    ],
-    "venezuela military engagement": [
-      "144"
-    ],
-    "version 5": [
-      "129"
+      "116"
     ],
     "video sharing": [
       "159"
@@ -29562,12 +27476,6 @@
     "violation": [
       "226"
     ],
-    "visit": [
-      "142"
-    ],
-    "visit china": [
-      "142"
-    ],
     "volatility": [
       "246",
       "247",
@@ -29576,12 +27484,6 @@
     ],
     "volodymyr": [
       "202"
-    ],
-    "vote": [
-      "131"
-    ],
-    "vote of no confidence": [
-      "150"
     ],
     "voting": [
       "151",
@@ -29601,8 +27503,6 @@
       "234"
     ],
     "war": [
-      "128",
-      "144",
       "188",
       "226",
       "250",
@@ -29699,14 +27599,6 @@
     "which company best": [
       "237"
     ],
-    "which party": [
-      "135",
-      "136"
-    ],
-    "which party win": [
-      "135",
-      "136"
-    ],
     "which team": [
       "293"
     ],
@@ -29738,18 +27630,6 @@
     "who trump meet": [
       "276"
     ],
-    "win house": [
-      "135"
-    ],
-    "win house 2026": [
-      "135"
-    ],
-    "win senate": [
-      "136"
-    ],
-    "win senate 2026": [
-      "136"
-    ],
     "winner": [
       "139",
       "279"
@@ -29757,21 +27637,27 @@
     "winner 2026": [
       "80"
     ],
+    "women australian": [
+      "304"
+    ],
+    "women australian open": [
+      "304"
+    ],
     "workforce": [
       "273"
+    ],
+    "world cup": [
+      "79"
+    ],
+    "world cup winner": [
+      "79"
     ],
     "worlds": [
       "212"
     ],
-    "x": [
-      "129"
-    ],
     "xag": [
       "227",
       "287"
-    ],
-    "xai": [
-      "129"
     ],
     "xau": [
       "241",
@@ -29779,12 +27665,6 @@
     ],
     "xauusd": [
       "262"
-    ],
-    "xi": [
-      "142"
-    ],
-    "xi jinping": [
-      "142"
     ],
     "year winner": [
       "279",
@@ -29847,9 +27727,6 @@
       "226",
       "271"
     ],
-    "众议院": [
-      "135"
-    ],
     "俄罗斯": [
       "250"
     ],
@@ -29875,12 +27752,6 @@
     "国联西区": [
       "179"
     ],
-    "地方选举": [
-      "130"
-    ],
-    "基尔·斯塔默": [
-      "150"
-    ],
     "墨西哥": [
       "274"
     ],
@@ -29894,25 +27765,15 @@
     ],
     "奥斯卡": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
     ],
-    "委内瑞拉": [
-      "128",
-      "144"
-    ],
     "学院奖": [
       "133",
-      "137",
       "138",
       "139",
-      "140",
-      "141",
       "210",
       "211"
     ],
@@ -29923,7 +27784,6 @@
       "251"
     ],
     "开放人工智能": [
-      "152",
       "171"
     ],
     "彩虹钱包": [
@@ -29931,9 +27791,6 @@
     ],
     "怪奇物语": [
       "215"
-    ],
-    "斯塔默": [
-      "150"
     ],
     "日本央行": [
       "230"
@@ -29960,9 +27817,6 @@
     "标普500": [
       "186",
       "263"
-    ],
-    "格罗克 5": [
-      "129"
     ],
     "格莱美": [
       "279",
@@ -29991,7 +27845,6 @@
       "264"
     ],
     "特朗普": [
-      "142",
       "276"
     ],
     "皮卡丘插画": [
@@ -30016,12 +27869,6 @@
       "115",
       "237"
     ],
-    "美国众议院": [
-      "135"
-    ],
-    "美国参议院": [
-      "136"
-    ],
     "美国国家橄榄球联盟": [
       "240"
     ],
@@ -30032,7 +27879,8 @@
       "115"
     ],
     "美联储": [
-      "153"
+      "75",
+      "78"
     ],
     "英伟达": [
       "268"
@@ -30057,12 +27905,6 @@
     ],
     "韩国英雄联盟职业联赛": [
       "213"
-    ],
-    "首尔市长": [
-      "131"
-    ],
-    "首尔市长选举": [
-      "131"
     ],
     "首席执行官": [
       "193"
