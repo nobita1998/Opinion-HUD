@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-01-28 10:29:58 UTC+8",
+    "generatedAt": "2026-01-28 16:48:25 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -9,15 +9,15 @@
     "counts": {
       "seen": 1000,
       "kept": 662,
-      "markets": 206,
-      "keywords": 1962,
+      "markets": 204,
+      "keywords": 2027,
       "events": {
         "events": 128
       },
       "skipped": {
-        "statusEnum": 34,
+        "statusEnum": 16,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 299,
+        "cutoff_expired": 317,
         "cutoff_zero_kept": 46,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 93,
-        "regenerated_empty_entitygroups": 0,
-        "calls": 35,
-        "retries": 31,
+        "reused": 97,
+        "regenerated_empty_entitygroups": 31,
+        "calls": 31,
+        "retries": 19,
         "fallback": 0,
-        "empty": 31,
-        "non_empty": 4,
+        "empty": 17,
+        "non_empty": 14,
         "errors": 0
       }
     }
@@ -207,83 +207,6 @@
       "sig": "07cb6df9",
       "sigFull": "07cb6df9",
       "sigCore": "e673ee48",
-      "reused": false
-    },
-    "224": {
-      "title": "NFC Champion 2026",
-      "marketIds": [
-        "224"
-      ],
-      "bestMarketId": "224",
-      "bestLabels": null,
-      "keywords": [
-        "nfc",
-        "nfl",
-        "national football conference",
-        "super bowl",
-        "conference championship",
-        "2026",
-        "playoffs",
-        "nfc title",
-        "football",
-        "american football",
-        "postseason",
-        "nfc west",
-        "nfc north",
-        "nfc south",
-        "nfc east",
-        "nfc champion",
-        "champion 2026",
-        "nfc champion 2026"
-      ],
-      "entities": [
-        "nfc"
-      ],
-      "entityGroups": [
-        [
-          "nfc"
-        ]
-      ],
-      "sig": "25081093",
-      "sigFull": "25081093",
-      "sigCore": "e7622aaa",
-      "reused": false
-    },
-    "223": {
-      "title": "AFC Champion 2026",
-      "marketIds": [
-        "223"
-      ],
-      "bestMarketId": "223",
-      "bestLabels": null,
-      "keywords": [
-        "afc",
-        "american football conference",
-        "nfl",
-        "national football league",
-        "afc championship",
-        "conference championship",
-        "playoffs",
-        "football",
-        "american football",
-        "2026 season",
-        "afc title",
-        "conference game",
-        "afc champion",
-        "champion 2026",
-        "afc champion 2026"
-      ],
-      "entities": [
-        "afc"
-      ],
-      "entityGroups": [
-        [
-          "afc"
-        ]
-      ],
-      "sig": "280a44b9",
-      "sigFull": "280a44b9",
-      "sigCore": "ec4af95d",
       "reused": false
     },
     "222": {
@@ -4567,16 +4490,38 @@
       "bestMarketId": "83",
       "bestLabels": null,
       "keywords": [
-        "uefa champions",
+        "uefa",
         "champions league",
+        "ucl",
+        "european cup",
+        "european football",
+        "soccer",
+        "club competition",
+        "2026 season",
+        "european cup final",
+        "football",
+        "elite football",
+        "top tier",
+        "continental competition",
+        "european soccer",
+        "trophy",
+        "uefa champions",
         "league winner",
         "winner 2026",
         "uefa champions league",
         "champions league winner",
         "league winner 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "uefa champions league"
+      ],
+      "entityGroups": [
+        [
+          "uefa champions league",
+          "champions league",
+          "欧洲冠军联赛"
+        ]
+      ],
       "sig": "e613318a",
       "sigFull": "e613318a",
       "sigCore": "c98608cd",
@@ -4695,14 +4640,42 @@
       "bestMarketId": "111",
       "bestLabels": null,
       "keywords": [
+        "microstrategy",
+        "mstr",
+        "bitcoin",
+        "btc",
+        "michael saylor",
+        "saylor",
+        "crypto",
+        "treasury",
+        "sell-off",
+        "liquidation",
+        "holdings",
+        "reserve",
+        "strategy",
+        "btc holdings",
+        "mstr stock",
         "microstrategy sells",
         "sells any",
         "any bitcoin",
         "microstrategy sells any",
         "sells any bitcoin"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "microstrategy",
+        "bitcoin"
+      ],
+      "entityGroups": [
+        [
+          "microstrategy",
+          "微策略"
+        ],
+        [
+          "bitcoin",
+          "btc",
+          "比特币"
+        ]
+      ],
       "sig": "f162852e",
       "sigFull": "f162852e",
       "sigCore": "a24e841e",
@@ -4716,12 +4689,35 @@
       "bestMarketId": "112",
       "bestLabels": null,
       "keywords": [
+        "bitcoin",
+        "btc",
+        "crypto",
+        "cryptocurrency",
+        "price target",
+        "trading",
+        "bull market",
+        "digital gold",
+        "blockchain",
+        "satoshi",
+        "hodl",
+        "volatility",
+        "all-time high",
+        "ath",
+        "market cap",
         "bitcoin hit",
         "hit $150k",
         "bitcoin hit $150k"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "bitcoin"
+      ],
+      "entityGroups": [
+        [
+          "bitcoin",
+          "btc",
+          "比特币"
+        ]
+      ],
       "sig": "f236f8ba",
       "sigFull": "f236f8ba",
       "sigCore": "dbcbe8e8",
@@ -4735,12 +4731,34 @@
       "bestMarketId": "118",
       "bestLabels": null,
       "keywords": [
+        "metamask",
+        "mm",
+        "consensys",
+        "token",
+        "airdrop",
+        "crypto wallet",
+        "ethereum wallet",
+        "erc20",
+        "governance token",
+        "token launch",
+        "snapshot",
+        "claim",
+        "web3 wallet",
+        "defi wallet",
         "metamask launch",
         "launch token",
         "metamask launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "metamask"
+      ],
+      "entityGroups": [
+        [
+          "metamask",
+          "小狐狸",
+          "meta"
+        ]
+      ],
       "sig": "89b0c5e7",
       "sigFull": "89b0c5e7",
       "sigCore": "59f0b6e6",
@@ -4966,16 +4984,39 @@
       "bestMarketId": "137",
       "bestLabels": null,
       "keywords": [
+        "oscars",
+        "academy awards",
+        "best actor",
+        "2026",
+        "film",
+        "cinema",
+        "movies",
+        "nominees",
+        "acting",
+        "lead actor",
+        "ceremony",
+        "hollywood",
+        "awards",
+        "entertainment",
+        "celebrity",
         "oscars 2026",
         "2026 best",
-        "best actor",
         "actor winner",
         "oscars 2026 best",
         "2026 best actor",
         "best actor winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "oscars"
+      ],
+      "entityGroups": [
+        [
+          "oscars",
+          "oscar",
+          "奥斯卡",
+          "学院奖"
+        ]
+      ],
       "sig": "67afba60",
       "sigFull": "67afba60",
       "sigCore": "0167b563",
@@ -4989,6 +5030,21 @@
       "bestMarketId": "140",
       "bestLabels": null,
       "keywords": [
+        "oscars",
+        "academy awards",
+        "best supporting actor",
+        "2026 oscars",
+        "film awards",
+        "cinema",
+        "movies",
+        "nominees",
+        "prediction market",
+        "betting",
+        "award ceremony",
+        "stellan skarsgård",
+        "sean penn",
+        "benicio del toro",
+        "jacob elordi",
         "oscars 2026",
         "2026 best",
         "best supporting",
@@ -4996,11 +5052,19 @@
         "actor winner",
         "oscars 2026 best",
         "2026 best supporting",
-        "best supporting actor",
         "supporting actor winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "oscars"
+      ],
+      "entityGroups": [
+        [
+          "oscars",
+          "oscar",
+          "奥斯卡",
+          "学院奖"
+        ]
+      ],
       "sig": "2f052ec1",
       "sigFull": "2f052ec1",
       "sigCore": "38e5939e",
@@ -5014,6 +5078,21 @@
       "bestMarketId": "141",
       "bestLabels": null,
       "keywords": [
+        "oscars",
+        "academy awards",
+        "best supporting actress",
+        "2026 oscars",
+        "98th academy awards",
+        "film awards",
+        "cinema",
+        "movies",
+        "nominees",
+        "actress",
+        "supporting role",
+        "golden statuette",
+        "hollywood",
+        "ampas",
+        "red carpet",
         "oscars 2026",
         "2026 best",
         "best supporting",
@@ -5021,11 +5100,18 @@
         "actress winner",
         "oscars 2026 best",
         "2026 best supporting",
-        "best supporting actress",
         "supporting actress winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "oscars"
+      ],
+      "entityGroups": [
+        [
+          "oscars",
+          "奥斯卡",
+          "学院奖"
+        ]
+      ],
       "sig": "61ae0d9b",
       "sigFull": "61ae0d9b",
       "sigCore": "4b220b3a",
@@ -5039,12 +5125,38 @@
       "bestMarketId": "142",
       "bestLabels": null,
       "keywords": [
+        "trump",
+        "donald trump",
+        "china",
+        "prc",
+        "beijing",
+        "visit",
+        "trip",
+        "diplomacy",
+        "state visit",
+        "summit",
+        "xi jinping",
+        "us-china",
+        "sino-american",
+        "potus",
+        "45th president",
         "trump visit",
         "visit china",
         "trump visit china"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "trump",
+        "china"
+      ],
+      "entityGroups": [
+        [
+          "trump",
+          "特朗普"
+        ],
+        [
+          "china"
+        ]
+      ],
       "sig": "6b107836",
       "sigFull": "6b107836",
       "sigCore": "dd78d8c0",
@@ -5058,10 +5170,31 @@
       "bestMarketId": "143",
       "bestLabels": null,
       "keywords": [
+        "kraken",
+        "crypto exchange",
+        "public offering",
+        "stock listing",
+        "ipo",
+        "shares",
+        "equity",
+        "trading platform",
+        "payward",
+        "going public",
+        "stock market",
+        "listing",
+        "securities",
+        "debut",
         "kraken ipo"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "kraken"
+      ],
+      "entityGroups": [
+        [
+          "kraken",
+          "kraken交易所"
+        ]
+      ],
       "sig": "b4179e58",
       "sigFull": "b4179e58",
       "sigCore": "549e4d02",
@@ -5075,12 +5208,33 @@
       "bestMarketId": "82",
       "bestLabels": null,
       "keywords": [
+        "la liga",
+        "spanish football",
+        "la liga 2026",
+        "primera division",
+        "la liga santander",
+        "real madrid",
+        "barcelona",
+        "atletico madrid",
+        "spanish league",
+        "el clasico",
+        "title race",
+        "football",
+        "soccer",
+        "spain",
+        "laliga",
         "liga winner",
         "winner 2026",
         "liga winner 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "la liga"
+      ],
+      "entityGroups": [
+        [
+          "la liga"
+        ]
+      ],
       "sig": "547d6f14",
       "sigFull": "547d6f14",
       "sigCore": "3ab4a881",
@@ -5094,10 +5248,32 @@
       "bestMarketId": "150",
       "bestLabels": null,
       "keywords": [
+        "keir starmer",
+        "starmer",
+        "labour party",
+        "uk pm",
+        "prime minister",
+        "resignation",
+        "step down",
+        "leave office",
+        "ousted",
+        "general election",
+        "leadership election",
+        "vote of no confidence",
+        "uk politics",
+        "downing street",
         "starmer out"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "starmer"
+      ],
+      "entityGroups": [
+        [
+          "starmer",
+          "凯尔·斯塔默",
+          "斯塔默"
+        ]
+      ],
       "sig": "5f562230",
       "sigFull": "5f562230",
       "sigCore": "91b4af94",
@@ -5111,6 +5287,21 @@
       "bestMarketId": "152",
       "bestLabels": null,
       "keywords": [
+        "openai",
+        "chatgpt",
+        "sam altman",
+        "artificial intelligence",
+        "ai",
+        "ipo",
+        "initial public offering",
+        "stock market",
+        "valuation",
+        "public listing",
+        "nasdaq",
+        "nyse",
+        "unicorn",
+        "tech giant",
+        "share price",
         "openai ipo",
         "ipo closing",
         "closing market",
@@ -5119,8 +5310,15 @@
         "ipo closing market",
         "closing market cap"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "openai"
+      ],
+      "entityGroups": [
+        [
+          "openai",
+          "开放人工智能"
+        ]
+      ],
       "sig": "f7b5f866",
       "sigFull": "f7b5f866",
       "sigCore": "3b3ecb25",
@@ -5134,6 +5332,20 @@
       "bestMarketId": "153",
       "bestLabels": null,
       "keywords": [
+        "federal reserve",
+        "fed",
+        "fomc",
+        "interest rates",
+        "rate cut",
+        "rate hike",
+        "monetary policy",
+        "jerome powell",
+        "powell",
+        "central bank",
+        "us economy",
+        "inflation",
+        "cpi",
+        "dot plot",
         "fed rate",
         "rate decision",
         "decision april",
@@ -5142,8 +5354,17 @@
         "rate decision april",
         "decision april 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "fed"
+      ],
+      "entityGroups": [
+        [
+          "fed",
+          "federal reserve",
+          "fomc",
+          "美联储"
+        ]
+      ],
       "sig": "2c8b9acf",
       "sigFull": "2c8b9acf",
       "sigCore": "09e6a707",
@@ -5157,14 +5378,40 @@
       "bestMarketId": "238",
       "bestLabels": null,
       "keywords": [
+        "nato",
+        "russia",
+        "military clash",
+        "conflict",
+        "war",
+        "hostilities",
+        "article 5",
+        "escalation",
+        "confrontation",
+        "direct engagement",
+        "ww3",
+        "world war 3",
+        "armed conflict",
+        "kinetic action",
+        "nato-russia war",
         "nato russia",
         "russia military",
-        "military clash",
         "nato russia military",
         "russia military clash"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "nato",
+        "russia"
+      ],
+      "entityGroups": [
+        [
+          "nato"
+        ],
+        [
+          "russia",
+          "俄罗斯",
+          "美联储"
+        ]
+      ],
       "sig": "240f4485",
       "sigFull": "240f4485",
       "sigCore": "f6714b75",
@@ -5472,183 +5719,6 @@
           "title": "December 31, 2025",
           "yesTokenId": "47062050506028745524329299661522909680782432896355545055649402613277823432134",
           "noTokenId": "49601187976214391003018186780568158130430327519634969953883390406024245662584"
-        }
-      ]
-    },
-    "224": {
-      "title": "NFC Champion 2026",
-      "url": "https://app.opinion.trade/market/224?ref=opinion_hud",
-      "yesTokenId": "30627615055536305286566169732569340107032122966724835425430562383070641789144",
-      "noTokenId": "79863139610606003662199701530533040996878658819596258518208335529539435878684",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "nfc",
-        "nfl",
-        "national football conference",
-        "super bowl",
-        "conference championship",
-        "2026",
-        "playoffs",
-        "nfc title",
-        "football",
-        "american football",
-        "postseason",
-        "nfc west",
-        "nfc north",
-        "nfc south",
-        "nfc east",
-        "nfc champion",
-        "champion 2026",
-        "nfc champion 2026"
-      ],
-      "entities": [
-        "nfc"
-      ],
-      "entityGroups": [
-        [
-          "nfc"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3294",
-          "title": "Los Angeles R",
-          "yesTokenId": "30627615055536305286566169732569340107032122966724835425430562383070641789144",
-          "noTokenId": "79863139610606003662199701530533040996878658819596258518208335529539435878684"
-        },
-        {
-          "marketId": "3295",
-          "title": "Seattle",
-          "yesTokenId": "73801175758468350068436848656095154342885636317930619182159625244479312232878",
-          "noTokenId": "6762860774557703171020797805911360548745470280631715003125996785444401874780"
-        },
-        {
-          "marketId": "3296",
-          "title": "Philadelphia",
-          "yesTokenId": "83246306950219023378826980532196927619321694967735611561016228513960309518380",
-          "noTokenId": "80077849212763895165575758324224017083126210449610346998483394997565770275765"
-        },
-        {
-          "marketId": "3297",
-          "title": "San Francisco",
-          "yesTokenId": "49802315086586374652261365226703529303814869714884358420424455949776677530385",
-          "noTokenId": "71508510699574001424205793730947461902140366899732753611800557274384512401331"
-        },
-        {
-          "marketId": "3298",
-          "title": "Green Bay",
-          "yesTokenId": "38657130334280847167773231097148316435880408478785580470665778028877349028432",
-          "noTokenId": "76358356250593868109323897414097719403074824529781695137952201832419595383875"
-        },
-        {
-          "marketId": "3299",
-          "title": "Chicago",
-          "yesTokenId": "12913129421114532448990993812889600220750564666927553395079015800235476103744",
-          "noTokenId": "42345905625207309394216575354782053579789867750892910256217043554548421524638"
-        },
-        {
-          "marketId": "3300",
-          "title": "Carolina",
-          "yesTokenId": "78211306999128853768010585109913468540050633311954315195583135427120059454549",
-          "noTokenId": "46067557004323562717149493672007805426024057603104957249473511102480766784359"
-        },
-        {
-          "marketId": "3301",
-          "title": "Tampa Bay",
-          "yesTokenId": "106582445488024056039774665089675605877691598582071045570865234852630214030800",
-          "noTokenId": "74531008076636590042673230237766751572754539542479022736174096719413228504451"
-        }
-      ]
-    },
-    "223": {
-      "title": "AFC Champion 2026",
-      "url": "https://app.opinion.trade/market/223?ref=opinion_hud",
-      "yesTokenId": "60232382923640115936895413670232584668487061109639693866751897539283133211253",
-      "noTokenId": "43070729231268041282775336904130042872547847716164290224502243102894615222663",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "afc",
-        "american football conference",
-        "nfl",
-        "national football league",
-        "afc championship",
-        "conference championship",
-        "playoffs",
-        "football",
-        "american football",
-        "2026 season",
-        "afc title",
-        "conference game",
-        "afc champion",
-        "champion 2026",
-        "afc champion 2026"
-      ],
-      "entities": [
-        "afc"
-      ],
-      "entityGroups": [
-        [
-          "afc"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3286",
-          "title": "Buffalo",
-          "yesTokenId": "39753949563087094155455725289790769518777716799222346671085411278365498098207",
-          "noTokenId": "60167308695435499754772649212313288501009294303153937939320320087301752155215"
-        },
-        {
-          "marketId": "3287",
-          "title": "Denver",
-          "yesTokenId": "100241035589259038511396787432619410422623659941847161688014768576293179212398",
-          "noTokenId": "45280283431791764210268607688560591296261303549359034955276512816382212478597"
-        },
-        {
-          "marketId": "3288",
-          "title": "New England",
-          "yesTokenId": "60232382923640115936895413670232584668487061109639693866751897539283133211253",
-          "noTokenId": "43070729231268041282775336904130042872547847716164290224502243102894615222663"
-        },
-        {
-          "marketId": "3289",
-          "title": "Houston",
-          "yesTokenId": "72797789500092733311355339327123503617911244630595536516608665901819191118380",
-          "noTokenId": "50614449352527422156750861309975555536911856444501787550125587086782738415641"
-        },
-        {
-          "marketId": "3290",
-          "title": "Jacksonville",
-          "yesTokenId": "103587195515111117119527559942361690576054622173047944369920160487404229783111",
-          "noTokenId": "82132390352092957270140745441459223279204916756337278068315807769752400690001"
-        },
-        {
-          "marketId": "3291",
-          "title": "Los Angeles C",
-          "yesTokenId": "72816416192832336239640608458751826432831322629131106917330187063651635978041",
-          "noTokenId": "69062120487613660249729485615998497331035440240474475986980971683588479833148"
-        },
-        {
-          "marketId": "3292",
-          "title": "Pittsburgh",
-          "yesTokenId": "99100212135002847536125613046793084085432822258915431012835829178129788879963",
-          "noTokenId": "15647067047669231999018799724488680801573405659960677017237279059979667730473"
-        },
-        {
-          "marketId": "3293",
-          "title": "Baltimore",
-          "yesTokenId": "58188752317113043868721394218527142820793437564099045655642641289000106592823",
-          "noTokenId": "35104019503150961858571714520562048302385642388819105610787970923610100759146"
         }
       ]
     },
@@ -15225,42 +15295,6 @@
         }
       ]
     },
-    "4826": {
-      "title": "BNB Up or Down - Hourly (Jan 28, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4826?ref=opinion_hud",
-      "yesTokenId": "53438072169082824119053853644747125630027422875027496335155658138687516558612",
-      "noTokenId": "108659439413260590650193295431134017648880720987625749797560056729748234027300",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "4827": {
-      "title": "BTC Up or Down - Hourly (Jan 28, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4827?ref=opinion_hud",
-      "yesTokenId": "114262642976832287080329198385565368807444255329796122481467146894449539083008",
-      "noTokenId": "5213002833638347496980544285811479002614144216043291677770446169944237923235",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "4828": {
-      "title": "ETH Up or Down - Hourly (Jan 28, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4828?ref=opinion_hud",
-      "yesTokenId": "78998192005614850146612745007424830168778227875288950652882760199946978480007",
-      "noTokenId": "4147660341532546507473570162710452457017495006034227854227562595162565298457",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "4802": {
       "title": "Bitcoin Up or Down on January 28?(12:00 ET)",
       "url": "https://app.opinion.trade/market/4802?ref=opinion_hud",
@@ -15814,16 +15848,38 @@
         "noLabel": "NO"
       },
       "keywords": [
-        "uefa champions",
+        "uefa",
         "champions league",
+        "ucl",
+        "european cup",
+        "european football",
+        "soccer",
+        "club competition",
+        "2026 season",
+        "european cup final",
+        "football",
+        "elite football",
+        "top tier",
+        "continental competition",
+        "european soccer",
+        "trophy",
+        "uefa champions",
         "league winner",
         "winner 2026",
         "uefa champions league",
         "champions league winner",
         "league winner 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "uefa champions league"
+      ],
+      "entityGroups": [
+        [
+          "uefa champions league",
+          "champions league",
+          "欧洲冠军联赛"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16188,14 +16244,42 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "microstrategy",
+        "mstr",
+        "bitcoin",
+        "btc",
+        "michael saylor",
+        "saylor",
+        "crypto",
+        "treasury",
+        "sell-off",
+        "liquidation",
+        "holdings",
+        "reserve",
+        "strategy",
+        "btc holdings",
+        "mstr stock",
         "microstrategy sells",
         "sells any",
         "any bitcoin",
         "microstrategy sells any",
         "sells any bitcoin"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "microstrategy",
+        "bitcoin"
+      ],
+      "entityGroups": [
+        [
+          "microstrategy",
+          "微策略"
+        ],
+        [
+          "bitcoin",
+          "btc",
+          "比特币"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16229,12 +16313,35 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "bitcoin",
+        "btc",
+        "crypto",
+        "cryptocurrency",
+        "price target",
+        "trading",
+        "bull market",
+        "digital gold",
+        "blockchain",
+        "satoshi",
+        "hodl",
+        "volatility",
+        "all-time high",
+        "ath",
+        "market cap",
         "bitcoin hit",
         "hit $150k",
         "bitcoin hit $150k"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "bitcoin"
+      ],
+      "entityGroups": [
+        [
+          "bitcoin",
+          "btc",
+          "比特币"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16274,12 +16381,34 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "metamask",
+        "mm",
+        "consensys",
+        "token",
+        "airdrop",
+        "crypto wallet",
+        "ethereum wallet",
+        "erc20",
+        "governance token",
+        "token launch",
+        "snapshot",
+        "claim",
+        "web3 wallet",
+        "defi wallet",
         "metamask launch",
         "launch token",
         "metamask launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "metamask"
+      ],
+      "entityGroups": [
+        [
+          "metamask",
+          "小狐狸",
+          "meta"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16725,16 +16854,39 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "oscars",
+        "academy awards",
+        "best actor",
+        "2026",
+        "film",
+        "cinema",
+        "movies",
+        "nominees",
+        "acting",
+        "lead actor",
+        "ceremony",
+        "hollywood",
+        "awards",
+        "entertainment",
+        "celebrity",
         "oscars 2026",
         "2026 best",
-        "best actor",
         "actor winner",
         "oscars 2026 best",
         "2026 best actor",
         "best actor winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "oscars"
+      ],
+      "entityGroups": [
+        [
+          "oscars",
+          "oscar",
+          "奥斯卡",
+          "学院奖"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16786,6 +16938,21 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "oscars",
+        "academy awards",
+        "best supporting actor",
+        "2026 oscars",
+        "film awards",
+        "cinema",
+        "movies",
+        "nominees",
+        "prediction market",
+        "betting",
+        "award ceremony",
+        "stellan skarsgård",
+        "sean penn",
+        "benicio del toro",
+        "jacob elordi",
         "oscars 2026",
         "2026 best",
         "best supporting",
@@ -16793,11 +16960,19 @@
         "actor winner",
         "oscars 2026 best",
         "2026 best supporting",
-        "best supporting actor",
         "supporting actor winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "oscars"
+      ],
+      "entityGroups": [
+        [
+          "oscars",
+          "oscar",
+          "奥斯卡",
+          "学院奖"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16843,6 +17018,21 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "oscars",
+        "academy awards",
+        "best supporting actress",
+        "2026 oscars",
+        "98th academy awards",
+        "film awards",
+        "cinema",
+        "movies",
+        "nominees",
+        "actress",
+        "supporting role",
+        "golden statuette",
+        "hollywood",
+        "ampas",
+        "red carpet",
         "oscars 2026",
         "2026 best",
         "best supporting",
@@ -16850,11 +17040,18 @@
         "actress winner",
         "oscars 2026 best",
         "2026 best supporting",
-        "best supporting actress",
         "supporting actress winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "oscars"
+      ],
+      "entityGroups": [
+        [
+          "oscars",
+          "奥斯卡",
+          "学院奖"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16912,12 +17109,38 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "trump",
+        "donald trump",
+        "china",
+        "prc",
+        "beijing",
+        "visit",
+        "trip",
+        "diplomacy",
+        "state visit",
+        "summit",
+        "xi jinping",
+        "us-china",
+        "sino-american",
+        "potus",
+        "45th president",
         "trump visit",
         "visit china",
         "trump visit china"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "trump",
+        "china"
+      ],
+      "entityGroups": [
+        [
+          "trump",
+          "特朗普"
+        ],
+        [
+          "china"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16945,10 +17168,31 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "kraken",
+        "crypto exchange",
+        "public offering",
+        "stock listing",
+        "ipo",
+        "shares",
+        "equity",
+        "trading platform",
+        "payward",
+        "going public",
+        "stock market",
+        "listing",
+        "securities",
+        "debut",
         "kraken ipo"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "kraken"
+      ],
+      "entityGroups": [
+        [
+          "kraken",
+          "kraken交易所"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16976,12 +17220,33 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "la liga",
+        "spanish football",
+        "la liga 2026",
+        "primera division",
+        "la liga santander",
+        "real madrid",
+        "barcelona",
+        "atletico madrid",
+        "spanish league",
+        "el clasico",
+        "title race",
+        "football",
+        "soccer",
+        "spain",
+        "laliga",
         "liga winner",
         "winner 2026",
         "liga winner 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "la liga"
+      ],
+      "entityGroups": [
+        [
+          "la liga"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -17015,10 +17280,32 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "keir starmer",
+        "starmer",
+        "labour party",
+        "uk pm",
+        "prime minister",
+        "resignation",
+        "step down",
+        "leave office",
+        "ousted",
+        "general election",
+        "leadership election",
+        "vote of no confidence",
+        "uk politics",
+        "downing street",
         "starmer out"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "starmer"
+      ],
+      "entityGroups": [
+        [
+          "starmer",
+          "凯尔·斯塔默",
+          "斯塔默"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -17052,6 +17339,21 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "openai",
+        "chatgpt",
+        "sam altman",
+        "artificial intelligence",
+        "ai",
+        "ipo",
+        "initial public offering",
+        "stock market",
+        "valuation",
+        "public listing",
+        "nasdaq",
+        "nyse",
+        "unicorn",
+        "tech giant",
+        "share price",
         "openai ipo",
         "ipo closing",
         "closing market",
@@ -17060,8 +17362,15 @@
         "ipo closing market",
         "closing market cap"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "openai"
+      ],
+      "entityGroups": [
+        [
+          "openai",
+          "开放人工智能"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -17119,6 +17428,20 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "federal reserve",
+        "fed",
+        "fomc",
+        "interest rates",
+        "rate cut",
+        "rate hike",
+        "monetary policy",
+        "jerome powell",
+        "powell",
+        "central bank",
+        "us economy",
+        "inflation",
+        "cpi",
+        "dot plot",
         "fed rate",
         "rate decision",
         "decision april",
@@ -17127,8 +17450,17 @@
         "rate decision april",
         "decision april 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "fed"
+      ],
+      "entityGroups": [
+        [
+          "fed",
+          "federal reserve",
+          "fomc",
+          "美联储"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -17168,14 +17500,40 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "nato",
+        "russia",
+        "military clash",
+        "conflict",
+        "war",
+        "hostilities",
+        "article 5",
+        "escalation",
+        "confrontation",
+        "direct engagement",
+        "ww3",
+        "world war 3",
+        "armed conflict",
+        "kinetic action",
+        "nato-russia war",
         "nato russia",
         "russia military",
-        "military clash",
         "nato russia military",
         "russia military clash"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "nato",
+        "russia"
+      ],
+      "entityGroups": [
+        [
+          "nato"
+        ],
+        [
+          "russia",
+          "俄罗斯",
+          "美联储"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -17191,6 +17549,42 @@
           "noTokenId": "73126827500332917789366252931046976193293413836046028260329761504628422957904"
         }
       ]
+    },
+    "4846": {
+      "title": "ETH Up or Down - Hourly (Jan 28, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4846?ref=opinion_hud",
+      "yesTokenId": "65232638961768551932038873678147384791985845491525748152924752027280059222785",
+      "noTokenId": "84901646587493827044841032319232082802851164190743162109815419265924700417105",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "4844": {
+      "title": "BNB Up or Down - Hourly (Jan 28, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4844?ref=opinion_hud",
+      "yesTokenId": "106368112499461310149208158118311492187555332097684955655079760455471405018473",
+      "noTokenId": "15829050074603590690299683255419068847353842258913077887997265958153443335752",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "4845": {
+      "title": "BTC Up or Down - Hourly (Jan 28, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4845?ref=opinion_hud",
+      "yesTokenId": "26934262155156339376729028761782084931583724164227363120267633908209449812887",
+      "noTokenId": "91098027225389583923360597665996733116419405189969581256843101949108768033133",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -17240,12 +17634,12 @@
     ],
     "2026": [
       "133",
+      "137",
       "138",
       "139",
       "210",
       "212",
       "213",
-      "224",
       "240",
       "3448",
       "3449",
@@ -17309,11 +17703,15 @@
     "2026 nfl draft": [
       "3072"
     ],
+    "2026 oscars": [
+      "140",
+      "141"
+    ],
     "2026 season": [
       "115",
       "212",
       "213",
-      "223"
+      "83"
     ],
     "2026 season winner": [
       "212",
@@ -17391,6 +17789,9 @@
     "3亿美元": [
       "3506"
     ],
+    "45th president": [
+      "142"
+    ],
     "500 2026": [
       "186"
     ],
@@ -17416,6 +17817,7 @@
       "3223"
     ],
     "98th academy awards": [
+      "141",
       "211"
     ],
     "98th oscars": [
@@ -17495,8 +17897,11 @@
     ],
     "academy awards": [
       "133",
+      "137",
       "138",
       "139",
+      "140",
+      "141",
       "210",
       "211"
     ],
@@ -17519,11 +17924,15 @@
     "acquisition 2026": [
       "2398"
     ],
+    "acting": [
+      "137"
+    ],
     "actor winner": [
       "137",
       "140"
     ],
     "actress": [
+      "141",
       "3158"
     ],
     "actress winner": [
@@ -17557,21 +17966,6 @@
     "aerospace": [
       "204"
     ],
-    "afc": [
-      "223"
-    ],
-    "afc champion": [
-      "223"
-    ],
-    "afc champion 2026": [
-      "223"
-    ],
-    "afc championship": [
-      "223"
-    ],
-    "afc title": [
-      "223"
-    ],
     "after launch": [
       "1721",
       "173",
@@ -17603,6 +17997,7 @@
       "237"
     ],
     "ai": [
+      "152",
       "198",
       "200",
       "237",
@@ -17621,6 +18016,7 @@
       "3039"
     ],
     "airdrop": [
+      "118",
       "167",
       "168",
       "172",
@@ -17693,6 +18089,9 @@
       "3364",
       "3368"
     ],
+    "all-time high": [
+      "112"
+    ],
     "alphabet": [
       "265"
     ],
@@ -17719,18 +18118,14 @@
       "3158"
     ],
     "american football": [
-      "223",
-      "224",
       "240"
-    ],
-    "american football conference": [
-      "223"
     ],
     "amount": [
       "3505"
     ],
     "ampas": [
-      "133"
+      "133",
+      "141"
     ],
     "amzn": [
       "269"
@@ -17841,13 +18236,20 @@
     "armageddon": [
       "2670"
     ],
+    "armed conflict": [
+      "238"
+    ],
     "armistice": [
       "226"
     ],
     "ars": [
       "288"
     ],
+    "article 5": [
+      "238"
+    ],
     "artificial intelligence": [
+      "152",
       "171",
       "183",
       "237"
@@ -17877,9 +18279,13 @@
       "293"
     ],
     "ath": [
+      "112",
       "3364",
       "3367",
       "3368"
+    ],
+    "atletico madrid": [
+      "82"
     ],
     "atp": [
       "222"
@@ -17933,8 +18339,12 @@
       "115",
       "240"
     ],
+    "award ceremony": [
+      "140"
+    ],
     "awards": [
       "133",
+      "137",
       "211"
     ],
     "awards ceremony": [
@@ -17988,6 +18398,9 @@
     "bank of japan": [
       "230"
     ],
+    "barcelona": [
+      "82"
+    ],
     "base": [
       "3366"
     ],
@@ -18035,9 +18448,15 @@
     "bei return china": [
       "1856"
     ],
+    "beijing": [
+      "142"
+    ],
     "benchmark": [
       "237",
       "263"
+    ],
+    "benicio del toro": [
+      "140"
     ],
     "best actor": [
       "137"
@@ -18097,6 +18516,9 @@
     "best supporting actress": [
       "141"
     ],
+    "betting": [
+      "140"
+    ],
     "bezos": [
       "269"
     ],
@@ -18126,6 +18548,8 @@
       "3368"
     ],
     "bitcoin": [
+      "111",
+      "112",
       "246",
       "3256",
       "3365"
@@ -18165,6 +18589,7 @@
       "2178"
     ],
     "blockchain": [
+      "112",
       "167",
       "172",
       "1721",
@@ -18285,13 +18710,21 @@
       "189"
     ],
     "btc": [
+      "111",
+      "112",
       "246",
       "3256",
       "3365"
     ],
+    "btc holdings": [
+      "111"
+    ],
     "budget impasse": [
       "303",
       "3114"
+    ],
+    "bull market": [
+      "112"
     ],
     "bullion": [
       "227",
@@ -18366,9 +18799,11 @@
       "226"
     ],
     "celebrity": [
+      "137",
       "3158"
     ],
     "central bank": [
+      "153",
       "300",
       "61",
       "75",
@@ -18390,6 +18825,7 @@
     ],
     "ceremony": [
       "133",
+      "137",
       "138",
       "139",
       "279",
@@ -18402,8 +18838,6 @@
       "300"
     ],
     "champion 2026": [
-      "223",
-      "224",
       "81"
     ],
     "champions": [
@@ -18443,12 +18877,14 @@
       "237"
     ],
     "chatgpt": [
+      "152",
       "171"
     ],
     "chief executive officer": [
       "193"
     ],
     "china": [
+      "142",
       "1856",
       "212"
     ],
@@ -18469,7 +18905,10 @@
     ],
     "cinema": [
       "133",
+      "137",
       "138",
+      "140",
+      "141",
       "210",
       "211",
       "275"
@@ -18490,6 +18929,7 @@
       "250"
     ],
     "claim": [
+      "118",
       "174"
     ],
     "claude": [
@@ -18561,6 +19001,9 @@
     "cloudflare status": [
       "3357"
     ],
+    "club competition": [
+      "83"
+    ],
     "coin": [
       "247"
     ],
@@ -18622,25 +19065,23 @@
     "conduct yen-buying intervention": [
       "3132"
     ],
-    "conference championship": [
-      "223",
-      "224"
-    ],
-    "conference game": [
-      "223"
-    ],
     "conflict": [
       "226",
+      "238",
       "257",
       "271",
       "274",
       "302",
       "3039"
     ],
+    "confrontation": [
+      "238"
+    ],
     "congressional standoff": [
       "303"
     ],
     "consensys": [
+      "118",
       "189",
       "205"
     ],
@@ -18661,6 +19102,9 @@
     ],
     "contest": [
       "200"
+    ],
+    "continental competition": [
+      "83"
     ],
     "continuing resolution": [
       "3114"
@@ -18690,6 +19134,7 @@
       "1546"
     ],
     "cpi": [
+      "153",
       "61",
       "75"
     ],
@@ -18709,6 +19154,8 @@
       "3357"
     ],
     "crypto": [
+      "111",
+      "112",
       "167",
       "172",
       "1721",
@@ -18740,6 +19187,7 @@
       "234"
     ],
     "crypto exchange": [
+      "143",
       "3362",
       "3369"
     ],
@@ -18764,10 +19212,12 @@
       "173"
     ],
     "crypto wallet": [
+      "118",
       "189",
       "244"
     ],
     "cryptocurrency": [
+      "112",
       "172",
       "246",
       "247",
@@ -18866,6 +19316,7 @@
       "1856"
     ],
     "debut": [
+      "143",
       "158",
       "163",
       "169",
@@ -18928,6 +19379,9 @@
     "defi hack": [
       "3360"
     ],
+    "defi wallet": [
+      "118"
+    ],
     "degen": [
       "174"
     ],
@@ -18986,6 +19440,7 @@
       "173"
     ],
     "digital gold": [
+      "112",
       "246"
     ],
     "dip": [
@@ -18993,10 +19448,14 @@
       "265"
     ],
     "diplomacy": [
+      "142",
       "276"
     ],
     "diplomatic visit": [
       "276"
+    ],
+    "direct engagement": [
+      "238"
     ],
     "directing": [
       "138"
@@ -19037,6 +19496,7 @@
       "275"
     ],
     "donald trump": [
+      "142",
       "276",
       "3055"
     ],
@@ -19044,11 +19504,15 @@
       "250"
     ],
     "dot plot": [
+      "153",
       "61",
       "78"
     ],
     "douyin": [
       "159"
+    ],
+    "downing street": [
+      "150"
     ],
     "downtime": [
       "3357"
@@ -19157,6 +19621,9 @@
     "editor": [
       "211"
     ],
+    "el clasico": [
+      "82"
+    ],
     "election": [
       "301",
       "307"
@@ -19176,6 +19643,9 @@
     ],
     "eleven": [
       "3223"
+    ],
+    "elite football": [
+      "83"
     ],
     "elon": [
       "264"
@@ -19233,6 +19703,9 @@
     "enterprise": [
       "236"
     ],
+    "entertainment": [
+      "137"
+    ],
     "epicenter": [
       "187",
       "2668",
@@ -19245,6 +19718,7 @@
       "186"
     ],
     "equity": [
+      "143",
       "158",
       "163",
       "169",
@@ -19263,8 +19737,12 @@
     "equity market": [
       "263"
     ],
+    "erc20": [
+      "118"
+    ],
     "escalation": [
       "226",
+      "238",
       "257",
       "271",
       "302",
@@ -19331,8 +19809,21 @@
       "173"
     ],
     "ethereum wallet": [
+      "118",
       "189",
       "244"
+    ],
+    "european cup": [
+      "83"
+    ],
+    "european cup final": [
+      "83"
+    ],
+    "european football": [
+      "83"
+    ],
+    "european soccer": [
+      "83"
     ],
     "ev": [
       "198",
@@ -19471,6 +19962,7 @@
       "121"
     ],
     "fed": [
+      "153",
       "300",
       "61",
       "75",
@@ -19517,6 +20009,7 @@
       "3114"
     ],
     "federal reserve": [
+      "153",
       "300",
       "61",
       "75",
@@ -19537,10 +20030,13 @@
     ],
     "film": [
       "133",
+      "137",
       "275"
     ],
     "film awards": [
       "138",
+      "140",
+      "141",
       "210"
     ],
     "film editing": [
@@ -19588,6 +20084,7 @@
       "204"
     ],
     "fomc": [
+      "153",
       "61",
       "75",
       "78"
@@ -19605,10 +20102,10 @@
       "201"
     ],
     "football": [
-      "223",
-      "224",
       "240",
-      "80"
+      "80",
+      "82",
+      "83"
     ],
     "forced sale": [
       "159"
@@ -19701,6 +20198,7 @@
       "237"
     ],
     "general election": [
+      "150",
       "306"
     ],
     "genesis": [
@@ -19725,6 +20223,7 @@
       "2178"
     ],
     "going public": [
+      "143",
       "158",
       "163",
       "171",
@@ -19762,7 +20261,8 @@
       "241"
     ],
     "golden statuette": [
-      "133"
+      "133",
+      "141"
     ],
     "goog": [
       "265"
@@ -19796,6 +20296,7 @@
       "248"
     ],
     "governance token": [
+      "118",
       "168",
       "175",
       "232",
@@ -20000,13 +20501,21 @@
       "260",
       "262"
     ],
+    "hodl": [
+      "112"
+    ],
+    "holdings": [
+      "111"
+    ],
     "holly wheeler": [
       "3222"
     ],
     "hollywood": [
       "133",
+      "137",
       "138",
       "139",
+      "141",
       "3158"
     ],
     "holographic": [
@@ -20028,6 +20537,7 @@
     ],
     "hostilities": [
       "226",
+      "238",
       "302"
     ],
     "house 2026": [
@@ -20168,6 +20678,7 @@
       "184"
     ],
     "inflation": [
+      "153",
       "227",
       "288",
       "61",
@@ -20185,6 +20696,7 @@
       "205"
     ],
     "initial public offering": [
+      "152",
       "158",
       "163",
       "190",
@@ -20195,6 +20707,7 @@
       "78"
     ],
     "interest rates": [
+      "153",
       "230",
       "61",
       "75"
@@ -20229,6 +20742,8 @@
       "266"
     ],
     "ipo": [
+      "143",
+      "152",
       "158",
       "163",
       "169",
@@ -20321,6 +20836,9 @@
     "jackpot": [
       "3505"
     ],
+    "jacob elordi": [
+      "140"
+    ],
     "james cameron": [
       "275"
     ],
@@ -20371,6 +20889,7 @@
       "3055"
     ],
     "jerome powell": [
+      "153",
       "300",
       "61",
       "75",
@@ -20450,6 +20969,9 @@
     "kazuo ueda": [
       "230"
     ],
+    "keir starmer": [
+      "150"
+    ],
     "khamenei": [
       "242",
       "258"
@@ -20466,6 +20988,9 @@
     "khamenei out supreme": [
       "242"
     ],
+    "kinetic action": [
+      "238"
+    ],
     "korean league": [
       "213"
     ],
@@ -20476,6 +21001,7 @@
       "130"
     ],
     "kraken": [
+      "143",
       "3362"
     ],
     "kraken exchange": [
@@ -20489,6 +21015,7 @@
       "3362"
     ],
     "kraken交易所": [
+      "143",
       "3362"
     ],
     "kyiv": [
@@ -20504,8 +21031,23 @@
       "3366",
       "67"
     ],
+    "la liga": [
+      "82"
+    ],
+    "la liga 2026": [
+      "82"
+    ],
+    "la liga santander": [
+      "82"
+    ],
     "labor market": [
       "273"
+    ],
+    "labour party": [
+      "150"
+    ],
+    "laliga": [
+      "82"
     ],
     "lapse in appropriations": [
       "3114"
@@ -20594,6 +21136,9 @@
     "ldp": [
       "306"
     ],
+    "lead actor": [
+      "137"
+    ],
     "leader iran": [
       "242"
     ],
@@ -20608,6 +21153,9 @@
     ],
     "leadership change": [
       "2368"
+    ],
+    "leadership election": [
+      "150"
     ],
     "league of legends": [
       "212",
@@ -20631,6 +21179,7 @@
       "258"
     ],
     "leave office": [
+      "150",
       "202"
     ],
     "leaving": [
@@ -20663,7 +21212,11 @@
     "liga winner 2026": [
       "82"
     ],
+    "liquidation": [
+      "111"
+    ],
     "listing": [
+      "143",
       "158",
       "167",
       "168",
@@ -20844,6 +21397,7 @@
       "98"
     ],
     "market cap": [
+      "112",
       "152",
       "158",
       "190",
@@ -20967,6 +21521,7 @@
       "2670"
     ],
     "meta": [
+      "118",
       "189",
       "270"
     ],
@@ -20984,6 +21539,7 @@
       "287"
     ],
     "metamask": [
+      "118",
       "189",
       "205"
     ],
@@ -21005,6 +21561,9 @@
     "mexico": [
       "274"
     ],
+    "michael saylor": [
+      "111"
+    ],
     "microsoft": [
       "267"
     ],
@@ -21015,6 +21574,7 @@
       "267"
     ],
     "microstrategy": [
+      "111",
       "3257"
     ],
     "microstrategy delisted": [
@@ -21087,6 +21647,9 @@
     "ml": [
       "194"
     ],
+    "mm": [
+      "118"
+    ],
     "moba": [
       "213"
     ],
@@ -21112,6 +21675,7 @@
       "1721"
     ],
     "monetary policy": [
+      "153",
       "230",
       "288",
       "61",
@@ -21149,7 +21713,10 @@
     ],
     "movies": [
       "133",
+      "137",
       "138",
+      "140",
+      "141",
       "211"
     ],
     "msci": [
@@ -21180,7 +21747,11 @@
       "212"
     ],
     "mstr": [
+      "111",
       "3257"
+    ],
+    "mstr stock": [
+      "111"
     ],
     "much revenue": [
       "196"
@@ -21257,6 +21828,7 @@
       "234"
     ],
     "nasdaq": [
+      "152",
       "169",
       "264",
       "267",
@@ -21270,11 +21842,7 @@
     "national basketball association": [
       "115"
     ],
-    "national football conference": [
-      "224"
-    ],
     "national football league": [
-      "223",
       "240"
     ],
     "native token": [
@@ -21282,10 +21850,16 @@
       "175",
       "3366"
     ],
+    "nato": [
+      "238"
+    ],
     "nato russia": [
       "238"
     ],
     "nato russia military": [
+      "238"
+    ],
+    "nato-russia war": [
       "238"
     ],
     "natural disaster": [
@@ -21376,33 +21950,7 @@
     "next president vietnam": [
       "301"
     ],
-    "nfc": [
-      "224"
-    ],
-    "nfc champion": [
-      "224"
-    ],
-    "nfc champion 2026": [
-      "224"
-    ],
-    "nfc east": [
-      "224"
-    ],
-    "nfc north": [
-      "224"
-    ],
-    "nfc south": [
-      "224"
-    ],
-    "nfc title": [
-      "224"
-    ],
-    "nfc west": [
-      "224"
-    ],
     "nfl": [
-      "223",
-      "224",
       "240"
     ],
     "nfl draft": [
@@ -21442,8 +21990,11 @@
     ],
     "nominees": [
       "133",
+      "137",
       "138",
       "139",
+      "140",
+      "141",
       "282",
       "283",
       "284"
@@ -21476,6 +22027,7 @@
       "268"
     ],
     "nyse": [
+      "152",
       "169"
     ],
     "occupation": [
@@ -21553,6 +22105,7 @@
       "304"
     ],
     "openai": [
+      "152",
       "163",
       "171"
     ],
@@ -21582,14 +22135,19 @@
       "267"
     ],
     "oscar": [
+      "137",
       "138",
+      "140",
       "210",
       "211"
     ],
     "oscars": [
       "133",
+      "137",
       "138",
       "139",
+      "140",
+      "141",
       "210",
       "211"
     ],
@@ -21618,6 +22176,7 @@
       "287"
     ],
     "ousted": [
+      "150",
       "193",
       "2368"
     ],
@@ -21743,6 +22302,9 @@
     "paul pikachu illustrator": [
       "217"
     ],
+    "payward": [
+      "143"
+    ],
     "pce": [
       "61"
     ],
@@ -21820,9 +22382,7 @@
       "201"
     ],
     "playoffs": [
-      "212",
-      "223",
-      "224"
+      "212"
     ],
     "pm": [
       "306"
@@ -21882,14 +22442,13 @@
     "post-quantum": [
       "3256"
     ],
-    "postseason": [
-      "224"
-    ],
     "potus": [
+      "142",
       "276",
       "3062"
     ],
     "powell": [
+      "153",
       "300",
       "75",
       "78"
@@ -21902,6 +22461,9 @@
     ],
     "pple": [
       "307"
+    ],
+    "prc": [
+      "142"
     ],
     "precious metal": [
       "241",
@@ -21917,6 +22479,7 @@
       "260"
     ],
     "prediction market": [
+      "140",
       "208"
     ],
     "premier league": [
@@ -22018,9 +22581,11 @@
       "260"
     ],
     "price target": [
+      "112",
       "3506"
     ],
     "prime minister": [
+      "150",
       "306"
     ],
     "prime minister japan": [
@@ -22028,6 +22593,9 @@
     ],
     "prime minister of japan": [
       "306"
+    ],
+    "primera division": [
+      "82"
     ],
     "private key compromise": [
       "3360"
@@ -22065,10 +22633,12 @@
       "204"
     ],
     "public listing": [
+      "152",
       "163",
       "3362"
     ],
     "public offering": [
+      "143",
       "158",
       "169",
       "171",
@@ -22169,6 +22739,7 @@
       "217"
     ],
     "rate cut": [
+      "153",
       "230",
       "61",
       "75",
@@ -22195,6 +22766,7 @@
       "75"
     ],
     "rate hike": [
+      "153",
       "230",
       "61",
       "75"
@@ -22210,6 +22782,9 @@
     ],
     "real gdp": [
       "3265"
+    ],
+    "real madrid": [
+      "82"
     ],
     "rebalancing": [
       "186",
@@ -22241,6 +22816,9 @@
       "282",
       "283",
       "284"
+    ],
+    "red carpet": [
+      "141"
     ],
     "red status": [
       "3357"
@@ -22309,12 +22887,16 @@
     "republican nomination": [
       "3055"
     ],
+    "reserve": [
+      "111"
+    ],
     "resign": [
       "202",
       "2368",
       "3062"
     ],
     "resignation": [
+      "150",
       "193",
       "202",
       "2368",
@@ -22426,6 +23008,7 @@
       "3055"
     ],
     "russia": [
+      "238",
       "250"
     ],
     "russia capture": [
@@ -22474,12 +23057,14 @@
       "239"
     ],
     "sam altman": [
+      "152",
       "171"
     ],
     "sanae takaichi": [
       "306"
     ],
     "satoshi": [
+      "112",
       "246",
       "3365"
     ],
@@ -22488,6 +23073,9 @@
     ],
     "satoshi move any": [
       "3365"
+    ],
+    "saylor": [
+      "111"
     ],
     "scale": [
       "236"
@@ -22510,6 +23098,9 @@
     "scotus": [
       "1546"
     ],
+    "sean penn": [
+      "140"
+    ],
     "season": [
       "213",
       "240"
@@ -22529,6 +23120,9 @@
     ],
     "second coming": [
       "2670"
+    ],
+    "securities": [
+      "143"
     ],
     "seed": [
       "3525"
@@ -22553,6 +23147,9 @@
     ],
     "self-driving": [
       "198"
+    ],
+    "sell-off": [
+      "111"
     ],
     "sells any": [
       "111"
@@ -22614,9 +23211,11 @@
       "277"
     ],
     "share price": [
+      "152",
       "190"
     ],
     "shares": [
+      "143",
       "158",
       "163",
       "169",
@@ -22677,6 +23276,9 @@
     "singles": [
       "304"
     ],
+    "sino-american": [
+      "142"
+    ],
     "size": [
       "236"
     ],
@@ -22704,10 +23306,13 @@
       "306"
     ],
     "snapshot": [
+      "118",
       "174"
     ],
     "soccer": [
-      "80"
+      "80",
+      "82",
+      "83"
     ],
     "social media": [
       "159",
@@ -22783,6 +23388,15 @@
     "spacex public ticker": [
       "169"
     ],
+    "spain": [
+      "82"
+    ],
+    "spanish football": [
+      "82"
+    ],
+    "spanish league": [
+      "82"
+    ],
     "specific date": [
       "3449"
     ],
@@ -22848,6 +23462,9 @@
     "starlink": [
       "204"
     ],
+    "starmer": [
+      "150"
+    ],
     "starmer out": [
       "150"
     ],
@@ -22855,12 +23472,17 @@
       "301"
     ],
     "state visit": [
+      "142",
       "276"
     ],
     "status page": [
       "3357"
     ],
+    "stellan skarsgård": [
+      "140"
+    ],
     "step down": [
+      "150",
       "202",
       "2368",
       "3062"
@@ -22891,7 +23513,12 @@
     "stock debut": [
       "158"
     ],
+    "stock listing": [
+      "143"
+    ],
     "stock market": [
+      "143",
+      "152",
       "163",
       "169",
       "171",
@@ -22915,6 +23542,7 @@
       "3224"
     ],
     "strategy": [
+      "111",
       "200"
     ],
     "streaming": [
@@ -22959,13 +23587,13 @@
       "213"
     ],
     "summit": [
+      "142",
       "276"
     ],
     "summoner's rift": [
       "213"
     ],
     "super bowl": [
-      "224",
       "81"
     ],
     "super bowl champion": [
@@ -22985,6 +23613,9 @@
       "141"
     ],
     "supporting actress winner": [
+      "141"
+    ],
+    "supporting role": [
       "141"
     ],
     "supreme court": [
@@ -23061,6 +23692,9 @@
       "269",
       "270",
       "277"
+    ],
+    "tech giant": [
+      "152"
     ],
     "tech giants": [
       "236"
@@ -23256,9 +23890,11 @@
       "3509"
     ],
     "title race": [
-      "80"
+      "80",
+      "82"
     ],
     "token": [
+      "118",
       "167",
       "1721",
       "183",
@@ -23297,6 +23933,7 @@
       "233"
     ],
     "token launch": [
+      "118",
       "168",
       "172",
       "173",
@@ -23340,6 +23977,9 @@
     "top pick": [
       "3072"
     ],
+    "top tier": [
+      "83"
+    ],
     "total domestic": [
       "275"
     ],
@@ -23358,6 +23998,7 @@
       "196"
     ],
     "trading": [
+      "112",
       "169",
       "172",
       "183",
@@ -23403,6 +24044,7 @@
       "200"
     ],
     "trading platform": [
+      "143",
       "175"
     ],
     "trading strategy": [
@@ -23413,6 +24055,9 @@
     ],
     "transfer": [
       "3365"
+    ],
+    "treasury": [
+      "111"
     ],
     "tremor": [
       "187",
@@ -23425,6 +24070,9 @@
     "trillion": [
       "236"
     ],
+    "trip": [
+      "142"
+    ],
     "trophy": [
       "115",
       "240",
@@ -23432,7 +24080,8 @@
       "280",
       "283",
       "284",
-      "80"
+      "80",
+      "83"
     ],
     "troy ounce": [
       "241",
@@ -23443,6 +24092,7 @@
       "226"
     ],
     "trump": [
+      "142",
       "1546",
       "276",
       "3055",
@@ -23501,11 +24151,23 @@
       "196",
       "273"
     ],
+    "ucl": [
+      "83"
+    ],
+    "uefa": [
+      "83"
+    ],
     "uefa champions": [
       "83"
     ],
     "uefa champions league": [
       "83"
+    ],
+    "uk pm": [
+      "150"
+    ],
+    "uk politics": [
+      "150"
     ],
     "ukraine": [
       "202",
@@ -23522,6 +24184,9 @@
     ],
     "unemployment": [
       "273"
+    ],
+    "unicorn": [
+      "152"
     ],
     "united states": [
       "196",
@@ -23548,6 +24213,7 @@
       "274"
     ],
     "us economy": [
+      "153",
       "3265",
       "61",
       "75",
@@ -23565,6 +24231,9 @@
     ],
     "us treasury": [
       "196"
+    ],
+    "us-china": [
+      "142"
     ],
     "us/israel strikes": [
       "271"
@@ -23623,6 +24292,7 @@
       "3158"
     ],
     "valuation": [
+      "152",
       "158",
       "163",
       "171",
@@ -23675,10 +24345,14 @@
     "violation": [
       "226"
     ],
+    "visit": [
+      "142"
+    ],
     "visit china": [
       "142"
     ],
     "volatility": [
+      "112",
       "246",
       "247",
       "260",
@@ -23691,6 +24365,9 @@
     "vote": [
       "301",
       "307"
+    ],
+    "vote of no confidence": [
+      "150"
     ],
     "voting": [
       "279",
@@ -23716,6 +24393,7 @@
     ],
     "war": [
       "226",
+      "238",
       "250",
       "257",
       "271",
@@ -23746,6 +24424,9 @@
     ],
     "web3 marketplace": [
       "173"
+    ],
+    "web3 wallet": [
+      "118"
     ],
     "westworld": [
       "3158"
@@ -23901,11 +24582,17 @@
     "world cup winner": [
       "79"
     ],
+    "world war 3": [
+      "238"
+    ],
     "worlds": [
       "212"
     ],
     "wta": [
       "304"
+    ],
+    "ww3": [
+      "238"
     ],
     "xag": [
       "227",
@@ -23917,6 +24604,9 @@
     ],
     "xauusd": [
       "262"
+    ],
+    "xi jinping": [
+      "142"
     ],
     "year winner": [
       "279",
@@ -24024,6 +24714,7 @@
       "3039"
     ],
     "俄罗斯": [
+      "238",
       "250"
     ],
     "全自动驾驶": [
@@ -24034,6 +24725,9 @@
     ],
     "共识系统": [
       "205"
+    ],
+    "凯尔·斯塔默": [
+      "150"
     ],
     "加密货币漏洞利用": [
       "3360"
@@ -24073,19 +24767,26 @@
     ],
     "奥斯卡": [
       "133",
+      "137",
       "138",
       "139",
+      "140",
+      "141",
       "210",
       "211"
     ],
     "学院奖": [
       "133",
+      "137",
       "138",
       "139",
+      "140",
+      "141",
       "210",
       "211"
     ],
     "小狐狸": [
+      "118",
       "189"
     ],
     "币安币": [
@@ -24094,16 +24795,21 @@
       "3368"
     ],
     "开放人工智能": [
+      "152",
       "171"
     ],
     "彩虹钱包": [
       "244"
     ],
     "微策略": [
+      "111",
       "3257"
     ],
     "政府停摆": [
       "303"
+    ],
+    "斯塔默": [
+      "150"
     ],
     "日本央行": [
       "230"
@@ -24141,7 +24847,12 @@
       "283",
       "284"
     ],
+    "欧洲冠军联赛": [
+      "83"
+    ],
     "比特币": [
+      "111",
+      "112",
       "246",
       "3256",
       "3365"
@@ -24172,6 +24883,7 @@
       "264"
     ],
     "特朗普": [
+      "142",
       "1546",
       "276",
       "3055",
@@ -24215,6 +24927,8 @@
       "115"
     ],
     "美联储": [
+      "153",
+      "238",
       "303",
       "3114",
       "61",
@@ -24303,12 +25017,12 @@
     ],
     "2026": [
       "133",
+      "137",
       "138",
       "139",
       "210",
       "212",
       "213",
-      "224",
       "240",
       "78"
     ],
@@ -24362,11 +25076,15 @@
     "2026 nba champion": [
       "103"
     ],
+    "2026 oscars": [
+      "140",
+      "141"
+    ],
     "2026 season": [
       "115",
       "212",
       "213",
-      "223"
+      "83"
     ],
     "2026 season winner": [
       "212",
@@ -24393,6 +25111,9 @@
     "2026 women australian": [
       "304"
     ],
+    "45th president": [
+      "142"
+    ],
     "500 2026": [
       "186"
     ],
@@ -24406,6 +25127,7 @@
       "187"
     ],
     "98th academy awards": [
+      "141",
       "211"
     ],
     "98th oscars": [
@@ -24480,8 +25202,11 @@
     ],
     "academy awards": [
       "133",
+      "137",
       "138",
       "139",
+      "140",
+      "141",
       "210",
       "211"
     ],
@@ -24500,9 +25225,15 @@
     "acquisition": [
       "159"
     ],
+    "acting": [
+      "137"
+    ],
     "actor winner": [
       "137",
       "140"
+    ],
+    "actress": [
+      "141"
     ],
     "actress winner": [
       "139",
@@ -24528,21 +25259,6 @@
     ],
     "aerospace": [
       "204"
-    ],
-    "afc": [
-      "223"
-    ],
-    "afc champion": [
-      "223"
-    ],
-    "afc champion 2026": [
-      "223"
-    ],
-    "afc championship": [
-      "223"
-    ],
-    "afc title": [
-      "223"
     ],
     "after launch": [
       "173",
@@ -24574,6 +25290,7 @@
       "237"
     ],
     "ai": [
+      "152",
       "198",
       "200",
       "237",
@@ -24589,6 +25306,7 @@
       "200"
     ],
     "airdrop": [
+      "118",
       "167",
       "168",
       "172",
@@ -24641,6 +25359,9 @@
     "all myrnohrad": [
       "250"
     ],
+    "all-time high": [
+      "112"
+    ],
     "alphabet": [
       "265"
     ],
@@ -24661,15 +25382,11 @@
       "269"
     ],
     "american football": [
-      "223",
-      "224",
       "240"
     ],
-    "american football conference": [
-      "223"
-    ],
     "ampas": [
-      "133"
+      "133",
+      "141"
     ],
     "amzn": [
       "269"
@@ -24741,13 +25458,20 @@
     "argentina official usd": [
       "288"
     ],
+    "armed conflict": [
+      "238"
+    ],
     "armistice": [
       "226"
     ],
     "ars": [
       "288"
     ],
+    "article 5": [
+      "238"
+    ],
     "artificial intelligence": [
+      "152",
       "171",
       "183",
       "237"
@@ -24775,6 +25499,12 @@
     ],
     "aster human which": [
       "293"
+    ],
+    "ath": [
+      "112"
+    ],
+    "atletico madrid": [
+      "82"
     ],
     "atp": [
       "222"
@@ -24827,8 +25557,12 @@
       "115",
       "240"
     ],
+    "award ceremony": [
+      "140"
+    ],
     "awards": [
       "133",
+      "137",
       "211"
     ],
     "awards ceremony": [
@@ -24876,6 +25610,9 @@
     "bank of japan": [
       "230"
     ],
+    "barcelona": [
+      "82"
+    ],
     "base launch": [
       "119"
     ],
@@ -24900,9 +25637,15 @@
     "bcra": [
       "288"
     ],
+    "beijing": [
+      "142"
+    ],
     "benchmark": [
       "237",
       "263"
+    ],
+    "benicio del toro": [
+      "140"
     ],
     "best actor": [
       "137"
@@ -24962,6 +25705,9 @@
     "best supporting actress": [
       "141"
     ],
+    "betting": [
+      "140"
+    ],
     "bezos": [
       "269"
     ],
@@ -24978,6 +25724,8 @@
       "251"
     ],
     "bitcoin": [
+      "111",
+      "112",
       "246"
     ],
     "bitcoin hit": [
@@ -24994,6 +25742,7 @@
       "307"
     ],
     "blockchain": [
+      "112",
       "167",
       "172",
       "183",
@@ -25067,10 +25816,18 @@
       "189"
     ],
     "btc": [
+      "111",
+      "112",
       "246"
+    ],
+    "btc holdings": [
+      "111"
     ],
     "budget impasse": [
       "303"
+    ],
+    "bull market": [
+      "112"
     ],
     "bullion": [
       "227",
@@ -25124,7 +25881,11 @@
     "ceasefire broken": [
       "226"
     ],
+    "celebrity": [
+      "137"
+    ],
     "central bank": [
+      "153",
       "300",
       "61",
       "75",
@@ -25141,6 +25902,7 @@
     ],
     "ceremony": [
       "133",
+      "137",
       "138",
       "139",
       "279",
@@ -25153,8 +25915,6 @@
       "300"
     ],
     "champion 2026": [
-      "223",
-      "224",
       "81"
     ],
     "champions": [
@@ -25182,17 +25942,22 @@
       "237"
     ],
     "chatgpt": [
+      "152",
       "171"
     ],
     "chief executive officer": [
       "193"
     ],
     "china": [
+      "142",
       "212"
     ],
     "cinema": [
       "133",
+      "137",
       "138",
+      "140",
+      "141",
       "210",
       "211",
       "275"
@@ -25213,6 +25978,7 @@
       "250"
     ],
     "claim": [
+      "118",
       "174"
     ],
     "claude": [
@@ -25266,6 +26032,9 @@
       "204",
       "205"
     ],
+    "club competition": [
+      "83"
+    ],
     "coin": [
       "247"
     ],
@@ -25305,24 +26074,22 @@
     "composer": [
       "284"
     ],
-    "conference championship": [
-      "223",
-      "224"
-    ],
-    "conference game": [
-      "223"
-    ],
     "conflict": [
       "226",
+      "238",
       "257",
       "271",
       "274",
       "302"
     ],
+    "confrontation": [
+      "238"
+    ],
     "congressional standoff": [
       "303"
     ],
     "consensys": [
+      "118",
       "189",
       "205"
     ],
@@ -25341,6 +26108,9 @@
     "contest": [
       "200"
     ],
+    "continental competition": [
+      "83"
+    ],
     "control": [
       "250"
     ],
@@ -25348,10 +26118,13 @@
       "236"
     ],
     "cpi": [
+      "153",
       "61",
       "75"
     ],
     "crypto": [
+      "111",
+      "112",
       "167",
       "172",
       "174",
@@ -25376,6 +26149,9 @@
     "crypto analytics": [
       "234"
     ],
+    "crypto exchange": [
+      "143"
+    ],
     "crypto research": [
       "234"
     ],
@@ -25388,10 +26164,12 @@
       "173"
     ],
     "crypto wallet": [
+      "118",
       "189",
       "244"
     ],
     "cryptocurrency": [
+      "112",
       "172",
       "246",
       "247",
@@ -25457,6 +26235,7 @@
       "242"
     ],
     "debut": [
+      "143",
       "158",
       "163",
       "169",
@@ -25508,6 +26287,9 @@
       "67",
       "95"
     ],
+    "defi wallet": [
+      "118"
+    ],
     "degen": [
       "174"
     ],
@@ -25543,6 +26325,7 @@
       "173"
     ],
     "digital gold": [
+      "112",
       "246"
     ],
     "dip": [
@@ -25550,10 +26333,14 @@
       "265"
     ],
     "diplomacy": [
+      "142",
       "276"
     ],
     "diplomatic visit": [
       "276"
+    ],
+    "direct engagement": [
+      "238"
     ],
     "directing": [
       "138"
@@ -25592,17 +26379,22 @@
       "275"
     ],
     "donald trump": [
+      "142",
       "276"
     ],
     "donetsk": [
       "250"
     ],
     "dot plot": [
+      "153",
       "61",
       "78"
     ],
     "douyin": [
       "159"
+    ],
+    "downing street": [
+      "150"
     ],
     "driving fsd": [
       "198"
@@ -25662,6 +26454,9 @@
     "editor": [
       "211"
     ],
+    "el clasico": [
+      "82"
+    ],
     "election": [
       "301",
       "307"
@@ -25678,6 +26473,9 @@
     ],
     "electric vehicle": [
       "264"
+    ],
+    "elite football": [
+      "83"
     ],
     "elon": [
       "264"
@@ -25707,6 +26505,9 @@
     "enterprise": [
       "236"
     ],
+    "entertainment": [
+      "137"
+    ],
     "epicenter": [
       "187"
     ],
@@ -25717,6 +26518,7 @@
       "186"
     ],
     "equity": [
+      "143",
       "158",
       "163",
       "169",
@@ -25735,8 +26537,12 @@
     "equity market": [
       "263"
     ],
+    "erc20": [
+      "118"
+    ],
     "escalation": [
       "226",
+      "238",
       "257",
       "271",
       "302"
@@ -25789,8 +26595,21 @@
       "173"
     ],
     "ethereum wallet": [
+      "118",
       "189",
       "244"
+    ],
+    "european cup": [
+      "83"
+    ],
+    "european cup final": [
+      "83"
+    ],
+    "european football": [
+      "83"
+    ],
+    "european soccer": [
+      "83"
     ],
     "ev": [
       "198",
@@ -25889,6 +26708,7 @@
       "121"
     ],
     "fed": [
+      "153",
       "300",
       "61",
       "75",
@@ -25928,6 +26748,7 @@
       "303"
     ],
     "federal reserve": [
+      "153",
       "300",
       "61",
       "75",
@@ -25947,10 +26768,13 @@
     ],
     "film": [
       "133",
+      "137",
       "275"
     ],
     "film awards": [
       "138",
+      "140",
+      "141",
       "210"
     ],
     "film editing": [
@@ -25985,6 +26809,7 @@
       "204"
     ],
     "fomc": [
+      "153",
       "61",
       "75",
       "78"
@@ -26002,10 +26827,10 @@
       "201"
     ],
     "football": [
-      "223",
-      "224",
       "240",
-      "80"
+      "80",
+      "82",
+      "83"
     ],
     "forced sale": [
       "159"
@@ -26065,6 +26890,7 @@
       "237"
     ],
     "general election": [
+      "150",
       "306"
     ],
     "gensyn": [
@@ -26083,6 +26909,7 @@
       "194"
     ],
     "going public": [
+      "143",
       "158",
       "163",
       "171",
@@ -26119,7 +26946,8 @@
       "241"
     ],
     "golden statuette": [
-      "133"
+      "133",
+      "141"
     ],
     "goog": [
       "265"
@@ -26147,6 +26975,7 @@
       "248"
     ],
     "governance token": [
+      "118",
       "168",
       "175",
       "232",
@@ -26280,10 +27109,18 @@
       "260",
       "262"
     ],
+    "hodl": [
+      "112"
+    ],
+    "holdings": [
+      "111"
+    ],
     "hollywood": [
       "133",
+      "137",
       "138",
-      "139"
+      "139",
+      "141"
     ],
     "holographic": [
       "217"
@@ -26299,6 +27136,7 @@
     ],
     "hostilities": [
       "226",
+      "238",
       "302"
     ],
     "house 2026": [
@@ -26400,6 +27238,7 @@
       "184"
     ],
     "inflation": [
+      "153",
       "227",
       "288",
       "61",
@@ -26417,6 +27256,7 @@
       "205"
     ],
     "initial public offering": [
+      "152",
       "158",
       "163",
       "190",
@@ -26426,6 +27266,7 @@
       "78"
     ],
     "interest rates": [
+      "153",
       "230",
       "61",
       "75"
@@ -26449,6 +27290,8 @@
       "266"
     ],
     "ipo": [
+      "143",
+      "152",
       "158",
       "163",
       "169",
@@ -26518,6 +27361,9 @@
     "its own ethereum": [
       "208"
     ],
+    "jacob elordi": [
+      "140"
+    ],
     "james cameron": [
       "275"
     ],
@@ -26552,6 +27398,7 @@
       "190"
     ],
     "jerome powell": [
+      "153",
       "300",
       "61",
       "75",
@@ -26596,6 +27443,9 @@
     "kazuo ueda": [
       "230"
     ],
+    "keir starmer": [
+      "150"
+    ],
     "khamenei": [
       "242",
       "258"
@@ -26612,6 +27462,9 @@
     "khamenei out supreme": [
       "242"
     ],
+    "kinetic action": [
+      "238"
+    ],
     "korean league": [
       "213"
     ],
@@ -26621,7 +27474,13 @@
     "korean local elections": [
       "130"
     ],
+    "kraken": [
+      "143"
+    ],
     "kraken ipo": [
+      "143"
+    ],
+    "kraken交易所": [
       "143"
     ],
     "kyiv": [
@@ -26632,8 +27491,23 @@
       "208",
       "67"
     ],
+    "la liga": [
+      "82"
+    ],
+    "la liga 2026": [
+      "82"
+    ],
+    "la liga santander": [
+      "82"
+    ],
     "labor market": [
       "273"
+    ],
+    "labour party": [
+      "150"
+    ],
+    "laliga": [
+      "82"
     ],
     "large cap": [
       "186"
@@ -26711,6 +27585,9 @@
     "ldp": [
       "306"
     ],
+    "lead actor": [
+      "137"
+    ],
     "leader iran": [
       "242"
     ],
@@ -26721,6 +27598,9 @@
       "193",
       "242",
       "301"
+    ],
+    "leadership election": [
+      "150"
     ],
     "league of legends": [
       "212",
@@ -26741,6 +27621,7 @@
       "258"
     ],
     "leave office": [
+      "150",
       "202"
     ],
     "leaving": [
@@ -26767,7 +27648,11 @@
     "liga winner 2026": [
       "82"
     ],
+    "liquidation": [
+      "111"
+    ],
     "listing": [
+      "143",
       "158",
       "167",
       "168",
@@ -26911,6 +27796,7 @@
       "98"
     ],
     "market cap": [
+      "112",
       "152",
       "158",
       "190",
@@ -27002,6 +27888,7 @@
       "159"
     ],
     "meta": [
+      "118",
       "189",
       "270"
     ],
@@ -27019,6 +27906,7 @@
       "287"
     ],
     "metamask": [
+      "118",
       "189",
       "205"
     ],
@@ -27040,6 +27928,9 @@
     "mexico": [
       "274"
     ],
+    "michael saylor": [
+      "111"
+    ],
     "microsoft": [
       "267"
     ],
@@ -27048,6 +27939,9 @@
     ],
     "microsoft msft close": [
       "267"
+    ],
+    "microstrategy": [
+      "111"
     ],
     "microstrategy sells": [
       "111"
@@ -27091,6 +27985,9 @@
     "ml": [
       "194"
     ],
+    "mm": [
+      "118"
+    ],
     "moba": [
       "213"
     ],
@@ -27104,6 +28001,7 @@
       "237"
     ],
     "monetary policy": [
+      "153",
       "230",
       "288",
       "61",
@@ -27128,7 +28026,10 @@
     ],
     "movies": [
       "133",
+      "137",
       "138",
+      "140",
+      "141",
       "211"
     ],
     "msft": [
@@ -27142,6 +28043,12 @@
     ],
     "msi": [
       "212"
+    ],
+    "mstr": [
+      "111"
+    ],
+    "mstr stock": [
+      "111"
     ],
     "much revenue": [
       "196"
@@ -27207,6 +28114,7 @@
       "234"
     ],
     "nasdaq": [
+      "152",
       "169",
       "264",
       "267",
@@ -27220,21 +28128,23 @@
     "national basketball association": [
       "115"
     ],
-    "national football conference": [
-      "224"
-    ],
     "national football league": [
-      "223",
       "240"
     ],
     "native token": [
       "168",
       "175"
     ],
+    "nato": [
+      "238"
+    ],
     "nato russia": [
       "238"
     ],
     "nato russia military": [
+      "238"
+    ],
+    "nato-russia war": [
       "238"
     ],
     "natural disaster": [
@@ -27294,33 +28204,7 @@
     "next president vietnam": [
       "301"
     ],
-    "nfc": [
-      "224"
-    ],
-    "nfc champion": [
-      "224"
-    ],
-    "nfc champion 2026": [
-      "224"
-    ],
-    "nfc east": [
-      "224"
-    ],
-    "nfc north": [
-      "224"
-    ],
-    "nfc south": [
-      "224"
-    ],
-    "nfc title": [
-      "224"
-    ],
-    "nfc west": [
-      "224"
-    ],
     "nfl": [
-      "223",
-      "224",
       "240"
     ],
     "nfl mvp": [
@@ -27357,8 +28241,11 @@
     ],
     "nominees": [
       "133",
+      "137",
       "138",
       "139",
+      "140",
+      "141",
       "282",
       "283",
       "284"
@@ -27388,6 +28275,7 @@
       "268"
     ],
     "nyse": [
+      "152",
       "169"
     ],
     "occupation": [
@@ -27452,6 +28340,7 @@
       "304"
     ],
     "openai": [
+      "152",
       "163",
       "171"
     ],
@@ -27478,14 +28367,19 @@
       "267"
     ],
     "oscar": [
+      "137",
       "138",
+      "140",
       "210",
       "211"
     ],
     "oscars": [
       "133",
+      "137",
       "138",
       "139",
+      "140",
+      "141",
       "210",
       "211"
     ],
@@ -27514,6 +28408,7 @@
       "287"
     ],
     "ousted": [
+      "150",
       "193"
     ],
     "ouster": [
@@ -27607,6 +28502,9 @@
     "paul pikachu illustrator": [
       "217"
     ],
+    "payward": [
+      "143"
+    ],
     "pce": [
       "61"
     ],
@@ -27669,9 +28567,7 @@
       "201"
     ],
     "playoffs": [
-      "212",
-      "223",
-      "224"
+      "212"
     ],
     "pm": [
       "306"
@@ -27728,13 +28624,12 @@
     "post-production": [
       "211"
     ],
-    "postseason": [
-      "224"
-    ],
     "potus": [
+      "142",
       "276"
     ],
     "powell": [
+      "153",
       "300",
       "75",
       "78"
@@ -27747,6 +28642,9 @@
     ],
     "pple": [
       "307"
+    ],
+    "prc": [
+      "142"
     ],
     "precious metal": [
       "241",
@@ -27762,6 +28660,7 @@
       "260"
     ],
     "prediction market": [
+      "140",
       "208"
     ],
     "premier league": [
@@ -27848,7 +28747,11 @@
     "price solana hit": [
       "260"
     ],
+    "price target": [
+      "112"
+    ],
     "prime minister": [
+      "150",
       "306"
     ],
     "prime minister japan": [
@@ -27856,6 +28759,9 @@
     ],
     "prime minister of japan": [
       "306"
+    ],
+    "primera division": [
+      "82"
     ],
     "pro league": [
       "212",
@@ -27887,9 +28793,11 @@
       "204"
     ],
     "public listing": [
+      "152",
       "163"
     ],
     "public offering": [
+      "143",
       "158",
       "169",
       "171",
@@ -27952,6 +28860,7 @@
       "217"
     ],
     "rate cut": [
+      "153",
       "230",
       "61",
       "75",
@@ -27978,6 +28887,7 @@
       "75"
     ],
     "rate hike": [
+      "153",
       "230",
       "61",
       "75"
@@ -27990,6 +28900,9 @@
     ],
     "rates decision dfr": [
       "121"
+    ],
+    "real madrid": [
+      "82"
     ],
     "rebalancing": [
       "186"
@@ -28010,6 +28923,9 @@
       "282",
       "283",
       "284"
+    ],
+    "red carpet": [
+      "141"
     ],
     "reed hastings": [
       "277"
@@ -28044,10 +28960,14 @@
     "replaced": [
       "193"
     ],
+    "reserve": [
+      "111"
+    ],
     "resign": [
       "202"
     ],
     "resignation": [
+      "150",
       "193",
       "202",
       "242",
@@ -28100,6 +29020,7 @@
       "283"
     ],
     "russia": [
+      "238",
       "250"
     ],
     "russia capture": [
@@ -28145,13 +29066,18 @@
       "239"
     ],
     "sam altman": [
+      "152",
       "171"
     ],
     "sanae takaichi": [
       "306"
     ],
     "satoshi": [
+      "112",
       "246"
+    ],
+    "saylor": [
+      "111"
     ],
     "scale": [
       "236"
@@ -28161,6 +29087,9 @@
     ],
     "sci-fi": [
       "275"
+    ],
+    "sean penn": [
+      "140"
     ],
     "season": [
       "213",
@@ -28172,6 +29101,9 @@
     "season winner": [
       "212",
       "213"
+    ],
+    "securities": [
+      "143"
     ],
     "seismic": [
       "187"
@@ -28187,6 +29119,9 @@
     ],
     "self-driving": [
       "198"
+    ],
+    "sell-off": [
+      "111"
     ],
     "sells any": [
       "111"
@@ -28227,9 +29162,11 @@
       "277"
     ],
     "share price": [
+      "152",
       "190"
     ],
     "shares": [
+      "143",
       "158",
       "163",
       "169",
@@ -28275,6 +29212,9 @@
     "singles": [
       "304"
     ],
+    "sino-american": [
+      "142"
+    ],
     "size": [
       "236"
     ],
@@ -28294,10 +29234,13 @@
       "306"
     ],
     "snapshot": [
+      "118",
       "174"
     ],
     "soccer": [
-      "80"
+      "80",
+      "82",
+      "83"
     ],
     "social media": [
       "159",
@@ -28373,6 +29316,15 @@
     "spacex public ticker": [
       "169"
     ],
+    "spain": [
+      "82"
+    ],
+    "spanish football": [
+      "82"
+    ],
+    "spanish league": [
+      "82"
+    ],
     "spending bill": [
       "303"
     ],
@@ -28417,6 +29369,9 @@
     "starlink": [
       "204"
     ],
+    "starmer": [
+      "150"
+    ],
     "starmer out": [
       "150"
     ],
@@ -28424,9 +29379,14 @@
       "301"
     ],
     "state visit": [
+      "142",
       "276"
     ],
+    "stellan skarsgård": [
+      "140"
+    ],
     "step down": [
+      "150",
       "202"
     ],
     "stepped down": [
@@ -28451,7 +29411,12 @@
     "stock debut": [
       "158"
     ],
+    "stock listing": [
+      "143"
+    ],
     "stock market": [
+      "143",
+      "152",
       "163",
       "169",
       "171",
@@ -28466,6 +29431,7 @@
       "169"
     ],
     "strategy": [
+      "111",
       "200"
     ],
     "streaming": [
@@ -28500,13 +29466,13 @@
       "213"
     ],
     "summit": [
+      "142",
       "276"
     ],
     "summoner's rift": [
       "213"
     ],
     "super bowl": [
-      "224",
       "81"
     ],
     "super bowl champion": [
@@ -28522,6 +29488,9 @@
       "141"
     ],
     "supporting actress winner": [
+      "141"
+    ],
+    "supporting role": [
       "141"
     ],
     "supreme leader": [
@@ -28574,6 +29543,9 @@
       "269",
       "270",
       "277"
+    ],
+    "tech giant": [
+      "152"
     ],
     "tech giants": [
       "236"
@@ -28693,9 +29665,11 @@
       "266"
     ],
     "title race": [
-      "80"
+      "80",
+      "82"
     ],
     "token": [
+      "118",
       "167",
       "183",
       "184",
@@ -28729,6 +29703,7 @@
       "233"
     ],
     "token launch": [
+      "118",
       "168",
       "172",
       "173",
@@ -28767,6 +29742,9 @@
     "top flight": [
       "80"
     ],
+    "top tier": [
+      "83"
+    ],
     "total domestic": [
       "275"
     ],
@@ -28783,6 +29761,7 @@
       "196"
     ],
     "trading": [
+      "112",
       "169",
       "172",
       "183",
@@ -28826,6 +29805,7 @@
       "200"
     ],
     "trading platform": [
+      "143",
       "175"
     ],
     "trading strategy": [
@@ -28834,11 +29814,17 @@
     "trading volume": [
       "173"
     ],
+    "treasury": [
+      "111"
+    ],
     "tremor": [
       "187"
     ],
     "trillion": [
       "236"
+    ],
+    "trip": [
+      "142"
     ],
     "trophy": [
       "115",
@@ -28847,7 +29833,8 @@
       "280",
       "283",
       "284",
-      "80"
+      "80",
+      "83"
     ],
     "troy ounce": [
       "241",
@@ -28858,6 +29845,7 @@
       "226"
     ],
     "trump": [
+      "142",
       "276"
     ],
     "trump meet": [
@@ -28894,11 +29882,23 @@
       "196",
       "273"
     ],
+    "ucl": [
+      "83"
+    ],
+    "uefa": [
+      "83"
+    ],
     "uefa champions": [
       "83"
     ],
     "uefa champions league": [
       "83"
+    ],
+    "uk pm": [
+      "150"
+    ],
+    "uk politics": [
+      "150"
     ],
     "ukraine": [
       "202",
@@ -28912,6 +29912,9 @@
     ],
     "unemployment": [
       "273"
+    ],
+    "unicorn": [
+      "152"
     ],
     "united states": [
       "196",
@@ -28933,6 +29936,7 @@
       "274"
     ],
     "us economy": [
+      "153",
       "61",
       "75",
       "78"
@@ -28946,6 +29950,9 @@
     ],
     "us treasury": [
       "196"
+    ],
+    "us-china": [
+      "142"
     ],
     "us/israel strikes": [
       "271"
@@ -28982,6 +29989,7 @@
       "248"
     ],
     "valuation": [
+      "152",
       "158",
       "163",
       "171",
@@ -29012,10 +30020,14 @@
     "violation": [
       "226"
     ],
+    "visit": [
+      "142"
+    ],
     "visit china": [
       "142"
     ],
     "volatility": [
+      "112",
       "246",
       "247",
       "260",
@@ -29027,6 +30039,9 @@
     "vote": [
       "301",
       "307"
+    ],
+    "vote of no confidence": [
+      "150"
     ],
     "voting": [
       "279",
@@ -29046,6 +30061,7 @@
     ],
     "war": [
       "226",
+      "238",
       "250",
       "257",
       "271",
@@ -29063,6 +30079,9 @@
     ],
     "web3 marketplace": [
       "173"
+    ],
+    "web3 wallet": [
+      "118"
     ],
     "what gold": [
       "241"
@@ -29202,11 +30221,17 @@
     "world cup winner": [
       "79"
     ],
+    "world war 3": [
+      "238"
+    ],
     "worlds": [
       "212"
     ],
     "wta": [
       "304"
+    ],
+    "ww3": [
+      "238"
     ],
     "xag": [
       "227",
@@ -29218,6 +30243,9 @@
     ],
     "xauusd": [
       "262"
+    ],
+    "xi jinping": [
+      "142"
     ],
     "year winner": [
       "279",
@@ -29291,6 +30319,7 @@
       "302"
     ],
     "俄罗斯": [
+      "238",
       "250"
     ],
     "全自动驾驶": [
@@ -29301,6 +30330,9 @@
     ],
     "共识系统": [
       "205"
+    ],
+    "凯尔·斯塔默": [
+      "150"
     ],
     "哈梅内伊": [
       "242",
@@ -29325,32 +30357,46 @@
     ],
     "奥斯卡": [
       "133",
+      "137",
       "138",
       "139",
+      "140",
+      "141",
       "210",
       "211"
     ],
     "学院奖": [
       "133",
+      "137",
       "138",
       "139",
+      "140",
+      "141",
       "210",
       "211"
     ],
     "小狐狸": [
+      "118",
       "189"
     ],
     "币安币": [
       "251"
     ],
     "开放人工智能": [
+      "152",
       "171"
     ],
     "彩虹钱包": [
       "244"
     ],
+    "微策略": [
+      "111"
+    ],
     "政府停摆": [
       "303"
+    ],
+    "斯塔默": [
+      "150"
     ],
     "日本央行": [
       "230"
@@ -29385,7 +30431,12 @@
       "283",
       "284"
     ],
+    "欧洲冠军联赛": [
+      "83"
+    ],
     "比特币": [
+      "111",
+      "112",
       "246"
     ],
     "波利市场": [
@@ -29405,6 +30456,7 @@
       "264"
     ],
     "特朗普": [
+      "142",
       "276"
     ],
     "皮卡丘插画": [
@@ -29439,6 +30491,8 @@
       "115"
     ],
     "美联储": [
+      "153",
+      "238",
       "303",
       "61",
       "75",
