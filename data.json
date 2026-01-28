@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-01-28 16:48:25 UTC+8",
+    "generatedAt": "2026-01-29 00:53:30 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 662,
-      "markets": 204,
-      "keywords": 2027,
+      "kept": 654,
+      "markets": 202,
+      "keywords": 2152,
       "events": {
-        "events": 128
+        "events": 126
       },
       "skipped": {
-        "statusEnum": 16,
+        "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 317,
+        "cutoff_expired": 341,
         "cutoff_zero_kept": 46,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 97,
-        "regenerated_empty_entitygroups": 31,
-        "calls": 31,
-        "retries": 19,
+        "reused": 109,
+        "regenerated_empty_entitygroups": 17,
+        "calls": 17,
+        "retries": 2,
         "fallback": 0,
-        "empty": 17,
-        "non_empty": 14,
+        "empty": 2,
+        "non_empty": 15,
         "errors": 0
       }
     }
@@ -2682,99 +2682,6 @@
       "sigCore": "8b31d46d",
       "reused": false
     },
-    "250": {
-      "title": "Will Russia capture all of Myrnohrad by…?",
-      "marketIds": [
-        "250"
-      ],
-      "bestMarketId": "250",
-      "bestLabels": null,
-      "keywords": [
-        "russia",
-        "myrnohrad",
-        "capture",
-        "occupation",
-        "takeover",
-        "donetsk",
-        "ukraine",
-        "war",
-        "frontline",
-        "offensive",
-        "control",
-        "siege",
-        "city",
-        "invasion",
-        "advance",
-        "russia capture",
-        "capture all",
-        "all myrnohrad",
-        "russia capture all",
-        "capture all myrnohrad"
-      ],
-      "entities": [
-        "russia",
-        "myrnohrad"
-      ],
-      "entityGroups": [
-        [
-          "russia",
-          "俄罗斯"
-        ],
-        [
-          "myrnohrad",
-          "米尔诺格勒"
-        ]
-      ],
-      "sig": "0e60ed09",
-      "sigFull": "0e60ed09",
-      "sigCore": "cce472df",
-      "reused": false
-    },
-    "251": {
-      "title": "What price will BNB hit in January?",
-      "marketIds": [
-        "251"
-      ],
-      "bestMarketId": "251",
-      "bestLabels": null,
-      "keywords": [
-        "bnb",
-        "binance coin",
-        "crypto",
-        "cryptocurrency",
-        "price",
-        "trading",
-        "token",
-        "binance",
-        "altcoin",
-        "bnb price",
-        "digital asset",
-        "blockchain",
-        "defi",
-        "bnbusd",
-        "market cap",
-        "what price",
-        "price bnb",
-        "bnb hit",
-        "hit january",
-        "what price bnb",
-        "price bnb hit",
-        "bnb hit january"
-      ],
-      "entities": [
-        "bnb"
-      ],
-      "entityGroups": [
-        [
-          "bnb",
-          "币安币"
-        ]
-      ],
-      "sig": "30f4af11",
-      "sigFull": "30f4af11",
-      "sigCore": "5c537940",
-      "reused": false
-    },
     "257": {
       "title": "US strikes Iran by...?",
       "marketIds": [
@@ -4446,16 +4353,39 @@
       "bestMarketId": "79",
       "bestLabels": null,
       "keywords": [
+        "world cup",
+        "fifa",
+        "soccer",
+        "football",
+        "2026",
+        "international football",
+        "global tournament",
+        "wc",
+        "mundial",
+        "soccer tournament",
+        "football tournament",
+        "soccer championship",
+        "football championship",
+        "world cup 2026",
+        "fifa 2026",
         "2026 fifa",
         "fifa world",
-        "world cup",
         "cup winner",
         "2026 fifa world",
         "fifa world cup",
         "world cup winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "fifa world cup"
+      ],
+      "entityGroups": [
+        [
+          "fifa world cup",
+          "world cup",
+          "世界杯",
+          "国际足联世界杯"
+        ]
+      ],
       "sig": "02a42e48",
       "sigFull": "02a42e48",
       "sigCore": "2684753d",
@@ -4470,13 +4400,35 @@
       "bestLabels": null,
       "keywords": [
         "super bowl",
+        "nfl",
+        "vince lombardi trophy",
+        "american football",
+        "championship",
+        "the big game",
+        "lombardi trophy",
+        "afc",
+        "nfc",
+        "playoffs",
+        "national football league",
+        "superbowl",
+        "gridiron",
+        "2026 season",
+        "title game",
         "bowl champion",
         "champion 2026",
         "super bowl champion",
         "bowl champion 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "super bowl"
+      ],
+      "entityGroups": [
+        [
+          "super bowl",
+          "superbowl",
+          "超级碗"
+        ]
+      ],
       "sig": "8d4c7ecb",
       "sigFull": "8d4c7ecb",
       "sigCore": "4e2893b6",
@@ -4535,10 +4487,33 @@
       "bestMarketId": "89",
       "bestLabels": null,
       "keywords": [
+        "gpt-6",
+        "openai",
+        "ai model",
+        "llm",
+        "large language model",
+        "generative ai",
+        "artificial intelligence",
+        "next gen model",
+        "agi",
+        "gpt6",
+        "release date",
+        "launch",
+        "announcement",
+        "model weights",
+        "inference",
         "gpt-6 released"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "gpt-6"
+      ],
+      "entityGroups": [
+        [
+          "gpt-6",
+          "gpt 6",
+          "gpt"
+        ]
+      ],
       "sig": "fad8ac64",
       "sigFull": "fad8ac64",
       "sigCore": "02fb392d",
@@ -4552,6 +4527,21 @@
       "bestMarketId": "96",
       "bestLabels": null,
       "keywords": [
+        "standx",
+        "standx token",
+        "standx crypto",
+        "fdv",
+        "fully diluted valuation",
+        "token launch",
+        "tge",
+        "token generation event",
+        "market cap",
+        "valuation",
+        "trading debut",
+        "price action",
+        "airdrop",
+        "standx price",
+        "listing",
         "standx fdv",
         "fdv above",
         "above one",
@@ -4564,8 +4554,14 @@
         "one day after",
         "day after launch"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "standx"
+      ],
+      "entityGroups": [
+        [
+          "standx"
+        ]
+      ],
       "sig": "d55ebf34",
       "sigFull": "d55ebf34",
       "sigCore": "eccb0d8f",
@@ -4579,12 +4575,33 @@
       "bestMarketId": "99",
       "bestLabels": null,
       "keywords": [
+        "polymarket",
+        "prediction market",
+        "token launch",
+        "airdrop",
+        "governance token",
+        "crypto betting",
+        "shayne coplan",
+        "poly token",
+        "tokenomics",
+        "tge",
+        "snapshot",
+        "defi",
+        "oracle",
+        "market resolution",
         "polymarket launch",
         "launch token",
         "polymarket launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "polymarket"
+      ],
+      "entityGroups": [
+        [
+          "polymarket",
+          "poly"
+        ]
+      ],
       "sig": "d20fcd5e",
       "sigFull": "d20fcd5e",
       "sigCore": "c831ec1b",
@@ -4598,12 +4615,36 @@
       "bestMarketId": "103",
       "bestLabels": null,
       "keywords": [
+        "nba",
+        "basketball",
+        "finals",
+        "championship",
+        "playoffs",
+        "larry o'brien",
+        "hoops",
+        "association",
+        "2026 season",
+        "pro basketball",
+        "nba finals",
+        "title",
+        "ring",
+        "basketball league",
+        "sports",
         "2026 nba",
         "nba champion",
         "2026 nba champion"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "nba"
+      ],
+      "entityGroups": [
+        [
+          "nba",
+          "美职篮",
+          "美国职业篮球联赛",
+          "美国职业篮球"
+        ]
+      ],
       "sig": "734a1a38",
       "sigFull": "734a1a38",
       "sigCore": "4ed61a64",
@@ -4617,16 +4658,43 @@
       "bestMarketId": "107",
       "bestLabels": null,
       "keywords": [
+        "fed chair",
+        "federal reserve",
+        "chairman",
+        "nomination",
+        "trump",
+        "monetary policy",
+        "central bank",
+        "jerome powell",
+        "fed board",
+        "interest rates",
+        "economy",
+        "treasury",
+        "banking",
+        "inflation",
         "who trump",
         "trump nominate",
         "nominate fed",
-        "fed chair",
         "who trump nominate",
         "trump nominate fed",
         "nominate fed chair"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "trump",
+        "fed chair"
+      ],
+      "entityGroups": [
+        [
+          "trump",
+          "特朗普"
+        ],
+        [
+          "fed chair",
+          "美联储主席",
+          "美联储",
+          "联邦储备"
+        ]
+      ],
       "sig": "7148e2c1",
       "sigFull": "7148e2c1",
       "sigCore": "d1116d3c",
@@ -4772,12 +4840,35 @@
       "bestMarketId": "119",
       "bestLabels": null,
       "keywords": [
+        "base",
+        "coinbase",
+        "l2",
+        "layer 2",
+        "blockchain",
+        "token launch",
+        "airdrop",
+        "governance token",
+        "base token",
+        "onchain",
+        "op stack",
+        "ethereum",
+        "mainnet",
+        "crypto",
+        "defi",
         "base launch",
         "launch token",
         "base launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "base"
+      ],
+      "entityGroups": [
+        [
+          "base",
+          "base 链",
+          "base 网络"
+        ]
+      ],
       "sig": "50c5bad1",
       "sigFull": "50c5bad1",
       "sigCore": "45bd6f6e",
@@ -4791,6 +4882,21 @@
       "bestMarketId": "121",
       "bestLabels": null,
       "keywords": [
+        "ecb",
+        "european central bank",
+        "interest rates",
+        "deposit facility rate",
+        "dfr",
+        "eurozone",
+        "monetary policy",
+        "rate decision",
+        "christine lagarde",
+        "euro",
+        "inflation",
+        "governing council",
+        "refinancing rate",
+        "monetary easing",
+        "monetary tightening",
         "ecb rates",
         "rates decision",
         "decision dfr",
@@ -4801,8 +4907,16 @@
         "decision dfr february",
         "dfr february 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "ecb"
+      ],
+      "entityGroups": [
+        [
+          "ecb",
+          "欧洲央行",
+          "欧洲中央银行"
+        ]
+      ],
       "sig": "8f165d2a",
       "sigFull": "8f165d2a",
       "sigCore": "3c727a62",
@@ -4835,10 +4949,32 @@
       "bestMarketId": "128",
       "bestLabels": null,
       "keywords": [
+        "invasion",
+        "military intervention",
+        "regime change",
+        "sanctions",
+        "conflict",
+        "war",
+        "caracas",
+        "washington",
+        "operation",
+        "troops",
+        "deployment",
+        "intervention",
+        "maduro",
+        "nicolas maduro",
+        "usmc",
         "invade venezuela"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "venezuela"
+      ],
+      "entityGroups": [
+        [
+          "venezuela",
+          "委内瑞拉"
+        ]
+      ],
       "sig": "fd6a8635",
       "sigFull": "fd6a8635",
       "sigCore": "ac5704a1",
@@ -4852,10 +4988,34 @@
       "bestMarketId": "129",
       "bestLabels": null,
       "keywords": [
+        "grok 5",
+        "grok",
+        "xai",
+        "elon musk",
+        "ai model",
+        "llm",
+        "large language model",
+        "release",
+        "launch",
+        "artificial intelligence",
+        "chatbot",
+        "update",
+        "version 5",
+        "grok-5",
+        "xai model",
         "grok released"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "grok 5"
+      ],
+      "entityGroups": [
+        [
+          "grok 5",
+          "grok",
+          "格罗克 5",
+          "格罗克"
+        ]
+      ],
       "sig": "b92ef6bf",
       "sigFull": "b92ef6bf",
       "sigCore": "0148eaab",
@@ -4896,6 +5056,20 @@
       "bestMarketId": "131",
       "bestLabels": null,
       "keywords": [
+        "seoul",
+        "mayor",
+        "election",
+        "2026",
+        "south korea",
+        "vote",
+        "poll",
+        "campaign",
+        "capital",
+        "civic",
+        "politics",
+        "government",
+        "ballot",
+        "metropolitan",
         "2026 seoul",
         "seoul mayoral",
         "mayoral election",
@@ -4904,8 +5078,20 @@
         "seoul mayoral election",
         "mayoral election winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "seoul mayor",
+        "2026年选举"
+      ],
+      "entityGroups": [
+        [
+          "seoul mayor",
+          "seoul mayoral",
+          "首尔市长"
+        ],
+        [
+          "2026年选举"
+        ]
+      ],
       "sig": "922cd6b5",
       "sigFull": "922cd6b5",
       "sigCore": "743a7327",
@@ -4919,12 +5105,34 @@
       "bestMarketId": "132",
       "bestLabels": null,
       "keywords": [
+        "newjeans",
+        "k-pop",
+        "girl group",
+        "comeback",
+        "concert",
+        "tour",
+        "live performance",
+        "ador",
+        "minji",
+        "hanni",
+        "danielle",
+        "haerin",
+        "hyein",
+        "bunnies",
+        "music show",
         "newjeans perform",
         "perform again",
         "newjeans perform again"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "newjeans"
+      ],
+      "entityGroups": [
+        [
+          "newjeans",
+          "newjeans女团"
+        ]
+      ],
       "sig": "89bf8940",
       "sigFull": "89bf8940",
       "sigCore": "08617cac",
@@ -4938,6 +5146,20 @@
       "bestMarketId": "135",
       "bestLabels": null,
       "keywords": [
+        "u.s. house",
+        "house of representatives",
+        "2026 midterms",
+        "midterm elections",
+        "house control",
+        "house majority",
+        "congress",
+        "lower chamber",
+        "house seats",
+        "speaker of the house",
+        "legislative branch",
+        "2026 election",
+        "house race",
+        "congressional election",
         "which party",
         "party win",
         "win house",
@@ -4946,8 +5168,16 @@
         "party win house",
         "win house 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "u.s. house"
+      ],
+      "entityGroups": [
+        [
+          "u.s. house",
+          "众议院",
+          "us house"
+        ]
+      ],
       "sig": "a432b48c",
       "sigFull": "a432b48c",
       "sigCore": "e7097f4c",
@@ -4961,6 +5191,20 @@
       "bestMarketId": "136",
       "bestLabels": null,
       "keywords": [
+        "senate",
+        "us senate",
+        "upper chamber",
+        "congress",
+        "midterm",
+        "election",
+        "majority",
+        "control",
+        "legislature",
+        "capitol hill",
+        "senate race",
+        "2026 election",
+        "senate seat",
+        "balance of power",
         "which party",
         "party win",
         "win senate",
@@ -4969,8 +5213,17 @@
         "party win senate",
         "win senate 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "u.s. senate"
+      ],
+      "entityGroups": [
+        [
+          "u.s. senate",
+          "us senate",
+          "senate",
+          "美国参议院"
+        ]
+      ],
       "sig": "912665a8",
       "sigFull": "912665a8",
       "sigCore": "2ed68868",
@@ -11971,8 +12224,8 @@
     "248": {
       "title": "What price will Ethena hit in January?",
       "url": "https://app.opinion.trade/market/248?ref=opinion_hud",
-      "yesTokenId": "113728515873092624004305093036790463142485412581549347471284467185663602545923",
-      "noTokenId": "20874870581712349943130479080710678849663795947069213393356218403242554776728",
+      "yesTokenId": "100275849255616382685188881710301672876858689280532290931316265903860539671386",
+      "noTokenId": "60903524409646306148423741381646654425935379956272824544011771396884400896534",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -12158,151 +12411,6 @@
           "title": "↓ 2,800",
           "yesTokenId": "38802709024162000453783304266393685704456105010781425688286910870434747590733",
           "noTokenId": "84362790717324195505026584293902031295584558758836661152213100368537006937307"
-        }
-      ]
-    },
-    "250": {
-      "title": "Will Russia capture all of Myrnohrad by…?",
-      "url": "https://app.opinion.trade/market/250?ref=opinion_hud",
-      "yesTokenId": "24830026377672799071626694484138707888269299968205249800686114925398994696401",
-      "noTokenId": "53925353086097834831233582573774595880162309543910139439013994426970713207158",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "russia",
-        "myrnohrad",
-        "capture",
-        "occupation",
-        "takeover",
-        "donetsk",
-        "ukraine",
-        "war",
-        "frontline",
-        "offensive",
-        "control",
-        "siege",
-        "city",
-        "invasion",
-        "advance",
-        "russia capture",
-        "capture all",
-        "all myrnohrad",
-        "russia capture all",
-        "capture all myrnohrad"
-      ],
-      "entities": [
-        "russia",
-        "myrnohrad"
-      ],
-      "entityGroups": [
-        [
-          "russia",
-          "俄罗斯"
-        ],
-        [
-          "myrnohrad",
-          "米尔诺格勒"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3632",
-          "title": "January 31, 2026",
-          "yesTokenId": "24830026377672799071626694484138707888269299968205249800686114925398994696401",
-          "noTokenId": "53925353086097834831233582573774595880162309543910139439013994426970713207158"
-        },
-        {
-          "marketId": "3631",
-          "title": "January 15, 2026",
-          "yesTokenId": "38543946408828180880560269186042784326092340949741704562410862882608245920313",
-          "noTokenId": "72077020614047681206259791427877999093237797509045520160003766088678691168442"
-        }
-      ]
-    },
-    "251": {
-      "title": "What price will BNB hit in January?",
-      "url": "https://app.opinion.trade/market/251?ref=opinion_hud",
-      "yesTokenId": "60334684375666217040979062165535476094668805695689804019775610377467334307336",
-      "noTokenId": "46625283088006306505602698833546996515515549813215725273231777201903811006879",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bnb",
-        "binance coin",
-        "crypto",
-        "cryptocurrency",
-        "price",
-        "trading",
-        "token",
-        "binance",
-        "altcoin",
-        "bnb price",
-        "digital asset",
-        "blockchain",
-        "defi",
-        "bnbusd",
-        "market cap",
-        "what price",
-        "price bnb",
-        "bnb hit",
-        "hit january",
-        "what price bnb",
-        "price bnb hit",
-        "bnb hit january"
-      ],
-      "entities": [
-        "bnb"
-      ],
-      "entityGroups": [
-        [
-          "bnb",
-          "币安币"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3643",
-          "title": "↑ 1100",
-          "yesTokenId": "88922231245308488400131973094610847109574287592240457367333893148413629451361",
-          "noTokenId": "88793763123979672308085627870168388547058325485449837585427647585634943203771"
-        },
-        {
-          "marketId": "3644",
-          "title": "↑ 1000",
-          "yesTokenId": "107126888529696866806164420120525394326194224350368413673254550810569299077697",
-          "noTokenId": "93743342193457625288683962191244322405978360513620142191419765690636375207173"
-        },
-        {
-          "marketId": "3646",
-          "title": "↓ 800",
-          "yesTokenId": "14975784414593316983890804921721696621148206502565731530771070757630332694074",
-          "noTokenId": "75229726058014341662225380177239027141650583439128242433703138464317687238763"
-        },
-        {
-          "marketId": "3647",
-          "title": "↓ 700",
-          "yesTokenId": "60858966804341580825364185529837163636686564690664219006857832073425507011974",
-          "noTokenId": "111510637907919105183499928004716032648228762435822597386745319290597023454562"
-        },
-        {
-          "marketId": "3648",
-          "title": "↓ 600",
-          "yesTokenId": "60334684375666217040979062165535476094668805695689804019775610377467334307336",
-          "noTokenId": "46625283088006306505602698833546996515515549813215725273231777201903811006879"
-        },
-        {
-          "marketId": "3645",
-          "title": "↑ 900",
-          "yesTokenId": "100078076104246472503839654873622981695487683115757570081184814386175541784135",
-          "noTokenId": "34111791937682550211998219483617872598688152473208429780653622851050184453157"
         }
       ]
     },
@@ -15650,16 +15758,39 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "world cup",
+        "fifa",
+        "soccer",
+        "football",
+        "2026",
+        "international football",
+        "global tournament",
+        "wc",
+        "mundial",
+        "soccer tournament",
+        "football tournament",
+        "soccer championship",
+        "football championship",
+        "world cup 2026",
+        "fifa 2026",
         "2026 fifa",
         "fifa world",
-        "world cup",
         "cup winner",
         "2026 fifa world",
         "fifa world cup",
         "world cup winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "fifa world cup"
+      ],
+      "entityGroups": [
+        [
+          "fifa world cup",
+          "world cup",
+          "世界杯",
+          "国际足联世界杯"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -15736,13 +15867,35 @@
       },
       "keywords": [
         "super bowl",
+        "nfl",
+        "vince lombardi trophy",
+        "american football",
+        "championship",
+        "the big game",
+        "lombardi trophy",
+        "afc",
+        "nfc",
+        "playoffs",
+        "national football league",
+        "superbowl",
+        "gridiron",
+        "2026 season",
+        "title game",
         "bowl champion",
         "champion 2026",
         "super bowl champion",
         "bowl champion 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "super bowl"
+      ],
+      "entityGroups": [
+        [
+          "super bowl",
+          "superbowl",
+          "超级碗"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -15943,10 +16096,33 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "gpt-6",
+        "openai",
+        "ai model",
+        "llm",
+        "large language model",
+        "generative ai",
+        "artificial intelligence",
+        "next gen model",
+        "agi",
+        "gpt6",
+        "release date",
+        "launch",
+        "announcement",
+        "model weights",
+        "inference",
         "gpt-6 released"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "gpt-6"
+      ],
+      "entityGroups": [
+        [
+          "gpt-6",
+          "gpt 6",
+          "gpt"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -15986,6 +16162,21 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "standx",
+        "standx token",
+        "standx crypto",
+        "fdv",
+        "fully diluted valuation",
+        "token launch",
+        "tge",
+        "token generation event",
+        "market cap",
+        "valuation",
+        "trading debut",
+        "price action",
+        "airdrop",
+        "standx price",
+        "listing",
         "standx fdv",
         "fdv above",
         "above one",
@@ -15998,8 +16189,14 @@
         "one day after",
         "day after launch"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "standx"
+      ],
+      "entityGroups": [
+        [
+          "standx"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16057,12 +16254,33 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "polymarket",
+        "prediction market",
+        "token launch",
+        "airdrop",
+        "governance token",
+        "crypto betting",
+        "shayne coplan",
+        "poly token",
+        "tokenomics",
+        "tge",
+        "snapshot",
+        "defi",
+        "oracle",
+        "market resolution",
         "polymarket launch",
         "launch token",
         "polymarket launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "polymarket"
+      ],
+      "entityGroups": [
+        [
+          "polymarket",
+          "poly"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16108,12 +16326,36 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "nba",
+        "basketball",
+        "finals",
+        "championship",
+        "playoffs",
+        "larry o'brien",
+        "hoops",
+        "association",
+        "2026 season",
+        "pro basketball",
+        "nba finals",
+        "title",
+        "ring",
+        "basketball league",
+        "sports",
         "2026 nba",
         "nba champion",
         "2026 nba champion"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "nba"
+      ],
+      "entityGroups": [
+        [
+          "nba",
+          "美职篮",
+          "美国职业篮球联赛",
+          "美国职业篮球"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16189,16 +16431,43 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "fed chair",
+        "federal reserve",
+        "chairman",
+        "nomination",
+        "trump",
+        "monetary policy",
+        "central bank",
+        "jerome powell",
+        "fed board",
+        "interest rates",
+        "economy",
+        "treasury",
+        "banking",
+        "inflation",
         "who trump",
         "trump nominate",
         "nominate fed",
-        "fed chair",
         "who trump nominate",
         "trump nominate fed",
         "nominate fed chair"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "trump",
+        "fed chair"
+      ],
+      "entityGroups": [
+        [
+          "trump",
+          "特朗普"
+        ],
+        [
+          "fed chair",
+          "美联储主席",
+          "美联储",
+          "联邦储备"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16442,12 +16711,35 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "base",
+        "coinbase",
+        "l2",
+        "layer 2",
+        "blockchain",
+        "token launch",
+        "airdrop",
+        "governance token",
+        "base token",
+        "onchain",
+        "op stack",
+        "ethereum",
+        "mainnet",
+        "crypto",
+        "defi",
         "base launch",
         "launch token",
         "base launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "base"
+      ],
+      "entityGroups": [
+        [
+          "base",
+          "base 链",
+          "base 网络"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16487,6 +16779,21 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "ecb",
+        "european central bank",
+        "interest rates",
+        "deposit facility rate",
+        "dfr",
+        "eurozone",
+        "monetary policy",
+        "rate decision",
+        "christine lagarde",
+        "euro",
+        "inflation",
+        "governing council",
+        "refinancing rate",
+        "monetary easing",
+        "monetary tightening",
         "ecb rates",
         "rates decision",
         "decision dfr",
@@ -16497,8 +16804,16 @@
         "decision dfr february",
         "dfr february 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "ecb"
+      ],
+      "entityGroups": [
+        [
+          "ecb",
+          "欧洲央行",
+          "欧洲中央银行"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16577,10 +16892,32 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "invasion",
+        "military intervention",
+        "regime change",
+        "sanctions",
+        "conflict",
+        "war",
+        "caracas",
+        "washington",
+        "operation",
+        "troops",
+        "deployment",
+        "intervention",
+        "maduro",
+        "nicolas maduro",
+        "usmc",
         "invade venezuela"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "venezuela"
+      ],
+      "entityGroups": [
+        [
+          "venezuela",
+          "委内瑞拉"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16608,10 +16945,34 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "grok 5",
+        "grok",
+        "xai",
+        "elon musk",
+        "ai model",
+        "llm",
+        "large language model",
+        "release",
+        "launch",
+        "artificial intelligence",
+        "chatbot",
+        "update",
+        "version 5",
+        "grok-5",
+        "xai model",
         "grok released"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "grok 5"
+      ],
+      "entityGroups": [
+        [
+          "grok 5",
+          "grok",
+          "格罗克 5",
+          "格罗克"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16692,6 +17053,20 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "seoul",
+        "mayor",
+        "election",
+        "2026",
+        "south korea",
+        "vote",
+        "poll",
+        "campaign",
+        "capital",
+        "civic",
+        "politics",
+        "government",
+        "ballot",
+        "metropolitan",
         "2026 seoul",
         "seoul mayoral",
         "mayoral election",
@@ -16700,8 +17075,20 @@
         "seoul mayoral election",
         "mayoral election winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "seoul mayor",
+        "2026年选举"
+      ],
+      "entityGroups": [
+        [
+          "seoul mayor",
+          "seoul mayoral",
+          "首尔市长"
+        ],
+        [
+          "2026年选举"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16747,12 +17134,34 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "newjeans",
+        "k-pop",
+        "girl group",
+        "comeback",
+        "concert",
+        "tour",
+        "live performance",
+        "ador",
+        "minji",
+        "hanni",
+        "danielle",
+        "haerin",
+        "hyein",
+        "bunnies",
+        "music show",
         "newjeans perform",
         "perform again",
         "newjeans perform again"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "newjeans"
+      ],
+      "entityGroups": [
+        [
+          "newjeans",
+          "newjeans女团"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16780,6 +17189,20 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "u.s. house",
+        "house of representatives",
+        "2026 midterms",
+        "midterm elections",
+        "house control",
+        "house majority",
+        "congress",
+        "lower chamber",
+        "house seats",
+        "speaker of the house",
+        "legislative branch",
+        "2026 election",
+        "house race",
+        "congressional election",
         "which party",
         "party win",
         "win house",
@@ -16788,8 +17211,16 @@
         "party win house",
         "win house 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "u.s. house"
+      ],
+      "entityGroups": [
+        [
+          "u.s. house",
+          "众议院",
+          "us house"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -16817,6 +17248,20 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "senate",
+        "us senate",
+        "upper chamber",
+        "congress",
+        "midterm",
+        "election",
+        "majority",
+        "control",
+        "legislature",
+        "capitol hill",
+        "senate race",
+        "2026 election",
+        "senate seat",
+        "balance of power",
         "which party",
         "party win",
         "win senate",
@@ -16825,8 +17270,17 @@
         "party win senate",
         "win senate 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "u.s. senate"
+      ],
+      "entityGroups": [
+        [
+          "u.s. senate",
+          "us senate",
+          "senate",
+          "美国参议院"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -17550,11 +18004,11 @@
         }
       ]
     },
-    "4846": {
-      "title": "ETH Up or Down - Hourly (Jan 28, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4846?ref=opinion_hud",
-      "yesTokenId": "65232638961768551932038873678147384791985845491525748152924752027280059222785",
-      "noTokenId": "84901646587493827044841032319232082802851164190743162109815419265924700417105",
+    "4869": {
+      "title": "BTC Up or Down - Hourly (Jan 28, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4869?ref=opinion_hud",
+      "yesTokenId": "65980488609873608436295479341186558613459573688266543754632265015334241982879",
+      "noTokenId": "8278228767933027411160880472717371219708086892880254558777063432977366505373",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -17562,11 +18016,11 @@
       },
       "type": "binary"
     },
-    "4844": {
-      "title": "BNB Up or Down - Hourly (Jan 28, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4844?ref=opinion_hud",
-      "yesTokenId": "106368112499461310149208158118311492187555332097684955655079760455471405018473",
-      "noTokenId": "15829050074603590690299683255419068847353842258913077887997265958153443335752",
+    "4870": {
+      "title": "ETH Up or Down - Hourly (Jan 28, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4870?ref=opinion_hud",
+      "yesTokenId": "102706778935397120175434911032174388743249846026729863175157730856019546979796",
+      "noTokenId": "51284343198121403612400744939908346896406411464983169968647376358654689961247",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -17574,11 +18028,11 @@
       },
       "type": "binary"
     },
-    "4845": {
-      "title": "BTC Up or Down - Hourly (Jan 28, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4845?ref=opinion_hud",
-      "yesTokenId": "26934262155156339376729028761782084931583724164227363120267633908209449812887",
-      "noTokenId": "91098027225389583923360597665996733116419405189969581256843101949108768033133",
+    "4868": {
+      "title": "BNB Up or Down - Hourly (Jan 28, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4868?ref=opinion_hud",
+      "yesTokenId": "89667546937626519027198853870971876393415936467310972159919648661678192726740",
+      "noTokenId": "87842695458575179174338642339823944994310889967439502857986722241659086426237",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -17633,6 +18087,7 @@
       "80"
     ],
     "2026": [
+      "131",
       "133",
       "137",
       "138",
@@ -17645,7 +18100,8 @@
       "3449",
       "3508",
       "3509",
-      "78"
+      "78",
+      "79"
     ],
     "2026 best": [
       "133",
@@ -17679,6 +18135,10 @@
       "140",
       "141"
     ],
+    "2026 election": [
+      "135",
+      "136"
+    ],
     "2026 fifa": [
       "79"
     ],
@@ -17690,6 +18150,9 @@
     ],
     "2026 men australian": [
       "222"
+    ],
+    "2026 midterms": [
+      "135"
     ],
     "2026 nba": [
       "103"
@@ -17708,9 +18171,11 @@
       "141"
     ],
     "2026 season": [
+      "103",
       "115",
       "212",
       "213",
+      "81",
       "83"
     ],
     "2026 season winner": [
@@ -17759,6 +18224,9 @@
     ],
     "2026年nfl选秀": [
       "3072"
+    ],
+    "2026年选举": [
+      "131"
     ],
     "2026年选秀": [
       "3072"
@@ -17954,17 +18422,20 @@
     "administration": [
       "202"
     ],
+    "ador": [
+      "132"
+    ],
     "adp": [
       "273"
-    ],
-    "advance": [
-      "250"
     ],
     "advisory": [
       "3369"
     ],
     "aerospace": [
       "204"
+    ],
+    "afc": [
+      "81"
     ],
     "after launch": [
       "1721",
@@ -17994,7 +18465,8 @@
       "302"
     ],
     "agi": [
-      "237"
+      "237",
+      "89"
     ],
     "ai": [
       "152",
@@ -18005,6 +18477,10 @@
     ],
     "ai compute": [
       "194"
+    ],
+    "ai model": [
+      "129",
+      "89"
     ],
     "ai performance": [
       "293"
@@ -18017,6 +18493,7 @@
     ],
     "airdrop": [
       "118",
+      "119",
       "167",
       "168",
       "172",
@@ -18038,8 +18515,10 @@
       "3366",
       "67",
       "95",
+      "96",
       "97",
-      "98"
+      "98",
+      "99"
     ],
     "airstrike": [
       "257",
@@ -18076,9 +18555,6 @@
       "242",
       "258"
     ],
-    "all myrnohrad": [
-      "250"
-    ],
     "all time": [
       "3361",
       "3364",
@@ -18098,7 +18574,6 @@
     "altcoin": [
       "246",
       "247",
-      "251",
       "260",
       "3364",
       "3367",
@@ -18118,7 +18593,8 @@
       "3158"
     ],
     "american football": [
-      "240"
+      "240",
+      "81"
     ],
     "amount": [
       "3505"
@@ -18138,7 +18614,8 @@
     ],
     "announcement": [
       "233",
-      "3257"
+      "3257",
+      "89"
     ],
     "another above": [
       "187"
@@ -18249,10 +18726,12 @@
       "238"
     ],
     "artificial intelligence": [
+      "129",
       "152",
       "171",
       "183",
-      "237"
+      "237",
+      "89"
     ],
     "artist winner": [
       "282"
@@ -18268,6 +18747,9 @@
     ],
     "asset": [
       "248"
+    ],
+    "association": [
+      "103"
     ],
     "aster": [
       "293"
@@ -18383,6 +18865,12 @@
     "backpack fdv above": [
       "95"
     ],
+    "balance of power": [
+      "136"
+    ],
+    "ballot": [
+      "131"
+    ],
     "ban": [
       "159"
     ],
@@ -18398,10 +18886,14 @@
     "bank of japan": [
       "230"
     ],
+    "banking": [
+      "107"
+    ],
     "barcelona": [
       "82"
     ],
     "base": [
+      "119",
       "3366"
     ],
     "base chain": [
@@ -18417,6 +18909,15 @@
     ],
     "base network": [
       "3366"
+    ],
+    "base token": [
+      "119"
+    ],
+    "base 网络": [
+      "119"
+    ],
+    "base 链": [
+      "119"
     ],
     "based": [
       "97"
@@ -18434,7 +18935,11 @@
       "78"
     ],
     "basketball": [
+      "103",
       "115"
+    ],
+    "basketball league": [
+      "103"
     ],
     "bcra": [
       "288"
@@ -18535,7 +19040,6 @@
       "236"
     ],
     "binance": [
-      "251",
       "3368",
       "3369"
     ],
@@ -18543,7 +19047,6 @@
       "3369"
     ],
     "binance coin": [
-      "251",
       "3367",
       "3368"
     ],
@@ -18590,6 +19093,7 @@
     ],
     "blockchain": [
       "112",
+      "119",
       "167",
       "172",
       "1721",
@@ -18603,7 +19107,6 @@
       "246",
       "247",
       "248",
-      "251",
       "260",
       "3361",
       "3364",
@@ -18627,7 +19130,6 @@
       "282"
     ],
     "bnb": [
-      "251",
       "3367",
       "3368",
       "3369"
@@ -18639,24 +19141,16 @@
       "3368"
     ],
     "bnb hit": [
-      "251",
       "3367"
     ],
     "bnb hit $1500": [
       "3367"
     ],
-    "bnb hit january": [
-      "251"
-    ],
     "bnb price": [
-      "251",
       "3368"
     ],
     "bnb token": [
       "3368"
-    ],
-    "bnbusd": [
-      "251"
     ],
     "boj": [
       "230"
@@ -18735,6 +19229,9 @@
     "bullish": [
       "3367"
     ],
+    "bunnies": [
+      "132"
+    ],
     "business": [
       "236"
     ],
@@ -18756,6 +19253,9 @@
       "3449",
       "3509"
     ],
+    "campaign": [
+      "131"
+    ],
     "candidate": [
       "301"
     ],
@@ -18773,18 +19273,16 @@
       "67"
     ],
     "capital": [
+      "131",
       "3505",
       "3506",
       "3525"
     ],
-    "capture": [
-      "250"
+    "capitol hill": [
+      "136"
     ],
-    "capture all": [
-      "250"
-    ],
-    "capture all myrnohrad": [
-      "250"
+    "caracas": [
+      "128"
     ],
     "cartel": [
       "274"
@@ -18803,6 +19301,7 @@
       "3158"
     ],
     "central bank": [
+      "107",
       "153",
       "300",
       "61",
@@ -18834,6 +19333,9 @@
       "283",
       "284"
     ],
+    "chairman": [
+      "107"
+    ],
     "chairmanship": [
       "300"
     ],
@@ -18851,6 +19353,10 @@
     ],
     "champions league winner": [
       "83"
+    ],
+    "championship": [
+      "103",
+      "81"
     ],
     "changpeng zhao": [
       "3369"
@@ -18872,6 +19378,9 @@
     ],
     "charlotte hale": [
       "3158"
+    ],
+    "chatbot": [
+      "129"
     ],
     "chatbot arena": [
       "237"
@@ -18903,6 +19412,9 @@
     "christianity": [
       "2670"
     ],
+    "christine lagarde": [
+      "121"
+    ],
     "cinema": [
       "133",
       "137",
@@ -18925,8 +19437,8 @@
     "cinematography winner": [
       "210"
     ],
-    "city": [
-      "250"
+    "civic": [
+      "131"
     ],
     "claim": [
       "118",
@@ -19008,6 +19520,7 @@
       "247"
     ],
     "coinbase": [
+      "119",
       "3366"
     ],
     "coins": [
@@ -19023,6 +19536,7 @@
       "3072"
     ],
     "comeback": [
+      "132",
       "2178",
       "3369"
     ],
@@ -19059,6 +19573,9 @@
     "composer": [
       "284"
     ],
+    "concert": [
+      "132"
+    ],
     "conduct yen-buying": [
       "3132"
     ],
@@ -19066,6 +19583,7 @@
       "3132"
     ],
     "conflict": [
+      "128",
       "226",
       "238",
       "257",
@@ -19076,6 +19594,13 @@
     ],
     "confrontation": [
       "238"
+    ],
+    "congress": [
+      "135",
+      "136"
+    ],
+    "congressional election": [
+      "135"
     ],
     "congressional standoff": [
       "303"
@@ -19113,7 +19638,7 @@
       "3265"
     ],
     "control": [
-      "250"
+      "136"
     ],
     "cook out": [
       "2368"
@@ -19156,6 +19681,7 @@
     "crypto": [
       "111",
       "112",
+      "119",
       "167",
       "172",
       "1721",
@@ -19171,7 +19697,6 @@
       "246",
       "247",
       "248",
-      "251",
       "260",
       "3359",
       "3361",
@@ -19185,6 +19710,9 @@
     ],
     "crypto analytics": [
       "234"
+    ],
+    "crypto betting": [
+      "99"
     ],
     "crypto exchange": [
       "143",
@@ -19221,7 +19749,6 @@
       "172",
       "246",
       "247",
-      "251",
       "260",
       "3364",
       "3367"
@@ -19265,6 +19792,9 @@
     ],
     "cz": [
       "3369"
+    ],
+    "danielle": [
+      "132"
     ],
     "date": [
       "3448",
@@ -19363,6 +19893,7 @@
       "237"
     ],
     "defi": [
+      "119",
       "1721",
       "184",
       "192",
@@ -19370,11 +19901,11 @@
       "244",
       "247",
       "248",
-      "251",
       "260",
       "3361",
       "67",
-      "95"
+      "95",
+      "99"
     ],
     "defi hack": [
       "3360"
@@ -19412,6 +19943,12 @@
     "depeg 1q2026": [
       "3359"
     ],
+    "deployment": [
+      "128"
+    ],
+    "deposit facility rate": [
+      "121"
+    ],
     "depression": [
       "3265"
     ],
@@ -19423,6 +19960,9 @@
       "184",
       "3361"
     ],
+    "dfr": [
+      "121"
+    ],
     "dfr february": [
       "121"
     ],
@@ -19433,8 +19973,7 @@
       "306"
     ],
     "digital asset": [
-      "247",
-      "251"
+      "247"
     ],
     "digital collectibles": [
       "173"
@@ -19499,9 +20038,6 @@
       "142",
       "276",
       "3055"
-    ],
-    "donetsk": [
-      "250"
     ],
     "dot plot": [
       "153",
@@ -19579,6 +20115,9 @@
       "230",
       "78"
     ],
+    "ecb": [
+      "121"
+    ],
     "ecb rates": [
       "121"
     ],
@@ -19595,6 +20134,7 @@
       "3265"
     ],
     "economy": [
+      "107",
       "288"
     ],
     "ecosystem": [
@@ -19625,6 +20165,8 @@
       "82"
     ],
     "election": [
+      "131",
+      "136",
       "301",
       "307"
     ],
@@ -19651,6 +20193,7 @@
       "264"
     ],
     "elon musk": [
+      "129",
       "198",
       "204"
     ],
@@ -19777,6 +20320,7 @@
       "3364"
     ],
     "ethereum": [
+      "119",
       "1721",
       "205",
       "208",
@@ -19813,6 +20357,12 @@
       "189",
       "244"
     ],
+    "euro": [
+      "121"
+    ],
+    "european central bank": [
+      "121"
+    ],
     "european cup": [
       "83"
     ],
@@ -19824,6 +20374,9 @@
     ],
     "european soccer": [
       "83"
+    ],
+    "eurozone": [
+      "121"
     ],
     "ev": [
       "198",
@@ -19924,6 +20477,7 @@
       "194",
       "244",
       "95",
+      "96",
       "97",
       "98"
     ],
@@ -19968,6 +20522,9 @@
       "75",
       "78"
     ],
+    "fed board": [
+      "107"
+    ],
     "fed chair": [
       "107",
       "300"
@@ -20009,6 +20566,7 @@
       "3114"
     ],
     "federal reserve": [
+      "107",
       "153",
       "300",
       "61",
@@ -20021,6 +20579,12 @@
     "federal shutdown": [
       "303",
       "3114"
+    ],
+    "fifa": [
+      "79"
+    ],
+    "fifa 2026": [
+      "79"
     ],
     "fifa world": [
       "79"
@@ -20046,6 +20610,7 @@
       "211"
     ],
     "finals": [
+      "103",
       "212"
     ],
     "finance": [
@@ -20103,9 +20668,16 @@
     ],
     "football": [
       "240",
+      "79",
       "80",
       "82",
       "83"
+    ],
+    "football championship": [
+      "79"
+    ],
+    "football tournament": [
+      "79"
     ],
     "forced sale": [
       "159"
@@ -20121,9 +20693,6 @@
     ],
     "founder": [
       "3369"
-    ],
-    "frontline": [
-      "250"
     ],
     "fsd": [
       "198"
@@ -20143,6 +20712,7 @@
       "95"
     ],
     "fully diluted valuation": [
+      "96",
       "97"
     ],
     "fun airdrop": [
@@ -20201,6 +20771,9 @@
       "150",
       "306"
     ],
+    "generative ai": [
+      "89"
+    ],
     "genesis": [
       "3365"
     ],
@@ -20220,7 +20793,11 @@
       "194"
     ],
     "girl group": [
+      "132",
       "2178"
+    ],
+    "global tournament": [
+      "79"
     ],
     "going public": [
       "143",
@@ -20297,13 +20874,19 @@
     ],
     "governance token": [
       "118",
+      "119",
       "168",
       "175",
       "232",
       "234",
-      "3366"
+      "3366",
+      "99"
+    ],
+    "governing council": [
+      "121"
     ],
     "government": [
+      "131",
       "301",
       "307"
     ],
@@ -20325,9 +20908,19 @@
       "303"
     ],
     "gpt": [
-      "237"
+      "237",
+      "89"
+    ],
+    "gpt 6": [
+      "89"
+    ],
+    "gpt-6": [
+      "89"
     ],
     "gpt-6 released": [
+      "89"
+    ],
+    "gpt6": [
       "89"
     ],
     "gpu": [
@@ -20388,10 +20981,20 @@
       "2668",
       "3356"
     ],
+    "gridiron": [
+      "81"
+    ],
     "grok": [
+      "129",
       "237"
     ],
+    "grok 5": [
+      "129"
+    ],
     "grok released": [
+      "129"
+    ],
+    "grok-5": [
       "129"
     ],
     "gross january": [
@@ -20406,11 +21009,17 @@
     "hack over $100m": [
       "3360"
     ],
+    "haerin": [
+      "132"
+    ],
     "halving": [
       "246"
     ],
     "hammer & chisel": [
       "190"
+    ],
+    "hanni": [
+      "132"
     ],
     "hanoi": [
       "301"
@@ -20497,7 +21106,6 @@
       "246",
       "247",
       "248",
-      "251",
       "260",
       "262"
     ],
@@ -20528,6 +21136,7 @@
       "115"
     ],
     "hoops": [
+      "103",
       "115"
     ],
     "horror": [
@@ -20541,6 +21150,21 @@
       "302"
     ],
     "house 2026": [
+      "135"
+    ],
+    "house control": [
+      "135"
+    ],
+    "house majority": [
+      "135"
+    ],
+    "house of representatives": [
+      "135"
+    ],
+    "house race": [
+      "135"
+    ],
+    "house seats": [
       "135"
     ],
     "how long": [
@@ -20576,6 +21200,9 @@
     ],
     "human which team": [
       "293"
+    ],
+    "hyein": [
+      "132"
     ],
     "hype": [
       "3361"
@@ -20668,6 +21295,9 @@
     "industrial metal": [
       "227"
     ],
+    "inference": [
+      "89"
+    ],
     "infinex": [
       "184"
     ],
@@ -20678,6 +21308,8 @@
       "184"
     ],
     "inflation": [
+      "107",
+      "121",
       "153",
       "227",
       "288",
@@ -20707,10 +21339,18 @@
       "78"
     ],
     "interest rates": [
+      "107",
+      "121",
       "153",
       "230",
       "61",
       "75"
+    ],
+    "international football": [
+      "79"
+    ],
+    "intervention": [
+      "128"
     ],
     "intervention jan": [
       "3132"
@@ -20722,7 +21362,7 @@
       "128"
     ],
     "invasion": [
-      "250",
+      "128",
       "274",
       "302"
     ],
@@ -20889,6 +21529,7 @@
       "3055"
     ],
     "jerome powell": [
+      "107",
       "153",
       "300",
       "61",
@@ -20952,6 +21593,7 @@
       "3508"
     ],
     "k-pop": [
+      "132",
       "2178"
     ],
     "kain warwick": [
@@ -21026,6 +21668,7 @@
       "3361"
     ],
     "l2": [
+      "119",
       "168",
       "208",
       "3366",
@@ -21056,7 +21699,9 @@
       "186"
     ],
     "large language model": [
-      "237"
+      "129",
+      "237",
+      "89"
     ],
     "largest company": [
       "236"
@@ -21064,12 +21709,17 @@
     "largest company january": [
       "236"
     ],
+    "larry o'brien": [
+      "103"
+    ],
     "launch": [
+      "129",
       "167",
       "183",
       "184",
       "201",
       "229",
+      "89",
       "95",
       "97"
     ],
@@ -21114,6 +21764,7 @@
       "1721"
     ],
     "layer 2": [
+      "119",
       "168",
       "208",
       "3366"
@@ -21197,11 +21848,17 @@
     "legislative": [
       "307"
     ],
+    "legislative branch": [
+      "135"
+    ],
     "legislative election": [
       "307"
     ],
     "legislative election winner": [
       "307"
+    ],
+    "legislature": [
+      "136"
     ],
     "liberal democratic party": [
       "306"
@@ -21236,12 +21893,18 @@
       "3362",
       "67",
       "95",
+      "96",
       "97",
       "98"
     ],
+    "live performance": [
+      "132"
+    ],
     "llm": [
+      "129",
       "200",
-      "237"
+      "237",
+      "89"
     ],
     "local elections": [
       "130"
@@ -21275,6 +21938,9 @@
     "lol lpl 2026": [
       "212"
     ],
+    "lombardi trophy": [
+      "81"
+    ],
     "long government": [
       "303"
     ],
@@ -21289,6 +21955,9 @@
     ],
     "loopscale launch token": [
       "233"
+    ],
+    "lower chamber": [
+      "135"
     ],
     "lp": [
       "2178"
@@ -21314,6 +21983,9 @@
     "machine learning": [
       "194"
     ],
+    "maduro": [
+      "128"
+    ],
     "maga": [
       "3055"
     ],
@@ -21330,6 +22002,7 @@
       "1856"
     ],
     "mainnet": [
+      "119",
       "168",
       "208",
       "229",
@@ -21347,6 +22020,9 @@
     ],
     "major tournament": [
       "304"
+    ],
+    "majority": [
+      "136"
     ],
     "many fed": [
       "78"
@@ -21407,11 +22083,11 @@
       "236",
       "244",
       "246",
-      "251",
       "3505",
       "3506",
       "67",
       "95",
+      "96",
       "97"
     ],
     "market cap above": [
@@ -21436,6 +22112,9 @@
     "market price": [
       "241"
     ],
+    "market resolution": [
+      "99"
+    ],
     "marketplace": [
       "173"
     ],
@@ -21447,6 +22126,9 @@
     ],
     "max": [
       "2398"
+    ],
+    "mayor": [
+      "131"
     ],
     "mayoral election": [
       "131"
@@ -21558,6 +22240,9 @@
     "meta平台": [
       "270"
     ],
+    "metropolitan": [
+      "131"
+    ],
     "mexico": [
       "274"
     ],
@@ -21598,6 +22283,12 @@
     "middle east": [
       "226"
     ],
+    "midterm": [
+      "136"
+    ],
+    "midterm elections": [
+      "135"
+    ],
     "mike wheeler": [
       "3222"
     ],
@@ -21619,6 +22310,7 @@
       "238"
     ],
     "military intervention": [
+      "128",
       "274"
     ],
     "mining algorithm": [
@@ -21632,6 +22324,9 @@
     ],
     "ministry of finance": [
       "3132"
+    ],
+    "minji": [
+      "132"
     ],
     "mint": [
       "201"
@@ -21662,6 +22357,9 @@
     "model performance": [
       "237"
     ],
+    "model weights": [
+      "89"
+    ],
     "mof": [
       "3132"
     ],
@@ -21674,13 +22372,21 @@
     "monad megaeth who": [
       "1721"
     ],
+    "monetary easing": [
+      "121"
+    ],
     "monetary policy": [
+      "107",
+      "121",
       "153",
       "230",
       "288",
       "61",
       "75",
       "78"
+    ],
+    "monetary tightening": [
+      "121"
     ],
     "money": [
       "3505",
@@ -21759,6 +22465,9 @@
     "much revenue raise": [
       "196"
     ],
+    "mundial": [
+      "79"
+    ],
     "music": [
       "279",
       "284"
@@ -21777,6 +22486,9 @@
       "283",
       "284"
     ],
+    "music show": [
+      "132"
+    ],
     "musk": [
       "198",
       "264"
@@ -21788,9 +22500,6 @@
     "mvp 2026": [
       "115",
       "240"
-    ],
-    "myrnohrad": [
-      "250"
     ],
     "na'vi": [
       "275"
@@ -21843,7 +22552,8 @@
       "115"
     ],
     "national football league": [
-      "240"
+      "240",
+      "81"
     ],
     "native token": [
       "168",
@@ -21867,9 +22577,13 @@
       "3356"
     ],
     "nba": [
+      "103",
       "115"
     ],
     "nba champion": [
+      "103"
+    ],
+    "nba finals": [
       "103"
     ],
     "nba mvp": [
@@ -21938,11 +22652,20 @@
     "new year's eve": [
       "3509"
     ],
+    "newjeans": [
+      "132"
+    ],
     "newjeans perform": [
       "132"
     ],
     "newjeans perform again": [
       "132"
+    ],
+    "newjeans女团": [
+      "132"
+    ],
+    "next gen model": [
+      "89"
     ],
     "next president": [
       "301"
@@ -21950,8 +22673,12 @@
     "next president vietnam": [
       "301"
     ],
+    "nfc": [
+      "81"
+    ],
     "nfl": [
-      "240"
+      "240",
+      "81"
     ],
     "nfl draft": [
       "3072"
@@ -21977,10 +22704,16 @@
     "nft marketplace": [
       "173"
     ],
+    "nicolas maduro": [
+      "128"
+    ],
     "nominate fed": [
       "107"
     ],
     "nominate fed chair": [
+      "107"
+    ],
+    "nomination": [
       "107"
     ],
     "nominations": [
@@ -22030,12 +22763,6 @@
       "152",
       "169"
     ],
-    "occupation": [
-      "250"
-    ],
-    "offensive": [
-      "250"
-    ],
     "offering": [
       "163",
       "171"
@@ -22070,6 +22797,9 @@
     "on-chain data": [
       "234"
     ],
+    "onchain": [
+      "119"
+    ],
     "one day": [
       "1721",
       "173",
@@ -22098,6 +22828,7 @@
       "98"
     ],
     "op stack": [
+      "119",
       "3366"
     ],
     "open winner": [
@@ -22107,7 +22838,8 @@
     "openai": [
       "152",
       "163",
-      "171"
+      "171",
+      "89"
     ],
     "openai ipo": [
       "152",
@@ -22128,11 +22860,17 @@
     "opensea fdv above": [
       "173"
     ],
+    "operation": [
+      "128"
+    ],
     "opm": [
       "3114"
     ],
     "options": [
       "267"
+    ],
+    "oracle": [
+      "99"
     ],
     "oscar": [
       "137",
@@ -22382,7 +23120,9 @@
       "201"
     ],
     "playoffs": [
-      "212"
+      "103",
+      "212",
+      "81"
     ],
     "pm": [
       "306"
@@ -22409,19 +23149,26 @@
       "301"
     ],
     "politics": [
+      "131",
       "202",
       "242",
       "301",
       "307"
     ],
     "poll": [
+      "131",
       "307"
     ],
     "poly": [
-      "208"
+      "208",
+      "99"
+    ],
+    "poly token": [
+      "99"
     ],
     "polymarket": [
-      "208"
+      "208",
+      "99"
     ],
     "polymarket launch": [
       "208",
@@ -22480,7 +23227,8 @@
     ],
     "prediction market": [
       "140",
-      "208"
+      "208",
+      "99"
     ],
     "premier league": [
       "80"
@@ -22517,7 +23265,6 @@
     "price": [
       "183",
       "247",
-      "251",
       "260",
       "264",
       "265",
@@ -22539,19 +23286,14 @@
       "244",
       "246",
       "248",
-      "263"
+      "263",
+      "96"
     ],
     "price bitcoin": [
       "246"
     ],
     "price bitcoin hit": [
       "246"
-    ],
-    "price bnb": [
-      "251"
-    ],
-    "price bnb hit": [
-      "251"
     ],
     "price ethena": [
       "248"
@@ -22599,6 +23341,9 @@
     ],
     "private key compromise": [
       "3360"
+    ],
+    "pro basketball": [
+      "103"
     ],
     "pro league": [
       "212",
@@ -22752,6 +23497,7 @@
       "78"
     ],
     "rate decision": [
+      "121",
       "153",
       "61",
       "75"
@@ -22826,10 +23572,14 @@
     "reed hastings": [
       "277"
     ],
+    "refinancing rate": [
+      "121"
+    ],
     "regime": [
       "258"
     ],
     "regime change": [
+      "128",
       "202",
       "242"
     ],
@@ -22844,6 +23594,7 @@
       "3360"
     ],
     "release": [
+      "129",
       "172",
       "201",
       "2178",
@@ -22855,6 +23606,9 @@
     ],
     "release album february": [
       "2178"
+    ],
+    "release date": [
+      "89"
     ],
     "removal": [
       "202",
@@ -22970,6 +23724,9 @@
       "212",
       "213"
     ],
+    "ring": [
+      "103"
+    ],
     "robo-taxi": [
       "198"
     ],
@@ -23008,14 +23765,7 @@
       "3055"
     ],
     "russia": [
-      "238",
-      "250"
-    ],
-    "russia capture": [
-      "250"
-    ],
-    "russia capture all": [
-      "250"
+      "238"
     ],
     "russia military": [
       "238"
@@ -23062,6 +23812,9 @@
     ],
     "sanae takaichi": [
       "306"
+    ],
+    "sanctions": [
+      "128"
     ],
     "satoshi": [
       "112",
@@ -23160,8 +23913,23 @@
     "semiconductor": [
       "268"
     ],
+    "senate": [
+      "136"
+    ],
     "senate 2026": [
       "136"
+    ],
+    "senate race": [
+      "136"
+    ],
+    "senate seat": [
+      "136"
+    ],
+    "seoul": [
+      "131"
+    ],
+    "seoul mayor": [
+      "131"
     ],
     "seoul mayoral": [
       "131"
@@ -23225,6 +23993,9 @@
       "268",
       "3362"
     ],
+    "shayne coplan": [
+      "99"
+    ],
     "shinjiro koizumi": [
       "306"
     ],
@@ -23244,9 +24015,6 @@
     ],
     "sidechain": [
       "208"
-    ],
-    "siege": [
-      "250"
     ],
     "signal caller": [
       "3072"
@@ -23307,12 +24075,20 @@
     ],
     "snapshot": [
       "118",
-      "174"
+      "174",
+      "99"
     ],
     "soccer": [
+      "79",
       "80",
       "82",
       "83"
+    ],
+    "soccer championship": [
+      "79"
+    ],
+    "soccer tournament": [
+      "79"
     ],
     "social media": [
       "159",
@@ -23359,6 +24135,9 @@
     "soty": [
       "280"
     ],
+    "south korea": [
+      "131"
+    ],
     "south korean": [
       "130"
     ],
@@ -23397,6 +24176,9 @@
     "spanish league": [
       "82"
     ],
+    "speaker of the house": [
+      "135"
+    ],
     "specific date": [
       "3449"
     ],
@@ -23405,6 +24187,9 @@
     ],
     "spending bill": [
       "303"
+    ],
+    "sports": [
+      "103"
     ],
     "spot etf": [
       "246"
@@ -23450,10 +24235,22 @@
     "standard and poor's 500": [
       "186"
     ],
+    "standx": [
+      "96"
+    ],
+    "standx crypto": [
+      "96"
+    ],
     "standx fdv": [
       "96"
     ],
     "standx fdv above": [
+      "96"
+    ],
+    "standx price": [
+      "96"
+    ],
+    "standx token": [
       "96"
     ],
     "star": [
@@ -23599,6 +24396,9 @@
     "super bowl champion": [
       "81"
     ],
+    "superbowl": [
+      "81"
+    ],
     "support": [
       "3055",
       "3132"
@@ -23648,8 +24448,7 @@
     ],
     "takeover": [
       "159",
-      "2398",
-      "250"
+      "2398"
     ],
     "talks": [
       "276"
@@ -23799,7 +24598,9 @@
       "234",
       "244",
       "67",
-      "97"
+      "96",
+      "97",
+      "99"
     ],
     "thai": [
       "307"
@@ -23812,6 +24613,9 @@
     ],
     "thailand legislative election": [
       "307"
+    ],
+    "the big game": [
+      "81"
     ],
     "the post": [
       "3223"
@@ -23889,6 +24693,12 @@
       "3449",
       "3509"
     ],
+    "title": [
+      "103"
+    ],
+    "title game": [
+      "81"
+    ],
     "title race": [
       "80",
       "82"
@@ -23904,7 +24714,6 @@
       "229",
       "247",
       "248",
-      "251",
       "260",
       "3367",
       "67",
@@ -23930,10 +24739,12 @@
       "173",
       "175",
       "232",
-      "233"
+      "233",
+      "96"
     ],
     "token launch": [
       "118",
+      "119",
       "168",
       "172",
       "173",
@@ -23945,7 +24756,9 @@
       "233",
       "234",
       "244",
-      "3366"
+      "3366",
+      "96",
+      "99"
     ],
     "token sale": [
       "175"
@@ -23960,7 +24773,8 @@
       "232",
       "244",
       "3361",
-      "95"
+      "95",
+      "99"
     ],
     "tokyo": [
       "230"
@@ -23986,6 +24800,9 @@
     "total domestic gross": [
       "275"
     ],
+    "tour": [
+      "132"
+    ],
     "tournament": [
       "200"
     ],
@@ -24008,7 +24825,6 @@
       "246",
       "247",
       "248",
-      "251",
       "260",
       "262",
       "263",
@@ -24043,6 +24859,9 @@
     "trading competition winner": [
       "200"
     ],
+    "trading debut": [
+      "96"
+    ],
     "trading platform": [
       "143",
       "175"
@@ -24057,6 +24876,7 @@
       "3365"
     ],
     "treasury": [
+      "107",
       "111"
     ],
     "tremor": [
@@ -24072,6 +24892,9 @@
     ],
     "trip": [
       "142"
+    ],
+    "troops": [
+      "128"
     ],
     "trophy": [
       "115",
@@ -24092,6 +24915,7 @@
       "226"
     ],
     "trump": [
+      "107",
       "142",
       "1546",
       "276",
@@ -24151,6 +24975,12 @@
       "196",
       "273"
     ],
+    "u.s. house": [
+      "135"
+    ],
+    "u.s. senate": [
+      "136"
+    ],
     "ucl": [
       "83"
     ],
@@ -24170,8 +25000,7 @@
       "150"
     ],
     "ukraine": [
-      "202",
-      "250"
+      "202"
     ],
     "ukraine ceasefire": [
       "127"
@@ -24201,6 +25030,12 @@
     "unsupervised full self": [
       "198"
     ],
+    "update": [
+      "129"
+    ],
+    "upper chamber": [
+      "136"
+    ],
     "upside down": [
       "3221",
       "3222",
@@ -24222,8 +25057,14 @@
     "us government": [
       "3114"
     ],
+    "us house": [
+      "135"
+    ],
     "us jobs": [
       "273"
+    ],
+    "us senate": [
+      "136"
     ],
     "us stocks": [
       "186",
@@ -24285,6 +25126,9 @@
     "usgs": [
       "2668"
     ],
+    "usmc": [
+      "128"
+    ],
     "v.o.s. selections": [
       "1546"
     ],
@@ -24315,6 +25159,7 @@
       "3525",
       "67",
       "95",
+      "96",
       "97",
       "98"
     ],
@@ -24330,8 +25175,14 @@
     "vecna": [
       "3223"
     ],
+    "venezuela": [
+      "128"
+    ],
     "venture": [
       "3525"
+    ],
+    "version 5": [
+      "129"
     ],
     "vice president": [
       "3062"
@@ -24341,6 +25192,9 @@
     ],
     "vietnam": [
       "301"
+    ],
+    "vince lombardi trophy": [
+      "81"
     ],
     "violation": [
       "226"
@@ -24363,6 +25217,7 @@
       "202"
     ],
     "vote": [
+      "131",
       "301",
       "307"
     ],
@@ -24392,9 +25247,9 @@
       "234"
     ],
     "war": [
+      "128",
       "226",
       "238",
-      "250",
       "257",
       "271",
       "274",
@@ -24410,8 +25265,14 @@
     "warner bros.": [
       "2398"
     ],
+    "washington": [
+      "128"
+    ],
     "wbd": [
       "2398"
+    ],
+    "wc": [
+      "79"
     ],
     "wealth": [
       "236"
@@ -24441,15 +25302,11 @@
       "246",
       "247",
       "248",
-      "251",
       "260",
       "262"
     ],
     "what price bitcoin": [
       "246"
-    ],
-    "what price bnb": [
-      "251"
     ],
     "what price ethena": [
       "248"
@@ -24579,6 +25436,9 @@
     "world cup": [
       "79"
     ],
+    "world cup 2026": [
+      "79"
+    ],
     "world cup winner": [
       "79"
     ],
@@ -24597,6 +25457,12 @@
     "xag": [
       "227",
       "287"
+    ],
+    "xai": [
+      "129"
+    ],
+    "xai model": [
+      "129"
     ],
     "xau": [
       "241",
@@ -24672,6 +25538,9 @@
     "zuck": [
       "270"
     ],
+    "世界杯": [
+      "79"
+    ],
     "中情局": [
       "237"
     ],
@@ -24713,9 +25582,11 @@
       "302",
       "3039"
     ],
+    "众议院": [
+      "135"
+    ],
     "俄罗斯": [
-      "238",
-      "250"
+      "238"
     ],
     "全自动驾驶": [
       "198"
@@ -24754,6 +25625,9 @@
     "国家主席": [
       "301"
     ],
+    "国际足联世界杯": [
+      "79"
+    ],
     "墨西哥": [
       "274"
     ],
@@ -24775,6 +25649,9 @@
       "210",
       "211"
     ],
+    "委内瑞拉": [
+      "128"
+    ],
     "学院奖": [
       "133",
       "137",
@@ -24790,7 +25667,6 @@
       "189"
     ],
     "币安币": [
-      "251",
       "3367",
       "3368"
     ],
@@ -24840,6 +25716,12 @@
       "186",
       "263"
     ],
+    "格罗克": [
+      "129"
+    ],
+    "格罗克 5": [
+      "129"
+    ],
     "格莱美": [
       "279",
       "280",
@@ -24847,8 +25729,14 @@
       "283",
       "284"
     ],
+    "欧洲中央银行": [
+      "121"
+    ],
     "欧洲冠军联赛": [
       "83"
+    ],
+    "欧洲央行": [
+      "121"
     ],
     "比特币": [
       "111",
@@ -24883,6 +25771,7 @@
       "264"
     ],
     "特朗普": [
+      "107",
       "142",
       "1546",
       "276",
@@ -24898,9 +25787,6 @@
     "立法选举": [
       "307"
     ],
-    "米尔诺格勒": [
-      "250"
-    ],
     "索拉纳": [
       "260"
     ],
@@ -24914,6 +25800,9 @@
       "115",
       "237"
     ],
+    "美国参议院": [
+      "136"
+    ],
     "美国国家橄榄球联盟": [
       "240"
     ],
@@ -24921,12 +25810,18 @@
       "3114"
     ],
     "美国职业篮球": [
+      "103",
       "115"
     ],
+    "美国职业篮球联赛": [
+      "103"
+    ],
     "美职篮": [
+      "103",
       "115"
     ],
     "美联储": [
+      "107",
       "153",
       "238",
       "303",
@@ -24936,6 +25831,7 @@
       "78"
     ],
     "美联储主席": [
+      "107",
       "300"
     ],
     "耶稣基督": [
@@ -24943,6 +25839,9 @@
     ],
     "联邦停摆": [
       "303"
+    ],
+    "联邦储备": [
+      "107"
     ],
     "英伟达": [
       "268"
@@ -24968,6 +25867,9 @@
     "超级地震": [
       "3356"
     ],
+    "超级碗": [
+      "81"
+    ],
     "达斯汀": [
       "3224"
     ],
@@ -24991,6 +25893,9 @@
     ],
     "韩国英雄联盟职业联赛": [
       "213"
+    ],
+    "首尔市长": [
+      "131"
     ],
     "首席执行官": [
       "193"
@@ -25016,6 +25921,7 @@
       "80"
     ],
     "2026": [
+      "131",
       "133",
       "137",
       "138",
@@ -25024,7 +25930,8 @@
       "212",
       "213",
       "240",
-      "78"
+      "78",
+      "79"
     ],
     "2026 best": [
       "133",
@@ -25058,6 +25965,10 @@
       "140",
       "141"
     ],
+    "2026 election": [
+      "135",
+      "136"
+    ],
     "2026 fifa": [
       "79"
     ],
@@ -25070,6 +25981,9 @@
     "2026 men australian": [
       "222"
     ],
+    "2026 midterms": [
+      "135"
+    ],
     "2026 nba": [
       "103"
     ],
@@ -25081,9 +25995,11 @@
       "141"
     ],
     "2026 season": [
+      "103",
       "115",
       "212",
       "213",
+      "81",
       "83"
     ],
     "2026 season winner": [
@@ -25110,6 +26026,9 @@
     ],
     "2026 women australian": [
       "304"
+    ],
+    "2026年选举": [
+      "131"
     ],
     "45th president": [
       "142"
@@ -25251,14 +26170,17 @@
     "administration": [
       "202"
     ],
+    "ador": [
+      "132"
+    ],
     "adp": [
       "273"
     ],
-    "advance": [
-      "250"
-    ],
     "aerospace": [
       "204"
+    ],
+    "afc": [
+      "81"
     ],
     "after launch": [
       "173",
@@ -25287,7 +26209,8 @@
       "302"
     ],
     "agi": [
-      "237"
+      "237",
+      "89"
     ],
     "ai": [
       "152",
@@ -25299,6 +26222,10 @@
     "ai compute": [
       "194"
     ],
+    "ai model": [
+      "129",
+      "89"
+    ],
     "ai performance": [
       "293"
     ],
@@ -25307,6 +26234,7 @@
     ],
     "airdrop": [
       "118",
+      "119",
       "167",
       "168",
       "172",
@@ -25325,8 +26253,10 @@
       "244",
       "67",
       "95",
+      "96",
       "97",
-      "98"
+      "98",
+      "99"
     ],
     "airstrike": [
       "257",
@@ -25356,9 +26286,6 @@
       "242",
       "258"
     ],
-    "all myrnohrad": [
-      "250"
-    ],
     "all-time high": [
       "112"
     ],
@@ -25368,7 +26295,6 @@
     "altcoin": [
       "246",
       "247",
-      "251",
       "260",
       "98"
     ],
@@ -25382,7 +26308,8 @@
       "269"
     ],
     "american football": [
-      "240"
+      "240",
+      "81"
     ],
     "ampas": [
       "133",
@@ -25398,7 +26325,8 @@
       "269"
     ],
     "announcement": [
-      "233"
+      "233",
+      "89"
     ],
     "another above": [
       "187"
@@ -25471,10 +26399,12 @@
       "238"
     ],
     "artificial intelligence": [
+      "129",
       "152",
       "171",
       "183",
-      "237"
+      "237",
+      "89"
     ],
     "artist winner": [
       "282"
@@ -25490,6 +26420,9 @@
     ],
     "asset": [
       "248"
+    ],
+    "association": [
+      "103"
     ],
     "aster": [
       "293"
@@ -25595,6 +26528,12 @@
     "backpack fdv above": [
       "95"
     ],
+    "balance of power": [
+      "136"
+    ],
+    "ballot": [
+      "131"
+    ],
     "ban": [
       "159"
     ],
@@ -25610,13 +26549,28 @@
     "bank of japan": [
       "230"
     ],
+    "banking": [
+      "107"
+    ],
     "barcelona": [
       "82"
+    ],
+    "base": [
+      "119"
     ],
     "base launch": [
       "119"
     ],
     "base launch token": [
+      "119"
+    ],
+    "base token": [
+      "119"
+    ],
+    "base 网络": [
+      "119"
+    ],
+    "base 链": [
       "119"
     ],
     "based": [
@@ -25632,7 +26586,11 @@
       "78"
     ],
     "basketball": [
+      "103",
       "115"
+    ],
+    "basketball league": [
+      "103"
     ],
     "bcra": [
       "288"
@@ -25717,12 +26675,6 @@
     "biggest": [
       "236"
     ],
-    "binance": [
-      "251"
-    ],
-    "binance coin": [
-      "251"
-    ],
     "bitcoin": [
       "111",
       "112",
@@ -25743,6 +26695,7 @@
     ],
     "blockchain": [
       "112",
+      "119",
       "167",
       "172",
       "183",
@@ -25755,7 +26708,6 @@
       "246",
       "247",
       "248",
-      "251",
       "260",
       "95",
       "98"
@@ -25768,21 +26720,6 @@
     ],
     "bna": [
       "282"
-    ],
-    "bnb": [
-      "251"
-    ],
-    "bnb hit": [
-      "251"
-    ],
-    "bnb hit january": [
-      "251"
-    ],
-    "bnb price": [
-      "251"
-    ],
-    "bnbusd": [
-      "251"
     ],
     "boj": [
       "230"
@@ -25835,6 +26772,9 @@
       "262",
       "287"
     ],
+    "bunnies": [
+      "132"
+    ],
     "business": [
       "236"
     ],
@@ -25843,6 +26783,9 @@
     ],
     "bytedance": [
       "159"
+    ],
+    "campaign": [
+      "131"
     ],
     "candidate": [
       "301"
@@ -25860,14 +26803,14 @@
     "cap fdv one": [
       "67"
     ],
-    "capture": [
-      "250"
+    "capital": [
+      "131"
     ],
-    "capture all": [
-      "250"
+    "capitol hill": [
+      "136"
     ],
-    "capture all myrnohrad": [
-      "250"
+    "caracas": [
+      "128"
     ],
     "cartel": [
       "274"
@@ -25885,6 +26828,7 @@
       "137"
     ],
     "central bank": [
+      "107",
       "153",
       "300",
       "61",
@@ -25911,6 +26855,9 @@
       "283",
       "284"
     ],
+    "chairman": [
+      "107"
+    ],
     "chairmanship": [
       "300"
     ],
@@ -25929,6 +26876,10 @@
     "champions league winner": [
       "83"
     ],
+    "championship": [
+      "103",
+      "81"
+    ],
     "charizard": [
       "239"
     ],
@@ -25937,6 +26888,9 @@
     ],
     "charizard sale price": [
       "239"
+    ],
+    "chatbot": [
+      "129"
     ],
     "chatbot arena": [
       "237"
@@ -25951,6 +26905,9 @@
     "china": [
       "142",
       "212"
+    ],
+    "christine lagarde": [
+      "121"
     ],
     "cinema": [
       "133",
@@ -25974,8 +26931,8 @@
     "cinematography winner": [
       "210"
     ],
-    "city": [
-      "250"
+    "civic": [
+      "131"
     ],
     "claim": [
       "118",
@@ -26038,8 +26995,14 @@
     "coin": [
       "247"
     ],
+    "coinbase": [
+      "119"
+    ],
     "collectible": [
       "217"
+    ],
+    "comeback": [
+      "132"
     ],
     "commodity": [
       "227",
@@ -26074,7 +27037,11 @@
     "composer": [
       "284"
     ],
+    "concert": [
+      "132"
+    ],
     "conflict": [
+      "128",
       "226",
       "238",
       "257",
@@ -26084,6 +27051,13 @@
     ],
     "confrontation": [
       "238"
+    ],
+    "congress": [
+      "135",
+      "136"
+    ],
+    "congressional election": [
+      "135"
     ],
     "congressional standoff": [
       "303"
@@ -26112,7 +27086,7 @@
       "83"
     ],
     "control": [
-      "250"
+      "136"
     ],
     "corporation": [
       "236"
@@ -26125,6 +27099,7 @@
     "crypto": [
       "111",
       "112",
+      "119",
       "167",
       "172",
       "174",
@@ -26139,7 +27114,6 @@
       "246",
       "247",
       "248",
-      "251",
       "260",
       "67",
       "95",
@@ -26148,6 +27122,9 @@
     ],
     "crypto analytics": [
       "234"
+    ],
+    "crypto betting": [
+      "99"
     ],
     "crypto exchange": [
       "143"
@@ -26173,7 +27150,6 @@
       "172",
       "246",
       "247",
-      "251",
       "260"
     ],
     "cup winner": [
@@ -26202,6 +27178,9 @@
     ],
     "cynthia erivo": [
       "139"
+    ],
+    "danielle": [
+      "132"
     ],
     "day after": [
       "173",
@@ -26276,16 +27255,17 @@
       "237"
     ],
     "defi": [
+      "119",
       "184",
       "192",
       "232",
       "244",
       "247",
       "248",
-      "251",
       "260",
       "67",
-      "95"
+      "95",
+      "99"
     ],
     "defi wallet": [
       "118"
@@ -26301,12 +27281,21 @@
       "258",
       "300"
     ],
+    "deployment": [
+      "128"
+    ],
+    "deposit facility rate": [
+      "121"
+    ],
     "devaluation": [
       "288"
     ],
     "dex": [
       "175",
       "184"
+    ],
+    "dfr": [
+      "121"
     ],
     "dfr february": [
       "121"
@@ -26318,8 +27307,7 @@
       "306"
     ],
     "digital asset": [
-      "247",
-      "251"
+      "247"
     ],
     "digital collectibles": [
       "173"
@@ -26382,9 +27370,6 @@
       "142",
       "276"
     ],
-    "donetsk": [
-      "250"
-    ],
     "dot plot": [
       "153",
       "61",
@@ -26421,6 +27406,9 @@
       "230",
       "78"
     ],
+    "ecb": [
+      "121"
+    ],
     "ecb rates": [
       "121"
     ],
@@ -26431,6 +27419,7 @@
       "273"
     ],
     "economy": [
+      "107",
       "288"
     ],
     "edgex": [
@@ -26458,6 +27447,8 @@
       "82"
     ],
     "election": [
+      "131",
+      "136",
       "301",
       "307"
     ],
@@ -26481,6 +27472,7 @@
       "264"
     ],
     "elon musk": [
+      "129",
       "198",
       "204"
     ],
@@ -26571,6 +27563,7 @@
       "247"
     ],
     "ethereum": [
+      "119",
       "205",
       "208",
       "247",
@@ -26599,6 +27592,12 @@
       "189",
       "244"
     ],
+    "euro": [
+      "121"
+    ],
+    "european central bank": [
+      "121"
+    ],
     "european cup": [
       "83"
     ],
@@ -26610,6 +27609,9 @@
     ],
     "european soccer": [
       "83"
+    ],
+    "eurozone": [
+      "121"
     ],
     "ev": [
       "198",
@@ -26671,6 +27673,7 @@
       "194",
       "244",
       "95",
+      "96",
       "97",
       "98"
     ],
@@ -26714,6 +27717,9 @@
       "75",
       "78"
     ],
+    "fed board": [
+      "107"
+    ],
     "fed chair": [
       "107",
       "300"
@@ -26748,6 +27754,7 @@
       "303"
     ],
     "federal reserve": [
+      "107",
       "153",
       "300",
       "61",
@@ -26759,6 +27766,12 @@
     ],
     "federal shutdown": [
       "303"
+    ],
+    "fifa": [
+      "79"
+    ],
+    "fifa 2026": [
+      "79"
     ],
     "fifa world": [
       "79"
@@ -26784,6 +27797,7 @@
       "211"
     ],
     "finals": [
+      "103",
       "212"
     ],
     "fire and ash": [
@@ -26828,9 +27842,16 @@
     ],
     "football": [
       "240",
+      "79",
       "80",
       "82",
       "83"
+    ],
+    "football championship": [
+      "79"
+    ],
+    "football tournament": [
+      "79"
     ],
     "forced sale": [
       "159"
@@ -26840,9 +27861,6 @@
     ],
     "forex": [
       "288"
-    ],
-    "frontline": [
-      "250"
     ],
     "fsd": [
       "198"
@@ -26859,6 +27877,7 @@
       "95"
     ],
     "fully diluted valuation": [
+      "96",
       "97"
     ],
     "fun airdrop": [
@@ -26893,6 +27912,9 @@
       "150",
       "306"
     ],
+    "generative ai": [
+      "89"
+    ],
     "gensyn": [
       "194"
     ],
@@ -26907,6 +27929,12 @@
     ],
     "gensyn 协议": [
       "194"
+    ],
+    "girl group": [
+      "132"
+    ],
+    "global tournament": [
+      "79"
     ],
     "going public": [
       "143",
@@ -26976,12 +28004,18 @@
     ],
     "governance token": [
       "118",
+      "119",
       "168",
       "175",
       "232",
-      "234"
+      "234",
+      "99"
+    ],
+    "governing council": [
+      "121"
     ],
     "government": [
+      "131",
       "301",
       "307"
     ],
@@ -26998,9 +28032,19 @@
       "303"
     ],
     "gpt": [
-      "237"
+      "237",
+      "89"
+    ],
+    "gpt 6": [
+      "89"
+    ],
+    "gpt-6": [
+      "89"
     ],
     "gpt-6 released": [
+      "89"
+    ],
+    "gpt6": [
       "89"
     ],
     "gpu": [
@@ -27057,20 +28101,36 @@
       "222",
       "304"
     ],
+    "gridiron": [
+      "81"
+    ],
     "grok": [
+      "129",
       "237"
+    ],
+    "grok 5": [
+      "129"
     ],
     "grok released": [
       "129"
     ],
+    "grok-5": [
+      "129"
+    ],
     "gross january": [
       "275"
+    ],
+    "haerin": [
+      "132"
     ],
     "halving": [
       "246"
     ],
     "hammer & chisel": [
       "190"
+    ],
+    "hanni": [
+      "132"
     ],
     "hanoi": [
       "301"
@@ -27105,7 +28165,6 @@
       "246",
       "247",
       "248",
-      "251",
       "260",
       "262"
     ],
@@ -27132,6 +28191,7 @@
       "115"
     ],
     "hoops": [
+      "103",
       "115"
     ],
     "hostilities": [
@@ -27140,6 +28200,21 @@
       "302"
     ],
     "house 2026": [
+      "135"
+    ],
+    "house control": [
+      "135"
+    ],
+    "house majority": [
+      "135"
+    ],
+    "house of representatives": [
+      "135"
+    ],
+    "house race": [
+      "135"
+    ],
+    "house seats": [
       "135"
     ],
     "how long": [
@@ -27175,6 +28250,9 @@
     ],
     "human which team": [
       "293"
+    ],
+    "hyein": [
+      "132"
     ],
     "ico": [
       "167",
@@ -27228,6 +28306,9 @@
     "industrial metal": [
       "227"
     ],
+    "inference": [
+      "89"
+    ],
     "infinex": [
       "184"
     ],
@@ -27238,6 +28319,8 @@
       "184"
     ],
     "inflation": [
+      "107",
+      "121",
       "153",
       "227",
       "288",
@@ -27266,16 +28349,24 @@
       "78"
     ],
     "interest rates": [
+      "107",
+      "121",
       "153",
       "230",
       "61",
       "75"
     ],
+    "international football": [
+      "79"
+    ],
+    "intervention": [
+      "128"
+    ],
     "invade venezuela": [
       "128"
     ],
     "invasion": [
-      "250",
+      "128",
       "274",
       "302"
     ],
@@ -27398,6 +28489,7 @@
       "190"
     ],
     "jerome powell": [
+      "107",
       "153",
       "300",
       "61",
@@ -27430,6 +28522,9 @@
     ],
     "joseph lubin": [
       "205"
+    ],
+    "k-pop": [
+      "132"
     ],
     "kain warwick": [
       "184"
@@ -27487,6 +28582,7 @@
       "202"
     ],
     "l2": [
+      "119",
       "168",
       "208",
       "67"
@@ -27513,7 +28609,9 @@
       "186"
     ],
     "large language model": [
-      "237"
+      "129",
+      "237",
+      "89"
     ],
     "largest company": [
       "236"
@@ -27521,12 +28619,17 @@
     "largest company january": [
       "236"
     ],
+    "larry o'brien": [
+      "103"
+    ],
     "launch": [
+      "129",
       "167",
       "183",
       "184",
       "201",
       "229",
+      "89",
       "95",
       "97"
     ],
@@ -27564,6 +28667,7 @@
       "174"
     ],
     "layer 2": [
+      "119",
       "168",
       "208"
     ],
@@ -27633,11 +28737,17 @@
     "legislative": [
       "307"
     ],
+    "legislative branch": [
+      "135"
+    ],
     "legislative election": [
       "307"
     ],
     "legislative election winner": [
       "307"
+    ],
+    "legislature": [
+      "136"
     ],
     "liberal democratic party": [
       "306"
@@ -27671,12 +28781,18 @@
       "233",
       "67",
       "95",
+      "96",
       "97",
       "98"
     ],
+    "live performance": [
+      "132"
+    ],
     "llm": [
+      "129",
       "200",
-      "237"
+      "237",
+      "89"
     ],
     "local elections": [
       "130"
@@ -27710,6 +28826,9 @@
     "lol lpl 2026": [
       "212"
     ],
+    "lombardi trophy": [
+      "81"
+    ],
     "long government": [
       "303"
     ],
@@ -27724,6 +28843,9 @@
     ],
     "loopscale launch token": [
       "233"
+    ],
+    "lower chamber": [
+      "135"
     ],
     "lpl": [
       "212"
@@ -27743,10 +28865,14 @@
     "machine learning": [
       "194"
     ],
+    "maduro": [
+      "128"
+    ],
     "magnitude": [
       "187"
     ],
     "mainnet": [
+      "119",
       "168",
       "208",
       "229",
@@ -27763,6 +28889,9 @@
     ],
     "major tournament": [
       "304"
+    ],
+    "majority": [
+      "136"
     ],
     "many fed": [
       "78"
@@ -27806,9 +28935,9 @@
       "236",
       "244",
       "246",
-      "251",
       "67",
       "95",
+      "96",
       "97"
     ],
     "market cap above": [
@@ -27830,11 +28959,17 @@
     "market price": [
       "241"
     ],
+    "market resolution": [
+      "99"
+    ],
     "marketplace": [
       "173"
     ],
     "maurice podoloff trophy": [
       "115"
+    ],
+    "mayor": [
+      "131"
     ],
     "mayoral election": [
       "131"
@@ -27925,6 +29060,9 @@
     "meta平台": [
       "270"
     ],
+    "metropolitan": [
+      "131"
+    ],
     "mexico": [
       "274"
     ],
@@ -27952,6 +29090,12 @@
     "middle east": [
       "226"
     ],
+    "midterm": [
+      "136"
+    ],
+    "midterm elections": [
+      "135"
+    ],
     "military": [
       "257",
       "271",
@@ -27964,6 +29108,7 @@
       "238"
     ],
     "military intervention": [
+      "128",
       "274"
     ],
     "minister japan": [
@@ -27971,6 +29116,9 @@
     ],
     "minister japan after": [
       "306"
+    ],
+    "minji": [
+      "132"
     ],
     "mint": [
       "201"
@@ -28000,13 +29148,24 @@
     "model performance": [
       "237"
     ],
+    "model weights": [
+      "89"
+    ],
+    "monetary easing": [
+      "121"
+    ],
     "monetary policy": [
+      "107",
+      "121",
       "153",
       "230",
       "288",
       "61",
       "75",
       "78"
+    ],
+    "monetary tightening": [
+      "121"
     ],
     "most valuable player": [
       "115",
@@ -28056,6 +29215,9 @@
     "much revenue raise": [
       "196"
     ],
+    "mundial": [
+      "79"
+    ],
     "music": [
       "279",
       "284"
@@ -28074,6 +29236,9 @@
       "283",
       "284"
     ],
+    "music show": [
+      "132"
+    ],
     "musk": [
       "198",
       "264"
@@ -28085,9 +29250,6 @@
     "mvp 2026": [
       "115",
       "240"
-    ],
-    "myrnohrad": [
-      "250"
     ],
     "na'vi": [
       "275"
@@ -28129,7 +29291,8 @@
       "115"
     ],
     "national football league": [
-      "240"
+      "240",
+      "81"
     ],
     "native token": [
       "168",
@@ -28151,9 +29314,13 @@
       "187"
     ],
     "nba": [
+      "103",
       "115"
     ],
     "nba champion": [
+      "103"
+    ],
+    "nba finals": [
       "103"
     ],
     "nba mvp": [
@@ -28192,11 +29359,20 @@
     "new listings": [
       "186"
     ],
+    "newjeans": [
+      "132"
+    ],
     "newjeans perform": [
       "132"
     ],
     "newjeans perform again": [
       "132"
+    ],
+    "newjeans女团": [
+      "132"
+    ],
+    "next gen model": [
+      "89"
     ],
     "next president": [
       "301"
@@ -28204,8 +29380,12 @@
     "next president vietnam": [
       "301"
     ],
+    "nfc": [
+      "81"
+    ],
     "nfl": [
-      "240"
+      "240",
+      "81"
     ],
     "nfl mvp": [
       "240"
@@ -28228,10 +29408,16 @@
     "nft marketplace": [
       "173"
     ],
+    "nicolas maduro": [
+      "128"
+    ],
     "nominate fed": [
       "107"
     ],
     "nominate fed chair": [
+      "107"
+    ],
+    "nomination": [
       "107"
     ],
     "nominations": [
@@ -28278,12 +29464,6 @@
       "152",
       "169"
     ],
-    "occupation": [
-      "250"
-    ],
-    "offensive": [
-      "250"
-    ],
     "offering": [
       "163",
       "171"
@@ -28308,6 +29488,9 @@
     ],
     "on-chain data": [
       "234"
+    ],
+    "onchain": [
+      "119"
     ],
     "one day": [
       "173",
@@ -28335,6 +29518,9 @@
       "97",
       "98"
     ],
+    "op stack": [
+      "119"
+    ],
     "open winner": [
       "222",
       "304"
@@ -28342,7 +29528,8 @@
     "openai": [
       "152",
       "163",
-      "171"
+      "171",
+      "89"
     ],
     "openai ipo": [
       "152",
@@ -28363,8 +29550,14 @@
     "opensea fdv above": [
       "173"
     ],
+    "operation": [
+      "128"
+    ],
     "options": [
       "267"
+    ],
+    "oracle": [
+      "99"
     ],
     "oscar": [
       "137",
@@ -28567,7 +29760,9 @@
       "201"
     ],
     "playoffs": [
-      "212"
+      "103",
+      "212",
+      "81"
     ],
     "pm": [
       "306"
@@ -28594,19 +29789,26 @@
       "301"
     ],
     "politics": [
+      "131",
       "202",
       "242",
       "301",
       "307"
     ],
     "poll": [
+      "131",
       "307"
     ],
     "poly": [
-      "208"
+      "208",
+      "99"
+    ],
+    "poly token": [
+      "99"
     ],
     "polymarket": [
-      "208"
+      "208",
+      "99"
     ],
     "polymarket launch": [
       "208",
@@ -28661,7 +29863,8 @@
     ],
     "prediction market": [
       "140",
-      "208"
+      "208",
+      "99"
     ],
     "premier league": [
       "80"
@@ -28690,7 +29893,6 @@
     "price": [
       "183",
       "247",
-      "251",
       "260",
       "264",
       "265",
@@ -28709,19 +29911,14 @@
       "244",
       "246",
       "248",
-      "263"
+      "263",
+      "96"
     ],
     "price bitcoin": [
       "246"
     ],
     "price bitcoin hit": [
       "246"
-    ],
-    "price bnb": [
-      "251"
-    ],
-    "price bnb hit": [
-      "251"
     ],
     "price ethena": [
       "248"
@@ -28762,6 +29959,9 @@
     ],
     "primera division": [
       "82"
+    ],
+    "pro basketball": [
+      "103"
     ],
     "pro league": [
       "212",
@@ -28873,6 +30073,7 @@
       "78"
     ],
     "rate decision": [
+      "121",
       "153",
       "61",
       "75"
@@ -28930,10 +30131,14 @@
     "reed hastings": [
       "277"
     ],
+    "refinancing rate": [
+      "121"
+    ],
     "regime": [
       "258"
     ],
     "regime change": [
+      "128",
       "202",
       "242"
     ],
@@ -28942,10 +30147,14 @@
       "240"
     ],
     "release": [
+      "129",
       "172",
       "201",
       "229",
       "233"
+    ],
+    "release date": [
+      "89"
     ],
     "removal": [
       "202",
@@ -29000,6 +30209,9 @@
       "212",
       "213"
     ],
+    "ring": [
+      "103"
+    ],
     "robo-taxi": [
       "198"
     ],
@@ -29020,14 +30232,7 @@
       "283"
     ],
     "russia": [
-      "238",
-      "250"
-    ],
-    "russia capture": [
-      "250"
-    ],
-    "russia capture all": [
-      "250"
+      "238"
     ],
     "russia military": [
       "238"
@@ -29071,6 +30276,9 @@
     ],
     "sanae takaichi": [
       "306"
+    ],
+    "sanctions": [
+      "128"
     ],
     "satoshi": [
       "112",
@@ -29132,8 +30340,23 @@
     "semiconductor": [
       "268"
     ],
+    "senate": [
+      "136"
+    ],
     "senate 2026": [
       "136"
+    ],
+    "senate race": [
+      "136"
+    ],
+    "senate seat": [
+      "136"
+    ],
+    "seoul": [
+      "131"
+    ],
+    "seoul mayor": [
+      "131"
     ],
     "seoul mayoral": [
       "131"
@@ -29175,6 +30398,9 @@
       "266",
       "268"
     ],
+    "shayne coplan": [
+      "99"
+    ],
     "shinjiro koizumi": [
       "306"
     ],
@@ -29186,9 +30412,6 @@
     ],
     "sidechain": [
       "208"
-    ],
-    "siege": [
-      "250"
     ],
     "silver": [
       "227",
@@ -29235,12 +30458,20 @@
     ],
     "snapshot": [
       "118",
-      "174"
+      "174",
+      "99"
     ],
     "soccer": [
+      "79",
       "80",
       "82",
       "83"
+    ],
+    "soccer championship": [
+      "79"
+    ],
+    "soccer tournament": [
+      "79"
     ],
     "social media": [
       "159",
@@ -29287,6 +30518,9 @@
     "soty": [
       "280"
     ],
+    "south korea": [
+      "131"
+    ],
     "south korean": [
       "130"
     ],
@@ -29325,8 +30559,14 @@
     "spanish league": [
       "82"
     ],
+    "speaker of the house": [
+      "135"
+    ],
     "spending bill": [
       "303"
+    ],
+    "sports": [
+      "103"
     ],
     "spot etf": [
       "246"
@@ -29360,10 +30600,22 @@
     "standard and poor's 500": [
       "186"
     ],
+    "standx": [
+      "96"
+    ],
+    "standx crypto": [
+      "96"
+    ],
     "standx fdv": [
       "96"
     ],
     "standx fdv above": [
+      "96"
+    ],
+    "standx price": [
+      "96"
+    ],
+    "standx token": [
       "96"
     ],
     "starlink": [
@@ -29478,6 +30730,9 @@
     "super bowl champion": [
       "81"
     ],
+    "superbowl": [
+      "81"
+    ],
     "supporting actor": [
       "140"
     ],
@@ -29510,8 +30765,7 @@
       "184"
     ],
     "takeover": [
-      "159",
-      "250"
+      "159"
     ],
     "talks": [
       "276"
@@ -29623,7 +30877,9 @@
       "234",
       "244",
       "67",
-      "97"
+      "96",
+      "97",
+      "99"
     ],
     "thai": [
       "307"
@@ -29636,6 +30892,9 @@
     ],
     "thailand legislative election": [
       "307"
+    ],
+    "the big game": [
+      "81"
     ],
     "theatrical": [
       "275"
@@ -29664,6 +30923,12 @@
     "tim cook": [
       "266"
     ],
+    "title": [
+      "103"
+    ],
+    "title game": [
+      "81"
+    ],
     "title race": [
       "80",
       "82"
@@ -29678,7 +30943,6 @@
       "229",
       "247",
       "248",
-      "251",
       "260",
       "67",
       "95",
@@ -29700,10 +30964,12 @@
       "173",
       "175",
       "232",
-      "233"
+      "233",
+      "96"
     ],
     "token launch": [
       "118",
+      "119",
       "168",
       "172",
       "173",
@@ -29714,7 +30980,9 @@
       "232",
       "233",
       "234",
-      "244"
+      "244",
+      "96",
+      "99"
     ],
     "token sale": [
       "175"
@@ -29728,7 +30996,8 @@
       "194",
       "232",
       "244",
-      "95"
+      "95",
+      "99"
     ],
     "tokyo": [
       "230"
@@ -29751,6 +31020,9 @@
     "total domestic gross": [
       "275"
     ],
+    "tour": [
+      "132"
+    ],
     "tournament": [
       "200"
     ],
@@ -29771,7 +31043,6 @@
       "246",
       "247",
       "248",
-      "251",
       "260",
       "262",
       "263",
@@ -29804,6 +31075,9 @@
     "trading competition winner": [
       "200"
     ],
+    "trading debut": [
+      "96"
+    ],
     "trading platform": [
       "143",
       "175"
@@ -29815,6 +31089,7 @@
       "173"
     ],
     "treasury": [
+      "107",
       "111"
     ],
     "tremor": [
@@ -29825,6 +31100,9 @@
     ],
     "trip": [
       "142"
+    ],
+    "troops": [
+      "128"
     ],
     "trophy": [
       "115",
@@ -29845,6 +31123,7 @@
       "226"
     ],
     "trump": [
+      "107",
       "142",
       "276"
     ],
@@ -29882,6 +31161,12 @@
       "196",
       "273"
     ],
+    "u.s. house": [
+      "135"
+    ],
+    "u.s. senate": [
+      "136"
+    ],
     "ucl": [
       "83"
     ],
@@ -29901,8 +31186,7 @@
       "150"
     ],
     "ukraine": [
-      "202",
-      "250"
+      "202"
     ],
     "ukraine ceasefire": [
       "127"
@@ -29929,6 +31213,12 @@
     "unsupervised full self": [
       "198"
     ],
+    "update": [
+      "129"
+    ],
+    "upper chamber": [
+      "136"
+    ],
     "us": [
       "196",
       "257",
@@ -29941,8 +31231,14 @@
       "75",
       "78"
     ],
+    "us house": [
+      "135"
+    ],
     "us jobs": [
       "273"
+    ],
+    "us senate": [
+      "136"
     ],
     "us stocks": [
       "186",
@@ -29988,6 +31284,9 @@
     "usde": [
       "248"
     ],
+    "usmc": [
+      "128"
+    ],
     "valuation": [
       "152",
       "158",
@@ -30008,14 +31307,24 @@
       "277",
       "67",
       "95",
+      "96",
       "97",
       "98"
+    ],
+    "venezuela": [
+      "128"
+    ],
+    "version 5": [
+      "129"
     ],
     "video sharing": [
       "159"
     ],
     "vietnam": [
       "301"
+    ],
+    "vince lombardi trophy": [
+      "81"
     ],
     "violation": [
       "226"
@@ -30037,6 +31346,7 @@
       "202"
     ],
     "vote": [
+      "131",
       "301",
       "307"
     ],
@@ -30060,13 +31370,19 @@
       "234"
     ],
     "war": [
+      "128",
       "226",
       "238",
-      "250",
       "257",
       "271",
       "274",
       "302"
+    ],
+    "washington": [
+      "128"
+    ],
+    "wc": [
+      "79"
     ],
     "wealth": [
       "236"
@@ -30093,15 +31409,11 @@
       "246",
       "247",
       "248",
-      "251",
       "260",
       "262"
     ],
     "what price bitcoin": [
       "246"
-    ],
-    "what price bnb": [
-      "251"
     ],
     "what price ethena": [
       "248"
@@ -30218,6 +31530,9 @@
     "world cup": [
       "79"
     ],
+    "world cup 2026": [
+      "79"
+    ],
     "world cup winner": [
       "79"
     ],
@@ -30236,6 +31551,12 @@
     "xag": [
       "227",
       "287"
+    ],
+    "xai": [
+      "129"
+    ],
+    "xai model": [
+      "129"
     ],
     "xau": [
       "241",
@@ -30287,6 +31608,9 @@
     "zuck": [
       "270"
     ],
+    "世界杯": [
+      "79"
+    ],
     "中情局": [
       "237"
     ],
@@ -30318,9 +31642,11 @@
       "271",
       "302"
     ],
+    "众议院": [
+      "135"
+    ],
     "俄罗斯": [
-      "238",
-      "250"
+      "238"
     ],
     "全自动驾驶": [
       "198"
@@ -30344,6 +31670,9 @@
     "国家主席": [
       "301"
     ],
+    "国际足联世界杯": [
+      "79"
+    ],
     "墨西哥": [
       "274"
     ],
@@ -30365,6 +31694,9 @@
       "210",
       "211"
     ],
+    "委内瑞拉": [
+      "128"
+    ],
     "学院奖": [
       "133",
       "137",
@@ -30378,9 +31710,6 @@
     "小狐狸": [
       "118",
       "189"
-    ],
-    "币安币": [
-      "251"
     ],
     "开放人工智能": [
       "152",
@@ -30424,6 +31753,12 @@
       "186",
       "263"
     ],
+    "格罗克": [
+      "129"
+    ],
+    "格罗克 5": [
+      "129"
+    ],
     "格莱美": [
       "279",
       "280",
@@ -30431,8 +31766,14 @@
       "283",
       "284"
     ],
+    "欧洲中央银行": [
+      "121"
+    ],
     "欧洲冠军联赛": [
       "83"
+    ],
+    "欧洲央行": [
+      "121"
     ],
     "比特币": [
       "111",
@@ -30456,6 +31797,7 @@
       "264"
     ],
     "特朗普": [
+      "107",
       "142",
       "276"
     ],
@@ -30468,9 +31810,6 @@
     "立法选举": [
       "307"
     ],
-    "米尔诺格勒": [
-      "250"
-    ],
     "索拉纳": [
       "260"
     ],
@@ -30481,16 +31820,25 @@
       "115",
       "237"
     ],
+    "美国参议院": [
+      "136"
+    ],
     "美国国家橄榄球联盟": [
       "240"
     ],
     "美国职业篮球": [
+      "103",
       "115"
     ],
+    "美国职业篮球联赛": [
+      "103"
+    ],
     "美职篮": [
+      "103",
       "115"
     ],
     "美联储": [
+      "107",
       "153",
       "238",
       "303",
@@ -30499,10 +31847,14 @@
       "78"
     ],
     "美联储主席": [
+      "107",
       "300"
     ],
     "联邦停摆": [
       "303"
+    ],
+    "联邦储备": [
+      "107"
     ],
     "英伟达": [
       "268"
@@ -30512,6 +31864,9 @@
     ],
     "英雄联盟职业联赛": [
       "212"
+    ],
+    "超级碗": [
+      "81"
     ],
     "阿凡达3": [
       "275"
@@ -30527,6 +31882,9 @@
     ],
     "韩国英雄联盟职业联赛": [
       "213"
+    ],
+    "首尔市长": [
+      "131"
     ],
     "首席执行官": [
       "193"
