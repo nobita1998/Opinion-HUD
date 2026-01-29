@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-01-29 16:56:04 UTC+8",
+    "generatedAt": "2026-01-30 00:56:22 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,27 +8,27 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 600,
-      "markets": 197,
-      "keywords": 2072,
+      "kept": 571,
+      "markets": 190,
+      "keywords": 1997,
       "events": {
-        "events": 115
+        "events": 107
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 395,
+        "cutoff_expired": 419,
         "cutoff_zero_kept": 46,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
-        "title_pattern_filtered": 5
+        "title_pattern_filtered": 10
       },
       "ai": {
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 114,
+        "reused": 106,
         "regenerated_empty_entitygroups": 1,
         "calls": 1,
         "retries": 1,
@@ -40,175 +40,6 @@
     }
   },
   "events": {
-    "230": {
-      "title": "Bank of Japan Decision in March?",
-      "marketIds": [
-        "230"
-      ],
-      "bestMarketId": "230",
-      "bestLabels": null,
-      "keywords": [
-        "bank of japan",
-        "boj",
-        "interest rates",
-        "monetary policy",
-        "rate hike",
-        "rate cut",
-        "policy meeting",
-        "kazuo ueda",
-        "japanese yen",
-        "jgb",
-        "negative rates",
-        "yield curve control",
-        "tightening",
-        "easing",
-        "tokyo",
-        "bank japan",
-        "japan decision",
-        "decision march",
-        "bank japan decision",
-        "japan decision march"
-      ],
-      "entities": [
-        "bank of japan"
-      ],
-      "entityGroups": [
-        [
-          "bank of japan",
-          "日本央行",
-          "日本银行"
-        ]
-      ],
-      "sig": "56216aba",
-      "sigFull": "56216aba",
-      "sigCore": "1238bb44",
-      "reused": false
-    },
-    "229": {
-      "title": "Will Exponent launch a token by ...?",
-      "marketIds": [
-        "229"
-      ],
-      "bestMarketId": "229",
-      "bestLabels": null,
-      "keywords": [
-        "exponent",
-        "token",
-        "launch",
-        "crypto",
-        "airdrop",
-        "tge",
-        "listing",
-        "mainnet",
-        "project",
-        "ido",
-        "ieo",
-        "release",
-        "smart contract",
-        "blockchain",
-        "exponent launch",
-        "launch token",
-        "exponent launch token"
-      ],
-      "entities": [
-        "exponent"
-      ],
-      "entityGroups": [
-        [
-          "exponent"
-        ]
-      ],
-      "sig": "15c37d27",
-      "sigFull": "15c37d27",
-      "sigCore": "728e3844",
-      "reused": false
-    },
-    "227": {
-      "title": "Will Silver hit ... by end of January?",
-      "marketIds": [
-        "227"
-      ],
-      "bestMarketId": "227",
-      "bestLabels": null,
-      "keywords": [
-        "silver",
-        "xag",
-        "precious metals",
-        "commodity",
-        "spot price",
-        "bullion",
-        "ag",
-        "white metal",
-        "silver price",
-        "trading",
-        "investing",
-        "hedge",
-        "inflation",
-        "industrial metal",
-        "safe haven",
-        "silver hit",
-        "hit january",
-        "silver hit january"
-      ],
-      "entities": [
-        "silver"
-      ],
-      "entityGroups": [
-        [
-          "silver"
-        ]
-      ],
-      "sig": "ab3f967b",
-      "sigFull": "ab3f967b",
-      "sigCore": "af9f2c36",
-      "reused": false
-    },
-    "226": {
-      "title": "Israel x Iran ceasefire broken by...?",
-      "marketIds": [
-        "226"
-      ],
-      "bestMarketId": "226",
-      "bestLabels": null,
-      "keywords": [
-        "israel",
-        "iran",
-        "war",
-        "ceasefire",
-        "truce",
-        "conflict",
-        "hostilities",
-        "escalation",
-        "breach",
-        "violation",
-        "idf",
-        "irgc",
-        "middle east",
-        "armistice",
-        "israel iran",
-        "iran ceasefire",
-        "ceasefire broken",
-        "israel iran ceasefire",
-        "iran ceasefire broken"
-      ],
-      "entities": [
-        "israel",
-        "iran"
-      ],
-      "entityGroups": [
-        [
-          "israel",
-          "以色列"
-        ],
-        [
-          "iran"
-        ]
-      ],
-      "sig": "07cb6df9",
-      "sigFull": "07cb6df9",
-      "sigCore": "e673ee48",
-      "reused": false
-    },
     "222": {
       "title": "2026 Men's Australian Open Winner",
       "marketIds": [
@@ -2097,167 +1928,6 @@
       "sig": "809f5cfd",
       "sigFull": "809f5cfd",
       "sigCore": "0b6865cd",
-      "reused": false
-    },
-    "234": {
-      "title": "Will Nansen launch a token by ...?",
-      "marketIds": [
-        "234"
-      ],
-      "bestMarketId": "234",
-      "bestLabels": null,
-      "keywords": [
-        "nansen",
-        "nansen token",
-        "airdrop",
-        "crypto analytics",
-        "on-chain data",
-        "blockchain analytics",
-        "token launch",
-        "tge",
-        "governance token",
-        "nansen dao",
-        "smart money",
-        "wallet profiler",
-        "nansen 2",
-        "nansen query",
-        "crypto research",
-        "nansen launch",
-        "launch token",
-        "nansen launch token"
-      ],
-      "entities": [
-        "nansen"
-      ],
-      "entityGroups": [
-        [
-          "nansen"
-        ]
-      ],
-      "sig": "65e312b9",
-      "sigFull": "65e312b9",
-      "sigCore": "779a6296",
-      "reused": false
-    },
-    "233": {
-      "title": "Will Loopscale launch a token by ...?",
-      "marketIds": [
-        "233"
-      ],
-      "bestMarketId": "233",
-      "bestLabels": null,
-      "keywords": [
-        "loopscale",
-        "token launch",
-        "tge",
-        "airdrop",
-        "crypto",
-        "blockchain",
-        "listing",
-        "mainnet",
-        "token generation event",
-        "release",
-        "ico",
-        "ido",
-        "ieo",
-        "presale",
-        "announcement",
-        "loopscale launch",
-        "launch token",
-        "loopscale launch token"
-      ],
-      "entities": [
-        "loopscale"
-      ],
-      "entityGroups": [
-        [
-          "loopscale"
-        ]
-      ],
-      "sig": "98c61ff8",
-      "sigFull": "98c61ff8",
-      "sigCore": "8ee83eb5",
-      "reused": false
-    },
-    "232": {
-      "title": "Will Perena launch a token by ...?",
-      "marketIds": [
-        "232"
-      ],
-      "bestMarketId": "232",
-      "bestLabels": null,
-      "keywords": [
-        "perena",
-        "token launch",
-        "tge",
-        "airdrop",
-        "perena protocol",
-        "crypto token",
-        "perena coin",
-        "token generation event",
-        "listing",
-        "mainnet",
-        "perena network",
-        "tokenomics",
-        "governance token",
-        "defi",
-        "perena launch",
-        "launch token",
-        "perena launch token"
-      ],
-      "entities": [
-        "perena"
-      ],
-      "entityGroups": [
-        [
-          "perena"
-        ]
-      ],
-      "sig": "e4389011",
-      "sigFull": "e4389011",
-      "sigCore": "f5efdfee",
-      "reused": false
-    },
-    "236": {
-      "title": "Largest Company end of January?",
-      "marketIds": [
-        "236"
-      ],
-      "bestMarketId": "236",
-      "bestLabels": null,
-      "keywords": [
-        "market cap",
-        "valuation",
-        "biggest",
-        "top",
-        "ranking",
-        "tech giants",
-        "trillion",
-        "stock price",
-        "equity",
-        "corporation",
-        "business",
-        "enterprise",
-        "size",
-        "scale",
-        "wealth",
-        "largest company",
-        "company january",
-        "largest company january"
-      ],
-      "entities": [
-        "largest company"
-      ],
-      "entityGroups": [
-        [
-          "largest company",
-          "最大的公司",
-          "最有价值的公司"
-        ]
-      ],
-      "sig": "63a5352e",
-      "sigFull": "63a5352e",
-      "sigCore": "fbe075a8",
       "reused": false
     },
     "242": {
@@ -5275,309 +4945,6 @@
     }
   },
   "markets": {
-    "230": {
-      "title": "Bank of Japan Decision in March?",
-      "url": "https://app.opinion.trade/market/230?ref=opinion_hud",
-      "yesTokenId": "95354742882489544919647358838383408573015997821743708421112003822052182456547",
-      "noTokenId": "21299033534455303144398267042271113912909195462774130669035125480129228555602",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bank of japan",
-        "boj",
-        "interest rates",
-        "monetary policy",
-        "rate hike",
-        "rate cut",
-        "policy meeting",
-        "kazuo ueda",
-        "japanese yen",
-        "jgb",
-        "negative rates",
-        "yield curve control",
-        "tightening",
-        "easing",
-        "tokyo",
-        "bank japan",
-        "japan decision",
-        "decision march",
-        "bank japan decision",
-        "japan decision march"
-      ],
-      "entities": [
-        "bank of japan"
-      ],
-      "entityGroups": [
-        [
-          "bank of japan",
-          "日本央行",
-          "日本银行"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3349",
-          "title": "Decrease",
-          "yesTokenId": "2827846251613766004406684609881214698035387143529868376251861912769240338851",
-          "noTokenId": "34737336250599813085421949148691317784605135744276247571182747061237445273356"
-        },
-        {
-          "marketId": "3350",
-          "title": "No change",
-          "yesTokenId": "49806328595737114552465562164287212527706095705458679080347395398812836583794",
-          "noTokenId": "72016222535839390082968944895838163314147684005398185837532281695024662503788"
-        },
-        {
-          "marketId": "3351",
-          "title": "25 bps increase",
-          "yesTokenId": "42686282385732335307432231365553399523683073633423324664141224666418822589049",
-          "noTokenId": "62207129451491380782861457108758292883879993657198436847803590920302616293884"
-        },
-        {
-          "marketId": "3352",
-          "title": "50+ bps increase",
-          "yesTokenId": "95354742882489544919647358838383408573015997821743708421112003822052182456547",
-          "noTokenId": "21299033534455303144398267042271113912909195462774130669035125480129228555602"
-        }
-      ]
-    },
-    "229": {
-      "title": "Will Exponent launch a token by ...?",
-      "url": "https://app.opinion.trade/market/229?ref=opinion_hud",
-      "yesTokenId": "115702856232653468399424977587683133912717133410511075608407480423528045892108",
-      "noTokenId": "47258376111758653751833936573974637458624001086058989436969424841600379938255",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "exponent",
-        "token",
-        "launch",
-        "crypto",
-        "airdrop",
-        "tge",
-        "listing",
-        "mainnet",
-        "project",
-        "ido",
-        "ieo",
-        "release",
-        "smart contract",
-        "blockchain",
-        "exponent launch",
-        "launch token",
-        "exponent launch token"
-      ],
-      "entities": [
-        "exponent"
-      ],
-      "entityGroups": [
-        [
-          "exponent"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3341",
-          "title": "March 31, 2026",
-          "yesTokenId": "3460375970891495126122752527934713410119654188774210039937802416282732845337",
-          "noTokenId": "82705578281233708439036408253263604094090177413725054219931573996346155352722"
-        },
-        {
-          "marketId": "3342",
-          "title": "June 30, 2026",
-          "yesTokenId": "35312435012894555674539783058151251874657539918824654041349035822265306231125",
-          "noTokenId": "16083431755229291179841959276332498817162248905139740671871370917581347447162"
-        },
-        {
-          "marketId": "3343",
-          "title": "September 30, 2026",
-          "yesTokenId": "103300121988931305550773797226374607775874914161796825818422630026393258646855",
-          "noTokenId": "97379018936779878987658408978870026065324362936631550470114447309672345382068"
-        },
-        {
-          "marketId": "3344",
-          "title": "December 31, 2026",
-          "yesTokenId": "115702856232653468399424977587683133912717133410511075608407480423528045892108",
-          "noTokenId": "47258376111758653751833936573974637458624001086058989436969424841600379938255"
-        }
-      ]
-    },
-    "227": {
-      "title": "Will Silver hit ... by end of January?",
-      "url": "https://app.opinion.trade/market/227?ref=opinion_hud",
-      "yesTokenId": "26160153600417413512628047437796564041705552052405609412714301705365289964255",
-      "noTokenId": "87657611040149724757267512997885412257764061344826563910562009535812946532473",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "keywords": [
-        "silver",
-        "xag",
-        "precious metals",
-        "commodity",
-        "spot price",
-        "bullion",
-        "ag",
-        "white metal",
-        "silver price",
-        "trading",
-        "investing",
-        "hedge",
-        "inflation",
-        "industrial metal",
-        "safe haven",
-        "silver hit",
-        "hit january",
-        "silver hit january"
-      ],
-      "entities": [
-        "silver"
-      ],
-      "entityGroups": [
-        [
-          "silver"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3327",
-          "title": "↑ $120",
-          "yesTokenId": "106192753718405248236978163860439147811450587009394816151974079482281872375157",
-          "noTokenId": "112298457632025832780026801472504627846850806200984171028907747842881336852493"
-        },
-        {
-          "marketId": "3334",
-          "title": "↓ $70",
-          "yesTokenId": "26160153600417413512628047437796564041705552052405609412714301705365289964255",
-          "noTokenId": "87657611040149724757267512997885412257764061344826563910562009535812946532473"
-        },
-        {
-          "marketId": "3335",
-          "title": "↓ $65",
-          "yesTokenId": "8438395948820059587890962858879448567643390788884347381700638338917224058378",
-          "noTokenId": "51375175113228442371082834458433063016478028837569538331511619931425318821552"
-        },
-        {
-          "marketId": "3336",
-          "title": "↓ $55",
-          "yesTokenId": "29889437599605169668954152988718947441581756725312999510659429469548918067544",
-          "noTokenId": "45087281180465825918780675978710409420314268444041592292761351538324071163182"
-        },
-        {
-          "marketId": "3328",
-          "title": "↑ $110",
-          "yesTokenId": "82430086018580495970541579359425454811641113206731584860815196159108692084181",
-          "noTokenId": "54531180597809543613125985080125583247462568043038189794315515516079086772074"
-        },
-        {
-          "marketId": "3329",
-          "title": "↑ $100",
-          "yesTokenId": "78938134709405185929701623862783857107694534221926081617090644465984048576608",
-          "noTokenId": "7074744244578807931410735739464233480292948700027505117400100138332253851337"
-        },
-        {
-          "marketId": "3330",
-          "title": "↑ $90",
-          "yesTokenId": "99281863265236056840792188710553611597601838822124655032307841034346655441252",
-          "noTokenId": "103472782682043556754704599953690874773243145778591307418715134458648848290416"
-        },
-        {
-          "marketId": "3331",
-          "title": "↑ $85",
-          "yesTokenId": "78510260829900793236765740237220487832438693344334511652572153129366393511982",
-          "noTokenId": "52444869197976161391961421695790417648208530654410450867507377834034934105037"
-        },
-        {
-          "marketId": "3332",
-          "title": "↑ $80",
-          "yesTokenId": "66782579451809854581336957342825388826696364568262019911649475944831275613232",
-          "noTokenId": "13328016256696458552333588901893209998287853245514902838827258909792084860772"
-        },
-        {
-          "marketId": "3333",
-          "title": "↓ $75",
-          "yesTokenId": "105401132772680912989149140882950556538496891030192750314549268060388935825600",
-          "noTokenId": "427851980347169763233501115633131423007464025705958695767756190510649817987"
-        }
-      ]
-    },
-    "226": {
-      "title": "Israel x Iran ceasefire broken by...?",
-      "url": "https://app.opinion.trade/market/226?ref=opinion_hud",
-      "yesTokenId": "1219112381288056901027283762463790890119213354827936704262477508628698772427",
-      "noTokenId": "89347424375919392434870031749975988065377094517049095113552531083838105618029",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "israel",
-        "iran",
-        "war",
-        "ceasefire",
-        "truce",
-        "conflict",
-        "hostilities",
-        "escalation",
-        "breach",
-        "violation",
-        "idf",
-        "irgc",
-        "middle east",
-        "armistice",
-        "israel iran",
-        "iran ceasefire",
-        "ceasefire broken",
-        "israel iran ceasefire",
-        "iran ceasefire broken"
-      ],
-      "entities": [
-        "israel",
-        "iran"
-      ],
-      "entityGroups": [
-        [
-          "israel",
-          "以色列"
-        ],
-        [
-          "iran"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3323",
-          "title": "March 31, 2026",
-          "yesTokenId": "109943271323046684123437575201797824636632422252265147418369757262218064450923",
-          "noTokenId": "63654989360731200233512315436530053116979948145944727183141991131037865708294"
-        },
-        {
-          "marketId": "3324",
-          "title": "June 30, 2026",
-          "yesTokenId": "1219112381288056901027283762463790890119213354827936704262477508628698772427",
-          "noTokenId": "89347424375919392434870031749975988065377094517049095113552531083838105618029"
-        },
-        {
-          "marketId": "3322",
-          "title": "December 31, 2025",
-          "yesTokenId": "47062050506028745524329299661522909680782432896355545055649402613277823432134",
-          "noTokenId": "49601187976214391003018186780568158130430327519634969953883390406024245662584"
-        }
-      ]
-    },
     "222": {
       "title": "2026 Men's Australian Open Winner",
       "url": "https://app.opinion.trade/market/222?ref=opinion_hud",
@@ -5798,8 +5165,8 @@
     "217": {
       "title": "Logan Paul’s Pikachu Illustrator Sale Price",
       "url": "https://app.opinion.trade/market/217?ref=opinion_hud",
-      "yesTokenId": "113485738141713319431123088732645191218832539669273333341350183815439329436948",
-      "noTokenId": "18859690233672737778668202448265409570222677150172285454269803890052726098612",
+      "yesTokenId": "109381708977389229777958426722725159145839134984784403676910798537885307818714",
+      "noTokenId": "96214927952920539953166535646626784140041213242648768900381987249005503220465",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10485,203 +9852,6 @@
         ]
       ]
     },
-    "234": {
-      "title": "Will Nansen launch a token by ...?",
-      "url": "https://app.opinion.trade/market/234?ref=opinion_hud",
-      "yesTokenId": "10795130167423016164245161636418892082419682296699262137652567836664580809370",
-      "noTokenId": "41696127868205439758689684843863061303680612555818834714571543120257861093838",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "nansen",
-        "nansen token",
-        "airdrop",
-        "crypto analytics",
-        "on-chain data",
-        "blockchain analytics",
-        "token launch",
-        "tge",
-        "governance token",
-        "nansen dao",
-        "smart money",
-        "wallet profiler",
-        "nansen 2",
-        "nansen query",
-        "crypto research",
-        "nansen launch",
-        "launch token",
-        "nansen launch token"
-      ],
-      "entities": [
-        "nansen"
-      ],
-      "entityGroups": [
-        [
-          "nansen"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3410",
-          "title": "March 31, 2026",
-          "yesTokenId": "72379689033837772624561528952286089261926066666758511403261054712855099789783",
-          "noTokenId": "101746785351718498645275463482533469807556338402388999984090081872192421917734"
-        },
-        {
-          "marketId": "3411",
-          "title": "June 30, 2026",
-          "yesTokenId": "95021116774030237012252900809537722656013308667603305368893512092366639239281",
-          "noTokenId": "109068237909965667181747501994977816936601600543463819246746856888120206453707"
-        },
-        {
-          "marketId": "3412",
-          "title": "September 30, 2026",
-          "yesTokenId": "37839456739749152056356543952440166398444718137580229321057970363041611236404",
-          "noTokenId": "91789352775646519349748572527595010101334863095042962272432865576453183045296"
-        },
-        {
-          "marketId": "3413",
-          "title": "December 31, 2026",
-          "yesTokenId": "10795130167423016164245161636418892082419682296699262137652567836664580809370",
-          "noTokenId": "41696127868205439758689684843863061303680612555818834714571543120257861093838"
-        }
-      ]
-    },
-    "233": {
-      "title": "Will Loopscale launch a token by ...?",
-      "url": "https://app.opinion.trade/market/233?ref=opinion_hud",
-      "yesTokenId": "12573996177000118938520311806062645788340247899747384369411279678217875295018",
-      "noTokenId": "17412779732187498983240521290686761298024312920204666753469581204345021098754",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "loopscale",
-        "token launch",
-        "tge",
-        "airdrop",
-        "crypto",
-        "blockchain",
-        "listing",
-        "mainnet",
-        "token generation event",
-        "release",
-        "ico",
-        "ido",
-        "ieo",
-        "presale",
-        "announcement",
-        "loopscale launch",
-        "launch token",
-        "loopscale launch token"
-      ],
-      "entities": [
-        "loopscale"
-      ],
-      "entityGroups": [
-        [
-          "loopscale"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3406",
-          "title": "March 31, 2026",
-          "yesTokenId": "80336183150254028240342189814661707446964820297850067926359130498911384294300",
-          "noTokenId": "9024174701895937369350239229856062750576724219528602115130543489670585709495"
-        },
-        {
-          "marketId": "3407",
-          "title": "June 30, 2026",
-          "yesTokenId": "100637977411816043113949437748390929937686066815219906887540702710677241730519",
-          "noTokenId": "106903807671281868048278669404674812267258512369965014594633979202774035318281"
-        },
-        {
-          "marketId": "3408",
-          "title": "September 30, 2026",
-          "yesTokenId": "53494338951302771713048237934649784113091840868477449605063185079570662199919",
-          "noTokenId": "3568635167660328677725873843353731781203107423240431010793717364752491886141"
-        },
-        {
-          "marketId": "3409",
-          "title": "December 31, 2026",
-          "yesTokenId": "12573996177000118938520311806062645788340247899747384369411279678217875295018",
-          "noTokenId": "17412779732187498983240521290686761298024312920204666753469581204345021098754"
-        }
-      ]
-    },
-    "232": {
-      "title": "Will Perena launch a token by ...?",
-      "url": "https://app.opinion.trade/market/232?ref=opinion_hud",
-      "yesTokenId": "109300971089528206112417565419216034289378114953355426339725975652940366596799",
-      "noTokenId": "76243752292297420774619265337710669750211496356151229167532414157844015918183",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "perena",
-        "token launch",
-        "tge",
-        "airdrop",
-        "perena protocol",
-        "crypto token",
-        "perena coin",
-        "token generation event",
-        "listing",
-        "mainnet",
-        "perena network",
-        "tokenomics",
-        "governance token",
-        "defi",
-        "perena launch",
-        "launch token",
-        "perena launch token"
-      ],
-      "entities": [
-        "perena"
-      ],
-      "entityGroups": [
-        [
-          "perena"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3402",
-          "title": "March 31, 2026",
-          "yesTokenId": "102341396616975183960138827700082404215375920296986674518243750424750714013201",
-          "noTokenId": "41284881932805785960054700744541840506562299614814100225032272513413135565713"
-        },
-        {
-          "marketId": "3403",
-          "title": "June 30, 2026",
-          "yesTokenId": "16896346954520677410762499309528635166489540047711889053488109309294157900515",
-          "noTokenId": "35364817953320639438942656142564109729266731837146161343549784342752062102119"
-        },
-        {
-          "marketId": "3404",
-          "title": "September 30, 2026",
-          "yesTokenId": "3487780023856739534401123363382864190741150234467842889057844770075393000724",
-          "noTokenId": "25746402204909199088511805779173277669901730989284816683152769313478648173256"
-        },
-        {
-          "marketId": "3405",
-          "title": "December 31, 2026",
-          "yesTokenId": "109300971089528206112417565419216034289378114953355426339725975652940366596799",
-          "noTokenId": "76243752292297420774619265337710669750211496356151229167532414157844015918183"
-        }
-      ]
-    },
     "3441": {
       "title": ">$3B",
       "url": "https://app.opinion.trade/market/3441?ref=opinion_hud",
@@ -10693,74 +9863,6 @@
         "noLabel": ""
       },
       "type": "binary"
-    },
-    "236": {
-      "title": "Largest Company end of January?",
-      "url": "https://app.opinion.trade/market/236?ref=opinion_hud",
-      "yesTokenId": "42896394517944593060508201678877424636144041381362479727455083369058791604068",
-      "noTokenId": "111545416522900750595326077082147056647344096826562779371251730241064719543984",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "market cap",
-        "valuation",
-        "biggest",
-        "top",
-        "ranking",
-        "tech giants",
-        "trillion",
-        "stock price",
-        "equity",
-        "corporation",
-        "business",
-        "enterprise",
-        "size",
-        "scale",
-        "wealth",
-        "largest company",
-        "company january",
-        "largest company january"
-      ],
-      "entities": [
-        "largest company"
-      ],
-      "entityGroups": [
-        [
-          "largest company",
-          "最大的公司",
-          "最有价值的公司"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3436",
-          "title": "Nvidia",
-          "yesTokenId": "98598345105724425231996460905770028258241598282916200865021903631858879368659",
-          "noTokenId": "73032218533883501840491186035840211294006503910193843191671845582502015322254"
-        },
-        {
-          "marketId": "3437",
-          "title": "Apple",
-          "yesTokenId": "42896394517944593060508201678877424636144041381362479727455083369058791604068",
-          "noTokenId": "111545416522900750595326077082147056647344096826562779371251730241064719543984"
-        },
-        {
-          "marketId": "3438",
-          "title": "Alphabet",
-          "yesTokenId": "56912136469838622482785907750648666260114494364328056991229317083146499856544",
-          "noTokenId": "35979608201987255086537775734132081534329059019331428903572693351375169885726"
-        },
-        {
-          "marketId": "3439",
-          "title": "Microsoft",
-          "yesTokenId": "95641519694439319356945363912806402101397154646601140484919954248331033556438",
-          "noTokenId": "11311397825609479921415757177032639753602233851666924012544765856280043671895"
-        }
-      ]
     },
     "3449": {
       "title": "June 30, 2026",
@@ -16928,42 +16030,6 @@
       },
       "type": "binary"
     },
-    "4930": {
-      "title": "BTC Up or Down - Hourly (Jan 29, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4930?ref=opinion_hud",
-      "yesTokenId": "79419150954140587718435782933953382619181296603746312878002533714889071284834",
-      "noTokenId": "115168377905437949191191955127813808370291820081611208531224077926782811847338",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "4929": {
-      "title": "BNB Up or Down - Hourly (Jan 29, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4929?ref=opinion_hud",
-      "yesTokenId": "107760654172199477140416446559285076855045097575732224147319490838726860470939",
-      "noTokenId": "95050016206216133172015230434422572620921879760814277900175165879455200696029",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "4931": {
-      "title": "ETH Up or Down - Hourly (Jan 29, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4931?ref=opinion_hud",
-      "yesTokenId": "70348075475795794971523292454285026116676124267974788709363035614690219328348",
-      "noTokenId": "71834529757354905520143044216240566213080222973232416629431491969205510823795",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "4932": {
       "title": "RIVER FDV hit $10B by Feb 10?",
       "url": "https://app.opinion.trade/market/4932?ref=opinion_hud",
@@ -16973,6 +16039,54 @@
       "labels": {
         "yesLabel": "YES",
         "noLabel": "NO"
+      },
+      "type": "binary"
+    },
+    "4961": {
+      "title": "ETH Up or Down - Hourly (Jan 29, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4961?ref=opinion_hud",
+      "yesTokenId": "11957387638044200389286930565152854983701992156056723345400710541872079459241",
+      "noTokenId": "109189046879457406405144114568169260665303429724962335308011172611650349373954",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "4959": {
+      "title": "BNB Up or Down - Hourly (Jan 29, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4959?ref=opinion_hud",
+      "yesTokenId": "70817889976933298655110259335817870671249301951675651067240732696436245946061",
+      "noTokenId": "63527213527927454658715951822901070187860129497849287147906320924301879794968",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "4960": {
+      "title": "BTC Up or Down - Hourly (Jan 29, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4960?ref=opinion_hud",
+      "yesTokenId": "73169562875653510784483238803112799706213082426315926456661855359081110085597",
+      "noTokenId": "48645350338297103728826867347625636878357286043340149528299372631400683868834",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "4965": {
+      "title": "Bitcoin Up or Down on January 30?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/4965?ref=opinion_hud",
+      "yesTokenId": "87264564541833870895713554357238561408603659716220353304406503922739362169596",
+      "noTokenId": "27476207984747552913438822523099591587264428015065877637713963816291953399655",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
@@ -17387,7 +16501,6 @@
       "306"
     ],
     "ag": [
-      "227",
       "287"
     ],
     "aggression": [
@@ -17433,10 +16546,6 @@
       "192",
       "194",
       "201",
-      "229",
-      "232",
-      "233",
-      "234",
       "3361",
       "3366",
       "67",
@@ -17533,7 +16642,6 @@
       "269"
     ],
     "announcement": [
-      "233",
       "3257",
       "89"
     ],
@@ -17629,9 +16737,6 @@
     ],
     "armageddon": [
       "2670"
-    ],
-    "armistice": [
-      "226"
     ],
     "ars": [
       "288"
@@ -17783,15 +16888,6 @@
     "banco central": [
       "288"
     ],
-    "bank japan": [
-      "230"
-    ],
-    "bank japan decision": [
-      "230"
-    ],
-    "bank of japan": [
-      "230"
-    ],
     "banking": [
       "107"
     ],
@@ -17935,9 +17031,6 @@
     "bible prophecy": [
       "2670"
     ],
-    "biggest": [
-      "236"
-    ],
     "binance": [
       "3368",
       "3369"
@@ -17996,17 +17089,12 @@
       "194",
       "205",
       "208",
-      "229",
-      "233",
       "260",
       "3361",
       "3364",
       "3365",
       "95",
       "98"
-    ],
-    "blockchain analytics": [
-      "234"
     ],
     "blockchain upgrade": [
       "3256"
@@ -18043,9 +17131,6 @@
     "bnb token": [
       "3368"
     ],
-    "boj": [
-      "230"
-    ],
     "bombardment": [
       "302"
     ],
@@ -18071,9 +17156,6 @@
     ],
     "bp": [
       "2178"
-    ],
-    "breach": [
-      "226"
     ],
     "breakout": [
       "3364",
@@ -18111,7 +17193,6 @@
       "112"
     ],
     "bullion": [
-      "227",
       "262",
       "287"
     ],
@@ -18120,9 +17201,6 @@
     ],
     "bunnies": [
       "132"
-    ],
-    "business": [
-      "236"
     ],
     "business cycle": [
       "3265"
@@ -18178,12 +17256,6 @@
     ],
     "cdpj": [
       "306"
-    ],
-    "ceasefire": [
-      "226"
-    ],
-    "ceasefire broken": [
-      "226"
     ],
     "celebrity": [
       "137",
@@ -18412,7 +17484,6 @@
       "3369"
     ],
     "commodity": [
-      "227",
       "262",
       "287"
     ],
@@ -18424,9 +17495,6 @@
     ],
     "companies added 500": [
       "186"
-    ],
-    "company january": [
-      "236"
     ],
     "competition": [
       "200"
@@ -18448,7 +17516,6 @@
     ],
     "conflict": [
       "128",
-      "226",
       "257",
       "271",
       "274",
@@ -18506,9 +17573,6 @@
     "cook out apple": [
       "2368"
     ],
-    "corporation": [
-      "236"
-    ],
     "council": [
       "130"
     ],
@@ -18555,8 +17619,6 @@
       "194",
       "201",
       "208",
-      "229",
-      "233",
       "260",
       "3359",
       "3361",
@@ -18567,9 +17629,6 @@
       "95",
       "97",
       "98"
-    ],
-    "crypto analytics": [
-      "234"
     ],
     "crypto betting": [
       "99"
@@ -18585,16 +17644,12 @@
     "crypto hack over": [
       "3360"
     ],
-    "crypto research": [
-      "234"
-    ],
     "crypto theft": [
       "3360"
     ],
     "crypto token": [
       "168",
-      "175",
-      "232"
+      "175"
     ],
     "crypto trading": [
       "173"
@@ -18738,7 +17793,6 @@
       "61"
     ],
     "decision march": [
-      "230",
       "75"
     ],
     "defi": [
@@ -18746,7 +17800,6 @@
       "1721",
       "184",
       "192",
-      "232",
       "260",
       "3361",
       "67",
@@ -18954,7 +18007,6 @@
       "2668"
     ],
     "easing": [
-      "230",
       "78"
     ],
     "ecb": [
@@ -19076,9 +18128,6 @@
     "english premier league": [
       "80"
     ],
-    "enterprise": [
-      "236"
-    ],
     "entertainment": [
       "137"
     ],
@@ -19100,7 +18149,6 @@
       "169",
       "171",
       "204",
-      "236",
       "264",
       "265",
       "266",
@@ -19117,7 +18165,6 @@
       "118"
     ],
     "escalation": [
-      "226",
       "257",
       "271",
       "302",
@@ -19240,15 +18287,6 @@
     ],
     "exploit": [
       "3360"
-    ],
-    "exponent": [
-      "229"
-    ],
-    "exponent launch": [
-      "229"
-    ],
-    "exponent launch token": [
-      "229"
     ],
     "extradition": [
       "1856"
@@ -19671,8 +18709,6 @@
       "119",
       "168",
       "175",
-      "232",
-      "234",
       "3366",
       "99"
     ],
@@ -19841,9 +18877,6 @@
     "head of state": [
       "301"
     ],
-    "hedge": [
-      "227"
-    ],
     "heisman": [
       "3072"
     ],
@@ -19891,7 +18924,6 @@
       "112"
     ],
     "hit january": [
-      "227",
       "260",
       "262"
     ],
@@ -19928,7 +18960,6 @@
       "3223"
     ],
     "hostilities": [
-      "226",
       "302"
     ],
     "house 2026": [
@@ -20004,11 +19035,9 @@
     "ico": [
       "167",
       "172",
-      "192",
-      "233"
+      "192"
     ],
     "idf": [
-      "226",
       "271",
       "302",
       "3039"
@@ -20016,16 +19045,10 @@
     "ido": [
       "167",
       "192",
-      "201",
-      "229",
-      "233"
+      "201"
     ],
     "ieepa": [
       "1546"
-    ],
-    "ieo": [
-      "229",
-      "233"
     ],
     "illustrator card": [
       "217"
@@ -20074,9 +19097,6 @@
     "index march": [
       "3257"
     ],
-    "industrial metal": [
-      "227"
-    ],
     "inference": [
       "89"
     ],
@@ -20093,7 +19113,6 @@
       "107",
       "121",
       "153",
-      "227",
       "288",
       "61",
       "75",
@@ -20120,7 +19139,6 @@
       "107",
       "121",
       "153",
-      "230",
       "61",
       "75"
     ],
@@ -20145,7 +19163,6 @@
       "302"
     ],
     "investing": [
-      "227",
       "263"
     ],
     "investment": [
@@ -20193,18 +19210,11 @@
       "163"
     ],
     "iran": [
-      "226",
       "242",
       "257",
       "258",
       "271",
       "3039"
-    ],
-    "iran ceasefire": [
-      "226"
-    ],
-    "iran ceasefire broken": [
-      "226"
     ],
     "iran march": [
       "3039"
@@ -20213,7 +19223,6 @@
       "3039"
     ],
     "irgc": [
-      "226",
       "257",
       "3039"
     ],
@@ -20222,16 +19231,9 @@
       "258"
     ],
     "israel": [
-      "226",
       "271",
       "302",
       "3039"
-    ],
-    "israel iran": [
-      "226"
-    ],
-    "israel iran ceasefire": [
-      "226"
     ],
     "israel strike": [
       "302"
@@ -20291,15 +19293,6 @@
     "japan conduct yen-buying": [
       "3132"
     ],
-    "japan decision": [
-      "230"
-    ],
-    "japan decision march": [
-      "230"
-    ],
-    "japanese yen": [
-      "230"
-    ],
     "jason citron": [
       "190"
     ],
@@ -20328,9 +19321,6 @@
     ],
     "jesus christ return": [
       "2670"
-    ],
-    "jgb": [
-      "230"
     ],
     "jia yueting": [
       "1856"
@@ -20385,9 +19375,6 @@
     ],
     "kate hudson": [
       "139"
-    ],
-    "kazuo ueda": [
-      "230"
     ],
     "keir starmer": [
       "150"
@@ -20483,12 +19470,6 @@
       "129",
       "89"
     ],
-    "largest company": [
-      "236"
-    ],
-    "largest company january": [
-      "236"
-    ],
     "larry o'brien": [
       "103"
     ],
@@ -20498,7 +19479,6 @@
       "183",
       "184",
       "201",
-      "229",
       "89",
       "95",
       "97"
@@ -20521,10 +19501,6 @@
       "175",
       "192",
       "201",
-      "229",
-      "232",
-      "233",
-      "234",
       "3366",
       "99"
     ],
@@ -20664,9 +19640,6 @@
       "201",
       "204",
       "205",
-      "229",
-      "232",
-      "233",
       "3362",
       "67",
       "95",
@@ -20719,15 +19692,6 @@
     "long government shutdown": [
       "303"
     ],
-    "loopscale": [
-      "233"
-    ],
-    "loopscale launch": [
-      "233"
-    ],
-    "loopscale launch token": [
-      "233"
-    ],
     "lower chamber": [
       "135"
     ],
@@ -20777,9 +19741,6 @@
       "119",
       "168",
       "208",
-      "229",
-      "232",
-      "233",
       "3366",
       "67"
     ],
@@ -20850,7 +19811,6 @@
       "194",
       "204",
       "205",
-      "236",
       "3505",
       "3506",
       "67",
@@ -21045,9 +20005,6 @@
     "mid-year 2026": [
       "3508"
     ],
-    "middle east": [
-      "226"
-    ],
     "midterm": [
       "136"
     ],
@@ -21135,7 +20092,6 @@
       "107",
       "121",
       "153",
-      "230",
       "288",
       "61",
       "75",
@@ -21271,27 +20227,6 @@
       "3222",
       "3223"
     ],
-    "nansen": [
-      "234"
-    ],
-    "nansen 2": [
-      "234"
-    ],
-    "nansen dao": [
-      "234"
-    ],
-    "nansen launch": [
-      "234"
-    ],
-    "nansen launch token": [
-      "234"
-    ],
-    "nansen query": [
-      "234"
-    ],
-    "nansen token": [
-      "234"
-    ],
     "nasdaq": [
       "152",
       "169",
@@ -21340,9 +20275,6 @@
     ],
     "negative growth": [
       "3265"
-    ],
-    "negative rates": [
-      "230"
     ],
     "negotiation": [
       "276"
@@ -21529,9 +20461,6 @@
     ],
     "okbet arena trading": [
       "200"
-    ],
-    "on-chain data": [
-      "234"
     ],
     "onchain": [
       "119"
@@ -21786,24 +20715,6 @@
     "people's party": [
       "307"
     ],
-    "perena": [
-      "232"
-    ],
-    "perena coin": [
-      "232"
-    ],
-    "perena launch": [
-      "232"
-    ],
-    "perena launch token": [
-      "232"
-    ],
-    "perena network": [
-      "232"
-    ],
-    "perena protocol": [
-      "232"
-    ],
     "perform again": [
       "132"
     ],
@@ -21862,9 +20773,6 @@
     ],
     "policy decision": [
       "75"
-    ],
-    "policy meeting": [
-      "230"
     ],
     "political": [
       "301"
@@ -21937,9 +20845,6 @@
       "262",
       "287"
     ],
-    "precious metals": [
-      "227"
-    ],
     "prediction": [
       "183",
       "260"
@@ -21962,8 +20867,7 @@
       "167",
       "172",
       "174",
-      "201",
-      "233"
+      "201"
     ],
     "president": [
       "202",
@@ -22052,7 +20956,6 @@
     "project": [
       "172",
       "201",
-      "229",
       "98"
     ],
     "proof of work": [
@@ -22158,9 +21061,6 @@
       "3367",
       "3368"
     ],
-    "ranking": [
-      "236"
-    ],
     "rapture": [
       "2670"
     ],
@@ -22169,7 +21069,6 @@
     ],
     "rate cut": [
       "153",
-      "230",
       "61",
       "75",
       "78"
@@ -22197,7 +21096,6 @@
     ],
     "rate hike": [
       "153",
-      "230",
       "61",
       "75"
     ],
@@ -22286,9 +21184,7 @@
       "129",
       "172",
       "201",
-      "2178",
-      "229",
-      "233"
+      "2178"
     ],
     "release album": [
       "2178"
@@ -22470,7 +21366,6 @@
       "193"
     ],
     "safe haven": [
-      "227",
       "262"
     ],
     "safeguard": [
@@ -22506,9 +21401,6 @@
     ],
     "saylor": [
       "111"
-    ],
-    "scale": [
-      "236"
     ],
     "scaling": [
       "1721",
@@ -22689,17 +21581,7 @@
       "3072"
     ],
     "silver": [
-      "227",
       "287"
-    ],
-    "silver hit": [
-      "227"
-    ],
-    "silver hit january": [
-      "227"
-    ],
-    "silver price": [
-      "227"
     ],
     "silver settle": [
       "287"
@@ -22716,9 +21598,6 @@
     "sino-american": [
       "142"
     ],
-    "size": [
-      "236"
-    ],
     "slam": [
       "222",
       "304"
@@ -22730,14 +21609,10 @@
       "172",
       "1721",
       "192",
-      "229",
       "3366"
     ],
     "smart contract bug": [
       "3360"
-    ],
-    "smart money": [
-      "234"
     ],
     "snap election": [
       "306"
@@ -22865,7 +21740,6 @@
       "103"
     ],
     "spot price": [
-      "227",
       "262",
       "287"
     ],
@@ -22995,8 +21869,7 @@
       "3362"
     ],
     "stock price": [
-      "158",
-      "236"
+      "158"
     ],
     "stock symbol": [
       "169"
@@ -23160,9 +22033,6 @@
     "tech giant": [
       "152"
     ],
-    "tech giants": [
-      "236"
-    ],
     "tectonic": [
       "187",
       "2668",
@@ -23257,10 +22127,6 @@
       "192",
       "194",
       "201",
-      "229",
-      "232",
-      "233",
-      "234",
       "67",
       "96",
       "97",
@@ -23322,9 +22188,6 @@
       "3257",
       "3362"
     ],
-    "tightening": [
-      "230"
-    ],
     "tiktok": [
       "159"
     ],
@@ -23375,7 +22238,6 @@
       "184",
       "201",
       "208",
-      "229",
       "260",
       "3367",
       "67",
@@ -23399,8 +22261,6 @@
       "168",
       "173",
       "175",
-      "232",
-      "233",
       "96"
     ],
     "token launch": [
@@ -23413,9 +22273,6 @@
       "189",
       "192",
       "194",
-      "232",
-      "233",
-      "234",
       "3366",
       "96",
       "99"
@@ -23430,16 +22287,9 @@
       "175",
       "189",
       "194",
-      "232",
       "3361",
       "95",
       "99"
-    ],
-    "tokyo": [
-      "230"
-    ],
-    "top": [
-      "236"
     ],
     "top film": [
       "133"
@@ -23479,7 +22329,6 @@
       "172",
       "183",
       "184",
-      "227",
       "260",
       "262",
       "263",
@@ -23539,9 +22388,6 @@
     "tribulation": [
       "2670"
     ],
-    "trillion": [
-      "236"
-    ],
     "trip": [
       "142"
     ],
@@ -23560,9 +22406,6 @@
     "troy ounce": [
       "262",
       "287"
-    ],
-    "truce": [
-      "226"
     ],
     "trump": [
       "107",
@@ -23795,7 +22638,6 @@
       "194",
       "204",
       "205",
-      "236",
       "266",
       "277",
       "3362",
@@ -23841,9 +22683,6 @@
     "vince lombardi trophy": [
       "81"
     ],
-    "violation": [
-      "226"
-    ],
     "visit": [
       "142"
     ],
@@ -23887,12 +22726,8 @@
     "wallet": [
       "3365"
     ],
-    "wallet profiler": [
-      "234"
-    ],
     "war": [
       "128",
-      "226",
       "257",
       "271",
       "274",
@@ -23916,9 +22751,6 @@
     ],
     "wc": [
       "79"
-    ],
-    "wealth": [
-      "236"
     ],
     "web3": [
       "189",
@@ -23990,7 +22822,6 @@
       "3062"
     ],
     "white metal": [
-      "227",
       "287"
     ],
     "who acquire": [
@@ -24067,7 +22898,6 @@
       "304"
     ],
     "xag": [
-      "227",
       "287"
     ],
     "xai": [
@@ -24111,9 +22941,6 @@
     ],
     "yield": [
       "293"
-    ],
-    "yield curve control": [
-      "230"
     ],
     "yoshihiko noda": [
       "306"
@@ -24182,7 +23009,6 @@
       "208"
     ],
     "以色列": [
-      "226",
       "271",
       "302",
       "3039"
@@ -24280,23 +23106,11 @@
     "斯塔默": [
       "150"
     ],
-    "日本央行": [
-      "230"
-    ],
-    "日本银行": [
-      "230"
-    ],
     "日本首相": [
       "306"
     ],
-    "最大的公司": [
-      "236"
-    ],
     "最有价值球员": [
       "115"
-    ],
-    "最有价值的公司": [
-      "236"
     ],
     "最高法院": [
       "1546"
@@ -24781,7 +23595,6 @@
       "306"
     ],
     "ag": [
-      "227",
       "287"
     ],
     "aggression": [
@@ -24823,10 +23636,6 @@
       "192",
       "194",
       "201",
-      "229",
-      "232",
-      "233",
-      "234",
       "67",
       "95",
       "96",
@@ -24895,7 +23704,6 @@
       "269"
     ],
     "announcement": [
-      "233",
       "89"
     ],
     "another above": [
@@ -24952,9 +23760,6 @@
     ],
     "argentina official usd": [
       "288"
-    ],
-    "armistice": [
-      "226"
     ],
     "ars": [
       "288"
@@ -25096,15 +23901,6 @@
     "banco central": [
       "288"
     ],
-    "bank japan": [
-      "230"
-    ],
-    "bank japan decision": [
-      "230"
-    ],
-    "bank of japan": [
-      "230"
-    ],
     "banking": [
       "107"
     ],
@@ -25221,9 +24017,6 @@
     "bhumjaithai": [
       "307"
     ],
-    "biggest": [
-      "236"
-    ],
     "bitcoin": [
       "111",
       "112"
@@ -25247,23 +24040,15 @@
       "194",
       "205",
       "208",
-      "229",
-      "233",
       "260",
       "95",
       "98"
-    ],
-    "blockchain analytics": [
-      "234"
     ],
     "bls": [
       "273"
     ],
     "bna": [
       "282"
-    ],
-    "boj": [
-      "230"
     ],
     "bombardment": [
       "302"
@@ -25287,9 +24072,6 @@
     "box office": [
       "275"
     ],
-    "breach": [
-      "226"
-    ],
     "browser extension": [
       "189"
     ],
@@ -25307,15 +24089,11 @@
       "112"
     ],
     "bullion": [
-      "227",
       "262",
       "287"
     ],
     "bunnies": [
       "132"
-    ],
-    "business": [
-      "236"
     ],
     "buyout": [
       "159"
@@ -25356,12 +24134,6 @@
     ],
     "cdpj": [
       "306"
-    ],
-    "ceasefire": [
-      "226"
-    ],
-    "ceasefire broken": [
-      "226"
     ],
     "celebrity": [
       "137"
@@ -25526,7 +24298,6 @@
       "132"
     ],
     "commodity": [
-      "227",
       "262",
       "287"
     ],
@@ -25538,9 +24309,6 @@
     ],
     "companies added 500": [
       "186"
-    ],
-    "company january": [
-      "236"
     ],
     "competition": [
       "200"
@@ -25556,7 +24324,6 @@
     ],
     "conflict": [
       "128",
-      "226",
       "257",
       "271",
       "274",
@@ -25598,9 +24365,6 @@
     "control": [
       "136"
     ],
-    "corporation": [
-      "236"
-    ],
     "council": [
       "130"
     ],
@@ -25622,16 +24386,11 @@
       "194",
       "201",
       "208",
-      "229",
-      "233",
       "260",
       "67",
       "95",
       "97",
       "98"
-    ],
-    "crypto analytics": [
-      "234"
     ],
     "crypto betting": [
       "99"
@@ -25639,13 +24398,9 @@
     "crypto exchange": [
       "143"
     ],
-    "crypto research": [
-      "234"
-    ],
     "crypto token": [
       "168",
-      "175",
-      "232"
+      "175"
     ],
     "crypto trading": [
       "173"
@@ -25750,14 +24505,12 @@
       "61"
     ],
     "decision march": [
-      "230",
       "75"
     ],
     "defi": [
       "119",
       "184",
       "192",
-      "232",
       "260",
       "67",
       "95",
@@ -25895,7 +24648,6 @@
       "187"
     ],
     "easing": [
-      "230",
       "78"
     ],
     "ecb": [
@@ -25977,9 +24729,6 @@
     "english premier league": [
       "80"
     ],
-    "enterprise": [
-      "236"
-    ],
     "entertainment": [
       "137"
     ],
@@ -25999,7 +24748,6 @@
       "169",
       "171",
       "204",
-      "236",
       "264",
       "265",
       "266",
@@ -26016,7 +24764,6 @@
       "118"
     ],
     "escalation": [
-      "226",
       "257",
       "271",
       "302"
@@ -26100,15 +24847,6 @@
       "163",
       "193",
       "300"
-    ],
-    "exponent": [
-      "229"
-    ],
-    "exponent launch": [
-      "229"
-    ],
-    "exponent launch token": [
-      "229"
     ],
     "facebook": [
       "270"
@@ -26449,8 +25187,6 @@
       "119",
       "168",
       "175",
-      "232",
-      "234",
       "99"
     ],
     "governing council": [
@@ -26582,9 +25318,6 @@
     "head of state": [
       "301"
     ],
-    "hedge": [
-      "227"
-    ],
     "hezbollah": [
       "302"
     ],
@@ -26598,7 +25331,6 @@
       "112"
     ],
     "hit january": [
-      "227",
       "260",
       "262"
     ],
@@ -26626,7 +25358,6 @@
       "115"
     ],
     "hostilities": [
-      "226",
       "302"
     ],
     "house 2026": [
@@ -26687,24 +25418,16 @@
     "ico": [
       "167",
       "172",
-      "192",
-      "233"
+      "192"
     ],
     "idf": [
-      "226",
       "271",
       "302"
     ],
     "ido": [
       "167",
       "192",
-      "201",
-      "229",
-      "233"
-    ],
-    "ieo": [
-      "229",
-      "233"
+      "201"
     ],
     "illustrator card": [
       "217"
@@ -26733,9 +25456,6 @@
     "index addition": [
       "186"
     ],
-    "industrial metal": [
-      "227"
-    ],
     "inference": [
       "89"
     ],
@@ -26752,7 +25472,6 @@
       "107",
       "121",
       "153",
-      "227",
       "288",
       "61",
       "75",
@@ -26778,7 +25497,6 @@
       "107",
       "121",
       "153",
-      "230",
       "61",
       "75"
     ],
@@ -26797,7 +25515,6 @@
       "302"
     ],
     "investing": [
-      "227",
       "263"
     ],
     "investment battle": [
@@ -26835,20 +25552,12 @@
       "163"
     ],
     "iran": [
-      "226",
       "242",
       "257",
       "258",
       "271"
     ],
-    "iran ceasefire": [
-      "226"
-    ],
-    "iran ceasefire broken": [
-      "226"
-    ],
     "irgc": [
-      "226",
       "257"
     ],
     "islamic republic": [
@@ -26856,15 +25565,8 @@
       "258"
     ],
     "israel": [
-      "226",
       "271",
       "302"
-    ],
-    "israel iran": [
-      "226"
-    ],
-    "israel iran ceasefire": [
-      "226"
     ],
     "israel strike": [
       "302"
@@ -26902,15 +25604,6 @@
     "japan after snap": [
       "306"
     ],
-    "japan decision": [
-      "230"
-    ],
-    "japan decision march": [
-      "230"
-    ],
-    "japanese yen": [
-      "230"
-    ],
     "jason citron": [
       "190"
     ],
@@ -26927,9 +25620,6 @@
     ],
     "jessie buckley": [
       "139"
-    ],
-    "jgb": [
-      "230"
     ],
     "job growth": [
       "273"
@@ -26960,9 +25650,6 @@
     ],
     "kate hudson": [
       "139"
-    ],
-    "kazuo ueda": [
-      "230"
     ],
     "keir starmer": [
       "150"
@@ -27041,12 +25728,6 @@
       "129",
       "89"
     ],
-    "largest company": [
-      "236"
-    ],
-    "largest company january": [
-      "236"
-    ],
     "larry o'brien": [
       "103"
     ],
@@ -27056,7 +25737,6 @@
       "183",
       "184",
       "201",
-      "229",
       "89",
       "95",
       "97"
@@ -27079,10 +25759,6 @@
       "175",
       "192",
       "201",
-      "229",
-      "232",
-      "233",
-      "234",
       "99"
     ],
     "launches unsupervised": [
@@ -27201,9 +25877,6 @@
       "201",
       "204",
       "205",
-      "229",
-      "232",
-      "233",
       "67",
       "95",
       "96",
@@ -27255,15 +25928,6 @@
     "long government shutdown": [
       "303"
     ],
-    "loopscale": [
-      "233"
-    ],
-    "loopscale launch": [
-      "233"
-    ],
-    "loopscale launch token": [
-      "233"
-    ],
     "lower chamber": [
       "135"
     ],
@@ -27295,9 +25959,6 @@
       "119",
       "168",
       "208",
-      "229",
-      "232",
-      "233",
       "67"
     ],
     "major": [
@@ -27350,7 +26011,6 @@
       "194",
       "204",
       "205",
-      "236",
       "67",
       "95",
       "96",
@@ -27500,9 +26160,6 @@
     "microstrategy sells any": [
       "111"
     ],
-    "middle east": [
-      "226"
-    ],
     "midterm": [
       "136"
     ],
@@ -27562,7 +26219,6 @@
       "107",
       "121",
       "153",
-      "230",
       "288",
       "61",
       "75",
@@ -27658,27 +26314,6 @@
     "na'vi": [
       "275"
     ],
-    "nansen": [
-      "234"
-    ],
-    "nansen 2": [
-      "234"
-    ],
-    "nansen dao": [
-      "234"
-    ],
-    "nansen launch": [
-      "234"
-    ],
-    "nansen launch token": [
-      "234"
-    ],
-    "nansen query": [
-      "234"
-    ],
-    "nansen token": [
-      "234"
-    ],
     "nasdaq": [
       "152",
       "169",
@@ -27719,9 +26354,6 @@
     ],
     "nba mvp 2026": [
       "115"
-    ],
-    "negative rates": [
-      "230"
     ],
     "negotiation": [
       "276"
@@ -27869,9 +26501,6 @@
     ],
     "okbet arena trading": [
       "200"
-    ],
-    "on-chain data": [
-      "234"
     ],
     "onchain": [
       "119"
@@ -28086,24 +26715,6 @@
     "people's party": [
       "307"
     ],
-    "perena": [
-      "232"
-    ],
-    "perena coin": [
-      "232"
-    ],
-    "perena launch": [
-      "232"
-    ],
-    "perena launch token": [
-      "232"
-    ],
-    "perena network": [
-      "232"
-    ],
-    "perena protocol": [
-      "232"
-    ],
     "perform again": [
       "132"
     ],
@@ -28150,9 +26761,6 @@
     ],
     "policy decision": [
       "75"
-    ],
-    "policy meeting": [
-      "230"
     ],
     "political": [
       "301"
@@ -28221,9 +26829,6 @@
       "262",
       "287"
     ],
-    "precious metals": [
-      "227"
-    ],
     "prediction": [
       "183",
       "260"
@@ -28246,8 +26851,7 @@
       "167",
       "172",
       "174",
-      "201",
-      "233"
+      "201"
     ],
     "president": [
       "202",
@@ -28318,7 +26922,6 @@
     "project": [
       "172",
       "201",
-      "229",
       "98"
     ],
     "protectionism": [
@@ -28385,15 +26988,11 @@
       "260",
       "265"
     ],
-    "ranking": [
-      "236"
-    ],
     "rare card": [
       "217"
     ],
     "rate cut": [
       "153",
-      "230",
       "61",
       "75",
       "78"
@@ -28421,7 +27020,6 @@
     ],
     "rate hike": [
       "153",
-      "230",
       "61",
       "75"
     ],
@@ -28486,9 +27084,7 @@
     "release": [
       "129",
       "172",
-      "201",
-      "229",
-      "233"
+      "201"
     ],
     "release date": [
       "89"
@@ -28585,7 +27181,6 @@
       "193"
     ],
     "safe haven": [
-      "227",
       "262"
     ],
     "sale": [
@@ -28611,9 +27206,6 @@
     ],
     "saylor": [
       "111"
-    ],
-    "scale": [
-      "236"
     ],
     "scaling": [
       "208"
@@ -28731,17 +27323,7 @@
       "208"
     ],
     "silver": [
-      "227",
       "287"
-    ],
-    "silver hit": [
-      "227"
-    ],
-    "silver hit january": [
-      "227"
-    ],
-    "silver price": [
-      "227"
     ],
     "silver settle": [
       "287"
@@ -28755,20 +27337,13 @@
     "sino-american": [
       "142"
     ],
-    "size": [
-      "236"
-    ],
     "slam": [
       "222",
       "304"
     ],
     "smart contract": [
       "172",
-      "192",
-      "229"
-    ],
-    "smart money": [
-      "234"
+      "192"
     ],
     "snap election": [
       "306"
@@ -28890,7 +27465,6 @@
       "103"
     ],
     "spot price": [
-      "227",
       "262",
       "287"
     ],
@@ -28993,8 +27567,7 @@
       "263"
     ],
     "stock price": [
-      "158",
-      "236"
+      "158"
     ],
     "stock symbol": [
       "169"
@@ -29114,9 +27687,6 @@
     "tech giant": [
       "152"
     ],
-    "tech giants": [
-      "236"
-    ],
     "tectonic": [
       "187"
     ],
@@ -29184,10 +27754,6 @@
       "192",
       "194",
       "201",
-      "229",
-      "232",
-      "233",
-      "234",
       "67",
       "96",
       "97",
@@ -29226,9 +27792,6 @@
       "171",
       "267"
     ],
-    "tightening": [
-      "230"
-    ],
     "tiktok": [
       "159"
     ],
@@ -29252,7 +27815,6 @@
       "184",
       "201",
       "208",
-      "229",
       "260",
       "67",
       "95",
@@ -29272,8 +27834,6 @@
       "168",
       "173",
       "175",
-      "232",
-      "233",
       "96"
     ],
     "token launch": [
@@ -29286,9 +27846,6 @@
       "189",
       "192",
       "194",
-      "232",
-      "233",
-      "234",
       "96",
       "99"
     ],
@@ -29302,15 +27859,8 @@
       "175",
       "189",
       "194",
-      "232",
       "95",
       "99"
-    ],
-    "tokyo": [
-      "230"
-    ],
-    "top": [
-      "236"
     ],
     "top film": [
       "133"
@@ -29345,7 +27895,6 @@
       "172",
       "183",
       "184",
-      "227",
       "260",
       "262",
       "263",
@@ -29395,9 +27944,6 @@
     "tremor": [
       "187"
     ],
-    "trillion": [
-      "236"
-    ],
     "trip": [
       "142"
     ],
@@ -29416,9 +27962,6 @@
     "troy ounce": [
       "262",
       "287"
-    ],
-    "truce": [
-      "226"
     ],
     "trump": [
       "107",
@@ -29595,7 +28138,6 @@
       "194",
       "204",
       "205",
-      "236",
       "266",
       "277",
       "67",
@@ -29618,9 +28160,6 @@
     ],
     "vince lombardi trophy": [
       "81"
-    ],
-    "violation": [
-      "226"
     ],
     "visit": [
       "142"
@@ -29658,12 +28197,8 @@
       "158",
       "263"
     ],
-    "wallet profiler": [
-      "234"
-    ],
     "war": [
       "128",
-      "226",
       "257",
       "271",
       "274",
@@ -29674,9 +28209,6 @@
     ],
     "wc": [
       "79"
-    ],
-    "wealth": [
-      "236"
     ],
     "web3": [
       "189",
@@ -29741,7 +28273,6 @@
       "276"
     ],
     "white metal": [
-      "227",
       "287"
     ],
     "who acquire": [
@@ -29809,7 +28340,6 @@
       "304"
     ],
     "xag": [
-      "227",
       "287"
     ],
     "xai": [
@@ -29838,9 +28368,6 @@
     ],
     "yield": [
       "293"
-    ],
-    "yield curve control": [
-      "230"
     ],
     "yoshihiko noda": [
       "306"
@@ -29891,7 +28418,6 @@
       "208"
     ],
     "以色列": [
-      "226",
       "271",
       "302"
     ],
@@ -29968,23 +28494,11 @@
     "斯塔默": [
       "150"
     ],
-    "日本央行": [
-      "230"
-    ],
-    "日本银行": [
-      "230"
-    ],
     "日本首相": [
       "306"
     ],
-    "最大的公司": [
-      "236"
-    ],
     "最有价值球员": [
       "115"
-    ],
-    "最有价值的公司": [
-      "236"
     ],
     "最高领袖": [
       "242"
