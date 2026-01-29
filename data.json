@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-01-29 00:53:30 UTC+8",
+    "generatedAt": "2026-01-29 10:48:08 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 654,
-      "markets": 202,
-      "keywords": 2152,
+      "kept": 618,
+      "markets": 201,
+      "keywords": 2135,
       "events": {
-        "events": 126
+        "events": 120
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 341,
+        "cutoff_expired": 377,
         "cutoff_zero_kept": 46,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 109,
-        "regenerated_empty_entitygroups": 17,
-        "calls": 17,
-        "retries": 2,
+        "reused": 118,
+        "regenerated_empty_entitygroups": 2,
+        "calls": 2,
+        "retries": 1,
         "fallback": 0,
-        "empty": 2,
-        "non_empty": 15,
+        "empty": 1,
+        "non_empty": 1,
         "errors": 0
       }
     }
@@ -2494,194 +2494,6 @@
       "sigCore": "29a921b9",
       "reused": false
     },
-    "244": {
-      "title": "Rainbow FDV above ... one day after launch?",
-      "marketIds": [
-        "244"
-      ],
-      "bestMarketId": "244",
-      "bestLabels": null,
-      "keywords": [
-        "rainbow",
-        "rainbow wallet",
-        "crypto wallet",
-        "ethereum wallet",
-        "token launch",
-        "fdv",
-        "valuation",
-        "airdrop",
-        "tge",
-        "defi",
-        "web3",
-        "tokenomics",
-        "price action",
-        "market cap",
-        "token distribution",
-        "rainbow fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "rainbow fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "rainbow"
-      ],
-      "entityGroups": [
-        [
-          "rainbow",
-          "彩虹钱包"
-        ]
-      ],
-      "sig": "88d525dd",
-      "sigFull": "88d525dd",
-      "sigCore": "f0d8896f",
-      "reused": false
-    },
-    "246": {
-      "title": "What price will Bitcoin hit in January?",
-      "marketIds": [
-        "246"
-      ],
-      "bestMarketId": "246",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "cryptocurrency",
-        "digital gold",
-        "satoshi",
-        "blockchain",
-        "price action",
-        "trading",
-        "volatility",
-        "spot etf",
-        "halving",
-        "market cap",
-        "altcoin",
-        "decentralized",
-        "what price",
-        "price bitcoin",
-        "bitcoin hit",
-        "hit january",
-        "what price bitcoin",
-        "price bitcoin hit",
-        "bitcoin hit january"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc",
-          "比特币"
-        ]
-      ],
-      "sig": "5093f69b",
-      "sigFull": "5093f69b",
-      "sigCore": "afbd2a96",
-      "reused": false
-    },
-    "248": {
-      "title": "What price will Ethena hit in January?",
-      "marketIds": [
-        "248"
-      ],
-      "bestMarketId": "248",
-      "bestLabels": null,
-      "keywords": [
-        "ethena",
-        "ena",
-        "crypto",
-        "token",
-        "defi",
-        "synthetic dollar",
-        "usde",
-        "governance",
-        "trading",
-        "prediction",
-        "valuation",
-        "market",
-        "asset",
-        "blockchain",
-        "price action",
-        "what price",
-        "price ethena",
-        "ethena hit",
-        "hit january",
-        "what price ethena",
-        "price ethena hit",
-        "ethena hit january"
-      ],
-      "entities": [
-        "ethena"
-      ],
-      "entityGroups": [
-        [
-          "ethena",
-          "ena",
-          "以太坊"
-        ]
-      ],
-      "sig": "635c373f",
-      "sigFull": "635c373f",
-      "sigCore": "215b4423",
-      "reused": false
-    },
-    "247": {
-      "title": "What price will Ethereum hit in January?",
-      "marketIds": [
-        "247"
-      ],
-      "bestMarketId": "247",
-      "bestLabels": null,
-      "keywords": [
-        "ethereum",
-        "eth",
-        "ether",
-        "crypto",
-        "cryptocurrency",
-        "price",
-        "trading",
-        "market",
-        "blockchain",
-        "defi",
-        "altcoin",
-        "digital asset",
-        "volatility",
-        "token",
-        "coin",
-        "what price",
-        "price ethereum",
-        "ethereum hit",
-        "hit january",
-        "what price ethereum",
-        "price ethereum hit",
-        "ethereum hit january"
-      ],
-      "entities": [
-        "ethereum"
-      ],
-      "entityGroups": [
-        [
-          "ethereum",
-          "eth",
-          "ether",
-          "以太坊"
-        ]
-      ],
-      "sig": "44f077bf",
-      "sigFull": "44f077bf",
-      "sigCore": "8b31d46d",
-      "reused": false
-    },
     "257": {
       "title": "US strikes Iran by...?",
       "marketIds": [
@@ -5029,10 +4841,24 @@
       "bestMarketId": "130",
       "bestLabels": null,
       "keywords": [
+        "south korea",
+        "korea",
+        "local elections",
+        "2026 elections",
+        "municipal elections",
+        "regional elections",
+        "korean politics",
+        "democratic party",
+        "people power party",
+        "rebuilding korea party",
+        "progressive party",
+        "vote",
+        "ballot",
+        "council",
+        "mayor",
         "2026 south",
         "south korean",
         "korean local",
-        "local elections",
         "elections party",
         "party winner",
         "2026 south korean",
@@ -5041,8 +4867,16 @@
         "local elections party",
         "elections party winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "south korean local elections"
+      ],
+      "entityGroups": [
+        [
+          "south korean local elections",
+          "korean local elections",
+          "韩国地方选举"
+        ]
+      ],
       "sig": "51e6b760",
       "sigFull": "51e6b760",
       "sigCore": "ab7cdd05",
@@ -5978,8 +5812,8 @@
     "222": {
       "title": "2026 Men's Australian Open Winner",
       "url": "https://app.opinion.trade/market/222?ref=opinion_hud",
-      "yesTokenId": "79794759853759991111197957504358946094000142489182558476200833177929494073128",
-      "noTokenId": "3298240858201198940176111916310036195292828712910777880061261707214680080668",
+      "yesTokenId": "102944805128937061565106041749150538528526332505331418730313552171138925371294",
+      "noTokenId": "10758724656172236720247750193227389076596673874562063124279063295961252874901",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11466,8 +11300,8 @@
     "241": {
       "title": "What will Gold settle at in January?",
       "url": "https://app.opinion.trade/market/241?ref=opinion_hud",
-      "yesTokenId": "110541000850125547153921848913726141476791681735618835453443283996459661456087",
-      "noTokenId": "70491420335828580504589151614223598153238676029377727651848810014831482104425",
+      "yesTokenId": "3399171993246059579057112086217266244935612803650698929069327548671119046291",
+      "noTokenId": "81957624095132653235784085018460035024160312075832611461950206415730274331488",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11691,8 +11525,8 @@
     "242": {
       "title": "Khamenei out as Supreme Leader of Iran by ...?",
       "url": "https://app.opinion.trade/market/242?ref=opinion_hud",
-      "yesTokenId": "78525940214804604707627941094377880629381331725689510871551609534105074863969",
-      "noTokenId": "45489316796209234370064058959475598622236108679010890486958872866035117032944",
+      "yesTokenId": "72927601919195815555150777625424417913613132629479275905731692286661416530979",
+      "noTokenId": "52361990462230568142630360308469818571101867534949974755905891689086609105385",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11806,87 +11640,6 @@
           "$200m",
           "2亿美元"
         ]
-      ]
-    },
-    "244": {
-      "title": "Rainbow FDV above ... one day after launch?",
-      "url": "https://app.opinion.trade/market/244?ref=opinion_hud",
-      "yesTokenId": "46450326756643760048118875978732320287636973493790202582838768356107193939859",
-      "noTokenId": "75168183388386261629800577068753411798096451036313793123821485988440407378074",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "rainbow",
-        "rainbow wallet",
-        "crypto wallet",
-        "ethereum wallet",
-        "token launch",
-        "fdv",
-        "valuation",
-        "airdrop",
-        "tge",
-        "defi",
-        "web3",
-        "tokenomics",
-        "price action",
-        "market cap",
-        "token distribution",
-        "rainbow fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "rainbow fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "rainbow"
-      ],
-      "entityGroups": [
-        [
-          "rainbow",
-          "彩虹钱包"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3525",
-          "title": "$200M",
-          "yesTokenId": "88486413445110941151340297136689686190241284469739544653362575860936150574787",
-          "noTokenId": "78170744901162956973783711122724069287834992226392007530778604940517475896443"
-        },
-        {
-          "marketId": "3526",
-          "title": "$400M",
-          "yesTokenId": "72686429756777957917499118933120250840634347258127077698809772349970703662373",
-          "noTokenId": "2970122440282344205048250144039423109484444840554058644990037161522893634249"
-        },
-        {
-          "marketId": "3527",
-          "title": "$600M",
-          "yesTokenId": "12549639591346865267942131494968975215908815975773047659387838480955640174287",
-          "noTokenId": "62238173344579892487830687241569812881923562932084149617248654141718971040918"
-        },
-        {
-          "marketId": "3528",
-          "title": "$800M",
-          "yesTokenId": "115123719214303497587550004552866587113333387989067699283997129526843867816728",
-          "noTokenId": "101615151332457255034482500513002449404940409216335053234956739841823023431828"
-        },
-        {
-          "marketId": "3529",
-          "title": "$1B",
-          "yesTokenId": "46450326756643760048118875978732320287636973493790202582838768356107193939859",
-          "noTokenId": "75168183388386261629800577068753411798096451036313793123821485988440407378074"
-        }
       ]
     },
     "178": {
@@ -12122,295 +11875,6 @@
           "title": "AI",
           "yesTokenId": "31324005517201581025485145564404668682267561944915858764279699197932173204085",
           "noTokenId": "64222331697310823473328461638227936464538706907849178092823363938633661210922"
-        }
-      ]
-    },
-    "246": {
-      "title": "What price will Bitcoin hit in January?",
-      "url": "https://app.opinion.trade/market/246?ref=opinion_hud",
-      "yesTokenId": "114951772076161849315766882353517879694754905710747353661098547034798846715954",
-      "noTokenId": "49839981908341044432690489392914545083438297287322571787726258562515819953363",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "cryptocurrency",
-        "digital gold",
-        "satoshi",
-        "blockchain",
-        "price action",
-        "trading",
-        "volatility",
-        "spot etf",
-        "halving",
-        "market cap",
-        "altcoin",
-        "decentralized",
-        "what price",
-        "price bitcoin",
-        "bitcoin hit",
-        "hit january",
-        "what price bitcoin",
-        "price bitcoin hit",
-        "bitcoin hit january"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc",
-          "比特币"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3593",
-          "title": "↑ 110,000",
-          "yesTokenId": "68674514222657276966758814747548920098317200899832669541294698577798170731999",
-          "noTokenId": "46389077292069062847782985150132267867607989965046314531281235334806144219932"
-        },
-        {
-          "marketId": "3594",
-          "title": "↑ 105,000",
-          "yesTokenId": "58788826154081462195916105597363953863741947838120565926942952376764065397651",
-          "noTokenId": "2465918160510769843247826710531540177475371109273908343944740744951314938378"
-        },
-        {
-          "marketId": "3595",
-          "title": "↑ 100,000",
-          "yesTokenId": "1519072178855142905477356580185103824722117969937458851261884083244074539835",
-          "noTokenId": "25453110749685402256370675442670302537937412834569317657395410522576548764892"
-        },
-        {
-          "marketId": "3597",
-          "title": "↓ 85,000",
-          "yesTokenId": "114951772076161849315766882353517879694754905710747353661098547034798846715954",
-          "noTokenId": "49839981908341044432690489392914545083438297287322571787726258562515819953363"
-        },
-        {
-          "marketId": "3598",
-          "title": "↓ 80,000",
-          "yesTokenId": "95256018143792319024279121747904835689663528609953177665598153395773753469384",
-          "noTokenId": "82877974421232635834235473911236672457678784539455156436537350955067449129274"
-        },
-        {
-          "marketId": "3599",
-          "title": "↓ 75,000",
-          "yesTokenId": "14680360746057914429884359540783754465170226203554273317837904995231952682993",
-          "noTokenId": "50238778577317723461800249647391860058715551319312129610724129988915569845496"
-        },
-        {
-          "marketId": "3600",
-          "title": "↓ 70,000",
-          "yesTokenId": "63396292190799699427168451098114718237799355289181563379579247696713739311748",
-          "noTokenId": "74402766133809349799583816159532144714133317156835495413605399949140274883243"
-        },
-        {
-          "marketId": "3596",
-          "title": "↑ 95,000",
-          "yesTokenId": "44482274623352567708411359588293676017799351888341452903655596204140602367951",
-          "noTokenId": "50344207408675904969131856521568376776134854179769775071101867036109350867676"
-        }
-      ]
-    },
-    "248": {
-      "title": "What price will Ethena hit in January?",
-      "url": "https://app.opinion.trade/market/248?ref=opinion_hud",
-      "yesTokenId": "100275849255616382685188881710301672876858689280532290931316265903860539671386",
-      "noTokenId": "60903524409646306148423741381646654425935379956272824544011771396884400896534",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "ethena",
-        "ena",
-        "crypto",
-        "token",
-        "defi",
-        "synthetic dollar",
-        "usde",
-        "governance",
-        "trading",
-        "prediction",
-        "valuation",
-        "market",
-        "asset",
-        "blockchain",
-        "price action",
-        "what price",
-        "price ethena",
-        "ethena hit",
-        "hit january",
-        "what price ethena",
-        "price ethena hit",
-        "ethena hit january"
-      ],
-      "entities": [
-        "ethena"
-      ],
-      "entityGroups": [
-        [
-          "ethena",
-          "ena",
-          "以太坊"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3611",
-          "title": "↑ 0.37",
-          "yesTokenId": "114559239401757360129032680729376536347244454383659317096119038757931149445703",
-          "noTokenId": "75686142557483783702016309788756883093195800281753861947255927334692472538930"
-        },
-        {
-          "marketId": "3612",
-          "title": "↑ 0.33",
-          "yesTokenId": "93830580080938637892529043283119807928452709557252651290122938378421856301698",
-          "noTokenId": "29186056172165805391206730214270303042530725031650858359113183375363844399233"
-        },
-        {
-          "marketId": "3613",
-          "title": "↑ 0.29",
-          "yesTokenId": "2163858915414098334303509926012554989744572191504123205795956343892683744859",
-          "noTokenId": "1123898453758942623957701957542173231277255293088234363273823339931701870970"
-        },
-        {
-          "marketId": "3617",
-          "title": "↓ 0.12",
-          "yesTokenId": "100275849255616382685188881710301672876858689280532290931316265903860539671386",
-          "noTokenId": "60903524409646306148423741381646654425935379956272824544011771396884400896534"
-        },
-        {
-          "marketId": "3618",
-          "title": "↓ 0.08",
-          "yesTokenId": "113728515873092624004305093036790463142485412581549347471284467185663602545923",
-          "noTokenId": "20874870581712349943130479080710678849663795947069213393356218403242554776728"
-        },
-        {
-          "marketId": "3614",
-          "title": "↑ 0.25",
-          "yesTokenId": "52474769525089688804221746723022461935707217277992158633235580912868164375297",
-          "noTokenId": "43919840656323992447647089460348591696335913089677467595104987885702699371207"
-        },
-        {
-          "marketId": "3615",
-          "title": "↓ 0.20",
-          "yesTokenId": "76244475333285868072216282278641405603981707112427856282917509432149225792127",
-          "noTokenId": "16755209459541860366400886297944352874573643006024576500622416681399038776469"
-        },
-        {
-          "marketId": "3616",
-          "title": "↓ 0.16",
-          "yesTokenId": "53051010438993634584655184787951613779240956459422498597862282639559086858105",
-          "noTokenId": "114022738585041691180804908707164173715565761668493636077192173459420154645993"
-        }
-      ]
-    },
-    "247": {
-      "title": "What price will Ethereum hit in January?",
-      "url": "https://app.opinion.trade/market/247?ref=opinion_hud",
-      "yesTokenId": "48594202695187216784836898041970547564016589725221976537852337813564759265339",
-      "noTokenId": "54942045557825127337029356635334710422942438460643642081210603989965990230181",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "ethereum",
-        "eth",
-        "ether",
-        "crypto",
-        "cryptocurrency",
-        "price",
-        "trading",
-        "market",
-        "blockchain",
-        "defi",
-        "altcoin",
-        "digital asset",
-        "volatility",
-        "token",
-        "coin",
-        "what price",
-        "price ethereum",
-        "ethereum hit",
-        "hit january",
-        "what price ethereum",
-        "price ethereum hit",
-        "ethereum hit january"
-      ],
-      "entities": [
-        "ethereum"
-      ],
-      "entityGroups": [
-        [
-          "ethereum",
-          "eth",
-          "ether",
-          "以太坊"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3603",
-          "title": "↑ 3,800",
-          "yesTokenId": "101921656921526254991469876914640577924220888235119226041965800647138067398555",
-          "noTokenId": "96291845633933340195898156773296871030478905828659301847541813494358613689645"
-        },
-        {
-          "marketId": "3604",
-          "title": "↑ 3,600",
-          "yesTokenId": "48594202695187216784836898041970547564016589725221976537852337813564759265339",
-          "noTokenId": "54942045557825127337029356635334710422942438460643642081210603989965990230181"
-        },
-        {
-          "marketId": "3608",
-          "title": "↓ 2,600",
-          "yesTokenId": "82553741671952675310183193359034802967386851922849410214543012185193170541105",
-          "noTokenId": "77406786573318725738541329383075024111759545888719126519945737749227166524786"
-        },
-        {
-          "marketId": "3609",
-          "title": "↓ 2,400",
-          "yesTokenId": "83829850219047306007053838812147634775291092185980438112051765126066192609365",
-          "noTokenId": "37417790147837242527211409715901841347503643400426486595847735489077393347335"
-        },
-        {
-          "marketId": "3610",
-          "title": "↓ 2,200",
-          "yesTokenId": "11815583264696247747155846684572298625355964728315929107646937264991562300193",
-          "noTokenId": "36221542153198240639253902483073649926809578958652603513342929351409226407147"
-        },
-        {
-          "marketId": "3605",
-          "title": "↑ 3,400",
-          "yesTokenId": "33145048583791410738346278340122009079009738015391381118656732988857411248243",
-          "noTokenId": "11707150954338194652504540933649412241558768891030026858164318497049863303865"
-        },
-        {
-          "marketId": "3606",
-          "title": "↑ 3,200",
-          "yesTokenId": "31121665762365366993613587127585020153539819107715778841061251773847733647232",
-          "noTokenId": "106858634751795063888448203577583156988049152398775337151988847559901984101092"
-        },
-        {
-          "marketId": "3607",
-          "title": "↓ 2,800",
-          "yesTokenId": "38802709024162000453783304266393685704456105010781425688286910870434747590733",
-          "noTokenId": "84362790717324195505026584293902031295584558758836661152213100368537006937307"
         }
       ]
     },
@@ -14848,8 +14312,8 @@
     "304": {
       "title": "2026 Women’s Australian Open Winner",
       "url": "https://app.opinion.trade/market/304?ref=opinion_hud",
-      "yesTokenId": "30016539023857563840906723957302138781049050983103376425261841416672513870416",
-      "noTokenId": "21728952008110284330379287884796575371445169116886805828093696353959945611264",
+      "yesTokenId": "18401695110006732152735586614700375766965035330585116578805332170603078972997",
+      "noTokenId": "26296889331346578791534038448614678519497590935147581638300624778496804854954",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -14894,22 +14358,10 @@
           "noTokenId": "26296889331346578791534038448614678519497590935147581638300624778496804854954"
         },
         {
-          "marketId": "4644",
-          "title": "Iga Świątek",
-          "yesTokenId": "30016539023857563840906723957302138781049050983103376425261841416672513870416",
-          "noTokenId": "21728952008110284330379287884796575371445169116886805828093696353959945611264"
-        },
-        {
           "marketId": "4645",
           "title": "Elena Rybakina",
           "yesTokenId": "98033892657497786803730484696250299519881905053492984342826387301585034273742",
           "noTokenId": "45794607172522859523748614098602867524594572436260668373875960408355984466155"
-        },
-        {
-          "marketId": "4647",
-          "title": "Amanda Anisimova",
-          "yesTokenId": "2564023845537589797392123152399577145374747994757272715427269690223461810074",
-          "noTokenId": "1106898519012509914849054320065314973979533995126473783332981695682250692795"
         },
         {
           "marketId": "4648",
@@ -14924,10 +14376,22 @@
           "noTokenId": "55974542836236557133639419966454209912833202303537420931288272926241064102622"
         },
         {
+          "marketId": "4644",
+          "title": "Iga Świątek",
+          "yesTokenId": "30016539023857563840906723957302138781049050983103376425261841416672513870416",
+          "noTokenId": "21728952008110284330379287884796575371445169116886805828093696353959945611264"
+        },
+        {
           "marketId": "4646",
           "title": "Coco Gauff",
           "yesTokenId": "78801705155105391286156361643057074079903529893805961028312355258916016550841",
           "noTokenId": "24823208701204577727966929695799080077062389523413666678013904189693509519441"
+        },
+        {
+          "marketId": "4647",
+          "title": "Amanda Anisimova",
+          "yesTokenId": "2564023845537589797392123152399577145374747994757272715427269690223461810074",
+          "noTokenId": "1106898519012509914849054320065314973979533995126473783332981695682250692795"
         }
       ]
     },
@@ -17000,10 +16464,24 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "south korea",
+        "korea",
+        "local elections",
+        "2026 elections",
+        "municipal elections",
+        "regional elections",
+        "korean politics",
+        "democratic party",
+        "people power party",
+        "rebuilding korea party",
+        "progressive party",
+        "vote",
+        "ballot",
+        "council",
+        "mayor",
         "2026 south",
         "south korean",
         "korean local",
-        "local elections",
         "elections party",
         "party winner",
         "2026 south korean",
@@ -17012,8 +16490,16 @@
         "local elections party",
         "elections party winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "south korean local elections"
+      ],
+      "entityGroups": [
+        [
+          "south korean local elections",
+          "korean local elections",
+          "韩国地方选举"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -18004,11 +17490,11 @@
         }
       ]
     },
-    "4869": {
-      "title": "BTC Up or Down - Hourly (Jan 28, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4869?ref=opinion_hud",
-      "yesTokenId": "65980488609873608436295479341186558613459573688266543754632265015334241982879",
-      "noTokenId": "8278228767933027411160880472717371219708086892880254558777063432977366505373",
+    "4910": {
+      "title": "ETH Up or Down - Hourly (Jan 29, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4910?ref=opinion_hud",
+      "yesTokenId": "74089375077245919962354192672987922510717272880233583466868703641850830416079",
+      "noTokenId": "71668504179425073643366446559917863087833622936262129817267623705187733299919",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -18016,11 +17502,11 @@
       },
       "type": "binary"
     },
-    "4870": {
-      "title": "ETH Up or Down - Hourly (Jan 28, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4870?ref=opinion_hud",
-      "yesTokenId": "102706778935397120175434911032174388743249846026729863175157730856019546979796",
-      "noTokenId": "51284343198121403612400744939908346896406411464983169968647376358654689961247",
+    "4908": {
+      "title": "BNB Up or Down - Hourly (Jan 29, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4908?ref=opinion_hud",
+      "yesTokenId": "59349457630986871937539546520367338272398977024333872036479327025462973560774",
+      "noTokenId": "10839793235489974796139377482412310360809276784363063052318557935965946535059",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -18028,15 +17514,51 @@
       },
       "type": "binary"
     },
-    "4868": {
-      "title": "BNB Up or Down - Hourly (Jan 28, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4868?ref=opinion_hud",
-      "yesTokenId": "89667546937626519027198853870971876393415936467310972159919648661678192726740",
-      "noTokenId": "87842695458575179174338642339823944994310889967439502857986722241659086426237",
+    "4909": {
+      "title": "BTC Up or Down - Hourly (Jan 29, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4909?ref=opinion_hud",
+      "yesTokenId": "75080589459277106606425746152480336207399219621395190475838332144668152476541",
+      "noTokenId": "14824968394461559351095322842679479314515941426865995171085191496645164512830",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "4885": {
+      "title": "Bitcoin Up or Down on January 29?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/4885?ref=opinion_hud",
+      "yesTokenId": "899542015954240690513643524518537465687445028120533914759756528776067295267",
+      "noTokenId": "5872958177678686263016952156344091719723958925869296629763311538724782630586",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "4891": {
+      "title": "2026 Australian Open ATP：Alcaraz vs Zverev",
+      "url": "https://app.opinion.trade/market/4891?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "4892": {
+      "title": "2026 Australian Open ATP：Djokovic vs Sinner",
+      "url": "https://app.opinion.trade/market/4892?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
       },
       "type": "binary"
     }
@@ -18138,6 +17660,9 @@
     "2026 election": [
       "135",
       "136"
+    ],
+    "2026 elections": [
+      "130"
     ],
     "2026 fifa": [
       "79"
@@ -18325,7 +17850,6 @@
       "184",
       "189",
       "194",
-      "244",
       "95",
       "96",
       "97",
@@ -18337,7 +17861,6 @@
       "184",
       "189",
       "194",
-      "244",
       "95",
       "96",
       "97",
@@ -18444,7 +17967,6 @@
       "184",
       "189",
       "194",
-      "244",
       "67",
       "95",
       "96",
@@ -18510,7 +18032,6 @@
       "232",
       "233",
       "234",
-      "244",
       "3361",
       "3366",
       "67",
@@ -18572,8 +18093,6 @@
       "265"
     ],
     "altcoin": [
-      "246",
-      "247",
       "260",
       "3364",
       "3367",
@@ -18745,9 +18264,6 @@
     "ash total domestic": [
       "275"
     ],
-    "asset": [
-      "248"
-    ],
     "association": [
       "103"
     ],
@@ -18869,6 +18385,7 @@
       "136"
     ],
     "ballot": [
+      "130",
       "131"
     ],
     "ban": [
@@ -19053,7 +18570,6 @@
     "bitcoin": [
       "111",
       "112",
-      "246",
       "3256",
       "3365"
     ],
@@ -19061,14 +18577,10 @@
       "3365"
     ],
     "bitcoin hit": [
-      "112",
-      "246"
+      "112"
     ],
     "bitcoin hit $150k": [
       "112"
-    ],
-    "bitcoin hit january": [
-      "246"
     ],
     "bitcoin replace": [
       "3256"
@@ -19104,9 +18616,6 @@
       "208",
       "229",
       "233",
-      "246",
-      "247",
-      "248",
       "260",
       "3361",
       "3364",
@@ -19206,7 +18715,6 @@
     "btc": [
       "111",
       "112",
-      "246",
       "3256",
       "3365"
     ],
@@ -19516,9 +19024,6 @@
     "club competition": [
       "83"
     ],
-    "coin": [
-      "247"
-    ],
     "coinbase": [
       "119",
       "3366"
@@ -19649,6 +19154,9 @@
     "corporation": [
       "236"
     ],
+    "council": [
+      "130"
+    ],
     "court decision": [
       "1546"
     ],
@@ -19694,9 +19202,6 @@
       "208",
       "229",
       "233",
-      "246",
-      "247",
-      "248",
       "260",
       "3359",
       "3361",
@@ -19741,14 +19246,11 @@
     ],
     "crypto wallet": [
       "118",
-      "189",
-      "244"
+      "189"
     ],
     "cryptocurrency": [
       "112",
       "172",
-      "246",
-      "247",
       "260",
       "3364",
       "3367"
@@ -19809,7 +19311,6 @@
       "184",
       "189",
       "194",
-      "244",
       "67",
       "95",
       "96",
@@ -19822,7 +19323,6 @@
       "184",
       "189",
       "194",
-      "244",
       "95",
       "96",
       "97",
@@ -19861,9 +19361,6 @@
     "december 2026": [
       "3509"
     ],
-    "decentralized": [
-      "246"
-    ],
     "decentralized compute": [
       "194"
     ],
@@ -19898,9 +19395,6 @@
       "184",
       "192",
       "232",
-      "244",
-      "247",
-      "248",
       "260",
       "3361",
       "67",
@@ -19927,6 +19421,9 @@
     ],
     "demacia": [
       "212"
+    ],
+    "democratic party": [
+      "130"
     ],
     "demodogs": [
       "3224"
@@ -19972,15 +19469,11 @@
     "diet": [
       "306"
     ],
-    "digital asset": [
-      "247"
-    ],
     "digital collectibles": [
       "173"
     ],
     "digital gold": [
-      "112",
-      "246"
+      "112"
     ],
     "dip": [
       "260",
@@ -20203,9 +19696,6 @@
     "employment": [
       "273"
     ],
-    "ena": [
-      "248"
-    ],
     "encryption": [
       "3256"
     ],
@@ -20303,20 +19793,9 @@
     ],
     "eth": [
       "208",
-      "247",
       "3364"
     ],
-    "ethena": [
-      "248"
-    ],
-    "ethena hit": [
-      "248"
-    ],
-    "ethena hit january": [
-      "248"
-    ],
     "ether": [
-      "247",
       "3364"
     ],
     "ethereum": [
@@ -20324,7 +19803,6 @@
       "1721",
       "205",
       "208",
-      "247",
       "3364",
       "67"
     ],
@@ -20333,12 +19811,6 @@
     ],
     "ethereum all time": [
       "3364"
-    ],
-    "ethereum hit": [
-      "247"
-    ],
-    "ethereum hit january": [
-      "247"
     ],
     "ethereum layer": [
       "208"
@@ -20354,8 +19826,7 @@
     ],
     "ethereum wallet": [
       "118",
-      "189",
-      "244"
+      "189"
     ],
     "euro": [
       "121"
@@ -20475,7 +19946,6 @@
       "183",
       "189",
       "194",
-      "244",
       "95",
       "96",
       "97",
@@ -20487,7 +19957,6 @@
       "184",
       "189",
       "194",
-      "244",
       "95",
       "96",
       "97",
@@ -20499,7 +19968,6 @@
       "184",
       "189",
       "194",
-      "244",
       "95",
       "96",
       "97",
@@ -20869,8 +20337,7 @@
       "3055"
     ],
     "governance": [
-      "184",
-      "248"
+      "184"
     ],
     "governance token": [
       "118",
@@ -21012,9 +20479,6 @@
     "haerin": [
       "132"
     ],
-    "halving": [
-      "246"
-    ],
     "hammer & chisel": [
       "190"
     ],
@@ -21103,9 +20567,6 @@
     ],
     "hit january": [
       "227",
-      "246",
-      "247",
-      "248",
       "260",
       "262"
     ],
@@ -21633,6 +21094,9 @@
     "kinetic action": [
       "238"
     ],
+    "korea": [
+      "130"
+    ],
     "korean league": [
       "213"
     ],
@@ -21640,6 +21104,9 @@
       "130"
     ],
     "korean local elections": [
+      "130"
+    ],
+    "korean politics": [
       "130"
     ],
     "kraken": [
@@ -22060,8 +21527,6 @@
     ],
     "market": [
       "183",
-      "247",
-      "248",
       "260",
       "264",
       "265",
@@ -22081,8 +21546,6 @@
       "204",
       "205",
       "236",
-      "244",
-      "246",
       "3505",
       "3506",
       "67",
@@ -22128,6 +21591,7 @@
       "2398"
     ],
     "mayor": [
+      "130",
       "131"
     ],
     "mayoral election": [
@@ -22468,6 +21932,9 @@
     "mundial": [
       "79"
     ],
+    "municipal elections": [
+      "130"
+    ],
     "music": [
       "279",
       "284"
@@ -22807,7 +22274,6 @@
       "184",
       "189",
       "194",
-      "244",
       "67",
       "95",
       "96",
@@ -22820,7 +22286,6 @@
       "184",
       "189",
       "194",
-      "244",
       "67",
       "95",
       "96",
@@ -23053,6 +22518,9 @@
       "257",
       "271"
     ],
+    "people power party": [
+      "130"
+    ],
     "people's party": [
       "307"
     ],
@@ -23222,7 +22690,6 @@
     ],
     "prediction": [
       "183",
-      "248",
       "260"
     ],
     "prediction market": [
@@ -23264,7 +22731,6 @@
     ],
     "price": [
       "183",
-      "247",
       "260",
       "264",
       "265",
@@ -23283,29 +22749,8 @@
       "98"
     ],
     "price action": [
-      "244",
-      "246",
-      "248",
       "263",
       "96"
-    ],
-    "price bitcoin": [
-      "246"
-    ],
-    "price bitcoin hit": [
-      "246"
-    ],
-    "price ethena": [
-      "248"
-    ],
-    "price ethena hit": [
-      "248"
-    ],
-    "price ethereum": [
-      "247"
-    ],
-    "price ethereum hit": [
-      "247"
     ],
     "price gold": [
       "262"
@@ -23348,6 +22793,9 @@
     "pro league": [
       "212",
       "213"
+    ],
+    "progressive party": [
+      "130"
     ],
     "project": [
       "172",
@@ -23445,18 +22893,6 @@
     "qwen": [
       "237"
     ],
-    "rainbow": [
-      "244"
-    ],
-    "rainbow fdv": [
-      "244"
-    ],
-    "rainbow fdv above": [
-      "244"
-    ],
-    "rainbow wallet": [
-      "244"
-    ],
     "raise": [
       "3505",
       "3525"
@@ -23536,6 +22972,9 @@
       "186",
       "3257"
     ],
+    "rebuilding korea party": [
+      "130"
+    ],
     "recession": [
       "3265"
     ],
@@ -23582,6 +23021,9 @@
       "128",
       "202",
       "242"
+    ],
+    "regional elections": [
+      "130"
     ],
     "regular season": [
       "115",
@@ -23818,7 +23260,6 @@
     ],
     "satoshi": [
       "112",
-      "246",
       "3365"
     ],
     "satoshi move": [
@@ -24136,12 +23577,16 @@
       "280"
     ],
     "south korea": [
+      "130",
       "131"
     ],
     "south korean": [
       "130"
     ],
     "south korean local": [
+      "130"
+    ],
+    "south korean local elections": [
       "130"
     ],
     "sp500": [
@@ -24190,9 +23635,6 @@
     ],
     "sports": [
       "103"
-    ],
-    "spot etf": [
-      "246"
     ],
     "spot price": [
       "227",
@@ -24437,9 +23879,6 @@
     "swap": [
       "3365"
     ],
-    "synthetic dollar": [
-      "248"
-    ],
     "synthetix": [
       "184"
     ],
@@ -24596,7 +24035,6 @@
       "232",
       "233",
       "234",
-      "244",
       "67",
       "96",
       "97",
@@ -24712,8 +24150,6 @@
       "201",
       "208",
       "229",
-      "247",
-      "248",
       "260",
       "3367",
       "67",
@@ -24725,8 +24161,7 @@
       "3366"
     ],
     "token distribution": [
-      "174",
-      "244"
+      "174"
     ],
     "token event": [
       "189"
@@ -24755,7 +24190,6 @@
       "232",
       "233",
       "234",
-      "244",
       "3366",
       "96",
       "99"
@@ -24771,7 +24205,6 @@
       "189",
       "194",
       "232",
-      "244",
       "3361",
       "95",
       "99"
@@ -24822,9 +24255,6 @@
       "184",
       "227",
       "241",
-      "246",
-      "247",
-      "248",
       "260",
       "262",
       "263",
@@ -25110,9 +24540,6 @@
     "usd/jpy": [
       "3132"
     ],
-    "usde": [
-      "248"
-    ],
     "usdt": [
       "3359",
       "3367"
@@ -25149,8 +24576,6 @@
       "204",
       "205",
       "236",
-      "244",
-      "248",
       "266",
       "277",
       "3362",
@@ -25207,8 +24632,6 @@
     ],
     "volatility": [
       "112",
-      "246",
-      "247",
       "260",
       "270",
       "3367"
@@ -25217,6 +24640,7 @@
       "202"
     ],
     "vote": [
+      "130",
       "131",
       "301",
       "307"
@@ -25280,8 +24704,7 @@
     "web3": [
       "189",
       "201",
-      "205",
-      "244"
+      "205"
     ],
     "web3 marketplace": [
       "173"
@@ -25299,20 +24722,8 @@
       "241"
     ],
     "what price": [
-      "246",
-      "247",
-      "248",
       "260",
       "262"
-    ],
-    "what price bitcoin": [
-      "246"
-    ],
-    "what price ethena": [
-      "248"
-    ],
-    "what price ethereum": [
-      "247"
     ],
     "what price gold": [
       "262"
@@ -25564,8 +24975,6 @@
     ],
     "以太坊": [
       "1721",
-      "247",
-      "248",
       "3359",
       "3364",
       "67"
@@ -25674,9 +25083,6 @@
       "152",
       "171"
     ],
-    "彩虹钱包": [
-      "244"
-    ],
     "微策略": [
       "111",
       "3257"
@@ -25741,7 +25147,6 @@
     "比特币": [
       "111",
       "112",
-      "246",
       "3256",
       "3365"
     ],
@@ -25891,6 +25296,9 @@
     "霍莉·惠勒": [
       "3222"
     ],
+    "韩国地方选举": [
+      "130"
+    ],
     "韩国英雄联盟职业联赛": [
       "213"
     ],
@@ -25968,6 +25376,9 @@
     "2026 election": [
       "135",
       "136"
+    ],
+    "2026 elections": [
+      "130"
     ],
     "2026 fifa": [
       "79"
@@ -26081,7 +25492,6 @@
       "184",
       "189",
       "194",
-      "244",
       "95",
       "96",
       "97",
@@ -26093,7 +25503,6 @@
       "184",
       "189",
       "194",
-      "244",
       "95",
       "96",
       "97",
@@ -26188,7 +25597,6 @@
       "184",
       "189",
       "194",
-      "244",
       "67",
       "95",
       "96",
@@ -26250,7 +25658,6 @@
       "232",
       "233",
       "234",
-      "244",
       "67",
       "95",
       "96",
@@ -26293,8 +25700,6 @@
       "265"
     ],
     "altcoin": [
-      "246",
-      "247",
       "260",
       "98"
     ],
@@ -26418,9 +25823,6 @@
     "ash total domestic": [
       "275"
     ],
-    "asset": [
-      "248"
-    ],
     "association": [
       "103"
     ],
@@ -26532,6 +25934,7 @@
       "136"
     ],
     "ballot": [
+      "130",
       "131"
     ],
     "ban": [
@@ -26677,18 +26080,13 @@
     ],
     "bitcoin": [
       "111",
-      "112",
-      "246"
+      "112"
     ],
     "bitcoin hit": [
-      "112",
-      "246"
+      "112"
     ],
     "bitcoin hit $150k": [
       "112"
-    ],
-    "bitcoin hit january": [
-      "246"
     ],
     "bjt": [
       "307"
@@ -26705,9 +26103,6 @@
       "208",
       "229",
       "233",
-      "246",
-      "247",
-      "248",
       "260",
       "95",
       "98"
@@ -26754,8 +26149,7 @@
     ],
     "btc": [
       "111",
-      "112",
-      "246"
+      "112"
     ],
     "btc holdings": [
       "111"
@@ -26992,9 +26386,6 @@
     "club competition": [
       "83"
     ],
-    "coin": [
-      "247"
-    ],
     "coinbase": [
       "119"
     ],
@@ -27091,6 +26482,9 @@
     "corporation": [
       "236"
     ],
+    "council": [
+      "130"
+    ],
     "cpi": [
       "153",
       "61",
@@ -27111,9 +26505,6 @@
       "208",
       "229",
       "233",
-      "246",
-      "247",
-      "248",
       "260",
       "67",
       "95",
@@ -27142,14 +26533,11 @@
     ],
     "crypto wallet": [
       "118",
-      "189",
-      "244"
+      "189"
     ],
     "cryptocurrency": [
       "112",
       "172",
-      "246",
-      "247",
       "260"
     ],
     "cup winner": [
@@ -27188,7 +26576,6 @@
       "184",
       "189",
       "194",
-      "244",
       "67",
       "95",
       "96",
@@ -27201,7 +26588,6 @@
       "184",
       "189",
       "194",
-      "244",
       "95",
       "96",
       "97",
@@ -27222,9 +26608,6 @@
       "172",
       "97",
       "98"
-    ],
-    "decentralized": [
-      "246"
     ],
     "decentralized compute": [
       "194"
@@ -27259,9 +26642,6 @@
       "184",
       "192",
       "232",
-      "244",
-      "247",
-      "248",
       "260",
       "67",
       "95",
@@ -27275,6 +26655,9 @@
     ],
     "demacia": [
       "212"
+    ],
+    "democratic party": [
+      "130"
     ],
     "departure": [
       "193",
@@ -27306,15 +26689,11 @@
     "diet": [
       "306"
     ],
-    "digital asset": [
-      "247"
-    ],
     "digital collectibles": [
       "173"
     ],
     "digital gold": [
-      "112",
-      "246"
+      "112"
     ],
     "dip": [
       "260",
@@ -27482,9 +26861,6 @@
     "employment": [
       "273"
     ],
-    "ena": [
-      "248"
-    ],
     "english football": [
       "80"
     ],
@@ -27547,33 +26923,13 @@
       "213"
     ],
     "eth": [
-      "208",
-      "247"
-    ],
-    "ethena": [
-      "248"
-    ],
-    "ethena hit": [
-      "248"
-    ],
-    "ethena hit january": [
-      "248"
-    ],
-    "ether": [
-      "247"
+      "208"
     ],
     "ethereum": [
       "119",
       "205",
       "208",
-      "247",
       "67"
-    ],
-    "ethereum hit": [
-      "247"
-    ],
-    "ethereum hit january": [
-      "247"
     ],
     "ethereum layer": [
       "208"
@@ -27589,8 +26945,7 @@
     ],
     "ethereum wallet": [
       "118",
-      "189",
-      "244"
+      "189"
     ],
     "euro": [
       "121"
@@ -27671,7 +27026,6 @@
       "183",
       "189",
       "194",
-      "244",
       "95",
       "96",
       "97",
@@ -27683,7 +27037,6 @@
       "184",
       "189",
       "194",
-      "244",
       "95",
       "96",
       "97",
@@ -27695,7 +27048,6 @@
       "184",
       "189",
       "194",
-      "244",
       "95",
       "96",
       "97",
@@ -27999,8 +27351,7 @@
       "265"
     ],
     "governance": [
-      "184",
-      "248"
+      "184"
     ],
     "governance token": [
       "118",
@@ -28123,9 +27474,6 @@
     "haerin": [
       "132"
     ],
-    "halving": [
-      "246"
-    ],
     "hammer & chisel": [
       "190"
     ],
@@ -28162,9 +27510,6 @@
     ],
     "hit january": [
       "227",
-      "246",
-      "247",
-      "248",
       "260",
       "262"
     ],
@@ -28560,6 +27905,9 @@
     "kinetic action": [
       "238"
     ],
+    "korea": [
+      "130"
+    ],
     "korean league": [
       "213"
     ],
@@ -28567,6 +27915,9 @@
       "130"
     ],
     "korean local elections": [
+      "130"
+    ],
+    "korean politics": [
       "130"
     ],
     "kraken": [
@@ -28913,8 +28264,6 @@
     ],
     "market": [
       "183",
-      "247",
-      "248",
       "260",
       "264",
       "265",
@@ -28933,8 +28282,6 @@
       "204",
       "205",
       "236",
-      "244",
-      "246",
       "67",
       "95",
       "96",
@@ -28969,6 +28316,7 @@
       "115"
     ],
     "mayor": [
+      "130",
       "131"
     ],
     "mayoral election": [
@@ -29217,6 +28565,9 @@
     ],
     "mundial": [
       "79"
+    ],
+    "municipal elections": [
+      "130"
     ],
     "music": [
       "279",
@@ -29498,7 +28849,6 @@
       "184",
       "189",
       "194",
-      "244",
       "67",
       "95",
       "96",
@@ -29511,7 +28861,6 @@
       "184",
       "189",
       "194",
-      "244",
       "67",
       "95",
       "96",
@@ -29705,6 +29054,9 @@
       "257",
       "271"
     ],
+    "people power party": [
+      "130"
+    ],
     "people's party": [
       "307"
     ],
@@ -29858,7 +29210,6 @@
     ],
     "prediction": [
       "183",
-      "248",
       "260"
     ],
     "prediction market": [
@@ -29892,7 +29243,6 @@
     ],
     "price": [
       "183",
-      "247",
       "260",
       "264",
       "265",
@@ -29908,29 +29258,8 @@
       "98"
     ],
     "price action": [
-      "244",
-      "246",
-      "248",
       "263",
       "96"
-    ],
-    "price bitcoin": [
-      "246"
-    ],
-    "price bitcoin hit": [
-      "246"
-    ],
-    "price ethena": [
-      "248"
-    ],
-    "price ethena hit": [
-      "248"
-    ],
-    "price ethereum": [
-      "247"
-    ],
-    "price ethereum hit": [
-      "247"
     ],
     "price gold": [
       "262"
@@ -29966,6 +29295,9 @@
     "pro league": [
       "212",
       "213"
+    ],
+    "progressive party": [
+      "130"
     ],
     "project": [
       "172",
@@ -30030,18 +29362,6 @@
     ],
     "qwen": [
       "237"
-    ],
-    "rainbow": [
-      "244"
-    ],
-    "rainbow fdv": [
-      "244"
-    ],
-    "rainbow fdv above": [
-      "244"
-    ],
-    "rainbow wallet": [
-      "244"
     ],
     "raise tariffs": [
       "196"
@@ -30108,6 +29428,9 @@
     "rebalancing": [
       "186"
     ],
+    "rebuilding korea party": [
+      "130"
+    ],
     "record of the year": [
       "282",
       "283"
@@ -30141,6 +29464,9 @@
       "128",
       "202",
       "242"
+    ],
+    "regional elections": [
+      "130"
     ],
     "regular season": [
       "115",
@@ -30281,8 +29607,7 @@
       "128"
     ],
     "satoshi": [
-      "112",
-      "246"
+      "112"
     ],
     "saylor": [
       "111"
@@ -30519,12 +29844,16 @@
       "280"
     ],
     "south korea": [
+      "130",
       "131"
     ],
     "south korean": [
       "130"
     ],
     "south korean local": [
+      "130"
+    ],
+    "south korean local elections": [
       "130"
     ],
     "sp500": [
@@ -30567,9 +29896,6 @@
     ],
     "sports": [
       "103"
-    ],
-    "spot etf": [
-      "246"
     ],
     "spot price": [
       "227",
@@ -30758,9 +30084,6 @@
     "suspension of services": [
       "303"
     ],
-    "synthetic dollar": [
-      "248"
-    ],
     "synthetix": [
       "184"
     ],
@@ -30875,7 +30198,6 @@
       "232",
       "233",
       "234",
-      "244",
       "67",
       "96",
       "97",
@@ -30941,8 +30263,6 @@
       "201",
       "208",
       "229",
-      "247",
-      "248",
       "260",
       "67",
       "95",
@@ -30950,8 +30270,7 @@
       "98"
     ],
     "token distribution": [
-      "174",
-      "244"
+      "174"
     ],
     "token event": [
       "189"
@@ -30980,7 +30299,6 @@
       "232",
       "233",
       "234",
-      "244",
       "96",
       "99"
     ],
@@ -30995,7 +30313,6 @@
       "189",
       "194",
       "232",
-      "244",
       "95",
       "99"
     ],
@@ -31040,9 +30357,6 @@
       "184",
       "227",
       "241",
-      "246",
-      "247",
-      "248",
       "260",
       "262",
       "263",
@@ -31281,9 +30595,6 @@
     "usd.ai": [
       "183"
     ],
-    "usde": [
-      "248"
-    ],
     "usmc": [
       "128"
     ],
@@ -31301,8 +30612,6 @@
       "204",
       "205",
       "236",
-      "244",
-      "248",
       "266",
       "277",
       "67",
@@ -31337,8 +30646,6 @@
     ],
     "volatility": [
       "112",
-      "246",
-      "247",
       "260",
       "270"
     ],
@@ -31346,6 +30653,7 @@
       "202"
     ],
     "vote": [
+      "130",
       "131",
       "301",
       "307"
@@ -31390,8 +30698,7 @@
     "web3": [
       "189",
       "201",
-      "205",
-      "244"
+      "205"
     ],
     "web3 marketplace": [
       "173"
@@ -31406,20 +30713,8 @@
       "241"
     ],
     "what price": [
-      "246",
-      "247",
-      "248",
       "260",
       "262"
-    ],
-    "what price bitcoin": [
-      "246"
-    ],
-    "what price ethena": [
-      "248"
-    ],
-    "what price ethereum": [
-      "247"
     ],
     "what price gold": [
       "262"
@@ -31627,8 +30922,6 @@
       "269"
     ],
     "以太坊": [
-      "247",
-      "248",
       "67"
     ],
     "以太坊l2": [
@@ -31715,9 +31008,6 @@
       "152",
       "171"
     ],
-    "彩虹钱包": [
-      "244"
-    ],
     "微策略": [
       "111"
     ],
@@ -31777,8 +31067,7 @@
     ],
     "比特币": [
       "111",
-      "112",
-      "246"
+      "112"
     ],
     "波利市场": [
       "208"
@@ -31879,6 +31168,9 @@
     ],
     "阿根廷": [
       "288"
+    ],
+    "韩国地方选举": [
+      "130"
     ],
     "韩国英雄联盟职业联赛": [
       "213"
