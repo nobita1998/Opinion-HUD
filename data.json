@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-01-29 10:48:08 UTC+8",
+    "generatedAt": "2026-01-29 16:56:04 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 618,
-      "markets": 201,
-      "keywords": 2135,
+      "kept": 600,
+      "markets": 197,
+      "keywords": 2072,
       "events": {
-        "events": 120
+        "events": 115
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 377,
+        "cutoff_expired": 395,
         "cutoff_zero_kept": 46,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 118,
-        "regenerated_empty_entitygroups": 2,
-        "calls": 2,
+        "reused": 114,
+        "regenerated_empty_entitygroups": 1,
+        "calls": 1,
         "retries": 1,
         "fallback": 0,
         "empty": 1,
-        "non_empty": 1,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -2218,53 +2218,6 @@
       "sigCore": "f5efdfee",
       "reused": false
     },
-    "237": {
-      "title": "Which company has the best AI model end of January?",
-      "marketIds": [
-        "237"
-      ],
-      "bestMarketId": "237",
-      "bestLabels": null,
-      "keywords": [
-        "ai",
-        "artificial intelligence",
-        "llm",
-        "large language model",
-        "gpt",
-        "claude",
-        "gemini",
-        "deepseek",
-        "grok",
-        "qwen",
-        "benchmark",
-        "leaderboard",
-        "chatbot arena",
-        "model performance",
-        "agi",
-        "which company",
-        "company best",
-        "best model",
-        "model january",
-        "which company best",
-        "company best model",
-        "best model january"
-      ],
-      "entities": [
-        "ai模型"
-      ],
-      "entityGroups": [
-        [
-          "ai模型",
-          "大语言模型",
-          "美国中情局",
-          "中情局"
-        ]
-      ],
-      "sig": "64ce8f18",
-      "sigFull": "64ce8f18",
-      "sigCore": "7c79feaf",
-      "reused": false
-    },
     "236": {
       "title": "Largest Company end of January?",
       "marketIds": [
@@ -2305,143 +2258,6 @@
       "sig": "63a5352e",
       "sigFull": "63a5352e",
       "sigCore": "fbe075a8",
-      "reused": false
-    },
-    "239": {
-      "title": "Logan Paul 1st edition Charizard Sale Price?",
-      "marketIds": [
-        "239"
-      ],
-      "bestMarketId": "239",
-      "bestLabels": null,
-      "keywords": [
-        "logan paul",
-        "charizard",
-        "pokemon",
-        "pokémon",
-        "1st edition",
-        "shadowless",
-        "psa 10",
-        "gem mint",
-        "tcg",
-        "trading card",
-        "youtuber",
-        "influencer",
-        "auction",
-        "sale price",
-        "paul 1st",
-        "edition charizard",
-        "charizard sale",
-        "logan paul 1st",
-        "paul 1st edition",
-        "1st edition charizard",
-        "edition charizard sale",
-        "charizard sale price"
-      ],
-      "entities": [
-        "logan paul",
-        "charizard"
-      ],
-      "entityGroups": [
-        [
-          "logan paul",
-          "洛根·保罗"
-        ],
-        [
-          "charizard",
-          "喷火龙"
-        ]
-      ],
-      "sig": "6aa0475b",
-      "sigFull": "6aa0475b",
-      "sigCore": "c0c48e90",
-      "reused": false
-    },
-    "241": {
-      "title": "What will Gold settle at in January?",
-      "marketIds": [
-        "241"
-      ],
-      "bestMarketId": "241",
-      "bestLabels": null,
-      "keywords": [
-        "gold",
-        "xau",
-        "precious metal",
-        "commodity",
-        "bullion",
-        "spot price",
-        "futures",
-        "trading",
-        "ounce",
-        "troy ounce",
-        "safe haven",
-        "inflation hedge",
-        "settlement",
-        "market price",
-        "metal",
-        "what gold",
-        "gold settle",
-        "settle january",
-        "what gold settle",
-        "gold settle january"
-      ],
-      "entities": [
-        "gold"
-      ],
-      "entityGroups": [
-        [
-          "gold"
-        ]
-      ],
-      "sig": "264860a8",
-      "sigFull": "264860a8",
-      "sigCore": "a5214802",
-      "reused": false
-    },
-    "240": {
-      "title": "NFL MVP 2026",
-      "marketIds": [
-        "240"
-      ],
-      "bestMarketId": "240",
-      "bestLabels": null,
-      "keywords": [
-        "nfl",
-        "mvp",
-        "most valuable player",
-        "national football league",
-        "2026",
-        "football",
-        "american football",
-        "ap mvp",
-        "award",
-        "regular season",
-        "trophy",
-        "pete rozelle trophy",
-        "honor",
-        "season",
-        "nfl mvp",
-        "mvp 2026",
-        "nfl mvp 2026"
-      ],
-      "entities": [
-        "nfl",
-        "mvp"
-      ],
-      "entityGroups": [
-        [
-          "nfl",
-          "美国国家橄榄球联盟"
-        ],
-        [
-          "mvp",
-          "最有价值球员"
-        ]
-      ],
-      "sig": "9c74fa5d",
-      "sigFull": "9c74fa5d",
-      "sigCore": "cdb28537",
       "reused": false
     },
     "242": {
@@ -5455,53 +5271,6 @@
       "sig": "2c8b9acf",
       "sigFull": "2c8b9acf",
       "sigCore": "09e6a707",
-      "reused": false
-    },
-    "238": {
-      "title": "NATO x Russia military clash by...?",
-      "marketIds": [
-        "238"
-      ],
-      "bestMarketId": "238",
-      "bestLabels": null,
-      "keywords": [
-        "nato",
-        "russia",
-        "military clash",
-        "conflict",
-        "war",
-        "hostilities",
-        "article 5",
-        "escalation",
-        "confrontation",
-        "direct engagement",
-        "ww3",
-        "world war 3",
-        "armed conflict",
-        "kinetic action",
-        "nato-russia war",
-        "nato russia",
-        "russia military",
-        "nato russia military",
-        "russia military clash"
-      ],
-      "entities": [
-        "nato",
-        "russia"
-      ],
-      "entityGroups": [
-        [
-          "nato"
-        ],
-        [
-          "russia",
-          "俄罗斯",
-          "美联储"
-        ]
-      ],
-      "sig": "240f4485",
-      "sigFull": "240f4485",
-      "sigCore": "f6714b75",
       "reused": false
     }
   },
@@ -10913,91 +10682,6 @@
         }
       ]
     },
-    "237": {
-      "title": "Which company has the best AI model end of January?",
-      "url": "https://app.opinion.trade/market/237?ref=opinion_hud",
-      "yesTokenId": "1840500138111921800346417168909531130239985387506507287363830454493575203385",
-      "noTokenId": "87941946156557783693875884529005184309013168403235459374666832588379737555468",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "ai",
-        "artificial intelligence",
-        "llm",
-        "large language model",
-        "gpt",
-        "claude",
-        "gemini",
-        "deepseek",
-        "grok",
-        "qwen",
-        "benchmark",
-        "leaderboard",
-        "chatbot arena",
-        "model performance",
-        "agi",
-        "which company",
-        "company best",
-        "best model",
-        "model january",
-        "which company best",
-        "company best model",
-        "best model january"
-      ],
-      "entities": [
-        "ai模型"
-      ],
-      "entityGroups": [
-        [
-          "ai模型",
-          "大语言模型",
-          "美国中情局",
-          "中情局"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3442",
-          "title": "Google",
-          "yesTokenId": "85973970591700996526592046748280684400584538452986906428187593270185761232505",
-          "noTokenId": "52229037625839225018365898181371461906847395869874857121104635886869639227206"
-        },
-        {
-          "marketId": "3443",
-          "title": "xAI",
-          "yesTokenId": "23631590454917247426621038322821492844109877048774252692223275000931553445583",
-          "noTokenId": "76961540430642140093780329133127101177119282792737262018363727413144034827415"
-        },
-        {
-          "marketId": "3444",
-          "title": "OpenAI",
-          "yesTokenId": "96375032337421232785300695642680376843705240361023995681943038840598895051661",
-          "noTokenId": "6457722589129078950133273116788266430883196448497391379382549352415732112910"
-        },
-        {
-          "marketId": "3445",
-          "title": "Anthropic",
-          "yesTokenId": "48718703990642475333860344877869752613210997422606457864183330448857368849901",
-          "noTokenId": "59742897503747832301522785312473194178018666218063661352366000169410389305086"
-        },
-        {
-          "marketId": "3446",
-          "title": "DeepSeek",
-          "yesTokenId": "1840500138111921800346417168909531130239985387506507287363830454493575203385",
-          "noTokenId": "87941946156557783693875884529005184309013168403235459374666832588379737555468"
-        },
-        {
-          "marketId": "3447",
-          "title": "Alibaba",
-          "yesTokenId": "89657117743508986099090169199060746331866650793323532545267845339608448147930",
-          "noTokenId": "64397493699003406817662245292006195016169120700870371419749629820709578770558"
-        }
-      ]
-    },
     "3441": {
       "title": ">$3B",
       "url": "https://app.opinion.trade/market/3441?ref=opinion_hud",
@@ -11013,8 +10697,8 @@
     "236": {
       "title": "Largest Company end of January?",
       "url": "https://app.opinion.trade/market/236?ref=opinion_hud",
-      "yesTokenId": "56912136469838622482785907750648666260114494364328056991229317083146499856544",
-      "noTokenId": "35979608201987255086537775734132081534329059019331428903572693351375169885726",
+      "yesTokenId": "42896394517944593060508201678877424636144041381362479727455083369058791604068",
+      "noTokenId": "111545416522900750595326077082147056647344096826562779371251730241064719543984",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11075,76 +10759,6 @@
           "title": "Microsoft",
           "yesTokenId": "95641519694439319356945363912806402101397154646601140484919954248331033556438",
           "noTokenId": "11311397825609479921415757177032639753602233851666924012544765856280043671895"
-        }
-      ]
-    },
-    "239": {
-      "title": "Logan Paul 1st edition Charizard Sale Price?",
-      "url": "https://app.opinion.trade/market/239?ref=opinion_hud",
-      "yesTokenId": "59977705441172209038664332037788868188349800877545323435996739343664273714615",
-      "noTokenId": "3873180416362913902323157610197728827002043329166300175856286507021912369567",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "logan paul",
-        "charizard",
-        "pokemon",
-        "pokémon",
-        "1st edition",
-        "shadowless",
-        "psa 10",
-        "gem mint",
-        "tcg",
-        "trading card",
-        "youtuber",
-        "influencer",
-        "auction",
-        "sale price",
-        "paul 1st",
-        "edition charizard",
-        "charizard sale",
-        "logan paul 1st",
-        "paul 1st edition",
-        "1st edition charizard",
-        "edition charizard sale",
-        "charizard sale price"
-      ],
-      "entities": [
-        "logan paul",
-        "charizard"
-      ],
-      "entityGroups": [
-        [
-          "logan paul",
-          "洛根·保罗"
-        ],
-        [
-          "charizard",
-          "喷火龙"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3472",
-          "title": ">500k",
-          "yesTokenId": "110484417544122823254761095699021553128360240846413769466616010240032054172225",
-          "noTokenId": "95227050999252317067302742391483645374450121456113471742654035589764749333159"
-        },
-        {
-          "marketId": "3473",
-          "title": ">700k",
-          "yesTokenId": "69374899816513985165697081759229368011165322364964388870071550851156779392899",
-          "noTokenId": "91918259957598915256611952104420103565087020978419582957032383593833491884226"
-        },
-        {
-          "marketId": "3474",
-          "title": ">1m",
-          "yesTokenId": "59977705441172209038664332037788868188349800877545323435996739343664273714615",
-          "noTokenId": "3873180416362913902323157610197728827002043329166300175856286507021912369567"
         }
       ]
     },
@@ -11295,157 +10909,6 @@
           "$300m",
           "3亿美元"
         ]
-      ]
-    },
-    "241": {
-      "title": "What will Gold settle at in January?",
-      "url": "https://app.opinion.trade/market/241?ref=opinion_hud",
-      "yesTokenId": "3399171993246059579057112086217266244935612803650698929069327548671119046291",
-      "noTokenId": "81957624095132653235784085018460035024160312075832611461950206415730274331488",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "gold",
-        "xau",
-        "precious metal",
-        "commodity",
-        "bullion",
-        "spot price",
-        "futures",
-        "trading",
-        "ounce",
-        "troy ounce",
-        "safe haven",
-        "inflation hedge",
-        "settlement",
-        "market price",
-        "metal",
-        "what gold",
-        "gold settle",
-        "settle january",
-        "what gold settle",
-        "gold settle january"
-      ],
-      "entities": [
-        "gold"
-      ],
-      "entityGroups": [
-        [
-          "gold"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3493",
-          "title": "<$4,350",
-          "yesTokenId": "8076707663817857107843696848049034345603328647528153159981438098187322175913",
-          "noTokenId": "49499262399986282511746706303909628315656270592575782381230471469946981397990"
-        },
-        {
-          "marketId": "3494",
-          "title": "$4,350-$4,475",
-          "yesTokenId": "72171039594088283154813543797034385734219701997288879380279268177598544043409",
-          "noTokenId": "68097988781237584349404750954004400834504490892618235246295702834636322323520"
-        },
-        {
-          "marketId": "3495",
-          "title": "$4,475-$4,600",
-          "yesTokenId": "72947834695494677708546660856636776922674859808061411809067542797186368840422",
-          "noTokenId": "78295507117508107526446359751871066696110548930108227892469897056989004357116"
-        },
-        {
-          "marketId": "3496",
-          "title": "$4,600-$4,725",
-          "yesTokenId": "3399171993246059579057112086217266244935612803650698929069327548671119046291",
-          "noTokenId": "81957624095132653235784085018460035024160312075832611461950206415730274331488"
-        },
-        {
-          "marketId": "3497",
-          "title": "$4,725-$4,850",
-          "yesTokenId": "107669046623252327871771834174063386350866163719270496082047318757272142178045",
-          "noTokenId": "112067396078671576330637188997554681493512491925647101495218451188843505607934"
-        },
-        {
-          "marketId": "3498",
-          "title": "$4,850-$4,975",
-          "yesTokenId": "103490610735884805741107326547437194339440318815341032946752090012502100233575",
-          "noTokenId": "4301071532195779371705053617551970419926634321037091293003521898398219753699"
-        },
-        {
-          "marketId": "3499",
-          "title": "$4,975-$5,100",
-          "yesTokenId": "2235882637449838152420499903864798232910205834395726078338926129886503367683",
-          "noTokenId": "43205358902520555386604254503588064325185018067688581562635395671091764356825"
-        },
-        {
-          "marketId": "3500",
-          "title": ">$5,100",
-          "yesTokenId": "110541000850125547153921848913726141476791681735618835453443283996459661456087",
-          "noTokenId": "70491420335828580504589151614223598153238676029377727651848810014831482104425"
-        }
-      ]
-    },
-    "240": {
-      "title": "NFL MVP 2026",
-      "url": "https://app.opinion.trade/market/240?ref=opinion_hud",
-      "yesTokenId": "108793378940771714436739312735681081116073263401046583156266372722868687827822",
-      "noTokenId": "69998954799596494709613597712257762853353561600741962280150956404911534126980",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "nfl",
-        "mvp",
-        "most valuable player",
-        "national football league",
-        "2026",
-        "football",
-        "american football",
-        "ap mvp",
-        "award",
-        "regular season",
-        "trophy",
-        "pete rozelle trophy",
-        "honor",
-        "season",
-        "nfl mvp",
-        "mvp 2026",
-        "nfl mvp 2026"
-      ],
-      "entities": [
-        "nfl",
-        "mvp"
-      ],
-      "entityGroups": [
-        [
-          "nfl",
-          "美国国家橄榄球联盟"
-        ],
-        [
-          "mvp",
-          "最有价值球员"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3483",
-          "title": "Drake Maye",
-          "yesTokenId": "61754362683938734152219853505995649599955864896942900088190916922958203283920",
-          "noTokenId": "69407422471847883619011144001099842189784322456179581811143435340028614766093"
-        },
-        {
-          "marketId": "3484",
-          "title": "Matthew Stafford",
-          "yesTokenId": "108793378940771714436739312735681081116073263401046583156266372722868687827822",
-          "noTokenId": "69998954799596494709613597712257762853353561600741962280150956404911534126980"
-        }
       ]
     },
     "3508": {
@@ -17429,103 +16892,6 @@
         }
       ]
     },
-    "238": {
-      "title": "NATO x Russia military clash by...?",
-      "url": "https://app.opinion.trade/market/238?ref=opinion_hud",
-      "yesTokenId": "77039607138061403800532287049949299354152181580202266682307948054250138560653",
-      "noTokenId": "73126827500332917789366252931046976193293413836046028260329761504628422957904",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "nato",
-        "russia",
-        "military clash",
-        "conflict",
-        "war",
-        "hostilities",
-        "article 5",
-        "escalation",
-        "confrontation",
-        "direct engagement",
-        "ww3",
-        "world war 3",
-        "armed conflict",
-        "kinetic action",
-        "nato-russia war",
-        "nato russia",
-        "russia military",
-        "nato russia military",
-        "russia military clash"
-      ],
-      "entities": [
-        "nato",
-        "russia"
-      ],
-      "entityGroups": [
-        [
-          "nato"
-        ],
-        [
-          "russia",
-          "俄罗斯",
-          "美联储"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3448",
-          "title": "March 31, 2026",
-          "yesTokenId": "97435264842696443652659806812764168857547144889301131359641857561233677180825",
-          "noTokenId": "6029884462917803668994932530774562741616572603598194212781855650123062511928"
-        },
-        {
-          "marketId": "3449",
-          "title": "June 30, 2026",
-          "yesTokenId": "77039607138061403800532287049949299354152181580202266682307948054250138560653",
-          "noTokenId": "73126827500332917789366252931046976193293413836046028260329761504628422957904"
-        }
-      ]
-    },
-    "4910": {
-      "title": "ETH Up or Down - Hourly (Jan 29, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4910?ref=opinion_hud",
-      "yesTokenId": "74089375077245919962354192672987922510717272880233583466868703641850830416079",
-      "noTokenId": "71668504179425073643366446559917863087833622936262129817267623705187733299919",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "4908": {
-      "title": "BNB Up or Down - Hourly (Jan 29, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4908?ref=opinion_hud",
-      "yesTokenId": "59349457630986871937539546520367338272398977024333872036479327025462973560774",
-      "noTokenId": "10839793235489974796139377482412310360809276784363063052318557935965946535059",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "4909": {
-      "title": "BTC Up or Down - Hourly (Jan 29, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4909?ref=opinion_hud",
-      "yesTokenId": "75080589459277106606425746152480336207399219621395190475838332144668152476541",
-      "noTokenId": "14824968394461559351095322842679479314515941426865995171085191496645164512830",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "4885": {
       "title": "Bitcoin Up or Down on January 29?(12:00 ET)",
       "url": "https://app.opinion.trade/market/4885?ref=opinion_hud",
@@ -17561,6 +16927,54 @@
         "noLabel": ""
       },
       "type": "binary"
+    },
+    "4930": {
+      "title": "BTC Up or Down - Hourly (Jan 29, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4930?ref=opinion_hud",
+      "yesTokenId": "79419150954140587718435782933953382619181296603746312878002533714889071284834",
+      "noTokenId": "115168377905437949191191955127813808370291820081611208531224077926782811847338",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "4929": {
+      "title": "BNB Up or Down - Hourly (Jan 29, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4929?ref=opinion_hud",
+      "yesTokenId": "107760654172199477140416446559285076855045097575732224147319490838726860470939",
+      "noTokenId": "95050016206216133172015230434422572620921879760814277900175165879455200696029",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "4931": {
+      "title": "ETH Up or Down - Hourly (Jan 29, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4931?ref=opinion_hud",
+      "yesTokenId": "70348075475795794971523292454285026116676124267974788709363035614690219328348",
+      "noTokenId": "71834529757354905520143044216240566213080222973232416629431491969205510823795",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "4932": {
+      "title": "RIVER FDV hit $10B by Feb 10?",
+      "url": "https://app.opinion.trade/market/4932?ref=opinion_hud",
+      "yesTokenId": "113706126974734949461229117808799940568056605492779938458322056855384483232983",
+      "noTokenId": "25965544185519665238587120033689905253966574528248925991894353708565622855122",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -17585,12 +16999,6 @@
     ],
     "1q2026": [
       "3362"
-    ],
-    "1st edition": [
-      "239"
-    ],
-    "1st edition charizard": [
-      "239"
     ],
     "1st pick": [
       "3072"
@@ -17617,7 +17025,6 @@
       "210",
       "212",
       "213",
-      "240",
       "3448",
       "3449",
       "3508",
@@ -17987,14 +17394,12 @@
       "302"
     ],
     "agi": [
-      "237",
       "89"
     ],
     "ai": [
       "152",
       "198",
       "200",
-      "237",
       "268"
     ],
     "ai compute": [
@@ -18045,9 +17450,6 @@
       "257",
       "271",
       "274"
-    ],
-    "ai模型": [
-      "237"
     ],
     "album": [
       "2178",
@@ -18112,7 +17514,6 @@
       "3158"
     ],
     "american football": [
-      "240",
       "81"
     ],
     "amount": [
@@ -18170,9 +17571,6 @@
     ],
     "aoty": [
       "279"
-    ],
-    "ap mvp": [
-      "240"
     ],
     "apocalypse": [
       "2670"
@@ -18232,24 +17630,17 @@
     "armageddon": [
       "2670"
     ],
-    "armed conflict": [
-      "238"
-    ],
     "armistice": [
       "226"
     ],
     "ars": [
       "288"
     ],
-    "article 5": [
-      "238"
-    ],
     "artificial intelligence": [
       "129",
       "152",
       "171",
       "183",
-      "237",
       "89"
     ],
     "artist winner": [
@@ -18295,8 +17686,7 @@
       "3039"
     ],
     "auction": [
-      "217",
-      "239"
+      "217"
     ],
     "australian open": [
       "222",
@@ -18334,8 +17724,7 @@
       "275"
     ],
     "award": [
-      "115",
-      "240"
+      "115"
     ],
     "award ceremony": [
       "140"
@@ -18474,7 +17863,6 @@
       "142"
     ],
     "benchmark": [
-      "237",
       "263"
     ],
     "benicio del toro": [
@@ -18509,12 +17897,6 @@
     ],
     "best film editing": [
       "211"
-    ],
-    "best model": [
-      "237"
-    ],
-    "best model january": [
-      "237"
     ],
     "best new": [
       "282"
@@ -18730,7 +18112,6 @@
     ],
     "bullion": [
       "227",
-      "241",
       "262",
       "287"
     ],
@@ -18872,15 +18253,6 @@
     "character": [
       "3224"
     ],
-    "charizard": [
-      "239"
-    ],
-    "charizard sale": [
-      "239"
-    ],
-    "charizard sale price": [
-      "239"
-    ],
     "charlie heaton": [
       "3221"
     ],
@@ -18889,9 +18261,6 @@
     ],
     "chatbot": [
       "129"
-    ],
-    "chatbot arena": [
-      "237"
     ],
     "chatgpt": [
       "152",
@@ -18951,9 +18320,6 @@
     "claim": [
       "118",
       "174"
-    ],
-    "claude": [
-      "237"
     ],
     "cleric": [
       "242"
@@ -19047,7 +18413,6 @@
     ],
     "commodity": [
       "227",
-      "241",
       "262",
       "287"
     ],
@@ -19059,12 +18424,6 @@
     ],
     "companies added 500": [
       "186"
-    ],
-    "company best": [
-      "237"
-    ],
-    "company best model": [
-      "237"
     ],
     "company january": [
       "236"
@@ -19090,15 +18449,11 @@
     "conflict": [
       "128",
       "226",
-      "238",
       "257",
       "271",
       "274",
       "302",
       "3039"
-    ],
-    "confrontation": [
-      "238"
     ],
     "congress": [
       "135",
@@ -19386,9 +18741,6 @@
       "230",
       "75"
     ],
-    "deepseek": [
-      "237"
-    ],
     "defi": [
       "119",
       "1721",
@@ -19485,9 +18837,6 @@
     ],
     "diplomatic visit": [
       "276"
-    ],
-    "direct engagement": [
-      "238"
     ],
     "directing": [
       "138"
@@ -19645,12 +18994,6 @@
     "editing winner": [
       "211"
     ],
-    "edition charizard": [
-      "239"
-    ],
-    "edition charizard sale": [
-      "239"
-    ],
     "editor": [
       "211"
     ],
@@ -19775,7 +19118,6 @@
     ],
     "escalation": [
       "226",
-      "238",
       "257",
       "271",
       "302",
@@ -20135,7 +19477,6 @@
       "201"
     ],
     "football": [
-      "240",
       "79",
       "80",
       "82",
@@ -20207,7 +19548,6 @@
       "3509"
     ],
     "futures": [
-      "241",
       "287",
       "3361"
     ],
@@ -20228,12 +19568,6 @@
     ],
     "gdp contraction": [
       "3265"
-    ],
-    "gem mint": [
-      "239"
-    ],
-    "gemini": [
-      "237"
     ],
     "general election": [
       "150",
@@ -20278,7 +19612,6 @@
       "3362"
     ],
     "gold": [
-      "241",
       "262"
     ],
     "gold bar": [
@@ -20298,12 +19631,6 @@
     ],
     "gold price": [
       "262"
-    ],
-    "gold settle": [
-      "241"
-    ],
-    "gold settle january": [
-      "241"
     ],
     "golden statuette": [
       "133",
@@ -20375,7 +19702,6 @@
       "303"
     ],
     "gpt": [
-      "237",
       "89"
     ],
     "gpt 6": [
@@ -20452,8 +19778,7 @@
       "81"
     ],
     "grok": [
-      "129",
-      "237"
+      "129"
     ],
     "grok 5": [
       "129"
@@ -20590,9 +19915,6 @@
     "holographic": [
       "217"
     ],
-    "honor": [
-      "240"
-    ],
     "honors": [
       "115"
     ],
@@ -20607,7 +19929,6 @@
     ],
     "hostilities": [
       "226",
-      "238",
       "302"
     ],
     "house 2026": [
@@ -20779,11 +20100,7 @@
       "78"
     ],
     "inflation hedge": [
-      "241",
       "262"
-    ],
-    "influencer": [
-      "239"
     ],
     "infura": [
       "205"
@@ -21091,9 +20408,6 @@
     "khamenei out supreme": [
       "242"
     ],
-    "kinetic action": [
-      "238"
-    ],
     "korea": [
       "130"
     ],
@@ -21167,7 +20481,6 @@
     ],
     "large language model": [
       "129",
-      "237",
       "89"
     ],
     "largest company": [
@@ -21259,9 +20572,6 @@
     ],
     "leader iran": [
       "242"
-    ],
-    "leaderboard": [
-      "237"
     ],
     "leadership": [
       "193",
@@ -21370,7 +20680,6 @@
     "llm": [
       "129",
       "200",
-      "237",
       "89"
     ],
     "local elections": [
@@ -21380,11 +20689,7 @@
       "130"
     ],
     "logan paul": [
-      "217",
-      "239"
-    ],
-    "logan paul 1st": [
-      "239"
+      "217"
     ],
     "logan paul pikachu": [
       "217"
@@ -21572,9 +20877,6 @@
     "market performance": [
       "263"
     ],
-    "market price": [
-      "241"
-    ],
     "market resolution": [
       "99"
     ],
@@ -21681,7 +20983,6 @@
       "270"
     ],
     "metal": [
-      "241",
       "287"
     ],
     "metamask": [
@@ -21770,9 +21071,6 @@
     "military attack": [
       "274"
     ],
-    "military clash": [
-      "238"
-    ],
     "military intervention": [
       "128",
       "274"
@@ -21815,12 +21113,6 @@
     "model": [
       "200"
     ],
-    "model january": [
-      "237"
-    ],
-    "model performance": [
-      "237"
-    ],
     "model weights": [
       "89"
     ],
@@ -21857,8 +21149,7 @@
       "3525"
     ],
     "most valuable player": [
-      "115",
-      "240"
+      "115"
     ],
     "motion picture": [
       "211"
@@ -21961,12 +21252,10 @@
       "264"
     ],
     "mvp": [
-      "115",
-      "240"
+      "115"
     ],
     "mvp 2026": [
-      "115",
-      "240"
+      "115"
     ],
     "na'vi": [
       "275"
@@ -22019,25 +21308,12 @@
       "115"
     ],
     "national football league": [
-      "240",
       "81"
     ],
     "native token": [
       "168",
       "175",
       "3366"
-    ],
-    "nato": [
-      "238"
-    ],
-    "nato russia": [
-      "238"
-    ],
-    "nato russia military": [
-      "238"
-    ],
-    "nato-russia war": [
-      "238"
     ],
     "natural disaster": [
       "187",
@@ -22144,17 +21420,10 @@
       "81"
     ],
     "nfl": [
-      "240",
       "81"
     ],
     "nfl draft": [
       "3072"
-    ],
-    "nfl mvp": [
-      "240"
-    ],
-    "nfl mvp 2026": [
-      "240"
     ],
     "nflx": [
       "277"
@@ -22375,7 +21644,6 @@
       "211"
     ],
     "ounce": [
-      "241",
       "287"
     ],
     "ousted": [
@@ -22493,12 +21761,6 @@
     "party winner": [
       "130"
     ],
-    "paul 1st": [
-      "239"
-    ],
-    "paul 1st edition": [
-      "239"
-    ],
     "paul pikachu": [
       "217"
     ],
@@ -22560,9 +21822,6 @@
     "peso": [
       "288"
     ],
-    "pete rozelle trophy": [
-      "240"
-    ],
     "pheu thai": [
       "307"
     ],
@@ -22595,17 +21854,11 @@
     "pm": [
       "306"
     ],
-    "pokemon": [
-      "239"
-    ],
     "pokemon card": [
       "217"
     ],
     "pokemon tcg": [
       "217"
-    ],
-    "pokémon": [
-      "239"
     ],
     "policy decision": [
       "75"
@@ -22681,7 +21934,6 @@
       "142"
     ],
     "precious metal": [
-      "241",
       "262",
       "287"
     ],
@@ -22813,8 +22065,7 @@
       "184"
     ],
     "psa 10": [
-      "217",
-      "239"
+      "217"
     ],
     "pt": [
       "307"
@@ -22889,9 +22140,6 @@
     ],
     "quarterback": [
       "3072"
-    ],
-    "qwen": [
-      "237"
     ],
     "raise": [
       "3505",
@@ -23026,8 +22274,7 @@
       "130"
     ],
     "regular season": [
-      "115",
-      "240"
+      "115"
     ],
     "rehire": [
       "3369"
@@ -23206,15 +22453,6 @@
     "running mate": [
       "3055"
     ],
-    "russia": [
-      "238"
-    ],
-    "russia military": [
-      "238"
-    ],
-    "russia military clash": [
-      "238"
-    ],
     "russia ukraine": [
       "127"
     ],
@@ -23233,7 +22471,6 @@
     ],
     "safe haven": [
       "227",
-      "241",
       "262"
     ],
     "safeguard": [
@@ -23245,8 +22482,7 @@
       "217"
     ],
     "sale price": [
-      "217",
-      "239"
+      "217"
     ],
     "sam altman": [
       "152",
@@ -23296,8 +22532,7 @@
       "140"
     ],
     "season": [
-      "213",
-      "240"
+      "213"
     ],
     "season 2": [
       "293"
@@ -23391,11 +22626,7 @@
       "3357"
     ],
     "settle january": [
-      "241",
       "287"
-    ],
-    "settlement": [
-      "241"
     ],
     "settlement date": [
       "3508"
@@ -23408,9 +22639,6 @@
     ],
     "sha256": [
       "3256"
-    ],
-    "shadowless": [
-      "239"
     ],
     "share": [
       "264",
@@ -23638,7 +22866,6 @@
     ],
     "spot price": [
       "227",
-      "241",
       "262",
       "287"
     ],
@@ -23913,8 +23140,7 @@
       "196"
     ],
     "tcg": [
-      "217",
-      "239"
+      "217"
     ],
     "team achieve": [
       "293"
@@ -24254,7 +23480,6 @@
       "183",
       "184",
       "227",
-      "241",
       "260",
       "262",
       "263",
@@ -24275,9 +23500,6 @@
     ],
     "trading bot": [
       "200"
-    ],
-    "trading card": [
-      "239"
     ],
     "trading card game": [
       "217"
@@ -24328,7 +23550,6 @@
     ],
     "trophy": [
       "115",
-      "240",
       "279",
       "280",
       "283",
@@ -24337,7 +23558,6 @@
       "83"
     ],
     "troy ounce": [
-      "241",
       "262",
       "287"
     ],
@@ -24673,7 +23893,6 @@
     "war": [
       "128",
       "226",
-      "238",
       "257",
       "271",
       "274",
@@ -24715,12 +23934,6 @@
     "westworld": [
       "3158"
     ],
-    "what gold": [
-      "241"
-    ],
-    "what gold settle": [
-      "241"
-    ],
     "what price": [
       "260",
       "262"
@@ -24757,12 +23970,6 @@
     ],
     "which companies added": [
       "186"
-    ],
-    "which company": [
-      "237"
-    ],
-    "which company best": [
-      "237"
     ],
     "which party": [
       "135",
@@ -24853,17 +24060,11 @@
     "world cup winner": [
       "79"
     ],
-    "world war 3": [
-      "238"
-    ],
     "worlds": [
       "212"
     ],
     "wta": [
       "304"
-    ],
-    "ww3": [
-      "238"
     ],
     "xag": [
       "227",
@@ -24876,7 +24077,6 @@
       "129"
     ],
     "xau": [
-      "241",
       "262"
     ],
     "xauusd": [
@@ -24922,8 +24122,7 @@
       "306"
     ],
     "youtuber": [
-      "217",
-      "239"
+      "217"
     ],
     "yuichiro tamaki": [
       "306"
@@ -24951,9 +24150,6 @@
     ],
     "世界杯": [
       "79"
-    ],
-    "中情局": [
-      "237"
     ],
     "中本聪": [
       "3365"
@@ -24994,9 +24190,6 @@
     "众议院": [
       "135"
     ],
-    "俄罗斯": [
-      "238"
-    ],
     "全自动驾驶": [
       "198"
     ],
@@ -25028,9 +24221,6 @@
       "242",
       "258"
     ],
-    "喷火龙": [
-      "239"
-    ],
     "国家主席": [
       "301"
     ],
@@ -25039,9 +24229,6 @@
     ],
     "墨西哥": [
       "274"
-    ],
-    "大语言模型": [
-      "237"
     ],
     "太空探索技术公司": [
       "158",
@@ -25106,8 +24293,7 @@
       "236"
     ],
     "最有价值球员": [
-      "115",
-      "240"
+      "115"
     ],
     "最有价值的公司": [
       "236"
@@ -25162,9 +24348,6 @@
     "泽连斯基": [
       "202"
     ],
-    "洛根·保罗": [
-      "239"
-    ],
     "澳大利亚网球公开赛": [
       "222"
     ],
@@ -25202,14 +24385,10 @@
       "217"
     ],
     "美国中情局": [
-      "115",
-      "237"
+      "115"
     ],
     "美国参议院": [
       "136"
-    ],
-    "美国国家橄榄球联盟": [
-      "240"
     ],
     "美国政府": [
       "3114"
@@ -25228,7 +24407,6 @@
     "美联储": [
       "107",
       "153",
-      "238",
       "303",
       "3114",
       "61",
@@ -25319,12 +24497,6 @@
     "$based": [
       "97"
     ],
-    "1st edition": [
-      "239"
-    ],
-    "1st edition charizard": [
-      "239"
-    ],
     "2025-26 season": [
       "80"
     ],
@@ -25337,7 +24509,6 @@
       "210",
       "212",
       "213",
-      "240",
       "78",
       "79"
     ],
@@ -25617,14 +24788,12 @@
       "302"
     ],
     "agi": [
-      "237",
       "89"
     ],
     "ai": [
       "152",
       "198",
       "200",
-      "237",
       "268"
     ],
     "ai compute": [
@@ -25670,9 +24839,6 @@
       "271",
       "274"
     ],
-    "ai模型": [
-      "237"
-    ],
     "album": [
       "279"
     ],
@@ -25713,7 +24879,6 @@
       "269"
     ],
     "american football": [
-      "240",
       "81"
     ],
     "ampas": [
@@ -25752,9 +24917,6 @@
     "aoty": [
       "279"
     ],
-    "ap mvp": [
-      "240"
-    ],
     "app": [
       "159"
     ],
@@ -25791,24 +24953,17 @@
     "argentina official usd": [
       "288"
     ],
-    "armed conflict": [
-      "238"
-    ],
     "armistice": [
       "226"
     ],
     "ars": [
       "288"
     ],
-    "article 5": [
-      "238"
-    ],
     "artificial intelligence": [
       "129",
       "152",
       "171",
       "183",
-      "237",
       "89"
     ],
     "artist winner": [
@@ -25850,8 +25005,7 @@
       "302"
     ],
     "auction": [
-      "217",
-      "239"
+      "217"
     ],
     "australian open": [
       "222",
@@ -25889,8 +25043,7 @@
       "275"
     ],
     "award": [
-      "115",
-      "240"
+      "115"
     ],
     "award ceremony": [
       "140"
@@ -26002,7 +25155,6 @@
       "142"
     ],
     "benchmark": [
-      "237",
       "263"
     ],
     "benicio del toro": [
@@ -26037,12 +25189,6 @@
     ],
     "best film editing": [
       "211"
-    ],
-    "best model": [
-      "237"
-    ],
-    "best model january": [
-      "237"
     ],
     "best new": [
       "282"
@@ -26162,7 +25308,6 @@
     ],
     "bullion": [
       "227",
-      "241",
       "262",
       "287"
     ],
@@ -26274,20 +25419,8 @@
       "103",
       "81"
     ],
-    "charizard": [
-      "239"
-    ],
-    "charizard sale": [
-      "239"
-    ],
-    "charizard sale price": [
-      "239"
-    ],
     "chatbot": [
       "129"
-    ],
-    "chatbot arena": [
-      "237"
     ],
     "chatgpt": [
       "152",
@@ -26331,9 +25464,6 @@
     "claim": [
       "118",
       "174"
-    ],
-    "claude": [
-      "237"
     ],
     "cleric": [
       "242"
@@ -26397,7 +25527,6 @@
     ],
     "commodity": [
       "227",
-      "241",
       "262",
       "287"
     ],
@@ -26409,12 +25538,6 @@
     ],
     "companies added 500": [
       "186"
-    ],
-    "company best": [
-      "237"
-    ],
-    "company best model": [
-      "237"
     ],
     "company january": [
       "236"
@@ -26434,14 +25557,10 @@
     "conflict": [
       "128",
       "226",
-      "238",
       "257",
       "271",
       "274",
       "302"
-    ],
-    "confrontation": [
-      "238"
     ],
     "congress": [
       "135",
@@ -26634,9 +25753,6 @@
       "230",
       "75"
     ],
-    "deepseek": [
-      "237"
-    ],
     "defi": [
       "119",
       "184",
@@ -26705,9 +25821,6 @@
     ],
     "diplomatic visit": [
       "276"
-    ],
-    "direct engagement": [
-      "238"
     ],
     "directing": [
       "138"
@@ -26813,12 +25926,6 @@
     "editing winner": [
       "211"
     ],
-    "edition charizard": [
-      "239"
-    ],
-    "edition charizard sale": [
-      "239"
-    ],
     "editor": [
       "211"
     ],
@@ -26910,7 +26017,6 @@
     ],
     "escalation": [
       "226",
-      "238",
       "257",
       "271",
       "302"
@@ -27193,7 +26299,6 @@
       "201"
     ],
     "football": [
-      "240",
       "79",
       "80",
       "82",
@@ -27245,7 +26350,6 @@
       "303"
     ],
     "futures": [
-      "241",
       "287"
     ],
     "gaming": [
@@ -27253,12 +26357,6 @@
     ],
     "gaming chat": [
       "190"
-    ],
-    "gem mint": [
-      "239"
-    ],
-    "gemini": [
-      "237"
     ],
     "general election": [
       "150",
@@ -27298,7 +26396,6 @@
       "205"
     ],
     "gold": [
-      "241",
       "262"
     ],
     "gold bar": [
@@ -27318,12 +26415,6 @@
     ],
     "gold price": [
       "262"
-    ],
-    "gold settle": [
-      "241"
-    ],
-    "gold settle january": [
-      "241"
     ],
     "golden statuette": [
       "133",
@@ -27383,7 +26474,6 @@
       "303"
     ],
     "gpt": [
-      "237",
       "89"
     ],
     "gpt 6": [
@@ -27456,8 +26546,7 @@
       "81"
     ],
     "grok": [
-      "129",
-      "237"
+      "129"
     ],
     "grok 5": [
       "129"
@@ -27529,9 +26618,6 @@
     "holographic": [
       "217"
     ],
-    "honor": [
-      "240"
-    ],
     "honors": [
       "115"
     ],
@@ -27541,7 +26627,6 @@
     ],
     "hostilities": [
       "226",
-      "238",
       "302"
     ],
     "house 2026": [
@@ -27674,11 +26759,7 @@
       "78"
     ],
     "inflation hedge": [
-      "241",
       "262"
-    ],
-    "influencer": [
-      "239"
     ],
     "infura": [
       "205"
@@ -27902,9 +26983,6 @@
     "khamenei out supreme": [
       "242"
     ],
-    "kinetic action": [
-      "238"
-    ],
     "korea": [
       "130"
     ],
@@ -27961,7 +27039,6 @@
     ],
     "large language model": [
       "129",
-      "237",
       "89"
     ],
     "largest company": [
@@ -28045,9 +27122,6 @@
     ],
     "leader iran": [
       "242"
-    ],
-    "leaderboard": [
-      "237"
     ],
     "leadership": [
       "193",
@@ -28142,7 +27216,6 @@
     "llm": [
       "129",
       "200",
-      "237",
       "89"
     ],
     "local elections": [
@@ -28152,11 +27225,7 @@
       "130"
     ],
     "logan paul": [
-      "217",
-      "239"
-    ],
-    "logan paul 1st": [
-      "239"
+      "217"
     ],
     "logan paul pikachu": [
       "217"
@@ -28303,9 +27372,6 @@
     "market performance": [
       "263"
     ],
-    "market price": [
-      "241"
-    ],
     "market resolution": [
       "99"
     ],
@@ -28385,7 +27451,6 @@
       "270"
     ],
     "metal": [
-      "241",
       "287"
     ],
     "metamask": [
@@ -28452,9 +27517,6 @@
     "military attack": [
       "274"
     ],
-    "military clash": [
-      "238"
-    ],
     "military intervention": [
       "128",
       "274"
@@ -28490,12 +27552,6 @@
     "model": [
       "200"
     ],
-    "model january": [
-      "237"
-    ],
-    "model performance": [
-      "237"
-    ],
     "model weights": [
       "89"
     ],
@@ -28516,8 +27572,7 @@
       "121"
     ],
     "most valuable player": [
-      "115",
-      "240"
+      "115"
     ],
     "motion picture": [
       "211"
@@ -28595,12 +27650,10 @@
       "264"
     ],
     "mvp": [
-      "115",
-      "240"
+      "115"
     ],
     "mvp 2026": [
-      "115",
-      "240"
+      "115"
     ],
     "na'vi": [
       "275"
@@ -28642,24 +27695,11 @@
       "115"
     ],
     "national football league": [
-      "240",
       "81"
     ],
     "native token": [
       "168",
       "175"
-    ],
-    "nato": [
-      "238"
-    ],
-    "nato russia": [
-      "238"
-    ],
-    "nato russia military": [
-      "238"
-    ],
-    "nato-russia war": [
-      "238"
     ],
     "natural disaster": [
       "187"
@@ -28735,14 +27775,7 @@
       "81"
     ],
     "nfl": [
-      "240",
       "81"
-    ],
-    "nfl mvp": [
-      "240"
-    ],
-    "nfl mvp 2026": [
-      "240"
     ],
     "nflx": [
       "277"
@@ -28946,7 +27979,6 @@
       "211"
     ],
     "ounce": [
-      "241",
       "287"
     ],
     "ousted": [
@@ -29032,12 +28064,6 @@
     "party winner": [
       "130"
     ],
-    "paul 1st": [
-      "239"
-    ],
-    "paul 1st edition": [
-      "239"
-    ],
     "paul pikachu": [
       "217"
     ],
@@ -29090,9 +28116,6 @@
     "peso": [
       "288"
     ],
-    "pete rozelle trophy": [
-      "240"
-    ],
     "pheu thai": [
       "307"
     ],
@@ -29119,17 +28142,11 @@
     "pm": [
       "306"
     ],
-    "pokemon": [
-      "239"
-    ],
     "pokemon card": [
       "217"
     ],
     "pokemon tcg": [
       "217"
-    ],
-    "pokémon": [
-      "239"
     ],
     "policy decision": [
       "75"
@@ -29201,7 +28218,6 @@
       "142"
     ],
     "precious metal": [
-      "241",
       "262",
       "287"
     ],
@@ -29312,8 +28328,7 @@
       "184"
     ],
     "psa 10": [
-      "217",
-      "239"
+      "217"
     ],
     "pt": [
       "307"
@@ -29359,9 +28374,6 @@
     ],
     "quake": [
       "187"
-    ],
-    "qwen": [
-      "237"
     ],
     "raise tariffs": [
       "196"
@@ -29469,8 +28481,7 @@
       "130"
     ],
     "regular season": [
-      "115",
-      "240"
+      "115"
     ],
     "release": [
       "129",
@@ -29557,15 +28568,6 @@
     "roty": [
       "283"
     ],
-    "russia": [
-      "238"
-    ],
-    "russia military": [
-      "238"
-    ],
-    "russia military clash": [
-      "238"
-    ],
     "russia ukraine": [
       "127"
     ],
@@ -29584,7 +28586,6 @@
     ],
     "safe haven": [
       "227",
-      "241",
       "262"
     ],
     "sale": [
@@ -29593,8 +28594,7 @@
       "217"
     ],
     "sale price": [
-      "217",
-      "239"
+      "217"
     ],
     "sam altman": [
       "152",
@@ -29625,8 +28625,7 @@
       "140"
     ],
     "season": [
-      "213",
-      "240"
+      "213"
     ],
     "season 2": [
       "293"
@@ -29693,14 +28692,7 @@
       "275"
     ],
     "settle january": [
-      "241",
       "287"
-    ],
-    "settlement": [
-      "241"
-    ],
-    "shadowless": [
-      "239"
     ],
     "share": [
       "264",
@@ -29899,7 +28891,6 @@
     ],
     "spot price": [
       "227",
-      "241",
       "262",
       "287"
     ],
@@ -30103,8 +29094,7 @@
       "196"
     ],
     "tcg": [
-      "217",
-      "239"
+      "217"
     ],
     "team achieve": [
       "293"
@@ -30356,7 +29346,6 @@
       "183",
       "184",
       "227",
-      "241",
       "260",
       "262",
       "263",
@@ -30375,9 +29364,6 @@
     ],
     "trading bot": [
       "200"
-    ],
-    "trading card": [
-      "239"
     ],
     "trading card game": [
       "217"
@@ -30420,7 +29406,6 @@
     ],
     "trophy": [
       "115",
-      "240",
       "279",
       "280",
       "283",
@@ -30429,7 +29414,6 @@
       "83"
     ],
     "troy ounce": [
-      "241",
       "262",
       "287"
     ],
@@ -30680,7 +29664,6 @@
     "war": [
       "128",
       "226",
-      "238",
       "257",
       "271",
       "274",
@@ -30705,12 +29688,6 @@
     ],
     "web3 wallet": [
       "118"
-    ],
-    "what gold": [
-      "241"
-    ],
-    "what gold settle": [
-      "241"
     ],
     "what price": [
       "260",
@@ -30745,12 +29722,6 @@
     ],
     "which companies added": [
       "186"
-    ],
-    "which company": [
-      "237"
-    ],
-    "which company best": [
-      "237"
     ],
     "which party": [
       "135",
@@ -30831,17 +29802,11 @@
     "world cup winner": [
       "79"
     ],
-    "world war 3": [
-      "238"
-    ],
     "worlds": [
       "212"
     ],
     "wta": [
       "304"
-    ],
-    "ww3": [
-      "238"
     ],
     "xag": [
       "227",
@@ -30854,7 +29819,6 @@
       "129"
     ],
     "xau": [
-      "241",
       "262"
     ],
     "xauusd": [
@@ -30885,8 +29849,7 @@
       "306"
     ],
     "youtuber": [
-      "217",
-      "239"
+      "217"
     ],
     "yuichiro tamaki": [
       "306"
@@ -30905,9 +29868,6 @@
     ],
     "世界杯": [
       "79"
-    ],
-    "中情局": [
-      "237"
     ],
     "乌克兰": [
       "202"
@@ -30938,9 +29898,6 @@
     "众议院": [
       "135"
     ],
-    "俄罗斯": [
-      "238"
-    ],
     "全自动驾驶": [
       "198"
     ],
@@ -30957,9 +29914,6 @@
       "242",
       "258"
     ],
-    "喷火龙": [
-      "239"
-    ],
     "国家主席": [
       "301"
     ],
@@ -30968,9 +29922,6 @@
     ],
     "墨西哥": [
       "274"
-    ],
-    "大语言模型": [
-      "237"
     ],
     "太空探索技术公司": [
       "158",
@@ -31030,8 +29981,7 @@
       "236"
     ],
     "最有价值球员": [
-      "115",
-      "240"
+      "115"
     ],
     "最有价值的公司": [
       "236"
@@ -31075,9 +30025,6 @@
     "泽连斯基": [
       "202"
     ],
-    "洛根·保罗": [
-      "239"
-    ],
     "澳大利亚网球公开赛": [
       "222"
     ],
@@ -31106,14 +30053,10 @@
       "217"
     ],
     "美国中情局": [
-      "115",
-      "237"
+      "115"
     ],
     "美国参议院": [
       "136"
-    ],
-    "美国国家橄榄球联盟": [
-      "240"
     ],
     "美国职业篮球": [
       "103",
@@ -31129,7 +30072,6 @@
     "美联储": [
       "107",
       "153",
-      "238",
       "303",
       "61",
       "75",
