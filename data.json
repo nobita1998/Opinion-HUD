@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-01-30 10:48:45 UTC+8",
+    "generatedAt": "2026-01-30 16:54:28 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 545,
-      "markets": 187,
-      "keywords": 1963,
+      "kept": 527,
+      "markets": 183,
+      "keywords": 1911,
       "events": {
-        "events": 105
+        "events": 101
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 455,
+        "cutoff_expired": 473,
         "cutoff_zero_kept": 46,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 104,
+        "reused": 100,
         "regenerated_empty_entitygroups": 1,
         "calls": 1,
         "retries": 1,
@@ -40,102 +40,6 @@
     }
   },
   "events": {
-    "213": {
-      "title": "LoL: LCK 2026 Season Winner",
-      "marketIds": [
-        "213"
-      ],
-      "bestMarketId": "213",
-      "bestLabels": null,
-      "keywords": [
-        "lck",
-        "league of legends",
-        "lol",
-        "2026",
-        "season",
-        "champions korea",
-        "esports",
-        "pro league",
-        "korean league",
-        "spring split",
-        "summer split",
-        "rift",
-        "summoner's rift",
-        "moba",
-        "gaming",
-        "lol lck",
-        "lck 2026",
-        "2026 season",
-        "season winner",
-        "lol lck 2026",
-        "lck 2026 season",
-        "2026 season winner"
-      ],
-      "entities": [
-        "lck",
-        "lol"
-      ],
-      "entityGroups": [
-        [
-          "lck",
-          "韩国英雄联盟职业联赛",
-          "lck联赛"
-        ],
-        [
-          "lol",
-          "英雄联盟"
-        ]
-      ],
-      "sig": "cb36a1ca",
-      "sigFull": "cb36a1ca",
-      "sigCore": "c56f54db",
-      "reused": false
-    },
-    "212": {
-      "title": "LoL: LPL 2026 Season Winner",
-      "marketIds": [
-        "212"
-      ],
-      "bestMarketId": "212",
-      "bestLabels": null,
-      "keywords": [
-        "lol",
-        "league of legends",
-        "lpl",
-        "2026",
-        "spring split",
-        "summer split",
-        "playoffs",
-        "finals",
-        "pro league",
-        "esports",
-        "china",
-        "demacia",
-        "msi",
-        "worlds",
-        "rift",
-        "lol lpl",
-        "lpl 2026",
-        "2026 season",
-        "season winner",
-        "lol lpl 2026",
-        "lpl 2026 season",
-        "2026 season winner"
-      ],
-      "entities": [
-        "lpl"
-      ],
-      "entityGroups": [
-        [
-          "lpl",
-          "英雄联盟职业联赛"
-        ]
-      ],
-      "sig": "ae53948a",
-      "sigFull": "ae53948a",
-      "sigCore": "62d4af49",
-      "reused": false
-    },
     "80": {
       "title": "English Premier League Winner 2026",
       "marketIds": [
@@ -222,95 +126,6 @@
       "sig": "263835f3",
       "sigFull": "263835f3",
       "sigCore": "75c15c08",
-      "reused": false
-    },
-    "211": {
-      "title": "Oscars 2026: Best Film Editing Winner",
-      "marketIds": [
-        "211"
-      ],
-      "bestMarketId": "211",
-      "bestLabels": null,
-      "keywords": [
-        "oscars",
-        "academy awards",
-        "best film editing",
-        "film editing",
-        "cinema",
-        "movies",
-        "awards",
-        "98th academy awards",
-        "motion picture",
-        "editor",
-        "cut",
-        "post-production",
-        "oscars 2026",
-        "2026 best",
-        "best film",
-        "editing winner",
-        "oscars 2026 best",
-        "2026 best film",
-        "film editing winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "oscar",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "sig": "6c85e452",
-      "sigFull": "6c85e452",
-      "sigCore": "7bf3d5f6",
-      "reused": false
-    },
-    "210": {
-      "title": "Oscars 2026: Best Cinematography Winner",
-      "marketIds": [
-        "210"
-      ],
-      "bestMarketId": "210",
-      "bestLabels": null,
-      "keywords": [
-        "oscars",
-        "academy awards",
-        "best cinematography",
-        "cinematography",
-        "2026",
-        "film awards",
-        "movie awards",
-        "cinematographer",
-        "asc",
-        "academy",
-        "oscar",
-        "cinema",
-        "cinematography award",
-        "98th oscars",
-        "oscars 2026",
-        "2026 best",
-        "cinematography winner",
-        "oscars 2026 best",
-        "2026 best cinematography",
-        "best cinematography winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "oscar",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "sig": "ccc54cae",
-      "sigFull": "ccc54cae",
-      "sigCore": "8ce1e8e5",
       "reused": false
     },
     "133": {
@@ -5141,232 +4956,6 @@
         ]
       ]
     },
-    "213": {
-      "title": "LoL: LCK 2026 Season Winner",
-      "url": "https://app.opinion.trade/market/213?ref=opinion_hud",
-      "yesTokenId": "10575169940350673038329941282694993448649009946715875489267217836660242353416",
-      "noTokenId": "30731372030458147040263688259634213641967524788160964732342063860785107739513",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "keywords": [
-        "lck",
-        "league of legends",
-        "lol",
-        "2026",
-        "season",
-        "champions korea",
-        "esports",
-        "pro league",
-        "korean league",
-        "spring split",
-        "summer split",
-        "rift",
-        "summoner's rift",
-        "moba",
-        "gaming",
-        "lol lck",
-        "lck 2026",
-        "2026 season",
-        "season winner",
-        "lol lck 2026",
-        "lck 2026 season",
-        "2026 season winner"
-      ],
-      "entities": [
-        "lck",
-        "lol"
-      ],
-      "entityGroups": [
-        [
-          "lck",
-          "韩国英雄联盟职业联赛",
-          "lck联赛"
-        ],
-        [
-          "lol",
-          "英雄联盟"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3189",
-          "title": "Gen.G Esports",
-          "yesTokenId": "7733402138720491824117603122365062819609161547128591723094519582451898576185",
-          "noTokenId": "83466981209296388279367069643770650762216256178795667412936460299286101849005"
-        },
-        {
-          "marketId": "3190",
-          "title": "Hanwha Life Esports",
-          "yesTokenId": "10575169940350673038329941282694993448649009946715875489267217836660242353416",
-          "noTokenId": "30731372030458147040263688259634213641967524788160964732342063860785107739513"
-        },
-        {
-          "marketId": "3191",
-          "title": "T1",
-          "yesTokenId": "7682515701098904209876418405456250608177487753685388267961214555958228311932",
-          "noTokenId": "11144765504299840815200126351230533546272772674037386081391185597469275201831"
-        },
-        {
-          "marketId": "3192",
-          "title": "KT Rolster",
-          "yesTokenId": "30894445734903505528153624479680324720739667138208334684213987693299039423105",
-          "noTokenId": "35439677745472789492473800587510022674739608400936855521100281146344823704470"
-        },
-        {
-          "marketId": "3193",
-          "title": "Dplus",
-          "yesTokenId": "82993566143537860141996893474302178757091990924516557552838061989920701438637",
-          "noTokenId": "78179365903300550080104823325332773638182559414059703262277339115268099878695"
-        },
-        {
-          "marketId": "3194",
-          "title": "Nongshim RedForce",
-          "yesTokenId": "35494568228156614850256361990040015656681784924830600895324055698811983719506",
-          "noTokenId": "11730772194362342937856340382898244287297826616603873272453728444984759056596"
-        },
-        {
-          "marketId": "3195",
-          "title": "DRX",
-          "yesTokenId": "37794550606149329234541298697309477529029895917736852414797360596963933395315",
-          "noTokenId": "42250803031355874749815860806889397103213925914350258435169783547676235281798"
-        },
-        {
-          "marketId": "3196",
-          "title": "FEARX",
-          "yesTokenId": "65433937665833556522707250800467565744476257295926912226300700038259993320718",
-          "noTokenId": "11967167003827214516413185531011450184226457809307330198015301462619571994727"
-        },
-        {
-          "marketId": "3197",
-          "title": "Freecs",
-          "yesTokenId": "107642298471250641857019850383342901331471246836510753661862071614692093092294",
-          "noTokenId": "12917436705825171938096015540360450584201664823944509315934629089464616995994"
-        },
-        {
-          "marketId": "3198",
-          "title": "BRION",
-          "yesTokenId": "95680397316618465550493039583079560685825112728624397004650825712466309116228",
-          "noTokenId": "53333759767228973750143071041675661540397554036067065819400126916280837782309"
-        }
-      ]
-    },
-    "212": {
-      "title": "LoL: LPL 2026 Season Winner",
-      "url": "https://app.opinion.trade/market/212?ref=opinion_hud",
-      "yesTokenId": "13225185738409741377586621728633321780995070821779334080070295344084810199848",
-      "noTokenId": "71121674413900455209736006866303446922339310502978190772559683464323573688150",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "keywords": [
-        "lol",
-        "league of legends",
-        "lpl",
-        "2026",
-        "spring split",
-        "summer split",
-        "playoffs",
-        "finals",
-        "pro league",
-        "esports",
-        "china",
-        "demacia",
-        "msi",
-        "worlds",
-        "rift",
-        "lol lpl",
-        "lpl 2026",
-        "2026 season",
-        "season winner",
-        "lol lpl 2026",
-        "lpl 2026 season",
-        "2026 season winner"
-      ],
-      "entities": [
-        "lpl"
-      ],
-      "entityGroups": [
-        [
-          "lpl",
-          "英雄联盟职业联赛"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3179",
-          "title": "Bilibili Gaming",
-          "yesTokenId": "78988602655175427533022846941186505078943341562207698568507389799131619209717",
-          "noTokenId": "16945326781561559634595080413930960326836736336685204446708588994582023984437"
-        },
-        {
-          "marketId": "3180",
-          "title": "Anyone's Legend",
-          "yesTokenId": "17148858061532331818858423370304686044425868244378638944516628422206364909883",
-          "noTokenId": "49338081214552160818875978484409111817348523392211877129939937446628964127385"
-        },
-        {
-          "marketId": "3181",
-          "title": "JD Gaming",
-          "yesTokenId": "25838636736739068612623582449915542497876038372345336098333213800599103525172",
-          "noTokenId": "27603533719190260974037625626390461732022368827959350044216186075636597177422"
-        },
-        {
-          "marketId": "3182",
-          "title": "Weibo Gaming",
-          "yesTokenId": "13217798579223854591257794653210972589226680271208045678117279575144205672592",
-          "noTokenId": "12870500801439998240296378323655430442650324904596401227116384118186461627059"
-        },
-        {
-          "marketId": "3183",
-          "title": "Top Esports",
-          "yesTokenId": "89227324893737371683857114231588365936061280707603181735908691081054101913196",
-          "noTokenId": "43275495312316186605534500868822589176550246567855970682129871095240634853694"
-        },
-        {
-          "marketId": "3184",
-          "title": "LNG Esports",
-          "yesTokenId": "37124613347928024091157279965833609215933850729477033439628295410389614265786",
-          "noTokenId": "107524479759313199300819794157289413232771069464927523529071656616056835737515"
-        },
-        {
-          "marketId": "3185",
-          "title": "EDward Gaming",
-          "yesTokenId": "13225185738409741377586621728633321780995070821779334080070295344084810199848",
-          "noTokenId": "71121674413900455209736006866303446922339310502978190772559683464323573688150"
-        },
-        {
-          "marketId": "3186",
-          "title": "Oh My God",
-          "yesTokenId": "39078932755898987269478366495195246189417608348156771842896557534034356263826",
-          "noTokenId": "42987015840094579186727169183014799028877546056153700093172368208684055718866"
-        },
-        {
-          "marketId": "3187",
-          "title": "LGD Gaming",
-          "yesTokenId": "34943610669209980120686712545157773316540364529413448003483903715607456877619",
-          "noTokenId": "12096792902814381404622588919561678914550979853872412771356493761955077547365"
-        },
-        {
-          "marketId": "3188",
-          "title": "Team WE",
-          "yesTokenId": "28269492854021290576183029763379918976646472078142264251079515438348682926898",
-          "noTokenId": "49185060685078216259849874525664577780470691615620437116963752301722845523798"
-        },
-        {
-          "marketId": "3649",
-          "title": "Invictus Gaming",
-          "yesTokenId": "12442709866282352537967045151245619611276275066855815578787642470222904245435",
-          "noTokenId": "10293807588201594859104418216646028282692100598254146419849790412142735602303"
-        }
-      ]
-    },
     "80": {
       "title": "English Premier League Winner 2026",
       "url": "https://app.opinion.trade/market/80?ref=opinion_hud",
@@ -5516,195 +5105,6 @@
           "title": "Victor Wembanyama",
           "yesTokenId": "32109696625141513689655403733645648187560974001570001091194377848247635695486",
           "noTokenId": "115398602245575717832388579353864903548043889337415411082810479307576648848998"
-        }
-      ]
-    },
-    "211": {
-      "title": "Oscars 2026: Best Film Editing Winner",
-      "url": "https://app.opinion.trade/market/211?ref=opinion_hud",
-      "yesTokenId": "98806218536517606985079376611528023470492439727581698053717195048206087003100",
-      "noTokenId": "73415241981539668320609037271728826348499786448468502943085382734888078985522",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "oscars",
-        "academy awards",
-        "best film editing",
-        "film editing",
-        "cinema",
-        "movies",
-        "awards",
-        "98th academy awards",
-        "motion picture",
-        "editor",
-        "cut",
-        "post-production",
-        "oscars 2026",
-        "2026 best",
-        "best film",
-        "editing winner",
-        "oscars 2026 best",
-        "2026 best film",
-        "film editing winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "oscar",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3169",
-          "title": "One Battle After Another",
-          "yesTokenId": "60529362641759527115812734859521398535357069857906857220370754636316501570457",
-          "noTokenId": "15088846960589818076444646100176534748179727401443392109879173373463393946868"
-        },
-        {
-          "marketId": "3170",
-          "title": "Marty Supreme",
-          "yesTokenId": "79672328990348350558874271225006724285767712717907282028348326895000256332901",
-          "noTokenId": "52389421483305412758647722944379241023950472127761670174611704313462764641884"
-        },
-        {
-          "marketId": "3171",
-          "title": "Sinners",
-          "yesTokenId": "91547029013374205728743956837572171332949746726626652884609894558155654335655",
-          "noTokenId": "7990063303919447377831312098189189955167427235533588751652030413502849465917"
-        },
-        {
-          "marketId": "3174",
-          "title": "F1: The Movie",
-          "yesTokenId": "98806218536517606985079376611528023470492439727581698053717195048206087003100",
-          "noTokenId": "73415241981539668320609037271728826348499786448468502943085382734888078985522"
-        },
-        {
-          "marketId": "3172",
-          "title": "Avatar: Fire and Ash",
-          "yesTokenId": "87920410958478597179904430872022635023664468959445082765259218769308849218290",
-          "noTokenId": "83405721131669655567430322845508640191482682024914093353073288656625778283075"
-        },
-        {
-          "marketId": "3173",
-          "title": "It Was Just an Accident",
-          "yesTokenId": "108131535266504936730762092036434827182273369191275304357297184526117159918130",
-          "noTokenId": "70503173927451879643067332245027610997762908505342933764172443216004404839726"
-        },
-        {
-          "marketId": "3175",
-          "title": "Frankenstein",
-          "yesTokenId": "98974630012970204640161050900080549261514125267743122029064255564853720625551",
-          "noTokenId": "11432606699181426039875929311917224585766200042555102904298533908513566441676"
-        },
-        {
-          "marketId": "3176",
-          "title": "Bugonia",
-          "yesTokenId": "93737158333633584804741179175023465352441197690905553214413001484481489134122",
-          "noTokenId": "85988682679267204712841454396509164212113338729363926239128003607862141670649"
-        }
-      ]
-    },
-    "210": {
-      "title": "Oscars 2026: Best Cinematography Winner",
-      "url": "https://app.opinion.trade/market/210?ref=opinion_hud",
-      "yesTokenId": "11155930724291697555347317861212982065764591335827904731347044750892496942054",
-      "noTokenId": "79828059354905173977335380358515282523086959654283814433745570272245016238261",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "oscars",
-        "academy awards",
-        "best cinematography",
-        "cinematography",
-        "2026",
-        "film awards",
-        "movie awards",
-        "cinematographer",
-        "asc",
-        "academy",
-        "oscar",
-        "cinema",
-        "cinematography award",
-        "98th oscars",
-        "oscars 2026",
-        "2026 best",
-        "cinematography winner",
-        "oscars 2026 best",
-        "2026 best cinematography",
-        "best cinematography winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "oscar",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3161",
-          "title": "One Battle After Another",
-          "yesTokenId": "41989692533215817724246421383013757456108310037886000791794605966704473073239",
-          "noTokenId": "57110671112637615681183062303533756889739532870290665251874659206720385890536"
-        },
-        {
-          "marketId": "3162",
-          "title": "Sinners",
-          "yesTokenId": "73628395073490911128467691468822460545024104027714302745334690941902770842300",
-          "noTokenId": "27800423150729886263105054094239335723111031988118727923907796263815385050418"
-        },
-        {
-          "marketId": "3163",
-          "title": "Train Dreams",
-          "yesTokenId": "88336067347195853173637484455809966290960199220096053818084012105273064665247",
-          "noTokenId": "9005394338599128964636553593773716029861893596611889890098224993106468178677"
-        },
-        {
-          "marketId": "3164",
-          "title": "Frankenstein",
-          "yesTokenId": "100263611857406799507486492138791708469021570268821708342862407656315565467009",
-          "noTokenId": "32299237352025555732491371238233538659944261513542859500851051217122597375553"
-        },
-        {
-          "marketId": "3165",
-          "title": "Marty Supreme",
-          "yesTokenId": "11155930724291697555347317861212982065764591335827904731347044750892496942054",
-          "noTokenId": "79828059354905173977335380358515282523086959654283814433745570272245016238261"
-        },
-        {
-          "marketId": "3166",
-          "title": "Hamnet",
-          "yesTokenId": "56498610688430319278907003225884175378033877323625636397156023634518153511942",
-          "noTokenId": "56149668671619506907362249343507145699446080757073643518314179060524806130298"
-        },
-        {
-          "marketId": "3167",
-          "title": "F1: The Movie",
-          "yesTokenId": "21367498355050970057716091451323854837766044017012852333623202735164508992147",
-          "noTokenId": "28892952678811822726586347479709619240380440960413779585923409597953000736486"
-        },
-        {
-          "marketId": "3168",
-          "title": "Wicked: For Good",
-          "yesTokenId": "25660408181005860679111342490418819942631878029379273139119476014114711111653",
-          "noTokenId": "60257503033752916246592924922498480624033445618149646645262072887140328454830"
         }
       ]
     },
@@ -6177,8 +5577,8 @@
     "205": {
       "title": "Consensys IPO closing market cap above ... ?",
       "url": "https://app.opinion.trade/market/205?ref=opinion_hud",
-      "yesTokenId": "84878198386279846327306051660424503082988144709133395026322095966444437854107",
-      "noTokenId": "98613906687613983864686358297392784854352495886246110432737567840718749989908",
+      "yesTokenId": "80779226918228515512838063786010424793947417141218825296182765347746636514521",
+      "noTokenId": "5708594107297344682792636340903776936928171314456338530783463111638482169735",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -15766,11 +15166,11 @@
       },
       "type": "binary"
     },
-    "5000": {
-      "title": "ETH Up or Down - Hourly (Jan 30, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5000?ref=opinion_hud",
-      "yesTokenId": "58500016778440045886163575943297441615313442548350792104468759210656103947980",
-      "noTokenId": "83457184495642331375648486613995178043570578868812068120126493902330911865228",
+    "5018": {
+      "title": "BNB Up or Down - Hourly (Jan 30, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5018?ref=opinion_hud",
+      "yesTokenId": "81381977629315528741801090446493622208374265582913269147272775130033236385600",
+      "noTokenId": "22586416658752328171877962809460826854771427594811353595823647144429140231459",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -15778,11 +15178,11 @@
       },
       "type": "binary"
     },
-    "4999": {
-      "title": "BTC Up or Down - Hourly (Jan 30, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4999?ref=opinion_hud",
-      "yesTokenId": "34803518941119050549575426038352669162859001599592917057214054989441156797398",
-      "noTokenId": "77527488569844330076091162280411439976015802925831482952569524905806217643159",
+    "5019": {
+      "title": "BTC Up or Down - Hourly (Jan 30, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5019?ref=opinion_hud",
+      "yesTokenId": "102954469806950028855334520772687778350641493650426469901487955690627035158677",
+      "noTokenId": "111786522048843950752952271957208524415828759244949138514383073249123520329344",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -15790,11 +15190,11 @@
       },
       "type": "binary"
     },
-    "4998": {
-      "title": "BNB Up or Down - Hourly (Jan 30, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4998?ref=opinion_hud",
-      "yesTokenId": "34165335415318236065951511527334502429127871941535586025047337521968709783620",
-      "noTokenId": "104427685099069182417211232023590733562619351936521399389206772229238517924133",
+    "5020": {
+      "title": "ETH Up or Down - Hourly (Jan 30, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5020?ref=opinion_hud",
+      "yesTokenId": "46376636623403064669914167045838457312435045328691519445407114882221280544908",
+      "noTokenId": "18161027489538389944646871189724456320558196379580962365009915898824403600884",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -15848,9 +15248,6 @@
       "137",
       "138",
       "139",
-      "210",
-      "212",
-      "213",
       "3448",
       "3449",
       "3508",
@@ -15864,9 +15261,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "2026 best actor": [
       "137"
@@ -15874,14 +15269,8 @@
     "2026 best actress": [
       "139"
     ],
-    "2026 best cinematography": [
-      "210"
-    ],
     "2026 best director": [
       "138"
-    ],
-    "2026 best film": [
-      "211"
     ],
     "2026 best picture": [
       "133"
@@ -15925,14 +15314,8 @@
     "2026 season": [
       "103",
       "115",
-      "212",
-      "213",
       "81",
       "83"
-    ],
-    "2026 season winner": [
-      "212",
-      "213"
     ],
     "2026 seoul": [
       "131"
@@ -16037,11 +15420,7 @@
       "3223"
     ],
     "98th academy awards": [
-      "141",
-      "211"
-    ],
-    "98th oscars": [
-      "210"
+      "141"
     ],
     "aapl": [
       "2368",
@@ -16110,7 +15489,6 @@
     ],
     "academy": [
       "138",
-      "210",
       "280"
     ],
     "academy awards": [
@@ -16119,9 +15497,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "accolades": [
       "115"
@@ -16456,9 +15832,6 @@
     "artist winner": [
       "282"
     ],
-    "asc": [
-      "210"
-    ],
     "ash total": [
       "275"
     ],
@@ -16533,8 +15906,7 @@
     ],
     "awards": [
       "133",
-      "137",
-      "211"
+      "137"
     ],
     "awards ceremony": [
       "279"
@@ -16673,23 +16045,11 @@
     "best actress winner": [
       "139"
     ],
-    "best cinematography": [
-      "210"
-    ],
-    "best cinematography winner": [
-      "210"
-    ],
     "best director": [
       "138"
     ],
     "best director winner": [
       "138"
-    ],
-    "best film": [
-      "211"
-    ],
-    "best film editing": [
-      "211"
     ],
     "best new": [
       "282"
@@ -17003,9 +16363,6 @@
     "champions": [
       "80"
     ],
-    "champions korea": [
-      "213"
-    ],
     "champions league": [
       "83"
     ],
@@ -17040,8 +16397,7 @@
     ],
     "china": [
       "142",
-      "1856",
-      "212"
+      "1856"
     ],
     "china jia": [
       "1856"
@@ -17067,21 +16423,7 @@
       "138",
       "140",
       "141",
-      "210",
-      "211",
       "275"
-    ],
-    "cinematographer": [
-      "210"
-    ],
-    "cinematography": [
-      "210"
-    ],
-    "cinematography award": [
-      "210"
-    ],
-    "cinematography winner": [
-      "210"
     ],
     "civic": [
       "131"
@@ -17384,9 +16726,6 @@
     "customs revenue": [
       "196"
     ],
-    "cut": [
-      "211"
-    ],
     "cuts 2026": [
       "78"
     ],
@@ -17517,9 +16856,6 @@
     ],
     "delisting": [
       "3257"
-    ],
-    "demacia": [
-      "212"
     ],
     "democratic party": [
       "130"
@@ -17737,12 +17073,6 @@
     "edgex fdv above": [
       "98"
     ],
-    "editing winner": [
-      "211"
-    ],
-    "editor": [
-      "211"
-    ],
     "el clasico": [
       "82"
     ],
@@ -17869,10 +17199,6 @@
     ],
     "eschatology": [
       "2670"
-    ],
-    "esports": [
-      "212",
-      "213"
     ],
     "eth": [
       "208",
@@ -18142,18 +17468,10 @@
     "film awards": [
       "138",
       "140",
-      "141",
-      "210"
-    ],
-    "film editing": [
-      "211"
-    ],
-    "film editing winner": [
-      "211"
+      "141"
     ],
     "finals": [
-      "103",
-      "212"
+      "103"
     ],
     "finance": [
       "3525"
@@ -18282,9 +17600,6 @@
     ],
     "fx intervention": [
       "3132"
-    ],
-    "gaming": [
-      "213"
     ],
     "gaming chat": [
       "190"
@@ -19072,9 +18387,6 @@
     "korea": [
       "130"
     ],
-    "korean league": [
-      "213"
-    ],
     "korean local": [
       "130"
     ],
@@ -19202,18 +18514,6 @@
     "layer network": [
       "208"
     ],
-    "lck": [
-      "213"
-    ],
-    "lck 2026": [
-      "213"
-    ],
-    "lck 2026 season": [
-      "213"
-    ],
-    "lck联赛": [
-      "213"
-    ],
     "ldp": [
       "306"
     ],
@@ -19234,10 +18534,6 @@
     ],
     "leadership election": [
       "150"
-    ],
-    "league of legends": [
-      "212",
-      "213"
     ],
     "league winner": [
       "80",
@@ -19335,22 +18631,6 @@
     "local elections party": [
       "130"
     ],
-    "lol": [
-      "212",
-      "213"
-    ],
-    "lol lck": [
-      "213"
-    ],
-    "lol lck 2026": [
-      "213"
-    ],
-    "lol lpl": [
-      "212"
-    ],
-    "lol lpl 2026": [
-      "212"
-    ],
     "lombardi trophy": [
       "81"
     ],
@@ -19365,15 +18645,6 @@
     ],
     "lp": [
       "2178"
-    ],
-    "lpl": [
-      "212"
-    ],
-    "lpl 2026": [
-      "212"
-    ],
-    "lpl 2026 season": [
-      "212"
     ],
     "lyricist": [
       "284"
@@ -19717,9 +18988,6 @@
     "mm": [
       "118"
     ],
-    "moba": [
-      "213"
-    ],
     "model": [
       "200"
     ],
@@ -19760,9 +19028,6 @@
     "most valuable player": [
       "115"
     ],
-    "motion picture": [
-      "211"
-    ],
     "motion pictures": [
       "138"
     ],
@@ -19778,16 +19043,12 @@
     "movie": [
       "275"
     ],
-    "movie awards": [
-      "210"
-    ],
     "movies": [
       "133",
       "137",
       "138",
       "140",
-      "141",
-      "211"
+      "141"
     ],
     "msci": [
       "3257"
@@ -19812,9 +19073,6 @@
     ],
     "msft close above": [
       "267"
-    ],
-    "msi": [
-      "212"
     ],
     "mstr": [
       "111",
@@ -20190,9 +19448,7 @@
     "oscar": [
       "137",
       "138",
-      "140",
-      "210",
-      "211"
+      "140"
     ],
     "oscars": [
       "133",
@@ -20200,9 +19456,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "oscars 2026": [
       "133",
@@ -20210,9 +19464,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "oscars 2026 best": [
       "133",
@@ -20220,9 +19472,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "ounce": [
       "287"
@@ -20399,7 +19649,6 @@
     ],
     "playoffs": [
       "103",
-      "212",
       "81"
     ],
     "pm": [
@@ -20445,9 +19694,6 @@
     ],
     "portfolio": [
       "293"
-    ],
-    "post-production": [
-      "211"
     ],
     "post-quantum": [
       "3256"
@@ -20579,10 +19825,6 @@
     ],
     "pro basketball": [
       "103"
-    ],
-    "pro league": [
-      "212",
-      "213"
     ],
     "progressive party": [
       "130"
@@ -20933,10 +20175,6 @@
       "2668",
       "3356"
     ],
-    "rift": [
-      "212",
-      "213"
-    ],
     "ring": [
       "103"
     ],
@@ -21047,9 +20285,6 @@
     "sean penn": [
       "140"
     ],
-    "season": [
-      "213"
-    ],
     "season 2": [
       "293"
     ],
@@ -21058,10 +20293,6 @@
       "3222",
       "3223",
       "3224"
-    ],
-    "season winner": [
-      "212",
-      "213"
     ],
     "second coming": [
       "2670"
@@ -21366,10 +20597,6 @@
       "262",
       "287"
     ],
-    "spring split": [
-      "212",
-      "213"
-    ],
     "spx": [
       "186",
       "263"
@@ -21544,16 +20771,9 @@
       "300",
       "301"
     ],
-    "summer split": [
-      "212",
-      "213"
-    ],
     "summit": [
       "142",
       "276"
-    ],
-    "summoner's rift": [
-      "213"
     ],
     "super bowl": [
       "81"
@@ -22504,9 +21724,6 @@
     "world cup winner": [
       "79"
     ],
-    "worlds": [
-      "212"
-    ],
     "wta": [
       "304"
     ],
@@ -22677,9 +21894,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "委内瑞拉": [
       "128"
@@ -22690,9 +21905,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "小狐狸": [
       "118",
@@ -22841,12 +22054,6 @@
     "英伟达": [
       "268"
     ],
-    "英雄联盟": [
-      "213"
-    ],
-    "英雄联盟职业联赛": [
-      "212"
-    ],
     "蒂姆·库克": [
       "2368"
     ],
@@ -22889,9 +22096,6 @@
     "韩国地方选举": [
       "130"
     ],
-    "韩国英雄联盟职业联赛": [
-      "213"
-    ],
     "首尔市长": [
       "131"
     ],
@@ -22918,9 +22122,6 @@
       "137",
       "138",
       "139",
-      "210",
-      "212",
-      "213",
       "78",
       "79"
     ],
@@ -22930,9 +22131,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "2026 best actor": [
       "137"
@@ -22940,14 +22139,8 @@
     "2026 best actress": [
       "139"
     ],
-    "2026 best cinematography": [
-      "210"
-    ],
     "2026 best director": [
       "138"
-    ],
-    "2026 best film": [
-      "211"
     ],
     "2026 best picture": [
       "133"
@@ -22985,14 +22178,8 @@
     "2026 season": [
       "103",
       "115",
-      "212",
-      "213",
       "81",
       "83"
-    ],
-    "2026 season winner": [
-      "212",
-      "213"
     ],
     "2026 seoul": [
       "131"
@@ -23034,11 +22221,7 @@
       "187"
     ],
     "98th academy awards": [
-      "141",
-      "211"
-    ],
-    "98th oscars": [
-      "210"
+      "141"
     ],
     "aapl": [
       "266"
@@ -23102,7 +22285,6 @@
     ],
     "academy": [
       "138",
-      "210",
       "280"
     ],
     "academy awards": [
@@ -23111,9 +22293,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "accolades": [
       "115"
@@ -23365,9 +22545,6 @@
     "artist winner": [
       "282"
     ],
-    "asc": [
-      "210"
-    ],
     "ash total": [
       "275"
     ],
@@ -23438,8 +22615,7 @@
     ],
     "awards": [
       "133",
-      "137",
-      "211"
+      "137"
     ],
     "awards ceremony": [
       "279"
@@ -23551,23 +22727,11 @@
     "best actress winner": [
       "139"
     ],
-    "best cinematography": [
-      "210"
-    ],
-    "best cinematography winner": [
-      "210"
-    ],
     "best director": [
       "138"
     ],
     "best director winner": [
       "138"
-    ],
-    "best film": [
-      "211"
-    ],
-    "best film editing": [
-      "211"
     ],
     "best new": [
       "282"
@@ -23761,9 +22925,6 @@
     "champions": [
       "80"
     ],
-    "champions korea": [
-      "213"
-    ],
     "champions league": [
       "83"
     ],
@@ -23785,8 +22946,7 @@
       "193"
     ],
     "china": [
-      "142",
-      "212"
+      "142"
     ],
     "christine lagarde": [
       "121"
@@ -23797,21 +22957,7 @@
       "138",
       "140",
       "141",
-      "210",
-      "211",
       "275"
-    ],
-    "cinematographer": [
-      "210"
-    ],
-    "cinematography": [
-      "210"
-    ],
-    "cinematography award": [
-      "210"
-    ],
-    "cinematography winner": [
-      "210"
     ],
     "civic": [
       "131"
@@ -24009,9 +23155,6 @@
     "customs revenue": [
       "196"
     ],
-    "cut": [
-      "211"
-    ],
     "cuts 2026": [
       "78"
     ],
@@ -24101,9 +23244,6 @@
     ],
     "degen": [
       "174"
-    ],
-    "demacia": [
-      "212"
     ],
     "democratic party": [
       "130"
@@ -24255,12 +23395,6 @@
     "edgex fdv above": [
       "98"
     ],
-    "editing winner": [
-      "211"
-    ],
-    "editor": [
-      "211"
-    ],
     "el clasico": [
       "82"
     ],
@@ -24350,10 +23484,6 @@
     ],
     "escape": [
       "258"
-    ],
-    "esports": [
-      "212",
-      "213"
     ],
     "eth": [
       "208"
@@ -24563,18 +23693,10 @@
     "film awards": [
       "138",
       "140",
-      "141",
-      "210"
-    ],
-    "film editing": [
-      "211"
-    ],
-    "film editing winner": [
-      "211"
+      "141"
     ],
     "finals": [
-      "103",
-      "212"
+      "103"
     ],
     "fire and ash": [
       "275"
@@ -24666,9 +23788,6 @@
     ],
     "futures": [
       "287"
-    ],
-    "gaming": [
-      "213"
     ],
     "gaming chat": [
       "190"
@@ -25233,9 +24352,6 @@
     "korea": [
       "130"
     ],
-    "korean league": [
-      "213"
-    ],
     "korean local": [
       "130"
     ],
@@ -25338,18 +24454,6 @@
     "layer network": [
       "208"
     ],
-    "lck": [
-      "213"
-    ],
-    "lck 2026": [
-      "213"
-    ],
-    "lck 2026 season": [
-      "213"
-    ],
-    "lck联赛": [
-      "213"
-    ],
     "ldp": [
       "306"
     ],
@@ -25366,10 +24470,6 @@
     ],
     "leadership election": [
       "150"
-    ],
-    "league of legends": [
-      "212",
-      "213"
     ],
     "league winner": [
       "80",
@@ -25457,22 +24557,6 @@
     "local elections party": [
       "130"
     ],
-    "lol": [
-      "212",
-      "213"
-    ],
-    "lol lck": [
-      "213"
-    ],
-    "lol lck 2026": [
-      "213"
-    ],
-    "lol lpl": [
-      "212"
-    ],
-    "lol lpl 2026": [
-      "212"
-    ],
     "lombardi trophy": [
       "81"
     ],
@@ -25484,15 +24568,6 @@
     ],
     "lower chamber": [
       "135"
-    ],
-    "lpl": [
-      "212"
-    ],
-    "lpl 2026": [
-      "212"
-    ],
-    "lpl 2026 season": [
-      "212"
     ],
     "lyricist": [
       "284"
@@ -25742,9 +24817,6 @@
     "mm": [
       "118"
     ],
-    "moba": [
-      "213"
-    ],
     "model": [
       "200"
     ],
@@ -25769,25 +24841,18 @@
     "most valuable player": [
       "115"
     ],
-    "motion picture": [
-      "211"
-    ],
     "motion pictures": [
       "138"
     ],
     "movie": [
       "275"
     ],
-    "movie awards": [
-      "210"
-    ],
     "movies": [
       "133",
       "137",
       "138",
       "140",
-      "141",
-      "211"
+      "141"
     ],
     "msft": [
       "267"
@@ -25797,9 +24862,6 @@
     ],
     "msft close above": [
       "267"
-    ],
-    "msi": [
-      "212"
     ],
     "mstr": [
       "111"
@@ -26111,9 +25173,7 @@
     "oscar": [
       "137",
       "138",
-      "140",
-      "210",
-      "211"
+      "140"
     ],
     "oscars": [
       "133",
@@ -26121,9 +25181,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "oscars 2026": [
       "133",
@@ -26131,9 +25189,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "oscars 2026 best": [
       "133",
@@ -26141,9 +25197,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "ounce": [
       "287"
@@ -26273,7 +25327,6 @@
     ],
     "playoffs": [
       "103",
-      "212",
       "81"
     ],
     "pm": [
@@ -26319,9 +25372,6 @@
     ],
     "portfolio": [
       "293"
-    ],
-    "post-production": [
-      "211"
     ],
     "potus": [
       "142",
@@ -26431,10 +25481,6 @@
     ],
     "pro basketball": [
       "103"
-    ],
-    "pro league": [
-      "212",
-      "213"
     ],
     "progressive party": [
       "130"
@@ -26652,10 +25698,6 @@
     "richter": [
       "187"
     ],
-    "rift": [
-      "212",
-      "213"
-    ],
     "ring": [
       "103"
     ],
@@ -26726,15 +25768,8 @@
     "sean penn": [
       "140"
     ],
-    "season": [
-      "213"
-    ],
     "season 2": [
       "293"
-    ],
-    "season winner": [
-      "212",
-      "213"
     ],
     "securities": [
       "143"
@@ -26977,10 +26012,6 @@
       "262",
       "287"
     ],
-    "spring split": [
-      "212",
-      "213"
-    ],
     "spx": [
       "186",
       "263"
@@ -27112,16 +26143,9 @@
       "300",
       "301"
     ],
-    "summer split": [
-      "212",
-      "213"
-    ],
     "summit": [
       "142",
       "276"
-    ],
-    "summoner's rift": [
-      "213"
     ],
     "super bowl": [
       "81"
@@ -27832,9 +26856,6 @@
     "world cup winner": [
       "79"
     ],
-    "worlds": [
-      "212"
-    ],
     "wta": [
       "304"
     ],
@@ -27956,9 +26977,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "委内瑞拉": [
       "128"
@@ -27969,9 +26988,7 @@
       "138",
       "139",
       "140",
-      "141",
-      "210",
-      "211"
+      "141"
     ],
     "小狐狸": [
       "118",
@@ -28088,12 +27105,6 @@
     "英伟达": [
       "268"
     ],
-    "英雄联盟": [
-      "213"
-    ],
-    "英雄联盟职业联赛": [
-      "212"
-    ],
     "超级碗": [
       "81"
     ],
@@ -28111,9 +27122,6 @@
     ],
     "韩国地方选举": [
       "130"
-    ],
-    "韩国英雄联盟职业联赛": [
-      "213"
     ],
     "首尔市长": [
       "131"
