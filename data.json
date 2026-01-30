@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-01-30 20:03:41 UTC+8",
+    "generatedAt": "2026-01-31 00:54:57 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 511,
-      "markets": 181,
-      "keywords": 1805,
+      "kept": 501,
+      "markets": 179,
+      "keywords": 1788,
       "events": {
-        "events": 93
+        "events": 91
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 484,
-        "cutoff_zero_kept": 43,
+        "cutoff_expired": 494,
+        "cutoff_zero_kept": 39,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 85,
-        "regenerated_empty_entitygroups": 6,
-        "calls": 8,
+        "reused": 90,
+        "regenerated_empty_entitygroups": 1,
+        "calls": 1,
         "retries": 1,
         "fallback": 0,
         "empty": 1,
-        "non_empty": 7,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -216,87 +216,6 @@
       "sig": "00b48486",
       "sigFull": "00b48486",
       "sigCore": "30a64286",
-      "reused": false
-    },
-    "175": {
-      "title": "Will Paradex launch a token by ...?",
-      "marketIds": [
-        "175"
-      ],
-      "bestMarketId": "175",
-      "bestLabels": null,
-      "keywords": [
-        "paradex",
-        "token launch",
-        "airdrop",
-        "dex",
-        "decentralized exchange",
-        "crypto token",
-        "tge",
-        "token generation event",
-        "native token",
-        "governance token",
-        "perp dex",
-        "trading platform",
-        "listing",
-        "tokenomics",
-        "token sale",
-        "paradex launch",
-        "launch token",
-        "paradex launch token"
-      ],
-      "entities": [
-        "paradex"
-      ],
-      "entityGroups": [
-        [
-          "paradex"
-        ]
-      ],
-      "sig": "f4542b79",
-      "sigFull": "f4542b79",
-      "sigCore": "3a875b58",
-      "reused": false
-    },
-    "174": {
-      "title": "Pump.fun airdrop by ....?",
-      "marketIds": [
-        "174"
-      ],
-      "bestMarketId": "174",
-      "bestLabels": null,
-      "keywords": [
-        "pump.fun",
-        "airdrop",
-        "solana",
-        "memecoin",
-        "launchpad",
-        "token distribution",
-        "claim",
-        "snapshot",
-        "retroactive",
-        "reward",
-        "crypto",
-        "degen",
-        "meme coin",
-        "launch platform",
-        "presale",
-        "pump fun",
-        "fun airdrop",
-        "pump fun airdrop"
-      ],
-      "entities": [
-        "pump.fun"
-      ],
-      "entityGroups": [
-        [
-          "pump.fun",
-          "pumpfun"
-        ]
-      ],
-      "sig": "0616100b",
-      "sigFull": "0616100b",
-      "sigCore": "94f76fd6",
       "reused": false
     },
     "173": {
@@ -5245,121 +5164,6 @@
         ]
       ]
     },
-    "175": {
-      "title": "Will Paradex launch a token by ...?",
-      "url": "https://app.opinion.trade/market/175?ref=opinion_hud",
-      "yesTokenId": "13766909382150257467446436655331969926914504546602223743763739138754304589478",
-      "noTokenId": "63395900141993403526958685664529082221506856445119714541728475531415538149222",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "paradex",
-        "token launch",
-        "airdrop",
-        "dex",
-        "decentralized exchange",
-        "crypto token",
-        "tge",
-        "token generation event",
-        "native token",
-        "governance token",
-        "perp dex",
-        "trading platform",
-        "listing",
-        "tokenomics",
-        "token sale",
-        "paradex launch",
-        "launch token",
-        "paradex launch token"
-      ],
-      "entities": [
-        "paradex"
-      ],
-      "entityGroups": [
-        [
-          "paradex"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2607",
-          "title": "February 28, 2026",
-          "yesTokenId": "18568430249427019270202984814264355629680365141486647833183735458121155587578",
-          "noTokenId": "102176097149550958526874937355121726987634345361642536993334849398604218528098"
-        },
-        {
-          "marketId": "2608",
-          "title": "March 31, 2026",
-          "yesTokenId": "1763828268016259264970804589176396067896880536926288352897911193933510904452",
-          "noTokenId": "115245837850662144871453626940907600918924793397105180851679815708933499199575"
-        },
-        {
-          "marketId": "2609",
-          "title": "June 30, 2026",
-          "yesTokenId": "13766909382150257467446436655331969926914504546602223743763739138754304589478",
-          "noTokenId": "63395900141993403526958685664529082221506856445119714541728475531415538149222"
-        }
-      ]
-    },
-    "174": {
-      "title": "Pump.fun airdrop by ....?",
-      "url": "https://app.opinion.trade/market/174?ref=opinion_hud",
-      "yesTokenId": "3245078889210221132031633328611995243271249966318123211160190130357159715411",
-      "noTokenId": "8899676117633104076540378514352655706150929023028639452597368459759441298048",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "pump.fun",
-        "airdrop",
-        "solana",
-        "memecoin",
-        "launchpad",
-        "token distribution",
-        "claim",
-        "snapshot",
-        "retroactive",
-        "reward",
-        "crypto",
-        "degen",
-        "meme coin",
-        "launch platform",
-        "presale",
-        "pump fun",
-        "fun airdrop",
-        "pump fun airdrop"
-      ],
-      "entities": [
-        "pump.fun"
-      ],
-      "entityGroups": [
-        [
-          "pump.fun",
-          "pumpfun"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2606",
-          "title": "March 31, 2026",
-          "yesTokenId": "3245078889210221132031633328611995243271249966318123211160190130357159715411",
-          "noTokenId": "8899676117633104076540378514352655706150929023028639452597368459759441298048"
-        },
-        {
-          "marketId": "2605",
-          "title": "December 31, 2025",
-          "yesTokenId": "108974621305523979415298574778712706062999368407052994117557392222232910208322",
-          "noTokenId": "100658168825566251552512771056749490588333653800978120409073075536566526831540"
-        }
-      ]
-    },
     "173": {
       "title": "Opensea FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/173?ref=opinion_hud",
@@ -6596,8 +6400,8 @@
     "95": {
       "title": "Backpack FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/95?ref=opinion_hud",
-      "yesTokenId": "48638358498196167070989659311045733300732882388569732248894905340738868490231",
-      "noTokenId": "12376906555062351551252509108425285628521015624061021786151925823370087803141",
+      "yesTokenId": "28344807126881202209615667683342755194340563571297472717594388939000528031146",
+      "noTokenId": "105037746151635658183722041917146475007873934799335245036294152918909571837036",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10975,8 +10779,8 @@
     "75": {
       "title": "US Fed Rate Decision in March?",
       "url": "https://app.opinion.trade/market/75?ref=opinion_hud",
-      "yesTokenId": "49355591055450656302538846036275794217714647748317343440108732708594962823250",
-      "noTokenId": "101008955442974655206405808778155551361162365938238336424046150024284910649954",
+      "yesTokenId": "103534200913828460239990377776151413467086907798074013057280936285480574944448",
+      "noTokenId": "79918290396302990792782000706293883943646884974890514969409744357720461509903",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11046,8 +10850,8 @@
     "78": {
       "title": "How many Fed rate cuts in 2026?",
       "url": "https://app.opinion.trade/market/78?ref=opinion_hud",
-      "yesTokenId": "6184245186950926466692931178017784356827694199329242555435511222388237438109",
-      "noTokenId": "103611272235957115780344574285023328194712152439747172003391912689766930278154",
+      "yesTokenId": "70010766220059604989662129460865466302574904927654834125855820572459625873690",
+      "noTokenId": "94312394120877874266506310353940325029694893877094998946034603701922234520279",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11394,8 +11198,8 @@
     "83": {
       "title": "UEFA Champions League Winner 2026",
       "url": "https://app.opinion.trade/market/83?ref=opinion_hud",
-      "yesTokenId": "112190686258195895338436967175230527385361738805789879534794789415356874352697",
-      "noTokenId": "15798499715256083735803548128600210021894085069867560292453210958609073289893",
+      "yesTokenId": "19219253512106834718612281430472802630858377350648476807254195985245563523963",
+      "noTokenId": "57938055365437271719115847466273532877806118728235778475049873832354074451843",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -14072,42 +13876,6 @@
       },
       "type": "binary"
     },
-    "5037": {
-      "title": "BTC Up or Down - Hourly (Jan 30, 2026 13:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5037?ref=opinion_hud",
-      "yesTokenId": "1587815054951950360438129140033085124948598017769149437361449587626868951427",
-      "noTokenId": "111057079889973382249370756811664605386404539884250196729254104057552925841671",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "5038": {
-      "title": "ETH Up or Down - Hourly (Jan 30, 2026 13:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5038?ref=opinion_hud",
-      "yesTokenId": "59040027965376079077496779647632219234562234839358993178031049376967969177639",
-      "noTokenId": "99680850287580356852507490675274225962490980550479848244240288526246480558111",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "5036": {
-      "title": "BNB Up or Down - Hourly (Jan 30, 2026 13:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5036?ref=opinion_hud",
-      "yesTokenId": "40134688363205319868073686064909401347673456914233095733898627233314970904880",
-      "noTokenId": "12674939949906120435067389512197500648880958965892898884508302368387101319740",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "320": {
       "title": "ECB Rates Decision (DFR): March 2026",
       "url": "https://app.opinion.trade/market/320?ref=opinion_hud",
@@ -14255,6 +14023,42 @@
           "noTokenId": "58565110496479011661799704294527766939669329464143928940156453718465767377951"
         }
       ]
+    },
+    "5123": {
+      "title": "BTC Up or Down - Hourly (Jan 30, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5123?ref=opinion_hud",
+      "yesTokenId": "81255208666213005305980031765163491035697981808324313674754839673416083474018",
+      "noTokenId": "21965742767016259058494655034744371744611613144884343917820415796769161363074",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5124": {
+      "title": "ETH Up or Down - Hourly (Jan 30, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5124?ref=opinion_hud",
+      "yesTokenId": "37889313601348138912125472799576558056378701736713343741083409837328627222653",
+      "noTokenId": "26498500504824256702294918371766668415039380878409069789407339313411203345064",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5122": {
+      "title": "BNB Up or Down - Hourly (Jan 30, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5122?ref=opinion_hud",
+      "yesTokenId": "12876060620955855496071700498440233178271264846320507414196928427747547897875",
+      "noTokenId": "95481871639186644216888955581059212749833692144978175782031886589557612992847",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -14650,8 +14454,6 @@
       "172",
       "1721",
       "173",
-      "174",
-      "175",
       "317",
       "3361",
       "3366",
@@ -15418,8 +15220,7 @@
       "131"
     ],
     "claim": [
-      "118",
-      "174"
+      "118"
     ],
     "cleric": [
       "242"
@@ -15614,7 +15415,6 @@
       "167",
       "172",
       "1721",
-      "174",
       "260",
       "318",
       "3359",
@@ -15645,8 +15445,7 @@
       "3360"
     ],
     "crypto token": [
-      "168",
-      "175"
+      "168"
     ],
     "crypto trading": [
       "173"
@@ -15748,9 +15547,6 @@
     "december 2026": [
       "3509"
     ],
-    "decentralized exchange": [
-      "175"
-    ],
     "decision april": [
       "153",
       "313"
@@ -15793,9 +15589,6 @@
     "defi wallet": [
       "118"
     ],
-    "degen": [
-      "174"
-    ],
     "delisted msci": [
       "3257"
     ],
@@ -15836,7 +15629,6 @@
       "288"
     ],
     "dex": [
-      "175",
       "3361"
     ],
     "dfr": [
@@ -16504,9 +16296,6 @@
       "96",
       "97"
     ],
-    "fun airdrop": [
-      "174"
-    ],
     "funding": [
       "3505",
       "3506",
@@ -16633,7 +16422,6 @@
       "118",
       "119",
       "168",
-      "175",
       "3366",
       "99"
     ],
@@ -17366,24 +17154,17 @@
       "95",
       "97"
     ],
-    "launch platform": [
-      "174"
-    ],
     "launch token": [
       "118",
       "119",
       "167",
       "168",
       "172",
-      "175",
       "3366",
       "99"
     ],
     "launch token 2026": [
       "3366"
-    ],
-    "launchpad": [
-      "174"
     ],
     "layer 1": [
       "1721"
@@ -17478,7 +17259,6 @@
       "171",
       "172",
       "173",
-      "175",
       "317",
       "3362",
       "67",
@@ -17691,11 +17471,7 @@
     "melbourne park": [
       "304"
     ],
-    "meme coin": [
-      "174"
-    ],
     "memecoin": [
-      "174",
       "97"
     ],
     "merger": [
@@ -17993,7 +17769,6 @@
     ],
     "native token": [
       "168",
-      "175",
       "3366"
     ],
     "natural disaster": [
@@ -18346,15 +18121,6 @@
     "pandora": [
       "275"
     ],
-    "paradex": [
-      "175"
-    ],
-    "paradex launch": [
-      "175"
-    ],
-    "paradex launch token": [
-      "175"
-    ],
     "parallel execution": [
       "1721"
     ],
@@ -18409,9 +18175,6 @@
     ],
     "permanent role": [
       "3369"
-    ],
-    "perp dex": [
-      "175"
     ],
     "perpetuals": [
       "3361"
@@ -18540,8 +18303,7 @@
     ],
     "presale": [
       "167",
-      "172",
-      "174"
+      "172"
     ],
     "president": [
       "276",
@@ -18658,18 +18420,6 @@
     "pump": [
       "3364",
       "3368"
-    ],
-    "pump fun": [
-      "174"
-    ],
-    "pump fun airdrop": [
-      "174"
-    ],
-    "pump.fun": [
-      "174"
-    ],
-    "pumpfun": [
-      "174"
     ],
     "q1 2026": [
       "3362",
@@ -18914,9 +18664,6 @@
       "271",
       "3039"
     ],
-    "retroactive": [
-      "174"
-    ],
     "return": [
       "1856",
       "3369"
@@ -18944,9 +18691,6 @@
     ],
     "revelation": [
       "2670"
-    ],
-    "reward": [
-      "174"
     ],
     "richter scale": [
       "2668",
@@ -19245,7 +18989,6 @@
     ],
     "snapshot": [
       "118",
-      "174",
       "99"
     ],
     "soccer": [
@@ -19268,7 +19011,6 @@
       "260"
     ],
     "solana": [
-      "174",
       "260"
     ],
     "solana hit": [
@@ -19671,7 +19413,6 @@
       "168",
       "172",
       "1721",
-      "175",
       "317",
       "67",
       "96",
@@ -19793,13 +19534,9 @@
     "token 2026": [
       "3366"
     ],
-    "token distribution": [
-      "174"
-    ],
     "token generation event": [
       "168",
       "173",
-      "175",
       "96"
     ],
     "token launch": [
@@ -19808,20 +19545,17 @@
       "168",
       "172",
       "173",
-      "175",
       "3366",
       "96",
       "99"
     ],
     "token sale": [
-      "175",
       "318"
     ],
     "tokenomics": [
       "167",
       "168",
       "173",
-      "175",
       "317",
       "3361",
       "95",
@@ -19888,8 +19622,7 @@
       "96"
     ],
     "trading platform": [
-      "143",
-      "175"
+      "143"
     ],
     "trading strategy": [
       "293"
@@ -20992,8 +20725,6 @@
       "168",
       "172",
       "173",
-      "174",
-      "175",
       "317",
       "67",
       "95",
@@ -21512,8 +21243,7 @@
       "131"
     ],
     "claim": [
-      "118",
-      "174"
+      "118"
     ],
     "cleric": [
       "242"
@@ -21631,7 +21361,6 @@
       "119",
       "167",
       "172",
-      "174",
       "260",
       "318",
       "67",
@@ -21646,8 +21375,7 @@
       "143"
     ],
     "crypto token": [
-      "168",
-      "175"
+      "168"
     ],
     "crypto trading": [
       "173"
@@ -21708,9 +21436,6 @@
       "97",
       "98"
     ],
-    "decentralized exchange": [
-      "175"
-    ],
     "decision april": [
       "153",
       "313"
@@ -21748,9 +21473,6 @@
     "defi wallet": [
       "118"
     ],
-    "degen": [
-      "174"
-    ],
     "democratic party": [
       "130"
     ],
@@ -21767,9 +21489,6 @@
     ],
     "devaluation": [
       "288"
-    ],
-    "dex": [
-      "175"
     ],
     "dfr": [
       "121",
@@ -22255,9 +21974,6 @@
       "96",
       "97"
     ],
-    "fun airdrop": [
-      "174"
-    ],
     "funding gap": [
       "303"
     ],
@@ -22349,7 +22065,6 @@
       "118",
       "119",
       "168",
-      "175",
       "99"
     ],
     "governing council": [
@@ -22862,20 +22577,13 @@
       "95",
       "97"
     ],
-    "launch platform": [
-      "174"
-    ],
     "launch token": [
       "118",
       "119",
       "167",
       "168",
       "172",
-      "175",
       "99"
-    ],
-    "launchpad": [
-      "174"
     ],
     "layer 2": [
       "119",
@@ -22953,7 +22661,6 @@
       "171",
       "172",
       "173",
-      "175",
       "317",
       "67",
       "95",
@@ -23103,11 +22810,7 @@
     "melbourne park": [
       "304"
     ],
-    "meme coin": [
-      "174"
-    ],
     "memecoin": [
-      "174",
       "97"
     ],
     "merger": [
@@ -23319,8 +23022,7 @@
       "81"
     ],
     "native token": [
-      "168",
-      "175"
+      "168"
     ],
     "nba": [
       "103",
@@ -23594,15 +23296,6 @@
     "pandora": [
       "275"
     ],
-    "paradex": [
-      "175"
-    ],
-    "paradex launch": [
-      "175"
-    ],
-    "paradex launch token": [
-      "175"
-    ],
     "parliament": [
       "307"
     ],
@@ -23644,9 +23337,6 @@
     ],
     "perform again": [
       "132"
-    ],
-    "perp dex": [
-      "175"
     ],
     "peso": [
       "288"
@@ -23762,8 +23452,7 @@
     ],
     "presale": [
       "167",
-      "172",
-      "174"
+      "172"
     ],
     "president": [
       "276",
@@ -23854,18 +23543,6 @@
     ],
     "public ticker": [
       "169"
-    ],
-    "pump fun": [
-      "174"
-    ],
-    "pump fun airdrop": [
-      "174"
-    ],
-    "pump.fun": [
-      "174"
-    ],
-    "pumpfun": [
-      "174"
     ],
     "q4": [
       "277"
@@ -24004,14 +23681,8 @@
       "257",
       "271"
     ],
-    "retroactive": [
-      "174"
-    ],
     "return on investment": [
       "293"
-    ],
-    "reward": [
-      "174"
     ],
     "ring": [
       "103"
@@ -24198,7 +23869,6 @@
     ],
     "snapshot": [
       "118",
-      "174",
       "99"
     ],
     "soccer": [
@@ -24221,7 +23891,6 @@
       "260"
     ],
     "solana": [
-      "174",
       "260"
     ],
     "solana hit": [
@@ -24514,7 +24183,6 @@
       "167",
       "168",
       "172",
-      "175",
       "317",
       "67",
       "96",
@@ -24582,13 +24250,9 @@
       "97",
       "98"
     ],
-    "token distribution": [
-      "174"
-    ],
     "token generation event": [
       "168",
       "173",
-      "175",
       "96"
     ],
     "token launch": [
@@ -24597,19 +24261,16 @@
       "168",
       "172",
       "173",
-      "175",
       "96",
       "99"
     ],
     "token sale": [
-      "175",
       "318"
     ],
     "tokenomics": [
       "167",
       "168",
       "173",
-      "175",
       "317",
       "95",
       "99"
@@ -24664,8 +24325,7 @@
       "96"
     ],
     "trading platform": [
-      "143",
-      "175"
+      "143"
     ],
     "trading strategy": [
       "293"
