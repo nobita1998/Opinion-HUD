@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-01-30 00:56:22 UTC+8",
+    "generatedAt": "2026-01-30 10:48:45 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,27 +8,27 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 571,
-      "markets": 190,
-      "keywords": 1997,
+      "kept": 545,
+      "markets": 187,
+      "keywords": 1963,
       "events": {
-        "events": 107
+        "events": 105
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 419,
+        "cutoff_expired": 455,
         "cutoff_zero_kept": 46,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
-        "title_pattern_filtered": 10
+        "title_pattern_filtered": 0
       },
       "ai": {
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 106,
+        "reused": 104,
         "regenerated_empty_entitygroups": 1,
         "calls": 1,
         "retries": 1,
@@ -40,100 +40,6 @@
     }
   },
   "events": {
-    "222": {
-      "title": "2026 Men's Australian Open Winner",
-      "marketIds": [
-        "222"
-      ],
-      "bestMarketId": "222",
-      "bestLabels": null,
-      "keywords": [
-        "australian open",
-        "ao",
-        "tennis",
-        "grand slam",
-        "melbourne park",
-        "atp",
-        "men's singles",
-        "major",
-        "slam",
-        "melbourne",
-        "hard court",
-        "tennis tournament",
-        "first grand slam",
-        "happy slam",
-        "2026 men",
-        "men australian",
-        "open winner",
-        "2026 men australian",
-        "men australian open",
-        "australian open winner"
-      ],
-      "entities": [
-        "australian open"
-      ],
-      "entityGroups": [
-        [
-          "australian open",
-          "澳大利亚网球公开赛"
-        ]
-      ],
-      "sig": "a8a1c3a0",
-      "sigFull": "a8a1c3a0",
-      "sigCore": "36425697",
-      "reused": false
-    },
-    "217": {
-      "title": "Logan Paul’s Pikachu Illustrator Sale Price",
-      "marketIds": [
-        "217"
-      ],
-      "bestMarketId": "217",
-      "bestLabels": null,
-      "keywords": [
-        "logan paul",
-        "pikachu illustrator",
-        "pokemon card",
-        "tcg",
-        "psa 10",
-        "auction",
-        "sale",
-        "rare card",
-        "holographic",
-        "collectible",
-        "youtuber",
-        "trading card game",
-        "mint condition",
-        "illustrator card",
-        "pokemon tcg",
-        "paul pikachu",
-        "illustrator sale",
-        "sale price",
-        "logan paul pikachu",
-        "paul pikachu illustrator",
-        "pikachu illustrator sale",
-        "illustrator sale price"
-      ],
-      "entities": [
-        "logan paul",
-        "pikachu illustrator"
-      ],
-      "entityGroups": [
-        [
-          "logan paul",
-          "罗根·保罗"
-        ],
-        [
-          "pikachu illustrator",
-          "皮卡丘插画",
-          "皮卡丘插画家"
-        ]
-      ],
-      "sig": "e3998a57",
-      "sigFull": "e3998a57",
-      "sigCore": "9944f60b",
-      "reused": false
-    },
     "213": {
       "title": "LoL: LCK 2026 Season Winner",
       "marketIds": [
@@ -4945,87 +4851,6 @@
     }
   },
   "markets": {
-    "222": {
-      "title": "2026 Men's Australian Open Winner",
-      "url": "https://app.opinion.trade/market/222?ref=opinion_hud",
-      "yesTokenId": "102944805128937061565106041749150538528526332505331418730313552171138925371294",
-      "noTokenId": "10758724656172236720247750193227389076596673874562063124279063295961252874901",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "australian open",
-        "ao",
-        "tennis",
-        "grand slam",
-        "melbourne park",
-        "atp",
-        "men's singles",
-        "major",
-        "slam",
-        "melbourne",
-        "hard court",
-        "tennis tournament",
-        "first grand slam",
-        "happy slam",
-        "2026 men",
-        "men australian",
-        "open winner",
-        "2026 men australian",
-        "men australian open",
-        "australian open winner"
-      ],
-      "entities": [
-        "australian open"
-      ],
-      "entityGroups": [
-        [
-          "australian open",
-          "澳大利亚网球公开赛"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3279",
-          "title": "Jannik Sinner",
-          "yesTokenId": "10990025055030864033644049099969609211995219283299762856830315040027923312418",
-          "noTokenId": "9367871925738449846078853826569477761807876828205924594558468092754591369630"
-        },
-        {
-          "marketId": "3280",
-          "title": "Carlos Alcaraz",
-          "yesTokenId": "5841777524912799911686489680621025231260681953989292512757327612553713369228",
-          "noTokenId": "64344099329391618910350584391575213797350489347270647407750665766451908245116"
-        },
-        {
-          "marketId": "3281",
-          "title": "Novak Djokovic",
-          "yesTokenId": "23646221477390387795126578723913806756902942126650124014757240718947705505120",
-          "noTokenId": "96391605491330066176973561786039441743608974332726930433034784561032580738233"
-        },
-        {
-          "marketId": "3282",
-          "title": "Alexander Zverev",
-          "yesTokenId": "102944805128937061565106041749150538528526332505331418730313552171138925371294",
-          "noTokenId": "10758724656172236720247750193227389076596673874562063124279063295961252874901"
-        },
-        {
-          "marketId": "3283",
-          "title": "Daniil Medvedev",
-          "yesTokenId": "68087172610554274638226732235885933041593128691934221197568495110385465635635",
-          "noTokenId": "64577943242976889766632440991206514906722876271028100915910622389812397307553"
-        },
-        {
-          "marketId": "3284",
-          "title": "Taylor Fritz",
-          "yesTokenId": "79794759853759991111197957504358946094000142489182558476200833177929494073128",
-          "noTokenId": "3298240858201198940176111916310036195292828712910777880061261707214680080668"
-        }
-      ]
-    },
     "3265": {
       "title": "US recession by end of 2026?",
       "url": "https://app.opinion.trade/market/3265?ref=opinion_hud",
@@ -5160,107 +4985,6 @@
         [
           "msci"
         ]
-      ]
-    },
-    "217": {
-      "title": "Logan Paul’s Pikachu Illustrator Sale Price",
-      "url": "https://app.opinion.trade/market/217?ref=opinion_hud",
-      "yesTokenId": "109381708977389229777958426722725159145839134984784403676910798537885307818714",
-      "noTokenId": "96214927952920539953166535646626784140041213242648768900381987249005503220465",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "logan paul",
-        "pikachu illustrator",
-        "pokemon card",
-        "tcg",
-        "psa 10",
-        "auction",
-        "sale",
-        "rare card",
-        "holographic",
-        "collectible",
-        "youtuber",
-        "trading card game",
-        "mint condition",
-        "illustrator card",
-        "pokemon tcg",
-        "paul pikachu",
-        "illustrator sale",
-        "sale price",
-        "logan paul pikachu",
-        "paul pikachu illustrator",
-        "pikachu illustrator sale",
-        "illustrator sale price"
-      ],
-      "entities": [
-        "logan paul",
-        "pikachu illustrator"
-      ],
-      "entityGroups": [
-        [
-          "logan paul",
-          "罗根·保罗"
-        ],
-        [
-          "pikachu illustrator",
-          "皮卡丘插画",
-          "皮卡丘插画家"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3240",
-          "title": ">$4m",
-          "yesTokenId": "53647924542344405029573840902671185339851514238912476637970950176486675203792",
-          "noTokenId": "92817814660786166169649289307538404540546357225977922304804743187565485202236"
-        },
-        {
-          "marketId": "3241",
-          "title": ">$5m",
-          "yesTokenId": "113485738141713319431123088732645191218832539669273333341350183815439329436948",
-          "noTokenId": "18859690233672737778668202448265409570222677150172285454269803890052726098612"
-        },
-        {
-          "marketId": "3242",
-          "title": ">$6m",
-          "yesTokenId": "53681999169640517905664742348301962996725824046969990273975225823335307123712",
-          "noTokenId": "29316653039005710043617386056630584701127815044813492253995044237687598414729"
-        },
-        {
-          "marketId": "3243",
-          "title": ">$7m",
-          "yesTokenId": "13575671746647308945092717060575474858368813074295074837849010246614996700166",
-          "noTokenId": "71860179212514674745931716524999707634209358655041046558608506488378304933975"
-        },
-        {
-          "marketId": "3244",
-          "title": ">$8m",
-          "yesTokenId": "38778528681062211103126504185280955265820216428118915256272558686931965889694",
-          "noTokenId": "41025190492757475227631089627281144562629265026854764277204981275456863123945"
-        },
-        {
-          "marketId": "3245",
-          "title": ">$9m",
-          "yesTokenId": "44896796828191515096810248114197946513849469260908805649855945349133191239005",
-          "noTokenId": "73297236558481990809457662803673524186506223204641187499225229845571317871217"
-        },
-        {
-          "marketId": "3246",
-          "title": ">$10m",
-          "yesTokenId": "93435953815215320700598632988882838098234557514206527089879439125622229414856",
-          "noTokenId": "4450528832134893234200795655594851476245001419829315873418983393546117933257"
-        },
-        {
-          "marketId": "3247",
-          "title": ">$15m",
-          "yesTokenId": "109381708977389229777958426722725159145839134984784403676910798537885307818714",
-          "noTokenId": "96214927952920539953166535646626784140041213242648768900381987249005503220465"
-        }
       ]
     },
     "3221": {
@@ -5420,8 +5144,8 @@
     "213": {
       "title": "LoL: LCK 2026 Season Winner",
       "url": "https://app.opinion.trade/market/213?ref=opinion_hud",
-      "yesTokenId": "65433937665833556522707250800467565744476257295926912226300700038259993320718",
-      "noTokenId": "11967167003827214516413185531011450184226457809307330198015301462619571994727",
+      "yesTokenId": "10575169940350673038329941282694993448649009946715875489267217836660242353416",
+      "noTokenId": "30731372030458147040263688259634213641967524788160964732342063860785107739513",
       "volume": 0.0,
       "labels": {
         "yesLabel": "",
@@ -5533,8 +5257,8 @@
     "212": {
       "title": "LoL: LPL 2026 Season Winner",
       "url": "https://app.opinion.trade/market/212?ref=opinion_hud",
-      "yesTokenId": "34943610669209980120686712545157773316540364529413448003483903715607456877619",
-      "noTokenId": "12096792902814381404622588919561678914550979853872412771356493761955077547365",
+      "yesTokenId": "13225185738409741377586621728633321780995070821779334080070295344084810199848",
+      "noTokenId": "71121674413900455209736006866303446922339310502978190772559683464323573688150",
       "volume": 0.0,
       "labels": {
         "yesLabel": "",
@@ -16042,11 +15766,11 @@
       },
       "type": "binary"
     },
-    "4961": {
-      "title": "ETH Up or Down - Hourly (Jan 29, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4961?ref=opinion_hud",
-      "yesTokenId": "11957387638044200389286930565152854983701992156056723345400710541872079459241",
-      "noTokenId": "109189046879457406405144114568169260665303429724962335308011172611650349373954",
+    "5000": {
+      "title": "ETH Up or Down - Hourly (Jan 30, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5000?ref=opinion_hud",
+      "yesTokenId": "58500016778440045886163575943297441615313442548350792104468759210656103947980",
+      "noTokenId": "83457184495642331375648486613995178043570578868812068120126493902330911865228",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -16054,11 +15778,11 @@
       },
       "type": "binary"
     },
-    "4959": {
-      "title": "BNB Up or Down - Hourly (Jan 29, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4959?ref=opinion_hud",
-      "yesTokenId": "70817889976933298655110259335817870671249301951675651067240732696436245946061",
-      "noTokenId": "63527213527927454658715951822901070187860129497849287147906320924301879794968",
+    "4999": {
+      "title": "BTC Up or Down - Hourly (Jan 30, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4999?ref=opinion_hud",
+      "yesTokenId": "34803518941119050549575426038352669162859001599592917057214054989441156797398",
+      "noTokenId": "77527488569844330076091162280411439976015802925831482952569524905806217643159",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -16066,23 +15790,11 @@
       },
       "type": "binary"
     },
-    "4960": {
-      "title": "BTC Up or Down - Hourly (Jan 29, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/4960?ref=opinion_hud",
-      "yesTokenId": "73169562875653510784483238803112799706213082426315926456661855359081110085597",
-      "noTokenId": "48645350338297103728826867347625636878357286043340149528299372631400683868834",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "4965": {
-      "title": "Bitcoin Up or Down on January 30?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/4965?ref=opinion_hud",
-      "yesTokenId": "87264564541833870895713554357238561408603659716220353304406503922739362169596",
-      "noTokenId": "27476207984747552913438822523099591587264428015065877637713963816291953399655",
+    "4998": {
+      "title": "BNB Up or Down - Hourly (Jan 30, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/4998?ref=opinion_hud",
+      "yesTokenId": "34165335415318236065951511527334502429127871941535586025047337521968709783620",
+      "noTokenId": "104427685099069182417211232023590733562619351936521399389206772229238517924133",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -16190,12 +15902,6 @@
     ],
     "2026 fifa world": [
       "79"
-    ],
-    "2026 men": [
-      "222"
-    ],
-    "2026 men australian": [
-      "222"
     ],
     "2026 midterms": [
       "135"
@@ -16674,7 +16380,6 @@
       "3365"
     ],
     "ao": [
-      "222",
       "304"
     ],
     "aoty": [
@@ -16781,24 +16486,16 @@
     "atletico madrid": [
       "82"
     ],
-    "atp": [
-      "222"
-    ],
     "attack": [
       "257",
       "271",
       "302",
       "3039"
     ],
-    "auction": [
-      "217"
-    ],
     "australian open": [
-      "222",
       "304"
     ],
     "australian open winner": [
-      "222",
       "304"
     ],
     "automated trading": [
@@ -17471,9 +17168,6 @@
     ],
     "collapse": [
       "3359"
-    ],
-    "collectible": [
-      "217"
     ],
     "college football": [
       "3072"
@@ -18480,9 +18174,6 @@
       "193",
       "2368"
     ],
-    "first grand slam": [
-      "222"
-    ],
     "first overall": [
       "3072"
     ],
@@ -18803,7 +18494,6 @@
       "284"
     ],
     "grand slam": [
-      "222",
       "304"
     ],
     "great earthquake": [
@@ -18849,11 +18539,7 @@
     "hanoi": [
       "301"
     ],
-    "happy slam": [
-      "222"
-    ],
     "hard court": [
-      "222",
       "304"
     ],
     "hard fork": [
@@ -18943,9 +18629,6 @@
       "139",
       "141",
       "3158"
-    ],
-    "holographic": [
-      "217"
     ],
     "honors": [
       "115"
@@ -19049,15 +18732,6 @@
     ],
     "ieepa": [
       "1546"
-    ],
-    "illustrator card": [
-      "217"
-    ],
-    "illustrator sale": [
-      "217"
-    ],
-    "illustrator sale price": [
-      "217"
     ],
     "impeachment": [
       "202",
@@ -19661,12 +19335,6 @@
     "local elections party": [
       "130"
     ],
-    "logan paul": [
-      "217"
-    ],
-    "logan paul pikachu": [
-      "217"
-    ],
     "lol": [
       "212",
       "213"
@@ -19745,7 +19413,6 @@
       "67"
     ],
     "major": [
-      "222",
       "304"
     ],
     "major quake": [
@@ -19898,11 +19565,9 @@
       "3356"
     ],
     "melbourne": [
-      "222",
       "304"
     ],
     "melbourne park": [
-      "222",
       "304"
     ],
     "meme coin": [
@@ -19911,15 +19576,6 @@
     "memecoin": [
       "174",
       "97"
-    ],
-    "men australian": [
-      "222"
-    ],
-    "men australian open": [
-      "222"
-    ],
-    "men's singles": [
-      "222"
     ],
     "merger": [
       "159",
@@ -20049,9 +19705,6 @@
     ],
     "mint": [
       "201"
-    ],
-    "mint condition": [
-      "217"
     ],
     "missile": [
       "257",
@@ -20495,7 +20148,6 @@
       "3366"
     ],
     "open winner": [
-      "222",
       "304"
     ],
     "openai": [
@@ -20690,12 +20342,6 @@
     "party winner": [
       "130"
     ],
-    "paul pikachu": [
-      "217"
-    ],
-    "paul pikachu illustrator": [
-      "217"
-    ],
     "payward": [
       "143"
     ],
@@ -20745,12 +20391,6 @@
     "picture winner": [
       "133"
     ],
-    "pikachu illustrator": [
-      "217"
-    ],
-    "pikachu illustrator sale": [
-      "217"
-    ],
     "pl": [
       "80"
     ],
@@ -20764,12 +20404,6 @@
     ],
     "pm": [
       "306"
-    ],
-    "pokemon card": [
-      "217"
-    ],
-    "pokemon tcg": [
-      "217"
     ],
     "policy decision": [
       "75"
@@ -20967,9 +20601,6 @@
     "protocol": [
       "184"
     ],
-    "psa 10": [
-      "217"
-    ],
     "pt": [
       "307"
     ],
@@ -21063,9 +20694,6 @@
     ],
     "rapture": [
       "2670"
-    ],
-    "rare card": [
-      "217"
     ],
     "rate cut": [
       "153",
@@ -21373,11 +21001,7 @@
     ],
     "sale": [
       "159",
-      "167",
-      "217"
-    ],
-    "sale price": [
-      "217"
+      "167"
     ],
     "sam altman": [
       "152",
@@ -21599,7 +21223,6 @@
       "142"
     ],
     "slam": [
-      "222",
       "304"
     ],
     "slowdown": [
@@ -22012,9 +21635,6 @@
     "tariffs 2025": [
       "196"
     ],
-    "tcg": [
-      "217"
-    ],
     "team achieve": [
       "293"
     ],
@@ -22075,11 +21695,7 @@
       "192"
     ],
     "tennis": [
-      "222",
       "304"
-    ],
-    "tennis tournament": [
-      "222"
     ],
     "term end": [
       "300"
@@ -22349,9 +21965,6 @@
     ],
     "trading bot": [
       "200"
-    ],
-    "trading card game": [
-      "217"
     ],
     "trading competition": [
       "200",
@@ -22948,9 +22561,6 @@
     "yoshimasa hayashi": [
       "306"
     ],
-    "youtuber": [
-      "217"
-    ],
     "yuichiro tamaki": [
       "306"
     ],
@@ -23162,9 +22772,6 @@
     "泽连斯基": [
       "202"
     ],
-    "澳大利亚网球公开赛": [
-      "222"
-    ],
     "特大地震": [
       "3356"
     ],
@@ -23180,12 +22787,6 @@
       "3055",
       "3062"
     ],
-    "皮卡丘插画": [
-      "217"
-    ],
-    "皮卡丘插画家": [
-      "217"
-    ],
     "立法选举": [
       "307"
     ],
@@ -23194,9 +22795,6 @@
     ],
     "经济衰退": [
       "3265"
-    ],
-    "罗根·保罗": [
-      "217"
     ],
     "美国中情局": [
       "115"
@@ -23370,12 +22968,6 @@
     ],
     "2026 fifa world": [
       "79"
-    ],
-    "2026 men": [
-      "222"
-    ],
-    "2026 men australian": [
-      "222"
     ],
     "2026 midterms": [
       "135"
@@ -23719,7 +23311,6 @@
       "111"
     ],
     "ao": [
-      "222",
       "304"
     ],
     "aoty": [
@@ -23801,23 +23392,15 @@
     "atletico madrid": [
       "82"
     ],
-    "atp": [
-      "222"
-    ],
     "attack": [
       "257",
       "271",
       "302"
     ],
-    "auction": [
-      "217"
-    ],
     "australian open": [
-      "222",
       "304"
     ],
     "australian open winner": [
-      "222",
       "304"
     ],
     "automated trading": [
@@ -24290,9 +23873,6 @@
     ],
     "coinbase": [
       "119"
-    ],
-    "collectible": [
-      "217"
     ],
     "comeback": [
       "132"
@@ -25008,9 +24588,6 @@
     "fired": [
       "193"
     ],
-    "first grand slam": [
-      "222"
-    ],
     "flee": [
       "258"
     ],
@@ -25275,7 +24852,6 @@
       "284"
     ],
     "grand slam": [
-      "222",
       "304"
     ],
     "gridiron": [
@@ -25308,11 +24884,7 @@
     "hanoi": [
       "301"
     ],
-    "happy slam": [
-      "222"
-    ],
     "hard court": [
-      "222",
       "304"
     ],
     "head of state": [
@@ -25346,9 +24918,6 @@
       "138",
       "139",
       "141"
-    ],
-    "holographic": [
-      "217"
     ],
     "honors": [
       "115"
@@ -25428,15 +24997,6 @@
       "167",
       "192",
       "201"
-    ],
-    "illustrator card": [
-      "217"
-    ],
-    "illustrator sale": [
-      "217"
-    ],
-    "illustrator sale price": [
-      "217"
     ],
     "impeachment": [
       "202"
@@ -25897,12 +25457,6 @@
     "local elections party": [
       "130"
     ],
-    "logan paul": [
-      "217"
-    ],
-    "logan paul pikachu": [
-      "217"
-    ],
     "lol": [
       "212",
       "213"
@@ -25962,7 +25516,6 @@
       "67"
     ],
     "major": [
-      "222",
       "304"
     ],
     "major quake": [
@@ -26070,11 +25623,9 @@
       "67"
     ],
     "melbourne": [
-      "222",
       "304"
     ],
     "melbourne park": [
-      "222",
       "304"
     ],
     "meme coin": [
@@ -26083,15 +25634,6 @@
     "memecoin": [
       "174",
       "97"
-    ],
-    "men australian": [
-      "222"
-    ],
-    "men australian open": [
-      "222"
-    ],
-    "men's singles": [
-      "222"
     ],
     "merger": [
       "159"
@@ -26189,9 +25731,6 @@
     ],
     "mint": [
       "201"
-    ],
-    "mint condition": [
-      "217"
     ],
     "missile": [
       "257",
@@ -26533,7 +26072,6 @@
       "119"
     ],
     "open winner": [
-      "222",
       "304"
     ],
     "openai": [
@@ -26693,12 +26231,6 @@
     "party winner": [
       "130"
     ],
-    "paul pikachu": [
-      "217"
-    ],
-    "paul pikachu illustrator": [
-      "217"
-    ],
     "payward": [
       "143"
     ],
@@ -26733,12 +26265,6 @@
     "picture winner": [
       "133"
     ],
-    "pikachu illustrator": [
-      "217"
-    ],
-    "pikachu illustrator sale": [
-      "217"
-    ],
     "pl": [
       "80"
     ],
@@ -26752,12 +26278,6 @@
     ],
     "pm": [
       "306"
-    ],
-    "pokemon card": [
-      "217"
-    ],
-    "pokemon tcg": [
-      "217"
     ],
     "policy decision": [
       "75"
@@ -26930,9 +26450,6 @@
     "protocol": [
       "184"
     ],
-    "psa 10": [
-      "217"
-    ],
     "pt": [
       "307"
     ],
@@ -26987,9 +26504,6 @@
     "rally": [
       "260",
       "265"
-    ],
-    "rare card": [
-      "217"
     ],
     "rate cut": [
       "153",
@@ -27185,11 +26699,7 @@
     ],
     "sale": [
       "159",
-      "167",
-      "217"
-    ],
-    "sale price": [
-      "217"
+      "167"
     ],
     "sam altman": [
       "152",
@@ -27338,7 +26848,6 @@
       "142"
     ],
     "slam": [
-      "222",
       "304"
     ],
     "smart contract": [
@@ -27666,9 +27175,6 @@
     "tariffs 2025": [
       "196"
     ],
-    "tcg": [
-      "217"
-    ],
     "team achieve": [
       "293"
     ],
@@ -27721,11 +27227,7 @@
       "192"
     ],
     "tennis": [
-      "222",
       "304"
-    ],
-    "tennis tournament": [
-      "222"
     ],
     "term end": [
       "300"
@@ -27913,9 +27415,6 @@
     ],
     "trading bot": [
       "200"
-    ],
-    "trading card game": [
-      "217"
     ],
     "trading competition": [
       "200",
@@ -28375,9 +27874,6 @@
     "yoshimasa hayashi": [
       "306"
     ],
-    "youtuber": [
-      "217"
-    ],
     "yuichiro tamaki": [
       "306"
     ],
@@ -28539,9 +28035,6 @@
     "泽连斯基": [
       "202"
     ],
-    "澳大利亚网球公开赛": [
-      "222"
-    ],
     "特斯拉": [
       "198",
       "264"
@@ -28551,20 +28044,11 @@
       "142",
       "276"
     ],
-    "皮卡丘插画": [
-      "217"
-    ],
-    "皮卡丘插画家": [
-      "217"
-    ],
     "立法选举": [
       "307"
     ],
     "索拉纳": [
       "260"
-    ],
-    "罗根·保罗": [
-      "217"
     ],
     "美国中情局": [
       "115"
