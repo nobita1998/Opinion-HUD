@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-01-31 16:44:57 UTC+8",
+    "generatedAt": "2026-02-01 00:43:39 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 455,
-      "markets": 167,
-      "keywords": 1761,
+      "kept": 437,
+      "markets": 163,
+      "keywords": 1735,
       "events": {
-        "events": 84
+        "events": 80
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 545,
-        "cutoff_zero_kept": 41,
+        "cutoff_expired": 563,
+        "cutoff_zero_kept": 36,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 73,
-        "regenerated_empty_entitygroups": 3,
-        "calls": 11,
-        "retries": 2,
+        "reused": 79,
+        "regenerated_empty_entitygroups": 1,
+        "calls": 1,
+        "retries": 1,
         "fallback": 0,
-        "empty": 2,
-        "non_empty": 9,
+        "empty": 1,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -216,93 +216,6 @@
       "sig": "00b48486",
       "sigFull": "00b48486",
       "sigCore": "30a64286",
-      "reused": false
-    },
-    "173": {
-      "title": "Opensea FDV above ... one day after launch?",
-      "marketIds": [
-        "173"
-      ],
-      "bestMarketId": "173",
-      "bestLabels": null,
-      "keywords": [
-        "opensea",
-        "nft marketplace",
-        "token launch",
-        "airdrop",
-        "valuation",
-        "crypto trading",
-        "digital collectibles",
-        "ethereum nfts",
-        "marketplace",
-        "token generation event",
-        "tokenomics",
-        "listing",
-        "trading volume",
-        "web3 marketplace",
-        "opensea fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "opensea fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "opensea"
-      ],
-      "entityGroups": [
-        [
-          "opensea"
-        ]
-      ],
-      "sig": "9f549944",
-      "sigFull": "9f549944",
-      "sigCore": "c2782c48",
-      "reused": false
-    },
-    "172": {
-      "title": "Will Theo launch a token by...?",
-      "marketIds": [
-        "172"
-      ],
-      "bestMarketId": "172",
-      "bestLabels": null,
-      "keywords": [
-        "theo",
-        "token launch",
-        "airdrop",
-        "crypto",
-        "cryptocurrency",
-        "tge",
-        "ico",
-        "listing",
-        "trading",
-        "debut",
-        "release",
-        "project",
-        "blockchain",
-        "smart contract",
-        "presale",
-        "theo launch",
-        "launch token",
-        "theo launch token"
-      ],
-      "entities": [
-        "theo"
-      ],
-      "entityGroups": [
-        [
-          "theo"
-        ]
-      ],
-      "sig": "33188b67",
-      "sigFull": "33188b67",
-      "sigCore": "16605c63",
       "reused": false
     },
     "171": {
@@ -3693,65 +3606,6 @@
       "sigCore": "e59bd847",
       "reused": false
     },
-    "174": {
-      "title": "Pump.fun airdrop by ....?",
-      "marketIds": [
-        "174"
-      ],
-      "bestMarketId": "174",
-      "bestLabels": null,
-      "keywords": [
-        "pump.fun",
-        "airdrop",
-        "solana",
-        "memecoin",
-        "launchpad",
-        "token",
-        "distribution",
-        "claim",
-        "snapshot",
-        "retroactive",
-        "reward",
-        "pumpdotfun",
-        "crypto",
-        "degen",
-        "allocation",
-        "pump fun",
-        "fun airdrop",
-        "pump fun airdrop"
-      ],
-      "entities": [
-        "pump.fun"
-      ],
-      "entityGroups": [
-        [
-          "pump.fun"
-        ]
-      ],
-      "sig": "11bcf36a",
-      "sigFull": "11bcf36a",
-      "sigCore": "94f76fd6",
-      "reused": false
-    },
-    "175": {
-      "title": "Will Paradex launch a token by ...?",
-      "marketIds": [
-        "175"
-      ],
-      "bestMarketId": "175",
-      "bestLabels": null,
-      "keywords": [
-        "paradex launch",
-        "launch token",
-        "paradex launch token"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "a20582a3",
-      "sigFull": "a20582a3",
-      "sigCore": "3a875b58",
-      "reused": false
-    },
     "329": {
       "title": "Will Microsoft (MSFT) close above ... end of February?",
       "marketIds": [
@@ -5080,162 +4934,11 @@
         ]
       ]
     },
-    "173": {
-      "title": "Opensea FDV above ... one day after launch?",
-      "url": "https://app.opinion.trade/market/173?ref=opinion_hud",
-      "yesTokenId": "6139075831598424139583209816238042260434461899549690550515894850164028015578",
-      "noTokenId": "79137530986492616217943885807959719875099272506304762313999513943674407870093",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "opensea",
-        "nft marketplace",
-        "token launch",
-        "airdrop",
-        "valuation",
-        "crypto trading",
-        "digital collectibles",
-        "ethereum nfts",
-        "marketplace",
-        "token generation event",
-        "tokenomics",
-        "listing",
-        "trading volume",
-        "web3 marketplace",
-        "opensea fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "opensea fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "opensea"
-      ],
-      "entityGroups": [
-        [
-          "opensea"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2600",
-          "title": "$500M",
-          "yesTokenId": "106180542339018042792218208015404850149416663080840396975720335444677848640507",
-          "noTokenId": "11173072730930225546518426302951158986521841064732519402272043568651626887046"
-        },
-        {
-          "marketId": "2601",
-          "title": "$1B",
-          "yesTokenId": "110958924222096669363080790067516184158536467615573835523772389584423803525176",
-          "noTokenId": "51297613673893111421554013462926344329868570511701382474776669611309278065304"
-        },
-        {
-          "marketId": "2602",
-          "title": "$2B",
-          "yesTokenId": "70795393612769781554756214593911837446918897488424498232836330520000435413281",
-          "noTokenId": "110774833778347600013448151427171506979227697810328256219604965499348173202358"
-        },
-        {
-          "marketId": "2603",
-          "title": "$3B",
-          "yesTokenId": "77645768394963483242546375312441585114768522847328273731675764902271408960577",
-          "noTokenId": "29466122345309354962872318854877413155507029234554266539164026896603049072305"
-        },
-        {
-          "marketId": "2604",
-          "title": "$5B",
-          "yesTokenId": "6139075831598424139583209816238042260434461899549690550515894850164028015578",
-          "noTokenId": "79137530986492616217943885807959719875099272506304762313999513943674407870093"
-        }
-      ]
-    },
-    "172": {
-      "title": "Will Theo launch a token by...?",
-      "url": "https://app.opinion.trade/market/172?ref=opinion_hud",
-      "yesTokenId": "92375133487601817273158619948385305146873016707564055643756591303201381212443",
-      "noTokenId": "4385122133632746527311038178320506001405940456672877158842798635848963655328",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "theo",
-        "token launch",
-        "airdrop",
-        "crypto",
-        "cryptocurrency",
-        "tge",
-        "ico",
-        "listing",
-        "trading",
-        "debut",
-        "release",
-        "project",
-        "blockchain",
-        "smart contract",
-        "presale",
-        "theo launch",
-        "launch token",
-        "theo launch token"
-      ],
-      "entities": [
-        "theo"
-      ],
-      "entityGroups": [
-        [
-          "theo"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2596",
-          "title": "March 31, 2026",
-          "yesTokenId": "79558706631869225422089347590466259976931032448230614798944605439860366518395",
-          "noTokenId": "71359125530666772299846756388400749873549109141463363883481853237056914728588"
-        },
-        {
-          "marketId": "2597",
-          "title": "June 30, 2026",
-          "yesTokenId": "73764339915444905030961119041603992297312539851945003520426191019310355846703",
-          "noTokenId": "28782738786873284373059160801664071037912608618148201421302800412955369494446"
-        },
-        {
-          "marketId": "2598",
-          "title": "September 30, 2026",
-          "yesTokenId": "96737472983091752662347806900040398608047103675632526331190230660674721842538",
-          "noTokenId": "65669882188192030458835930238268316746570741375471400151338036374251323403832"
-        },
-        {
-          "marketId": "2599",
-          "title": "December 31, 2026",
-          "yesTokenId": "92375133487601817273158619948385305146873016707564055643756591303201381212443",
-          "noTokenId": "4385122133632746527311038178320506001405940456672877158842798635848963655328"
-        },
-        {
-          "marketId": "2595",
-          "title": "December 31, 2025",
-          "yesTokenId": "101197563915060393538375248211249255754408178433985354773363824616274529527533",
-          "noTokenId": "101358555081573245954557536374716491415297057644120172230992064288646318081558"
-        }
-      ]
-    },
     "171": {
       "title": "OpenAI IPO by...?",
       "url": "https://app.opinion.trade/market/171?ref=opinion_hud",
-      "yesTokenId": "67797064011664553985611987694764090712915012213554730877439699244613155036935",
-      "noTokenId": "37076655403141810723292530021595531675081399539819129560717102398257140312999",
+      "yesTokenId": "19452222592396133352264721269935422965461316076668302263117070986899503411033",
+      "noTokenId": "21150968920966124130656489205211600494996379993297866947580008213486056111439",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -6316,8 +6019,8 @@
     "95": {
       "title": "Backpack FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/95?ref=opinion_hud",
-      "yesTokenId": "48638358498196167070989659311045733300732882388569732248894905340738868490231",
-      "noTokenId": "12376906555062351551252509108425285628521015624061021786151925823370087803141",
+      "yesTokenId": "28344807126881202209615667683342755194340563571297472717594388939000528031146",
+      "noTokenId": "105037746151635658183722041917146475007873934799335245036294152918909571837036",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10239,8 +9942,8 @@
     "83": {
       "title": "UEFA Champions League Winner 2026",
       "url": "https://app.opinion.trade/market/83?ref=opinion_hud",
-      "yesTokenId": "112190686258195895338436967175230527385361738805789879534794789415356874352697",
-      "noTokenId": "15798499715256083735803548128600210021894085069867560292453210958609073289893",
+      "yesTokenId": "19219253512106834718612281430472802630858377350648476807254195985245563523963",
+      "noTokenId": "57938055365437271719115847466273532877806118728235778475049873832354074451843",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -13017,111 +12720,6 @@
         }
       ]
     },
-    "174": {
-      "title": "Pump.fun airdrop by ....?",
-      "url": "https://app.opinion.trade/market/174?ref=opinion_hud",
-      "yesTokenId": "3245078889210221132031633328611995243271249966318123211160190130357159715411",
-      "noTokenId": "8899676117633104076540378514352655706150929023028639452597368459759441298048",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "pump.fun",
-        "airdrop",
-        "solana",
-        "memecoin",
-        "launchpad",
-        "token",
-        "distribution",
-        "claim",
-        "snapshot",
-        "retroactive",
-        "reward",
-        "pumpdotfun",
-        "crypto",
-        "degen",
-        "allocation",
-        "pump fun",
-        "fun airdrop",
-        "pump fun airdrop"
-      ],
-      "entities": [
-        "pump.fun"
-      ],
-      "entityGroups": [
-        [
-          "pump.fun"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2606",
-          "title": "March 31, 2026",
-          "yesTokenId": "3245078889210221132031633328611995243271249966318123211160190130357159715411",
-          "noTokenId": "8899676117633104076540378514352655706150929023028639452597368459759441298048"
-        },
-        {
-          "marketId": "2605",
-          "title": "December 31, 2025",
-          "yesTokenId": "108974621305523979415298574778712706062999368407052994117557392222232910208322",
-          "noTokenId": "100658168825566251552512771056749490588333653800978120409073075536566526831540"
-        }
-      ]
-    },
-    "175": {
-      "title": "Will Paradex launch a token by ...?",
-      "url": "https://app.opinion.trade/market/175?ref=opinion_hud",
-      "yesTokenId": "13766909382150257467446436655331969926914504546602223743763739138754304589478",
-      "noTokenId": "63395900141993403526958685664529082221506856445119714541728475531415538149222",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "paradex launch",
-        "launch token",
-        "paradex launch token"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2607",
-          "title": "February 28, 2026",
-          "yesTokenId": "18568430249427019270202984814264355629680365141486647833183735458121155587578",
-          "noTokenId": "102176097149550958526874937355121726987634345361642536993334849398604218528098"
-        },
-        {
-          "marketId": "2608",
-          "title": "March 31, 2026",
-          "yesTokenId": "1763828268016259264970804589176396067896880536926288352897911193933510904452",
-          "noTokenId": "115245837850662144871453626940907600918924793397105180851679815708933499199575"
-        },
-        {
-          "marketId": "2609",
-          "title": "June 30, 2026",
-          "yesTokenId": "13766909382150257467446436655331969926914504546602223743763739138754304589478",
-          "noTokenId": "63395900141993403526958685664529082221506856445119714541728475531415538149222"
-        }
-      ]
-    },
-    "5199": {
-      "title": "BTC Up or Down - Hourly (Jan 31, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5199?ref=opinion_hud",
-      "yesTokenId": "24751144977998047559335600073420191563924185138394386718190936543190627279364",
-      "noTokenId": "54989007954970698448911454691414043045217556265665673118796980651575744290056",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "329": {
       "title": "Will Microsoft (MSFT) close above ... end of February?",
       "url": "https://app.opinion.trade/market/329?ref=opinion_hud",
@@ -13845,6 +13443,18 @@
           "noTokenId": "71629199470626911631154181376600711141630509166116928538124741015538906197877"
         }
       ]
+    },
+    "5220": {
+      "title": "Bitcoin Up or Down on February 1?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/5220?ref=opinion_hud",
+      "yesTokenId": "107461104500902001625821834472678303157689132601137371460345691920141065286594",
+      "noTokenId": "7629158921164008520176450456786652097483920000213350401946686159287543725003",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -14096,7 +13706,6 @@
       "329"
     ],
     "above one": [
-      "173",
       "317",
       "95",
       "96",
@@ -14104,7 +13713,6 @@
       "98"
     ],
     "above one day": [
-      "173",
       "317",
       "95",
       "96",
@@ -14186,7 +13794,6 @@
     ],
     "after launch": [
       "1721",
-      "173",
       "317",
       "67",
       "95",
@@ -14226,10 +13833,7 @@
       "119",
       "167",
       "168",
-      "172",
       "1721",
-      "173",
-      "174",
       "317",
       "3361",
       "3366",
@@ -14281,9 +13885,6 @@
     ],
     "all-time high": [
       "112"
-    ],
-    "allocation": [
-      "174"
     ],
     "alphabet": [
       "326"
@@ -14706,7 +14307,6 @@
       "112",
       "119",
       "167",
-      "172",
       "1721",
       "260",
       "318",
@@ -14989,8 +14589,7 @@
       "131"
     ],
     "claim": [
-      "118",
-      "174"
+      "118"
     ],
     "cleric": [
       "242"
@@ -15181,9 +14780,7 @@
       "112",
       "119",
       "167",
-      "172",
       "1721",
-      "174",
       "260",
       "318",
       "3359",
@@ -15216,15 +14813,11 @@
     "crypto token": [
       "168"
     ],
-    "crypto trading": [
-      "173"
-    ],
     "crypto wallet": [
       "118"
     ],
     "cryptocurrency": [
       "112",
-      "172",
       "260",
       "3364",
       "3367"
@@ -15267,7 +14860,6 @@
     ],
     "day after": [
       "1721",
-      "173",
       "317",
       "67",
       "95",
@@ -15276,7 +14868,6 @@
       "98"
     ],
     "day after launch": [
-      "173",
       "95",
       "96",
       "97",
@@ -15305,7 +14896,6 @@
       "163",
       "169",
       "171",
-      "172",
       "317",
       "97",
       "98"
@@ -15357,9 +14947,6 @@
     ],
     "defi wallet": [
       "118"
-    ],
-    "degen": [
-      "174"
     ],
     "delisted msci": [
       "3257"
@@ -15422,9 +15009,6 @@
     "diet": [
       "306"
     ],
-    "digital collectibles": [
-      "173"
-    ],
     "digital gold": [
       "112"
     ],
@@ -15446,9 +15030,6 @@
     ],
     "director winner": [
       "138"
-    ],
-    "distribution": [
-      "174"
     ],
     "divestiture": [
       "159"
@@ -15716,9 +15297,6 @@
     "ethereum all time": [
       "3364"
     ],
-    "ethereum nfts": [
-      "173"
-    ],
     "ethereum wallet": [
       "118"
     ],
@@ -15854,7 +15432,6 @@
       "98"
     ],
     "fdv above": [
-      "173",
       "317",
       "95",
       "96",
@@ -15862,7 +15439,6 @@
       "98"
     ],
     "fdv above one": [
-      "173",
       "317",
       "95",
       "96",
@@ -16057,9 +15633,6 @@
     "fully diluted valuation": [
       "96",
       "97"
-    ],
-    "fun airdrop": [
-      "174"
     ],
     "funding": [
       "3505",
@@ -16487,8 +16060,7 @@
       "3361"
     ],
     "ico": [
-      "167",
-      "172"
+      "167"
     ],
     "idf": [
       "271",
@@ -16892,16 +16464,11 @@
       "119",
       "167",
       "168",
-      "172",
-      "175",
       "3366",
       "99"
     ],
     "launch token 2026": [
       "3366"
-    ],
-    "launchpad": [
-      "174"
     ],
     "layer 1": [
       "1721"
@@ -16994,8 +16561,6 @@
       "168",
       "169",
       "171",
-      "172",
-      "173",
       "317",
       "3362",
       "67",
@@ -17142,9 +16707,6 @@
     "market resolution": [
       "99"
     ],
-    "marketplace": [
-      "173"
-    ],
     "marvel": [
       "3158"
     ],
@@ -17206,7 +16768,6 @@
       "304"
     ],
     "memecoin": [
-      "174",
       "97"
     ],
     "merger": [
@@ -17596,9 +17157,6 @@
     "nfp": [
       "273"
     ],
-    "nft marketplace": [
-      "173"
-    ],
     "nicolas maduro": [
       "128"
     ],
@@ -17682,7 +17240,6 @@
     ],
     "one day": [
       "1721",
-      "173",
       "317",
       "67",
       "95",
@@ -17691,7 +17248,6 @@
       "98"
     ],
     "one day after": [
-      "173",
       "317",
       "67",
       "95",
@@ -17721,15 +17277,6 @@
     ],
     "opening weekend": [
       "275"
-    ],
-    "opensea": [
-      "173"
-    ],
-    "opensea fdv": [
-      "173"
-    ],
-    "opensea fdv above": [
-      "173"
     ],
     "operation": [
       "128"
@@ -17831,12 +17378,6 @@
     ],
     "pandora": [
       "275"
-    ],
-    "paradex launch": [
-      "175"
-    ],
-    "paradex launch token": [
-      "175"
     ],
     "parallel execution": [
       "1721"
@@ -18015,8 +17556,7 @@
       "80"
     ],
     "presale": [
-      "167",
-      "172"
+      "167"
     ],
     "president": [
       "276",
@@ -18096,7 +17636,6 @@
       "130"
     ],
     "project": [
-      "172",
       "98"
     ],
     "proof of work": [
@@ -18131,18 +17670,6 @@
     "pump": [
       "3364",
       "3368"
-    ],
-    "pump fun": [
-      "174"
-    ],
-    "pump fun airdrop": [
-      "174"
-    ],
-    "pump.fun": [
-      "174"
-    ],
-    "pumpdotfun": [
-      "174"
     ],
     "q1 2026": [
       "3362",
@@ -18314,7 +17841,6 @@
     ],
     "release": [
       "129",
-      "172",
       "2178"
     ],
     "release album": [
@@ -18384,9 +17910,6 @@
       "271",
       "3039"
     ],
-    "retroactive": [
-      "174"
-    ],
     "return": [
       "1856",
       "3369"
@@ -18411,9 +17934,6 @@
     ],
     "revelation": [
       "2670"
-    ],
-    "reward": [
-      "174"
     ],
     "richter scale": [
       "2668",
@@ -18684,7 +18204,6 @@
       "3265"
     ],
     "smart contract": [
-      "172",
       "1721",
       "3366"
     ],
@@ -18696,7 +18215,6 @@
     ],
     "snapshot": [
       "118",
-      "174",
       "99"
     ],
     "soccer": [
@@ -18718,7 +18236,6 @@
       "260"
     ],
     "solana": [
-      "174",
       "260"
     ],
     "solana hit": [
@@ -19110,7 +18627,6 @@
     "tge": [
       "167",
       "168",
-      "172",
       "1721",
       "317",
       "67",
@@ -19141,15 +18657,6 @@
     ],
     "theft": [
       "3360"
-    ],
-    "theo": [
-      "172"
-    ],
-    "theo launch": [
-      "172"
-    ],
-    "theo launch token": [
-      "172"
     ],
     "thompson": [
       "3158"
@@ -19216,7 +18723,6 @@
       "118",
       "167",
       "1721",
-      "174",
       "260",
       "3367",
       "67",
@@ -19229,15 +18735,12 @@
     ],
     "token generation event": [
       "168",
-      "173",
       "96"
     ],
     "token launch": [
       "118",
       "119",
       "168",
-      "172",
-      "173",
       "3366",
       "96",
       "99"
@@ -19248,7 +18751,6 @@
     "tokenomics": [
       "167",
       "168",
-      "173",
       "317",
       "3361",
       "95",
@@ -19287,7 +18789,6 @@
     "trading": [
       "112",
       "169",
-      "172",
       "260",
       "262",
       "287",
@@ -19311,9 +18812,6 @@
     ],
     "trading platform": [
       "143"
-    ],
-    "trading volume": [
-      "173"
     ],
     "transfer": [
       "3365"
@@ -19539,7 +19037,6 @@
       "158",
       "163",
       "171",
-      "173",
       "317",
       "324",
       "3362",
@@ -19655,9 +19152,6 @@
     ],
     "wdc": [
       "312"
-    ],
-    "web3 marketplace": [
-      "173"
     ],
     "web3 wallet": [
       "118"
@@ -20279,7 +19773,6 @@
       "329"
     ],
     "above one": [
-      "173",
       "317",
       "95",
       "96",
@@ -20287,7 +19780,6 @@
       "98"
     ],
     "above one day": [
-      "173",
       "317",
       "95",
       "96",
@@ -20357,7 +19849,6 @@
       "81"
     ],
     "after launch": [
-      "173",
       "317",
       "67",
       "95",
@@ -20394,9 +19885,6 @@
       "119",
       "167",
       "168",
-      "172",
-      "173",
-      "174",
       "317",
       "67",
       "95",
@@ -20429,9 +19917,6 @@
     ],
     "all-time high": [
       "112"
-    ],
-    "allocation": [
-      "174"
     ],
     "alphabet": [
       "326"
@@ -20744,7 +20229,6 @@
       "112",
       "119",
       "167",
-      "172",
       "260",
       "318",
       "95",
@@ -20918,8 +20402,7 @@
       "131"
     ],
     "claim": [
-      "118",
-      "174"
+      "118"
     ],
     "cleric": [
       "242"
@@ -21037,8 +20520,6 @@
       "112",
       "119",
       "167",
-      "172",
-      "174",
       "260",
       "318",
       "67",
@@ -21055,15 +20536,11 @@
     "crypto token": [
       "168"
     ],
-    "crypto trading": [
-      "173"
-    ],
     "crypto wallet": [
       "118"
     ],
     "cryptocurrency": [
       "112",
-      "172",
       "260"
     ],
     "cup winner": [
@@ -21082,7 +20559,6 @@
       "132"
     ],
     "day after": [
-      "173",
       "317",
       "67",
       "95",
@@ -21091,7 +20567,6 @@
       "98"
     ],
     "day after launch": [
-      "173",
       "95",
       "96",
       "97",
@@ -21109,7 +20584,6 @@
       "163",
       "169",
       "171",
-      "172",
       "317",
       "97",
       "98"
@@ -21151,9 +20625,6 @@
     "defi wallet": [
       "118"
     ],
-    "degen": [
-      "174"
-    ],
     "democratic party": [
       "130"
     ],
@@ -21190,9 +20661,6 @@
     "diet": [
       "306"
     ],
-    "digital collectibles": [
-      "173"
-    ],
     "digital gold": [
       "112"
     ],
@@ -21214,9 +20682,6 @@
     ],
     "director winner": [
       "138"
-    ],
-    "distribution": [
-      "174"
     ],
     "divestiture": [
       "159"
@@ -21377,9 +20842,6 @@
       "119",
       "67"
     ],
-    "ethereum nfts": [
-      "173"
-    ],
     "ethereum wallet": [
       "118"
     ],
@@ -21474,7 +20936,6 @@
       "98"
     ],
     "fdv above": [
-      "173",
       "317",
       "95",
       "96",
@@ -21482,7 +20943,6 @@
       "98"
     ],
     "fdv above one": [
-      "173",
       "317",
       "95",
       "96",
@@ -21649,9 +21109,6 @@
     "fully diluted valuation": [
       "96",
       "97"
-    ],
-    "fun airdrop": [
-      "174"
     ],
     "funding gap": [
       "303"
@@ -21955,8 +21412,7 @@
       "132"
     ],
     "ico": [
-      "167",
-      "172"
+      "167"
     ],
     "idf": [
       "271",
@@ -22236,12 +21692,7 @@
       "119",
       "167",
       "168",
-      "172",
-      "175",
       "99"
-    ],
-    "launchpad": [
-      "174"
     ],
     "layer 2": [
       "119",
@@ -22317,8 +21768,6 @@
       "168",
       "169",
       "171",
-      "172",
-      "173",
       "317",
       "67",
       "95",
@@ -22425,9 +21874,6 @@
     "market resolution": [
       "99"
     ],
-    "marketplace": [
-      "173"
-    ],
     "maurice podoloff trophy": [
       "115"
     ],
@@ -22466,7 +21912,6 @@
       "304"
     ],
     "memecoin": [
-      "174",
       "97"
     ],
     "merger": [
@@ -22732,9 +22177,6 @@
     "nfp": [
       "273"
     ],
-    "nft marketplace": [
-      "173"
-    ],
     "nicolas maduro": [
       "128"
     ],
@@ -22808,7 +22250,6 @@
       "119"
     ],
     "one day": [
-      "173",
       "317",
       "67",
       "95",
@@ -22817,7 +22258,6 @@
       "98"
     ],
     "one day after": [
-      "173",
       "317",
       "67",
       "95",
@@ -22846,15 +22286,6 @@
     ],
     "opening weekend": [
       "275"
-    ],
-    "opensea": [
-      "173"
-    ],
-    "opensea fdv": [
-      "173"
-    ],
-    "opensea fdv above": [
-      "173"
     ],
     "operation": [
       "128"
@@ -22931,12 +22362,6 @@
     ],
     "pandora": [
       "275"
-    ],
-    "paradex launch": [
-      "175"
-    ],
-    "paradex launch token": [
-      "175"
     ],
     "parliament": [
       "307"
@@ -23090,8 +22515,7 @@
       "80"
     ],
     "presale": [
-      "167",
-      "172"
+      "167"
     ],
     "president": [
       "276",
@@ -23153,7 +22577,6 @@
       "130"
     ],
     "project": [
-      "172",
       "98"
     ],
     "pt": [
@@ -23180,18 +22603,6 @@
     ],
     "public ticker": [
       "169"
-    ],
-    "pump fun": [
-      "174"
-    ],
-    "pump fun airdrop": [
-      "174"
-    ],
-    "pump.fun": [
-      "174"
-    ],
-    "pumpdotfun": [
-      "174"
     ],
     "qualifying": [
       "312"
@@ -23299,8 +22710,7 @@
       "115"
     ],
     "release": [
-      "129",
-      "172"
+      "129"
     ],
     "release date": [
       "89"
@@ -23326,12 +22736,6 @@
     "retaliation": [
       "257",
       "271"
-    ],
-    "retroactive": [
-      "174"
-    ],
-    "reward": [
-      "174"
     ],
     "ring": [
       "103"
@@ -23500,15 +22904,11 @@
     "slam": [
       "304"
     ],
-    "smart contract": [
-      "172"
-    ],
     "snap election": [
       "306"
     ],
     "snapshot": [
       "118",
-      "174",
       "99"
     ],
     "soccer": [
@@ -23530,7 +22930,6 @@
       "260"
     ],
     "solana": [
-      "174",
       "260"
     ],
     "solana hit": [
@@ -23811,7 +23210,6 @@
     "tge": [
       "167",
       "168",
-      "172",
       "317",
       "67",
       "96",
@@ -23835,15 +23233,6 @@
     ],
     "theatrical": [
       "275"
-    ],
-    "theo": [
-      "172"
-    ],
-    "theo launch": [
-      "172"
-    ],
-    "theo launch token": [
-      "172"
     ],
     "ticker": [
       "158",
@@ -23872,7 +23261,6 @@
     "token": [
       "118",
       "167",
-      "174",
       "260",
       "67",
       "95",
@@ -23881,15 +23269,12 @@
     ],
     "token generation event": [
       "168",
-      "173",
       "96"
     ],
     "token launch": [
       "118",
       "119",
       "168",
-      "172",
-      "173",
       "96",
       "99"
     ],
@@ -23899,7 +23284,6 @@
     "tokenomics": [
       "167",
       "168",
-      "173",
       "317",
       "95",
       "99"
@@ -23928,7 +23312,6 @@
     "trading": [
       "112",
       "169",
-      "172",
       "260",
       "262",
       "287",
@@ -23950,9 +23333,6 @@
     ],
     "trading platform": [
       "143"
-    ],
-    "trading volume": [
-      "173"
     ],
     "treasury": [
       "107",
@@ -24115,7 +23495,6 @@
       "158",
       "163",
       "171",
-      "173",
       "317",
       "324",
       "67",
@@ -24189,9 +23568,6 @@
     ],
     "wdc": [
       "312"
-    ],
-    "web3 marketplace": [
-      "173"
     ],
     "web3 wallet": [
       "118"
