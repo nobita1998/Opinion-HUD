@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-01-31 00:54:57 UTC+8",
+    "generatedAt": "2026-01-31 10:44:02 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,32 +8,32 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 501,
-      "markets": 179,
-      "keywords": 1788,
+      "kept": 396,
+      "markets": 168,
+      "keywords": 1778,
       "events": {
-        "events": 91
+        "events": 76
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 494,
-        "cutoff_zero_kept": 39,
+        "cutoff_expired": 604,
+        "cutoff_zero_kept": 42,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
-        "title_pattern_filtered": 5
+        "title_pattern_filtered": 0
       },
       "ai": {
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 90,
+        "reused": 73,
         "regenerated_empty_entitygroups": 1,
-        "calls": 1,
-        "retries": 1,
+        "calls": 3,
+        "retries": 3,
         "fallback": 0,
-        "empty": 1,
+        "empty": 3,
         "non_empty": 0,
         "errors": 0
       }
@@ -4145,6 +4145,44 @@
       "sigFull": "0b5cf30b",
       "sigCore": "e59bd847",
       "reused": false
+    },
+    "174": {
+      "title": "Pump.fun airdrop by ....?",
+      "marketIds": [
+        "174"
+      ],
+      "bestMarketId": "174",
+      "bestLabels": null,
+      "keywords": [
+        "pump fun",
+        "fun airdrop",
+        "pump fun airdrop"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "11bcf36a",
+      "sigFull": "11bcf36a",
+      "sigCore": "94f76fd6",
+      "reused": false
+    },
+    "175": {
+      "title": "Will Paradex launch a token by ...?",
+      "marketIds": [
+        "175"
+      ],
+      "bestMarketId": "175",
+      "bestLabels": null,
+      "keywords": [
+        "paradex launch",
+        "launch token",
+        "paradex launch token"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "a20582a3",
+      "sigFull": "a20582a3",
+      "sigCore": "3a875b58",
+      "reused": false
     }
   },
   "markets": {
@@ -4842,56 +4880,6 @@
         ],
         [
           "yen"
-        ]
-      ]
-    },
-    "3114": {
-      "title": "Will there be another US government shutdown by January 31?",
-      "url": "https://app.opinion.trade/market/3114?ref=opinion_hud",
-      "yesTokenId": "115433849389047601718520396448917921051730356162768850507050759717302067306469",
-      "noTokenId": "36621200515936823298720686168677973021786473106358905797001537320768414966310",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "type": "binary",
-      "keywords": [
-        "us government",
-        "federal government",
-        "shutdown",
-        "government shutdown",
-        "appropriations",
-        "lapse in appropriations",
-        "opm",
-        "office of personnel management",
-        "furlough",
-        "federal employees",
-        "budget impasse",
-        "continuing resolution",
-        "partial shutdown",
-        "federal shutdown",
-        "government closure",
-        "there another",
-        "another government",
-        "shutdown january",
-        "there another government",
-        "another government shutdown",
-        "government shutdown january"
-      ],
-      "entities": [
-        "us government",
-        "shutdown"
-      ],
-      "entityGroups": [
-        [
-          "us government",
-          "美国政府",
-          "美联储"
-        ],
-        [
-          "shutdown",
-          "government shutdown"
         ]
       ]
     },
@@ -7695,18 +7683,6 @@
         }
       ]
     },
-    "3861": {
-      "title": "Israel strikes Iran by January 31, 2026?",
-      "url": "https://app.opinion.trade/market/3861?ref=opinion_hud",
-      "yesTokenId": "99904537451919756465656938138414080393645016131525956911984437296468042828030",
-      "noTokenId": "97311288919559802465522549861894063891343590762862212608595970389487227268737",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "type": "binary"
-    },
     "258": {
       "title": "Will Khamenei leave Iran by...?",
       "url": "https://app.opinion.trade/market/258?ref=opinion_hud",
@@ -8424,18 +8400,6 @@
       },
       "type": "binary"
     },
-    "3975": {
-      "title": "U.S. recognizes Machado as leader of Venezuela by January 31?",
-      "url": "https://app.opinion.trade/market/3975?ref=opinion_hud",
-      "yesTokenId": "17143316589219485416060615905577902577738838280910030458410091811973978359070",
-      "noTokenId": "11295755245172817128772667768404404530531453088799840586854338687366757872917",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "type": "binary"
-    },
     "271": {
       "title": "US/Israel strikes Iran by...?",
       "url": "https://app.opinion.trade/market/271?ref=opinion_hud",
@@ -9013,18 +8977,6 @@
           "noTokenId": "14250241838074873608065357915038363835320506996732650542539666529513167313824"
         }
       ]
-    },
-    "4003": {
-      "title": "Will the Iranian regime fall by January 31?",
-      "url": "https://app.opinion.trade/market/4003?ref=opinion_hud",
-      "yesTokenId": "70670213192149390369499622476706779459215900361537273189303408416987706890911",
-      "noTokenId": "89565699628597009255313165690401049699703494749118537821129100655143429900116",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "type": "binary"
     },
     "274": {
       "title": "US strike on Mexico by ...?",
@@ -9743,30 +9695,6 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "4145": {
-      "title": "TrumpRX launched by January 31, 2026?",
-      "url": "https://app.opinion.trade/market/4145?ref=opinion_hud",
-      "yesTokenId": "2522334896818502974614233595146462374389983548783460196466706732885668769446",
-      "noTokenId": "27281121138108851570900424177010987883172314734917097371321669037054285726259",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "4144": {
-      "title": "Will USD reach 1.5M Iranian rials by January 31?",
-      "url": "https://app.opinion.trade/market/4144?ref=opinion_hud",
-      "yesTokenId": "21625009848752086748703139869163081657815083032108670965949674289969692911055",
-      "noTokenId": "30144146435518146006122550572299293455265944550867519146368219726267915467020",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
       },
       "type": "binary"
     },
@@ -11198,8 +11126,8 @@
     "83": {
       "title": "UEFA Champions League Winner 2026",
       "url": "https://app.opinion.trade/market/83?ref=opinion_hud",
-      "yesTokenId": "19219253512106834718612281430472802630858377350648476807254195985245563523963",
-      "noTokenId": "57938055365437271719115847466273532877806118728235778475049873832354074451843",
+      "yesTokenId": "112190686258195895338436967175230527385361738805789879534794789415356874352697",
+      "noTokenId": "15798499715256083735803548128600210021894085069867560292453210958609073289893",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -13182,30 +13110,6 @@
       },
       "type": "binary"
     },
-    "4891": {
-      "title": "2026 Australian Open ATP：Alcaraz vs Zverev",
-      "url": "https://app.opinion.trade/market/4891?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "4892": {
-      "title": "2026 Australian Open ATP：Djokovic vs Sinner",
-      "url": "https://app.opinion.trade/market/4892?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "4932": {
       "title": "RIVER FDV hit $10B by Feb 10?",
       "url": "https://app.opinion.trade/market/4932?ref=opinion_hud",
@@ -13629,18 +13533,6 @@
       },
       "type": "binary"
     },
-    "5067": {
-      "title": "Bitcoin Up or Down on January 31?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/5067?ref=opinion_hud",
-      "yesTokenId": "79289347711859346880243016948454422688510132174213659287804871743448102864663",
-      "noTokenId": "46426890580528612141115509777019078723653943783180732125347978155670236722630",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "5066": {
       "title": "LCK Cup Group Stage — HLE vs GEN (Feb 1, 2026)",
       "url": "https://app.opinion.trade/market/5066?ref=opinion_hud",
@@ -13662,18 +13554,6 @@
       "labels": {
         "yesLabel": "YES",
         "noLabel": "NO"
-      },
-      "type": "binary"
-    },
-    "5065": {
-      "title": "LCK Cup Group Stage — T1 vs DK (Jan 31, 2026)",
-      "url": "https://app.opinion.trade/market/5065?ref=opinion_hud",
-      "yesTokenId": "108608654216985720258957470228515931113774546913208901908661946511682884556524",
-      "noTokenId": "25122358089764917106194498378195701125568106358680802037448967570602572375407",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "T1",
-        "noLabel": "DK"
       },
       "type": "binary"
     },
@@ -14024,41 +13904,77 @@
         }
       ]
     },
-    "5123": {
-      "title": "BTC Up or Down - Hourly (Jan 30, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5123?ref=opinion_hud",
-      "yesTokenId": "81255208666213005305980031765163491035697981808324313674754839673416083474018",
-      "noTokenId": "21965742767016259058494655034744371744611613144884343917820415796769161363074",
+    "174": {
+      "title": "Pump.fun airdrop by ....?",
+      "url": "https://app.opinion.trade/market/174?ref=opinion_hud",
+      "yesTokenId": "3245078889210221132031633328611995243271249966318123211160190130357159715411",
+      "noTokenId": "8899676117633104076540378514352655706150929023028639452597368459759441298048",
       "volume": 0.0,
       "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
+        "yesLabel": "YES",
+        "noLabel": "NO"
       },
-      "type": "binary"
+      "keywords": [
+        "pump fun",
+        "fun airdrop",
+        "pump fun airdrop"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "2606",
+          "title": "March 31, 2026",
+          "yesTokenId": "3245078889210221132031633328611995243271249966318123211160190130357159715411",
+          "noTokenId": "8899676117633104076540378514352655706150929023028639452597368459759441298048"
+        },
+        {
+          "marketId": "2605",
+          "title": "December 31, 2025",
+          "yesTokenId": "108974621305523979415298574778712706062999368407052994117557392222232910208322",
+          "noTokenId": "100658168825566251552512771056749490588333653800978120409073075536566526831540"
+        }
+      ]
     },
-    "5124": {
-      "title": "ETH Up or Down - Hourly (Jan 30, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5124?ref=opinion_hud",
-      "yesTokenId": "37889313601348138912125472799576558056378701736713343741083409837328627222653",
-      "noTokenId": "26498500504824256702294918371766668415039380878409069789407339313411203345064",
+    "175": {
+      "title": "Will Paradex launch a token by ...?",
+      "url": "https://app.opinion.trade/market/175?ref=opinion_hud",
+      "yesTokenId": "13766909382150257467446436655331969926914504546602223743763739138754304589478",
+      "noTokenId": "63395900141993403526958685664529082221506856445119714541728475531415538149222",
       "volume": 0.0,
       "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
+        "yesLabel": "YES",
+        "noLabel": "NO"
       },
-      "type": "binary"
-    },
-    "5122": {
-      "title": "BNB Up or Down - Hourly (Jan 30, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5122?ref=opinion_hud",
-      "yesTokenId": "12876060620955855496071700498440233178271264846320507414196928427747547897875",
-      "noTokenId": "95481871639186644216888955581059212749833692144978175782031886589557612992847",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
+      "keywords": [
+        "paradex launch",
+        "launch token",
+        "paradex launch token"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "2607",
+          "title": "February 28, 2026",
+          "yesTokenId": "18568430249427019270202984814264355629680365141486647833183735458121155587578",
+          "noTokenId": "102176097149550958526874937355121726987634345361642536993334849398604218528098"
+        },
+        {
+          "marketId": "2608",
+          "title": "March 31, 2026",
+          "yesTokenId": "1763828268016259264970804589176396067896880536926288352897911193933510904452",
+          "noTokenId": "115245837850662144871453626940907600918924793397105180851679815708933499199575"
+        },
+        {
+          "marketId": "2609",
+          "title": "June 30, 2026",
+          "yesTokenId": "13766909382150257467446436655331969926914504546602223743763739138754304589478",
+          "noTokenId": "63395900141993403526958685664529082221506856445119714541728475531415538149222"
+        }
+      ]
     }
   },
   "index": {
@@ -14557,12 +14473,6 @@
     "another critical cloudflare": [
       "3357"
     ],
-    "another government": [
-      "3114"
-    ],
-    "another government shutdown": [
-      "3114"
-    ],
     "anthropic": [
       "163"
     ],
@@ -14603,9 +14513,6 @@
     ],
     "apple ceo march": [
       "2368"
-    ],
-    "appropriations": [
-      "3114"
     ],
     "appropriations crisis": [
       "303"
@@ -15042,8 +14949,7 @@
       "111"
     ],
     "budget impasse": [
-      "303",
-      "3114"
+      "303"
     ],
     "bull market": [
       "112"
@@ -15359,9 +15265,6 @@
     ],
     "continental competition": [
       "83"
-    ],
-    "continuing resolution": [
-      "3114"
     ],
     "contraction": [
       "3265"
@@ -16159,9 +16062,6 @@
     "federal circuit": [
       "1546"
     ],
-    "federal employees": [
-      "3114"
-    ],
     "federal funding": [
       "303"
     ],
@@ -16169,8 +16069,7 @@
       "75"
     ],
     "federal government": [
-      "303",
-      "3114"
+      "303"
     ],
     "federal reserve": [
       "107",
@@ -16182,8 +16081,7 @@
       "78"
     ],
     "federal shutdown": [
-      "303",
-      "3114"
+      "303"
     ],
     "fia": [
       "312"
@@ -16296,6 +16194,9 @@
       "96",
       "97"
     ],
+    "fun airdrop": [
+      "174"
+    ],
     "funding": [
       "3505",
       "3506",
@@ -16311,8 +16212,7 @@
       "318"
     ],
     "furlough": [
-      "303",
-      "3114"
+      "303"
     ],
     "future": [
       "3448",
@@ -16435,15 +16335,10 @@
       "307"
     ],
     "government closure": [
-      "303",
-      "3114"
+      "303"
     ],
     "government shutdown": [
-      "303",
-      "3114"
-    ],
-    "government shutdown january": [
-      "3114"
+      "303"
     ],
     "government shutdown last": [
       "303"
@@ -17135,9 +17030,6 @@
     "laliga": [
       "82"
     ],
-    "lapse in appropriations": [
-      "3114"
-    ],
     "large language model": [
       "129",
       "89"
@@ -17160,6 +17052,7 @@
       "167",
       "168",
       "172",
+      "175",
       "3366",
       "99"
     ],
@@ -17949,9 +17842,6 @@
     "office": [
       "3062"
     ],
-    "office of personnel management": [
-      "3114"
-    ],
     "official": [
       "3257"
     ],
@@ -18020,9 +17910,6 @@
     ],
     "operation": [
       "128"
-    ],
-    "opm": [
-      "3114"
     ],
     "options": [
       "267"
@@ -18121,6 +18008,12 @@
     "pandora": [
       "275"
     ],
+    "paradex launch": [
+      "175"
+    ],
+    "paradex launch token": [
+      "175"
+    ],
     "parallel execution": [
       "1721"
     ],
@@ -18131,8 +18024,7 @@
       "2670"
     ],
     "partial shutdown": [
-      "303",
-      "3114"
+      "303"
     ],
     "participation rate": [
       "273"
@@ -18420,6 +18312,12 @@
     "pump": [
       "3364",
       "3368"
+    ],
+    "pump fun": [
+      "174"
+    ],
+    "pump fun airdrop": [
+      "174"
     ],
     "q1 2026": [
       "3362",
@@ -18929,12 +18827,6 @@
     ],
     "short-term rates": [
       "313"
-    ],
-    "shutdown": [
-      "3114"
-    ],
-    "shutdown january": [
-      "3114"
     ],
     "shutdown last": [
       "303"
@@ -19452,12 +19344,6 @@
     "theo launch token": [
       "172"
     ],
-    "there another": [
-      "3114"
-    ],
-    "there another government": [
-      "3114"
-    ],
     "thompson": [
       "3158"
     ],
@@ -19784,9 +19670,6 @@
       "61",
       "75",
       "78"
-    ],
-    "us government": [
-      "3114"
     ],
     "us house": [
       "135"
@@ -20368,9 +20251,6 @@
     "美国参议院": [
       "136"
     ],
-    "美国政府": [
-      "3114"
-    ],
     "美国职业篮球": [
       "103",
       "115"
@@ -20386,7 +20266,6 @@
       "107",
       "153",
       "303",
-      "3114",
       "319",
       "61",
       "75",
@@ -21974,6 +21853,9 @@
       "96",
       "97"
     ],
+    "fun airdrop": [
+      "174"
+    ],
     "funding gap": [
       "303"
     ],
@@ -22583,6 +22465,7 @@
       "167",
       "168",
       "172",
+      "175",
       "99"
     ],
     "layer 2": [
@@ -23296,6 +23179,12 @@
     "pandora": [
       "275"
     ],
+    "paradex launch": [
+      "175"
+    ],
+    "paradex launch token": [
+      "175"
+    ],
     "parliament": [
       "307"
     ],
@@ -23543,6 +23432,12 @@
     ],
     "public ticker": [
       "169"
+    ],
+    "pump fun": [
+      "174"
+    ],
+    "pump fun airdrop": [
+      "174"
     ],
     "q4": [
       "277"
