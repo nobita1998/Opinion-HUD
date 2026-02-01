@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-01 00:43:39 UTC+8",
+    "generatedAt": "2026-02-01 11:26:04 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 437,
-      "markets": 163,
-      "keywords": 1735,
+      "kept": 371,
+      "markets": 159,
+      "keywords": 1693,
       "events": {
-        "events": 80
+        "events": 70
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 563,
-        "cutoff_zero_kept": 36,
+        "cutoff_expired": 629,
+        "cutoff_zero_kept": 33,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 79,
+        "reused": 69,
         "regenerated_empty_entitygroups": 1,
         "calls": 1,
         "retries": 1,
@@ -216,168 +216,6 @@
       "sig": "00b48486",
       "sigFull": "00b48486",
       "sigCore": "30a64286",
-      "reused": false
-    },
-    "171": {
-      "title": "OpenAI IPO by...?",
-      "marketIds": [
-        "171"
-      ],
-      "bestMarketId": "171",
-      "bestLabels": null,
-      "keywords": [
-        "openai",
-        "chatgpt",
-        "sam altman",
-        "artificial intelligence",
-        "public offering",
-        "stock market",
-        "listing",
-        "shares",
-        "valuation",
-        "ipo",
-        "going public",
-        "ticker",
-        "debut",
-        "equity",
-        "offering",
-        "openai ipo"
-      ],
-      "entities": [
-        "openai"
-      ],
-      "entityGroups": [
-        [
-          "openai",
-          "开放人工智能"
-        ]
-      ],
-      "sig": "5632b83f",
-      "sigFull": "5632b83f",
-      "sigCore": "03ad58a2",
-      "reused": false
-    },
-    "169": {
-      "title": "What will SpaceX's public ticker be?",
-      "marketIds": [
-        "169"
-      ],
-      "bestMarketId": "169",
-      "bestLabels": null,
-      "keywords": [
-        "spacex",
-        "ticker",
-        "stock symbol",
-        "ipo",
-        "public offering",
-        "listing",
-        "stock market",
-        "nasdaq",
-        "nyse",
-        "trading",
-        "debut",
-        "equity",
-        "shares",
-        "public company",
-        "exchange",
-        "what spacex",
-        "spacex public",
-        "public ticker",
-        "what spacex public",
-        "spacex public ticker"
-      ],
-      "entities": [
-        "spacex"
-      ],
-      "entityGroups": [
-        [
-          "spacex",
-          "太空探索技术公司"
-        ]
-      ],
-      "sig": "63d0d080",
-      "sigFull": "63d0d080",
-      "sigCore": "ecd914cb",
-      "reused": false
-    },
-    "168": {
-      "title": "Will Abstract launch a token by ...?",
-      "marketIds": [
-        "168"
-      ],
-      "bestMarketId": "168",
-      "bestLabels": null,
-      "keywords": [
-        "abstract",
-        "abstract chain",
-        "token launch",
-        "airdrop",
-        "tge",
-        "token generation event",
-        "l2",
-        "layer 2",
-        "crypto token",
-        "abstract ecosystem",
-        "tokenomics",
-        "mainnet",
-        "native token",
-        "listing",
-        "governance token",
-        "abstract launch",
-        "launch token",
-        "abstract launch token"
-      ],
-      "entities": [
-        "abstract"
-      ],
-      "entityGroups": [
-        [
-          "abstract"
-        ]
-      ],
-      "sig": "6e318808",
-      "sigFull": "6e318808",
-      "sigCore": "55a2e507",
-      "reused": false
-    },
-    "167": {
-      "title": "Will Pacifica launch a token by ...?",
-      "marketIds": [
-        "167"
-      ],
-      "bestMarketId": "167",
-      "bestLabels": null,
-      "keywords": [
-        "pacifica",
-        "token",
-        "launch",
-        "crypto",
-        "airdrop",
-        "tge",
-        "blockchain",
-        "listing",
-        "pacifica token",
-        "pacifica coin",
-        "tokenomics",
-        "ico",
-        "ido",
-        "sale",
-        "presale",
-        "pacifica launch",
-        "launch token",
-        "pacifica launch token"
-      ],
-      "entities": [
-        "pacifica"
-      ],
-      "entityGroups": [
-        [
-          "pacifica"
-        ]
-      ],
-      "sig": "6f5087ab",
-      "sigFull": "6f5087ab",
-      "sigCore": "18a252c3",
       "reused": false
     },
     "163": {
@@ -4261,8 +4099,8 @@
     "80": {
       "title": "English Premier League Winner 2026",
       "url": "https://app.opinion.trade/market/80?ref=opinion_hud",
-      "yesTokenId": "22379721327084445017284694281970793003139177184838454793748206154166539749223",
-      "noTokenId": "115149152952589838206919566042753894899748234950466829452889218063079409533337",
+      "yesTokenId": "92545605545808525112486780196746943034456212806065333553899967533850168618330",
+      "noTokenId": "98555306653804415411083526880112425966913950594813690105386548099637343044830",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4614,57 +4452,6 @@
         ]
       ]
     },
-    "3132": {
-      "title": "Will Japan conduct a yen-buying FX intervention by Jan 31, 2026 23:59 (UTC)?",
-      "url": "https://app.opinion.trade/market/3132?ref=opinion_hud",
-      "yesTokenId": "83055766231462249420145556985977260397219069037169124901375627379234930463333",
-      "noTokenId": "46721205603746610339105866478662778913260120090980412475325944118799216807627",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "type": "binary",
-      "keywords": [
-        "japan",
-        "yen",
-        "fx intervention",
-        "currency intervention",
-        "foreign exchange",
-        "mof",
-        "ministry of finance",
-        "usd/jpy",
-        "dollar",
-        "yen-buying",
-        "market intervention",
-        "safeguard",
-        "support",
-        "exchange rate",
-        "japan conduct",
-        "conduct yen-buying",
-        "yen-buying intervention",
-        "intervention jan",
-        "jan 2026",
-        "2026 utc",
-        "japan conduct yen-buying",
-        "conduct yen-buying intervention",
-        "yen-buying intervention jan",
-        "intervention jan 2026",
-        "jan 2026 utc"
-      ],
-      "entities": [
-        "japan",
-        "yen"
-      ],
-      "entityGroups": [
-        [
-          "japan"
-        ],
-        [
-          "yen"
-        ]
-      ]
-    },
     "3072": {
       "title": "Will the 1st pick in the 2026 NFL draft be a QB?",
       "url": "https://app.opinion.trade/market/3072?ref=opinion_hud",
@@ -4934,289 +4721,11 @@
         ]
       ]
     },
-    "171": {
-      "title": "OpenAI IPO by...?",
-      "url": "https://app.opinion.trade/market/171?ref=opinion_hud",
-      "yesTokenId": "19452222592396133352264721269935422965461316076668302263117070986899503411033",
-      "noTokenId": "21150968920966124130656489205211600494996379993297866947580008213486056111439",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "openai",
-        "chatgpt",
-        "sam altman",
-        "artificial intelligence",
-        "public offering",
-        "stock market",
-        "listing",
-        "shares",
-        "valuation",
-        "ipo",
-        "going public",
-        "ticker",
-        "debut",
-        "equity",
-        "offering",
-        "openai ipo"
-      ],
-      "entities": [
-        "openai"
-      ],
-      "entityGroups": [
-        [
-          "openai",
-          "开放人工智能"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2593",
-          "title": "June 30, 2026",
-          "yesTokenId": "19452222592396133352264721269935422965461316076668302263117070986899503411033",
-          "noTokenId": "21150968920966124130656489205211600494996379993297866947580008213486056111439"
-        },
-        {
-          "marketId": "2594",
-          "title": "December 31, 2026",
-          "yesTokenId": "67797064011664553985611987694764090712915012213554730877439699244613155036935",
-          "noTokenId": "37076655403141810723292530021595531675081399539819129560717102398257140312999"
-        },
-        {
-          "marketId": "2592",
-          "title": "December 31, 2025",
-          "yesTokenId": "6059135867880071878220126072279319738283915779009411592158331505001305613812",
-          "noTokenId": "11138109899680876573648906995629265789643063583550485233791132155944078676167"
-        }
-      ]
-    },
-    "169": {
-      "title": "What will SpaceX's public ticker be?",
-      "url": "https://app.opinion.trade/market/169?ref=opinion_hud",
-      "yesTokenId": "50904882888793289490788408545877265203885894272105486090811257985455299396618",
-      "noTokenId": "4884819733724555915009755083677517133481514084871846441040696488058963729428",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "spacex",
-        "ticker",
-        "stock symbol",
-        "ipo",
-        "public offering",
-        "listing",
-        "stock market",
-        "nasdaq",
-        "nyse",
-        "trading",
-        "debut",
-        "equity",
-        "shares",
-        "public company",
-        "exchange",
-        "what spacex",
-        "spacex public",
-        "public ticker",
-        "what spacex public",
-        "spacex public ticker"
-      ],
-      "entities": [
-        "spacex"
-      ],
-      "entityGroups": [
-        [
-          "spacex",
-          "太空探索技术公司"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2567",
-          "title": "X",
-          "yesTokenId": "110868385577292227688526078780284454399508634662256468596093748938799638769267",
-          "noTokenId": "73884790313079723042021802489832073259432205064036477373399041011955361219856"
-        },
-        {
-          "marketId": "2568",
-          "title": "SEX",
-          "yesTokenId": "70669919556885191265773030452575823240190276366897035905672753123638369280808",
-          "noTokenId": "55417401329417024270994370794915154557313372269225031494920022797081521853611"
-        },
-        {
-          "marketId": "2569",
-          "title": "SX",
-          "yesTokenId": "60919342144643640213280112165623469497038018875703442465975246387902876102143",
-          "noTokenId": "43346991625355967452489447934945245979581817805594435775286691639083140586168"
-        },
-        {
-          "marketId": "2570",
-          "title": "SPAX",
-          "yesTokenId": "112916475703617833667659783281447454469460264599111366593235846149019971072955",
-          "noTokenId": "18362854610023193793319248705927358129063072476546924524470710048808262107917"
-        },
-        {
-          "marketId": "2571",
-          "title": "SPACE",
-          "yesTokenId": "20537198631240422464092887402356249817428237081435771397418155850134853237208",
-          "noTokenId": "2843745221042234259051854357680789088101792250317424451260363389192162457466"
-        },
-        {
-          "marketId": "2572",
-          "title": "MARS",
-          "yesTokenId": "73237236587624709653658396023017441371654217259131435475663502784626427874454",
-          "noTokenId": "1108251222896837107645656765887570303539480192746252204270218427078845843929"
-        },
-        {
-          "marketId": "2573",
-          "title": "STAR",
-          "yesTokenId": "62800034815754224486975966451611913828529320696555751645427359482519963334887",
-          "noTokenId": "8614901417864056215445622523937357893784840916755849445300757947685897512239"
-        },
-        {
-          "marketId": "2574",
-          "title": "SPAC",
-          "yesTokenId": "50904882888793289490788408545877265203885894272105486090811257985455299396618",
-          "noTokenId": "4884819733724555915009755083677517133481514084871846441040696488058963729428"
-        }
-      ]
-    },
-    "168": {
-      "title": "Will Abstract launch a token by ...?",
-      "url": "https://app.opinion.trade/market/168?ref=opinion_hud",
-      "yesTokenId": "17679930630097647105468427164681793973958471819552111943696180562819194733435",
-      "noTokenId": "52766633872322796667041784324740589327363837897584410568609919129819237383908",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "abstract",
-        "abstract chain",
-        "token launch",
-        "airdrop",
-        "tge",
-        "token generation event",
-        "l2",
-        "layer 2",
-        "crypto token",
-        "abstract ecosystem",
-        "tokenomics",
-        "mainnet",
-        "native token",
-        "listing",
-        "governance token",
-        "abstract launch",
-        "launch token",
-        "abstract launch token"
-      ],
-      "entities": [
-        "abstract"
-      ],
-      "entityGroups": [
-        [
-          "abstract"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2566",
-          "title": "December 31, 2026",
-          "yesTokenId": "17679930630097647105468427164681793973958471819552111943696180562819194733435",
-          "noTokenId": "52766633872322796667041784324740589327363837897584410568609919129819237383908"
-        },
-        {
-          "marketId": "2565",
-          "title": "December 31, 2025",
-          "yesTokenId": "21694483365288617333236049270546400098757833241006293060312356861952229939493",
-          "noTokenId": "15542123821699132386219689141739892747613172052992172765429472014266142818660"
-        }
-      ]
-    },
-    "167": {
-      "title": "Will Pacifica launch a token by ...?",
-      "url": "https://app.opinion.trade/market/167?ref=opinion_hud",
-      "yesTokenId": "111100723104976873999348994484940926224666345809853480104351461126498730677192",
-      "noTokenId": "16689554636086730131193669179495298937120708453473046885222397505497005724857",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "pacifica",
-        "token",
-        "launch",
-        "crypto",
-        "airdrop",
-        "tge",
-        "blockchain",
-        "listing",
-        "pacifica token",
-        "pacifica coin",
-        "tokenomics",
-        "ico",
-        "ido",
-        "sale",
-        "presale",
-        "pacifica launch",
-        "launch token",
-        "pacifica launch token"
-      ],
-      "entities": [
-        "pacifica"
-      ],
-      "entityGroups": [
-        [
-          "pacifica"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2561",
-          "title": "March 31 2026",
-          "yesTokenId": "32065787976819552003106616532225079593269022927721443608771641942377734210432",
-          "noTokenId": "47770110368240473507905289892193841488749862288834357077189641561917951653078"
-        },
-        {
-          "marketId": "2562",
-          "title": "June 30 2026",
-          "yesTokenId": "51700341997082270373777435992829689776818994969619244707373577920468760248414",
-          "noTokenId": "76915858087053921372767920469050707684624572268106984576602351142113465679890"
-        },
-        {
-          "marketId": "2563",
-          "title": "September 30 2026",
-          "yesTokenId": "7274576938117869642882720024688336554929238940813442084166665830660427519789",
-          "noTokenId": "54161957450775061826065879042472591369124418084845297540076170295740825648310"
-        },
-        {
-          "marketId": "2564",
-          "title": "December 31 2026",
-          "yesTokenId": "111100723104976873999348994484940926224666345809853480104351461126498730677192",
-          "noTokenId": "16689554636086730131193669179495298937120708453473046885222397505497005724857"
-        },
-        {
-          "marketId": "2560",
-          "title": "December 31 2025",
-          "yesTokenId": "99186205221790643173381886436314691893618093027056421457572330309331456551538",
-          "noTokenId": "79521704038751323329715849165718857463342550779731950420415035959360563777583"
-        }
-      ]
-    },
     "163": {
       "title": "IPOs before 2027?",
       "url": "https://app.opinion.trade/market/163?ref=opinion_hud",
-      "yesTokenId": "11774163108915621548522264633257074866425698474877342230214646257892440762974",
-      "noTokenId": "84587078093179539777792175873437239802361500054016536532223764807355029614966",
+      "yesTokenId": "109795486871553108655565534281497204230407769239032818402335152237147338411868",
+      "noTokenId": "51482743100765113426993079274052654194832467936234942166297081592222676556997",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9594,8 +9103,8 @@
     "78": {
       "title": "How many Fed rate cuts in 2026?",
       "url": "https://app.opinion.trade/market/78?ref=opinion_hud",
-      "yesTokenId": "70010766220059604989662129460865466302574904927654834125855820572459625873690",
-      "noTokenId": "94312394120877874266506310353940325029694893877094998946034603701922234520279",
+      "yesTokenId": "59811075968124785627599025502257118121320441552396197432682635891395620417003",
+      "noTokenId": "101466719676050817231256324050444209217473634787009528298001058332064069999345",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9699,8 +9208,8 @@
     "79": {
       "title": "2026 FIFA World Cup Winner",
       "url": "https://app.opinion.trade/market/79?ref=opinion_hud",
-      "yesTokenId": "102155942478165027496030029269682056525357447147080949345312646221371535419800",
-      "noTokenId": "66182096721084076205251007122003178994751700629598290155509486203620001233152",
+      "yesTokenId": "109837041531451287161298527022447290894418066118946287563639981764887484653488",
+      "noTokenId": "53890611075397845232795119166448103024225386474242667766205597834982635707811",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9807,8 +9316,8 @@
     "81": {
       "title": "Super Bowl Champion 2026",
       "url": "https://app.opinion.trade/market/81?ref=opinion_hud",
-      "yesTokenId": "37358619051302494040291767389740248654798735998149954183396201549101843924828",
-      "noTokenId": "108837786062346320826181719594869062590133774784816356400583775554038788086031",
+      "yesTokenId": "52510626799624952038038578237585947250140584303628269325747416768262182423998",
+      "noTokenId": "112130630182986102261927506636363773009523223158084343046750414309313479746348",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10037,8 +9546,8 @@
     "89": {
       "title": "GPT-6 released by…?",
       "url": "https://app.opinion.trade/market/89?ref=opinion_hud",
-      "yesTokenId": "5699100042564927351200246703654031030431990630053236029827480509019290619292",
-      "noTokenId": "40164321550262289007704651910475561397276617898394057741834538640156665129987",
+      "yesTokenId": "84277051840699271540018399342211381431013619149584059825684184835661375935841",
+      "noTokenId": "26544771504770403352781698491973240989761514399028947802894024815349713205489",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -12349,18 +11858,6 @@
       },
       "type": "binary"
     },
-    "5066": {
-      "title": "LCK Cup Group Stage — HLE vs GEN (Feb 1, 2026)",
-      "url": "https://app.opinion.trade/market/5066?ref=opinion_hud",
-      "yesTokenId": "20955966973468225568253811936619530880981687641303961411617859042663920217304",
-      "noTokenId": "90890176845498616835749198986623932393090023833397791637014350949612350368312",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "HLE",
-        "noLabel": "GEN"
-      },
-      "type": "binary"
-    },
     "5060": {
       "title": "Will Binance launch stock tokens in 2026?",
       "url": "https://app.opinion.trade/market/5060?ref=opinion_hud",
@@ -13444,11 +12941,35 @@
         }
       ]
     },
-    "5220": {
-      "title": "Bitcoin Up or Down on February 1?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/5220?ref=opinion_hud",
-      "yesTokenId": "107461104500902001625821834472678303157689132601137371460345691920141065286594",
-      "noTokenId": "7629158921164008520176450456786652097483920000213350401946686159287543725003",
+    "5260": {
+      "title": "BTC Up or Down - Hourly (Feb 01, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5260?ref=opinion_hud",
+      "yesTokenId": "14914179992104092632974915348255573768814751259595359052690946435348112685430",
+      "noTokenId": "46982166577493631265447979478226354267203198683593189010755761396237382979971",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5261": {
+      "title": "ETH Up or Down - Hourly (Feb 01, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5261?ref=opinion_hud",
+      "yesTokenId": "26328291600861660879466548691465672516919086032476321582025681325349922469458",
+      "noTokenId": "57747860897320826073147875744408177205186059490800049987971300153533897621246",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5259": {
+      "title": "BNB Up or Down - Hourly (Feb 01, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5259?ref=opinion_hud",
+      "yesTokenId": "81216552138249605413266347839099491542501164101479591433327077600715542946094",
+      "noTokenId": "44214853505212920711210458374164101366799193023982623200589166634976860248282",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -13596,9 +13117,6 @@
     "2026 tennis": [
       "304"
     ],
-    "2026 utc": [
-      "3132"
-    ],
     "2026 women": [
       "304"
     ],
@@ -13719,21 +13237,6 @@
       "97",
       "98"
     ],
-    "abstract": [
-      "168"
-    ],
-    "abstract chain": [
-      "168"
-    ],
-    "abstract ecosystem": [
-      "168"
-    ],
-    "abstract launch": [
-      "168"
-    ],
-    "abstract launch token": [
-      "168"
-    ],
     "academy": [
       "138",
       "280"
@@ -13831,8 +13334,6 @@
     "airdrop": [
       "118",
       "119",
-      "167",
-      "168",
       "1721",
       "317",
       "3361",
@@ -14006,7 +13507,6 @@
     "artificial intelligence": [
       "129",
       "152",
-      "171",
       "89"
     ],
     "artist winner": [
@@ -14306,7 +13806,6 @@
     "blockchain": [
       "112",
       "119",
-      "167",
       "1721",
       "260",
       "318",
@@ -14548,8 +14047,7 @@
       "129"
     ],
     "chatgpt": [
-      "152",
-      "171"
+      "152"
     ],
     "china": [
       "142",
@@ -14694,12 +14192,6 @@
     "concert": [
       "132"
     ],
-    "conduct yen-buying": [
-      "3132"
-    ],
-    "conduct yen-buying intervention": [
-      "3132"
-    ],
     "conflict": [
       "128",
       "257",
@@ -14779,7 +14271,6 @@
       "111",
       "112",
       "119",
-      "167",
       "1721",
       "260",
       "318",
@@ -14810,9 +14301,6 @@
     "crypto theft": [
       "3360"
     ],
-    "crypto token": [
-      "168"
-    ],
     "crypto wallet": [
       "118"
     ],
@@ -14833,9 +14321,6 @@
     ],
     "currency": [
       "288"
-    ],
-    "currency intervention": [
-      "3132"
     ],
     "customs duties": [
       "1546"
@@ -14894,8 +14379,6 @@
       "143",
       "158",
       "163",
-      "169",
-      "171",
       "317",
       "97",
       "98"
@@ -15036,7 +14519,6 @@
     ],
     "dollar": [
       "288",
-      "3132",
       "3359"
     ],
     "domestic gross": [
@@ -15254,8 +14736,6 @@
       "143",
       "158",
       "163",
-      "169",
-      "171",
       "322",
       "326",
       "328",
@@ -15334,12 +14814,8 @@
       "1721",
       "67"
     ],
-    "exchange": [
-      "169"
-    ],
     "exchange rate": [
-      "288",
-      "3132"
+      "288"
     ],
     "exchange rate january": [
       "288"
@@ -15603,9 +15079,6 @@
     "forced sale": [
       "159"
     ],
-    "foreign exchange": [
-      "3132"
-    ],
     "foreign leader": [
       "276"
     ],
@@ -15661,9 +15134,6 @@
       "315",
       "3361"
     ],
-    "fx intervention": [
-      "3132"
-    ],
     "gaten": [
       "3224"
     ],
@@ -15694,7 +15164,6 @@
       "143",
       "158",
       "163",
-      "171",
       "3362"
     ],
     "gold": [
@@ -15758,7 +15227,6 @@
     "governance token": [
       "118",
       "119",
-      "168",
       "3366",
       "99"
     ],
@@ -16059,16 +15527,12 @@
     "hyperliquid all time": [
       "3361"
     ],
-    "ico": [
-      "167"
-    ],
     "idf": [
       "271",
       "302",
       "3039"
     ],
     "ido": [
-      "167",
       "318"
     ],
     "ieepa": [
@@ -16151,12 +15615,6 @@
     "intervention": [
       "128"
     ],
-    "intervention jan": [
-      "3132"
-    ],
-    "intervention jan 2026": [
-      "3132"
-    ],
     "invade venezuela": [
       "128"
     ],
@@ -16182,8 +15640,6 @@
       "152",
       "158",
       "163",
-      "169",
-      "171",
       "3362",
       "3525"
     ],
@@ -16248,30 +15704,17 @@
     "james cameron": [
       "275"
     ],
-    "jan 2026": [
-      "3132"
-    ],
-    "jan 2026 utc": [
-      "3132"
-    ],
     "january": [
       "276"
     ],
     "japan": [
-      "306",
-      "3132"
+      "306"
     ],
     "japan after": [
       "306"
     ],
     "japan after snap": [
       "306"
-    ],
-    "japan conduct": [
-      "3132"
-    ],
-    "japan conduct yen-buying": [
-      "3132"
     ],
     "japan decision": [
       "313"
@@ -16421,7 +15864,6 @@
     ],
     "l2": [
       "119",
-      "168",
       "3366",
       "67"
     ],
@@ -16452,7 +15894,6 @@
     ],
     "launch": [
       "129",
-      "167",
       "317",
       "318",
       "89",
@@ -16462,8 +15903,6 @@
     "launch token": [
       "118",
       "119",
-      "167",
-      "168",
       "3366",
       "99"
     ],
@@ -16475,7 +15914,6 @@
     ],
     "layer 2": [
       "119",
-      "168",
       "3366"
     ],
     "ldp": [
@@ -16557,10 +15995,6 @@
     "listing": [
       "143",
       "158",
-      "167",
-      "168",
-      "169",
-      "171",
       "317",
       "3362",
       "67",
@@ -16623,7 +16057,6 @@
     ],
     "mainnet": [
       "119",
-      "168",
       "3366",
       "67"
     ],
@@ -16697,9 +16130,6 @@
     ],
     "market capitalization": [
       "158"
-    ],
-    "market intervention": [
-      "3132"
     ],
     "market performance": [
       "327"
@@ -16881,9 +16311,6 @@
     "minister japan after": [
       "306"
     ],
-    "ministry of finance": [
-      "3132"
-    ],
     "minji": [
       "132"
     ],
@@ -16897,9 +16324,6 @@
     ],
     "model weights": [
       "89"
-    ],
-    "mof": [
-      "3132"
     ],
     "monad": [
       "1721"
@@ -17044,7 +16468,6 @@
     ],
     "nasdaq": [
       "152",
-      "169",
       "323",
       "324",
       "325",
@@ -17061,7 +16484,6 @@
       "81"
     ],
     "native token": [
-      "168",
       "3366"
     ],
     "natural disaster": [
@@ -17213,12 +16635,10 @@
       "322"
     ],
     "nyse": [
-      "152",
-      "169"
+      "152"
     ],
     "offering": [
-      "163",
-      "171"
+      "163"
     ],
     "office": [
       "3062"
@@ -17265,12 +16685,10 @@
     "openai": [
       "152",
       "163",
-      "171",
       "89"
     ],
     "openai ipo": [
-      "152",
-      "171"
+      "152"
     ],
     "openai ipo closing": [
       "152"
@@ -17360,21 +16778,6 @@
     ],
     "over $100m 1q2026": [
       "3360"
-    ],
-    "pacifica": [
-      "167"
-    ],
-    "pacifica coin": [
-      "167"
-    ],
-    "pacifica launch": [
-      "167"
-    ],
-    "pacifica launch token": [
-      "167"
-    ],
-    "pacifica token": [
-      "167"
     ],
     "pandora": [
       "275"
@@ -17555,9 +16958,6 @@
     "premiership": [
       "80"
     ],
-    "presale": [
-      "167"
-    ],
     "president": [
       "276",
       "301",
@@ -17644,9 +17044,6 @@
     "pt": [
       "307"
     ],
-    "public company": [
-      "169"
-    ],
     "public listing": [
       "152",
       "163",
@@ -17654,18 +17051,13 @@
     ],
     "public offering": [
       "143",
-      "158",
-      "169",
-      "171"
+      "158"
     ],
     "public sale": [
       "318"
     ],
     "public sale total": [
       "318"
-    ],
-    "public ticker": [
-      "169"
     ],
     "pump": [
       "3364",
@@ -17986,12 +17378,8 @@
       "262",
       "315"
     ],
-    "safeguard": [
-      "3132"
-    ],
     "sale": [
-      "159",
-      "167"
+      "159"
     ],
     "sale total": [
       "318"
@@ -18000,8 +17388,7 @@
       "318"
     ],
     "sam altman": [
-      "152",
-      "171"
+      "152"
     ],
     "sanae takaichi": [
       "306"
@@ -18144,8 +17531,6 @@
       "143",
       "158",
       "163",
-      "169",
-      "171",
       "326",
       "328",
       "3362"
@@ -18284,20 +17669,13 @@
     ],
     "spacex": [
       "158",
-      "163",
-      "169"
+      "163"
     ],
     "spacex ipo": [
       "158"
     ],
     "spacex ipo closing": [
       "158"
-    ],
-    "spacex public": [
-      "169"
-    ],
-    "spacex public ticker": [
-      "169"
     ],
     "spain": [
       "82"
@@ -18426,18 +17804,13 @@
     "stock market": [
       "143",
       "152",
-      "163",
-      "169",
-      "171"
+      "163"
     ],
     "stock market debut": [
       "3362"
     ],
     "stock price": [
       "158"
-    ],
-    "stock symbol": [
-      "169"
     ],
     "stranger things": [
       "3221",
@@ -18499,8 +17872,7 @@
       "81"
     ],
     "support": [
-      "3055",
-      "3132"
+      "3055"
     ],
     "supporting actor": [
       "140"
@@ -18625,8 +17997,6 @@
       "3359"
     ],
     "tge": [
-      "167",
-      "168",
       "1721",
       "317",
       "67",
@@ -18669,8 +18039,6 @@
     ],
     "ticker": [
       "158",
-      "169",
-      "171",
       "3257",
       "3362"
     ],
@@ -18721,7 +18089,6 @@
     ],
     "token": [
       "118",
-      "167",
       "1721",
       "260",
       "3367",
@@ -18734,13 +18101,11 @@
       "3366"
     ],
     "token generation event": [
-      "168",
       "96"
     ],
     "token launch": [
       "118",
       "119",
-      "168",
       "3366",
       "96",
       "99"
@@ -18749,8 +18114,6 @@
       "318"
     ],
     "tokenomics": [
-      "167",
-      "168",
       "317",
       "3361",
       "95",
@@ -18788,7 +18151,6 @@
     ],
     "trading": [
       "112",
-      "169",
       "260",
       "262",
       "287",
@@ -19007,9 +18369,6 @@
     "usd exchange rate": [
       "288"
     ],
-    "usd/jpy": [
-      "3132"
-    ],
     "usdt": [
       "3359",
       "3367"
@@ -19036,7 +18395,6 @@
       "152",
       "158",
       "163",
-      "171",
       "317",
       "324",
       "3362",
@@ -19187,12 +18545,6 @@
     "what silver settle": [
       "287"
     ],
-    "what spacex": [
-      "169"
-    ],
-    "what spacex public": [
-      "169"
-    ],
     "wheeler family": [
       "3222"
     ],
@@ -19320,18 +18672,6 @@
       "262",
       "315"
     ],
-    "yen": [
-      "3132"
-    ],
-    "yen-buying": [
-      "3132"
-    ],
-    "yen-buying intervention": [
-      "3132"
-    ],
-    "yen-buying intervention jan": [
-      "3132"
-    ],
     "yg entertainment": [
       "2178"
     ],
@@ -19423,8 +18763,7 @@
       "274"
     ],
     "太空探索技术公司": [
-      "158",
-      "169"
+      "158"
     ],
     "奥斯卡": [
       "133",
@@ -19453,8 +18792,7 @@
       "3368"
     ],
     "开放人工智能": [
-      "152",
-      "171"
+      "152"
     ],
     "微策略": [
       "111",
@@ -19786,21 +19124,6 @@
       "97",
       "98"
     ],
-    "abstract": [
-      "168"
-    ],
-    "abstract chain": [
-      "168"
-    ],
-    "abstract ecosystem": [
-      "168"
-    ],
-    "abstract launch": [
-      "168"
-    ],
-    "abstract launch token": [
-      "168"
-    ],
     "academy": [
       "138",
       "280"
@@ -19883,8 +19206,6 @@
     "airdrop": [
       "118",
       "119",
-      "167",
-      "168",
       "317",
       "67",
       "95",
@@ -19999,7 +19320,6 @@
     "artificial intelligence": [
       "129",
       "152",
-      "171",
       "89"
     ],
     "artist winner": [
@@ -20228,7 +19548,6 @@
     "blockchain": [
       "112",
       "119",
-      "167",
       "260",
       "318",
       "95",
@@ -20377,8 +19696,7 @@
       "129"
     ],
     "chatgpt": [
-      "152",
-      "171"
+      "152"
     ],
     "china": [
       "142"
@@ -20519,7 +19837,6 @@
       "111",
       "112",
       "119",
-      "167",
       "260",
       "318",
       "67",
@@ -20532,9 +19849,6 @@
     ],
     "crypto exchange": [
       "143"
-    ],
-    "crypto token": [
-      "168"
     ],
     "crypto wallet": [
       "118"
@@ -20582,8 +19896,6 @@
       "143",
       "158",
       "163",
-      "169",
-      "171",
       "317",
       "97",
       "98"
@@ -20817,8 +20129,6 @@
       "143",
       "158",
       "163",
-      "169",
-      "171",
       "322",
       "326",
       "328",
@@ -20877,9 +20187,6 @@
     ],
     "evm": [
       "67"
-    ],
-    "exchange": [
-      "169"
     ],
     "exchange rate": [
       "288"
@@ -21142,8 +20449,7 @@
     "going public": [
       "143",
       "158",
-      "163",
-      "171"
+      "163"
     ],
     "gold": [
       "262",
@@ -21200,7 +20506,6 @@
     "governance token": [
       "118",
       "119",
-      "168",
       "99"
     ],
     "governing council": [
@@ -21411,15 +20716,11 @@
     "hyein": [
       "132"
     ],
-    "ico": [
-      "167"
-    ],
     "idf": [
       "271",
       "302"
     ],
     "ido": [
-      "167",
       "318"
     ],
     "ieo": [
@@ -21495,9 +20796,7 @@
       "143",
       "152",
       "158",
-      "163",
-      "169",
-      "171"
+      "163"
     ],
     "ipo closing": [
       "152",
@@ -21650,7 +20949,6 @@
     ],
     "l2": [
       "119",
-      "168",
       "67"
     ],
     "la liga": [
@@ -21680,7 +20978,6 @@
     ],
     "launch": [
       "129",
-      "167",
       "317",
       "318",
       "89",
@@ -21690,13 +20987,10 @@
     "launch token": [
       "118",
       "119",
-      "167",
-      "168",
       "99"
     ],
     "layer 2": [
-      "119",
-      "168"
+      "119"
     ],
     "ldp": [
       "306"
@@ -21764,10 +21058,6 @@
     "listing": [
       "143",
       "158",
-      "167",
-      "168",
-      "169",
-      "171",
       "317",
       "67",
       "95",
@@ -21811,7 +21101,6 @@
     ],
     "mainnet": [
       "119",
-      "168",
       "67"
     ],
     "major": [
@@ -22103,7 +21392,6 @@
     ],
     "nasdaq": [
       "152",
-      "169",
       "323",
       "324",
       "325",
@@ -22118,9 +21406,6 @@
     ],
     "national football league": [
       "81"
-    ],
-    "native token": [
-      "168"
     ],
     "nba": [
       "103",
@@ -22230,12 +21515,10 @@
       "322"
     ],
     "nyse": [
-      "152",
-      "169"
+      "152"
     ],
     "offering": [
-      "163",
-      "171"
+      "163"
     ],
     "official rate": [
       "288"
@@ -22274,12 +21557,10 @@
     "openai": [
       "152",
       "163",
-      "171",
       "89"
     ],
     "openai ipo": [
-      "152",
-      "171"
+      "152"
     ],
     "openai ipo closing": [
       "152"
@@ -22344,21 +21625,6 @@
     ],
     "out supreme leader": [
       "242"
-    ],
-    "pacifica": [
-      "167"
-    ],
-    "pacifica coin": [
-      "167"
-    ],
-    "pacifica launch": [
-      "167"
-    ],
-    "pacifica launch token": [
-      "167"
-    ],
-    "pacifica token": [
-      "167"
     ],
     "pandora": [
       "275"
@@ -22514,9 +21780,6 @@
     "premiership": [
       "80"
     ],
-    "presale": [
-      "167"
-    ],
     "president": [
       "276",
       "301"
@@ -22582,27 +21845,19 @@
     "pt": [
       "307"
     ],
-    "public company": [
-      "169"
-    ],
     "public listing": [
       "152",
       "163"
     ],
     "public offering": [
       "143",
-      "158",
-      "169",
-      "171"
+      "158"
     ],
     "public sale": [
       "318"
     ],
     "public sale total": [
       "318"
-    ],
-    "public ticker": [
-      "169"
     ],
     "qualifying": [
       "312"
@@ -22769,8 +22024,7 @@
       "315"
     ],
     "sale": [
-      "159",
-      "167"
+      "159"
     ],
     "sale total": [
       "318"
@@ -22779,8 +22033,7 @@
       "318"
     ],
     "sam altman": [
-      "152",
-      "171"
+      "152"
     ],
     "sanae takaichi": [
       "306"
@@ -22859,8 +22112,6 @@
       "143",
       "158",
       "163",
-      "169",
-      "171",
       "326",
       "328"
     ],
@@ -22978,20 +22229,13 @@
     ],
     "spacex": [
       "158",
-      "163",
-      "169"
+      "163"
     ],
     "spacex ipo": [
       "158"
     ],
     "spacex ipo closing": [
       "158"
-    ],
-    "spacex public": [
-      "169"
-    ],
-    "spacex public ticker": [
-      "169"
     ],
     "spain": [
       "82"
@@ -23090,15 +22334,10 @@
     "stock market": [
       "143",
       "152",
-      "163",
-      "169",
-      "171"
+      "163"
     ],
     "stock price": [
       "158"
-    ],
-    "stock symbol": [
-      "169"
     ],
     "strategy": [
       "111"
@@ -23208,8 +22447,6 @@
       "323"
     ],
     "tge": [
-      "167",
-      "168",
       "317",
       "67",
       "96",
@@ -23235,9 +22472,7 @@
       "275"
     ],
     "ticker": [
-      "158",
-      "169",
-      "171"
+      "158"
     ],
     "tightening": [
       "313"
@@ -23260,7 +22495,6 @@
     ],
     "token": [
       "118",
-      "167",
       "260",
       "67",
       "95",
@@ -23268,13 +22502,11 @@
       "98"
     ],
     "token generation event": [
-      "168",
       "96"
     ],
     "token launch": [
       "118",
       "119",
-      "168",
       "96",
       "99"
     ],
@@ -23282,8 +22514,6 @@
       "318"
     ],
     "tokenomics": [
-      "167",
-      "168",
       "317",
       "95",
       "99"
@@ -23311,7 +22541,6 @@
     ],
     "trading": [
       "112",
-      "169",
       "260",
       "262",
       "287",
@@ -23494,7 +22723,6 @@
       "152",
       "158",
       "163",
-      "171",
       "317",
       "324",
       "67",
@@ -23599,12 +22827,6 @@
     ],
     "what silver settle": [
       "287"
-    ],
-    "what spacex": [
-      "169"
-    ],
-    "what spacex public": [
-      "169"
     ],
     "which party": [
       "135",
@@ -23774,8 +22996,7 @@
       "274"
     ],
     "太空探索技术公司": [
-      "158",
-      "169"
+      "158"
     ],
     "奥斯卡": [
       "133",
@@ -23800,8 +23021,7 @@
       "118"
     ],
     "开放人工智能": [
-      "152",
-      "171"
+      "152"
     ],
     "微策略": [
       "111"
