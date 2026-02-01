@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-01 14:42:39 UTC+8",
+    "generatedAt": "2026-02-01 15:48:35 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 370,
+      "kept": 366,
       "markets": 159,
-      "keywords": 1691,
+      "keywords": 1687,
       "events": {
         "events": 71
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 630,
+        "cutoff_expired": 634,
         "cutoff_zero_kept": 33,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 68,
+        "reused": 67,
         "regenerated_empty_entitygroups": 1,
-        "calls": 3,
+        "calls": 4,
         "retries": 1,
         "fallback": 0,
         "empty": 1,
-        "non_empty": 2,
+        "non_empty": 3,
         "errors": 0
       }
     }
@@ -260,91 +260,6 @@
       "sig": "d5a6cafd",
       "sigFull": "d5a6cafd",
       "sigCore": "3cb3b23f",
-      "reused": false
-    },
-    "159": {
-      "title": "Who will acquire TikTok?",
-      "marketIds": [
-        "159"
-      ],
-      "bestMarketId": "159",
-      "bestLabels": null,
-      "keywords": [
-        "tiktok",
-        "bytedance",
-        "acquisition",
-        "buyout",
-        "sale",
-        "divestiture",
-        "takeover",
-        "social media",
-        "app",
-        "ban",
-        "forced sale",
-        "merger",
-        "deal",
-        "video sharing",
-        "douyin",
-        "who acquire",
-        "acquire tiktok",
-        "who acquire tiktok"
-      ],
-      "entities": [
-        "tiktok"
-      ],
-      "entityGroups": [
-        [
-          "tiktok"
-        ]
-      ],
-      "sig": "926754c0",
-      "sigFull": "926754c0",
-      "sigCore": "28abf69f",
-      "reused": false
-    },
-    "158": {
-      "title": "SpaceX IPO Closing Market Cap",
-      "marketIds": [
-        "158"
-      ],
-      "bestMarketId": "158",
-      "bestLabels": null,
-      "keywords": [
-        "spacex",
-        "ipo",
-        "initial public offering",
-        "going public",
-        "listing",
-        "valuation",
-        "market capitalization",
-        "stock debut",
-        "public offering",
-        "shares",
-        "stock price",
-        "equity",
-        "wall street",
-        "ticker",
-        "debut",
-        "spacex ipo",
-        "ipo closing",
-        "closing market",
-        "market cap",
-        "spacex ipo closing",
-        "ipo closing market",
-        "closing market cap"
-      ],
-      "entities": [
-        "spacex"
-      ],
-      "entityGroups": [
-        [
-          "spacex",
-          "太空探索技术公司"
-        ]
-      ],
-      "sig": "48767441",
-      "sigFull": "48767441",
-      "sigCore": "f93e270d",
       "reused": false
     },
     "67": {
@@ -2966,52 +2881,6 @@
       "sigCore": "3b3ecb25",
       "reused": false
     },
-    "153": {
-      "title": "US Fed Rate Decision: April 2026",
-      "marketIds": [
-        "153"
-      ],
-      "bestMarketId": "153",
-      "bestLabels": null,
-      "keywords": [
-        "federal reserve",
-        "fed",
-        "fomc",
-        "interest rates",
-        "rate cut",
-        "rate hike",
-        "monetary policy",
-        "jerome powell",
-        "powell",
-        "central bank",
-        "us economy",
-        "inflation",
-        "cpi",
-        "dot plot",
-        "fed rate",
-        "rate decision",
-        "decision april",
-        "april 2026",
-        "fed rate decision",
-        "rate decision april",
-        "decision april 2026"
-      ],
-      "entities": [
-        "fed"
-      ],
-      "entityGroups": [
-        [
-          "fed",
-          "federal reserve",
-          "fomc",
-          "美联储"
-        ]
-      ],
-      "sig": "2c8b9acf",
-      "sigFull": "2c8b9acf",
-      "sigCore": "09e6a707",
-      "reused": false
-    },
     "318": {
       "title": "Fabric public sale total commitments?",
       "marketIds": [
@@ -3808,6 +3677,145 @@
       "sig": "80f630a3",
       "sigFull": "80f630a3",
       "sigCore": "b7760b51",
+      "reused": false
+    },
+    "332": {
+      "title": "What price will Bitcoin hit in February?",
+      "marketIds": [
+        "332"
+      ],
+      "bestMarketId": "332",
+      "bestLabels": null,
+      "keywords": [
+        "bitcoin",
+        "btc",
+        "crypto",
+        "cryptocurrency",
+        "digital asset",
+        "price action",
+        "trading",
+        "market",
+        "volatility",
+        "february",
+        "spot etf",
+        "resistance",
+        "support",
+        "breakout",
+        "crash",
+        "what price",
+        "price bitcoin",
+        "bitcoin hit",
+        "hit february",
+        "what price bitcoin",
+        "price bitcoin hit",
+        "bitcoin hit february"
+      ],
+      "entities": [
+        "bitcoin"
+      ],
+      "entityGroups": [
+        [
+          "bitcoin",
+          "btc",
+          "比特币"
+        ]
+      ],
+      "sig": "4f2166b6",
+      "sigFull": "4f2166b6",
+      "sigCore": "4305c11c",
+      "reused": false
+    },
+    "333": {
+      "title": "What price will Ethereum hit in February?",
+      "marketIds": [
+        "333"
+      ],
+      "bestMarketId": "333",
+      "bestLabels": null,
+      "keywords": [
+        "ethereum",
+        "eth",
+        "ether",
+        "crypto",
+        "cryptocurrency",
+        "blockchain",
+        "price",
+        "trading",
+        "market",
+        "altcoin",
+        "smart contracts",
+        "defi",
+        "gas",
+        "digital asset",
+        "token",
+        "what price",
+        "price ethereum",
+        "ethereum hit",
+        "hit february",
+        "what price ethereum",
+        "price ethereum hit",
+        "ethereum hit february"
+      ],
+      "entities": [
+        "ethereum"
+      ],
+      "entityGroups": [
+        [
+          "ethereum",
+          "eth",
+          "ether",
+          "以太坊"
+        ]
+      ],
+      "sig": "5d55d3ee",
+      "sigFull": "5d55d3ee",
+      "sigCore": "8d0fa5d3",
+      "reused": false
+    },
+    "334": {
+      "title": "What price will Solana hit in February?",
+      "marketIds": [
+        "334"
+      ],
+      "bestMarketId": "334",
+      "bestLabels": null,
+      "keywords": [
+        "solana",
+        "sol",
+        "crypto",
+        "cryptocurrency",
+        "altcoin",
+        "blockchain",
+        "price prediction",
+        "trading",
+        "token",
+        "coin",
+        "defi",
+        "smart contracts",
+        "volatility",
+        "market",
+        "sol price",
+        "what price",
+        "price solana",
+        "solana hit",
+        "hit february",
+        "what price solana",
+        "price solana hit",
+        "solana hit february"
+      ],
+      "entities": [
+        "solana"
+      ],
+      "entityGroups": [
+        [
+          "solana",
+          "sol",
+          "索拉纳"
+        ]
+      ],
+      "sig": "a305fb43",
+      "sigFull": "a305fb43",
+      "sigCore": "9d519472",
       "reused": false
     }
   },
@@ -4815,185 +4823,6 @@
         }
       ]
     },
-    "159": {
-      "title": "Who will acquire TikTok?",
-      "url": "https://app.opinion.trade/market/159?ref=opinion_hud",
-      "yesTokenId": "83422412544484516779272857305192222174457634494733737879715082063012385989853",
-      "noTokenId": "74145672800457902249853816556543940362372066837207682905894231774783193934781",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "tiktok",
-        "bytedance",
-        "acquisition",
-        "buyout",
-        "sale",
-        "divestiture",
-        "takeover",
-        "social media",
-        "app",
-        "ban",
-        "forced sale",
-        "merger",
-        "deal",
-        "video sharing",
-        "douyin",
-        "who acquire",
-        "acquire tiktok",
-        "who acquire tiktok"
-      ],
-      "entities": [
-        "tiktok"
-      ],
-      "entityGroups": [
-        [
-          "tiktok"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2466",
-          "title": "Amazon",
-          "yesTokenId": "9929712126215759499654705526714885169164434442307133179699319167314958802942",
-          "noTokenId": "4248780853991230046175901363232506355273597013066417570858180351769573554929"
-        },
-        {
-          "marketId": "2467",
-          "title": "Microsoft",
-          "yesTokenId": "56999361883953505128187732805050633320781683002957878674986981911127041825554",
-          "noTokenId": "56289588845640151318260131266074029803434391327212087334649249557396662635188"
-        },
-        {
-          "marketId": "2468",
-          "title": "Elon Musk / X (Twitter)",
-          "yesTokenId": "98449047592955535703110181362528179531513447245456266967920927815985835271341",
-          "noTokenId": "73801641313799426951640047643095080040358239758287873121073820136054683880750"
-        },
-        {
-          "marketId": "2469",
-          "title": "Meta",
-          "yesTokenId": "83422412544484516779272857305192222174457634494733737879715082063012385989853",
-          "noTokenId": "74145672800457902249853816556543940362372066837207682905894231774783193934781"
-        },
-        {
-          "marketId": "2470",
-          "title": "AppLovin",
-          "yesTokenId": "11689998972972281307974877574820366461564395335077851056678237617081961636394",
-          "noTokenId": "23692892241156136090244889911326805027720431146198956540402068923921840057299"
-        },
-        {
-          "marketId": "2471",
-          "title": "Walmart",
-          "yesTokenId": "49249452804038895743500425186044169173276234999424239716082006058442406673255",
-          "noTokenId": "85877514001190570620513610292986055641577560496376960938761498294049835838384"
-        },
-        {
-          "marketId": "2465",
-          "title": "Larry Ellison/Oracle",
-          "yesTokenId": "106433356089425390074978748454945182445505937397462174138233660397034288617489",
-          "noTokenId": "47565462777608573752548909066754947885103839303517055810817781697387487466569"
-        }
-      ]
-    },
-    "158": {
-      "title": "SpaceX IPO Closing Market Cap",
-      "url": "https://app.opinion.trade/market/158?ref=opinion_hud",
-      "yesTokenId": "24845813640327856288337331739651664432384799282148391314981065959156329915924",
-      "noTokenId": "20039595565373015905813450327665630999361983031486934217153276618386124184983",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "spacex",
-        "ipo",
-        "initial public offering",
-        "going public",
-        "listing",
-        "valuation",
-        "market capitalization",
-        "stock debut",
-        "public offering",
-        "shares",
-        "stock price",
-        "equity",
-        "wall street",
-        "ticker",
-        "debut",
-        "spacex ipo",
-        "ipo closing",
-        "closing market",
-        "market cap",
-        "spacex ipo closing",
-        "ipo closing market",
-        "closing market cap"
-      ],
-      "entities": [
-        "spacex"
-      ],
-      "entityGroups": [
-        [
-          "spacex",
-          "太空探索技术公司"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2443",
-          "title": "1T+",
-          "yesTokenId": "87713237741266709414203056969159327735836822004159744186199220272642869290666",
-          "noTokenId": "66568671381733798013077711240728187876621263069586954122252415077352699294339"
-        },
-        {
-          "marketId": "2444",
-          "title": "900B–1T",
-          "yesTokenId": "106819863414249716222481072231466495622719444901594784051268830638812537774224",
-          "noTokenId": "59493274427498312154237533782967661253626089839403290558487202696502940800977"
-        },
-        {
-          "marketId": "2445",
-          "title": "800B–900B",
-          "yesTokenId": "57301482576077616059986025422146575526495963180046914475125810697910974109353",
-          "noTokenId": "113070698629390453484197546999999987722406381236293662374335451924242992916580"
-        },
-        {
-          "marketId": "2446",
-          "title": "700B–800B",
-          "yesTokenId": "42373882728900998229802396580749217092217759445380948737725344618906671259699",
-          "noTokenId": "93565241635828663169547403577342441301915157819928406334258134598637463408566"
-        },
-        {
-          "marketId": "2447",
-          "title": "600B–700B",
-          "yesTokenId": "81133869454353425371884378785476335431555212749441345139648022233974747899951",
-          "noTokenId": "26453059385360584418250340236724565650792296092995463511714569740861521954510"
-        },
-        {
-          "marketId": "2448",
-          "title": "500B–600B",
-          "yesTokenId": "39602498969578255084096805204431678810689438871804983053764278955853760215650",
-          "noTokenId": "98659991123176544101780631606129878935850236324437976486381587343088811799671"
-        },
-        {
-          "marketId": "2449",
-          "title": "<500B",
-          "yesTokenId": "24749340126708386882767814402684107118789808805538670470452292664821848327638",
-          "noTokenId": "28204290149667838447069347356438202484578787791697675723866374674674593706875"
-        },
-        {
-          "marketId": "2450",
-          "title": "No IPO before 2028",
-          "yesTokenId": "24845813640327856288337331739651664432384799282148391314981065959156329915924",
-          "noTokenId": "20039595565373015905813450327665630999361983031486934217153276618386124184983"
-        }
-      ]
-    },
     "67": {
       "title": "MegaETH market cap (FDV) one day after launch?",
       "url": "https://app.opinion.trade/market/67?ref=opinion_hud",
@@ -5365,8 +5194,8 @@
     "97": {
       "title": "Based FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/97?ref=opinion_hud",
-      "yesTokenId": "284679873053967010454886450661750817340851662225511551625886965804015338526",
-      "noTokenId": "10505831853931331351816589839326686005390441643280866228510466806303031215492",
+      "yesTokenId": "21257421045258709331043096125002889198548130833535638479442739746108113899654",
+      "noTokenId": "62809023837620775019908972293259352846579108007993593984249553815780770331146",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5464,8 +5293,8 @@
     "95": {
       "title": "Backpack FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/95?ref=opinion_hud",
-      "yesTokenId": "28344807126881202209615667683342755194340563571297472717594388939000528031146",
-      "noTokenId": "105037746151635658183722041917146475007873934799335245036294152918909571837036",
+      "yesTokenId": "30263922152791071979891737016383166449695193128206344912224798892698496443551",
+      "noTokenId": "78095378181540686696636708658095436011913926234370634415849216312825297680858",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9313,8 +9142,8 @@
     "83": {
       "title": "UEFA Champions League Winner 2026",
       "url": "https://app.opinion.trade/market/83?ref=opinion_hud",
-      "yesTokenId": "19219253512106834718612281430472802630858377350648476807254195985245563523963",
-      "noTokenId": "57938055365437271719115847466273532877806118728235778475049873832354074451843",
+      "yesTokenId": "33416819636610476757145491745709729397231706662687441096863958217112889036034",
+      "noTokenId": "47082413459450607304028477518120044324025196557912557861918018405626363908294",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9474,8 +9303,8 @@
     "96": {
       "title": "StandX FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/96?ref=opinion_hud",
-      "yesTokenId": "10330438361870881640357824351970105383015541873609372759035407005255100968663",
-      "noTokenId": "73378802826193873798854156800411016149705316032701676149922125638468867549928",
+      "yesTokenId": "8877572067209233303651307469370262638192585592876793854061220648896333541665",
+      "noTokenId": "7269659820314132072989093065581915304696289708865854485417426210546501428141",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9566,8 +9395,8 @@
     "99": {
       "title": "Will Polymarket launch a token by...?",
       "url": "https://app.opinion.trade/market/99?ref=opinion_hud",
-      "yesTokenId": "105683976600592022120090528468925188413301940239969220978289784594224379495642",
-      "noTokenId": "97965532849789217042881076616108916165971605482613431651484608808593122746818",
+      "yesTokenId": "101388405337646979410102311528120330137536318666214797338799077086099582499567",
+      "noTokenId": "9820072580937846461242930927405961047693761366162725787930701295953124761035",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9638,8 +9467,8 @@
     "103": {
       "title": "2026 NBA Champion",
       "url": "https://app.opinion.trade/market/103?ref=opinion_hud",
-      "yesTokenId": "33983412928971113842209826081112936134476688635498222333208982537424796788482",
-      "noTokenId": "107186576826736984480273556043906291316041814419525856030267840974713793667173",
+      "yesTokenId": "77161412129844740373035363981368567025027419725531169047725529962539678616608",
+      "noTokenId": "23239117947633742064425868703606030907380055601584437366257645232847343084272",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11210,78 +11039,6 @@
           "title": "1.5T+",
           "yesTokenId": "74866932764056827396825646215513218042516481475355463785442137181898684534136",
           "noTokenId": "41725026727962273497218343247654652095935591971878015226242814141125561886356"
-        }
-      ]
-    },
-    "153": {
-      "title": "US Fed Rate Decision: April 2026",
-      "url": "https://app.opinion.trade/market/153?ref=opinion_hud",
-      "yesTokenId": "102199363949148120639586433737388679713840622325481929783532147335336378497899",
-      "noTokenId": "35987538259839269660120484801844810053274043280090258210031804321745647724658",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "federal reserve",
-        "fed",
-        "fomc",
-        "interest rates",
-        "rate cut",
-        "rate hike",
-        "monetary policy",
-        "jerome powell",
-        "powell",
-        "central bank",
-        "us economy",
-        "inflation",
-        "cpi",
-        "dot plot",
-        "fed rate",
-        "rate decision",
-        "decision april",
-        "april 2026",
-        "fed rate decision",
-        "rate decision april",
-        "decision april 2026"
-      ],
-      "entities": [
-        "fed"
-      ],
-      "entityGroups": [
-        [
-          "fed",
-          "federal reserve",
-          "fomc",
-          "美联储"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2383",
-          "title": "50+ bps decrease",
-          "yesTokenId": "26869390662999164835933645800366723744009561177551644021130681241849699870070",
-          "noTokenId": "40775943399350642971650458923306881956816558179016329123163413856130575572289"
-        },
-        {
-          "marketId": "2384",
-          "title": "25 bps decrease",
-          "yesTokenId": "39776778426400138591294370874782062049478401116641485723813822685421674902180",
-          "noTokenId": "68158302306250136949909260453686802283500073564421809969437576425938803094906"
-        },
-        {
-          "marketId": "2385",
-          "title": "No change",
-          "yesTokenId": "82731354980021996522415245721164125548933506481078263487205196210894726681736",
-          "noTokenId": "74981000144996286528662530359803457223877572857888101352748940628958207261903"
-        },
-        {
-          "marketId": "2386",
-          "title": "Increase",
-          "yesTokenId": "102199363949148120639586433737388679713840622325481929783532147335336378497899",
-          "noTokenId": "35987538259839269660120484801844810053274043280090258210031804321745647724658"
         }
       ]
     },
@@ -12929,11 +12686,11 @@
         }
       ]
     },
-    "5269": {
-      "title": "BTC Up or Down - Hourly (Feb 01, 2026 07:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5269?ref=opinion_hud",
-      "yesTokenId": "5946948268421970833059193486847945001394700013408064965349919227814561225605",
-      "noTokenId": "106735991548993219149887690847635833090359805151724859040377109312139063164290",
+    "5273": {
+      "title": "ETH Up or Down - Hourly (Feb 01, 2026 08:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5273?ref=opinion_hud",
+      "yesTokenId": "72572686394269834760744429978573241235857805864904381033620480121107072802028",
+      "noTokenId": "90795905654885214553990852081492275730648826028227789616083865517642569158606",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -12941,11 +12698,11 @@
       },
       "type": "binary"
     },
-    "5268": {
-      "title": "BNB Up or Down - Hourly (Feb 01, 2026 07:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5268?ref=opinion_hud",
-      "yesTokenId": "114890723787985429142338366767108862230667100981607282385741126816953788633121",
-      "noTokenId": "14563378650554181993503534554364054786166523109287146224656453762358966533923",
+    "5272": {
+      "title": "BTC Up or Down - Hourly (Feb 01, 2026 08:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5272?ref=opinion_hud",
+      "yesTokenId": "5782054327641169382959150670656889650153350011650451022745040422326452218211",
+      "noTokenId": "80389606831784760350691790433038974426718436628446892078263372449054207608005",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -12953,17 +12710,324 @@
       },
       "type": "binary"
     },
-    "5270": {
-      "title": "ETH Up or Down - Hourly (Feb 01, 2026 07:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5270?ref=opinion_hud",
-      "yesTokenId": "43049048893577629590004047187062990335972540882348632230944962939493155415533",
-      "noTokenId": "61008989140916464487172011165576990767864894790378100648143974872678427980144",
+    "5271": {
+      "title": "BNB Up or Down - Hourly (Feb 01, 2026 08:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5271?ref=opinion_hud",
+      "yesTokenId": "11885794626560143945498805021423613730834621700220826245487611789106286798881",
+      "noTokenId": "98591368473382081865326093292492269229592025311282239786211926559742730670685",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
       },
       "type": "binary"
+    },
+    "332": {
+      "title": "What price will Bitcoin hit in February?",
+      "url": "https://app.opinion.trade/market/332?ref=opinion_hud",
+      "yesTokenId": "71374655346790503608234617231948553624149405221728048828824762231299592928899",
+      "noTokenId": "74492289370663629208362358974283733225651348756076239382631239836616669165529",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "bitcoin",
+        "btc",
+        "crypto",
+        "cryptocurrency",
+        "digital asset",
+        "price action",
+        "trading",
+        "market",
+        "volatility",
+        "february",
+        "spot etf",
+        "resistance",
+        "support",
+        "breakout",
+        "crash",
+        "what price",
+        "price bitcoin",
+        "bitcoin hit",
+        "hit february",
+        "what price bitcoin",
+        "price bitcoin hit",
+        "bitcoin hit february"
+      ],
+      "entities": [
+        "bitcoin"
+      ],
+      "entityGroups": [
+        [
+          "bitcoin",
+          "btc",
+          "比特币"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "5291",
+          "title": "↑ 110,000",
+          "yesTokenId": "64111897972440981219179772995301874509691116382898984876976418478010382429021",
+          "noTokenId": "45017824423944292949541312486453187493956153976297440664590268115457797058732"
+        },
+        {
+          "marketId": "5292",
+          "title": "↑ 105,000",
+          "yesTokenId": "19511711650674661530318570799486722687956846550242650183076512115425214477587",
+          "noTokenId": "87027946589210863782636024805681385870016791343229039313160707112356139993903"
+        },
+        {
+          "marketId": "5293",
+          "title": "↑ 100,000",
+          "yesTokenId": "104243505859630533113225414078226300191356559106664898912278201686505529013809",
+          "noTokenId": "55993719398525903834595943453692835348775972404639029597130223500295191212644"
+        },
+        {
+          "marketId": "5294",
+          "title": "↑ 95,000",
+          "yesTokenId": "9922897655721890267598421642241963176172674610689109580057130956013713579680",
+          "noTokenId": "3725078353769333978819572543670929716489593562431601717609781135297276630506"
+        },
+        {
+          "marketId": "5295",
+          "title": "↑ 90,000",
+          "yesTokenId": "71374655346790503608234617231948553624149405221728048828824762231299592928899",
+          "noTokenId": "74492289370663629208362358974283733225651348756076239382631239836616669165529"
+        },
+        {
+          "marketId": "5296",
+          "title": "↑ 85,000",
+          "yesTokenId": "114121650484274730053680481965572810494718129219286927927707550418051157634027",
+          "noTokenId": "20239332029381184169428083941480679518323801887897786461162330043193138648116"
+        },
+        {
+          "marketId": "5297",
+          "title": "↓ 75,000",
+          "yesTokenId": "55742715594884144030652508990374951174208197645981870407935027791725093435003",
+          "noTokenId": "1187781521114866657881545819010853420507759447983685153839891642635817661106"
+        },
+        {
+          "marketId": "5298",
+          "title": "↓ 70,000",
+          "yesTokenId": "56258538885309089418984998275425448745513911810144808243343178552135253515194",
+          "noTokenId": "17755377071204284744903956592643235763640882540740988265769002416142918566834"
+        },
+        {
+          "marketId": "5299",
+          "title": "↓ 65,000",
+          "yesTokenId": "42757662358697615152755744359258020674163111492236138872509035253132597772900",
+          "noTokenId": "84383892613401619379454413130290254793911191175097536088659552381254712933292"
+        },
+        {
+          "marketId": "5300",
+          "title": "↓ 60,000",
+          "yesTokenId": "68987292436761571372798499355548422506262191638605898227393967883508319766192",
+          "noTokenId": "115187339075305954358341428498435232854777891273014509117256495279289421568963"
+        }
+      ]
+    },
+    "333": {
+      "title": "What price will Ethereum hit in February?",
+      "url": "https://app.opinion.trade/market/333?ref=opinion_hud",
+      "yesTokenId": "109773389567649156624507840733963917905483102492501399210597109962927232141202",
+      "noTokenId": "70139134657594364304925481629079161634182191953318517150826686058721428531596",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "ethereum",
+        "eth",
+        "ether",
+        "crypto",
+        "cryptocurrency",
+        "blockchain",
+        "price",
+        "trading",
+        "market",
+        "altcoin",
+        "smart contracts",
+        "defi",
+        "gas",
+        "digital asset",
+        "token",
+        "what price",
+        "price ethereum",
+        "ethereum hit",
+        "hit february",
+        "what price ethereum",
+        "price ethereum hit",
+        "ethereum hit february"
+      ],
+      "entities": [
+        "ethereum"
+      ],
+      "entityGroups": [
+        [
+          "ethereum",
+          "eth",
+          "ether",
+          "以太坊"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "5301",
+          "title": "↑ 3,600",
+          "yesTokenId": "91053830219983591801689390538880529176383045725151736474749465353304321133023",
+          "noTokenId": "79752431608061010603634246001545287795176315335067228861116222755983991031817"
+        },
+        {
+          "marketId": "5302",
+          "title": "↑ 3,400",
+          "yesTokenId": "68896317265664264964978150845320935970363228892529916535608033977525691064877",
+          "noTokenId": "12368112622932510508459636727704950429501481484537380632929621973377114184693"
+        },
+        {
+          "marketId": "5303",
+          "title": "↑ 3,200",
+          "yesTokenId": "74509309191450420401009914225392494810887931607445312858340746730817400869506",
+          "noTokenId": "8362739478754384963931943971818865539301071566956280009208588688362734561472"
+        },
+        {
+          "marketId": "5304",
+          "title": "↑ 3,000",
+          "yesTokenId": "83547409500654561595729113127223576278171430902982933460570117193263547160974",
+          "noTokenId": "75317541303965732376095130095757743439062259438224198950750913402921965240457"
+        },
+        {
+          "marketId": "5305",
+          "title": "↑ 2,800",
+          "yesTokenId": "10147398641852442591946576946260541528886520695484339070836831320957696736553",
+          "noTokenId": "7963296838491373845074735687992066962767130539255542424810540329582485743029"
+        },
+        {
+          "marketId": "5306",
+          "title": "↓ 2,400",
+          "yesTokenId": "109773389567649156624507840733963917905483102492501399210597109962927232141202",
+          "noTokenId": "70139134657594364304925481629079161634182191953318517150826686058721428531596"
+        },
+        {
+          "marketId": "5307",
+          "title": "↓ 2,200",
+          "yesTokenId": "104865425357071137344797947815087688820206408958140911548119790076988812213323",
+          "noTokenId": "20974192372059048816922753531560712006976589782657809947487680401480316616543"
+        },
+        {
+          "marketId": "5308",
+          "title": "↓ 2,000",
+          "yesTokenId": "28555091420966284044967220762842152965529871006564115281581315578480917409195",
+          "noTokenId": "111385636885639665467162176752357113946055439911194224612636657973735113134524"
+        },
+        {
+          "marketId": "5309",
+          "title": "↓ 1,800",
+          "yesTokenId": "90412776755449927236735540662636226692226222636460372319191591845453927898920",
+          "noTokenId": "628959955877364756873972764037489085006170849530037370617415706535803967282"
+        }
+      ]
+    },
+    "334": {
+      "title": "What price will Solana hit in February?",
+      "url": "https://app.opinion.trade/market/334?ref=opinion_hud",
+      "yesTokenId": "6386753661625725201886032351017667408718433856589926652113583909920969929695",
+      "noTokenId": "33666928790283848831116431538133214676835343059395876264821147581352095601220",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "solana",
+        "sol",
+        "crypto",
+        "cryptocurrency",
+        "altcoin",
+        "blockchain",
+        "price prediction",
+        "trading",
+        "token",
+        "coin",
+        "defi",
+        "smart contracts",
+        "volatility",
+        "market",
+        "sol price",
+        "what price",
+        "price solana",
+        "solana hit",
+        "hit february",
+        "what price solana",
+        "price solana hit",
+        "solana hit february"
+      ],
+      "entities": [
+        "solana"
+      ],
+      "entityGroups": [
+        [
+          "solana",
+          "sol",
+          "索拉纳"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "5310",
+          "title": "↑ 150",
+          "yesTokenId": "21652281143149048246950019508555673483066884470988641449871018493689852640334",
+          "noTokenId": "27537030104905845846414655248527635950557880181234579281476581246348773604254"
+        },
+        {
+          "marketId": "5311",
+          "title": "↑ 140",
+          "yesTokenId": "111500144928233817315070684062589666861721723930982831022477094927030132237067",
+          "noTokenId": "51459264727179626501254259360021045330537782580778425183756938916350418005949"
+        },
+        {
+          "marketId": "5312",
+          "title": "↑ 130",
+          "yesTokenId": "103803708098531676775347573445671141542596670036591340951942422933071728686437",
+          "noTokenId": "97584350618591040493011462379068674342053511375329016861025745087266012652097"
+        },
+        {
+          "marketId": "5313",
+          "title": "↑ 120",
+          "yesTokenId": "62528587863982225425977873539701197202025034124115505078067907308921060749280",
+          "noTokenId": "25104904469982740904257941673954335440584744537982760898636759979906431388253"
+        },
+        {
+          "marketId": "5314",
+          "title": "↓ 100",
+          "yesTokenId": "77974498052356369042409185906188326412327149781539478747515448017293917876546",
+          "noTokenId": "73912871879426663808912392758543106010959122303245509405844899534116224638311"
+        },
+        {
+          "marketId": "5315",
+          "title": "↓ 90",
+          "yesTokenId": "37415270737912271169529027328336230385751614533032992580576377686284636662809",
+          "noTokenId": "63879681947264395567105097643644594665950497497821254824831130771005456109583"
+        },
+        {
+          "marketId": "5316",
+          "title": "↓ 80",
+          "yesTokenId": "56873665594327800550516782017945095833054447965923636086218205713625308656459",
+          "noTokenId": "96699034986385617325282782708047901576276524853741527985356598181493843708658"
+        },
+        {
+          "marketId": "5317",
+          "title": "↓70",
+          "yesTokenId": "6386753661625725201886032351017667408718433856589926652113583909920969929695",
+          "noTokenId": "33666928790283848831116431538133214676835343059395876264821147581352095601220"
+        }
+      ]
     }
   },
   "index": {
@@ -13240,11 +13304,7 @@
     "accolades": [
       "115"
     ],
-    "acquire tiktok": [
-      "159"
-    ],
     "acquisition": [
-      "159",
       "2398"
     ],
     "acquisition 2026": [
@@ -13380,6 +13440,8 @@
     ],
     "altcoin": [
       "260",
+      "333",
+      "334",
       "3364",
       "3367",
       "3368",
@@ -13442,9 +13504,6 @@
     "apocalypse": [
       "2670"
     ],
-    "app": [
-      "159"
-    ],
     "appeal": [
       "1546"
     ],
@@ -13468,7 +13527,6 @@
       "303"
     ],
     "april 2026": [
-      "153",
       "313"
     ],
     "argentina": [
@@ -13596,9 +13654,6 @@
     "ballot": [
       "130",
       "131"
-    ],
-    "ban": [
-      "159"
     ],
     "banco central": [
       "288"
@@ -13758,16 +13813,21 @@
       "111",
       "112",
       "3256",
+      "332",
       "3365"
     ],
     "bitcoin 2026": [
       "3365"
     ],
     "bitcoin hit": [
-      "112"
+      "112",
+      "332"
     ],
     "bitcoin hit $150k": [
       "112"
+    ],
+    "bitcoin hit february": [
+      "332"
     ],
     "bitcoin replace": [
       "3256"
@@ -13796,6 +13856,8 @@
       "1721",
       "260",
       "318",
+      "333",
+      "334",
       "3361",
       "3364",
       "3365",
@@ -13864,6 +13926,7 @@
       "2178"
     ],
     "breakout": [
+      "332",
       "3364",
       "3367"
     ],
@@ -13886,6 +13949,7 @@
       "111",
       "112",
       "3256",
+      "332",
       "3365"
     ],
     "btc holdings": [
@@ -13912,11 +13976,7 @@
       "3265"
     ],
     "buyout": [
-      "159",
       "2398"
-    ],
-    "bytedance": [
-      "159"
     ],
     "cabinet": [
       "3062"
@@ -13966,7 +14026,6 @@
     ],
     "central bank": [
       "107",
-      "153",
       "300",
       "319",
       "61",
@@ -14117,12 +14176,10 @@
       "328"
     ],
     "closing market": [
-      "152",
-      "158"
+      "152"
     ],
     "closing market cap": [
-      "152",
-      "158"
+      "152"
     ],
     "closing price": [
       "327"
@@ -14141,6 +14198,9 @@
     ],
     "club competition": [
       "83"
+    ],
+    "coin": [
+      "334"
     ],
     "coinbase": [
       "119",
@@ -14237,12 +14297,12 @@
       "1546"
     ],
     "cpi": [
-      "153",
       "319",
       "61",
       "75"
     ],
     "crash": [
+      "332",
       "3359"
     ],
     "creed": [
@@ -14264,6 +14324,9 @@
       "1721",
       "260",
       "318",
+      "332",
+      "333",
+      "334",
       "3359",
       "3361",
       "3364",
@@ -14297,6 +14360,9 @@
     "cryptocurrency": [
       "112",
       "260",
+      "332",
+      "333",
+      "334",
       "3364",
       "3367"
     ],
@@ -14355,7 +14421,6 @@
       "3509"
     ],
     "deal": [
-      "159",
       "2398",
       "3525"
     ],
@@ -14367,7 +14432,6 @@
     ],
     "debut": [
       "143",
-      "158",
       "317",
       "97",
       "98"
@@ -14379,11 +14443,9 @@
       "3509"
     ],
     "decision april": [
-      "153",
       "313"
     ],
     "decision april 2026": [
-      "153",
       "313"
     ],
     "decision dfr": [
@@ -14409,6 +14471,8 @@
       "119",
       "1721",
       "260",
+      "333",
+      "334",
       "3361",
       "67",
       "95",
@@ -14481,6 +14545,10 @@
     "diet": [
       "306"
     ],
+    "digital asset": [
+      "332",
+      "333"
+    ],
     "digital gold": [
       "112"
     ],
@@ -14503,9 +14571,6 @@
     "director winner": [
       "138"
     ],
-    "divestiture": [
-      "159"
-    ],
     "dollar": [
       "288",
       "3359"
@@ -14522,13 +14587,9 @@
       "3055"
     ],
     "dot plot": [
-      "153",
       "319",
       "61",
       "78"
-    ],
-    "douyin": [
-      "159"
     ],
     "downing street": [
       "150"
@@ -14723,7 +14784,6 @@
     ],
     "equity": [
       "143",
-      "158",
       "322",
       "326",
       "328",
@@ -14749,14 +14809,17 @@
       "2670"
     ],
     "eth": [
+      "333",
       "3364"
     ],
     "ether": [
+      "333",
       "3364"
     ],
     "ethereum": [
       "119",
       "1721",
+      "333",
       "3364",
       "67"
     ],
@@ -14765,6 +14828,12 @@
     ],
     "ethereum all time": [
       "3364"
+    ],
+    "ethereum hit": [
+      "333"
+    ],
+    "ethereum hit february": [
+      "333"
     ],
     "ethereum wallet": [
       "118"
@@ -14917,13 +14986,13 @@
       "67"
     ],
     "february": [
-      "329"
+      "329",
+      "332"
     ],
     "february 2026": [
       "121"
     ],
     "fed": [
-      "153",
       "300",
       "319",
       "61",
@@ -14950,7 +15019,6 @@
       "61"
     ],
     "fed rate": [
-      "153",
       "61",
       "75",
       "78"
@@ -14959,7 +15027,6 @@
       "78"
     ],
     "fed rate decision": [
-      "153",
       "61",
       "75"
     ],
@@ -14977,7 +15044,6 @@
     ],
     "federal reserve": [
       "107",
-      "153",
       "300",
       "319",
       "61",
@@ -15043,7 +15109,6 @@
       "258"
     ],
     "fomc": [
-      "153",
       "319",
       "61",
       "75",
@@ -15060,9 +15125,6 @@
     ],
     "football tournament": [
       "79"
-    ],
-    "forced sale": [
-      "159"
     ],
     "foreign leader": [
       "276"
@@ -15118,6 +15180,9 @@
       "315",
       "3361"
     ],
+    "gas": [
+      "333"
+    ],
     "gaten": [
       "3224"
     ],
@@ -15146,7 +15211,6 @@
     ],
     "going public": [
       "143",
-      "158",
       "3362"
     ],
     "gold": [
@@ -15421,7 +15485,10 @@
     ],
     "hit february": [
       "315",
-      "316"
+      "316",
+      "332",
+      "333",
+      "334"
     ],
     "hit january": [
       "260",
@@ -15559,7 +15626,6 @@
     "inflation": [
       "107",
       "121",
-      "153",
       "288",
       "319",
       "320",
@@ -15577,7 +15643,6 @@
     ],
     "initial public offering": [
       "152",
-      "158",
       "3362"
     ],
     "interest rate": [
@@ -15586,7 +15651,6 @@
     "interest rates": [
       "107",
       "121",
-      "153",
       "313",
       "319",
       "320",
@@ -15622,7 +15686,6 @@
     "ipo": [
       "143",
       "152",
-      "158",
       "3362",
       "3525"
     ],
@@ -15630,12 +15693,10 @@
       "3362"
     ],
     "ipo closing": [
-      "152",
-      "158"
+      "152"
     ],
     "ipo closing market": [
-      "152",
-      "158"
+      "152"
     ],
     "iran": [
       "242",
@@ -15730,7 +15791,6 @@
     ],
     "jerome powell": [
       "107",
-      "153",
       "300",
       "319",
       "61",
@@ -15995,7 +16055,6 @@
     ],
     "listing": [
       "143",
-      "158",
       "317",
       "3362",
       "67",
@@ -16109,13 +16168,15 @@
       "323",
       "328",
       "329",
+      "332",
+      "333",
+      "334",
       "3361",
       "98"
     ],
     "market cap": [
       "112",
       "152",
-      "158",
       "317",
       "324",
       "3505",
@@ -16127,9 +16188,6 @@
     ],
     "market cap fdv": [
       "67"
-    ],
-    "market capitalization": [
-      "158"
     ],
     "market performance": [
       "327"
@@ -16201,7 +16259,6 @@
       "97"
     ],
     "merger": [
-      "159",
       "2398"
     ],
     "messiah": [
@@ -16340,7 +16397,6 @@
     "monetary policy": [
       "107",
       "121",
-      "153",
       "288",
       "313",
       "319",
@@ -16916,7 +16972,6 @@
       "3062"
     ],
     "powell": [
-      "153",
       "300",
       "319",
       "75",
@@ -16982,6 +17037,7 @@
       "326",
       "328",
       "329",
+      "333",
       "3359",
       "3361",
       "3367",
@@ -16990,7 +17046,20 @@
       "98"
     ],
     "price action": [
+      "332",
       "96"
+    ],
+    "price bitcoin": [
+      "332"
+    ],
+    "price bitcoin hit": [
+      "332"
+    ],
+    "price ethereum": [
+      "333"
+    ],
+    "price ethereum hit": [
+      "333"
     ],
     "price gold": [
       "262"
@@ -17001,11 +17070,16 @@
     "price peak": [
       "3364"
     ],
+    "price prediction": [
+      "334"
+    ],
     "price solana": [
-      "260"
+      "260",
+      "334"
     ],
     "price solana hit": [
-      "260"
+      "260",
+      "334"
     ],
     "price target": [
       "112",
@@ -17050,8 +17124,7 @@
       "3362"
     ],
     "public offering": [
-      "143",
-      "158"
+      "143"
     ],
     "public sale": [
       "318"
@@ -17118,7 +17191,6 @@
       "2670"
     ],
     "rate cut": [
-      "153",
       "319",
       "61",
       "75",
@@ -17132,14 +17204,10 @@
     ],
     "rate decision": [
       "121",
-      "153",
       "313",
       "320",
       "61",
       "75"
-    ],
-    "rate decision april": [
-      "153"
     ],
     "rate decision january": [
       "61"
@@ -17148,7 +17216,6 @@
       "75"
     ],
     "rate hike": [
-      "153",
       "319",
       "61",
       "75"
@@ -17293,6 +17360,7 @@
       "3062"
     ],
     "resistance": [
+      "332",
       "3367"
     ],
     "resolution date": [
@@ -17385,9 +17453,6 @@
     "safe haven": [
       "262",
       "315"
-    ],
-    "sale": [
-      "159"
     ],
     "sale total": [
       "318"
@@ -17534,7 +17599,6 @@
     ],
     "shares": [
       "143",
-      "158",
       "326",
       "328",
       "3362"
@@ -17592,6 +17656,10 @@
     "smart contract bug": [
       "3360"
     ],
+    "smart contracts": [
+      "333",
+      "334"
+    ],
     "snap election": [
       "306"
     ],
@@ -17611,17 +17679,23 @@
     "soccer tournament": [
       "79"
     ],
-    "social media": [
-      "159"
-    ],
     "sol": [
-      "260"
+      "260",
+      "334"
+    ],
+    "sol price": [
+      "334"
     ],
     "solana": [
-      "260"
+      "260",
+      "334"
     ],
     "solana hit": [
-      "260"
+      "260",
+      "334"
+    ],
+    "solana hit february": [
+      "334"
     ],
     "solana hit january": [
       "260"
@@ -17664,15 +17738,6 @@
     "south korean local elections": [
       "130"
     ],
-    "spacex": [
-      "158"
-    ],
-    "spacex ipo": [
-      "158"
-    ],
-    "spacex ipo closing": [
-      "158"
-    ],
     "spain": [
       "82"
     ],
@@ -17696,6 +17761,9 @@
     ],
     "sports": [
       "103"
+    ],
+    "spot etf": [
+      "332"
     ],
     "spot price": [
       "262",
@@ -17787,9 +17855,6 @@
       "328",
       "329"
     ],
-    "stock debut": [
-      "158"
-    ],
     "stock index": [
       "327"
     ],
@@ -17802,9 +17867,6 @@
     ],
     "stock market debut": [
       "3362"
-    ],
-    "stock price": [
-      "158"
     ],
     "stranger things": [
       "3221",
@@ -17868,7 +17930,8 @@
       "81"
     ],
     "support": [
-      "3055"
+      "3055",
+      "332"
     ],
     "supporting actor": [
       "140"
@@ -17908,7 +17971,6 @@
       "3357"
     ],
     "takeover": [
-      "159",
       "2398"
     ],
     "talks": [
@@ -18036,15 +18098,11 @@
       "3506"
     ],
     "ticker": [
-      "158",
       "3257",
       "3362"
     ],
     "tightening": [
       "313"
-    ],
-    "tiktok": [
-      "159"
     ],
     "tim cook": [
       "2368",
@@ -18089,6 +18147,8 @@
       "118",
       "1721",
       "260",
+      "333",
+      "334",
       "3367",
       "67",
       "95",
@@ -18159,6 +18219,9 @@
       "326",
       "328",
       "329",
+      "332",
+      "333",
+      "334",
       "3361",
       "3367",
       "67",
@@ -18319,7 +18382,6 @@
       "274"
     ],
     "us economy": [
-      "153",
       "319",
       "3265",
       "61",
@@ -18389,7 +18451,6 @@
     ],
     "valuation": [
       "152",
-      "158",
       "317",
       "324",
       "3362",
@@ -18426,9 +18487,6 @@
     "vice president": [
       "3062"
     ],
-    "video sharing": [
-      "159"
-    ],
     "vietnam": [
       "301"
     ],
@@ -18447,6 +18505,8 @@
       "325",
       "326",
       "329",
+      "332",
+      "334",
       "3367"
     ],
     "vote": [
@@ -18471,7 +18531,6 @@
       "273"
     ],
     "wall street": [
-      "158",
       "327"
     ],
     "wallet": [
@@ -18527,13 +18586,23 @@
     ],
     "what price": [
       "260",
-      "262"
+      "262",
+      "332",
+      "333",
+      "334"
+    ],
+    "what price bitcoin": [
+      "332"
+    ],
+    "what price ethereum": [
+      "333"
     ],
     "what price gold": [
       "262"
     ],
     "what price solana": [
-      "260"
+      "260",
+      "334"
     ],
     "wheeler family": [
       "3222"
@@ -18549,12 +18618,6 @@
     "white house": [
       "276",
       "3062"
-    ],
-    "who acquire": [
-      "159"
-    ],
-    "who acquire tiktok": [
-      "159"
     ],
     "who higher": [
       "1721"
@@ -18702,6 +18765,7 @@
     ],
     "以太坊": [
       "1721",
+      "333",
       "3359",
       "3364",
       "67"
@@ -18745,9 +18809,6 @@
     ],
     "墨西哥": [
       "274"
-    ],
-    "太空探索技术公司": [
-      "158"
     ],
     "奥斯卡": [
       "133",
@@ -18836,6 +18897,7 @@
       "111",
       "112",
       "3256",
+      "332",
       "3365"
     ],
     "泰莎·汤普森": [
@@ -18862,7 +18924,8 @@
       "307"
     ],
     "索拉纳": [
-      "260"
+      "260",
+      "334"
     ],
     "经济衰退": [
       "3265"
@@ -18886,7 +18949,6 @@
     ],
     "美联储": [
       "107",
-      "153",
       "303",
       "319",
       "61",
@@ -19123,12 +19185,6 @@
     "accolades": [
       "115"
     ],
-    "acquire tiktok": [
-      "159"
-    ],
-    "acquisition": [
-      "159"
-    ],
     "acting": [
       "137"
     ],
@@ -19228,6 +19284,8 @@
     ],
     "altcoin": [
       "260",
+      "333",
+      "334",
       "98"
     ],
     "amazon": [
@@ -19267,9 +19325,6 @@
     "aoty": [
       "279"
     ],
-    "app": [
-      "159"
-    ],
     "apple": [
       "324"
     ],
@@ -19283,7 +19338,6 @@
       "303"
     ],
     "april 2026": [
-      "153",
       "313"
     ],
     "argentina": [
@@ -19395,9 +19449,6 @@
     "ballot": [
       "130",
       "131"
-    ],
-    "ban": [
-      "159"
     ],
     "banco central": [
       "288"
@@ -19517,13 +19568,18 @@
     ],
     "bitcoin": [
       "111",
-      "112"
+      "112",
+      "332"
     ],
     "bitcoin hit": [
-      "112"
+      "112",
+      "332"
     ],
     "bitcoin hit $150k": [
       "112"
+    ],
+    "bitcoin hit february": [
+      "332"
     ],
     "bjt": [
       "307"
@@ -19533,6 +19589,8 @@
       "119",
       "260",
       "318",
+      "333",
+      "334",
       "95",
       "98"
     ],
@@ -19564,12 +19622,16 @@
     "box office": [
       "275"
     ],
+    "breakout": [
+      "332"
+    ],
     "broad market": [
       "327"
     ],
     "btc": [
       "111",
-      "112"
+      "112",
+      "332"
     ],
     "btc holdings": [
       "111"
@@ -19587,12 +19649,6 @@
     ],
     "bunnies": [
       "132"
-    ],
-    "buyout": [
-      "159"
-    ],
-    "bytedance": [
-      "159"
     ],
     "campaign": [
       "131"
@@ -19630,7 +19686,6 @@
     ],
     "central bank": [
       "107",
-      "153",
       "300",
       "319",
       "61",
@@ -19740,18 +19795,19 @@
       "328"
     ],
     "closing market": [
-      "152",
-      "158"
+      "152"
     ],
     "closing market cap": [
-      "152",
-      "158"
+      "152"
     ],
     "closing price": [
       "327"
     ],
     "club competition": [
       "83"
+    ],
+    "coin": [
+      "334"
     ],
     "coinbase": [
       "119"
@@ -19816,10 +19872,12 @@
       "330"
     ],
     "cpi": [
-      "153",
       "319",
       "61",
       "75"
+    ],
+    "crash": [
+      "332"
     ],
     "crypto": [
       "111",
@@ -19827,6 +19885,9 @@
       "119",
       "260",
       "318",
+      "332",
+      "333",
+      "334",
       "67",
       "95",
       "97",
@@ -19843,7 +19904,10 @@
     ],
     "cryptocurrency": [
       "112",
-      "260"
+      "260",
+      "332",
+      "333",
+      "334"
     ],
     "cup winner": [
       "79"
@@ -19874,25 +19938,19 @@
       "97",
       "98"
     ],
-    "deal": [
-      "159"
-    ],
     "death": [
       "242"
     ],
     "debut": [
       "143",
-      "158",
       "317",
       "97",
       "98"
     ],
     "decision april": [
-      "153",
       "313"
     ],
     "decision april 2026": [
-      "153",
       "313"
     ],
     "decision dfr": [
@@ -19917,6 +19975,8 @@
     "defi": [
       "119",
       "260",
+      "333",
+      "334",
       "67",
       "95",
       "99"
@@ -19960,6 +20020,10 @@
     "diet": [
       "306"
     ],
+    "digital asset": [
+      "332",
+      "333"
+    ],
     "digital gold": [
       "112"
     ],
@@ -19982,9 +20046,6 @@
     "director winner": [
       "138"
     ],
-    "divestiture": [
-      "159"
-    ],
     "dollar": [
       "288"
     ],
@@ -19999,13 +20060,9 @@
       "276"
     ],
     "dot plot": [
-      "153",
       "319",
       "61",
       "78"
-    ],
-    "douyin": [
-      "159"
     ],
     "downing street": [
       "150"
@@ -20114,7 +20171,6 @@
     ],
     "equity": [
       "143",
-      "158",
       "322",
       "326",
       "328",
@@ -20135,9 +20191,22 @@
     "escape": [
       "258"
     ],
+    "eth": [
+      "333"
+    ],
+    "ether": [
+      "333"
+    ],
     "ethereum": [
       "119",
+      "333",
       "67"
+    ],
+    "ethereum hit": [
+      "333"
+    ],
+    "ethereum hit february": [
+      "333"
     ],
     "ethereum wallet": [
       "118"
@@ -20249,13 +20318,13 @@
       "67"
     ],
     "february": [
-      "329"
+      "329",
+      "332"
     ],
     "february 2026": [
       "121"
     ],
     "fed": [
-      "153",
       "300",
       "319",
       "61",
@@ -20282,7 +20351,6 @@
       "61"
     ],
     "fed rate": [
-      "153",
       "61",
       "75",
       "78"
@@ -20291,7 +20359,6 @@
       "78"
     ],
     "fed rate decision": [
-      "153",
       "61",
       "75"
     ],
@@ -20306,7 +20373,6 @@
     ],
     "federal reserve": [
       "107",
-      "153",
       "300",
       "319",
       "61",
@@ -20357,7 +20423,6 @@
       "258"
     ],
     "fomc": [
-      "153",
       "319",
       "61",
       "75",
@@ -20374,9 +20439,6 @@
     ],
     "football tournament": [
       "79"
-    ],
-    "forced sale": [
-      "159"
     ],
     "foreign leader": [
       "276"
@@ -20415,6 +20477,9 @@
     "futures": [
       "315"
     ],
+    "gas": [
+      "333"
+    ],
     "general election": [
       "150",
       "306"
@@ -20429,8 +20494,7 @@
       "79"
     ],
     "going public": [
-      "143",
-      "158"
+      "143"
     ],
     "gold": [
       "262",
@@ -20632,7 +20696,10 @@
     ],
     "hit february": [
       "315",
-      "316"
+      "316",
+      "332",
+      "333",
+      "334"
     ],
     "hit january": [
       "260",
@@ -20718,7 +20785,6 @@
     "inflation": [
       "107",
       "121",
-      "153",
       "288",
       "319",
       "320",
@@ -20735,8 +20801,7 @@
       "313"
     ],
     "initial public offering": [
-      "152",
-      "158"
+      "152"
     ],
     "interest rate": [
       "78"
@@ -20744,7 +20809,6 @@
     "interest rates": [
       "107",
       "121",
-      "153",
       "313",
       "319",
       "320",
@@ -20776,16 +20840,13 @@
     ],
     "ipo": [
       "143",
-      "152",
-      "158"
+      "152"
     ],
     "ipo closing": [
-      "152",
-      "158"
+      "152"
     ],
     "ipo closing market": [
-      "152",
-      "158"
+      "152"
     ],
     "iran": [
       "242",
@@ -20863,7 +20924,6 @@
     ],
     "jerome powell": [
       "107",
-      "153",
       "300",
       "319",
       "61",
@@ -21060,7 +21120,6 @@
     ],
     "listing": [
       "143",
-      "158",
       "317",
       "67",
       "95",
@@ -21140,12 +21199,14 @@
       "323",
       "328",
       "329",
+      "332",
+      "333",
+      "334",
       "98"
     ],
     "market cap": [
       "112",
       "152",
-      "158",
       "317",
       "324",
       "67",
@@ -21155,9 +21216,6 @@
     ],
     "market cap fdv": [
       "67"
-    ],
-    "market capitalization": [
-      "158"
     ],
     "market performance": [
       "327"
@@ -21204,9 +21262,6 @@
     ],
     "memecoin": [
       "97"
-    ],
-    "merger": [
-      "159"
     ],
     "meta": [
       "118",
@@ -21306,7 +21361,6 @@
     "monetary policy": [
       "107",
       "121",
-      "153",
       "288",
       "313",
       "319",
@@ -21740,7 +21794,6 @@
       "276"
     ],
     "powell": [
-      "153",
       "300",
       "319",
       "75",
@@ -21798,12 +21851,26 @@
       "326",
       "328",
       "329",
+      "333",
       "67",
       "97",
       "98"
     ],
     "price action": [
+      "332",
       "96"
+    ],
+    "price bitcoin": [
+      "332"
+    ],
+    "price bitcoin hit": [
+      "332"
+    ],
+    "price ethereum": [
+      "333"
+    ],
+    "price ethereum hit": [
+      "333"
     ],
     "price gold": [
       "262"
@@ -21811,11 +21878,16 @@
     "price gold hit": [
       "262"
     ],
+    "price prediction": [
+      "334"
+    ],
     "price solana": [
-      "260"
+      "260",
+      "334"
     ],
     "price solana hit": [
-      "260"
+      "260",
+      "334"
     ],
     "price target": [
       "112"
@@ -21852,8 +21924,7 @@
       "152"
     ],
     "public offering": [
-      "143",
-      "158"
+      "143"
     ],
     "public sale": [
       "318"
@@ -21878,7 +21949,6 @@
       "329"
     ],
     "rate cut": [
-      "153",
       "319",
       "61",
       "75",
@@ -21892,14 +21962,10 @@
     ],
     "rate decision": [
       "121",
-      "153",
       "313",
       "320",
       "61",
       "75"
-    ],
-    "rate decision april": [
-      "153"
     ],
     "rate decision january": [
       "61"
@@ -21908,7 +21974,6 @@
       "75"
     ],
     "rate hike": [
-      "153",
       "319",
       "61",
       "75"
@@ -21994,6 +22059,9 @@
       "258",
       "300"
     ],
+    "resistance": [
+      "332"
+    ],
     "retaliation": [
       "257",
       "271",
@@ -22032,9 +22100,6 @@
     "safe haven": [
       "262",
       "315"
-    ],
-    "sale": [
-      "159"
     ],
     "sale total": [
       "318"
@@ -22117,7 +22182,6 @@
     ],
     "shares": [
       "143",
-      "158",
       "326",
       "328"
     ],
@@ -22154,6 +22218,10 @@
     "slam": [
       "304"
     ],
+    "smart contracts": [
+      "333",
+      "334"
+    ],
     "snap election": [
       "306"
     ],
@@ -22173,17 +22241,23 @@
     "soccer tournament": [
       "79"
     ],
-    "social media": [
-      "159"
-    ],
     "sol": [
-      "260"
+      "260",
+      "334"
+    ],
+    "sol price": [
+      "334"
     ],
     "solana": [
-      "260"
+      "260",
+      "334"
     ],
     "solana hit": [
-      "260"
+      "260",
+      "334"
+    ],
+    "solana hit february": [
+      "334"
     ],
     "solana hit january": [
       "260"
@@ -22226,15 +22300,6 @@
     "south korean local elections": [
       "130"
     ],
-    "spacex": [
-      "158"
-    ],
-    "spacex ipo": [
-      "158"
-    ],
-    "spacex ipo closing": [
-      "158"
-    ],
     "spain": [
       "82"
     ],
@@ -22252,6 +22317,9 @@
     ],
     "sports": [
       "103"
+    ],
+    "spot etf": [
+      "332"
     ],
     "spot price": [
       "262",
@@ -22319,9 +22387,6 @@
       "328",
       "329"
     ],
-    "stock debut": [
-      "158"
-    ],
     "stock index": [
       "327"
     ],
@@ -22331,9 +22396,6 @@
     "stock market": [
       "143",
       "152"
-    ],
-    "stock price": [
-      "158"
     ],
     "strategy": [
       "111"
@@ -22378,6 +22440,9 @@
     "superbowl": [
       "81"
     ],
+    "support": [
+      "332"
+    ],
     "supporting actor": [
       "140"
     ],
@@ -22402,9 +22467,6 @@
     ],
     "suspension of services": [
       "303"
-    ],
-    "takeover": [
-      "159"
     ],
     "talks": [
       "276"
@@ -22471,14 +22533,8 @@
     "theatrical": [
       "275"
     ],
-    "ticker": [
-      "158"
-    ],
     "tightening": [
       "313"
-    ],
-    "tiktok": [
-      "159"
     ],
     "tim cook": [
       "324"
@@ -22496,6 +22552,8 @@
     "token": [
       "118",
       "260",
+      "333",
+      "334",
       "67",
       "95",
       "97",
@@ -22551,6 +22609,9 @@
       "326",
       "328",
       "329",
+      "332",
+      "333",
+      "334",
       "67",
       "95",
       "97",
@@ -22669,7 +22730,6 @@
       "274"
     ],
     "us economy": [
-      "153",
       "319",
       "61",
       "75",
@@ -22719,7 +22779,6 @@
     ],
     "valuation": [
       "152",
-      "158",
       "317",
       "324",
       "67",
@@ -22733,9 +22792,6 @@
     ],
     "version 5": [
       "129"
-    ],
-    "video sharing": [
-      "159"
     ],
     "vietnam": [
       "301"
@@ -22754,7 +22810,9 @@
       "260",
       "325",
       "326",
-      "329"
+      "329",
+      "332",
+      "334"
     ],
     "vote": [
       "130",
@@ -22775,7 +22833,6 @@
       "273"
     ],
     "wall street": [
-      "158",
       "327"
     ],
     "war": [
@@ -22812,13 +22869,23 @@
     ],
     "what price": [
       "260",
-      "262"
+      "262",
+      "332",
+      "333",
+      "334"
+    ],
+    "what price bitcoin": [
+      "332"
+    ],
+    "what price ethereum": [
+      "333"
     ],
     "what price gold": [
       "262"
     ],
     "what price solana": [
-      "260"
+      "260",
+      "334"
     ],
     "which party": [
       "135",
@@ -22830,12 +22897,6 @@
     ],
     "white house": [
       "276"
-    ],
-    "who acquire": [
-      "159"
-    ],
-    "who acquire tiktok": [
-      "159"
     ],
     "who trump": [
       "107",
@@ -22955,6 +23016,7 @@
       "328"
     ],
     "以太坊": [
+      "333",
       "67"
     ],
     "以色列": [
@@ -22980,9 +23042,6 @@
     ],
     "墨西哥": [
       "274"
-    ],
-    "太空探索技术公司": [
-      "158"
     ],
     "奥斯卡": [
       "133",
@@ -23061,7 +23120,8 @@
     ],
     "比特币": [
       "111",
-      "112"
+      "112",
+      "332"
     ],
     "特斯拉": [
       "323"
@@ -23075,7 +23135,8 @@
       "307"
     ],
     "索拉纳": [
-      "260"
+      "260",
+      "334"
     ],
     "美国中情局": [
       "115"
@@ -23096,7 +23157,6 @@
     ],
     "美联储": [
       "107",
-      "153",
       "303",
       "319",
       "61",
