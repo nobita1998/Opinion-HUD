@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-02 09:54:11 UTC+8",
+    "generatedAt": "2026-02-02 11:15:53 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 343,
-      "markets": 146,
-      "keywords": 1505,
+      "kept": 337,
+      "markets": 144,
+      "keywords": 1460,
       "events": {
-        "events": 63
+        "events": 60
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 657,
+        "cutoff_expired": 663,
         "cutoff_zero_kept": 26,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 59,
+        "reused": 56,
         "regenerated_empty_entitygroups": 4,
         "calls": 4,
         "retries": 4,
@@ -126,50 +126,6 @@
       "sig": "263835f3",
       "sigFull": "263835f3",
       "sigCore": "75c15c08",
-      "reused": false
-    },
-    "133": {
-      "title": "Oscars 2026: Best Picture Winner",
-      "marketIds": [
-        "133"
-      ],
-      "bestMarketId": "133",
-      "bestLabels": null,
-      "keywords": [
-        "oscars",
-        "academy awards",
-        "best picture",
-        "2026",
-        "film",
-        "cinema",
-        "movies",
-        "awards",
-        "hollywood",
-        "ampas",
-        "nominees",
-        "ceremony",
-        "golden statuette",
-        "top film",
-        "oscars 2026",
-        "2026 best",
-        "picture winner",
-        "oscars 2026 best",
-        "2026 best picture",
-        "best picture winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "sig": "a9b9e5be",
-      "sigFull": "a9b9e5be",
-      "sigCore": "c83ced46",
       "reused": false
     },
     "67": {
@@ -1991,96 +1947,6 @@
       "sigCore": "ab7cdd05",
       "reused": false
     },
-    "131": {
-      "title": "2026 Seoul Mayoral Election Winner",
-      "marketIds": [
-        "131"
-      ],
-      "bestMarketId": "131",
-      "bestLabels": null,
-      "keywords": [
-        "seoul",
-        "mayor",
-        "election",
-        "2026",
-        "south korea",
-        "vote",
-        "poll",
-        "campaign",
-        "capital",
-        "civic",
-        "politics",
-        "government",
-        "ballot",
-        "metropolitan",
-        "2026 seoul",
-        "seoul mayoral",
-        "mayoral election",
-        "election winner",
-        "2026 seoul mayoral",
-        "seoul mayoral election",
-        "mayoral election winner"
-      ],
-      "entities": [
-        "seoul mayor",
-        "2026年选举"
-      ],
-      "entityGroups": [
-        [
-          "seoul mayor",
-          "seoul mayoral",
-          "首尔市长"
-        ],
-        [
-          "2026年选举"
-        ]
-      ],
-      "sig": "922cd6b5",
-      "sigFull": "922cd6b5",
-      "sigCore": "743a7327",
-      "reused": false
-    },
-    "132": {
-      "title": "Will NewJeans perform again by ...?",
-      "marketIds": [
-        "132"
-      ],
-      "bestMarketId": "132",
-      "bestLabels": null,
-      "keywords": [
-        "newjeans",
-        "k-pop",
-        "girl group",
-        "comeback",
-        "concert",
-        "tour",
-        "live performance",
-        "ador",
-        "minji",
-        "hanni",
-        "danielle",
-        "haerin",
-        "hyein",
-        "bunnies",
-        "music show",
-        "newjeans perform",
-        "perform again",
-        "newjeans perform again"
-      ],
-      "entities": [
-        "newjeans"
-      ],
-      "entityGroups": [
-        [
-          "newjeans",
-          "newjeans女团"
-        ]
-      ],
-      "sig": "89bf8940",
-      "sigFull": "89bf8940",
-      "sigCore": "08617cac",
-      "reused": false
-    },
     "318": {
       "title": "Fabric public sale total commitments?",
       "marketIds": [
@@ -3618,88 +3484,6 @@
           "title": "Victor Wembanyama",
           "yesTokenId": "32109696625141513689655403733645648187560974001570001091194377848247635695486",
           "noTokenId": "115398602245575717832388579353864903548043889337415411082810479307576648848998"
-        }
-      ]
-    },
-    "133": {
-      "title": "Oscars 2026: Best Picture Winner",
-      "url": "https://app.opinion.trade/market/133?ref=opinion_hud",
-      "yesTokenId": "115200048030521459984852325813313972513880158761550255848634415827699362574589",
-      "noTokenId": "43406408178176013415499386469602157851209129781554996048048568854572213897068",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "oscars",
-        "academy awards",
-        "best picture",
-        "2026",
-        "film",
-        "cinema",
-        "movies",
-        "awards",
-        "hollywood",
-        "ampas",
-        "nominees",
-        "ceremony",
-        "golden statuette",
-        "top film",
-        "oscars 2026",
-        "2026 best",
-        "picture winner",
-        "oscars 2026 best",
-        "2026 best picture",
-        "best picture winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2194",
-          "title": "One Battle After Another",
-          "yesTokenId": "105388411368108830456957901936489201717115318116506671315952011000460771461941",
-          "noTokenId": "42362856914625277606278908950857697872699971953894941575034602556881295063343"
-        },
-        {
-          "marketId": "2195",
-          "title": "Marty Supreme",
-          "yesTokenId": "3463657957360572060989038914010145712414547475981468213109220818468224751262",
-          "noTokenId": "79476800079653211998276652137538664880902572630719791368756683089330008781052"
-        },
-        {
-          "marketId": "2196",
-          "title": "Hamnet",
-          "yesTokenId": "115200048030521459984852325813313972513880158761550255848634415827699362574589",
-          "noTokenId": "43406408178176013415499386469602157851209129781554996048048568854572213897068"
-        },
-        {
-          "marketId": "2197",
-          "title": "Sinners",
-          "yesTokenId": "19300853710332686470514855815452790994752557206002430091668933432961049107533",
-          "noTokenId": "48216788484104275974980329950576425130294941485067866362996784334496249002876"
-        },
-        {
-          "marketId": "2198",
-          "title": "Bugonia",
-          "yesTokenId": "34570737905097913516275140754343775106095827766217324750286793882780716495516",
-          "noTokenId": "92517406651483016262071123500968511281101673881584396627313875909040049908946"
-        },
-        {
-          "marketId": "3160",
-          "title": "Sentimental Value",
-          "yesTokenId": "17828794585070893261133472179271761288721127692882594516363615117232199242765",
-          "noTokenId": "111172107587335227979856667389274301337908348186822776054423212092069837996687"
         }
       ]
     },
@@ -8763,8 +8547,8 @@
     "130": {
       "title": "2026 South Korean Local Elections: Party Winner",
       "url": "https://app.opinion.trade/market/130?ref=opinion_hud",
-      "yesTokenId": "63497789008044882416418514937096208556717358172821110315605623452926047613619",
-      "noTokenId": "102251353621468857484202427734063368873594679891589852057672372468712406519511",
+      "yesTokenId": "22265968143792536982256899440101447824813440695533822755697215059790720648012",
+      "noTokenId": "69256356136883109399698308941877506407606773953630000569511194041288221113349",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8832,142 +8616,6 @@
           "title": "Progressive Party (PP)",
           "yesTokenId": "63497789008044882416418514937096208556717358172821110315605623452926047613619",
           "noTokenId": "102251353621468857484202427734063368873594679891589852057672372468712406519511"
-        }
-      ]
-    },
-    "131": {
-      "title": "2026 Seoul Mayoral Election Winner",
-      "url": "https://app.opinion.trade/market/131?ref=opinion_hud",
-      "yesTokenId": "8987904543458176901087014051105095795899919842491525395417592458468405679040",
-      "noTokenId": "71190359759293839737961428411364580510336413544944174835282435795522564414805",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "seoul",
-        "mayor",
-        "election",
-        "2026",
-        "south korea",
-        "vote",
-        "poll",
-        "campaign",
-        "capital",
-        "civic",
-        "politics",
-        "government",
-        "ballot",
-        "metropolitan",
-        "2026 seoul",
-        "seoul mayoral",
-        "mayoral election",
-        "election winner",
-        "2026 seoul mayoral",
-        "seoul mayoral election",
-        "mayoral election winner"
-      ],
-      "entities": [
-        "seoul mayor",
-        "2026年选举"
-      ],
-      "entityGroups": [
-        [
-          "seoul mayor",
-          "seoul mayoral",
-          "首尔市长"
-        ],
-        [
-          "2026年选举"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2183",
-          "title": "Oh Se-hoon",
-          "yesTokenId": "94949750864338749586435394255486707081990027705914956801391650250156309401465",
-          "noTokenId": "39931280999733991468874236963266712118876275360198594775393075731152644375469"
-        },
-        {
-          "marketId": "2184",
-          "title": "Chong Won-oh",
-          "yesTokenId": "40074885342960165318727086202608492199540147145545126597377892153924423789723",
-          "noTokenId": "92821079611195853399861259959750988413582790966410600314083595808366402232195"
-        },
-        {
-          "marketId": "2185",
-          "title": "Park Ju-min",
-          "yesTokenId": "45941646698328077437158609731912212824617761330889751538890144780080449902002",
-          "noTokenId": "114628638680624293211109283816481262162166041897043502577510423441719447543876"
-        },
-        {
-          "marketId": "2186",
-          "title": "Na Kyung-won",
-          "yesTokenId": "61832591177592579460865327055742322209471164446357772058411835241389069459584",
-          "noTokenId": "34899007849380872345644237161424384972436816179699002508068718557283430908134"
-        },
-        {
-          "marketId": "2187",
-          "title": "Jeon Hyun-heui",
-          "yesTokenId": "8987904543458176901087014051105095795899919842491525395417592458468405679040",
-          "noTokenId": "71190359759293839737961428411364580510336413544944174835282435795522564414805"
-        }
-      ]
-    },
-    "132": {
-      "title": "Will NewJeans perform again by ...?",
-      "url": "https://app.opinion.trade/market/132?ref=opinion_hud",
-      "yesTokenId": "47285018604502376574819437892653745924031949216234966522677867568787073990368",
-      "noTokenId": "71391424808700728222670890276275537064305675135282591854149515314726004354291",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "newjeans",
-        "k-pop",
-        "girl group",
-        "comeback",
-        "concert",
-        "tour",
-        "live performance",
-        "ador",
-        "minji",
-        "hanni",
-        "danielle",
-        "haerin",
-        "hyein",
-        "bunnies",
-        "music show",
-        "newjeans perform",
-        "perform again",
-        "newjeans perform again"
-      ],
-      "entities": [
-        "newjeans"
-      ],
-      "entityGroups": [
-        [
-          "newjeans",
-          "newjeans女团"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2193",
-          "title": "March 31, 2026",
-          "yesTokenId": "47285018604502376574819437892653745924031949216234966522677867568787073990368",
-          "noTokenId": "71391424808700728222670890276275537064305675135282591854149515314726004354291"
-        },
-        {
-          "marketId": "2192",
-          "title": "December 31, 2025",
-          "yesTokenId": "106638355417599836048961203125833935628578882979861051324675418638634455441586",
-          "noTokenId": "30863318882185936560229704920621830596103191717445652064419501139400991542945"
         }
       ]
     },
@@ -9391,6 +9039,24 @@
           "title": "↓ $75",
           "yesTokenId": "6922417079533149106665920797405655018248518446529983155692193999277740113148",
           "noTokenId": "18863418473864916656359390582560334580045309091321324098368018641441853253361"
+        },
+        {
+          "marketId": "5414",
+          "title": "↓ $70",
+          "yesTokenId": "63054048862725038279789460904333481641988362887774439361387306323948214125237",
+          "noTokenId": "12776864246866105015795223161645346427284854019076369202866154516850506745555"
+        },
+        {
+          "marketId": "5415",
+          "title": "↓ $65",
+          "yesTokenId": "108425189382279755888044770033221909503076451637085677708347539447347861236653",
+          "noTokenId": "30490176074779664734782175483705388360396611659323623239792604033741180747617"
+        },
+        {
+          "marketId": "5416",
+          "title": "↓ $55",
+          "yesTokenId": "112227455811640796025927182297854041541980815755939034447128403970335069327361",
+          "noTokenId": "59352081489396737445188633519195040856248087443582871684773708623632849786962"
         }
       ]
     },
@@ -11301,11 +10967,23 @@
         }
       ]
     },
-    "5401": {
-      "title": "ETH Up or Down - Hourly (Feb 02, 2026 02:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5401?ref=opinion_hud",
-      "yesTokenId": "79039601343373576781820985815523517393714501303031753613617869855143792549456",
-      "noTokenId": "14254097295683274946618326463967215881701803250130613148480645373391273394881",
+    "5420": {
+      "title": "↓ $4,000",
+      "url": "https://app.opinion.trade/market/5420?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "5405": {
+      "title": "BNB Up or Down - Hourly (Feb 02, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5405?ref=opinion_hud",
+      "yesTokenId": "93469632965913222439705356582432828970672706202847899418803734467267035881867",
+      "noTokenId": "30605077886609790634502575075535342361641105741380132632044483718210606085873",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -11313,11 +10991,11 @@
       },
       "type": "binary"
     },
-    "5400": {
-      "title": "BTC Up or Down - Hourly (Feb 02, 2026 02:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5400?ref=opinion_hud",
-      "yesTokenId": "113781900682128171217217780443639783047157836254514183275264318792514977352130",
-      "noTokenId": "108019065419317763112768853525711809538303491250235555065858445444474924096066",
+    "5407": {
+      "title": "ETH Up or Down - Hourly (Feb 02, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5407?ref=opinion_hud",
+      "yesTokenId": "28679538878352507996176823221332717756143129681743612694618346990488109193259",
+      "noTokenId": "18569616343838753392172540942049447777747174877801081578823318541577679391026",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -11325,11 +11003,11 @@
       },
       "type": "binary"
     },
-    "5399": {
-      "title": "BNB Up or Down - Hourly (Feb 02, 2026 02:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5399?ref=opinion_hud",
-      "yesTokenId": "10621919726096545454220613203901028165329843695077726907098807501422105207676",
-      "noTokenId": "74342312994234959527040286018789149847986377527812647146910305191234152098549",
+    "5406": {
+      "title": "BTC Up or Down - Hourly (Feb 02, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5406?ref=opinion_hud",
+      "yesTokenId": "17569209238040868210403331333396064589444801019493506512438014176515010321001",
+      "noTokenId": "92897040944512057330688401546044963392091627410804916387159807615449005349226",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -11387,20 +11065,12 @@
       "80"
     ],
     "2026": [
-      "131",
-      "133",
       "3448",
       "3449",
       "3508",
       "3509",
       "78",
       "79"
-    ],
-    "2026 best": [
-      "133"
-    ],
-    "2026 best picture": [
-      "133"
     ],
     "2026 elections": [
       "130"
@@ -11430,12 +11100,6 @@
       "81",
       "83"
     ],
-    "2026 seoul": [
-      "131"
-    ],
-    "2026 seoul mayoral": [
-      "131"
-    ],
     "2026 south": [
       "130"
     ],
@@ -11460,9 +11124,6 @@
     ],
     "2026年nfl选秀": [
       "3072"
-    ],
-    "2026年选举": [
-      "131"
     ],
     "2026年选秀": [
       "3072"
@@ -11555,9 +11216,6 @@
     "academy": [
       "280"
     ],
-    "academy awards": [
-      "133"
-    ],
     "accolades": [
       "115"
     ],
@@ -11578,9 +11236,6 @@
     ],
     "address": [
       "3365"
-    ],
-    "ador": [
-      "132"
     ],
     "adp": [
       "273"
@@ -11712,9 +11367,6 @@
     "amount": [
       "3505"
     ],
-    "ampas": [
-      "133"
-    ],
     "amzn": [
       "328"
     ],
@@ -11825,9 +11477,6 @@
     "award": [
       "115"
     ],
-    "awards": [
-      "133"
-    ],
     "awards ceremony": [
       "279"
     ],
@@ -11865,8 +11514,7 @@
       "95"
     ],
     "ballot": [
-      "130",
-      "131"
+      "130"
     ],
     "bank japan": [
       "313"
@@ -11957,12 +11605,6 @@
     ],
     "best new artist": [
       "282"
-    ],
-    "best picture": [
-      "133"
-    ],
-    "best picture winner": [
-      "133"
     ],
     "bhumjaithai": [
       "307"
@@ -12141,9 +11783,6 @@
     "bullish": [
       "3367"
     ],
-    "bunnies": [
-      "132"
-    ],
     "business cycle": [
       "3265"
     ],
@@ -12158,9 +11797,6 @@
       "3449",
       "3509"
     ],
-    "campaign": [
-      "131"
-    ],
     "candidate": [
       "301"
     ],
@@ -12174,7 +11810,6 @@
       "67"
     ],
     "capital": [
-      "131",
       "318",
       "3505",
       "3506",
@@ -12208,7 +11843,6 @@
       "2368"
     ],
     "ceremony": [
-      "133",
       "279",
       "280",
       "282",
@@ -12283,11 +11917,7 @@
       "320"
     ],
     "cinema": [
-      "133",
       "275"
-    ],
-    "civic": [
-      "131"
     ],
     "claim": [
       "118"
@@ -12372,7 +12002,6 @@
       "3072"
     ],
     "comeback": [
-      "132",
       "2178",
       "3369"
     ],
@@ -12405,9 +12034,6 @@
     ],
     "composer": [
       "284"
-    ],
-    "concert": [
-      "132"
     ],
     "conflict": [
       "128",
@@ -12541,9 +12167,6 @@
     ],
     "cz": [
       "3369"
-    ],
-    "danielle": [
-      "132"
     ],
     "dapp": [
       "244"
@@ -12829,12 +12452,10 @@
       "98"
     ],
     "election": [
-      "131",
       "301",
       "307"
     ],
     "election winner": [
-      "131",
       "307"
     ],
     "elections party": [
@@ -13186,7 +12807,6 @@
       "79"
     ],
     "film": [
-      "133",
       "275"
     ],
     "finals": [
@@ -13310,7 +12930,6 @@
       "3365"
     ],
     "girl group": [
-      "132",
       "2178"
     ],
     "global tournament": [
@@ -13333,9 +12952,6 @@
     ],
     "gold price": [
       "315"
-    ],
-    "golden statuette": [
-      "133"
     ],
     "goog": [
       "326"
@@ -13375,7 +12991,6 @@
       "320"
     ],
     "government": [
-      "131",
       "301",
       "307",
       "330"
@@ -13495,12 +13110,6 @@
     "hack over $100m": [
       "3360"
     ],
-    "haerin": [
-      "132"
-    ],
-    "hanni": [
-      "132"
-    ],
     "hanoi": [
       "301"
     ],
@@ -13585,7 +13194,6 @@
       "3222"
     ],
     "hollywood": [
-      "133",
       "3158"
     ],
     "honors": [
@@ -13615,9 +13223,6 @@
     ],
     "how many jobs": [
       "273"
-    ],
-    "hyein": [
-      "132"
     ],
     "hype": [
       "3361"
@@ -13881,7 +13486,6 @@
       "3508"
     ],
     "k-pop": [
-      "132",
       "2178"
     ],
     "kantei": [
@@ -14049,9 +13653,6 @@
       "97",
       "98"
     ],
-    "live performance": [
-      "132"
-    ],
     "llm": [
       "129",
       "338",
@@ -14175,14 +13776,7 @@
       "2398"
     ],
     "mayor": [
-      "130",
-      "131"
-    ],
-    "mayoral election": [
-      "131"
-    ],
-    "mayoral election winner": [
-      "131"
+      "130"
     ],
     "medical travel": [
       "258"
@@ -14246,9 +13840,6 @@
     ],
     "metamask launch token": [
       "118"
-    ],
-    "metropolitan": [
-      "131"
     ],
     "mexico": [
       "274"
@@ -14316,9 +13907,6 @@
     ],
     "minister japan after": [
       "306"
-    ],
-    "minji": [
-      "132"
     ],
     "missile": [
       "257",
@@ -14389,9 +13977,6 @@
     "movie": [
       "275"
     ],
-    "movies": [
-      "133"
-    ],
     "msci": [
       "3257"
     ],
@@ -14449,9 +14034,6 @@
       "282",
       "283",
       "284"
-    ],
-    "music show": [
-      "132"
     ],
     "musk": [
       "323"
@@ -14552,18 +14134,6 @@
     "new year's eve": [
       "3509"
     ],
-    "newjeans": [
-      "132"
-    ],
-    "newjeans perform": [
-      "132"
-    ],
-    "newjeans perform again": [
-      "132"
-    ],
-    "newjeans女团": [
-      "132"
-    ],
     "next gen model": [
       "89"
     ],
@@ -14603,7 +14173,6 @@
       "283"
     ],
     "nominees": [
-      "133",
       "282",
       "283",
       "284"
@@ -14683,15 +14252,6 @@
     ],
     "oracle": [
       "99"
-    ],
-    "oscars": [
-      "133"
-    ],
-    "oscars 2026": [
-      "133"
-    ],
-    "oscars 2026 best": [
-      "133"
     ],
     "ounce": [
       "315"
@@ -14776,9 +14336,6 @@
     "people's party": [
       "307"
     ],
-    "perform again": [
-      "132"
-    ],
     "performance": [
       "338"
     ],
@@ -14796,9 +14353,6 @@
     ],
     "pick 2026 nfl": [
       "3072"
-    ],
-    "picture winner": [
-      "133"
     ],
     "pl": [
       "80"
@@ -14829,13 +14383,11 @@
       "301"
     ],
     "politics": [
-      "131",
       "242",
       "301",
       "307"
     ],
     "poll": [
-      "131",
       "307"
     ],
     "poly": [
@@ -15386,18 +14938,6 @@
     "semiconductor": [
       "322"
     ],
-    "seoul": [
-      "131"
-    ],
-    "seoul mayor": [
-      "131"
-    ],
-    "seoul mayoral": [
-      "131"
-    ],
-    "seoul mayoral election": [
-      "131"
-    ],
     "sequel": [
       "275"
     ],
@@ -15541,8 +15081,7 @@
       "280"
     ],
     "south korea": [
-      "130",
-      "131"
+      "130"
     ],
     "south korean": [
       "130"
@@ -15926,9 +15465,6 @@
       "95",
       "99"
     ],
-    "top film": [
-      "133"
-    ],
     "top flight": [
       "80"
     ],
@@ -15946,9 +15482,6 @@
     ],
     "total domestic gross": [
       "275"
-    ],
-    "tour": [
-      "132"
     ],
     "trade policy": [
       "1546"
@@ -16193,7 +15726,6 @@
     ],
     "vote": [
       "130",
-      "131",
       "301",
       "307"
     ],
@@ -16453,14 +15985,8 @@
     "墨西哥": [
       "274"
     ],
-    "奥斯卡": [
-      "133"
-    ],
     "委内瑞拉": [
       "128"
-    ],
-    "学院奖": [
-      "133"
     ],
     "小狐狸": [
       "118"
@@ -16635,9 +16161,6 @@
     "韩国地方选举": [
       "130"
     ],
-    "首尔市长": [
-      "131"
-    ],
     "鲍威尔": [
       "300"
     ]
@@ -16659,16 +16182,8 @@
       "80"
     ],
     "2026": [
-      "131",
-      "133",
       "78",
       "79"
-    ],
-    "2026 best": [
-      "133"
-    ],
-    "2026 best picture": [
-      "133"
     ],
     "2026 elections": [
       "130"
@@ -16692,20 +16207,11 @@
       "81",
       "83"
     ],
-    "2026 seoul": [
-      "131"
-    ],
-    "2026 seoul mayoral": [
-      "131"
-    ],
     "2026 south": [
       "130"
     ],
     "2026 south korean": [
       "130"
-    ],
-    "2026年选举": [
-      "131"
     ],
     "500 spx": [
       "327"
@@ -16750,9 +16256,6 @@
     "academy": [
       "280"
     ],
-    "academy awards": [
-      "133"
-    ],
     "accolades": [
       "115"
     ],
@@ -16761,9 +16264,6 @@
     ],
     "added january": [
       "273"
-    ],
-    "ador": [
-      "132"
     ],
     "adp": [
       "273"
@@ -16859,9 +16359,6 @@
     "american football": [
       "81"
     ],
-    "ampas": [
-      "133"
-    ],
     "amzn": [
       "328"
     ],
@@ -16938,9 +16435,6 @@
     "award": [
       "115"
     ],
-    "awards": [
-      "133"
-    ],
     "awards ceremony": [
       "279"
     ],
@@ -16972,8 +16466,7 @@
       "95"
     ],
     "ballot": [
-      "130",
-      "131"
+      "130"
     ],
     "bank japan": [
       "313"
@@ -17043,12 +16536,6 @@
     ],
     "best new artist": [
       "282"
-    ],
-    "best picture": [
-      "133"
-    ],
-    "best picture winner": [
-      "133"
     ],
     "bhumjaithai": [
       "307"
@@ -17131,12 +16618,6 @@
       "315",
       "316"
     ],
-    "bunnies": [
-      "132"
-    ],
-    "campaign": [
-      "131"
-    ],
     "candidate": [
       "301"
     ],
@@ -17150,7 +16631,6 @@
       "67"
     ],
     "capital": [
-      "131",
       "318"
     ],
     "caracas": [
@@ -17171,7 +16651,6 @@
       "78"
     ],
     "ceremony": [
-      "133",
       "279",
       "280",
       "282",
@@ -17216,11 +16695,7 @@
       "320"
     ],
     "cinema": [
-      "133",
       "275"
-    ],
-    "civic": [
-      "131"
     ],
     "claim": [
       "118"
@@ -17278,9 +16753,6 @@
     "collapse": [
       "330"
     ],
-    "comeback": [
-      "132"
-    ],
     "commitments": [
       "318"
     ],
@@ -17310,9 +16782,6 @@
     ],
     "composer": [
       "284"
-    ],
-    "concert": [
-      "132"
     ],
     "conflict": [
       "128",
@@ -17378,9 +16847,6 @@
     ],
     "cuts 2026": [
       "78"
-    ],
-    "danielle": [
-      "132"
     ],
     "dapp": [
       "244"
@@ -17553,12 +17019,10 @@
       "98"
     ],
     "election": [
-      "131",
       "301",
       "307"
     ],
     "election winner": [
-      "131",
       "307"
     ],
     "elections party": [
@@ -17817,7 +17281,6 @@
       "79"
     ],
     "film": [
-      "133",
       "275"
     ],
     "finals": [
@@ -17896,9 +17359,6 @@
       "338",
       "89"
     ],
-    "girl group": [
-      "132"
-    ],
     "global tournament": [
       "79"
     ],
@@ -17916,9 +17376,6 @@
     ],
     "gold price": [
       "315"
-    ],
-    "golden statuette": [
-      "133"
     ],
     "goog": [
       "326"
@@ -17951,7 +17408,6 @@
       "320"
     ],
     "government": [
-      "131",
       "301",
       "307",
       "330"
@@ -18058,12 +17514,6 @@
     "gross january": [
       "275"
     ],
-    "haerin": [
-      "132"
-    ],
-    "hanni": [
-      "132"
-    ],
     "hanoi": [
       "301"
     ],
@@ -18092,9 +17542,6 @@
     "holdings": [
       "111"
     ],
-    "hollywood": [
-      "133"
-    ],
     "honors": [
       "115"
     ],
@@ -18117,9 +17564,6 @@
     ],
     "how many jobs": [
       "273"
-    ],
-    "hyein": [
-      "132"
     ],
     "idf": [
       "271",
@@ -18280,9 +17724,6 @@
     "jobs added january": [
       "273"
     ],
-    "k-pop": [
-      "132"
-    ],
     "kantei": [
       "306"
     ],
@@ -18403,9 +17844,6 @@
       "97",
       "98"
     ],
-    "live performance": [
-      "132"
-    ],
     "llm": [
       "129",
       "338",
@@ -18487,14 +17925,7 @@
       "115"
     ],
     "mayor": [
-      "130",
-      "131"
-    ],
-    "mayoral election": [
-      "131"
-    ],
-    "mayoral election winner": [
-      "131"
+      "130"
     ],
     "medical travel": [
       "258"
@@ -18535,9 +17966,6 @@
     ],
     "metamask launch token": [
       "118"
-    ],
-    "metropolitan": [
-      "131"
     ],
     "mexico": [
       "274"
@@ -18580,9 +18008,6 @@
     ],
     "minister japan after": [
       "306"
-    ],
-    "minji": [
-      "132"
     ],
     "missile": [
       "257",
@@ -18630,9 +18055,6 @@
     "movie": [
       "275"
     ],
-    "movies": [
-      "133"
-    ],
     "msft": [
       "329"
     ],
@@ -18674,9 +18096,6 @@
       "282",
       "283",
       "284"
-    ],
-    "music show": [
-      "132"
     ],
     "musk": [
       "323"
@@ -18728,18 +18147,6 @@
     "new artist winner": [
       "282"
     ],
-    "newjeans": [
-      "132"
-    ],
-    "newjeans perform": [
-      "132"
-    ],
-    "newjeans perform again": [
-      "132"
-    ],
-    "newjeans女团": [
-      "132"
-    ],
     "next gen model": [
       "89"
     ],
@@ -18776,7 +18183,6 @@
       "283"
     ],
     "nominees": [
-      "133",
       "282",
       "283",
       "284"
@@ -18846,15 +18252,6 @@
     "oracle": [
       "99"
     ],
-    "oscars": [
-      "133"
-    ],
-    "oscars 2026": [
-      "133"
-    ],
-    "oscars 2026 best": [
-      "133"
-    ],
     "ounce": [
       "315"
     ],
@@ -18902,17 +18299,11 @@
     "people's party": [
       "307"
     ],
-    "perform again": [
-      "132"
-    ],
     "performance": [
       "338"
     ],
     "pheu thai": [
       "307"
-    ],
-    "picture winner": [
-      "133"
     ],
     "pl": [
       "80"
@@ -18943,13 +18334,11 @@
       "301"
     ],
     "politics": [
-      "131",
       "242",
       "301",
       "307"
     ],
     "poll": [
-      "131",
       "307"
     ],
     "poly": [
@@ -19274,18 +18663,6 @@
     "semiconductor": [
       "322"
     ],
-    "seoul": [
-      "131"
-    ],
-    "seoul mayor": [
-      "131"
-    ],
-    "seoul mayoral": [
-      "131"
-    ],
-    "seoul mayoral election": [
-      "131"
-    ],
     "sequel": [
       "275"
     ],
@@ -19387,8 +18764,7 @@
       "280"
     ],
     "south korea": [
-      "130",
-      "131"
+      "130"
     ],
     "south korean": [
       "130"
@@ -19607,9 +18983,6 @@
       "95",
       "99"
     ],
-    "top film": [
-      "133"
-    ],
     "top flight": [
       "80"
     ],
@@ -19624,9 +18997,6 @@
     ],
     "total domestic gross": [
       "275"
-    ],
-    "tour": [
-      "132"
     ],
     "trading": [
       "112",
@@ -19780,7 +19150,6 @@
     ],
     "vote": [
       "130",
-      "131",
       "301",
       "307"
     ],
@@ -19968,14 +19337,8 @@
     "墨西哥": [
       "274"
     ],
-    "奥斯卡": [
-      "133"
-    ],
     "委内瑞拉": [
       "128"
-    ],
-    "学院奖": [
-      "133"
     ],
     "小狐狸": [
       "118"
@@ -20097,9 +19460,6 @@
     ],
     "韩国地方选举": [
       "130"
-    ],
-    "首尔市长": [
-      "131"
     ],
     "鲍威尔": [
       "300"
