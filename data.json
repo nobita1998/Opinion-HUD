@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-02 00:43:59 UTC+8",
+    "generatedAt": "2026-02-02 09:54:11 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 358,
-      "markets": 151,
-      "keywords": 1567,
+      "kept": 343,
+      "markets": 146,
+      "keywords": 1505,
       "events": {
-        "events": 66
+        "events": 63
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 642,
+        "cutoff_expired": 657,
         "cutoff_zero_kept": 26,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 60,
-        "regenerated_empty_entitygroups": 1,
-        "calls": 6,
+        "reused": 59,
+        "regenerated_empty_entitygroups": 4,
+        "calls": 4,
         "retries": 4,
         "fallback": 0,
         "empty": 4,
-        "non_empty": 2,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -544,49 +544,6 @@
       "sig": "2e78034b",
       "sigFull": "2e78034b",
       "sigCore": "7666a1c4",
-      "reused": false
-    },
-    "276": {
-      "title": "Who will Trump meet with in January?",
-      "marketIds": [
-        "276"
-      ],
-      "bestMarketId": "276",
-      "bestLabels": null,
-      "keywords": [
-        "trump",
-        "donald trump",
-        "meeting",
-        "summit",
-        "diplomatic visit",
-        "white house",
-        "potus",
-        "president",
-        "foreign leader",
-        "state visit",
-        "talks",
-        "negotiation",
-        "january",
-        "mar-a-lago",
-        "diplomacy",
-        "who trump",
-        "trump meet",
-        "meet january",
-        "who trump meet",
-        "trump meet january"
-      ],
-      "entities": [
-        "trump"
-      ],
-      "entityGroups": [
-        [
-          "trump",
-          "特朗普"
-        ]
-      ],
-      "sig": "9b920601",
-      "sigFull": "9b920601",
-      "sigCore": "52532b0f",
       "reused": false
     },
     "274": {
@@ -2122,143 +2079,6 @@
       "sig": "89bf8940",
       "sigFull": "89bf8940",
       "sigCore": "08617cac",
-      "reused": false
-    },
-    "135": {
-      "title": "Which party will win the U.S. House in 2026?",
-      "marketIds": [
-        "135"
-      ],
-      "bestMarketId": "135",
-      "bestLabels": null,
-      "keywords": [
-        "u.s. house",
-        "house of representatives",
-        "2026 midterms",
-        "midterm elections",
-        "house control",
-        "house majority",
-        "congress",
-        "lower chamber",
-        "house seats",
-        "speaker of the house",
-        "legislative branch",
-        "2026 election",
-        "house race",
-        "congressional election",
-        "which party",
-        "party win",
-        "win house",
-        "house 2026",
-        "which party win",
-        "party win house",
-        "win house 2026"
-      ],
-      "entities": [
-        "u.s. house"
-      ],
-      "entityGroups": [
-        [
-          "u.s. house",
-          "众议院",
-          "us house"
-        ]
-      ],
-      "sig": "a432b48c",
-      "sigFull": "a432b48c",
-      "sigCore": "e7097f4c",
-      "reused": false
-    },
-    "136": {
-      "title": "Which party will win the U.S. Senate in 2026?",
-      "marketIds": [
-        "136"
-      ],
-      "bestMarketId": "136",
-      "bestLabels": null,
-      "keywords": [
-        "senate",
-        "us senate",
-        "upper chamber",
-        "congress",
-        "midterm",
-        "election",
-        "majority",
-        "control",
-        "legislature",
-        "capitol hill",
-        "senate race",
-        "2026 election",
-        "senate seat",
-        "balance of power",
-        "which party",
-        "party win",
-        "win senate",
-        "senate 2026",
-        "which party win",
-        "party win senate",
-        "win senate 2026"
-      ],
-      "entities": [
-        "u.s. senate"
-      ],
-      "entityGroups": [
-        [
-          "u.s. senate",
-          "us senate",
-          "senate",
-          "美国参议院"
-        ]
-      ],
-      "sig": "912665a8",
-      "sigFull": "912665a8",
-      "sigCore": "2ed68868",
-      "reused": false
-    },
-    "137": {
-      "title": "Oscars 2026: Best Actor Winner",
-      "marketIds": [
-        "137"
-      ],
-      "bestMarketId": "137",
-      "bestLabels": null,
-      "keywords": [
-        "oscars",
-        "academy awards",
-        "best actor",
-        "2026",
-        "film",
-        "cinema",
-        "movies",
-        "nominees",
-        "acting",
-        "lead actor",
-        "ceremony",
-        "hollywood",
-        "awards",
-        "entertainment",
-        "celebrity",
-        "oscars 2026",
-        "2026 best",
-        "actor winner",
-        "oscars 2026 best",
-        "2026 best actor",
-        "best actor winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "oscar",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "sig": "67afba60",
-      "sigFull": "67afba60",
-      "sigCore": "0167b563",
       "reused": false
     },
     "318": {
@@ -3804,8 +3624,8 @@
     "133": {
       "title": "Oscars 2026: Best Picture Winner",
       "url": "https://app.opinion.trade/market/133?ref=opinion_hud",
-      "yesTokenId": "17828794585070893261133472179271761288721127692882594516363615117232199242765",
-      "noTokenId": "111172107587335227979856667389274301337908348186822776054423212092069837996687",
+      "yesTokenId": "115200048030521459984852325813313972513880158761550255848634415827699362574589",
+      "noTokenId": "43406408178176013415499386469602157851209129781554996048048568854572213897068",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -6183,12 +6003,6 @@
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "3973",
-          "title": "January 31, 2026",
-          "yesTokenId": "64860667649698796189061251862119526181879081544545756246443340551303673762851",
-          "noTokenId": "41657951328430187563322782710045542364186926293942673090365988032631355706926"
-        },
-        {
           "marketId": "4726",
           "title": "February 28, 2026",
           "yesTokenId": "10467393420256957069273457708806478649365670193911821662833042645019468806994",
@@ -6205,111 +6019,12 @@
           "title": "January 12, 2026",
           "yesTokenId": "29686886771618166806013643719142111274449117206576180033777611773744972033950",
           "noTokenId": "68688633753303879088471007647387512921900272605440867959667816575850783279956"
-        }
-      ]
-    },
-    "276": {
-      "title": "Who will Trump meet with in January?",
-      "url": "https://app.opinion.trade/market/276?ref=opinion_hud",
-      "yesTokenId": "83463789188007959490747850381439928231580683486282320214147142663260402380422",
-      "noTokenId": "25237645785663737413159628366510181819100861253935639719937361687686468232665",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "trump",
-        "donald trump",
-        "meeting",
-        "summit",
-        "diplomatic visit",
-        "white house",
-        "potus",
-        "president",
-        "foreign leader",
-        "state visit",
-        "talks",
-        "negotiation",
-        "january",
-        "mar-a-lago",
-        "diplomacy",
-        "who trump",
-        "trump meet",
-        "meet january",
-        "who trump meet",
-        "trump meet january"
-      ],
-      "entities": [
-        "trump"
-      ],
-      "entityGroups": [
-        [
-          "trump",
-          "特朗普"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "4005",
-          "title": "Emmanuel Macron",
-          "yesTokenId": "29061712403960827759510851509290425213000082456958993867930395970093876153504",
-          "noTokenId": "83645487026186351953543312909971924180946259303322994062802912929726665041470"
         },
         {
-          "marketId": "4006",
-          "title": "Giorgia Meloni",
-          "yesTokenId": "85339539670088512054891458745697684681254715570964071010304517651821507400917",
-          "noTokenId": "111973733175384354651822854735001431526784878310731362635918952024479617735008"
-        },
-        {
-          "marketId": "4007",
-          "title": "Keir Starmer",
-          "yesTokenId": "68352847299154998121393580690673096991196301349938772452084221328978037407909",
-          "noTokenId": "70248392765879878132991525794203548363258073888678933123639114792708831523375"
-        },
-        {
-          "marketId": "4008",
-          "title": "Friedrich Merz",
-          "yesTokenId": "38112262445545806615681802182561880767184643363396746475211662610717847194469",
-          "noTokenId": "37429590179912944789933406190248453408602016590757593048511146137099000722088"
-        },
-        {
-          "marketId": "4009",
-          "title": "Ursula von der Leyen",
-          "yesTokenId": "36262483632344207986776783023684292383554579902755631444573310154779858959014",
-          "noTokenId": "31538030232717997776200527011253499425928029731312666757635716585386649136417"
-        },
-        {
-          "marketId": "4012",
-          "title": "King Mohammed VI",
-          "yesTokenId": "47658722542825613187253512019109808657688802268717704013669125168867153961640",
-          "noTokenId": "46455477015547303182598058182563240012562791489052621547369671892376821298191"
-        },
-        {
-          "marketId": "4013",
-          "title": "Kaja Kallas",
-          "yesTokenId": "83463789188007959490747850381439928231580683486282320214147142663260402380422",
-          "noTokenId": "25237645785663737413159628366510181819100861253935639719937361687686468232665"
-        },
-        {
-          "marketId": "4004",
-          "title": "Volodymyr Zelenskyy",
-          "yesTokenId": "7166483303384184981205823033615028830070093891166786325743807951479974294025",
-          "noTokenId": "61686665762732935739174810819823341171186128364353797193502541499468601269214"
-        },
-        {
-          "marketId": "4010",
-          "title": "Jensen Huang",
-          "yesTokenId": "95186627957324257377683718205598943916881781266592561088320634806871997865767",
-          "noTokenId": "6964975495180153603786428891066377105108302962786112615907646365299056460017"
-        },
-        {
-          "marketId": "4011",
-          "title": "Satya Nadella",
-          "yesTokenId": "31705351063066865107211627592724181840313864349890253205194780816956266488348",
-          "noTokenId": "14250241838074873608065357915038363835320506996732650542539666529513167313824"
+          "marketId": "3973",
+          "title": "January 31, 2026",
+          "yesTokenId": "64860667649698796189061251862119526181879081544545756246443340551303673762851",
+          "noTokenId": "41657951328430187563322782710045542364186926293942673090365988032631355706926"
         }
       ]
     },
@@ -7914,8 +7629,8 @@
     "81": {
       "title": "Super Bowl Champion 2026",
       "url": "https://app.opinion.trade/market/81?ref=opinion_hud",
-      "yesTokenId": "52510626799624952038038578237585947250140584303628269325747416768262182423998",
-      "noTokenId": "112130630182986102261927506636363773009523223158084343046750414309313479746348",
+      "yesTokenId": "84491787493912763192022079530790032140334660928050097986939161845027227737435",
+      "noTokenId": "105437838239396844391683991439865240616330564024758940219501389915112394393591",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -9253,209 +8968,6 @@
           "title": "December 31, 2025",
           "yesTokenId": "106638355417599836048961203125833935628578882979861051324675418638634455441586",
           "noTokenId": "30863318882185936560229704920621830596103191717445652064419501139400991542945"
-        }
-      ]
-    },
-    "135": {
-      "title": "Which party will win the U.S. House in 2026?",
-      "url": "https://app.opinion.trade/market/135?ref=opinion_hud",
-      "yesTokenId": "45736915626379070846440265862067724055830478306566523493868335167335171235293",
-      "noTokenId": "88947256101731408790141773268946685203129892759960367302683470668746698621077",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "u.s. house",
-        "house of representatives",
-        "2026 midterms",
-        "midterm elections",
-        "house control",
-        "house majority",
-        "congress",
-        "lower chamber",
-        "house seats",
-        "speaker of the house",
-        "legislative branch",
-        "2026 election",
-        "house race",
-        "congressional election",
-        "which party",
-        "party win",
-        "win house",
-        "house 2026",
-        "which party win",
-        "party win house",
-        "win house 2026"
-      ],
-      "entities": [
-        "u.s. house"
-      ],
-      "entityGroups": [
-        [
-          "u.s. house",
-          "众议院",
-          "us house"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2210",
-          "title": "Democratic Party",
-          "yesTokenId": "51569806581881685379602121347917812479416702052876609944151868625590653469005",
-          "noTokenId": "31290686804936654748450657977156255375950477346841781765665138051520530678885"
-        },
-        {
-          "marketId": "2211",
-          "title": "Republican Party",
-          "yesTokenId": "45736915626379070846440265862067724055830478306566523493868335167335171235293",
-          "noTokenId": "88947256101731408790141773268946685203129892759960367302683470668746698621077"
-        }
-      ]
-    },
-    "136": {
-      "title": "Which party will win the U.S. Senate in 2026?",
-      "url": "https://app.opinion.trade/market/136?ref=opinion_hud",
-      "yesTokenId": "98222412116596673452269591271576490983039168849833709734870678264368595569564",
-      "noTokenId": "25628292850634492423691047958507373754184730995257771675026476157408033231381",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "senate",
-        "us senate",
-        "upper chamber",
-        "congress",
-        "midterm",
-        "election",
-        "majority",
-        "control",
-        "legislature",
-        "capitol hill",
-        "senate race",
-        "2026 election",
-        "senate seat",
-        "balance of power",
-        "which party",
-        "party win",
-        "win senate",
-        "senate 2026",
-        "which party win",
-        "party win senate",
-        "win senate 2026"
-      ],
-      "entities": [
-        "u.s. senate"
-      ],
-      "entityGroups": [
-        [
-          "u.s. senate",
-          "us senate",
-          "senate",
-          "美国参议院"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2212",
-          "title": "Republican Party",
-          "yesTokenId": "16012777544132158148267690078103162180870393327429798904433438646817664004969",
-          "noTokenId": "27609975783466638038744065196977731253235132198556565297258343232269770872070"
-        },
-        {
-          "marketId": "2213",
-          "title": "Democratic Party",
-          "yesTokenId": "98222412116596673452269591271576490983039168849833709734870678264368595569564",
-          "noTokenId": "25628292850634492423691047958507373754184730995257771675026476157408033231381"
-        }
-      ]
-    },
-    "137": {
-      "title": "Oscars 2026: Best Actor Winner",
-      "url": "https://app.opinion.trade/market/137?ref=opinion_hud",
-      "yesTokenId": "114650040027013483693595734598537727349902231264608222886366463291549783417715",
-      "noTokenId": "62060470932162137938094572871229520418053461358225896544903545641052158926895",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "oscars",
-        "academy awards",
-        "best actor",
-        "2026",
-        "film",
-        "cinema",
-        "movies",
-        "nominees",
-        "acting",
-        "lead actor",
-        "ceremony",
-        "hollywood",
-        "awards",
-        "entertainment",
-        "celebrity",
-        "oscars 2026",
-        "2026 best",
-        "actor winner",
-        "oscars 2026 best",
-        "2026 best actor",
-        "best actor winner"
-      ],
-      "entities": [
-        "oscars"
-      ],
-      "entityGroups": [
-        [
-          "oscars",
-          "oscar",
-          "奥斯卡",
-          "学院奖"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2219",
-          "title": "Timothée Chalamet",
-          "yesTokenId": "98192237708120745839441407715017101628124467835334730222890809173221339596610",
-          "noTokenId": "11790702062535203819614738970307376169381916941324595932602081872378601164094"
-        },
-        {
-          "marketId": "2220",
-          "title": "Leonardo DiCaprio",
-          "yesTokenId": "35697497734329698665907229165952844948395469536142260347146980196068857732658",
-          "noTokenId": "8002915050770741022268949909177827833650577445648607077896503012584244874158"
-        },
-        {
-          "marketId": "2221",
-          "title": "Ethan Hawke",
-          "yesTokenId": "99097784155649404467260447923285510061223902361812192131159114999638713414161",
-          "noTokenId": "45819901418302663274303112305410232020693775686944661663081636846398146079623"
-        },
-        {
-          "marketId": "2222",
-          "title": "Wagner Moura",
-          "yesTokenId": "114868289875678058122897497255267758161671203929519260363966264256379226283848",
-          "noTokenId": "70965116822108460316280656051167403786754379500462807866706683007729832381778"
-        },
-        {
-          "marketId": "2223",
-          "title": "Michael B. Jordan",
-          "yesTokenId": "114650040027013483693595734598537727349902231264608222886366463291549783417715",
-          "noTokenId": "62060470932162137938094572871229520418053461358225896544903545641052158926895"
-        },
-        {
-          "marketId": "2224",
-          "title": "Daniel Day-Lewis",
-          "yesTokenId": "7937702747981647033913460441031706832701649135803786943530295455455153005092",
-          "noTokenId": "59219127248289400202851958796197853658917542702983412136572002015878314780661"
         }
       ]
     },
@@ -11214,8 +10726,8 @@
     "333": {
       "title": "What price will Ethereum hit in February?",
       "url": "https://app.opinion.trade/market/333?ref=opinion_hud",
-      "yesTokenId": "109773389567649156624507840733963917905483102492501399210597109962927232141202",
-      "noTokenId": "70139134657594364304925481629079161634182191953318517150826686058721428531596",
+      "yesTokenId": "91053830219983591801689390538880529176383045725151736474749465353304321133023",
+      "noTokenId": "79752431608061010603634246001545287795176315335067228861116222755983991031817",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -11289,12 +10801,6 @@
           "noTokenId": "7963296838491373845074735687992066962767130539255542424810540329582485743029"
         },
         {
-          "marketId": "5306",
-          "title": "↓ 2,400",
-          "yesTokenId": "109773389567649156624507840733963917905483102492501399210597109962927232141202",
-          "noTokenId": "70139134657594364304925481629079161634182191953318517150826686058721428531596"
-        },
-        {
           "marketId": "5307",
           "title": "↓ 2,200",
           "yesTokenId": "104865425357071137344797947815087688820206408958140911548119790076988812213323",
@@ -11311,6 +10817,12 @@
           "title": "↓ 1,800",
           "yesTokenId": "90412776755449927236735540662636226692226222636460372319191591845453927898920",
           "noTokenId": "628959955877364756873972764037489085006170849530037370617415706535803967282"
+        },
+        {
+          "marketId": "5306",
+          "title": "↓ 2,400",
+          "yesTokenId": "109773389567649156624507840733963917905483102492501399210597109962927232141202",
+          "noTokenId": "70139134657594364304925481629079161634182191953318517150826686058721428531596"
         }
       ]
     },
@@ -11409,42 +10921,6 @@
           "noTokenId": "33666928790283848831116431538133214676835343059395876264821147581352095601220"
         }
       ]
-    },
-    "5371": {
-      "title": "ETH Up or Down - Hourly (Feb 01, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5371?ref=opinion_hud",
-      "yesTokenId": "97039503276156703150872171722461994573146074560067778051708634060947744494380",
-      "noTokenId": "54196223651594402282205515696708176282626653544364191229294681770778130225967",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "5370": {
-      "title": "BTC Up or Down - Hourly (Feb 01, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5370?ref=opinion_hud",
-      "yesTokenId": "10269536032183556301034168077624203081524202289740516599380320902584375769383",
-      "noTokenId": "81850610421578855194314298766427706834367146006896555609243981180650666025203",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "5369": {
-      "title": "BNB Up or Down - Hourly (Feb 01, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5369?ref=opinion_hud",
-      "yesTokenId": "55505941941963087648461480833991233556027451982641565625474071051403484638137",
-      "noTokenId": "9661482162466244912260791117816813674171673046436423846383352559411883788528",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
     },
     "338": {
       "title": "Which company has the best AI model end of June?",
@@ -11701,18 +11177,6 @@
         }
       ]
     },
-    "5334": {
-      "title": "Bitcoin Up or Down on February 2?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/5334?ref=opinion_hud",
-      "yesTokenId": "44698212753439144781059565707029766797287409506110438169494974835521366995857",
-      "noTokenId": "68206867625292812059471388905932997566569625357797970113697839501217995181784",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "335": {
       "title": "Which company has the best AI model end of March?",
       "url": "https://app.opinion.trade/market/335?ref=opinion_hud",
@@ -11836,6 +11300,42 @@
           "noTokenId": "65760428486922052915663920487304078814542368381632857921800293036079825544313"
         }
       ]
+    },
+    "5401": {
+      "title": "ETH Up or Down - Hourly (Feb 02, 2026 02:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5401?ref=opinion_hud",
+      "yesTokenId": "79039601343373576781820985815523517393714501303031753613617869855143792549456",
+      "noTokenId": "14254097295683274946618326463967215881701803250130613148480645373391273394881",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5400": {
+      "title": "BTC Up or Down - Hourly (Feb 02, 2026 02:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5400?ref=opinion_hud",
+      "yesTokenId": "113781900682128171217217780443639783047157836254514183275264318792514977352130",
+      "noTokenId": "108019065419317763112768853525711809538303491250235555065858445444474924096066",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5399": {
+      "title": "BNB Up or Down - Hourly (Feb 02, 2026 02:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5399?ref=opinion_hud",
+      "yesTokenId": "10621919726096545454220613203901028165329843695077726907098807501422105207676",
+      "noTokenId": "74342312994234959527040286018789149847986377527812647146910305191234152098549",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -11889,7 +11389,6 @@
     "2026": [
       "131",
       "133",
-      "137",
       "3448",
       "3449",
       "3508",
@@ -11898,18 +11397,10 @@
       "79"
     ],
     "2026 best": [
-      "133",
-      "137"
-    ],
-    "2026 best actor": [
-      "137"
+      "133"
     ],
     "2026 best picture": [
       "133"
-    ],
-    "2026 election": [
-      "135",
-      "136"
     ],
     "2026 elections": [
       "130"
@@ -11919,9 +11410,6 @@
     ],
     "2026 fifa world": [
       "79"
-    ],
-    "2026 midterms": [
-      "135"
     ],
     "2026 nba": [
       "103"
@@ -12068,8 +11556,7 @@
       "280"
     ],
     "academy awards": [
-      "133",
-      "137"
+      "133"
     ],
     "accolades": [
       "115"
@@ -12082,12 +11569,6 @@
     ],
     "acquisition 2026": [
       "2398"
-    ],
-    "acting": [
-      "137"
-    ],
-    "actor winner": [
-      "137"
     ],
     "actress": [
       "3158"
@@ -12345,8 +11826,7 @@
       "115"
     ],
     "awards": [
-      "133",
-      "137"
+      "133"
     ],
     "awards ceremony": [
       "279"
@@ -12383,9 +11863,6 @@
     ],
     "backpack fdv above": [
       "95"
-    ],
-    "balance of power": [
-      "136"
     ],
     "ballot": [
       "130",
@@ -12464,12 +11941,6 @@
     "benchmark": [
       "327",
       "338"
-    ],
-    "best actor": [
-      "137"
-    ],
-    "best actor winner": [
-      "137"
     ],
     "best model": [
       "335",
@@ -12709,9 +12180,6 @@
       "3506",
       "3525"
     ],
-    "capitol hill": [
-      "136"
-    ],
     "caracas": [
       "128"
     ],
@@ -12722,7 +12190,6 @@
       "306"
     ],
     "celebrity": [
-      "137",
       "3158"
     ],
     "central bank": [
@@ -12742,7 +12209,6 @@
     ],
     "ceremony": [
       "133",
-      "137",
       "279",
       "280",
       "282",
@@ -12818,7 +12284,6 @@
     ],
     "cinema": [
       "133",
-      "137",
       "275"
     ],
     "civic": [
@@ -12952,13 +12417,6 @@
       "3039",
       "331"
     ],
-    "congress": [
-      "135",
-      "136"
-    ],
-    "congressional election": [
-      "135"
-    ],
     "congressional standoff": [
       "303"
     ],
@@ -12976,9 +12434,6 @@
     ],
     "contraction": [
       "3265"
-    ],
-    "control": [
-      "136"
     ],
     "cook out": [
       "2368"
@@ -13253,12 +12708,6 @@
     "digital gold": [
       "112"
     ],
-    "diplomacy": [
-      "276"
-    ],
-    "diplomatic visit": [
-      "276"
-    ],
     "dollar": [
       "3359"
     ],
@@ -13269,7 +12718,6 @@
       "275"
     ],
     "donald trump": [
-      "276",
       "3055"
     ],
     "dot plot": [
@@ -13382,7 +12830,6 @@
     ],
     "election": [
       "131",
-      "136",
       "301",
       "307"
     ],
@@ -13447,9 +12894,6 @@
     ],
     "english premier league": [
       "80"
-    ],
-    "entertainment": [
-      "137"
     ],
     "epicenter": [
       "2668",
@@ -13743,7 +13187,6 @@
     ],
     "film": [
       "133",
-      "137",
       "275"
     ],
     "finals": [
@@ -13792,9 +13235,6 @@
     ],
     "football tournament": [
       "79"
-    ],
-    "foreign leader": [
-      "276"
     ],
     "formula 1": [
       "312"
@@ -14146,7 +13586,6 @@
     ],
     "hollywood": [
       "133",
-      "137",
       "3158"
     ],
     "honors": [
@@ -14160,24 +13599,6 @@
       "3221",
       "3222",
       "3223"
-    ],
-    "house 2026": [
-      "135"
-    ],
-    "house control": [
-      "135"
-    ],
-    "house majority": [
-      "135"
-    ],
-    "house of representatives": [
-      "135"
-    ],
-    "house race": [
-      "135"
-    ],
-    "house seats": [
-      "135"
     ],
     "how long": [
       "303"
@@ -14373,9 +13794,6 @@
     ],
     "james cameron": [
       "275"
-    ],
-    "january": [
-      "276"
     ],
     "japan": [
       "306"
@@ -14573,9 +13991,6 @@
     "ldp": [
       "306"
     ],
-    "lead actor": [
-      "137"
-    ],
     "leader iran": [
       "242"
     ],
@@ -14613,17 +14028,11 @@
     "legislative": [
       "307"
     ],
-    "legislative branch": [
-      "135"
-    ],
     "legislative election": [
       "307"
     ],
     "legislative election winner": [
       "307"
-    ],
-    "legislature": [
-      "136"
     ],
     "liberal democratic party": [
       "306"
@@ -14663,9 +14072,6 @@
     "long government shutdown": [
       "303"
     ],
-    "lower chamber": [
-      "135"
-    ],
     "lp": [
       "2178"
     ],
@@ -14698,9 +14104,6 @@
       "3366",
       "67"
     ],
-    "majority": [
-      "136"
-    ],
     "many fed": [
       "78"
     ],
@@ -14712,9 +14115,6 @@
     ],
     "many jobs added": [
       "273"
-    ],
-    "mar-a-lago": [
-      "276"
     ],
     "march 2026": [
       "3039",
@@ -14786,12 +14186,6 @@
     ],
     "medical travel": [
       "258"
-    ],
-    "meet january": [
-      "276"
-    ],
-    "meeting": [
-      "276"
     ],
     "megaeth": [
       "1721",
@@ -14892,12 +14286,6 @@
     ],
     "mid-year 2026": [
       "3508"
-    ],
-    "midterm": [
-      "136"
-    ],
-    "midterm elections": [
-      "135"
     ],
     "mike wheeler": [
       "3222"
@@ -15002,8 +14390,7 @@
       "275"
     ],
     "movies": [
-      "133",
-      "137"
+      "133"
     ],
     "msci": [
       "3257"
@@ -15133,9 +14520,6 @@
     "negative growth": [
       "3265"
     ],
-    "negotiation": [
-      "276"
-    ],
     "netflix": [
       "2398",
       "3221",
@@ -15220,7 +14604,6 @@
     ],
     "nominees": [
       "133",
-      "137",
       "282",
       "283",
       "284"
@@ -15301,20 +14684,14 @@
     "oracle": [
       "99"
     ],
-    "oscar": [
-      "137"
-    ],
     "oscars": [
-      "133",
-      "137"
+      "133"
     ],
     "oscars 2026": [
-      "133",
-      "137"
+      "133"
     ],
     "oscars 2026 best": [
-      "133",
-      "137"
+      "133"
     ],
     "ounce": [
       "315"
@@ -15378,16 +14755,6 @@
     ],
     "participation rate": [
       "273"
-    ],
-    "party win": [
-      "135",
-      "136"
-    ],
-    "party win house": [
-      "135"
-    ],
-    "party win senate": [
-      "136"
     ],
     "party winner": [
       "130"
@@ -15490,7 +14857,6 @@
       "3256"
     ],
     "potus": [
-      "276",
       "3062"
     ],
     "powell": [
@@ -15527,7 +14893,6 @@
       "80"
     ],
     "president": [
-      "276",
       "301",
       "3062"
     ],
@@ -16021,18 +15386,6 @@
     "semiconductor": [
       "322"
     ],
-    "senate": [
-      "136"
-    ],
-    "senate 2026": [
-      "136"
-    ],
-    "senate race": [
-      "136"
-    ],
-    "senate seat": [
-      "136"
-    ],
     "seoul": [
       "131"
     ],
@@ -16200,9 +15553,6 @@
     "south korean local elections": [
       "130"
     ],
-    "speaker of the house": [
-      "135"
-    ],
     "specific date": [
       "3449"
     ],
@@ -16269,9 +15619,6 @@
     ],
     "state president": [
       "301"
-    ],
-    "state visit": [
-      "276"
     ],
     "status page": [
       "3357"
@@ -16346,9 +15693,6 @@
       "300",
       "301"
     ],
-    "summit": [
-      "276"
-    ],
     "super bowl": [
       "81"
     ],
@@ -16386,9 +15730,6 @@
     ],
     "takeover": [
       "2398"
-    ],
-    "talks": [
-      "276"
     ],
     "target": [
       "3449",
@@ -16671,7 +16012,6 @@
     "trump": [
       "107",
       "1546",
-      "276",
       "3055",
       "3062"
     ],
@@ -16680,12 +16020,6 @@
     ],
     "trump endorse vance": [
       "3055"
-    ],
-    "trump meet": [
-      "276"
-    ],
-    "trump meet january": [
-      "276"
     ],
     "trump nominate": [
       "107"
@@ -16718,12 +16052,6 @@
     "u.s.": [
       "273"
     ],
-    "u.s. house": [
-      "135"
-    ],
-    "u.s. senate": [
-      "136"
-    ],
     "ucl": [
       "83"
     ],
@@ -16751,9 +16079,6 @@
     "update": [
       "129"
     ],
-    "upper chamber": [
-      "136"
-    ],
     "upside down": [
       "3221",
       "3222",
@@ -16774,14 +16099,8 @@
     "us equities": [
       "327"
     ],
-    "us house": [
-      "135"
-    ],
     "us jobs": [
       "273"
-    ],
-    "us senate": [
-      "136"
     ],
     "us stock market": [
       "327"
@@ -16978,16 +16297,7 @@
       "335",
       "338"
     ],
-    "which party": [
-      "135",
-      "136"
-    ],
-    "which party win": [
-      "135",
-      "136"
-    ],
     "white house": [
-      "276",
       "3062"
     ],
     "who higher": [
@@ -16997,29 +16307,13 @@
       "1721"
     ],
     "who trump": [
-      "107",
-      "276"
-    ],
-    "who trump meet": [
-      "276"
+      "107"
     ],
     "who trump nominate": [
       "107"
     ],
     "will byers": [
       "3221"
-    ],
-    "win house": [
-      "135"
-    ],
-    "win house 2026": [
-      "135"
-    ],
-    "win senate": [
-      "136"
-    ],
-    "win senate 2026": [
-      "136"
     ],
     "winner": [
       "279"
@@ -17131,9 +16425,6 @@
       "3039",
       "331"
     ],
-    "众议院": [
-      "135"
-    ],
     "加密货币漏洞利用": [
       "3360"
     ],
@@ -17163,15 +16454,13 @@
       "274"
     ],
     "奥斯卡": [
-      "133",
-      "137"
+      "133"
     ],
     "委内瑞拉": [
       "128"
     ],
     "学院奖": [
-      "133",
-      "137"
+      "133"
     ],
     "小狐狸": [
       "118"
@@ -17256,7 +16545,6 @@
     "特朗普": [
       "107",
       "1546",
-      "276",
       "3055",
       "3062"
     ],
@@ -17272,9 +16560,6 @@
     "美国中情局": [
       "115",
       "338"
-    ],
-    "美国参议院": [
-      "136"
     ],
     "美国职业篮球": [
       "103",
@@ -17376,23 +16661,14 @@
     "2026": [
       "131",
       "133",
-      "137",
       "78",
       "79"
     ],
     "2026 best": [
-      "133",
-      "137"
-    ],
-    "2026 best actor": [
-      "137"
+      "133"
     ],
     "2026 best picture": [
       "133"
-    ],
-    "2026 election": [
-      "135",
-      "136"
     ],
     "2026 elections": [
       "130"
@@ -17402,9 +16678,6 @@
     ],
     "2026 fifa world": [
       "79"
-    ],
-    "2026 midterms": [
-      "135"
     ],
     "2026 nba": [
       "103"
@@ -17478,20 +16751,13 @@
       "280"
     ],
     "academy awards": [
-      "133",
-      "137"
+      "133"
     ],
     "accolades": [
       "115"
     ],
     "acquired 2027": [
       "337"
-    ],
-    "acting": [
-      "137"
-    ],
-    "actor winner": [
-      "137"
     ],
     "added january": [
       "273"
@@ -17673,8 +16939,7 @@
       "115"
     ],
     "awards": [
-      "133",
-      "137"
+      "133"
     ],
     "awards ceremony": [
       "279"
@@ -17705,9 +16970,6 @@
     ],
     "backpack fdv above": [
       "95"
-    ],
-    "balance of power": [
-      "136"
     ],
     "ballot": [
       "130",
@@ -17765,12 +17027,6 @@
     "benchmark": [
       "327",
       "338"
-    ],
-    "best actor": [
-      "137"
-    ],
-    "best actor winner": [
-      "137"
     ],
     "best model": [
       "335",
@@ -17897,9 +17153,6 @@
       "131",
       "318"
     ],
-    "capitol hill": [
-      "136"
-    ],
     "caracas": [
       "128"
     ],
@@ -17908,9 +17161,6 @@
     ],
     "cdpj": [
       "306"
-    ],
-    "celebrity": [
-      "137"
     ],
     "central bank": [
       "107",
@@ -17922,7 +17172,6 @@
     ],
     "ceremony": [
       "133",
-      "137",
       "279",
       "280",
       "282",
@@ -17968,7 +17217,6 @@
     ],
     "cinema": [
       "133",
-      "137",
       "275"
     ],
     "civic": [
@@ -18073,13 +17321,6 @@
       "274",
       "331"
     ],
-    "congress": [
-      "135",
-      "136"
-    ],
-    "congressional election": [
-      "135"
-    ],
     "congressional standoff": [
       "303"
     ],
@@ -18091,9 +17332,6 @@
     ],
     "continental competition": [
       "83"
-    ],
-    "control": [
-      "136"
     ],
     "council": [
       "130"
@@ -18251,20 +17489,11 @@
     "digital gold": [
       "112"
     ],
-    "diplomacy": [
-      "276"
-    ],
-    "diplomatic visit": [
-      "276"
-    ],
     "domestic gross": [
       "275"
     ],
     "domestic gross january": [
       "275"
-    ],
-    "donald trump": [
-      "276"
     ],
     "dot plot": [
       "319",
@@ -18325,7 +17554,6 @@
     ],
     "election": [
       "131",
-      "136",
       "301",
       "307"
     ],
@@ -18359,9 +17587,6 @@
     ],
     "english premier league": [
       "80"
-    ],
-    "entertainment": [
-      "137"
     ],
     "epl": [
       "80"
@@ -18593,7 +17818,6 @@
     ],
     "film": [
       "133",
-      "137",
       "275"
     ],
     "finals": [
@@ -18627,9 +17851,6 @@
     ],
     "football tournament": [
       "79"
-    ],
-    "foreign leader": [
-      "276"
     ],
     "formula 1": [
       "312"
@@ -18872,8 +18093,7 @@
       "111"
     ],
     "hollywood": [
-      "133",
-      "137"
+      "133"
     ],
     "honors": [
       "115"
@@ -18881,24 +18101,6 @@
     "hoops": [
       "103",
       "115"
-    ],
-    "house 2026": [
-      "135"
-    ],
-    "house control": [
-      "135"
-    ],
-    "house majority": [
-      "135"
-    ],
-    "house of representatives": [
-      "135"
-    ],
-    "house race": [
-      "135"
-    ],
-    "house seats": [
-      "135"
     ],
     "how long": [
       "303"
@@ -19024,9 +18226,6 @@
     ],
     "james cameron": [
       "275"
-    ],
-    "january": [
-      "276"
     ],
     "japan": [
       "306"
@@ -19160,9 +18359,6 @@
     "ldp": [
       "306"
     ],
-    "lead actor": [
-      "137"
-    ],
     "leader iran": [
       "242"
     ],
@@ -19187,17 +18383,11 @@
     "legislative": [
       "307"
     ],
-    "legislative branch": [
-      "135"
-    ],
     "legislative election": [
       "307"
     ],
     "legislative election winner": [
       "307"
-    ],
-    "legislature": [
-      "136"
     ],
     "liberal democratic party": [
       "306"
@@ -19236,9 +18426,6 @@
     "long government shutdown": [
       "303"
     ],
-    "lower chamber": [
-      "135"
-    ],
     "lyricist": [
       "284"
     ],
@@ -19252,9 +18439,6 @@
       "119",
       "67"
     ],
-    "majority": [
-      "136"
-    ],
     "many fed": [
       "78"
     ],
@@ -19266,9 +18450,6 @@
     ],
     "many jobs added": [
       "273"
-    ],
-    "mar-a-lago": [
-      "276"
     ],
     "march 2026": [
       "320"
@@ -19317,12 +18498,6 @@
     ],
     "medical travel": [
       "258"
-    ],
-    "meet january": [
-      "276"
-    ],
-    "meeting": [
-      "276"
     ],
     "megaeth": [
       "67"
@@ -19387,12 +18562,6 @@
     ],
     "microstrategy sells any": [
       "111"
-    ],
-    "midterm": [
-      "136"
-    ],
-    "midterm elections": [
-      "135"
     ],
     "military": [
       "257",
@@ -19462,8 +18631,7 @@
       "275"
     ],
     "movies": [
-      "133",
-      "137"
+      "133"
     ],
     "msft": [
       "329"
@@ -19554,9 +18722,6 @@
     "nba mvp 2026": [
       "115"
     ],
-    "negotiation": [
-      "276"
-    ],
     "new artist": [
       "282"
     ],
@@ -19612,7 +18777,6 @@
     ],
     "nominees": [
       "133",
-      "137",
       "282",
       "283",
       "284"
@@ -19682,20 +18846,14 @@
     "oracle": [
       "99"
     ],
-    "oscar": [
-      "137"
-    ],
     "oscars": [
-      "133",
-      "137"
+      "133"
     ],
     "oscars 2026": [
-      "133",
-      "137"
+      "133"
     ],
     "oscars 2026 best": [
-      "133",
-      "137"
+      "133"
     ],
     "ounce": [
       "315"
@@ -19726,16 +18884,6 @@
     ],
     "participation rate": [
       "273"
-    ],
-    "party win": [
-      "135",
-      "136"
-    ],
-    "party win house": [
-      "135"
-    ],
-    "party win senate": [
-      "136"
     ],
     "party winner": [
       "130"
@@ -19819,9 +18967,6 @@
     "polymarket launch token": [
       "99"
     ],
-    "potus": [
-      "276"
-    ],
     "powell": [
       "300",
       "319",
@@ -19856,7 +19001,6 @@
       "80"
     ],
     "president": [
-      "276",
       "301"
     ],
     "president vietnam": [
@@ -20130,18 +19274,6 @@
     "semiconductor": [
       "322"
     ],
-    "senate": [
-      "136"
-    ],
-    "senate 2026": [
-      "136"
-    ],
-    "senate race": [
-      "136"
-    ],
-    "senate seat": [
-      "136"
-    ],
     "seoul": [
       "131"
     ],
@@ -20267,9 +19399,6 @@
     "south korean local elections": [
       "130"
     ],
-    "speaker of the house": [
-      "135"
-    ],
     "spending bill": [
       "303"
     ],
@@ -20316,9 +19445,6 @@
     "state president": [
       "301"
     ],
-    "state visit": [
-      "276"
-    ],
     "stepping down": [
       "300"
     ],
@@ -20360,9 +19486,6 @@
       "300",
       "301"
     ],
-    "summit": [
-      "276"
-    ],
     "super bowl": [
       "81"
     ],
@@ -20384,9 +19507,6 @@
     ],
     "suspension of services": [
       "303"
-    ],
-    "talks": [
-      "276"
     ],
     "tech": [
       "322",
@@ -20550,14 +19670,7 @@
       "316"
     ],
     "trump": [
-      "107",
-      "276"
-    ],
-    "trump meet": [
-      "276"
-    ],
-    "trump meet january": [
-      "276"
+      "107"
     ],
     "trump nominate": [
       "107"
@@ -20576,12 +19689,6 @@
     ],
     "u.s.": [
       "273"
-    ],
-    "u.s. house": [
-      "135"
-    ],
-    "u.s. senate": [
-      "136"
     ],
     "ucl": [
       "83"
@@ -20607,9 +19714,6 @@
     "update": [
       "129"
     ],
-    "upper chamber": [
-      "136"
-    ],
     "us": [
       "257",
       "271",
@@ -20624,14 +19728,8 @@
     "us equities": [
       "327"
     ],
-    "us house": [
-      "135"
-    ],
     "us jobs": [
       "273"
-    ],
-    "us senate": [
-      "136"
     ],
     "us stock market": [
       "327"
@@ -20763,38 +19861,11 @@
       "335",
       "338"
     ],
-    "which party": [
-      "135",
-      "136"
-    ],
-    "which party win": [
-      "135",
-      "136"
-    ],
-    "white house": [
-      "276"
-    ],
     "who trump": [
-      "107",
-      "276"
-    ],
-    "who trump meet": [
-      "276"
+      "107"
     ],
     "who trump nominate": [
       "107"
-    ],
-    "win house": [
-      "135"
-    ],
-    "win house 2026": [
-      "135"
-    ],
-    "win senate": [
-      "136"
-    ],
-    "win senate 2026": [
-      "136"
     ],
     "winner": [
       "279"
@@ -20884,9 +19955,6 @@
       "271",
       "331"
     ],
-    "众议院": [
-      "135"
-    ],
     "哈梅内伊": [
       "242",
       "258"
@@ -20901,15 +19969,13 @@
       "274"
     ],
     "奥斯卡": [
-      "133",
-      "137"
+      "133"
     ],
     "委内瑞拉": [
       "128"
     ],
     "学院奖": [
-      "133",
-      "137"
+      "133"
     ],
     "小狐狸": [
       "118"
@@ -20973,8 +20039,7 @@
       "323"
     ],
     "特朗普": [
-      "107",
-      "276"
+      "107"
     ],
     "立法选举": [
       "307"
@@ -20985,9 +20050,6 @@
     "美国中情局": [
       "115",
       "338"
-    ],
-    "美国参议院": [
-      "136"
     ],
     "美国职业篮球": [
       "103",
