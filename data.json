@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-02 11:15:53 UTC+8",
+    "generatedAt": "2026-02-02 16:59:16 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 337,
-      "markets": 144,
-      "keywords": 1460,
+      "kept": 323,
+      "markets": 140,
+      "keywords": 1408,
       "events": {
-        "events": 60
+        "events": 56
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 663,
-        "cutoff_zero_kept": 26,
+        "cutoff_expired": 677,
+        "cutoff_zero_kept": 21,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
@@ -28,12 +28,12 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 56,
-        "regenerated_empty_entitygroups": 4,
-        "calls": 4,
-        "retries": 4,
+        "reused": 53,
+        "regenerated_empty_entitygroups": 3,
+        "calls": 3,
+        "retries": 3,
         "fallback": 0,
-        "empty": 4,
+        "empty": 3,
         "non_empty": 0,
         "errors": 0
       }
@@ -1797,154 +1797,6 @@
       "sig": "8f165d2a",
       "sigFull": "8f165d2a",
       "sigCore": "3c727a62",
-      "reused": false
-    },
-    "127": {
-      "title": "Russia x Ukraine ceasefire by ...?",
-      "marketIds": [
-        "127"
-      ],
-      "bestMarketId": "127",
-      "bestLabels": null,
-      "keywords": [
-        "russia ukraine",
-        "ukraine ceasefire",
-        "russia ukraine ceasefire"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "41ffe1be",
-      "sigFull": "41ffe1be",
-      "sigCore": "ea9ab303",
-      "reused": false
-    },
-    "128": {
-      "title": "Will the U.S. invade Venezuela by...?",
-      "marketIds": [
-        "128"
-      ],
-      "bestMarketId": "128",
-      "bestLabels": null,
-      "keywords": [
-        "invasion",
-        "military intervention",
-        "regime change",
-        "sanctions",
-        "conflict",
-        "war",
-        "caracas",
-        "washington",
-        "operation",
-        "troops",
-        "deployment",
-        "intervention",
-        "maduro",
-        "nicolas maduro",
-        "usmc",
-        "invade venezuela"
-      ],
-      "entities": [
-        "venezuela"
-      ],
-      "entityGroups": [
-        [
-          "venezuela",
-          "委内瑞拉"
-        ]
-      ],
-      "sig": "fd6a8635",
-      "sigFull": "fd6a8635",
-      "sigCore": "ac5704a1",
-      "reused": false
-    },
-    "129": {
-      "title": "Grok 5 released by...?",
-      "marketIds": [
-        "129"
-      ],
-      "bestMarketId": "129",
-      "bestLabels": null,
-      "keywords": [
-        "grok 5",
-        "grok",
-        "xai",
-        "elon musk",
-        "ai model",
-        "llm",
-        "large language model",
-        "release",
-        "launch",
-        "artificial intelligence",
-        "chatbot",
-        "update",
-        "version 5",
-        "grok-5",
-        "xai model",
-        "grok released"
-      ],
-      "entities": [
-        "grok 5"
-      ],
-      "entityGroups": [
-        [
-          "grok 5",
-          "grok",
-          "格罗克 5",
-          "格罗克"
-        ]
-      ],
-      "sig": "b92ef6bf",
-      "sigFull": "b92ef6bf",
-      "sigCore": "0148eaab",
-      "reused": false
-    },
-    "130": {
-      "title": "2026 South Korean Local Elections: Party Winner",
-      "marketIds": [
-        "130"
-      ],
-      "bestMarketId": "130",
-      "bestLabels": null,
-      "keywords": [
-        "south korea",
-        "korea",
-        "local elections",
-        "2026 elections",
-        "municipal elections",
-        "regional elections",
-        "korean politics",
-        "democratic party",
-        "people power party",
-        "rebuilding korea party",
-        "progressive party",
-        "vote",
-        "ballot",
-        "council",
-        "mayor",
-        "2026 south",
-        "south korean",
-        "korean local",
-        "elections party",
-        "party winner",
-        "2026 south korean",
-        "south korean local",
-        "korean local elections",
-        "local elections party",
-        "elections party winner"
-      ],
-      "entities": [
-        "south korean local elections"
-      ],
-      "entityGroups": [
-        [
-          "south korean local elections",
-          "korean local elections",
-          "韩国地方选举"
-        ]
-      ],
-      "sig": "51e6b760",
-      "sigFull": "51e6b760",
-      "sigCore": "ab7cdd05",
       "reused": false
     },
     "318": {
@@ -7200,8 +7052,8 @@
     "78": {
       "title": "How many Fed rate cuts in 2026?",
       "url": "https://app.opinion.trade/market/78?ref=opinion_hud",
-      "yesTokenId": "59811075968124785627599025502257118121320441552396197432682635891395620417003",
-      "noTokenId": "101466719676050817231256324050444209217473634787009528298001058332064069999345",
+      "yesTokenId": "70475724476163126377829032010120273492646534860807243445006711389850099814274",
+      "noTokenId": "78795034840034647908341213482580024793283071165863159629594759765596341263981",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7305,8 +7157,8 @@
     "79": {
       "title": "2026 FIFA World Cup Winner",
       "url": "https://app.opinion.trade/market/79?ref=opinion_hud",
-      "yesTokenId": "109837041531451287161298527022447290894418066118946287563639981764887484653488",
-      "noTokenId": "53890611075397845232795119166448103024225386474242667766205597834982635707811",
+      "yesTokenId": "94776209237310350601704075622457341463176819695003402062280099887697695648762",
+      "noTokenId": "16465818463788735164718163894799714585391012832603496327574464924966980939010",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8326,8 +8178,8 @@
     "121": {
       "title": "ECB Rates Decision (DFR): February 2026",
       "url": "https://app.opinion.trade/market/121?ref=opinion_hud",
-      "yesTokenId": "65406351271073949172479467962661285882576696302780886847245192816055719821483",
-      "noTokenId": "74316178419621348556215594916265543714385608986823416684461551056613477528658",
+      "yesTokenId": "61275146409941729809364022398437282008466256283499794873715985428103098651306",
+      "noTokenId": "66603184456350432648902198490304665527394464569777077819187803617348919075169",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -8394,228 +8246,6 @@
           "title": "Increase",
           "yesTokenId": "65406351271073949172479467962661285882576696302780886847245192816055719821483",
           "noTokenId": "74316178419621348556215594916265543714385608986823416684461551056613477528658"
-        }
-      ]
-    },
-    "127": {
-      "title": "Russia x Ukraine ceasefire by ...?",
-      "url": "https://app.opinion.trade/market/127?ref=opinion_hud",
-      "yesTokenId": "99083834088473598560188529954599857129243503683779350264469385059880814485315",
-      "noTokenId": "41081322274213817220348528194603313357188691528323585772955003646539623579183",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "russia ukraine",
-        "ukraine ceasefire",
-        "russia ukraine ceasefire"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2170",
-          "title": "January 31, 2026",
-          "yesTokenId": "78381026976476115833055080478490551839895275231264784619886223581624346309363",
-          "noTokenId": "99825187359825171260211051442758311720257284812022777962499414901509159818077"
-        },
-        {
-          "marketId": "2171",
-          "title": "March 31, 2026",
-          "yesTokenId": "35215363908564904586912111088829797268873572870429585060303776832501151491604",
-          "noTokenId": "91093603825622145449284936315298416924224843270649058400053653740195616700508"
-        },
-        {
-          "marketId": "2172",
-          "title": "December 31, 2026",
-          "yesTokenId": "99083834088473598560188529954599857129243503683779350264469385059880814485315",
-          "noTokenId": "41081322274213817220348528194603313357188691528323585772955003646539623579183"
-        }
-      ]
-    },
-    "128": {
-      "title": "Will the U.S. invade Venezuela by...?",
-      "url": "https://app.opinion.trade/market/128?ref=opinion_hud",
-      "yesTokenId": "99404769904842467235905033522819579656684871241156527504708249210636373628857",
-      "noTokenId": "102387845162148657591753029728616395972863875512319618222170093881690174434138",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "invasion",
-        "military intervention",
-        "regime change",
-        "sanctions",
-        "conflict",
-        "war",
-        "caracas",
-        "washington",
-        "operation",
-        "troops",
-        "deployment",
-        "intervention",
-        "maduro",
-        "nicolas maduro",
-        "usmc",
-        "invade venezuela"
-      ],
-      "entities": [
-        "venezuela"
-      ],
-      "entityGroups": [
-        [
-          "venezuela",
-          "委内瑞拉"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2174",
-          "title": "March 31, 2026",
-          "yesTokenId": "99404769904842467235905033522819579656684871241156527504708249210636373628857",
-          "noTokenId": "102387845162148657591753029728616395972863875512319618222170093881690174434138"
-        },
-        {
-          "marketId": "2173",
-          "title": "December 31, 2025",
-          "yesTokenId": "107540507812415197738456753772651880581290548232292968354548090095232464523628",
-          "noTokenId": "100394971363333502691712452014923356845398741396976656573470672111024564596413"
-        }
-      ]
-    },
-    "129": {
-      "title": "Grok 5 released by...?",
-      "url": "https://app.opinion.trade/market/129?ref=opinion_hud",
-      "yesTokenId": "97618704669060253271671833053318705991502950033675883689169065441535063843617",
-      "noTokenId": "106110130273827439072769063295502872142742611277608369658691477835317696963246",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "grok 5",
-        "grok",
-        "xai",
-        "elon musk",
-        "ai model",
-        "llm",
-        "large language model",
-        "release",
-        "launch",
-        "artificial intelligence",
-        "chatbot",
-        "update",
-        "version 5",
-        "grok-5",
-        "xai model",
-        "grok released"
-      ],
-      "entities": [
-        "grok 5"
-      ],
-      "entityGroups": [
-        [
-          "grok 5",
-          "grok",
-          "格罗克 5",
-          "格罗克"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2176",
-          "title": "March 31, 2026",
-          "yesTokenId": "97618704669060253271671833053318705991502950033675883689169065441535063843617",
-          "noTokenId": "106110130273827439072769063295502872142742611277608369658691477835317696963246"
-        },
-        {
-          "marketId": "2175",
-          "title": "December 31, 2025",
-          "yesTokenId": "110328919157941971861934941596736432131635495613278758477121927926667508454145",
-          "noTokenId": "82367769093888111397771953370808062347328029953345151473793607677557705442033"
-        }
-      ]
-    },
-    "130": {
-      "title": "2026 South Korean Local Elections: Party Winner",
-      "url": "https://app.opinion.trade/market/130?ref=opinion_hud",
-      "yesTokenId": "22265968143792536982256899440101447824813440695533822755697215059790720648012",
-      "noTokenId": "69256356136883109399698308941877506407606773953630000569511194041288221113349",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "south korea",
-        "korea",
-        "local elections",
-        "2026 elections",
-        "municipal elections",
-        "regional elections",
-        "korean politics",
-        "democratic party",
-        "people power party",
-        "rebuilding korea party",
-        "progressive party",
-        "vote",
-        "ballot",
-        "council",
-        "mayor",
-        "2026 south",
-        "south korean",
-        "korean local",
-        "elections party",
-        "party winner",
-        "2026 south korean",
-        "south korean local",
-        "korean local elections",
-        "local elections party",
-        "elections party winner"
-      ],
-      "entities": [
-        "south korean local elections"
-      ],
-      "entityGroups": [
-        [
-          "south korean local elections",
-          "korean local elections",
-          "韩国地方选举"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "2179",
-          "title": "Democratic Party of Korea (DP)",
-          "yesTokenId": "83312605486775989875124026479193668639209368141481290332058438096914693173579",
-          "noTokenId": "23139673516083819266913387047840858519878682687113836655659674131364672873851"
-        },
-        {
-          "marketId": "2180",
-          "title": "People Power Party (PPP)",
-          "yesTokenId": "45142410240243433455803783287318856274961209196441287740719190836967661433367",
-          "noTokenId": "91951061969733542711838736067134600345639402312502528537990641149476375761243"
-        },
-        {
-          "marketId": "2181",
-          "title": "Rebuilding Korea Party (RKP)",
-          "yesTokenId": "22265968143792536982256899440101447824813440695533822755697215059790720648012",
-          "noTokenId": "69256356136883109399698308941877506407606773953630000569511194041288221113349"
-        },
-        {
-          "marketId": "2182",
-          "title": "Progressive Party (PP)",
-          "yesTokenId": "63497789008044882416418514937096208556717358172821110315605623452926047613619",
-          "noTokenId": "102251353621468857484202427734063368873594679891589852057672372468712406519511"
         }
       ]
     },
@@ -10563,12 +10193,6 @@
           "noTokenId": "25104904469982740904257941673954335440584744537982760898636759979906431388253"
         },
         {
-          "marketId": "5314",
-          "title": "↓ 100",
-          "yesTokenId": "77974498052356369042409185906188326412327149781539478747515448017293917876546",
-          "noTokenId": "73912871879426663808912392758543106010959122303245509405844899534116224638311"
-        },
-        {
           "marketId": "5315",
           "title": "↓ 90",
           "yesTokenId": "37415270737912271169529027328336230385751614533032992580576377686284636662809",
@@ -10585,6 +10209,12 @@
           "title": "↓70",
           "yesTokenId": "6386753661625725201886032351017667408718433856589926652113583909920969929695",
           "noTokenId": "33666928790283848831116431538133214676835343059395876264821147581352095601220"
+        },
+        {
+          "marketId": "5314",
+          "title": "↓ 100",
+          "yesTokenId": "77974498052356369042409185906188326412327149781539478747515448017293917876546",
+          "noTokenId": "73912871879426663808912392758543106010959122303245509405844899534116224638311"
         }
       ]
     },
@@ -10979,11 +10609,11 @@
       },
       "type": "binary"
     },
-    "5405": {
-      "title": "BNB Up or Down - Hourly (Feb 02, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5405?ref=opinion_hud",
-      "yesTokenId": "93469632965913222439705356582432828970672706202847899418803734467267035881867",
-      "noTokenId": "30605077886609790634502575075535342361641105741380132632044483718210606085873",
+    "5426": {
+      "title": "ETH Up or Down - Hourly (Feb 02, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5426?ref=opinion_hud",
+      "yesTokenId": "58372584586790006688866717797946246625915633562146185874829505380917839830450",
+      "noTokenId": "42893269389461976837302626671500374860657246840354875932593684998012913215807",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -10991,11 +10621,11 @@
       },
       "type": "binary"
     },
-    "5407": {
-      "title": "ETH Up or Down - Hourly (Feb 02, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5407?ref=opinion_hud",
-      "yesTokenId": "28679538878352507996176823221332717756143129681743612694618346990488109193259",
-      "noTokenId": "18569616343838753392172540942049447777747174877801081578823318541577679391026",
+    "5425": {
+      "title": "BTC Up or Down - Hourly (Feb 02, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5425?ref=opinion_hud",
+      "yesTokenId": "71258096165502490154855098323084003359995572053176600020343883134645776026647",
+      "noTokenId": "94281130033724645214561423103278250613914270261584109653766319374701517970488",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -11003,11 +10633,11 @@
       },
       "type": "binary"
     },
-    "5406": {
-      "title": "BTC Up or Down - Hourly (Feb 02, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5406?ref=opinion_hud",
-      "yesTokenId": "17569209238040868210403331333396064589444801019493506512438014176515010321001",
-      "noTokenId": "92897040944512057330688401546044963392091627410804916387159807615449005349226",
+    "5424": {
+      "title": "BNB Up or Down - Hourly (Feb 02, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5424?ref=opinion_hud",
+      "yesTokenId": "107212416365082504263781838868783099414158906223430669807481471652536383385029",
+      "noTokenId": "74628941857604076910355068179941432803341658790083187295101656190057380750733",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -11072,9 +10702,6 @@
       "78",
       "79"
     ],
-    "2026 elections": [
-      "130"
-    ],
     "2026 fifa": [
       "79"
     ],
@@ -11099,12 +10726,6 @@
       "312",
       "81",
       "83"
-    ],
-    "2026 south": [
-      "130"
-    ],
-    "2026 south korean": [
-      "130"
     ],
     "2026-06-30": [
       "3508"
@@ -11273,7 +10894,6 @@
       "338"
     ],
     "ai model": [
-      "129",
       "89"
     ],
     "air strike": [
@@ -11431,7 +11051,6 @@
       "2670"
     ],
     "artificial intelligence": [
-      "129",
       "338",
       "89"
     ],
@@ -11512,9 +11131,6 @@
     ],
     "backpack fdv above": [
       "95"
-    ],
-    "ballot": [
-      "130"
     ],
     "bank japan": [
       "313"
@@ -11815,9 +11431,6 @@
       "3506",
       "3525"
     ],
-    "caracas": [
-      "128"
-    ],
     "cartel": [
       "274"
     ],
@@ -11888,7 +11501,6 @@
       "325"
     ],
     "chatbot": [
-      "129",
       "338"
     ],
     "china": [
@@ -12036,7 +11648,6 @@
       "284"
     ],
     "conflict": [
-      "128",
       "257",
       "271",
       "274",
@@ -12066,9 +11677,6 @@
     ],
     "cook out apple": [
       "2368"
-    ],
-    "council": [
-      "130"
     ],
     "coup": [
       "330"
@@ -12275,9 +11883,6 @@
     "delisting": [
       "3257"
     ],
-    "democratic party": [
-      "130"
-    ],
     "demodogs": [
       "3224"
     ],
@@ -12291,9 +11896,6 @@
     ],
     "depeg 1q2026": [
       "3359"
-    ],
-    "deployment": [
-      "128"
     ],
     "deposit facility rate": [
       "121",
@@ -12458,12 +12060,6 @@
     "election winner": [
       "307"
     ],
-    "elections party": [
-      "130"
-    ],
-    "elections party winner": [
-      "130"
-    ],
     "electric vehicle": [
       "323"
     ],
@@ -12472,9 +12068,6 @@
     ],
     "elite football": [
       "83"
-    ],
-    "elon musk": [
-      "129"
     ],
     "employment": [
       "273"
@@ -13086,18 +12679,6 @@
     "gridiron": [
       "81"
     ],
-    "grok": [
-      "129"
-    ],
-    "grok 5": [
-      "129"
-    ],
-    "grok released": [
-      "129"
-    ],
-    "grok-5": [
-      "129"
-    ],
     "gross january": [
       "275"
     ],
@@ -13317,14 +12898,7 @@
     "international football": [
       "79"
     ],
-    "intervention": [
-      "128"
-    ],
-    "invade venezuela": [
-      "128"
-    ],
     "invasion": [
-      "128",
       "274"
     ],
     "investing": [
@@ -13514,18 +13088,6 @@
     "khamenei out supreme": [
       "242"
     ],
-    "korea": [
-      "130"
-    ],
-    "korean local": [
-      "130"
-    ],
-    "korean local elections": [
-      "130"
-    ],
-    "korean politics": [
-      "130"
-    ],
     "kraken": [
       "3362"
     ],
@@ -13555,7 +13117,6 @@
       "273"
     ],
     "large language model": [
-      "129",
       "338",
       "89"
     ],
@@ -13569,7 +13130,6 @@
       "103"
     ],
     "launch": [
-      "129",
       "317",
       "318",
       "89",
@@ -13654,15 +13214,8 @@
       "98"
     ],
     "llm": [
-      "129",
       "338",
       "89"
-    ],
-    "local elections": [
-      "130"
-    ],
-    "local elections party": [
-      "130"
     ],
     "lombardi trophy": [
       "81"
@@ -13684,9 +13237,6 @@
     ],
     "mac": [
       "324"
-    ],
-    "maduro": [
-      "128"
     ],
     "maga": [
       "3055"
@@ -13774,9 +13324,6 @@
     ],
     "max": [
       "2398"
-    ],
-    "mayor": [
-      "130"
     ],
     "medical travel": [
       "258"
@@ -13896,7 +13443,6 @@
       "274"
     ],
     "military intervention": [
-      "128",
       "274"
     ],
     "mining algorithm": [
@@ -14013,9 +13559,6 @@
     ],
     "mundial": [
       "79"
-    ],
-    "municipal elections": [
-      "130"
     ],
     "music": [
       "279",
@@ -14155,9 +13698,6 @@
     "nfp": [
       "273"
     ],
-    "nicolas maduro": [
-      "128"
-    ],
     "nominate fed": [
       "107"
     ],
@@ -14243,9 +13783,6 @@
     "opening weekend": [
       "275"
     ],
-    "operation": [
-      "128"
-    ],
     "options": [
       "323",
       "326"
@@ -14316,9 +13853,6 @@
     "participation rate": [
       "273"
     ],
-    "party winner": [
-      "130"
-    ],
     "pce": [
       "319",
       "61"
@@ -14329,9 +13863,6 @@
     "pentagon": [
       "257",
       "271"
-    ],
-    "people power party": [
-      "130"
     ],
     "people's party": [
       "307"
@@ -14522,9 +14053,6 @@
     "pro basketball": [
       "103"
     ],
-    "progressive party": [
-      "130"
-    ],
     "project": [
       "98"
     ],
@@ -14659,9 +14187,6 @@
     "rebalancing": [
       "3257"
     ],
-    "rebuilding korea party": [
-      "130"
-    ],
     "recession": [
       "3265"
     ],
@@ -14700,14 +14225,10 @@
       "330"
     ],
     "regime change": [
-      "128",
       "242"
     ],
     "regime fall": [
       "330"
-    ],
-    "regional elections": [
-      "130"
     ],
     "regular season": [
       "115"
@@ -14719,7 +14240,6 @@
       "3360"
     ],
     "release": [
-      "129",
       "2178"
     ],
     "release album": [
@@ -14850,12 +14370,6 @@
     "running mate": [
       "3055"
     ],
-    "russia ukraine": [
-      "127"
-    ],
-    "russia ukraine ceasefire": [
-      "127"
-    ],
     "s&p 500": [
       "327"
     ],
@@ -14870,9 +14384,6 @@
     ],
     "sanae takaichi": [
       "306"
-    ],
-    "sanctions": [
-      "128"
     ],
     "satoshi": [
       "112",
@@ -15079,18 +14590,6 @@
     ],
     "soty": [
       "280"
-    ],
-    "south korea": [
-      "130"
-    ],
-    "south korean": [
-      "130"
-    ],
-    "south korean local": [
-      "130"
-    ],
-    "south korean local elections": [
-      "130"
     ],
     "specific date": [
       "3449"
@@ -15526,9 +15025,6 @@
     "tribulation": [
       "2670"
     ],
-    "troops": [
-      "128"
-    ],
     "trophy": [
       "115",
       "279",
@@ -15597,9 +15093,6 @@
     "uefa champions league": [
       "83"
     ],
-    "ukraine ceasefire": [
-      "127"
-    ],
     "underclassmen": [
       "3072"
     ],
@@ -15608,9 +15101,6 @@
     ],
     "united states": [
       "274"
-    ],
-    "update": [
-      "129"
     ],
     "upside down": [
       "3221",
@@ -15663,9 +15153,6 @@
     "usgs": [
       "2668"
     ],
-    "usmc": [
-      "128"
-    ],
     "v.o.s. selections": [
       "1546"
     ],
@@ -15697,14 +15184,8 @@
     "vecna": [
       "3223"
     ],
-    "venezuela": [
-      "128"
-    ],
     "venture": [
       "3525"
-    ],
-    "version 5": [
-      "129"
     ],
     "vice president": [
       "3062"
@@ -15725,7 +15206,6 @@
       "3367"
     ],
     "vote": [
-      "130",
       "301",
       "307"
     ],
@@ -15749,7 +15229,6 @@
       "3365"
     ],
     "war": [
-      "128",
       "257",
       "271",
       "274",
@@ -15764,9 +15243,6 @@
     ],
     "warner bros.": [
       "2398"
-    ],
-    "washington": [
-      "128"
     ],
     "wbd": [
       "2398"
@@ -15876,11 +15352,7 @@
       "316"
     ],
     "xai": [
-      "129",
       "338"
-    ],
-    "xai model": [
-      "129"
     ],
     "xau": [
       "315"
@@ -15985,9 +15457,6 @@
     "墨西哥": [
       "274"
     ],
-    "委内瑞拉": [
-      "128"
-    ],
     "小狐狸": [
       "118"
     ],
@@ -16025,12 +15494,6 @@
     ],
     "标普500": [
       "327"
-    ],
-    "格罗克": [
-      "129"
-    ],
-    "格罗克 5": [
-      "129"
     ],
     "格莱美": [
       "279",
@@ -16158,9 +15621,6 @@
     "霍莉·惠勒": [
       "3222"
     ],
-    "韩国地方选举": [
-      "130"
-    ],
     "鲍威尔": [
       "300"
     ]
@@ -16185,9 +15645,6 @@
       "78",
       "79"
     ],
-    "2026 elections": [
-      "130"
-    ],
     "2026 fifa": [
       "79"
     ],
@@ -16206,12 +15663,6 @@
       "312",
       "81",
       "83"
-    ],
-    "2026 south": [
-      "130"
-    ],
-    "2026 south korean": [
-      "130"
     ],
     "500 spx": [
       "327"
@@ -16297,7 +15748,6 @@
       "338"
     ],
     "ai model": [
-      "129",
       "89"
     ],
     "airdrop": [
@@ -16393,7 +15843,6 @@
       "313"
     ],
     "artificial intelligence": [
-      "129",
       "338",
       "89"
     ],
@@ -16464,9 +15913,6 @@
     ],
     "backpack fdv above": [
       "95"
-    ],
-    "ballot": [
-      "130"
     ],
     "bank japan": [
       "313"
@@ -16633,9 +16079,6 @@
     "capital": [
       "318"
     ],
-    "caracas": [
-      "128"
-    ],
     "cartel": [
       "274"
     ],
@@ -16684,7 +16127,6 @@
       "325"
     ],
     "chatbot": [
-      "129",
       "338"
     ],
     "chip": [
@@ -16784,7 +16226,6 @@
       "284"
     ],
     "conflict": [
-      "128",
       "257",
       "271",
       "274",
@@ -16801,9 +16242,6 @@
     ],
     "continental competition": [
       "83"
-    ],
-    "council": [
-      "130"
     ],
     "coup": [
       "330"
@@ -16915,15 +16353,9 @@
     "defi wallet": [
       "118"
     ],
-    "democratic party": [
-      "130"
-    ],
     "departure": [
       "258",
       "300"
-    ],
-    "deployment": [
-      "128"
     ],
     "deposit facility rate": [
       "121",
@@ -17025,20 +16457,11 @@
     "election winner": [
       "307"
     ],
-    "elections party": [
-      "130"
-    ],
-    "elections party winner": [
-      "130"
-    ],
     "electric vehicle": [
       "323"
     ],
     "elite football": [
       "83"
-    ],
-    "elon musk": [
-      "129"
     ],
     "employment": [
       "273"
@@ -17499,18 +16922,6 @@
     "gridiron": [
       "81"
     ],
-    "grok": [
-      "129"
-    ],
-    "grok 5": [
-      "129"
-    ],
-    "grok released": [
-      "129"
-    ],
-    "grok-5": [
-      "129"
-    ],
     "gross january": [
       "275"
     ],
@@ -17612,14 +17023,7 @@
     "international football": [
       "79"
     ],
-    "intervention": [
-      "128"
-    ],
-    "invade venezuela": [
-      "128"
-    ],
     "invasion": [
-      "128",
       "274"
     ],
     "investing": [
@@ -17747,18 +17151,6 @@
     "khamenei out supreme": [
       "242"
     ],
-    "korea": [
-      "130"
-    ],
-    "korean local": [
-      "130"
-    ],
-    "korean local elections": [
-      "130"
-    ],
-    "korean politics": [
-      "130"
-    ],
     "l2": [
       "119",
       "244",
@@ -17768,7 +17160,6 @@
       "273"
     ],
     "large language model": [
-      "129",
       "338",
       "89"
     ],
@@ -17782,7 +17173,6 @@
       "103"
     ],
     "launch": [
-      "129",
       "317",
       "318",
       "89",
@@ -17845,15 +17235,8 @@
       "98"
     ],
     "llm": [
-      "129",
       "338",
       "89"
-    ],
-    "local elections": [
-      "130"
-    ],
-    "local elections party": [
-      "130"
     ],
     "lombardi trophy": [
       "81"
@@ -17869,9 +17252,6 @@
     ],
     "mac": [
       "324"
-    ],
-    "maduro": [
-      "128"
     ],
     "mainnet": [
       "119",
@@ -17923,9 +17303,6 @@
     ],
     "maurice podoloff trophy": [
       "115"
-    ],
-    "mayor": [
-      "130"
     ],
     "medical travel": [
       "258"
@@ -18000,7 +17377,6 @@
       "274"
     ],
     "military intervention": [
-      "128",
       "274"
     ],
     "minister japan": [
@@ -18075,9 +17451,6 @@
     ],
     "mundial": [
       "79"
-    ],
-    "municipal elections": [
-      "130"
     ],
     "music": [
       "279",
@@ -18165,9 +17538,6 @@
     "nfp": [
       "273"
     ],
-    "nicolas maduro": [
-      "128"
-    ],
     "nominate fed": [
       "107"
     ],
@@ -18242,9 +17612,6 @@
     "opening weekend": [
       "275"
     ],
-    "operation": [
-      "128"
-    ],
     "options": [
       "323",
       "326"
@@ -18282,9 +17649,6 @@
     "participation rate": [
       "273"
     ],
-    "party winner": [
-      "130"
-    ],
     "pce": [
       "319",
       "61"
@@ -18292,9 +17656,6 @@
     "pentagon": [
       "257",
       "271"
-    ],
-    "people power party": [
-      "130"
     ],
     "people's party": [
       "307"
@@ -18449,9 +17810,6 @@
     "pro basketball": [
       "103"
     ],
-    "progressive party": [
-      "130"
-    ],
     "project": [
       "98"
     ],
@@ -18532,9 +17890,6 @@
       "121",
       "320"
     ],
-    "rebuilding korea party": [
-      "130"
-    ],
     "record of the year": [
       "282",
       "283"
@@ -18560,20 +17915,13 @@
       "330"
     ],
     "regime change": [
-      "128",
       "242"
     ],
     "regime fall": [
       "330"
     ],
-    "regional elections": [
-      "130"
-    ],
     "regular season": [
       "115"
-    ],
-    "release": [
-      "129"
     ],
     "release date": [
       "89"
@@ -18618,12 +17966,6 @@
     "round": [
       "318"
     ],
-    "russia ukraine": [
-      "127"
-    ],
-    "russia ukraine ceasefire": [
-      "127"
-    ],
     "s&p 500": [
       "327"
     ],
@@ -18638,9 +17980,6 @@
     ],
     "sanae takaichi": [
       "306"
-    ],
-    "sanctions": [
-      "128"
     ],
     "satoshi": [
       "112"
@@ -18762,18 +18101,6 @@
     ],
     "soty": [
       "280"
-    ],
-    "south korea": [
-      "130"
-    ],
-    "south korean": [
-      "130"
-    ],
-    "south korean local": [
-      "130"
-    ],
-    "south korean local elections": [
-      "130"
     ],
     "spending bill": [
       "303"
@@ -19023,9 +18350,6 @@
       "107",
       "111"
     ],
-    "troops": [
-      "128"
-    ],
     "trophy": [
       "115",
       "279",
@@ -19072,17 +18396,11 @@
     "uefa champions league": [
       "83"
     ],
-    "ukraine ceasefire": [
-      "127"
-    ],
     "unemployment": [
       "273"
     ],
     "united states": [
       "274"
-    ],
-    "update": [
-      "129"
     ],
     "us": [
       "257",
@@ -19116,9 +18434,6 @@
     "usa": [
       "274"
     ],
-    "usmc": [
-      "128"
-    ],
     "valuation": [
       "317",
       "324",
@@ -19127,12 +18442,6 @@
       "96",
       "97",
       "98"
-    ],
-    "venezuela": [
-      "128"
-    ],
-    "version 5": [
-      "129"
     ],
     "vietnam": [
       "301"
@@ -19149,7 +18458,6 @@
       "334"
     ],
     "vote": [
-      "130",
       "301",
       "307"
     ],
@@ -19169,14 +18477,10 @@
       "244"
     ],
     "war": [
-      "128",
       "257",
       "271",
       "274",
       "331"
-    ],
-    "washington": [
-      "128"
     ],
     "wc": [
       "79"
@@ -19265,11 +18569,7 @@
       "316"
     ],
     "xai": [
-      "129",
       "338"
-    ],
-    "xai model": [
-      "129"
     ],
     "xau": [
       "315"
@@ -19337,9 +18637,6 @@
     "墨西哥": [
       "274"
     ],
-    "委内瑞拉": [
-      "128"
-    ],
     "小狐狸": [
       "118"
     ],
@@ -19369,12 +18666,6 @@
     ],
     "标普500": [
       "327"
-    ],
-    "格罗克": [
-      "129"
-    ],
-    "格罗克 5": [
-      "129"
     ],
     "格莱美": [
       "279",
@@ -19457,9 +18748,6 @@
     ],
     "阿凡达：火与灰": [
       "275"
-    ],
-    "韩国地方选举": [
-      "130"
     ],
     "鲍威尔": [
       "300"
