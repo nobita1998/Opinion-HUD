@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-03 00:57:37 UTC+8",
+    "generatedAt": "2026-02-03 10:54:07 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 299,
-      "markets": 136,
-      "keywords": 1391,
+      "kept": 304,
+      "markets": 133,
+      "keywords": 1360,
       "events": {
-        "events": 52
+        "events": 53
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 701,
-        "cutoff_zero_kept": 12,
+        "cutoff_expired": 696,
+        "cutoff_zero_kept": 14,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 49,
-        "regenerated_empty_entitygroups": 3,
-        "calls": 3,
-        "retries": 1,
+        "reused": 51,
+        "regenerated_empty_entitygroups": 1,
+        "calls": 2,
+        "retries": 2,
         "fallback": 0,
-        "empty": 1,
-        "non_empty": 2,
+        "empty": 2,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -543,90 +543,6 @@
       "sigCore": "07ccba26",
       "reused": false
     },
-    "280": {
-      "title": "Grammys: Song of the Year Winner",
-      "marketIds": [
-        "280"
-      ],
-      "bestMarketId": "280",
-      "bestLabels": null,
-      "keywords": [
-        "grammys",
-        "grammy awards",
-        "song of the year",
-        "soty",
-        "recording academy",
-        "music awards",
-        "awards show",
-        "music industry",
-        "nominations",
-        "trophy",
-        "ceremony",
-        "voting",
-        "academy",
-        "grammys song",
-        "song year",
-        "year winner",
-        "grammys song year",
-        "song year winner"
-      ],
-      "entities": [
-        "grammys"
-      ],
-      "entityGroups": [
-        [
-          "grammys",
-          "格莱美"
-        ]
-      ],
-      "sig": "0220f565",
-      "sigFull": "0220f565",
-      "sigCore": "d0caf065",
-      "reused": false
-    },
-    "279": {
-      "title": "Grammys: Album of the Year Winner",
-      "marketIds": [
-        "279"
-      ],
-      "bestMarketId": "279",
-      "bestLabels": null,
-      "keywords": [
-        "grammys",
-        "grammy awards",
-        "aoty",
-        "album of the year",
-        "recording academy",
-        "music awards",
-        "awards ceremony",
-        "music industry",
-        "nominations",
-        "voting",
-        "trophy",
-        "ceremony",
-        "music",
-        "album",
-        "winner",
-        "grammys album",
-        "album year",
-        "year winner",
-        "grammys album year",
-        "album year winner"
-      ],
-      "entities": [
-        "grammys"
-      ],
-      "entityGroups": [
-        [
-          "grammys",
-          "格莱美"
-        ]
-      ],
-      "sig": "5de4cb08",
-      "sigFull": "5de4cb08",
-      "sigCore": "e9cce71f",
-      "reused": false
-    },
     "282": {
       "title": "Grammys: Best New Artist Winner",
       "marketIds": [
@@ -668,92 +584,6 @@
       "sig": "f8c7201a",
       "sigFull": "f8c7201a",
       "sigCore": "4daa68f6",
-      "reused": false
-    },
-    "284": {
-      "title": "Grammys: Songwriter of the Year Winner",
-      "marketIds": [
-        "284"
-      ],
-      "bestMarketId": "284",
-      "bestLabels": null,
-      "keywords": [
-        "grammys",
-        "grammy awards",
-        "songwriter",
-        "songwriting",
-        "music awards",
-        "recording academy",
-        "composer",
-        "lyricist",
-        "music industry",
-        "trophy",
-        "nominees",
-        "ceremony",
-        "non-classical",
-        "music",
-        "grammys songwriter",
-        "songwriter year",
-        "year winner",
-        "grammys songwriter year",
-        "songwriter year winner"
-      ],
-      "entities": [
-        "grammys"
-      ],
-      "entityGroups": [
-        [
-          "grammys",
-          "grammy",
-          "格莱美"
-        ]
-      ],
-      "sig": "c68b02a2",
-      "sigFull": "c68b02a2",
-      "sigCore": "956b7c82",
-      "reused": false
-    },
-    "283": {
-      "title": "Grammys: Record of the Year Winner",
-      "marketIds": [
-        "283"
-      ],
-      "bestMarketId": "283",
-      "bestLabels": null,
-      "keywords": [
-        "grammys",
-        "grammy awards",
-        "roty",
-        "record of the year",
-        "music awards",
-        "recording academy",
-        "nominations",
-        "ceremony",
-        "telecast",
-        "music industry",
-        "awards season",
-        "trophy",
-        "gold gramophone",
-        "voting",
-        "nominees",
-        "grammys record",
-        "record year",
-        "year winner",
-        "grammys record year",
-        "record year winner"
-      ],
-      "entities": [
-        "grammys"
-      ],
-      "entityGroups": [
-        [
-          "grammys",
-          "格莱美"
-        ]
-      ],
-      "sig": "44a882a0",
-      "sigFull": "44a882a0",
-      "sigCore": "ec7ed3ad",
       "reused": false
     },
     "303": {
@@ -2761,6 +2591,25 @@
       "sigFull": "a49ec899",
       "sigCore": "2cd72b18",
       "reused": false
+    },
+    "115": {
+      "title": "NBA MVP 2026",
+      "marketIds": [
+        "115"
+      ],
+      "bestMarketId": "115",
+      "bestLabels": null,
+      "keywords": [
+        "nba mvp",
+        "mvp 2026",
+        "nba mvp 2026"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "65e496fc",
+      "sigFull": "65e496fc",
+      "sigCore": "75c15c08",
+      "reused": false
     }
   },
   "markets": {
@@ -3444,8 +3293,8 @@
     "67": {
       "title": "MegaETH market cap (FDV) one day after launch?",
       "url": "https://app.opinion.trade/market/67?ref=opinion_hud",
-      "yesTokenId": "57867551736960633574665958812625761911584221978454213909099830038019750566631",
-      "noTokenId": "26135413125679701323987422445234844160349569824324157061983660180886180427333",
+      "yesTokenId": "56075537608696890660202638997977372439235457734662933706914199872025224516885",
+      "noTokenId": "113711705318671481848429981467630738343113384456262621048210805039440580367649",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5598,190 +5447,6 @@
         }
       ]
     },
-    "280": {
-      "title": "Grammys: Song of the Year Winner",
-      "url": "https://app.opinion.trade/market/280?ref=opinion_hud",
-      "yesTokenId": "115123138679718205767379890112110441766988666611223584289733778009794027751893",
-      "noTokenId": "115321772714864032499116713825148165365189942991335530072776969188653565578020",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "grammys",
-        "grammy awards",
-        "song of the year",
-        "soty",
-        "recording academy",
-        "music awards",
-        "awards show",
-        "music industry",
-        "nominations",
-        "trophy",
-        "ceremony",
-        "voting",
-        "academy",
-        "grammys song",
-        "song year",
-        "year winner",
-        "grammys song year",
-        "song year winner"
-      ],
-      "entities": [
-        "grammys"
-      ],
-      "entityGroups": [
-        [
-          "grammys",
-          "格莱美"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "4045",
-          "title": "Golden - Ejae and Mark Sonnenblick",
-          "yesTokenId": "70745011202388361108500068134429434329432305435624156271451511376021357356737",
-          "noTokenId": "100194370458240626318851729390539266012899409700063789626609059656622377610287"
-        },
-        {
-          "marketId": "4046",
-          "title": "Luther - Kendrick Lamar and SZA",
-          "yesTokenId": "75756750947960273845211045508048648656227048641069220577562545110060149292304",
-          "noTokenId": "9657852572172966423881785006301543405091468350264016622817566538050483923890"
-        },
-        {
-          "marketId": "4047",
-          "title": "DTMF - Bad Bunny",
-          "yesTokenId": "47321114726432332388900139372125672189222497421710755330899557511782744268366",
-          "noTokenId": "93245072531780498174009075396189616055585814252846872264944169383978080271055"
-        },
-        {
-          "marketId": "4048",
-          "title": "Abracadabra - Lady Gaga",
-          "yesTokenId": "17041944807061059570318915516485812356350344244029277771319449659087015313249",
-          "noTokenId": "29016134685557034766719216410880253429172427821108895883063161053554821297733"
-        },
-        {
-          "marketId": "4049",
-          "title": "APT - Rosé and Bruno Mars",
-          "yesTokenId": "47413124557404470680986872696864974187233241607792161388270651447900527824535",
-          "noTokenId": "86927695436189200752368111567006467489536590190869707506304952251741753993250"
-        },
-        {
-          "marketId": "4050",
-          "title": "Wildflower - Billie Eilish",
-          "yesTokenId": "83354346258951231626297023059617430142642468516804947589165632385749983781585",
-          "noTokenId": "66561837758108863587223791875612799850348695315736593673771078431459481236913"
-        },
-        {
-          "marketId": "4051",
-          "title": "Manchild - Sabrina Carpenter",
-          "yesTokenId": "1239838467292847480952845718692745414512212611519394657215401886430138382112",
-          "noTokenId": "92869451203744049598909392971563741253922915932521165795093499063257201833087"
-        },
-        {
-          "marketId": "4052",
-          "title": "Anxiety - Doechii",
-          "yesTokenId": "115123138679718205767379890112110441766988666611223584289733778009794027751893",
-          "noTokenId": "115321772714864032499116713825148165365189942991335530072776969188653565578020"
-        }
-      ]
-    },
-    "279": {
-      "title": "Grammys: Album of the Year Winner",
-      "url": "https://app.opinion.trade/market/279?ref=opinion_hud",
-      "yesTokenId": "38526019100668982223296497054317768594670431310686390993279947358238639284265",
-      "noTokenId": "37533591968738666505408014060573714002399621521097395206535460843546461162110",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "keywords": [
-        "grammys",
-        "grammy awards",
-        "aoty",
-        "album of the year",
-        "recording academy",
-        "music awards",
-        "awards ceremony",
-        "music industry",
-        "nominations",
-        "voting",
-        "trophy",
-        "ceremony",
-        "music",
-        "album",
-        "winner",
-        "grammys album",
-        "album year",
-        "year winner",
-        "grammys album year",
-        "album year winner"
-      ],
-      "entities": [
-        "grammys"
-      ],
-      "entityGroups": [
-        [
-          "grammys",
-          "格莱美"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "4037",
-          "title": "Debí Tirar Más Fotos - Bad Bunny",
-          "yesTokenId": "31697548694358499062851355480232262618770889206614090676780203731922630518933",
-          "noTokenId": "26390699685215423094014876737312510995232798288139615122813690712436884254681"
-        },
-        {
-          "marketId": "4038",
-          "title": "GNX - Kendrick Lamar",
-          "yesTokenId": "12179679129993868851538818980625656846831019105550504986389928479591471529595",
-          "noTokenId": "92524280665001541334422047972706802388237275285968781849164359495184405221591"
-        },
-        {
-          "marketId": "4039",
-          "title": "Mayhem - Lady Gaga",
-          "yesTokenId": "105485786893687504183542462708195649006584280387707131914792169998311303260820",
-          "noTokenId": "114448865931512914674771566128614692620028004037808011986185685529541681165797"
-        },
-        {
-          "marketId": "4040",
-          "title": "Let God Sort Em Out - Clipse Pusha T Malice",
-          "yesTokenId": "109196666492036552233119294512673565867933508347901411600985579717899732019517",
-          "noTokenId": "113393167138332421018984100115359239262577912046420080811303312831247979330066"
-        },
-        {
-          "marketId": "4041",
-          "title": "SWAG - Justin Bieber",
-          "yesTokenId": "64733150584322125722003233285494477530358760996325343685184765685388775025733",
-          "noTokenId": "41233460754629728040858659801059953254316210313973137789956108108969595649032"
-        },
-        {
-          "marketId": "4042",
-          "title": "Man's Best Friend - Sabrina Carpenter",
-          "yesTokenId": "41908323092283597092360270347867361771963987727119316154904983386722691932217",
-          "noTokenId": "34619872225964431376555980278172978737888423454721013583461638923380152844691"
-        },
-        {
-          "marketId": "4043",
-          "title": "MUTT - Leon Thomas",
-          "yesTokenId": "860432071491516275059465187879145314881881437325606386164272300539958891523",
-          "noTokenId": "66629270850671511017920768818575673141877578228324045766226401734657625285250"
-        },
-        {
-          "marketId": "4044",
-          "title": "Chromakopia - Tyler the Creator",
-          "yesTokenId": "38526019100668982223296497054317768594670431310686390993279947358238639284265",
-          "noTokenId": "37533591968738666505408014060573714002399621521097395206535460843546461162110"
-        }
-      ]
-    },
     "4037": {
       "title": "Debí Tirar Más Fotos - Bad Bunny",
       "url": "https://app.opinion.trade/market/4037?ref=opinion_hud",
@@ -5850,6 +5515,12 @@
       "type": "multi",
       "subMarkets": [
         {
+          "marketId": "4085",
+          "title": "The Marías",
+          "yesTokenId": "105454001458186677704686999902993092359519551913688405274996226014130545985128",
+          "noTokenId": "2302174267779720025380102035166967103340699758449962738356724472090732529494"
+        },
+        {
           "marketId": "4078",
           "title": "Olivia Dean",
           "yesTokenId": "8498959377956125462179434312616503953490790134364871797854435215115785476852",
@@ -5890,180 +5561,6 @@
           "title": "Addison Rae",
           "yesTokenId": "92630712980316183526709699366078902030901488849393210699869929967126709716688",
           "noTokenId": "6035855641541740514102667177193204954145125657219718308670183894492514068022"
-        },
-        {
-          "marketId": "4085",
-          "title": "The Marías",
-          "yesTokenId": "105454001458186677704686999902993092359519551913688405274996226014130545985128",
-          "noTokenId": "2302174267779720025380102035166967103340699758449962738356724472090732529494"
-        }
-      ]
-    },
-    "284": {
-      "title": "Grammys: Songwriter of the Year Winner",
-      "url": "https://app.opinion.trade/market/284?ref=opinion_hud",
-      "yesTokenId": "13258774085442911941618582049210342436223837360979763385918955276326340531880",
-      "noTokenId": "84048836577271197005019034552418403222400675790953767378222264486736541795944",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "grammys",
-        "grammy awards",
-        "songwriter",
-        "songwriting",
-        "music awards",
-        "recording academy",
-        "composer",
-        "lyricist",
-        "music industry",
-        "trophy",
-        "nominees",
-        "ceremony",
-        "non-classical",
-        "music",
-        "grammys songwriter",
-        "songwriter year",
-        "year winner",
-        "grammys songwriter year",
-        "songwriter year winner"
-      ],
-      "entities": [
-        "grammys"
-      ],
-      "entityGroups": [
-        [
-          "grammys",
-          "grammy",
-          "格莱美"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "4094",
-          "title": "Amy Allen",
-          "yesTokenId": "40528627473689184131766216708215543917666219135883589994382015351769740499654",
-          "noTokenId": "6526808784701159750826903870752500481561951459038304735616416596736228689800"
-        },
-        {
-          "marketId": "4095",
-          "title": "Tobias Jesso Jr.",
-          "yesTokenId": "81327388839550420734358699937733161431724355270079951157167351290699413052586",
-          "noTokenId": "34524737894391646363022416589943360543664748566493402386269426065826314353754"
-        },
-        {
-          "marketId": "4096",
-          "title": "Laura Veltz",
-          "yesTokenId": "102646855968281481422642407484664249232735160256854153748937593138492809909897",
-          "noTokenId": "50424958738264822094513773492952264381423762695477196782015542718034197968618"
-        },
-        {
-          "marketId": "4097",
-          "title": "Jessie Jo Dillon",
-          "yesTokenId": "15365833184182751083876395565465467218072478471858396385702990810617365564859",
-          "noTokenId": "85650368738316776298453557780389470682520010965835651547715982902083518235498"
-        },
-        {
-          "marketId": "4098",
-          "title": "Edgar Barrera",
-          "yesTokenId": "13258774085442911941618582049210342436223837360979763385918955276326340531880",
-          "noTokenId": "84048836577271197005019034552418403222400675790953767378222264486736541795944"
-        }
-      ]
-    },
-    "283": {
-      "title": "Grammys: Record of the Year Winner",
-      "url": "https://app.opinion.trade/market/283?ref=opinion_hud",
-      "yesTokenId": "50591236788212966996407171775413929534598264549193905434796317855517017862805",
-      "noTokenId": "111688755463951774918980977783457411770418476195192399330297031614448203974020",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "grammys",
-        "grammy awards",
-        "roty",
-        "record of the year",
-        "music awards",
-        "recording academy",
-        "nominations",
-        "ceremony",
-        "telecast",
-        "music industry",
-        "awards season",
-        "trophy",
-        "gold gramophone",
-        "voting",
-        "nominees",
-        "grammys record",
-        "record year",
-        "year winner",
-        "grammys record year",
-        "record year winner"
-      ],
-      "entities": [
-        "grammys"
-      ],
-      "entityGroups": [
-        [
-          "grammys",
-          "格莱美"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "4086",
-          "title": "Luther - Kendrick Lamar and SZA",
-          "yesTokenId": "112001413295709575624856092295995797259654120830209665643625739650074403869142",
-          "noTokenId": "70449165081164266704316500200523164705666823766855887921671824008074990193780"
-        },
-        {
-          "marketId": "4087",
-          "title": "APT - Rosé and Bruno Mars",
-          "yesTokenId": "55561727329572305690780846124856325200136633960998741656125972836319193326227",
-          "noTokenId": "87212742465870226266699002727670042636555458661907507179069500677232492922160"
-        },
-        {
-          "marketId": "4088",
-          "title": "Abracadabra - Lady Gaga",
-          "yesTokenId": "36346930235257317781318302203249659048208195371573120116966317686006860568249",
-          "noTokenId": "87937955918332937390078995825268597585144358343773408632715773184064449093024"
-        },
-        {
-          "marketId": "4089",
-          "title": "DTMF - Bad Bunny",
-          "yesTokenId": "31305199978535973769665519956788357241705825611854150228556791699657185365910",
-          "noTokenId": "344261470290063475923999277908436270933927157176046170172681534684867670647"
-        },
-        {
-          "marketId": "4090",
-          "title": "Anxiety - Doechii",
-          "yesTokenId": "80786640501750285396416743258843431202727740495395387859719830566093383836034",
-          "noTokenId": "46309113173723446812909870330319330633846882998314235671414402944355907849151"
-        },
-        {
-          "marketId": "4091",
-          "title": "Manchild - Sabrina Carpenter",
-          "yesTokenId": "77811968075587661011192900148421851071690380916525038352538540640306557928657",
-          "noTokenId": "13093933463408870814257319383808357893511869925083490409492124414360247848291"
-        },
-        {
-          "marketId": "4092",
-          "title": "Wildflower - Billie Eilish",
-          "yesTokenId": "22528243253176269156071053315756054305424553162966938464853272545280542268347",
-          "noTokenId": "59957109382520116406291842007241366435971505836256481525488937508399687501246"
-        },
-        {
-          "marketId": "4093",
-          "title": "The Subway - Chappell Roan",
-          "yesTokenId": "50591236788212966996407171775413929534598264549193905434796317855517017862805",
-          "noTokenId": "111688755463951774918980977783457411770418476195192399330297031614448203974020"
         }
       ]
     },
@@ -7776,8 +7273,8 @@
     "112": {
       "title": "Will Bitcoin hit $150k by ...?",
       "url": "https://app.opinion.trade/market/112?ref=opinion_hud",
-      "yesTokenId": "70313466730842561524165823867056694371841523594633337111117025859759323517115",
-      "noTokenId": "34575500811920792149501513075954104501085315529176461621126700203980083841713",
+      "yesTokenId": "97913044128094681901221043536407530441801710759789765834621622844521681441829",
+      "noTokenId": "84414587454614646911836269393369633011935996609836765171747180387207967197281",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -10245,11 +9742,11 @@
       },
       "type": "binary"
     },
-    "5449": {
-      "title": "BNB Up or Down - Hourly (Feb 02, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5449?ref=opinion_hud",
-      "yesTokenId": "83964847439168940427703007291329845678312522261638958560459188623774830347354",
-      "noTokenId": "90505378888628724810805273136914748419322164132447552896856316274092421236310",
+    "5482": {
+      "title": "BNB Up or Down - Hourly (Feb 03, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5482?ref=opinion_hud",
+      "yesTokenId": "112387578352641743863032169293774777268667367380907934026176668865366748246477",
+      "noTokenId": "33204745333817589947128557010933158816756518163851609062058707278903744214179",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -10257,11 +9754,11 @@
       },
       "type": "binary"
     },
-    "5450": {
-      "title": "BTC Up or Down - Hourly (Feb 02, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5450?ref=opinion_hud",
-      "yesTokenId": "39573809896148224625172976252943010071070625144059113142365795903052106676231",
-      "noTokenId": "90575312712576411619747535863349213240003354141967437367172073405981774293063",
+    "5484": {
+      "title": "ETH Up or Down - Hourly (Feb 03, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5484?ref=opinion_hud",
+      "yesTokenId": "16561194043105589065763685742247931232162691654183069735860494807993122229043",
+      "noTokenId": "46162882874118021374644508969269973102281129706465191031532471965143192135925",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -10269,17 +9766,62 @@
       },
       "type": "binary"
     },
-    "5451": {
-      "title": "ETH Up or Down - Hourly (Feb 02, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5451?ref=opinion_hud",
-      "yesTokenId": "75466720546746735779528666722927430870261280247612151367419688755456766105597",
-      "noTokenId": "42083331797026718064706539606889444838110449868036234334505680664909556717134",
+    "5483": {
+      "title": "BTC Up or Down - Hourly (Feb 03, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5483?ref=opinion_hud",
+      "yesTokenId": "114010062767463033832315764082835161512438637086159019142506400806817847219723",
+      "noTokenId": "47246128719464460633364900909050739369537436024932635270945231690073511604318",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
       },
       "type": "binary"
+    },
+    "115": {
+      "title": "NBA MVP 2026",
+      "url": "https://app.opinion.trade/market/115?ref=opinion_hud",
+      "yesTokenId": "43159027977467252247228679434143740458074852098780419170873321089136986872312",
+      "noTokenId": "77203964611529394687724182520285433428468303567435695330610113154977050414322",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "nba mvp",
+        "mvp 2026",
+        "nba mvp 2026"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "2089",
+          "title": "Shai Gilgeous-Alexander",
+          "yesTokenId": "43159027977467252247228679434143740458074852098780419170873321089136986872312",
+          "noTokenId": "77203964611529394687724182520285433428468303567435695330610113154977050414322"
+        },
+        {
+          "marketId": "2090",
+          "title": "Nikola Jokic",
+          "yesTokenId": "91601047939777651022873160370784512977509839955154081223476453995428400155844",
+          "noTokenId": "54890664176122398500800965726633287977728863208127799210658173948676673930067"
+        },
+        {
+          "marketId": "2091",
+          "title": "Luka Doncic",
+          "yesTokenId": "47557918243081866924448645170113042552284575486338812334275170949518512178650",
+          "noTokenId": "51835288998785628254348395993514791981736309776270833149807070221357787446938"
+        },
+        {
+          "marketId": "3178",
+          "title": "Victor Wembanyama",
+          "yesTokenId": "32109696625141513689655403733645648187560974001570001091194377848247635695486",
+          "noTokenId": "115398602245575717832388579353864903548043889337415411082810479307576648848998"
+        }
+      ]
     }
   },
   "index": {
@@ -10469,9 +10011,6 @@
       "97",
       "98"
     ],
-    "academy": [
-      "280"
-    ],
     "acquired 2027": [
       "337"
     ],
@@ -10558,21 +10097,13 @@
       "335"
     ],
     "album": [
-      "2178",
-      "279"
+      "2178"
     ],
     "album february": [
       "2178"
     ],
     "album of the year": [
-      "279",
       "282"
-    ],
-    "album year": [
-      "279"
-    ],
-    "album year winner": [
-      "279"
     ],
     "algorithm change": [
       "3256"
@@ -10653,9 +10184,6 @@
     "any bitcoin 2026": [
       "3365"
     ],
-    "aoty": [
-      "279"
-    ],
     "apocalypse": [
       "2670"
     ],
@@ -10733,14 +10261,7 @@
     "avatar: fire and ash": [
       "275"
     ],
-    "awards ceremony": [
-      "279"
-    ],
-    "awards season": [
-      "283"
-    ],
     "awards show": [
-      "280",
       "282"
     ],
     "aws": [
@@ -11087,11 +10608,7 @@
       "2368"
     ],
     "ceremony": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
+      "282"
     ],
     "chairman": [
       "107"
@@ -11274,9 +10791,6 @@
     "company best model": [
       "335",
       "338"
-    ],
-    "composer": [
-      "284"
     ],
     "conflict": [
       "257",
@@ -12135,9 +11649,6 @@
     "gold": [
       "315"
     ],
-    "gold gramophone": [
-      "283"
-    ],
     "gold hit": [
       "315"
     ],
@@ -12218,52 +11729,17 @@
     "gpu": [
       "322"
     ],
-    "grammy": [
-      "284"
-    ],
     "grammy awards": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
+      "282"
     ],
     "grammys": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
-    ],
-    "grammys album": [
-      "279"
-    ],
-    "grammys album year": [
-      "279"
+      "282"
     ],
     "grammys best": [
       "282"
     ],
     "grammys best new": [
       "282"
-    ],
-    "grammys record": [
-      "283"
-    ],
-    "grammys record year": [
-      "283"
-    ],
-    "grammys song": [
-      "280"
-    ],
-    "grammys song year": [
-      "280"
-    ],
-    "grammys songwriter": [
-      "284"
-    ],
-    "grammys songwriter year": [
-      "284"
     ],
     "grand prix": [
       "312"
@@ -12825,9 +12301,6 @@
     "lp": [
       "2178"
     ],
-    "lyricist": [
-      "284"
-    ],
     "m&a": [
       "2398",
       "337"
@@ -13133,26 +12606,17 @@
     "mundial": [
       "79"
     ],
-    "music": [
-      "279",
-      "284"
-    ],
     "music awards": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
+      "282"
     ],
     "music industry": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
+      "282"
     ],
     "musk": [
       "323"
+    ],
+    "mvp 2026": [
+      "115"
     ],
     "na'vi": [
       "275"
@@ -13195,6 +12659,12 @@
     ],
     "nba finals": [
       "103"
+    ],
+    "nba mvp": [
+      "115"
+    ],
+    "nba mvp 2026": [
+      "115"
     ],
     "nber": [
       "3265"
@@ -13264,18 +12734,8 @@
     "nomination": [
       "107"
     ],
-    "nominations": [
-      "279",
-      "280",
-      "283"
-    ],
     "nominees": [
-      "282",
-      "283",
-      "284"
-    ],
-    "non-classical": [
-      "284"
+      "282"
     ],
     "nonfarm payrolls": [
       "273"
@@ -13759,21 +13219,10 @@
       "3368"
     ],
     "record of the year": [
-      "282",
-      "283"
-    ],
-    "record year": [
-      "283"
-    ],
-    "record year winner": [
-      "283"
+      "282"
     ],
     "recording academy": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
+      "282"
     ],
     "red status": [
       "3357"
@@ -13903,9 +13352,6 @@
     "rollup": [
       "3366",
       "67"
-    ],
-    "roty": [
-      "283"
     ],
     "round": [
       "318",
@@ -14121,29 +13567,7 @@
       "334"
     ],
     "song of the year": [
-      "280",
       "282"
-    ],
-    "song year": [
-      "280"
-    ],
-    "song year winner": [
-      "280"
-    ],
-    "songwriter": [
-      "284"
-    ],
-    "songwriter year": [
-      "284"
-    ],
-    "songwriter year winner": [
-      "284"
-    ],
-    "songwriting": [
-      "284"
-    ],
-    "soty": [
-      "280"
     ],
     "specific date": [
       "3449"
@@ -14365,9 +13789,6 @@
       "330",
       "331"
     ],
-    "telecast": [
-      "283"
-    ],
     "temblor": [
       "2668",
       "3356"
@@ -14585,10 +14006,6 @@
       "2670"
     ],
     "trophy": [
-      "279",
-      "280",
-      "283",
-      "284",
       "80",
       "83"
     ],
@@ -14768,10 +14185,7 @@
       "307"
     ],
     "voting": [
-      "279",
-      "280",
-      "282",
-      "283"
+      "282"
     ],
     "vp": [
       "3055"
@@ -14878,9 +14292,6 @@
     "will byers": [
       "3221"
     ],
-    "winner": [
-      "279"
-    ],
     "winner 2026": [
       "80",
       "83"
@@ -14914,12 +14325,6 @@
     ],
     "year end": [
       "327"
-    ],
-    "year winner": [
-      "279",
-      "280",
-      "283",
-      "284"
     ],
     "yellow metal": [
       "315"
@@ -15054,11 +14459,7 @@
       "327"
     ],
     "格莱美": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
+      "282"
     ],
     "欧洲冠军联赛": [
       "83"
@@ -15254,9 +14655,6 @@
       "97",
       "98"
     ],
-    "academy": [
-      "280"
-    ],
     "acquired 2027": [
       "337"
     ],
@@ -15322,18 +14720,8 @@
     "ai模型": [
       "335"
     ],
-    "album": [
-      "279"
-    ],
     "album of the year": [
-      "279",
       "282"
-    ],
-    "album year": [
-      "279"
-    ],
-    "album year winner": [
-      "279"
     ],
     "ali khamenei": [
       "242",
@@ -15380,9 +14768,6 @@
     ],
     "any bitcoin": [
       "111"
-    ],
-    "aoty": [
-      "279"
     ],
     "apple": [
       "324"
@@ -15438,14 +14823,7 @@
     "avatar: fire and ash": [
       "275"
     ],
-    "awards ceremony": [
-      "279"
-    ],
-    "awards season": [
-      "283"
-    ],
     "awards show": [
-      "280",
       "282"
     ],
     "aws": [
@@ -15638,11 +15016,7 @@
       "78"
     ],
     "ceremony": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
+      "282"
     ],
     "chairman": [
       "107"
@@ -15763,9 +15137,6 @@
     "company best model": [
       "335",
       "338"
-    ],
-    "composer": [
-      "284"
     ],
     "conflict": [
       "257",
@@ -16304,9 +15675,6 @@
     "gold": [
       "315"
     ],
-    "gold gramophone": [
-      "283"
-    ],
     "gold hit": [
       "315"
     ],
@@ -16380,52 +15748,17 @@
     "gpu": [
       "322"
     ],
-    "grammy": [
-      "284"
-    ],
     "grammy awards": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
+      "282"
     ],
     "grammys": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
-    ],
-    "grammys album": [
-      "279"
-    ],
-    "grammys album year": [
-      "279"
+      "282"
     ],
     "grammys best": [
       "282"
     ],
     "grammys best new": [
       "282"
-    ],
-    "grammys record": [
-      "283"
-    ],
-    "grammys record year": [
-      "283"
-    ],
-    "grammys song": [
-      "280"
-    ],
-    "grammys song year": [
-      "280"
-    ],
-    "grammys songwriter": [
-      "284"
-    ],
-    "grammys songwriter year": [
-      "284"
     ],
     "grand prix": [
       "312"
@@ -16756,9 +16089,6 @@
     "long government shutdown": [
       "303"
     ],
-    "lyricist": [
-      "284"
-    ],
     "m&a": [
       "337"
     ],
@@ -16942,26 +16272,17 @@
     "mundial": [
       "79"
     ],
-    "music": [
-      "279",
-      "284"
-    ],
     "music awards": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
+      "282"
     ],
     "music industry": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
+      "282"
     ],
     "musk": [
       "323"
+    ],
+    "mvp 2026": [
+      "115"
     ],
     "na'vi": [
       "275"
@@ -16987,6 +16308,12 @@
     ],
     "nba finals": [
       "103"
+    ],
+    "nba mvp": [
+      "115"
+    ],
+    "nba mvp 2026": [
+      "115"
     ],
     "new artist": [
       "282"
@@ -17021,18 +16348,8 @@
     "nomination": [
       "107"
     ],
-    "nominations": [
-      "279",
-      "280",
-      "283"
-    ],
     "nominees": [
-      "282",
-      "283",
-      "284"
-    ],
-    "non-classical": [
-      "284"
+      "282"
     ],
     "nonfarm payrolls": [
       "273"
@@ -17367,21 +16684,10 @@
       "320"
     ],
     "record of the year": [
-      "282",
-      "283"
-    ],
-    "record year": [
-      "283"
-    ],
-    "record year winner": [
-      "283"
+      "282"
     ],
     "recording academy": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
+      "282"
     ],
     "regime": [
       "258",
@@ -17429,9 +16735,6 @@
     ],
     "rollup": [
       "67"
-    ],
-    "roty": [
-      "283"
     ],
     "round": [
       "318"
@@ -17547,29 +16850,7 @@
       "334"
     ],
     "song of the year": [
-      "280",
       "282"
-    ],
-    "song year": [
-      "280"
-    ],
-    "song year winner": [
-      "280"
-    ],
-    "songwriter": [
-      "284"
-    ],
-    "songwriter year": [
-      "284"
-    ],
-    "songwriter year winner": [
-      "284"
-    ],
-    "songwriting": [
-      "284"
-    ],
-    "soty": [
-      "280"
     ],
     "spending bill": [
       "303"
@@ -17705,9 +16986,6 @@
       "330",
       "331"
     ],
-    "telecast": [
-      "283"
-    ],
     "tender offer": [
       "337"
     ],
@@ -17829,10 +17107,6 @@
       "111"
     ],
     "trophy": [
-      "279",
-      "280",
-      "283",
-      "284",
       "80",
       "83"
     ],
@@ -17939,10 +17213,7 @@
       "307"
     ],
     "voting": [
-      "279",
-      "280",
-      "282",
-      "283"
+      "282"
     ],
     "wage growth": [
       "273"
@@ -18014,9 +17285,6 @@
     "who trump nominate": [
       "107"
     ],
-    "winner": [
-      "279"
-    ],
     "winner 2026": [
       "80",
       "83"
@@ -18050,12 +17318,6 @@
     ],
     "year end": [
       "327"
-    ],
-    "year winner": [
-      "279",
-      "280",
-      "283",
-      "284"
     ],
     "yellow metal": [
       "315"
@@ -18145,11 +17407,7 @@
       "327"
     ],
     "格莱美": [
-      "279",
-      "280",
-      "282",
-      "283",
-      "284"
+      "282"
     ],
     "欧洲冠军联赛": [
       "83"
