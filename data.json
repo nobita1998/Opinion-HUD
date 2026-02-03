@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-03 16:54:18 UTC+8",
+    "generatedAt": "2026-02-04 01:07:22 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 288,
-      "markets": 133,
-      "keywords": 1232,
+      "kept": 265,
+      "markets": 127,
+      "keywords": 1200,
       "events": {
-        "events": 43
+        "events": 38
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 712,
+        "cutoff_expired": 735,
         "cutoff_zero_kept": 17,
         "resolved": 0,
         "missing_id": 0,
@@ -28,68 +28,18 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 36,
+        "reused": 37,
         "regenerated_empty_entitygroups": 1,
-        "calls": 7,
-        "retries": 2,
+        "calls": 1,
+        "retries": 0,
         "fallback": 0,
-        "empty": 1,
-        "non_empty": 6,
+        "empty": 0,
+        "non_empty": 1,
         "errors": 0
       }
     }
   },
   "events": {
-    "67": {
-      "title": "MegaETH market cap (FDV) one day after launch?",
-      "marketIds": [
-        "67"
-      ],
-      "bestMarketId": "67",
-      "bestLabels": null,
-      "keywords": [
-        "megaeth",
-        "l2",
-        "rollup",
-        "ethereum",
-        "crypto",
-        "token",
-        "airdrop",
-        "tge",
-        "mainnet",
-        "valuation",
-        "price",
-        "trading",
-        "listing",
-        "defi",
-        "evm",
-        "megaeth market",
-        "market cap",
-        "cap fdv",
-        "fdv one",
-        "one day",
-        "day after",
-        "after launch",
-        "megaeth market cap",
-        "market cap fdv",
-        "cap fdv one",
-        "fdv one day",
-        "one day after"
-      ],
-      "entities": [
-        "megaeth"
-      ],
-      "entityGroups": [
-        [
-          "megaeth",
-          "以太坊"
-        ]
-      ],
-      "sig": "e7d6c3a3",
-      "sigFull": "e7d6c3a3",
-      "sigCore": "38ca89ca",
-      "reused": false
-    },
     "242": {
       "title": "Khamenei out as Supreme Leader of Iran by ...?",
       "marketIds": [
@@ -176,51 +126,6 @@
       "sig": "f2b6e1cf",
       "sigFull": "f2b6e1cf",
       "sigCore": "29cb2d55",
-      "reused": false
-    },
-    "258": {
-      "title": "Will Khamenei leave Iran by...?",
-      "marketIds": [
-        "258"
-      ],
-      "bestMarketId": "258",
-      "bestLabels": null,
-      "keywords": [
-        "khamenei",
-        "ali khamenei",
-        "ayatollah",
-        "supreme leader",
-        "iran",
-        "tehran",
-        "exile",
-        "flee",
-        "departure",
-        "resignation",
-        "regime",
-        "islamic republic",
-        "succession",
-        "medical travel",
-        "escape",
-        "khamenei leave",
-        "leave iran",
-        "khamenei leave iran"
-      ],
-      "entities": [
-        "khamenei",
-        "iran"
-      ],
-      "entityGroups": [
-        [
-          "khamenei",
-          "哈梅内伊"
-        ],
-        [
-          "iran"
-        ]
-      ],
-      "sig": "848dcca8",
-      "sigFull": "848dcca8",
-      "sigCore": "4b072dcf",
       "reused": false
     },
     "273": {
@@ -496,51 +401,6 @@
       "sigCore": "db57ab75",
       "reused": false
     },
-    "61": {
-      "title": "US Fed Rate Decision in January?",
-      "marketIds": [
-        "61"
-      ],
-      "bestMarketId": "61",
-      "bestLabels": null,
-      "keywords": [
-        "federal reserve",
-        "interest rates",
-        "fed meeting",
-        "fomc",
-        "monetary policy",
-        "rate cut",
-        "rate hike",
-        "jerome powell",
-        "central bank",
-        "us economy",
-        "inflation",
-        "cpi",
-        "pce",
-        "dot plot",
-        "fed funds rate",
-        "fed rate",
-        "rate decision",
-        "decision january",
-        "fed rate decision",
-        "rate decision january"
-      ],
-      "entities": [
-        "federal reserve"
-      ],
-      "entityGroups": [
-        [
-          "federal reserve",
-          "fed",
-          "fomc",
-          "美联储"
-        ]
-      ],
-      "sig": "4c71b8a3",
-      "sigFull": "4c71b8a3",
-      "sigCore": "29ccc4db",
-      "reused": false
-    },
     "307": {
       "title": "Thailand Legislative Election Winner",
       "marketIds": [
@@ -631,142 +491,6 @@
       "sig": "05f46bc1",
       "sigFull": "05f46bc1",
       "sigCore": "bf97c097",
-      "reused": false
-    },
-    "75": {
-      "title": "US Fed Rate Decision in March?",
-      "marketIds": [
-        "75"
-      ],
-      "bestMarketId": "75",
-      "bestLabels": null,
-      "keywords": [
-        "fed",
-        "federal reserve",
-        "fomc",
-        "interest rates",
-        "rate cut",
-        "rate hike",
-        "monetary policy",
-        "jerome powell",
-        "cpi",
-        "inflation",
-        "central bank",
-        "us economy",
-        "federal funds rate",
-        "policy decision",
-        "powell",
-        "fed rate",
-        "rate decision",
-        "decision march",
-        "fed rate decision",
-        "rate decision march"
-      ],
-      "entities": [
-        "fed"
-      ],
-      "entityGroups": [
-        [
-          "fed",
-          "federal reserve",
-          "fomc",
-          "美联储"
-        ]
-      ],
-      "sig": "e7014d94",
-      "sigFull": "e7014d94",
-      "sigCore": "cb3bebcc",
-      "reused": false
-    },
-    "78": {
-      "title": "How many Fed rate cuts in 2026?",
-      "marketIds": [
-        "78"
-      ],
-      "bestMarketId": "78",
-      "bestLabels": null,
-      "keywords": [
-        "fed",
-        "federal reserve",
-        "fomc",
-        "interest rate",
-        "rate cut",
-        "monetary policy",
-        "jerome powell",
-        "powell",
-        "central bank",
-        "inflation",
-        "easing",
-        "basis points",
-        "dot plot",
-        "2026",
-        "us economy",
-        "how many",
-        "many fed",
-        "fed rate",
-        "rate cuts",
-        "cuts 2026",
-        "how many fed",
-        "many fed rate",
-        "fed rate cuts",
-        "rate cuts 2026"
-      ],
-      "entities": [
-        "fed"
-      ],
-      "entityGroups": [
-        [
-          "fed",
-          "federal reserve",
-          "fomc",
-          "美联储"
-        ]
-      ],
-      "sig": "42c135b4",
-      "sigFull": "42c135b4",
-      "sigCore": "1c69fe17",
-      "reused": false
-    },
-    "318": {
-      "title": "Fabric public sale total commitments?",
-      "marketIds": [
-        "318"
-      ],
-      "bestMarketId": "318",
-      "bestLabels": null,
-      "keywords": [
-        "fabric",
-        "public sale",
-        "commitments",
-        "fundraising",
-        "token sale",
-        "crypto",
-        "blockchain",
-        "ido",
-        "ieo",
-        "capital",
-        "raised",
-        "investment",
-        "launch",
-        "round",
-        "fabric public",
-        "sale total",
-        "total commitments",
-        "fabric public sale",
-        "public sale total",
-        "sale total commitments"
-      ],
-      "entities": [
-        "fabric"
-      ],
-      "entityGroups": [
-        [
-          "fabric"
-        ]
-      ],
-      "sig": "c5719eeb",
-      "sigFull": "c5719eeb",
-      "sigCore": "1b4bbe98",
       "reused": false
     },
     "317": {
@@ -1856,12 +1580,34 @@
       "bestMarketId": "336",
       "bestLabels": null,
       "keywords": [
+        "market cap",
+        "valuation",
+        "ranking",
+        "biggest",
+        "largest",
+        "top company",
+        "trillion",
+        "stock price",
+        "equity",
+        "corporate",
+        "fortune 500",
+        "global 2000",
+        "blue chip",
+        "mega cap",
         "largest company",
         "company 2026",
         "largest company 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "largest company"
+      ],
+      "entityGroups": [
+        [
+          "largest company",
+          "最大公司",
+          "最大企业"
+        ]
+      ],
       "sig": "a49ec899",
       "sigFull": "a49ec899",
       "sigCore": "2cd72b18",
@@ -2738,82 +2484,6 @@
           "jesus",
           "耶稣基督"
         ]
-      ]
-    },
-    "67": {
-      "title": "MegaETH market cap (FDV) one day after launch?",
-      "url": "https://app.opinion.trade/market/67?ref=opinion_hud",
-      "yesTokenId": "90006296183798829073805384581022234290835004793535313505505491477483227587272",
-      "noTokenId": "91834639899647516738376929717597531971033917175195205232850827386484009512343",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "megaeth",
-        "l2",
-        "rollup",
-        "ethereum",
-        "crypto",
-        "token",
-        "airdrop",
-        "tge",
-        "mainnet",
-        "valuation",
-        "price",
-        "trading",
-        "listing",
-        "defi",
-        "evm",
-        "megaeth market",
-        "market cap",
-        "cap fdv",
-        "fdv one",
-        "one day",
-        "day after",
-        "after launch",
-        "megaeth market cap",
-        "market cap fdv",
-        "cap fdv one",
-        "fdv one day",
-        "one day after"
-      ],
-      "entities": [
-        "megaeth"
-      ],
-      "entityGroups": [
-        [
-          "megaeth",
-          "以太坊"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "1271",
-          "title": ">$2B",
-          "yesTokenId": "57867551736960633574665958812625761911584221978454213909099830038019750566631",
-          "noTokenId": "26135413125679701323987422445234844160349569824324157061983660180886180427333"
-        },
-        {
-          "marketId": "1272",
-          "title": ">$4B",
-          "yesTokenId": "6517318874575867108986552765123764360380233744797593495898903954877185179742",
-          "noTokenId": "9750532874114348847387436640058087095465906672324885731203810430181846617224"
-        },
-        {
-          "marketId": "1273",
-          "title": ">$6B",
-          "yesTokenId": "56075537608696890660202638997977372439235457734662933706914199872025224516885",
-          "noTokenId": "113711705318671481848429981467630738343113384456262621048210805039440580367649"
-        },
-        {
-          "marketId": "3504",
-          "title": ">$1B",
-          "yesTokenId": "90006296183798829073805384581022234290835004793535313505505491477483227587272",
-          "noTokenId": "91834639899647516738376929717597531971033917175195205232850827386484009512343"
-        }
       ]
     },
     "1546": {
@@ -4338,70 +4008,11 @@
         }
       ]
     },
-    "258": {
-      "title": "Will Khamenei leave Iran by...?",
-      "url": "https://app.opinion.trade/market/258?ref=opinion_hud",
-      "yesTokenId": "46905476398127901044691849165146855335495458488719477111437299966035237825795",
-      "noTokenId": "10886237409100805397592384049487208080130120133063362804522141588111491574162",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "khamenei",
-        "ali khamenei",
-        "ayatollah",
-        "supreme leader",
-        "iran",
-        "tehran",
-        "exile",
-        "flee",
-        "departure",
-        "resignation",
-        "regime",
-        "islamic republic",
-        "succession",
-        "medical travel",
-        "escape",
-        "khamenei leave",
-        "leave iran",
-        "khamenei leave iran"
-      ],
-      "entities": [
-        "khamenei",
-        "iran"
-      ],
-      "entityGroups": [
-        [
-          "khamenei",
-          "哈梅内伊"
-        ],
-        [
-          "iran"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3867",
-          "title": "March 31, 2026",
-          "yesTokenId": "46905476398127901044691849165146855335495458488719477111437299966035237825795",
-          "noTokenId": "10886237409100805397592384049487208080130120133063362804522141588111491574162"
-        },
-        {
-          "marketId": "3866",
-          "title": "January 31, 2026",
-          "yesTokenId": "66170359984564935238901507847685806999769505389848110507508000743705886034489",
-          "noTokenId": "25757034212527787437637231167671028411521615889002499531686029718329588466137"
-        }
-      ]
-    },
     "273": {
       "title": "How many jobs added in the U.S. in January?",
       "url": "https://app.opinion.trade/market/273?ref=opinion_hud",
-      "yesTokenId": "61214136380395517885887942920069829722138507875903456263232028773565248250779",
-      "noTokenId": "68254653022799647946466497106718783033401992963391467542739217740259391542828",
+      "yesTokenId": "40034969410697545600238884964302612532388717954693897354446559059648071897154",
+      "noTokenId": "21987955650953335574014727333186283617107855337023771140389469217199392154072",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4612,12 +4223,6 @@
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "3997",
-          "title": "January 31",
-          "yesTokenId": "66689491714226842723379031539853263738597872030029496578004341946516733175044",
-          "noTokenId": "100663177674441407268582542961983477659089796854217164860123667803244003408888"
-        },
-        {
           "marketId": "5286",
           "title": "March 31, 2026",
           "yesTokenId": "4213194609622856282321895014622395755697607273396668768789302999414837036339",
@@ -4628,6 +4233,12 @@
           "title": "December 31, 2026",
           "yesTokenId": "39881460704481015728398961713861611060433222736511374197369162743523904475034",
           "noTokenId": "115403549384855857115550420873554482318793101338912685033355488557587490594243"
+        },
+        {
+          "marketId": "3997",
+          "title": "January 31, 2026",
+          "yesTokenId": "66689491714226842723379031539853263738597872030029496578004341946516733175044",
+          "noTokenId": "100663177674441407268582542961983477659089796854217164860123667803244003408888"
         }
       ]
     },
@@ -5030,77 +4641,6 @@
       },
       "type": "binary"
     },
-    "61": {
-      "title": "US Fed Rate Decision in January?",
-      "url": "https://app.opinion.trade/market/61?ref=opinion_hud",
-      "yesTokenId": "14508742604992130021622926967815994509816548111666323480851158982552139878650",
-      "noTokenId": "65249422041906348839852601437494284924037104094199669792527632521178980725293",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "federal reserve",
-        "interest rates",
-        "fed meeting",
-        "fomc",
-        "monetary policy",
-        "rate cut",
-        "rate hike",
-        "jerome powell",
-        "central bank",
-        "us economy",
-        "inflation",
-        "cpi",
-        "pce",
-        "dot plot",
-        "fed funds rate",
-        "fed rate",
-        "rate decision",
-        "decision january",
-        "fed rate decision",
-        "rate decision january"
-      ],
-      "entities": [
-        "federal reserve"
-      ],
-      "entityGroups": [
-        [
-          "federal reserve",
-          "fed",
-          "fomc",
-          "美联储"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "1226",
-          "title": "50+ bps decrease",
-          "yesTokenId": "81024628910751981763519807907590668671806518176027426382238767181543126274163",
-          "noTokenId": "112796040680499184493768367425897772037344047715371428672472988730438104274752"
-        },
-        {
-          "marketId": "1227",
-          "title": "25 bps decrease",
-          "yesTokenId": "14508742604992130021622926967815994509816548111666323480851158982552139878650",
-          "noTokenId": "65249422041906348839852601437494284924037104094199669792527632521178980725293"
-        },
-        {
-          "marketId": "1228",
-          "title": "No change",
-          "yesTokenId": "2143159161202125048874231389446126453176029523509098173398615213184865950982",
-          "noTokenId": "109305198116462541626137377301271622644337693346929198722456377784888192205758"
-        },
-        {
-          "marketId": "1229",
-          "title": "Increase",
-          "yesTokenId": "63124475118157998442544532616143671713390176049177017950009177431474968101028",
-          "noTokenId": "57213930402091026580700847535316199022291037265654598613067304763082644691809"
-        }
-      ]
-    },
     "4802": {
       "title": "Bitcoin Up or Down on January 28?(12:00 ET)",
       "url": "https://app.opinion.trade/market/4802?ref=opinion_hud",
@@ -5275,182 +4815,6 @@
       },
       "type": "binary"
     },
-    "75": {
-      "title": "US Fed Rate Decision in March?",
-      "url": "https://app.opinion.trade/market/75?ref=opinion_hud",
-      "yesTokenId": "106558697216798819333461096455848404193242601861726553031229801156760936486295",
-      "noTokenId": "24382171216212231769951181103743869004517757189973835016038060044436445447507",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "fed",
-        "federal reserve",
-        "fomc",
-        "interest rates",
-        "rate cut",
-        "rate hike",
-        "monetary policy",
-        "jerome powell",
-        "cpi",
-        "inflation",
-        "central bank",
-        "us economy",
-        "federal funds rate",
-        "policy decision",
-        "powell",
-        "fed rate",
-        "rate decision",
-        "decision march",
-        "fed rate decision",
-        "rate decision march"
-      ],
-      "entities": [
-        "fed"
-      ],
-      "entityGroups": [
-        [
-          "fed",
-          "federal reserve",
-          "fomc",
-          "美联储"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "1304",
-          "title": "50+ bps decrease",
-          "yesTokenId": "49355591055450656302538846036275794217714647748317343440108732708594962823250",
-          "noTokenId": "101008955442974655206405808778155551361162365938238336424046150024284910649954"
-        },
-        {
-          "marketId": "1305",
-          "title": "25 bps decrease",
-          "yesTokenId": "106558697216798819333461096455848404193242601861726553031229801156760936486295",
-          "noTokenId": "24382171216212231769951181103743869004517757189973835016038060044436445447507"
-        },
-        {
-          "marketId": "1306",
-          "title": "No change",
-          "yesTokenId": "112571176996269647170357446032937779692323287949501633841533840929277468097380",
-          "noTokenId": "7047737589574536776076795106884436098831851040768624198544745529781556061201"
-        },
-        {
-          "marketId": "1307",
-          "title": "Increase",
-          "yesTokenId": "103534200913828460239990377776151413467086907798074013057280936285480574944448",
-          "noTokenId": "79918290396302990792782000706293883943646884974890514969409744357720461509903"
-        }
-      ]
-    },
-    "78": {
-      "title": "How many Fed rate cuts in 2026?",
-      "url": "https://app.opinion.trade/market/78?ref=opinion_hud",
-      "yesTokenId": "113238769132068877749282591826944509462561343056849726370650683628614966385372",
-      "noTokenId": "2366833762770503588620879353801244946539238582918572711328765578691383389746",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "fed",
-        "federal reserve",
-        "fomc",
-        "interest rate",
-        "rate cut",
-        "monetary policy",
-        "jerome powell",
-        "powell",
-        "central bank",
-        "inflation",
-        "easing",
-        "basis points",
-        "dot plot",
-        "2026",
-        "us economy",
-        "how many",
-        "many fed",
-        "fed rate",
-        "rate cuts",
-        "cuts 2026",
-        "how many fed",
-        "many fed rate",
-        "fed rate cuts",
-        "rate cuts 2026"
-      ],
-      "entities": [
-        "fed"
-      ],
-      "entityGroups": [
-        [
-          "fed",
-          "federal reserve",
-          "fomc",
-          "美联储"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "1345",
-          "title": "0 (0 bps)",
-          "yesTokenId": "6404829329840465181064736796864044142281420398565014085984146771179791283427",
-          "noTokenId": "65611019345671677871768057029430972234494268130766599668467768282436228863769"
-        },
-        {
-          "marketId": "1346",
-          "title": "1 (25 bps)",
-          "yesTokenId": "87221035256724112521884616425110689618510604737525837665600757831604860081699",
-          "noTokenId": "24042584299232816762066098576822940800148368345133941716423449217737083401878"
-        },
-        {
-          "marketId": "1347",
-          "title": "2 (50 bps)",
-          "yesTokenId": "113238769132068877749282591826944509462561343056849726370650683628614966385372",
-          "noTokenId": "2366833762770503588620879353801244946539238582918572711328765578691383389746"
-        },
-        {
-          "marketId": "1348",
-          "title": "3 (75 bps)",
-          "yesTokenId": "99714401812715793578869667450897946227140497909746774220370457685604990071286",
-          "noTokenId": "3144384261513073832299389704955009308754370236840018071587493757934200560390"
-        },
-        {
-          "marketId": "1349",
-          "title": "4 (100 bps)",
-          "yesTokenId": "6184245186950926466692931178017784356827694199329242555435511222388237438109",
-          "noTokenId": "103611272235957115780344574285023328194712152439747172003391912689766930278154"
-        },
-        {
-          "marketId": "1350",
-          "title": "5 (125 bps)",
-          "yesTokenId": "70475724476163126377829032010120273492646534860807243445006711389850099814274",
-          "noTokenId": "78795034840034647908341213482580024793283071165863159629594759765596341263981"
-        },
-        {
-          "marketId": "1351",
-          "title": "6 (150 bps)",
-          "yesTokenId": "47630475545920005262416477924495253323197385749902632410490043426083041384144",
-          "noTokenId": "86124495778141184053490448457820450848519797338556970361256381852079916115307"
-        },
-        {
-          "marketId": "1352",
-          "title": "7 (175 bps)",
-          "yesTokenId": "70010766220059604989662129460865466302574904927654834125855820572459625873690",
-          "noTokenId": "94312394120877874266506310353940325029694893877094998946034603701922234520279"
-        },
-        {
-          "marketId": "1353",
-          "title": "8+ (200+ bps)",
-          "yesTokenId": "59811075968124785627599025502257118121320441552396197432682635891395620417003",
-          "noTokenId": "101466719676050817231256324050444209217473634787009528298001058332064069999345"
-        }
-      ]
-    },
     "4885": {
       "title": "Bitcoin Up or Down on January 29?(12:00 ET)",
       "url": "https://app.opinion.trade/market/4885?ref=opinion_hud",
@@ -5474,86 +4838,6 @@
         "noLabel": "NO"
       },
       "type": "binary"
-    },
-    "318": {
-      "title": "Fabric public sale total commitments?",
-      "url": "https://app.opinion.trade/market/318?ref=opinion_hud",
-      "yesTokenId": "114735515109960880380969272955735651973148677931082004626343378508364253021687",
-      "noTokenId": "35352931883781981606846334179120777541094101750415422133799928966891459186332",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "fabric",
-        "public sale",
-        "commitments",
-        "fundraising",
-        "token sale",
-        "crypto",
-        "blockchain",
-        "ido",
-        "ieo",
-        "capital",
-        "raised",
-        "investment",
-        "launch",
-        "round",
-        "fabric public",
-        "sale total",
-        "total commitments",
-        "fabric public sale",
-        "public sale total",
-        "sale total commitments"
-      ],
-      "entities": [
-        "fabric"
-      ],
-      "entityGroups": [
-        [
-          "fabric"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5104",
-          "title": "$4M",
-          "yesTokenId": "54927738321158495938448843361170826720872484222369191906687483374336193184455",
-          "noTokenId": "92351497244315692729434391453199426684764060246265007302470797588675658937586"
-        },
-        {
-          "marketId": "5105",
-          "title": "$5M",
-          "yesTokenId": "10298801453513922362249672590467636130676016633701998997426243381828456107711",
-          "noTokenId": "32897685005695700314256207361438699258450497720676611448509066572076091890917"
-        },
-        {
-          "marketId": "5106",
-          "title": "$7M",
-          "yesTokenId": "88216085383272722328152341733266115705034177610318991436934954132258935976103",
-          "noTokenId": "66831208394879051764616270407075149939557979893381565955309711160209944402699"
-        },
-        {
-          "marketId": "5107",
-          "title": "$10M",
-          "yesTokenId": "78748300360857921338599843928973408964001119457649829406070177115830737692739",
-          "noTokenId": "80733051105516576200911924823685811290735043531727668761120528324696277140337"
-        },
-        {
-          "marketId": "5108",
-          "title": "$15M",
-          "yesTokenId": "114735515109960880380969272955735651973148677931082004626343378508364253021687",
-          "noTokenId": "35352931883781981606846334179120777541094101750415422133799928966891459186332"
-        },
-        {
-          "marketId": "5109",
-          "title": "$20M",
-          "yesTokenId": "110571680782859301309771851367721848793945602267134066701364546363892913516167",
-          "noTokenId": "87809137101559361145570418496177166274882931817448546441669945752211875644506"
-        }
-      ]
     },
     "317": {
       "title": "Fabric ($ROBO) FDV above ___ one day after launch?",
@@ -5741,18 +5025,6 @@
           "noTokenId": "68883664560974140366997593439323703961196674661371473663497772137076182581521"
         },
         {
-          "marketId": "5078",
-          "title": "↓ $4,900",
-          "yesTokenId": "96405805640166957712713047178686542724245085126574972666917734286476619035298",
-          "noTokenId": "62756963147224944933563854622762137481039612271857281548178452084771469586564"
-        },
-        {
-          "marketId": "5079",
-          "title": "↓ $4,700",
-          "yesTokenId": "86106514639499023696058606470969839229785798357543937805870997178230518926444",
-          "noTokenId": "16155318437125845678523410481837413210706231389941968665690481920730676725849"
-        },
-        {
           "marketId": "5080",
           "title": "↓ $4,600",
           "yesTokenId": "68868650016443997979717575895691207586976349497412359170681926011501839091611",
@@ -5769,6 +5041,18 @@
           "title": "↓ $4,200",
           "yesTokenId": "69653296385959791775148636073633603456104718998850560446282609756070983724877",
           "noTokenId": "45779005681840596145458802072253347485673776137287230993556275683333170163249"
+        },
+        {
+          "marketId": "5078",
+          "title": "↓ $4,900",
+          "yesTokenId": "96405805640166957712713047178686542724245085126574972666917734286476619035298",
+          "noTokenId": "62756963147224944933563854622762137481039612271857281548178452084771469586564"
+        },
+        {
+          "marketId": "5079",
+          "title": "↓ $4,700",
+          "yesTokenId": "86106514639499023696058606470969839229785798357543937805870997178230518926444",
+          "noTokenId": "16155318437125845678523410481837413210706231389941968665690481920730676725849"
         }
       ]
     },
@@ -5843,18 +5127,6 @@
           "noTokenId": "10403482094726621521793979244605105379532066929068111800270018084739046335613"
         },
         {
-          "marketId": "5089",
-          "title": "↓ $95",
-          "yesTokenId": "37531390152840252829295665944088625260390224065743448612423608482512669642712",
-          "noTokenId": "112330724464774423970528915678969733260138820537137137558700568238089533704880"
-        },
-        {
-          "marketId": "5092",
-          "title": "↓ $80",
-          "yesTokenId": "61927744639089857621467109868596551169174902766844770087617180583387309412860",
-          "noTokenId": "70310626454248879516948268466164378677869157272390710109282195643391560201616"
-        },
-        {
           "marketId": "5093",
           "title": "↓ $75",
           "yesTokenId": "6922417079533149106665920797405655018248518446529983155692193999277740113148",
@@ -5879,6 +5151,12 @@
           "noTokenId": "59352081489396737445188633519195040856248087443582871684773708623632849786962"
         },
         {
+          "marketId": "5089",
+          "title": "↓ $95",
+          "yesTokenId": "37531390152840252829295665944088625260390224065743448612423608482512669642712",
+          "noTokenId": "112330724464774423970528915678969733260138820537137137558700568238089533704880"
+        },
+        {
           "marketId": "5090",
           "title": "↓ $90",
           "yesTokenId": "79831669678922249543268867484266995140588356497494511959974711783345739084155",
@@ -5889,6 +5167,12 @@
           "title": "↓ $85",
           "yesTokenId": "59526113876299237586086418457510486167828062740383703038720419690752610479238",
           "noTokenId": "7399750997002689031360806457474082097763637196448643465367101997182049726516"
+        },
+        {
+          "marketId": "5092",
+          "title": "↓ $80",
+          "yesTokenId": "61927744639089857621467109868596551169174902766844770087617180583387309412860",
+          "noTokenId": "70310626454248879516948268466164378677869157272390710109282195643391560201616"
         }
       ]
     },
@@ -7791,12 +7075,34 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "market cap",
+        "valuation",
+        "ranking",
+        "biggest",
+        "largest",
+        "top company",
+        "trillion",
+        "stock price",
+        "equity",
+        "corporate",
+        "fortune 500",
+        "global 2000",
+        "blue chip",
+        "mega cap",
         "largest company",
         "company 2026",
         "largest company 2026"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "largest company"
+      ],
+      "entityGroups": [
+        [
+          "largest company",
+          "最大公司",
+          "最大企业"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -7852,42 +7158,6 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "5503": {
-      "title": "BNB Up or Down - Hourly (Feb 03, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5503?ref=opinion_hud",
-      "yesTokenId": "63449981347290316426339474710963815547652997827240791685785025433684340723414",
-      "noTokenId": "107242558170059220196128695967891072460907946639256467831674370328894156310795",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "5505": {
-      "title": "ETH Up or Down - Hourly (Feb 03, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5505?ref=opinion_hud",
-      "yesTokenId": "54211601802316955835959509586660746735993569316199613908782320838640567639491",
-      "noTokenId": "96115268216394707537623208476411346981052622562336831669469739328557618570843",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "5504": {
-      "title": "BTC Up or Down - Hourly (Feb 03, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5504?ref=opinion_hud",
-      "yesTokenId": "22603044523851488077269901503846831406907518523557732069425935875514198811099",
-      "noTokenId": "44510618886074653376795023334070844584767820258975878176009198008816517715277",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
@@ -8632,6 +7902,42 @@
         "noLabel": "NO"
       },
       "type": "binary"
+    },
+    "5595": {
+      "title": "BNB Up or Down - Hourly (Feb 03, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5595?ref=opinion_hud",
+      "yesTokenId": "35038277899751129851281615515709615521376323222105515374120801592922347019899",
+      "noTokenId": "45423970753453180297206670363231822707497603013491699440714622807097298943333",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5597": {
+      "title": "ETH Up or Down - Hourly (Feb 03, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5597?ref=opinion_hud",
+      "yesTokenId": "4183988015356663271207168006273949353627471327110452016683697089644929138931",
+      "noTokenId": "7440976689650946440293667576037154413763550653001763150971025119868031272807",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5596": {
+      "title": "BTC Up or Down - Hourly (Feb 03, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5596?ref=opinion_hud",
+      "yesTokenId": "45704353234389250004331018762655114699473473605446848678660649165413614194698",
+      "noTokenId": "111582585808942350596421051608404496601794728815733205143918413612402848398274",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -8683,8 +7989,7 @@
       "3448",
       "3449",
       "3508",
-      "3509",
-      "78"
+      "3509"
     ],
     "2026 ncaa": [
       "343"
@@ -8834,8 +8139,7 @@
     "after launch": [
       "1721",
       "244",
-      "317",
-      "67"
+      "317"
     ],
     "after snap": [
       "306"
@@ -8858,8 +8162,7 @@
       "244",
       "317",
       "3361",
-      "3366",
-      "67"
+      "3366"
     ],
     "airstrike": [
       "257",
@@ -8880,8 +8183,7 @@
       "3256"
     ],
     "ali khamenei": [
-      "242",
-      "258"
+      "242"
     ],
     "all time": [
       "3361",
@@ -9005,7 +8307,6 @@
     ],
     "ayatollah": [
       "242",
-      "258",
       "330"
     ],
     "back": [
@@ -9040,9 +8341,6 @@
     ],
     "base链": [
       "3366"
-    ],
-    "basis points": [
-      "78"
     ],
     "basketball": [
       "343"
@@ -9085,6 +8383,9 @@
     ],
     "big tech": [
       "329"
+    ],
+    "biggest": [
+      "336"
     ],
     "binance": [
       "3368",
@@ -9146,7 +8447,6 @@
     ],
     "blockchain": [
       "1721",
-      "318",
       "333",
       "334",
       "3361",
@@ -9159,6 +8459,9 @@
     ],
     "bls": [
       "273"
+    ],
+    "blue chip": [
+      "336"
     ],
     "blʌͻkpiиk": [
       "2178"
@@ -9270,14 +8573,7 @@
     "candidate": [
       "301"
     ],
-    "cap fdv": [
-      "67"
-    ],
-    "cap fdv one": [
-      "67"
-    ],
     "capital": [
-      "318",
       "3505",
       "3506",
       "3525"
@@ -9294,10 +8590,7 @@
     "central bank": [
       "300",
       "319",
-      "341",
-      "61",
-      "75",
-      "78"
+      "341"
     ],
     "ceo": [
       "2368",
@@ -9447,9 +8740,6 @@
       "2178",
       "3369"
     ],
-    "commitments": [
-      "318"
-    ],
     "commodity": [
       "315",
       "316"
@@ -9518,6 +8808,9 @@
     "core inflation": [
       "344"
     ],
+    "corporate": [
+      "336"
+    ],
     "cost of living": [
       "344"
     ],
@@ -9535,9 +8828,7 @@
     ],
     "cpi": [
       "319",
-      "344",
-      "61",
-      "75"
+      "344"
     ],
     "crash": [
       "332",
@@ -9558,7 +8849,6 @@
     "crypto": [
       "1721",
       "244",
-      "318",
       "332",
       "333",
       "334",
@@ -9568,8 +8858,7 @@
       "3367",
       "3368",
       "339",
-      "340",
-      "67"
+      "340"
     ],
     "crypto exchange": [
       "3362",
@@ -9602,9 +8891,6 @@
     "customs duties": [
       "1546"
     ],
-    "cuts 2026": [
-      "78"
-    ],
     "cz": [
       "3369"
     ],
@@ -9626,8 +8912,7 @@
     "day after": [
       "1721",
       "244",
-      "317",
-      "67"
+      "317"
     ],
     "day after launch": [
       "244"
@@ -9670,14 +8955,8 @@
     "decision dfr march": [
       "320"
     ],
-    "decision january": [
-      "61"
-    ],
     "decision june": [
       "319"
-    ],
-    "decision march": [
-      "75"
     ],
     "deepseek": [
       "338"
@@ -9687,8 +8966,7 @@
       "244",
       "333",
       "334",
-      "3361",
-      "67"
+      "3361"
     ],
     "defi hack": [
       "3360"
@@ -9710,7 +8988,6 @@
     ],
     "departure": [
       "2368",
-      "258",
       "300",
       "342"
     ],
@@ -9756,9 +9033,7 @@
       "3055"
     ],
     "dot plot": [
-      "319",
-      "61",
-      "78"
+      "319"
     ],
     "downtime": [
       "3357"
@@ -9824,8 +9099,7 @@
       "2668"
     ],
     "easing": [
-      "313",
-      "78"
+      "313"
     ],
     "ecb": [
       "320"
@@ -9906,7 +9180,8 @@
       "322",
       "326",
       "328",
-      "329"
+      "329",
+      "336"
     ],
     "equity index": [
       "327"
@@ -9919,9 +9194,6 @@
       "271",
       "3039",
       "331"
-    ],
-    "escape": [
-      "258"
     ],
     "eschatology": [
       "2670"
@@ -9939,8 +9211,7 @@
       "1721",
       "244",
       "333",
-      "3364",
-      "67"
+      "3364"
     ],
     "ethereum all": [
       "3364"
@@ -9970,8 +9241,7 @@
       "323"
     ],
     "evm": [
-      "1721",
-      "67"
+      "1721"
     ],
     "exclusion": [
       "3257"
@@ -9983,8 +9253,7 @@
       "1546"
     ],
     "exile": [
-      "1856",
-      "258"
+      "1856"
     ],
     "exit": [
       "2368",
@@ -10012,8 +9281,7 @@
       "312"
     ],
     "fabric": [
-      "317",
-      "318"
+      "317"
     ],
     "fabric $robo": [
       "317"
@@ -10023,12 +9291,6 @@
     ],
     "fabric crypto": [
       "317"
-    ],
-    "fabric public": [
-      "318"
-    ],
-    "fabric public sale": [
-      "318"
     ],
     "fabric token": [
       "317"
@@ -10064,11 +9326,7 @@
       "317"
     ],
     "fdv one": [
-      "1721",
-      "67"
-    ],
-    "fdv one day": [
-      "67"
+      "1721"
     ],
     "feb 2026": [
       "339"
@@ -10079,10 +9337,7 @@
     ],
     "fed": [
       "300",
-      "319",
-      "61",
-      "75",
-      "78"
+      "319"
     ],
     "fed chair": [
       "300",
@@ -10094,26 +9349,8 @@
     "fed decision june": [
       "319"
     ],
-    "fed funds rate": [
-      "61"
-    ],
-    "fed meeting": [
-      "61"
-    ],
     "fed policy": [
       "344"
-    ],
-    "fed rate": [
-      "61",
-      "75",
-      "78"
-    ],
-    "fed rate cuts": [
-      "78"
-    ],
-    "fed rate decision": [
-      "61",
-      "75"
     ],
     "federal circuit": [
       "1546"
@@ -10121,18 +9358,12 @@
     "federal funding": [
       "303"
     ],
-    "federal funds rate": [
-      "75"
-    ],
     "federal government": [
       "303"
     ],
     "federal reserve": [
       "300",
-      "319",
-      "61",
-      "75",
-      "78"
+      "319"
     ],
     "federal reserve chair": [
       "341"
@@ -10168,20 +9399,17 @@
     "flash loan attack": [
       "3360"
     ],
-    "flee": [
-      "258"
-    ],
     "fomc": [
-      "319",
-      "61",
-      "75",
-      "78"
+      "319"
     ],
     "formula 1": [
       "312"
     ],
     "formula one": [
       "312"
+    ],
+    "fortune 500": [
+      "336"
     ],
     "founder": [
       "3369"
@@ -10202,9 +9430,6 @@
     ],
     "funding lapse": [
       "303"
-    ],
-    "fundraising": [
-      "318"
     ],
     "furlough": [
       "303"
@@ -10249,6 +9474,9 @@
     ],
     "girl group": [
       "2178"
+    ],
+    "global 2000": [
+      "336"
     ],
     "going private": [
       "337"
@@ -10457,11 +9685,7 @@
       "303"
     ],
     "how many": [
-      "273",
-      "78"
-    ],
-    "how many fed": [
-      "78"
+      "273"
     ],
     "how many jobs": [
       "273"
@@ -10489,14 +9713,8 @@
       "3039",
       "331"
     ],
-    "ido": [
-      "318"
-    ],
     "ieepa": [
       "1546"
-    ],
-    "ieo": [
-      "318"
     ],
     "impeachment": [
       "3062"
@@ -10528,10 +9746,7 @@
     "inflation": [
       "319",
       "320",
-      "344",
-      "61",
-      "75",
-      "78"
+      "344"
     ],
     "inflation get": [
       "344"
@@ -10555,15 +9770,10 @@
     "institutional adoption": [
       "340"
     ],
-    "interest rate": [
-      "78"
-    ],
     "interest rates": [
       "313",
       "319",
-      "320",
-      "61",
-      "75"
+      "320"
     ],
     "invasion": [
       "274"
@@ -10572,7 +9782,6 @@
       "316"
     ],
     "investment": [
-      "318",
       "3505",
       "3506",
       "3525"
@@ -10590,7 +9799,6 @@
     "iran": [
       "242",
       "257",
-      "258",
       "271",
       "3039",
       "330",
@@ -10619,7 +9827,6 @@
     ],
     "islamic republic": [
       "242",
-      "258",
       "330"
     ],
     "israel": [
@@ -10664,10 +9871,7 @@
     ],
     "jerome powell": [
       "300",
-      "319",
-      "61",
-      "75",
-      "78"
+      "319"
     ],
     "jerome powell out": [
       "300"
@@ -10742,14 +9946,7 @@
     ],
     "khamenei": [
       "242",
-      "258",
       "330"
-    ],
-    "khamenei leave": [
-      "258"
-    ],
-    "khamenei leave iran": [
-      "258"
     ],
     "khamenei out": [
       "242"
@@ -10778,14 +9975,16 @@
     ],
     "l2": [
       "244",
-      "3366",
-      "67"
+      "3366"
     ],
     "labor market": [
       "273"
     ],
     "large language model": [
       "338"
+    ],
+    "largest": [
+      "336"
     ],
     "largest company": [
       "336"
@@ -10794,8 +9993,7 @@
       "336"
     ],
     "launch": [
-      "317",
-      "318"
+      "317"
     ],
     "launch token": [
       "3366"
@@ -10829,9 +10027,6 @@
     "leave": [
       "2368"
     ],
-    "leave iran": [
-      "258"
-    ],
     "leave trump": [
       "342"
     ],
@@ -10858,8 +10053,7 @@
     ],
     "listing": [
       "317",
-      "3362",
-      "67"
+      "3362"
     ],
     "llm": [
       "335",
@@ -10894,14 +10088,7 @@
       "1856"
     ],
     "mainnet": [
-      "3366",
-      "67"
-    ],
-    "many fed": [
-      "78"
-    ],
-    "many fed rate": [
-      "78"
+      "3366"
     ],
     "many jobs": [
       "273"
@@ -10946,12 +10133,9 @@
     "market cap": [
       "317",
       "324",
+      "336",
       "3505",
-      "3506",
-      "67"
-    ],
-    "market cap fdv": [
-      "67"
+      "3506"
     ],
     "market movement": [
       "339"
@@ -10974,18 +10158,11 @@
     "max volatility": [
       "339"
     ],
-    "medical travel": [
-      "258"
+    "mega cap": [
+      "336"
     ],
     "megaeth": [
-      "1721",
-      "67"
-    ],
-    "megaeth market": [
-      "67"
-    ],
-    "megaeth market cap": [
-      "67"
+      "1721"
     ],
     "megaeth who": [
       "1721"
@@ -11113,10 +10290,7 @@
       "319",
       "320",
       "341",
-      "344",
-      "61",
-      "75",
-      "78"
+      "344"
     ],
     "money": [
       "3505",
@@ -11286,13 +10460,11 @@
     "one day": [
       "1721",
       "244",
-      "317",
-      "67"
+      "317"
     ],
     "one day after": [
       "244",
-      "317",
-      "67"
+      "317"
     ],
     "op stack": [
       "3366"
@@ -11368,8 +10540,7 @@
     ],
     "pce": [
       "319",
-      "344",
-      "61"
+      "344"
     ],
     "peg": [
       "3359"
@@ -11412,9 +10583,6 @@
     "policy board": [
       "313"
     ],
-    "policy decision": [
-      "75"
-    ],
     "policy rate": [
       "313"
     ],
@@ -11438,9 +10606,7 @@
     "powell": [
       "300",
       "319",
-      "341",
-      "75",
-      "78"
+      "341"
     ],
     "powell out": [
       "300"
@@ -11483,8 +10649,7 @@
       "333",
       "3359",
       "3361",
-      "3367",
-      "67"
+      "3367"
     ],
     "price action": [
       "332"
@@ -11552,12 +10717,6 @@
     "public listing": [
       "3362"
     ],
-    "public sale": [
-      "318"
-    ],
-    "public sale total": [
-      "318"
-    ],
     "pump": [
       "3364",
       "3368"
@@ -11621,9 +10780,6 @@
       "3505",
       "3525"
     ],
-    "raised": [
-      "318"
-    ],
     "rally": [
       "324",
       "326",
@@ -11634,39 +10790,21 @@
       "3368"
     ],
     "ranking": [
-      "335"
+      "335",
+      "336"
     ],
     "rapture": [
       "2670"
     ],
     "rate cut": [
-      "319",
-      "61",
-      "75",
-      "78"
-    ],
-    "rate cuts": [
-      "78"
-    ],
-    "rate cuts 2026": [
-      "78"
+      "319"
     ],
     "rate decision": [
       "313",
-      "320",
-      "61",
-      "75"
-    ],
-    "rate decision january": [
-      "61"
-    ],
-    "rate decision march": [
-      "75"
+      "320"
     ],
     "rate hike": [
-      "319",
-      "61",
-      "75"
+      "319"
     ],
     "rates decision": [
       "320"
@@ -11694,7 +10832,6 @@
       "3357"
     ],
     "regime": [
-      "258",
       "330"
     ],
     "regime change": [
@@ -11751,7 +10888,6 @@
     "resignation": [
       "2368",
       "242",
-      "258",
       "300",
       "3062",
       "342"
@@ -11808,11 +10944,9 @@
       "317"
     ],
     "rollup": [
-      "3366",
-      "67"
+      "3366"
     ],
     "round": [
-      "318",
       "3505",
       "3506",
       "3525"
@@ -11834,12 +10968,6 @@
     ],
     "safe haven": [
       "315"
-    ],
-    "sale total": [
-      "318"
-    ],
-    "sale total commitments": [
-      "318"
     ],
     "sanae takaichi": [
       "306"
@@ -12073,6 +11201,9 @@
     "stock market debut": [
       "3362"
     ],
+    "stock price": [
+      "336"
+    ],
     "stranger things": [
       "3221",
       "3222",
@@ -12109,8 +11240,7 @@
       "2178"
     ],
     "succession": [
-      "242",
-      "258"
+      "242"
     ],
     "successor": [
       "2368",
@@ -12128,8 +11258,7 @@
       "1546"
     ],
     "supreme leader": [
-      "242",
-      "258"
+      "242"
     ],
     "supreme leader iran": [
       "242"
@@ -12182,7 +11311,6 @@
     "tehran": [
       "242",
       "257",
-      "258",
       "271",
       "3039",
       "330",
@@ -12227,8 +11355,7 @@
     ],
     "tge": [
       "1721",
-      "317",
-      "67"
+      "317"
     ],
     "thai": [
       "307"
@@ -12298,8 +11425,7 @@
       "244",
       "333",
       "334",
-      "3367",
-      "67"
+      "3367"
     ],
     "token 2026": [
       "3366"
@@ -12307,19 +11433,16 @@
     "token launch": [
       "3366"
     ],
-    "token sale": [
-      "318"
-    ],
     "tokenomics": [
       "244",
       "317",
       "3361"
     ],
+    "top company": [
+      "336"
+    ],
     "top pick": [
       "3072"
-    ],
-    "total commitments": [
-      "318"
     ],
     "tournament": [
       "343"
@@ -12347,8 +11470,7 @@
       "334",
       "3361",
       "3367",
-      "340",
-      "67"
+      "340"
     ],
     "trading range": [
       "339"
@@ -12365,6 +11487,9 @@
     ],
     "tribulation": [
       "2670"
+    ],
+    "trillion": [
+      "336"
     ],
     "troy ounce": [
       "315",
@@ -12435,10 +11560,7 @@
     ],
     "us economy": [
       "319",
-      "3265",
-      "61",
-      "75",
-      "78"
+      "3265"
     ],
     "us equities": [
       "327"
@@ -12483,11 +11605,11 @@
     "valuation": [
       "317",
       "324",
+      "336",
       "3362",
       "3505",
       "3506",
-      "3525",
-      "67"
+      "3525"
     ],
     "vance": [
       "3055"
@@ -12720,8 +11842,7 @@
       "1721",
       "333",
       "3359",
-      "3364",
-      "67"
+      "3364"
     ],
     "以色列": [
       "271",
@@ -12747,8 +11868,7 @@
       "3223"
     ],
     "哈梅内伊": [
-      "242",
-      "258"
+      "242"
     ],
     "国家主席": [
       "301"
@@ -12786,6 +11906,12 @@
     ],
     "日本首相": [
       "306"
+    ],
+    "最大企业": [
+      "336"
+    ],
+    "最大公司": [
+      "336"
     ],
     "最高法院": [
       "1546"
@@ -12848,10 +11974,7 @@
     "美联储": [
       "303",
       "319",
-      "341",
-      "61",
-      "75",
-      "78"
+      "341"
     ],
     "美联储主席": [
       "300",
@@ -12916,8 +12039,7 @@
     "2026": [
       "339",
       "340",
-      "343",
-      "78"
+      "343"
     ],
     "2026 ncaa": [
       "343"
@@ -12980,8 +12102,7 @@
     ],
     "after launch": [
       "244",
-      "317",
-      "67"
+      "317"
     ],
     "after snap": [
       "306"
@@ -12998,8 +12119,7 @@
     ],
     "airdrop": [
       "244",
-      "317",
-      "67"
+      "317"
     ],
     "airstrike": [
       "257",
@@ -13011,8 +12131,7 @@
       "335"
     ],
     "ali khamenei": [
-      "242",
-      "258"
+      "242"
     ],
     "alphabet": [
       "326"
@@ -13077,7 +12196,6 @@
     ],
     "ayatollah": [
       "242",
-      "258",
       "330"
     ],
     "bank japan": [
@@ -13088,9 +12206,6 @@
     ],
     "bank of japan": [
       "313"
-    ],
-    "basis points": [
-      "78"
     ],
     "basketball": [
       "343"
@@ -13119,6 +12234,9 @@
     "big tech": [
       "329"
     ],
+    "biggest": [
+      "336"
+    ],
     "bitcoin": [
       "332",
       "339",
@@ -13144,13 +12262,15 @@
       "307"
     ],
     "blockchain": [
-      "318",
       "333",
       "334",
       "340"
     ],
     "bls": [
       "273"
+    ],
+    "blue chip": [
+      "336"
     ],
     "boj": [
       "313"
@@ -13203,15 +12323,6 @@
     "candidate": [
       "301"
     ],
-    "cap fdv": [
-      "67"
-    ],
-    "cap fdv one": [
-      "67"
-    ],
-    "capital": [
-      "318"
-    ],
     "cartel": [
       "274"
     ],
@@ -13221,10 +12332,7 @@
     "central bank": [
       "300",
       "319",
-      "341",
-      "61",
-      "75",
-      "78"
+      "341"
     ],
     "chairman": [
       "341"
@@ -13305,9 +12413,6 @@
     "college hoops": [
       "343"
     ],
-    "commitments": [
-      "318"
-    ],
     "commodity": [
       "315",
       "316"
@@ -13365,6 +12470,9 @@
     "core inflation": [
       "344"
     ],
+    "corporate": [
+      "336"
+    ],
     "cost of living": [
       "344"
     ],
@@ -13373,22 +12481,18 @@
     ],
     "cpi": [
       "319",
-      "344",
-      "61",
-      "75"
+      "344"
     ],
     "crash": [
       "332"
     ],
     "crypto": [
       "244",
-      "318",
       "332",
       "333",
       "334",
       "339",
-      "340",
-      "67"
+      "340"
     ],
     "cryptocurrency": [
       "332",
@@ -13396,9 +12500,6 @@
       "334",
       "339",
       "340"
-    ],
-    "cuts 2026": [
-      "78"
     ],
     "daily volatility": [
       "339"
@@ -13411,8 +12512,7 @@
     ],
     "day after": [
       "244",
-      "317",
-      "67"
+      "317"
     ],
     "day after launch": [
       "244"
@@ -13438,14 +12538,8 @@
     "decision dfr march": [
       "320"
     ],
-    "decision january": [
-      "61"
-    ],
     "decision june": [
       "319"
-    ],
-    "decision march": [
-      "75"
     ],
     "deepseek": [
       "338"
@@ -13453,14 +12547,12 @@
     "defi": [
       "244",
       "333",
-      "334",
-      "67"
+      "334"
     ],
     "deflation": [
       "344"
     ],
     "departure": [
-      "258",
       "300",
       "342"
     ],
@@ -13488,9 +12580,7 @@
       "340"
     ],
     "dot plot": [
-      "319",
-      "61",
-      "78"
+      "319"
     ],
     "drivers champion": [
       "312"
@@ -13514,8 +12604,7 @@
       "329"
     ],
     "easing": [
-      "313",
-      "78"
+      "313"
     ],
     "ecb": [
       "320"
@@ -13552,7 +12641,8 @@
       "322",
       "326",
       "328",
-      "329"
+      "329",
+      "336"
     ],
     "equity index": [
       "327"
@@ -13565,9 +12655,6 @@
       "271",
       "331"
     ],
-    "escape": [
-      "258"
-    ],
     "eth": [
       "244",
       "333"
@@ -13577,8 +12664,7 @@
     ],
     "ethereum": [
       "244",
-      "333",
-      "67"
+      "333"
     ],
     "ethereum hit": [
       "333"
@@ -13601,12 +12687,6 @@
     "ev": [
       "323"
     ],
-    "evm": [
-      "67"
-    ],
-    "exile": [
-      "258"
-    ],
     "exit": [
       "300"
     ],
@@ -13617,8 +12697,7 @@
       "312"
     ],
     "fabric": [
-      "317",
-      "318"
+      "317"
     ],
     "fabric $robo": [
       "317"
@@ -13628,12 +12707,6 @@
     ],
     "fabric crypto": [
       "317"
-    ],
-    "fabric public": [
-      "318"
-    ],
-    "fabric public sale": [
-      "318"
     ],
     "fabric token": [
       "317"
@@ -13655,12 +12728,6 @@
       "244",
       "317"
     ],
-    "fdv one": [
-      "67"
-    ],
-    "fdv one day": [
-      "67"
-    ],
     "feb 2026": [
       "339"
     ],
@@ -13670,10 +12737,7 @@
     ],
     "fed": [
       "300",
-      "319",
-      "61",
-      "75",
-      "78"
+      "319"
     ],
     "fed chair": [
       "300",
@@ -13685,42 +12749,18 @@
     "fed decision june": [
       "319"
     ],
-    "fed funds rate": [
-      "61"
-    ],
-    "fed meeting": [
-      "61"
-    ],
     "fed policy": [
       "344"
     ],
-    "fed rate": [
-      "61",
-      "75",
-      "78"
-    ],
-    "fed rate cuts": [
-      "78"
-    ],
-    "fed rate decision": [
-      "61",
-      "75"
-    ],
     "federal funding": [
       "303"
-    ],
-    "federal funds rate": [
-      "75"
     ],
     "federal government": [
       "303"
     ],
     "federal reserve": [
       "300",
-      "319",
-      "61",
-      "75",
-      "78"
+      "319"
     ],
     "federal reserve chair": [
       "341"
@@ -13743,20 +12783,17 @@
     "first leave trump": [
       "342"
     ],
-    "flee": [
-      "258"
-    ],
     "fomc": [
-      "319",
-      "61",
-      "75",
-      "78"
+      "319"
     ],
     "formula 1": [
       "312"
     ],
     "formula one": [
       "312"
+    ],
+    "fortune 500": [
+      "336"
     ],
     "frankfurt": [
       "320"
@@ -13766,9 +12803,6 @@
     ],
     "funding lapse": [
       "303"
-    ],
-    "fundraising": [
-      "318"
     ],
     "furlough": [
       "303"
@@ -13792,6 +12826,9 @@
     ],
     "get 2026": [
       "344"
+    ],
+    "global 2000": [
+      "336"
     ],
     "going private": [
       "337"
@@ -13912,11 +12949,7 @@
       "303"
     ],
     "how many": [
-      "273",
-      "78"
-    ],
-    "how many fed": [
-      "78"
+      "273"
     ],
     "how many jobs": [
       "273"
@@ -13928,22 +12961,13 @@
       "271",
       "331"
     ],
-    "ido": [
-      "318"
-    ],
-    "ieo": [
-      "318"
-    ],
     "industrial metal": [
       "316"
     ],
     "inflation": [
       "319",
       "320",
-      "344",
-      "61",
-      "75",
-      "78"
+      "344"
     ],
     "inflation get": [
       "344"
@@ -13964,15 +12988,10 @@
     "institutional adoption": [
       "340"
     ],
-    "interest rate": [
-      "78"
-    ],
     "interest rates": [
       "313",
       "319",
-      "320",
-      "61",
-      "75"
+      "320"
     ],
     "invasion": [
       "274"
@@ -13980,16 +12999,12 @@
     "investing": [
       "316"
     ],
-    "investment": [
-      "318"
-    ],
     "iphone": [
       "324"
     ],
     "iran": [
       "242",
       "257",
-      "258",
       "271",
       "330",
       "331"
@@ -14010,7 +13025,6 @@
     ],
     "islamic republic": [
       "242",
-      "258",
       "330"
     ],
     "israel": [
@@ -14046,10 +13060,7 @@
     ],
     "jerome powell": [
       "300",
-      "319",
-      "61",
-      "75",
-      "78"
+      "319"
     ],
     "jerome powell out": [
       "300"
@@ -14089,14 +13100,7 @@
     ],
     "khamenei": [
       "242",
-      "258",
       "330"
-    ],
-    "khamenei leave": [
-      "258"
-    ],
-    "khamenei leave iran": [
-      "258"
     ],
     "khamenei out": [
       "242"
@@ -14105,14 +13109,16 @@
       "242"
     ],
     "l2": [
-      "244",
-      "67"
+      "244"
     ],
     "labor market": [
       "273"
     ],
     "large language model": [
       "338"
+    ],
+    "largest": [
+      "336"
     ],
     "largest company": [
       "336"
@@ -14121,8 +13127,7 @@
       "336"
     ],
     "launch": [
-      "317",
-      "318"
+      "317"
     ],
     "ldp": [
       "306"
@@ -14136,9 +13141,6 @@
     "leadership": [
       "242",
       "301"
-    ],
-    "leave iran": [
-      "258"
     ],
     "leave trump": [
       "342"
@@ -14159,8 +13161,7 @@
       "306"
     ],
     "listing": [
-      "317",
-      "67"
+      "317"
     ],
     "llm": [
       "335",
@@ -14177,15 +13178,6 @@
     ],
     "mac": [
       "324"
-    ],
-    "mainnet": [
-      "67"
-    ],
-    "many fed": [
-      "78"
-    ],
-    "many fed rate": [
-      "78"
     ],
     "many jobs": [
       "273"
@@ -14215,10 +13207,7 @@
     "market cap": [
       "317",
       "324",
-      "67"
-    ],
-    "market cap fdv": [
-      "67"
+      "336"
     ],
     "market movement": [
       "339"
@@ -14235,17 +13224,8 @@
     "max volatility": [
       "339"
     ],
-    "medical travel": [
-      "258"
-    ],
-    "megaeth": [
-      "67"
-    ],
-    "megaeth market": [
-      "67"
-    ],
-    "megaeth market cap": [
-      "67"
+    "mega cap": [
+      "336"
     ],
     "merger": [
       "337"
@@ -14316,10 +13296,7 @@
       "319",
       "320",
       "341",
-      "344",
-      "61",
-      "75",
-      "78"
+      "344"
     ],
     "motorsport": [
       "312"
@@ -14396,13 +13373,11 @@
     ],
     "one day": [
       "244",
-      "317",
-      "67"
+      "317"
     ],
     "one day after": [
       "244",
-      "317",
-      "67"
+      "317"
     ],
     "openai": [
       "335",
@@ -14444,8 +13419,7 @@
     ],
     "pce": [
       "319",
-      "344",
-      "61"
+      "344"
     ],
     "pentagon": [
       "257",
@@ -14473,9 +13447,6 @@
     "policy board": [
       "313"
     ],
-    "policy decision": [
-      "75"
-    ],
     "policy rate": [
       "313"
     ],
@@ -14493,9 +13464,7 @@
     "powell": [
       "300",
       "319",
-      "341",
-      "75",
-      "78"
+      "341"
     ],
     "powell out": [
       "300"
@@ -14527,8 +13496,7 @@
       "326",
       "328",
       "329",
-      "333",
-      "67"
+      "333"
     ],
     "price action": [
       "332"
@@ -14583,12 +13551,6 @@
     "pt": [
       "307"
     ],
-    "public sale": [
-      "318"
-    ],
-    "public sale total": [
-      "318"
-    ],
     "purchase": [
       "337"
     ],
@@ -14616,9 +13578,6 @@
     "rainbow wallet": [
       "244"
     ],
-    "raised": [
-      "318"
-    ],
     "rally": [
       "324",
       "326",
@@ -14626,36 +13585,18 @@
       "329"
     ],
     "ranking": [
-      "335"
+      "335",
+      "336"
     ],
     "rate cut": [
-      "319",
-      "61",
-      "75",
-      "78"
-    ],
-    "rate cuts": [
-      "78"
-    ],
-    "rate cuts 2026": [
-      "78"
+      "319"
     ],
     "rate decision": [
       "313",
-      "320",
-      "61",
-      "75"
-    ],
-    "rate decision january": [
-      "61"
-    ],
-    "rate decision march": [
-      "75"
+      "320"
     ],
     "rate hike": [
-      "319",
-      "61",
-      "75"
+      "319"
     ],
     "rates decision": [
       "320"
@@ -14664,7 +13605,6 @@
       "320"
     ],
     "regime": [
-      "258",
       "330"
     ],
     "regime change": [
@@ -14681,7 +13621,6 @@
     ],
     "resignation": [
       "242",
-      "258",
       "300",
       "342"
     ],
@@ -14699,23 +13638,11 @@
     "robo": [
       "317"
     ],
-    "rollup": [
-      "67"
-    ],
-    "round": [
-      "318"
-    ],
     "s&p 500": [
       "327"
     ],
     "safe haven": [
       "315"
-    ],
-    "sale total": [
-      "318"
-    ],
-    "sale total commitments": [
-      "318"
     ],
     "sanae takaichi": [
       "306"
@@ -14827,6 +13754,9 @@
     "stock index": [
       "327"
     ],
+    "stock price": [
+      "336"
+    ],
     "strategic acquisition": [
       "337"
     ],
@@ -14846,8 +13776,7 @@
       "331"
     ],
     "succession": [
-      "242",
-      "258"
+      "242"
     ],
     "successor": [
       "300",
@@ -14857,8 +13786,7 @@
       "332"
     ],
     "supreme leader": [
-      "242",
-      "258"
+      "242"
     ],
     "supreme leader iran": [
       "242"
@@ -14886,7 +13814,6 @@
     "tehran": [
       "242",
       "257",
-      "258",
       "271",
       "330",
       "331"
@@ -14907,8 +13834,7 @@
       "323"
     ],
     "tge": [
-      "317",
-      "67"
+      "317"
     ],
     "thai": [
       "307"
@@ -14931,18 +13857,14 @@
     "token": [
       "244",
       "333",
-      "334",
-      "67"
-    ],
-    "token sale": [
-      "318"
+      "334"
     ],
     "tokenomics": [
       "244",
       "317"
     ],
-    "total commitments": [
-      "318"
+    "top company": [
+      "336"
     ],
     "tournament": [
       "343"
@@ -14962,14 +13884,16 @@
       "332",
       "333",
       "334",
-      "340",
-      "67"
+      "340"
     ],
     "trading range": [
       "339"
     ],
     "treasury": [
       "341"
+    ],
+    "trillion": [
+      "336"
     ],
     "troy ounce": [
       "315",
@@ -15009,10 +13933,7 @@
       "274"
     ],
     "us economy": [
-      "319",
-      "61",
-      "75",
-      "78"
+      "319"
     ],
     "us equities": [
       "327"
@@ -15038,7 +13959,7 @@
     "valuation": [
       "317",
       "324",
-      "67"
+      "336"
     ],
     "vietnam": [
       "301"
@@ -15198,8 +14119,7 @@
       "335"
     ],
     "以太坊": [
-      "333",
-      "67"
+      "333"
     ],
     "以色列": [
       "271",
@@ -15209,8 +14129,7 @@
       "341"
     ],
     "哈梅内伊": [
-      "242",
-      "258"
+      "242"
     ],
     "国家主席": [
       "301"
@@ -15241,6 +14160,12 @@
     ],
     "日本首相": [
       "306"
+    ],
+    "最大企业": [
+      "336"
+    ],
+    "最大公司": [
+      "336"
     ],
     "最高领袖": [
       "242"
@@ -15283,10 +14208,7 @@
     "美联储": [
       "303",
       "319",
-      "341",
-      "61",
-      "75",
-      "78"
+      "341"
     ],
     "美联储主席": [
       "300",
