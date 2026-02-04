@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-04 16:57:05 UTC+8",
+    "generatedAt": "2026-02-05 01:03:09 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 261,
-      "markets": 125,
+      "kept": 259,
+      "markets": 123,
       "keywords": 1175,
       "events": {
         "events": 37
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 739,
+        "cutoff_expired": 741,
         "cutoff_zero_kept": 17,
         "resolved": 0,
         "missing_id": 0,
@@ -7749,35 +7749,11 @@
       },
       "type": "binary"
     },
-    "5645": {
-      "title": "ETH Up or Down - Hourly (Feb 04, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5645?ref=opinion_hud",
-      "yesTokenId": "28480772544094267561657491333049884043349186425203521221452250322152596127877",
-      "noTokenId": "105104848485312685604427534854766315142155934310330729285635653532027257852769",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "5644": {
-      "title": "BTC Up or Down - Hourly (Feb 04, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5644?ref=opinion_hud",
-      "yesTokenId": "17524567488555135476269599004867767004621103477836766758566728284436041850711",
-      "noTokenId": "24942351925942555842913901602037193038113020223641545199774391860179266423482",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "5643": {
-      "title": "BNB Up or Down - Hourly (Feb 04, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5643?ref=opinion_hud",
-      "yesTokenId": "68082085748823688568909946864833473860248269455121799438778073362892777596972",
-      "noTokenId": "35535174883274668473547634132367735009658237589882662313022784616834299171444",
+    "5673": {
+      "title": "Bitcoin Up or Down on February 5?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/5673?ref=opinion_hud",
+      "yesTokenId": "9515003373668524810533225763062203558083019079843961219579864394389720068778",
+      "noTokenId": "113140271403003187901904101672469506227679544041677867912839967938392416355262",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
