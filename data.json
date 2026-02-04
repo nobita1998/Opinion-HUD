@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-04 01:07:22 UTC+8",
+    "generatedAt": "2026-02-04 10:49:35 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 265,
-      "markets": 127,
-      "keywords": 1200,
+      "kept": 261,
+      "markets": 125,
+      "keywords": 1175,
       "events": {
-        "events": 38
+        "events": 37
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 735,
+        "cutoff_expired": 739,
         "cutoff_zero_kept": 17,
         "resolved": 0,
         "missing_id": 0,
@@ -29,12 +29,12 @@
         "fullAiRefresh": false,
         "onlyAiForNew": true,
         "reused": 37,
-        "regenerated_empty_entitygroups": 1,
-        "calls": 1,
+        "regenerated_empty_entitygroups": 0,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 1,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -126,55 +126,6 @@
       "sig": "f2b6e1cf",
       "sigFull": "f2b6e1cf",
       "sigCore": "29cb2d55",
-      "reused": false
-    },
-    "273": {
-      "title": "How many jobs added in the U.S. in January?",
-      "marketIds": [
-        "273"
-      ],
-      "bestMarketId": "273",
-      "bestLabels": null,
-      "keywords": [
-        "nfp",
-        "nonfarm payrolls",
-        "employment",
-        "unemployment",
-        "labor market",
-        "job growth",
-        "bls",
-        "adp",
-        "hiring",
-        "workforce",
-        "jobless claims",
-        "wage growth",
-        "participation rate",
-        "economic data",
-        "us jobs",
-        "how many",
-        "many jobs",
-        "jobs added",
-        "added january",
-        "how many jobs",
-        "many jobs added",
-        "jobs added january"
-      ],
-      "entities": [
-        "jobs",
-        "u.s."
-      ],
-      "entityGroups": [
-        [
-          "jobs",
-          "乔布斯"
-        ],
-        [
-          "u.s."
-        ]
-      ],
-      "sig": "59402fc4",
-      "sigFull": "59402fc4",
-      "sigCore": "46b33e89",
       "reused": false
     },
     "271": {
@@ -4008,99 +3959,6 @@
         }
       ]
     },
-    "273": {
-      "title": "How many jobs added in the U.S. in January?",
-      "url": "https://app.opinion.trade/market/273?ref=opinion_hud",
-      "yesTokenId": "40034969410697545600238884964302612532388717954693897354446559059648071897154",
-      "noTokenId": "21987955650953335574014727333186283617107855337023771140389469217199392154072",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "nfp",
-        "nonfarm payrolls",
-        "employment",
-        "unemployment",
-        "labor market",
-        "job growth",
-        "bls",
-        "adp",
-        "hiring",
-        "workforce",
-        "jobless claims",
-        "wage growth",
-        "participation rate",
-        "economic data",
-        "us jobs",
-        "how many",
-        "many jobs",
-        "jobs added",
-        "added january",
-        "how many jobs",
-        "many jobs added",
-        "jobs added january"
-      ],
-      "entities": [
-        "jobs",
-        "u.s."
-      ],
-      "entityGroups": [
-        [
-          "jobs",
-          "乔布斯"
-        ],
-        [
-          "u.s."
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3982",
-          "title": "<0",
-          "yesTokenId": "57873293518071928343625939815399677184034119008513981680724079488079018149681",
-          "noTokenId": "58523014391490868533925114424878862974614898232462431078821305003067280089655"
-        },
-        {
-          "marketId": "3983",
-          "title": "0-25k",
-          "yesTokenId": "106597808199982633155234960886671138207116585171578570475907150866997493044445",
-          "noTokenId": "67735686214089675262469547829348164743129295164013816178684505909137110796990"
-        },
-        {
-          "marketId": "3984",
-          "title": "25k–50k",
-          "yesTokenId": "40034969410697545600238884964302612532388717954693897354446559059648071897154",
-          "noTokenId": "21987955650953335574014727333186283617107855337023771140389469217199392154072"
-        },
-        {
-          "marketId": "3985",
-          "title": "50k–75k",
-          "yesTokenId": "15407455974158440160911100432577070540679265706382420563952939608661250350465",
-          "noTokenId": "113461373964320868484994292925051409351188646826873036209937766979114682629237"
-        },
-        {
-          "marketId": "3986",
-          "title": "75k–100k",
-          "yesTokenId": "54939825757788873069013470843297818368871799766634057018615402820372962108933",
-          "noTokenId": "19156201627852521096176895895211973937821476677194863721559180327145754103529"
-        },
-        {
-          "marketId": "3987",
-          "title": "100k–125k",
-          "yesTokenId": "100646476012119158724338462454924810102714079147450729627506568869965539167565",
-          "noTokenId": "97767100975828434860162453071757288957687427786111849364534346789348835230675"
-        },
-        {
-          "marketId": "3988",
-          "title": ">125k",
-          "yesTokenId": "61214136380395517885887942920069829722138507875903456263232028773565248250779",
-          "noTokenId": "68254653022799647946466497106718783033401992963391467542739217740259391542828"
-        }
-      ]
-    },
     "3982": {
       "title": "<0",
       "url": "https://app.opinion.trade/market/3982?ref=opinion_hud",
@@ -7245,18 +7103,6 @@
       },
       "type": "binary"
     },
-    "5565": {
-      "title": "Bitcoin Up or Down on February 4?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/5565?ref=opinion_hud",
-      "yesTokenId": "60855562534940586248436549336247998021328530600725806792630578916535418205969",
-      "noTokenId": "112335643772001405470169818992152078223414886006120317159299396489825501730117",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "5570": {
       "title": "Vegas Golden Knights",
       "url": "https://app.opinion.trade/market/5570?ref=opinion_hud",
@@ -7903,11 +7749,11 @@
       },
       "type": "binary"
     },
-    "5595": {
-      "title": "BNB Up or Down - Hourly (Feb 03, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5595?ref=opinion_hud",
-      "yesTokenId": "35038277899751129851281615515709615521376323222105515374120801592922347019899",
-      "noTokenId": "45423970753453180297206670363231822707497603013491699440714622807097298943333",
+    "5627": {
+      "title": "ETH Up or Down - Hourly (Feb 04, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5627?ref=opinion_hud",
+      "yesTokenId": "69567398687687457348867367228195166051904789416342956928738650599447837375",
+      "noTokenId": "102076013691246313226519074820623034549327037207352254403370619605392248110056",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7915,11 +7761,11 @@
       },
       "type": "binary"
     },
-    "5597": {
-      "title": "ETH Up or Down - Hourly (Feb 03, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5597?ref=opinion_hud",
-      "yesTokenId": "4183988015356663271207168006273949353627471327110452016683697089644929138931",
-      "noTokenId": "7440976689650946440293667576037154413763550653001763150971025119868031272807",
+    "5626": {
+      "title": "BTC Up or Down - Hourly (Feb 04, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5626?ref=opinion_hud",
+      "yesTokenId": "107271780503668172295931577448802512564116919890043002312863687548268674723848",
+      "noTokenId": "32498851812973090876913525099263265927305791054932642998247118084514090323723",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7927,11 +7773,11 @@
       },
       "type": "binary"
     },
-    "5596": {
-      "title": "BTC Up or Down - Hourly (Feb 03, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5596?ref=opinion_hud",
-      "yesTokenId": "45704353234389250004331018762655114699473473605446848678660649165413614194698",
-      "noTokenId": "111582585808942350596421051608404496601794728815733205143918413612402848398274",
+    "5625": {
+      "title": "BNB Up or Down - Hourly (Feb 04, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5625?ref=opinion_hud",
+      "yesTokenId": "19910738294696165986216163056158820685319622086898678331270079877735152124763",
+      "noTokenId": "90152369206558784268061402971437276233073826726999346439753353664818189057801",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -8121,17 +7967,11 @@
     "actress": [
       "3158"
     ],
-    "added january": [
-      "273"
-    ],
     "address": [
       "3365"
     ],
     "administration": [
       "342"
-    ],
-    "adp": [
-      "273"
     ],
     "advisory": [
       "3369"
@@ -8456,9 +8296,6 @@
     ],
     "blockchain upgrade": [
       "3256"
-    ],
-    "bls": [
-      "273"
     ],
     "blue chip": [
       "336"
@@ -9113,9 +8950,6 @@
     "economic crisis": [
       "3265"
     ],
-    "economic data": [
-      "273"
-    ],
     "economic downturn": [
       "3265"
     ],
@@ -9140,9 +8974,6 @@
     ],
     "elite eight": [
       "343"
-    ],
-    "employment": [
-      "273"
     ],
     "encryption": [
       "3256"
@@ -9642,9 +9473,6 @@
     "higher fdv one": [
       "1721"
     ],
-    "hiring": [
-      "273"
-    ],
     "hit $1500": [
       "3367"
     ],
@@ -9683,12 +9511,6 @@
     ],
     "how long government": [
       "303"
-    ],
-    "how many": [
-      "273"
-    ],
-    "how many jobs": [
-      "273"
     ],
     "hype": [
       "3361"
@@ -9894,21 +9716,6 @@
     "jia yueting": [
       "1856"
     ],
-    "job growth": [
-      "273"
-    ],
-    "jobless claims": [
-      "273"
-    ],
-    "jobs": [
-      "273"
-    ],
-    "jobs added": [
-      "273"
-    ],
-    "jobs added january": [
-      "273"
-    ],
     "jonathan byers": [
       "3221",
       "3223"
@@ -9976,9 +9783,6 @@
     "l2": [
       "244",
       "3366"
-    ],
-    "labor market": [
-      "273"
     ],
     "large language model": [
       "338"
@@ -10089,12 +9893,6 @@
     ],
     "mainnet": [
       "3366"
-    ],
-    "many jobs": [
-      "273"
-    ],
-    "many jobs added": [
-      "273"
     ],
     "march": [
       "343"
@@ -10421,14 +10219,8 @@
     "nfl draft": [
       "3072"
     ],
-    "nfp": [
-      "273"
-    ],
     "nomination": [
       "341"
-    ],
-    "nonfarm payrolls": [
-      "273"
     ],
     "number one pick": [
       "3072"
@@ -10534,9 +10326,6 @@
     ],
     "partial shutdown": [
       "303"
-    ],
-    "participation rate": [
-      "273"
     ],
     "pce": [
       "319",
@@ -11536,14 +11325,8 @@
       "3221",
       "3224"
     ],
-    "u.s.": [
-      "273"
-    ],
     "underclassmen": [
       "3072"
-    ],
-    "unemployment": [
-      "273"
     ],
     "united states": [
       "274"
@@ -11564,9 +11347,6 @@
     ],
     "us equities": [
       "327"
-    ],
-    "us jobs": [
-      "273"
     ],
     "us stock market": [
       "327"
@@ -11654,9 +11434,6 @@
     ],
     "vp": [
       "3055"
-    ],
-    "wage growth": [
-      "273"
     ],
     "wall street": [
       "327"
@@ -11766,9 +11543,6 @@
     "will byers": [
       "3221"
     ],
-    "workforce": [
-      "273"
-    ],
     "world drivers": [
       "312"
     ],
@@ -11822,9 +11596,6 @@
     ],
     "中本聪": [
       "3365"
-    ],
-    "乔布斯": [
-      "273"
     ],
     "乔纳森·拜尔斯": [
       "3221"
@@ -12091,14 +11862,8 @@
     "acquisition": [
       "337"
     ],
-    "added january": [
-      "273"
-    ],
     "administration": [
       "342"
-    ],
-    "adp": [
-      "273"
     ],
     "after launch": [
       "244",
@@ -12265,9 +12030,6 @@
       "333",
       "334",
       "340"
-    ],
-    "bls": [
-      "273"
     ],
     "blue chip": [
       "336"
@@ -12615,9 +12377,6 @@
     "ecb rates decision": [
       "320"
     ],
-    "economic data": [
-      "273"
-    ],
     "economics": [
       "344"
     ],
@@ -12633,9 +12392,6 @@
     ],
     "elite eight": [
       "343"
-    ],
-    "employment": [
-      "273"
     ],
     "equity": [
       "322",
@@ -12923,9 +12679,6 @@
     "high volatility": [
       "339"
     ],
-    "hiring": [
-      "273"
-    ],
     "hit 2026": [
       "340"
     ],
@@ -12947,12 +12700,6 @@
     ],
     "how long government": [
       "303"
-    ],
-    "how many": [
-      "273"
-    ],
-    "how many jobs": [
-      "273"
     ],
     "hyperinflation": [
       "344"
@@ -13071,21 +12818,6 @@
     "jgb": [
       "313"
     ],
-    "job growth": [
-      "273"
-    ],
-    "jobless claims": [
-      "273"
-    ],
-    "jobs": [
-      "273"
-    ],
-    "jobs added": [
-      "273"
-    ],
-    "jobs added january": [
-      "273"
-    ],
     "kantei": [
       "306"
     ],
@@ -13110,9 +12842,6 @@
     ],
     "l2": [
       "244"
-    ],
-    "labor market": [
-      "273"
     ],
     "large language model": [
       "338"
@@ -13178,12 +12907,6 @@
     ],
     "mac": [
       "324"
-    ],
-    "many jobs": [
-      "273"
-    ],
-    "many jobs added": [
-      "273"
     ],
     "march": [
       "343"
@@ -13344,14 +13067,8 @@
     "next president vietnam": [
       "301"
     ],
-    "nfp": [
-      "273"
-    ],
     "nomination": [
       "341"
-    ],
-    "nonfarm payrolls": [
-      "273"
     ],
     "nvda": [
       "322"
@@ -13413,9 +13130,6 @@
     ],
     "partial shutdown": [
       "303"
-    ],
-    "participation rate": [
-      "273"
     ],
     "pce": [
       "319",
@@ -13918,12 +13632,6 @@
     "turnover": [
       "342"
     ],
-    "u.s.": [
-      "273"
-    ],
-    "unemployment": [
-      "273"
-    ],
     "united states": [
       "274"
     ],
@@ -13937,9 +13645,6 @@
     ],
     "us equities": [
       "327"
-    ],
-    "us jobs": [
-      "273"
     ],
     "us stock market": [
       "327"
@@ -13982,9 +13687,6 @@
     "vote": [
       "301",
       "307"
-    ],
-    "wage growth": [
-      "273"
     ],
     "wall street": [
       "327"
@@ -14064,9 +13766,6 @@
     "who first leave": [
       "342"
     ],
-    "workforce": [
-      "273"
-    ],
     "world drivers": [
       "312"
     ],
@@ -14105,9 +13804,6 @@
     ],
     "中情局": [
       "338"
-    ],
-    "乔布斯": [
-      "273"
     ],
     "亚马逊": [
       "328"
