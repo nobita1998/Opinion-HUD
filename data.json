@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-05 01:03:09 UTC+8",
+    "generatedAt": "2026-02-05 10:51:42 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 259,
+      "kept": 243,
       "markets": 123,
-      "keywords": 1175,
+      "keywords": 1138,
       "events": {
-        "events": 37
+        "events": 35
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 741,
+        "cutoff_expired": 757,
         "cutoff_zero_kept": 17,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 37,
+        "reused": 35,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -209,52 +209,6 @@
       "sig": "6d13db67",
       "sigFull": "6d13db67",
       "sigCore": "a98f06da",
-      "reused": false
-    },
-    "303": {
-      "title": "How long will the Government Shutdown last?",
-      "marketIds": [
-        "303"
-      ],
-      "bestMarketId": "303",
-      "bestLabels": null,
-      "keywords": [
-        "government shutdown",
-        "federal shutdown",
-        "furlough",
-        "budget impasse",
-        "funding lapse",
-        "congressional standoff",
-        "government closure",
-        "suspension of services",
-        "federal funding",
-        "appropriations crisis",
-        "partial shutdown",
-        "government stoppage",
-        "spending bill",
-        "funding gap",
-        "federal government",
-        "how long",
-        "long government",
-        "shutdown last",
-        "how long government",
-        "long government shutdown",
-        "government shutdown last"
-      ],
-      "entities": [
-        "government shutdown"
-      ],
-      "entityGroups": [
-        [
-          "government shutdown",
-          "政府停摆",
-          "联邦停摆",
-          "美联储"
-        ]
-      ],
-      "sig": "5d94e068",
-      "sigFull": "5d94e068",
-      "sigCore": "7227cac5",
       "reused": false
     },
     "301": {
@@ -1652,50 +1606,6 @@
       "sig": "375eba31",
       "sigFull": "375eba31",
       "sigCore": "f6926b77",
-      "reused": false
-    },
-    "342": {
-      "title": "Who will be the first to leave the Trump Cabinet?",
-      "marketIds": [
-        "342"
-      ],
-      "bestMarketId": "342",
-      "bestLabels": null,
-      "keywords": [
-        "trump",
-        "cabinet",
-        "resignation",
-        "fired",
-        "departure",
-        "administration",
-        "secretary",
-        "appointee",
-        "turnover",
-        "quit",
-        "ousted",
-        "white house",
-        "who first",
-        "first leave",
-        "leave trump",
-        "trump cabinet",
-        "who first leave",
-        "first leave trump",
-        "leave trump cabinet"
-      ],
-      "entities": [
-        "trump cabinet"
-      ],
-      "entityGroups": [
-        [
-          "trump cabinet",
-          "特朗普内阁",
-          "川普内阁",
-          "特朗普"
-        ]
-      ],
-      "sig": "2ff74478",
-      "sigFull": "2ff74478",
-      "sigCore": "fa71052e",
       "reused": false
     },
     "341": {
@@ -4267,90 +4177,6 @@
         "noLabel": "DOWN"
       },
       "type": "binary"
-    },
-    "303": {
-      "title": "How long will the Government Shutdown last?",
-      "url": "https://app.opinion.trade/market/303?ref=opinion_hud",
-      "yesTokenId": "94248872378982681473790199480804446863400900772505990694764095085879269196491",
-      "noTokenId": "20022836814266036182922895981324551832983263381936614524808134060713089448648",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "government shutdown",
-        "federal shutdown",
-        "furlough",
-        "budget impasse",
-        "funding lapse",
-        "congressional standoff",
-        "government closure",
-        "suspension of services",
-        "federal funding",
-        "appropriations crisis",
-        "partial shutdown",
-        "government stoppage",
-        "spending bill",
-        "funding gap",
-        "federal government",
-        "how long",
-        "long government",
-        "shutdown last",
-        "how long government",
-        "long government shutdown",
-        "government shutdown last"
-      ],
-      "entities": [
-        "government shutdown"
-      ],
-      "entityGroups": [
-        [
-          "government shutdown",
-          "政府停摆",
-          "联邦停摆",
-          "美联储"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "4639",
-          "title": "7+ day",
-          "yesTokenId": "94248872378982681473790199480804446863400900772505990694764095085879269196491",
-          "noTokenId": "20022836814266036182922895981324551832983263381936614524808134060713089448648"
-        },
-        {
-          "marketId": "4640",
-          "title": "14+ day",
-          "yesTokenId": "9547115884329255969409329305456744585822228611190810261403242602943827409799",
-          "noTokenId": "113048414606838953224931220743963347036517200740548754109865493161507606383893"
-        },
-        {
-          "marketId": "4641",
-          "title": "30+ day",
-          "yesTokenId": "47957274933698648808930145329516771083013189708558228767597747412395796331637",
-          "noTokenId": "108203170091106597824350166465051086274753970104688810615738232711217346438628"
-        },
-        {
-          "marketId": "4642",
-          "title": "60+ day",
-          "yesTokenId": "10669683607400733758518858582764205110523269465639837401654487991702461646834",
-          "noTokenId": "11175600105816819635897491317770117504923045542652266151482281851098340967625"
-        },
-        {
-          "marketId": "4637",
-          "title": "1+ day",
-          "yesTokenId": "87084675109125125582433074548170996099035269350073528490663574199998877467012",
-          "noTokenId": "50635060887464460334054474271862411581498957381572642481421654672381467395652"
-        },
-        {
-          "marketId": "4638",
-          "title": "3+ day",
-          "yesTokenId": "16391180401605864023534511306227443711358613342395474173168922604264433942447",
-          "noTokenId": "43841558691318176650206070719800464383633192518055921151650214614039386560603"
-        }
-      ]
     },
     "301": {
       "title": "Next President of Vietnam",
@@ -7341,136 +7167,6 @@
         }
       ]
     },
-    "342": {
-      "title": "Who will be the first to leave the Trump Cabinet?",
-      "url": "https://app.opinion.trade/market/342?ref=opinion_hud",
-      "yesTokenId": "56914146186897755944685903962589110231753081376120600292817423644698258301449",
-      "noTokenId": "96752494714372068089312050011160322987785437307527233003227624699515760250806",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "trump",
-        "cabinet",
-        "resignation",
-        "fired",
-        "departure",
-        "administration",
-        "secretary",
-        "appointee",
-        "turnover",
-        "quit",
-        "ousted",
-        "white house",
-        "who first",
-        "first leave",
-        "leave trump",
-        "trump cabinet",
-        "who first leave",
-        "first leave trump",
-        "leave trump cabinet"
-      ],
-      "entities": [
-        "trump cabinet"
-      ],
-      "entityGroups": [
-        [
-          "trump cabinet",
-          "特朗普内阁",
-          "川普内阁",
-          "特朗普"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5530",
-          "title": "None before 2027",
-          "yesTokenId": "548272031236483033022303467292870931709568665846789666019229662007002185376",
-          "noTokenId": "71951381245088083922128572742505755134237752109914074682284338215918206409022"
-        },
-        {
-          "marketId": "5531",
-          "title": "Kristi Noem",
-          "yesTokenId": "55325916847429421121557598525772116267149271949254450489566254940860805634327",
-          "noTokenId": "35009076597323145730182023679103063152029723683125819368195685546369739407959"
-        },
-        {
-          "marketId": "5532",
-          "title": "Pam Bondi",
-          "yesTokenId": "100142981733858974960266691233533751903553149233903774333036756156633314860036",
-          "noTokenId": "2746113245533655481558577287217043386064706174909715680952736089873548089698"
-        },
-        {
-          "marketId": "5533",
-          "title": "Tulsi Gabbard",
-          "yesTokenId": "65195131356434583557015967452236531157820860575767219936622031760316537866622",
-          "noTokenId": "96106458505058576297719367810084340679105637404434141220487840974527035391321"
-        },
-        {
-          "marketId": "5534",
-          "title": "Lori Chavez-DeRemer",
-          "yesTokenId": "56914146186897755944685903962589110231753081376120600292817423644698258301449",
-          "noTokenId": "96752494714372068089312050011160322987785437307527233003227624699515760250806"
-        },
-        {
-          "marketId": "5535",
-          "title": "Howard Lutnick",
-          "yesTokenId": "14623039373388862802069749764736435976897475364939504693719561195492554557396",
-          "noTokenId": "88025604639737520853439628653309682445090703515724401496530254118415841878790"
-        },
-        {
-          "marketId": "5536",
-          "title": "Stephen Miran",
-          "yesTokenId": "97327184241162907414034430646286920730806863728381871276290405717832619560935",
-          "noTokenId": "80742276398868965540429628652462187011302119321742329143431801858815912235244"
-        },
-        {
-          "marketId": "5537",
-          "title": "Pete Hegseth",
-          "yesTokenId": "1870753446905689644784231383426891249900919346200258901842416665115407016228",
-          "noTokenId": "27889499785375505465137564676975485984244354108783295219099940336740299913126"
-        },
-        {
-          "marketId": "5538",
-          "title": "Susie Wiles",
-          "yesTokenId": "31871985303760726297867301062050811433986175428852155817835478797525600770675",
-          "noTokenId": "17819656015858329136681335181708380572043615756417722347663167461767991114012"
-        },
-        {
-          "marketId": "5539",
-          "title": "Russell T. Vought",
-          "yesTokenId": "102874721890539939407326512818491794438956226439127803174103609727383834330011",
-          "noTokenId": "99494865170200646212041960237273135447676623758616440061688571449290093737504"
-        },
-        {
-          "marketId": "5540",
-          "title": "Marco Rubio",
-          "yesTokenId": "79634815133640945291585181898175478342941735719964734134845697782029516277567",
-          "noTokenId": "32483938053834098535534454993067022789228083692050871831827659198507556036399"
-        },
-        {
-          "marketId": "5541",
-          "title": "Scott Bessent",
-          "yesTokenId": "55095891368927262933957653402499401427252530241726833069565751842500837911861",
-          "noTokenId": "95619152510078159135451177648217101690753080867488116133682292159026414195834"
-        },
-        {
-          "marketId": "5542",
-          "title": "Robert F. Kennedy Jr.",
-          "yesTokenId": "98801319075477394633589589839189895177157719626245515194227022078460852794558",
-          "noTokenId": "87017182969180855298836685180968220850407124031841329652148017127415068081596"
-        },
-        {
-          "marketId": "5543",
-          "title": "J.D. Vance",
-          "yesTokenId": "6808776981753548029644042514125865109889854542008077033339613832810588859894",
-          "noTokenId": "30845049512959640396582918473749446238722770826104385068921882872749363703668"
-        }
-      ]
-    },
     "341": {
       "title": "Kevin Warsh confirmed as Fed Chair by ...?",
       "url": "https://app.opinion.trade/market/341?ref=opinion_hud",
@@ -7749,11 +7445,35 @@
       },
       "type": "binary"
     },
-    "5673": {
-      "title": "Bitcoin Up or Down on February 5?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/5673?ref=opinion_hud",
-      "yesTokenId": "9515003373668524810533225763062203558083019079843961219579864394389720068778",
-      "noTokenId": "113140271403003187901904101672469506227679544041677867912839967938392416355262",
+    "5705": {
+      "title": "BNB Up or Down - Hourly (Feb 05, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5705?ref=opinion_hud",
+      "yesTokenId": "39487580635333939585021687778665831275519885113986351469970455667012424008519",
+      "noTokenId": "87688333280009383296992681341635945473910163749365355697350635998876056788683",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5707": {
+      "title": "ETH Up or Down - Hourly (Feb 05, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5707?ref=opinion_hud",
+      "yesTokenId": "24909587797035227405353814542494286401509689016594949921309755023595314209752",
+      "noTokenId": "88310260666656706630148491378962141540443869748131325368917864299539770154931",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5706": {
+      "title": "BTC Up or Down - Hourly (Feb 05, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5706?ref=opinion_hud",
+      "yesTokenId": "40841744003662140090353921152224001101910521771272843695239856168177262021360",
+      "noTokenId": "11988848154073525742316505314735498093328002394539171132114922755214103099137",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7946,9 +7666,6 @@
     "address": [
       "3365"
     ],
-    "administration": [
-      "342"
-    ],
     "advisory": [
       "3369"
     ],
@@ -8086,14 +7803,8 @@
     "apple ceo march": [
       "2368"
     ],
-    "appointee": [
-      "342"
-    ],
     "appointment": [
       "341"
-    ],
-    "appropriations crisis": [
-      "303"
     ],
     "april 2026": [
       "313"
@@ -8348,9 +8059,6 @@
     "btc price": [
       "339"
     ],
-    "budget impasse": [
-      "303"
-    ],
     "bull market": [
       "340"
     ],
@@ -8375,8 +8083,7 @@
       "337"
     ],
     "cabinet": [
-      "3062",
-      "342"
+      "3062"
     ],
     "calendar": [
       "3448",
@@ -8596,9 +8303,6 @@
       "3039",
       "331"
     ],
-    "congressional standoff": [
-      "303"
-    ],
     "consolidation": [
       "2398",
       "337"
@@ -8801,8 +8505,7 @@
     ],
     "departure": [
       "2368",
-      "300",
-      "342"
+      "300"
     ],
     "depeg": [
       "3359"
@@ -9162,21 +8865,12 @@
     "federal circuit": [
       "1546"
     ],
-    "federal funding": [
-      "303"
-    ],
-    "federal government": [
-      "303"
-    ],
     "federal reserve": [
       "300",
       "319"
     ],
     "federal reserve chair": [
       "341"
-    ],
-    "federal shutdown": [
-      "303"
     ],
     "fia": [
       "312"
@@ -9191,14 +8885,7 @@
       "3506"
     ],
     "fired": [
-      "2368",
-      "342"
-    ],
-    "first leave": [
-      "342"
-    ],
-    "first leave trump": [
-      "342"
+      "2368"
     ],
     "first overall": [
       "3072"
@@ -9231,15 +8918,6 @@
       "3505",
       "3506",
       "3525"
-    ],
-    "funding gap": [
-      "303"
-    ],
-    "funding lapse": [
-      "303"
-    ],
-    "furlough": [
-      "303"
     ],
     "future": [
       "3448",
@@ -9340,18 +9018,6 @@
       "301",
       "307",
       "330"
-    ],
-    "government closure": [
-      "303"
-    ],
-    "government shutdown": [
-      "303"
-    ],
-    "government shutdown last": [
-      "303"
-    ],
-    "government stoppage": [
-      "303"
     ],
     "gpt": [
       "335",
@@ -9481,12 +9147,6 @@
     ],
     "how high inflation": [
       "344"
-    ],
-    "how long": [
-      "303"
-    ],
-    "how long government": [
-      "303"
     ],
     "hype": [
       "3361"
@@ -9807,12 +9467,6 @@
     "leave": [
       "2368"
     ],
-    "leave trump": [
-      "342"
-    ],
-    "leave trump cabinet": [
-      "342"
-    ],
     "leeco": [
       "1856"
     ],
@@ -9838,12 +9492,6 @@
     "llm": [
       "335",
       "338"
-    ],
-    "long government": [
-      "303"
-    ],
-    "long government shutdown": [
-      "303"
     ],
     "lp": [
       "2178"
@@ -10249,8 +9897,7 @@
       "315"
     ],
     "ousted": [
-      "2368",
-      "342"
+      "2368"
     ],
     "out apple": [
       "2368"
@@ -10299,9 +9946,6 @@
     ],
     "parousia": [
       "2670"
-    ],
-    "partial shutdown": [
-      "303"
     ],
     "pce": [
       "319",
@@ -10520,9 +10164,6 @@
     "quarterback": [
       "3072"
     ],
-    "quit": [
-      "342"
-    ],
     "qwen": [
       "335"
     ],
@@ -10654,8 +10295,7 @@
       "2368",
       "242",
       "300",
-      "3062",
-      "342"
+      "3062"
     ],
     "resistance": [
       "332",
@@ -10772,9 +10412,6 @@
     "second coming": [
       "2670"
     ],
-    "secretary": [
-      "342"
-    ],
     "seed": [
       "3525"
     ],
@@ -10834,9 +10471,6 @@
     "short-term rates": [
       "313"
     ],
-    "shutdown last": [
-      "303"
-    ],
     "signal caller": [
       "3072"
     ],
@@ -10892,9 +10526,6 @@
     ],
     "spend": [
       "3365"
-    ],
-    "spending bill": [
-      "303"
     ],
     "spot etf": [
       "332",
@@ -11027,9 +10658,6 @@
     ],
     "supreme leader iran": [
       "242"
-    ],
-    "suspension of services": [
-      "303"
     ],
     "swap": [
       "3365"
@@ -11264,11 +10892,7 @@
       "1546",
       "3055",
       "3062",
-      "341",
-      "342"
-    ],
-    "trump cabinet": [
-      "342"
+      "341"
     ],
     "trump endorse": [
       "3055"
@@ -11293,9 +10917,6 @@
     ],
     "tsla close above": [
       "323"
-    ],
-    "turnover": [
-      "342"
     ],
     "tv show": [
       "3221",
@@ -11501,14 +11122,7 @@
       "338"
     ],
     "white house": [
-      "3062",
-      "342"
-    ],
-    "who first": [
-      "342"
-    ],
-    "who first leave": [
-      "342"
+      "3062"
     ],
     "who higher": [
       "1721"
@@ -11629,9 +11243,6 @@
     "大语言模型": [
       "335"
     ],
-    "川普内阁": [
-      "342"
-    ],
     "币安币": [
       "3367",
       "3368"
@@ -11641,9 +11252,6 @@
     ],
     "微策略": [
       "3257"
-    ],
-    "政府停摆": [
-      "303"
     ],
     "日本央行": [
       "313"
@@ -11697,11 +11305,7 @@
     "特朗普": [
       "1546",
       "3055",
-      "3062",
-      "342"
-    ],
-    "特朗普内阁": [
-      "342"
+      "3062"
     ],
     "疯狂三月": [
       "343"
@@ -11719,7 +11323,6 @@
       "338"
     ],
     "美联储": [
-      "303",
       "319",
       "341"
     ],
@@ -11729,9 +11332,6 @@
     ],
     "耶稣基督": [
       "2670"
-    ],
-    "联邦停摆": [
-      "303"
     ],
     "联邦储备": [
       "341"
@@ -11838,9 +11438,6 @@
     "acquisition": [
       "337"
     ],
-    "administration": [
-      "342"
-    ],
     "after launch": [
       "244",
       "317"
@@ -11912,14 +11509,8 @@
     "apple aapl close": [
       "324"
     ],
-    "appointee": [
-      "342"
-    ],
     "appointment": [
       "341"
-    ],
-    "appropriations crisis": [
-      "303"
     ],
     "april 2026": [
       "313"
@@ -12036,9 +11627,6 @@
     "btc price": [
       "339"
     ],
-    "budget impasse": [
-      "303"
-    ],
     "bull market": [
       "340"
     ],
@@ -12054,9 +11642,6 @@
     ],
     "buyout offer": [
       "337"
-    ],
-    "cabinet": [
-      "342"
     ],
     "candidate": [
       "301"
@@ -12193,9 +11778,6 @@
       "274",
       "331"
     ],
-    "congressional standoff": [
-      "303"
-    ],
     "consolidation": [
       "337"
     ],
@@ -12291,8 +11873,7 @@
       "344"
     ],
     "departure": [
-      "300",
-      "342"
+      "300"
     ],
     "deposit facility rate": [
       "320"
@@ -12484,12 +12065,6 @@
     "fed policy": [
       "344"
     ],
-    "federal funding": [
-      "303"
-    ],
-    "federal government": [
-      "303"
-    ],
     "federal reserve": [
       "300",
       "319"
@@ -12497,23 +12072,11 @@
     "federal reserve chair": [
       "341"
     ],
-    "federal shutdown": [
-      "303"
-    ],
     "fia": [
       "312"
     ],
     "final four": [
       "343"
-    ],
-    "fired": [
-      "342"
-    ],
-    "first leave": [
-      "342"
-    ],
-    "first leave trump": [
-      "342"
     ],
     "fomc": [
       "319"
@@ -12529,15 +12092,6 @@
     ],
     "frankfurt": [
       "320"
-    ],
-    "funding gap": [
-      "303"
-    ],
-    "funding lapse": [
-      "303"
-    ],
-    "furlough": [
-      "303"
     ],
     "futures": [
       "315"
@@ -12606,18 +12160,6 @@
       "307",
       "330"
     ],
-    "government closure": [
-      "303"
-    ],
-    "government shutdown": [
-      "303"
-    ],
-    "government shutdown last": [
-      "303"
-    ],
-    "government stoppage": [
-      "303"
-    ],
     "gpt": [
       "335",
       "338"
@@ -12670,12 +12212,6 @@
     ],
     "how high inflation": [
       "344"
-    ],
-    "how long": [
-      "303"
-    ],
-    "how long government": [
-      "303"
     ],
     "hyperinflation": [
       "344"
@@ -12847,12 +12383,6 @@
       "242",
       "301"
     ],
-    "leave trump": [
-      "342"
-    ],
-    "leave trump cabinet": [
-      "342"
-    ],
     "legislative": [
       "307"
     ],
@@ -12871,12 +12401,6 @@
     "llm": [
       "335",
       "338"
-    ],
-    "long government": [
-      "303"
-    ],
-    "long government shutdown": [
-      "303"
     ],
     "m&a": [
       "337"
@@ -13083,9 +12607,6 @@
     "ounce": [
       "315"
     ],
-    "ousted": [
-      "342"
-    ],
     "out fed": [
       "300"
     ],
@@ -13103,9 +12624,6 @@
     ],
     "parliament": [
       "307"
-    ],
-    "partial shutdown": [
-      "303"
     ],
     "pce": [
       "319",
@@ -13247,9 +12765,6 @@
     "qualifying": [
       "312"
     ],
-    "quit": [
-      "342"
-    ],
     "qwen": [
       "335"
     ],
@@ -13311,8 +12826,7 @@
     ],
     "resignation": [
       "242",
-      "300",
-      "342"
+      "300"
     ],
     "resistance": [
       "332"
@@ -13340,9 +12854,6 @@
     "satoshi": [
       "340"
     ],
-    "secretary": [
-      "342"
-    ],
     "semiconductor": [
       "322"
     ],
@@ -13362,9 +12873,6 @@
     ],
     "short-term rates": [
       "313"
-    ],
-    "shutdown last": [
-      "303"
     ],
     "silver": [
       "316"
@@ -13399,9 +12907,6 @@
     ],
     "solana hit february": [
       "334"
-    ],
-    "spending bill": [
-      "303"
     ],
     "spot etf": [
       "332",
@@ -13480,9 +12985,6 @@
     ],
     "supreme leader iran": [
       "242"
-    ],
-    "suspension of services": [
-      "303"
     ],
     "sweet 16": [
       "343"
@@ -13590,11 +13092,7 @@
       "316"
     ],
     "trump": [
-      "341",
-      "342"
-    ],
-    "trump cabinet": [
-      "342"
+      "341"
     ],
     "tsla": [
       "323"
@@ -13604,9 +13102,6 @@
     ],
     "tsla close above": [
       "323"
-    ],
-    "turnover": [
-      "342"
     ],
     "united states": [
       "274"
@@ -13733,15 +13228,6 @@
       "335",
       "338"
     ],
-    "white house": [
-      "342"
-    ],
-    "who first": [
-      "342"
-    ],
-    "who first leave": [
-      "342"
-    ],
     "world drivers": [
       "312"
     ],
@@ -13815,14 +13301,8 @@
     "大语言模型": [
       "335"
     ],
-    "川普内阁": [
-      "342"
-    ],
     "彩虹钱包": [
       "244"
-    ],
-    "政府停摆": [
-      "303"
     ],
     "日本央行": [
       "313"
@@ -13859,12 +13339,6 @@
     "特斯拉": [
       "323"
     ],
-    "特朗普": [
-      "342"
-    ],
-    "特朗普内阁": [
-      "342"
-    ],
     "疯狂三月": [
       "343"
     ],
@@ -13878,16 +13352,12 @@
       "338"
     ],
     "美联储": [
-      "303",
       "319",
       "341"
     ],
     "美联储主席": [
       "300",
       "341"
-    ],
-    "联邦停摆": [
-      "303"
     ],
     "联邦储备": [
       "341"
