@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-06 10:51:29 UTC+8",
+    "generatedAt": "2026-02-06 16:58:09 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 284,
-      "markets": 130,
-      "keywords": 1174,
+      "kept": 287,
+      "markets": 129,
+      "keywords": 1162,
       "events": {
-        "events": 39
+        "events": 38
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 716,
-        "cutoff_zero_kept": 16,
+        "cutoff_expired": 713,
+        "cutoff_zero_kept": 14,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 39,
+        "reused": 38,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -159,51 +159,6 @@
       "sig": "6d13db67",
       "sigFull": "6d13db67",
       "sigCore": "a98f06da",
-      "reused": false
-    },
-    "301": {
-      "title": "Next President of Vietnam",
-      "marketIds": [
-        "301"
-      ],
-      "bestMarketId": "301",
-      "bestLabels": null,
-      "keywords": [
-        "vietnam",
-        "president",
-        "state president",
-        "election",
-        "successor",
-        "head of state",
-        "politics",
-        "government",
-        "leadership",
-        "hanoi",
-        "national assembly",
-        "communist party",
-        "candidate",
-        "political",
-        "vote",
-        "next president",
-        "president vietnam",
-        "next president vietnam"
-      ],
-      "entities": [
-        "vietnam",
-        "president"
-      ],
-      "entityGroups": [
-        [
-          "vietnam"
-        ],
-        [
-          "president",
-          "国家主席"
-        ]
-      ],
-      "sig": "b8e75b5f",
-      "sigFull": "b8e75b5f",
-      "sigCore": "b0e78fd0",
       "reused": false
     },
     "307": {
@@ -4245,77 +4200,6 @@
       },
       "type": "binary"
     },
-    "301": {
-      "title": "Next President of Vietnam",
-      "url": "https://app.opinion.trade/market/301?ref=opinion_hud",
-      "yesTokenId": "38146254764526453970453126485946994060500770926637217796860761056415596965380",
-      "noTokenId": "63589328380185045391210688486294368600278004571049634965388910774297488453784",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "vietnam",
-        "president",
-        "state president",
-        "election",
-        "successor",
-        "head of state",
-        "politics",
-        "government",
-        "leadership",
-        "hanoi",
-        "national assembly",
-        "communist party",
-        "candidate",
-        "political",
-        "vote",
-        "next president",
-        "president vietnam",
-        "next president vietnam"
-      ],
-      "entities": [
-        "vietnam",
-        "president"
-      ],
-      "entityGroups": [
-        [
-          "vietnam"
-        ],
-        [
-          "president",
-          "国家主席"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "4627",
-          "title": "Tô Lâm",
-          "yesTokenId": "20121702758174135909412179198597937873474579217564371328727097456313842330950",
-          "noTokenId": "72505837956417797501490630133823343847932369110851021524705692503835093567146"
-        },
-        {
-          "marketId": "4628",
-          "title": "Phan Văn Giang",
-          "yesTokenId": "87436128372020025698350970327722962874064028584750640760724276317615823734013",
-          "noTokenId": "51401434671995444292385565108080626338651232666768839436609747826710067924287"
-        },
-        {
-          "marketId": "4629",
-          "title": "Trần Thanh Mẫn",
-          "yesTokenId": "38146254764526453970453126485946994060500770926637217796860761056415596965380",
-          "noTokenId": "63589328380185045391210688486294368600278004571049634965388910774297488453784"
-        },
-        {
-          "marketId": "4630",
-          "title": "Trần Cẩm Tú",
-          "yesTokenId": "79118787260498449641475959599832473662553472226371222621642021012134067661919",
-          "noTokenId": "108907103029366242567670576311370106006191525492702479718705698041301496357819"
-        }
-      ]
-    },
     "4620": {
       "title": "Will the US acquire part of Greenland in 2026?",
       "url": "https://app.opinion.trade/market/4620?ref=opinion_hud",
@@ -6185,6 +6069,18 @@
           "noTokenId": "66675074870650409542813120586393761332268016717882289621371212167429081340219"
         },
         {
+          "marketId": "5851",
+          "title": "↓ 50,000",
+          "yesTokenId": "109504749975989425998020282187054300698768137554952469230148827806496849558159",
+          "noTokenId": "113610695184769434355540131843061467868207461248221063442193677997962912713925"
+        },
+        {
+          "marketId": "5852",
+          "title": "↓ 45,000",
+          "yesTokenId": "50167003305318656305524777097566490400803245466121731674915121844002983347267",
+          "noTokenId": "107186558187101957001028388266419184827864933834237097454447162082114258424085"
+        },
+        {
           "marketId": "5297",
           "title": "↓ 75,000",
           "yesTokenId": "55742715594884144030652508990374951174208197645981870407935027791725093435003",
@@ -6294,6 +6190,12 @@
           "noTokenId": "69013408894299474685452075769514750188145328817732703750882676642731129897329"
         },
         {
+          "marketId": "5850",
+          "title": "↓ 1,200",
+          "yesTokenId": "27208039019414655192247058176535699038183312141155510272834140300498185384758",
+          "noTokenId": "26943031395627313124819062431410102891722749545334611678019277177514989707809"
+        },
+        {
           "marketId": "5306",
           "title": "↓ 2,400",
           "yesTokenId": "109773389567649156624507840733963917905483102492501399210597109962927232141202",
@@ -6400,6 +6302,18 @@
           "title": "↓60",
           "yesTokenId": "34490169568886906508626535364017992296568292385067995846310163283402988421840",
           "noTokenId": "56673868654336229252502010241414521576035380448863828174597286078460038920302"
+        },
+        {
+          "marketId": "5847",
+          "title": "↓50",
+          "yesTokenId": "77693789511734887107970253288527630764489241335380964963291712790860209485225",
+          "noTokenId": "44221074027480167249256386594837228942940661025164921256675484307608749366326"
+        },
+        {
+          "marketId": "5848",
+          "title": "↓40",
+          "yesTokenId": "79387999767071915046786803396235472469174627658737857300026668987007862360219",
+          "noTokenId": "37625322026219655535138882005952479638750601081183418022125322156128710658859"
         },
         {
           "marketId": "5314",
@@ -8033,11 +7947,11 @@
         }
       ]
     },
-    "5834": {
-      "title": "ETH Up or Down - Hourly (Feb 06, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5834?ref=opinion_hud",
-      "yesTokenId": "65895602266413096280252671472700170103503329019686637505603610251829482598961",
-      "noTokenId": "49090842127394358448557364269281638480279677509678890155059095704297987348608",
+    "5857": {
+      "title": "BNB Up or Down - Hourly (Feb 06, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5857?ref=opinion_hud",
+      "yesTokenId": "45620167418553206728674863882013919140282975295542496247220914190880113109851",
+      "noTokenId": "10604079713471798418798917779680547277650209610714409166739630512859159340446",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -8045,11 +7959,11 @@
       },
       "type": "binary"
     },
-    "5833": {
-      "title": "BTC Up or Down - Hourly (Feb 06, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5833?ref=opinion_hud",
-      "yesTokenId": "40409469548314235426421469758980038070003004118349278532192270989858347521143",
-      "noTokenId": "64175343101777786929709178704458907574106314778482431932524430911559163723782",
+    "5859": {
+      "title": "ETH Up or Down - Hourly (Feb 06, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5859?ref=opinion_hud",
+      "yesTokenId": "53176311455147067209441852529742963918162188720651530771219331848601445742897",
+      "noTokenId": "76235573766213116248067165934416524738436909606690674945566384437218806307035",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -8057,11 +7971,11 @@
       },
       "type": "binary"
     },
-    "5832": {
-      "title": "BNB Up or Down - Hourly (Feb 06, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5832?ref=opinion_hud",
-      "yesTokenId": "19799241305595543055020367351881757949926864891582693592451515375851597838746",
-      "noTokenId": "32876504240075415361867654079748343589364442738778091530176680888172845596265",
+    "5858": {
+      "title": "BTC Up or Down - Hourly (Feb 06, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5858?ref=opinion_hud",
+      "yesTokenId": "74060405854974071827359940007512128796508890092174537383150684032362064416982",
+      "noTokenId": "71188219132222680732681753359329524210767853728662880783525204372808180201642",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -8714,9 +8628,6 @@
       "3449",
       "3509"
     ],
-    "candidate": [
-      "301"
-    ],
     "capital": [
       "3505",
       "3506",
@@ -8893,9 +8804,6 @@
       "347",
       "348",
       "349"
-    ],
-    "communist party": [
-      "301"
     ],
     "companies": [
       "337"
@@ -9274,7 +9182,6 @@
       "3366"
     ],
     "election": [
-      "301",
       "307"
     ],
     "election winner": [
@@ -9695,7 +9602,6 @@
       "320"
     ],
     "government": [
-      "301",
       "307",
       "330"
     ],
@@ -9734,9 +9640,6 @@
     "halving": [
       "340"
     ],
-    "hanoi": [
-      "301"
-    ],
     "hard fork": [
       "3256"
     ],
@@ -9754,9 +9657,6 @@
     ],
     "hbo": [
       "2398"
-    ],
-    "head of state": [
-      "301"
     ],
     "hedge": [
       "348",
@@ -10136,7 +10036,6 @@
       "335"
     ],
     "leadership": [
-      "301",
       "3369"
     ],
     "leadership change": [
@@ -10475,9 +10374,6 @@
       "326",
       "328"
     ],
-    "national assembly": [
-      "301"
-    ],
     "native token": [
       "3366"
     ],
@@ -10527,12 +10423,6 @@
     ],
     "new year's eve": [
       "3509"
-    ],
-    "next president": [
-      "301"
-    ],
-    "next president vietnam": [
-      "301"
     ],
     "nfl draft": [
       "3072"
@@ -10681,11 +10571,7 @@
     "policy rate": [
       "313"
     ],
-    "political": [
-      "301"
-    ],
     "politics": [
-      "301",
       "307"
     ],
     "poll": [
@@ -10715,15 +10601,11 @@
       "316"
     ],
     "president": [
-      "301",
       "3062"
     ],
     "president 2027": [
       "3055",
       "3062"
-    ],
-    "president vietnam": [
-      "301"
     ],
     "presidential candidate": [
       "3055"
@@ -11282,9 +11164,6 @@
     "star": [
       "3158"
     ],
-    "state president": [
-      "301"
-    ],
     "status page": [
       "3357"
     ],
@@ -11350,8 +11229,7 @@
       "2178"
     ],
     "successor": [
-      "2368",
-      "301"
+      "2368"
     ],
     "support": [
       "3055",
@@ -11716,9 +11594,6 @@
     "vice president": [
       "3062"
     ],
-    "vietnam": [
-      "301"
-    ],
     "volatility": [
       "325",
       "326",
@@ -11736,7 +11611,6 @@
       "339"
     ],
     "vote": [
-      "301",
       "307"
     ],
     "vp": [
@@ -11966,9 +11840,6 @@
     ],
     "南茜·惠勒": [
       "3223"
-    ],
-    "国家主席": [
-      "301"
     ],
     "墨西哥": [
       "274"
@@ -12412,9 +12283,6 @@
     "buyout offer": [
       "337"
     ],
-    "candidate": [
-      "301"
-    ],
     "cartel": [
       "274"
     ],
@@ -12514,9 +12382,6 @@
       "347",
       "348",
       "349"
-    ],
-    "communist party": [
-      "301"
     ],
     "companies": [
       "337"
@@ -12716,7 +12581,6 @@
       "344"
     ],
     "election": [
-      "301",
       "307"
     ],
     "election winner": [
@@ -12977,7 +12841,6 @@
       "320"
     ],
     "government": [
-      "301",
       "307",
       "330"
     ],
@@ -13002,12 +12865,6 @@
     ],
     "halving": [
       "340"
-    ],
-    "hanoi": [
-      "301"
-    ],
-    "head of state": [
-      "301"
     ],
     "hedge": [
       "348",
@@ -13199,9 +13056,6 @@
     "leaderboard": [
       "335"
     ],
-    "leadership": [
-      "301"
-    ],
     "legislative": [
       "307"
     ],
@@ -13381,9 +13235,6 @@
       "326",
       "328"
     ],
-    "national assembly": [
-      "301"
-    ],
     "ncaa": [
       "343"
     ],
@@ -13395,12 +13246,6 @@
     ],
     "ncaa锦标赛": [
       "343"
-    ],
-    "next president": [
-      "301"
-    ],
-    "next president vietnam": [
-      "301"
     ],
     "nomination": [
       "341"
@@ -13485,11 +13330,7 @@
     "policy rate": [
       "313"
     ],
-    "political": [
-      "301"
-    ],
     "politics": [
-      "301",
       "307"
     ],
     "poll": [
@@ -13511,12 +13352,6 @@
     ],
     "precious metals": [
       "316"
-    ],
-    "president": [
-      "301"
-    ],
-    "president vietnam": [
-      "301"
     ],
     "price": [
       "317",
@@ -13785,9 +13620,6 @@
     "standard and poor's 500": [
       "327"
     ],
-    "state president": [
-      "301"
-    ],
     "stock": [
       "322",
       "323",
@@ -13820,9 +13652,6 @@
       "257",
       "271",
       "331"
-    ],
-    "successor": [
-      "301"
     ],
     "support": [
       "332"
@@ -13984,9 +13813,6 @@
       "324",
       "336"
     ],
-    "vietnam": [
-      "301"
-    ],
     "volatility": [
       "325",
       "326",
@@ -14003,7 +13829,6 @@
       "339"
     ],
     "vote": [
-      "301",
       "307"
     ],
     "wall street": [
@@ -14161,9 +13986,6 @@
     ],
     "凯文·沃什": [
       "341"
-    ],
-    "国家主席": [
-      "301"
     ],
     "墨西哥": [
       "274"
