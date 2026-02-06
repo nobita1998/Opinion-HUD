@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-06 01:03:19 UTC+8",
+    "generatedAt": "2026-02-06 10:51:29 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 288,
+      "kept": 284,
       "markets": 130,
-      "keywords": 1198,
+      "keywords": 1174,
       "events": {
-        "events": 41
+        "events": 39
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 712,
-        "cutoff_zero_kept": 20,
+        "cutoff_expired": 716,
+        "cutoff_zero_kept": 16,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
@@ -28,68 +28,18 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 40,
+        "reused": 39,
         "regenerated_empty_entitygroups": 0,
-        "calls": 1,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 1,
+        "non_empty": 0,
         "errors": 0
       }
     }
   },
   "events": {
-    "242": {
-      "title": "Khamenei out as Supreme Leader of Iran by ...?",
-      "marketIds": [
-        "242"
-      ],
-      "bestMarketId": "242",
-      "bestLabels": null,
-      "keywords": [
-        "khamenei",
-        "iran",
-        "supreme leader",
-        "ayatollah",
-        "ali khamenei",
-        "succession",
-        "resignation",
-        "tehran",
-        "islamic republic",
-        "regime change",
-        "cleric",
-        "leadership",
-        "death",
-        "removal",
-        "politics",
-        "khamenei out",
-        "out supreme",
-        "leader iran",
-        "khamenei out supreme",
-        "out supreme leader",
-        "supreme leader iran"
-      ],
-      "entities": [
-        "khamenei",
-        "supreme leader"
-      ],
-      "entityGroups": [
-        [
-          "khamenei",
-          "哈梅内伊"
-        ],
-        [
-          "supreme leader",
-          "iran",
-          "最高领袖"
-        ]
-      ],
-      "sig": "0959a9cd",
-      "sigFull": "0959a9cd",
-      "sigCore": "29a921b9",
-      "reused": false
-    },
     "257": {
       "title": "US strikes Iran by...?",
       "marketIds": [
@@ -254,56 +204,6 @@
       "sig": "b8e75b5f",
       "sigFull": "b8e75b5f",
       "sigCore": "b0e78fd0",
-      "reused": false
-    },
-    "300": {
-      "title": "Jerome Powell out as Fed Chair by ...?",
-      "marketIds": [
-        "300"
-      ],
-      "bestMarketId": "300",
-      "bestLabels": null,
-      "keywords": [
-        "jerome powell",
-        "fed chair",
-        "federal reserve",
-        "powell",
-        "resignation",
-        "stepping down",
-        "fed",
-        "central bank",
-        "chairmanship",
-        "exit",
-        "departure",
-        "removed",
-        "successor",
-        "term end",
-        "powell out",
-        "out fed",
-        "jerome powell out",
-        "powell out fed",
-        "out fed chair"
-      ],
-      "entities": [
-        "jerome powell",
-        "fed chair"
-      ],
-      "entityGroups": [
-        [
-          "jerome powell",
-          "powell",
-          "鲍威尔"
-        ],
-        [
-          "fed chair",
-          "美联储主席",
-          "fed",
-          "federal reserve"
-        ]
-      ],
-      "sig": "5c8e6c30",
-      "sigFull": "5c8e6c30",
-      "sigCore": "db57ab75",
       "reused": false
     },
     "307": {
@@ -3662,88 +3562,6 @@
         ]
       ]
     },
-    "242": {
-      "title": "Khamenei out as Supreme Leader of Iran by ...?",
-      "url": "https://app.opinion.trade/market/242?ref=opinion_hud",
-      "yesTokenId": "9593714686487679569287697449720896235254889229552955426360587542298963149882",
-      "noTokenId": "48208707186470954000102943903001961400164444583184563612220001380890920601981",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "khamenei",
-        "iran",
-        "supreme leader",
-        "ayatollah",
-        "ali khamenei",
-        "succession",
-        "resignation",
-        "tehran",
-        "islamic republic",
-        "regime change",
-        "cleric",
-        "leadership",
-        "death",
-        "removal",
-        "politics",
-        "khamenei out",
-        "out supreme",
-        "leader iran",
-        "khamenei out supreme",
-        "out supreme leader",
-        "supreme leader iran"
-      ],
-      "entities": [
-        "khamenei",
-        "supreme leader"
-      ],
-      "entityGroups": [
-        [
-          "khamenei",
-          "哈梅内伊"
-        ],
-        [
-          "supreme leader",
-          "iran",
-          "最高领袖"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3507",
-          "title": "March 31, 2026",
-          "yesTokenId": "46646560600103097960006351814951402159152789456497818361055535357395234270425",
-          "noTokenId": "25955867801676629307421288220458181447137318072855182834681496661144963432913"
-        },
-        {
-          "marketId": "3508",
-          "title": "June 30, 2026",
-          "yesTokenId": "13214793230790877329094282806468934868611746849280658229802917223511409892269",
-          "noTokenId": "45074703589645258159799941058012167175353158302930143624316080935492111499405"
-        },
-        {
-          "marketId": "3509",
-          "title": "December 31, 2026",
-          "yesTokenId": "78525940214804604707627941094377880629381331725689510871551609534105074863969",
-          "noTokenId": "45489316796209234370064058959475598622236108679010890486958872866035117032944"
-        },
-        {
-          "marketId": "4621",
-          "title": "February 28, 2026",
-          "yesTokenId": "9593714686487679569287697449720896235254889229552955426360587542298963149882",
-          "noTokenId": "48208707186470954000102943903001961400164444583184563612220001380890920601981"
-        },
-        {
-          "marketId": "3865",
-          "title": "January 31, 2026",
-          "yesTokenId": "72927601919195815555150777625424417913613132629479275905731692286661416530979",
-          "noTokenId": "52361990462230568142630360308469818571101867534949974755905891689086609105385"
-        }
-      ]
-    },
     "3525": {
       "title": "$200M",
       "url": "https://app.opinion.trade/market/3525?ref=opinion_hud",
@@ -4430,8 +4248,8 @@
     "301": {
       "title": "Next President of Vietnam",
       "url": "https://app.opinion.trade/market/301?ref=opinion_hud",
-      "yesTokenId": "87436128372020025698350970327722962874064028584750640760724276317615823734013",
-      "noTokenId": "51401434671995444292385565108080626338651232666768839436609747826710067924287",
+      "yesTokenId": "38146254764526453970453126485946994060500770926637217796860761056415596965380",
+      "noTokenId": "63589328380185045391210688486294368600278004571049634965388910774297488453784",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4495,70 +4313,6 @@
           "title": "Trần Cẩm Tú",
           "yesTokenId": "79118787260498449641475959599832473662553472226371222621642021012134067661919",
           "noTokenId": "108907103029366242567670576311370106006191525492702479718705698041301496357819"
-        }
-      ]
-    },
-    "300": {
-      "title": "Jerome Powell out as Fed Chair by ...?",
-      "url": "https://app.opinion.trade/market/300?ref=opinion_hud",
-      "yesTokenId": "8640735568489742699862308108808508907694326335233420424431844992308492579189",
-      "noTokenId": "31314590922723989866845036580904313796860979182586640805576257543402977483172",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "jerome powell",
-        "fed chair",
-        "federal reserve",
-        "powell",
-        "resignation",
-        "stepping down",
-        "fed",
-        "central bank",
-        "chairmanship",
-        "exit",
-        "departure",
-        "removed",
-        "successor",
-        "term end",
-        "powell out",
-        "out fed",
-        "jerome powell out",
-        "powell out fed",
-        "out fed chair"
-      ],
-      "entities": [
-        "jerome powell",
-        "fed chair"
-      ],
-      "entityGroups": [
-        [
-          "jerome powell",
-          "powell",
-          "鲍威尔"
-        ],
-        [
-          "fed chair",
-          "美联储主席",
-          "fed",
-          "federal reserve"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "4622",
-          "title": "March 31",
-          "yesTokenId": "8640735568489742699862308108808508907694326335233420424431844992308492579189",
-          "noTokenId": "31314590922723989866845036580904313796860979182586640805576257543402977483172"
-        },
-        {
-          "marketId": "4623",
-          "title": "May 14",
-          "yesTokenId": "3333645714346663746673151776368832408455244553012825406686548412757459311004",
-          "noTokenId": "99743470613174645128881202635605673705753061576997090030503957037184313038213"
         }
       ]
     },
@@ -7793,18 +7547,6 @@
         }
       ]
     },
-    "5762": {
-      "title": "Bitcoin Up or Down on February 6?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/5762?ref=opinion_hud",
-      "yesTokenId": "113766686141807124893014488383602467915187032674771992161392678562709357989549",
-      "noTokenId": "1850118821123258903785577084284612155111996511218839638617816800942885586395",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "349": {
       "title": "What will Silver settle at in June?",
       "url": "https://app.opinion.trade/market/349?ref=opinion_hud",
@@ -8290,6 +8032,42 @@
           "noTokenId": "79723905627006208623332046106321739488539504126944495684899038281692534061519"
         }
       ]
+    },
+    "5834": {
+      "title": "ETH Up or Down - Hourly (Feb 06, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5834?ref=opinion_hud",
+      "yesTokenId": "65895602266413096280252671472700170103503329019686637505603610251829482598961",
+      "noTokenId": "49090842127394358448557364269281638480279677509678890155059095704297987348608",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5833": {
+      "title": "BTC Up or Down - Hourly (Feb 06, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5833?ref=opinion_hud",
+      "yesTokenId": "40409469548314235426421469758980038070003004118349278532192270989858347521143",
+      "noTokenId": "64175343101777786929709178704458907574106314778482431932524430911559163723782",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5832": {
+      "title": "BNB Up or Down - Hourly (Feb 06, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5832?ref=opinion_hud",
+      "yesTokenId": "19799241305595543055020367351881757949926864891582693592451515375851597838746",
+      "noTokenId": "32876504240075415361867654079748343589364442738778091530176680888172845596265",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -8543,9 +8321,6 @@
     "algorithm change": [
       "3256"
     ],
-    "ali khamenei": [
-      "242"
-    ],
     "all time": [
       "3361",
       "3364",
@@ -8667,7 +8442,6 @@
       "328"
     ],
     "ayatollah": [
-      "242",
       "330"
     ],
     "back": [
@@ -8961,7 +8735,6 @@
       "3158"
     ],
     "central bank": [
-      "300",
       "319",
       "341"
     ],
@@ -8974,9 +8747,6 @@
     ],
     "chairman": [
       "341"
-    ],
-    "chairmanship": [
-      "300"
     ],
     "champion 2026": [
       "312"
@@ -9036,9 +8806,6 @@
     "claude": [
       "335",
       "338"
-    ],
-    "cleric": [
-      "242"
     ],
     "close": [
       "322",
@@ -9317,9 +9084,6 @@
       "337",
       "3525"
     ],
-    "death": [
-      "242"
-    ],
     "debt": [
       "1856"
     ],
@@ -9376,8 +9140,7 @@
       "3224"
     ],
     "departure": [
-      "2368",
-      "300"
+      "2368"
     ],
     "depeg": [
       "3359"
@@ -9643,8 +9406,7 @@
       "1856"
     ],
     "exit": [
-      "2368",
-      "300"
+      "2368"
     ],
     "exit scam": [
       "3360"
@@ -9726,11 +9488,9 @@
       "332"
     ],
     "fed": [
-      "300",
       "319"
     ],
     "fed chair": [
-      "300",
       "341"
     ],
     "fed decision": [
@@ -9746,7 +9506,6 @@
       "1546"
     ],
     "federal reserve": [
-      "300",
       "319"
     ],
     "federal reserve chair": [
@@ -10191,7 +9950,6 @@
       "3362"
     ],
     "iran": [
-      "242",
       "257",
       "271",
       "3039",
@@ -10220,7 +9978,6 @@
       "331"
     ],
     "islamic republic": [
-      "242",
       "330"
     ],
     "israel": [
@@ -10264,11 +10021,7 @@
       "328"
     ],
     "jerome powell": [
-      "300",
       "319"
-    ],
-    "jerome powell out": [
-      "300"
     ],
     "jerusalem": [
       "331"
@@ -10324,14 +10077,7 @@
       "341"
     ],
     "khamenei": [
-      "242",
       "330"
-    ],
-    "khamenei out": [
-      "242"
-    ],
-    "khamenei out supreme": [
-      "242"
     ],
     "kraken": [
       "3362"
@@ -10386,14 +10132,10 @@
     "ldp": [
       "306"
     ],
-    "leader iran": [
-      "242"
-    ],
     "leaderboard": [
       "335"
     ],
     "leadership": [
-      "242",
       "301",
       "3369"
     ],
@@ -10858,23 +10600,11 @@
     "out apple ceo": [
       "2368"
     ],
-    "out fed": [
-      "300"
-    ],
-    "out fed chair": [
-      "300"
-    ],
     "out president": [
       "3062"
     ],
     "out president 2027": [
       "3062"
-    ],
-    "out supreme": [
-      "242"
-    ],
-    "out supreme leader": [
-      "242"
     ],
     "outage": [
       "3357"
@@ -10955,7 +10685,6 @@
       "301"
     ],
     "politics": [
-      "242",
       "301",
       "307"
     ],
@@ -10969,15 +10698,8 @@
       "3062"
     ],
     "powell": [
-      "300",
       "319",
       "341"
-    ],
-    "powell out": [
-      "300"
-    ],
-    "powell out fed": [
-      "300"
     ],
     "pple": [
       "307"
@@ -11200,9 +10922,6 @@
     "regime": [
       "330"
     ],
-    "regime change": [
-      "242"
-    ],
     "regime fall": [
       "330"
     ],
@@ -11222,12 +10941,8 @@
       "2178"
     ],
     "removal": [
-      "242",
       "3062",
       "3257"
-    ],
-    "removed": [
-      "300"
     ],
     "removed from office": [
       "3062"
@@ -11253,8 +10968,6 @@
     ],
     "resignation": [
       "2368",
-      "242",
-      "300",
       "3062"
     ],
     "resistance": [
@@ -11579,9 +11292,6 @@
       "2368",
       "3062"
     ],
-    "stepping down": [
-      "300"
-    ],
     "steve harrington": [
       "3223"
     ],
@@ -11639,12 +11349,8 @@
     "studio album": [
       "2178"
     ],
-    "succession": [
-      "242"
-    ],
     "successor": [
       "2368",
-      "300",
       "301"
     ],
     "support": [
@@ -11656,12 +11362,6 @@
     ],
     "supreme court rules": [
       "1546"
-    ],
-    "supreme leader": [
-      "242"
-    ],
-    "supreme leader iran": [
-      "242"
     ],
     "swap": [
       "3365"
@@ -11706,7 +11406,6 @@
       "3222"
     ],
     "tehran": [
-      "242",
       "257",
       "271",
       "3039",
@@ -11719,9 +11418,6 @@
     ],
     "tender offer": [
       "337"
-    ],
-    "term end": [
-      "300"
     ],
     "tesla": [
       "323",
@@ -12271,9 +11967,6 @@
     "南茜·惠勒": [
       "3223"
     ],
-    "哈梅内伊": [
-      "242"
-    ],
     "国家主席": [
       "301"
     ],
@@ -12316,9 +12009,6 @@
     ],
     "最高法院": [
       "1546"
-    ],
-    "最高领袖": [
-      "242"
     ],
     "标普500": [
       "327"
@@ -12374,7 +12064,6 @@
       "341"
     ],
     "美联储主席": [
-      "300",
       "341"
     ],
     "耶稣基督": [
@@ -12415,9 +12104,6 @@
     ],
     "霍莉·惠勒": [
       "3222"
-    ],
-    "鲍威尔": [
-      "300"
     ]
   },
   "eventIndex": {
@@ -12533,9 +12219,6 @@
     "ai模型": [
       "335"
     ],
-    "ali khamenei": [
-      "242"
-    ],
     "alphabet": [
       "326"
     ],
@@ -12598,7 +12281,6 @@
       "328"
     ],
     "ayatollah": [
-      "242",
       "330"
     ],
     "bank japan": [
@@ -12743,15 +12425,11 @@
       "306"
     ],
     "central bank": [
-      "300",
       "319",
       "341"
     ],
     "chairman": [
       "341"
-    ],
-    "chairmanship": [
-      "300"
     ],
     "champion 2026": [
       "312"
@@ -12781,9 +12459,6 @@
     "claude": [
       "335",
       "338"
-    ],
-    "cleric": [
-      "242"
     ],
     "close": [
       "322",
@@ -12949,9 +12624,6 @@
     "deal": [
       "337"
     ],
-    "death": [
-      "242"
-    ],
     "debut": [
       "317"
     ],
@@ -12980,9 +12652,6 @@
     ],
     "deflation": [
       "344"
-    ],
-    "departure": [
-      "300"
     ],
     "deposit facility rate": [
       "320"
@@ -13114,9 +12783,6 @@
       "323",
       "351"
     ],
-    "exit": [
-      "300"
-    ],
     "expiry": [
       "323"
     ],
@@ -13166,11 +12832,9 @@
       "332"
     ],
     "fed": [
-      "300",
       "319"
     ],
     "fed chair": [
-      "300",
       "341"
     ],
     "fed decision": [
@@ -13183,7 +12847,6 @@
       "344"
     ],
     "federal reserve": [
-      "300",
       "319"
     ],
     "federal reserve chair": [
@@ -13435,7 +13098,6 @@
       "324"
     ],
     "iran": [
-      "242",
       "257",
       "271",
       "330",
@@ -13456,7 +13118,6 @@
       "331"
     ],
     "islamic republic": [
-      "242",
       "330"
     ],
     "israel": [
@@ -13491,11 +13152,7 @@
       "328"
     ],
     "jerome powell": [
-      "300",
       "319"
-    ],
-    "jerome powell out": [
-      "300"
     ],
     "jerusalem": [
       "331"
@@ -13516,14 +13173,7 @@
       "341"
     ],
     "khamenei": [
-      "242",
       "330"
-    ],
-    "khamenei out": [
-      "242"
-    ],
-    "khamenei out supreme": [
-      "242"
     ],
     "l2": [
       "244"
@@ -13546,14 +13196,10 @@
     "ldp": [
       "306"
     ],
-    "leader iran": [
-      "242"
-    ],
     "leaderboard": [
       "335"
     ],
     "leadership": [
-      "242",
       "301"
     ],
     "legislative": [
@@ -13797,18 +13443,6 @@
       "315",
       "347"
     ],
-    "out fed": [
-      "300"
-    ],
-    "out fed chair": [
-      "300"
-    ],
-    "out supreme": [
-      "242"
-    ],
-    "out supreme leader": [
-      "242"
-    ],
     "overthrow": [
       "330"
     ],
@@ -13855,7 +13489,6 @@
       "301"
     ],
     "politics": [
-      "242",
       "301",
       "307"
     ],
@@ -13863,15 +13496,8 @@
       "307"
     ],
     "powell": [
-      "300",
       "319",
       "341"
-    ],
-    "powell out": [
-      "300"
-    ],
-    "powell out fed": [
-      "300"
     ],
     "pple": [
       "307"
@@ -14009,21 +13635,8 @@
     "regime": [
       "330"
     ],
-    "regime change": [
-      "242"
-    ],
     "regime fall": [
       "330"
-    ],
-    "removal": [
-      "242"
-    ],
-    "removed": [
-      "300"
-    ],
-    "resignation": [
-      "242",
-      "300"
     ],
     "resistance": [
       "332"
@@ -14175,9 +13788,6 @@
     "state president": [
       "301"
     ],
-    "stepping down": [
-      "300"
-    ],
     "stock": [
       "322",
       "323",
@@ -14211,21 +13821,11 @@
       "271",
       "331"
     ],
-    "succession": [
-      "242"
-    ],
     "successor": [
-      "300",
       "301"
     ],
     "support": [
       "332"
-    ],
-    "supreme leader": [
-      "242"
-    ],
-    "supreme leader iran": [
-      "242"
     ],
     "sweet 16": [
       "343"
@@ -14245,7 +13845,6 @@
       "329"
     ],
     "tehran": [
-      "242",
       "257",
       "271",
       "330",
@@ -14253,9 +13852,6 @@
     ],
     "tender offer": [
       "337"
-    ],
-    "term end": [
-      "300"
     ],
     "tesla": [
       "323",
@@ -14566,9 +14162,6 @@
     "凯文·沃什": [
       "341"
     ],
-    "哈梅内伊": [
-      "242"
-    ],
     "国家主席": [
       "301"
     ],
@@ -14601,9 +14194,6 @@
     ],
     "最大公司": [
       "336"
-    ],
-    "最高领袖": [
-      "242"
     ],
     "标普500": [
       "327"
@@ -14640,7 +14230,6 @@
       "341"
     ],
     "美联储主席": [
-      "300",
       "341"
     ],
     "联邦储备": [
@@ -14654,9 +14243,6 @@
     ],
     "通货膨胀": [
       "344"
-    ],
-    "鲍威尔": [
-      "300"
     ]
   }
 }
