@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-07 01:00:15 UTC+8",
+    "generatedAt": "2026-02-07 10:47:02 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 277,
+      "kept": 271,
       "markets": 127,
-      "keywords": 1162,
+      "keywords": 1140,
       "events": {
-        "events": 38
+        "events": 37
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 723,
+        "cutoff_expired": 729,
         "cutoff_zero_kept": 14,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 38,
+        "reused": 37,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -78,51 +78,6 @@
       "sigCore": "29cb2d55",
       "reused": false
     },
-    "271": {
-      "title": "US/Israel strikes Iran by...?",
-      "marketIds": [
-        "271"
-      ],
-      "bestMarketId": "271",
-      "bestLabels": null,
-      "keywords": [
-        "iran",
-        "israel",
-        "us",
-        "strike",
-        "attack",
-        "military",
-        "war",
-        "conflict",
-        "idf",
-        "tehran",
-        "escalation",
-        "retaliation",
-        "pentagon",
-        "airstrike",
-        "missile",
-        "us/israel strikes",
-        "strikes iran",
-        "us/israel strikes iran"
-      ],
-      "entities": [
-        "israel",
-        "iran"
-      ],
-      "entityGroups": [
-        [
-          "israel",
-          "以色列"
-        ],
-        [
-          "iran"
-        ]
-      ],
-      "sig": "2e78034b",
-      "sigFull": "2e78034b",
-      "sigCore": "7666a1c4",
-      "reused": false
-    },
     "274": {
       "title": "US strike on Mexico by ...?",
       "marketIds": [
@@ -159,53 +114,6 @@
       "sig": "6d13db67",
       "sigFull": "6d13db67",
       "sigCore": "a98f06da",
-      "reused": false
-    },
-    "307": {
-      "title": "Thailand Legislative Election Winner",
-      "marketIds": [
-        "307"
-      ],
-      "bestMarketId": "307",
-      "bestLabels": null,
-      "keywords": [
-        "thailand",
-        "thai",
-        "election",
-        "vote",
-        "poll",
-        "legislative",
-        "parliament",
-        "government",
-        "politics",
-        "bhumjaithai",
-        "pheu thai",
-        "people's party",
-        "bjt",
-        "pt",
-        "pple",
-        "thailand legislative",
-        "legislative election",
-        "election winner",
-        "thailand legislative election",
-        "legislative election winner"
-      ],
-      "entities": [
-        "thailand",
-        "legislative election"
-      ],
-      "entityGroups": [
-        [
-          "thailand"
-        ],
-        [
-          "legislative election",
-          "立法选举"
-        ]
-      ],
-      "sig": "5a8ef0d6",
-      "sigFull": "5a8ef0d6",
-      "sigCore": "0aa84efe",
       "reused": false
     },
     "306": {
@@ -3903,77 +3811,6 @@
       },
       "type": "binary"
     },
-    "271": {
-      "title": "US/Israel strikes Iran by...?",
-      "url": "https://app.opinion.trade/market/271?ref=opinion_hud",
-      "yesTokenId": "64860667649698796189061251862119526181879081544545756246443340551303673762851",
-      "noTokenId": "41657951328430187563322782710045542364186926293942673090365988032631355706926",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "iran",
-        "israel",
-        "us",
-        "strike",
-        "attack",
-        "military",
-        "war",
-        "conflict",
-        "idf",
-        "tehran",
-        "escalation",
-        "retaliation",
-        "pentagon",
-        "airstrike",
-        "missile",
-        "us/israel strikes",
-        "strikes iran",
-        "us/israel strikes iran"
-      ],
-      "entities": [
-        "israel",
-        "iran"
-      ],
-      "entityGroups": [
-        [
-          "israel",
-          "以色列"
-        ],
-        [
-          "iran"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "4726",
-          "title": "February 28, 2026",
-          "yesTokenId": "10467393420256957069273457708806478649365670193911821662833042645019468806994",
-          "noTokenId": "8503218938460184207851805080930639465378140070643005294074199963809700520032"
-        },
-        {
-          "marketId": "4727",
-          "title": "March 31, 2026",
-          "yesTokenId": "46229592884336448716302812159566405704704792382136822089643906173817039278492",
-          "noTokenId": "5667555201830354740221840446647021680173583383898383873946963196853669333871"
-        },
-        {
-          "marketId": "3972",
-          "title": "January 12, 2026",
-          "yesTokenId": "29686886771618166806013643719142111274449117206576180033777611773744972033950",
-          "noTokenId": "68688633753303879088471007647387512921900272605440867959667816575850783279956"
-        },
-        {
-          "marketId": "3973",
-          "title": "January 31, 2026",
-          "yesTokenId": "64860667649698796189061251862119526181879081544545756246443340551303673762851",
-          "noTokenId": "41657951328430187563322782710045542364186926293942673090365988032631355706926"
-        }
-      ]
-    },
     "274": {
       "title": "US strike on Mexico by ...?",
       "url": "https://app.opinion.trade/market/274?ref=opinion_hud",
@@ -4224,78 +4061,11 @@
       },
       "type": "binary"
     },
-    "307": {
-      "title": "Thailand Legislative Election Winner",
-      "url": "https://app.opinion.trade/market/307?ref=opinion_hud",
-      "yesTokenId": "23001168304271189616253220048125019818432927975284104510084120784705907407383",
-      "noTokenId": "43396018066662619402971986956999597518190249172107370145937977286887262925733",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "thailand",
-        "thai",
-        "election",
-        "vote",
-        "poll",
-        "legislative",
-        "parliament",
-        "government",
-        "politics",
-        "bhumjaithai",
-        "pheu thai",
-        "people's party",
-        "bjt",
-        "pt",
-        "pple",
-        "thailand legislative",
-        "legislative election",
-        "election winner",
-        "thailand legislative election",
-        "legislative election winner"
-      ],
-      "entities": [
-        "thailand",
-        "legislative election"
-      ],
-      "entityGroups": [
-        [
-          "thailand"
-        ],
-        [
-          "legislative election",
-          "立法选举"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "4733",
-          "title": "People’s Party (PPLE)",
-          "yesTokenId": "47596015497256491756184157654239646514766680302559664407297790086790217945537",
-          "noTokenId": "108782455350736978283711728158965554077130363543046777759246376657793223892373"
-        },
-        {
-          "marketId": "4734",
-          "title": "Bhumjaithai Party (BJT)",
-          "yesTokenId": "18261464150142679474466045380036101807249541198327563744324507372363059168346",
-          "noTokenId": "22763331381063413094872993028112229089024411412599544555614416194893602802564"
-        },
-        {
-          "marketId": "4735",
-          "title": "Pheu Thai Party (PT)",
-          "yesTokenId": "23001168304271189616253220048125019818432927975284104510084120784705907407383",
-          "noTokenId": "43396018066662619402971986956999597518190249172107370145937977286887262925733"
-        }
-      ]
-    },
     "306": {
       "title": "Prime Minister of Japan after snap election?",
       "url": "https://app.opinion.trade/market/306?ref=opinion_hud",
-      "yesTokenId": "64822405785741495139924197605192339077076377817050301646561117822945709545864",
-      "noTokenId": "62849774975453205693254500249565580937944122196902667819285431774692702600011",
+      "yesTokenId": "33483246016998294080959931801587641217377126146051122437847989520761191992874",
+      "noTokenId": "27603632375466201074957898981310438583814819870336612243595133729670723127331",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7947,11 +7717,35 @@
         }
       ]
     },
-    "5877": {
-      "title": "Bitcoin Up or Down on February 7?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/5877?ref=opinion_hud",
-      "yesTokenId": "10476795511847455547686085965379621698584649775359381708844350214537592216425",
-      "noTokenId": "68991975385305288963374196653482938524512438154307663143563059919460400060689",
+    "5921": {
+      "title": "BTC Up or Down - Hourly (Feb 07, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5921?ref=opinion_hud",
+      "yesTokenId": "4653149841903948002836209979480387143765406546315704580909347359699103917329",
+      "noTokenId": "27440975376689331488032903949573929179054296836751074093082158491441549457006",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5920": {
+      "title": "BNB Up or Down - Hourly (Feb 07, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5920?ref=opinion_hud",
+      "yesTokenId": "19671435442384189237260987200056745129428676341339886457402426799474968783848",
+      "noTokenId": "42330870917113921135976786042606224250674779888715125868837210814035319845773",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "5922": {
+      "title": "ETH Up or Down - Hourly (Feb 07, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5922?ref=opinion_hud",
+      "yesTokenId": "57252896053009090832133701844194574979576584627089304644179045376207660263688",
+      "noTokenId": "112988918173381100740534079051909557792644154297255180766046644663765700662021",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -8195,7 +7989,6 @@
     ],
     "airstrike": [
       "257",
-      "271",
       "274",
       "331"
     ],
@@ -8321,7 +8114,6 @@
     ],
     "attack": [
       "257",
-      "271",
       "3039",
       "331"
     ],
@@ -8394,9 +8186,6 @@
     "best model march": [
       "335"
     ],
-    "bhumjaithai": [
-      "307"
-    ],
     "bianca": [
       "3158"
     ],
@@ -8457,9 +8246,6 @@
     ],
     "bitcoin replace sha-256": [
       "3256"
-    ],
-    "bjt": [
-      "307"
     ],
     "blackpink": [
       "2178"
@@ -8812,7 +8598,6 @@
     ],
     "conflict": [
       "257",
-      "271",
       "274",
       "3039",
       "331"
@@ -9157,12 +8942,6 @@
     "ecosystem": [
       "3366"
     ],
-    "election": [
-      "307"
-    ],
-    "election winner": [
-      "307"
-    ],
     "electric vehicle": [
       "323",
       "351"
@@ -9223,7 +9002,6 @@
     ],
     "escalation": [
       "257",
-      "271",
       "3039",
       "331"
     ],
@@ -9578,7 +9356,6 @@
       "320"
     ],
     "government": [
-      "307",
       "330"
     ],
     "gpt": [
@@ -9733,7 +9510,6 @@
       "3361"
     ],
     "idf": [
-      "271",
       "3039",
       "331"
     ],
@@ -9827,7 +9603,6 @@
     ],
     "iran": [
       "257",
-      "271",
       "3039",
       "330",
       "331"
@@ -9857,7 +9632,6 @@
       "330"
     ],
     "israel": [
-      "271",
       "3039",
       "331"
     ],
@@ -10025,15 +9799,6 @@
     ],
     "legal ruling": [
       "1546"
-    ],
-    "legislative": [
-      "307"
-    ],
-    "legislative election": [
-      "307"
-    ],
-    "legislative election winner": [
-      "307"
     ],
     "liberal democratic party": [
       "306"
@@ -10218,7 +9983,6 @@
     ],
     "military": [
       "257",
-      "271",
       "331"
     ],
     "military attack": [
@@ -10238,7 +10002,6 @@
     ],
     "missile": [
       "257",
-      "271",
       "3039",
       "331"
     ],
@@ -10490,9 +10253,6 @@
     "parallel execution": [
       "1721"
     ],
-    "parliament": [
-      "307"
-    ],
     "parousia": [
       "2670"
     ],
@@ -10504,11 +10264,7 @@
       "3359"
     ],
     "pentagon": [
-      "257",
-      "271"
-    ],
-    "people's party": [
-      "307"
+      "257"
     ],
     "performance": [
       "335",
@@ -10519,9 +10275,6 @@
     ],
     "perpetuals": [
       "3361"
-    ],
-    "pheu thai": [
-      "307"
     ],
     "physical gold": [
       "346"
@@ -10547,12 +10300,6 @@
     "policy rate": [
       "313"
     ],
-    "politics": [
-      "307"
-    ],
-    "poll": [
-      "307"
-    ],
     "post-quantum": [
       "3256"
     ],
@@ -10562,9 +10309,6 @@
     "powell": [
       "319",
       "341"
-    ],
-    "pple": [
-      "307"
     ],
     "precious metal": [
       "315",
@@ -10659,9 +10403,6 @@
     ],
     "protests": [
       "330"
-    ],
-    "pt": [
-      "307"
     ],
     "public listing": [
       "3362"
@@ -10840,7 +10581,6 @@
     ],
     "retaliation": [
       "257",
-      "271",
       "3039",
       "331"
     ],
@@ -11183,7 +10923,6 @@
     ],
     "strike": [
       "257",
-      "271",
       "274",
       "3039",
       "323",
@@ -11194,7 +10933,6 @@
     ],
     "strikes iran": [
       "257",
-      "271",
       "3039",
       "331"
     ],
@@ -11261,7 +10999,6 @@
     ],
     "tehran": [
       "257",
-      "271",
       "3039",
       "330",
       "331"
@@ -11304,18 +11041,6 @@
     "tge": [
       "1721",
       "317"
-    ],
-    "thai": [
-      "307"
-    ],
-    "thailand": [
-      "307"
-    ],
-    "thailand legislative": [
-      "307"
-    ],
-    "thailand legislative election": [
-      "307"
     ],
     "the post": [
       "3223"
@@ -11499,7 +11224,6 @@
     ],
     "us": [
       "257",
-      "271",
       "274"
     ],
     "us economy": [
@@ -11511,12 +11235,6 @@
     ],
     "us stock market": [
       "327"
-    ],
-    "us/israel strikes": [
-      "271"
-    ],
-    "us/israel strikes iran": [
-      "271"
     ],
     "us500": [
       "327"
@@ -11586,9 +11304,6 @@
     "volatility feb 2026": [
       "339"
     ],
-    "vote": [
-      "307"
-    ],
     "vp": [
       "3055"
     ],
@@ -11601,7 +11316,6 @@
     ],
     "war": [
       "257",
-      "271",
       "274",
       "3039",
       "331"
@@ -11795,7 +11509,6 @@
       "3364"
     ],
     "以色列": [
-      "271",
       "3039",
       "331"
     ],
@@ -11893,9 +11606,6 @@
     ],
     "疯狂三月": [
       "343"
-    ],
-    "立法选举": [
-      "307"
     ],
     "索拉纳": [
       "334"
@@ -12059,7 +11769,6 @@
     ],
     "airstrike": [
       "257",
-      "271",
       "274",
       "331"
     ],
@@ -12118,7 +11827,6 @@
     ],
     "attack": [
       "257",
-      "271",
       "331"
     ],
     "autopilot": [
@@ -12157,9 +11865,6 @@
     "best model march": [
       "335"
     ],
-    "bhumjaithai": [
-      "307"
-    ],
     "big dance": [
       "343"
     ],
@@ -12192,9 +11897,6 @@
     ],
     "bitcoin max daily": [
       "339"
-    ],
-    "bjt": [
-      "307"
     ],
     "blockchain": [
       "333",
@@ -12390,7 +12092,6 @@
     ],
     "conflict": [
       "257",
-      "271",
       "274",
       "331"
     ],
@@ -12556,12 +12257,6 @@
     "economics": [
       "344"
     ],
-    "election": [
-      "307"
-    ],
-    "election winner": [
-      "307"
-    ],
     "electric vehicle": [
       "323",
       "351"
@@ -12587,7 +12282,6 @@
     ],
     "escalation": [
       "257",
-      "271",
       "331"
     ],
     "eth": [
@@ -12817,7 +12511,6 @@
       "320"
     ],
     "government": [
-      "307",
       "330"
     ],
     "gpt": [
@@ -12881,7 +12574,6 @@
       "344"
     ],
     "idf": [
-      "271",
       "331"
     ],
     "industrial metal": [
@@ -12932,7 +12624,6 @@
     ],
     "iran": [
       "257",
-      "271",
       "330",
       "331"
     ],
@@ -12954,7 +12645,6 @@
       "330"
     ],
     "israel": [
-      "271",
       "331"
     ],
     "israel strikes": [
@@ -13031,15 +12721,6 @@
     ],
     "leaderboard": [
       "335"
-    ],
-    "legislative": [
-      "307"
-    ],
-    "legislative election": [
-      "307"
-    ],
-    "legislative election winner": [
-      "307"
     ],
     "liberal democratic party": [
       "306"
@@ -13134,7 +12815,6 @@
     ],
     "military": [
       "257",
-      "271",
       "331"
     ],
     "military attack": [
@@ -13151,7 +12831,6 @@
     ],
     "missile": [
       "257",
-      "271",
       "331"
     ],
     "model 3": [
@@ -13267,26 +12946,16 @@
     "overthrow": [
       "330"
     ],
-    "parliament": [
-      "307"
-    ],
     "pce": [
       "319",
       "344"
     ],
     "pentagon": [
-      "257",
-      "271"
-    ],
-    "people's party": [
-      "307"
+      "257"
     ],
     "performance": [
       "335",
       "338"
-    ],
-    "pheu thai": [
-      "307"
     ],
     "physical gold": [
       "346"
@@ -13306,18 +12975,9 @@
     "policy rate": [
       "313"
     ],
-    "politics": [
-      "307"
-    ],
-    "poll": [
-      "307"
-    ],
     "powell": [
       "319",
       "341"
-    ],
-    "pple": [
-      "307"
     ],
     "precious metal": [
       "315",
@@ -13390,9 +13050,6 @@
     "protests": [
       "330"
     ],
-    "pt": [
-      "307"
-    ],
     "purchase": [
       "337"
     ],
@@ -13454,7 +13111,6 @@
     ],
     "retaliation": [
       "257",
-      "271",
       "331"
     ],
     "revolution": [
@@ -13616,7 +13272,6 @@
     ],
     "strike": [
       "257",
-      "271",
       "274",
       "323",
       "331"
@@ -13626,7 +13281,6 @@
     ],
     "strikes iran": [
       "257",
-      "271",
       "331"
     ],
     "support": [
@@ -13651,7 +13305,6 @@
     ],
     "tehran": [
       "257",
-      "271",
       "330",
       "331"
     ],
@@ -13670,18 +13323,6 @@
     ],
     "tge": [
       "317"
-    ],
-    "thai": [
-      "307"
-    ],
-    "thailand": [
-      "307"
-    ],
-    "thailand legislative": [
-      "307"
-    ],
-    "thailand legislative election": [
-      "307"
     ],
     "tightening": [
       "313"
@@ -13760,7 +13401,6 @@
     ],
     "us": [
       "257",
-      "271",
       "274"
     ],
     "us economy": [
@@ -13771,12 +13411,6 @@
     ],
     "us stock market": [
       "327"
-    ],
-    "us/israel strikes": [
-      "271"
-    ],
-    "us/israel strikes iran": [
-      "271"
     ],
     "us500": [
       "327"
@@ -13804,9 +13438,6 @@
     "volatility feb 2026": [
       "339"
     ],
-    "vote": [
-      "307"
-    ],
     "wall street": [
       "327"
     ],
@@ -13815,7 +13446,6 @@
     ],
     "war": [
       "257",
-      "271",
       "274",
       "331"
     ],
@@ -13957,7 +13587,6 @@
       "333"
     ],
     "以色列": [
-      "271",
       "331"
     ],
     "凯文·沃什": [
@@ -14013,9 +13642,6 @@
     ],
     "疯狂三月": [
       "343"
-    ],
-    "立法选举": [
-      "307"
     ],
     "索拉纳": [
       "334"
