@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-08 16:48:09 UTC+8",
+    "generatedAt": "2026-02-09 00:46:28 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,7 +8,7 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 313,
+      "kept": 312,
       "markets": 134,
       "keywords": 1220,
       "events": {
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 687,
+        "cutoff_expired": 688,
         "cutoff_zero_kept": 14,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 38,
+        "reused": 42,
         "regenerated_empty_entitygroups": 0,
-        "calls": 4,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 4,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -8155,42 +8155,6 @@
         }
       ]
     },
-    "6015": {
-      "title": "BTC Up or Down - Hourly (Feb 08, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6015?ref=opinion_hud",
-      "yesTokenId": "59551307906126525717120609392820324782686840111015720248826193689173711563716",
-      "noTokenId": "64861237503543271070536173637732385832121924784556137620297943839011343828145",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6014": {
-      "title": "BNB Up or Down - Hourly (Feb 08, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6014?ref=opinion_hud",
-      "yesTokenId": "72578624384524494216374414696976346368578969787710507800705296678256893758455",
-      "noTokenId": "32239497651603516199873369646368150693472961446856501246622509255332315351346",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6016": {
-      "title": "ETH Up or Down - Hourly (Feb 08, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6016?ref=opinion_hud",
-      "yesTokenId": "44987676951506670055564846779420513259080705588536486769448571547726285359217",
-      "noTokenId": "103431614845273861033638907819549228400082574231151750849342955266409798548799",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "358": {
       "title": "2026 Winter Olympics: Most Gold Medals",
       "url": "https://app.opinion.trade/market/358?ref=opinion_hud",
@@ -8566,6 +8530,42 @@
           "noTokenId": "1865653476351412722295530584337595507735211951312287272074170610152398646117"
         }
       ]
+    },
+    "6087": {
+      "title": "ETH Up or Down - Hourly (Feb 08, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6087?ref=opinion_hud",
+      "yesTokenId": "37826744632292761141573647749215912319830509868657850392592523261328810842657",
+      "noTokenId": "21380361433957091353872152271141734262411019386314136061633307054603679253956",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6086": {
+      "title": "BTC Up or Down - Hourly (Feb 08, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6086?ref=opinion_hud",
+      "yesTokenId": "64001137758100169986855521522273732137641935484137547050292728229606610375385",
+      "noTokenId": "44758417175065869943775151803233602810515291621808405453177105486536800188943",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6085": {
+      "title": "BNB Up or Down - Hourly (Feb 08, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6085?ref=opinion_hud",
+      "yesTokenId": "75583099426321907030873558308888896210752759797710413961791782577607400504663",
+      "noTokenId": "58826452284741901015089664439118874723055555011950362149401017654946133289175",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
