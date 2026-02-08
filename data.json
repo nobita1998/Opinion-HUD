@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-08 00:46:29 UTC+8",
+    "generatedAt": "2026-02-08 11:31:13 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 272,
-      "markets": 128,
-      "keywords": 1140,
+      "kept": 269,
+      "markets": 126,
+      "keywords": 1131,
       "events": {
-        "events": 37
+        "events": 35
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 728,
+        "cutoff_expired": 731,
         "cutoff_zero_kept": 14,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 37,
+        "reused": 35,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -1101,55 +1101,6 @@
       "sig": "656f6410",
       "sigFull": "656f6410",
       "sigCore": "58e42307",
-      "reused": false
-    },
-    "244": {
-      "title": "Rainbow FDV above ... one day after launch?",
-      "marketIds": [
-        "244"
-      ],
-      "bestMarketId": "244",
-      "bestLabels": null,
-      "keywords": [
-        "rainbow",
-        "rainbow wallet",
-        "ethereum",
-        "eth",
-        "web3",
-        "crypto",
-        "token",
-        "airdrop",
-        "defi",
-        "wallet",
-        "altcoin",
-        "erc20",
-        "tokenomics",
-        "dapp",
-        "l2",
-        "rainbow fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "rainbow fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "rainbow"
-      ],
-      "entityGroups": [
-        [
-          "rainbow",
-          "彩虹钱包"
-        ]
-      ],
-      "sig": "63aad1e0",
-      "sigFull": "63aad1e0",
-      "sigCore": "f0d8896f",
       "reused": false
     },
     "337": {
@@ -6184,93 +6135,6 @@
         }
       ]
     },
-    "244": {
-      "title": "Rainbow FDV above ... one day after launch?",
-      "url": "https://app.opinion.trade/market/244?ref=opinion_hud",
-      "yesTokenId": "81860094211965121036878375865715429520141236383891276815394735571532016921196",
-      "noTokenId": "83004473613393402847493575296807438308343093999252453351665716940648702349185",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "rainbow",
-        "rainbow wallet",
-        "ethereum",
-        "eth",
-        "web3",
-        "crypto",
-        "token",
-        "airdrop",
-        "defi",
-        "wallet",
-        "altcoin",
-        "erc20",
-        "tokenomics",
-        "dapp",
-        "l2",
-        "rainbow fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "rainbow fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "rainbow"
-      ],
-      "entityGroups": [
-        [
-          "rainbow",
-          "彩虹钱包"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "3525",
-          "title": "$200M",
-          "yesTokenId": "88486413445110941151340297136689686190241284469739544653362575860936150574787",
-          "noTokenId": "78170744901162956973783711122724069287834992226392007530778604940517475896443"
-        },
-        {
-          "marketId": "3526",
-          "title": "$400M",
-          "yesTokenId": "72686429756777957917499118933120250840634347258127077698809772349970703662373",
-          "noTokenId": "2970122440282344205048250144039423109484444840554058644990037161522893634249"
-        },
-        {
-          "marketId": "3527",
-          "title": "$600M",
-          "yesTokenId": "12549639591346865267942131494968975215908815975773047659387838480955640174287",
-          "noTokenId": "62238173344579892487830687241569812881923562932084149617248654141718971040918"
-        },
-        {
-          "marketId": "3528",
-          "title": "$800M",
-          "yesTokenId": "115123719214303497587550004552866587113333387989067699283997129526843867816728",
-          "noTokenId": "101615151332457255034482500513002449404940409216335053234956739841823023431828"
-        },
-        {
-          "marketId": "3529",
-          "title": "$1B",
-          "yesTokenId": "46450326756643760048118875978732320287636973493790202582838768356107193939859",
-          "noTokenId": "75168183388386261629800577068753411798096451036313793123821485988440407378074"
-        },
-        {
-          "marketId": "5361",
-          "title": "$100M",
-          "yesTokenId": "81860094211965121036878375865715429520141236383891276815394735571532016921196",
-          "noTokenId": "83004473613393402847493575296807438308343093999252453351665716940648702349185"
-        }
-      ]
-    },
     "337": {
       "title": "Which companies will be acquired before 2027?",
       "url": "https://app.opinion.trade/market/337?ref=opinion_hud",
@@ -7717,11 +7581,11 @@
         }
       ]
     },
-    "5966": {
-      "title": "ETH Up or Down - Hourly (Feb 07, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5966?ref=opinion_hud",
-      "yesTokenId": "39425428501754980972003112283513125185053920110159252643585542737818001797443",
-      "noTokenId": "66276339339881331601515854013282369823041413381635216692688171313739207692866",
+    "6000": {
+      "title": "ETH Up or Down - Hourly (Feb 08, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6000?ref=opinion_hud",
+      "yesTokenId": "52035830856907429757475403793560405241899071734134582643485088601272261798244",
+      "noTokenId": "101911998199901080931154294925813392729158566148782485720889914347031322147388",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7729,11 +7593,11 @@
       },
       "type": "binary"
     },
-    "5964": {
-      "title": "BNB Up or Down - Hourly (Feb 07, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5964?ref=opinion_hud",
-      "yesTokenId": "113399083474792160865317291966835003822803664503320500418663726318065837561297",
-      "noTokenId": "48904493702530269010885392816161069312514931378347753811090100775580360934794",
+    "5999": {
+      "title": "BTC Up or Down - Hourly (Feb 08, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5999?ref=opinion_hud",
+      "yesTokenId": "26339111339589197097325275105392431995280582788059401535781672337556932870797",
+      "noTokenId": "3461394361569163902227351132692907158720176547531359428190498227731454458398",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7741,23 +7605,11 @@
       },
       "type": "binary"
     },
-    "5965": {
-      "title": "BTC Up or Down - Hourly (Feb 07, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5965?ref=opinion_hud",
-      "yesTokenId": "26991252540649630032290059142728976232011329250031394605414304914093256026716",
-      "noTokenId": "90633970914413251804123120824125596763034533407496087480609554730756151531277",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "5963": {
-      "title": "Bitcoin Up or Down on February 8?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/5963?ref=opinion_hud",
-      "yesTokenId": "50904659516654783034063410606287988893856605876051713390249266759728438714779",
-      "noTokenId": "21578243028019006220111290508423450434914431553853898452308504929739074276941",
+    "5998": {
+      "title": "BNB Up or Down - Hourly (Feb 08, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/5998?ref=opinion_hud",
+      "yesTokenId": "39525078710646039993662298081506134398473406496736806629389883362870907574276",
+      "noTokenId": "4345862670893050341645563128552793952664255524935114656783984822161334084423",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7934,11 +7786,9 @@
       "348"
     ],
     "above one": [
-      "244",
       "317"
     ],
     "above one day": [
-      "244",
       "317"
     ],
     "acquired 2027": [
@@ -7965,7 +7815,6 @@
     ],
     "after launch": [
       "1721",
-      "244",
       "317"
     ],
     "after snap": [
@@ -7994,7 +7843,6 @@
     ],
     "airdrop": [
       "1721",
-      "244",
       "317",
       "3361",
       "3366"
@@ -8030,7 +7878,6 @@
       "326"
     ],
     "altcoin": [
-      "244",
       "333",
       "334",
       "3364",
@@ -8676,7 +8523,6 @@
     ],
     "crypto": [
       "1721",
-      "244",
       "332",
       "333",
       "334",
@@ -8737,9 +8583,6 @@
     "dancer brands feature": [
       "350"
     ],
-    "dapp": [
-      "244"
-    ],
     "date": [
       "3448",
       "3449",
@@ -8748,11 +8591,7 @@
     ],
     "day after": [
       "1721",
-      "244",
       "317"
-    ],
-    "day after launch": [
-      "244"
     ],
     "deadline": [
       "3448",
@@ -8797,7 +8636,6 @@
     ],
     "defi": [
       "1721",
-      "244",
       "333",
       "334",
       "3361"
@@ -9009,9 +8847,6 @@
     "equity index": [
       "327"
     ],
-    "erc20": [
-      "244"
-    ],
     "escalation": [
       "257",
       "3039",
@@ -9021,7 +8856,6 @@
       "2670"
     ],
     "eth": [
-      "244",
       "333",
       "3364"
     ],
@@ -9031,7 +8865,6 @@
     ],
     "ethereum": [
       "1721",
-      "244",
       "333",
       "3364"
     ],
@@ -9140,11 +8973,9 @@
       "317"
     ],
     "fdv above": [
-      "244",
       "317"
     ],
     "fdv above one": [
-      "244",
       "317"
     ],
     "fdv one": [
@@ -9761,7 +9592,6 @@
       "3361"
     ],
     "l2": [
-      "244",
       "3366"
     ],
     "large language model": [
@@ -10210,11 +10040,9 @@
     ],
     "one day": [
       "1721",
-      "244",
       "317"
     ],
     "one day after": [
-      "244",
       "317"
     ],
     "op stack": [
@@ -10462,18 +10290,6 @@
     ],
     "racing": [
       "312"
-    ],
-    "rainbow": [
-      "244"
-    ],
-    "rainbow fdv": [
-      "244"
-    ],
-    "rainbow fdv above": [
-      "244"
-    ],
-    "rainbow wallet": [
-      "244"
     ],
     "raise": [
       "3505",
@@ -11107,7 +10923,6 @@
     ],
     "token": [
       "1721",
-      "244",
       "333",
       "334",
       "3367"
@@ -11119,7 +10934,6 @@
       "3366"
     ],
     "tokenomics": [
-      "244",
       "317",
       "3361"
     ],
@@ -11323,7 +11137,6 @@
       "327"
     ],
     "wallet": [
-      "244",
       "3365"
     ],
     "war": [
@@ -11355,9 +11168,6 @@
     ],
     "wdc": [
       "312"
-    ],
-    "web3": [
-      "244"
     ],
     "westworld": [
       "3158"
@@ -11555,9 +11365,6 @@
       "3367",
       "3368"
     ],
-    "彩虹钱包": [
-      "244"
-    ],
     "微策略": [
       "3257"
     ],
@@ -11734,11 +11541,9 @@
       "348"
     ],
     "above one": [
-      "244",
       "317"
     ],
     "above one day": [
-      "244",
       "317"
     ],
     "acquired 2027": [
@@ -11751,7 +11556,6 @@
       "337"
     ],
     "after launch": [
-      "244",
       "317"
     ],
     "after snap": [
@@ -11776,7 +11580,6 @@
       "350"
     ],
     "airdrop": [
-      "244",
       "317"
     ],
     "airstrike": [
@@ -11791,7 +11594,6 @@
       "326"
     ],
     "altcoin": [
-      "244",
       "333",
       "334"
     ],
@@ -12136,7 +11938,6 @@
       "332"
     ],
     "crypto": [
-      "244",
       "332",
       "333",
       "334",
@@ -12165,15 +11966,8 @@
     "dancer brands feature": [
       "350"
     ],
-    "dapp": [
-      "244"
-    ],
     "day after": [
-      "244",
       "317"
-    ],
-    "day after launch": [
-      "244"
     ],
     "deal": [
       "337"
@@ -12200,7 +11994,6 @@
       "338"
     ],
     "defi": [
-      "244",
       "333",
       "334"
     ],
@@ -12289,22 +12082,17 @@
     "equity index": [
       "327"
     ],
-    "erc20": [
-      "244"
-    ],
     "escalation": [
       "257",
       "331"
     ],
     "eth": [
-      "244",
       "333"
     ],
     "ether": [
       "333"
     ],
     "ethereum": [
-      "244",
       "333"
     ],
     "ethereum hit": [
@@ -12360,11 +12148,9 @@
       "317"
     ],
     "fdv above": [
-      "244",
       "317"
     ],
     "fdv above one": [
-      "244",
       "317"
     ],
     "feature 2026": [
@@ -12710,9 +12496,6 @@
     "khamenei": [
       "330"
     ],
-    "l2": [
-      "244"
-    ],
     "large language model": [
       "338"
     ],
@@ -12936,11 +12719,9 @@
       "322"
     ],
     "one day": [
-      "244",
       "317"
     ],
     "one day after": [
-      "244",
       "317"
     ],
     "openai": [
@@ -13073,18 +12854,6 @@
     ],
     "racing": [
       "312"
-    ],
-    "rainbow": [
-      "244"
-    ],
-    "rainbow fdv": [
-      "244"
-    ],
-    "rainbow fdv above": [
-      "244"
-    ],
-    "rainbow wallet": [
-      "244"
     ],
     "rally": [
       "324",
@@ -13343,12 +13112,10 @@
       "324"
     ],
     "token": [
-      "244",
       "333",
       "334"
     ],
     "tokenomics": [
-      "244",
       "317"
     ],
     "top company": [
@@ -13453,9 +13220,6 @@
     "wall street": [
       "327"
     ],
-    "wallet": [
-      "244"
-    ],
     "war": [
       "257",
       "274",
@@ -13472,9 +13236,6 @@
     ],
     "wdc": [
       "312"
-    ],
-    "web3": [
-      "244"
     ],
     "what 500": [
       "327"
@@ -13612,9 +13373,6 @@
     ],
     "大语言模型": [
       "335"
-    ],
-    "彩虹钱包": [
-      "244"
     ],
     "日本央行": [
       "313"
