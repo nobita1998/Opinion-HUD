@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-08 15:43:13 UTC+8",
+    "generatedAt": "2026-02-08 16:48:09 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 284,
-      "markets": 129,
-      "keywords": 1150,
+      "kept": 313,
+      "markets": 134,
+      "keywords": 1220,
       "events": {
-        "events": 38
+        "events": 42
       },
       "skipped": {
-        "statusEnum": 7,
+        "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 709,
+        "cutoff_expired": 687,
         "cutoff_zero_kept": 14,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 35,
+        "reused": 38,
         "regenerated_empty_entitygroups": 0,
-        "calls": 3,
+        "calls": 4,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 3,
+        "non_empty": 4,
         "errors": 0
       }
     }
@@ -1854,6 +1854,194 @@
       "sig": "7ecc5257",
       "sigFull": "7ecc5257",
       "sigCore": "74aba825",
+      "reused": false
+    },
+    "358": {
+      "title": "2026 Winter Olympics: Most Gold Medals",
+      "marketIds": [
+        "358"
+      ],
+      "bestMarketId": "358",
+      "bestLabels": null,
+      "keywords": [
+        "winter olympics",
+        "milano cortina 2026",
+        "olympic games",
+        "gold medal",
+        "medal count",
+        "medal table",
+        "winter games",
+        "2026 olympics",
+        "olympic gold",
+        "top nation",
+        "medal tally",
+        "winter sports",
+        "cortina 2026",
+        "milan 2026",
+        "olympics 2026",
+        "2026 winter",
+        "olympics most",
+        "most gold",
+        "gold medals",
+        "2026 winter olympics",
+        "winter olympics most",
+        "olympics most gold",
+        "most gold medals"
+      ],
+      "entities": [
+        "winter olympics"
+      ],
+      "entityGroups": [
+        [
+          "winter olympics",
+          "冬奥会",
+          "奥运会"
+        ]
+      ],
+      "sig": "c9d4e683",
+      "sigFull": "c9d4e683",
+      "sigCore": "07bab7e6",
+      "reused": false
+    },
+    "357": {
+      "title": "LoL: LEC Versus 2026 Winner",
+      "marketIds": [
+        "357"
+      ],
+      "bestMarketId": "357",
+      "bestLabels": null,
+      "keywords": [
+        "league of legends",
+        "lol",
+        "lec",
+        "emea",
+        "versus",
+        "esports",
+        "tournament",
+        "competition",
+        "championship",
+        "europe",
+        "finals",
+        "gaming",
+        "riot games",
+        "regional",
+        "lol lec",
+        "lec versus",
+        "versus 2026",
+        "2026 winner",
+        "lol lec versus",
+        "lec versus 2026",
+        "versus 2026 winner"
+      ],
+      "entities": [
+        "lol",
+        "lec"
+      ],
+      "entityGroups": [
+        [
+          "lol",
+          "英雄联盟"
+        ],
+        [
+          "lec",
+          "欧洲冠军联赛"
+        ]
+      ],
+      "sig": "79c70c54",
+      "sigFull": "79c70c54",
+      "sigCore": "095df594",
+      "reused": false
+    },
+    "356": {
+      "title": "LCK Cup 2026: Winner",
+      "marketIds": [
+        "356"
+      ],
+      "bestMarketId": "356",
+      "bestLabels": null,
+      "keywords": [
+        "lck",
+        "league of legends",
+        "lol",
+        "esports",
+        "korea",
+        "champions korea",
+        "lck cup",
+        "tournament",
+        "finals",
+        "playoffs",
+        "gen.g",
+        "t1",
+        "dplus kia",
+        "drx",
+        "bnk fearx",
+        "cup 2026",
+        "2026 winner",
+        "lck cup 2026",
+        "cup 2026 winner"
+      ],
+      "entities": [
+        "lck cup"
+      ],
+      "entityGroups": [
+        [
+          "lck cup",
+          "lck杯赛",
+          "lck杯"
+        ]
+      ],
+      "sig": "4a844560",
+      "sigFull": "4a844560",
+      "sigCore": "6008f813",
+      "reused": false
+    },
+    "355": {
+      "title": "Aztec FDV above ... one day after launch?",
+      "marketIds": [
+        "355"
+      ],
+      "bestMarketId": "355",
+      "bestLabels": null,
+      "keywords": [
+        "aztec",
+        "aztec network",
+        "noir",
+        "l2",
+        "layer 2",
+        "privacy",
+        "zk-rollup",
+        "zero knowledge",
+        "ethereum",
+        "mainnet",
+        "token",
+        "valuation",
+        "crypto",
+        "blockchain",
+        "defi",
+        "aztec fdv",
+        "fdv above",
+        "above one",
+        "one day",
+        "day after",
+        "after launch",
+        "aztec fdv above",
+        "fdv above one",
+        "above one day",
+        "one day after",
+        "day after launch"
+      ],
+      "entities": [
+        "aztec"
+      ],
+      "entityGroups": [
+        [
+          "aztec",
+          "阿兹特克"
+        ]
+      ],
+      "sig": "72d27a38",
+      "sigFull": "72d27a38",
+      "sigCore": "229e2334",
       "reused": false
     }
   },
@@ -7967,11 +8155,11 @@
         }
       ]
     },
-    "6013": {
-      "title": "ETH Up or Down - Hourly (Feb 08, 2026 08:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6013?ref=opinion_hud",
-      "yesTokenId": "115151543624329477010616903240556543682691570425949388314178947864876538112347",
-      "noTokenId": "38598065297052095701128220509656033044353388968390728581130856330109727676116",
+    "6015": {
+      "title": "BTC Up or Down - Hourly (Feb 08, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6015?ref=opinion_hud",
+      "yesTokenId": "59551307906126525717120609392820324782686840111015720248826193689173711563716",
+      "noTokenId": "64861237503543271070536173637732385832121924784556137620297943839011343828145",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7979,11 +8167,11 @@
       },
       "type": "binary"
     },
-    "6011": {
-      "title": "BNB Up or Down - Hourly (Feb 08, 2026 08:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6011?ref=opinion_hud",
-      "yesTokenId": "72147351923560055800187307551120566937458969882808761312038632324992966902920",
-      "noTokenId": "85086672670459864635729667435237813853800768895149131969791323252855623519552",
+    "6014": {
+      "title": "BNB Up or Down - Hourly (Feb 08, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6014?ref=opinion_hud",
+      "yesTokenId": "72578624384524494216374414696976346368578969787710507800705296678256893758455",
+      "noTokenId": "32239497651603516199873369646368150693472961446856501246622509255332315351346",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7991,17 +8179,393 @@
       },
       "type": "binary"
     },
-    "6012": {
-      "title": "BTC Up or Down - Hourly (Feb 08, 2026 08:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6012?ref=opinion_hud",
-      "yesTokenId": "97069534722930270845399530117887976565570742523816662224381614179821616531391",
-      "noTokenId": "28215413041930835252415004421672716248930682901579340641769918746652159198277",
+    "6016": {
+      "title": "ETH Up or Down - Hourly (Feb 08, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6016?ref=opinion_hud",
+      "yesTokenId": "44987676951506670055564846779420513259080705588536486769448571547726285359217",
+      "noTokenId": "103431614845273861033638907819549228400082574231151750849342955266409798548799",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
       },
       "type": "binary"
+    },
+    "358": {
+      "title": "2026 Winter Olympics: Most Gold Medals",
+      "url": "https://app.opinion.trade/market/358?ref=opinion_hud",
+      "yesTokenId": "94885500759184967613393651128580090711638273210282759001205269837489059957094",
+      "noTokenId": "34521306395269953543024921346729065058463136361689427857142592198628443678845",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "winter olympics",
+        "milano cortina 2026",
+        "olympic games",
+        "gold medal",
+        "medal count",
+        "medal table",
+        "winter games",
+        "2026 olympics",
+        "olympic gold",
+        "top nation",
+        "medal tally",
+        "winter sports",
+        "cortina 2026",
+        "milan 2026",
+        "olympics 2026",
+        "2026 winter",
+        "olympics most",
+        "most gold",
+        "gold medals",
+        "2026 winter olympics",
+        "winter olympics most",
+        "olympics most gold",
+        "most gold medals"
+      ],
+      "entities": [
+        "winter olympics"
+      ],
+      "entityGroups": [
+        [
+          "winter olympics",
+          "冬奥会",
+          "奥运会"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "6059",
+          "title": "Norway",
+          "yesTokenId": "110198451040033593458774610635046170882944386675662860831810131542975137825618",
+          "noTokenId": "103556142046709095024822846403258759543166023054106565024461534344904614159740"
+        },
+        {
+          "marketId": "6060",
+          "title": "United States",
+          "yesTokenId": "105029920308443938247260824091965124476556886103683371478570929660106272135581",
+          "noTokenId": "105186310259443534820671070220723600707337179899706836974621943034868896232301"
+        },
+        {
+          "marketId": "6061",
+          "title": "Germany",
+          "yesTokenId": "94885500759184967613393651128580090711638273210282759001205269837489059957094",
+          "noTokenId": "34521306395269953543024921346729065058463136361689427857142592198628443678845"
+        },
+        {
+          "marketId": "6062",
+          "title": "Italy",
+          "yesTokenId": "98436846694656831936803148593353864612481314575652836525886974354626034293034",
+          "noTokenId": "67722204994277438227879488450673281506258955968182456376280311697960831543931"
+        },
+        {
+          "marketId": "6063",
+          "title": "Canada",
+          "yesTokenId": "63270470406043421741182424504264427907767176245109838860690826446800616296131",
+          "noTokenId": "99278405467965006353303533706366158964769056479686286690601318450453091301128"
+        },
+        {
+          "marketId": "6064",
+          "title": "Sweden",
+          "yesTokenId": "32881373394534355138367547824254410630521845382581880284137171330520321549873",
+          "noTokenId": "22239759281954912334682254755962884825998812167639187375405979647123859172122"
+        },
+        {
+          "marketId": "6065",
+          "title": "Switzerland",
+          "yesTokenId": "83611214920061144252863465203856493973980802638608793323783283976919873187856",
+          "noTokenId": "103222492941959397162694118573704347257957273442093939239787047424406398436567"
+        },
+        {
+          "marketId": "6066",
+          "title": "France",
+          "yesTokenId": "94237676536259895932090040642817740647890773536628083065988615452953341816247",
+          "noTokenId": "13912678934690602185374871101263869550631783097456388371287907465421984246734"
+        }
+      ]
+    },
+    "357": {
+      "title": "LoL: LEC Versus 2026 Winner",
+      "url": "https://app.opinion.trade/market/357?ref=opinion_hud",
+      "yesTokenId": "20780931109488059539586914808603079764203648010764436614467262637470368343743",
+      "noTokenId": "49887952056510522513123386611983190239066671799637919836818124633640551289730",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "league of legends",
+        "lol",
+        "lec",
+        "emea",
+        "versus",
+        "esports",
+        "tournament",
+        "competition",
+        "championship",
+        "europe",
+        "finals",
+        "gaming",
+        "riot games",
+        "regional",
+        "lol lec",
+        "lec versus",
+        "versus 2026",
+        "2026 winner",
+        "lol lec versus",
+        "lec versus 2026",
+        "versus 2026 winner"
+      ],
+      "entities": [
+        "lol",
+        "lec"
+      ],
+      "entityGroups": [
+        [
+          "lol",
+          "英雄联盟"
+        ],
+        [
+          "lec",
+          "欧洲冠军联赛"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "6050",
+          "title": "Karmine Corp",
+          "yesTokenId": "4946254875237664679719285503911909000648704730635151811031406000791013920670",
+          "noTokenId": "69340194075347683072878553249624057946743062698190021979737625253591541756199"
+        },
+        {
+          "marketId": "6051",
+          "title": "G2 Esports",
+          "yesTokenId": "93702207677711258888562239543750448360438757636062720409019762815822089540724",
+          "noTokenId": "25407577402590681073150954141950667157360518371428865033825629087531699940819"
+        },
+        {
+          "marketId": "6052",
+          "title": "Movistar KOI",
+          "yesTokenId": "7647124549067572355735262205143667054437510861780522367612531078221126718613",
+          "noTokenId": "114830691801120455749400630954111660631001309518107104749599210548400380564601"
+        },
+        {
+          "marketId": "6053",
+          "title": "Natus Vincere",
+          "yesTokenId": "38170108164253557803947999829600966522185620059614245824750851984592414535618",
+          "noTokenId": "428243153116541748187119534331336531459466037206087436522876793584210140779"
+        },
+        {
+          "marketId": "6054",
+          "title": "Los Ratones",
+          "yesTokenId": "3394387869644976051250362444107459359883331478909824204709646522760506733587",
+          "noTokenId": "20022872569001244476942692707754894669796674543647626308080780286591246688694"
+        },
+        {
+          "marketId": "6055",
+          "title": "GIANTX",
+          "yesTokenId": "20780931109488059539586914808603079764203648010764436614467262637470368343743",
+          "noTokenId": "49887952056510522513123386611983190239066671799637919836818124633640551289730"
+        },
+        {
+          "marketId": "6056",
+          "title": "Team Vitality",
+          "yesTokenId": "69882076779226325005014963087342997482248193575954180685375483264857979230898",
+          "noTokenId": "64967937670443290764969858374316960738520368924148065481642950951000918207526"
+        },
+        {
+          "marketId": "6057",
+          "title": "Fnatic",
+          "yesTokenId": "6851339654206067889614904870611447240364260206190684140176724417875713682592",
+          "noTokenId": "76341791910810797855170447549033645749284204733189617008050472415016026209643"
+        }
+      ]
+    },
+    "6058": {
+      "title": "Bitcoin Up or Down on February 9?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/6058?ref=opinion_hud",
+      "yesTokenId": "83477889931717012391090105585547185755288431826343300771108022993316184463259",
+      "noTokenId": "110734086351220396282156705951078032835794785345820917996598847012945098184703",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "356": {
+      "title": "LCK Cup 2026: Winner",
+      "url": "https://app.opinion.trade/market/356?ref=opinion_hud",
+      "yesTokenId": "47294756022830820667894799934709345666670340307723135546991406443440687170440",
+      "noTokenId": "66942589536338099345501494990619970361567575738916289293767642468704095289091",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "lck",
+        "league of legends",
+        "lol",
+        "esports",
+        "korea",
+        "champions korea",
+        "lck cup",
+        "tournament",
+        "finals",
+        "playoffs",
+        "gen.g",
+        "t1",
+        "dplus kia",
+        "drx",
+        "bnk fearx",
+        "cup 2026",
+        "2026 winner",
+        "lck cup 2026",
+        "cup 2026 winner"
+      ],
+      "entities": [
+        "lck cup"
+      ],
+      "entityGroups": [
+        [
+          "lck cup",
+          "lck杯赛",
+          "lck杯"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "6043",
+          "title": "Gen.G",
+          "yesTokenId": "100888365018856827921053327174198735515305415628034553114320597554048002577998",
+          "noTokenId": "74573006191086714774701202806084727757929239731072191615487548365146081143594"
+        },
+        {
+          "marketId": "6044",
+          "title": "T1",
+          "yesTokenId": "70093054928214105196310560726440287123879727869822174005034054945542552811185",
+          "noTokenId": "34657093616550396139855596658606272484098035035608013456960413578203457188210"
+        },
+        {
+          "marketId": "6045",
+          "title": "NS RedForce",
+          "yesTokenId": "71730332683725397008618113153188122942697936714732856429132438741218323173711",
+          "noTokenId": "44408919932616740439332399340871316817216100538883045044790499095879683151397"
+        },
+        {
+          "marketId": "6046",
+          "title": "Dplus Kia",
+          "yesTokenId": "95608283105539740049429840612106767866840833253234225191040112633923887233753",
+          "noTokenId": "111287767029571621126588708421285402683147251400826028840914665742138598374113"
+        },
+        {
+          "marketId": "6047",
+          "title": "DRX",
+          "yesTokenId": "57573552976288811752120819226100933029728047733594306337776728782178550878355",
+          "noTokenId": "90898356351133727729987733708932222125253855041483774969163814465308870423827"
+        },
+        {
+          "marketId": "6048",
+          "title": "BNK FEARX",
+          "yesTokenId": "73046206718726564836386675385340543219053905726098749780224752611885115274281",
+          "noTokenId": "77005357873283698784173602338784016545915749111287740756963576246380648782510"
+        },
+        {
+          "marketId": "6049",
+          "title": "DN SOOPers",
+          "yesTokenId": "47294756022830820667894799934709345666670340307723135546991406443440687170440",
+          "noTokenId": "66942589536338099345501494990619970361567575738916289293767642468704095289091"
+        }
+      ]
+    },
+    "355": {
+      "title": "Aztec FDV above ... one day after launch?",
+      "url": "https://app.opinion.trade/market/355?ref=opinion_hud",
+      "yesTokenId": "69269573360644676064849524715107991705179498503668779238517180993699169448848",
+      "noTokenId": "23628331239202166835521961753060929332289196121969507449354004400271012079566",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "aztec",
+        "aztec network",
+        "noir",
+        "l2",
+        "layer 2",
+        "privacy",
+        "zk-rollup",
+        "zero knowledge",
+        "ethereum",
+        "mainnet",
+        "token",
+        "valuation",
+        "crypto",
+        "blockchain",
+        "defi",
+        "aztec fdv",
+        "fdv above",
+        "above one",
+        "one day",
+        "day after",
+        "after launch",
+        "aztec fdv above",
+        "fdv above one",
+        "above one day",
+        "one day after",
+        "day after launch"
+      ],
+      "entities": [
+        "aztec"
+      ],
+      "entityGroups": [
+        [
+          "aztec",
+          "阿兹特克"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "6038",
+          "title": "$150M",
+          "yesTokenId": "17101395900494585077749265723934933257798952842540719904565831977355311818677",
+          "noTokenId": "64382788486609739460414791980528874452669897487246412667239116942204211492383"
+        },
+        {
+          "marketId": "6039",
+          "title": "$300M",
+          "yesTokenId": "43067402738486870667972436688707636669932851521958861103094580039961824861592",
+          "noTokenId": "13266680764759248478160601987621737925513800751165501887340192941209093805253"
+        },
+        {
+          "marketId": "6040",
+          "title": "$500M",
+          "yesTokenId": "69269573360644676064849524715107991705179498503668779238517180993699169448848",
+          "noTokenId": "23628331239202166835521961753060929332289196121969507449354004400271012079566"
+        },
+        {
+          "marketId": "6041",
+          "title": "$800M",
+          "yesTokenId": "74875997817678597061064001679537053087898947082556336326420360210549119093990",
+          "noTokenId": "102415239836321937098665195896207937013897407822189586567135690271608323407417"
+        },
+        {
+          "marketId": "6042",
+          "title": "$1B",
+          "yesTokenId": "35216625070032086441157980481766858763218494212529617571533656463090544668587",
+          "noTokenId": "1865653476351412722295530584337595507735211951312287272074170610152398646117"
+        }
+      ]
     }
   },
   "index": {
@@ -8070,11 +8634,24 @@
     "2026 nfl draft": [
       "3072"
     ],
+    "2026 olympics": [
+      "358"
+    ],
     "2026 season": [
       "312"
     ],
     "2026 spring": [
       "350"
+    ],
+    "2026 winner": [
+      "356",
+      "357"
+    ],
+    "2026 winter": [
+      "358"
+    ],
+    "2026 winter olympics": [
+      "358"
     ],
     "2026-06-30": [
       "3508"
@@ -8175,13 +8752,15 @@
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "above one day": [
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "acquired 2027": [
       "337"
@@ -8210,7 +8789,8 @@
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "after snap": [
       "306"
@@ -8383,6 +8963,18 @@
     "ayatollah": [
       "330"
     ],
+    "aztec": [
+      "355"
+    ],
+    "aztec fdv": [
+      "355"
+    ],
+    "aztec fdv above": [
+      "355"
+    ],
+    "aztec network": [
+      "355"
+    ],
     "back": [
       "1856"
     ],
@@ -8523,7 +9115,8 @@
       "3361",
       "3364",
       "3365",
-      "340"
+      "340",
+      "355"
     ],
     "blockchain upgrade": [
       "3256"
@@ -8556,6 +9149,9 @@
     ],
     "bnb token": [
       "3368"
+    ],
+    "bnk fearx": [
+      "356"
     ],
     "boj": [
       "313"
@@ -8681,8 +9277,12 @@
     "champion 2026": [
       "312"
     ],
+    "champions korea": [
+      "356"
+    ],
     "championship": [
-      "343"
+      "343",
+      "357"
     ],
     "changpeng zhao": [
       "3369"
@@ -8844,6 +9444,9 @@
       "335",
       "338"
     ],
+    "competition": [
+      "357"
+    ],
     "confirmation": [
       "341"
     ],
@@ -8883,6 +9486,9 @@
     ],
     "corporate": [
       "336"
+    ],
+    "cortina 2026": [
+      "358"
     ],
     "cost of living": [
       "344"
@@ -8931,7 +9537,8 @@
       "3368",
       "339",
       "340",
-      "353"
+      "353",
+      "355"
     ],
     "crypto exchange": [
       "3362",
@@ -8968,6 +9575,12 @@
     "cryptography": [
       "3256"
     ],
+    "cup 2026": [
+      "356"
+    ],
+    "cup 2026 winner": [
+      "356"
+    ],
     "customs duties": [
       "1546"
     ],
@@ -9000,12 +9613,14 @@
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "day after launch": [
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "deadline": [
       "3448",
@@ -9055,7 +9670,8 @@
       "334",
       "3361",
       "352",
-      "354"
+      "354",
+      "355"
     ],
     "defi hack": [
       "3360"
@@ -9125,6 +9741,9 @@
     "downtime": [
       "3357"
     ],
+    "dplus kia": [
+      "356"
+    ],
     "draft class": [
       "3072"
     ],
@@ -9154,6 +9773,9 @@
     ],
     "drone strike": [
       "274"
+    ],
+    "drx": [
+      "356"
     ],
     "due date": [
       "3448"
@@ -9222,6 +9844,9 @@
     "elon musk": [
       "351"
     ],
+    "emea": [
+      "357"
+    ],
     "encryption": [
       "3256"
     ],
@@ -9272,6 +9897,10 @@
     "eschatology": [
       "2670"
     ],
+    "esports": [
+      "356",
+      "357"
+    ],
     "eth": [
       "333",
       "3364"
@@ -9283,7 +9912,8 @@
     "ethereum": [
       "1721",
       "333",
-      "3364"
+      "3364",
+      "355"
     ],
     "ethereum all": [
       "3364"
@@ -9299,6 +9929,9 @@
     ],
     "euro": [
       "320"
+    ],
+    "europe": [
+      "357"
     ],
     "european central bank": [
       "320"
@@ -9396,13 +10029,15 @@
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "fdv above one": [
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "fdv one": [
       "1721"
@@ -9449,6 +10084,10 @@
     ],
     "final four": [
       "343"
+    ],
+    "finals": [
+      "356",
+      "357"
     ],
     "finance": [
       "3525"
@@ -9514,6 +10153,9 @@
       "348",
       "349"
     ],
+    "gaming": [
+      "357"
+    ],
     "gas": [
       "333"
     ],
@@ -9529,6 +10171,9 @@
     "gemini": [
       "335",
       "338"
+    ],
+    "gen.g": [
+      "356"
     ],
     "general election": [
       "306"
@@ -9581,6 +10226,12 @@
     ],
     "gold hit february": [
       "315"
+    ],
+    "gold medal": [
+      "358"
+    ],
+    "gold medals": [
+      "358"
     ],
     "gold price": [
       "315",
@@ -10012,6 +10663,9 @@
     "khamenei": [
       "330"
     ],
+    "korea": [
+      "356"
+    ],
     "kraken": [
       "3362"
     ],
@@ -10032,7 +10686,8 @@
       "3361"
     ],
     "l2": [
-      "3366"
+      "3366",
+      "355"
     ],
     "large language model": [
       "338"
@@ -10060,7 +10715,23 @@
       "1721"
     ],
     "layer 2": [
-      "3366"
+      "3366",
+      "355"
+    ],
+    "lck": [
+      "356"
+    ],
+    "lck cup": [
+      "356"
+    ],
+    "lck cup 2026": [
+      "356"
+    ],
+    "lck杯": [
+      "356"
+    ],
+    "lck杯赛": [
+      "356"
     ],
     "ldp": [
       "306"
@@ -10074,8 +10745,21 @@
     "leadership change": [
       "2368"
     ],
+    "league of legends": [
+      "356",
+      "357"
+    ],
     "leave": [
       "2368"
+    ],
+    "lec": [
+      "357"
+    ],
+    "lec versus": [
+      "357"
+    ],
+    "lec versus 2026": [
+      "357"
     ],
     "leeco": [
       "1856"
@@ -10095,6 +10779,16 @@
     "llm": [
       "335",
       "338"
+    ],
+    "lol": [
+      "356",
+      "357"
+    ],
+    "lol lec": [
+      "357"
+    ],
+    "lol lec versus": [
+      "357"
     ],
     "lp": [
       "2178"
@@ -10119,7 +10813,8 @@
       "1856"
     ],
     "mainnet": [
-      "3366"
+      "3366",
+      "355"
     ],
     "march": [
       "343"
@@ -10185,6 +10880,15 @@
     ],
     "max volatility": [
       "339"
+    ],
+    "medal count": [
+      "358"
+    ],
+    "medal table": [
+      "358"
+    ],
+    "medal tally": [
+      "358"
     ],
     "mega cap": [
       "336"
@@ -10263,6 +10967,12 @@
     "mike wheeler": [
       "3222"
     ],
+    "milan 2026": [
+      "358"
+    ],
+    "milano cortina 2026": [
+      "358"
+    ],
     "milestone": [
       "3505",
       "3506",
@@ -10336,6 +11046,12 @@
     "money": [
       "3505",
       "3525"
+    ],
+    "most gold": [
+      "358"
+    ],
+    "most gold medals": [
+      "358"
     ],
     "motorsport": [
       "312"
@@ -10454,6 +11170,9 @@
     "nfl draft": [
       "3072"
     ],
+    "noir": [
+      "355"
+    ],
     "nomination": [
       "341"
     ],
@@ -10484,18 +11203,35 @@
     "official": [
       "3257"
     ],
+    "olympic games": [
+      "358"
+    ],
+    "olympic gold": [
+      "358"
+    ],
+    "olympics 2026": [
+      "358"
+    ],
+    "olympics most": [
+      "358"
+    ],
+    "olympics most gold": [
+      "358"
+    ],
     "one day": [
       "1721",
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "one day after": [
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "op stack": [
       "3366"
@@ -10576,6 +11312,9 @@
     ],
     "pick 2026 nfl": [
       "3072"
+    ],
+    "playoffs": [
+      "356"
     ],
     "pm": [
       "306"
@@ -10703,6 +11442,9 @@
     ],
     "prime minister of japan": [
       "306"
+    ],
+    "privacy": [
+      "355"
     ],
     "private key compromise": [
       "3360"
@@ -10836,6 +11578,9 @@
     "regime fall": [
       "330"
     ],
+    "regional": [
+      "357"
+    ],
     "rehire": [
       "3369"
     ],
@@ -10927,6 +11672,9 @@
     "richter scale": [
       "2668",
       "3356"
+    ],
+    "riot games": [
+      "357"
     ],
     "robo": [
       "317"
@@ -11276,6 +12024,9 @@
     "system failure": [
       "3357"
     ],
+    "t1": [
+      "356"
+    ],
     "takeover": [
       "2398",
       "337"
@@ -11413,7 +12164,8 @@
       "333",
       "334",
       "3367",
-      "353"
+      "353",
+      "355"
     ],
     "token 2026": [
       "3366"
@@ -11439,11 +12191,16 @@
     "top company": [
       "336"
     ],
+    "top nation": [
+      "358"
+    ],
     "top pick": [
       "3072"
     ],
     "tournament": [
-      "343"
+      "343",
+      "356",
+      "357"
     ],
     "tournament winner": [
       "343"
@@ -11597,7 +12354,8 @@
       "3506",
       "352",
       "3525",
-      "353"
+      "353",
+      "355"
     ],
     "vance": [
       "3055"
@@ -11613,6 +12371,15 @@
     ],
     "venture": [
       "3525"
+    ],
+    "versus": [
+      "357"
+    ],
+    "versus 2026": [
+      "357"
+    ],
+    "versus 2026 winner": [
+      "357"
     ],
     "vice president": [
       "3062"
@@ -11752,6 +12519,18 @@
     "will byers": [
       "3221"
     ],
+    "winter games": [
+      "358"
+    ],
+    "winter olympics": [
+      "358"
+    ],
+    "winter olympics most": [
+      "358"
+    ],
+    "winter sports": [
+      "358"
+    ],
     "world drivers": [
       "312"
     ],
@@ -11791,6 +12570,9 @@
     "yuichiro tamaki": [
       "306"
     ],
+    "zero knowledge": [
+      "355"
+    ],
     "zhao": [
       "3369"
     ],
@@ -11802,6 +12584,9 @@
     ],
     "zhipu ai": [
       "350"
+    ],
+    "zk-rollup": [
+      "355"
     ],
     "zuck": [
       "325"
@@ -11837,6 +12622,9 @@
       "3039",
       "331"
     ],
+    "冬奥会": [
+      "358"
+    ],
     "凯文·沃什": [
       "341"
     ],
@@ -11863,6 +12651,9 @@
     ],
     "大语言模型": [
       "335"
+    ],
+    "奥运会": [
+      "358"
     ],
     "币安币": [
       "3367",
@@ -11894,6 +12685,9 @@
     ],
     "标普500": [
       "327"
+    ],
+    "欧洲冠军联赛": [
+      "357"
     ],
     "欧洲央行": [
       "320"
@@ -11957,6 +12751,9 @@
     "英特尔": [
       "338"
     ],
+    "英雄联盟": [
+      "357"
+    ],
     "蒂姆·库克": [
       "2368"
     ],
@@ -11980,6 +12777,9 @@
     ],
     "通货膨胀": [
       "344"
+    ],
+    "阿兹特克": [
+      "355"
     ],
     "霍莉·惠勒": [
       "3222"
@@ -12009,11 +12809,24 @@
     "2026 ncaa tournament": [
       "343"
     ],
+    "2026 olympics": [
+      "358"
+    ],
     "2026 season": [
       "312"
     ],
     "2026 spring": [
       "350"
+    ],
+    "2026 winner": [
+      "356",
+      "357"
+    ],
+    "2026 winter": [
+      "358"
+    ],
+    "2026 winter olympics": [
+      "358"
     ],
     "500 spx": [
       "327"
@@ -12047,13 +12860,15 @@
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "above one day": [
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "acquired 2027": [
       "337"
@@ -12068,7 +12883,8 @@
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "after snap": [
       "306"
@@ -12167,6 +12983,18 @@
     "ayatollah": [
       "330"
     ],
+    "aztec": [
+      "355"
+    ],
+    "aztec fdv": [
+      "355"
+    ],
+    "aztec fdv above": [
+      "355"
+    ],
+    "aztec network": [
+      "355"
+    ],
     "bank japan": [
       "313"
     ],
@@ -12230,10 +13058,14 @@
     "blockchain": [
       "333",
       "334",
-      "340"
+      "340",
+      "355"
     ],
     "blue chip": [
       "336"
+    ],
+    "bnk fearx": [
+      "356"
     ],
     "boj": [
       "313"
@@ -12309,8 +13141,12 @@
     "champion 2026": [
       "312"
     ],
+    "champions korea": [
+      "356"
+    ],
     "championship": [
-      "343"
+      "343",
+      "357"
     ],
     "chart": [
       "325"
@@ -12410,6 +13246,9 @@
       "335",
       "338"
     ],
+    "competition": [
+      "357"
+    ],
     "confirmation": [
       "341"
     ],
@@ -12439,6 +13278,9 @@
     "corporate": [
       "336"
     ],
+    "cortina 2026": [
+      "358"
+    ],
     "cost of living": [
       "344"
     ],
@@ -12458,7 +13300,8 @@
       "334",
       "339",
       "340",
-      "353"
+      "353",
+      "355"
     ],
     "crypto market": [
       "352"
@@ -12473,6 +13316,12 @@
       "334",
       "339",
       "340"
+    ],
+    "cup 2026": [
+      "356"
+    ],
+    "cup 2026 winner": [
+      "356"
     ],
     "cybertruck": [
       "351"
@@ -12493,12 +13342,14 @@
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "day after launch": [
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "deal": [
       "337"
@@ -12529,7 +13380,8 @@
       "333",
       "334",
       "352",
-      "354"
+      "354",
+      "355"
     ],
     "deflation": [
       "344"
@@ -12560,6 +13412,9 @@
     "dot plot": [
       "319"
     ],
+    "dplus kia": [
+      "356"
+    ],
     "drivers champion": [
       "312"
     ],
@@ -12571,6 +13426,9 @@
     ],
     "drone strike": [
       "274"
+    ],
+    "drx": [
+      "356"
     ],
     "e-commerce": [
       "328"
@@ -12606,6 +13464,9 @@
     "elon musk": [
       "351"
     ],
+    "emea": [
+      "357"
+    ],
     "equity": [
       "322",
       "326",
@@ -12620,6 +13481,10 @@
       "257",
       "331"
     ],
+    "esports": [
+      "356",
+      "357"
+    ],
     "eth": [
       "333"
     ],
@@ -12627,7 +13492,8 @@
       "333"
     ],
     "ethereum": [
-      "333"
+      "333",
+      "355"
     ],
     "ethereum hit": [
       "333"
@@ -12637,6 +13503,9 @@
     ],
     "euro": [
       "320"
+    ],
+    "europe": [
+      "357"
     ],
     "european central bank": [
       "320"
@@ -12688,13 +13557,15 @@
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "fdv above one": [
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "feature 2026": [
       "350"
@@ -12736,6 +13607,10 @@
     "final four": [
       "343"
     ],
+    "finals": [
+      "356",
+      "357"
+    ],
     "fomc": [
       "319"
     ],
@@ -12768,12 +13643,18 @@
       "348",
       "349"
     ],
+    "gaming": [
+      "357"
+    ],
     "gas": [
       "333"
     ],
     "gemini": [
       "335",
       "338"
+    ],
+    "gen.g": [
+      "356"
     ],
     "general election": [
       "306"
@@ -12817,6 +13698,12 @@
     ],
     "gold hit february": [
       "315"
+    ],
+    "gold medal": [
+      "358"
+    ],
+    "gold medals": [
+      "358"
     ],
     "gold price": [
       "315",
@@ -13053,6 +13940,12 @@
     "khamenei": [
       "330"
     ],
+    "korea": [
+      "356"
+    ],
+    "l2": [
+      "355"
+    ],
     "large language model": [
       "338"
     ],
@@ -13069,11 +13962,42 @@
       "317",
       "353"
     ],
+    "layer 2": [
+      "355"
+    ],
+    "lck": [
+      "356"
+    ],
+    "lck cup": [
+      "356"
+    ],
+    "lck cup 2026": [
+      "356"
+    ],
+    "lck杯": [
+      "356"
+    ],
+    "lck杯赛": [
+      "356"
+    ],
     "ldp": [
       "306"
     ],
     "leaderboard": [
       "335"
+    ],
+    "league of legends": [
+      "356",
+      "357"
+    ],
+    "lec": [
+      "357"
+    ],
+    "lec versus": [
+      "357"
+    ],
+    "lec versus 2026": [
+      "357"
     ],
     "liberal democratic party": [
       "306"
@@ -13087,11 +14011,24 @@
       "335",
       "338"
     ],
+    "lol": [
+      "356",
+      "357"
+    ],
+    "lol lec": [
+      "357"
+    ],
+    "lol lec versus": [
+      "357"
+    ],
     "m&a": [
       "337"
     ],
     "mac": [
       "324"
+    ],
+    "mainnet": [
+      "355"
     ],
     "march": [
       "343"
@@ -13135,6 +14072,15 @@
     "max volatility": [
       "339"
     ],
+    "medal count": [
+      "358"
+    ],
+    "medal table": [
+      "358"
+    ],
+    "medal tally": [
+      "358"
+    ],
     "mega cap": [
       "336"
     ],
@@ -13170,6 +14116,12 @@
     ],
     "microsoft msft close": [
       "329"
+    ],
+    "milan 2026": [
+      "358"
+    ],
+    "milano cortina 2026": [
+      "358"
     ],
     "military": [
       "257",
@@ -13222,6 +14174,12 @@
       "341",
       "344"
     ],
+    "most gold": [
+      "358"
+    ],
+    "most gold medals": [
+      "358"
+    ],
     "motorsport": [
       "312"
     ],
@@ -13260,6 +14218,9 @@
     "ncaa锦标赛": [
       "343"
     ],
+    "noir": [
+      "355"
+    ],
     "nomination": [
       "341"
     ],
@@ -13281,17 +14242,34 @@
     "nvidia nvda close": [
       "322"
     ],
+    "olympic games": [
+      "358"
+    ],
+    "olympic gold": [
+      "358"
+    ],
+    "olympics 2026": [
+      "358"
+    ],
+    "olympics most": [
+      "358"
+    ],
+    "olympics most gold": [
+      "358"
+    ],
     "one day": [
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "one day after": [
       "317",
       "352",
       "353",
-      "354"
+      "354",
+      "355"
     ],
     "openai": [
       "335",
@@ -13321,6 +14299,9 @@
     ],
     "physical gold": [
       "346"
+    ],
+    "playoffs": [
+      "356"
     ],
     "pm": [
       "306"
@@ -13426,6 +14407,9 @@
     "prime minister of japan": [
       "306"
     ],
+    "privacy": [
+      "355"
+    ],
     "project": [
       "353"
     ],
@@ -13488,6 +14472,9 @@
     "regime fall": [
       "330"
     ],
+    "regional": [
+      "357"
+    ],
     "resistance": [
       "332"
     ],
@@ -13497,6 +14484,9 @@
     ],
     "revolution": [
       "330"
+    ],
+    "riot games": [
+      "357"
     ],
     "robo": [
       "317"
@@ -13671,6 +14661,9 @@
     "sweet 16": [
       "343"
     ],
+    "t1": [
+      "356"
+    ],
     "takeover": [
       "337"
     ],
@@ -13718,7 +14711,8 @@
     "token": [
       "333",
       "334",
-      "353"
+      "353",
+      "355"
     ],
     "token generation event": [
       "354"
@@ -13739,8 +14733,13 @@
     "top company": [
       "336"
     ],
+    "top nation": [
+      "358"
+    ],
     "tournament": [
-      "343"
+      "343",
+      "356",
+      "357"
     ],
     "tournament winner": [
       "343"
@@ -13822,7 +14821,17 @@
       "324",
       "336",
       "352",
-      "353"
+      "353",
+      "355"
+    ],
+    "versus": [
+      "357"
+    ],
+    "versus 2026": [
+      "357"
+    ],
+    "versus 2026 winner": [
+      "357"
     ],
     "volatility": [
       "325",
@@ -13921,6 +14930,18 @@
       "348",
       "349"
     ],
+    "winter games": [
+      "358"
+    ],
+    "winter olympics": [
+      "358"
+    ],
+    "winter olympics most": [
+      "358"
+    ],
+    "winter sports": [
+      "358"
+    ],
     "world drivers": [
       "312"
     ],
@@ -13957,8 +14978,14 @@
     "yuichiro tamaki": [
       "306"
     ],
+    "zero knowledge": [
+      "355"
+    ],
     "zhipu ai": [
       "350"
+    ],
+    "zk-rollup": [
+      "355"
     ],
     "zuck": [
       "325"
@@ -13984,6 +15011,9 @@
     "以色列": [
       "331"
     ],
+    "冬奥会": [
+      "358"
+    ],
     "凯文·沃什": [
       "341"
     ],
@@ -13995,6 +15025,9 @@
     ],
     "大语言模型": [
       "335"
+    ],
+    "奥运会": [
+      "358"
     ],
     "日本央行": [
       "313"
@@ -14016,6 +15049,9 @@
     ],
     "标普500": [
       "327"
+    ],
+    "欧洲冠军联赛": [
+      "357"
     ],
     "欧洲央行": [
       "320"
@@ -14057,8 +15093,14 @@
     "英特尔": [
       "338"
     ],
+    "英雄联盟": [
+      "357"
+    ],
     "通货膨胀": [
       "344"
+    ],
+    "阿兹特克": [
+      "355"
     ]
   }
 }
