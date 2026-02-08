@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-08 11:31:13 UTC+8",
+    "generatedAt": "2026-02-08 15:43:13 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 269,
-      "markets": 126,
-      "keywords": 1131,
+      "kept": 284,
+      "markets": 129,
+      "keywords": 1150,
       "events": {
-        "events": 35
+        "events": 38
       },
       "skipped": {
-        "statusEnum": 0,
+        "statusEnum": 7,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 731,
+        "cutoff_expired": 709,
         "cutoff_zero_kept": 14,
         "resolved": 0,
         "missing_id": 0,
@@ -30,11 +30,11 @@
         "onlyAiForNew": true,
         "reused": 35,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
+        "calls": 3,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 3,
         "errors": 0
       }
     }
@@ -1709,6 +1709,151 @@
       "sig": "7651d044",
       "sigFull": "7651d044",
       "sigCore": "45ff4eb3",
+      "reused": false
+    },
+    "353": {
+      "title": "Hyperbeat FDV above ... one day after launch?·",
+      "marketIds": [
+        "353"
+      ],
+      "bestMarketId": "353",
+      "bestLabels": null,
+      "keywords": [
+        "hyperbeat",
+        "token",
+        "crypto",
+        "valuation",
+        "fdv",
+        "fully diluted valuation",
+        "launch",
+        "tge",
+        "airdrop",
+        "price",
+        "market cap",
+        "trading",
+        "debut",
+        "listing",
+        "project",
+        "hyperbeat fdv",
+        "fdv above",
+        "above one",
+        "one day",
+        "day after",
+        "after launch",
+        "hyperbeat fdv above",
+        "fdv above one",
+        "above one day",
+        "one day after",
+        "day after launch"
+      ],
+      "entities": [
+        "hyperbeat"
+      ],
+      "entityGroups": [
+        [
+          "hyperbeat"
+        ]
+      ],
+      "sig": "0521b32f",
+      "sigFull": "0521b32f",
+      "sigCore": "18b3df18",
+      "reused": false
+    },
+    "354": {
+      "title": "Puffpaw FDV above ... one day after launch?",
+      "marketIds": [
+        "354"
+      ],
+      "bestMarketId": "354",
+      "bestLabels": null,
+      "keywords": [
+        "puffpaw",
+        "fdv",
+        "fully diluted valuation",
+        "token launch",
+        "crypto valuation",
+        "market cap",
+        "tge",
+        "token generation event",
+        "price prediction",
+        "defi",
+        "tokenomics",
+        "airdrop",
+        "listing",
+        "token price",
+        "project launch",
+        "puffpaw fdv",
+        "fdv above",
+        "above one",
+        "one day",
+        "day after",
+        "after launch",
+        "puffpaw fdv above",
+        "fdv above one",
+        "above one day",
+        "one day after",
+        "day after launch"
+      ],
+      "entities": [
+        "puffpaw"
+      ],
+      "entityGroups": [
+        [
+          "puffpaw"
+        ]
+      ],
+      "sig": "64b1726d",
+      "sigFull": "64b1726d",
+      "sigCore": "ea73fef6",
+      "reused": false
+    },
+    "352": {
+      "title": "Polymarket FDV above ... one day after launch?",
+      "marketIds": [
+        "352"
+      ],
+      "bestMarketId": "352",
+      "bestLabels": null,
+      "keywords": [
+        "polymarket",
+        "prediction market",
+        "fdv",
+        "fully diluted valuation",
+        "token launch",
+        "valuation",
+        "crypto market",
+        "trading",
+        "defi",
+        "market cap",
+        "tokenomics",
+        "airdrop",
+        "tge",
+        "token price",
+        "crypto valuation",
+        "polymarket fdv",
+        "fdv above",
+        "above one",
+        "one day",
+        "day after",
+        "after launch",
+        "polymarket fdv above",
+        "fdv above one",
+        "above one day",
+        "one day after",
+        "day after launch"
+      ],
+      "entities": [
+        "polymarket"
+      ],
+      "entityGroups": [
+        [
+          "polymarket",
+          "polymarket 预测市场"
+        ]
+      ],
+      "sig": "7ecc5257",
+      "sigFull": "7ecc5257",
+      "sigCore": "74aba825",
       "reused": false
     }
   },
@@ -7581,11 +7726,252 @@
         }
       ]
     },
-    "6000": {
-      "title": "ETH Up or Down - Hourly (Feb 08, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6000?ref=opinion_hud",
-      "yesTokenId": "52035830856907429757475403793560405241899071734134582643485088601272261798244",
-      "noTokenId": "101911998199901080931154294925813392729158566148782485720889914347031322147388",
+    "353": {
+      "title": "Hyperbeat FDV above ... one day after launch?·",
+      "url": "https://app.opinion.trade/market/353?ref=opinion_hud",
+      "yesTokenId": "12213827018623131312766812011120671541060775006225893215215761767452165811958",
+      "noTokenId": "64018735460385384411656647227243965744867787587646766834153152280654761076142",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "hyperbeat",
+        "token",
+        "crypto",
+        "valuation",
+        "fdv",
+        "fully diluted valuation",
+        "launch",
+        "tge",
+        "airdrop",
+        "price",
+        "market cap",
+        "trading",
+        "debut",
+        "listing",
+        "project",
+        "hyperbeat fdv",
+        "fdv above",
+        "above one",
+        "one day",
+        "day after",
+        "after launch",
+        "hyperbeat fdv above",
+        "fdv above one",
+        "above one day",
+        "one day after",
+        "day after launch"
+      ],
+      "entities": [
+        "hyperbeat"
+      ],
+      "entityGroups": [
+        [
+          "hyperbeat"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "6028",
+          "title": "$50M",
+          "yesTokenId": "84073280308959729781704991855223275358815224391278188163546516709042193999878",
+          "noTokenId": "105096815720650746252246225991205943998457682633823108065374415305840093930973"
+        },
+        {
+          "marketId": "6029",
+          "title": "$100M",
+          "yesTokenId": "39299305533614695532832338714804633010050657268197644987260743836839333756553",
+          "noTokenId": "77157233614690369938167996785749991265556781646045499973544217429209225202782"
+        },
+        {
+          "marketId": "6030",
+          "title": "$200M",
+          "yesTokenId": "12213827018623131312766812011120671541060775006225893215215761767452165811958",
+          "noTokenId": "64018735460385384411656647227243965744867787587646766834153152280654761076142"
+        },
+        {
+          "marketId": "6031",
+          "title": "$300M",
+          "yesTokenId": "7962839992384274551832576001924232387063313049766169512835398543809144202474",
+          "noTokenId": "49892625254008877374695270186834338889104087014869117447001997112253125969521"
+        },
+        {
+          "marketId": "6032",
+          "title": "$400M",
+          "yesTokenId": "20697402587928630483786250722563245817765456732630608241687383835912989213579",
+          "noTokenId": "109524056907495416709524771716530943697796367384254940549767883300742551861406"
+        }
+      ]
+    },
+    "354": {
+      "title": "Puffpaw FDV above ... one day after launch?",
+      "url": "https://app.opinion.trade/market/354?ref=opinion_hud",
+      "yesTokenId": "100299804874356830575133464277036249349184805621781895375112973487320428616197",
+      "noTokenId": "9315838782603491408508929811922480426209697286222165676863950858065015073275",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "puffpaw",
+        "fdv",
+        "fully diluted valuation",
+        "token launch",
+        "crypto valuation",
+        "market cap",
+        "tge",
+        "token generation event",
+        "price prediction",
+        "defi",
+        "tokenomics",
+        "airdrop",
+        "listing",
+        "token price",
+        "project launch",
+        "puffpaw fdv",
+        "fdv above",
+        "above one",
+        "one day",
+        "day after",
+        "after launch",
+        "puffpaw fdv above",
+        "fdv above one",
+        "above one day",
+        "one day after",
+        "day after launch"
+      ],
+      "entities": [
+        "puffpaw"
+      ],
+      "entityGroups": [
+        [
+          "puffpaw"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "6033",
+          "title": "$50M",
+          "yesTokenId": "10219635363496348437975785558944537386580466770622389570936035767782868345617",
+          "noTokenId": "35185420418815621105294059421808323209253330413398442443834183620399566739588"
+        },
+        {
+          "marketId": "6034",
+          "title": "$100M",
+          "yesTokenId": "55499445648581085475416839200561560706618876187319908784149194584564638592312",
+          "noTokenId": "78215200158805498302053946400574359924927387997808509820612029059628215559190"
+        },
+        {
+          "marketId": "6035",
+          "title": "$200M",
+          "yesTokenId": "98018919179842914577399342045599185927643585192084618302768118840415206525605",
+          "noTokenId": "91537936646434614578593361181011228225716704088990972329988366463252902919835"
+        },
+        {
+          "marketId": "6036",
+          "title": "$300M",
+          "yesTokenId": "100299804874356830575133464277036249349184805621781895375112973487320428616197",
+          "noTokenId": "9315838782603491408508929811922480426209697286222165676863950858065015073275"
+        },
+        {
+          "marketId": "6037",
+          "title": "$400M",
+          "yesTokenId": "26767214425380015075630676899778061047003281019562119524119708514303723644938",
+          "noTokenId": "41690686468964892458161258111009041104769390020728346863746780113575734642778"
+        }
+      ]
+    },
+    "352": {
+      "title": "Polymarket FDV above ... one day after launch?",
+      "url": "https://app.opinion.trade/market/352?ref=opinion_hud",
+      "yesTokenId": "101188170116894927570645409250154688174105002107893860793337545873407843906759",
+      "noTokenId": "22927104841738373703214250317850874402415453886050122386983202535372183793315",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "polymarket",
+        "prediction market",
+        "fdv",
+        "fully diluted valuation",
+        "token launch",
+        "valuation",
+        "crypto market",
+        "trading",
+        "defi",
+        "market cap",
+        "tokenomics",
+        "airdrop",
+        "tge",
+        "token price",
+        "crypto valuation",
+        "polymarket fdv",
+        "fdv above",
+        "above one",
+        "one day",
+        "day after",
+        "after launch",
+        "polymarket fdv above",
+        "fdv above one",
+        "above one day",
+        "one day after",
+        "day after launch"
+      ],
+      "entities": [
+        "polymarket"
+      ],
+      "entityGroups": [
+        [
+          "polymarket",
+          "polymarket 预测市场"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "6023",
+          "title": "$5B",
+          "yesTokenId": "64456030348328877310591271638731488471653207894368294763210670789755217658680",
+          "noTokenId": "114499178841340405696019616777309422318708876035952955093166671186505070167723"
+        },
+        {
+          "marketId": "6024",
+          "title": "$10B",
+          "yesTokenId": "113443373129236982225895251731937052919810978384640919783747790335249957735596",
+          "noTokenId": "70185375651137390693807308907606452949592153071053546518787835105787681819812"
+        },
+        {
+          "marketId": "6025",
+          "title": "$15B",
+          "yesTokenId": "36757996253328749428319621065604524096964499293785858011392400017919110526481",
+          "noTokenId": "28616197807890722018083609728470480723092693595200965527227036272752972816758"
+        },
+        {
+          "marketId": "6026",
+          "title": "$20B",
+          "yesTokenId": "101188170116894927570645409250154688174105002107893860793337545873407843906759",
+          "noTokenId": "22927104841738373703214250317850874402415453886050122386983202535372183793315"
+        },
+        {
+          "marketId": "6027",
+          "title": "$30B",
+          "yesTokenId": "1709213356664863342009134678303302961554214432487347453067074850424164075939",
+          "noTokenId": "16130539196670832103876162017578009548178404710607891371853746128641450200610"
+        }
+      ]
+    },
+    "6013": {
+      "title": "ETH Up or Down - Hourly (Feb 08, 2026 08:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6013?ref=opinion_hud",
+      "yesTokenId": "115151543624329477010616903240556543682691570425949388314178947864876538112347",
+      "noTokenId": "38598065297052095701128220509656033044353388968390728581130856330109727676116",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7593,11 +7979,11 @@
       },
       "type": "binary"
     },
-    "5999": {
-      "title": "BTC Up or Down - Hourly (Feb 08, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5999?ref=opinion_hud",
-      "yesTokenId": "26339111339589197097325275105392431995280582788059401535781672337556932870797",
-      "noTokenId": "3461394361569163902227351132692907158720176547531359428190498227731454458398",
+    "6011": {
+      "title": "BNB Up or Down - Hourly (Feb 08, 2026 08:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6011?ref=opinion_hud",
+      "yesTokenId": "72147351923560055800187307551120566937458969882808761312038632324992966902920",
+      "noTokenId": "85086672670459864635729667435237813853800768895149131969791323252855623519552",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7605,11 +7991,11 @@
       },
       "type": "binary"
     },
-    "5998": {
-      "title": "BNB Up or Down - Hourly (Feb 08, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/5998?ref=opinion_hud",
-      "yesTokenId": "39525078710646039993662298081506134398473406496736806629389883362870907574276",
-      "noTokenId": "4345862670893050341645563128552793952664255524935114656783984822161334084423",
+    "6012": {
+      "title": "BTC Up or Down - Hourly (Feb 08, 2026 08:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6012?ref=opinion_hud",
+      "yesTokenId": "97069534722930270845399530117887976565570742523816662224381614179821616531391",
+      "noTokenId": "28215413041930835252415004421672716248930682901579340641769918746652159198277",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7786,10 +8172,16 @@
       "348"
     ],
     "above one": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "above one day": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "acquired 2027": [
       "337"
@@ -7815,7 +8207,10 @@
     ],
     "after launch": [
       "1721",
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "after snap": [
       "306"
@@ -7845,7 +8240,10 @@
       "1721",
       "317",
       "3361",
-      "3366"
+      "3366",
+      "352",
+      "353",
+      "354"
     ],
     "airstrike": [
       "257",
@@ -8532,7 +8930,8 @@
       "3367",
       "3368",
       "339",
-      "340"
+      "340",
+      "353"
     ],
     "crypto exchange": [
       "3362",
@@ -8544,8 +8943,15 @@
     "crypto hack over": [
       "3360"
     ],
+    "crypto market": [
+      "352"
+    ],
     "crypto theft": [
       "3360"
+    ],
+    "crypto valuation": [
+      "352",
+      "354"
     ],
     "cryptocurrency": [
       "332",
@@ -8591,7 +8997,15 @@
     ],
     "day after": [
       "1721",
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
+    ],
+    "day after launch": [
+      "352",
+      "353",
+      "354"
     ],
     "deadline": [
       "3448",
@@ -8608,7 +9022,8 @@
       "1856"
     ],
     "debut": [
-      "317"
+      "317",
+      "353"
     ],
     "december": [
       "3509"
@@ -8638,7 +9053,9 @@
       "1721",
       "333",
       "334",
-      "3361"
+      "3361",
+      "352",
+      "354"
     ],
     "defi hack": [
       "3360"
@@ -8970,13 +9387,22 @@
       "325"
     ],
     "fdv": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "fdv above": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "fdv above one": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "fdv one": [
       "1721"
@@ -9065,6 +9491,11 @@
     ],
     "full self-driving": [
       "351"
+    ],
+    "fully diluted valuation": [
+      "352",
+      "353",
+      "354"
     ],
     "funding": [
       "3505",
@@ -9340,6 +9771,15 @@
     "hype token": [
       "3361"
     ],
+    "hyperbeat": [
+      "353"
+    ],
+    "hyperbeat fdv": [
+      "353"
+    ],
+    "hyperbeat fdv above": [
+      "353"
+    ],
     "hyperinflation": [
       "344"
     ],
@@ -9607,7 +10047,8 @@
       "336"
     ],
     "launch": [
-      "317"
+      "317",
+      "353"
     ],
     "launch token": [
       "3366"
@@ -9647,7 +10088,9 @@
     ],
     "listing": [
       "317",
-      "3362"
+      "3362",
+      "353",
+      "354"
     ],
     "llm": [
       "335",
@@ -9717,7 +10160,10 @@
       "324",
       "336",
       "3505",
-      "3506"
+      "3506",
+      "352",
+      "353",
+      "354"
     ],
     "market movement": [
       "339"
@@ -10040,10 +10486,16 @@
     ],
     "one day": [
       "1721",
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "one day after": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "op stack": [
       "3366"
@@ -10140,6 +10592,18 @@
     "policy rate": [
       "313"
     ],
+    "polymarket": [
+      "352"
+    ],
+    "polymarket fdv": [
+      "352"
+    ],
+    "polymarket fdv above": [
+      "352"
+    ],
+    "polymarket 预测市场": [
+      "352"
+    ],
     "post-quantum": [
       "3256"
     ],
@@ -10159,6 +10623,9 @@
     ],
     "precious metals": [
       "316"
+    ],
+    "prediction market": [
+      "352"
     ],
     "president": [
       "3062"
@@ -10182,7 +10649,8 @@
       "333",
       "3359",
       "3361",
-      "3367"
+      "3367",
+      "353"
     ],
     "price action": [
       "332"
@@ -10211,7 +10679,8 @@
       "3364"
     ],
     "price prediction": [
-      "334"
+      "334",
+      "354"
     ],
     "price solana": [
       "334"
@@ -10238,6 +10707,12 @@
     "private key compromise": [
       "3360"
     ],
+    "project": [
+      "353"
+    ],
+    "project launch": [
+      "354"
+    ],
     "proof of work": [
       "3256"
     ],
@@ -10246,6 +10721,15 @@
     ],
     "public listing": [
       "3362"
+    ],
+    "puffpaw": [
+      "354"
+    ],
+    "puffpaw fdv": [
+      "354"
+    ],
+    "puffpaw fdv above": [
+      "354"
     ],
     "pump": [
       "3364",
@@ -10868,7 +11352,10 @@
     ],
     "tge": [
       "1721",
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "the post": [
       "3223"
@@ -10925,17 +11412,29 @@
       "1721",
       "333",
       "334",
-      "3367"
+      "3367",
+      "353"
     ],
     "token 2026": [
       "3366"
     ],
+    "token generation event": [
+      "354"
+    ],
     "token launch": [
-      "3366"
+      "3366",
+      "352",
+      "354"
+    ],
+    "token price": [
+      "352",
+      "354"
     ],
     "tokenomics": [
       "317",
-      "3361"
+      "3361",
+      "352",
+      "354"
     ],
     "top company": [
       "336"
@@ -10972,7 +11471,9 @@
       "340",
       "347",
       "348",
-      "349"
+      "349",
+      "352",
+      "353"
     ],
     "trading range": [
       "339"
@@ -11094,7 +11595,9 @@
       "3362",
       "3505",
       "3506",
-      "3525"
+      "352",
+      "3525",
+      "353"
     ],
     "vance": [
       "3055"
@@ -11541,10 +12044,16 @@
       "348"
     ],
     "above one": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "above one day": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "acquired 2027": [
       "337"
@@ -11556,7 +12065,10 @@
       "337"
     ],
     "after launch": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "after snap": [
       "306"
@@ -11580,7 +12092,10 @@
       "350"
     ],
     "airdrop": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "airstrike": [
       "257",
@@ -11942,7 +12457,15 @@
       "333",
       "334",
       "339",
-      "340"
+      "340",
+      "353"
+    ],
+    "crypto market": [
+      "352"
+    ],
+    "crypto valuation": [
+      "352",
+      "354"
     ],
     "cryptocurrency": [
       "332",
@@ -11967,13 +12490,22 @@
       "350"
     ],
     "day after": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
+    ],
+    "day after launch": [
+      "352",
+      "353",
+      "354"
     ],
     "deal": [
       "337"
     ],
     "debut": [
-      "317"
+      "317",
+      "353"
     ],
     "decision april": [
       "313"
@@ -11995,7 +12527,9 @@
     ],
     "defi": [
       "333",
-      "334"
+      "334",
+      "352",
+      "354"
     ],
     "deflation": [
       "344"
@@ -12145,13 +12679,22 @@
       "325"
     ],
     "fdv": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "fdv above": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "fdv above one": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "feature 2026": [
       "350"
@@ -12213,6 +12756,11 @@
     ],
     "full self-driving": [
       "351"
+    ],
+    "fully diluted valuation": [
+      "352",
+      "353",
+      "354"
     ],
     "futures": [
       "315",
@@ -12368,6 +12916,15 @@
     "humanoid robot": [
       "350"
     ],
+    "hyperbeat": [
+      "353"
+    ],
+    "hyperbeat fdv": [
+      "353"
+    ],
+    "hyperbeat fdv above": [
+      "353"
+    ],
     "hyperinflation": [
       "344"
     ],
@@ -12509,7 +13066,8 @@
       "336"
     ],
     "launch": [
-      "317"
+      "317",
+      "353"
     ],
     "ldp": [
       "306"
@@ -12521,7 +13079,9 @@
       "306"
     ],
     "listing": [
-      "317"
+      "317",
+      "353",
+      "354"
     ],
     "llm": [
       "335",
@@ -12555,7 +13115,10 @@
     "market cap": [
       "317",
       "324",
-      "336"
+      "336",
+      "352",
+      "353",
+      "354"
     ],
     "market movement": [
       "339"
@@ -12719,10 +13282,16 @@
       "322"
     ],
     "one day": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "one day after": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "openai": [
       "335",
@@ -12768,6 +13337,18 @@
     "policy rate": [
       "313"
     ],
+    "polymarket": [
+      "352"
+    ],
+    "polymarket fdv": [
+      "352"
+    ],
+    "polymarket fdv above": [
+      "352"
+    ],
+    "polymarket 预测市场": [
+      "352"
+    ],
     "powell": [
       "319",
       "341"
@@ -12782,6 +13363,9 @@
     "precious metals": [
       "316"
     ],
+    "prediction market": [
+      "352"
+    ],
     "price": [
       "317",
       "322",
@@ -12791,7 +13375,8 @@
       "326",
       "328",
       "329",
-      "333"
+      "333",
+      "353"
     ],
     "price action": [
       "332"
@@ -12817,7 +13402,8 @@
       "344"
     ],
     "price prediction": [
-      "334"
+      "334",
+      "354"
     ],
     "price solana": [
       "334"
@@ -12840,8 +13426,23 @@
     "prime minister of japan": [
       "306"
     ],
+    "project": [
+      "353"
+    ],
+    "project launch": [
+      "354"
+    ],
     "protests": [
       "330"
+    ],
+    "puffpaw": [
+      "354"
+    ],
+    "puffpaw fdv": [
+      "354"
+    ],
+    "puffpaw fdv above": [
+      "354"
     ],
     "purchase": [
       "337"
@@ -13103,7 +13704,10 @@
       "323"
     ],
     "tge": [
-      "317"
+      "317",
+      "352",
+      "353",
+      "354"
     ],
     "tightening": [
       "313"
@@ -13113,10 +13717,24 @@
     ],
     "token": [
       "333",
-      "334"
+      "334",
+      "353"
+    ],
+    "token generation event": [
+      "354"
+    ],
+    "token launch": [
+      "352",
+      "354"
+    ],
+    "token price": [
+      "352",
+      "354"
     ],
     "tokenomics": [
-      "317"
+      "317",
+      "352",
+      "354"
     ],
     "top company": [
       "336"
@@ -13142,7 +13760,9 @@
       "340",
       "347",
       "348",
-      "349"
+      "349",
+      "352",
+      "353"
     ],
     "trading range": [
       "339"
@@ -13200,7 +13820,9 @@
     "valuation": [
       "317",
       "324",
-      "336"
+      "336",
+      "352",
+      "353"
     ],
     "volatility": [
       "325",
