@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-09 17:06:52 UTC+8",
+    "generatedAt": "2026-02-10 01:09:21 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 332,
-      "markets": 146,
-      "keywords": 1247,
+      "kept": 308,
+      "markets": 142,
+      "keywords": 1203,
       "events": {
-        "events": 45
+        "events": 41
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 668,
+        "cutoff_expired": 692,
         "cutoff_zero_kept": 24,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 40,
+        "reused": 41,
         "regenerated_empty_entitygroups": 0,
-        "calls": 5,
-        "retries": 1,
+        "calls": 0,
+        "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 5,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -116,99 +116,6 @@
       "sigCore": "a98f06da",
       "reused": false
     },
-    "317": {
-      "title": "Fabric ($ROBO) FDV above ___ one day after launch?",
-      "marketIds": [
-        "317"
-      ],
-      "bestMarketId": "317",
-      "bestLabels": null,
-      "keywords": [
-        "fabric",
-        "robo",
-        "$robo",
-        "fabric token",
-        "fabric crypto",
-        "fdv",
-        "valuation",
-        "launch",
-        "tge",
-        "airdrop",
-        "market cap",
-        "listing",
-        "debut",
-        "price",
-        "tokenomics",
-        "fabric $robo",
-        "$robo fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "fabric $robo fdv",
-        "$robo fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after"
-      ],
-      "entities": [
-        "fabric"
-      ],
-      "entityGroups": [
-        [
-          "fabric",
-          "robo",
-          "$robo"
-        ]
-      ],
-      "sig": "23cf4386",
-      "sigFull": "23cf4386",
-      "sigCore": "d2b0a01e",
-      "reused": false
-    },
-    "315": {
-      "title": "What will Gold hit ... by end of February?",
-      "marketIds": [
-        "315"
-      ],
-      "bestMarketId": "315",
-      "bestLabels": null,
-      "keywords": [
-        "gold",
-        "xau",
-        "precious metal",
-        "bullion",
-        "commodity",
-        "spot price",
-        "futures",
-        "trading",
-        "ounce",
-        "troy ounce",
-        "safe haven",
-        "inflation hedge",
-        "yellow metal",
-        "gold price",
-        "market",
-        "what gold",
-        "gold hit",
-        "hit february",
-        "what gold hit",
-        "gold hit february"
-      ],
-      "entities": [
-        "gold"
-      ],
-      "entityGroups": [
-        [
-          "gold"
-        ]
-      ],
-      "sig": "f2762b48",
-      "sigFull": "f2762b48",
-      "sigCore": "76b23321",
-      "reused": false
-    },
     "316": {
       "title": "Will Silver hit ... by end of February?",
       "marketIds": [
@@ -247,96 +154,6 @@
       "sig": "6ca21ba8",
       "sigFull": "6ca21ba8",
       "sigCore": "3f27f6bc",
-      "reused": false
-    },
-    "320": {
-      "title": "ECB Rates Decision (DFR): March 2026",
-      "marketIds": [
-        "320"
-      ],
-      "bestMarketId": "320",
-      "bestLabels": null,
-      "keywords": [
-        "ecb",
-        "european central bank",
-        "interest rates",
-        "monetary policy",
-        "deposit facility rate",
-        "dfr",
-        "christine lagarde",
-        "eurozone",
-        "euro",
-        "inflation",
-        "rate decision",
-        "monetary easing",
-        "frankfurt",
-        "governing council",
-        "eurosystem",
-        "ecb rates",
-        "rates decision",
-        "decision dfr",
-        "dfr march",
-        "march 2026",
-        "ecb rates decision",
-        "rates decision dfr",
-        "decision dfr march",
-        "dfr march 2026"
-      ],
-      "entities": [
-        "ecb"
-      ],
-      "entityGroups": [
-        [
-          "ecb",
-          "欧洲央行"
-        ]
-      ],
-      "sig": "2fd82b35",
-      "sigFull": "2fd82b35",
-      "sigCore": "1fce936d",
-      "reused": false
-    },
-    "319": {
-      "title": "US Fed Decision in June?",
-      "marketIds": [
-        "319"
-      ],
-      "bestMarketId": "319",
-      "bestLabels": null,
-      "keywords": [
-        "federal reserve",
-        "fed",
-        "fomc",
-        "interest rates",
-        "rate cut",
-        "rate hike",
-        "monetary policy",
-        "jerome powell",
-        "powell",
-        "inflation",
-        "central bank",
-        "us economy",
-        "cpi",
-        "pce",
-        "dot plot",
-        "fed decision",
-        "decision june",
-        "fed decision june"
-      ],
-      "entities": [
-        "fed"
-      ],
-      "entityGroups": [
-        [
-          "fed",
-          "federal reserve",
-          "fomc",
-          "美联储"
-        ]
-      ],
-      "sig": "0b5cf30b",
-      "sigFull": "0b5cf30b",
-      "sigCore": "e59bd847",
       "reused": false
     },
     "329": {
@@ -4499,228 +4316,11 @@
       },
       "type": "binary"
     },
-    "317": {
-      "title": "Fabric ($ROBO) FDV above ___ one day after launch?",
-      "url": "https://app.opinion.trade/market/317?ref=opinion_hud",
-      "yesTokenId": "59340278207276712419225188153140671769076346786477352682345530120147252151978",
-      "noTokenId": "108701384755971772685372930191057669760084828674549055868416141836940689910944",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "fabric",
-        "robo",
-        "$robo",
-        "fabric token",
-        "fabric crypto",
-        "fdv",
-        "valuation",
-        "launch",
-        "tge",
-        "airdrop",
-        "market cap",
-        "listing",
-        "debut",
-        "price",
-        "tokenomics",
-        "fabric $robo",
-        "$robo fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "fabric $robo fdv",
-        "$robo fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after"
-      ],
-      "entities": [
-        "fabric"
-      ],
-      "entityGroups": [
-        [
-          "fabric",
-          "robo",
-          "$robo"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5094",
-          "title": "$50M",
-          "yesTokenId": "59340278207276712419225188153140671769076346786477352682345530120147252151978",
-          "noTokenId": "108701384755971772685372930191057669760084828674549055868416141836940689910944"
-        },
-        {
-          "marketId": "5095",
-          "title": "$100M",
-          "yesTokenId": "106159797956843582016108730058948126151635737555887150927660910333543743820206",
-          "noTokenId": "3155341300147107592841100069156291363053875868742425441003359565640992894800"
-        },
-        {
-          "marketId": "5096",
-          "title": "$200M",
-          "yesTokenId": "23361614968079680350431503476734318768095462917887792551946774599221271856893",
-          "noTokenId": "25486053332335411506427993173765081980179099362100553757030867671552325990249"
-        },
-        {
-          "marketId": "5097",
-          "title": "$300M",
-          "yesTokenId": "12699505666624943811745356691406207741231693777875129034855244899696159295417",
-          "noTokenId": "64191115325438941076566172652515750125045768069457699622527614049665909705375"
-        },
-        {
-          "marketId": "5098",
-          "title": "$400M",
-          "yesTokenId": "93869679287306001268202151278420171316924338985565095742016786897414969311759",
-          "noTokenId": "35142082901954891902427645922775184174445528239903562835430802515957858268903"
-        },
-        {
-          "marketId": "5099",
-          "title": "$500M",
-          "yesTokenId": "98608327595819017037239525600515448069204282146134272861355003667013028795563",
-          "noTokenId": "111117447388012861283761573588729282899152470052383772962878828643903612765302"
-        },
-        {
-          "marketId": "5100",
-          "title": "$600M",
-          "yesTokenId": "9106557692348782652747227149072636598546210487364671614616399551985012698629",
-          "noTokenId": "73492841093577071572893423261310780945958422886698998283583141525170558719576"
-        },
-        {
-          "marketId": "5101",
-          "title": "$700M",
-          "yesTokenId": "89675869654736481727235776963268095996700158188138379840140514461806657170007",
-          "noTokenId": "47036839162013233870528022251747299083027131411114494195856157009581336194539"
-        },
-        {
-          "marketId": "5102",
-          "title": "$800M",
-          "yesTokenId": "103100195111201381181908195569579707364675983651200883069177323836688509867994",
-          "noTokenId": "37367177239022607191785698315843878841370429420619499721430352850939814292677"
-        },
-        {
-          "marketId": "5103",
-          "title": "$1B",
-          "yesTokenId": "48982146042624989591588352915470790115448876216355317758724787469341577865079",
-          "noTokenId": "81602418114736603116743489222557364274982974439172331664704213610580875454557"
-        }
-      ]
-    },
-    "315": {
-      "title": "What will Gold hit ... by end of February?",
-      "url": "https://app.opinion.trade/market/315?ref=opinion_hud",
-      "yesTokenId": "74857992184221500390279827615217424508243791772314548129688923392508406895915",
-      "noTokenId": "61021160294858612133870041498253583240318847024141447346098822624334284248289",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "gold",
-        "xau",
-        "precious metal",
-        "bullion",
-        "commodity",
-        "spot price",
-        "futures",
-        "trading",
-        "ounce",
-        "troy ounce",
-        "safe haven",
-        "inflation hedge",
-        "yellow metal",
-        "gold price",
-        "market",
-        "what gold",
-        "gold hit",
-        "hit february",
-        "what gold hit",
-        "gold hit february"
-      ],
-      "entities": [
-        "gold"
-      ],
-      "entityGroups": [
-        [
-          "gold"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5073",
-          "title": "↑ $6,400",
-          "yesTokenId": "15411684057165011585452504232206163224290252142354299268289160425055106569467",
-          "noTokenId": "13495260050569276100121371546413895724274036942543468736751895207622150471849"
-        },
-        {
-          "marketId": "5074",
-          "title": "↑ $6,200",
-          "yesTokenId": "82456465561001830815468692181472323374551686565839980828145125656934899026238",
-          "noTokenId": "112551801729245873066049985878503196660075214947408248828821953848064256466678"
-        },
-        {
-          "marketId": "5075",
-          "title": "↑ $6,000",
-          "yesTokenId": "74857992184221500390279827615217424508243791772314548129688923392508406895915",
-          "noTokenId": "61021160294858612133870041498253583240318847024141447346098822624334284248289"
-        },
-        {
-          "marketId": "5076",
-          "title": "↑ $5,800",
-          "yesTokenId": "59108130854754391814318375208987555509023869080994510752100358002291175781612",
-          "noTokenId": "67982280357430892451914160016491146891765845110037273852517265766907162816560"
-        },
-        {
-          "marketId": "5077",
-          "title": "↑ $5,500",
-          "yesTokenId": "49303636304633962970379046128662023092980376000659829276947910866779411400943",
-          "noTokenId": "68883664560974140366997593439323703961196674661371473663497772137076182581521"
-        },
-        {
-          "marketId": "5080",
-          "title": "↓ $4,600",
-          "yesTokenId": "68868650016443997979717575895691207586976349497412359170681926011501839091611",
-          "noTokenId": "54638588821931197929959856499159972981839113104479340986623498542690548031188"
-        },
-        {
-          "marketId": "5081",
-          "title": "↓ $4,450",
-          "yesTokenId": "55399960763447795151654129721627164123603236264378742265250236262850090057970",
-          "noTokenId": "65021393437962657127476411802642440348580050873390835000585927044814253830304"
-        },
-        {
-          "marketId": "5082",
-          "title": "↓ $4,200",
-          "yesTokenId": "69653296385959791775148636073633603456104718998850560446282609756070983724877",
-          "noTokenId": "45779005681840596145458802072253347485673776137287230993556275683333170163249"
-        },
-        {
-          "marketId": "5078",
-          "title": "↓ $4,900",
-          "yesTokenId": "96405805640166957712713047178686542724245085126574972666917734286476619035298",
-          "noTokenId": "62756963147224944933563854622762137481039612271857281548178452084771469586564"
-        },
-        {
-          "marketId": "5079",
-          "title": "↓ $4,700",
-          "yesTokenId": "86106514639499023696058606470969839229785798357543937805870997178230518926444",
-          "noTokenId": "16155318437125845678523410481837413210706231389941968665690481920730676725849"
-        }
-      ]
-    },
     "316": {
       "title": "Will Silver hit ... by end of February?",
       "url": "https://app.opinion.trade/market/316?ref=opinion_hud",
-      "yesTokenId": "6922417079533149106665920797405655018248518446529983155692193999277740113148",
-      "noTokenId": "18863418473864916656359390582560334580045309091321324098368018641441853253361",
+      "yesTokenId": "112227455811640796025927182297854041541980815755939034447128403970335069327361",
+      "noTokenId": "59352081489396737445188633519195040856248087443582871684773708623632849786962",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4883,154 +4483,6 @@
         "noLabel": "NO"
       },
       "type": "binary"
-    },
-    "320": {
-      "title": "ECB Rates Decision (DFR): March 2026",
-      "url": "https://app.opinion.trade/market/320?ref=opinion_hud",
-      "yesTokenId": "88914645038606862060781265014403476175323149897605908208654646376278093922742",
-      "noTokenId": "1972628503044227046285405469558070040588063759144581065800418004301328826918",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "ecb",
-        "european central bank",
-        "interest rates",
-        "monetary policy",
-        "deposit facility rate",
-        "dfr",
-        "christine lagarde",
-        "eurozone",
-        "euro",
-        "inflation",
-        "rate decision",
-        "monetary easing",
-        "frankfurt",
-        "governing council",
-        "eurosystem",
-        "ecb rates",
-        "rates decision",
-        "decision dfr",
-        "dfr march",
-        "march 2026",
-        "ecb rates decision",
-        "rates decision dfr",
-        "decision dfr march",
-        "dfr march 2026"
-      ],
-      "entities": [
-        "ecb"
-      ],
-      "entityGroups": [
-        [
-          "ecb",
-          "欧洲央行"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5115",
-          "title": "50+ bps decrease",
-          "yesTokenId": "88914645038606862060781265014403476175323149897605908208654646376278093922742",
-          "noTokenId": "1972628503044227046285405469558070040588063759144581065800418004301328826918"
-        },
-        {
-          "marketId": "5116",
-          "title": "25 bps decrease",
-          "yesTokenId": "66571585012526447007005101874666368090316804952136049524166253838926961632516",
-          "noTokenId": "51515967943492620681760049343973146748793703018019509430467924991194627595829"
-        },
-        {
-          "marketId": "5117",
-          "title": "No change",
-          "yesTokenId": "109090150741910543558865067867489531849004177479482939012986736441059348763925",
-          "noTokenId": "72346488174234136427387273646857620109057399933101047277086086447229781969410"
-        },
-        {
-          "marketId": "5118",
-          "title": "Increase",
-          "yesTokenId": "8970452475586943412859792156237748241116157572710306656265901760935187344556",
-          "noTokenId": "112039414005796761975459569055648272128630939131523828858126774561654593456058"
-        }
-      ]
-    },
-    "319": {
-      "title": "US Fed Decision in June?",
-      "url": "https://app.opinion.trade/market/319?ref=opinion_hud",
-      "yesTokenId": "77275446875984385912285420423311524359156584020933911619321452952028829968072",
-      "noTokenId": "57460534181896440416824951093180566066742108788574476214945047359450780380593",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "federal reserve",
-        "fed",
-        "fomc",
-        "interest rates",
-        "rate cut",
-        "rate hike",
-        "monetary policy",
-        "jerome powell",
-        "powell",
-        "inflation",
-        "central bank",
-        "us economy",
-        "cpi",
-        "pce",
-        "dot plot",
-        "fed decision",
-        "decision june",
-        "fed decision june"
-      ],
-      "entities": [
-        "fed"
-      ],
-      "entityGroups": [
-        [
-          "fed",
-          "federal reserve",
-          "fomc",
-          "美联储"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5110",
-          "title": "50+ bps decrease",
-          "yesTokenId": "87557851776534020417377409581144583632580396805943581946305513639595126072340",
-          "noTokenId": "88054691939919109082803274428472397352598087273139512428625450898342557039720"
-        },
-        {
-          "marketId": "5111",
-          "title": "25 bps decrease",
-          "yesTokenId": "87377631562612992539018905692689030942594936895725645619498414382898947647222",
-          "noTokenId": "101880448830783483024272400327231543162342290120100467218498766241142267536257"
-        },
-        {
-          "marketId": "5112",
-          "title": "No change",
-          "yesTokenId": "108075514467330812990767746847488372266408373787506347306268709914939210301363",
-          "noTokenId": "60517618413405045635072310260725723162792536031686240810312280513928399810932"
-        },
-        {
-          "marketId": "5113",
-          "title": "25 bps increase",
-          "yesTokenId": "77275446875984385912285420423311524359156584020933911619321452952028829968072",
-          "noTokenId": "57460534181896440416824951093180566066742108788574476214945047359450780380593"
-        },
-        {
-          "marketId": "5114",
-          "title": "50+ bps increase",
-          "yesTokenId": "101824014993514437682131791309828959844124080905530353608831420304652676079383",
-          "noTokenId": "58565110496479011661799704294527766939669329464143928940156453718465767377951"
-        }
-      ]
     },
     "329": {
       "title": "Will Microsoft (MSFT) close above ... end of February?",
@@ -8379,42 +7831,6 @@
         }
       ]
     },
-    "6163": {
-      "title": "ETH Up or Down - Hourly (Feb 09, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6163?ref=opinion_hud",
-      "yesTokenId": "17127240245860408685400899219493510809002887817808707504371657651148540591233",
-      "noTokenId": "74521560347920015857654262737324903616808920478258973067519878362857241896663",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6161": {
-      "title": "BNB Up or Down - Hourly (Feb 09, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6161?ref=opinion_hud",
-      "yesTokenId": "34933322673887942521095746612442661163310565086077832856120739928278567515321",
-      "noTokenId": "78064379523655902050416507310144666403031705142919686318382971002977678881081",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6162": {
-      "title": "BTC Up or Down - Hourly (Feb 09, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6162?ref=opinion_hud",
-      "yesTokenId": "97850821898529958525407910191649372925954632433631634025781032014678413900989",
-      "noTokenId": "50643694112240178029109950868768744421552838444268110391674323259400686991537",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "365": {
       "title": "Total Passenger Trips During China’s 2026 Spring Festival Travel Season",
       "url": "https://app.opinion.trade/market/365?ref=opinion_hud",
@@ -9028,6 +8444,42 @@
           "noTokenId": "73445710174086570400766054257484153888450727512148182968296905862869239147547"
         }
       ]
+    },
+    "6216": {
+      "title": "ETH Up or Down - Hourly (Feb 09, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6216?ref=opinion_hud",
+      "yesTokenId": "14167012105615622966843528815664919809745035831608284961495582481948488013099",
+      "noTokenId": "29841583259909368642910859489470315906277763218128975005638394174997744053326",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6214": {
+      "title": "BNB Up or Down - Hourly (Feb 09, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6214?ref=opinion_hud",
+      "yesTokenId": "104891567915212962731364587100327097259912461179859953329863100995772206836273",
+      "noTokenId": "108901091951451020561163048278082171550166935963217145160305555931945769263129",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6215": {
+      "title": "BTC Up or Down - Hourly (Feb 09, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6215?ref=opinion_hud",
+      "yesTokenId": "59717715220328669925181650825210729980216498408927706324285542234321866477277",
+      "noTokenId": "68694774450733573574896212130937759978387351797373260224327946695437037925732",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -9043,15 +8495,6 @@
     ],
     "$300m": [
       "3506"
-    ],
-    "$robo": [
-      "317"
-    ],
-    "$robo fdv": [
-      "317"
-    ],
-    "$robo fdv above": [
-      "317"
     ],
     "1:1": [
       "3359"
@@ -9237,14 +8680,12 @@
       "348"
     ],
     "above one": [
-      "317",
       "352",
       "353",
       "354",
       "355"
     ],
     "above one day": [
-      "317",
       "352",
       "353",
       "354",
@@ -9277,7 +8718,6 @@
     ],
     "after launch": [
       "1721",
-      "317",
       "352",
       "353",
       "354",
@@ -9303,7 +8743,6 @@
     ],
     "airdrop": [
       "1721",
-      "317",
       "3361",
       "3366",
       "352",
@@ -9688,7 +9127,6 @@
       "340"
     ],
     "bullion": [
-      "315",
       "316",
       "346",
       "347",
@@ -9735,7 +9173,6 @@
       "3158"
     ],
     "central bank": [
-      "319",
       "341"
     ],
     "ceo": [
@@ -9825,9 +9262,6 @@
     ],
     "christianity": [
       "2670"
-    ],
-    "christine lagarde": [
-      "320"
     ],
     "chunwan": [
       "350"
@@ -9922,7 +9356,6 @@
       "3369"
     ],
     "commodity": [
-      "315",
       "316",
       "346",
       "347",
@@ -10014,7 +9447,6 @@
       "1546"
     ],
     "cpi": [
-      "319",
       "344"
     ],
     "crash": [
@@ -10119,7 +9551,6 @@
     ],
     "day after": [
       "1721",
-      "317",
       "352",
       "353",
       "354",
@@ -10146,7 +9577,6 @@
       "1856"
     ],
     "debut": [
-      "317",
       "353"
     ],
     "december": [
@@ -10154,15 +9584,6 @@
     ],
     "december 2026": [
       "3509"
-    ],
-    "decision dfr": [
-      "320"
-    ],
-    "decision dfr march": [
-      "320"
-    ],
-    "decision june": [
-      "319"
     ],
     "deepseek": [
       "338"
@@ -10206,23 +9627,11 @@
     "depeg 1q2026": [
       "3359"
     ],
-    "deposit facility rate": [
-      "320"
-    ],
     "depression": [
       "3265"
     ],
     "dex": [
       "3361"
-    ],
-    "dfr": [
-      "320"
-    ],
-    "dfr march": [
-      "320"
-    ],
-    "dfr march 2026": [
-      "320"
     ],
     "digital asset": [
       "332",
@@ -10237,9 +9646,6 @@
     ],
     "donald trump": [
       "3055"
-    ],
-    "dot plot": [
-      "319"
     ],
     "downtime": [
       "3357"
@@ -10303,15 +9709,6 @@
     ],
     "earthquake 2027": [
       "2668"
-    ],
-    "ecb": [
-      "320"
-    ],
-    "ecb rates": [
-      "320"
-    ],
-    "ecb rates decision": [
-      "320"
     ],
     "economic crisis": [
       "3265"
@@ -10430,20 +9827,8 @@
     "ethereum hit february": [
       "333"
     ],
-    "euro": [
-      "320"
-    ],
     "europe": [
       "357"
-    ],
-    "european central bank": [
-      "320"
-    ],
-    "eurosystem": [
-      "320"
-    ],
-    "eurozone": [
-      "320"
     ],
     "ev": [
       "323",
@@ -10494,21 +9879,6 @@
     "f1 china": [
       "363"
     ],
-    "fabric": [
-      "317"
-    ],
-    "fabric $robo": [
-      "317"
-    ],
-    "fabric $robo fdv": [
-      "317"
-    ],
-    "fabric crypto": [
-      "317"
-    ],
-    "fabric token": [
-      "317"
-    ],
     "facebook": [
       "325"
     ],
@@ -10529,20 +9899,17 @@
       "325"
     ],
     "fdv": [
-      "317",
       "352",
       "353",
       "354"
     ],
     "fdv above": [
-      "317",
       "352",
       "353",
       "354",
       "355"
     ],
     "fdv above one": [
-      "317",
       "352",
       "353",
       "354",
@@ -10564,26 +9931,14 @@
     "february 2026": [
       "359"
     ],
-    "fed": [
-      "319"
-    ],
     "fed chair": [
       "341"
-    ],
-    "fed decision": [
-      "319"
-    ],
-    "fed decision june": [
-      "319"
     ],
     "fed policy": [
       "344"
     ],
     "federal circuit": [
       "1546"
-    ],
-    "federal reserve": [
-      "319"
     ],
     "federal reserve chair": [
       "341"
@@ -10617,9 +9972,6 @@
     "flash loan attack": [
       "3360"
     ],
-    "fomc": [
-      "319"
-    ],
     "formula 1": [
       "363"
     ],
@@ -10628,9 +9980,6 @@
     ],
     "founder": [
       "3369"
-    ],
-    "frankfurt": [
-      "320"
     ],
     "fsd": [
       "351"
@@ -10657,7 +10006,6 @@
       "3509"
     ],
     "futures": [
-      "315",
       "3361",
       "347",
       "348",
@@ -10711,7 +10059,6 @@
       "3362"
     ],
     "gold": [
-      "315",
       "346",
       "347"
     ],
@@ -10728,12 +10075,6 @@
     "gold futures": [
       "346"
     ],
-    "gold hit": [
-      "315"
-    ],
-    "gold hit february": [
-      "315"
-    ],
     "gold medal": [
       "358",
       "362"
@@ -10742,7 +10083,6 @@
       "358"
     ],
     "gold price": [
-      "315",
       "346",
       "347"
     ],
@@ -10784,9 +10124,6 @@
     ],
     "governance token": [
       "3366"
-    ],
-    "governing council": [
-      "320"
     ],
     "government": [
       "330"
@@ -10898,7 +10235,6 @@
       "340"
     ],
     "hit february": [
-      "315",
       "316",
       "332",
       "333",
@@ -10990,8 +10326,6 @@
       "349"
     ],
     "inflation": [
-      "319",
-      "320",
       "344"
     ],
     "inflation get": [
@@ -11001,7 +10335,6 @@
       "344"
     ],
     "inflation hedge": [
-      "315",
       "316",
       "347",
       "348"
@@ -11014,10 +10347,6 @@
     ],
     "institutional adoption": [
       "340"
-    ],
-    "interest rates": [
-      "319",
-      "320"
     ],
     "invasion": [
       "274"
@@ -11102,9 +10431,6 @@
     ],
     "jeff bezos": [
       "328"
-    ],
-    "jerome powell": [
-      "319"
     ],
     "jerusalem": [
       "331"
@@ -11192,7 +10518,6 @@
       "336"
     ],
     "launch": [
-      "317",
       "353"
     ],
     "launch token": [
@@ -11256,7 +10581,6 @@
       "1546"
     ],
     "listing": [
-      "317",
       "3362",
       "353",
       "354"
@@ -11319,7 +10643,6 @@
     ],
     "march 2026": [
       "3039",
-      "320",
       "3357",
       "3448"
     ],
@@ -11338,7 +10661,6 @@
       "343"
     ],
     "market": [
-      "315",
       "322",
       "323",
       "328",
@@ -11350,7 +10672,6 @@
       "359"
     ],
     "market cap": [
-      "317",
       "324",
       "336",
       "3505",
@@ -11544,12 +10865,7 @@
     "monad megaeth who": [
       "1721"
     ],
-    "monetary easing": [
-      "320"
-    ],
     "monetary policy": [
-      "319",
-      "320",
       "341",
       "344"
     ],
@@ -11740,14 +11056,12 @@
     ],
     "one day": [
       "1721",
-      "317",
       "352",
       "353",
       "354",
       "355"
     ],
     "one day after": [
-      "317",
       "352",
       "353",
       "354",
@@ -11765,7 +11079,6 @@
       "326"
     ],
     "ounce": [
-      "315",
       "347"
     ],
     "ousted": [
@@ -11811,7 +11124,6 @@
       "365"
     ],
     "pce": [
-      "319",
       "344"
     ],
     "peg": [
@@ -11874,11 +11186,9 @@
       "3062"
     ],
     "powell": [
-      "319",
       "341"
     ],
     "precious metal": [
-      "315",
       "346",
       "347",
       "348",
@@ -11901,7 +11211,6 @@
       "3055"
     ],
     "price": [
-      "317",
       "322",
       "323",
       "324",
@@ -12061,21 +11370,6 @@
     "rapture": [
       "2670"
     ],
-    "rate cut": [
-      "319"
-    ],
-    "rate decision": [
-      "320"
-    ],
-    "rate hike": [
-      "319"
-    ],
-    "rates decision": [
-      "320"
-    ],
-    "rates decision dfr": [
-      "320"
-    ],
     "re-enter eth": [
       "359"
     ],
@@ -12212,9 +11506,6 @@
     "road trips": [
       "365"
     ],
-    "robo": [
-      "317"
-    ],
     "robot dancer": [
       "350"
     ],
@@ -12251,7 +11542,6 @@
       "327"
     ],
     "safe haven": [
-      "315",
       "346",
       "347"
     ],
@@ -12443,7 +11733,6 @@
       "346"
     ],
     "spot price": [
-      "315",
       "316",
       "347",
       "348",
@@ -12658,7 +11947,6 @@
     ],
     "tge": [
       "1721",
-      "317",
       "352",
       "353",
       "354"
@@ -12735,7 +12023,6 @@
       "354"
     ],
     "tokenomics": [
-      "317",
       "3361",
       "352",
       "354"
@@ -12774,7 +12061,6 @@
       "359"
     ],
     "trading": [
-      "315",
       "316",
       "322",
       "323",
@@ -12827,7 +12113,6 @@
       "365"
     ],
     "troy ounce": [
-      "315",
       "316",
       "346",
       "347"
@@ -12886,7 +12171,6 @@
       "274"
     ],
     "us economy": [
-      "319",
       "3265"
     ],
     "us equities": [
@@ -12921,7 +12205,6 @@
       "3158"
     ],
     "valuation": [
-      "317",
       "324",
       "336",
       "3362",
@@ -13024,11 +12307,7 @@
       "327"
     ],
     "what gold": [
-      "315",
       "347"
-    ],
-    "what gold hit": [
-      "315"
     ],
     "what gold settle": [
       "347"
@@ -13120,7 +12399,6 @@
       "338"
     ],
     "xau": [
-      "315",
       "346",
       "347"
     ],
@@ -13131,7 +12409,6 @@
       "327"
     ],
     "yellow metal": [
-      "315",
       "346",
       "347"
     ],
@@ -13256,9 +12533,6 @@
     "欧洲冠军联赛": [
       "357"
     ],
-    "欧洲央行": [
-      "320"
-    ],
     "比特币": [
       "3256",
       "332",
@@ -13300,7 +12574,6 @@
       "338"
     ],
     "美联储": [
-      "319",
       "341"
     ],
     "美联储主席": [
@@ -13356,15 +12629,6 @@
     ]
   },
   "eventIndex": {
-    "$robo": [
-      "317"
-    ],
-    "$robo fdv": [
-      "317"
-    ],
-    "$robo fdv above": [
-      "317"
-    ],
     "2026": [
       "339",
       "340",
@@ -13453,14 +12717,12 @@
       "348"
     ],
     "above one": [
-      "317",
       "352",
       "353",
       "354",
       "355"
     ],
     "above one day": [
-      "317",
       "352",
       "353",
       "354",
@@ -13479,7 +12741,6 @@
       "337"
     ],
     "after launch": [
-      "317",
       "352",
       "353",
       "354",
@@ -13501,7 +12762,6 @@
       "350"
     ],
     "airdrop": [
-      "317",
       "352",
       "353",
       "354"
@@ -13690,7 +12950,6 @@
       "340"
     ],
     "bullion": [
-      "315",
       "316",
       "346",
       "347",
@@ -13714,7 +12973,6 @@
       "350"
     ],
     "central bank": [
-      "319",
       "341"
     ],
     "chairman": [
@@ -13769,9 +13027,6 @@
     ],
     "choreography": [
       "350"
-    ],
-    "christine lagarde": [
-      "320"
     ],
     "chunwan": [
       "350"
@@ -13834,7 +13089,6 @@
       "343"
     ],
     "commodity": [
-      "315",
       "316",
       "346",
       "347",
@@ -13906,7 +13160,6 @@
       "330"
     ],
     "cpi": [
-      "319",
       "344"
     ],
     "crash": [
@@ -13958,7 +13211,6 @@
       "350"
     ],
     "day after": [
-      "317",
       "352",
       "353",
       "354",
@@ -13974,17 +13226,7 @@
       "337"
     ],
     "debut": [
-      "317",
       "353"
-    ],
-    "decision dfr": [
-      "320"
-    ],
-    "decision dfr march": [
-      "320"
-    ],
-    "decision june": [
-      "319"
     ],
     "deepseek": [
       "338"
@@ -14002,18 +13244,6 @@
     "delegation gold": [
       "362"
     ],
-    "deposit facility rate": [
-      "320"
-    ],
-    "dfr": [
-      "320"
-    ],
-    "dfr march": [
-      "320"
-    ],
-    "dfr march 2026": [
-      "320"
-    ],
     "digital asset": [
       "332",
       "333",
@@ -14021,9 +13251,6 @@
     ],
     "digital gold": [
       "340"
-    ],
-    "dot plot": [
-      "319"
     ],
     "dplus kia": [
       "356"
@@ -14045,15 +13272,6 @@
       "325",
       "326",
       "329"
-    ],
-    "ecb": [
-      "320"
-    ],
-    "ecb rates": [
-      "320"
-    ],
-    "ecb rates decision": [
-      "320"
     ],
     "economics": [
       "344"
@@ -14114,20 +13332,8 @@
     "ethereum hit february": [
       "333"
     ],
-    "euro": [
-      "320"
-    ],
     "europe": [
       "357"
-    ],
-    "european central bank": [
-      "320"
-    ],
-    "eurosystem": [
-      "320"
-    ],
-    "eurozone": [
-      "320"
     ],
     "ev": [
       "323",
@@ -14145,21 +13351,6 @@
     "f1 china": [
       "363"
     ],
-    "fabric": [
-      "317"
-    ],
-    "fabric $robo": [
-      "317"
-    ],
-    "fabric $robo fdv": [
-      "317"
-    ],
-    "fabric crypto": [
-      "317"
-    ],
-    "fabric token": [
-      "317"
-    ],
     "facebook": [
       "325"
     ],
@@ -14167,20 +13358,17 @@
       "325"
     ],
     "fdv": [
-      "317",
       "352",
       "353",
       "354"
     ],
     "fdv above": [
-      "317",
       "352",
       "353",
       "354",
       "355"
     ],
     "fdv above one": [
-      "317",
       "352",
       "353",
       "354",
@@ -14199,23 +13387,11 @@
     "february 2026": [
       "359"
     ],
-    "fed": [
-      "319"
-    ],
     "fed chair": [
       "341"
     ],
-    "fed decision": [
-      "319"
-    ],
-    "fed decision june": [
-      "319"
-    ],
     "fed policy": [
       "344"
-    ],
-    "federal reserve": [
-      "319"
     ],
     "federal reserve chair": [
       "341"
@@ -14234,17 +13410,11 @@
       "357",
       "361"
     ],
-    "fomc": [
-      "319"
-    ],
     "formula 1": [
       "363"
     ],
     "fortune 500": [
       "336"
-    ],
-    "frankfurt": [
-      "320"
     ],
     "fsd": [
       "351"
@@ -14258,7 +13428,6 @@
       "354"
     ],
     "futures": [
-      "315",
       "347",
       "348",
       "349"
@@ -14293,7 +13462,6 @@
       "337"
     ],
     "gold": [
-      "315",
       "346",
       "347"
     ],
@@ -14310,12 +13478,6 @@
     "gold futures": [
       "346"
     ],
-    "gold hit": [
-      "315"
-    ],
-    "gold hit february": [
-      "315"
-    ],
     "gold medal": [
       "358",
       "362"
@@ -14324,7 +13486,6 @@
       "358"
     ],
     "gold price": [
-      "315",
       "346",
       "347"
     ],
@@ -14357,9 +13518,6 @@
     ],
     "google googl close": [
       "326"
-    ],
-    "governing council": [
-      "320"
     ],
     "government": [
       "330"
@@ -14406,7 +13564,6 @@
       "340"
     ],
     "hit february": [
-      "315",
       "316",
       "332",
       "333",
@@ -14444,8 +13601,6 @@
       "349"
     ],
     "inflation": [
-      "319",
-      "320",
       "344"
     ],
     "inflation get": [
@@ -14455,7 +13610,6 @@
       "344"
     ],
     "inflation hedge": [
-      "315",
       "316",
       "347",
       "348"
@@ -14465,10 +13619,6 @@
     ],
     "institutional adoption": [
       "340"
-    ],
-    "interest rates": [
-      "319",
-      "320"
     ],
     "invasion": [
       "274"
@@ -14527,9 +13677,6 @@
     "jeff bezos": [
       "328"
     ],
-    "jerome powell": [
-      "319"
-    ],
     "jerusalem": [
       "331"
     ],
@@ -14561,7 +13708,6 @@
       "336"
     ],
     "launch": [
-      "317",
       "353"
     ],
     "layer 2": [
@@ -14600,7 +13746,6 @@
       "357"
     ],
     "listing": [
-      "317",
       "353",
       "354"
     ],
@@ -14643,14 +13788,10 @@
     "march": [
       "343"
     ],
-    "march 2026": [
-      "320"
-    ],
     "march madness": [
       "343"
     ],
     "market": [
-      "315",
       "322",
       "323",
       "328",
@@ -14661,7 +13802,6 @@
       "359"
     ],
     "market cap": [
-      "317",
       "324",
       "336",
       "352",
@@ -14787,12 +13927,7 @@
     "model y": [
       "351"
     ],
-    "monetary easing": [
-      "320"
-    ],
     "monetary policy": [
-      "319",
-      "320",
       "341",
       "344"
     ],
@@ -14890,14 +14025,12 @@
       "358"
     ],
     "one day": [
-      "317",
       "352",
       "353",
       "354",
       "355"
     ],
     "one day after": [
-      "317",
       "352",
       "353",
       "354",
@@ -14912,7 +14045,6 @@
       "326"
     ],
     "ounce": [
-      "315",
       "347"
     ],
     "overthrow": [
@@ -14925,7 +14057,6 @@
       "365"
     ],
     "pce": [
-      "319",
       "344"
     ],
     "pentagon": [
@@ -14967,11 +14098,9 @@
       "359"
     ],
     "powell": [
-      "319",
       "341"
     ],
     "precious metal": [
-      "315",
       "346",
       "347",
       "348",
@@ -14984,7 +14113,6 @@
       "352"
     ],
     "price": [
-      "317",
       "322",
       "323",
       "324",
@@ -15086,21 +14214,6 @@
       "335",
       "336"
     ],
-    "rate cut": [
-      "319"
-    ],
-    "rate decision": [
-      "320"
-    ],
-    "rate hike": [
-      "319"
-    ],
-    "rates decision": [
-      "320"
-    ],
-    "rates decision dfr": [
-      "320"
-    ],
     "re-enter eth": [
       "359"
     ],
@@ -15136,9 +14249,6 @@
     "road trips": [
       "365"
     ],
-    "robo": [
-      "317"
-    ],
     "robot dancer": [
       "350"
     ],
@@ -15155,7 +14265,6 @@
       "327"
     ],
     "safe haven": [
-      "315",
       "346",
       "347"
     ],
@@ -15254,7 +14363,6 @@
       "346"
     ],
     "spot price": [
-      "315",
       "316",
       "347",
       "348",
@@ -15364,7 +14472,6 @@
       "323"
     ],
     "tge": [
-      "317",
       "352",
       "353",
       "354"
@@ -15390,7 +14497,6 @@
       "354"
     ],
     "tokenomics": [
-      "317",
       "352",
       "354"
     ],
@@ -15419,7 +14525,6 @@
       "359"
     ],
     "trading": [
-      "315",
       "316",
       "322",
       "323",
@@ -15460,7 +14565,6 @@
       "365"
     ],
     "troy ounce": [
-      "315",
       "316",
       "346",
       "347"
@@ -15488,9 +14592,6 @@
       "257",
       "274"
     ],
-    "us economy": [
-      "319"
-    ],
     "us equities": [
       "327"
     ],
@@ -15504,7 +14605,6 @@
       "274"
     ],
     "valuation": [
-      "317",
       "324",
       "336",
       "352",
@@ -15562,11 +14662,7 @@
       "327"
     ],
     "what gold": [
-      "315",
       "347"
-    ],
-    "what gold hit": [
-      "315"
     ],
     "what gold settle": [
       "347"
@@ -15643,7 +14739,6 @@
       "338"
     ],
     "xau": [
-      "315",
       "346",
       "347"
     ],
@@ -15654,7 +14749,6 @@
       "327"
     ],
     "yellow metal": [
-      "315",
       "346",
       "347"
     ],
@@ -15732,9 +14826,6 @@
     "欧洲冠军联赛": [
       "357"
     ],
-    "欧洲央行": [
-      "320"
-    ],
     "比特币": [
       "332",
       "339",
@@ -15757,7 +14848,6 @@
       "338"
     ],
     "美联储": [
-      "319",
       "341"
     ],
     "美联储主席": [
