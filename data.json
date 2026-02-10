@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-10 01:09:21 UTC+8",
+    "generatedAt": "2026-02-10 11:24:33 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 308,
-      "markets": 142,
+      "kept": 295,
+      "markets": 141,
       "keywords": 1203,
       "events": {
         "events": 41
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 692,
+        "cutoff_expired": 705,
         "cutoff_zero_kept": 24,
         "resolved": 0,
         "missing_id": 0,
@@ -4931,8 +4931,8 @@
     "323": {
       "title": "Will Tesla (TSLA) close above ... end of February?",
       "url": "https://app.opinion.trade/market/323?ref=opinion_hud",
-      "yesTokenId": "50791147805481967113648263721296293761676460754480289077072447123688610930931",
-      "noTokenId": "19734309175702069755843236949668066525172621639023869564608574847085576498948",
+      "yesTokenId": "113198777416502428509851769311073701693272166448108171415870424979911991577449",
+      "noTokenId": "52799887698549692262372328171401869168580445391090585329750933678964554928979",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5027,8 +5027,8 @@
     "324": {
       "title": "Will Apple (AAPL) close above ... end of February?",
       "url": "https://app.opinion.trade/market/324?ref=opinion_hud",
-      "yesTokenId": "53917391160864793741280742266144337512951335542130714394676199782965013323051",
-      "noTokenId": "28137691120137317012264987110002923354670392569697781142626354157545102510151",
+      "yesTokenId": "84027279168738653785055228636386858169415475467446833145120678466440723658560",
+      "noTokenId": "108023316324638362720471759614228561264060173289236368731451656336766541315112",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5116,8 +5116,8 @@
     "322": {
       "title": "Will NVIDIA (NVDA) close above ... end of February?",
       "url": "https://app.opinion.trade/market/322?ref=opinion_hud",
-      "yesTokenId": "24279490272527246821520293042457890542916512570557083712710010310365982145638",
-      "noTokenId": "79270724644626941823359520126566665046035851024915504157552490265262708739757",
+      "yesTokenId": "94280391289562321395248029612212274661708707233393832927605025112099096973569",
+      "noTokenId": "28528496607866992535558377101256111548419660905285431739511309998146647408555",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7912,18 +7912,6 @@
         }
       ]
     },
-    "6196": {
-      "title": "Bitcoin Up or Down on February 10?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/6196?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "6188": {
       "title": "Laurore LTD",
       "url": "https://app.opinion.trade/market/6188?ref=opinion_hud",
@@ -8445,11 +8433,11 @@
         }
       ]
     },
-    "6216": {
-      "title": "ETH Up or Down - Hourly (Feb 09, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6216?ref=opinion_hud",
-      "yesTokenId": "14167012105615622966843528815664919809745035831608284961495582481948488013099",
-      "noTokenId": "29841583259909368642910859489470315906277763218128975005638394174997744053326",
+    "6246": {
+      "title": "ETH Up or Down - Hourly (Feb 10, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6246?ref=opinion_hud",
+      "yesTokenId": "60507324470967745327409611343401744693007550159069195633291848988453100815035",
+      "noTokenId": "86992002643558893604943715610207552115778242382185547766049343031908500843563",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -8457,11 +8445,11 @@
       },
       "type": "binary"
     },
-    "6214": {
-      "title": "BNB Up or Down - Hourly (Feb 09, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6214?ref=opinion_hud",
-      "yesTokenId": "104891567915212962731364587100327097259912461179859953329863100995772206836273",
-      "noTokenId": "108901091951451020561163048278082171550166935963217145160305555931945769263129",
+    "6244": {
+      "title": "BNB Up or Down - Hourly (Feb 10, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6244?ref=opinion_hud",
+      "yesTokenId": "68139541681716015255808781554429732871256970389498088838096432330096874672214",
+      "noTokenId": "33555075635158474245353020627905380358975759685304751822295725358677803505289",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -8469,11 +8457,11 @@
       },
       "type": "binary"
     },
-    "6215": {
-      "title": "BTC Up or Down - Hourly (Feb 09, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6215?ref=opinion_hud",
-      "yesTokenId": "59717715220328669925181650825210729980216498408927706324285542234321866477277",
-      "noTokenId": "68694774450733573574896212130937759978387351797373260224327946695437037925732",
+    "6245": {
+      "title": "BTC Up or Down - Hourly (Feb 10, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6245?ref=opinion_hud",
+      "yesTokenId": "44260547586624479391049484065436827348032532759539254238864986630589813043013",
+      "noTokenId": "494669596583186195026554288267195799995650381976281585158297169561356630742",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
