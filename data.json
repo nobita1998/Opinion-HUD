@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-11 17:01:43 UTC+8",
+    "generatedAt": "2026-02-12 01:15:01 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 264,
-      "markets": 141,
-      "keywords": 1140,
+      "kept": 283,
+      "markets": 158,
+      "keywords": 1151,
       "events": {
-        "events": 34
+        "events": 35
       },
       "skipped": {
         "statusEnum": 1,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 723,
-        "cutoff_zero_kept": 44,
+        "cutoff_expired": 704,
+        "cutoff_zero_kept": 52,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 12,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 34,
+        "reused": 32,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
+        "calls": 3,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 3,
         "errors": 0
       }
     }
@@ -217,95 +217,6 @@
       "sig": "a305fb43",
       "sigFull": "a305fb43",
       "sigCore": "9d519472",
-      "reused": false
-    },
-    "338": {
-      "title": "Which company has the best AI model end of June?",
-      "marketIds": [
-        "338"
-      ],
-      "bestMarketId": "338",
-      "bestLabels": null,
-      "keywords": [
-        "ai",
-        "artificial intelligence",
-        "llm",
-        "large language model",
-        "generative ai",
-        "chatbot",
-        "benchmark",
-        "model ranking",
-        "performance",
-        "gpt",
-        "claude",
-        "gemini",
-        "deepseek",
-        "xai",
-        "openai",
-        "which company",
-        "company best",
-        "best model",
-        "model june",
-        "which company best",
-        "company best model",
-        "best model june"
-      ],
-      "entities": [
-        "人工智能"
-      ],
-      "entityGroups": [
-        [
-          "人工智能",
-          "美国中情局",
-          "中情局",
-          "英特尔"
-        ]
-      ],
-      "sig": "656f6410",
-      "sigFull": "656f6410",
-      "sigCore": "58e42307",
-      "reused": false
-    },
-    "337": {
-      "title": "Which companies will be acquired before 2027?",
-      "marketIds": [
-        "337"
-      ],
-      "bestMarketId": "337",
-      "bestLabels": null,
-      "keywords": [
-        "m&a",
-        "acquisition",
-        "buyout",
-        "takeover",
-        "merger",
-        "deal",
-        "consolidation",
-        "purchase",
-        "target",
-        "acquirer",
-        "buyout offer",
-        "tender offer",
-        "going private",
-        "strategic acquisition",
-        "buy",
-        "which companies",
-        "companies acquired",
-        "acquired 2027",
-        "which companies acquired",
-        "companies acquired 2027"
-      ],
-      "entities": [
-        "companies"
-      ],
-      "entityGroups": [
-        [
-          "companies"
-        ]
-      ],
-      "sig": "bb9138ba",
-      "sigFull": "bb9138ba",
-      "sigCore": "ba2f9df6",
       "reused": false
     },
     "344": {
@@ -1602,6 +1513,148 @@
       "sig": "d9c3d2d0",
       "sigFull": "d9c3d2d0",
       "sigCore": "52ba6cb6",
+      "reused": false
+    },
+    "375": {
+      "title": "NBA All-Star: All-Star MVP Winner?",
+      "marketIds": [
+        "375"
+      ],
+      "bestMarketId": "375",
+      "bestLabels": null,
+      "keywords": [
+        "nba",
+        "all-star",
+        "mvp",
+        "all-star game",
+        "kobe bryant",
+        "most valuable player",
+        "basketball",
+        "all-star mvp",
+        "exhibition",
+        "western conference",
+        "eastern conference",
+        "all-star weekend",
+        "roster",
+        "starter",
+        "captain",
+        "nba all-star",
+        "mvp winner",
+        "nba all-star all-star",
+        "all-star all-star mvp",
+        "all-star mvp winner"
+      ],
+      "entities": [
+        "nba all-star"
+      ],
+      "entityGroups": [
+        [
+          "nba all-star",
+          "nba全明星",
+          "nba全明星赛",
+          "nba"
+        ]
+      ],
+      "sig": "8fc36c61",
+      "sigFull": "8fc36c61",
+      "sigCore": "b2184eea",
+      "reused": false
+    },
+    "373": {
+      "title": "NBA All-Star: Slam Dunk Contest Winner?",
+      "marketIds": [
+        "373"
+      ],
+      "bestMarketId": "373",
+      "bestLabels": null,
+      "keywords": [
+        "nba",
+        "all-star",
+        "slam dunk",
+        "contest",
+        "basketball",
+        "jaxson hayes",
+        "carter bryant",
+        "jase richardson",
+        "keshad johnson",
+        "dunk",
+        "winner",
+        "odds",
+        "betting",
+        "prediction",
+        "nba all-star",
+        "all-star slam",
+        "dunk contest",
+        "contest winner",
+        "nba all-star slam",
+        "all-star slam dunk",
+        "slam dunk contest",
+        "dunk contest winner"
+      ],
+      "entities": [
+        "nba",
+        "slam dunk contest"
+      ],
+      "entityGroups": [
+        [
+          "nba",
+          "美职篮",
+          "美国职业篮球"
+        ],
+        [
+          "slam dunk contest",
+          "扣篮大赛"
+        ]
+      ],
+      "sig": "f98517f8",
+      "sigFull": "f98517f8",
+      "sigCore": "43eaa976",
+      "reused": false
+    },
+    "374": {
+      "title": "NBA All-Star: All-Star Tournament Winner?",
+      "marketIds": [
+        "374"
+      ],
+      "bestMarketId": "374",
+      "bestLabels": null,
+      "keywords": [
+        "nba",
+        "all-star",
+        "all star",
+        "asg",
+        "basketball",
+        "tournament",
+        "weekend",
+        "dunk contest",
+        "three-point contest",
+        "rising stars",
+        "exhibition",
+        "showcase",
+        "roster",
+        "mvp",
+        "skills challenge",
+        "nba all-star",
+        "all-star tournament",
+        "tournament winner",
+        "nba all-star all-star",
+        "all-star all-star tournament",
+        "all-star tournament winner"
+      ],
+      "entities": [
+        "nba all-star"
+      ],
+      "entityGroups": [
+        [
+          "nba all-star",
+          "nba全明星赛",
+          "全明星",
+          "nba"
+        ]
+      ],
+      "sig": "ed91bd9b",
+      "sigFull": "ed91bd9b",
+      "sigCore": "ba97d464",
       "reused": false
     }
   },
@@ -4309,195 +4362,6 @@
           "title": "↓70",
           "yesTokenId": "6386753661625725201886032351017667408718433856589926652113583909920969929695",
           "noTokenId": "33666928790283848831116431538133214676835343059395876264821147581352095601220"
-        }
-      ]
-    },
-    "338": {
-      "title": "Which company has the best AI model end of June?",
-      "url": "https://app.opinion.trade/market/338?ref=opinion_hud",
-      "yesTokenId": "6229137478461314988631626779117468206192038152670781886218133299354425090466",
-      "noTokenId": "73340762788320383878516568655668948132158439490818235725966898193622092715838",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "ai",
-        "artificial intelligence",
-        "llm",
-        "large language model",
-        "generative ai",
-        "chatbot",
-        "benchmark",
-        "model ranking",
-        "performance",
-        "gpt",
-        "claude",
-        "gemini",
-        "deepseek",
-        "xai",
-        "openai",
-        "which company",
-        "company best",
-        "best model",
-        "model june",
-        "which company best",
-        "company best model",
-        "best model june"
-      ],
-      "entities": [
-        "人工智能"
-      ],
-      "entityGroups": [
-        [
-          "人工智能",
-          "美国中情局",
-          "中情局",
-          "英特尔"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5353",
-          "title": "Google",
-          "yesTokenId": "75014988850351682668036437740642389987356373450125042045585803752094427183226",
-          "noTokenId": "30904356185617706399868743672317454692347128364003836071603330057245358766864"
-        },
-        {
-          "marketId": "5354",
-          "title": "OpenAI",
-          "yesTokenId": "6229137478461314988631626779117468206192038152670781886218133299354425090466",
-          "noTokenId": "73340762788320383878516568655668948132158439490818235725966898193622092715838"
-        },
-        {
-          "marketId": "5355",
-          "title": "xAI",
-          "yesTokenId": "80348334817216371786301466327076923585520161940244085625741395036966505787376",
-          "noTokenId": "48724949035627466185626950851722666247646308506881877882597821306151965609451"
-        },
-        {
-          "marketId": "5356",
-          "title": "Anthropic",
-          "yesTokenId": "98850506680072414629810764313222233010531864888206427334516197430799776888608",
-          "noTokenId": "49332862564370403061162622177661908795242722061909938271099704050017440108357"
-        },
-        {
-          "marketId": "5357",
-          "title": "DeepSeek",
-          "yesTokenId": "14361889689600387576556363722013779665493103743203679554834862709260964672552",
-          "noTokenId": "20961572726960769825224767699624862687797252559676701733824921207266495753867"
-        },
-        {
-          "marketId": "5358",
-          "title": "Alibaba",
-          "yesTokenId": "7148348548715112628531039165563612372222975681280611120310252836617000547364",
-          "noTokenId": "69695716842502036349284245690791233310077160263841439807474105452789072881254"
-        }
-      ]
-    },
-    "337": {
-      "title": "Which companies will be acquired before 2027?",
-      "url": "https://app.opinion.trade/market/337?ref=opinion_hud",
-      "yesTokenId": "86210236353443292057131894085496653684229611997314147278918083991367292453292",
-      "noTokenId": "112600712358996947904406010172399987483318965025661737780442288857464782473564",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "m&a",
-        "acquisition",
-        "buyout",
-        "takeover",
-        "merger",
-        "deal",
-        "consolidation",
-        "purchase",
-        "target",
-        "acquirer",
-        "buyout offer",
-        "tender offer",
-        "going private",
-        "strategic acquisition",
-        "buy",
-        "which companies",
-        "companies acquired",
-        "acquired 2027",
-        "which companies acquired",
-        "companies acquired 2027"
-      ],
-      "entities": [
-        "companies"
-      ],
-      "entityGroups": [
-        [
-          "companies"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5342",
-          "title": "Perplexity AI",
-          "yesTokenId": "34523248322671324371935623641070962352311492138677110458860753863949804614439",
-          "noTokenId": "30855947370351358952326667326829759123027516976930542473930806788720541985825"
-        },
-        {
-          "marketId": "5343",
-          "title": "Ubisoft",
-          "yesTokenId": "114096148716342805939555402957178813346968220461671684553035652646051941236292",
-          "noTokenId": "20512820766860426124260119241224552750548707132602002042810530013111950898319"
-        },
-        {
-          "marketId": "5344",
-          "title": "GitLab",
-          "yesTokenId": "41280240122762240545486598756160850477860389610751974363206333003188054548747",
-          "noTokenId": "91256612067591713980281607899347207774209829317397043601525519935130383841500"
-        },
-        {
-          "marketId": "5345",
-          "title": "Nebius Group",
-          "yesTokenId": "31649841305549644024364045415765321772929413218210592466071642601261372565726",
-          "noTokenId": "101694345929668183615570191470189320839062939374913095984601972136723629970339"
-        },
-        {
-          "marketId": "5346",
-          "title": "Pizza Hut",
-          "yesTokenId": "36280072337047225776005651018368688862393772554128609582101700816106759804937",
-          "noTokenId": "33739176380962959014250748598622715969848563880191423468586150653092463244068"
-        },
-        {
-          "marketId": "5347",
-          "title": "Lovable",
-          "yesTokenId": "109587566099096189360803615078760163730863387509568077260520385714042113996408",
-          "noTokenId": "28235722545963293559088297311169413794426495681435023362101133914152096515459"
-        },
-        {
-          "marketId": "5348",
-          "title": "Viking Therapeutics",
-          "yesTokenId": "4013893899515319200085470783818083615258062953851440356527183495696145804999",
-          "noTokenId": "106442191047525023224083071595947895146011853584630348123788385387111526544698"
-        },
-        {
-          "marketId": "5349",
-          "title": "Snapchat",
-          "yesTokenId": "86210236353443292057131894085496653684229611997314147278918083991367292453292",
-          "noTokenId": "112600712358996947904406010172399987483318965025661737780442288857464782473564"
-        },
-        {
-          "marketId": "5350",
-          "title": "Anthropic",
-          "yesTokenId": "106405809558809284465831803784257752032940504361515986586786441557373938600584",
-          "noTokenId": "104711542854543418319348502780721922779668966213167228801469443035031038539826"
-        },
-        {
-          "marketId": "5351",
-          "title": "OpenAI",
-          "yesTokenId": "56069468617660533170499526041779772937926854133321603972719068698158995221405",
-          "noTokenId": "22874024801952684919461218990409115854461978448895867069157285151909143146724"
         }
       ]
     },
@@ -7550,6 +7414,418 @@
           "noTokenId": "73435212780242507912899370587494092695385730866508767827751843939667703892896"
         }
       ]
+    },
+    "6460": {
+      "title": "ETH Up or Down - Hourly (Feb 11, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6460?ref=opinion_hud",
+      "yesTokenId": "73049546334976862322269818182650268848347609035391487808933062938278589140312",
+      "noTokenId": "72253629400452458485771340757867281962225635040386073875985800394196020840557",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6458": {
+      "title": "BNB Up or Down - Hourly (Feb 11, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6458?ref=opinion_hud",
+      "yesTokenId": "20959746035272520064588404933901817160316062801210459094287769031779665274596",
+      "noTokenId": "76115971876253489982591755035832390496230363248012884078463071833740886649414",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6459": {
+      "title": "BTC Up or Down - Hourly (Feb 11, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6459?ref=opinion_hud",
+      "yesTokenId": "39889082049383815919239105520191338275928350530910605998867830493251101534157",
+      "noTokenId": "28991614840841627212044459462727603579312821084178886100053249142343268199128",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6481": {
+      "title": "LCK: DK vs DRX (Feb. 13 3:00AM ET)",
+      "url": "https://app.opinion.trade/market/6481?ref=opinion_hud",
+      "yesTokenId": "108785244024643847246803136164474432797008161025311898536617434404726195077326",
+      "noTokenId": "3333501766112960120861719706245449416972694776769422317933827783851890972973",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "DK",
+        "noLabel": "DRX"
+      },
+      "type": "binary"
+    },
+    "6483": {
+      "title": "LCS: C9 vs FLY (Feb. 15 4:00PM ET)",
+      "url": "https://app.opinion.trade/market/6483?ref=opinion_hud",
+      "yesTokenId": "43646162779042161042907554648802682900839164783836671584448584257031279418711",
+      "noTokenId": "64461260805466295154383861402900494312223966715983302405464474522607294593645",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "C9",
+        "noLabel": "FLY"
+      },
+      "type": "binary"
+    },
+    "6482": {
+      "title": "LCS: SEN vs DSG (Feb. 14 4:00PM ET)",
+      "url": "https://app.opinion.trade/market/6482?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6480": {
+      "title": "LCK: BFX vs DNS (Feb. 12 3:00AM ET)",
+      "url": "https://app.opinion.trade/market/6480?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "375": {
+      "title": "NBA All-Star: All-Star MVP Winner?",
+      "url": "https://app.opinion.trade/market/375?ref=opinion_hud",
+      "yesTokenId": "50669411135896093969802864095534983844216631308177494182572217835287247693512",
+      "noTokenId": "14994930029945432314848174677073425288459417584610771074305521251455673005272",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "keywords": [
+        "nba",
+        "all-star",
+        "mvp",
+        "all-star game",
+        "kobe bryant",
+        "most valuable player",
+        "basketball",
+        "all-star mvp",
+        "exhibition",
+        "western conference",
+        "eastern conference",
+        "all-star weekend",
+        "roster",
+        "starter",
+        "captain",
+        "nba all-star",
+        "mvp winner",
+        "nba all-star all-star",
+        "all-star all-star mvp",
+        "all-star mvp winner"
+      ],
+      "entities": [
+        "nba all-star"
+      ],
+      "entityGroups": [
+        [
+          "nba all-star",
+          "nba全明星",
+          "nba全明星赛",
+          "nba"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "6472",
+          "title": "Victor Wembanyama",
+          "yesTokenId": "10533596946268353212606010810044913686265726919491921525174971307553270229121",
+          "noTokenId": "93571658812408048724878227215151606937276990895079046142904795302444323343355"
+        },
+        {
+          "marketId": "6473",
+          "title": "Anthony Edwards",
+          "yesTokenId": "9968431602183993328898730894105861476761132877195668289065644560204943435073",
+          "noTokenId": "78121439904609553166256932094364968315024240653283340568815082664818449480532"
+        },
+        {
+          "marketId": "6474",
+          "title": "Cade Cunningham",
+          "yesTokenId": "50669411135896093969802864095534983844216631308177494182572217835287247693512",
+          "noTokenId": "14994930029945432314848174677073425288459417584610771074305521251455673005272"
+        },
+        {
+          "marketId": "6475",
+          "title": "Nikola Jokić",
+          "yesTokenId": "48101440245753863573442407497520734493132447185840315391738389218755905186995",
+          "noTokenId": "65381261815255561630315935979398884600637547768485174768398050415577556571233"
+        },
+        {
+          "marketId": "6476",
+          "title": "Kawhi Leonard",
+          "yesTokenId": "38389453551747392667173295094965089282500366883160470233271563608523128725070",
+          "noTokenId": "33360935621679459152894688657462059822754938676172876032903219778808606320355"
+        }
+      ]
+    },
+    "373": {
+      "title": "NBA All-Star: Slam Dunk Contest Winner?",
+      "url": "https://app.opinion.trade/market/373?ref=opinion_hud",
+      "yesTokenId": "34645391102381214376814473395217839802740599682501649177058068309722118688760",
+      "noTokenId": "115663795891226012994420611627824109792753769521267375075118965130149501987210",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "keywords": [
+        "nba",
+        "all-star",
+        "slam dunk",
+        "contest",
+        "basketball",
+        "jaxson hayes",
+        "carter bryant",
+        "jase richardson",
+        "keshad johnson",
+        "dunk",
+        "winner",
+        "odds",
+        "betting",
+        "prediction",
+        "nba all-star",
+        "all-star slam",
+        "dunk contest",
+        "contest winner",
+        "nba all-star slam",
+        "all-star slam dunk",
+        "slam dunk contest",
+        "dunk contest winner"
+      ],
+      "entities": [
+        "nba",
+        "slam dunk contest"
+      ],
+      "entityGroups": [
+        [
+          "nba",
+          "美职篮",
+          "美国职业篮球"
+        ],
+        [
+          "slam dunk contest",
+          "扣篮大赛"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "6465",
+          "title": "Carter Bryant - San Antonio",
+          "yesTokenId": "100861170471196351476315076888961885778217629063325733889320067693975900249722",
+          "noTokenId": "69497320479816328655910654983927457819292070942376957868914346372385947595934"
+        },
+        {
+          "marketId": "6466",
+          "title": "Jaxson Hayes - Los Angeles L",
+          "yesTokenId": "52485106574287985909609339341751658166671504377177562596223921875883416328495",
+          "noTokenId": "68113788113973014362169290819695618628448874654666023945158579018354698588054"
+        },
+        {
+          "marketId": "6467",
+          "title": "Jase Richardson - Orlando",
+          "yesTokenId": "108577429567449888200607731067351170788594864225602764092539655446498594965921",
+          "noTokenId": "56191075315734879907145444779213544264771070220695291121057010261218691432309"
+        },
+        {
+          "marketId": "6468",
+          "title": "Keshad Johnson - Miami",
+          "yesTokenId": "34645391102381214376814473395217839802740599682501649177058068309722118688760",
+          "noTokenId": "115663795891226012994420611627824109792753769521267375075118965130149501987210"
+        }
+      ]
+    },
+    "374": {
+      "title": "NBA All-Star: All-Star Tournament Winner?",
+      "url": "https://app.opinion.trade/market/374?ref=opinion_hud",
+      "yesTokenId": "71542964807697140892877768928517003438956072686016629119624438664478574123782",
+      "noTokenId": "56832338994415792790850960658347950083888722977009408664150122300989457206876",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "keywords": [
+        "nba",
+        "all-star",
+        "all star",
+        "asg",
+        "basketball",
+        "tournament",
+        "weekend",
+        "dunk contest",
+        "three-point contest",
+        "rising stars",
+        "exhibition",
+        "showcase",
+        "roster",
+        "mvp",
+        "skills challenge",
+        "nba all-star",
+        "all-star tournament",
+        "tournament winner",
+        "nba all-star all-star",
+        "all-star all-star tournament",
+        "all-star tournament winner"
+      ],
+      "entities": [
+        "nba all-star"
+      ],
+      "entityGroups": [
+        [
+          "nba all-star",
+          "nba全明星赛",
+          "全明星",
+          "nba"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "6469",
+          "title": "Team World",
+          "yesTokenId": "64177843068666434429979875689710800869516878032487393471237935875771756655203",
+          "noTokenId": "81968773612524577075635737099142535897942691044579078579139423400594298124459"
+        },
+        {
+          "marketId": "6470",
+          "title": "Team USA Stripes",
+          "yesTokenId": "26517382913232427312042608961443279484024648265831891815721565788536125630467",
+          "noTokenId": "95766399799098334873058078313829514305102293874339416155629898638037048761206"
+        },
+        {
+          "marketId": "6471",
+          "title": "Team USA Stars",
+          "yesTokenId": "71542964807697140892877768928517003438956072686016629119624438664478574123782",
+          "noTokenId": "56832338994415792790850960658347950083888722977009408664150122300989457206876"
+        }
+      ]
+    },
+    "6434": {
+      "title": "Bitcoin Up or Down on February 12?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/6434?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6446": {
+      "title": "Norman Powell - Miami",
+      "url": "https://app.opinion.trade/market/6446?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6442": {
+      "title": "Damian Lillard - Portland",
+      "url": "https://app.opinion.trade/market/6442?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6445": {
+      "title": "Jamal Murray - Denver",
+      "url": "https://app.opinion.trade/market/6445?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6448": {
+      "title": "Bobby Portis Jr. - Milwaukee",
+      "url": "https://app.opinion.trade/market/6448?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6443": {
+      "title": "Donovan Mitchell - Cleveland",
+      "url": "https://app.opinion.trade/market/6443?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6447": {
+      "title": "Tyrese Maxey - Philadelphia",
+      "url": "https://app.opinion.trade/market/6447?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6441": {
+      "title": "Kon Knueppel - Charlotte",
+      "url": "https://app.opinion.trade/market/6441?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6444": {
+      "title": "Devin Booker - Phoenix",
+      "url": "https://app.opinion.trade/market/6444?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -7742,15 +8018,8 @@
     "accumulation": [
       "359"
     ],
-    "acquired 2027": [
-      "337"
-    ],
-    "acquirer": [
-      "337"
-    ],
     "acquisition": [
-      "2398",
-      "337"
+      "2398"
     ],
     "acquisition 2026": [
       "2398"
@@ -7779,9 +8048,6 @@
     "agibot": [
       "350"
     ],
-    "ai": [
-      "338"
-    ],
     "ai dance": [
       "350"
     ],
@@ -7805,6 +8071,9 @@
     "algorithm change": [
       "3256"
     ],
+    "all star": [
+      "374"
+    ],
     "all time": [
       "3361",
       "3364",
@@ -7814,6 +8083,41 @@
       "3361",
       "3364",
       "3368"
+    ],
+    "all-star": [
+      "373",
+      "374",
+      "375"
+    ],
+    "all-star all-star mvp": [
+      "375"
+    ],
+    "all-star all-star tournament": [
+      "374"
+    ],
+    "all-star game": [
+      "375"
+    ],
+    "all-star mvp": [
+      "375"
+    ],
+    "all-star mvp winner": [
+      "375"
+    ],
+    "all-star slam": [
+      "373"
+    ],
+    "all-star slam dunk": [
+      "373"
+    ],
+    "all-star tournament": [
+      "374"
+    ],
+    "all-star tournament winner": [
+      "374"
+    ],
+    "all-star weekend": [
+      "375"
     ],
     "altcoin": [
       "333",
@@ -7867,8 +8171,8 @@
     "armageddon": [
       "2670"
     ],
-    "artificial intelligence": [
-      "338"
+    "asg": [
+      "374"
     ],
     "asset": [
       "349"
@@ -7933,7 +8237,10 @@
       "343",
       "368",
       "369",
-      "371"
+      "371",
+      "373",
+      "374",
+      "375"
     ],
     "bear market": [
       "3265"
@@ -7947,14 +8254,8 @@
     "beijing": [
       "362"
     ],
-    "benchmark": [
-      "338"
-    ],
-    "best model": [
-      "338"
-    ],
-    "best model june": [
-      "338"
+    "betting": [
+      "373"
     ],
     "bianca": [
       "3158"
@@ -8131,15 +8432,10 @@
       "3265"
     ],
     "buy": [
-      "337",
       "359"
     ],
     "buyout": [
-      "2398",
-      "337"
-    ],
-    "buyout offer": [
-      "337"
+      "2398"
     ],
     "cabinet": [
       "3062"
@@ -8153,6 +8449,12 @@
       "3505",
       "3506",
       "3525"
+    ],
+    "captain": [
+      "375"
+    ],
+    "carter bryant": [
+      "373"
     ],
     "cctv gala": [
       "350"
@@ -8193,9 +8495,6 @@
     ],
     "charlotte hale": [
       "3158"
-    ],
-    "chatbot": [
-      "338"
     ],
     "china": [
       "1856",
@@ -8250,9 +8549,6 @@
     ],
     "chunyun": [
       "365"
-    ],
-    "claude": [
-      "338"
     ],
     "client list": [
       "366"
@@ -8313,21 +8609,6 @@
       "348",
       "349"
     ],
-    "companies": [
-      "337"
-    ],
-    "companies acquired": [
-      "337"
-    ],
-    "companies acquired 2027": [
-      "337"
-    ],
-    "company best": [
-      "338"
-    ],
-    "company best model": [
-      "338"
-    ],
     "competition": [
       "357"
     ],
@@ -8358,11 +8639,16 @@
       "3039"
     ],
     "consolidation": [
-      "2398",
-      "337"
+      "2398"
     ],
     "consumer price index": [
       "344"
+    ],
+    "contest": [
+      "373"
+    ],
+    "contest winner": [
+      "373"
     ],
     "contraction": [
       "3265"
@@ -8521,7 +8807,6 @@
     ],
     "deal": [
       "2398",
-      "337",
       "3525"
     ],
     "debt": [
@@ -8535,9 +8820,6 @@
     ],
     "december 2026": [
       "3509"
-    ],
-    "deepseek": [
-      "338"
     ],
     "defi": [
       "1721",
@@ -8636,6 +8918,16 @@
       "3222",
       "3223"
     ],
+    "dunk": [
+      "373"
+    ],
+    "dunk contest": [
+      "373",
+      "374"
+    ],
+    "dunk contest winner": [
+      "373"
+    ],
     "during china": [
       "365"
     ],
@@ -8656,7 +8948,8 @@
       "368"
     ],
     "eastern conference": [
-      "368"
+      "368",
+      "375"
     ],
     "eastern conference champion": [
       "368"
@@ -8810,6 +9103,10 @@
     ],
     "executive order": [
       "1546"
+    ],
+    "exhibition": [
+      "374",
+      "375"
     ],
     "exile": [
       "1856"
@@ -8995,14 +9292,8 @@
     "gdp contraction": [
       "3265"
     ],
-    "gemini": [
-      "338"
-    ],
     "gen.g": [
       "356"
-    ],
-    "generative ai": [
-      "338"
     ],
     "genesis": [
       "3365"
@@ -9019,9 +9310,6 @@
     ],
     "girl group": [
       "2178"
-    ],
-    "going private": [
-      "337"
     ],
     "going public": [
       "3362"
@@ -9071,9 +9359,6 @@
     ],
     "governance token": [
       "3366"
-    ],
-    "gpt": [
-      "338"
     ],
     "grand prix": [
       "363"
@@ -9342,6 +9627,12 @@
     "jail death": [
       "367"
     ],
+    "jase richardson": [
+      "373"
+    ],
+    "jaxson hayes": [
+      "373"
+    ],
     "jd vance": [
       "3055"
     ],
@@ -9387,11 +9678,17 @@
     "karen wheeler": [
       "3222"
     ],
+    "keshad johnson": [
+      "373"
+    ],
     "kevin warsh": [
       "341"
     ],
     "kevin warsh confirmed": [
       "341"
+    ],
+    "kobe bryant": [
+      "375"
     ],
     "korea": [
       "356"
@@ -9418,9 +9715,6 @@
     "l2": [
       "3366",
       "355"
-    ],
-    "large language model": [
-      "338"
     ],
     "larry bird trophy": [
       "368"
@@ -9503,9 +9797,6 @@
       "366",
       "367"
     ],
-    "llm": [
-      "338"
-    ],
     "lol": [
       "356",
       "357",
@@ -9533,8 +9824,7 @@
       "365"
     ],
     "m&a": [
-      "2398",
-      "337"
+      "2398"
     ],
     "maga": [
       "3055"
@@ -9647,8 +9937,7 @@
       "3356"
     ],
     "merger": [
-      "2398",
-      "337"
+      "2398"
     ],
     "messiah": [
       "2670"
@@ -9713,12 +10002,6 @@
     "model 3": [
       "351"
     ],
-    "model june": [
-      "338"
-    ],
-    "model ranking": [
-      "338"
-    ],
     "model s": [
       "351"
     ],
@@ -9750,6 +10033,9 @@
     ],
     "most gold medals": [
       "358"
+    ],
+    "most valuable player": [
+      "375"
     ],
     "motor racing": [
       "363"
@@ -9790,6 +10076,13 @@
     "musk": [
       "351"
     ],
+    "mvp": [
+      "374",
+      "375"
+    ],
+    "mvp winner": [
+      "375"
+    ],
     "nakamoto": [
       "3365"
     ],
@@ -9813,7 +10106,22 @@
     "nba": [
       "368",
       "369",
-      "371"
+      "371",
+      "373",
+      "374",
+      "375"
+    ],
+    "nba all-star": [
+      "373",
+      "374",
+      "375"
+    ],
+    "nba all-star all-star": [
+      "374",
+      "375"
+    ],
+    "nba all-star slam": [
+      "373"
     ],
     "nba east": [
       "368"
@@ -9833,6 +10141,13 @@
     ],
     "nba western conference": [
       "369"
+    ],
+    "nba全明星": [
+      "375"
+    ],
+    "nba全明星赛": [
+      "374",
+      "375"
     ],
     "nber": [
       "3265"
@@ -9890,6 +10205,9 @@
     "number one pick": [
       "3072"
     ],
+    "odds": [
+      "373"
+    ],
     "office": [
       "3062"
     ],
@@ -9933,9 +10251,6 @@
     ],
     "op stack": [
       "3366"
-    ],
-    "openai": [
-      "338"
     ],
     "ounce": [
       "347"
@@ -9990,9 +10305,6 @@
     ],
     "peg": [
       "3359"
-    ],
-    "performance": [
-      "338"
     ],
     "permanent role": [
       "3369"
@@ -10063,6 +10375,9 @@
     ],
     "precious metals": [
       "316"
+    ],
+    "prediction": [
+      "373"
     ],
     "prediction market": [
       "352"
@@ -10163,9 +10478,6 @@
     "pump": [
       "3364",
       "3368"
-    ],
-    "purchase": [
-      "337"
     ],
     "q1 2026": [
       "3362",
@@ -10341,6 +10653,9 @@
       "357",
       "361"
     ],
+    "rising stars": [
+      "374"
+    ],
     "road trips": [
       "365"
     ],
@@ -10358,6 +10673,10 @@
     ],
     "rollup": [
       "3366"
+    ],
+    "roster": [
+      "374",
+      "375"
     ],
     "round": [
       "3505",
@@ -10475,6 +10794,9 @@
       "2668",
       "3356"
     ],
+    "showcase": [
+      "374"
+    ],
     "signal caller": [
       "3072"
     ],
@@ -10506,6 +10828,15 @@
     ],
     "single album": [
       "2178"
+    ],
+    "skills challenge": [
+      "374"
+    ],
+    "slam dunk": [
+      "373"
+    ],
+    "slam dunk contest": [
+      "373"
     ],
     "slowdown": [
       "3265"
@@ -10601,6 +10932,9 @@
     "star": [
       "3158"
     ],
+    "starter": [
+      "375"
+    ],
     "status page": [
       "3357"
     ],
@@ -10622,9 +10956,6 @@
       "3222",
       "3223",
       "3224"
-    ],
-    "strategic acquisition": [
-      "337"
     ],
     "streaming": [
       "2398"
@@ -10670,11 +11001,9 @@
       "356"
     ],
     "takeover": [
-      "2398",
-      "337"
+      "2398"
     ],
     "target": [
-      "337",
       "3449",
       "3505",
       "3506"
@@ -10712,9 +11041,6 @@
     "temblor": [
       "2668",
       "3356"
-    ],
-    "tender offer": [
-      "337"
     ],
     "tesla": [
       "351"
@@ -10754,6 +11080,9 @@
     ],
     "thor": [
       "3158"
+    ],
+    "three-point contest": [
+      "374"
     ],
     "threshold": [
       "3506"
@@ -10837,10 +11166,12 @@
       "343",
       "356",
       "357",
-      "361"
+      "361",
+      "374"
     ],
     "tournament winner": [
-      "343"
+      "343",
+      "374"
     ],
     "trade policy": [
       "1546"
@@ -11045,6 +11376,9 @@
     "wc": [
       "369"
     ],
+    "weekend": [
+      "374"
+    ],
     "west": [
       "369"
     ],
@@ -11058,7 +11392,8 @@
       "369"
     ],
     "western conference": [
-      "369"
+      "369",
+      "375"
     ],
     "western conference champion": [
       "369"
@@ -11100,18 +11435,6 @@
     "wheeler family": [
       "3222"
     ],
-    "which companies": [
-      "337"
-    ],
-    "which companies acquired": [
-      "337"
-    ],
-    "which company": [
-      "338"
-    ],
-    "which company best": [
-      "338"
-    ],
     "which robot": [
       "350"
     ],
@@ -11140,6 +11463,9 @@
     "will byers": [
       "3221"
     ],
+    "winner": [
+      "373"
+    ],
     "winter games": [
       "358"
     ],
@@ -11161,9 +11487,6 @@
       "316",
       "348",
       "349"
-    ],
-    "xai": [
-      "338"
     ],
     "xau": [
       "346",
@@ -11209,17 +11532,11 @@
     "中国站": [
       "363"
     ],
-    "中情局": [
-      "338"
-    ],
     "中本聪": [
       "3365"
     ],
     "乔纳森·拜尔斯": [
       "3221"
-    ],
-    "人工智能": [
-      "338"
     ],
     "以太坊": [
       "1721",
@@ -11230,6 +11547,9 @@
     ],
     "以色列": [
       "3039"
+    ],
+    "全明星": [
+      "374"
     ],
     "冬奥会": [
       "358",
@@ -11268,6 +11588,9 @@
     ],
     "微策略": [
       "3257"
+    ],
+    "扣篮大赛": [
+      "373"
     ],
     "春节联欢晚会": [
       "350"
@@ -11322,19 +11645,20 @@
       "3265"
     ],
     "美国中情局": [
-      "338",
       "369",
       "371"
     ],
     "美国职业篮球": [
       "368",
       "369",
-      "371"
+      "371",
+      "373"
     ],
     "美职篮": [
       "368",
       "369",
-      "371"
+      "371",
+      "373"
     ],
     "美联储": [
       "341"
@@ -11347,9 +11671,6 @@
     ],
     "联邦储备": [
       "341"
-    ],
-    "英特尔": [
-      "338"
     ],
     "英雄联盟": [
       "357"
@@ -11467,15 +11788,6 @@
     "accumulation": [
       "359"
     ],
-    "acquired 2027": [
-      "337"
-    ],
-    "acquirer": [
-      "337"
-    ],
-    "acquisition": [
-      "337"
-    ],
     "after launch": [
       "352",
       "353",
@@ -11490,9 +11802,6 @@
     "agibot": [
       "350"
     ],
-    "ai": [
-      "338"
-    ],
     "ai dance": [
       "350"
     ],
@@ -11501,6 +11810,44 @@
       "353",
       "354"
     ],
+    "all star": [
+      "374"
+    ],
+    "all-star": [
+      "373",
+      "374",
+      "375"
+    ],
+    "all-star all-star mvp": [
+      "375"
+    ],
+    "all-star all-star tournament": [
+      "374"
+    ],
+    "all-star game": [
+      "375"
+    ],
+    "all-star mvp": [
+      "375"
+    ],
+    "all-star mvp winner": [
+      "375"
+    ],
+    "all-star slam": [
+      "373"
+    ],
+    "all-star slam dunk": [
+      "373"
+    ],
+    "all-star tournament": [
+      "374"
+    ],
+    "all-star tournament winner": [
+      "374"
+    ],
+    "all-star weekend": [
+      "375"
+    ],
     "altcoin": [
       "333",
       "334"
@@ -11508,8 +11855,8 @@
     "appointment": [
       "341"
     ],
-    "artificial intelligence": [
-      "338"
+    "asg": [
+      "374"
     ],
     "asset": [
       "349"
@@ -11542,19 +11889,16 @@
       "343",
       "368",
       "369",
-      "371"
+      "371",
+      "373",
+      "374",
+      "375"
     ],
     "beijing": [
       "362"
     ],
-    "benchmark": [
-      "338"
-    ],
-    "best model": [
-      "338"
-    ],
-    "best model june": [
-      "338"
+    "betting": [
+      "373"
     ],
     "big dance": [
       "343"
@@ -11630,14 +11974,13 @@
       "349"
     ],
     "buy": [
-      "337",
       "359"
     ],
-    "buyout": [
-      "337"
+    "captain": [
+      "375"
     ],
-    "buyout offer": [
-      "337"
+    "carter bryant": [
+      "373"
     ],
     "cctv gala": [
       "350"
@@ -11656,9 +11999,6 @@
       "357",
       "361",
       "368"
-    ],
-    "chatbot": [
-      "338"
     ],
     "china": [
       "362",
@@ -11698,9 +12038,6 @@
     "chunyun": [
       "365"
     ],
-    "claude": [
-      "338"
-    ],
     "client list": [
       "366"
     ],
@@ -11725,21 +12062,6 @@
       "347",
       "348",
       "349"
-    ],
-    "companies": [
-      "337"
-    ],
-    "companies acquired": [
-      "337"
-    ],
-    "companies acquired 2027": [
-      "337"
-    ],
-    "company best": [
-      "338"
-    ],
-    "company best model": [
-      "338"
     ],
     "competition": [
       "357"
@@ -11767,11 +12089,14 @@
     "confirmed fed chair": [
       "341"
     ],
-    "consolidation": [
-      "337"
-    ],
     "consumer price index": [
       "344"
+    ],
+    "contest": [
+      "373"
+    ],
+    "contest winner": [
+      "373"
     ],
     "core inflation": [
       "344"
@@ -11851,14 +12176,8 @@
       "354",
       "355"
     ],
-    "deal": [
-      "337"
-    ],
     "debut": [
       "353"
-    ],
-    "deepseek": [
-      "338"
     ],
     "defi": [
       "333",
@@ -11890,6 +12209,16 @@
     "drx": [
       "356"
     ],
+    "dunk": [
+      "373"
+    ],
+    "dunk contest": [
+      "373",
+      "374"
+    ],
+    "dunk contest winner": [
+      "373"
+    ],
     "during china": [
       "365"
     ],
@@ -11897,7 +12226,8 @@
       "368"
     ],
     "eastern conference": [
-      "368"
+      "368",
+      "375"
     ],
     "eastern conference champion": [
       "368"
@@ -11979,6 +12309,10 @@
     ],
     "evidence": [
       "366"
+    ],
+    "exhibition": [
+      "374",
+      "375"
     ],
     "f1": [
       "363"
@@ -12083,14 +12417,8 @@
     "gas": [
       "333"
     ],
-    "gemini": [
-      "338"
-    ],
     "gen.g": [
       "356"
-    ],
-    "generative ai": [
-      "338"
     ],
     "get 2026": [
       "344"
@@ -12101,9 +12429,6 @@
     ],
     "gigafactory": [
       "351"
-    ],
-    "going private": [
-      "337"
     ],
     "gold": [
       "346",
@@ -12141,9 +12466,6 @@
     ],
     "gold settle june": [
       "347"
-    ],
-    "gpt": [
-      "338"
     ],
     "grand prix": [
       "363"
@@ -12254,6 +12576,12 @@
     "jail death": [
       "367"
     ],
+    "jase richardson": [
+      "373"
+    ],
+    "jaxson hayes": [
+      "373"
+    ],
     "jeffrey epstein": [
       "366",
       "367"
@@ -12261,20 +12589,23 @@
     "jeffrey epstein foul": [
       "367"
     ],
+    "keshad johnson": [
+      "373"
+    ],
     "kevin warsh": [
       "341"
     ],
     "kevin warsh confirmed": [
       "341"
     ],
+    "kobe bryant": [
+      "375"
+    ],
     "korea": [
       "356"
     ],
     "l2": [
       "355"
-    ],
-    "large language model": [
-      "338"
     ],
     "larry bird trophy": [
       "368"
@@ -12331,9 +12662,6 @@
       "366",
       "367"
     ],
-    "llm": [
-      "338"
-    ],
     "lol": [
       "356",
       "357",
@@ -12356,9 +12684,6 @@
     ],
     "lunar new year travel": [
       "365"
-    ],
-    "m&a": [
-      "337"
     ],
     "mainnet": [
       "355"
@@ -12413,9 +12738,6 @@
       "358",
       "362"
     ],
-    "merger": [
-      "337"
-    ],
     "metal": [
       "349"
     ],
@@ -12446,12 +12768,6 @@
     "model 3": [
       "351"
     ],
-    "model june": [
-      "338"
-    ],
-    "model ranking": [
-      "338"
-    ],
     "model s": [
       "351"
     ],
@@ -12471,6 +12787,9 @@
     "most gold medals": [
       "358"
     ],
+    "most valuable player": [
+      "375"
+    ],
     "motor racing": [
       "363"
     ],
@@ -12483,13 +12802,35 @@
     "musk": [
       "351"
     ],
+    "mvp": [
+      "374",
+      "375"
+    ],
+    "mvp winner": [
+      "375"
+    ],
     "national basketball association": [
       "369"
     ],
     "nba": [
       "368",
       "369",
-      "371"
+      "371",
+      "373",
+      "374",
+      "375"
+    ],
+    "nba all-star": [
+      "373",
+      "374",
+      "375"
+    ],
+    "nba all-star all-star": [
+      "374",
+      "375"
+    ],
+    "nba all-star slam": [
+      "373"
     ],
     "nba east": [
       "368"
@@ -12510,6 +12851,13 @@
     "nba western conference": [
       "369"
     ],
+    "nba全明星": [
+      "375"
+    ],
+    "nba全明星赛": [
+      "374",
+      "375"
+    ],
     "ncaa": [
       "343"
     ],
@@ -12527,6 +12875,9 @@
     ],
     "nomination": [
       "341"
+    ],
+    "odds": [
+      "373"
     ],
     "olympic games": [
       "358",
@@ -12562,9 +12913,6 @@
       "354",
       "355"
     ],
-    "openai": [
-      "338"
-    ],
     "ounce": [
       "347"
     ],
@@ -12582,9 +12930,6 @@
     ],
     "pedophile island": [
       "366"
-    ],
-    "performance": [
-      "338"
     ],
     "physical gold": [
       "346"
@@ -12637,6 +12982,9 @@
     ],
     "precious metals": [
       "316"
+    ],
+    "prediction": [
+      "373"
     ],
     "prediction market": [
       "352"
@@ -12708,9 +13056,6 @@
     "puffpaw fdv above": [
       "354"
     ],
-    "purchase": [
-      "337"
-    ],
     "qualifying": [
       "371"
     ],
@@ -12742,6 +13087,9 @@
       "357",
       "361"
     ],
+    "rising stars": [
+      "374"
+    ],
     "road trips": [
       "365"
     ],
@@ -12756,6 +13104,10 @@
     ],
     "robotics performance": [
       "350"
+    ],
+    "roster": [
+      "374",
+      "375"
     ],
     "safe haven": [
       "346",
@@ -12783,6 +13135,9 @@
     "shanghai international circuit": [
       "363"
     ],
+    "showcase": [
+      "374"
+    ],
     "silver": [
       "316",
       "348",
@@ -12808,6 +13163,15 @@
     ],
     "silver settle june": [
       "349"
+    ],
+    "skills challenge": [
+      "374"
+    ],
+    "slam dunk": [
+      "373"
+    ],
+    "slam dunk contest": [
+      "373"
     ],
     "smart contracts": [
       "333",
@@ -12872,8 +13236,8 @@
     "standings": [
       "371"
     ],
-    "strategic acquisition": [
-      "337"
+    "starter": [
+      "375"
     ],
     "suicide": [
       "367"
@@ -12887,12 +13251,6 @@
     "t1": [
       "356"
     ],
-    "takeover": [
-      "337"
-    ],
-    "target": [
-      "337"
-    ],
     "team china": [
       "362"
     ],
@@ -12905,9 +13263,6 @@
     "teams make nba": [
       "371"
     ],
-    "tender offer": [
-      "337"
-    ],
     "tesla": [
       "351"
     ],
@@ -12915,6 +13270,9 @@
       "352",
       "353",
       "354"
+    ],
+    "three-point contest": [
+      "374"
     ],
     "title": [
       "368"
@@ -12953,10 +13311,12 @@
       "343",
       "356",
       "357",
-      "361"
+      "361",
+      "374"
     ],
     "tournament winner": [
-      "343"
+      "343",
+      "374"
     ],
     "trader": [
       "359"
@@ -13047,6 +13407,9 @@
     "wc": [
       "369"
     ],
+    "weekend": [
+      "374"
+    ],
     "west": [
       "369"
     ],
@@ -13060,7 +13423,8 @@
       "369"
     ],
     "western conference": [
-      "369"
+      "369",
+      "375"
     ],
     "western conference champion": [
       "369"
@@ -13096,18 +13460,6 @@
     "what silver settle": [
       "349"
     ],
-    "which companies": [
-      "337"
-    ],
-    "which companies acquired": [
-      "337"
-    ],
-    "which company": [
-      "338"
-    ],
-    "which company best": [
-      "338"
-    ],
     "which robot": [
       "350"
     ],
@@ -13123,6 +13475,9 @@
     "white metal": [
       "348",
       "349"
+    ],
+    "winner": [
+      "373"
     ],
     "winter games": [
       "358"
@@ -13145,9 +13500,6 @@
       "316",
       "348",
       "349"
-    ],
-    "xai": [
-      "338"
     ],
     "xau": [
       "346",
@@ -13181,15 +13533,12 @@
     "中国站": [
       "363"
     ],
-    "中情局": [
-      "338"
-    ],
-    "人工智能": [
-      "338"
-    ],
     "以太坊": [
       "333",
       "359"
+    ],
+    "全明星": [
+      "374"
     ],
     "冬奥会": [
       "358",
@@ -13206,6 +13555,9 @@
     ],
     "客户名单": [
       "366"
+    ],
+    "扣篮大赛": [
+      "373"
     ],
     "春节联欢晚会": [
       "350"
@@ -13238,19 +13590,20 @@
       "334"
     ],
     "美国中情局": [
-      "338",
       "369",
       "371"
     ],
     "美国职业篮球": [
       "368",
       "369",
-      "371"
+      "371",
+      "373"
     ],
     "美职篮": [
       "368",
       "369",
-      "371"
+      "371",
+      "373"
     ],
     "美联储": [
       "341"
@@ -13260,9 +13613,6 @@
     ],
     "联邦储备": [
       "341"
-    ],
-    "英特尔": [
-      "338"
     ],
     "英雄联盟": [
       "357"
