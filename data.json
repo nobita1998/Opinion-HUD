@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-11 01:15:33 UTC+8",
+    "generatedAt": "2026-02-11 11:21:35 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 305,
-      "markets": 151,
+      "kept": 279,
+      "markets": 146,
       "keywords": 1167,
       "events": {
         "events": 36
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 1,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 682,
+        "cutoff_expired": 708,
         "cutoff_zero_kept": 44,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 31,
+        "reused": 36,
         "regenerated_empty_entitygroups": 0,
-        "calls": 5,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 5,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -4041,8 +4041,8 @@
     "332": {
       "title": "What price will Bitcoin hit in February?",
       "url": "https://app.opinion.trade/market/332?ref=opinion_hud",
-      "yesTokenId": "64111897972440981219179772995301874509691116382898984876976418478010382429021",
-      "noTokenId": "45017824423944292949541312486453187493956153976297440664590268115457797058732",
+      "yesTokenId": "61079705424743329643216053265521264249405831200756761906833466133660569743020",
+      "noTokenId": "66675074870650409542813120586393761332268016717882289621371212167429081340219",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4167,8 +4167,8 @@
     "333": {
       "title": "What price will Ethereum hit in February?",
       "url": "https://app.opinion.trade/market/333?ref=opinion_hud",
-      "yesTokenId": "74509309191450420401009914225392494810887931607445312858340746730817400869506",
-      "noTokenId": "8362739478754384963931943971818865539301071566956280009208588688362734561472",
+      "yesTokenId": "22825257165491651729930339734684651603201974138540445667170795448365410111025",
+      "noTokenId": "76812619512084878488346097273322507947758715573054660221116801141653055216911",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4288,8 +4288,8 @@
     "334": {
       "title": "What price will Solana hit in February?",
       "url": "https://app.opinion.trade/market/334?ref=opinion_hud",
-      "yesTokenId": "21652281143149048246950019508555673483066884470988641449871018493689852640334",
-      "noTokenId": "27537030104905845846414655248527635950557880181234579281476581246348773604254",
+      "yesTokenId": "34490169568886906508626535364017992296568292385067995846310163283402988421840",
+      "noTokenId": "56673868654336229252502010241414521576035380448863828174597286078460038920302",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4591,8 +4591,8 @@
     "335": {
       "title": "Which company has the best AI model end of March?",
       "url": "https://app.opinion.trade/market/335?ref=opinion_hud",
-      "yesTokenId": "16057494762845605203526609776099268875579147133551289216078153436683173641235",
-      "noTokenId": "113110569434417661907856499898918209647390527861485648142166847052722782240494",
+      "yesTokenId": "27325832745628743490083498093646981659692840953955361503519759997555966093356",
+      "noTokenId": "42331981883618698997488302349234257360331991746234655027102131669156442293620",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4675,8 +4675,8 @@
     "336": {
       "title": "Largest Company end of 2026?",
       "url": "https://app.opinion.trade/market/336?ref=opinion_hud",
-      "yesTokenId": "54848412810620059906645096837437415021126144396776344682812197724928687219543",
-      "noTokenId": "40074809069505688339004362058695404637399288291680649416732894419635659638124",
+      "yesTokenId": "114742233402858487721598394075980104237073331377831741343682193311009667448481",
+      "noTokenId": "6855580219116548127905488128660897384020957448901724162930176827368985997322",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7137,42 +7137,6 @@
         }
       ]
     },
-    "6374": {
-      "title": "ETH Up or Down - Hourly (Feb 10, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6374?ref=opinion_hud",
-      "yesTokenId": "96693651380522622395503472020870622141446264674311959987031527592763689886314",
-      "noTokenId": "87583164242028248508990710402191447572884908103866028509090908838601677547697",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6373": {
-      "title": "BTC Up or Down - Hourly (Feb 10, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6373?ref=opinion_hud",
-      "yesTokenId": "78053671500285618272540026183084996980187446785646960547662396707024533773078",
-      "noTokenId": "76564183095893249439907074309908329952200001711789274069880715371737451414969",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6372": {
-      "title": "BNB Up or Down - Hourly (Feb 10, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6372?ref=opinion_hud",
-      "yesTokenId": "17853038009596413188201279522414527773655731095955964991311117704341672906939",
-      "noTokenId": "103640817753067740298176366019898893755838388289518596785792170970373886079486",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "371": {
       "title": "Which teams will make the NBA Playoffs?",
       "url": "https://app.opinion.trade/market/371?ref=opinion_hud",
@@ -7309,18 +7273,6 @@
         }
       ]
     },
-    "6329": {
-      "title": "NBA: Spurs vs Warriors",
-      "url": "https://app.opinion.trade/market/6329?ref=opinion_hud",
-      "yesTokenId": "111601295006267640559097851465481618923852604443833015637897802783288548447918",
-      "noTokenId": "114934016683834791684983173448913523613578683900311245292306884943747125818938",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Spurs",
-        "noLabel": "Warriors"
-      },
-      "type": "binary"
-    },
     "6331": {
       "title": "NBA: Trail Blazers vs Jazz",
       "url": "https://app.opinion.trade/market/6331?ref=opinion_hud",
@@ -7432,18 +7384,6 @@
     "6323": {
       "title": "Chet Holmgren",
       "url": "https://app.opinion.trade/market/6323?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "6321": {
-      "title": "NBA: Bulls vs Celtics",
-      "url": "https://app.opinion.trade/market/6321?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -7606,18 +7546,6 @@
         }
       ]
     },
-    "6305": {
-      "title": "NBA: Pistons vs Raptors",
-      "url": "https://app.opinion.trade/market/6305?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "368": {
       "title": "NBA Eastern Conference Champion",
       "url": "https://app.opinion.trade/market/368?ref=opinion_hud",
@@ -7755,18 +7683,6 @@
         }
       ]
     },
-    "6289": {
-      "title": "NBA: Hawks vs Hornets",
-      "url": "https://app.opinion.trade/market/6289?ref=opinion_hud",
-      "yesTokenId": "84598983388257025888750658176028063084109684285064982711888809634163444746160",
-      "noTokenId": "57778884691295098703484568443833956256739654665664574973026265497916374404274",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Hawks",
-        "noLabel": "Hornets"
-      },
-      "type": "binary"
-    },
     "367": {
       "title": "Jeffrey Epstein foul play confirmed by ...?",
       "url": "https://app.opinion.trade/market/367?ref=opinion_hud",
@@ -7823,18 +7739,6 @@
           "noTokenId": "112529109788895153524142956436761378990555640495185668602653081945065959273087"
         }
       ]
-    },
-    "6283": {
-      "title": "Bitcoin Up or Down on February 11?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/6283?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
     },
     "6282": {
       "title": "Jeffrey Epstein confirmed to be alive before 2027?",
@@ -7902,6 +7806,42 @@
           "noTokenId": "73435212780242507912899370587494092695385730866508767827751843939667703892896"
         }
       ]
+    },
+    "6404": {
+      "title": "BTC Up or Down - Hourly (Feb 11, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6404?ref=opinion_hud",
+      "yesTokenId": "66311189240958313383058281240687530318517878025047524289660816246321580315796",
+      "noTokenId": "15305501312954086845919121105148011232479532585743778647668212198992698045553",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6405": {
+      "title": "ETH Up or Down - Hourly (Feb 11, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6405?ref=opinion_hud",
+      "yesTokenId": "79416493358403847086349493898031304116838530544306094420941088785813453857511",
+      "noTokenId": "53449744624385558983929200380532595454334067211620946894749502352958402795043",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6403": {
+      "title": "BNB Up or Down - Hourly (Feb 11, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6403?ref=opinion_hud",
+      "yesTokenId": "67626260728429969005301110385232885906877862271616788048950399965475004877938",
+      "noTokenId": "36011994621484426651176467323388159954532800215002801782100560964296172580918",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
