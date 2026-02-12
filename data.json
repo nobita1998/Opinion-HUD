@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-12 17:02:04 UTC+8",
+    "generatedAt": "2026-02-13 01:12:39 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 271,
-      "markets": 149,
+      "kept": 275,
+      "markets": 153,
       "keywords": 1145,
       "events": {
         "events": 34
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 1,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 716,
+        "cutoff_expired": 712,
         "cutoff_zero_kept": 51,
         "resolved": 0,
         "missing_id": 0,
@@ -7562,6 +7562,54 @@
     "6444": {
       "title": "Devin Booker - Phoenix",
       "url": "https://app.opinion.trade/market/6444?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6554": {
+      "title": "BNB Up or Down - Hourly (Feb 12, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6554?ref=opinion_hud",
+      "yesTokenId": "99002146627471859686292386350894999126449195258057104121474334598117539438924",
+      "noTokenId": "55754584948589365641950865289739172150629533119406399478922291171273392062890",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6556": {
+      "title": "ETH Up or Down - Hourly (Feb 12, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6556?ref=opinion_hud",
+      "yesTokenId": "64908006967257840079991341614362500584148905440263968551232812964272524364235",
+      "noTokenId": "95227781867632493422685880099195693753973230558929967035973438825102264370592",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6555": {
+      "title": "BTC Up or Down - Hourly (Feb 12, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6555?ref=opinion_hud",
+      "yesTokenId": "59690774339275680482417287248067755738573650644994292626451383171911526121841",
+      "noTokenId": "103134066399832694048461067594878981096668392533997964509339715796228225462272",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6542": {
+      "title": "Bitcoin Up or Down on February 13?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/6542?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
