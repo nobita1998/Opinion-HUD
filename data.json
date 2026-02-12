@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-12 01:15:01 UTC+8",
+    "generatedAt": "2026-02-12 11:17:29 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 283,
-      "markets": 158,
-      "keywords": 1151,
+      "kept": 274,
+      "markets": 152,
+      "keywords": 1145,
       "events": {
-        "events": 35
+        "events": 34
       },
       "skipped": {
         "statusEnum": 1,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 704,
-        "cutoff_zero_kept": 52,
+        "cutoff_expired": 713,
+        "cutoff_zero_kept": 51,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 12,
@@ -28,58 +28,18 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 32,
+        "reused": 34,
         "regenerated_empty_entitygroups": 0,
-        "calls": 3,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 3,
+        "non_empty": 0,
         "errors": 0
       }
     }
   },
   "events": {
-    "316": {
-      "title": "Will Silver hit ... by end of February?",
-      "marketIds": [
-        "316"
-      ],
-      "bestMarketId": "316",
-      "bestLabels": null,
-      "keywords": [
-        "silver",
-        "xag",
-        "precious metals",
-        "commodity",
-        "spot price",
-        "bullion",
-        "silver price",
-        "metals market",
-        "trading",
-        "investing",
-        "ag",
-        "industrial metal",
-        "hedge asset",
-        "inflation hedge",
-        "troy ounce",
-        "silver hit",
-        "hit february",
-        "silver hit february"
-      ],
-      "entities": [
-        "silver"
-      ],
-      "entityGroups": [
-        [
-          "silver"
-        ]
-      ],
-      "sig": "6ca21ba8",
-      "sigFull": "6ca21ba8",
-      "sigCore": "3f27f6bc",
-      "reused": false
-    },
     "332": {
       "title": "What price will Bitcoin hit in February?",
       "marketIds": [
@@ -3836,126 +3796,6 @@
       },
       "type": "binary"
     },
-    "316": {
-      "title": "Will Silver hit ... by end of February?",
-      "url": "https://app.opinion.trade/market/316?ref=opinion_hud",
-      "yesTokenId": "112227455811640796025927182297854041541980815755939034447128403970335069327361",
-      "noTokenId": "59352081489396737445188633519195040856248087443582871684773708623632849786962",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "silver",
-        "xag",
-        "precious metals",
-        "commodity",
-        "spot price",
-        "bullion",
-        "silver price",
-        "metals market",
-        "trading",
-        "investing",
-        "ag",
-        "industrial metal",
-        "hedge asset",
-        "inflation hedge",
-        "troy ounce",
-        "silver hit",
-        "hit february",
-        "silver hit february"
-      ],
-      "entities": [
-        "silver"
-      ],
-      "entityGroups": [
-        [
-          "silver"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5084",
-          "title": "↑ $160",
-          "yesTokenId": "77674177489480845217037876697756541055304649296744601594069571426477455725999",
-          "noTokenId": "28056050048037890771350022364195646844293000811653057152403882252818758081300"
-        },
-        {
-          "marketId": "5085",
-          "title": "↑ $150",
-          "yesTokenId": "108893179235057197210810774837948691445266658956908168799510491447939639471403",
-          "noTokenId": "64003763007041616719609258748211568253086864860299590261501569024510447252993"
-        },
-        {
-          "marketId": "5086",
-          "title": "↑ $140",
-          "yesTokenId": "100940945442957224883390471988941412537679975724249452584032222065122262424303",
-          "noTokenId": "57567910007689668270052039134930804885670699939208529512905754092848284006121"
-        },
-        {
-          "marketId": "5087",
-          "title": "↑ $130",
-          "yesTokenId": "66908856535606130638022052259515413461757492556455403567457699408369158157742",
-          "noTokenId": "33489579573675787145555314257211199089382088848180574239371269893537589485837"
-        },
-        {
-          "marketId": "5088",
-          "title": "↑ $120",
-          "yesTokenId": "9926569721911601205754744803424855097297365329407398716456595315649055383341",
-          "noTokenId": "10403482094726621521793979244605105379532066929068111800270018084739046335613"
-        },
-        {
-          "marketId": "5093",
-          "title": "↓ $75",
-          "yesTokenId": "6922417079533149106665920797405655018248518446529983155692193999277740113148",
-          "noTokenId": "18863418473864916656359390582560334580045309091321324098368018641441853253361"
-        },
-        {
-          "marketId": "5414",
-          "title": "↓ $70",
-          "yesTokenId": "63054048862725038279789460904333481641988362887774439361387306323948214125237",
-          "noTokenId": "12776864246866105015795223161645346427284854019076369202866154516850506745555"
-        },
-        {
-          "marketId": "5415",
-          "title": "↓ $65",
-          "yesTokenId": "108425189382279755888044770033221909503076451637085677708347539447347861236653",
-          "noTokenId": "30490176074779664734782175483705388360396611659323623239792604033741180747617"
-        },
-        {
-          "marketId": "5416",
-          "title": "↓ $55",
-          "yesTokenId": "112227455811640796025927182297854041541980815755939034447128403970335069327361",
-          "noTokenId": "59352081489396737445188633519195040856248087443582871684773708623632849786962"
-        },
-        {
-          "marketId": "5089",
-          "title": "↓ $95",
-          "yesTokenId": "37531390152840252829295665944088625260390224065743448612423608482512669642712",
-          "noTokenId": "112330724464774423970528915678969733260138820537137137558700568238089533704880"
-        },
-        {
-          "marketId": "5090",
-          "title": "↓ $90",
-          "yesTokenId": "79831669678922249543268867484266995140588356497494511959974711783345739084155",
-          "noTokenId": "36074034777467015848188428114128615694706930158063360660460327306407992671690"
-        },
-        {
-          "marketId": "5091",
-          "title": "↓ $85",
-          "yesTokenId": "59526113876299237586086418457510486167828062740383703038720419690752610479238",
-          "noTokenId": "7399750997002689031360806457474082097763637196448643465367101997182049726516"
-        },
-        {
-          "marketId": "5092",
-          "title": "↓ $80",
-          "yesTokenId": "61927744639089857621467109868596551169174902766844770087617180583387309412860",
-          "noTokenId": "70310626454248879516948268466164378677869157272390710109282195643391560201616"
-        }
-      ]
-    },
     "5083": {
       "title": "Will Apple release a new product line before 2027?",
       "url": "https://app.opinion.trade/market/5083?ref=opinion_hud",
@@ -6881,18 +6721,6 @@
         }
       ]
     },
-    "6331": {
-      "title": "NBA: Trail Blazers vs Jazz",
-      "url": "https://app.opinion.trade/market/6331?ref=opinion_hud",
-      "yesTokenId": "31769416257189133813858977168758229858536480438127561951879196218724618731916",
-      "noTokenId": "32074481914258699019980409047342130371725440833129401348556135719302368656030",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Trail Blazers",
-        "noLabel": "Jazz"
-      },
-      "type": "binary"
-    },
     "6342": {
       "title": "Cleveland Cavaliers",
       "url": "https://app.opinion.trade/market/6342?ref=opinion_hud",
@@ -6920,30 +6748,6 @@
     "6340": {
       "title": "Oklahoma City Thunder",
       "url": "https://app.opinion.trade/market/6340?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "6335": {
-      "title": "NBA: Mavericks vs Lakers",
-      "url": "https://app.opinion.trade/market/6335?ref=opinion_hud",
-      "yesTokenId": "85794845509326539496669061101742035762440027214964679518237373727030755667791",
-      "noTokenId": "38008834081893343202312269494769787647467448398613369065838745314710263972537",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Mavericks",
-        "noLabel": "Lakers"
-      },
-      "type": "binary"
-    },
-    "6330": {
-      "title": "NBA: Bucks vs Thunder",
-      "url": "https://app.opinion.trade/market/6330?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -7415,42 +7219,6 @@
         }
       ]
     },
-    "6460": {
-      "title": "ETH Up or Down - Hourly (Feb 11, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6460?ref=opinion_hud",
-      "yesTokenId": "73049546334976862322269818182650268848347609035391487808933062938278589140312",
-      "noTokenId": "72253629400452458485771340757867281962225635040386073875985800394196020840557",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6458": {
-      "title": "BNB Up or Down - Hourly (Feb 11, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6458?ref=opinion_hud",
-      "yesTokenId": "20959746035272520064588404933901817160316062801210459094287769031779665274596",
-      "noTokenId": "76115971876253489982591755035832390496230363248012884078463071833740886649414",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6459": {
-      "title": "BTC Up or Down - Hourly (Feb 11, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6459?ref=opinion_hud",
-      "yesTokenId": "39889082049383815919239105520191338275928350530910605998867830493251101534157",
-      "noTokenId": "28991614840841627212044459462727603579312821084178886100053249142343268199128",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "6481": {
       "title": "LCK: DK vs DRX (Feb. 13 3:00AM ET)",
       "url": "https://app.opinion.trade/market/6481?ref=opinion_hud",
@@ -7478,18 +7246,6 @@
     "6482": {
       "title": "LCS: SEN vs DSG (Feb. 14 4:00PM ET)",
       "url": "https://app.opinion.trade/market/6482?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "6480": {
-      "title": "LCK: BFX vs DNS (Feb. 12 3:00AM ET)",
-      "url": "https://app.opinion.trade/market/6480?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -7719,18 +7475,6 @@
         }
       ]
     },
-    "6434": {
-      "title": "Bitcoin Up or Down on February 12?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/6434?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "6446": {
       "title": "Norman Powell - Miami",
       "url": "https://app.opinion.trade/market/6446?ref=opinion_hud",
@@ -7824,6 +7568,42 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6508": {
+      "title": "ETH Up or Down - Hourly (Feb 12, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6508?ref=opinion_hud",
+      "yesTokenId": "80954259978443391340420895220468203003353715759997046908528532379227970989943",
+      "noTokenId": "89178757243874512964060311228671288745076268001129443787103788973684090232856",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6506": {
+      "title": "BNB Up or Down - Hourly (Feb 12, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6506?ref=opinion_hud",
+      "yesTokenId": "64509042903058029537280133789656137121521558317711784701957686780128859229851",
+      "noTokenId": "104189337175351799517776832694474559592817399133649699450635389115155079055517",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6507": {
+      "title": "BTC Up or Down - Hourly (Feb 12, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6507?ref=opinion_hud",
+      "yesTokenId": "5889964430598093015218595960158024254531223456322839974342576158550160480277",
+      "noTokenId": "75044752597926454547426458554781354000182222928429772289748148566635324851430",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
@@ -8041,7 +7821,6 @@
       "355"
     ],
     "ag": [
-      "316",
       "348",
       "349"
     ],
@@ -8419,7 +8198,6 @@
       "340"
     ],
     "bullion": [
-      "316",
       "346",
       "347",
       "348",
@@ -8603,7 +8381,6 @@
       "3369"
     ],
     "commodity": [
-      "316",
       "346",
       "347",
       "348",
@@ -9407,9 +9184,6 @@
       "348",
       "349"
     ],
-    "hedge asset": [
-      "316"
-    ],
     "heisman": [
       "3072"
     ],
@@ -9457,7 +9231,6 @@
       "340"
     ],
     "hit february": [
-      "316",
       "332",
       "333",
       "334"
@@ -9547,7 +9320,6 @@
       "3257"
     ],
     "industrial metal": [
-      "316",
       "349"
     ],
     "inflation": [
@@ -9560,7 +9332,6 @@
       "344"
     ],
     "inflation hedge": [
-      "316",
       "347",
       "348"
     ],
@@ -9574,7 +9345,6 @@
       "340"
     ],
     "investing": [
-      "316",
       "348",
       "349"
     ],
@@ -9944,9 +9714,6 @@
     ],
     "metal": [
       "349"
-    ],
-    "metals market": [
-      "316"
     ],
     "microstrategy": [
       "3257"
@@ -10373,9 +10140,6 @@
       "348",
       "349"
     ],
-    "precious metals": [
-      "316"
-    ],
     "prediction": [
       "373"
     ],
@@ -10801,7 +10565,6 @@
       "3072"
     ],
     "silver": [
-      "316",
       "348",
       "349"
     ],
@@ -10810,15 +10573,6 @@
     ],
     "silver above june": [
       "348"
-    ],
-    "silver hit": [
-      "316"
-    ],
-    "silver hit february": [
-      "316"
-    ],
-    "silver price": [
-      "316"
     ],
     "silver settle": [
       "349"
@@ -10893,7 +10647,6 @@
       "346"
     ],
     "spot price": [
-      "316",
       "347",
       "348",
       "349"
@@ -11183,7 +10936,6 @@
       "359"
     ],
     "trading": [
-      "316",
       "332",
       "333",
       "334",
@@ -11226,7 +10978,6 @@
       "365"
     ],
     "troy ounce": [
-      "316",
       "346",
       "347"
     ],
@@ -11484,7 +11235,6 @@
       "362"
     ],
     "xag": [
-      "316",
       "348",
       "349"
     ],
@@ -11795,7 +11545,6 @@
       "355"
     ],
     "ag": [
-      "316",
       "348",
       "349"
     ],
@@ -11967,7 +11716,6 @@
       "340"
     ],
     "bullion": [
-      "316",
       "346",
       "347",
       "348",
@@ -12057,7 +11805,6 @@
       "343"
     ],
     "commodity": [
-      "316",
       "346",
       "347",
       "348",
@@ -12483,9 +12230,6 @@
       "348",
       "349"
     ],
-    "hedge asset": [
-      "316"
-    ],
     "high inflation": [
       "344"
     ],
@@ -12499,7 +12243,6 @@
       "340"
     ],
     "hit february": [
-      "316",
       "332",
       "333",
       "334"
@@ -12533,7 +12276,6 @@
       "344"
     ],
     "industrial metal": [
-      "316",
       "349"
     ],
     "inflation": [
@@ -12546,7 +12288,6 @@
       "344"
     ],
     "inflation hedge": [
-      "316",
       "347",
       "348"
     ],
@@ -12557,7 +12298,6 @@
       "340"
     ],
     "investing": [
-      "316",
       "348",
       "349"
     ],
@@ -12740,9 +12480,6 @@
     ],
     "metal": [
       "349"
-    ],
-    "metals market": [
-      "316"
     ],
     "migration": [
       "365"
@@ -12980,9 +12717,6 @@
       "348",
       "349"
     ],
-    "precious metals": [
-      "316"
-    ],
     "prediction": [
       "373"
     ],
@@ -13139,7 +12873,6 @@
       "374"
     ],
     "silver": [
-      "316",
       "348",
       "349"
     ],
@@ -13148,15 +12881,6 @@
     ],
     "silver above june": [
       "348"
-    ],
-    "silver hit": [
-      "316"
-    ],
-    "silver hit february": [
-      "316"
-    ],
-    "silver price": [
-      "316"
     ],
     "silver settle": [
       "349"
@@ -13212,7 +12936,6 @@
       "346"
     ],
     "spot price": [
-      "316",
       "347",
       "348",
       "349"
@@ -13322,7 +13045,6 @@
       "359"
     ],
     "trading": [
-      "316",
       "332",
       "333",
       "334",
@@ -13353,7 +13075,6 @@
       "365"
     ],
     "troy ounce": [
-      "316",
       "346",
       "347"
     ],
@@ -13497,7 +13218,6 @@
       "362"
     ],
     "xag": [
-      "316",
       "348",
       "349"
     ],
