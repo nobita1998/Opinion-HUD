@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-13 11:17:45 UTC+8",
+    "generatedAt": "2026-02-13 16:58:02 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 270,
-      "markets": 154,
-      "keywords": 1176,
+      "kept": 262,
+      "markets": 152,
+      "keywords": 1150,
       "events": {
-        "events": 37
+        "events": 35
       },
       "skipped": {
         "statusEnum": 1,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 717,
-        "cutoff_zero_kept": 51,
+        "cutoff_expired": 725,
+        "cutoff_zero_kept": 49,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 12,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 33,
+        "reused": 35,
         "regenerated_empty_entitygroups": 0,
-        "calls": 4,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 4,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -267,100 +267,6 @@
       "sig": "375eba31",
       "sigFull": "375eba31",
       "sigCore": "f6926b77",
-      "reused": false
-    },
-    "341": {
-      "title": "Kevin Warsh confirmed as Fed Chair by ...?",
-      "marketIds": [
-        "341"
-      ],
-      "bestMarketId": "341",
-      "bestLabels": null,
-      "keywords": [
-        "kevin warsh",
-        "warsh",
-        "fed chair",
-        "federal reserve chair",
-        "chairman",
-        "nomination",
-        "confirmation",
-        "appointment",
-        "central bank",
-        "monetary policy",
-        "treasury",
-        "trump",
-        "powell",
-        "warsh confirmed",
-        "confirmed fed",
-        "kevin warsh confirmed",
-        "warsh confirmed fed",
-        "confirmed fed chair"
-      ],
-      "entities": [
-        "kevin warsh",
-        "fed chair"
-      ],
-      "entityGroups": [
-        [
-          "kevin warsh",
-          "凯文·沃什"
-        ],
-        [
-          "fed chair",
-          "美联储主席",
-          "美联储",
-          "联邦储备"
-        ]
-      ],
-      "sig": "7d486d72",
-      "sigFull": "7d486d72",
-      "sigCore": "fb903721",
-      "reused": false
-    },
-    "340": {
-      "title": "What price will Bitcoin hit in 2026?",
-      "marketIds": [
-        "340"
-      ],
-      "bestMarketId": "340",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "cryptocurrency",
-        "digital gold",
-        "price target",
-        "2026",
-        "trading",
-        "volatility",
-        "halving",
-        "bull market",
-        "blockchain",
-        "satoshi",
-        "spot etf",
-        "institutional adoption",
-        "what price",
-        "price bitcoin",
-        "bitcoin hit",
-        "hit 2026",
-        "what price bitcoin",
-        "price bitcoin hit",
-        "bitcoin hit 2026"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc",
-          "比特币"
-        ]
-      ],
-      "sig": "eecb5e21",
-      "sigFull": "eecb5e21",
-      "sigCore": "296056c6",
       "reused": false
     },
     "350": {
@@ -4548,8 +4454,8 @@
     "343": {
       "title": "2026 NCAA Tournament Winner",
       "url": "https://app.opinion.trade/market/343?ref=opinion_hud",
-      "yesTokenId": "61744153805586947708194369090747302476176335876181944631754304414833790852891",
-      "noTokenId": "106950169833232469568060102988101698642957444336890530180842254642578195636472",
+      "yesTokenId": "51487974801428759754600996767347383230695473045113381974136474727547069447159",
+      "noTokenId": "53863725005967742130976166204606217651879202117512201859301015334616671236276",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4672,182 +4578,6 @@
           "title": "Texas Tech",
           "yesTokenId": "61744153805586947708194369090747302476176335876181944631754304414833790852891",
           "noTokenId": "106950169833232469568060102988101698642957444336890530180842254642578195636472"
-        }
-      ]
-    },
-    "341": {
-      "title": "Kevin Warsh confirmed as Fed Chair by ...?",
-      "url": "https://app.opinion.trade/market/341?ref=opinion_hud",
-      "yesTokenId": "78599640011585718838298277625781382378704410554525898223635169806002580608536",
-      "noTokenId": "57146828468751153449490316580126976206237776553418678100804522515008519820366",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "kevin warsh",
-        "warsh",
-        "fed chair",
-        "federal reserve chair",
-        "chairman",
-        "nomination",
-        "confirmation",
-        "appointment",
-        "central bank",
-        "monetary policy",
-        "treasury",
-        "trump",
-        "powell",
-        "warsh confirmed",
-        "confirmed fed",
-        "kevin warsh confirmed",
-        "warsh confirmed fed",
-        "confirmed fed chair"
-      ],
-      "entities": [
-        "kevin warsh",
-        "fed chair"
-      ],
-      "entityGroups": [
-        [
-          "kevin warsh",
-          "凯文·沃什"
-        ],
-        [
-          "fed chair",
-          "美联储主席",
-          "美联储",
-          "联邦储备"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5525",
-          "title": "May 1, 2026",
-          "yesTokenId": "81966803815215827855449222770875878393894500781520211646972062774012902117494",
-          "noTokenId": "1230994461005739012166135932232391695777585543539458127432905471471623415195"
-        },
-        {
-          "marketId": "5526",
-          "title": "May 15, 2026",
-          "yesTokenId": "78599640011585718838298277625781382378704410554525898223635169806002580608536",
-          "noTokenId": "57146828468751153449490316580126976206237776553418678100804522515008519820366"
-        }
-      ]
-    },
-    "340": {
-      "title": "What price will Bitcoin hit in 2026?",
-      "url": "https://app.opinion.trade/market/340?ref=opinion_hud",
-      "yesTokenId": "15010911199361255634366366391167944020525945053810136123238742222865878147317",
-      "noTokenId": "44145911774745717486848973544168894527818081942269013322560848228407585483226",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "cryptocurrency",
-        "digital gold",
-        "price target",
-        "2026",
-        "trading",
-        "volatility",
-        "halving",
-        "bull market",
-        "blockchain",
-        "satoshi",
-        "spot etf",
-        "institutional adoption",
-        "what price",
-        "price bitcoin",
-        "bitcoin hit",
-        "hit 2026",
-        "what price bitcoin",
-        "price bitcoin hit",
-        "bitcoin hit 2026"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc",
-          "比特币"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5514",
-          "title": "↑ 150,000",
-          "yesTokenId": "36804225954069469323472343474230734314701808578612787121100958744171150255183",
-          "noTokenId": "98152639405323692767506645254554156449241896042974727688678745892521696598501"
-        },
-        {
-          "marketId": "5515",
-          "title": "↑ 140,000",
-          "yesTokenId": "5445534356803689955274211564846236011212066281167028722823587059406035473648",
-          "noTokenId": "86132300815854188041639832870031659503932989842568850308270020279816335794379"
-        },
-        {
-          "marketId": "5516",
-          "title": "↑ 130,000",
-          "yesTokenId": "6383527789104125888089307812462780222363733979472678428460832947190897932291",
-          "noTokenId": "53253217718298135364137259078395800137792546616098464187797354537355281202853"
-        },
-        {
-          "marketId": "5517",
-          "title": "↑ 120,000",
-          "yesTokenId": "15010911199361255634366366391167944020525945053810136123238742222865878147317",
-          "noTokenId": "44145911774745717486848973544168894527818081942269013322560848228407585483226"
-        },
-        {
-          "marketId": "5518",
-          "title": "↑ 110,000",
-          "yesTokenId": "30750777095978955881966836997493726433308291934288907914389828099869231055150",
-          "noTokenId": "32051079067161084558436206681389791088141950813634728077170626342427007651552"
-        },
-        {
-          "marketId": "5519",
-          "title": "↑ 100,000",
-          "yesTokenId": "67099054281294605091910856702676711183208811286235135619204728887746544033150",
-          "noTokenId": "22529325517857009120388228747124338407494273357872064367513162102712516076286"
-        },
-        {
-          "marketId": "5521",
-          "title": "↓ 55,000",
-          "yesTokenId": "4546070090752632259022550758592602498860187808304986861189455908669105421086",
-          "noTokenId": "26324012305137476863045592401880162619286435768464808955967211768077289519464"
-        },
-        {
-          "marketId": "5522",
-          "title": "↓ 45,000",
-          "yesTokenId": "95705179009694790690268739892799169137961577996148509721560162327396492378717",
-          "noTokenId": "89824468511258860196964909270148376108001706302183571433747374144158075638720"
-        },
-        {
-          "marketId": "5523",
-          "title": "↓ 35,000",
-          "yesTokenId": "68183447887062998083987556719048675797925639141859904174112436644685301380359",
-          "noTokenId": "5825448918793866287132380891151195364291671907357423563065440827310212501516"
-        },
-        {
-          "marketId": "5524",
-          "title": "↓ 25,000",
-          "yesTokenId": "83431585202449292566073173858054093204491460819113785507515215199138067582167",
-          "noTokenId": "78350471588328051502112077302515205455983104004622960353225813855920874240314"
-        },
-        {
-          "marketId": "5520",
-          "title": "↓ 65,000",
-          "yesTokenId": "6283955836557901797925804156116072403149476566019474094244556266436313423002",
-          "noTokenId": "111338618265237030863297105832100852969485420778681675646846215281092643771094"
         }
       ]
     },
@@ -7814,42 +7544,6 @@
         }
       ]
     },
-    "6586": {
-      "title": "BTC Up or Down - Hourly (Feb 13, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6586?ref=opinion_hud",
-      "yesTokenId": "94123773463668574310633366156069491652075446366419626605368044140412296156389",
-      "noTokenId": "14041396542217787670603424830299904139909225026994767097555965344687765810830",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6585": {
-      "title": "BNB Up or Down - Hourly (Feb 13, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6585?ref=opinion_hud",
-      "yesTokenId": "60298822559588113234747388389146121643580414779249964843093769533253749072951",
-      "noTokenId": "56107312855740205931006185291217720031432928987012117282795254268798769848944",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6587": {
-      "title": "ETH Up or Down - Hourly (Feb 13, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6587?ref=opinion_hud",
-      "yesTokenId": "30231304158593411890411763044250226168878325383664551188571435753859370140566",
-      "noTokenId": "77398299525809175799607569128444347704762716756634458083734477481180129108289",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "326": {
       "title": "Will Google (GOOGL) close above ... end of February?",
       "url": "https://app.opinion.trade/market/326?ref=opinion_hud",
@@ -8046,6 +7740,42 @@
           "noTokenId": "59342407184712903553123796516597499944258754035992473821724029360608459680423"
         }
       ]
+    },
+    "6608": {
+      "title": "BNB Up or Down - Hourly (Feb 13, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6608?ref=opinion_hud",
+      "yesTokenId": "100291844745573012568979992222656762410380901493897797508394746653163912330860",
+      "noTokenId": "91717517719359822695099779977918033354646694416939349160158513220904907196518",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6609": {
+      "title": "BTC Up or Down - Hourly (Feb 13, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6609?ref=opinion_hud",
+      "yesTokenId": "27609508404119199144998142097804348970755215970619142092639942653227853917124",
+      "noTokenId": "3443543075512995160308896485381646417223315847460584329946353265508422205759",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6610": {
+      "title": "ETH Up or Down - Hourly (Feb 13, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6610?ref=opinion_hud",
+      "yesTokenId": "94627234189346154989160320822875975943136032890445532140159786769174868690988",
+      "noTokenId": "64357205843126510766655000874929241244521552461018343121992544749767184485163",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -8082,7 +7812,6 @@
       "3505"
     ],
     "2026": [
-      "340",
       "343",
       "3448",
       "3449",
@@ -8427,9 +8156,6 @@
     "apple stock": [
       "324"
     ],
-    "appointment": [
-      "341"
-    ],
     "arkham": [
       "3365"
     ],
@@ -8551,18 +8277,13 @@
     "bitcoin": [
       "3256",
       "332",
-      "3365",
-      "340"
+      "3365"
     ],
     "bitcoin 2026": [
       "3365"
     ],
     "bitcoin hit": [
-      "332",
-      "340"
-    ],
-    "bitcoin hit 2026": [
-      "340"
+      "332"
     ],
     "bitcoin hit february": [
       "332"
@@ -8595,7 +8316,6 @@
       "3361",
       "3364",
       "3365",
-      "340",
       "355"
     ],
     "blockchain upgrade": [
@@ -8669,11 +8389,7 @@
     "btc": [
       "3256",
       "332",
-      "3365",
-      "340"
-    ],
-    "bull market": [
-      "340"
+      "3365"
     ],
     "bullion": [
       "346",
@@ -8718,18 +8434,12 @@
     "celebrity": [
       "3158"
     ],
-    "central bank": [
-      "341"
-    ],
     "ceo": [
       "2368",
       "3369"
     ],
     "ceo march": [
       "2368"
-    ],
-    "chairman": [
-      "341"
     ],
     "champions korea": [
       "356"
@@ -8898,15 +8608,6 @@
       "368",
       "369"
     ],
-    "confirmation": [
-      "341"
-    ],
-    "confirmed fed": [
-      "341"
-    ],
-    "confirmed fed chair": [
-      "341"
-    ],
     "conflict": [
       "3039"
     ],
@@ -8984,7 +8685,6 @@
       "3364",
       "3367",
       "3368",
-      "340",
       "353",
       "355",
       "359"
@@ -9014,8 +8714,7 @@
       "333",
       "334",
       "3364",
-      "3367",
-      "340"
+      "3367"
     ],
     "cryptographic vulnerability": [
       "3256"
@@ -9139,9 +8838,6 @@
     "digital asset": [
       "332",
       "333"
-    ],
-    "digital gold": [
-      "340"
     ],
     "dip": [
       "329"
@@ -9463,17 +9159,11 @@
     "february 2026": [
       "359"
     ],
-    "fed chair": [
-      "341"
-    ],
     "fed policy": [
       "344"
     ],
     "federal circuit": [
       "1546"
-    ],
-    "federal reserve chair": [
-      "341"
     ],
     "festival gala": [
       "350"
@@ -9683,9 +9373,6 @@
     "hack over $100m": [
       "3360"
     ],
-    "halving": [
-      "340"
-    ],
     "hard fork": [
       "3256"
     ],
@@ -9747,9 +9434,6 @@
     ],
     "hit $1500 2026": [
       "3367"
-    ],
-    "hit 2026": [
-      "340"
     ],
     "hit february": [
       "332",
@@ -9861,9 +9545,6 @@
     ],
     "initial public offering": [
       "3362"
-    ],
-    "institutional adoption": [
-      "340"
     ],
     "investing": [
       "348",
@@ -9980,12 +9661,6 @@
     ],
     "keshad johnson": [
       "373"
-    ],
-    "kevin warsh": [
-      "341"
-    ],
-    "kevin warsh confirmed": [
-      "341"
     ],
     "kobe bryant": [
       "375"
@@ -10321,7 +9996,6 @@
       "1721"
     ],
     "monetary policy": [
-      "341",
       "344"
     ],
     "money": [
@@ -10514,9 +10188,6 @@
     "noir": [
       "355"
     ],
-    "nomination": [
-      "341"
-    ],
     "number one pick": [
       "3072"
     ],
@@ -10679,9 +10350,6 @@
     "potus": [
       "3062"
     ],
-    "powell": [
-      "341"
-    ],
     "precious metal": [
       "346",
       "347",
@@ -10718,12 +10386,10 @@
       "332"
     ],
     "price bitcoin": [
-      "332",
-      "340"
+      "332"
     ],
     "price bitcoin hit": [
-      "332",
-      "340"
+      "332"
     ],
     "price ethereum": [
       "333"
@@ -10751,7 +10417,6 @@
       "334"
     ],
     "price target": [
-      "340",
       "3506"
     ],
     "privacy": [
@@ -11013,8 +10678,7 @@
       "347"
     ],
     "satoshi": [
-      "3365",
-      "340"
+      "3365"
     ],
     "satoshi move": [
       "3365"
@@ -11195,8 +10859,7 @@
       "361"
     ],
     "spot etf": [
-      "332",
-      "340"
+      "332"
     ],
     "spot gold": [
       "346"
@@ -11513,7 +11176,6 @@
       "334",
       "3361",
       "3367",
-      "340",
       "347",
       "348",
       "349",
@@ -11529,9 +11191,6 @@
     ],
     "travel season": [
       "365"
-    ],
-    "treasury": [
-      "341"
     ],
     "tremor": [
       "2668",
@@ -11553,8 +11212,7 @@
     "trump": [
       "1546",
       "3055",
-      "3062",
-      "341"
+      "3062"
     ],
     "trump endorse": [
       "3055"
@@ -11654,8 +11312,7 @@
     "volatility": [
       "332",
       "334",
-      "3367",
-      "340"
+      "3367"
     ],
     "vp": [
       "3055"
@@ -11678,15 +11335,6 @@
     ],
     "warner bros.": [
       "2398"
-    ],
-    "warsh": [
-      "341"
-    ],
-    "warsh confirmed": [
-      "341"
-    ],
-    "warsh confirmed fed": [
-      "341"
     ],
     "wbd": [
       "2398"
@@ -11731,12 +11379,10 @@
     "what price": [
       "332",
       "333",
-      "334",
-      "340"
+      "334"
     ],
     "what price bitcoin": [
-      "332",
-      "340"
+      "332"
     ],
     "what price ethereum": [
       "333"
@@ -11875,9 +11521,6 @@
       "358",
       "362"
     ],
-    "凯文·沃什": [
-      "341"
-    ],
     "加密货币漏洞利用": [
       "3360"
     ],
@@ -11927,8 +11570,7 @@
     "比特币": [
       "3256",
       "332",
-      "3365",
-      "340"
+      "3365"
     ],
     "泰莎·汤普森": [
       "3158"
@@ -11979,17 +11621,8 @@
       "371",
       "373"
     ],
-    "美联储": [
-      "341"
-    ],
-    "美联储主席": [
-      "341"
-    ],
     "耶稣基督": [
       "2670"
-    ],
-    "联邦储备": [
-      "341"
     ],
     "英雄联盟": [
       "357"
@@ -12030,7 +11663,6 @@
   },
   "eventIndex": {
     "2026": [
-      "340",
       "343",
       "363"
     ],
@@ -12220,9 +11852,6 @@
     "apple stock": [
       "324"
     ],
-    "appointment": [
-      "341"
-    ],
     "asg": [
       "374"
     ],
@@ -12278,15 +11907,10 @@
       "350"
     ],
     "bitcoin": [
-      "332",
-      "340"
+      "332"
     ],
     "bitcoin hit": [
-      "332",
-      "340"
-    ],
-    "bitcoin hit 2026": [
-      "340"
+      "332"
     ],
     "bitcoin hit february": [
       "332"
@@ -12297,7 +11921,6 @@
     "blockchain": [
       "333",
       "334",
-      "340",
       "355"
     ],
     "bnk fearx": [
@@ -12320,11 +11943,7 @@
       "332"
     ],
     "btc": [
-      "332",
-      "340"
-    ],
-    "bull market": [
-      "340"
+      "332"
     ],
     "bullion": [
       "346",
@@ -12343,12 +11962,6 @@
     ],
     "cctv gala": [
       "350"
-    ],
-    "central bank": [
-      "341"
-    ],
-    "chairman": [
-      "341"
     ],
     "champions korea": [
       "356"
@@ -12455,15 +12068,6 @@
       "368",
       "369"
     ],
-    "confirmation": [
-      "341"
-    ],
-    "confirmed fed": [
-      "341"
-    ],
-    "confirmed fed chair": [
-      "341"
-    ],
     "consumer price index": [
       "344"
     ],
@@ -12498,7 +12102,6 @@
       "332",
       "333",
       "334",
-      "340",
       "353",
       "355",
       "359"
@@ -12513,8 +12116,7 @@
     "cryptocurrency": [
       "332",
       "333",
-      "334",
-      "340"
+      "334"
     ],
     "cup 2026": [
       "356"
@@ -12568,9 +12170,6 @@
     "digital asset": [
       "332",
       "333"
-    ],
-    "digital gold": [
-      "340"
     ],
     "dip": [
       "329"
@@ -12735,14 +12334,8 @@
     "february 2026": [
       "359"
     ],
-    "fed chair": [
-      "341"
-    ],
     "fed policy": [
       "344"
-    ],
-    "federal reserve chair": [
-      "341"
     ],
     "festival gala": [
       "350"
@@ -12880,9 +12473,6 @@
     "gray metal": [
       "348"
     ],
-    "halving": [
-      "340"
-    ],
     "hedge": [
       "348",
       "349"
@@ -12892,9 +12482,6 @@
     ],
     "high inflation get": [
       "344"
-    ],
-    "hit 2026": [
-      "340"
     ],
     "hit february": [
       "332",
@@ -12948,9 +12535,6 @@
     "inflation rate": [
       "344"
     ],
-    "institutional adoption": [
-      "340"
-    ],
     "investing": [
       "348",
       "349"
@@ -12994,12 +12578,6 @@
     ],
     "keshad johnson": [
       "373"
-    ],
-    "kevin warsh": [
-      "341"
-    ],
-    "kevin warsh confirmed": [
-      "341"
     ],
     "kobe bryant": [
       "375"
@@ -13181,7 +12759,6 @@
       "351"
     ],
     "monetary policy": [
-      "341",
       "344"
     ],
     "most gold": [
@@ -13291,9 +12868,6 @@
     "noir": [
       "355"
     ],
-    "nomination": [
-      "341"
-    ],
     "odds": [
       "373"
     ],
@@ -13389,9 +12963,6 @@
     "postseason": [
       "371"
     ],
-    "powell": [
-      "341"
-    ],
     "precious metal": [
       "346",
       "347",
@@ -13415,12 +12986,10 @@
       "332"
     ],
     "price bitcoin": [
-      "332",
-      "340"
+      "332"
     ],
     "price bitcoin hit": [
-      "332",
-      "340"
+      "332"
     ],
     "price ethereum": [
       "333"
@@ -13443,9 +13012,6 @@
     ],
     "price solana hit": [
       "334"
-    ],
-    "price target": [
-      "340"
     ],
     "privacy": [
       "355"
@@ -13530,9 +13096,6 @@
     "safe haven": [
       "346",
       "347"
-    ],
-    "satoshi": [
-      "340"
     ],
     "seeds": [
       "371"
@@ -13621,8 +13184,7 @@
       "361"
     ],
     "spot etf": [
-      "332",
-      "340"
+      "332"
     ],
     "spot gold": [
       "346"
@@ -13763,7 +13325,6 @@
       "332",
       "333",
       "334",
-      "340",
       "347",
       "348",
       "349",
@@ -13777,9 +13338,6 @@
     "travel season": [
       "365"
     ],
-    "treasury": [
-      "341"
-    ],
     "trips during": [
       "365"
     ],
@@ -13789,9 +13347,6 @@
     "troy ounce": [
       "346",
       "347"
-    ],
-    "trump": [
-      "341"
     ],
     "tsla": [
       "351"
@@ -13819,21 +13374,11 @@
     ],
     "volatility": [
       "332",
-      "334",
-      "340"
+      "334"
     ],
     "wall street": [
       "324",
       "326"
-    ],
-    "warsh": [
-      "341"
-    ],
-    "warsh confirmed": [
-      "341"
-    ],
-    "warsh confirmed fed": [
-      "341"
     ],
     "wc": [
       "369"
@@ -13872,12 +13417,10 @@
     "what price": [
       "332",
       "333",
-      "334",
-      "340"
+      "334"
     ],
     "what price bitcoin": [
-      "332",
-      "340"
+      "332"
     ],
     "what price ethereum": [
       "333"
@@ -13977,9 +13520,6 @@
       "358",
       "362"
     ],
-    "凯文·沃什": [
-      "341"
-    ],
     "奥运会": [
       "358"
     ],
@@ -14002,8 +13542,7 @@
       "357"
     ],
     "比特币": [
-      "332",
-      "340"
+      "332"
     ],
     "消费者物价指数": [
       "344"
@@ -14036,15 +13575,6 @@
       "369",
       "371",
       "373"
-    ],
-    "美联储": [
-      "341"
-    ],
-    "美联储主席": [
-      "341"
-    ],
-    "联邦储备": [
-      "341"
     ],
     "英雄联盟": [
       "357"
