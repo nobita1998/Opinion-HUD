@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-13 16:58:02 UTC+8",
+    "generatedAt": "2026-02-14 01:01:29 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 262,
-      "markets": 152,
-      "keywords": 1150,
+      "kept": 238,
+      "markets": 154,
+      "keywords": 1111,
       "events": {
-        "events": 35
+        "events": 33
       },
       "skipped": {
         "statusEnum": 1,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 725,
-        "cutoff_zero_kept": 49,
+        "cutoff_expired": 749,
+        "cutoff_zero_kept": 41,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 12,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 35,
+        "reused": 33,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -177,96 +177,6 @@
       "sig": "a305fb43",
       "sigFull": "a305fb43",
       "sigCore": "9d519472",
-      "reused": false
-    },
-    "344": {
-      "title": "How high will the US inflation get in 2026?",
-      "marketIds": [
-        "344"
-      ],
-      "bestMarketId": "344",
-      "bestLabels": null,
-      "keywords": [
-        "inflation",
-        "cpi",
-        "consumer price index",
-        "price index",
-        "inflation rate",
-        "cost of living",
-        "monetary policy",
-        "pce",
-        "core inflation",
-        "price levels",
-        "fed policy",
-        "stagflation",
-        "hyperinflation",
-        "deflation",
-        "economics",
-        "how high",
-        "high inflation",
-        "inflation get",
-        "get 2026",
-        "how high inflation",
-        "high inflation get",
-        "inflation get 2026"
-      ],
-      "entities": [
-        "inflation"
-      ],
-      "entityGroups": [
-        [
-          "inflation",
-          "消费者物价指数",
-          "通货膨胀"
-        ]
-      ],
-      "sig": "1d12f848",
-      "sigFull": "1d12f848",
-      "sigCore": "0dac37cd",
-      "reused": false
-    },
-    "343": {
-      "title": "2026 NCAA Tournament Winner",
-      "marketIds": [
-        "343"
-      ],
-      "bestMarketId": "343",
-      "bestLabels": null,
-      "keywords": [
-        "ncaa",
-        "march madness",
-        "college basketball",
-        "final four",
-        "bracket",
-        "tournament",
-        "2026",
-        "championship",
-        "college hoops",
-        "basketball",
-        "big dance",
-        "sweet 16",
-        "elite eight",
-        "march",
-        "2026 ncaa",
-        "ncaa tournament",
-        "tournament winner",
-        "2026 ncaa tournament",
-        "ncaa tournament winner"
-      ],
-      "entities": [
-        "ncaa tournament"
-      ],
-      "entityGroups": [
-        [
-          "ncaa tournament",
-          "ncaa",
-          "疯狂三月",
-          "ncaa锦标赛"
-        ]
-      ],
-      "sig": "375eba31",
-      "sigFull": "375eba31",
-      "sigCore": "f6926b77",
       "reused": false
     },
     "350": {
@@ -4367,220 +4277,6 @@
       },
       "type": "binary"
     },
-    "344": {
-      "title": "How high will the US inflation get in 2026?",
-      "url": "https://app.opinion.trade/market/344?ref=opinion_hud",
-      "yesTokenId": "79916744166369839197765786582291713612992071984955623302738687511174925559349",
-      "noTokenId": "87399889592275773654671747220812256539001701099251636431787016287567794414710",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "inflation",
-        "cpi",
-        "consumer price index",
-        "price index",
-        "inflation rate",
-        "cost of living",
-        "monetary policy",
-        "pce",
-        "core inflation",
-        "price levels",
-        "fed policy",
-        "stagflation",
-        "hyperinflation",
-        "deflation",
-        "economics",
-        "how high",
-        "high inflation",
-        "inflation get",
-        "get 2026",
-        "how high inflation",
-        "high inflation get",
-        "inflation get 2026"
-      ],
-      "entities": [
-        "inflation"
-      ],
-      "entityGroups": [
-        [
-          "inflation",
-          "消费者物价指数",
-          "通货膨胀"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5558",
-          "title": "Above 3%",
-          "yesTokenId": "79916744166369839197765786582291713612992071984955623302738687511174925559349",
-          "noTokenId": "87399889592275773654671747220812256539001701099251636431787016287567794414710"
-        },
-        {
-          "marketId": "5559",
-          "title": "Above 4%",
-          "yesTokenId": "12895798353128560095105504449210608597429925520656217102248670328136123905322",
-          "noTokenId": "12204100580422223007009320642679633998267176930653406894293094946647717621349"
-        },
-        {
-          "marketId": "5560",
-          "title": "Above 5%",
-          "yesTokenId": "100616352286323777653573938150283103496371048107792514046873550630702372075690",
-          "noTokenId": "71947329756965505603972042179307167583937656241668375900772037431005524824010"
-        },
-        {
-          "marketId": "5561",
-          "title": "Above 6%",
-          "yesTokenId": "105007884209438461221154156685108984900438915117027148758022680370631893591698",
-          "noTokenId": "79626673451656491574687195461369648208152122641909424430672277770258391886028"
-        },
-        {
-          "marketId": "5562",
-          "title": "Above 8%",
-          "yesTokenId": "27073124673428361420809755259648420549411986573760266102546716498798980762030",
-          "noTokenId": "63220573527419414075225682766456811537815841598355515617851244825018363938800"
-        },
-        {
-          "marketId": "5563",
-          "title": "Above 10%",
-          "yesTokenId": "3592481879183405959336337898878437865596465493837143040014700410468142347822",
-          "noTokenId": "19057397757428661910492309346486011582031717945911692059372188669804046583646"
-        }
-      ]
-    },
-    "343": {
-      "title": "2026 NCAA Tournament Winner",
-      "url": "https://app.opinion.trade/market/343?ref=opinion_hud",
-      "yesTokenId": "51487974801428759754600996767347383230695473045113381974136474727547069447159",
-      "noTokenId": "53863725005967742130976166204606217651879202117512201859301015334616671236276",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "ncaa",
-        "march madness",
-        "college basketball",
-        "final four",
-        "bracket",
-        "tournament",
-        "2026",
-        "championship",
-        "college hoops",
-        "basketball",
-        "big dance",
-        "sweet 16",
-        "elite eight",
-        "march",
-        "2026 ncaa",
-        "ncaa tournament",
-        "tournament winner",
-        "2026 ncaa tournament",
-        "ncaa tournament winner"
-      ],
-      "entities": [
-        "ncaa tournament"
-      ],
-      "entityGroups": [
-        [
-          "ncaa tournament",
-          "ncaa",
-          "疯狂三月",
-          "ncaa锦标赛"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5544",
-          "title": "Arizona",
-          "yesTokenId": "39704725790333197480483558142799481446090809224304795326494141350031357973939",
-          "noTokenId": "30043855223275499778860903991911972688239812782227853168814769874302800297927"
-        },
-        {
-          "marketId": "5545",
-          "title": "Michigan",
-          "yesTokenId": "68146875087551197745641226283218867061725229113969036837799413167033835585881",
-          "noTokenId": "27824928697014244447212858899348275369133983753959863916634920220249295868983"
-        },
-        {
-          "marketId": "5546",
-          "title": "Duke",
-          "yesTokenId": "115036700076022811098871362580604246660122227250536385869167221143376840689930",
-          "noTokenId": "56511096619313060013332445893053912008022023686787069594008328279557352149394"
-        },
-        {
-          "marketId": "5547",
-          "title": "Houston",
-          "yesTokenId": "83753527580645822336141772260066394842353119887360192632935440228169374755079",
-          "noTokenId": "49068194641833836902739072800043940168887418951968331428004840910454715134471"
-        },
-        {
-          "marketId": "5548",
-          "title": "Connecticut",
-          "yesTokenId": "12465552419309622443368906377478420490497425794306953074150171479993816032315",
-          "noTokenId": "33882793562015899445215475889968580834722216446548127864433934190571482499099"
-        },
-        {
-          "marketId": "5549",
-          "title": "Gonzaga",
-          "yesTokenId": "5527539178673317288045401080564625870384552226605447504622645637039437284206",
-          "noTokenId": "91952520500943744485054927193804327137197501520993870196816367228381062630836"
-        },
-        {
-          "marketId": "5550",
-          "title": "Florida",
-          "yesTokenId": "76309693251429453350967831450743818462461544739749725897059745432989022962122",
-          "noTokenId": "36408037983782872747132258788224731716888586879290207564390356677687778736969"
-        },
-        {
-          "marketId": "5551",
-          "title": "Illinois",
-          "yesTokenId": "107917573048945160684851288667787894225903760363351992716676712526252352225178",
-          "noTokenId": "111416938706186541235397127762134620903546059438914942035725077768145255880286"
-        },
-        {
-          "marketId": "5552",
-          "title": "Iowa State",
-          "yesTokenId": "39291839855999068833422379807909737803729881778306153734358422382686710365683",
-          "noTokenId": "88438806347640272609946597131695794296641378076863871751617767744027829921039"
-        },
-        {
-          "marketId": "5553",
-          "title": "Purdue",
-          "yesTokenId": "60245469694675889069686282963164436452547032215253613877528625090938722681579",
-          "noTokenId": "30690635591128820050565534486210506231084672424688040838002063102891331462247"
-        },
-        {
-          "marketId": "5554",
-          "title": "Michigan State",
-          "yesTokenId": "71446742116268220542544528708123471649258660447559560394652513862320641207254",
-          "noTokenId": "62789133206084627770867312496733242921441825915144683821201286545769337405139"
-        },
-        {
-          "marketId": "5555",
-          "title": "Kansas",
-          "yesTokenId": "531045377511962008662572110278615337992378443293148446686878948055975861942",
-          "noTokenId": "58537953867395387338284594223846598430215593577938853946067534091485926250353"
-        },
-        {
-          "marketId": "5556",
-          "title": "Alabama",
-          "yesTokenId": "51487974801428759754600996767347383230695473045113381974136474727547069447159",
-          "noTokenId": "53863725005967742130976166204606217651879202117512201859301015334616671236276"
-        },
-        {
-          "marketId": "5557",
-          "title": "Texas Tech",
-          "yesTokenId": "61744153805586947708194369090747302476176335876181944631754304414833790852891",
-          "noTokenId": "106950169833232469568060102988101698642957444336890530180842254642578195636472"
-        }
-      ]
-    },
     "5506": {
       "title": "Will Former President of South Korea Yoon Suk Yeol  be sentenced to death by June 30?",
       "url": "https://app.opinion.trade/market/5506?ref=opinion_hud",
@@ -7741,35 +7437,83 @@
         }
       ]
     },
-    "6608": {
-      "title": "BNB Up or Down - Hourly (Feb 13, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6608?ref=opinion_hud",
-      "yesTokenId": "100291844745573012568979992222656762410380901493897797508394746653163912330860",
-      "noTokenId": "91717517719359822695099779977918033354646694416939349160158513220904907196518",
+    "6626": {
+      "title": "CS2 - PGL: MOUZ vs PRV (Feb. 14 6:00AM ET)",
+      "url": "https://app.opinion.trade/market/6626?ref=opinion_hud",
+      "yesTokenId": "99380973871433616100924576142286158830516972614589110617240909116116058375688",
+      "noTokenId": "16781447629475785644329118789667450855151614576953909300509291156817999497737",
       "volume": 0.0,
       "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
+        "yesLabel": "MOUZ",
+        "noLabel": "PRV"
       },
       "type": "binary"
     },
-    "6609": {
-      "title": "BTC Up or Down - Hourly (Feb 13, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6609?ref=opinion_hud",
-      "yesTokenId": "27609508404119199144998142097804348970755215970619142092639942653227853917124",
-      "noTokenId": "3443543075512995160308896485381646417223315847460584329946353265508422205759",
+    "6630": {
+      "title": "CS2 - PGL: MGLZ vs PAIN (Feb. 14 12:00PM ET)",
+      "url": "https://app.opinion.trade/market/6630?ref=opinion_hud",
+      "yesTokenId": "94645853954031871424594140571041581647517896081645075652122064371681137228796",
+      "noTokenId": "84581409600693333875178743352448914364935392362104967723244645174734153663656",
       "volume": 0.0,
       "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
+        "yesLabel": "MGLZ",
+        "noLabel": "PAIN"
       },
       "type": "binary"
     },
-    "6610": {
-      "title": "ETH Up or Down - Hourly (Feb 13, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6610?ref=opinion_hud",
-      "yesTokenId": "94627234189346154989160320822875975943136032890445532140159786769174868690988",
-      "noTokenId": "64357205843126510766655000874929241244521552461018343121992544749767184485163",
+    "6628": {
+      "title": "CS2 - PGL: VIT vs G2 (Feb. 14 9:00AM ET)",
+      "url": "https://app.opinion.trade/market/6628?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6627": {
+      "title": "CS2 - PGL: FAZE vs HERO (Feb. 14 6:00AM ET)",
+      "url": "https://app.opinion.trade/market/6627?ref=opinion_hud",
+      "yesTokenId": "64817060826431005824458329237753684693495488259457924427727211515930422431336",
+      "noTokenId": "18944784552220227214043832449005516007583733628231457704893790756627185573110",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "FAZE",
+        "noLabel": "HERO"
+      },
+      "type": "binary"
+    },
+    "6629": {
+      "title": "CS2 - PGL: FAL vs 3DMAX (Feb. 14 9:00AM ET)",
+      "url": "https://app.opinion.trade/market/6629?ref=opinion_hud",
+      "yesTokenId": "31337785638970685063079592326947084763763275964291890724823063150284984175473",
+      "noTokenId": "13605511550565246229809005868203698629153663321898871175308344830075214439612",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "FAL",
+        "noLabel": "3DMAX"
+      },
+      "type": "binary"
+    },
+    "6625": {
+      "title": "CS2 - PGL: NAVI vs AST (Feb. 14 3:00AM ET)",
+      "url": "https://app.opinion.trade/market/6625?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6624": {
+      "title": "Bitcoin Up or Down on February 14?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/6624?ref=opinion_hud",
+      "yesTokenId": "104934314416878001589812742606393079634818370069008026204599661338908541818409",
+      "noTokenId": "72736299453275505751013508628156346209284405097857437148113828452710659850426",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7812,7 +7556,6 @@
       "3505"
     ],
     "2026": [
-      "343",
       "3448",
       "3449",
       "3508",
@@ -7833,12 +7576,6 @@
     ],
     "2026 milan-cortina winter": [
       "362"
-    ],
-    "2026 ncaa": [
-      "343"
-    ],
-    "2026 ncaa tournament": [
-      "343"
     ],
     "2026 nfl": [
       "3072"
@@ -8225,7 +7962,6 @@
       "3366"
     ],
     "basketball": [
-      "343",
       "368",
       "369",
       "371",
@@ -8256,9 +7992,6 @@
     ],
     "bible prophecy": [
       "2670"
-    ],
-    "big dance": [
-      "343"
     ],
     "binance": [
       "3368",
@@ -8360,7 +8093,6 @@
       "2178"
     ],
     "bracket": [
-      "343",
       "371"
     ],
     "brands feature": [
@@ -8445,7 +8177,6 @@
       "356"
     ],
     "championship": [
-      "343",
       "357",
       "361",
       "368"
@@ -8572,14 +8303,8 @@
     "collapse": [
       "3359"
     ],
-    "college basketball": [
-      "343"
-    ],
     "college football": [
       "3072"
-    ],
-    "college hoops": [
-      "343"
     ],
     "comeback": [
       "2178",
@@ -8614,9 +8339,6 @@
     "consolidation": [
       "2398"
     ],
-    "consumer price index": [
-      "344"
-    ],
     "contest": [
       "373"
     ],
@@ -8632,14 +8354,8 @@
     "cook out apple": [
       "2368"
     ],
-    "core inflation": [
-      "344"
-    ],
     "cortina 2026": [
       "358"
-    ],
-    "cost of living": [
-      "344"
     ],
     "count prediction": [
       "362"
@@ -8655,9 +8371,6 @@
     ],
     "court rules favor": [
       "1546"
-    ],
-    "cpi": [
-      "344"
     ],
     "crash": [
       "332",
@@ -8799,9 +8512,6 @@
     "defi hack": [
       "3360"
     ],
-    "deflation": [
-      "344"
-    ],
     "delegation gold": [
       "362"
     ],
@@ -8936,9 +8646,6 @@
     "economic downturn": [
       "3265"
     ],
-    "economics": [
-      "344"
-    ],
     "ecosystem": [
       "3366"
     ],
@@ -8950,9 +8657,6 @@
     ],
     "elimination": [
       "371"
-    ],
-    "elite eight": [
-      "343"
     ],
     "elon musk": [
       "351"
@@ -9159,9 +8863,6 @@
     "february 2026": [
       "359"
     ],
-    "fed policy": [
-      "344"
-    ],
     "federal circuit": [
       "1546"
     ],
@@ -9173,9 +8874,6 @@
     ],
     "files": [
       "366"
-    ],
-    "final four": [
-      "343"
     ],
     "finals": [
       "356",
@@ -9267,9 +8965,6 @@
     ],
     "genesis": [
       "3365"
-    ],
-    "get 2026": [
-      "344"
     ],
     "ghislaine maxwell": [
       "366",
@@ -9411,12 +9106,6 @@
       "3364",
       "3368"
     ],
-    "high inflation": [
-      "344"
-    ],
-    "high inflation get": [
-      "344"
-    ],
     "high march": [
       "3361"
     ],
@@ -9458,12 +9147,6 @@
       "3222",
       "3223"
     ],
-    "how high": [
-      "344"
-    ],
-    "how high inflation": [
-      "344"
-    ],
     "humanoid robot": [
       "350"
     ],
@@ -9481,9 +9164,6 @@
     ],
     "hyperbeat fdv above": [
       "353"
-    ],
-    "hyperinflation": [
-      "344"
     ],
     "hyperliquid": [
       "3361"
@@ -9527,21 +9207,9 @@
     "industrial metal": [
       "349"
     ],
-    "inflation": [
-      "344"
-    ],
-    "inflation get": [
-      "344"
-    ],
-    "inflation get 2026": [
-      "344"
-    ],
     "inflation hedge": [
       "347",
       "348"
-    ],
-    "inflation rate": [
-      "344"
     ],
     "initial public offering": [
       "3362"
@@ -9829,9 +9497,6 @@
     "manhattan mcc": [
       "367"
     ],
-    "march": [
-      "343"
-    ],
     "march 2026": [
       "3039",
       "3357",
@@ -9847,9 +9512,6 @@
     "march 31st 2026": [
       "3356",
       "3361"
-    ],
-    "march madness": [
-      "343"
     ],
     "market": [
       "328",
@@ -9995,9 +9657,6 @@
     "monad megaeth who": [
       "1721"
     ],
-    "monetary policy": [
-      "344"
-    ],
     "money": [
       "3505",
       "3525"
@@ -10141,18 +9800,6 @@
     "nber": [
       "3265"
     ],
-    "ncaa": [
-      "343"
-    ],
-    "ncaa tournament": [
-      "343"
-    ],
-    "ncaa tournament winner": [
-      "343"
-    ],
-    "ncaa锦标赛": [
-      "343"
-    ],
     "negative growth": [
       "3265"
     ],
@@ -10280,9 +9927,6 @@
     "passenger trips during": [
       "365"
     ],
-    "pce": [
-      "344"
-    ],
     "pedophile": [
       "367"
     ],
@@ -10396,12 +10040,6 @@
     ],
     "price ethereum hit": [
       "333"
-    ],
-    "price index": [
-      "344"
-    ],
-    "price levels": [
-      "344"
     ],
     "price peak": [
       "3364"
@@ -10891,9 +10529,6 @@
     "stablecoin depeg": [
       "3359"
     ],
-    "stagflation": [
-      "344"
-    ],
     "stagnation": [
       "3265"
     ],
@@ -10964,9 +10599,6 @@
     ],
     "swap": [
       "3365"
-    ],
-    "sweet 16": [
-      "343"
     ],
     "system failure": [
       "3357"
@@ -11148,14 +10780,12 @@
       "365"
     ],
     "tournament": [
-      "343",
       "356",
       "357",
       "361",
       "374"
     ],
     "tournament winner": [
-      "343",
       "374"
     ],
     "trade policy": [
@@ -11578,9 +11208,6 @@
     "泰达币": [
       "3359"
     ],
-    "消费者物价指数": [
-      "344"
-    ],
     "爱泼斯坦": [
       "366",
       "367"
@@ -11595,9 +11222,6 @@
       "1546",
       "3055",
       "3062"
-    ],
-    "疯狂三月": [
-      "343"
     ],
     "索拉纳": [
       "334"
@@ -11651,9 +11275,6 @@
     "达斯汀·亨德森": [
       "3224"
     ],
-    "通货膨胀": [
-      "344"
-    ],
     "阿兹特克": [
       "355"
     ],
@@ -11663,7 +11284,6 @@
   },
   "eventIndex": {
     "2026": [
-      "343",
       "363"
     ],
     "2026 chinese": [
@@ -11680,12 +11300,6 @@
     ],
     "2026 milan-cortina winter": [
       "362"
-    ],
-    "2026 ncaa": [
-      "343"
-    ],
-    "2026 ncaa tournament": [
-      "343"
     ],
     "2026 olympics": [
       "358"
@@ -11883,7 +11497,6 @@
       "355"
     ],
     "basketball": [
-      "343",
       "368",
       "369",
       "371",
@@ -11899,9 +11512,6 @@
     ],
     "bezos": [
       "328"
-    ],
-    "big dance": [
-      "343"
     ],
     "bipedal robot": [
       "350"
@@ -11930,7 +11540,6 @@
       "350"
     ],
     "bracket": [
-      "343",
       "371"
     ],
     "brands feature": [
@@ -11967,7 +11576,6 @@
       "356"
     ],
     "championship": [
-      "343",
       "357",
       "361",
       "368"
@@ -12039,12 +11647,6 @@
     "coin": [
       "334"
     ],
-    "college basketball": [
-      "343"
-    ],
-    "college hoops": [
-      "343"
-    ],
     "commodity": [
       "346",
       "347",
@@ -12068,32 +11670,20 @@
       "368",
       "369"
     ],
-    "consumer price index": [
-      "344"
-    ],
     "contest": [
       "373"
     ],
     "contest winner": [
       "373"
     ],
-    "core inflation": [
-      "344"
-    ],
     "cortina 2026": [
       "358"
-    ],
-    "cost of living": [
-      "344"
     ],
     "count prediction": [
       "362"
     ],
     "court records": [
       "366"
-    ],
-    "cpi": [
-      "344"
     ],
     "crash": [
       "332"
@@ -12158,9 +11748,6 @@
       "354",
       "355"
     ],
-    "deflation": [
-      "344"
-    ],
     "delegation gold": [
       "362"
     ],
@@ -12214,17 +11801,11 @@
     "ecf": [
       "368"
     ],
-    "economics": [
-      "344"
-    ],
     "electric vehicle": [
       "351"
     ],
     "elimination": [
       "371"
-    ],
-    "elite eight": [
-      "343"
     ],
     "elon musk": [
       "351"
@@ -12334,9 +11915,6 @@
     "february 2026": [
       "359"
     ],
-    "fed policy": [
-      "344"
-    ],
     "festival gala": [
       "350"
     ],
@@ -12345,9 +11923,6 @@
     ],
     "files": [
       "366"
-    ],
-    "final four": [
-      "343"
     ],
     "finals": [
       "356",
@@ -12395,9 +11970,6 @@
     ],
     "gen.g": [
       "356"
-    ],
-    "get 2026": [
-      "344"
     ],
     "ghislaine maxwell": [
       "366",
@@ -12477,12 +12049,6 @@
       "348",
       "349"
     ],
-    "high inflation": [
-      "344"
-    ],
-    "high inflation get": [
-      "344"
-    ],
     "hit february": [
       "332",
       "333",
@@ -12494,12 +12060,6 @@
     "hoops": [
       "369",
       "371"
-    ],
-    "how high": [
-      "344"
-    ],
-    "how high inflation": [
-      "344"
     ],
     "humanoid robot": [
       "350"
@@ -12513,27 +12073,12 @@
     "hyperbeat fdv above": [
       "353"
     ],
-    "hyperinflation": [
-      "344"
-    ],
     "industrial metal": [
       "349"
-    ],
-    "inflation": [
-      "344"
-    ],
-    "inflation get": [
-      "344"
-    ],
-    "inflation get 2026": [
-      "344"
     ],
     "inflation hedge": [
       "347",
       "348"
-    ],
-    "inflation rate": [
-      "344"
     ],
     "investing": [
       "348",
@@ -12681,12 +12226,6 @@
     "manhattan mcc": [
       "367"
     ],
-    "march": [
-      "343"
-    ],
-    "march madness": [
-      "343"
-    ],
     "market": [
       "328",
       "329",
@@ -12757,9 +12296,6 @@
     ],
     "model y": [
       "351"
-    ],
-    "monetary policy": [
-      "344"
     ],
     "most gold": [
       "358"
@@ -12853,18 +12389,6 @@
       "374",
       "375"
     ],
-    "ncaa": [
-      "343"
-    ],
-    "ncaa tournament": [
-      "343"
-    ],
-    "ncaa tournament winner": [
-      "343"
-    ],
-    "ncaa锦标赛": [
-      "343"
-    ],
     "noir": [
       "355"
     ],
@@ -12913,9 +12437,6 @@
     ],
     "passenger trips during": [
       "365"
-    ],
-    "pce": [
-      "344"
     ],
     "pedophile": [
       "367"
@@ -12996,12 +12517,6 @@
     ],
     "price ethereum hit": [
       "333"
-    ],
-    "price index": [
-      "344"
-    ],
-    "price levels": [
-      "344"
     ],
     "price prediction": [
       "334",
@@ -13207,9 +12722,6 @@
     "spring split": [
       "361"
     ],
-    "stagflation": [
-      "344"
-    ],
     "standings": [
       "371"
     ],
@@ -13226,9 +12738,6 @@
     ],
     "support": [
       "332"
-    ],
-    "sweet 16": [
-      "343"
     ],
     "t1": [
       "356"
@@ -13305,14 +12814,12 @@
       "365"
     ],
     "tournament": [
-      "343",
       "356",
       "357",
       "361",
       "374"
     ],
     "tournament winner": [
-      "343",
       "374"
     ],
     "trader": [
@@ -13544,18 +13051,12 @@
     "比特币": [
       "332"
     ],
-    "消费者物价指数": [
-      "344"
-    ],
     "爱泼斯坦": [
       "366",
       "367"
     ],
     "特斯拉": [
       "351"
-    ],
-    "疯狂三月": [
-      "343"
     ],
     "索拉纳": [
       "334"
@@ -13581,9 +13082,6 @@
     ],
     "英雄联盟职业联赛": [
       "361"
-    ],
-    "通货膨胀": [
-      "344"
     ],
     "阿兹特克": [
       "355"
