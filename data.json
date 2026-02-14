@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-14 01:01:29 UTC+8",
+    "generatedAt": "2026-02-14 10:48:59 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 238,
-      "markets": 154,
+      "kept": 229,
+      "markets": 149,
       "keywords": 1111,
       "events": {
-        "events": 33
+        "events": 32
       },
       "skipped": {
         "statusEnum": 1,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 749,
+        "cutoff_expired": 758,
         "cutoff_zero_kept": 41,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 33,
+        "reused": 32,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -6703,18 +6703,6 @@
       },
       "type": "binary"
     },
-    "6482": {
-      "title": "LCS: SEN vs DSG (Feb. 14 4:00PM ET)",
-      "url": "https://app.opinion.trade/market/6482?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "375": {
       "title": "NBA All-Star: All-Star MVP Winner?",
       "url": "https://app.opinion.trade/market/375?ref=opinion_hud",
@@ -7437,83 +7425,35 @@
         }
       ]
     },
-    "6626": {
-      "title": "CS2 - PGL: MOUZ vs PRV (Feb. 14 6:00AM ET)",
-      "url": "https://app.opinion.trade/market/6626?ref=opinion_hud",
-      "yesTokenId": "99380973871433616100924576142286158830516972614589110617240909116116058375688",
-      "noTokenId": "16781447629475785644329118789667450855151614576953909300509291156817999497737",
+    "6677": {
+      "title": "ETH Up or Down - Hourly (Feb 14, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6677?ref=opinion_hud",
+      "yesTokenId": "43277626417849485705801194635663944930980739445080348561678796262073672253064",
+      "noTokenId": "7166983373370646273931130901744389547754260730317648830059509539317129719859",
       "volume": 0.0,
       "labels": {
-        "yesLabel": "MOUZ",
-        "noLabel": "PRV"
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     },
-    "6630": {
-      "title": "CS2 - PGL: MGLZ vs PAIN (Feb. 14 12:00PM ET)",
-      "url": "https://app.opinion.trade/market/6630?ref=opinion_hud",
-      "yesTokenId": "94645853954031871424594140571041581647517896081645075652122064371681137228796",
-      "noTokenId": "84581409600693333875178743352448914364935392362104967723244645174734153663656",
+    "6675": {
+      "title": "BNB Up or Down - Hourly (Feb 14, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6675?ref=opinion_hud",
+      "yesTokenId": "81887320489094092243678750584359495343311119365286710854556673610473195710513",
+      "noTokenId": "24447418680785659934549569441202340206890678922076841971112284866141374189552",
       "volume": 0.0,
       "labels": {
-        "yesLabel": "MGLZ",
-        "noLabel": "PAIN"
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     },
-    "6628": {
-      "title": "CS2 - PGL: VIT vs G2 (Feb. 14 9:00AM ET)",
-      "url": "https://app.opinion.trade/market/6628?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "6627": {
-      "title": "CS2 - PGL: FAZE vs HERO (Feb. 14 6:00AM ET)",
-      "url": "https://app.opinion.trade/market/6627?ref=opinion_hud",
-      "yesTokenId": "64817060826431005824458329237753684693495488259457924427727211515930422431336",
-      "noTokenId": "18944784552220227214043832449005516007583733628231457704893790756627185573110",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "FAZE",
-        "noLabel": "HERO"
-      },
-      "type": "binary"
-    },
-    "6629": {
-      "title": "CS2 - PGL: FAL vs 3DMAX (Feb. 14 9:00AM ET)",
-      "url": "https://app.opinion.trade/market/6629?ref=opinion_hud",
-      "yesTokenId": "31337785638970685063079592326947084763763275964291890724823063150284984175473",
-      "noTokenId": "13605511550565246229809005868203698629153663321898871175308344830075214439612",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "FAL",
-        "noLabel": "3DMAX"
-      },
-      "type": "binary"
-    },
-    "6625": {
-      "title": "CS2 - PGL: NAVI vs AST (Feb. 14 3:00AM ET)",
-      "url": "https://app.opinion.trade/market/6625?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "6624": {
-      "title": "Bitcoin Up or Down on February 14?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/6624?ref=opinion_hud",
-      "yesTokenId": "104934314416878001589812742606393079634818370069008026204599661338908541818409",
-      "noTokenId": "72736299453275505751013508628156346209284405097857437148113828452710659850426",
+    "6676": {
+      "title": "BTC Up or Down - Hourly (Feb 14, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6676?ref=opinion_hud",
+      "yesTokenId": "112861247934527710419144780028083169691295365352983596990565961848600045938591",
+      "noTokenId": "54104078609211073839551579081825855532107069608188635330601411466849047447857",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
