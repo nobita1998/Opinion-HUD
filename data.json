@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-15 16:48:23 UTC+8",
+    "generatedAt": "2026-02-16 00:46:18 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 261,
-      "markets": 181,
-      "keywords": 1172,
+      "kept": 253,
+      "markets": 183,
+      "keywords": 1156,
       "events": {
-        "events": 31
+        "events": 30
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 727,
+        "cutoff_expired": 735,
         "cutoff_zero_kept": 39,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 28,
+        "reused": 30,
         "regenerated_empty_entitygroups": 0,
-        "calls": 3,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 3,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -177,44 +177,6 @@
       "sig": "a305fb43",
       "sigFull": "a305fb43",
       "sigCore": "9d519472",
-      "reused": false
-    },
-    "351": {
-      "title": "Tesla",
-      "marketIds": [
-        "351"
-      ],
-      "bestMarketId": "351",
-      "bestLabels": null,
-      "keywords": [
-        "tesla",
-        "tsla",
-        "elon musk",
-        "ev",
-        "electric vehicle",
-        "cybertruck",
-        "model 3",
-        "model y",
-        "model s",
-        "model x",
-        "autopilot",
-        "fsd",
-        "full self-driving",
-        "gigafactory",
-        "musk"
-      ],
-      "entities": [
-        "tesla"
-      ],
-      "entityGroups": [
-        [
-          "tesla",
-          "特斯拉"
-        ]
-      ],
-      "sig": "7651d044",
-      "sigFull": "7651d044",
-      "sigCore": "45ff4eb3",
       "reused": false
     },
     "353": {
@@ -3828,8 +3790,8 @@
     "332": {
       "title": "What price will Bitcoin hit in February?",
       "url": "https://app.opinion.trade/market/332?ref=opinion_hud",
-      "yesTokenId": "61079705424743329643216053265521264249405831200756761906833466133660569743020",
-      "noTokenId": "66675074870650409542813120586393761332268016717882289621371212167429081340219",
+      "yesTokenId": "50167003305318656305524777097566490400803245466121731674915121844002983347267",
+      "noTokenId": "107186558187101957001028388266419184827864933834237097454447162082114258424085",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -3954,8 +3916,8 @@
     "333": {
       "title": "What price will Ethereum hit in February?",
       "url": "https://app.opinion.trade/market/333?ref=opinion_hud",
-      "yesTokenId": "22825257165491651729930339734684651603201974138540445667170795448365410111025",
-      "noTokenId": "76812619512084878488346097273322507947758715573054660221116801141653055216911",
+      "yesTokenId": "27208039019414655192247058176535699038183312141155510272834140300498185384758",
+      "noTokenId": "26943031395627313124819062431410102891722749545334611678019277177514989707809",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4075,8 +4037,8 @@
     "334": {
       "title": "What price will Solana hit in February?",
       "url": "https://app.opinion.trade/market/334?ref=opinion_hud",
-      "yesTokenId": "34490169568886906508626535364017992296568292385067995846310163283402988421840",
-      "noTokenId": "56673868654336229252502010241414521576035380448863828174597286078460038920302",
+      "yesTokenId": "77693789511734887107970253288527630764489241335380964963291712790860209485225",
+      "noTokenId": "44221074027480167249256386594837228942940661025164921256675484307608749366326",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4353,88 +4315,6 @@
         "noLabel": ""
       },
       "type": "binary"
-    },
-    "351": {
-      "title": "Tesla",
-      "url": "https://app.opinion.trade/market/351?ref=opinion_hud",
-      "yesTokenId": "39203832898986657756129858655089445489989061624882149204796746352790846250549",
-      "noTokenId": "86231526012037159960039883099105919681123843644145212688394430499995308975292",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "tesla",
-        "tsla",
-        "elon musk",
-        "ev",
-        "electric vehicle",
-        "cybertruck",
-        "model 3",
-        "model y",
-        "model s",
-        "model x",
-        "autopilot",
-        "fsd",
-        "full self-driving",
-        "gigafactory",
-        "musk"
-      ],
-      "entities": [
-        "tesla"
-      ],
-      "entityGroups": [
-        [
-          "tesla",
-          "特斯拉"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5804",
-          "title": "NVIDIA",
-          "yesTokenId": "51012459629263953302916208356356383815289425912156488191842103085187840521892",
-          "noTokenId": "115324913363710514204082168316697052178239947885080435535453995857734931067820"
-        },
-        {
-          "marketId": "5805",
-          "title": "Alphabet",
-          "yesTokenId": "39203832898986657756129858655089445489989061624882149204796746352790846250549",
-          "noTokenId": "86231526012037159960039883099105919681123843644145212688394430499995308975292"
-        },
-        {
-          "marketId": "5806",
-          "title": "Apple",
-          "yesTokenId": "42907578258540462875570307294304555938456168127171912202486448336593264016828",
-          "noTokenId": "109543271609344406388436899417428919951701308675201435316229463463945426709567"
-        },
-        {
-          "marketId": "5807",
-          "title": "Microsoft",
-          "yesTokenId": "81314638306925227851160095607844948095838136776526965900809515079519882989191",
-          "noTokenId": "46470415377275507932294009624917037041493304668389058022676091225500534043289"
-        },
-        {
-          "marketId": "5808",
-          "title": "Tesla",
-          "yesTokenId": "80522771330564418705472340927829976543235748188309491761004861532207656186527",
-          "noTokenId": "4468875616782059502924637916972054660036574173585174618905403435301946068498"
-        },
-        {
-          "marketId": "5809",
-          "title": "Amazon",
-          "yesTokenId": "21643685721048017755694267829129071072275844976566737896073943804419301510140",
-          "noTokenId": "2743777560911271080262087204115203147038137156509063129083416749167965323444"
-        },
-        {
-          "marketId": "5810",
-          "title": "Saudi Aramco",
-          "yesTokenId": "58174409188798919467009234177125023785692802542845136423015958505168213074721",
-          "noTokenId": "79723905627006208623332046106321739488539504126944495684899038281692534061519"
-        }
-      ]
     },
     "353": {
       "title": "Hyperbeat FDV above ... one day after launch?·",
@@ -7407,42 +7287,6 @@
       },
       "type": "binary"
     },
-    "6860": {
-      "title": "BTC Up or Down - Hourly (Feb 15, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6860?ref=opinion_hud",
-      "yesTokenId": "21360816258622358574181624552358584387843543222307754491241840907185394948560",
-      "noTokenId": "16506917235636369870940238719771229424390787851669381108550051955096524405639",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6859": {
-      "title": "BNB Up or Down - Hourly (Feb 15, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6859?ref=opinion_hud",
-      "yesTokenId": "68885370595589738822841749656991340262617484723817686550859422395589323730138",
-      "noTokenId": "80432197801392513725416669044018741911301365471179803933641021190680139381148",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6861": {
-      "title": "ETH Up or Down - Hourly (Feb 15, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6861?ref=opinion_hud",
-      "yesTokenId": "37754845003689693627726984332623442681174871578033704416350853479720953174402",
-      "noTokenId": "30298510971923718962276488386228354393941546434945300816362313839579355287853",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "6880": {
       "title": "NBA: Nuggets vs Trail Blazers (Feb. 20 10:00PM ET)",
       "url": "https://app.opinion.trade/market/6880?ref=opinion_hud",
@@ -8058,6 +7902,78 @@
           "noTokenId": "6668681434638864028299375859944752810417493602779377301540362017963375265391"
         }
       ]
+    },
+    "6900": {
+      "title": "BNB Up or Down - Hourly (Feb 15, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6900?ref=opinion_hud",
+      "yesTokenId": "91983394188189556951083350470138352074011294308901749807198736471494310954314",
+      "noTokenId": "107147069871528476322967203757000462206655788828320092340320771241530768264539",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6901": {
+      "title": "BTC Up or Down - Hourly (Feb 15, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6901?ref=opinion_hud",
+      "yesTokenId": "74594947009372926305073306498645019495038671150569850678570730974728813201792",
+      "noTokenId": "96973192073119809675430786404067072533546003587880596395888977804568016107871",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6902": {
+      "title": "ETH Up or Down - Hourly (Feb 15, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6902?ref=opinion_hud",
+      "yesTokenId": "8251091118769633828411413965696224788482773253194580128520517419334202283160",
+      "noTokenId": "41969597019701865187023608199038900050596473433309253412428169055817844244995",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6911": {
+      "title": "Valorant - Americas: MIBR vs NRG (Feb. 15 5:00PM ET)",
+      "url": "https://app.opinion.trade/market/6911?ref=opinion_hud",
+      "yesTokenId": "104847869876577865935114013378253627103629018174868115464335592991188832857376",
+      "noTokenId": "32756932960217169637644591764629577113509583252238652113412954000934128489318",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "MIBR",
+        "noLabel": "NRG"
+      },
+      "type": "binary"
+    },
+    "6910": {
+      "title": "CBLOL: LOUD vs RED Canids (Feb. 22 11:00AM ET)",
+      "url": "https://app.opinion.trade/market/6910?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "6909": {
+      "title": "LCK: DNF vs DRX (Feb. 19 3:00AM ET)",
+      "url": "https://app.opinion.trade/market/6909?ref=opinion_hud",
+      "yesTokenId": "109906018167552417489546013870446403680592845129998451349515486920878101798153",
+      "noTokenId": "22118735213056161345353482922700406132266681047310036155858616944413995867104",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "DNF",
+        "noLabel": "DRX"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -8469,9 +8385,6 @@
     ],
     "attack": [
       "3039"
-    ],
-    "autopilot": [
-      "351"
     ],
     "back": [
       "1856"
@@ -9001,9 +8914,6 @@
     "customs duties": [
       "1546"
     ],
-    "cybertruck": [
-      "351"
-    ],
     "cz": [
       "3369"
     ],
@@ -9215,9 +9125,6 @@
       "380",
       "382"
     ],
-    "electric vehicle": [
-      "351"
-    ],
     "elephant": [
       "381"
     ],
@@ -9226,9 +9133,6 @@
     ],
     "elimination": [
       "371"
-    ],
-    "elon musk": [
-      "351"
     ],
     "emea": [
       "357"
@@ -9336,9 +9240,6 @@
     ],
     "europe": [
       "357"
-    ],
-    "ev": [
-      "351"
     ],
     "evidence": [
       "366"
@@ -9487,17 +9388,11 @@
     "founder": [
       "3369"
     ],
-    "fsd": [
-      "351"
-    ],
     "fugitive": [
       "1856"
     ],
     "full bloom": [
       "379"
-    ],
-    "full self-driving": [
-      "351"
     ],
     "fully diluted valuation": [
       "352",
@@ -9550,9 +9445,6 @@
     "ghislaine maxwell": [
       "366",
       "367"
-    ],
-    "gigafactory": [
-      "351"
     ],
     "girl group": [
       "2178"
@@ -10228,18 +10120,6 @@
     "missile": [
       "3039"
     ],
-    "model 3": [
-      "351"
-    ],
-    "model s": [
-      "351"
-    ],
-    "model x": [
-      "351"
-    ],
-    "model y": [
-      "351"
-    ],
     "monad": [
       "1721"
     ],
@@ -10309,9 +10189,6 @@
     ],
     "murder": [
       "367"
-    ],
-    "musk": [
-      "351"
     ],
     "mvp": [
       "374",
@@ -11300,9 +11177,6 @@
     "temperature anomaly": [
       "378"
     ],
-    "tesla": [
-      "351"
-    ],
     "tessa": [
       "3158"
     ],
@@ -11509,9 +11383,6 @@
     ],
     "trump tariffs": [
       "1546"
-    ],
-    "tsla": [
-      "351"
     ],
     "tv show": [
       "3221",
@@ -11888,9 +11759,6 @@
     "特大地震": [
       "3356"
     ],
-    "特斯拉": [
-      "351"
-    ],
     "特朗普": [
       "1546",
       "3055",
@@ -12167,9 +12035,6 @@
     "athletes": [
       "362"
     ],
-    "autopilot": [
-      "351"
-    ],
     "basketball": [
       "368",
       "369",
@@ -12409,9 +12274,6 @@
     "cupertino": [
       "324"
     ],
-    "cybertruck": [
-      "351"
-    ],
     "day after": [
       "352",
       "353",
@@ -12505,17 +12367,11 @@
       "380",
       "382"
     ],
-    "electric vehicle": [
-      "351"
-    ],
     "elephant": [
       "381"
     ],
     "elimination": [
       "371"
-    ],
-    "elon musk": [
-      "351"
     ],
     "emea": [
       "357"
@@ -12575,9 +12431,6 @@
     ],
     "europe": [
       "357"
-    ],
-    "ev": [
-      "351"
     ],
     "evidence": [
       "366"
@@ -12656,14 +12509,8 @@
     "foul play confirmed": [
       "367"
     ],
-    "fsd": [
-      "351"
-    ],
     "full bloom": [
       "379"
-    ],
-    "full self-driving": [
-      "351"
     ],
     "fully diluted valuation": [
       "352",
@@ -12691,9 +12538,6 @@
     "ghislaine maxwell": [
       "366",
       "367"
-    ],
-    "gigafactory": [
-      "351"
     ],
     "global temps": [
       "378"
@@ -13011,18 +12855,6 @@
     "minister 2026": [
       "382"
     ],
-    "model 3": [
-      "351"
-    ],
-    "model s": [
-      "351"
-    ],
-    "model x": [
-      "351"
-    ],
-    "model y": [
-      "351"
-    ],
     "most gold": [
       "358"
     ],
@@ -13052,9 +12884,6 @@
     ],
     "murder": [
       "367"
-    ],
-    "musk": [
-      "351"
     ],
     "mvp": [
       "374",
@@ -13546,9 +13375,6 @@
     "temperature anomaly": [
       "378"
     ],
-    "tesla": [
-      "351"
-    ],
     "tge": [
       "352",
       "353",
@@ -13645,9 +13471,6 @@
     ],
     "trips during china": [
       "365"
-    ],
-    "tsla": [
-      "351"
     ],
     "uk": [
       "382"
@@ -13867,9 +13690,6 @@
     "爱泼斯坦": [
       "366",
       "367"
-    ],
-    "特斯拉": [
-      "351"
     ],
     "索拉纳": [
       "334"
