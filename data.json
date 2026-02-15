@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-15 00:45:18 UTC+8",
+    "generatedAt": "2026-02-15 11:18:41 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 263,
-      "markets": 165,
+      "kept": 252,
+      "markets": 162,
       "keywords": 1202,
       "events": {
-        "events": 35
+        "events": 33
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 725,
+        "cutoff_expired": 736,
         "cutoff_zero_kept": 45,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 31,
+        "reused": 33,
         "regenerated_empty_entitygroups": 0,
-        "calls": 4,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 4,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -6777,18 +6777,6 @@
         }
       ]
     },
-    "6483": {
-      "title": "LCS: C9 vs FLY (Feb. 15 4:00PM ET)",
-      "url": "https://app.opinion.trade/market/6483?ref=opinion_hud",
-      "yesTokenId": "43646162779042161042907554648802682900839164783836671584448584257031279418711",
-      "noTokenId": "64461260805466295154383861402900494312223966715983302405464474522607294593645",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "C9",
-        "noLabel": "FLY"
-      },
-      "type": "binary"
-    },
     "375": {
       "title": "NBA All-Star: All-Star MVP Winner?",
       "url": "https://app.opinion.trade/market/375?ref=opinion_hud",
@@ -7511,42 +7499,6 @@
         }
       ]
     },
-    "6724": {
-      "title": "ETH Up or Down - Hourly (Feb 14, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6724?ref=opinion_hud",
-      "yesTokenId": "21675164482615794752797389812040071418225253457430164838868942786658452543745",
-      "noTokenId": "7976807005270501907596957981757192752443767309579169741530704488953573423537",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6723": {
-      "title": "BTC Up or Down - Hourly (Feb 14, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6723?ref=opinion_hud",
-      "yesTokenId": "115278577957610762684452668654292266136162678766512788267942781035195597529638",
-      "noTokenId": "103641506816916478936722897374798972358631160445961555028999123954291534583809",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6722": {
-      "title": "BNB Up or Down - Hourly (Feb 14, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6722?ref=opinion_hud",
-      "yesTokenId": "114275588046445878652818101008698096408913123524328287376339752772694424861796",
-      "noTokenId": "686452486668402304427072029263075493856832958850767672128323963208196679452",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "379": {
       "title": "2026 Tokyo (JMA) Cherry Blossoms Full Bloom Date",
       "url": "https://app.opinion.trade/market/379?ref=opinion_hud",
@@ -8035,23 +7987,35 @@
       },
       "type": "binary"
     },
-    "6731": {
-      "title": "LCK: T1 vs BFX (Feb. 15 3:00AM ET)",
-      "url": "https://app.opinion.trade/market/6731?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
+    "6793": {
+      "title": "BTC Up or Down - Hourly (Feb 15, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6793?ref=opinion_hud",
+      "yesTokenId": "75431155532485568650406835870489320378338971066890195121228503964710686007114",
+      "noTokenId": "110599802416520232543221142824216929594098877520444756766666803292621474293482",
       "volume": 0.0,
       "labels": {
-        "yesLabel": "",
-        "noLabel": ""
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     },
-    "6708": {
-      "title": "Bitcoin Up or Down on February 15?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/6708?ref=opinion_hud",
-      "yesTokenId": "22969330391999668052872063553196671405015201195677061777632457055416488796881",
-      "noTokenId": "25526736328963038540258070233411941928250382907180401838959753623007381680349",
+    "6794": {
+      "title": "ETH Up or Down - Hourly (Feb 15, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6794?ref=opinion_hud",
+      "yesTokenId": "81016525542702351850704486418921897559086558514955390809324549742601710960899",
+      "noTokenId": "3213482695516061998844817643617222856412861653785899858843012738127097140698",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6792": {
+      "title": "BNB Up or Down - Hourly (Feb 15, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6792?ref=opinion_hud",
+      "yesTokenId": "50929474007216578638954516506918960691508180182877780341589183367124636319297",
+      "noTokenId": "108650777734581914258124306891391651504394169393879301240233374245780391925448",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
