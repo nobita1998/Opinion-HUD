@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-16 00:46:18 UTC+8",
+    "generatedAt": "2026-02-16 11:15:40 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 253,
-      "markets": 183,
+      "kept": 245,
+      "markets": 179,
       "keywords": 1156,
       "events": {
         "events": 30
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 735,
+        "cutoff_expired": 743,
         "cutoff_zero_kept": 39,
         "resolved": 0,
         "missing_id": 0,
@@ -5163,8 +5163,8 @@
     "361": {
       "title": "LPL 2026 Split 1 Playoffs: Winner",
       "url": "https://app.opinion.trade/market/361?ref=opinion_hud",
-      "yesTokenId": "95558281157778290391467613299018854776947490345829382273956037090646692526735",
-      "noTokenId": "26615216084157895010859353251924950363095573575255146857522057329716968478936",
+      "yesTokenId": "44123847392062823878988507081304114815468662610893520007119311554268202943149",
+      "noTokenId": "54857739766791164418480118150345830975851310656404368913150622729063831088517",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5251,16 +5251,16 @@
           "noTokenId": "42285226220541359591676426362546664259146768436282007516827043567345425198299"
         },
         {
-          "marketId": "6156",
-          "title": "LNG Esports",
-          "yesTokenId": "95217871061066230198917714871330973362151652539888981699371000601052373208492",
-          "noTokenId": "9127935714590158527264596785550184702444464551644713762499657208686809635111"
-        },
-        {
           "marketId": "6157",
           "title": "Ninjas in Pyjamas",
           "yesTokenId": "44123847392062823878988507081304114815468662610893520007119311554268202943149",
           "noTokenId": "54857739766791164418480118150345830975851310656404368913150622729063831088517"
+        },
+        {
+          "marketId": "6156",
+          "title": "LNG Esports",
+          "yesTokenId": "95217871061066230198917714871330973362151652539888981699371000601052373208492",
+          "noTokenId": "9127935714590158527264596785550184702444464551644713762499657208686809635111"
         },
         {
           "marketId": "6158",
@@ -7203,18 +7203,6 @@
       },
       "type": "binary"
     },
-    "6729": {
-      "title": "LEC: VIT vs MKOI (Feb. 16 12:30PM ET)",
-      "url": "https://app.opinion.trade/market/6729?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "6736": {
       "title": "Human moon landing in 2026?",
       "url": "https://app.opinion.trade/market/6736?ref=opinion_hud",
@@ -7248,18 +7236,6 @@
       "labels": {
         "yesLabel": "TH",
         "noLabel": "G2"
-      },
-      "type": "binary"
-    },
-    "6728": {
-      "title": "LEC: NAVI vs FNC (Feb. 16 10:45AM ET)",
-      "url": "https://app.opinion.trade/market/6728?ref=opinion_hud",
-      "yesTokenId": "13553346123939782042513678177317825200461701305093406803106399748406856920179",
-      "noTokenId": "35512921378395060089261724062304119993160045884541884843634391550680206280905",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "NAVI",
-        "noLabel": "FNC"
       },
       "type": "binary"
     },
@@ -7476,18 +7452,6 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "6847": {
-      "title": "Bitcoin Up or Down on February 16?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/6847?ref=opinion_hud",
-      "yesTokenId": "12933785536749374962219852078431937502610456722114609464000471142872661066251",
-      "noTokenId": "49058410278275134396779599842452418483997265095309335357392757642152834742890",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
@@ -7903,54 +7867,6 @@
         }
       ]
     },
-    "6900": {
-      "title": "BNB Up or Down - Hourly (Feb 15, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6900?ref=opinion_hud",
-      "yesTokenId": "91983394188189556951083350470138352074011294308901749807198736471494310954314",
-      "noTokenId": "107147069871528476322967203757000462206655788828320092340320771241530768264539",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6901": {
-      "title": "BTC Up or Down - Hourly (Feb 15, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6901?ref=opinion_hud",
-      "yesTokenId": "74594947009372926305073306498645019495038671150569850678570730974728813201792",
-      "noTokenId": "96973192073119809675430786404067072533546003587880596395888977804568016107871",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6902": {
-      "title": "ETH Up or Down - Hourly (Feb 15, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6902?ref=opinion_hud",
-      "yesTokenId": "8251091118769633828411413965696224788482773253194580128520517419334202283160",
-      "noTokenId": "41969597019701865187023608199038900050596473433309253412428169055817844244995",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6911": {
-      "title": "Valorant - Americas: MIBR vs NRG (Feb. 15 5:00PM ET)",
-      "url": "https://app.opinion.trade/market/6911?ref=opinion_hud",
-      "yesTokenId": "104847869876577865935114013378253627103629018174868115464335592991188832857376",
-      "noTokenId": "32756932960217169637644591764629577113509583252238652113412954000934128489318",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "MIBR",
-        "noLabel": "NRG"
-      },
-      "type": "binary"
-    },
     "6910": {
       "title": "CBLOL: LOUD vs RED Canids (Feb. 22 11:00AM ET)",
       "url": "https://app.opinion.trade/market/6910?ref=opinion_hud",
@@ -7972,6 +7888,42 @@
       "labels": {
         "yesLabel": "DNF",
         "noLabel": "DRX"
+      },
+      "type": "binary"
+    },
+    "6938": {
+      "title": "BTC Up or Down - Hourly (Feb 16, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6938?ref=opinion_hud",
+      "yesTokenId": "49730756941183013263796456829553352172535875269795165194406187262639926845042",
+      "noTokenId": "64047524930167270650009599157393993363173836610079720982770140947284594504440",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6937": {
+      "title": "BNB Up or Down - Hourly (Feb 16, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6937?ref=opinion_hud",
+      "yesTokenId": "105745241461048440642848458874906219017937687662454538845858034355655327156167",
+      "noTokenId": "33027325976416103872650909204587740850143976834091261004040372996363317829139",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "6939": {
+      "title": "ETH Up or Down - Hourly (Feb 16, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/6939?ref=opinion_hud",
+      "yesTokenId": "48165869802647635030114522473179723233646710453442250095876162157849211184445",
+      "noTokenId": "91281045593709127750126118394157308413175893457989078763297828968020945225129",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
