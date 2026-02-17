@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-17 00:58:36 UTC+8",
+    "generatedAt": "2026-02-17 10:54:17 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 251,
-      "markets": 179,
+      "kept": 247,
+      "markets": 175,
       "keywords": 1106,
       "events": {
         "events": 28
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 737,
+        "cutoff_expired": 741,
         "cutoff_zero_kept": 39,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 27,
+        "reused": 28,
         "regenerated_empty_entitygroups": 0,
-        "calls": 1,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 1,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -6460,30 +6460,6 @@
       },
       "type": "binary"
     },
-    "6732": {
-      "title": "LEC: KC vs GX (Feb. 17 12:30PM ET)",
-      "url": "https://app.opinion.trade/market/6732?ref=opinion_hud",
-      "yesTokenId": "71325262072576192371087843737636773685339770794911366583153217159836776739028",
-      "noTokenId": "65069481955091481263266365762627190110628420853509357779712780896111781265044",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "KC",
-        "noLabel": "GX"
-      },
-      "type": "binary"
-    },
-    "6733": {
-      "title": "LEC: TH vs G2 (Feb.17 10:45AM ET)",
-      "url": "https://app.opinion.trade/market/6733?ref=opinion_hud",
-      "yesTokenId": "8374920976679816260085180551832243422676905105815726508884055899240861411894",
-      "noTokenId": "90944900166131551130328358273029113705572868698239714944757044128579362220767",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "TH",
-        "noLabel": "G2"
-      },
-      "type": "binary"
-    },
     "6735": {
       "title": "LPL: BLG vs NIP (Feb. 25 4:00AM ET)",
       "url": "https://app.opinion.trade/market/6735?ref=opinion_hud",
@@ -7136,42 +7112,6 @@
       },
       "type": "binary"
     },
-    "6993": {
-      "title": "ETH Up or Down - Hourly (Feb 16, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6993?ref=opinion_hud",
-      "yesTokenId": "99838130869456802002041674743340456746630077384374211577953916162055397153151",
-      "noTokenId": "41941183087863826903715306150390207263826024295056517288905997039199887543457",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6991": {
-      "title": "BNB Up or Down - Hourly (Feb 16, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6991?ref=opinion_hud",
-      "yesTokenId": "1020654779007056517514205791182790304068069535381538585868600922434145006876",
-      "noTokenId": "101478545689025277182379231499852624558891330708165579240578993202151077574738",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "6992": {
-      "title": "BTC Up or Down - Hourly (Feb 16, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/6992?ref=opinion_hud",
-      "yesTokenId": "729591725375631657130334999558665253107672210827107926223279539211347033663",
-      "noTokenId": "95736645011183565327226869829920787371521016832300781968325291546993343906763",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "383": {
       "title": "Next Prime Minister of Thailand",
       "url": "https://app.opinion.trade/market/383?ref=opinion_hud",
@@ -7273,30 +7213,6 @@
       },
       "type": "binary"
     },
-    "6972": {
-      "title": "Bitcoin Up or Down on February 17?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/6972?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "6970": {
-      "title": "Will Gu Ailing (Eileen Gu) win Gold in Women’s Freeski Big Air at Milano Cortina 2026?",
-      "url": "https://app.opinion.trade/market/6970?ref=opinion_hud",
-      "yesTokenId": "108918335333343297561023503812378789896326501057178760731878213165324826954681",
-      "noTokenId": "91215611997189915774312448235017288109310197329891351089437444300556108109066",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "type": "binary"
-    },
     "6971": {
       "title": "Will Gu Ailing (Eileen Gu) win Gold in Women’s Freeski Halfpipe at Milano Cortina 2026?",
       "url": "https://app.opinion.trade/market/6971?ref=opinion_hud",
@@ -7306,6 +7222,42 @@
       "labels": {
         "yesLabel": "YES",
         "noLabel": "NO"
+      },
+      "type": "binary"
+    },
+    "7023": {
+      "title": "ETH Up or Down - Hourly (Feb 17, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7023?ref=opinion_hud",
+      "yesTokenId": "56156148072341982718942467035247597747377195220626212894451143141735730428077",
+      "noTokenId": "100129696652838312580191035023345848481342791132283082628220417097214303412366",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7021": {
+      "title": "BNB Up or Down - Hourly (Feb 17, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7021?ref=opinion_hud",
+      "yesTokenId": "24651796506294039902080160314734174581979040296753441277992712080061381285561",
+      "noTokenId": "47858484897050026375894148952205004287853584514802739853824585014922382668715",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7022": {
+      "title": "BTC Up or Down - Hourly (Feb 17, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7022?ref=opinion_hud",
+      "yesTokenId": "8298657128945275375662681871786541400374096687939424267426332511944888821161",
+      "noTokenId": "47553528631339886488185098093555459589652505914998416712088887652112236408624",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
