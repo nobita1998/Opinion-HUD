@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-18 01:11:50 UTC+8",
+    "generatedAt": "2026-02-18 11:13:26 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 248,
-      "markets": 176,
+      "kept": 247,
+      "markets": 175,
       "keywords": 1106,
       "events": {
         "events": 28
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 740,
+        "cutoff_expired": 741,
         "cutoff_zero_kept": 39,
         "resolved": 0,
         "missing_id": 0,
@@ -7225,11 +7225,11 @@
       },
       "type": "binary"
     },
-    "7071": {
-      "title": "ETH Up or Down - Hourly (Feb 17, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7071?ref=opinion_hud",
-      "yesTokenId": "93924117360953239128710124292525351569559581303588558246829377351624957205459",
-      "noTokenId": "22373955286325723554288067137555818414319945473322265753839588937620319694887",
+    "7100": {
+      "title": "BTC Up or Down - Hourly (Feb 18, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7100?ref=opinion_hud",
+      "yesTokenId": "95797788784091191901917534758608003760134459031362869229180009129552932994516",
+      "noTokenId": "99651238019227895179448978069399712218153812219984151520151400041958480894432",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7237,11 +7237,11 @@
       },
       "type": "binary"
     },
-    "7069": {
-      "title": "BNB Up or Down - Hourly (Feb 17, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7069?ref=opinion_hud",
-      "yesTokenId": "68033904498760200695182798498040491522102074048674850951114882533073659422875",
-      "noTokenId": "31302487611302868430151016444720325269174006441070026482516392368715497302175",
+    "7099": {
+      "title": "BNB Up or Down - Hourly (Feb 18, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7099?ref=opinion_hud",
+      "yesTokenId": "25185797630469451897741303224823084993932188559917037204311698883661712284771",
+      "noTokenId": "111549175192140596808330783295489722042059240569600543537171500964339398703042",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7249,23 +7249,11 @@
       },
       "type": "binary"
     },
-    "7070": {
-      "title": "BTC Up or Down - Hourly (Feb 17, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7070?ref=opinion_hud",
-      "yesTokenId": "49378710432566797589525407515085653889088997875754324377300735881180704533101",
-      "noTokenId": "78870847824295794820515218135032794178489274261379456516142224113647766499611",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "7056": {
-      "title": "Bitcoin Up or Down on February 18?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/7056?ref=opinion_hud",
-      "yesTokenId": "56779713445309061115043273813550973317353632194189564510503079230202370546798",
-      "noTokenId": "71669084297142424091021818031779789316968694014028321940102640435202211100349",
+    "7101": {
+      "title": "ETH Up or Down - Hourly (Feb 18, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7101?ref=opinion_hud",
+      "yesTokenId": "56056998943149025050297415949564055792923613170839402243796372621755775964557",
+      "noTokenId": "71286291893034456329577609351317991597119045905599856764241487814836155726589",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
