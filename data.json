@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-19 11:11:41 UTC+8",
+    "generatedAt": "2026-02-19 16:59:38 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 215,
-      "markets": 170,
-      "keywords": 1048,
+      "kept": 209,
+      "markets": 169,
+      "keywords": 1031,
       "events": {
-        "events": 23
+        "events": 22
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 773,
+        "cutoff_expired": 779,
         "cutoff_zero_kept": 39,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 23,
+        "reused": 22,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -40,53 +40,6 @@
     }
   },
   "events": {
-    "358": {
-      "title": "2026 Winter Olympics: Most Gold Medals",
-      "marketIds": [
-        "358"
-      ],
-      "bestMarketId": "358",
-      "bestLabels": null,
-      "keywords": [
-        "winter olympics",
-        "milano cortina 2026",
-        "olympic games",
-        "gold medal",
-        "medal count",
-        "medal table",
-        "winter games",
-        "2026 olympics",
-        "olympic gold",
-        "top nation",
-        "medal tally",
-        "winter sports",
-        "cortina 2026",
-        "milan 2026",
-        "olympics 2026",
-        "2026 winter",
-        "olympics most",
-        "most gold",
-        "gold medals",
-        "2026 winter olympics",
-        "winter olympics most",
-        "olympics most gold",
-        "most gold medals"
-      ],
-      "entities": [
-        "winter olympics"
-      ],
-      "entityGroups": [
-        [
-          "winter olympics",
-          "冬奥会",
-          "奥运会"
-        ]
-      ],
-      "sig": "c9d4e683",
-      "sigFull": "c9d4e683",
-      "sigCore": "07bab7e6",
-      "reused": false
-    },
     "365": {
       "title": "Total Passenger Trips During China’s 2026 Spring Festival Travel Season",
       "marketIds": [
@@ -3533,103 +3486,6 @@
       },
       "type": "binary"
     },
-    "358": {
-      "title": "2026 Winter Olympics: Most Gold Medals",
-      "url": "https://app.opinion.trade/market/358?ref=opinion_hud",
-      "yesTokenId": "63270470406043421741182424504264427907767176245109838860690826446800616296131",
-      "noTokenId": "99278405467965006353303533706366158964769056479686286690601318450453091301128",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "winter olympics",
-        "milano cortina 2026",
-        "olympic games",
-        "gold medal",
-        "medal count",
-        "medal table",
-        "winter games",
-        "2026 olympics",
-        "olympic gold",
-        "top nation",
-        "medal tally",
-        "winter sports",
-        "cortina 2026",
-        "milan 2026",
-        "olympics 2026",
-        "2026 winter",
-        "olympics most",
-        "most gold",
-        "gold medals",
-        "2026 winter olympics",
-        "winter olympics most",
-        "olympics most gold",
-        "most gold medals"
-      ],
-      "entities": [
-        "winter olympics"
-      ],
-      "entityGroups": [
-        [
-          "winter olympics",
-          "冬奥会",
-          "奥运会"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6059",
-          "title": "Norway",
-          "yesTokenId": "110198451040033593458774610635046170882944386675662860831810131542975137825618",
-          "noTokenId": "103556142046709095024822846403258759543166023054106565024461534344904614159740"
-        },
-        {
-          "marketId": "6060",
-          "title": "United States",
-          "yesTokenId": "105029920308443938247260824091965124476556886103683371478570929660106272135581",
-          "noTokenId": "105186310259443534820671070220723600707337179899706836974621943034868896232301"
-        },
-        {
-          "marketId": "6061",
-          "title": "Germany",
-          "yesTokenId": "94885500759184967613393651128580090711638273210282759001205269837489059957094",
-          "noTokenId": "34521306395269953543024921346729065058463136361689427857142592198628443678845"
-        },
-        {
-          "marketId": "6062",
-          "title": "Italy",
-          "yesTokenId": "98436846694656831936803148593353864612481314575652836525886974354626034293034",
-          "noTokenId": "67722204994277438227879488450673281506258955968182456376280311697960831543931"
-        },
-        {
-          "marketId": "6063",
-          "title": "Canada",
-          "yesTokenId": "63270470406043421741182424504264427907767176245109838860690826446800616296131",
-          "noTokenId": "99278405467965006353303533706366158964769056479686286690601318450453091301128"
-        },
-        {
-          "marketId": "6064",
-          "title": "Sweden",
-          "yesTokenId": "32881373394534355138367547824254410630521845382581880284137171330520321549873",
-          "noTokenId": "22239759281954912334682254755962884825998812167639187375405979647123859172122"
-        },
-        {
-          "marketId": "6065",
-          "title": "Switzerland",
-          "yesTokenId": "83611214920061144252863465203856493973980802638608793323783283976919873187856",
-          "noTokenId": "103222492941959397162694118573704347257957273442093939239787047424406398436567"
-        },
-        {
-          "marketId": "6066",
-          "title": "France",
-          "yesTokenId": "94237676536259895932090040642817740647890773536628083065988615452953341816247",
-          "noTokenId": "13912678934690602185374871101263869550631783097456388371287907465421984246734"
-        }
-      ]
-    },
     "365": {
       "title": "Total Passenger Trips During China’s 2026 Spring Festival Travel Season",
       "url": "https://app.opinion.trade/market/365?ref=opinion_hud",
@@ -6561,11 +6417,11 @@
       },
       "type": "binary"
     },
-    "7184": {
-      "title": "BTC Up or Down - Hourly (Feb 19, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7184?ref=opinion_hud",
-      "yesTokenId": "115634021379627500411756185327836192290980016878306715681293183176186046891934",
-      "noTokenId": "31654686892152998953387901768888072488624400588943082046722182369567178861551",
+    "7200": {
+      "title": "ETH Up or Down - Hourly (Feb 19, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7200?ref=opinion_hud",
+      "yesTokenId": "58614551065152676019393947272654038186452296840419511210654840036417263368858",
+      "noTokenId": "3791556609349899175660240361207014986394583721367742903559244181839553033422",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -6573,11 +6429,11 @@
       },
       "type": "binary"
     },
-    "7183": {
-      "title": "BNB Up or Down - Hourly (Feb 19, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7183?ref=opinion_hud",
-      "yesTokenId": "54334156699226385620535493384443753536980039384835620039019571829580568139212",
-      "noTokenId": "112823200213169775770224063859973426325075559662232364980484646660256237956996",
+    "7199": {
+      "title": "BTC Up or Down - Hourly (Feb 19, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7199?ref=opinion_hud",
+      "yesTokenId": "52086808594596638369378679698732131411380689121571861232115319546832114790140",
+      "noTokenId": "80104792527306901582175929514767253471885512691688818324348973775549508493772",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -6585,11 +6441,11 @@
       },
       "type": "binary"
     },
-    "7185": {
-      "title": "ETH Up or Down - Hourly (Feb 19, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7185?ref=opinion_hud",
-      "yesTokenId": "74159663232836425006349708785992739038772973739018374767412177352671523102436",
-      "noTokenId": "78269867790166821679785144780518744068033045039861439181823427010626995509220",
+    "7198": {
+      "title": "BNB Up or Down - Hourly (Feb 19, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7198?ref=opinion_hud",
+      "yesTokenId": "44556620887000673831781735028354888629512370815977380669190964981262475271119",
+      "noTokenId": "89033451304549505027764569720857033064694283602751946461900647942612930553985",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -6660,9 +6516,6 @@
     "2026 nfl draft": [
       "3072"
     ],
-    "2026 olympics": [
-      "358"
-    ],
     "2026 rank": [
       "378"
     ],
@@ -6692,12 +6545,6 @@
     ],
     "2026 weather": [
       "378"
-    ],
-    "2026 winter": [
-      "358"
-    ],
-    "2026 winter olympics": [
-      "358"
     ],
     "2026-06-30": [
       "3508"
@@ -7366,9 +7213,6 @@
     "copernicus climate": [
       "378"
     ],
-    "cortina 2026": [
-      "358"
-    ],
     "count prediction": [
       "362"
     ],
@@ -7900,11 +7744,7 @@
       "3362"
     ],
     "gold medal": [
-      "358",
       "362"
-    ],
-    "gold medals": [
-      "358"
     ],
     "goog": [
       "326"
@@ -8401,15 +8241,12 @@
       "2398"
     ],
     "medal count": [
-      "358",
       "362"
     ],
     "medal table": [
-      "358",
       "362"
     ],
     "medal tally": [
-      "358",
       "362"
     ],
     "megaeth": [
@@ -8467,9 +8304,6 @@
     "mike wheeler": [
       "3222"
     ],
-    "milan 2026": [
-      "358"
-    ],
     "milan cortina 2026": [
       "362"
     ],
@@ -8481,9 +8315,6 @@
     ],
     "milan-cortina winter olympics": [
       "362"
-    ],
-    "milano cortina 2026": [
-      "358"
     ],
     "milestone": [
       "3505",
@@ -8515,12 +8346,6 @@
     "money": [
       "3505",
       "3525"
-    ],
-    "most gold": [
-      "358"
-    ],
-    "most gold medals": [
-      "358"
     ],
     "motor racing": [
       "363"
@@ -8693,26 +8518,13 @@
       "3257"
     ],
     "olympic games": [
-      "358",
       "362"
-    ],
-    "olympic gold": [
-      "358"
     ],
     "olympics": [
       "362"
     ],
-    "olympics 2026": [
-      "358"
-    ],
     "olympics china": [
       "362"
-    ],
-    "olympics most": [
-      "358"
-    ],
-    "olympics most gold": [
-      "358"
     ],
     "one day": [
       "1721"
@@ -9537,9 +9349,6 @@
     "tokyo jma cherry": [
       "379"
     ],
-    "top nation": [
-      "358"
-    ],
     "top pick": [
       "3072"
     ],
@@ -9788,21 +9597,13 @@
     "win beast games": [
       "376"
     ],
-    "winter games": [
-      "358"
-    ],
     "winter olympics": [
-      "358",
       "362"
     ],
     "winter olympics china": [
       "362"
     ],
-    "winter olympics most": [
-      "358"
-    ],
     "winter sports": [
-      "358",
       "362"
     ],
     "xxv olympic winter games": [
@@ -9872,7 +9673,6 @@
       "381"
     ],
     "冬奥会": [
-      "358",
       "362"
     ],
     "加密货币漏洞利用": [
@@ -9892,9 +9692,6 @@
     ],
     "叛乱案": [
       "377"
-    ],
-    "奥运会": [
-      "358"
     ],
     "季后赛": [
       "371"
@@ -10032,9 +9829,6 @@
     "2026 milan-cortina winter": [
       "362"
     ],
-    "2026 olympics": [
-      "358"
-    ],
     "2026 rank": [
       "378"
     ],
@@ -10064,12 +9858,6 @@
     ],
     "2026 weather": [
       "378"
-    ],
-    "2026 winter": [
-      "358"
-    ],
-    "2026 winter olympics": [
-      "358"
     ],
     "2026年": [
       "378"
@@ -10332,9 +10120,6 @@
     "copernicus climate": [
       "378"
     ],
-    "cortina 2026": [
-      "358"
-    ],
     "count prediction": [
       "362"
     ],
@@ -10531,11 +10316,7 @@
       "378"
     ],
     "gold medal": [
-      "358",
       "362"
-    ],
-    "gold medals": [
-      "358"
     ],
     "goog": [
       "326"
@@ -10733,15 +10514,12 @@
       "377"
     ],
     "medal count": [
-      "358",
       "362"
     ],
     "medal table": [
-      "358",
       "362"
     ],
     "medal tally": [
-      "358",
       "362"
     ],
     "microsoft": [
@@ -10756,9 +10534,6 @@
     "migration": [
       "365"
     ],
-    "milan 2026": [
-      "358"
-    ],
     "milan cortina 2026": [
       "362"
     ],
@@ -10771,20 +10546,11 @@
     "milan-cortina winter olympics": [
       "362"
     ],
-    "milano cortina 2026": [
-      "358"
-    ],
     "minister 2026": [
       "382"
     ],
     "minister thailand": [
       "383"
-    ],
-    "most gold": [
-      "358"
-    ],
-    "most gold medals": [
-      "358"
     ],
     "motor racing": [
       "363"
@@ -10869,26 +10635,13 @@
       "382"
     ],
     "olympic games": [
-      "358",
       "362"
-    ],
-    "olympic gold": [
-      "358"
     ],
     "olympics": [
       "362"
     ],
-    "olympics 2026": [
-      "358"
-    ],
     "olympics china": [
       "362"
-    ],
-    "olympics most": [
-      "358"
-    ],
-    "olympics most gold": [
-      "358"
     ],
     "opposition": [
       "383"
@@ -11194,9 +10947,6 @@
     "tokyo jma cherry": [
       "379"
     ],
-    "top nation": [
-      "358"
-    ],
     "total passenger": [
       "365"
     ],
@@ -11306,21 +11056,13 @@
     "win beast games": [
       "376"
     ],
-    "winter games": [
-      "358"
-    ],
     "winter olympics": [
-      "358",
       "362"
     ],
     "winter olympics china": [
       "362"
     ],
-    "winter olympics most": [
-      "358"
-    ],
     "winter sports": [
-      "358",
       "362"
     ],
     "xxv olympic winter games": [
@@ -11366,14 +11108,10 @@
       "381"
     ],
     "冬奥会": [
-      "358",
       "362"
     ],
     "叛乱案": [
       "377"
-    ],
-    "奥运会": [
-      "358"
     ],
     "季后赛": [
       "371"
