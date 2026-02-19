@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-19 16:59:38 UTC+8",
+    "generatedAt": "2026-02-20 01:08:19 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 209,
-      "markets": 169,
-      "keywords": 1031,
+      "kept": 211,
+      "markets": 178,
+      "keywords": 1006,
       "events": {
-        "events": 22
+        "events": 21
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 779,
-        "cutoff_zero_kept": 39,
+        "cutoff_expired": 777,
+        "cutoff_zero_kept": 35,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 12,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 22,
+        "reused": 21,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -812,59 +812,6 @@
       "sig": "ccd9b3e3",
       "sigFull": "ccd9b3e3",
       "sigCore": "0247af80",
-      "reused": false
-    },
-    "377": {
-      "title": "Yoon Suk Yeol Insurrection Case Prison Time?",
-      "marketIds": [
-        "377"
-      ],
-      "bestMarketId": "377",
-      "bestLabels": null,
-      "keywords": [
-        "yoon suk yeol",
-        "south korea",
-        "president",
-        "insurrection",
-        "martial law",
-        "rebellion",
-        "prison",
-        "jail",
-        "sentencing",
-        "impeachment",
-        "arrest",
-        "detention",
-        "trial",
-        "conviction",
-        "prosecution",
-        "yoon suk",
-        "suk yeol",
-        "yeol insurrection",
-        "insurrection case",
-        "case prison",
-        "prison time",
-        "suk yeol insurrection",
-        "yeol insurrection case",
-        "insurrection case prison",
-        "case prison time"
-      ],
-      "entities": [
-        "yoon suk yeol",
-        "insurrection case"
-      ],
-      "entityGroups": [
-        [
-          "yoon suk yeol",
-          "尹锡悦"
-        ],
-        [
-          "insurrection case",
-          "叛乱案"
-        ]
-      ],
-      "sig": "1e21b52f",
-      "sigFull": "1e21b52f",
-      "sigCore": "76e70db5",
       "reused": false
     },
     "376": {
@@ -5414,79 +5361,6 @@
         }
       ]
     },
-    "377": {
-      "title": "Yoon Suk Yeol Insurrection Case Prison Time?",
-      "url": "https://app.opinion.trade/market/377?ref=opinion_hud",
-      "yesTokenId": "34715299810343668299553827755734279159636471496072664316724679652248944740305",
-      "noTokenId": "76285076976411228874752631576687319818083687377250211122197286045493939998580",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "yoon suk yeol",
-        "south korea",
-        "president",
-        "insurrection",
-        "martial law",
-        "rebellion",
-        "prison",
-        "jail",
-        "sentencing",
-        "impeachment",
-        "arrest",
-        "detention",
-        "trial",
-        "conviction",
-        "prosecution",
-        "yoon suk",
-        "suk yeol",
-        "yeol insurrection",
-        "insurrection case",
-        "case prison",
-        "prison time",
-        "suk yeol insurrection",
-        "yeol insurrection case",
-        "insurrection case prison",
-        "case prison time"
-      ],
-      "entities": [
-        "yoon suk yeol",
-        "insurrection case"
-      ],
-      "entityGroups": [
-        [
-          "yoon suk yeol",
-          "尹锡悦"
-        ],
-        [
-          "insurrection case",
-          "叛乱案"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6751",
-          "title": "5–10 Years",
-          "yesTokenId": "108839392405612416797143389925671768606644678598437488024270761261665959576701",
-          "noTokenId": "30502590186359963493595428791696703571391772943653079223728499740807161890498"
-        },
-        {
-          "marketId": "6752",
-          "title": "<5 Years",
-          "yesTokenId": "70423812066516530730176214112790294626918927244284946022219516840707111188244",
-          "noTokenId": "99759051215136397373822673294699246398563733764164402840721739376885415569275"
-        },
-        {
-          "marketId": "6753",
-          "title": "No Prison Time",
-          "yesTokenId": "34715299810343668299553827755734279159636471496072664316724679652248944740305",
-          "noTokenId": "76285076976411228874752631576687319818083687377250211122197286045493939998580"
-        }
-      ]
-    },
     "376": {
       "title": "Who will win the Beast Games: Season 2?",
       "url": "https://app.opinion.trade/market/376?ref=opinion_hud",
@@ -6417,11 +6291,11 @@
       },
       "type": "binary"
     },
-    "7200": {
-      "title": "ETH Up or Down - Hourly (Feb 19, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7200?ref=opinion_hud",
-      "yesTokenId": "58614551065152676019393947272654038186452296840419511210654840036417263368858",
-      "noTokenId": "3791556609349899175660240361207014986394583721367742903559244181839553033422",
+    "7228": {
+      "title": "ETH Up or Down - Hourly (Feb 19, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7228?ref=opinion_hud",
+      "yesTokenId": "18250030251243610459090523701246206451642815757506832597442096381786628763506",
+      "noTokenId": "51358011642459088822508640529944609355268372626584157752397167770812569708187",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -6429,11 +6303,11 @@
       },
       "type": "binary"
     },
-    "7199": {
-      "title": "BTC Up or Down - Hourly (Feb 19, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7199?ref=opinion_hud",
-      "yesTokenId": "52086808594596638369378679698732131411380689121571861232115319546832114790140",
-      "noTokenId": "80104792527306901582175929514767253471885512691688818324348973775549508493772",
+    "7227": {
+      "title": "BTC Up or Down - Hourly (Feb 19, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7227?ref=opinion_hud",
+      "yesTokenId": "90352474227618989999565628673211385898447277708491354112705354482868797759948",
+      "noTokenId": "70813348543675775873306977770295658506949124180774586084347032325067261686266",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -6441,15 +6315,135 @@
       },
       "type": "binary"
     },
-    "7198": {
-      "title": "BNB Up or Down - Hourly (Feb 19, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7198?ref=opinion_hud",
-      "yesTokenId": "44556620887000673831781735028354888629512370815977380669190964981262475271119",
-      "noTokenId": "89033451304549505027764569720857033064694283602751946461900647942612930553985",
+    "7226": {
+      "title": "BNB Up or Down - Hourly (Feb 19, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7226?ref=opinion_hud",
+      "yesTokenId": "39505290534988855375994787310348943166950229310163530727242761598498717834183",
+      "noTokenId": "115363895413141416062442387759030685134791806780145252593967523560956204776610",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7237": {
+      "title": "LEC: NAVI VS MKOI (Feb. 20 10:45AM ET)",
+      "url": "https://app.opinion.trade/market/7237?ref=opinion_hud",
+      "yesTokenId": "66314926031770518606890878697863633331252029456210151033389871134670280800702",
+      "noTokenId": "29396744686017301711203345428792703566743124798841733359348188838946812452096",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "NAVI",
+        "noLabel": "MKOI"
+      },
+      "type": "binary"
+    },
+    "7242": {
+      "title": "CS2 - PGL: MOUZ vs NAVI (Feb. 20 6:00AM ET)",
+      "url": "https://app.opinion.trade/market/7242?ref=opinion_hud",
+      "yesTokenId": "114113611363568200949712011177626206748257411922354528840995535768987843894973",
+      "noTokenId": "90499864695184749506366317156775262352245562589731417389645837448496202360946",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "MOUZ",
+        "noLabel": "NAVI"
+      },
+      "type": "binary"
+    },
+    "7244": {
+      "title": "CS2 - PGL: FUR vs MGLZ (Feb. 20 12:00PM  ET)",
+      "url": "https://app.opinion.trade/market/7244?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "7243": {
+      "title": "CS2 - PGL: VIT vs AUR ( Feb. 20 9:00AM ET)",
+      "url": "https://app.opinion.trade/market/7243?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "7236": {
+      "title": "LEC: KC vs G2 (Feb. 20 12:30PM ET)",
+      "url": "https://app.opinion.trade/market/7236?ref=opinion_hud",
+      "yesTokenId": "30327253023642757909115958260465999776189712696967961651677810315787144205005",
+      "noTokenId": "90462018158708593479287338319581586814666426978346727231304811587822898026686",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "KC",
+        "noLabel": "G2"
+      },
+      "type": "binary"
+    },
+    "7241": {
+      "title": "CS2 - PGL: PRV vs FAL (Feb. 20 3:00AM ET)",
+      "url": "https://app.opinion.trade/market/7241?ref=opinion_hud",
+      "yesTokenId": "90901738728999946560908296928911093916425675475939473377325755694185462662372",
+      "noTokenId": "14998611173111064634220513343860519895766685125906091891272983903691880241038",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "PRV",
+        "noLabel": "FAL"
+      },
+      "type": "binary"
+    },
+    "7234": {
+      "title": "LCK: GEN vs BFX (Feb. 21 3:00AM ET)",
+      "url": "https://app.opinion.trade/market/7234?ref=opinion_hud",
+      "yesTokenId": "75946763140618123789987836352294620597009866399889857842868188605289062129952",
+      "noTokenId": "46616483989628945527589015756162842649357657619699207727258663975863617893097",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "GEN",
+        "noLabel": "BFX"
+      },
+      "type": "binary"
+    },
+    "7235": {
+      "title": "LCS: TLAW vs DSG (Feb. 20 4:00PM ET)",
+      "url": "https://app.opinion.trade/market/7235?ref=opinion_hud",
+      "yesTokenId": "105671994249888214957029675893673740434465845213027181257032553922315800358245",
+      "noTokenId": "58174275220490072234306127400974411010564092484597809368771521658844773063788",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "TLAW",
+        "noLabel": "DSG"
+      },
+      "type": "binary"
+    },
+    "7233": {
+      "title": "LCK: DK vs DNS (Feb. 20 3:00AM ET)",
+      "url": "https://app.opinion.trade/market/7233?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "7229": {
+      "title": "Bitcoin Up or Down on February 20?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/7229?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
       },
       "type": "binary"
     }
@@ -6779,9 +6773,6 @@
     "armageddon": [
       "2670"
     ],
-    "arrest": [
-      "377"
-    ],
     "associates": [
       "366"
     ],
@@ -7005,12 +6996,6 @@
       "3506",
       "3525"
     ],
-    "case prison": [
-      "377"
-    ],
-    "case prison time": [
-      "377"
-    ],
     "celebrity": [
       "3158"
     ],
@@ -7201,9 +7186,6 @@
     "convention": [
       "380"
     ],
-    "conviction": [
-      "377"
-    ],
     "cook out": [
       "2368"
     ],
@@ -7360,9 +7342,6 @@
     ],
     "depression": [
       "3265"
-    ],
-    "detention": [
-      "377"
     ],
     "dex": [
       "3361"
@@ -7916,8 +7895,7 @@
       "1546"
     ],
     "impeachment": [
-      "3062",
-      "377"
+      "3062"
     ],
     "import taxes": [
       "1546"
@@ -7942,15 +7920,6 @@
     ],
     "initial public offering": [
       "3362"
-    ],
-    "insurrection": [
-      "377"
-    ],
-    "insurrection case": [
-      "377"
-    ],
-    "insurrection case prison": [
-      "377"
     ],
     "investment": [
       "3505",
@@ -8006,9 +7975,6 @@
     ],
     "jackpot": [
       "3505"
-    ],
-    "jail": [
-      "377"
     ],
     "jail death": [
       "367"
@@ -8230,9 +8196,6 @@
       "326",
       "3505",
       "3506"
-    ],
-    "martial law": [
-      "377"
     ],
     "marvel": [
       "3158"
@@ -8646,7 +8609,6 @@
     ],
     "president": [
       "3062",
-      "377",
       "380"
     ],
     "president 2027": [
@@ -8694,12 +8656,6 @@
     "prime minister thailand": [
       "383"
     ],
-    "prison": [
-      "377"
-    ],
-    "prison time": [
-      "377"
-    ],
     "private key compromise": [
       "3360"
     ],
@@ -8714,9 +8670,6 @@
     ],
     "proof of work": [
       "3256"
-    ],
-    "prosecution": [
-      "377"
     ],
     "public listing": [
       "3362"
@@ -8801,9 +8754,6 @@
     ],
     "rebalancing": [
       "3257"
-    ],
-    "rebellion": [
-      "377"
     ],
     "recession": [
       "3265"
@@ -9007,9 +8957,6 @@
     "seismology": [
       "2668"
     ],
-    "sentencing": [
-      "377"
-    ],
     "series": [
       "3525"
     ],
@@ -9074,9 +9021,6 @@
     ],
     "smart money": [
       "359"
-    ],
-    "south korea": [
-      "377"
     ],
     "specific date": [
       "3449"
@@ -9169,12 +9113,6 @@
     ],
     "suicide": [
       "367"
-    ],
-    "suk yeol": [
-      "377"
-    ],
-    "suk yeol insurrection": [
-      "377"
     ],
     "support": [
       "3055"
@@ -9390,9 +9328,6 @@
     "tremor": [
       "2668",
       "3356"
-    ],
-    "trial": [
-      "377"
     ],
     "tribulation": [
       "2670"
@@ -9612,20 +9547,8 @@
     "years record": [
       "378"
     ],
-    "yeol insurrection": [
-      "377"
-    ],
-    "yeol insurrection case": [
-      "377"
-    ],
     "yg entertainment": [
       "2178"
-    ],
-    "yoon suk": [
-      "377"
-    ],
-    "yoon suk yeol": [
-      "377"
     ],
     "youtube": [
       "376"
@@ -9690,17 +9613,11 @@
     "南茜·惠勒": [
       "3223"
     ],
-    "叛乱案": [
-      "377"
-    ],
     "季后赛": [
       "371"
     ],
     "客户名单": [
       "366"
-    ],
-    "尹锡悦": [
-      "377"
     ],
     "币安币": [
       "3367",
@@ -9937,9 +9854,6 @@
     "apple stock": [
       "324"
     ],
-    "arrest": [
-      "377"
-    ],
     "associates": [
       "366"
     ],
@@ -9998,12 +9912,6 @@
     ],
     "candidate": [
       "380"
-    ],
-    "case prison": [
-      "377"
-    ],
-    "case prison time": [
-      "377"
     ],
     "challenges": [
       "376"
@@ -10114,9 +10022,6 @@
     "convention": [
       "380"
     ],
-    "conviction": [
-      "377"
-    ],
     "copernicus climate": [
       "378"
     ],
@@ -10149,9 +10054,6 @@
     ],
     "deposition": [
       "366"
-    ],
-    "detention": [
-      "377"
     ],
     "dip": [
       "329"
@@ -10383,18 +10285,6 @@
     "hottest years record": [
       "378"
     ],
-    "impeachment": [
-      "377"
-    ],
-    "insurrection": [
-      "377"
-    ],
-    "insurrection case": [
-      "377"
-    ],
-    "insurrection case prison": [
-      "377"
-    ],
     "investment": [
       "359"
     ],
@@ -10415,9 +10305,6 @@
     ],
     "jack yi": [
       "359"
-    ],
-    "jail": [
-      "377"
     ],
     "jail death": [
       "367"
@@ -10509,9 +10396,6 @@
     ],
     "market cap": [
       "326"
-    ],
-    "martial law": [
-      "377"
     ],
     "medal count": [
       "362"
@@ -10704,7 +10588,6 @@
       "380"
     ],
     "president": [
-      "377",
       "380"
     ],
     "presidential nominee": [
@@ -10736,12 +10619,6 @@
     "prime minister thailand": [
       "383"
     ],
-    "prison": [
-      "377"
-    ],
-    "prison time": [
-      "377"
-    ],
     "prix race": [
       "363"
     ],
@@ -10750,9 +10627,6 @@
     ],
     "prize money": [
       "376"
-    ],
-    "prosecution": [
-      "377"
     ],
     "qualifying": [
       "371"
@@ -10786,9 +10660,6 @@
     ],
     "reality competition": [
       "376"
-    ],
-    "rebellion": [
-      "377"
     ],
     "republican": [
       "381"
@@ -10826,9 +10697,6 @@
     "seeds": [
       "371"
     ],
-    "sentencing": [
-      "377"
-    ],
     "sex trafficking": [
       "367"
     ],
@@ -10851,9 +10719,6 @@
     ],
     "smart money": [
       "359"
-    ],
-    "south korea": [
-      "377"
     ],
     "split 1": [
       "361"
@@ -10889,12 +10754,6 @@
     ],
     "suicide": [
       "367"
-    ],
-    "suk yeol": [
-      "377"
-    ],
-    "suk yeol insurrection": [
-      "377"
     ],
     "team china": [
       "362"
@@ -10970,9 +10829,6 @@
     ],
     "travel season": [
       "365"
-    ],
-    "trial": [
-      "377"
     ],
     "trips during": [
       "365"
@@ -11071,18 +10927,6 @@
     "years record": [
       "378"
     ],
-    "yeol insurrection": [
-      "377"
-    ],
-    "yeol insurrection case": [
-      "377"
-    ],
-    "yoon suk": [
-      "377"
-    ],
-    "yoon suk yeol": [
-      "377"
-    ],
     "youtube": [
       "376"
     ],
@@ -11110,17 +10954,11 @@
     "冬奥会": [
       "362"
     ],
-    "叛乱案": [
-      "377"
-    ],
     "季后赛": [
       "371"
     ],
     "客户名单": [
       "366"
-    ],
-    "尹锡悦": [
-      "377"
     ],
     "总统候选人": [
       "381"
