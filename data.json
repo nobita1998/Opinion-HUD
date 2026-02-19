@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-19 01:16:32 UTC+8",
+    "generatedAt": "2026-02-19 11:11:41 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 246,
-      "markets": 176,
-      "keywords": 1106,
+      "kept": 215,
+      "markets": 170,
+      "keywords": 1048,
       "events": {
-        "events": 28
+        "events": 23
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 742,
+        "cutoff_expired": 773,
         "cutoff_zero_kept": 39,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 28,
+        "reused": 23,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -40,151 +40,6 @@
     }
   },
   "events": {
-    "353": {
-      "title": "Hyperbeat FDV above ... one day after launch?·",
-      "marketIds": [
-        "353"
-      ],
-      "bestMarketId": "353",
-      "bestLabels": null,
-      "keywords": [
-        "hyperbeat",
-        "token",
-        "crypto",
-        "valuation",
-        "fdv",
-        "fully diluted valuation",
-        "launch",
-        "tge",
-        "airdrop",
-        "price",
-        "market cap",
-        "trading",
-        "debut",
-        "listing",
-        "project",
-        "hyperbeat fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "hyperbeat fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "hyperbeat"
-      ],
-      "entityGroups": [
-        [
-          "hyperbeat"
-        ]
-      ],
-      "sig": "0521b32f",
-      "sigFull": "0521b32f",
-      "sigCore": "18b3df18",
-      "reused": false
-    },
-    "354": {
-      "title": "Puffpaw FDV above ... one day after launch?",
-      "marketIds": [
-        "354"
-      ],
-      "bestMarketId": "354",
-      "bestLabels": null,
-      "keywords": [
-        "puffpaw",
-        "fdv",
-        "fully diluted valuation",
-        "token launch",
-        "crypto valuation",
-        "market cap",
-        "tge",
-        "token generation event",
-        "price prediction",
-        "defi",
-        "tokenomics",
-        "airdrop",
-        "listing",
-        "token price",
-        "project launch",
-        "puffpaw fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "puffpaw fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "puffpaw"
-      ],
-      "entityGroups": [
-        [
-          "puffpaw"
-        ]
-      ],
-      "sig": "64b1726d",
-      "sigFull": "64b1726d",
-      "sigCore": "ea73fef6",
-      "reused": false
-    },
-    "352": {
-      "title": "Polymarket FDV above ... one day after launch?",
-      "marketIds": [
-        "352"
-      ],
-      "bestMarketId": "352",
-      "bestLabels": null,
-      "keywords": [
-        "polymarket",
-        "prediction market",
-        "fdv",
-        "fully diluted valuation",
-        "token launch",
-        "valuation",
-        "crypto market",
-        "trading",
-        "defi",
-        "market cap",
-        "tokenomics",
-        "airdrop",
-        "tge",
-        "token price",
-        "crypto valuation",
-        "polymarket fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "polymarket fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "polymarket"
-      ],
-      "entityGroups": [
-        [
-          "polymarket",
-          "polymarket 预测市场"
-        ]
-      ],
-      "sig": "7ecc5257",
-      "sigFull": "7ecc5257",
-      "sigCore": "74aba825",
-      "reused": false
-    },
     "358": {
       "title": "2026 Winter Olympics: Most Gold Medals",
       "marketIds": [
@@ -230,98 +85,6 @@
       "sig": "c9d4e683",
       "sigFull": "c9d4e683",
       "sigCore": "07bab7e6",
-      "reused": false
-    },
-    "357": {
-      "title": "LoL: LEC Versus 2026 Winner",
-      "marketIds": [
-        "357"
-      ],
-      "bestMarketId": "357",
-      "bestLabels": null,
-      "keywords": [
-        "league of legends",
-        "lol",
-        "lec",
-        "emea",
-        "versus",
-        "esports",
-        "tournament",
-        "competition",
-        "championship",
-        "europe",
-        "finals",
-        "gaming",
-        "riot games",
-        "regional",
-        "lol lec",
-        "lec versus",
-        "versus 2026",
-        "2026 winner",
-        "lol lec versus",
-        "lec versus 2026",
-        "versus 2026 winner"
-      ],
-      "entities": [
-        "lol",
-        "lec"
-      ],
-      "entityGroups": [
-        [
-          "lol",
-          "英雄联盟"
-        ],
-        [
-          "lec",
-          "欧洲冠军联赛"
-        ]
-      ],
-      "sig": "79c70c54",
-      "sigFull": "79c70c54",
-      "sigCore": "095df594",
-      "reused": false
-    },
-    "356": {
-      "title": "LCK Cup 2026: Winner",
-      "marketIds": [
-        "356"
-      ],
-      "bestMarketId": "356",
-      "bestLabels": null,
-      "keywords": [
-        "lck",
-        "league of legends",
-        "lol",
-        "esports",
-        "korea",
-        "champions korea",
-        "lck cup",
-        "tournament",
-        "finals",
-        "playoffs",
-        "gen.g",
-        "t1",
-        "dplus kia",
-        "drx",
-        "bnk fearx",
-        "cup 2026",
-        "2026 winner",
-        "lck cup 2026",
-        "cup 2026 winner"
-      ],
-      "entities": [
-        "lck cup"
-      ],
-      "entityGroups": [
-        [
-          "lck cup",
-          "lck杯赛",
-          "lck杯"
-        ]
-      ],
-      "sig": "4a844560",
-      "sigFull": "4a844560",
-      "sigCore": "6008f813",
       "reused": false
     },
     "365": {
@@ -3770,252 +3533,11 @@
       },
       "type": "binary"
     },
-    "353": {
-      "title": "Hyperbeat FDV above ... one day after launch?·",
-      "url": "https://app.opinion.trade/market/353?ref=opinion_hud",
-      "yesTokenId": "12213827018623131312766812011120671541060775006225893215215761767452165811958",
-      "noTokenId": "64018735460385384411656647227243965744867787587646766834153152280654761076142",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "hyperbeat",
-        "token",
-        "crypto",
-        "valuation",
-        "fdv",
-        "fully diluted valuation",
-        "launch",
-        "tge",
-        "airdrop",
-        "price",
-        "market cap",
-        "trading",
-        "debut",
-        "listing",
-        "project",
-        "hyperbeat fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "hyperbeat fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "hyperbeat"
-      ],
-      "entityGroups": [
-        [
-          "hyperbeat"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6028",
-          "title": "$50M",
-          "yesTokenId": "84073280308959729781704991855223275358815224391278188163546516709042193999878",
-          "noTokenId": "105096815720650746252246225991205943998457682633823108065374415305840093930973"
-        },
-        {
-          "marketId": "6029",
-          "title": "$100M",
-          "yesTokenId": "39299305533614695532832338714804633010050657268197644987260743836839333756553",
-          "noTokenId": "77157233614690369938167996785749991265556781646045499973544217429209225202782"
-        },
-        {
-          "marketId": "6030",
-          "title": "$200M",
-          "yesTokenId": "12213827018623131312766812011120671541060775006225893215215761767452165811958",
-          "noTokenId": "64018735460385384411656647227243965744867787587646766834153152280654761076142"
-        },
-        {
-          "marketId": "6031",
-          "title": "$300M",
-          "yesTokenId": "7962839992384274551832576001924232387063313049766169512835398543809144202474",
-          "noTokenId": "49892625254008877374695270186834338889104087014869117447001997112253125969521"
-        },
-        {
-          "marketId": "6032",
-          "title": "$400M",
-          "yesTokenId": "20697402587928630483786250722563245817765456732630608241687383835912989213579",
-          "noTokenId": "109524056907495416709524771716530943697796367384254940549767883300742551861406"
-        }
-      ]
-    },
-    "354": {
-      "title": "Puffpaw FDV above ... one day after launch?",
-      "url": "https://app.opinion.trade/market/354?ref=opinion_hud",
-      "yesTokenId": "100299804874356830575133464277036249349184805621781895375112973487320428616197",
-      "noTokenId": "9315838782603491408508929811922480426209697286222165676863950858065015073275",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "puffpaw",
-        "fdv",
-        "fully diluted valuation",
-        "token launch",
-        "crypto valuation",
-        "market cap",
-        "tge",
-        "token generation event",
-        "price prediction",
-        "defi",
-        "tokenomics",
-        "airdrop",
-        "listing",
-        "token price",
-        "project launch",
-        "puffpaw fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "puffpaw fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "puffpaw"
-      ],
-      "entityGroups": [
-        [
-          "puffpaw"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6033",
-          "title": "$50M",
-          "yesTokenId": "10219635363496348437975785558944537386580466770622389570936035767782868345617",
-          "noTokenId": "35185420418815621105294059421808323209253330413398442443834183620399566739588"
-        },
-        {
-          "marketId": "6034",
-          "title": "$100M",
-          "yesTokenId": "55499445648581085475416839200561560706618876187319908784149194584564638592312",
-          "noTokenId": "78215200158805498302053946400574359924927387997808509820612029059628215559190"
-        },
-        {
-          "marketId": "6035",
-          "title": "$200M",
-          "yesTokenId": "98018919179842914577399342045599185927643585192084618302768118840415206525605",
-          "noTokenId": "91537936646434614578593361181011228225716704088990972329988366463252902919835"
-        },
-        {
-          "marketId": "6036",
-          "title": "$300M",
-          "yesTokenId": "100299804874356830575133464277036249349184805621781895375112973487320428616197",
-          "noTokenId": "9315838782603491408508929811922480426209697286222165676863950858065015073275"
-        },
-        {
-          "marketId": "6037",
-          "title": "$400M",
-          "yesTokenId": "26767214425380015075630676899778061047003281019562119524119708514303723644938",
-          "noTokenId": "41690686468964892458161258111009041104769390020728346863746780113575734642778"
-        }
-      ]
-    },
-    "352": {
-      "title": "Polymarket FDV above ... one day after launch?",
-      "url": "https://app.opinion.trade/market/352?ref=opinion_hud",
-      "yesTokenId": "64456030348328877310591271638731488471653207894368294763210670789755217658680",
-      "noTokenId": "114499178841340405696019616777309422318708876035952955093166671186505070167723",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "polymarket",
-        "prediction market",
-        "fdv",
-        "fully diluted valuation",
-        "token launch",
-        "valuation",
-        "crypto market",
-        "trading",
-        "defi",
-        "market cap",
-        "tokenomics",
-        "airdrop",
-        "tge",
-        "token price",
-        "crypto valuation",
-        "polymarket fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "polymarket fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "polymarket"
-      ],
-      "entityGroups": [
-        [
-          "polymarket",
-          "polymarket 预测市场"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6023",
-          "title": "$5B",
-          "yesTokenId": "64456030348328877310591271638731488471653207894368294763210670789755217658680",
-          "noTokenId": "114499178841340405696019616777309422318708876035952955093166671186505070167723"
-        },
-        {
-          "marketId": "6024",
-          "title": "$10B",
-          "yesTokenId": "113443373129236982225895251731937052919810978384640919783747790335249957735596",
-          "noTokenId": "70185375651137390693807308907606452949592153071053546518787835105787681819812"
-        },
-        {
-          "marketId": "6025",
-          "title": "$15B",
-          "yesTokenId": "36757996253328749428319621065604524096964499293785858011392400017919110526481",
-          "noTokenId": "28616197807890722018083609728470480723092693595200965527227036272752972816758"
-        },
-        {
-          "marketId": "6026",
-          "title": "$20B",
-          "yesTokenId": "101188170116894927570645409250154688174105002107893860793337545873407843906759",
-          "noTokenId": "22927104841738373703214250317850874402415453886050122386983202535372183793315"
-        },
-        {
-          "marketId": "6027",
-          "title": "$30B",
-          "yesTokenId": "1709213356664863342009134678303302961554214432487347453067074850424164075939",
-          "noTokenId": "16130539196670832103876162017578009548178404710607891371853746128641450200610"
-        }
-      ]
-    },
     "358": {
       "title": "2026 Winter Olympics: Most Gold Medals",
       "url": "https://app.opinion.trade/market/358?ref=opinion_hud",
-      "yesTokenId": "94885500759184967613393651128580090711638273210282759001205269837489059957094",
-      "noTokenId": "34521306395269953543024921346729065058463136361689427857142592198628443678845",
+      "yesTokenId": "63270470406043421741182424504264427907767176245109838860690826446800616296131",
+      "noTokenId": "99278405467965006353303533706366158964769056479686286690601318450453091301128",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4105,192 +3627,6 @@
           "title": "France",
           "yesTokenId": "94237676536259895932090040642817740647890773536628083065988615452953341816247",
           "noTokenId": "13912678934690602185374871101263869550631783097456388371287907465421984246734"
-        }
-      ]
-    },
-    "357": {
-      "title": "LoL: LEC Versus 2026 Winner",
-      "url": "https://app.opinion.trade/market/357?ref=opinion_hud",
-      "yesTokenId": "20780931109488059539586914808603079764203648010764436614467262637470368343743",
-      "noTokenId": "49887952056510522513123386611983190239066671799637919836818124633640551289730",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "league of legends",
-        "lol",
-        "lec",
-        "emea",
-        "versus",
-        "esports",
-        "tournament",
-        "competition",
-        "championship",
-        "europe",
-        "finals",
-        "gaming",
-        "riot games",
-        "regional",
-        "lol lec",
-        "lec versus",
-        "versus 2026",
-        "2026 winner",
-        "lol lec versus",
-        "lec versus 2026",
-        "versus 2026 winner"
-      ],
-      "entities": [
-        "lol",
-        "lec"
-      ],
-      "entityGroups": [
-        [
-          "lol",
-          "英雄联盟"
-        ],
-        [
-          "lec",
-          "欧洲冠军联赛"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6050",
-          "title": "Karmine Corp",
-          "yesTokenId": "4946254875237664679719285503911909000648704730635151811031406000791013920670",
-          "noTokenId": "69340194075347683072878553249624057946743062698190021979737625253591541756199"
-        },
-        {
-          "marketId": "6051",
-          "title": "G2 Esports",
-          "yesTokenId": "93702207677711258888562239543750448360438757636062720409019762815822089540724",
-          "noTokenId": "25407577402590681073150954141950667157360518371428865033825629087531699940819"
-        },
-        {
-          "marketId": "6052",
-          "title": "Movistar KOI",
-          "yesTokenId": "7647124549067572355735262205143667054437510861780522367612531078221126718613",
-          "noTokenId": "114830691801120455749400630954111660631001309518107104749599210548400380564601"
-        },
-        {
-          "marketId": "6053",
-          "title": "Natus Vincere",
-          "yesTokenId": "38170108164253557803947999829600966522185620059614245824750851984592414535618",
-          "noTokenId": "428243153116541748187119534331336531459466037206087436522876793584210140779"
-        },
-        {
-          "marketId": "6054",
-          "title": "Los Ratones",
-          "yesTokenId": "3394387869644976051250362444107459359883331478909824204709646522760506733587",
-          "noTokenId": "20022872569001244476942692707754894669796674543647626308080780286591246688694"
-        },
-        {
-          "marketId": "6055",
-          "title": "GIANTX",
-          "yesTokenId": "20780931109488059539586914808603079764203648010764436614467262637470368343743",
-          "noTokenId": "49887952056510522513123386611983190239066671799637919836818124633640551289730"
-        },
-        {
-          "marketId": "6056",
-          "title": "Team Vitality",
-          "yesTokenId": "69882076779226325005014963087342997482248193575954180685375483264857979230898",
-          "noTokenId": "64967937670443290764969858374316960738520368924148065481642950951000918207526"
-        },
-        {
-          "marketId": "6057",
-          "title": "Fnatic",
-          "yesTokenId": "6851339654206067889614904870611447240364260206190684140176724417875713682592",
-          "noTokenId": "76341791910810797855170447549033645749284204733189617008050472415016026209643"
-        }
-      ]
-    },
-    "356": {
-      "title": "LCK Cup 2026: Winner",
-      "url": "https://app.opinion.trade/market/356?ref=opinion_hud",
-      "yesTokenId": "47294756022830820667894799934709345666670340307723135546991406443440687170440",
-      "noTokenId": "66942589536338099345501494990619970361567575738916289293767642468704095289091",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "lck",
-        "league of legends",
-        "lol",
-        "esports",
-        "korea",
-        "champions korea",
-        "lck cup",
-        "tournament",
-        "finals",
-        "playoffs",
-        "gen.g",
-        "t1",
-        "dplus kia",
-        "drx",
-        "bnk fearx",
-        "cup 2026",
-        "2026 winner",
-        "lck cup 2026",
-        "cup 2026 winner"
-      ],
-      "entities": [
-        "lck cup"
-      ],
-      "entityGroups": [
-        [
-          "lck cup",
-          "lck杯赛",
-          "lck杯"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6043",
-          "title": "Gen.G",
-          "yesTokenId": "100888365018856827921053327174198735515305415628034553114320597554048002577998",
-          "noTokenId": "74573006191086714774701202806084727757929239731072191615487548365146081143594"
-        },
-        {
-          "marketId": "6044",
-          "title": "T1",
-          "yesTokenId": "70093054928214105196310560726440287123879727869822174005034054945542552811185",
-          "noTokenId": "34657093616550396139855596658606272484098035035608013456960413578203457188210"
-        },
-        {
-          "marketId": "6045",
-          "title": "NS RedForce",
-          "yesTokenId": "71730332683725397008618113153188122942697936714732856429132438741218323173711",
-          "noTokenId": "44408919932616740439332399340871316817216100538883045044790499095879683151397"
-        },
-        {
-          "marketId": "6046",
-          "title": "Dplus Kia",
-          "yesTokenId": "95608283105539740049429840612106767866840833253234225191040112633923887233753",
-          "noTokenId": "111287767029571621126588708421285402683147251400826028840914665742138598374113"
-        },
-        {
-          "marketId": "6047",
-          "title": "DRX",
-          "yesTokenId": "57573552976288811752120819226100933029728047733594306337776728782178550878355",
-          "noTokenId": "90898356351133727729987733708932222125253855041483774969163814465308870423827"
-        },
-        {
-          "marketId": "6048",
-          "title": "BNK FEARX",
-          "yesTokenId": "73046206718726564836386675385340543219053905726098749780224752611885115274281",
-          "noTokenId": "77005357873283698784173602338784016545915749111287740756963576246380648782510"
-        },
-        {
-          "marketId": "6049",
-          "title": "DN SOOPers",
-          "yesTokenId": "47294756022830820667894799934709345666670340307723135546991406443440687170440",
-          "noTokenId": "66942589536338099345501494990619970361567575738916289293767642468704095289091"
         }
       ]
     },
@@ -7225,11 +6561,11 @@
       },
       "type": "binary"
     },
-    "7152": {
-      "title": "BNB Up or Down - Hourly (Feb 18, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7152?ref=opinion_hud",
-      "yesTokenId": "22372354477527727801827706370881149552637503214778730846174684805022418797499",
-      "noTokenId": "56028295330704088893333482906115448264899425576063180930193255126666098443137",
+    "7184": {
+      "title": "BTC Up or Down - Hourly (Feb 19, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7184?ref=opinion_hud",
+      "yesTokenId": "115634021379627500411756185327836192290980016878306715681293183176186046891934",
+      "noTokenId": "31654686892152998953387901768888072488624400588943082046722182369567178861551",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7237,11 +6573,11 @@
       },
       "type": "binary"
     },
-    "7153": {
-      "title": "BTC Up or Down - Hourly (Feb 18, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7153?ref=opinion_hud",
-      "yesTokenId": "57851016814401923116830999627891280930718106790569213092690582202266198498055",
-      "noTokenId": "87244551849758278430443565650262142143619943399018593733066666453046836750062",
+    "7183": {
+      "title": "BNB Up or Down - Hourly (Feb 19, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7183?ref=opinion_hud",
+      "yesTokenId": "54334156699226385620535493384443753536980039384835620039019571829580568139212",
+      "noTokenId": "112823200213169775770224063859973426325075559662232364980484646660256237956996",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7249,27 +6585,15 @@
       },
       "type": "binary"
     },
-    "7154": {
-      "title": "ETH Up or Down - Hourly (Feb 18, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7154?ref=opinion_hud",
-      "yesTokenId": "16150087806694880699102936415408546095098250987620550961938071311349752051713",
-      "noTokenId": "101870440470591026187323551557379814198161546084796082484479675224706127655428",
+    "7185": {
+      "title": "ETH Up or Down - Hourly (Feb 19, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7185?ref=opinion_hud",
+      "yesTokenId": "74159663232836425006349708785992739038772973739018374767412177352671523102436",
+      "noTokenId": "78269867790166821679785144780518744068033045039861439181823427010626995509220",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "7137": {
-      "title": "Bitcoin Up or Down on February 19?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/7137?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
       },
       "type": "binary"
     }
@@ -7368,10 +6692,6 @@
     ],
     "2026 weather": [
       "378"
-    ],
-    "2026 winner": [
-      "356",
-      "357"
     ],
     "2026 winter": [
       "358"
@@ -7474,16 +6794,6 @@
       "328",
       "329"
     ],
-    "above one": [
-      "352",
-      "353",
-      "354"
-    ],
-    "above one day": [
-      "352",
-      "353",
-      "354"
-    ],
     "accumulation": [
       "359"
     ],
@@ -7503,10 +6813,7 @@
       "3369"
     ],
     "after launch": [
-      "1721",
-      "352",
-      "353",
-      "354"
+      "1721"
     ],
     "air strike": [
       "3039"
@@ -7514,10 +6821,7 @@
     "airdrop": [
       "1721",
       "3361",
-      "3366",
-      "352",
-      "353",
-      "354"
+      "3366"
     ],
     "album": [
       "2178"
@@ -7793,9 +7097,6 @@
     "bnb token": [
       "3368"
     ],
-    "bnk fearx": [
-      "356"
-    ],
     "bombing": [
       "3039"
     ],
@@ -7876,11 +7177,7 @@
     "challenges": [
       "376"
     ],
-    "champions korea": [
-      "356"
-    ],
     "championship": [
-      "357",
       "361",
       "368"
     ],
@@ -8025,9 +7322,6 @@
       "2178",
       "3369"
     ],
-    "competition": [
-      "357"
-    ],
     "competitive gaming": [
       "361"
     ],
@@ -8112,7 +7406,6 @@
       "3364",
       "3367",
       "3368",
-      "353",
       "359"
     ],
     "crypto exchange": [
@@ -8125,15 +7418,8 @@
     "crypto hack over": [
       "3360"
     ],
-    "crypto market": [
-      "352"
-    ],
     "crypto theft": [
       "3360"
-    ],
-    "crypto valuation": [
-      "352",
-      "354"
     ],
     "cryptocurrency": [
       "3364",
@@ -8144,12 +7430,6 @@
     ],
     "cryptography": [
       "3256"
-    ],
-    "cup 2026": [
-      "356"
-    ],
-    "cup 2026 winner": [
-      "356"
     ],
     "cupertino": [
       "324"
@@ -8167,15 +7447,7 @@
       "3509"
     ],
     "day after": [
-      "1721",
-      "352",
-      "353",
-      "354"
-    ],
-    "day after launch": [
-      "352",
-      "353",
-      "354"
+      "1721"
     ],
     "deadline": [
       "3448",
@@ -8190,9 +7462,6 @@
     "debt": [
       "1856"
     ],
-    "debut": [
-      "353"
-    ],
     "december": [
       "3509"
     ],
@@ -8201,9 +7470,7 @@
     ],
     "defi": [
       "1721",
-      "3361",
-      "352",
-      "354"
+      "3361"
     ],
     "defi hack": [
       "3360"
@@ -8274,9 +7541,6 @@
     "downtime": [
       "3357"
     ],
-    "dplus kia": [
-      "356"
-    ],
     "draft class": [
       "3072"
     ],
@@ -8294,9 +7558,6 @@
     ],
     "drone": [
       "3039"
-    ],
-    "drx": [
-      "356"
     ],
     "due date": [
       "3448"
@@ -8368,9 +7629,6 @@
     "elimination": [
       "371"
     ],
-    "emea": [
-      "357"
-    ],
     "encryption": [
       "3256"
     ],
@@ -8435,8 +7693,6 @@
       "2670"
     ],
     "esports": [
-      "356",
-      "357",
       "361"
     ],
     "eth": [
@@ -8462,9 +7718,6 @@
     ],
     "ethereum all time": [
       "3364"
-    ],
-    "europe": [
-      "357"
     ],
     "evidence": [
       "366"
@@ -8527,21 +7780,6 @@
     "favor trump tariffs": [
       "1546"
     ],
-    "fdv": [
-      "352",
-      "353",
-      "354"
-    ],
-    "fdv above": [
-      "352",
-      "353",
-      "354"
-    ],
-    "fdv above one": [
-      "352",
-      "353",
-      "354"
-    ],
     "fdv one": [
       "1721"
     ],
@@ -8561,8 +7799,6 @@
       "376"
     ],
     "finals": [
-      "356",
-      "357",
       "361",
       "368",
       "371"
@@ -8612,11 +7848,6 @@
     "full bloom": [
       "379"
     ],
-    "fully diluted valuation": [
-      "352",
-      "353",
-      "354"
-    ],
     "funding": [
       "3505",
       "3506",
@@ -8636,9 +7867,6 @@
     "gameshow": [
       "376"
     ],
-    "gaming": [
-      "357"
-    ],
     "gaten": [
       "3224"
     ],
@@ -8647,9 +7875,6 @@
     ],
     "gdp contraction": [
       "3265"
-    ],
-    "gen.g": [
-      "356"
     ],
     "general election": [
       "382",
@@ -8835,15 +8060,6 @@
     "hype token": [
       "3361"
     ],
-    "hyperbeat": [
-      "353"
-    ],
-    "hyperbeat fdv": [
-      "353"
-    ],
-    "hyperbeat fdv above": [
-      "353"
-    ],
     "hyperliquid": [
       "3361"
     ],
@@ -9017,9 +8233,6 @@
     "karen wheeler": [
       "3222"
     ],
-    "korea": [
-      "356"
-    ],
     "kraken": [
       "3362"
     ],
@@ -9051,9 +8264,6 @@
     "larry bird trophy": [
       "368"
     ],
-    "launch": [
-      "353"
-    ],
     "launch token": [
       "3366"
     ],
@@ -9065,21 +8275,6 @@
     ],
     "layer 2": [
       "3366"
-    ],
-    "lck": [
-      "356"
-    ],
-    "lck cup": [
-      "356"
-    ],
-    "lck cup 2026": [
-      "356"
-    ],
-    "lck杯": [
-      "356"
-    ],
-    "lck杯赛": [
-      "356"
     ],
     "leader": [
       "383"
@@ -9094,21 +8289,10 @@
       "369"
     ],
     "league of legends": [
-      "356",
-      "357",
       "361"
     ],
     "leave": [
       "2368"
-    ],
-    "lec": [
-      "357"
-    ],
-    "lec versus": [
-      "357"
-    ],
-    "lec versus 2026": [
-      "357"
     ],
     "leeco": [
       "1856"
@@ -9123,24 +8307,14 @@
       "366"
     ],
     "listing": [
-      "3362",
-      "353",
-      "354"
+      "3362"
     ],
     "little st. james": [
       "366",
       "367"
     ],
     "lol": [
-      "356",
-      "357",
       "361"
-    ],
-    "lol lec": [
-      "357"
-    ],
-    "lol lec versus": [
-      "357"
     ],
     "lp": [
       "2178"
@@ -9215,10 +8389,7 @@
     "market cap": [
       "326",
       "3505",
-      "3506",
-      "352",
-      "353",
-      "354"
+      "3506"
     ],
     "martial law": [
       "377"
@@ -9544,15 +8715,7 @@
       "358"
     ],
     "one day": [
-      "1721",
-      "352",
-      "353",
-      "354"
-    ],
-    "one day after": [
-      "352",
-      "353",
-      "354"
+      "1721"
     ],
     "op stack": [
       "3366"
@@ -9634,7 +8797,6 @@
       "367"
     ],
     "playoffs": [
-      "356",
       "361",
       "368",
       "369",
@@ -9654,18 +8816,6 @@
       "382",
       "383"
     ],
-    "polymarket": [
-      "352"
-    ],
-    "polymarket fdv": [
-      "352"
-    ],
-    "polymarket fdv above": [
-      "352"
-    ],
-    "polymarket 预测市场": [
-      "352"
-    ],
     "portfolio": [
       "359"
     ],
@@ -9681,9 +8831,6 @@
     "potus": [
       "3062",
       "380"
-    ],
-    "prediction market": [
-      "352"
     ],
     "president": [
       "3062",
@@ -9711,14 +8858,10 @@
       "329",
       "3359",
       "3361",
-      "3367",
-      "353"
+      "3367"
     ],
     "price peak": [
       "3364"
-    ],
-    "price prediction": [
-      "354"
     ],
     "price target": [
       "3506"
@@ -9757,12 +8900,6 @@
     "prize money": [
       "376"
     ],
-    "project": [
-      "353"
-    ],
-    "project launch": [
-      "354"
-    ],
     "proof of work": [
       "3256"
     ],
@@ -9771,15 +8908,6 @@
     ],
     "public listing": [
       "3362"
-    ],
-    "puffpaw": [
-      "354"
-    ],
-    "puffpaw fdv": [
-      "354"
-    ],
-    "puffpaw fdv above": [
-      "354"
     ],
     "pump": [
       "3364",
@@ -9877,9 +9005,6 @@
     ],
     "red status": [
       "3357"
-    ],
-    "regional": [
-      "357"
     ],
     "rehire": [
       "3369"
@@ -9983,7 +9108,6 @@
       "3356"
     ],
     "riot games": [
-      "357",
       "361"
     ],
     "rnc": [
@@ -10255,9 +9379,6 @@
     "system failure": [
       "3357"
     ],
-    "t1": [
-      "356"
-    ],
     "takeover": [
       "2398"
     ],
@@ -10330,10 +9451,7 @@
       "3359"
     ],
     "tge": [
-      "1721",
-      "352",
-      "353",
-      "354"
+      "1721"
     ],
     "thai": [
       "383"
@@ -10399,28 +9517,16 @@
     ],
     "token": [
       "1721",
-      "3367",
-      "353"
+      "3367"
     ],
     "token 2026": [
       "3366"
     ],
-    "token generation event": [
-      "354"
-    ],
     "token launch": [
-      "3366",
-      "352",
-      "354"
-    ],
-    "token price": [
-      "352",
-      "354"
+      "3366"
     ],
     "tokenomics": [
-      "3361",
-      "352",
-      "354"
+      "3361"
     ],
     "tokyo": [
       "379"
@@ -10444,8 +9550,6 @@
       "365"
     ],
     "tournament": [
-      "356",
-      "357",
       "361"
     ],
     "trade policy": [
@@ -10463,8 +9567,6 @@
       "329",
       "3361",
       "3367",
-      "352",
-      "353",
       "359"
     ],
     "transfer": [
@@ -10563,9 +9665,7 @@
       "3362",
       "3505",
       "3506",
-      "352",
-      "3525",
-      "353"
+      "3525"
     ],
     "vance": [
       "3055"
@@ -10581,15 +9681,6 @@
     ],
     "venture": [
       "3525"
-    ],
-    "versus": [
-      "357"
-    ],
-    "versus 2026": [
-      "357"
-    ],
-    "versus 2026 winner": [
-      "357"
     ],
     "vice president": [
       "3062"
@@ -10839,9 +9930,6 @@
     "杰弗里·爱泼斯坦": [
       "367"
     ],
-    "欧洲冠军联赛": [
-      "357"
-    ],
     "比特币": [
       "3256",
       "3365"
@@ -10892,9 +9980,6 @@
     ],
     "英国首相": [
       "382"
-    ],
-    "英雄联盟": [
-      "357"
     ],
     "英雄联盟职业联赛": [
       "361"
@@ -10980,10 +10065,6 @@
     "2026 weather": [
       "378"
     ],
-    "2026 winner": [
-      "356",
-      "357"
-    ],
     "2026 winter": [
       "358"
     ],
@@ -11020,28 +10101,8 @@
       "328",
       "329"
     ],
-    "above one": [
-      "352",
-      "353",
-      "354"
-    ],
-    "above one day": [
-      "352",
-      "353",
-      "354"
-    ],
     "accumulation": [
       "359"
-    ],
-    "after launch": [
-      "352",
-      "353",
-      "354"
-    ],
-    "airdrop": [
-      "352",
-      "353",
-      "354"
     ],
     "alphabet": [
       "326"
@@ -11135,9 +10196,6 @@
     "blossoms full bloom": [
       "379"
     ],
-    "bnk fearx": [
-      "356"
-    ],
     "bracket": [
       "371"
     ],
@@ -11162,11 +10220,7 @@
     "challenges": [
       "376"
     ],
-    "champions korea": [
-      "356"
-    ],
     "championship": [
-      "357",
       "361",
       "368"
     ],
@@ -11249,9 +10303,6 @@
     "coalition": [
       "383"
     ],
-    "competition": [
-      "357"
-    ],
     "competitive gaming": [
       "361"
     ],
@@ -11291,41 +10342,10 @@
       "366"
     ],
     "crypto": [
-      "353",
       "359"
-    ],
-    "crypto market": [
-      "352"
-    ],
-    "crypto valuation": [
-      "352",
-      "354"
-    ],
-    "cup 2026": [
-      "356"
-    ],
-    "cup 2026 winner": [
-      "356"
     ],
     "cupertino": [
       "324"
-    ],
-    "day after": [
-      "352",
-      "353",
-      "354"
-    ],
-    "day after launch": [
-      "352",
-      "353",
-      "354"
-    ],
-    "debut": [
-      "353"
-    ],
-    "defi": [
-      "352",
-      "354"
     ],
     "delegation gold": [
       "362"
@@ -11356,12 +10376,6 @@
     ],
     "downing street": [
       "382"
-    ],
-    "dplus kia": [
-      "356"
-    ],
-    "drx": [
-      "356"
     ],
     "during china": [
       "365"
@@ -11400,9 +10414,6 @@
     "elimination": [
       "371"
     ],
-    "emea": [
-      "357"
-    ],
     "epstein": [
       "366",
       "367"
@@ -11429,8 +10440,6 @@
       "329"
     ],
     "esports": [
-      "356",
-      "357",
       "361"
     ],
     "eth": [
@@ -11444,9 +10453,6 @@
     ],
     "ethereum": [
       "359"
-    ],
-    "europe": [
-      "357"
     ],
     "evidence": [
       "366"
@@ -11463,21 +10469,6 @@
     "f1 china": [
       "363"
     ],
-    "fdv": [
-      "352",
-      "353",
-      "354"
-    ],
-    "fdv above": [
-      "352",
-      "353",
-      "354"
-    ],
-    "fdv above one": [
-      "352",
-      "353",
-      "354"
-    ],
     "february 2026": [
       "359"
     ],
@@ -11491,8 +10482,6 @@
       "376"
     ],
     "finals": [
-      "356",
-      "357",
       "361",
       "368",
       "371"
@@ -11521,22 +10510,11 @@
     "full bloom": [
       "379"
     ],
-    "fully diluted valuation": [
-      "352",
-      "353",
-      "354"
-    ],
     "games season": [
       "376"
     ],
     "gameshow": [
       "376"
-    ],
-    "gaming": [
-      "357"
-    ],
-    "gen.g": [
-      "356"
     ],
     "general election": [
       "382",
@@ -11624,15 +10602,6 @@
     "hottest years record": [
       "378"
     ],
-    "hyperbeat": [
-      "353"
-    ],
-    "hyperbeat fdv": [
-      "353"
-    ],
-    "hyperbeat fdv above": [
-      "353"
-    ],
     "impeachment": [
       "377"
     ],
@@ -11694,9 +10663,6 @@
     "jma cherry blossoms": [
       "379"
     ],
-    "korea": [
-      "356"
-    ],
     "la niña": [
       "378"
     ],
@@ -11706,24 +10672,6 @@
     "larry bird trophy": [
       "368"
     ],
-    "launch": [
-      "353"
-    ],
-    "lck": [
-      "356"
-    ],
-    "lck cup": [
-      "356"
-    ],
-    "lck cup 2026": [
-      "356"
-    ],
-    "lck杯": [
-      "356"
-    ],
-    "lck杯赛": [
-      "356"
-    ],
     "leader": [
       "383"
     ],
@@ -11731,18 +10679,7 @@
       "369"
     ],
     "league of legends": [
-      "356",
-      "357",
       "361"
-    ],
-    "lec": [
-      "357"
-    ],
-    "lec versus": [
-      "357"
-    ],
-    "lec versus 2026": [
-      "357"
     ],
     "list": [
       "366"
@@ -11750,24 +10687,12 @@
     "list released": [
       "366"
     ],
-    "listing": [
-      "353",
-      "354"
-    ],
     "little st. james": [
       "366",
       "367"
     ],
     "lol": [
-      "356",
-      "357",
       "361"
-    ],
-    "lol lec": [
-      "357"
-    ],
-    "lol lec versus": [
-      "357"
     ],
     "lpl": [
       "361"
@@ -11802,10 +10727,7 @@
       "359"
     ],
     "market cap": [
-      "326",
-      "352",
-      "353",
-      "354"
+      "326"
     ],
     "martial law": [
       "377"
@@ -11968,16 +10890,6 @@
     "olympics most gold": [
       "358"
     ],
-    "one day": [
-      "352",
-      "353",
-      "354"
-    ],
-    "one day after": [
-      "352",
-      "353",
-      "354"
-    ],
     "opposition": [
       "383"
     ],
@@ -12007,7 +10919,6 @@
       "367"
     ],
     "playoffs": [
-      "356",
       "361",
       "368",
       "369",
@@ -12027,18 +10938,6 @@
       "382",
       "383"
     ],
-    "polymarket": [
-      "352"
-    ],
-    "polymarket fdv": [
-      "352"
-    ],
-    "polymarket fdv above": [
-      "352"
-    ],
-    "polymarket 预测市场": [
-      "352"
-    ],
     "portfolio": [
       "359"
     ],
@@ -12050,9 +10949,6 @@
     ],
     "potus": [
       "380"
-    ],
-    "prediction market": [
-      "352"
     ],
     "president": [
       "377",
@@ -12069,11 +10965,7 @@
     "price": [
       "326",
       "328",
-      "329",
-      "353"
-    ],
-    "price prediction": [
-      "354"
+      "329"
     ],
     "primary": [
       "380"
@@ -12106,23 +10998,8 @@
     "prize money": [
       "376"
     ],
-    "project": [
-      "353"
-    ],
-    "project launch": [
-      "354"
-    ],
     "prosecution": [
       "377"
-    ],
-    "puffpaw": [
-      "354"
-    ],
-    "puffpaw fdv": [
-      "354"
-    ],
-    "puffpaw fdv above": [
-      "354"
     ],
     "qualifying": [
       "371"
@@ -12160,9 +11037,6 @@
     "rebellion": [
       "377"
     ],
-    "regional": [
-      "357"
-    ],
     "republican": [
       "381"
     ],
@@ -12179,7 +11053,6 @@
       "381"
     ],
     "riot games": [
-      "357",
       "361"
     ],
     "rnc": [
@@ -12270,9 +11143,6 @@
     "suk yeol insurrection": [
       "377"
     ],
-    "t1": [
-      "356"
-    ],
     "team china": [
       "362"
     ],
@@ -12296,11 +11166,6 @@
     "temperature anomaly": [
       "378"
     ],
-    "tge": [
-      "352",
-      "353",
-      "354"
-    ],
     "thai": [
       "383"
     ],
@@ -12319,24 +11184,6 @@
     ],
     "title": [
       "368"
-    ],
-    "token": [
-      "353"
-    ],
-    "token generation event": [
-      "354"
-    ],
-    "token launch": [
-      "352",
-      "354"
-    ],
-    "token price": [
-      "352",
-      "354"
-    ],
-    "tokenomics": [
-      "352",
-      "354"
     ],
     "tokyo": [
       "379"
@@ -12357,8 +11204,6 @@
       "365"
     ],
     "tournament": [
-      "356",
-      "357",
       "361"
     ],
     "trader": [
@@ -12368,8 +11213,6 @@
       "326",
       "328",
       "329",
-      "352",
-      "353",
       "359"
     ],
     "transport volume": [
@@ -12400,18 +11243,7 @@
       "380"
     ],
     "valuation": [
-      "329",
-      "352",
-      "353"
-    ],
-    "versus": [
-      "357"
-    ],
-    "versus 2026": [
-      "357"
-    ],
-    "versus 2026 winner": [
-      "357"
+      "329"
     ],
     "vote": [
       "383"
@@ -12567,9 +11399,6 @@
     "杰弗里·爱泼斯坦": [
       "367"
     ],
-    "欧洲冠军联赛": [
-      "357"
-    ],
     "民主党": [
       "380"
     ],
@@ -12596,9 +11425,6 @@
     ],
     "英国首相": [
       "382"
-    ],
-    "英雄联盟": [
-      "357"
     ],
     "英雄联盟职业联赛": [
       "361"
