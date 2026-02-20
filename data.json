@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-20 01:08:19 UTC+8",
+    "generatedAt": "2026-02-20 10:51:29 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 211,
-      "markets": 178,
-      "keywords": 1006,
+      "kept": 204,
+      "markets": 169,
+      "keywords": 1028,
       "events": {
-        "events": 21
+        "events": 22
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 777,
-        "cutoff_zero_kept": 35,
+        "cutoff_expired": 784,
+        "cutoff_zero_kept": 31,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 12,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 21,
+        "reused": 20,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
+        "calls": 2,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 2,
         "errors": 0
       }
     }
@@ -238,56 +238,6 @@
       "sig": "877eb843",
       "sigFull": "877eb843",
       "sigCore": "e00037da",
-      "reused": false
-    },
-    "359": {
-      "title": "Will Jack Yi re-enter ETH by the end of February 2026?",
-      "marketIds": [
-        "359"
-      ],
-      "bestMarketId": "359",
-      "bestLabels": null,
-      "keywords": [
-        "jack yi",
-        "eth",
-        "ethereum",
-        "crypto",
-        "trading",
-        "buy",
-        "re-entry",
-        "position",
-        "portfolio",
-        "accumulation",
-        "investment",
-        "smart money",
-        "whale",
-        "market",
-        "trader",
-        "jack re-enter",
-        "re-enter eth",
-        "eth february",
-        "february 2026",
-        "jack re-enter eth",
-        "re-enter eth february",
-        "eth february 2026"
-      ],
-      "entities": [
-        "jack yi",
-        "eth"
-      ],
-      "entityGroups": [
-        [
-          "jack yi"
-        ],
-        [
-          "eth",
-          "ethereum",
-          "以太坊"
-        ]
-      ],
-      "sig": "d8f49db2",
-      "sigFull": "d8f49db2",
-      "sigCore": "29fd9b41",
       "reused": false
     },
     "371": {
@@ -1036,6 +986,114 @@
       "sig": "1761593b",
       "sigFull": "1761593b",
       "sigCore": "e36461db",
+      "reused": false
+    },
+    "385": {
+      "title": "2026 Chinese Spring Festival Film Box Office Champion",
+      "marketIds": [
+        "385"
+      ],
+      "bestMarketId": "385",
+      "bestLabels": null,
+      "keywords": [
+        "chinese new year",
+        "lunar new year",
+        "spring festival",
+        "cny",
+        "box office",
+        "movie",
+        "film",
+        "cinema",
+        "revenue",
+        "gross",
+        "ticket sales",
+        "blockbuster",
+        "2026",
+        "champion",
+        "top film",
+        "2026 chinese",
+        "chinese spring",
+        "festival film",
+        "film box",
+        "office champion",
+        "2026 chinese spring",
+        "chinese spring festival",
+        "spring festival film",
+        "festival film box",
+        "film box office"
+      ],
+      "entities": [
+        "chinese spring festival",
+        "film box office"
+      ],
+      "entityGroups": [
+        [
+          "chinese spring festival",
+          "spring festival",
+          "中国新年"
+        ],
+        [
+          "film box office",
+          "box office",
+          "电影票房"
+        ]
+      ],
+      "sig": "d0767254",
+      "sigFull": "d0767254",
+      "sigCore": "d93b97e0",
+      "reused": false
+    },
+    "384": {
+      "title": "2026 Chinese Spring Festival Total Box Office",
+      "marketIds": [
+        "384"
+      ],
+      "bestMarketId": "384",
+      "bestLabels": null,
+      "keywords": [
+        "chinese new year",
+        "lunar new year",
+        "spring festival",
+        "cny",
+        "box office",
+        "movie revenue",
+        "cinema revenue",
+        "ticket sales",
+        "china film",
+        "holiday box office",
+        "2026 movies",
+        "golden week",
+        "film revenue",
+        "theatrical revenue",
+        "movie earnings",
+        "2026 chinese",
+        "chinese spring",
+        "festival total",
+        "total box",
+        "2026 chinese spring",
+        "chinese spring festival",
+        "spring festival total",
+        "festival total box",
+        "total box office"
+      ],
+      "entities": [
+        "chinese spring festival",
+        "total box office"
+      ],
+      "entityGroups": [
+        [
+          "chinese spring festival",
+          "spring festival",
+          "农历新年"
+        ],
+        [
+          "total box office",
+          "box office"
+        ]
+      ],
+      "sig": "741c7e36",
+      "sigFull": "741c7e36",
+      "sigCore": "00f7020d",
       "reused": false
     }
   },
@@ -3947,94 +4005,6 @@
       },
       "type": "binary"
     },
-    "359": {
-      "title": "Will Jack Yi re-enter ETH by the end of February 2026?",
-      "url": "https://app.opinion.trade/market/359?ref=opinion_hud",
-      "yesTokenId": "21358638933562650971974273846703984188559999565615624596738760479149014210178",
-      "noTokenId": "39873952171291354841645767495436249705299966623435681683596130407217786085746",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "jack yi",
-        "eth",
-        "ethereum",
-        "crypto",
-        "trading",
-        "buy",
-        "re-entry",
-        "position",
-        "portfolio",
-        "accumulation",
-        "investment",
-        "smart money",
-        "whale",
-        "market",
-        "trader",
-        "jack re-enter",
-        "re-enter eth",
-        "eth february",
-        "february 2026",
-        "jack re-enter eth",
-        "re-enter eth february",
-        "eth february 2026"
-      ],
-      "entities": [
-        "jack yi",
-        "eth"
-      ],
-      "entityGroups": [
-        [
-          "jack yi"
-        ],
-        [
-          "eth",
-          "ethereum",
-          "以太坊"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6134",
-          "title": "> 1,000 ",
-          "yesTokenId": "113521245199731347399995148611197948862224205482251174539955345021912129691168",
-          "noTokenId": "77661665336719007329542733651548107528680926316865548072378717742749587602194"
-        },
-        {
-          "marketId": "6135",
-          "title": "> 5,000 ",
-          "yesTokenId": "97498593354927936647484051298097647810125011165250616833495723023493434836763",
-          "noTokenId": "75783600457514255605571676606035320179260550647215751865971626617374572648541"
-        },
-        {
-          "marketId": "6136",
-          "title": "> 10,000 ",
-          "yesTokenId": "51087327085506456774414846801410439939600335932830095395959315708128995521186",
-          "noTokenId": "44475869467734279632159486695433861139604765711726547234859236601898530223637"
-        },
-        {
-          "marketId": "6137",
-          "title": "> 20,000 ",
-          "yesTokenId": "21358638933562650971974273846703984188559999565615624596738760479149014210178",
-          "noTokenId": "39873952171291354841645767495436249705299966623435681683596130407217786085746"
-        },
-        {
-          "marketId": "6138",
-          "title": "> 30,000 ",
-          "yesTokenId": "65957338771758922142687681473784139224393320576529774452218738772461223977530",
-          "noTokenId": "9966233717535384432804818229808702370571884822953334830511364653376265271627"
-        },
-        {
-          "marketId": "6139",
-          "title": "> 50,000 ",
-          "yesTokenId": "2032264486181700526041411434511712101772818192280504062924777093070064656484",
-          "noTokenId": "73445710174086570400766054257484153888450727512148182968296905862869239147547"
-        }
-      ]
-    },
     "371": {
       "title": "Which teams will make the NBA Playoffs?",
       "url": "https://app.opinion.trade/market/371?ref=opinion_hud",
@@ -5586,18 +5556,6 @@
       },
       "type": "binary"
     },
-    "6872": {
-      "title": "NBA: Jazz vs Grizzlies (Feb. 20 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/6872?ref=opinion_hud",
-      "yesTokenId": "91369108211949529261612061610813754914956632076255474462932582396715884014212",
-      "noTokenId": "66411975672115828801981343108846568948862016346201134937625646080150314426183",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Jazz",
-        "noLabel": "Grizzlies"
-      },
-      "type": "binary"
-    },
     "6874": {
       "title": "NBA: Cavaliers vs Hornets (Feb. 20 7:00PM ET)",
       "url": "https://app.opinion.trade/market/6874?ref=opinion_hud",
@@ -5607,18 +5565,6 @@
       "labels": {
         "yesLabel": "Cavaliers",
         "noLabel": "Hornets"
-      },
-      "type": "binary"
-    },
-    "6873": {
-      "title": "NBA: Pacers vs Wizards (Feb. 20 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/6873?ref=opinion_hud",
-      "yesTokenId": "49411843691191127011151138108550226582150749532299044091950818828932595517397",
-      "noTokenId": "31817320770700715451300987368371227566036914933025029075140467651579063489547",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Pacers",
-        "noLabel": "Wizards"
       },
       "type": "binary"
     },
@@ -5655,90 +5601,6 @@
       "labels": {
         "yesLabel": "Mavericks",
         "noLabel": "Timberwolves"
-      },
-      "type": "binary"
-    },
-    "6868": {
-      "title": "NBA: Suns vs Spurs (Feb. 19 8:30PM ET)",
-      "url": "https://app.opinion.trade/market/6868?ref=opinion_hud",
-      "yesTokenId": "101258974724351266368306838124762233578338053399756049038734028896368463861352",
-      "noTokenId": "59161600802503525527173360720495680189308642567331385440787933995057045939609",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Suns",
-        "noLabel": "Spurs"
-      },
-      "type": "binary"
-    },
-    "6871": {
-      "title": "NBA: Nuggets vs Clippers (Feb. 19 10:30PM ET)",
-      "url": "https://app.opinion.trade/market/6871?ref=opinion_hud",
-      "yesTokenId": "11667813395449921755069124616770147061530765877296503235764235397195614017705",
-      "noTokenId": "20673852421303143618382798993005788494609914758483199441422910293338593986823",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Nuggets",
-        "noLabel": "Clippers"
-      },
-      "type": "binary"
-    },
-    "6869": {
-      "title": "NBA: Celtics vs Warriors (Feb. 19 10:00PM ET)",
-      "url": "https://app.opinion.trade/market/6869?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "6870": {
-      "title": "NBA: Magic vs Kings (Feb.19 10:00PM ET)",
-      "url": "https://app.opinion.trade/market/6870?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "6866": {
-      "title": "NBA: Hawks vs 76ers (Feb. 19 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/6866?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "6867": {
-      "title": "NBA: Pistons vs Knicks (Feb. 19 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/6867?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "6865": {
-      "title": "NBA: Nets vs Cavaliers (Feb. 19 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/6865?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
       },
       "type": "binary"
     },
@@ -6291,42 +6153,6 @@
       },
       "type": "binary"
     },
-    "7228": {
-      "title": "ETH Up or Down - Hourly (Feb 19, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7228?ref=opinion_hud",
-      "yesTokenId": "18250030251243610459090523701246206451642815757506832597442096381786628763506",
-      "noTokenId": "51358011642459088822508640529944609355268372626584157752397167770812569708187",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "7227": {
-      "title": "BTC Up or Down - Hourly (Feb 19, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7227?ref=opinion_hud",
-      "yesTokenId": "90352474227618989999565628673211385898447277708491354112705354482868797759948",
-      "noTokenId": "70813348543675775873306977770295658506949124180774586084347032325067261686266",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "7226": {
-      "title": "BNB Up or Down - Hourly (Feb 19, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7226?ref=opinion_hud",
-      "yesTokenId": "39505290534988855375994787310348943166950229310163530727242761598498717834183",
-      "noTokenId": "115363895413141416062442387759030685134791806780145252593967523560956204776610",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "7237": {
       "title": "LEC: NAVI VS MKOI (Feb. 20 10:45AM ET)",
       "url": "https://app.opinion.trade/market/7237?ref=opinion_hud",
@@ -6435,15 +6261,229 @@
       },
       "type": "binary"
     },
-    "7229": {
-      "title": "Bitcoin Up or Down on February 20?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/7229?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
+    "385": {
+      "title": "2026 Chinese Spring Festival Film Box Office Champion",
+      "url": "https://app.opinion.trade/market/385?ref=opinion_hud",
+      "yesTokenId": "53478234916821250237128534956757719080806094843142571539877475372702271835297",
+      "noTokenId": "48309213626624679155486792436605321733440415991276309696412801044256967385588",
       "volume": 0.0,
       "labels": {
         "yesLabel": "",
         "noLabel": ""
+      },
+      "keywords": [
+        "chinese new year",
+        "lunar new year",
+        "spring festival",
+        "cny",
+        "box office",
+        "movie",
+        "film",
+        "cinema",
+        "revenue",
+        "gross",
+        "ticket sales",
+        "blockbuster",
+        "2026",
+        "champion",
+        "top film",
+        "2026 chinese",
+        "chinese spring",
+        "festival film",
+        "film box",
+        "office champion",
+        "2026 chinese spring",
+        "chinese spring festival",
+        "spring festival film",
+        "festival film box",
+        "film box office"
+      ],
+      "entities": [
+        "chinese spring festival",
+        "film box office"
+      ],
+      "entityGroups": [
+        [
+          "chinese spring festival",
+          "spring festival",
+          "中国新年"
+        ],
+        [
+          "film box office",
+          "box office",
+          "电影票房"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "7280",
+          "title": "Pegasus 3",
+          "yesTokenId": "41671745182944055948270062962511939396011462058339297370533095791508767719447",
+          "noTokenId": "12426788964428402254103226898552977638159448992809726452448136565148099498361"
+        },
+        {
+          "marketId": "7281",
+          "title": "Silent Thunder",
+          "yesTokenId": "114419933195859536840063213054365529313362005316575228627837919348515527967520",
+          "noTokenId": "46439610837200479732046462805763137134688826293011847919505604033336569341409"
+        },
+        {
+          "marketId": "7282",
+          "title": "Blades of the Guardians: Wind Rises in the Desert",
+          "yesTokenId": "59983836026954842504648853176898979136079240486969708771104030019100924394914",
+          "noTokenId": "6791213298783402272694294315872699502326605478856558177826746585023257995545"
+        },
+        {
+          "marketId": "7283",
+          "title": "Per Aspera Ad Astra",
+          "yesTokenId": "100562551523820619138608059558344616827360974301884592161864656105348907783345",
+          "noTokenId": "64553506134803440828839727105344579837524333295183246231890919140127523329574"
+        },
+        {
+          "marketId": "7284",
+          "title": "Boonie Bears: The Hidden Protector",
+          "yesTokenId": "2868980932079633548283643546233509430250517130948840803115456694111760847903",
+          "noTokenId": "51954018588740967109329881186836173153665308825285495108720235297198164494956"
+        },
+        {
+          "marketId": "7285",
+          "title": "Panda Plan: The Magical Tribe",
+          "yesTokenId": "17389233189283508208616164014669837517260292429216554225221749285572879454772",
+          "noTokenId": "36594423150914287443410341817830996543742207496534482892627461338877717145619"
+        },
+        {
+          "marketId": "7286",
+          "title": "Return to the Wolves",
+          "yesTokenId": "53478234916821250237128534956757719080806094843142571539877475372702271835297",
+          "noTokenId": "48309213626624679155486792436605321733440415991276309696412801044256967385588"
+        },
+        {
+          "marketId": "7287",
+          "title": "Night King",
+          "yesTokenId": "30401308298387370167400050111504992226824948476006331181355976863555781476352",
+          "noTokenId": "4021842544311330169751994598973610118967181495117200693849076913629381508636"
+        }
+      ]
+    },
+    "384": {
+      "title": "2026 Chinese Spring Festival Total Box Office",
+      "url": "https://app.opinion.trade/market/384?ref=opinion_hud",
+      "yesTokenId": "59949260834522964183103697244080979650853891614889302675069087202416933325080",
+      "noTokenId": "15412673029572829764352659443830899962423569490297868579407744928821191576022",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "keywords": [
+        "chinese new year",
+        "lunar new year",
+        "spring festival",
+        "cny",
+        "box office",
+        "movie revenue",
+        "cinema revenue",
+        "ticket sales",
+        "china film",
+        "holiday box office",
+        "2026 movies",
+        "golden week",
+        "film revenue",
+        "theatrical revenue",
+        "movie earnings",
+        "2026 chinese",
+        "chinese spring",
+        "festival total",
+        "total box",
+        "2026 chinese spring",
+        "chinese spring festival",
+        "spring festival total",
+        "festival total box",
+        "total box office"
+      ],
+      "entities": [
+        "chinese spring festival",
+        "total box office"
+      ],
+      "entityGroups": [
+        [
+          "chinese spring festival",
+          "spring festival",
+          "农历新年"
+        ],
+        [
+          "total box office",
+          "box office"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "7275",
+          "title": "Below 8,000,000,000 RMB",
+          "yesTokenId": "113140333820479338791507349647808284071846863215325461307289069393010089403946",
+          "noTokenId": "73683298950283437018868590760946207218189217451820952790295589178555304637457"
+        },
+        {
+          "marketId": "7276",
+          "title": "8,000,000,000–8,999,999,999 RMB",
+          "yesTokenId": "85509438022247042430770683675848154129662441954135272421604302187082212142202",
+          "noTokenId": "85360341545803567374695881499686505980052842906950309818642962818477772266588"
+        },
+        {
+          "marketId": "7277",
+          "title": "9,000,000,000–9,999,999,999 RMB",
+          "yesTokenId": "61000556991569092590890735821130880183968040658395440036211507382788820324497",
+          "noTokenId": "1041383079046293159158296146222973682526229312626045422936054760674710320681"
+        },
+        {
+          "marketId": "7278",
+          "title": "10,000,000,000–10,999,999,999 RMB",
+          "yesTokenId": "5342326200876477663728618277107190139013503420416685761858713511258869013373",
+          "noTokenId": "65208866601993714273751568295750700996717351729303800501517966230544545787178"
+        },
+        {
+          "marketId": "7279",
+          "title": "11,000,000,000 RMB or above",
+          "yesTokenId": "59949260834522964183103697244080979650853891614889302675069087202416933325080",
+          "noTokenId": "15412673029572829764352659443830899962423569490297868579407744928821191576022"
+        }
+      ]
+    },
+    "7265": {
+      "title": "ETH Up or Down - Hourly (Feb 20, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7265?ref=opinion_hud",
+      "yesTokenId": "30663033610679858159276069816482116801251006104142307515711735852102089282577",
+      "noTokenId": "87734507982138758333704355025489699551558371887461090750876052976176458361712",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7264": {
+      "title": "BTC Up or Down - Hourly (Feb 20, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7264?ref=opinion_hud",
+      "yesTokenId": "57209442116648872784762409930583420941287384299943543553281479225214120526826",
+      "noTokenId": "68057544376165582972152309661781374347626805373685642528002575425495584391459",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7263": {
+      "title": "BNB Up or Down - Hourly (Feb 20, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7263?ref=opinion_hud",
+      "yesTokenId": "76716264684658071721205444821448439417880342038870781693425101272131651914535",
+      "noTokenId": "57041513945953303667495884244479664167610390951342140378682380605162484292133",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
@@ -6487,13 +6527,20 @@
       "3508",
       "3509",
       "363",
-      "379"
+      "379",
+      "385"
     ],
     "2026 chinese": [
-      "363"
+      "363",
+      "384",
+      "385"
     ],
     "2026 chinese grand": [
       "363"
+    ],
+    "2026 chinese spring": [
+      "384",
+      "385"
     ],
     "2026 election": [
       "382"
@@ -6503,6 +6550,9 @@
     ],
     "2026 milan-cortina winter": [
       "362"
+    ],
+    "2026 movies": [
+      "384"
     ],
     "2026 nfl": [
       "3072"
@@ -6634,9 +6684,6 @@
       "326",
       "328",
       "329"
-    ],
-    "accumulation": [
-      "359"
     ],
     "acquisition": [
       "2398"
@@ -6888,6 +6935,9 @@
     "blinks": [
       "2178"
     ],
+    "blockbuster": [
+      "385"
+    ],
     "blockchain": [
       "1721",
       "3361",
@@ -6938,6 +6988,10 @@
     "bombing": [
       "3039"
     ],
+    "box office": [
+      "384",
+      "385"
+    ],
     "bp": [
       "2178"
     ],
@@ -6969,9 +7023,6 @@
     ],
     "business cycle": [
       "3265"
-    ],
-    "buy": [
-      "359"
     ],
     "buyout": [
       "2398"
@@ -7008,6 +7059,9 @@
     ],
     "challenges": [
       "376"
+    ],
+    "champion": [
+      "385"
     ],
     "championship": [
       "361",
@@ -7049,6 +7103,9 @@
     "china delegation": [
       "362"
     ],
+    "china film": [
+      "384"
+    ],
     "china gp": [
       "363"
     ],
@@ -7071,7 +7128,17 @@
       "361"
     ],
     "chinese new year": [
-      "365"
+      "365",
+      "384",
+      "385"
+    ],
+    "chinese spring": [
+      "384",
+      "385"
+    ],
+    "chinese spring festival": [
+      "384",
+      "385"
     ],
     "christ return": [
       "2670"
@@ -7084,6 +7151,12 @@
     ],
     "chunyun": [
       "365"
+    ],
+    "cinema": [
+      "385"
+    ],
+    "cinema revenue": [
+      "384"
     ],
     "client list": [
       "366"
@@ -7131,6 +7204,10 @@
     ],
     "cloudflare status": [
       "3357"
+    ],
+    "cny": [
+      "384",
+      "385"
     ],
     "cny travel": [
       "365"
@@ -7231,8 +7308,7 @@
       "3361",
       "3364",
       "3367",
-      "3368",
-      "359"
+      "3368"
     ],
     "crypto exchange": [
       "3362",
@@ -7519,22 +7595,14 @@
       "361"
     ],
     "eth": [
-      "3364",
-      "359"
-    ],
-    "eth february": [
-      "359"
-    ],
-    "eth february 2026": [
-      "359"
+      "3364"
     ],
     "ether": [
       "3364"
     ],
     "ethereum": [
       "1721",
-      "3364",
-      "359"
+      "3364"
     ],
     "ethereum all": [
       "3364"
@@ -7606,17 +7674,38 @@
     "fdv one": [
       "1721"
     ],
-    "february 2026": [
-      "359"
-    ],
     "federal circuit": [
       "1546"
+    ],
+    "festival film": [
+      "385"
+    ],
+    "festival film box": [
+      "385"
+    ],
+    "festival total": [
+      "384"
+    ],
+    "festival total box": [
+      "384"
     ],
     "festival travel": [
       "365"
     ],
     "files": [
       "366"
+    ],
+    "film": [
+      "385"
+    ],
+    "film box": [
+      "385"
+    ],
+    "film box office": [
+      "385"
+    ],
+    "film revenue": [
+      "384"
     ],
     "finale": [
       "376"
@@ -7725,6 +7814,9 @@
     "gold medal": [
       "362"
     ],
+    "golden week": [
+      "384"
+    ],
     "goog": [
       "326"
     ],
@@ -7778,6 +7870,9 @@
     "great earthquake": [
       "2668",
       "3356"
+    ],
+    "gross": [
+      "385"
     ],
     "hack": [
       "3360"
@@ -7845,6 +7940,9 @@
     ],
     "hit $1500 2026": [
       "3367"
+    ],
+    "holiday box office": [
+      "384"
     ],
     "holiday rush": [
       "365"
@@ -7924,8 +8022,7 @@
     "investment": [
       "3505",
       "3506",
-      "3525",
-      "359"
+      "3525"
     ],
     "ipad": [
       "324"
@@ -7963,15 +8060,6 @@
     ],
     "israel strikes iran": [
       "3039"
-    ],
-    "jack re-enter": [
-      "359"
-    ],
-    "jack re-enter eth": [
-      "359"
-    ],
-    "jack yi": [
-      "359"
     ],
     "jackpot": [
       "3505"
@@ -8134,6 +8222,10 @@
     "lpl 2026 split": [
       "361"
     ],
+    "lunar new year": [
+      "384",
+      "385"
+    ],
     "lunar new year travel": [
       "365"
     ],
@@ -8189,8 +8281,7 @@
     "market": [
       "328",
       "329",
-      "3361",
-      "359"
+      "3361"
     ],
     "market cap": [
       "326",
@@ -8324,6 +8415,15 @@
     ],
     "move any bitcoin": [
       "3365"
+    ],
+    "movie": [
+      "385"
+    ],
+    "movie earnings": [
+      "384"
+    ],
+    "movie revenue": [
+      "384"
     ],
     "mrbeast": [
       "376"
@@ -8477,6 +8577,9 @@
     "office": [
       "3062"
     ],
+    "office champion": [
+      "385"
+    ],
     "official": [
       "3257"
     ],
@@ -8590,12 +8693,6 @@
     "politics": [
       "382",
       "383"
-    ],
-    "portfolio": [
-      "359"
-    ],
-    "position": [
-      "359"
     ],
     "post-quantum": [
       "3256"
@@ -8737,15 +8834,6 @@
     "rapture": [
       "2670"
     ],
-    "re-enter eth": [
-      "359"
-    ],
-    "re-enter eth february": [
-      "359"
-    ],
-    "re-entry": [
-      "359"
-    ],
     "real gdp": [
       "3265"
     ],
@@ -8864,6 +8952,9 @@
     ],
     "revelation": [
       "2670"
+    ],
+    "revenue": [
+      "385"
     ],
     "richter scale": [
       "2668",
@@ -9019,9 +9110,6 @@
     "smart contract bug": [
       "3360"
     ],
-    "smart money": [
-      "359"
-    ],
     "specific date": [
       "3449"
     ],
@@ -9041,7 +9129,15 @@
       "379"
     ],
     "spring festival": [
-      "365"
+      "365",
+      "384",
+      "385"
+    ],
+    "spring festival film": [
+      "385"
+    ],
+    "spring festival total": [
+      "384"
     ],
     "spring festival travel season": [
       "365"
@@ -9212,6 +9308,9 @@
     "the post": [
       "3223"
     ],
+    "theatrical revenue": [
+      "384"
+    ],
     "theft": [
       "3360"
     ],
@@ -9232,6 +9331,10 @@
     ],
     "ticket": [
       "380"
+    ],
+    "ticket sales": [
+      "384",
+      "385"
     ],
     "tim cook": [
       "2368",
@@ -9287,8 +9390,17 @@
     "tokyo jma cherry": [
       "379"
     ],
+    "top film": [
+      "385"
+    ],
     "top pick": [
       "3072"
+    ],
+    "total box": [
+      "384"
+    ],
+    "total box office": [
+      "384"
     ],
     "total passenger": [
       "365"
@@ -9305,16 +9417,12 @@
     "trade war": [
       "1546"
     ],
-    "trader": [
-      "359"
-    ],
     "trading": [
       "326",
       "328",
       "329",
       "3361",
-      "3367",
-      "359"
+      "3367"
     ],
     "transfer": [
       "3365"
@@ -9490,9 +9598,6 @@
     "westworld": [
       "3158"
     ],
-    "whale": [
-      "359"
-    ],
     "wheeler family": [
       "3222"
     ],
@@ -9571,6 +9676,9 @@
     "中国大奖赛": [
       "363"
     ],
+    "中国新年": [
+      "385"
+    ],
     "中国站": [
       "363"
     ],
@@ -9586,14 +9694,16 @@
     "以太坊": [
       "1721",
       "3359",
-      "3364",
-      "359"
+      "3364"
     ],
     "以色列": [
       "3039"
     ],
     "共和党": [
       "381"
+    ],
+    "农历新年": [
+      "384"
     ],
     "冬奥会": [
       "362"
@@ -9672,6 +9782,9 @@
       "3055",
       "3062"
     ],
+    "电影票房": [
+      "385"
+    ],
     "经济衰退": [
       "3265"
     ],
@@ -9729,13 +9842,20 @@
   "eventIndex": {
     "2026": [
       "363",
-      "379"
+      "379",
+      "385"
     ],
     "2026 chinese": [
-      "363"
+      "363",
+      "384",
+      "385"
     ],
     "2026 chinese grand": [
       "363"
+    ],
+    "2026 chinese spring": [
+      "384",
+      "385"
     ],
     "2026 election": [
       "382"
@@ -9745,6 +9865,9 @@
     ],
     "2026 milan-cortina winter": [
       "362"
+    ],
+    "2026 movies": [
+      "384"
     ],
     "2026 rank": [
       "378"
@@ -9805,9 +9928,6 @@
       "326",
       "328",
       "329"
-    ],
-    "accumulation": [
-      "359"
     ],
     "alphabet": [
       "326"
@@ -9886,6 +10006,9 @@
     "black book": [
       "366"
     ],
+    "blockbuster": [
+      "385"
+    ],
     "bloom date": [
       "379"
     ],
@@ -9898,11 +10021,12 @@
     "blossoms full bloom": [
       "379"
     ],
+    "box office": [
+      "384",
+      "385"
+    ],
     "bracket": [
       "371"
-    ],
-    "buy": [
-      "359"
     ],
     "cabinet": [
       "383"
@@ -9915,6 +10039,9 @@
     ],
     "challenges": [
       "376"
+    ],
+    "champion": [
+      "385"
     ],
     "championship": [
       "361",
@@ -9943,6 +10070,9 @@
     "china delegation": [
       "362"
     ],
+    "china film": [
+      "384"
+    ],
     "china gp": [
       "363"
     ],
@@ -9959,10 +10089,26 @@
       "361"
     ],
     "chinese new year": [
-      "365"
+      "365",
+      "384",
+      "385"
+    ],
+    "chinese spring": [
+      "384",
+      "385"
+    ],
+    "chinese spring festival": [
+      "384",
+      "385"
     ],
     "chunyun": [
       "365"
+    ],
+    "cinema": [
+      "385"
+    ],
+    "cinema revenue": [
+      "384"
     ],
     "client list": [
       "366"
@@ -9992,6 +10138,10 @@
       "326",
       "328",
       "329"
+    ],
+    "cny": [
+      "384",
+      "385"
     ],
     "cny travel": [
       "365"
@@ -10030,9 +10180,6 @@
     ],
     "court records": [
       "366"
-    ],
-    "crypto": [
-      "359"
     ],
     "cupertino": [
       "324"
@@ -10129,18 +10276,6 @@
     "esports": [
       "361"
     ],
-    "eth": [
-      "359"
-    ],
-    "eth february": [
-      "359"
-    ],
-    "eth february 2026": [
-      "359"
-    ],
-    "ethereum": [
-      "359"
-    ],
     "evidence": [
       "366"
     ],
@@ -10156,14 +10291,35 @@
     "f1 china": [
       "363"
     ],
-    "february 2026": [
-      "359"
+    "festival film": [
+      "385"
+    ],
+    "festival film box": [
+      "385"
+    ],
+    "festival total": [
+      "384"
+    ],
+    "festival total box": [
+      "384"
     ],
     "festival travel": [
       "365"
     ],
     "files": [
       "366"
+    ],
+    "film": [
+      "385"
+    ],
+    "film box": [
+      "385"
+    ],
+    "film box office": [
+      "385"
+    ],
+    "film revenue": [
+      "384"
     ],
     "finale": [
       "376"
@@ -10220,6 +10376,9 @@
     "gold medal": [
       "362"
     ],
+    "golden week": [
+      "384"
+    ],
     "goog": [
       "326"
     ],
@@ -10263,11 +10422,17 @@
     "grand prix race": [
       "363"
     ],
+    "gross": [
+      "385"
+    ],
     "heat record": [
       "378"
     ],
     "heatwave": [
       "378"
+    ],
+    "holiday box office": [
+      "384"
     ],
     "holiday rush": [
       "365"
@@ -10285,9 +10450,6 @@
     "hottest years record": [
       "378"
     ],
-    "investment": [
-      "359"
-    ],
     "ipad": [
       "324"
     ],
@@ -10296,15 +10458,6 @@
     ],
     "iphone maker": [
       "324"
-    ],
-    "jack re-enter": [
-      "359"
-    ],
-    "jack re-enter eth": [
-      "359"
-    ],
-    "jack yi": [
-      "359"
     ],
     "jail death": [
       "367"
@@ -10371,6 +10524,10 @@
     "lpl 2026 split": [
       "361"
     ],
+    "lunar new year": [
+      "384",
+      "385"
+    ],
     "lunar new year travel": [
       "365"
     ],
@@ -10391,8 +10548,7 @@
     ],
     "market": [
       "328",
-      "329",
-      "359"
+      "329"
     ],
     "market cap": [
       "326"
@@ -10441,6 +10597,15 @@
     ],
     "motorsport": [
       "363"
+    ],
+    "movie": [
+      "385"
+    ],
+    "movie earnings": [
+      "384"
+    ],
+    "movie revenue": [
+      "384"
     ],
     "mrbeast": [
       "376"
@@ -10518,6 +10683,9 @@
     "number 10": [
       "382"
     ],
+    "office champion": [
+      "385"
+    ],
     "olympic games": [
       "362"
     ],
@@ -10574,12 +10742,6 @@
     "politics": [
       "382",
       "383"
-    ],
-    "portfolio": [
-      "359"
-    ],
-    "position": [
-      "359"
     ],
     "postseason": [
       "371"
@@ -10649,15 +10811,6 @@
     "rank among hottest": [
       "378"
     ],
-    "re-enter eth": [
-      "359"
-    ],
-    "re-enter eth february": [
-      "359"
-    ],
-    "re-entry": [
-      "359"
-    ],
     "reality competition": [
       "376"
     ],
@@ -10675,6 +10828,9 @@
     ],
     "republican presidential nominee": [
       "381"
+    ],
+    "revenue": [
+      "385"
     ],
     "riot games": [
       "361"
@@ -10717,9 +10873,6 @@
       "328",
       "329"
     ],
-    "smart money": [
-      "359"
-    ],
     "split 1": [
       "361"
     ],
@@ -10733,7 +10886,15 @@
       "379"
     ],
     "spring festival": [
-      "365"
+      "365",
+      "384",
+      "385"
+    ],
+    "spring festival film": [
+      "385"
+    ],
+    "spring festival total": [
+      "384"
     ],
     "spring festival travel season": [
       "365"
@@ -10784,12 +10945,19 @@
     "thailand": [
       "383"
     ],
+    "theatrical revenue": [
+      "384"
+    ],
     "ticker": [
       "326",
       "328"
     ],
     "ticket": [
       "380"
+    ],
+    "ticket sales": [
+      "384",
+      "385"
     ],
     "tim cook": [
       "324"
@@ -10806,6 +10974,15 @@
     "tokyo jma cherry": [
       "379"
     ],
+    "top film": [
+      "385"
+    ],
+    "total box": [
+      "384"
+    ],
+    "total box office": [
+      "384"
+    ],
     "total passenger": [
       "365"
     ],
@@ -10815,14 +10992,10 @@
     "tournament": [
       "361"
     ],
-    "trader": [
-      "359"
-    ],
     "trading": [
       "326",
       "328",
-      "329",
-      "359"
+      "329"
     ],
     "transport volume": [
       "365"
@@ -10885,9 +11058,6 @@
     "westminster": [
       "382"
     ],
-    "whale": [
-      "359"
-    ],
     "where 2026": [
       "378"
     ],
@@ -10939,17 +11109,20 @@
     "中国大奖赛": [
       "363"
     ],
+    "中国新年": [
+      "385"
+    ],
     "中国站": [
       "363"
     ],
     "亚马逊": [
       "328"
     ],
-    "以太坊": [
-      "359"
-    ],
     "共和党": [
       "381"
+    ],
+    "农历新年": [
+      "384"
     ],
     "冬奥会": [
       "362"
@@ -10984,6 +11157,9 @@
     "爱泼斯坦": [
       "366",
       "367"
+    ],
+    "电影票房": [
+      "385"
     ],
     "美国中情局": [
       "369",
