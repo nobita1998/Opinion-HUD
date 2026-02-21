@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21 10:44:54 UTC+8",
+    "generatedAt": "2026-02-21 16:46:19 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 211,
-      "markets": 177,
-      "keywords": 998,
+      "kept": 199,
+      "markets": 181,
+      "keywords": 987,
       "events": {
-        "events": 22
+        "events": 21
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 777,
+        "cutoff_expired": 789,
         "cutoff_zero_kept": 25,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 22,
+        "reused": 21,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -137,51 +137,6 @@
       "sig": "d5d95dcc",
       "sigFull": "d5d95dcc",
       "sigCore": "64aded5a",
-      "reused": false
-    },
-    "368": {
-      "title": "NBA Eastern Conference Champion",
-      "marketIds": [
-        "368"
-      ],
-      "bestMarketId": "368",
-      "bestLabels": null,
-      "keywords": [
-        "nba",
-        "eastern conference",
-        "ecf",
-        "basketball",
-        "playoffs",
-        "championship",
-        "finals",
-        "east",
-        "title",
-        "larry bird trophy",
-        "conference finals",
-        "nba east",
-        "nba eastern",
-        "conference champion",
-        "nba eastern conference",
-        "eastern conference champion"
-      ],
-      "entities": [
-        "nba",
-        "eastern conference"
-      ],
-      "entityGroups": [
-        [
-          "nba",
-          "美职篮",
-          "美国职业篮球"
-        ],
-        [
-          "eastern conference",
-          "东部联盟"
-        ]
-      ],
-      "sig": "ac0b19fe",
-      "sigFull": "ac0b19fe",
-      "sigCore": "4c4760c4",
       "reused": false
     },
     "328": {
@@ -3828,8 +3783,8 @@
     "369": {
       "title": "NBA Western Conference Champion",
       "url": "https://app.opinion.trade/market/369?ref=opinion_hud",
-      "yesTokenId": "87782162653506779335325655050899075681110798886176587294556039434857823762478",
-      "noTokenId": "111970847190599823030770353292948932677499406254382576695496011449733309113038",
+      "yesTokenId": "51517130252610646693652183496061399267543350522020384768692696195777193754059",
+      "noTokenId": "7441212353501881687317098757598993773912926398973591847195662047947620027139",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -3963,143 +3918,6 @@
           "title": "Utah Jazz",
           "yesTokenId": "8771770586191027545661634374101536260901218819162488921708042159072881899914",
           "noTokenId": "86219009187129787473021590131129893047882157431964249795917480563640281335405"
-        }
-      ]
-    },
-    "368": {
-      "title": "NBA Eastern Conference Champion",
-      "url": "https://app.opinion.trade/market/368?ref=opinion_hud",
-      "yesTokenId": "88518653193229108834457931693976637756746131821161297009272866867078306804410",
-      "noTokenId": "39845413743509729794188185320965024967002853804022241119643724921529277415648",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "keywords": [
-        "nba",
-        "eastern conference",
-        "ecf",
-        "basketball",
-        "playoffs",
-        "championship",
-        "finals",
-        "east",
-        "title",
-        "larry bird trophy",
-        "conference finals",
-        "nba east",
-        "nba eastern",
-        "conference champion",
-        "nba eastern conference",
-        "eastern conference champion"
-      ],
-      "entities": [
-        "nba",
-        "eastern conference"
-      ],
-      "entityGroups": [
-        [
-          "nba",
-          "美职篮",
-          "美国职业篮球"
-        ],
-        [
-          "eastern conference",
-          "东部联盟"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6290",
-          "title": "Cleveland Cavaliers",
-          "yesTokenId": "30495792019899879870570654883729217318565892737618431638352632210363921912126",
-          "noTokenId": "56588902628467292321577906702491394083688450009199518667084788858438875414020"
-        },
-        {
-          "marketId": "6291",
-          "title": "Detroit Pistons",
-          "yesTokenId": "48377302221612091316496719431880221978028519543885661511970493769725858821729",
-          "noTokenId": "14381727606924329489128116390832308955262162018490429843075900400615107308764"
-        },
-        {
-          "marketId": "6292",
-          "title": "New York Knicks",
-          "yesTokenId": "12424655291695577027543100944037885296409247073808691844276880403914804293068",
-          "noTokenId": "11353007888182181109245854142515537448971994552783749643792032125890642890132"
-        },
-        {
-          "marketId": "6293",
-          "title": "Boston Celtics",
-          "yesTokenId": "113980605431538299242143651558121554915453092014669155465933456505270153141213",
-          "noTokenId": "92821056661392502552502358850763109571085115225865896641764253875756199232987"
-        },
-        {
-          "marketId": "6294",
-          "title": "Philadelphia 76ers",
-          "yesTokenId": "75362908395162211415132068917468946778026488525294263684180140349676733507527",
-          "noTokenId": "32216416919226894768881972537957539167780843674550084684746912791747421565951"
-        },
-        {
-          "marketId": "6295",
-          "title": "Charlotte Hornets",
-          "yesTokenId": "17488418366217690051686135980398543166405217404356366063902557570704958504377",
-          "noTokenId": "86072480124210507322507693794370473422391815869776532723986516810678928345882"
-        },
-        {
-          "marketId": "6296",
-          "title": "Orlando Magic",
-          "yesTokenId": "78149427570573307139381362098322574674732293492214237476896289620259399082723",
-          "noTokenId": "88414556990957055951148303537866253845868145622765659310758520149531307495289"
-        },
-        {
-          "marketId": "6297",
-          "title": "Toronto Raptors",
-          "yesTokenId": "9243643430619493002200984963776952818008365497939733111427702093557276074917",
-          "noTokenId": "78794827139131016684922951004058634808720422048481623471988848741713654543529"
-        },
-        {
-          "marketId": "6298",
-          "title": "Miami Heat",
-          "yesTokenId": "59418902148892707395612961039543863572198417140856994307017006179295793991471",
-          "noTokenId": "39013344669544180769806160836014131250749911499679580767190637623012833335556"
-        },
-        {
-          "marketId": "6299",
-          "title": "Atlanta Hawks",
-          "yesTokenId": "32569617886620299453212551776464767870093145750182587511354249027036740985046",
-          "noTokenId": "10708045962212317882859571273899781016255897610440104450884915145608862941297"
-        },
-        {
-          "marketId": "6300",
-          "title": "Milwaukee Bucks",
-          "yesTokenId": "65671990202404392308840958996072759879633670199483126628682137844196387230475",
-          "noTokenId": "51278723476703296248066769176228521764284630121532204031680974453704902534670"
-        },
-        {
-          "marketId": "6301",
-          "title": "Chicago Bulls",
-          "yesTokenId": "2965675138839040959793666737999673901571150103834001285946725600467925814716",
-          "noTokenId": "91324002147503434937594207881363542884079219820763030110669065462195406946453"
-        },
-        {
-          "marketId": "6302",
-          "title": "Indiana Pacers",
-          "yesTokenId": "11267957388407509165780180622133133870257584691298378161934747694711765966321",
-          "noTokenId": "21066275673063015933180137662003604055979929376869577043989912774548995307964"
-        },
-        {
-          "marketId": "6303",
-          "title": "Brooklyn Nets",
-          "yesTokenId": "5902599015399648576802916892642864854481118225927082006292896637241289500175",
-          "noTokenId": "60243912613199924968803865597961436160502323442683378970819126061488821491922"
-        },
-        {
-          "marketId": "6304",
-          "title": "Washington Wizards",
-          "yesTokenId": "88518653193229108834457931693976637756746131821161297009272866867078306804410",
-          "noTokenId": "39845413743509729794188185320965024967002853804022241119643724921529277415648"
         }
       ]
     },
@@ -6565,11 +6383,11 @@
       },
       "type": "binary"
     },
-    "7425": {
-      "title": "BTC Up or Down - Hourly (Feb 21, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7425?ref=opinion_hud",
-      "yesTokenId": "31382992354968398293022369220287006650033231668231048231286159093996693320893",
-      "noTokenId": "72775323600118423986468785902586017178230017090310325300444166405686227592549",
+    "7450": {
+      "title": "BNB Up or Down - Hourly (Feb 21, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7450?ref=opinion_hud",
+      "yesTokenId": "89727263800018056804578105918485944226079250826761609622089770433206304768430",
+      "noTokenId": "50819779154953857306019703229372273950409019293083695081998238568842840309711",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -6577,11 +6395,11 @@
       },
       "type": "binary"
     },
-    "7426": {
-      "title": "ETH Up or Down - Hourly (Feb 21, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7426?ref=opinion_hud",
-      "yesTokenId": "13819416403504093553021653001169612922681636292218342126026193400823668003846",
-      "noTokenId": "71221999980203356672423600944542052263975819945230444134591321754887291438078",
+    "7451": {
+      "title": "BTC Up or Down - Hourly (Feb 21, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7451?ref=opinion_hud",
+      "yesTokenId": "111347008978697057533844841111001113535857162732271476450190683023165751905721",
+      "noTokenId": "99235825205196784002716088245380231047963776581781824618906466952077530153757",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -6589,15 +6407,75 @@
       },
       "type": "binary"
     },
-    "7424": {
-      "title": "BNB Up or Down - Hourly (Feb 21, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7424?ref=opinion_hud",
-      "yesTokenId": "1043503044225651918835616186126794922538556348358831118868713541640940739069",
-      "noTokenId": "70811719470314062306225898255199081328736739596548941067146331437493696201475",
+    "7452": {
+      "title": "ETH Up or Down - Hourly (Feb 21, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7452?ref=opinion_hud",
+      "yesTokenId": "62586176742528979518141865554883359651649254403478526293195768567331636241878",
+      "noTokenId": "17160216658891503601873510973454099338602550094815776218310418513135449495318",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7441": {
+      "title": "NBA: 76ers vs Pacers (Feb. 24 7:00PM ET)",
+      "url": "https://app.opinion.trade/market/7441?ref=opinion_hud",
+      "yesTokenId": "21644847115558389990097759828193841234340505276280078291689250506545756850096",
+      "noTokenId": "55307576430359524502079425920975682268088905580980830075645626464025442146194",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "76ers",
+        "noLabel": "Pacers"
+      },
+      "type": "binary"
+    },
+    "7443": {
+      "title": "NBA: Knicks vs Cavaliers (Feb. 24 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/7443?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "7442": {
+      "title": "NBA: Mavericks vs Nets (Feb. 24 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/7442?ref=opinion_hud",
+      "yesTokenId": "52723398846883081756067151528697180981362710317972341118320856109022744884463",
+      "noTokenId": "27248533643504244058191431439759320994382252547964343870083496770898189005542",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Mavericks",
+        "noLabel": "Nets"
+      },
+      "type": "binary"
+    },
+    "7440": {
+      "title": "NBA: Kings vs Grizzlies (Feb. 23 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/7440?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "7439": {
+      "title": "NBA: Spurs vs Pistons (Feb. 23 7:00PM ET)",
+      "url": "https://app.opinion.trade/market/7439?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
       },
       "type": "binary"
     }
@@ -6965,7 +6843,6 @@
       "3366"
     ],
     "basketball": [
-      "368",
       "369",
       "371"
     ],
@@ -7181,9 +7058,6 @@
     "champion": [
       "385"
     ],
-    "championship": [
-      "368"
-    ],
     "changpeng zhao": [
       "3369"
     ],
@@ -7316,11 +7190,9 @@
       "386"
     ],
     "conference champion": [
-      "368",
       "369"
     ],
     "conference finals": [
-      "368",
       "369"
     ],
     "conflict": [
@@ -7566,18 +7438,6 @@
     "earthquake 2027": [
       "2668"
     ],
-    "east": [
-      "368"
-    ],
-    "eastern conference": [
-      "368"
-    ],
-    "eastern conference champion": [
-      "368"
-    ],
-    "ecf": [
-      "368"
-    ],
     "economic crisis": [
       "3265"
     ],
@@ -7762,7 +7622,6 @@
       "376"
     ],
     "finals": [
-      "368",
       "371"
     ],
     "finance": [
@@ -8196,9 +8055,6 @@
     "labour": [
       "382"
     ],
-    "larry bird trophy": [
-      "368"
-    ],
     "launch token": [
       "3366"
     ],
@@ -8500,18 +8356,8 @@
       "3356"
     ],
     "nba": [
-      "368",
       "369",
       "371"
-    ],
-    "nba east": [
-      "368"
-    ],
-    "nba eastern": [
-      "368"
-    ],
-    "nba eastern conference": [
-      "368"
     ],
     "nba playoffs": [
       "369",
@@ -8684,7 +8530,6 @@
       "3072"
     ],
     "playoffs": [
-      "368",
       "369",
       "371"
     ],
@@ -9405,9 +9250,6 @@
       "3449",
       "3509"
     ],
-    "title": [
-      "368"
-    ],
     "token": [
       "1721",
       "3367"
@@ -9706,9 +9548,6 @@
     "zhao bei return": [
       "1856"
     ],
-    "东部联盟": [
-      "368"
-    ],
     "中国新年": [
       "385"
     ],
@@ -9823,12 +9662,10 @@
       "371"
     ],
     "美国职业篮球": [
-      "368",
       "369",
       "371"
     ],
     "美职篮": [
-      "368",
       "369",
       "371"
     ],
@@ -10003,7 +9840,6 @@
       "383"
     ],
     "basketball": [
-      "368",
       "369",
       "371"
     ],
@@ -10077,9 +9913,6 @@
     "champion": [
       "385"
     ],
-    "championship": [
-      "368"
-    ],
     "cherry blossom": [
       "379"
     ],
@@ -10148,11 +9981,9 @@
       "386"
     ],
     "conference champion": [
-      "368",
       "369"
     ],
     "conference finals": [
-      "368",
       "369"
     ],
     "congress": [
@@ -10211,18 +10042,6 @@
       "326",
       "328",
       "329"
-    ],
-    "east": [
-      "368"
-    ],
-    "eastern conference": [
-      "368"
-    ],
-    "eastern conference champion": [
-      "368"
-    ],
-    "ecf": [
-      "368"
     ],
     "el niño": [
       "378"
@@ -10290,7 +10109,6 @@
       "376"
     ],
     "finals": [
-      "368",
       "371"
     ],
     "flowering": [
@@ -10445,9 +10263,6 @@
     "labour": [
       "382"
     ],
-    "larry bird trophy": [
-      "368"
-    ],
     "leader": [
       "383"
     ],
@@ -10561,18 +10376,8 @@
       "369"
     ],
     "nba": [
-      "368",
       "369",
       "371"
-    ],
-    "nba east": [
-      "368"
-    ],
-    "nba eastern": [
-      "368"
-    ],
-    "nba eastern conference": [
-      "368"
     ],
     "nba playoffs": [
       "369",
@@ -10647,7 +10452,6 @@
       "379"
     ],
     "playoffs": [
-      "368",
       "369",
       "371"
     ],
@@ -10918,9 +10722,6 @@
     "tim cook": [
       "324"
     ],
-    "title": [
-      "368"
-    ],
     "tokyo": [
       "379"
     ],
@@ -11057,9 +10858,6 @@
     "zelenskyy": [
       "387"
     ],
-    "东部联盟": [
-      "368"
-    ],
     "中国新年": [
       "385"
     ],
@@ -11116,12 +10914,10 @@
       "371"
     ],
     "美国职业篮球": [
-      "368",
       "369",
       "371"
     ],
     "美职篮": [
-      "368",
       "369",
       "371"
     ],
