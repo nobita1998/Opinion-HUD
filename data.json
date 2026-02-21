@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21 00:54:38 UTC+8",
+    "generatedAt": "2026-02-21 10:44:54 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 241,
-      "markets": 194,
-      "keywords": 1034,
+      "kept": 211,
+      "markets": 177,
+      "keywords": 998,
       "events": {
-        "events": 24
+        "events": 22
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 747,
+        "cutoff_expired": 777,
         "cutoff_zero_kept": 25,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 24,
+        "reused": 22,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -182,96 +182,6 @@
       "sig": "ac0b19fe",
       "sigFull": "ac0b19fe",
       "sigCore": "4c4760c4",
-      "reused": false
-    },
-    "367": {
-      "title": "Jeffrey Epstein foul play confirmed by ...?",
-      "marketIds": [
-        "367"
-      ],
-      "bestMarketId": "367",
-      "bestLabels": null,
-      "keywords": [
-        "jeffrey epstein",
-        "epstein",
-        "foul play",
-        "suicide",
-        "murder",
-        "jail death",
-        "manhattan mcc",
-        "ghislaine maxwell",
-        "epstein island",
-        "little st. james",
-        "sex trafficking",
-        "pedophile",
-        "financier",
-        "epstein foul",
-        "play confirmed",
-        "jeffrey epstein foul",
-        "epstein foul play",
-        "foul play confirmed"
-      ],
-      "entities": [
-        "jeffrey epstein"
-      ],
-      "entityGroups": [
-        [
-          "jeffrey epstein",
-          "epstein",
-          "杰弗里·爱泼斯坦",
-          "爱泼斯坦"
-        ]
-      ],
-      "sig": "d6faf29a",
-      "sigFull": "d6faf29a",
-      "sigCore": "1d0c5484",
-      "reused": false
-    },
-    "366": {
-      "title": "Epstein client list released by ...?",
-      "marketIds": [
-        "366"
-      ],
-      "bestMarketId": "366",
-      "bestLabels": null,
-      "keywords": [
-        "epstein",
-        "jeffrey epstein",
-        "client list",
-        "flight logs",
-        "black book",
-        "ghislaine maxwell",
-        "unsealed documents",
-        "court records",
-        "associates",
-        "pedophile island",
-        "little st. james",
-        "deposition",
-        "evidence",
-        "files",
-        "list",
-        "epstein client",
-        "list released",
-        "epstein client list",
-        "client list released"
-      ],
-      "entities": [
-        "epstein",
-        "client list"
-      ],
-      "entityGroups": [
-        [
-          "epstein",
-          "爱泼斯坦"
-        ],
-        [
-          "client list",
-          "客户名单"
-        ]
-      ],
-      "sig": "d9c3d2d0",
-      "sigFull": "d9c3d2d0",
-      "sigCore": "52ba6cb6",
       "reused": false
     },
     "328": {
@@ -4059,8 +3969,8 @@
     "368": {
       "title": "NBA Eastern Conference Champion",
       "url": "https://app.opinion.trade/market/368?ref=opinion_hud",
-      "yesTokenId": "65671990202404392308840958996072759879633670199483126628682137844196387230475",
-      "noTokenId": "51278723476703296248066769176228521764284630121532204031680974453704902534670",
+      "yesTokenId": "88518653193229108834457931693976637756746131821161297009272866867078306804410",
+      "noTokenId": "39845413743509729794188185320965024967002853804022241119643724921529277415648",
       "volume": 0.0,
       "labels": {
         "yesLabel": "",
@@ -4193,63 +4103,6 @@
         }
       ]
     },
-    "367": {
-      "title": "Jeffrey Epstein foul play confirmed by ...?",
-      "url": "https://app.opinion.trade/market/367?ref=opinion_hud",
-      "yesTokenId": "59427948562843893084173872167468789133257099577367035268468016662337252267802",
-      "noTokenId": "108475810016471018778375141206097951740224551656057082063012306417479179159977",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "jeffrey epstein",
-        "epstein",
-        "foul play",
-        "suicide",
-        "murder",
-        "jail death",
-        "manhattan mcc",
-        "ghislaine maxwell",
-        "epstein island",
-        "little st. james",
-        "sex trafficking",
-        "pedophile",
-        "financier",
-        "epstein foul",
-        "play confirmed",
-        "jeffrey epstein foul",
-        "epstein foul play",
-        "foul play confirmed"
-      ],
-      "entities": [
-        "jeffrey epstein"
-      ],
-      "entityGroups": [
-        [
-          "jeffrey epstein",
-          "epstein",
-          "杰弗里·爱泼斯坦",
-          "爱泼斯坦"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6280",
-          "title": "March 31, 2026",
-          "yesTokenId": "59427948562843893084173872167468789133257099577367035268468016662337252267802",
-          "noTokenId": "108475810016471018778375141206097951740224551656057082063012306417479179159977"
-        },
-        {
-          "marketId": "6281",
-          "title": "December 31, 2026",
-          "yesTokenId": "110396724471135830465235522564752739141229323049839831215096348018663964075961",
-          "noTokenId": "112529109788895153524142956436761378990555640495185668602653081945065959273087"
-        }
-      ]
-    },
     "6282": {
       "title": "Jeffrey Epstein confirmed to be alive before 2027?",
       "url": "https://app.opinion.trade/market/6282?ref=opinion_hud",
@@ -4261,61 +4114,6 @@
         "noLabel": ""
       },
       "type": "binary"
-    },
-    "366": {
-      "title": "Epstein client list released by ...?",
-      "url": "https://app.opinion.trade/market/366?ref=opinion_hud",
-      "yesTokenId": "115380979940161055593655872349972855785438748052690350022578828399481000586475",
-      "noTokenId": "73435212780242507912899370587494092695385730866508767827751843939667703892896",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "epstein",
-        "jeffrey epstein",
-        "client list",
-        "flight logs",
-        "black book",
-        "ghislaine maxwell",
-        "unsealed documents",
-        "court records",
-        "associates",
-        "pedophile island",
-        "little st. james",
-        "deposition",
-        "evidence",
-        "files",
-        "list",
-        "epstein client",
-        "list released",
-        "epstein client list",
-        "client list released"
-      ],
-      "entities": [
-        "epstein",
-        "client list"
-      ],
-      "entityGroups": [
-        [
-          "epstein",
-          "爱泼斯坦"
-        ],
-        [
-          "client list",
-          "客户名单"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6279",
-          "title": "June 30, 2026",
-          "yesTokenId": "115380979940161055593655872349972855785438748052690350022578828399481000586475",
-          "noTokenId": "73435212780242507912899370587494092695385730866508767827751843939667703892896"
-        }
-      ]
     },
     "6446": {
       "title": "Norman Powell - Miami",
@@ -5186,90 +4984,6 @@
       },
       "type": "binary"
     },
-    "6880": {
-      "title": "NBA: Nuggets vs Trail Blazers (Feb. 20 10:00PM ET)",
-      "url": "https://app.opinion.trade/market/6880?ref=opinion_hud",
-      "yesTokenId": "34905713759403782837333497588716207962976805756841375615895141422924156134816",
-      "noTokenId": "115680531360295379392293216304944676151256331968249275221044191082700578255230",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Nuggets",
-        "noLabel": "Trail Blazers"
-      },
-      "type": "binary"
-    },
-    "6878": {
-      "title": "NBA: Clippers vs Lakers (Feb. 20 10:00PM ET)",
-      "url": "https://app.opinion.trade/market/6878?ref=opinion_hud",
-      "yesTokenId": "36242072605733280739680109554078855388347888692803133350340371188118047579155",
-      "noTokenId": "110149154595945515508932286784567518307710468158026219824765658116287828882049",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Clippers",
-        "noLabel": "Lakers"
-      },
-      "type": "binary"
-    },
-    "6879": {
-      "title": "NBA: Bucks vs Pelicans (Feb. 20 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/6879?ref=opinion_hud",
-      "yesTokenId": "81366641429129269012666577107087998607186217975541177325311270543009837639856",
-      "noTokenId": "108021886130097290085452127736666068280611948083818575056512294885676883153017",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Bucks",
-        "noLabel": "Pelicans"
-      },
-      "type": "binary"
-    },
-    "6874": {
-      "title": "NBA: Cavaliers vs Hornets (Feb. 20 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/6874?ref=opinion_hud",
-      "yesTokenId": "112070856748688004642885347772887713919706482731921544191693539134557646425744",
-      "noTokenId": "99140854585118825379734201969305505174941746010889419532521548764229013956930",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Cavaliers",
-        "noLabel": "Hornets"
-      },
-      "type": "binary"
-    },
-    "6877": {
-      "title": "NBA: Nets vs Thunder (Feb. 20 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/6877?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "6876": {
-      "title": "NBA: Heat vs Hawks (Feb. 20 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/6876?ref=opinion_hud",
-      "yesTokenId": "87669948684989709873899153885141242477772074825155026463618209993584093547929",
-      "noTokenId": "14865652280377891395821703310340802122368233459956456856203810728402595586806",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Heat",
-        "noLabel": "Hawks"
-      },
-      "type": "binary"
-    },
-    "6875": {
-      "title": "NBA: Mavericks vs Timberwolves (Feb. 20 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/6875?ref=opinion_hud",
-      "yesTokenId": "100186758913985738042436584788206174934726271250744887073076269369330224608959",
-      "noTokenId": "95533763984162974511333132697168692396262077164545221719477828495218424194659",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Mavericks",
-        "noLabel": "Timberwolves"
-      },
-      "type": "binary"
-    },
     "382": {
       "title": "Next UK Prime Minister in 2026?",
       "url": "https://app.opinion.trade/market/382?ref=opinion_hud",
@@ -5819,18 +5533,6 @@
       },
       "type": "binary"
     },
-    "7237": {
-      "title": "LEC: NAVI VS MKOI (Feb. 20 10:45AM ET)",
-      "url": "https://app.opinion.trade/market/7237?ref=opinion_hud",
-      "yesTokenId": "66314926031770518606890878697863633331252029456210151033389871134670280800702",
-      "noTokenId": "29396744686017301711203345428792703566743124798841733359348188838946812452096",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "NAVI",
-        "noLabel": "MKOI"
-      },
-      "type": "binary"
-    },
     "7242": {
       "title": "CS2 - PGL: MOUZ vs NAVI (Feb. 20 6:00AM ET)",
       "url": "https://app.opinion.trade/market/7242?ref=opinion_hud",
@@ -5840,42 +5542,6 @@
       "labels": {
         "yesLabel": "MOUZ",
         "noLabel": "NAVI"
-      },
-      "type": "binary"
-    },
-    "7244": {
-      "title": "CS2 - PGL: FUR vs MGLZ (Feb. 20 12:00PM  ET)",
-      "url": "https://app.opinion.trade/market/7244?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "7243": {
-      "title": "CS2 - PGL: VIT vs AUR ( Feb. 20 9:00AM ET)",
-      "url": "https://app.opinion.trade/market/7243?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "7236": {
-      "title": "LEC: KC vs G2 (Feb. 20 12:30PM ET)",
-      "url": "https://app.opinion.trade/market/7236?ref=opinion_hud",
-      "yesTokenId": "30327253023642757909115958260465999776189712696967961651677810315787144205005",
-      "noTokenId": "90462018158708593479287338319581586814666426978346727231304811587822898026686",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "KC",
-        "noLabel": "G2"
       },
       "type": "binary"
     },
@@ -5900,18 +5566,6 @@
       "labels": {
         "yesLabel": "GEN",
         "noLabel": "BFX"
-      },
-      "type": "binary"
-    },
-    "7235": {
-      "title": "LCS: TLAW vs DSG (Feb. 20 4:00PM ET)",
-      "url": "https://app.opinion.trade/market/7235?ref=opinion_hud",
-      "yesTokenId": "105671994249888214957029675893673740434465845213027181257032553922315800358245",
-      "noTokenId": "58174275220490072234306127400974411010564092484597809368771521658844773063788",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "TLAW",
-        "noLabel": "DSG"
       },
       "type": "binary"
     },
@@ -6245,30 +5899,6 @@
           "noTokenId": "15141309422234894858374781800243428929786999650490372868250162762415884543267"
         }
       ]
-    },
-    "7362": {
-      "title": "NBA: Grizzlies vs Heat (Feb. 21 8PM ET)",
-      "url": "https://app.opinion.trade/market/7362?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "7361": {
-      "title": "NBA: Kings vs Spurs (Feb. 21 8PM ET)",
-      "url": "https://app.opinion.trade/market/7361?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
     },
     "389": {
       "title": "Next James Bond actor?",
@@ -6935,11 +6565,11 @@
       },
       "type": "binary"
     },
-    "7389": {
-      "title": "BTC Up or Down - Hourly (Feb 20, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7389?ref=opinion_hud",
-      "yesTokenId": "63420506825227343815236460645689964375578996949933727538025235081576868201801",
-      "noTokenId": "33242635354667174347079152272387775797378762701957454581467630032369881896422",
+    "7425": {
+      "title": "BTC Up or Down - Hourly (Feb 21, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7425?ref=opinion_hud",
+      "yesTokenId": "31382992354968398293022369220287006650033231668231048231286159093996693320893",
+      "noTokenId": "72775323600118423986468785902586017178230017090310325300444166405686227592549",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -6947,11 +6577,11 @@
       },
       "type": "binary"
     },
-    "7390": {
-      "title": "ETH Up or Down - Hourly (Feb 20, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7390?ref=opinion_hud",
-      "yesTokenId": "35517161259370051663694206586641623537191268983452379387145589930571577665537",
-      "noTokenId": "47505029819529337843817330272694293064338224091104222611009073068823332791047",
+    "7426": {
+      "title": "ETH Up or Down - Hourly (Feb 21, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7426?ref=opinion_hud",
+      "yesTokenId": "13819416403504093553021653001169612922681636292218342126026193400823668003846",
+      "noTokenId": "71221999980203356672423600944542052263975819945230444134591321754887291438078",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -6959,27 +6589,15 @@
       },
       "type": "binary"
     },
-    "7388": {
-      "title": "BNB Up or Down - Hourly (Feb 20, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7388?ref=opinion_hud",
-      "yesTokenId": "109969485477411530037727177144787954126963207755900453400918882493158499946070",
-      "noTokenId": "74778442456354039833975808090971016195427608588021164138111133143292735170398",
+    "7424": {
+      "title": "BNB Up or Down - Hourly (Feb 21, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7424?ref=opinion_hud",
+      "yesTokenId": "1043503044225651918835616186126794922538556348358831118868713541640940739069",
+      "noTokenId": "70811719470314062306225898255199081328736739596548941067146331437493696201475",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "7391": {
-      "title": "Bitcoin Up or Down on February 21?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/7391?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
       },
       "type": "binary"
     }
@@ -7299,9 +6917,6 @@
     "armageddon": [
       "2670"
     ],
-    "associates": [
-      "366"
-    ],
     "association": [
       "369"
     ],
@@ -7404,9 +7019,6 @@
     ],
     "bitcoin replace sha-256": [
       "3256"
-    ],
-    "black book": [
-      "366"
     ],
     "blackpink": [
       "2178"
@@ -7635,12 +7247,6 @@
     "cinema revenue": [
       "384"
     ],
-    "client list": [
-      "366"
-    ],
-    "client list released": [
-      "366"
-    ],
     "climate change": [
       "378"
     ],
@@ -7752,9 +7358,6 @@
     ],
     "court decision": [
       "1546"
-    ],
-    "court records": [
-      "366"
     ],
     "court rules": [
       "1546"
@@ -7887,9 +7490,6 @@
     ],
     "depeg 1q2026": [
       "3359"
-    ],
-    "deposition": [
-      "366"
     ],
     "depression": [
       "3265"
@@ -8046,25 +7646,6 @@
       "2668",
       "3356"
     ],
-    "epstein": [
-      "366",
-      "367"
-    ],
-    "epstein client": [
-      "366"
-    ],
-    "epstein client list": [
-      "366"
-    ],
-    "epstein foul": [
-      "367"
-    ],
-    "epstein foul play": [
-      "367"
-    ],
-    "epstein island": [
-      "367"
-    ],
     "equity": [
       "324",
       "326",
@@ -8092,9 +7673,6 @@
     ],
     "ethereum all time": [
       "3364"
-    ],
-    "evidence": [
-      "366"
     ],
     "evm": [
       "1721"
@@ -8167,9 +7745,6 @@
     "festival total box": [
       "384"
     ],
-    "files": [
-      "366"
-    ],
     "film": [
       "385",
       "389"
@@ -8196,9 +7771,6 @@
     "financial goal": [
       "3506"
     ],
-    "financier": [
-      "367"
-    ],
     "fired": [
       "2368"
     ],
@@ -8208,20 +7780,11 @@
     "flash loan attack": [
       "3360"
     ],
-    "flight logs": [
-      "366"
-    ],
     "flowering": [
       "379"
     ],
     "forecast": [
       "379"
-    ],
-    "foul play": [
-      "367"
-    ],
-    "foul play confirmed": [
-      "367"
     ],
     "founder": [
       "3369"
@@ -8269,10 +7832,6 @@
     ],
     "genesis": [
       "3365"
-    ],
-    "ghislaine maxwell": [
-      "366",
-      "367"
     ],
     "girl group": [
       "2178"
@@ -8547,9 +8106,6 @@
     "jackpot": [
       "3505"
     ],
-    "jail death": [
-      "367"
-    ],
     "james bond": [
       "389"
     ],
@@ -8561,13 +8117,6 @@
     ],
     "jd vance": [
       "3055"
-    ],
-    "jeffrey epstein": [
-      "366",
-      "367"
-    ],
-    "jeffrey epstein foul": [
-      "367"
     ],
     "jesus": [
       "2670"
@@ -8695,18 +8244,8 @@
     "legislative control": [
       "390"
     ],
-    "list": [
-      "366"
-    ],
-    "list released": [
-      "366"
-    ],
     "listing": [
       "3362"
-    ],
-    "little st. james": [
-      "366",
-      "367"
     ],
     "lp": [
       "2178"
@@ -8741,9 +8280,6 @@
     ],
     "make nba playoffs": [
       "371"
-    ],
-    "manhattan mcc": [
-      "367"
     ],
     "mankai": [
       "379"
@@ -8933,9 +8469,6 @@
     ],
     "mstr": [
       "3257"
-    ],
-    "murder": [
-      "367"
     ],
     "nakamoto": [
       "3365"
@@ -9132,12 +8665,6 @@
     "peace talks": [
       "387"
     ],
-    "pedophile": [
-      "367"
-    ],
-    "pedophile island": [
-      "366"
-    ],
     "peg": [
       "3359"
     ],
@@ -9155,9 +8682,6 @@
     ],
     "pick 2026 nfl": [
       "3072"
-    ],
-    "play confirmed": [
-      "367"
     ],
     "playoffs": [
       "368",
@@ -9583,9 +9107,6 @@
     "settlement date": [
       "3508"
     ],
-    "sex trafficking": [
-      "367"
-    ],
     "sha-256": [
       "3256"
     ],
@@ -9711,9 +9232,6 @@
     "successor": [
       "2368",
       "389"
-    ],
-    "suicide": [
-      "367"
     ],
     "summit": [
       "386",
@@ -9993,9 +9511,6 @@
     "underclassmen": [
       "3072"
     ],
-    "unsealed documents": [
-      "366"
-    ],
     "upside down": [
       "3221",
       "3222",
@@ -10244,9 +9759,6 @@
     "季后赛": [
       "371"
     ],
-    "客户名单": [
-      "366"
-    ],
     "币安币": [
       "3367",
       "3368"
@@ -10272,9 +9784,6 @@
     "最高法院": [
       "1546"
     ],
-    "杰弗里·爱泼斯坦": [
-      "367"
-    ],
     "比特币": [
       "3256",
       "3365"
@@ -10293,10 +9802,6 @@
     ],
     "泽连斯基": [
       "387"
-    ],
-    "爱泼斯坦": [
-      "366",
-      "367"
     ],
     "特大地震": [
       "3356"
@@ -10482,9 +9987,6 @@
     "apple stock": [
       "324"
     ],
-    "associates": [
-      "366"
-    ],
     "association": [
       "369"
     ],
@@ -10516,9 +10018,6 @@
     ],
     "bilateral": [
       "386"
-    ],
-    "black book": [
-      "366"
     ],
     "blockbuster": [
       "385"
@@ -10614,12 +10113,6 @@
     "cinema revenue": [
       "384"
     ],
-    "client list": [
-      "366"
-    ],
-    "client list released": [
-      "366"
-    ],
     "climate change": [
       "378"
     ],
@@ -10680,9 +10173,6 @@
     "cornyn": [
       "391"
     ],
-    "court records": [
-      "366"
-    ],
     "cupertino": [
       "324"
     ],
@@ -10700,9 +10190,6 @@
     ],
     "democrats": [
       "390"
-    ],
-    "deposition": [
-      "366"
     ],
     "dip": [
       "329"
@@ -10761,33 +10248,11 @@
     "eon productions": [
       "389"
     ],
-    "epstein": [
-      "366",
-      "367"
-    ],
-    "epstein client": [
-      "366"
-    ],
-    "epstein client list": [
-      "366"
-    ],
-    "epstein foul": [
-      "367"
-    ],
-    "epstein foul play": [
-      "367"
-    ],
-    "epstein island": [
-      "367"
-    ],
     "equity": [
       "324",
       "326",
       "328",
       "329"
-    ],
-    "evidence": [
-      "366"
     ],
     "extreme weather": [
       "378"
@@ -10807,9 +10272,6 @@
     ],
     "festival total box": [
       "384"
-    ],
-    "files": [
-      "366"
     ],
     "film": [
       "385",
@@ -10831,23 +10293,11 @@
       "368",
       "371"
     ],
-    "financier": [
-      "367"
-    ],
-    "flight logs": [
-      "366"
-    ],
     "flowering": [
       "379"
     ],
     "forecast": [
       "379"
-    ],
-    "foul play": [
-      "367"
-    ],
-    "foul play confirmed": [
-      "367"
     ],
     "franchise": [
       "389"
@@ -10864,10 +10314,6 @@
     "general election": [
       "382",
       "383"
-    ],
-    "ghislaine maxwell": [
-      "366",
-      "367"
     ],
     "global temps": [
       "378"
@@ -10969,9 +10415,6 @@
     "italy league": [
       "388"
     ],
-    "jail death": [
-      "367"
-    ],
     "james bond": [
       "389"
     ],
@@ -10980,13 +10423,6 @@
     ],
     "japan meteorological agency": [
       "379"
-    ],
-    "jeffrey epstein": [
-      "366",
-      "367"
-    ],
-    "jeffrey epstein foul": [
-      "367"
     ],
     "jimmy donaldson": [
       "376"
@@ -11030,16 +10466,6 @@
     "legislative control": [
       "390"
     ],
-    "list": [
-      "366"
-    ],
-    "list released": [
-      "366"
-    ],
-    "little st. james": [
-      "366",
-      "367"
-    ],
     "lunar new year": [
       "384",
       "385"
@@ -11052,9 +10478,6 @@
     ],
     "make nba playoffs": [
       "371"
-    ],
-    "manhattan mcc": [
-      "367"
     ],
     "mankai": [
       "379"
@@ -11124,9 +10547,6 @@
     ],
     "msft close above": [
       "329"
-    ],
-    "murder": [
-      "367"
     ],
     "nasa giss": [
       "378"
@@ -11223,17 +10643,8 @@
     "peace talks": [
       "387"
     ],
-    "pedophile": [
-      "367"
-    ],
-    "pedophile island": [
-      "366"
-    ],
     "phenology": [
       "379"
-    ],
-    "play confirmed": [
-      "367"
     ],
     "playoffs": [
       "368",
@@ -11403,9 +10814,6 @@
     "serie league winner": [
       "388"
     ],
-    "sex trafficking": [
-      "367"
-    ],
     "share price": [
       "324"
     ],
@@ -11446,9 +10854,6 @@
     ],
     "successor": [
       "389"
-    ],
-    "suicide": [
-      "367"
     ],
     "summit": [
       "386",
@@ -11559,9 +10964,6 @@
     ],
     "ukraine": [
       "387"
-    ],
-    "unsealed documents": [
-      "366"
     ],
     "us politics": [
       "380"
@@ -11679,9 +11081,6 @@
     "季后赛": [
       "371"
     ],
-    "客户名单": [
-      "366"
-    ],
     "德克萨斯": [
       "391"
     ],
@@ -11697,9 +11096,6 @@
     "最热年份": [
       "378"
     ],
-    "杰弗里·爱泼斯坦": [
-      "367"
-    ],
     "民主党": [
       "380"
     ],
@@ -11708,10 +11104,6 @@
     ],
     "泽连斯基": [
       "387"
-    ],
-    "爱泼斯坦": [
-      "366",
-      "367"
     ],
     "特朗普": [
       "386"
