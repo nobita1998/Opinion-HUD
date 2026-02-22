@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-22 11:13:29 UTC+8",
+    "generatedAt": "2026-02-22 16:47:23 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 169,
-      "markets": 169,
+      "kept": 173,
+      "markets": 182,
       "keywords": 973,
       "events": {
         "events": 20
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 831,
+        "cutoff_expired": 827,
         "cutoff_zero_kept": 5,
         "resolved": 0,
         "missing_id": 0,
@@ -3490,8 +3490,8 @@
     "371": {
       "title": "Which teams will make the NBA Playoffs?",
       "url": "https://app.opinion.trade/market/371?ref=opinion_hud",
-      "yesTokenId": "97348739080909218405059084638283422347197437709104060496562856528193198841279",
-      "noTokenId": "59198126001492620132563570261684927570688664045050402359097375556646127323817",
+      "yesTokenId": "56713255496641942865107436116425534504294619870576942388289136823141103894389",
+      "noTokenId": "70561703983966246605854406793345175999960091123352416982784141552743147618115",
       "volume": 0.0,
       "labels": {
         "yesLabel": "",
@@ -6154,6 +6154,162 @@
       "labels": {
         "yesLabel": "KSG",
         "noLabel": "TTG"
+      },
+      "type": "binary"
+    },
+    "7529": {
+      "title": "BTC Up or Down - Hourly (Feb 22, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7529?ref=opinion_hud",
+      "yesTokenId": "88602945907662357945651048096537280905724753390829188239318925421553578561531",
+      "noTokenId": "70501136623742414438744325969749621857148336392342833537429511942440587957656",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7532": {
+      "title": "NBA: Celtics vs Suns (Feb. 24 9:00PM ET)",
+      "url": "https://app.opinion.trade/market/7532?ref=opinion_hud",
+      "yesTokenId": "39997855974794745172133271117454668675790387036414319385084529267448462125695",
+      "noTokenId": "30867654213081228141315257845396107688786401550187046912203102888616219369707",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Celtics",
+        "noLabel": "Suns"
+      },
+      "type": "binary"
+    },
+    "7537": {
+      "title": "NBA: Cavaliers vs Bucks (Feb. 25 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/7537?ref=opinion_hud",
+      "yesTokenId": "54200077925763649493691335650987312168499812632714739582156528401997375277577",
+      "noTokenId": "51360941565343090916806341768804837904912804996667776781931287260783745656109",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Cavaliers",
+        "noLabel": "Bucks"
+      },
+      "type": "binary"
+    },
+    "7538": {
+      "title": "NBA: Kings vs Rockets (Feb. 25 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/7538?ref=opinion_hud",
+      "yesTokenId": "68140454145345160032441165152095379433648469682015021039474175711438855287269",
+      "noTokenId": "33735511412838570294593619341031496387233381483171832811334955833863588575328",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Kings",
+        "noLabel": "Rockets"
+      },
+      "type": "binary"
+    },
+    "7540": {
+      "title": "Bitcoin Up or Down on February 23?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/7540?ref=opinion_hud",
+      "yesTokenId": "78509901104835279571929850686435182695654964313383438164510024050404208681625",
+      "noTokenId": "44929847661149761834028315569361727688073883293921905777023961475020666734521",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7536": {
+      "title": "NBA: Warriors vs Grizzlies (Feb. 25 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/7536?ref=opinion_hud",
+      "yesTokenId": "52258501296305093365755995620711448862131599640203016107751123492290587147248",
+      "noTokenId": "91593036863326374532625172878706141733367722967184766151865168702028236307684",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Warriors",
+        "noLabel": "Grizzlies"
+      },
+      "type": "binary"
+    },
+    "7535": {
+      "title": "NBA: Spurs vs Raptors (Feb. 25 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/7535?ref=opinion_hud",
+      "yesTokenId": "89025824801420333747158072176292858040842191801667742404381261174981223222762",
+      "noTokenId": "105744719802643115608481869267092281846870364425208483963607321839087133672061",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Spurs",
+        "noLabel": "Raptors"
+      },
+      "type": "binary"
+    },
+    "7528": {
+      "title": "BNB Up or Down - Hourly (Feb 22, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7528?ref=opinion_hud",
+      "yesTokenId": "24543592319681208917424049939366766209302516689515539657194330092230659193441",
+      "noTokenId": "43878713394123591154040092327463882796951510052989898612624345110050219098403",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7534": {
+      "title": "NBA: Timberwolves vs Trail Blazers (Feb. 24 10:00PM ET)",
+      "url": "https://app.opinion.trade/market/7534?ref=opinion_hud",
+      "yesTokenId": "81908182837623309380773621041791538216350364574466253672170285377231546225461",
+      "noTokenId": "107484500931479908458500671505397643372561460286269240245394929991334382058730",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Timberwolves",
+        "noLabel": "Trail Blazers"
+      },
+      "type": "binary"
+    },
+    "7539": {
+      "title": "NBA: Celtics vs Nuggets (Feb. 25 10:00PM ET)",
+      "url": "https://app.opinion.trade/market/7539?ref=opinion_hud",
+      "yesTokenId": "4417917759631068682861219840723392201285877692998260867986935601540628901583",
+      "noTokenId": "30950234956901917681496977360561165117541465965043411644281876695906602178796",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Celtics",
+        "noLabel": "Nuggets"
+      },
+      "type": "binary"
+    },
+    "7530": {
+      "title": "ETH Up or Down - Hourly (Feb 22, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7530?ref=opinion_hud",
+      "yesTokenId": "18743043413622097414101048470993810854367085032205580668371323642226311712781",
+      "noTokenId": "67038823841340663784379313136711660195576358329971510162968790418174380645177",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7533": {
+      "title": "NBA: Magic vs Lakers (Feb. 24 10:30PM ET)",
+      "url": "https://app.opinion.trade/market/7533?ref=opinion_hud",
+      "yesTokenId": "93029991209418018114238904188481690944481649164815893741308328257023999264000",
+      "noTokenId": "56726306356268498727315856783883950510133309103829041129337375492360341706625",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Magic",
+        "noLabel": "Lakers"
+      },
+      "type": "binary"
+    },
+    "7531": {
+      "title": "NBA: Hornets vs Bulls (Feb. 24 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/7531?ref=opinion_hud",
+      "yesTokenId": "56250945711403106524359636949474813696685578927728125280735273063088025696375",
+      "noTokenId": "58510764915482483711613172850678193695670322619908155394740567030867178406284",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Hornets",
+        "noLabel": "Bulls"
       },
       "type": "binary"
     }
