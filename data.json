@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-22 00:44:01 UTC+8",
+    "generatedAt": "2026-02-22 11:13:29 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 185,
-      "markets": 182,
+      "kept": 169,
+      "markets": 169,
       "keywords": 973,
       "events": {
         "events": 20
@@ -17,11 +17,11 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 806,
-        "cutoff_zero_kept": 15,
+        "cutoff_expired": 831,
+        "cutoff_zero_kept": 5,
         "resolved": 0,
         "missing_id": 0,
-        "missing_title": 9,
+        "missing_title": 0,
         "title_pattern_filtered": 0
       },
       "ai": {
@@ -3490,8 +3490,8 @@
     "371": {
       "title": "Which teams will make the NBA Playoffs?",
       "url": "https://app.opinion.trade/market/371?ref=opinion_hud",
-      "yesTokenId": "34946096723880510056661309575792858516037579469887438946956843803400604416148",
-      "noTokenId": "92711345136772113204629676446210646642850968916189924244959576807699562016334",
+      "yesTokenId": "97348739080909218405059084638283422347197437709104060496562856528193198841279",
+      "noTokenId": "59198126001492620132563570261684927570688664045050402359097375556646127323817",
       "volume": 0.0,
       "labels": {
         "yesLabel": "",
@@ -5149,18 +5149,6 @@
       },
       "type": "binary"
     },
-    "6971": {
-      "title": "Will Gu Ailing (Eileen Gu) win Gold in Women’s Freeski Halfpipe at Milano Cortina 2026?",
-      "url": "https://app.opinion.trade/market/6971?ref=opinion_hud",
-      "yesTokenId": "64066106181855603867589714347180514991796564308198650460815394937163901874525",
-      "noTokenId": "76291236185667189210844970118212801333130079295636411072860423834507706943549",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "type": "binary"
-    },
     "7242": {
       "title": "CS2 - PGL: MOUZ vs NAVI (Feb. 20 6:00AM ET)",
       "url": "https://app.opinion.trade/market/7242?ref=opinion_hud",
@@ -5398,54 +5386,6 @@
           "noTokenId": "15412673029572829764352659443830899962423569490297868579407744928821191576022"
         }
       ]
-    },
-    "7368": {
-      "title": "NBA: Celtics vs Lakers (Feb. 22 6:30PM ET)",
-      "url": "https://app.opinion.trade/market/7368?ref=opinion_hud",
-      "yesTokenId": "66881841291568201365872361715722069309973785248610904886965952829459613299212",
-      "noTokenId": "93562157933259905207029217576029890515086924560369136024603745015075031656582",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Celtics",
-        "noLabel": "Lakers"
-      },
-      "type": "binary"
-    },
-    "7367": {
-      "title": "NBA: Mavericks vs Pacers (Feb. 22 5:00PM ET)",
-      "url": "https://app.opinion.trade/market/7367?ref=opinion_hud",
-      "yesTokenId": "57888838829401901060422118825910771386603937130614089536713936433057719638585",
-      "noTokenId": "59804512388109238476527702451218738678318667779414199660916178270182733141123",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Mavericks",
-        "noLabel": "Pacers"
-      },
-      "type": "binary"
-    },
-    "7369": {
-      "title": "NBA: Magic vs Clippers (Feb. 22 9:00PM ET)",
-      "url": "https://app.opinion.trade/market/7369?ref=opinion_hud",
-      "yesTokenId": "10610422245930111262600656106272295441129554376833632371261441841121567625753",
-      "noTokenId": "79675115836255940530571770610211613568563696459058009016287186419902690595569",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Magic",
-        "noLabel": "Clippers"
-      },
-      "type": "binary"
-    },
-    "7365": {
-      "title": "NBA: Raptors vs Bucks (Feb. 22 3:30PM ET)",
-      "url": "https://app.opinion.trade/market/7365?ref=opinion_hud",
-      "yesTokenId": "113044354932265474373266342123840883502702292027766057031219425041167619282561",
-      "noTokenId": "102781823305635442714206551233204585451267915720338439239109780353252741443661",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Raptors",
-        "noLabel": "Bucks"
-      },
-      "type": "binary"
     },
     "391": {
       "title": "Texas Republican Senate Primary Winner",
@@ -5899,18 +5839,6 @@
       },
       "type": "binary"
     },
-    "7319": {
-      "title": "CBLOL: LOS vs FUR (Feb. 22 11:00AM ET)",
-      "url": "https://app.opinion.trade/market/7319?ref=opinion_hud",
-      "yesTokenId": "25111580986724279590551670955483625780514186226284722123194983907356790691374",
-      "noTokenId": "82783653406617222234281533548912944341361399104847676997330862368524595738679",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "LOS",
-        "noLabel": "FUR"
-      },
-      "type": "binary"
-    },
     "7322": {
       "title": "LPL: JDG vs TES (Feb. 24 1:00AM ET)",
       "url": "https://app.opinion.trade/market/7322?ref=opinion_hud",
@@ -6157,42 +6085,6 @@
       },
       "type": "binary"
     },
-    "7295": {
-      "title": "LEC: GX vs TH (Feb. 21 10:45AM ET)",
-      "url": "https://app.opinion.trade/market/7295?ref=opinion_hud",
-      "yesTokenId": "31778399854380912246193617710884200396559162974728530314019038096654199204781",
-      "noTokenId": "52535620334869592407369646406814543210986386866276042194686795674841139673839",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "GX",
-        "noLabel": "TH"
-      },
-      "type": "binary"
-    },
-    "7296": {
-      "title": "LEC: FNC vs VIT (Feb. 21 12:30PM ET)",
-      "url": "https://app.opinion.trade/market/7296?ref=opinion_hud",
-      "yesTokenId": "322346532858852393293112700906033067108564092623580287578689142043462440298",
-      "noTokenId": "81327576993719872241162153606683725384573993077222077244636640019363053889792",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "FNC",
-        "noLabel": "VIT"
-      },
-      "type": "binary"
-    },
-    "7312": {
-      "title": "LCS: LYON vs FLY (Feb. 21 4:00PM ET)",
-      "url": "https://app.opinion.trade/market/7312?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "7441": {
       "title": "NBA: 76ers vs Pacers (Feb. 24 7:00PM ET)",
       "url": "https://app.opinion.trade/market/7441?ref=opinion_hud",
@@ -6250,54 +6142,6 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "7478": {
-      "title": "ETH Up or Down - Hourly (Feb 21, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7478?ref=opinion_hud",
-      "yesTokenId": "12495596786906340526375843227169103027525523446363576496652686873708622130412",
-      "noTokenId": "72639253533718404633853575839002300583323937190030269343787745796060355663453",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "7476": {
-      "title": "BNB Up or Down - Hourly (Feb 21, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7476?ref=opinion_hud",
-      "yesTokenId": "30298729906803263098483763054874059532712303314817326523735679439472903656647",
-      "noTokenId": "22695438760689908015938662239743665115249887431729836971274571981439305047818",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "7477": {
-      "title": "BTC Up or Down - Hourly (Feb 21, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7477?ref=opinion_hud",
-      "yesTokenId": "10031173257261953444805173945519321235423701429422512186722208127829564735318",
-      "noTokenId": "27659049863705159817964225167259116273232700150936108120722295274741565373856",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "7486": {
-      "title": "Bitcoin Up or Down on February 22?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/7486?ref=opinion_hud",
-      "yesTokenId": "14778527567436087966622761623438219093901519232950964657986633564605157443299",
-      "noTokenId": "63466801147710619413084537747051469902728645360224328977180033886492376581164",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
