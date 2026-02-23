@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-23 00:46:00 UTC+8",
+    "generatedAt": "2026-02-23 11:15:37 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 173,
-      "markets": 182,
+      "kept": 164,
+      "markets": 173,
       "keywords": 973,
       "events": {
         "events": 20
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 827,
+        "cutoff_expired": 836,
         "cutoff_zero_kept": 5,
         "resolved": 0,
         "missing_id": 0,
@@ -5024,18 +5024,6 @@
         }
       ]
     },
-    "6910": {
-      "title": "CBLOL: LOUD vs RED Canids (Feb. 22 11:00AM ET)",
-      "url": "https://app.opinion.trade/market/6910?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "6909": {
       "title": "LCK: DNF vs DRX (Feb. 19 3:00AM ET)",
       "url": "https://app.opinion.trade/market/6909?ref=opinion_hud",
@@ -5136,18 +5124,6 @@
           "noTokenId": "55225803794147559844419613154379583825160314232165625501428455769467595092830"
         }
       ]
-    },
-    "6977": {
-      "title": "New Binance Alpha listing during the Spring Festival holidays?",
-      "url": "https://app.opinion.trade/market/6977?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
     },
     "7242": {
       "title": "CS2 - PGL: MOUZ vs NAVI (Feb. 20 6:00AM ET)",
@@ -5851,18 +5827,6 @@
       },
       "type": "binary"
     },
-    "7320": {
-      "title": "LCS: SEN vs C9 (Feb. 22 4:00PM ET)",
-      "url": "https://app.opinion.trade/market/7320?ref=opinion_hud",
-      "yesTokenId": "66342963499817183599903138278552871984466653082718718386485147825776356481529",
-      "noTokenId": "62158480474722357965830856348411541803853333790378225979849019776664657057403",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "SEN",
-        "noLabel": "C9"
-      },
-      "type": "binary"
-    },
     "7321": {
       "title": "LPL: WBG vs IG (Feb. 25 1:00AM ET)",
       "url": "https://app.opinion.trade/market/7321?ref=opinion_hud",
@@ -6121,30 +6085,6 @@
       },
       "type": "binary"
     },
-    "7440": {
-      "title": "NBA: Kings vs Grizzlies (Feb. 23 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/7440?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "7439": {
-      "title": "NBA: Spurs vs Pistons (Feb. 23 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/7439?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "7482": {
       "title": "KPL: KSG vs TTG (Feb. 24 7:00AM ET)",
       "url": "https://app.opinion.trade/market/7482?ref=opinion_hud",
@@ -6190,18 +6130,6 @@
       "labels": {
         "yesLabel": "Kings",
         "noLabel": "Rockets"
-      },
-      "type": "binary"
-    },
-    "7540": {
-      "title": "Bitcoin Up or Down on February 23?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/7540?ref=opinion_hud",
-      "yesTokenId": "78509901104835279571929850686435182695654964313383438164510024050404208681625",
-      "noTokenId": "44929847661149761834028315569361727688073883293921905777023961475020666734521",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
@@ -6274,42 +6202,6 @@
       "labels": {
         "yesLabel": "Hornets",
         "noLabel": "Bulls"
-      },
-      "type": "binary"
-    },
-    "7565": {
-      "title": "BTC Up or Down - Hourly (Feb 22, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7565?ref=opinion_hud",
-      "yesTokenId": "78807238024985053925082500780346677022765467795108844964929503057712659163386",
-      "noTokenId": "47755791386240418494006941480752357878238394793224360507956130177324527041780",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "7564": {
-      "title": "BNB Up or Down - Hourly (Feb 22, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7564?ref=opinion_hud",
-      "yesTokenId": "93868855774930535322097864836677589547543352818242946989447931655625027425547",
-      "noTokenId": "39196322453633384003564508125794763511199397211927271756600687252471766219727",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "7566": {
-      "title": "ETH Up or Down - Hourly (Feb 22, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7566?ref=opinion_hud",
-      "yesTokenId": "15005033666516894009420698184298534014172418886646356490151953530779945014971",
-      "noTokenId": "113269840072290008323320762579798240829439592335519202324378603279017476963993",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     }
