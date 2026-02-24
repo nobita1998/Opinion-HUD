@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-24 01:13:05 UTC+8",
+    "generatedAt": "2026-02-24 10:54:52 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 212,
-      "markets": 190,
+      "kept": 198,
+      "markets": 176,
       "keywords": 1033,
       "events": {
         "events": 26
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 788,
+        "cutoff_expired": 802,
         "cutoff_zero_kept": 5,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 20,
+        "reused": 26,
         "regenerated_empty_entitygroups": 0,
-        "calls": 6,
-        "retries": 2,
+        "calls": 0,
+        "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 6,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -4865,18 +4865,6 @@
       },
       "type": "binary"
     },
-    "6734": {
-      "title": "LPL: AL vs Team WE (Feb 24 1:00AM ET)",
-      "url": "https://app.opinion.trade/market/6734?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "382": {
       "title": "Next UK Prime Minister in 2026?",
       "url": "https://app.opinion.trade/market/382?ref=opinion_hud",
@@ -6314,42 +6302,6 @@
       },
       "type": "binary"
     },
-    "7441": {
-      "title": "NBA: 76ers vs Pacers (Feb. 24 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/7441?ref=opinion_hud",
-      "yesTokenId": "21644847115558389990097759828193841234340505276280078291689250506545756850096",
-      "noTokenId": "55307576430359524502079425920975682268088905580980830075645626464025442146194",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "76ers",
-        "noLabel": "Pacers"
-      },
-      "type": "binary"
-    },
-    "7443": {
-      "title": "NBA: Knicks vs Cavaliers (Feb. 24 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/7443?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "7442": {
-      "title": "NBA: Mavericks vs Nets (Feb. 24 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/7442?ref=opinion_hud",
-      "yesTokenId": "52723398846883081756067151528697180981362710317972341118320856109022744884463",
-      "noTokenId": "27248533643504244058191431439759320994382252547964343870083496770898189005542",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Mavericks",
-        "noLabel": "Nets"
-      },
-      "type": "binary"
-    },
     "7482": {
       "title": "KPL: KSG vs TTG (Feb. 24 7:00AM ET)",
       "url": "https://app.opinion.trade/market/7482?ref=opinion_hud",
@@ -6359,18 +6311,6 @@
       "labels": {
         "yesLabel": "KSG",
         "noLabel": "TTG"
-      },
-      "type": "binary"
-    },
-    "7532": {
-      "title": "NBA: Celtics vs Suns (Feb. 24 9:00PM ET)",
-      "url": "https://app.opinion.trade/market/7532?ref=opinion_hud",
-      "yesTokenId": "39997855974794745172133271117454668675790387036414319385084529267448462125695",
-      "noTokenId": "30867654213081228141315257845396107688786401550187046912203102888616219369707",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Celtics",
-        "noLabel": "Suns"
       },
       "type": "binary"
     },
@@ -6422,18 +6362,6 @@
       },
       "type": "binary"
     },
-    "7534": {
-      "title": "NBA: Timberwolves vs Trail Blazers (Feb. 24 10:00PM ET)",
-      "url": "https://app.opinion.trade/market/7534?ref=opinion_hud",
-      "yesTokenId": "81908182837623309380773621041791538216350364574466253672170285377231546225461",
-      "noTokenId": "107484500931479908458500671505397643372561460286269240245394929991334382058730",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Timberwolves",
-        "noLabel": "Trail Blazers"
-      },
-      "type": "binary"
-    },
     "7539": {
       "title": "NBA: Celtics vs Nuggets (Feb. 25 10:00PM ET)",
       "url": "https://app.opinion.trade/market/7539?ref=opinion_hud",
@@ -6443,30 +6371,6 @@
       "labels": {
         "yesLabel": "Celtics",
         "noLabel": "Nuggets"
-      },
-      "type": "binary"
-    },
-    "7533": {
-      "title": "NBA: Magic vs Lakers (Feb. 24 10:30PM ET)",
-      "url": "https://app.opinion.trade/market/7533?ref=opinion_hud",
-      "yesTokenId": "93029991209418018114238904188481690944481649164815893741308328257023999264000",
-      "noTokenId": "56726306356268498727315856783883950510133309103829041129337375492360341706625",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Magic",
-        "noLabel": "Lakers"
-      },
-      "type": "binary"
-    },
-    "7531": {
-      "title": "NBA: Hornets vs Bulls (Feb. 24 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/7531?ref=opinion_hud",
-      "yesTokenId": "56250945711403106524359636949474813696685578927728125280735273063088025696375",
-      "noTokenId": "58510764915482483711613172850678193695670322619908155394740567030867178406284",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Hornets",
-        "noLabel": "Bulls"
       },
       "type": "binary"
     },
@@ -6969,18 +6873,6 @@
         }
       ]
     },
-    "7632": {
-      "title": "Dota2 - DreamLeague: AUR vs TUNDRA (Feb. 23 11:30AM ET)",
-      "url": "https://app.opinion.trade/market/7632?ref=opinion_hud",
-      "yesTokenId": "12155126913859507635299388100839519597318856215027631666614366425967519134647",
-      "noTokenId": "42493614078985082451380684900673346777351272413943294673472738618761656561580",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "AUR",
-        "noLabel": "TUNDRA"
-      },
-      "type": "binary"
-    },
     "7636": {
       "title": "Dota2 - DreamLeague: FAL vs MOUZ (Feb. 24 11:30AM ET)",
       "url": "https://app.opinion.trade/market/7636?ref=opinion_hud",
@@ -7029,54 +6921,6 @@
       },
       "type": "binary"
     },
-    "7635": {
-      "title": "Dota2 - DreamLeague: PARI vs XG (Feb. 23 8:30AM ET)",
-      "url": "https://app.opinion.trade/market/7635?ref=opinion_hud",
-      "yesTokenId": "114915244859462360495512840826984075962464907827529178978911180773985011611055",
-      "noTokenId": "53589049362042814550086593478389590350678786282703589361210921862293850202437",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "PARI",
-        "noLabel": "XG "
-      },
-      "type": "binary"
-    },
-    "7657": {
-      "title": "Bitcoin Up or Down on February 24?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/7657?ref=opinion_hud",
-      "yesTokenId": "108877392150803692194600729770292006360798863321549581752089408307881006907356",
-      "noTokenId": "25889909522875722124729261715880031333284536821002121462514783386268784440285",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "7634": {
-      "title": "Dota2 - DreamLeague: MOUZ vs BB (Feb. 23 5:30AM ET)",
-      "url": "https://app.opinion.trade/market/7634?ref=opinion_hud",
-      "yesTokenId": "97940319190117751250679878227832543881843050414062455352292744409722396914049",
-      "noTokenId": "110859874529837058863848938264640261769190336878375270478638376779834974151941",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "MOUZ",
-        "noLabel": "BB"
-      },
-      "type": "binary"
-    },
-    "7628": {
-      "title": "LEC: G2 vs MKOI (Feb. 23 10:45AM ET)",
-      "url": "https://app.opinion.trade/market/7628?ref=opinion_hud",
-      "yesTokenId": "4896913106685565500905258152729131719543841603904100318277953108574637764842",
-      "noTokenId": "46956855236212110684275369843377980572651030525353845684918961144716965913636",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "G2",
-        "noLabel": "MKOI "
-      },
-      "type": "binary"
-    },
     "7641": {
       "title": "Dota2 - DreamLeague: XG vs TUNDRA (Feb. 24 5:30AM ET)",
       "url": "https://app.opinion.trade/market/7641?ref=opinion_hud",
@@ -7086,18 +6930,6 @@
       "labels": {
         "yesLabel": "XG",
         "noLabel": "TUNDRA"
-      },
-      "type": "binary"
-    },
-    "7633": {
-      "title": "Dota2 - DreamLeague: TL vs FAL (Feb. 23 2:30PM ET)",
-      "url": "https://app.opinion.trade/market/7633?ref=opinion_hud",
-      "yesTokenId": "72832194245961236038341441334391248477210347615753673512067122861086134106419",
-      "noTokenId": "106487476308028455068711071654065463735034289476767456555573736260783763699706",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "TL",
-        "noLabel": "FAL"
       },
       "type": "binary"
     }
