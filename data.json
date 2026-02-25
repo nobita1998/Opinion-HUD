@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25 11:11:37 UTC+8",
+    "generatedAt": "2026-02-25 17:02:47 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -10,7 +10,7 @@
       "seen": 1000,
       "kept": 225,
       "markets": 184,
-      "keywords": 1024,
+      "keywords": 1043,
       "events": {
         "events": 23
       },
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 19,
-        "regenerated_empty_entitygroups": 4,
-        "calls": 4,
-        "retries": 4,
+        "reused": 20,
+        "regenerated_empty_entitygroups": 3,
+        "calls": 3,
+        "retries": 1,
         "fallback": 0,
-        "empty": 3,
-        "non_empty": 1,
+        "empty": 1,
+        "non_empty": 2,
         "errors": 0
       }
     }
@@ -1080,12 +1080,35 @@
       "bestMarketId": "118",
       "bestLabels": null,
       "keywords": [
+        "metamask",
+        "mm",
+        "consensys",
+        "wallet",
+        "token",
+        "airdrop",
+        "crypto",
+        "ethereum",
+        "defi",
+        "web3",
+        "token launch",
+        "tokenomics",
+        "governance token",
+        "erc20",
+        "token sale",
         "metamask launch",
         "launch token",
         "metamask launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "metamask"
+      ],
+      "entityGroups": [
+        [
+          "metamask",
+          "小狐狸",
+          "meta"
+        ]
+      ],
       "sig": "67894b86",
       "sigFull": "67894b86",
       "sigCore": "59f0b6e6",
@@ -1100,6 +1123,18 @@
       "bestLabels": null,
       "keywords": [
         "champions league",
+        "ucl",
+        "uefa",
+        "soccer",
+        "football",
+        "european football",
+        "round of 16",
+        "knockout stage",
+        "group stage",
+        "european cup",
+        "clubs",
+        "teams",
+        "qualification",
         "league which",
         "which teams",
         "teams advance",
@@ -1109,8 +1144,15 @@
         "which teams advance",
         "teams advance round"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "champions league"
+      ],
+      "entityGroups": [
+        [
+          "champions league",
+          "欧洲冠军联赛"
+        ]
+      ],
       "sig": "9cf585d9",
       "sigFull": "9cf585d9",
       "sigCore": "7e12f24e",
@@ -6425,12 +6467,35 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "metamask",
+        "mm",
+        "consensys",
+        "wallet",
+        "token",
+        "airdrop",
+        "crypto",
+        "ethereum",
+        "defi",
+        "web3",
+        "token launch",
+        "tokenomics",
+        "governance token",
+        "erc20",
+        "token sale",
         "metamask launch",
         "launch token",
         "metamask launch token"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "metamask"
+      ],
+      "entityGroups": [
+        [
+          "metamask",
+          "小狐狸",
+          "meta"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -6471,6 +6536,18 @@
       },
       "keywords": [
         "champions league",
+        "ucl",
+        "uefa",
+        "soccer",
+        "football",
+        "european football",
+        "round of 16",
+        "knockout stage",
+        "group stage",
+        "european cup",
+        "clubs",
+        "teams",
+        "qualification",
         "league which",
         "which teams",
         "teams advance",
@@ -6480,8 +6557,15 @@
         "which teams advance",
         "teams advance round"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "champions league"
+      ],
+      "entityGroups": [
+        [
+          "champions league",
+          "欧洲冠军联赛"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -7241,6 +7325,7 @@
       "3039"
     ],
     "airdrop": [
+      "118",
       "1721",
       "3361",
       "3366",
@@ -7683,6 +7768,9 @@
     "cloudflare status": [
       "3357"
     ],
+    "clubs": [
+      "399"
+    ],
     "cny": [
       "384",
       "385"
@@ -7724,6 +7812,9 @@
     ],
     "congress": [
       "390"
+    ],
+    "consensys": [
+      "118"
     ],
     "conservative": [
       "382"
@@ -7777,6 +7868,7 @@
       "3357"
     ],
     "crypto": [
+      "118",
       "1721",
       "3359",
       "3361",
@@ -7875,6 +7967,7 @@
       "3509"
     ],
     "defi": [
+      "118",
       "1721",
       "3361",
       "395"
@@ -8060,6 +8153,9 @@
       "2668",
       "3356"
     ],
+    "erc20": [
+      "118"
+    ],
     "escalation": [
       "3039"
     ],
@@ -8073,6 +8169,7 @@
       "3364"
     ],
     "ethereum": [
+      "118",
       "1721",
       "3364"
     ],
@@ -8081,6 +8178,12 @@
     ],
     "ethereum all time": [
       "3364"
+    ],
+    "european cup": [
+      "399"
+    ],
+    "european football": [
+      "399"
     ],
     "evm": [
       "1721",
@@ -8215,6 +8318,9 @@
     "flying tulip fdv": [
       "393"
     ],
+    "football": [
+      "399"
+    ],
     "forecast": [
       "379"
     ],
@@ -8322,6 +8428,7 @@
       "381"
     ],
     "governance token": [
+      "118",
       "3366",
       "395"
     ],
@@ -8338,6 +8445,9 @@
     ],
     "gross": [
       "385"
+    ],
+    "group stage": [
+      "399"
     ],
     "hack": [
       "3360"
@@ -8605,6 +8715,9 @@
     "karen wheeler": [
       "3222"
     ],
+    "knockout stage": [
+      "399"
+    ],
     "kraken": [
       "3362"
     ],
@@ -8817,6 +8930,12 @@
     "messiah": [
       "2670"
     ],
+    "meta": [
+      "118"
+    ],
+    "metamask": [
+      "118"
+    ],
     "metamask launch": [
       "118"
     ],
@@ -8870,6 +8989,9 @@
     ],
     "missile": [
       "3039"
+    ],
+    "mm": [
+      "118"
     ],
     "monad": [
       "1721"
@@ -9304,6 +9426,9 @@
       "2668",
       "3356"
     ],
+    "qualification": [
+      "399"
+    ],
     "qualifying": [
       "371"
     ],
@@ -9484,6 +9609,9 @@
       "3506",
       "3525"
     ],
+    "round of 16": [
+      "399"
+    ],
     "rug pull": [
       "398"
     ],
@@ -9639,6 +9767,9 @@
     "snapshot": [
       "392"
     ],
+    "soccer": [
+      "399"
+    ],
     "specific date": [
       "3449"
     ],
@@ -9775,7 +9906,8 @@
       "1546"
     ],
     "teams": [
-      "371"
+      "371",
+      "399"
     ],
     "teams advance": [
       "399"
@@ -9904,6 +10036,7 @@
       "3509"
     ],
     "token": [
+      "118",
       "1721",
       "3367",
       "392",
@@ -9923,6 +10056,7 @@
       "393"
     ],
     "token launch": [
+      "118",
       "3366",
       "393",
       "395",
@@ -9930,9 +10064,11 @@
       "397"
     ],
     "token sale": [
+      "118",
       "397"
     ],
     "tokenomics": [
+      "118",
       "3361",
       "393",
       "395",
@@ -10020,6 +10156,12 @@
     "tv show": [
       "3221",
       "3224"
+    ],
+    "ucl": [
+      "399"
+    ],
+    "uefa": [
+      "399"
     ],
     "uk": [
       "382"
@@ -10115,6 +10257,7 @@
       "3055"
     ],
     "wallet": [
+      "118",
       "3365"
     ],
     "war": [
@@ -10134,6 +10277,9 @@
     ],
     "wbd": [
       "2398"
+    ],
+    "web3": [
+      "118"
     ],
     "westminster": [
       "382"
@@ -10283,6 +10429,9 @@
     "季后赛": [
       "371"
     ],
+    "小狐狸": [
+      "118"
+    ],
     "币安币": [
       "3367",
       "3368"
@@ -10313,6 +10462,9 @@
     ],
     "最高法院": [
       "1546"
+    ],
+    "欧洲冠军联赛": [
+      "399"
     ],
     "比特币": [
       "3256",
@@ -10474,6 +10626,7 @@
       "396"
     ],
     "airdrop": [
+      "118",
       "392",
       "393",
       "394",
@@ -10625,6 +10778,9 @@
     "climate data": [
       "378"
     ],
+    "clubs": [
+      "399"
+    ],
     "cny": [
       "384",
       "385"
@@ -10648,6 +10804,9 @@
     "congress": [
       "390"
     ],
+    "consensys": [
+      "118"
+    ],
     "conservative": [
       "382"
     ],
@@ -10664,6 +10823,7 @@
       "391"
     ],
     "crypto": [
+      "118",
       "394"
     ],
     "crypto detective": [
@@ -10701,6 +10861,7 @@
       "396"
     ],
     "defi": [
+      "118",
       "395"
     ],
     "democrat": [
@@ -10761,6 +10922,18 @@
     ],
     "eon productions": [
       "389"
+    ],
+    "erc20": [
+      "118"
+    ],
+    "ethereum": [
+      "118"
+    ],
+    "european cup": [
+      "399"
+    ],
+    "european football": [
+      "399"
     ],
     "evm": [
       "392"
@@ -10830,6 +11003,9 @@
     "flying tulip fdv": [
       "393"
     ],
+    "football": [
+      "399"
+    ],
     "forecast": [
       "379"
     ],
@@ -10896,6 +11072,7 @@
       "381"
     ],
     "governance token": [
+      "118",
       "395"
     ],
     "government": [
@@ -10907,6 +11084,9 @@
     ],
     "gross": [
       "385"
+    ],
+    "group stage": [
+      "399"
     ],
     "heat record": [
       "378"
@@ -10979,6 +11159,9 @@
     ],
     "jma cherry blossoms": [
       "379"
+    ],
+    "knockout stage": [
+      "399"
     ],
     "kremlin": [
       "387"
@@ -11079,6 +11262,12 @@
     "megaeth airdrop": [
       "392"
     ],
+    "meta": [
+      "118"
+    ],
+    "metamask": [
+      "118"
+    ],
     "metamask launch": [
       "118"
     ],
@@ -11102,6 +11291,9 @@
     ],
     "minister thailand": [
       "383"
+    ],
+    "mm": [
+      "118"
     ],
     "movie": [
       "385",
@@ -11332,6 +11524,9 @@
     "putin meet zelenskyy": [
       "387"
     ],
+    "qualification": [
+      "399"
+    ],
     "qualifying": [
       "371"
     ],
@@ -11377,6 +11572,9 @@
     ],
     "rnc": [
       "381"
+    ],
+    "round of 16": [
+      "399"
     ],
     "rug pull": [
       "398"
@@ -11430,6 +11628,9 @@
     "snapshot": [
       "392"
     ],
+    "soccer": [
+      "399"
+    ],
     "speculation": [
       "393",
       "394",
@@ -11478,7 +11679,8 @@
       "398"
     ],
     "teams": [
-      "371"
+      "371",
+      "399"
     ],
     "teams advance": [
       "399"
@@ -11527,6 +11729,7 @@
       "385"
     ],
     "token": [
+      "118",
       "392",
       "394"
     ],
@@ -11541,15 +11744,18 @@
       "393"
     ],
     "token launch": [
+      "118",
       "393",
       "395",
       "396",
       "397"
     ],
     "token sale": [
+      "118",
       "397"
     ],
     "tokenomics": [
+      "118",
       "393",
       "395",
       "396"
@@ -11594,6 +11800,12 @@
     "tulip fdv above": [
       "393"
     ],
+    "ucl": [
+      "399"
+    ],
+    "uefa": [
+      "399"
+    ],
     "uk": [
       "382"
     ],
@@ -11629,8 +11841,14 @@
       "383",
       "391"
     ],
+    "wallet": [
+      "118"
+    ],
     "warmest year": [
       "378"
+    ],
+    "web3": [
+      "118"
     ],
     "westminster": [
       "382"
@@ -11723,6 +11941,9 @@
     "季后赛": [
       "371"
     ],
+    "小狐狸": [
+      "118"
+    ],
     "德克萨斯": [
       "391"
     ],
@@ -11743,6 +11964,9 @@
     ],
     "最热年份": [
       "378"
+    ],
+    "欧洲冠军联赛": [
+      "399"
     ],
     "民主党": [
       "380"
