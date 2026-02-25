@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25 17:02:47 UTC+8",
+    "generatedAt": "2026-02-26 01:16:48 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 225,
-      "markets": 184,
-      "keywords": 1043,
+      "kept": 236,
+      "markets": 202,
+      "keywords": 1042,
       "events": {
-        "events": 23
+        "events": 25
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 775,
+        "cutoff_expired": 764,
         "cutoff_zero_kept": 6,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 20,
-        "regenerated_empty_entitygroups": 3,
+        "reused": 22,
+        "regenerated_empty_entitygroups": 1,
         "calls": 3,
-        "retries": 1,
+        "retries": 0,
         "fallback": 0,
-        "empty": 1,
-        "non_empty": 2,
+        "empty": 0,
+        "non_empty": 3,
         "errors": 0
       }
     }
@@ -420,114 +420,6 @@
       "sig": "1761593b",
       "sigFull": "1761593b",
       "sigCore": "e36461db",
-      "reused": false
-    },
-    "385": {
-      "title": "2026 Chinese Spring Festival Film Box Office Champion",
-      "marketIds": [
-        "385"
-      ],
-      "bestMarketId": "385",
-      "bestLabels": null,
-      "keywords": [
-        "chinese new year",
-        "lunar new year",
-        "spring festival",
-        "cny",
-        "box office",
-        "movie",
-        "film",
-        "cinema",
-        "revenue",
-        "gross",
-        "ticket sales",
-        "blockbuster",
-        "2026",
-        "champion",
-        "top film",
-        "2026 chinese",
-        "chinese spring",
-        "festival film",
-        "film box",
-        "office champion",
-        "2026 chinese spring",
-        "chinese spring festival",
-        "spring festival film",
-        "festival film box",
-        "film box office"
-      ],
-      "entities": [
-        "chinese spring festival",
-        "film box office"
-      ],
-      "entityGroups": [
-        [
-          "chinese spring festival",
-          "spring festival",
-          "中国新年"
-        ],
-        [
-          "film box office",
-          "box office",
-          "电影票房"
-        ]
-      ],
-      "sig": "d0767254",
-      "sigFull": "d0767254",
-      "sigCore": "d93b97e0",
-      "reused": false
-    },
-    "384": {
-      "title": "2026 Chinese Spring Festival Total Box Office",
-      "marketIds": [
-        "384"
-      ],
-      "bestMarketId": "384",
-      "bestLabels": null,
-      "keywords": [
-        "chinese new year",
-        "lunar new year",
-        "spring festival",
-        "cny",
-        "box office",
-        "movie revenue",
-        "cinema revenue",
-        "ticket sales",
-        "china film",
-        "holiday box office",
-        "2026 movies",
-        "golden week",
-        "film revenue",
-        "theatrical revenue",
-        "movie earnings",
-        "2026 chinese",
-        "chinese spring",
-        "festival total",
-        "total box",
-        "2026 chinese spring",
-        "chinese spring festival",
-        "spring festival total",
-        "festival total box",
-        "total box office"
-      ],
-      "entities": [
-        "chinese spring festival",
-        "total box office"
-      ],
-      "entityGroups": [
-        [
-          "chinese spring festival",
-          "spring festival",
-          "农历新年"
-        ],
-        [
-          "total box office",
-          "box office"
-        ]
-      ],
-      "sig": "741c7e36",
-      "sigFull": "741c7e36",
-      "sigCore": "00f7020d",
       "reused": false
     },
     "391": {
@@ -1063,10 +955,30 @@
       "bestMarketId": "163",
       "bestLabels": null,
       "keywords": [
+        "ipo",
+        "databricks",
+        "shein",
+        "bytedance",
+        "canva",
+        "cerebras",
+        "public offering",
+        "listing",
+        "stock market",
+        "debut",
+        "unicorns",
+        "tech ipo",
+        "valuation",
+        "2027",
         "ipos 2027"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "公开募股"
+      ],
+      "entityGroups": [
+        [
+          "公开募股"
+        ]
+      ],
       "sig": "ec5c1bd3",
       "sigFull": "ec5c1bd3",
       "sigCore": "4328c5b2",
@@ -1205,6 +1117,96 @@
       "sig": "9b656d1e",
       "sigFull": "9b656d1e",
       "sigCore": "141934d9",
+      "reused": false
+    },
+    "328": {
+      "title": "Will Amazon (AMZN) close above ... end of February?",
+      "marketIds": [
+        "328"
+      ],
+      "bestMarketId": "328",
+      "bestLabels": null,
+      "keywords": [
+        "amazon",
+        "amzn",
+        "stock",
+        "shares",
+        "equity",
+        "price",
+        "trading",
+        "nasdaq",
+        "tech",
+        "ecommerce",
+        "close",
+        "earnings",
+        "market",
+        "valuation",
+        "amazon amzn",
+        "amzn close",
+        "close above",
+        "above february",
+        "amazon amzn close",
+        "amzn close above",
+        "close above february"
+      ],
+      "entities": [
+        "amazon"
+      ],
+      "entityGroups": [
+        [
+          "amazon",
+          "amzn",
+          "亚马逊"
+        ]
+      ],
+      "sig": "88e67484",
+      "sigFull": "88e67484",
+      "sigCore": "55294737",
+      "reused": false
+    },
+    "329": {
+      "title": "Will Microsoft (MSFT) close above ... end of February?",
+      "marketIds": [
+        "329"
+      ],
+      "bestMarketId": "329",
+      "bestLabels": null,
+      "keywords": [
+        "microsoft",
+        "msft",
+        "stock",
+        "price",
+        "big tech",
+        "nasdaq",
+        "earnings",
+        "trading",
+        "options",
+        "volatility",
+        "satya nadella",
+        "azure",
+        "windows",
+        "tech giant",
+        "equity",
+        "microsoft msft",
+        "msft close",
+        "close above",
+        "above february",
+        "microsoft msft close",
+        "msft close above",
+        "close above february"
+      ],
+      "entities": [
+        "microsoft"
+      ],
+      "entityGroups": [
+        [
+          "microsoft",
+          "msft"
+        ]
+      ],
+      "sig": "f2266c0e",
+      "sigFull": "f2266c0e",
+      "sigCore": "85d896cb",
       "reused": false
     }
   },
@@ -4978,196 +4980,6 @@
       },
       "type": "binary"
     },
-    "385": {
-      "title": "2026 Chinese Spring Festival Film Box Office Champion",
-      "url": "https://app.opinion.trade/market/385?ref=opinion_hud",
-      "yesTokenId": "53478234916821250237128534956757719080806094843142571539877475372702271835297",
-      "noTokenId": "48309213626624679155486792436605321733440415991276309696412801044256967385588",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "keywords": [
-        "chinese new year",
-        "lunar new year",
-        "spring festival",
-        "cny",
-        "box office",
-        "movie",
-        "film",
-        "cinema",
-        "revenue",
-        "gross",
-        "ticket sales",
-        "blockbuster",
-        "2026",
-        "champion",
-        "top film",
-        "2026 chinese",
-        "chinese spring",
-        "festival film",
-        "film box",
-        "office champion",
-        "2026 chinese spring",
-        "chinese spring festival",
-        "spring festival film",
-        "festival film box",
-        "film box office"
-      ],
-      "entities": [
-        "chinese spring festival",
-        "film box office"
-      ],
-      "entityGroups": [
-        [
-          "chinese spring festival",
-          "spring festival",
-          "中国新年"
-        ],
-        [
-          "film box office",
-          "box office",
-          "电影票房"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7280",
-          "title": "Pegasus 3",
-          "yesTokenId": "41671745182944055948270062962511939396011462058339297370533095791508767719447",
-          "noTokenId": "12426788964428402254103226898552977638159448992809726452448136565148099498361"
-        },
-        {
-          "marketId": "7281",
-          "title": "Silent Thunder",
-          "yesTokenId": "114419933195859536840063213054365529313362005316575228627837919348515527967520",
-          "noTokenId": "46439610837200479732046462805763137134688826293011847919505604033336569341409"
-        },
-        {
-          "marketId": "7282",
-          "title": "Blades of the Guardians: Wind Rises in the Desert",
-          "yesTokenId": "59983836026954842504648853176898979136079240486969708771104030019100924394914",
-          "noTokenId": "6791213298783402272694294315872699502326605478856558177826746585023257995545"
-        },
-        {
-          "marketId": "7283",
-          "title": "Per Aspera Ad Astra",
-          "yesTokenId": "100562551523820619138608059558344616827360974301884592161864656105348907783345",
-          "noTokenId": "64553506134803440828839727105344579837524333295183246231890919140127523329574"
-        },
-        {
-          "marketId": "7284",
-          "title": "Boonie Bears: The Hidden Protector",
-          "yesTokenId": "2868980932079633548283643546233509430250517130948840803115456694111760847903",
-          "noTokenId": "51954018588740967109329881186836173153665308825285495108720235297198164494956"
-        },
-        {
-          "marketId": "7285",
-          "title": "Panda Plan: The Magical Tribe",
-          "yesTokenId": "17389233189283508208616164014669837517260292429216554225221749285572879454772",
-          "noTokenId": "36594423150914287443410341817830996543742207496534482892627461338877717145619"
-        },
-        {
-          "marketId": "7286",
-          "title": "Return to the Wolves",
-          "yesTokenId": "53478234916821250237128534956757719080806094843142571539877475372702271835297",
-          "noTokenId": "48309213626624679155486792436605321733440415991276309696412801044256967385588"
-        },
-        {
-          "marketId": "7287",
-          "title": "Night King",
-          "yesTokenId": "30401308298387370167400050111504992226824948476006331181355976863555781476352",
-          "noTokenId": "4021842544311330169751994598973610118967181495117200693849076913629381508636"
-        }
-      ]
-    },
-    "384": {
-      "title": "2026 Chinese Spring Festival Total Box Office",
-      "url": "https://app.opinion.trade/market/384?ref=opinion_hud",
-      "yesTokenId": "59949260834522964183103697244080979650853891614889302675069087202416933325080",
-      "noTokenId": "15412673029572829764352659443830899962423569490297868579407744928821191576022",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "keywords": [
-        "chinese new year",
-        "lunar new year",
-        "spring festival",
-        "cny",
-        "box office",
-        "movie revenue",
-        "cinema revenue",
-        "ticket sales",
-        "china film",
-        "holiday box office",
-        "2026 movies",
-        "golden week",
-        "film revenue",
-        "theatrical revenue",
-        "movie earnings",
-        "2026 chinese",
-        "chinese spring",
-        "festival total",
-        "total box",
-        "2026 chinese spring",
-        "chinese spring festival",
-        "spring festival total",
-        "festival total box",
-        "total box office"
-      ],
-      "entities": [
-        "chinese spring festival",
-        "total box office"
-      ],
-      "entityGroups": [
-        [
-          "chinese spring festival",
-          "spring festival",
-          "农历新年"
-        ],
-        [
-          "total box office",
-          "box office"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7275",
-          "title": "Below 8,000,000,000 RMB",
-          "yesTokenId": "113140333820479338791507349647808284071846863215325461307289069393010089403946",
-          "noTokenId": "73683298950283437018868590760946207218189217451820952790295589178555304637457"
-        },
-        {
-          "marketId": "7276",
-          "title": "8,000,000,000–8,999,999,999 RMB",
-          "yesTokenId": "85509438022247042430770683675848154129662441954135272421604302187082212142202",
-          "noTokenId": "85360341545803567374695881499686505980052842906950309818642962818477772266588"
-        },
-        {
-          "marketId": "7277",
-          "title": "9,000,000,000–9,999,999,999 RMB",
-          "yesTokenId": "61000556991569092590890735821130880183968040658395440036211507382788820324497",
-          "noTokenId": "1041383079046293159158296146222973682526229312626045422936054760674710320681"
-        },
-        {
-          "marketId": "7278",
-          "title": "10,000,000,000–10,999,999,999 RMB",
-          "yesTokenId": "5342326200876477663728618277107190139013503420416685761858713511258869013373",
-          "noTokenId": "65208866601993714273751568295750700996717351729303800501517966230544545787178"
-        },
-        {
-          "marketId": "7279",
-          "title": "11,000,000,000 RMB or above",
-          "yesTokenId": "59949260834522964183103697244080979650853891614889302675069087202416933325080",
-          "noTokenId": "15412673029572829764352659443830899962423569490297868579407744928821191576022"
-        }
-      ]
-    },
     "391": {
       "title": "Texas Republican Senate Primary Winner",
       "url": "https://app.opinion.trade/market/391?ref=opinion_hud",
@@ -6388,10 +6200,30 @@
         "noLabel": "NO"
       },
       "keywords": [
+        "ipo",
+        "databricks",
+        "shein",
+        "bytedance",
+        "canva",
+        "cerebras",
+        "public offering",
+        "listing",
+        "stock market",
+        "debut",
+        "unicorns",
+        "tech ipo",
+        "valuation",
+        "2027",
         "ipos 2027"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "公开募股"
+      ],
+      "entityGroups": [
+        [
+          "公开募股"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -6527,8 +6359,8 @@
     "399": {
       "title": "Champions League: Which teams advance to round of 16?",
       "url": "https://app.opinion.trade/market/399?ref=opinion_hud",
-      "yesTokenId": "21272228009103644949223018086863120688047713609270263836171217313178100571894",
-      "noTokenId": "24245976792215031114277893624055700197376200862003337120462139945615885146518",
+      "yesTokenId": "79657754180415515526536601674113233781447359655341366584643485624452305812959",
+      "noTokenId": "47560719503318439740630827428345300159530283245455722653047965138113458263357",
       "volume": 0.0,
       "labels": {
         "yesLabel": "Yes",
@@ -6569,18 +6401,6 @@
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "7794",
-          "title": "Newcastle United",
-          "yesTokenId": "21272228009103644949223018086863120688047713609270263836171217313178100571894",
-          "noTokenId": "24245976792215031114277893624055700197376200862003337120462139945615885146518"
-        },
-        {
-          "marketId": "7795",
-          "title": "Bayer Leverkusen",
-          "yesTokenId": "47400610218185907846255343206921828888925313278144409360126136080076904102391",
-          "noTokenId": "36673306449020579717187638314863583574272185067094940148114257059063321614190"
-        },
-        {
           "marketId": "7796",
           "title": "Paris Saint-Germain",
           "yesTokenId": "79657754180415515526536601674113233781447359655341366584643485624452305812959",
@@ -6605,30 +6425,6 @@
           "noTokenId": "71892701474326694437177174473174208356575649793410089398856202086990733316758"
         },
         {
-          "marketId": "7800",
-          "title": "Atlético Madrid",
-          "yesTokenId": "72061299132355168701487287403921664078158676036281729824308408623149866917765",
-          "noTokenId": "81420512678864332268883192851955653115866110259163078096600313151607443301401"
-        },
-        {
-          "marketId": "7801",
-          "title": "Inter Milan",
-          "yesTokenId": "51679179787277560955324957070475718308619681445311141718713006620959818150702",
-          "noTokenId": "38455582329801724888103236790368086417765893760244523969680289808092942410276"
-        },
-        {
-          "marketId": "7802",
-          "title": "Bodø/Glimt",
-          "yesTokenId": "44519167403222422423964712490244125480639350584109207027313252570273062151938",
-          "noTokenId": "38918246375896272048069029073099148469439250786489250066988547083155481818435"
-        },
-        {
-          "marketId": "7803",
-          "title": "Club Brugge",
-          "yesTokenId": "38257903420035939741313260544154384315841185459466118900600205764815947749839",
-          "noTokenId": "106643692555203355071592204840631286706895281008382836175514952142372498262177"
-        },
-        {
           "marketId": "7804",
           "title": "Juventus",
           "yesTokenId": "14517160587164956559151577845813373821983418327674647306929109359637865089292",
@@ -6651,6 +6447,42 @@
           "title": "Monaco",
           "yesTokenId": "57934846415743183727737864489126119516060926973987182145199427046370619761655",
           "noTokenId": "51330423050908218238227862679992417061539214103228673162423142216376001120978"
+        },
+        {
+          "marketId": "7794",
+          "title": "Newcastle United",
+          "yesTokenId": "21272228009103644949223018086863120688047713609270263836171217313178100571894",
+          "noTokenId": "24245976792215031114277893624055700197376200862003337120462139945615885146518"
+        },
+        {
+          "marketId": "7795",
+          "title": "Bayer Leverkusen",
+          "yesTokenId": "47400610218185907846255343206921828888925313278144409360126136080076904102391",
+          "noTokenId": "36673306449020579717187638314863583574272185067094940148114257059063321614190"
+        },
+        {
+          "marketId": "7800",
+          "title": "Atlético Madrid",
+          "yesTokenId": "72061299132355168701487287403921664078158676036281729824308408623149866917765",
+          "noTokenId": "81420512678864332268883192851955653115866110259163078096600313151607443301401"
+        },
+        {
+          "marketId": "7801",
+          "title": "Inter Milan",
+          "yesTokenId": "51679179787277560955324957070475718308619681445311141718713006620959818150702",
+          "noTokenId": "38455582329801724888103236790368086417765893760244523969680289808092942410276"
+        },
+        {
+          "marketId": "7802",
+          "title": "Bodø/Glimt",
+          "yesTokenId": "44519167403222422423964712490244125480639350584109207027313252570273062151938",
+          "noTokenId": "38918246375896272048069029073099148469439250786489250066988547083155481818435"
+        },
+        {
+          "marketId": "7803",
+          "title": "Club Brugge",
+          "yesTokenId": "38257903420035939741313260544154384315841185459466118900600205764815947749839",
+          "noTokenId": "106643692555203355071592204840631286706895281008382836175514952142372498262177"
         },
         {
           "marketId": "7808",
@@ -7118,6 +6950,430 @@
         "noLabel": "Mavericks"
       },
       "type": "binary"
+    },
+    "7924": {
+      "title": "BNB Up or Down - Hourly (Feb 25, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7924?ref=opinion_hud",
+      "yesTokenId": "114651617638898223282519550004418519372567817594849370835181149041712386276892",
+      "noTokenId": "13355327372092647178601704208470007162116648882934500969358691531537845851685",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7926": {
+      "title": "ETH Up or Down - Hourly (Feb 25, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7926?ref=opinion_hud",
+      "yesTokenId": "111500913241237639493377684819730756589529705522198378177110393623280654021131",
+      "noTokenId": "48059726439526728947688775782594114635216263526521996532700174157760511911339",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7925": {
+      "title": "BTC Up or Down - Hourly (Feb 25, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/7925?ref=opinion_hud",
+      "yesTokenId": "1564189107818947426579791324279661316097639704634666014685308601340099962900",
+      "noTokenId": "77245027049794945836067552747573874375497171252069074329847019688256505541880",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7919": {
+      "title": "NBA: Rockets vs Heat (Feb. 28 3:30PM ET)",
+      "url": "https://app.opinion.trade/market/7919?ref=opinion_hud",
+      "yesTokenId": "87865860276897755893288887275569362468078480382750916315404274738282603048744",
+      "noTokenId": "107264015798551351408333433642543271005285244371207363126445549063852786797374",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Rockets",
+        "noLabel": "Heat"
+      },
+      "type": "binary"
+    },
+    "7902": {
+      "title": "LCS: LYON vs TLAW (Feb. 27 4:00PM ET)",
+      "url": "https://app.opinion.trade/market/7902?ref=opinion_hud",
+      "yesTokenId": "9672333361371295616803360058950853788280089761344697037905363722183692084428",
+      "noTokenId": "48283631170137047115544227041715340455531558290236218074715999155419975130403",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "LYON ",
+        "noLabel": "TLAW"
+      },
+      "type": "binary"
+    },
+    "7920": {
+      "title": "NBA: Lakers vs Warriors (Feb. 28 8:30PM ET)",
+      "url": "https://app.opinion.trade/market/7920?ref=opinion_hud",
+      "yesTokenId": "110729361176678700116679856046391160168990724281685681407672003607384698526588",
+      "noTokenId": "53424630955134663004837639436038421349125024879091174574831306397641027450681",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Lakers",
+        "noLabel": "Warriors"
+      },
+      "type": "binary"
+    },
+    "7882": {
+      "title": "Will U.S. Unemployment Hit 10.2% by Mid-2028?",
+      "url": "https://app.opinion.trade/market/7882?ref=opinion_hud",
+      "yesTokenId": "113296384696713535629445257851717550280329529689682787187579955412251959132413",
+      "noTokenId": "10939322186031892765954676271516474903763997493396077159415908432866661854482",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "type": "binary"
+    },
+    "7900": {
+      "title": "Dota2 - DreamLeague: PARI vs MOUZ (Feb. 27 2:30PM ET)",
+      "url": "https://app.opinion.trade/market/7900?ref=opinion_hud",
+      "yesTokenId": "100855781886766266478499327839527751358770734383336921265781735038400666798009",
+      "noTokenId": "26029992394237803989289626091624409158566478613409558572399295370974256620703",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "PARI",
+        "noLabel": "MOUZ"
+      },
+      "type": "binary"
+    },
+    "7904": {
+      "title": "KPL: WB vs TTG (Feb. 27 7:00AM ET)",
+      "url": "https://app.opinion.trade/market/7904?ref=opinion_hud",
+      "yesTokenId": "103383020738024509629376200106693789680721416302650424402516689233291340711137",
+      "noTokenId": "11247495151749148999104130379094236846467721923644183799245745104155589888039",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "WB",
+        "noLabel": "TTG"
+      },
+      "type": "binary"
+    },
+    "7898": {
+      "title": "LEC: GX vs KC (Feb. 27 11:00AM ET)",
+      "url": "https://app.opinion.trade/market/7898?ref=opinion_hud",
+      "yesTokenId": "93609080788035826531839232390792984839649319841255535530140137226412774294916",
+      "noTokenId": "9872793428853902357670293916255459919381998934540403467797523374872767373103",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "GX",
+        "noLabel": "KC"
+      },
+      "type": "binary"
+    },
+    "7901": {
+      "title": "KPL: AG.SP vs RW (Feb. 27 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/7901?ref=opinion_hud",
+      "yesTokenId": "95720277022637912191941923615184463890777525008966115152227889238902846274679",
+      "noTokenId": "97522562682854937521307423084558200642107097772861436428040826482439152595193",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "AG.SP",
+        "noLabel": "RW"
+      },
+      "type": "binary"
+    },
+    "7897": {
+      "title": "KPL: LGD.NBW vs RNG.M (Feb. 27 1:00AM ET)",
+      "url": "https://app.opinion.trade/market/7897?ref=opinion_hud",
+      "yesTokenId": "82660738719204004722796061640498086224740692099569739638562347176213565710801",
+      "noTokenId": "19525631899822838101810953493888804588776712085454280419684939434217485416922",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "LGD.NBW",
+        "noLabel": "RNG.M"
+      },
+      "type": "binary"
+    },
+    "7889": {
+      "title": "Bitcoin Up or Down on February 26?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/7889?ref=opinion_hud",
+      "yesTokenId": "3370268041692743836241096183519242458645769319419963145760188506556441118342",
+      "noTokenId": "95366681902018124455161402972078175188263418535298929892140598097618954920903",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "7905": {
+      "title": "Dota2 - DreamLeague: AUR vs BB (Feb. 27 8:30AM ET)",
+      "url": "https://app.opinion.trade/market/7905?ref=opinion_hud",
+      "yesTokenId": "44121930183796363229046499771538915116454204871207795836799835528102186656348",
+      "noTokenId": "99625820046160556013476747098050036436578401544277425646420052166137795477684",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "AUR",
+        "noLabel": "BB"
+      },
+      "type": "binary"
+    },
+    "7903": {
+      "title": "Dota2 - DreamLeague: TUNDRA vs TL (Feb. 27 5:30AM ET)",
+      "url": "https://app.opinion.trade/market/7903?ref=opinion_hud",
+      "yesTokenId": "88982402854410915726099057544966817658888995507306944634654000655457292530034",
+      "noTokenId": "61890746369572034017247873721973506763516463271951520274600119025948967006145",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "TUNDRA",
+        "noLabel": "TL"
+      },
+      "type": "binary"
+    },
+    "7893": {
+      "title": "LPL: JDG vs AL (Feb. 26 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/7893?ref=opinion_hud",
+      "yesTokenId": "12197554252396891383409094350080464296574216136618505953953091205897848907010",
+      "noTokenId": "30860243645780439867829675490173965496614150509081351954475882957929481498863",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "JDG",
+        "noLabel": "AL"
+      },
+      "type": "binary"
+    },
+    "7918": {
+      "title": "NBA: Trail Blazers vs Hornets (Feb. 28 1:00PM ET)",
+      "url": "https://app.opinion.trade/market/7918?ref=opinion_hud",
+      "yesTokenId": "82679583852832595407911337957189073621012892010093062142777021382236539783695",
+      "noTokenId": "77821706282903629705285333995386415958923472995004099043946101874595012133732",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Trail Blazers",
+        "noLabel": "Hornets"
+      },
+      "type": "binary"
+    },
+    "7899": {
+      "title": "Dota2 - DreamLeague: XG vs FAL (Feb. 27 11:30AM ET)",
+      "url": "https://app.opinion.trade/market/7899?ref=opinion_hud",
+      "yesTokenId": "61833453710499839766322170053432855233829642496858680105109425733450760066883",
+      "noTokenId": "94399724221070358088533490613723129960820510155765990386256331994844045993247",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "XG",
+        "noLabel": "FAL "
+      },
+      "type": "binary"
+    },
+    "328": {
+      "title": "Will Amazon (AMZN) close above ... end of February?",
+      "url": "https://app.opinion.trade/market/328?ref=opinion_hud",
+      "yesTokenId": "42192971574229951183289537801838463101301298614674417312694873729234440712598",
+      "noTokenId": "46967553206203551742382096291270499253835523587110878622246664129959222476365",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "amazon",
+        "amzn",
+        "stock",
+        "shares",
+        "equity",
+        "price",
+        "trading",
+        "nasdaq",
+        "tech",
+        "ecommerce",
+        "close",
+        "earnings",
+        "market",
+        "valuation",
+        "amazon amzn",
+        "amzn close",
+        "close above",
+        "above february",
+        "amazon amzn close",
+        "amzn close above",
+        "close above february"
+      ],
+      "entities": [
+        "amazon"
+      ],
+      "entityGroups": [
+        [
+          "amazon",
+          "amzn",
+          "亚马逊"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "5184",
+          "title": "$220",
+          "yesTokenId": "62998850681712755316976867236149624508202097414042270492895849169326946041592",
+          "noTokenId": "89388238705113090786325766636159315076869621174181782147488145623160744817498"
+        },
+        {
+          "marketId": "5185",
+          "title": "$230",
+          "yesTokenId": "50666474303424384043200154220711485670760066237051265524258607148398911392314",
+          "noTokenId": "23917366964601245482745304500223594123231013855798257221268202769365160814470"
+        },
+        {
+          "marketId": "5186",
+          "title": "$240",
+          "yesTokenId": "26005436056866131743804656959148007214059298928415665147223972500200083943438",
+          "noTokenId": "106547216158413237959992142438493962956829103885025868898104089512821291402830"
+        },
+        {
+          "marketId": "5187",
+          "title": "$250",
+          "yesTokenId": "34174703310046791774263119246020019757694487223732202212370619665492164912821",
+          "noTokenId": "58652909931954554982522069688060076617289651874795560635061913906182706719932"
+        },
+        {
+          "marketId": "5188",
+          "title": "$260",
+          "yesTokenId": "38887704905453563831249100050170291147319244475405128099336988891074250680050",
+          "noTokenId": "68409330687338222890969539860705187645590774025080563799910517020857441545183"
+        },
+        {
+          "marketId": "5189",
+          "title": "$270",
+          "yesTokenId": "103196830316624062298447379476215989639051182190588230937764242919895367727398",
+          "noTokenId": "11734027024904629114481941670364087498990688895668541159676551759641381340823"
+        },
+        {
+          "marketId": "5190",
+          "title": "$280",
+          "yesTokenId": "89408640086992873952677270937782936985911967805375187349677239819944154466460",
+          "noTokenId": "106404355069075184692070633159289213092967295761882791621248952369809533402428"
+        },
+        {
+          "marketId": "6597",
+          "title": "$200",
+          "yesTokenId": "102252868391582755608918978916641849673079859628981416200401413932800508277465",
+          "noTokenId": "16728314194310371292387649061813439156615543326035624900135874780206145096570"
+        },
+        {
+          "marketId": "6598",
+          "title": "$210",
+          "yesTokenId": "42192971574229951183289537801838463101301298614674417312694873729234440712598",
+          "noTokenId": "46967553206203551742382096291270499253835523587110878622246664129959222476365"
+        }
+      ]
+    },
+    "329": {
+      "title": "Will Microsoft (MSFT) close above ... end of February?",
+      "url": "https://app.opinion.trade/market/329?ref=opinion_hud",
+      "yesTokenId": "108913855181880105844659888257677515292922453899940894000425585470842866190509",
+      "noTokenId": "85873191964421169603416308093799461742630125239298500328692624194551483483864",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "microsoft",
+        "msft",
+        "stock",
+        "price",
+        "big tech",
+        "nasdaq",
+        "earnings",
+        "trading",
+        "options",
+        "volatility",
+        "satya nadella",
+        "azure",
+        "windows",
+        "tech giant",
+        "equity",
+        "microsoft msft",
+        "msft close",
+        "close above",
+        "above february",
+        "microsoft msft close",
+        "msft close above",
+        "close above february"
+      ],
+      "entities": [
+        "microsoft"
+      ],
+      "entityGroups": [
+        [
+          "microsoft",
+          "msft"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "5191",
+          "title": "$405",
+          "yesTokenId": "21769925890497816743317567467251331107846435742161355947078093425295183767893",
+          "noTokenId": "69249254422336137525094287876121901086651015501403917189590001468588466423576"
+        },
+        {
+          "marketId": "5192",
+          "title": "$420",
+          "yesTokenId": "71493491591516652922191786104749214504408205420805893252571145324713044376595",
+          "noTokenId": "33614793340264564009283356030545081221480561432556628429210496086088110319379"
+        },
+        {
+          "marketId": "5193",
+          "title": "$435",
+          "yesTokenId": "106887270138635280585088830126048375952995696340752270824816245405652161744167",
+          "noTokenId": "45146170823823139764934916838404453872135658098348844656707865043807257480501"
+        },
+        {
+          "marketId": "5194",
+          "title": "$450",
+          "yesTokenId": "98996371975311222551614372767097942003853274147060549640764832723141516203679",
+          "noTokenId": "34389302150197109548236420235092248562517278069963013513500521824913770300375"
+        },
+        {
+          "marketId": "5195",
+          "title": "$465",
+          "yesTokenId": "83996470887322151045278656035341924341801083764745256889613307458368794133691",
+          "noTokenId": "89501533420519311379388898785777419806720424497095412155816615984290386935969"
+        },
+        {
+          "marketId": "5196",
+          "title": "$480",
+          "yesTokenId": "483108956370332919272169102752791997166748413909247344503844660797879589349",
+          "noTokenId": "93297093889097516971683202790026869608800025973272744046737149032665958761263"
+        },
+        {
+          "marketId": "5197",
+          "title": "$495",
+          "yesTokenId": "23285333871054219783526883405429406494140689561444398312216499400036161732780",
+          "noTokenId": "99007857677707719097822981329157819227394357148063518863808853448590361191218"
+        },
+        {
+          "marketId": "5198",
+          "title": "$510",
+          "yesTokenId": "49930286250037613694140364896993811346039112846121744777678479889046771655007",
+          "noTokenId": "12277384644878638270854343599297265552478262021392543876617302314390016411583"
+        },
+        {
+          "marketId": "6599",
+          "title": "$375",
+          "yesTokenId": "108913855181880105844659888257677515292922453899940894000425585470842866190509",
+          "noTokenId": "85873191964421169603416308093799461742630125239298500328692624194551483483864"
+        },
+        {
+          "marketId": "6600",
+          "title": "$390",
+          "yesTokenId": "95245240419443435190317201087422331334359633729909451996060027387031295705330",
+          "noTokenId": "37459032687120498745873800163537100797540416312821009353739662130955768267278"
+        }
+      ]
     }
   },
   "index": {
@@ -7161,16 +7417,7 @@
       "3449",
       "3508",
       "3509",
-      "379",
-      "385"
-    ],
-    "2026 chinese": [
-      "384",
-      "385"
-    ],
-    "2026 chinese spring": [
-      "384",
-      "385"
+      "379"
     ],
     "2026 election": [
       "382"
@@ -7180,9 +7427,6 @@
     ],
     "2026 midterms": [
       "390"
-    ],
-    "2026 movies": [
-      "384"
     ],
     "2026 nfl": [
       "3072"
@@ -7229,6 +7473,9 @@
     ],
     "2026年选秀": [
       "3072"
+    ],
+    "2027": [
+      "163"
     ],
     "2028": [
       "380"
@@ -7283,6 +7530,10 @@
     ],
     "above earthquake 2027": [
       "2668"
+    ],
+    "above february": [
+      "328",
+      "329"
     ],
     "above one": [
       "393",
@@ -7359,6 +7610,15 @@
       "3367",
       "3368"
     ],
+    "amazon": [
+      "328"
+    ],
+    "amazon amzn": [
+      "328"
+    ],
+    "amazon amzn close": [
+      "328"
+    ],
     "amazon prime video": [
       "376"
     ],
@@ -7373,6 +7633,15 @@
     ],
     "amount": [
       "3505"
+    ],
+    "amzn": [
+      "328"
+    ],
+    "amzn close": [
+      "328"
+    ],
+    "amzn close above": [
+      "328"
     ],
     "announcement": [
       "3257"
@@ -7417,6 +7686,9 @@
     ],
     "attack": [
       "3039"
+    ],
+    "azure": [
+      "329"
     ],
     "back": [
       "1856"
@@ -7478,6 +7750,9 @@
     "bible prophecy": [
       "2670"
     ],
+    "big tech": [
+      "329"
+    ],
     "bilateral": [
       "386"
     ],
@@ -7516,9 +7791,6 @@
     ],
     "blinks": [
       "2178"
-    ],
-    "blockbuster": [
-      "385"
     ],
     "blockchain": [
       "1721",
@@ -7579,10 +7851,6 @@
     "bond actor": [
       "389"
     ],
-    "box office": [
-      "384",
-      "385"
-    ],
     "bp": [
       "2178"
     ],
@@ -7624,6 +7892,9 @@
     "buyout": [
       "2398"
     ],
+    "bytedance": [
+      "163"
+    ],
     "cabinet": [
       "3062",
       "383"
@@ -7645,6 +7916,9 @@
     "candidate": [
       "380"
     ],
+    "canva": [
+      "163"
+    ],
     "capital": [
       "3505",
       "3506",
@@ -7663,11 +7937,11 @@
     "ceo march": [
       "2368"
     ],
+    "cerebras": [
+      "163"
+    ],
     "challenges": [
       "376"
-    ],
-    "champion": [
-      "385"
     ],
     "champions league": [
       "399"
@@ -7702,26 +7976,11 @@
     "china": [
       "1856"
     ],
-    "china film": [
-      "384"
-    ],
     "china jia": [
       "1856"
     ],
     "china jia yueting": [
       "1856"
-    ],
-    "chinese new year": [
-      "384",
-      "385"
-    ],
-    "chinese spring": [
-      "384",
-      "385"
-    ],
-    "chinese spring festival": [
-      "384",
-      "385"
     ],
     "christ return": [
       "2670"
@@ -7731,12 +7990,6 @@
     ],
     "christianity": [
       "2670"
-    ],
-    "cinema": [
-      "385"
-    ],
-    "cinema revenue": [
-      "384"
     ],
     "circulating supply": [
       "396"
@@ -7749,6 +8002,17 @@
     ],
     "climate data": [
       "378"
+    ],
+    "close": [
+      "328"
+    ],
+    "close above": [
+      "328",
+      "329"
+    ],
+    "close above february": [
+      "328",
+      "329"
     ],
     "close warner": [
       "2398"
@@ -7770,10 +8034,6 @@
     ],
     "clubs": [
       "399"
-    ],
-    "cny": [
-      "384",
-      "385"
     ],
     "coalition": [
       "383"
@@ -7927,6 +8187,9 @@
     "cz": [
       "3369"
     ],
+    "databricks": [
+      "163"
+    ],
     "date": [
       "3448",
       "3449",
@@ -7956,6 +8219,7 @@
       "1856"
     ],
     "debut": [
+      "163",
       "393",
       "394",
       "396"
@@ -8075,12 +8339,19 @@
     "dustin henderson": [
       "3224"
     ],
+    "earnings": [
+      "328",
+      "329"
+    ],
     "earthquake": [
       "2668",
       "3356"
     ],
     "earthquake 2027": [
       "2668"
+    ],
+    "ecommerce": [
+      "328"
     ],
     "economic crisis": [
       "3265"
@@ -8152,6 +8423,10 @@
     "epicenter": [
       "2668",
       "3356"
+    ],
+    "equity": [
+      "328",
+      "329"
     ],
     "erc20": [
       "118"
@@ -8263,30 +8538,8 @@
     "federal circuit": [
       "1546"
     ],
-    "festival film": [
-      "385"
-    ],
-    "festival film box": [
-      "385"
-    ],
-    "festival total": [
-      "384"
-    ],
-    "festival total box": [
-      "384"
-    ],
     "film": [
-      "385",
       "389"
-    ],
-    "film box": [
-      "385"
-    ],
-    "film box office": [
-      "385"
-    ],
-    "film revenue": [
-      "384"
     ],
     "finale": [
       "376"
@@ -8406,9 +8659,6 @@
     "going public": [
       "3362"
     ],
-    "golden week": [
-      "384"
-    ],
     "google willow": [
       "3256"
     ],
@@ -8442,9 +8692,6 @@
     "great earthquake": [
       "2668",
       "3356"
-    ],
-    "gross": [
-      "385"
     ],
     "group stage": [
       "399"
@@ -8515,9 +8762,6 @@
     ],
     "hit $1500 2026": [
       "3367"
-    ],
-    "holiday box office": [
-      "384"
     ],
     "holly wheeler": [
       "3222"
@@ -8614,6 +8858,7 @@
       "3525"
     ],
     "ipo": [
+      "163",
       "3362",
       "3525"
     ],
@@ -8806,6 +9051,7 @@
       "390"
     ],
     "listing": [
+      "163",
       "3362",
       "393",
       "395",
@@ -8814,10 +9060,6 @@
     ],
     "lp": [
       "2178"
-    ],
-    "lunar new year": [
-      "384",
-      "385"
     ],
     "m&a": [
       "2398"
@@ -8873,6 +9115,7 @@
       "3361"
     ],
     "market": [
+      "328",
       "3361"
     ],
     "market cap": [
@@ -8948,6 +9191,15 @@
     "mi6": [
       "389"
     ],
+    "microsoft": [
+      "329"
+    ],
+    "microsoft msft": [
+      "329"
+    ],
+    "microsoft msft close": [
+      "329"
+    ],
     "microstrategy": [
       "3257"
     ],
@@ -9016,14 +9268,7 @@
       "3365"
     ],
     "movie": [
-      "385",
       "389"
-    ],
-    "movie earnings": [
-      "384"
-    ],
-    "movie revenue": [
-      "384"
     ],
     "mrbeast": [
       "376"
@@ -9043,6 +9288,15 @@
     "msci world": [
       "3257"
     ],
+    "msft": [
+      "329"
+    ],
+    "msft close": [
+      "329"
+    ],
+    "msft close above": [
+      "329"
+    ],
     "mstr": [
       "3257"
     ],
@@ -9059,6 +9313,10 @@
     ],
     "nasa giss": [
       "378"
+    ],
+    "nasdaq": [
+      "328",
+      "329"
     ],
     "native token": [
       "3366",
@@ -9154,9 +9412,6 @@
     "office": [
       "3062"
     ],
-    "office champion": [
-      "385"
-    ],
     "official": [
       "3257"
     ],
@@ -9185,6 +9440,9 @@
     ],
     "opposition": [
       "383"
+    ],
+    "options": [
+      "329"
     ],
     "ousted": [
       "2368"
@@ -9325,6 +9583,8 @@
       "381"
     ],
     "price": [
+      "328",
+      "329",
       "3359",
       "3361",
       "3367",
@@ -9387,6 +9647,7 @@
       "3362"
     ],
     "public offering": [
+      "163",
       "397"
     ],
     "pump": [
@@ -9591,9 +9852,6 @@
     "revelation": [
       "2670"
     ],
-    "revenue": [
-      "385"
-    ],
     "richter scale": [
       "2668",
       "3356"
@@ -9644,6 +9902,9 @@
     ],
     "satoshi move any": [
       "3365"
+    ],
+    "satya nadella": [
+      "329"
     ],
     "scaling": [
       "1721"
@@ -9739,7 +10000,11 @@
       "3256"
     ],
     "shares": [
+      "328",
       "3362"
+    ],
+    "shein": [
+      "163"
     ],
     "shock": [
       "2668",
@@ -9784,16 +10049,6 @@
     "spring": [
       "379"
     ],
-    "spring festival": [
-      "384",
-      "385"
-    ],
-    "spring festival film": [
-      "385"
-    ],
-    "spring festival total": [
-      "384"
-    ],
     "spy": [
       "389"
     ],
@@ -9826,7 +10081,12 @@
       "3223"
     ],
     "stock": [
-      "3257"
+      "3257",
+      "328",
+      "329"
+    ],
+    "stock market": [
+      "163"
     ],
     "stock market debut": [
       "3362"
@@ -9921,6 +10181,15 @@
     "teams make nba": [
       "371"
     ],
+    "tech": [
+      "328"
+    ],
+    "tech giant": [
+      "329"
+    ],
+    "tech ipo": [
+      "163"
+    ],
     "tectonic": [
       "2668",
       "3356"
@@ -9981,9 +10250,6 @@
     "the post": [
       "3223"
     ],
-    "theatrical revenue": [
-      "384"
-    ],
     "theft": [
       "3360"
     ],
@@ -10002,10 +10268,6 @@
     ],
     "ticket": [
       "380"
-    ],
-    "ticket sales": [
-      "384",
-      "385"
     ],
     "tim cook": [
       "2368"
@@ -10083,20 +10345,11 @@
     "tokyo jma cherry": [
       "379"
     ],
-    "top film": [
-      "385"
-    ],
     "top flight italy": [
       "388"
     ],
     "top pick": [
       "3072"
-    ],
-    "total box": [
-      "384"
-    ],
-    "total box office": [
-      "384"
     ],
     "trade policy": [
       "1546"
@@ -10105,6 +10358,8 @@
       "1546"
     ],
     "trading": [
+      "328",
+      "329",
       "3361",
       "3367",
       "393",
@@ -10175,6 +10430,9 @@
     "underclassmen": [
       "3072"
     ],
+    "unicorns": [
+      "163"
+    ],
     "upcoming investigation": [
       "398"
     ],
@@ -10209,6 +10467,8 @@
       "3158"
     ],
     "valuation": [
+      "163",
+      "328",
       "3362",
       "3505",
       "3506",
@@ -10244,6 +10504,7 @@
       "387"
     ],
     "volatility": [
+      "329",
       "3367"
     ],
     "volodymyr": [
@@ -10342,6 +10603,9 @@
     "win beast games": [
       "376"
     ],
+    "windows": [
+      "329"
+    ],
     "years record": [
       "378"
     ],
@@ -10378,9 +10642,6 @@
     "zhao bei return": [
       "1856"
     ],
-    "中国新年": [
-      "385"
-    ],
     "中期选举": [
       "390"
     ],
@@ -10389,6 +10650,9 @@
     ],
     "乔纳森·拜尔斯": [
       "3221"
+    ],
+    "亚马逊": [
+      "328"
     ],
     "以太坊": [
       "1721",
@@ -10399,14 +10663,14 @@
     "以色列": [
       "3039"
     ],
+    "公开募股": [
+      "163"
+    ],
     "共和党": [
       "381"
     ],
     "共和党参议院初选": [
       "391"
-    ],
-    "农历新年": [
-      "384"
     ],
     "加密货币": [
       "397"
@@ -10494,9 +10758,6 @@
       "3062",
       "386"
     ],
-    "电影票房": [
-      "385"
-    ],
     "经济衰退": [
       "3265"
     ],
@@ -10554,16 +10815,7 @@
       "389"
     ],
     "2026": [
-      "379",
-      "385"
-    ],
-    "2026 chinese": [
-      "384",
-      "385"
-    ],
-    "2026 chinese spring": [
-      "384",
-      "385"
+      "379"
     ],
     "2026 election": [
       "382"
@@ -10573,9 +10825,6 @@
     ],
     "2026 midterms": [
       "390"
-    ],
-    "2026 movies": [
-      "384"
     ],
     "2026 rank": [
       "378"
@@ -10595,6 +10844,9 @@
     "2026年": [
       "378"
     ],
+    "2027": [
+      "163"
+    ],
     "2028": [
       "380"
     ],
@@ -10603,6 +10855,10 @@
     ],
     "2028 race": [
       "381"
+    ],
+    "above february": [
+      "328",
+      "329"
     ],
     "above one": [
       "393",
@@ -10633,6 +10889,15 @@
       "395",
       "397"
     ],
+    "amazon": [
+      "328"
+    ],
+    "amazon amzn": [
+      "328"
+    ],
+    "amazon amzn close": [
+      "328"
+    ],
     "amazon prime video": [
       "376"
     ],
@@ -10641,6 +10906,18 @@
     ],
     "among hottest years": [
       "378"
+    ],
+    "amzn": [
+      "328"
+    ],
+    "amzn close": [
+      "328"
+    ],
+    "amzn close above": [
+      "328"
+    ],
+    "azure": [
+      "329"
     ],
     "balance of power": [
       "390"
@@ -10663,11 +10940,11 @@
     "beast games season": [
       "376"
     ],
+    "big tech": [
+      "329"
+    ],
     "bilateral": [
       "386"
-    ],
-    "blockbuster": [
-      "385"
     ],
     "blockchain forensics": [
       "398"
@@ -10690,10 +10967,6 @@
     "bond actor": [
       "389"
     ],
-    "box office": [
-      "384",
-      "385"
-    ],
     "bracket": [
       "371"
     ],
@@ -10702,6 +10975,9 @@
     ],
     "buckingham": [
       "391"
+    ],
+    "bytedance": [
+      "163"
     ],
     "cabinet": [
       "383"
@@ -10718,14 +10994,17 @@
     "candidate": [
       "380"
     ],
+    "canva": [
+      "163"
+    ],
     "casting": [
       "389"
     ],
+    "cerebras": [
+      "163"
+    ],
     "challenges": [
       "376"
-    ],
-    "champion": [
-      "385"
     ],
     "champions league": [
       "399"
@@ -10745,27 +11024,6 @@
     "cherry tree": [
       "379"
     ],
-    "china film": [
-      "384"
-    ],
-    "chinese new year": [
-      "384",
-      "385"
-    ],
-    "chinese spring": [
-      "384",
-      "385"
-    ],
-    "chinese spring festival": [
-      "384",
-      "385"
-    ],
-    "cinema": [
-      "385"
-    ],
-    "cinema revenue": [
-      "384"
-    ],
     "circulating supply": [
       "396"
     ],
@@ -10778,12 +11036,19 @@
     "climate data": [
       "378"
     ],
+    "close": [
+      "328"
+    ],
+    "close above": [
+      "328",
+      "329"
+    ],
+    "close above february": [
+      "328",
+      "329"
+    ],
     "clubs": [
       "399"
-    ],
-    "cny": [
-      "384",
-      "385"
     ],
     "coalition": [
       "383"
@@ -10847,6 +11112,9 @@
     "crypto valuation": [
       "393"
     ],
+    "databricks": [
+      "163"
+    ],
     "day after": [
       "393",
       "394",
@@ -10856,6 +11124,7 @@
       "396"
     ],
     "debut": [
+      "163",
       "393",
       "394",
       "396"
@@ -10896,6 +11165,13 @@
     "doxxing": [
       "398"
     ],
+    "earnings": [
+      "328",
+      "329"
+    ],
+    "ecommerce": [
+      "328"
+    ],
     "el niño": [
       "378"
     ],
@@ -10922,6 +11198,10 @@
     ],
     "eon productions": [
       "389"
+    ],
+    "equity": [
+      "328",
+      "329"
     ],
     "erc20": [
       "118"
@@ -10963,30 +11243,8 @@
       "394",
       "396"
     ],
-    "festival film": [
-      "385"
-    ],
-    "festival film box": [
-      "385"
-    ],
-    "festival total": [
-      "384"
-    ],
-    "festival total box": [
-      "384"
-    ],
     "film": [
-      "385",
       "389"
-    ],
-    "film box": [
-      "385"
-    ],
-    "film box office": [
-      "385"
-    ],
-    "film revenue": [
-      "384"
     ],
     "finale": [
       "376"
@@ -11054,9 +11312,6 @@
     "go live": [
       "397"
     ],
-    "golden week": [
-      "384"
-    ],
     "gop": [
       "381",
       "390",
@@ -11082,9 +11337,6 @@
     "government control": [
       "390"
     ],
-    "gross": [
-      "385"
-    ],
     "group stage": [
       "399"
     ],
@@ -11093,9 +11345,6 @@
     ],
     "heatwave": [
       "378"
-    ],
-    "holiday box office": [
-      "384"
     ],
     "hoops": [
       "371"
@@ -11126,6 +11375,9 @@
     ],
     "investigation": [
       "398"
+    ],
+    "ipo": [
+      "163"
     ],
     "ipos 2027": [
       "163"
@@ -11208,14 +11460,11 @@
       "390"
     ],
     "listing": [
+      "163",
       "393",
       "395",
       "396",
       "397"
-    ],
-    "lunar new year": [
-      "384",
-      "385"
     ],
     "main target": [
       "398"
@@ -11237,6 +11486,9 @@
     ],
     "mankai": [
       "379"
+    ],
+    "market": [
+      "328"
     ],
     "market cap": [
       "393",
@@ -11280,6 +11532,15 @@
     "mi6": [
       "389"
     ],
+    "microsoft": [
+      "329"
+    ],
+    "microsoft msft": [
+      "329"
+    ],
+    "microsoft msft close": [
+      "329"
+    ],
     "midterm elections": [
       "390"
     ],
@@ -11296,20 +11557,26 @@
       "118"
     ],
     "movie": [
-      "385",
       "389"
-    ],
-    "movie earnings": [
-      "384"
-    ],
-    "movie revenue": [
-      "384"
     ],
     "mrbeast": [
       "376"
     ],
+    "msft": [
+      "329"
+    ],
+    "msft close": [
+      "329"
+    ],
+    "msft close above": [
+      "329"
+    ],
     "nasa giss": [
       "378"
+    ],
+    "nasdaq": [
+      "328",
+      "329"
     ],
     "native token": [
       "395"
@@ -11360,9 +11627,6 @@
     "number 10": [
       "382"
     ],
-    "office champion": [
-      "385"
-    ],
     "on-chain analysis": [
       "398"
     ],
@@ -11384,6 +11648,9 @@
     ],
     "opposition": [
       "383"
+    ],
+    "options": [
+      "329"
     ],
     "parliament": [
       "382",
@@ -11464,6 +11731,8 @@
       "381"
     ],
     "price": [
+      "328",
+      "329",
       "394"
     ],
     "price action": [
@@ -11508,6 +11777,7 @@
       "397"
     ],
     "public offering": [
+      "163",
       "397"
     ],
     "putin": [
@@ -11567,9 +11837,6 @@
     "retroactive": [
       "392"
     ],
-    "revenue": [
-      "385"
-    ],
     "rnc": [
       "381"
     ],
@@ -11587,6 +11854,9 @@
     ],
     "sakura": [
       "379"
+    ],
+    "satya nadella": [
+      "329"
     ],
     "scam report": [
       "398"
@@ -11622,6 +11892,12 @@
     "serie league winner": [
       "388"
     ],
+    "shares": [
+      "328"
+    ],
+    "shein": [
+      "163"
+    ],
     "sit-down": [
       "386"
     ],
@@ -11639,21 +11915,18 @@
     "spring": [
       "379"
     ],
-    "spring festival": [
-      "384",
-      "385"
-    ],
-    "spring festival film": [
-      "385"
-    ],
-    "spring festival total": [
-      "384"
-    ],
     "spy": [
       "389"
     ],
     "standings": [
       "371"
+    ],
+    "stock": [
+      "328",
+      "329"
+    ],
+    "stock market": [
+      "163"
     ],
     "streaming": [
       "376"
@@ -11694,6 +11967,15 @@
     "teams make nba": [
       "371"
     ],
+    "tech": [
+      "328"
+    ],
+    "tech giant": [
+      "329"
+    ],
+    "tech ipo": [
+      "163"
+    ],
     "temperature anomaly": [
       "378"
     ],
@@ -11718,15 +12000,8 @@
     "thailand": [
       "383"
     ],
-    "theatrical revenue": [
-      "384"
-    ],
     "ticket": [
       "380"
-    ],
-    "ticket sales": [
-      "384",
-      "385"
     ],
     "token": [
       "118",
@@ -11769,19 +12044,12 @@
     "tokyo jma cherry": [
       "379"
     ],
-    "top film": [
-      "385"
-    ],
     "top flight italy": [
       "388"
     ],
-    "total box": [
-      "384"
-    ],
-    "total box office": [
-      "384"
-    ],
     "trading": [
+      "328",
+      "329",
       "393",
       "394"
     ],
@@ -11815,6 +12083,9 @@
     "ukraine": [
       "387"
     ],
+    "unicorns": [
+      "163"
+    ],
     "upcoming investigation": [
       "398"
     ],
@@ -11822,6 +12093,8 @@
       "380"
     ],
     "valuation": [
+      "163",
+      "328",
       "394",
       "396"
     ],
@@ -11833,6 +12106,9 @@
     ],
     "vladimir": [
       "387"
+    ],
+    "volatility": [
+      "329"
     ],
     "volodymyr": [
       "387"
@@ -11893,6 +12169,9 @@
     "win beast games": [
       "376"
     ],
+    "windows": [
+      "329"
+    ],
     "years record": [
       "378"
     ],
@@ -11917,23 +12196,23 @@
     "zelenskyy": [
       "387"
     ],
-    "中国新年": [
-      "385"
-    ],
     "中期选举": [
       "390"
     ],
+    "亚马逊": [
+      "328"
+    ],
     "以太坊": [
       "392"
+    ],
+    "公开募股": [
+      "163"
     ],
     "共和党": [
       "381"
     ],
     "共和党参议院初选": [
       "391"
-    ],
-    "农历新年": [
-      "384"
     ],
     "加密货币": [
       "397"
@@ -11979,9 +12258,6 @@
     ],
     "特朗普": [
       "386"
-    ],
-    "电影票房": [
-      "385"
     ],
     "美国中情局": [
       "371"
