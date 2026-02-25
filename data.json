@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25 01:15:53 UTC+8",
+    "generatedAt": "2026-02-25 11:11:37 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 265,
-      "markets": 199,
-      "keywords": 1042,
+      "kept": 225,
+      "markets": 184,
+      "keywords": 1024,
       "events": {
-        "events": 29
+        "events": 23
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 735,
+        "cutoff_expired": 775,
         "cutoff_zero_kept": 6,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 25,
-        "regenerated_empty_entitygroups": 0,
+        "reused": 19,
+        "regenerated_empty_entitygroups": 4,
         "calls": 4,
         "retries": 4,
         "fallback": 0,
-        "empty": 4,
-        "non_empty": 0,
+        "empty": 3,
+        "non_empty": 1,
         "errors": 0
       }
     }
@@ -88,143 +88,6 @@
       "sig": "e3b40df6",
       "sigFull": "e3b40df6",
       "sigCore": "a3d60e12",
-      "reused": false
-    },
-    "328": {
-      "title": "Will Amazon (AMZN) close above ... end of February?",
-      "marketIds": [
-        "328"
-      ],
-      "bestMarketId": "328",
-      "bestLabels": null,
-      "keywords": [
-        "amazon",
-        "amzn",
-        "stock",
-        "shares",
-        "equity",
-        "trading",
-        "price",
-        "market",
-        "nasdaq",
-        "tech",
-        "e-commerce",
-        "bezos",
-        "close",
-        "earnings",
-        "ticker",
-        "amazon amzn",
-        "amzn close",
-        "close above",
-        "above february",
-        "amazon amzn close",
-        "amzn close above",
-        "close above february"
-      ],
-      "entities": [
-        "amazon"
-      ],
-      "entityGroups": [
-        [
-          "amazon",
-          "amzn",
-          "亚马逊"
-        ]
-      ],
-      "sig": "88e67484",
-      "sigFull": "88e67484",
-      "sigCore": "55294737",
-      "reused": false
-    },
-    "329": {
-      "title": "Will Microsoft (MSFT) close above ... end of February?",
-      "marketIds": [
-        "329"
-      ],
-      "bestMarketId": "329",
-      "bestLabels": null,
-      "keywords": [
-        "microsoft",
-        "msft",
-        "stock",
-        "equity",
-        "tech",
-        "nasdaq",
-        "trading",
-        "price",
-        "close",
-        "earnings",
-        "market",
-        "rally",
-        "dip",
-        "shares",
-        "valuation",
-        "microsoft msft",
-        "msft close",
-        "close above",
-        "above february",
-        "microsoft msft close",
-        "msft close above",
-        "close above february"
-      ],
-      "entities": [
-        "microsoft"
-      ],
-      "entityGroups": [
-        [
-          "microsoft",
-          "msft"
-        ]
-      ],
-      "sig": "f2266c0e",
-      "sigFull": "f2266c0e",
-      "sigCore": "85d896cb",
-      "reused": false
-    },
-    "326": {
-      "title": "Will Google (GOOGL) close above ... end of February?",
-      "marketIds": [
-        "326"
-      ],
-      "bestMarketId": "326",
-      "bestLabels": null,
-      "keywords": [
-        "google",
-        "googl",
-        "alphabet",
-        "stock",
-        "shares",
-        "price",
-        "equity",
-        "trading",
-        "nasdaq",
-        "tech",
-        "earnings",
-        "market cap",
-        "close",
-        "wall street",
-        "ticker",
-        "google googl",
-        "googl close",
-        "close above",
-        "above february",
-        "google googl close",
-        "googl close above",
-        "close above february"
-      ],
-      "entities": [
-        "google"
-      ],
-      "entityGroups": [
-        [
-          "google",
-          "googl",
-          "goog"
-        ]
-      ],
-      "sig": "a799ff7f",
-      "sigFull": "a799ff7f",
-      "sigCore": "02f853f0",
       "reused": false
     },
     "379": {
@@ -1261,6 +1124,21 @@
       "bestMarketId": "398",
       "bestLabels": null,
       "keywords": [
+        "zachxbt",
+        "zach",
+        "on-chain investigator",
+        "crypto sleuth",
+        "investigation",
+        "exposé",
+        "fraud",
+        "rug pull",
+        "on-chain analysis",
+        "crypto detective",
+        "blockchain forensics",
+        "scam report",
+        "zachxbt thread",
+        "crypto twitter",
+        "doxxing",
         "what company",
         "company main",
         "main target",
@@ -1273,8 +1151,15 @@
         "target zachxbt upcoming",
         "zachxbt upcoming investigation"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "zachxbt"
+      ],
+      "entityGroups": [
+        [
+          "zachxbt",
+          "zach"
+        ]
+      ],
       "sig": "9b656d1e",
       "sigFull": "9b656d1e",
       "sigCore": "141934d9",
@@ -4147,317 +4032,6 @@
       },
       "type": "binary"
     },
-    "328": {
-      "title": "Will Amazon (AMZN) close above ... end of February?",
-      "url": "https://app.opinion.trade/market/328?ref=opinion_hud",
-      "yesTokenId": "42192971574229951183289537801838463101301298614674417312694873729234440712598",
-      "noTokenId": "46967553206203551742382096291270499253835523587110878622246664129959222476365",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "amazon",
-        "amzn",
-        "stock",
-        "shares",
-        "equity",
-        "trading",
-        "price",
-        "market",
-        "nasdaq",
-        "tech",
-        "e-commerce",
-        "bezos",
-        "close",
-        "earnings",
-        "ticker",
-        "amazon amzn",
-        "amzn close",
-        "close above",
-        "above february",
-        "amazon amzn close",
-        "amzn close above",
-        "close above february"
-      ],
-      "entities": [
-        "amazon"
-      ],
-      "entityGroups": [
-        [
-          "amazon",
-          "amzn",
-          "亚马逊"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5184",
-          "title": "$220",
-          "yesTokenId": "62998850681712755316976867236149624508202097414042270492895849169326946041592",
-          "noTokenId": "89388238705113090786325766636159315076869621174181782147488145623160744817498"
-        },
-        {
-          "marketId": "5185",
-          "title": "$230",
-          "yesTokenId": "50666474303424384043200154220711485670760066237051265524258607148398911392314",
-          "noTokenId": "23917366964601245482745304500223594123231013855798257221268202769365160814470"
-        },
-        {
-          "marketId": "5186",
-          "title": "$240",
-          "yesTokenId": "26005436056866131743804656959148007214059298928415665147223972500200083943438",
-          "noTokenId": "106547216158413237959992142438493962956829103885025868898104089512821291402830"
-        },
-        {
-          "marketId": "5187",
-          "title": "$250",
-          "yesTokenId": "34174703310046791774263119246020019757694487223732202212370619665492164912821",
-          "noTokenId": "58652909931954554982522069688060076617289651874795560635061913906182706719932"
-        },
-        {
-          "marketId": "5188",
-          "title": "$260",
-          "yesTokenId": "38887704905453563831249100050170291147319244475405128099336988891074250680050",
-          "noTokenId": "68409330687338222890969539860705187645590774025080563799910517020857441545183"
-        },
-        {
-          "marketId": "5189",
-          "title": "$270",
-          "yesTokenId": "103196830316624062298447379476215989639051182190588230937764242919895367727398",
-          "noTokenId": "11734027024904629114481941670364087498990688895668541159676551759641381340823"
-        },
-        {
-          "marketId": "5190",
-          "title": "$280",
-          "yesTokenId": "89408640086992873952677270937782936985911967805375187349677239819944154466460",
-          "noTokenId": "106404355069075184692070633159289213092967295761882791621248952369809533402428"
-        },
-        {
-          "marketId": "6597",
-          "title": "$200",
-          "yesTokenId": "102252868391582755608918978916641849673079859628981416200401413932800508277465",
-          "noTokenId": "16728314194310371292387649061813439156615543326035624900135874780206145096570"
-        },
-        {
-          "marketId": "6598",
-          "title": "$210",
-          "yesTokenId": "42192971574229951183289537801838463101301298614674417312694873729234440712598",
-          "noTokenId": "46967553206203551742382096291270499253835523587110878622246664129959222476365"
-        }
-      ]
-    },
-    "329": {
-      "title": "Will Microsoft (MSFT) close above ... end of February?",
-      "url": "https://app.opinion.trade/market/329?ref=opinion_hud",
-      "yesTokenId": "108913855181880105844659888257677515292922453899940894000425585470842866190509",
-      "noTokenId": "85873191964421169603416308093799461742630125239298500328692624194551483483864",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "microsoft",
-        "msft",
-        "stock",
-        "equity",
-        "tech",
-        "nasdaq",
-        "trading",
-        "price",
-        "close",
-        "earnings",
-        "market",
-        "rally",
-        "dip",
-        "shares",
-        "valuation",
-        "microsoft msft",
-        "msft close",
-        "close above",
-        "above february",
-        "microsoft msft close",
-        "msft close above",
-        "close above february"
-      ],
-      "entities": [
-        "microsoft"
-      ],
-      "entityGroups": [
-        [
-          "microsoft",
-          "msft"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5191",
-          "title": "$405",
-          "yesTokenId": "21769925890497816743317567467251331107846435742161355947078093425295183767893",
-          "noTokenId": "69249254422336137525094287876121901086651015501403917189590001468588466423576"
-        },
-        {
-          "marketId": "5192",
-          "title": "$420",
-          "yesTokenId": "71493491591516652922191786104749214504408205420805893252571145324713044376595",
-          "noTokenId": "33614793340264564009283356030545081221480561432556628429210496086088110319379"
-        },
-        {
-          "marketId": "5193",
-          "title": "$435",
-          "yesTokenId": "106887270138635280585088830126048375952995696340752270824816245405652161744167",
-          "noTokenId": "45146170823823139764934916838404453872135658098348844656707865043807257480501"
-        },
-        {
-          "marketId": "5194",
-          "title": "$450",
-          "yesTokenId": "98996371975311222551614372767097942003853274147060549640764832723141516203679",
-          "noTokenId": "34389302150197109548236420235092248562517278069963013513500521824913770300375"
-        },
-        {
-          "marketId": "5195",
-          "title": "$465",
-          "yesTokenId": "83996470887322151045278656035341924341801083764745256889613307458368794133691",
-          "noTokenId": "89501533420519311379388898785777419806720424497095412155816615984290386935969"
-        },
-        {
-          "marketId": "5196",
-          "title": "$480",
-          "yesTokenId": "483108956370332919272169102752791997166748413909247344503844660797879589349",
-          "noTokenId": "93297093889097516971683202790026869608800025973272744046737149032665958761263"
-        },
-        {
-          "marketId": "5197",
-          "title": "$495",
-          "yesTokenId": "23285333871054219783526883405429406494140689561444398312216499400036161732780",
-          "noTokenId": "99007857677707719097822981329157819227394357148063518863808853448590361191218"
-        },
-        {
-          "marketId": "5198",
-          "title": "$510",
-          "yesTokenId": "49930286250037613694140364896993811346039112846121744777678479889046771655007",
-          "noTokenId": "12277384644878638270854343599297265552478262021392543876617302314390016411583"
-        },
-        {
-          "marketId": "6599",
-          "title": "$375",
-          "yesTokenId": "108913855181880105844659888257677515292922453899940894000425585470842866190509",
-          "noTokenId": "85873191964421169603416308093799461742630125239298500328692624194551483483864"
-        },
-        {
-          "marketId": "6600",
-          "title": "$390",
-          "yesTokenId": "95245240419443435190317201087422331334359633729909451996060027387031295705330",
-          "noTokenId": "37459032687120498745873800163537100797540416312821009353739662130955768267278"
-        }
-      ]
-    },
-    "326": {
-      "title": "Will Google (GOOGL) close above ... end of February?",
-      "url": "https://app.opinion.trade/market/326?ref=opinion_hud",
-      "yesTokenId": "38074349525305722928058194302465234561674782918807016816542486832211728773387",
-      "noTokenId": "91466368123139804837884109354135120180076502617608024881684252116357979816454",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "google",
-        "googl",
-        "alphabet",
-        "stock",
-        "shares",
-        "price",
-        "equity",
-        "trading",
-        "nasdaq",
-        "tech",
-        "earnings",
-        "market cap",
-        "close",
-        "wall street",
-        "ticker",
-        "google googl",
-        "googl close",
-        "close above",
-        "above february",
-        "google googl close",
-        "googl close above",
-        "close above february"
-      ],
-      "entities": [
-        "google"
-      ],
-      "entityGroups": [
-        [
-          "google",
-          "googl",
-          "goog"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5171",
-          "title": "$320",
-          "yesTokenId": "15265919374120936512314480480613584868132933443200164195848009167781267083450",
-          "noTokenId": "98142179613195675142751348060108991105946103056930238491019252047980109487147"
-        },
-        {
-          "marketId": "5172",
-          "title": "$330",
-          "yesTokenId": "13224910990432812850970927576746135213783330290888012506934266469217198016287",
-          "noTokenId": "4301356871158744424896267202703438313987173912073201490112879809379908691637"
-        },
-        {
-          "marketId": "5173",
-          "title": "$340",
-          "yesTokenId": "16939360233724736897118109596468046658738985746632880893769684813868616218974",
-          "noTokenId": "98104919761202699999755399287605448602354105403986639401482307654768546536950"
-        },
-        {
-          "marketId": "5174",
-          "title": "$350",
-          "yesTokenId": "61132669060000187900545783206592548409251276726714665640066114157714054516996",
-          "noTokenId": "84077127114425208001330170494715149514263459955241762645114992805915679364827"
-        },
-        {
-          "marketId": "5175",
-          "title": "$360",
-          "yesTokenId": "63162952488320594628663908550287790993573138706699598120246960276795092479719",
-          "noTokenId": "73465655199952876627547420837128484239164159920637276035015668147053186088323"
-        },
-        {
-          "marketId": "5176",
-          "title": "$370",
-          "yesTokenId": "100643642968204734876957821461471447067483749629978898499606497063815117517903",
-          "noTokenId": "111129897001390823904452429833802737209042407600045118952784867245469027334282"
-        },
-        {
-          "marketId": "5177",
-          "title": "$380",
-          "yesTokenId": "63142315085721052119872538233164888914011103679420652765356253423524964939390",
-          "noTokenId": "16174382012779187235023463134686382490826574895650650648167848003583926377468"
-        },
-        {
-          "marketId": "6595",
-          "title": "$300",
-          "yesTokenId": "3567290121000426400808638035098846946866907834383844353986066334688008975094",
-          "noTokenId": "47891119577497408214517374329767911605095380916108185824439929245548741164650"
-        },
-        {
-          "marketId": "6596",
-          "title": "$310",
-          "yesTokenId": "38074349525305722928058194302465234561674782918807016816542486832211728773387",
-          "noTokenId": "91466368123139804837884109354135120180076502617608024881684252116357979816454"
-        }
-      ]
-    },
     "379": {
       "title": "2026 Tokyo (JMA) Cherry Blossoms Full Bloom Date",
       "url": "https://app.opinion.trade/market/379?ref=opinion_hud",
@@ -4792,18 +4366,6 @@
     "6736": {
       "title": "Human moon landing in 2026?",
       "url": "https://app.opinion.trade/market/6736?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "6735": {
-      "title": "LPL: BLG vs NIP (Feb. 25 4:00AM ET)",
-      "url": "https://app.opinion.trade/market/6735?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -6262,66 +5824,6 @@
       },
       "type": "binary"
     },
-    "7537": {
-      "title": "NBA: Cavaliers vs Bucks (Feb. 25 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/7537?ref=opinion_hud",
-      "yesTokenId": "54200077925763649493691335650987312168499812632714739582156528401997375277577",
-      "noTokenId": "51360941565343090916806341768804837904912804996667776781931287260783745656109",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Cavaliers",
-        "noLabel": "Bucks"
-      },
-      "type": "binary"
-    },
-    "7538": {
-      "title": "NBA: Kings vs Rockets (Feb. 25 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/7538?ref=opinion_hud",
-      "yesTokenId": "68140454145345160032441165152095379433648469682015021039474175711438855287269",
-      "noTokenId": "33735511412838570294593619341031496387233381483171832811334955833863588575328",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Kings",
-        "noLabel": "Rockets"
-      },
-      "type": "binary"
-    },
-    "7536": {
-      "title": "NBA: Warriors vs Grizzlies (Feb. 25 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/7536?ref=opinion_hud",
-      "yesTokenId": "52258501296305093365755995620711448862131599640203016107751123492290587147248",
-      "noTokenId": "91593036863326374532625172878706141733367722967184766151865168702028236307684",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Warriors",
-        "noLabel": "Grizzlies"
-      },
-      "type": "binary"
-    },
-    "7535": {
-      "title": "NBA: Spurs vs Raptors (Feb. 25 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/7535?ref=opinion_hud",
-      "yesTokenId": "89025824801420333747158072176292858040842191801667742404381261174981223222762",
-      "noTokenId": "105744719802643115608481869267092281846870364425208483963607321839087133672061",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Spurs",
-        "noLabel": "Raptors"
-      },
-      "type": "binary"
-    },
-    "7539": {
-      "title": "NBA: Celtics vs Nuggets (Feb. 25 10:00PM ET)",
-      "url": "https://app.opinion.trade/market/7539?ref=opinion_hud",
-      "yesTokenId": "4417917759631068682861219840723392201285877692998260867986935601540628901583",
-      "noTokenId": "30950234956901917681496977360561165117541465965043411644281876695906602178796",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Celtics",
-        "noLabel": "Nuggets"
-      },
-      "type": "binary"
-    },
     "397": {
       "title": "Probable launch a token by ...?",
       "url": "https://app.opinion.trade/market/397?ref=opinion_hud",
@@ -6821,18 +6323,6 @@
         }
       ]
     },
-    "7636": {
-      "title": "Dota2 - DreamLeague: FAL vs MOUZ (Feb. 24 11:30AM ET)",
-      "url": "https://app.opinion.trade/market/7636?ref=opinion_hud",
-      "yesTokenId": "29632673325960400456140731671401366673241744696281892816420052669174156762797",
-      "noTokenId": "40390615743184167219925452274864302977560910520085755050213674761799195413203",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "FAL",
-        "noLabel": "MOUZ"
-      },
-      "type": "binary"
-    },
     "7653": {
       "title": "Will USD1 depeg before 2027?",
       "url": "https://app.opinion.trade/market/7653?ref=opinion_hud",
@@ -6842,42 +6332,6 @@
       "labels": {
         "yesLabel": "YES",
         "noLabel": "NO"
-      },
-      "type": "binary"
-    },
-    "7642": {
-      "title": "Dota2 - DreamLeague: BB vs PARI (Feb. 24 8:30AM ET)",
-      "url": "https://app.opinion.trade/market/7642?ref=opinion_hud",
-      "yesTokenId": "35824310800364442322456382764078555610969754118408762835733792891181187226655",
-      "noTokenId": "9103205649128525246499475384870225452425791267891202842431235122660123206756",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "BB",
-        "noLabel": "PARI"
-      },
-      "type": "binary"
-    },
-    "7637": {
-      "title": "Dota2 - DreamLeague: AUR vs TL (Feb. 24 2:30PM ET)",
-      "url": "https://app.opinion.trade/market/7637?ref=opinion_hud",
-      "yesTokenId": "32570828044875399976153379559749354375866301819001287296646067389843933878741",
-      "noTokenId": "91717458053026535137780224582225056922425644558705056406647579671869189870892",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "AUR",
-        "noLabel": "TL"
-      },
-      "type": "binary"
-    },
-    "7641": {
-      "title": "Dota2 - DreamLeague: XG vs TUNDRA (Feb. 24 5:30AM ET)",
-      "url": "https://app.opinion.trade/market/7641?ref=opinion_hud",
-      "yesTokenId": "61566608223588987406960897220048036683805711300415391347730706879627454889518",
-      "noTokenId": "99586145592224832641531138990149778017372503982882514982142995989392357958037",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "XG",
-        "noLabel": "TUNDRA"
       },
       "type": "binary"
     },
@@ -7004,30 +6458,6 @@
           "noTokenId": "30726911278330729105242506574772231233047917537947622909702358130880815410547"
         }
       ]
-    },
-    "7831": {
-      "title": "UCL: Atlético Madrid vs Club Brugge: Who Advances to the UCL Round of 16?",
-      "url": "https://app.opinion.trade/market/7831?ref=opinion_hud",
-      "yesTokenId": "109191219253120965941417308669758820272288996570053188175874948982481716949334",
-      "noTokenId": "97046708441322042763859847084663398162631842242450709279376881468637462502941",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Atlético Madrid",
-        "noLabel": "Club Brugge"
-      },
-      "type": "binary"
-    },
-    "7832": {
-      "title": "UCL: Inter Milan vs FK Bodø/Glimt: Who Advances to the UCL Round of 16?",
-      "url": "https://app.opinion.trade/market/7832?ref=opinion_hud",
-      "yesTokenId": "88306792384323193534976182053044704165140645702054154123273130895043183282981",
-      "noTokenId": "1634593944948885022717202053046345006462277570435761770494237761905904705623",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Inter ",
-        "noLabel": "BOG"
-      },
-      "type": "binary"
     },
     "399": {
       "title": "Champions League: Which teams advance to round of 16?",
@@ -7163,6 +6593,21 @@
         "noLabel": "No"
       },
       "keywords": [
+        "zachxbt",
+        "zach",
+        "on-chain investigator",
+        "crypto sleuth",
+        "investigation",
+        "exposé",
+        "fraud",
+        "rug pull",
+        "on-chain analysis",
+        "crypto detective",
+        "blockchain forensics",
+        "scam report",
+        "zachxbt thread",
+        "crypto twitter",
+        "doxxing",
         "what company",
         "company main",
         "main target",
@@ -7175,8 +6620,15 @@
         "target zachxbt upcoming",
         "zachxbt upcoming investigation"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "zachxbt"
+      ],
+      "entityGroups": [
+        [
+          "zachxbt",
+          "zach"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -7379,18 +6831,6 @@
       },
       "type": "binary"
     },
-    "7747": {
-      "title": "Dota2 - DreamLeague: BB vs XG (Feb. 25 5:30AM ET)",
-      "url": "https://app.opinion.trade/market/7747?ref=opinion_hud",
-      "yesTokenId": "62220311648891807265165853071002519193682300858213795541096542284675462423339",
-      "noTokenId": "86101420237498783576722037380421575317591166702967230999160015211698121286487",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "BB",
-        "noLabel": "XG"
-      },
-      "type": "binary"
-    },
     "7748": {
       "title": "KPL: Q9 vs WOL (Feb. 25 7:00AM ET)",
       "url": "https://app.opinion.trade/market/7748?ref=opinion_hud",
@@ -7436,18 +6876,6 @@
       "labels": {
         "yesLabel": "KSG",
         "noLabel": "DYG"
-      },
-      "type": "binary"
-    },
-    "7820": {
-      "title": "Bitcoin Up or Down on February 25?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/7820?ref=opinion_hud",
-      "yesTokenId": "56081953058041543457618285253359952751136923201470306594789277657666668124838",
-      "noTokenId": "73326381952567871707209350662671595261113991286533608489697930187223596693599",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
@@ -7535,18 +6963,6 @@
       },
       "type": "binary"
     },
-    "7743": {
-      "title": "KPL: DRG vs RNG.M (Feb. 25 1:00AM ET)",
-      "url": "https://app.opinion.trade/market/7743?ref=opinion_hud",
-      "yesTokenId": "55783484633956559228002826911370590743851727445347911411649676547195825981272",
-      "noTokenId": "74116955421318788047730282233462603536091369255068337864130142923397203330397",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "DRG",
-        "noLabel": "RNG.M"
-      },
-      "type": "binary"
-    },
     "7751": {
       "title": "Dota2 - DreamLeague: AUR vs XG (Feb. 26 11:30AM ET)",
       "url": "https://app.opinion.trade/market/7751?ref=opinion_hud",
@@ -7580,6 +6996,42 @@
       "labels": {
         "yesLabel": "EDG.M",
         "noLabel": "ESP"
+      },
+      "type": "binary"
+    },
+    "7845": {
+      "title": "NBA: Nets vs Celtics (Feb. 27 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/7845?ref=opinion_hud",
+      "yesTokenId": "94884209936427889368412827668005476782754100359436913218985098733790450474040",
+      "noTokenId": "60557832631718048099465500098816766114078033375997644512050242095450408698707",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Nets",
+        "noLabel": "Celtics"
+      },
+      "type": "binary"
+    },
+    "7846": {
+      "title": "NBA: Knicks vs Bucks (Feb. 27 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/7846?ref=opinion_hud",
+      "yesTokenId": "2119830555514637882490232818537922521522456689959184955119885797223189786481",
+      "noTokenId": "12242216759744366059998246754398822476477140782756489018931170387729991660792",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Knicks",
+        "noLabel": "Bucks"
+      },
+      "type": "binary"
+    },
+    "7847": {
+      "title": "NBA: Grizzlies vs Mavericks (Feb. 27 8:30PM ET)",
+      "url": "https://app.opinion.trade/market/7847?ref=opinion_hud",
+      "yesTokenId": "77982102911362007089246980663399720195505588256741834604899804073294377371725",
+      "noTokenId": "35140787880004102964637943677595106796395587935952457903051001539655962759281",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Grizzlies",
+        "noLabel": "Mavericks"
       },
       "type": "binary"
     }
@@ -7748,11 +7200,6 @@
     "above earthquake 2027": [
       "2668"
     ],
-    "above february": [
-      "326",
-      "328",
-      "329"
-    ],
     "above one": [
       "393",
       "394",
@@ -7822,22 +7269,10 @@
       "3364",
       "3368"
     ],
-    "alphabet": [
-      "326"
-    ],
     "altcoin": [
       "3364",
       "3367",
       "3368"
-    ],
-    "amazon": [
-      "328"
-    ],
-    "amazon amzn": [
-      "328"
-    ],
-    "amazon amzn close": [
-      "328"
     ],
     "amazon prime video": [
       "376"
@@ -7853,15 +7288,6 @@
     ],
     "amount": [
       "3505"
-    ],
-    "amzn": [
-      "328"
-    ],
-    "amzn close": [
-      "328"
-    ],
-    "amzn close above": [
-      "328"
     ],
     "announcement": [
       "3257"
@@ -7961,9 +7387,6 @@
     "bei return china": [
       "1856"
     ],
-    "bezos": [
-      "328"
-    ],
     "bianca": [
       "3158"
     ],
@@ -8017,6 +7440,9 @@
       "3361",
       "3364",
       "3365"
+    ],
+    "blockchain forensics": [
+      "398"
     ],
     "blockchain upgrade": [
       "3256"
@@ -8239,21 +7665,6 @@
     "climate data": [
       "378"
     ],
-    "close": [
-      "326",
-      "328",
-      "329"
-    ],
-    "close above": [
-      "326",
-      "328",
-      "329"
-    ],
-    "close above february": [
-      "326",
-      "328",
-      "329"
-    ],
     "close warner": [
       "2398"
     ],
@@ -8374,6 +7785,9 @@
       "3368",
       "394"
     ],
+    "crypto detective": [
+      "398"
+    ],
     "crypto exchange": [
       "3362",
       "3369"
@@ -8390,11 +7804,17 @@
     "crypto release": [
       "397"
     ],
+    "crypto sleuth": [
+      "398"
+    ],
     "crypto theft": [
       "3360"
     ],
     "crypto token": [
       "395"
+    ],
+    "crypto twitter": [
+      "398"
     ],
     "crypto valuation": [
       "393"
@@ -8504,9 +7924,6 @@
     "dex": [
       "3361"
     ],
-    "dip": [
-      "329"
-    ],
     "diplomatic": [
       "386",
       "387"
@@ -8529,6 +7946,9 @@
     ],
     "downtime": [
       "3357"
+    ],
+    "doxxing": [
+      "398"
     ],
     "draft class": [
       "3072"
@@ -8561,14 +7981,6 @@
     ],
     "dustin henderson": [
       "3224"
-    ],
-    "e-commerce": [
-      "328"
-    ],
-    "earnings": [
-      "326",
-      "328",
-      "329"
     ],
     "earthquake": [
       "2668",
@@ -8648,11 +8060,6 @@
       "2668",
       "3356"
     ],
-    "equity": [
-      "326",
-      "328",
-      "329"
-    ],
     "escalation": [
       "3039"
     ],
@@ -8705,6 +8112,9 @@
     ],
     "exploit": [
       "3360"
+    ],
+    "exposé": [
+      "398"
     ],
     "extradition": [
       "1856"
@@ -8814,6 +8224,9 @@
     "franchise": [
       "389"
     ],
+    "fraud": [
+      "398"
+    ],
     "fugitive": [
       "1856"
     ],
@@ -8889,27 +8302,6 @@
     ],
     "golden week": [
       "384"
-    ],
-    "goog": [
-      "326"
-    ],
-    "googl": [
-      "326"
-    ],
-    "googl close": [
-      "326"
-    ],
-    "googl close above": [
-      "326"
-    ],
-    "google": [
-      "326"
-    ],
-    "google googl": [
-      "326"
-    ],
-    "google googl close": [
-      "326"
     ],
     "google willow": [
       "3256"
@@ -9102,6 +8494,9 @@
     ],
     "initial valuation": [
       "396"
+    ],
+    "investigation": [
+      "398"
     ],
     "investment": [
       "3505",
@@ -9365,12 +8760,9 @@
       "3361"
     ],
     "market": [
-      "328",
-      "329",
       "3361"
     ],
     "market cap": [
-      "326",
       "3505",
       "3506",
       "393",
@@ -9436,15 +8828,6 @@
     ],
     "mi6": [
       "389"
-    ],
-    "microsoft": [
-      "329"
-    ],
-    "microsoft msft": [
-      "329"
-    ],
-    "microsoft msft close": [
-      "329"
     ],
     "microstrategy": [
       "3257"
@@ -9538,15 +8921,6 @@
     "msci world": [
       "3257"
     ],
-    "msft": [
-      "329"
-    ],
-    "msft close": [
-      "329"
-    ],
-    "msft close above": [
-      "329"
-    ],
     "mstr": [
       "3257"
     ],
@@ -9563,11 +8937,6 @@
     ],
     "nasa giss": [
       "378"
-    ],
-    "nasdaq": [
-      "326",
-      "328",
-      "329"
     ],
     "native token": [
       "3366",
@@ -9668,6 +9037,12 @@
     ],
     "official": [
       "3257"
+    ],
+    "on-chain analysis": [
+      "398"
+    ],
+    "on-chain investigator": [
+      "398"
     ],
     "one day": [
       "1721",
@@ -9828,9 +9203,6 @@
       "381"
     ],
     "price": [
-      "326",
-      "328",
-      "329",
       "3359",
       "3361",
       "3367",
@@ -9949,7 +9321,6 @@
       "3525"
     ],
     "rally": [
-      "329",
       "3364",
       "3367",
       "3368"
@@ -10113,6 +9484,9 @@
       "3506",
       "3525"
     ],
+    "rug pull": [
+      "398"
+    ],
     "rugpull": [
       "3360"
     ],
@@ -10145,6 +9519,9 @@
     ],
     "scaling": [
       "1721"
+    ],
+    "scam report": [
+      "398"
     ],
     "schedule": [
       "3448",
@@ -10234,9 +9611,6 @@
       "3256"
     ],
     "shares": [
-      "326",
-      "328",
-      "329",
       "3362"
     ],
     "shock": [
@@ -10321,10 +9695,7 @@
       "3223"
     ],
     "stock": [
-      "3257",
-      "326",
-      "328",
-      "329"
+      "3257"
     ],
     "stock market debut": [
       "3362"
@@ -10418,11 +9789,6 @@
     "teams make nba": [
       "371"
     ],
-    "tech": [
-      "326",
-      "328",
-      "329"
-    ],
     "tectonic": [
       "2668",
       "3356"
@@ -10500,8 +9866,6 @@
     ],
     "ticker": [
       "3257",
-      "326",
-      "328",
       "3362"
     ],
     "ticket": [
@@ -10605,9 +9969,6 @@
       "1546"
     ],
     "trading": [
-      "326",
-      "328",
-      "329",
       "3361",
       "3367",
       "393",
@@ -10706,7 +10067,6 @@
       "3158"
     ],
     "valuation": [
-      "329",
       "3362",
       "3505",
       "3506",
@@ -10753,9 +10113,6 @@
     ],
     "vp": [
       "3055"
-    ],
-    "wall street": [
-      "326"
     ],
     "wallet": [
       "3365"
@@ -10848,6 +10205,15 @@
     "youtube": [
       "376"
     ],
+    "zach": [
+      "398"
+    ],
+    "zachxbt": [
+      "398"
+    ],
+    "zachxbt thread": [
+      "398"
+    ],
     "zachxbt upcoming": [
       "398"
     ],
@@ -10877,9 +10243,6 @@
     ],
     "乔纳森·拜尔斯": [
       "3221"
-    ],
-    "亚马逊": [
-      "328"
     ],
     "以太坊": [
       "1721",
@@ -11089,11 +10452,6 @@
     "2028 race": [
       "381"
     ],
-    "above february": [
-      "326",
-      "328",
-      "329"
-    ],
     "above one": [
       "393",
       "394",
@@ -11122,18 +10480,6 @@
       "395",
       "397"
     ],
-    "alphabet": [
-      "326"
-    ],
-    "amazon": [
-      "328"
-    ],
-    "amazon amzn": [
-      "328"
-    ],
-    "amazon amzn close": [
-      "328"
-    ],
     "amazon prime video": [
       "376"
     ],
@@ -11142,15 +10488,6 @@
     ],
     "among hottest years": [
       "378"
-    ],
-    "amzn": [
-      "328"
-    ],
-    "amzn close": [
-      "328"
-    ],
-    "amzn close above": [
-      "328"
     ],
     "balance of power": [
       "390"
@@ -11173,14 +10510,14 @@
     "beast games season": [
       "376"
     ],
-    "bezos": [
-      "328"
-    ],
     "bilateral": [
       "386"
     ],
     "blockbuster": [
       "385"
+    ],
+    "blockchain forensics": [
+      "398"
     ],
     "bloom date": [
       "379"
@@ -11288,21 +10625,6 @@
     "climate data": [
       "378"
     ],
-    "close": [
-      "326",
-      "328",
-      "329"
-    ],
-    "close above": [
-      "326",
-      "328",
-      "329"
-    ],
-    "close above february": [
-      "326",
-      "328",
-      "329"
-    ],
     "cny": [
       "384",
       "385"
@@ -11344,14 +10666,23 @@
     "crypto": [
       "394"
     ],
+    "crypto detective": [
+      "398"
+    ],
     "crypto price": [
       "396"
     ],
     "crypto release": [
       "397"
     ],
+    "crypto sleuth": [
+      "398"
+    ],
     "crypto token": [
       "395"
+    ],
+    "crypto twitter": [
+      "398"
     ],
     "crypto valuation": [
       "393"
@@ -11387,9 +10718,6 @@
     "democrats": [
       "390"
     ],
-    "dip": [
-      "329"
-    ],
     "diplomatic": [
       "386",
       "387"
@@ -11404,13 +10732,8 @@
     "downing street": [
       "382"
     ],
-    "e-commerce": [
-      "328"
-    ],
-    "earnings": [
-      "326",
-      "328",
-      "329"
+    "doxxing": [
+      "398"
     ],
     "el niño": [
       "378"
@@ -11439,13 +10762,11 @@
     "eon productions": [
       "389"
     ],
-    "equity": [
-      "326",
-      "328",
-      "329"
-    ],
     "evm": [
       "392"
+    ],
+    "exposé": [
+      "398"
     ],
     "extreme weather": [
       "378"
@@ -11515,6 +10836,9 @@
     "franchise": [
       "389"
     ],
+    "fraud": [
+      "398"
+    ],
     "full bloom": [
       "379"
     ],
@@ -11556,27 +10880,6 @@
     ],
     "golden week": [
       "384"
-    ],
-    "goog": [
-      "326"
-    ],
-    "googl": [
-      "326"
-    ],
-    "googl close": [
-      "326"
-    ],
-    "googl close above": [
-      "326"
-    ],
-    "google": [
-      "326"
-    ],
-    "google googl": [
-      "326"
-    ],
-    "google googl close": [
-      "326"
     ],
     "gop": [
       "381",
@@ -11640,6 +10943,9 @@
     ],
     "initial valuation": [
       "396"
+    ],
+    "investigation": [
+      "398"
     ],
     "ipos 2027": [
       "163"
@@ -11749,12 +11055,7 @@
     "mankai": [
       "379"
     ],
-    "market": [
-      "328",
-      "329"
-    ],
     "market cap": [
-      "326",
       "393",
       "394",
       "396"
@@ -11790,15 +11091,6 @@
     "mi6": [
       "389"
     ],
-    "microsoft": [
-      "329"
-    ],
-    "microsoft msft": [
-      "329"
-    ],
-    "microsoft msft close": [
-      "329"
-    ],
     "midterm elections": [
       "390"
     ],
@@ -11824,22 +11116,8 @@
     "mrbeast": [
       "376"
     ],
-    "msft": [
-      "329"
-    ],
-    "msft close": [
-      "329"
-    ],
-    "msft close above": [
-      "329"
-    ],
     "nasa giss": [
       "378"
-    ],
-    "nasdaq": [
-      "326",
-      "328",
-      "329"
     ],
     "native token": [
       "395"
@@ -11892,6 +11170,12 @@
     ],
     "office champion": [
       "385"
+    ],
+    "on-chain analysis": [
+      "398"
+    ],
+    "on-chain investigator": [
+      "398"
     ],
     "one day": [
       "393",
@@ -11988,9 +11272,6 @@
       "381"
     ],
     "price": [
-      "326",
-      "328",
-      "329",
       "394"
     ],
     "price action": [
@@ -12054,9 +11335,6 @@
     "qualifying": [
       "371"
     ],
-    "rally": [
-      "329"
-    ],
     "rank among": [
       "378"
     ],
@@ -12100,6 +11378,9 @@
     "rnc": [
       "381"
     ],
+    "rug pull": [
+      "398"
+    ],
     "russia": [
       "387"
     ],
@@ -12108,6 +11389,9 @@
     ],
     "sakura": [
       "379"
+    ],
+    "scam report": [
+      "398"
     ],
     "scudetto": [
       "388"
@@ -12140,11 +11424,6 @@
     "serie league winner": [
       "388"
     ],
-    "shares": [
-      "326",
-      "328",
-      "329"
-    ],
     "sit-down": [
       "386"
     ],
@@ -12174,11 +11453,6 @@
     ],
     "standings": [
       "371"
-    ],
-    "stock": [
-      "326",
-      "328",
-      "329"
     ],
     "streaming": [
       "376"
@@ -12218,11 +11492,6 @@
     "teams make nba": [
       "371"
     ],
-    "tech": [
-      "326",
-      "328",
-      "329"
-    ],
     "temperature anomaly": [
       "378"
     ],
@@ -12249,10 +11518,6 @@
     ],
     "theatrical revenue": [
       "384"
-    ],
-    "ticker": [
-      "326",
-      "328"
     ],
     "ticket": [
       "380"
@@ -12311,9 +11576,6 @@
       "384"
     ],
     "trading": [
-      "326",
-      "328",
-      "329",
       "393",
       "394"
     ],
@@ -12348,7 +11610,6 @@
       "380"
     ],
     "valuation": [
-      "329",
       "394",
       "396"
     ],
@@ -12367,9 +11628,6 @@
     "vote": [
       "383",
       "391"
-    ],
-    "wall street": [
-      "326"
     ],
     "warmest year": [
       "378"
@@ -12423,6 +11681,15 @@
     "youtube": [
       "376"
     ],
+    "zach": [
+      "398"
+    ],
+    "zachxbt": [
+      "398"
+    ],
+    "zachxbt thread": [
+      "398"
+    ],
     "zachxbt upcoming": [
       "398"
     ],
@@ -12437,9 +11704,6 @@
     ],
     "中期选举": [
       "390"
-    ],
-    "亚马逊": [
-      "328"
     ],
     "以太坊": [
       "392"
