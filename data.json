@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26 10:51:25 UTC+8",
+    "generatedAt": "2026-02-26 17:01:22 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 223,
-      "markets": 191,
-      "keywords": 1030,
+      "kept": 226,
+      "markets": 199,
+      "keywords": 1006,
       "events": {
-        "events": 24
+        "events": 22
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 777,
+        "cutoff_expired": 774,
         "cutoff_zero_kept": 6,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 24,
+        "reused": 22,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -860,55 +860,6 @@
       "sigCore": "d0e3ab44",
       "reused": false
     },
-    "393": {
-      "title": "Flying Tulip FDV above ... one day after launch?",
-      "marketIds": [
-        "393"
-      ],
-      "bestMarketId": "393",
-      "bestLabels": null,
-      "keywords": [
-        "flying tulip",
-        "fdv",
-        "fully diluted valuation",
-        "token launch",
-        "crypto valuation",
-        "market cap",
-        "tge",
-        "token generation event",
-        "price action",
-        "trading",
-        "speculation",
-        "listing",
-        "airdrop",
-        "debut",
-        "tokenomics",
-        "tulip fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "flying tulip fdv",
-        "tulip fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after"
-      ],
-      "entities": [
-        "flying tulip"
-      ],
-      "entityGroups": [
-        [
-          "flying tulip",
-          "飞行的郁金香"
-        ]
-      ],
-      "sig": "47c504aa",
-      "sigFull": "47c504aa",
-      "sigCore": "41553574",
-      "reused": false
-    },
     "392": {
       "title": "MegaETH airdrop by...?",
       "marketIds": [
@@ -1117,51 +1068,6 @@
       "sig": "9b656d1e",
       "sigFull": "9b656d1e",
       "sigCore": "141934d9",
-      "reused": false
-    },
-    "328": {
-      "title": "Will Amazon (AMZN) close above ... end of February?",
-      "marketIds": [
-        "328"
-      ],
-      "bestMarketId": "328",
-      "bestLabels": null,
-      "keywords": [
-        "amazon",
-        "amzn",
-        "stock",
-        "shares",
-        "equity",
-        "price",
-        "trading",
-        "nasdaq",
-        "tech",
-        "ecommerce",
-        "close",
-        "earnings",
-        "market",
-        "valuation",
-        "amazon amzn",
-        "amzn close",
-        "close above",
-        "above february",
-        "amazon amzn close",
-        "amzn close above",
-        "close above february"
-      ],
-      "entities": [
-        "amazon"
-      ],
-      "entityGroups": [
-        [
-          "amazon",
-          "amzn",
-          "亚马逊"
-        ]
-      ],
-      "sig": "88e67484",
-      "sigFull": "88e67484",
-      "sigCore": "55294737",
       "reused": false
     }
   },
@@ -5987,93 +5893,6 @@
         }
       ]
     },
-    "393": {
-      "title": "Flying Tulip FDV above ... one day after launch?",
-      "url": "https://app.opinion.trade/market/393?ref=opinion_hud",
-      "yesTokenId": "6904507704509619134591881706657519503209154171334008145449270900751603575027",
-      "noTokenId": "76492172328051247237842036953777079622230261740425474700016974017297037501078",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "flying tulip",
-        "fdv",
-        "fully diluted valuation",
-        "token launch",
-        "crypto valuation",
-        "market cap",
-        "tge",
-        "token generation event",
-        "price action",
-        "trading",
-        "speculation",
-        "listing",
-        "airdrop",
-        "debut",
-        "tokenomics",
-        "tulip fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "flying tulip fdv",
-        "tulip fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after"
-      ],
-      "entities": [
-        "flying tulip"
-      ],
-      "entityGroups": [
-        [
-          "flying tulip",
-          "飞行的郁金香"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7661",
-          "title": "$400M",
-          "yesTokenId": "6904507704509619134591881706657519503209154171334008145449270900751603575027",
-          "noTokenId": "76492172328051247237842036953777079622230261740425474700016974017297037501078"
-        },
-        {
-          "marketId": "7662",
-          "title": "$800M",
-          "yesTokenId": "52795027995471655176969989793585759745473602923436379469055306934249930389880",
-          "noTokenId": "13006410871282292134589971913423739416153297731325309132841095904085606766218"
-        },
-        {
-          "marketId": "7663",
-          "title": "$1B",
-          "yesTokenId": "10377327617045085674570367978422009722412735781189913272818550978275425462500",
-          "noTokenId": "27971884910977675034315316368547121320652421662707327934264797184718619227905"
-        },
-        {
-          "marketId": "7664",
-          "title": "$1.5B",
-          "yesTokenId": "75128906650979390655999862192345083678634516225008706525061513020861522411098",
-          "noTokenId": "80911310145361108192785509373317146806104163737632382227628817894742061957513"
-        },
-        {
-          "marketId": "7665",
-          "title": "$2B",
-          "yesTokenId": "82877506303603572631276752081091815246794003721384823360010152073919425583674",
-          "noTokenId": "103721528085079594855351743254888487951264750211127698544392431106400802885529"
-        },
-        {
-          "marketId": "7666",
-          "title": "$2.5B",
-          "yesTokenId": "59215205010247065083392053733949648081923625134814522734027363780212361626487",
-          "noTokenId": "48705140376097918937548642244044179923954547021925502357522701180430393009347"
-        }
-      ]
-    },
     "392": {
       "title": "MegaETH airdrop by...?",
       "url": "https://app.opinion.trade/market/392?ref=opinion_hud",
@@ -7002,106 +6821,125 @@
       },
       "type": "binary"
     },
-    "328": {
-      "title": "Will Amazon (AMZN) close above ... end of February?",
-      "url": "https://app.opinion.trade/market/328?ref=opinion_hud",
-      "yesTokenId": "102252868391582755608918978916641849673079859628981416200401413932800508277465",
-      "noTokenId": "16728314194310371292387649061813439156615543326035624900135874780206145096570",
+    "7975": {
+      "title": "LCK: BFX vs DK (Feb. 28 3:00AM ET)",
+      "url": "https://app.opinion.trade/market/7975?ref=opinion_hud",
+      "yesTokenId": "16810746164617985558956299152480022004477061770162483100915457311143342040972",
+      "noTokenId": "77734426884212425389240792610060349756137753221625938103043341868586349275359",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "BFX",
+        "noLabel": "DK"
+      },
+      "type": "binary"
+    },
+    "7973": {
+      "title": "KPL: ESP vs DRG (Feb. 28 1:00AM ET)",
+      "url": "https://app.opinion.trade/market/7973?ref=opinion_hud",
+      "yesTokenId": "94107635817359317159855559782659115755767311388902579573324450565032086865708",
+      "noTokenId": "80135889267601426785270041580455830563466934224594948761861877839121413439450",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "ESP",
+        "noLabel": "DRG"
+      },
+      "type": "binary"
+    },
+    "7991": {
+      "title": "SEBI Finds Jane Street Manipulated Markets by 2026？",
+      "url": "https://app.opinion.trade/market/7991?ref=opinion_hud",
+      "yesTokenId": "101148725486430091011559035327719375918177400773306730490956158995965676286488",
+      "noTokenId": "94757572192907914605700126551902789631515912963498869181522400252869100259261",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
         "noLabel": "NO"
       },
-      "keywords": [
-        "amazon",
-        "amzn",
-        "stock",
-        "shares",
-        "equity",
-        "price",
-        "trading",
-        "nasdaq",
-        "tech",
-        "ecommerce",
-        "close",
-        "earnings",
-        "market",
-        "valuation",
-        "amazon amzn",
-        "amzn close",
-        "close above",
-        "above february",
-        "amazon amzn close",
-        "amzn close above",
-        "close above february"
-      ],
-      "entities": [
-        "amazon"
-      ],
-      "entityGroups": [
-        [
-          "amazon",
-          "amzn",
-          "亚马逊"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5184",
-          "title": "$220",
-          "yesTokenId": "62998850681712755316976867236149624508202097414042270492895849169326946041592",
-          "noTokenId": "89388238705113090786325766636159315076869621174181782147488145623160744817498"
-        },
-        {
-          "marketId": "5185",
-          "title": "$230",
-          "yesTokenId": "50666474303424384043200154220711485670760066237051265524258607148398911392314",
-          "noTokenId": "23917366964601245482745304500223594123231013855798257221268202769365160814470"
-        },
-        {
-          "marketId": "5186",
-          "title": "$240",
-          "yesTokenId": "26005436056866131743804656959148007214059298928415665147223972500200083943438",
-          "noTokenId": "106547216158413237959992142438493962956829103885025868898104089512821291402830"
-        },
-        {
-          "marketId": "5187",
-          "title": "$250",
-          "yesTokenId": "34174703310046791774263119246020019757694487223732202212370619665492164912821",
-          "noTokenId": "58652909931954554982522069688060076617289651874795560635061913906182706719932"
-        },
-        {
-          "marketId": "5188",
-          "title": "$260",
-          "yesTokenId": "38887704905453563831249100050170291147319244475405128099336988891074250680050",
-          "noTokenId": "68409330687338222890969539860705187645590774025080563799910517020857441545183"
-        },
-        {
-          "marketId": "5189",
-          "title": "$270",
-          "yesTokenId": "103196830316624062298447379476215989639051182190588230937764242919895367727398",
-          "noTokenId": "11734027024904629114481941670364087498990688895668541159676551759641381340823"
-        },
-        {
-          "marketId": "5190",
-          "title": "$280",
-          "yesTokenId": "89408640086992873952677270937782936985911967805375187349677239819944154466460",
-          "noTokenId": "106404355069075184692070633159289213092967295761882791621248952369809533402428"
-        },
-        {
-          "marketId": "6597",
-          "title": "$200",
-          "yesTokenId": "102252868391582755608918978916641849673079859628981416200401413932800508277465",
-          "noTokenId": "16728314194310371292387649061813439156615543326035624900135874780206145096570"
-        },
-        {
-          "marketId": "6598",
-          "title": "$210",
-          "yesTokenId": "42192971574229951183289537801838463101301298614674417312694873729234440712598",
-          "noTokenId": "46967553206203551742382096291270499253835523587110878622246664129959222476365"
-        }
-      ]
+      "type": "binary"
+    },
+    "7981": {
+      "title": "KPL: WOL vs DYG (Feb. 28 7:00AM ET)",
+      "url": "https://app.opinion.trade/market/7981?ref=opinion_hud",
+      "yesTokenId": "100254999871587198033086288352906058897159082447953762997906242181827345768847",
+      "noTokenId": "63361479098048867021210429827442377736586913989382059426504660840955039431658",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "WOL",
+        "noLabel": "DYG"
+      },
+      "type": "binary"
+    },
+    "7979": {
+      "title": "KPL: HERO vs JDG (Feb. 28 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/7979?ref=opinion_hud",
+      "yesTokenId": "61362265181427181138918252318529492779224088535566169765206952900495738956599",
+      "noTokenId": "89834930146651689637666130833054714280476221779486245680863883647159154555507",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "HERO",
+        "noLabel": "JDG"
+      },
+      "type": "binary"
+    },
+    "7974": {
+      "title": "CBLOL: RED vs FUR (Feb. 28 11:00AM ET)",
+      "url": "https://app.opinion.trade/market/7974?ref=opinion_hud",
+      "yesTokenId": "3174537820087226350399294407576029261957688720485624863406377574396937739785",
+      "noTokenId": "87321909837219354331703601117182103653648213498073111356635100642214930926534",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "RED",
+        "noLabel": "FUR"
+      },
+      "type": "binary"
+    },
+    "7980": {
+      "title": "LPL: TES vs WE (Feb. 28 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/7980?ref=opinion_hud",
+      "yesTokenId": "96423222575951404502393185492152895002695055068256353221080237418538776438212",
+      "noTokenId": "60272441880856667163210086445461616456331618888141262337725500857047707589460",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "TES",
+        "noLabel": "WE"
+      },
+      "type": "binary"
+    },
+    "7972": {
+      "title": "LPL: WBG vs BLG (Feb. 27 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/7972?ref=opinion_hud",
+      "yesTokenId": "95114862263055870287826498669621056791621808605797009777368537733755278278788",
+      "noTokenId": "80393954569853912552857971066670240960222180542332201906156519354151271698347",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "WBG",
+        "noLabel": "BLG"
+      },
+      "type": "binary"
+    },
+    "7990": {
+      "title": "Terraform v Jane Street: MTD denied?",
+      "url": "https://app.opinion.trade/market/7990?ref=opinion_hud",
+      "yesTokenId": "1545410753897478668471008126388771626881580934740771406235329445888363219637",
+      "noTokenId": "8511244306659840112974060245640503082628583607949490598173806954069266458840",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "type": "binary"
+    },
+    "7989": {
+      "title": "Bitcoin Up or Down on February 27?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/7989?ref=opinion_hud",
+      "yesTokenId": "55060576326924503282733160133459284096789467569043730807867089911934514553838",
+      "noTokenId": "75487638850274398259719031515263740766100973073412024449686496406197730754931",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -7259,16 +7097,11 @@
     "above earthquake 2027": [
       "2668"
     ],
-    "above february": [
-      "328"
-    ],
     "above one": [
-      "393",
       "394",
       "396"
     ],
     "above one day": [
-      "393",
       "394",
       "396"
     ],
@@ -7295,7 +7128,6 @@
     ],
     "after launch": [
       "1721",
-      "393",
       "394",
       "396"
     ],
@@ -7308,7 +7140,6 @@
       "3361",
       "3366",
       "392",
-      "393",
       "394",
       "395",
       "397"
@@ -7337,15 +7168,6 @@
       "3367",
       "3368"
     ],
-    "amazon": [
-      "328"
-    ],
-    "amazon amzn": [
-      "328"
-    ],
-    "amazon amzn close": [
-      "328"
-    ],
     "amazon prime video": [
       "376"
     ],
@@ -7360,15 +7182,6 @@
     ],
     "amount": [
       "3505"
-    ],
-    "amzn": [
-      "328"
-    ],
-    "amzn close": [
-      "328"
-    ],
-    "amzn close above": [
-      "328"
     ],
     "announcement": [
       "3257"
@@ -7724,15 +7537,6 @@
     "climate data": [
       "378"
     ],
-    "close": [
-      "328"
-    ],
-    "close above": [
-      "328"
-    ],
-    "close above february": [
-      "328"
-    ],
     "close warner": [
       "2398"
     ],
@@ -7887,9 +7691,6 @@
     "crypto twitter": [
       "398"
     ],
-    "crypto valuation": [
-      "393"
-    ],
     "cryptocurrency": [
       "3364",
       "3367"
@@ -7917,7 +7718,6 @@
     ],
     "day after": [
       "1721",
-      "393",
       "394",
       "396"
     ],
@@ -7939,7 +7739,6 @@
     ],
     "debut": [
       "163",
-      "393",
       "394",
       "396"
     ],
@@ -8058,18 +7857,12 @@
     "dustin henderson": [
       "3224"
     ],
-    "earnings": [
-      "328"
-    ],
     "earthquake": [
       "2668",
       "3356"
     ],
     "earthquake 2027": [
       "2668"
-    ],
-    "ecommerce": [
-      "328"
     ],
     "economic crisis": [
       "3265"
@@ -8141,9 +7934,6 @@
     "epicenter": [
       "2668",
       "3356"
-    ],
-    "equity": [
-      "328"
     ],
     "erc20": [
       "118"
@@ -8235,17 +8025,14 @@
       "1546"
     ],
     "fdv": [
-      "393",
       "394",
       "396"
     ],
     "fdv above": [
-      "393",
       "394",
       "396"
     ],
     "fdv above one": [
-      "393",
       "394",
       "396"
     ],
@@ -8282,12 +8069,6 @@
     "flowering": [
       "379"
     ],
-    "flying tulip": [
-      "393"
-    ],
-    "flying tulip fdv": [
-      "393"
-    ],
     "football": [
       "399"
     ],
@@ -8310,7 +8091,6 @@
       "379"
     ],
     "fully diluted valuation": [
-      "393",
       "394",
       "396"
     ],
@@ -8770,7 +8550,6 @@
     "listing": [
       "163",
       "3362",
-      "393",
       "395",
       "396",
       "397"
@@ -8832,13 +8611,11 @@
       "3361"
     ],
     "market": [
-      "328",
       "3361"
     ],
     "market cap": [
       "3505",
       "3506",
-      "393",
       "394",
       "396"
     ],
@@ -9013,9 +8790,6 @@
     "nasa giss": [
       "378"
     ],
-    "nasdaq": [
-      "328"
-    ],
     "native token": [
       "3366",
       "395"
@@ -9121,12 +8895,10 @@
     ],
     "one day": [
       "1721",
-      "393",
       "394",
       "396"
     ],
     "one day after": [
-      "393",
       "394",
       "396"
     ],
@@ -9278,14 +9050,10 @@
       "381"
     ],
     "price": [
-      "328",
       "3359",
       "3361",
       "3367",
       "394"
-    ],
-    "price action": [
-      "393"
     ],
     "price peak": [
       "3364"
@@ -9691,7 +9459,6 @@
       "3256"
     ],
     "shares": [
-      "328",
       "3362"
     ],
     "shein": [
@@ -9730,7 +9497,6 @@
       "3449"
     ],
     "speculation": [
-      "393",
       "394",
       "395"
     ],
@@ -9772,8 +9538,7 @@
       "3223"
     ],
     "stock": [
-      "3257",
-      "328"
+      "3257"
     ],
     "stock market": [
       "163"
@@ -9871,9 +9636,6 @@
     "teams make nba": [
       "371"
     ],
-    "tech": [
-      "328"
-    ],
     "tech ipo": [
       "163"
     ],
@@ -9923,7 +9685,6 @@
     ],
     "tge": [
       "1721",
-      "393",
       "395",
       "396",
       "397"
@@ -10001,13 +9762,9 @@
       "395",
       "397"
     ],
-    "token generation event": [
-      "393"
-    ],
     "token launch": [
       "118",
       "3366",
-      "393",
       "395",
       "396",
       "397"
@@ -10019,7 +9776,6 @@
     "tokenomics": [
       "118",
       "3361",
-      "393",
       "395",
       "396"
     ],
@@ -10045,10 +9801,8 @@
       "1546"
     ],
     "trading": [
-      "328",
       "3361",
       "3367",
-      "393",
       "394"
     ],
     "transfer": [
@@ -10087,12 +9841,6 @@
     ],
     "trump tariffs": [
       "1546"
-    ],
-    "tulip fdv": [
-      "393"
-    ],
-    "tulip fdv above": [
-      "393"
     ],
     "tv show": [
       "3221",
@@ -10154,7 +9902,6 @@
     ],
     "valuation": [
       "163",
-      "328",
       "3362",
       "3505",
       "3506",
@@ -10333,9 +10080,6 @@
     "乔纳森·拜尔斯": [
       "3221"
     ],
-    "亚马逊": [
-      "328"
-    ],
     "以太坊": [
       "1721",
       "3359",
@@ -10487,9 +10231,6 @@
     ],
     "霍莉·惠勒": [
       "3222"
-    ],
-    "飞行的郁金香": [
-      "393"
     ]
   },
   "eventIndex": {
@@ -10538,16 +10279,11 @@
     "2028 race": [
       "381"
     ],
-    "above february": [
-      "328"
-    ],
     "above one": [
-      "393",
       "394",
       "396"
     ],
     "above one day": [
-      "393",
       "394",
       "396"
     ],
@@ -10558,26 +10294,15 @@
       "399"
     ],
     "after launch": [
-      "393",
       "394",
       "396"
     ],
     "airdrop": [
       "118",
       "392",
-      "393",
       "394",
       "395",
       "397"
-    ],
-    "amazon": [
-      "328"
-    ],
-    "amazon amzn": [
-      "328"
-    ],
-    "amazon amzn close": [
-      "328"
     ],
     "amazon prime video": [
       "376"
@@ -10587,15 +10312,6 @@
     ],
     "among hottest years": [
       "378"
-    ],
-    "amzn": [
-      "328"
-    ],
-    "amzn close": [
-      "328"
-    ],
-    "amzn close above": [
-      "328"
     ],
     "balance of power": [
       "390"
@@ -10711,15 +10427,6 @@
     "climate data": [
       "378"
     ],
-    "close": [
-      "328"
-    ],
-    "close above": [
-      "328"
-    ],
-    "close above february": [
-      "328"
-    ],
     "clubs": [
       "399"
     ],
@@ -10782,14 +10489,10 @@
     "crypto twitter": [
       "398"
     ],
-    "crypto valuation": [
-      "393"
-    ],
     "databricks": [
       "163"
     ],
     "day after": [
-      "393",
       "394",
       "396"
     ],
@@ -10798,7 +10501,6 @@
     ],
     "debut": [
       "163",
-      "393",
       "394",
       "396"
     ],
@@ -10838,12 +10540,6 @@
     "doxxing": [
       "398"
     ],
-    "earnings": [
-      "328"
-    ],
-    "ecommerce": [
-      "328"
-    ],
     "el niño": [
       "378"
     ],
@@ -10871,9 +10567,6 @@
     "eon productions": [
       "389"
     ],
-    "equity": [
-      "328"
-    ],
     "erc20": [
       "118"
     ],
@@ -10900,17 +10593,14 @@
       "387"
     ],
     "fdv": [
-      "393",
       "394",
       "396"
     ],
     "fdv above": [
-      "393",
       "394",
       "396"
     ],
     "fdv above one": [
-      "393",
       "394",
       "396"
     ],
@@ -10925,12 +10615,6 @@
     ],
     "flowering": [
       "379"
-    ],
-    "flying tulip": [
-      "393"
-    ],
-    "flying tulip fdv": [
-      "393"
     ],
     "football": [
       "399"
@@ -10948,7 +10632,6 @@
       "379"
     ],
     "fully diluted valuation": [
-      "393",
       "394",
       "396"
     ],
@@ -11132,7 +10815,6 @@
     ],
     "listing": [
       "163",
-      "393",
       "395",
       "396",
       "397"
@@ -11158,11 +10840,7 @@
     "mankai": [
       "379"
     ],
-    "market": [
-      "328"
-    ],
     "market cap": [
-      "393",
       "394",
       "396"
     ],
@@ -11227,9 +10905,6 @@
     "nasa giss": [
       "378"
     ],
-    "nasdaq": [
-      "328"
-    ],
     "native token": [
       "395"
     ],
@@ -11286,12 +10961,10 @@
       "398"
     ],
     "one day": [
-      "393",
       "394",
       "396"
     ],
     "one day after": [
-      "393",
       "394",
       "396"
     ],
@@ -11380,11 +11053,7 @@
       "381"
     ],
     "price": [
-      "328",
       "394"
-    ],
-    "price action": [
-      "393"
     ],
     "primary": [
       "380",
@@ -11537,9 +11206,6 @@
     "serie league winner": [
       "388"
     ],
-    "shares": [
-      "328"
-    ],
     "shein": [
       "163"
     ],
@@ -11553,7 +11219,6 @@
       "399"
     ],
     "speculation": [
-      "393",
       "394",
       "395"
     ],
@@ -11565,9 +11230,6 @@
     ],
     "standings": [
       "371"
-    ],
-    "stock": [
-      "328"
     ],
     "stock market": [
       "163"
@@ -11611,9 +11273,6 @@
     "teams make nba": [
       "371"
     ],
-    "tech": [
-      "328"
-    ],
     "tech ipo": [
       "163"
     ],
@@ -11630,7 +11289,6 @@
       "391"
     ],
     "tge": [
-      "393",
       "395",
       "396",
       "397"
@@ -11656,12 +11314,8 @@
       "395",
       "397"
     ],
-    "token generation event": [
-      "393"
-    ],
     "token launch": [
       "118",
-      "393",
       "395",
       "396",
       "397"
@@ -11672,7 +11326,6 @@
     ],
     "tokenomics": [
       "118",
-      "393",
       "395",
       "396"
     ],
@@ -11689,8 +11342,6 @@
       "388"
     ],
     "trading": [
-      "328",
-      "393",
       "394"
     ],
     "trump": [
@@ -11701,12 +11352,6 @@
     ],
     "trump putin meet": [
       "386"
-    ],
-    "tulip fdv": [
-      "393"
-    ],
-    "tulip fdv above": [
-      "393"
     ],
     "ucl": [
       "399"
@@ -11734,7 +11379,6 @@
     ],
     "valuation": [
       "163",
-      "328",
       "394",
       "396"
     ],
@@ -11833,9 +11477,6 @@
     "中期选举": [
       "390"
     ],
-    "亚马逊": [
-      "328"
-    ],
     "以太坊": [
       "392"
     ],
@@ -11910,9 +11551,6 @@
     ],
     "野兽游戏": [
       "376"
-    ],
-    "飞行的郁金香": [
-      "393"
     ]
   }
 }
