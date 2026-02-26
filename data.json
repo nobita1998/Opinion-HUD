@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26 01:16:48 UTC+8",
+    "generatedAt": "2026-02-26 10:51:25 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 236,
-      "markets": 202,
-      "keywords": 1042,
+      "kept": 223,
+      "markets": 191,
+      "keywords": 1030,
       "events": {
-        "events": 25
+        "events": 24
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 764,
+        "cutoff_expired": 777,
         "cutoff_zero_kept": 6,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 22,
-        "regenerated_empty_entitygroups": 1,
-        "calls": 3,
+        "reused": 24,
+        "regenerated_empty_entitygroups": 0,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 3,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -1162,51 +1162,6 @@
       "sig": "88e67484",
       "sigFull": "88e67484",
       "sigCore": "55294737",
-      "reused": false
-    },
-    "329": {
-      "title": "Will Microsoft (MSFT) close above ... end of February?",
-      "marketIds": [
-        "329"
-      ],
-      "bestMarketId": "329",
-      "bestLabels": null,
-      "keywords": [
-        "microsoft",
-        "msft",
-        "stock",
-        "price",
-        "big tech",
-        "nasdaq",
-        "earnings",
-        "trading",
-        "options",
-        "volatility",
-        "satya nadella",
-        "azure",
-        "windows",
-        "tech giant",
-        "equity",
-        "microsoft msft",
-        "msft close",
-        "close above",
-        "above february",
-        "microsoft msft close",
-        "msft close above",
-        "close above february"
-      ],
-      "entities": [
-        "microsoft"
-      ],
-      "entityGroups": [
-        [
-          "microsoft",
-          "msft"
-        ]
-      ],
-      "sig": "f2266c0e",
-      "sigFull": "f2266c0e",
-      "sigCore": "85d896cb",
       "reused": false
     }
   },
@@ -6735,18 +6690,6 @@
         }
       ]
     },
-    "7745": {
-      "title": "Dota2 - DreamLeague: AUR vs MOUZ (Feb. 25 2:30PM ET)",
-      "url": "https://app.opinion.trade/market/7745?ref=opinion_hud",
-      "yesTokenId": "29084638206226296921280910352459913426994416445710316735788080604416214481634",
-      "noTokenId": "111095967680489049041485774363268549331311858952584229981845756362426194093727",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "AUR",
-        "noLabel": "MOUZ"
-      },
-      "type": "binary"
-    },
     "7748": {
       "title": "KPL: Q9 vs WOL (Feb. 25 7:00AM ET)",
       "url": "https://app.opinion.trade/market/7748?ref=opinion_hud",
@@ -6756,30 +6699,6 @@
       "labels": {
         "yesLabel": "Q9",
         "noLabel": "WOL"
-      },
-      "type": "binary"
-    },
-    "7758": {
-      "title": "NBA: Trail Blazers vs Bulls (Feb. 26 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/7758?ref=opinion_hud",
-      "yesTokenId": "62414075128041547301176245679828157098760609875262342206595024617706020237364",
-      "noTokenId": "83407126204569109256744967625012238820620235510802856709706854711258272069533",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Trail Blazers",
-        "noLabel": "Bulls"
-      },
-      "type": "binary"
-    },
-    "7759": {
-      "title": "NBA: Lakers vs Suns (Feb. 26 9:00PM ET)",
-      "url": "https://app.opinion.trade/market/7759?ref=opinion_hud",
-      "yesTokenId": "50119327287483390398511971317972746934486185727708277012604851572326006387121",
-      "noTokenId": "115697671449566839312220354771279433934782955693065987506179239690649161233702",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Lakers",
-        "noLabel": "Suns"
       },
       "type": "binary"
     },
@@ -6807,18 +6726,6 @@
       },
       "type": "binary"
     },
-    "7749": {
-      "title": "Dota2 - DreamLeague: TL vs PARI (Feb. 25 8:30AM ET)",
-      "url": "https://app.opinion.trade/market/7749?ref=opinion_hud",
-      "yesTokenId": "20979005075149526223730456401296624239434124088571110522519624001405705576072",
-      "noTokenId": "21449002831079480146329439561348853483020152466327297011080861369359617807118",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "TL",
-        "noLabel": "PARI"
-      },
-      "type": "binary"
-    },
     "7753": {
       "title": "KPL: HERO vs WE (Feb. 26 4:00AM ET)",
       "url": "https://app.opinion.trade/market/7753?ref=opinion_hud",
@@ -6828,18 +6735,6 @@
       "labels": {
         "yesLabel": "HERO ",
         "noLabel": "WE"
-      },
-      "type": "binary"
-    },
-    "7757": {
-      "title": "NBA: Spurs vs Nets (Feb. 26 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/7757?ref=opinion_hud",
-      "yesTokenId": "110090071732933230730745830751289391563845017204515051588467461206352366340207",
-      "noTokenId": "16235001675568280889802356139132228329915053333817299375910599466700648208434",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Spurs",
-        "noLabel": "Nets"
       },
       "type": "binary"
     },
@@ -6891,18 +6786,6 @@
       },
       "type": "binary"
     },
-    "7744": {
-      "title": "Dota2 - DreamLeague: FAL vs TUNDRA (Feb. 25 11:30AM ET)",
-      "url": "https://app.opinion.trade/market/7744?ref=opinion_hud",
-      "yesTokenId": "58017026046364861036709198476205322962487595932790432472144380014325363207925",
-      "noTokenId": "102748281975199207441769234926269785844245806134074422805039116881307951340587",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "FAL",
-        "noLabel": "TUNDRA"
-      },
-      "type": "binary"
-    },
     "7750": {
       "title": "KPL: EDG.M vs ESP (Feb. 26 1:00AM ET)",
       "url": "https://app.opinion.trade/market/7750?ref=opinion_hud",
@@ -6948,42 +6831,6 @@
       "labels": {
         "yesLabel": "Grizzlies",
         "noLabel": "Mavericks"
-      },
-      "type": "binary"
-    },
-    "7924": {
-      "title": "BNB Up or Down - Hourly (Feb 25, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7924?ref=opinion_hud",
-      "yesTokenId": "114651617638898223282519550004418519372567817594849370835181149041712386276892",
-      "noTokenId": "13355327372092647178601704208470007162116648882934500969358691531537845851685",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "7926": {
-      "title": "ETH Up or Down - Hourly (Feb 25, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7926?ref=opinion_hud",
-      "yesTokenId": "111500913241237639493377684819730756589529705522198378177110393623280654021131",
-      "noTokenId": "48059726439526728947688775782594114635216263526521996532700174157760511911339",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "7925": {
-      "title": "BTC Up or Down - Hourly (Feb 25, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/7925?ref=opinion_hud",
-      "yesTokenId": "1564189107818947426579791324279661316097639704634666014685308601340099962900",
-      "noTokenId": "77245027049794945836067552747573874375497171252069074329847019688256505541880",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
@@ -7095,18 +6942,6 @@
       },
       "type": "binary"
     },
-    "7889": {
-      "title": "Bitcoin Up or Down on February 26?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/7889?ref=opinion_hud",
-      "yesTokenId": "3370268041692743836241096183519242458645769319419963145760188506556441118342",
-      "noTokenId": "95366681902018124455161402972078175188263418535298929892140598097618954920903",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "7905": {
       "title": "Dota2 - DreamLeague: AUR vs BB (Feb. 27 8:30AM ET)",
       "url": "https://app.opinion.trade/market/7905?ref=opinion_hud",
@@ -7170,8 +7005,8 @@
     "328": {
       "title": "Will Amazon (AMZN) close above ... end of February?",
       "url": "https://app.opinion.trade/market/328?ref=opinion_hud",
-      "yesTokenId": "42192971574229951183289537801838463101301298614674417312694873729234440712598",
-      "noTokenId": "46967553206203551742382096291270499253835523587110878622246664129959222476365",
+      "yesTokenId": "102252868391582755608918978916641849673079859628981416200401413932800508277465",
+      "noTokenId": "16728314194310371292387649061813439156615543326035624900135874780206145096570",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7265,113 +7100,6 @@
           "title": "$210",
           "yesTokenId": "42192971574229951183289537801838463101301298614674417312694873729234440712598",
           "noTokenId": "46967553206203551742382096291270499253835523587110878622246664129959222476365"
-        }
-      ]
-    },
-    "329": {
-      "title": "Will Microsoft (MSFT) close above ... end of February?",
-      "url": "https://app.opinion.trade/market/329?ref=opinion_hud",
-      "yesTokenId": "108913855181880105844659888257677515292922453899940894000425585470842866190509",
-      "noTokenId": "85873191964421169603416308093799461742630125239298500328692624194551483483864",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "microsoft",
-        "msft",
-        "stock",
-        "price",
-        "big tech",
-        "nasdaq",
-        "earnings",
-        "trading",
-        "options",
-        "volatility",
-        "satya nadella",
-        "azure",
-        "windows",
-        "tech giant",
-        "equity",
-        "microsoft msft",
-        "msft close",
-        "close above",
-        "above february",
-        "microsoft msft close",
-        "msft close above",
-        "close above february"
-      ],
-      "entities": [
-        "microsoft"
-      ],
-      "entityGroups": [
-        [
-          "microsoft",
-          "msft"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "5191",
-          "title": "$405",
-          "yesTokenId": "21769925890497816743317567467251331107846435742161355947078093425295183767893",
-          "noTokenId": "69249254422336137525094287876121901086651015501403917189590001468588466423576"
-        },
-        {
-          "marketId": "5192",
-          "title": "$420",
-          "yesTokenId": "71493491591516652922191786104749214504408205420805893252571145324713044376595",
-          "noTokenId": "33614793340264564009283356030545081221480561432556628429210496086088110319379"
-        },
-        {
-          "marketId": "5193",
-          "title": "$435",
-          "yesTokenId": "106887270138635280585088830126048375952995696340752270824816245405652161744167",
-          "noTokenId": "45146170823823139764934916838404453872135658098348844656707865043807257480501"
-        },
-        {
-          "marketId": "5194",
-          "title": "$450",
-          "yesTokenId": "98996371975311222551614372767097942003853274147060549640764832723141516203679",
-          "noTokenId": "34389302150197109548236420235092248562517278069963013513500521824913770300375"
-        },
-        {
-          "marketId": "5195",
-          "title": "$465",
-          "yesTokenId": "83996470887322151045278656035341924341801083764745256889613307458368794133691",
-          "noTokenId": "89501533420519311379388898785777419806720424497095412155816615984290386935969"
-        },
-        {
-          "marketId": "5196",
-          "title": "$480",
-          "yesTokenId": "483108956370332919272169102752791997166748413909247344503844660797879589349",
-          "noTokenId": "93297093889097516971683202790026869608800025973272744046737149032665958761263"
-        },
-        {
-          "marketId": "5197",
-          "title": "$495",
-          "yesTokenId": "23285333871054219783526883405429406494140689561444398312216499400036161732780",
-          "noTokenId": "99007857677707719097822981329157819227394357148063518863808853448590361191218"
-        },
-        {
-          "marketId": "5198",
-          "title": "$510",
-          "yesTokenId": "49930286250037613694140364896993811346039112846121744777678479889046771655007",
-          "noTokenId": "12277384644878638270854343599297265552478262021392543876617302314390016411583"
-        },
-        {
-          "marketId": "6599",
-          "title": "$375",
-          "yesTokenId": "108913855181880105844659888257677515292922453899940894000425585470842866190509",
-          "noTokenId": "85873191964421169603416308093799461742630125239298500328692624194551483483864"
-        },
-        {
-          "marketId": "6600",
-          "title": "$390",
-          "yesTokenId": "95245240419443435190317201087422331334359633729909451996060027387031295705330",
-          "noTokenId": "37459032687120498745873800163537100797540416312821009353739662130955768267278"
         }
       ]
     }
@@ -7532,8 +7260,7 @@
       "2668"
     ],
     "above february": [
-      "328",
-      "329"
+      "328"
     ],
     "above one": [
       "393",
@@ -7687,9 +7414,6 @@
     "attack": [
       "3039"
     ],
-    "azure": [
-      "329"
-    ],
     "back": [
       "1856"
     ],
@@ -7749,9 +7473,6 @@
     ],
     "bible prophecy": [
       "2670"
-    ],
-    "big tech": [
-      "329"
     ],
     "bilateral": [
       "386"
@@ -8007,12 +7728,10 @@
       "328"
     ],
     "close above": [
-      "328",
-      "329"
+      "328"
     ],
     "close above february": [
-      "328",
-      "329"
+      "328"
     ],
     "close warner": [
       "2398"
@@ -8340,8 +8059,7 @@
       "3224"
     ],
     "earnings": [
-      "328",
-      "329"
+      "328"
     ],
     "earthquake": [
       "2668",
@@ -8425,8 +8143,7 @@
       "3356"
     ],
     "equity": [
-      "328",
-      "329"
+      "328"
     ],
     "erc20": [
       "118"
@@ -9191,15 +8908,6 @@
     "mi6": [
       "389"
     ],
-    "microsoft": [
-      "329"
-    ],
-    "microsoft msft": [
-      "329"
-    ],
-    "microsoft msft close": [
-      "329"
-    ],
     "microstrategy": [
       "3257"
     ],
@@ -9288,15 +8996,6 @@
     "msci world": [
       "3257"
     ],
-    "msft": [
-      "329"
-    ],
-    "msft close": [
-      "329"
-    ],
-    "msft close above": [
-      "329"
-    ],
     "mstr": [
       "3257"
     ],
@@ -9315,8 +9014,7 @@
       "378"
     ],
     "nasdaq": [
-      "328",
-      "329"
+      "328"
     ],
     "native token": [
       "3366",
@@ -9440,9 +9138,6 @@
     ],
     "opposition": [
       "383"
-    ],
-    "options": [
-      "329"
     ],
     "ousted": [
       "2368"
@@ -9584,7 +9279,6 @@
     ],
     "price": [
       "328",
-      "329",
       "3359",
       "3361",
       "3367",
@@ -9903,9 +9597,6 @@
     "satoshi move any": [
       "3365"
     ],
-    "satya nadella": [
-      "329"
-    ],
     "scaling": [
       "1721"
     ],
@@ -10082,8 +9773,7 @@
     ],
     "stock": [
       "3257",
-      "328",
-      "329"
+      "328"
     ],
     "stock market": [
       "163"
@@ -10183,9 +9873,6 @@
     ],
     "tech": [
       "328"
-    ],
-    "tech giant": [
-      "329"
     ],
     "tech ipo": [
       "163"
@@ -10359,7 +10046,6 @@
     ],
     "trading": [
       "328",
-      "329",
       "3361",
       "3367",
       "393",
@@ -10504,7 +10190,6 @@
       "387"
     ],
     "volatility": [
-      "329",
       "3367"
     ],
     "volodymyr": [
@@ -10602,9 +10287,6 @@
     ],
     "win beast games": [
       "376"
-    ],
-    "windows": [
-      "329"
     ],
     "years record": [
       "378"
@@ -10857,8 +10539,7 @@
       "381"
     ],
     "above february": [
-      "328",
-      "329"
+      "328"
     ],
     "above one": [
       "393",
@@ -10916,9 +10597,6 @@
     "amzn close above": [
       "328"
     ],
-    "azure": [
-      "329"
-    ],
     "balance of power": [
       "390"
     ],
@@ -10939,9 +10617,6 @@
     ],
     "beast games season": [
       "376"
-    ],
-    "big tech": [
-      "329"
     ],
     "bilateral": [
       "386"
@@ -11040,12 +10715,10 @@
       "328"
     ],
     "close above": [
-      "328",
-      "329"
+      "328"
     ],
     "close above february": [
-      "328",
-      "329"
+      "328"
     ],
     "clubs": [
       "399"
@@ -11166,8 +10839,7 @@
       "398"
     ],
     "earnings": [
-      "328",
-      "329"
+      "328"
     ],
     "ecommerce": [
       "328"
@@ -11200,8 +10872,7 @@
       "389"
     ],
     "equity": [
-      "328",
-      "329"
+      "328"
     ],
     "erc20": [
       "118"
@@ -11532,15 +11203,6 @@
     "mi6": [
       "389"
     ],
-    "microsoft": [
-      "329"
-    ],
-    "microsoft msft": [
-      "329"
-    ],
-    "microsoft msft close": [
-      "329"
-    ],
     "midterm elections": [
       "390"
     ],
@@ -11562,21 +11224,11 @@
     "mrbeast": [
       "376"
     ],
-    "msft": [
-      "329"
-    ],
-    "msft close": [
-      "329"
-    ],
-    "msft close above": [
-      "329"
-    ],
     "nasa giss": [
       "378"
     ],
     "nasdaq": [
-      "328",
-      "329"
+      "328"
     ],
     "native token": [
       "395"
@@ -11648,9 +11300,6 @@
     ],
     "opposition": [
       "383"
-    ],
-    "options": [
-      "329"
     ],
     "parliament": [
       "382",
@@ -11732,7 +11381,6 @@
     ],
     "price": [
       "328",
-      "329",
       "394"
     ],
     "price action": [
@@ -11855,9 +11503,6 @@
     "sakura": [
       "379"
     ],
-    "satya nadella": [
-      "329"
-    ],
     "scam report": [
       "398"
     ],
@@ -11922,8 +11567,7 @@
       "371"
     ],
     "stock": [
-      "328",
-      "329"
+      "328"
     ],
     "stock market": [
       "163"
@@ -11969,9 +11613,6 @@
     ],
     "tech": [
       "328"
-    ],
-    "tech giant": [
-      "329"
     ],
     "tech ipo": [
       "163"
@@ -12049,7 +11690,6 @@
     ],
     "trading": [
       "328",
-      "329",
       "393",
       "394"
     ],
@@ -12106,9 +11746,6 @@
     ],
     "vladimir": [
       "387"
-    ],
-    "volatility": [
-      "329"
     ],
     "volodymyr": [
       "387"
@@ -12168,9 +11805,6 @@
     ],
     "win beast games": [
       "376"
-    ],
-    "windows": [
-      "329"
     ],
     "years record": [
       "378"
