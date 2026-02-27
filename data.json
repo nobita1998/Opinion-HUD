@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27 01:12:52 UTC+8",
+    "generatedAt": "2026-02-27 10:49:18 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 229,
-      "markets": 202,
-      "keywords": 1006,
+      "kept": 200,
+      "markets": 185,
+      "keywords": 986,
       "events": {
-        "events": 22
+        "events": 21
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 771,
+        "cutoff_expired": 800,
         "cutoff_zero_kept": 6,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 22,
+        "reused": 21,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -975,50 +975,6 @@
       "sig": "67894b86",
       "sigFull": "67894b86",
       "sigCore": "59f0b6e6",
-      "reused": false
-    },
-    "399": {
-      "title": "Champions League: Which teams advance to round of 16?",
-      "marketIds": [
-        "399"
-      ],
-      "bestMarketId": "399",
-      "bestLabels": null,
-      "keywords": [
-        "champions league",
-        "ucl",
-        "uefa",
-        "soccer",
-        "football",
-        "european football",
-        "round of 16",
-        "knockout stage",
-        "group stage",
-        "european cup",
-        "clubs",
-        "teams",
-        "qualification",
-        "league which",
-        "which teams",
-        "teams advance",
-        "advance round",
-        "champions league which",
-        "league which teams",
-        "which teams advance",
-        "teams advance round"
-      ],
-      "entities": [
-        "champions league"
-      ],
-      "entityGroups": [
-        [
-          "champions league",
-          "欧洲冠军联赛"
-        ]
-      ],
-      "sig": "9cf585d9",
-      "sigFull": "9cf585d9",
-      "sigCore": "7e12f24e",
       "reused": false
     },
     "398": {
@@ -5269,18 +5225,6 @@
       },
       "type": "binary"
     },
-    "7323": {
-      "title": "LCP: TSW vs DCG (Feb. 26 1:00AM ET)",
-      "url": "https://app.opinion.trade/market/7323?ref=opinion_hud",
-      "yesTokenId": "64377900074506366266325350800037593612774259753420803821041102324122797373788",
-      "noTokenId": "91157757784850966449855877093019677104850228551505418983850826097029485799842",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "TSW",
-        "noLabel": "DCG"
-      },
-      "type": "binary"
-    },
     "7324": {
       "title": "LCP: SHG vs GZ (Feb. 27 1:00AM ET)",
       "url": "https://app.opinion.trade/market/7324?ref=opinion_hud",
@@ -6130,148 +6074,6 @@
         }
       ]
     },
-    "399": {
-      "title": "Champions League: Which teams advance to round of 16?",
-      "url": "https://app.opinion.trade/market/399?ref=opinion_hud",
-      "yesTokenId": "79657754180415515526536601674113233781447359655341366584643485624452305812959",
-      "noTokenId": "47560719503318439740630827428345300159530283245455722653047965138113458263357",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Yes",
-        "noLabel": "No"
-      },
-      "keywords": [
-        "champions league",
-        "ucl",
-        "uefa",
-        "soccer",
-        "football",
-        "european football",
-        "round of 16",
-        "knockout stage",
-        "group stage",
-        "european cup",
-        "clubs",
-        "teams",
-        "qualification",
-        "league which",
-        "which teams",
-        "teams advance",
-        "advance round",
-        "champions league which",
-        "league which teams",
-        "which teams advance",
-        "teams advance round"
-      ],
-      "entities": [
-        "champions league"
-      ],
-      "entityGroups": [
-        [
-          "champions league",
-          "欧洲冠军联赛"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7796",
-          "title": "Paris Saint-Germain",
-          "yesTokenId": "79657754180415515526536601674113233781447359655341366584643485624452305812959",
-          "noTokenId": "47560719503318439740630827428345300159530283245455722653047965138113458263357"
-        },
-        {
-          "marketId": "7797",
-          "title": "Real Madrid",
-          "yesTokenId": "18015717253017986932809823972639125067973803060932957049678579641372839232712",
-          "noTokenId": "4169549965625535029752965563972126305913555213674509399844434596215465375494"
-        },
-        {
-          "marketId": "7798",
-          "title": "Borussia Dortmund",
-          "yesTokenId": "74478306377426949907787107353320222252978647382416269937051792079485100909048",
-          "noTokenId": "17832124125879648789608445898878166389712009436798609345057618509396602975492"
-        },
-        {
-          "marketId": "7799",
-          "title": "Galatasaray",
-          "yesTokenId": "44841750379072437366745706075299390519392001160209421391969221406358817447769",
-          "noTokenId": "71892701474326694437177174473174208356575649793410089398856202086990733316758"
-        },
-        {
-          "marketId": "7804",
-          "title": "Juventus",
-          "yesTokenId": "14517160587164956559151577845813373821983418327674647306929109359637865089292",
-          "noTokenId": "81242864418132398497350437994743480051085872219104922381047307652793852168300"
-        },
-        {
-          "marketId": "7805",
-          "title": "Atalanta",
-          "yesTokenId": "80101052091630796078965393643942380498900316845212628610557847090252345255584",
-          "noTokenId": "107156526904922072950151995021364787888927819513911413150847998447846360529679"
-        },
-        {
-          "marketId": "7806",
-          "title": "Benfica",
-          "yesTokenId": "114133058030511335614020289152875921140794886848004753481160921228702912658692",
-          "noTokenId": "107046987615294734598056976895349559901775625456780618637332621320099335662204"
-        },
-        {
-          "marketId": "7807",
-          "title": "Monaco",
-          "yesTokenId": "57934846415743183727737864489126119516060926973987182145199427046370619761655",
-          "noTokenId": "51330423050908218238227862679992417061539214103228673162423142216376001120978"
-        },
-        {
-          "marketId": "7794",
-          "title": "Newcastle United",
-          "yesTokenId": "21272228009103644949223018086863120688047713609270263836171217313178100571894",
-          "noTokenId": "24245976792215031114277893624055700197376200862003337120462139945615885146518"
-        },
-        {
-          "marketId": "7795",
-          "title": "Bayer Leverkusen",
-          "yesTokenId": "47400610218185907846255343206921828888925313278144409360126136080076904102391",
-          "noTokenId": "36673306449020579717187638314863583574272185067094940148114257059063321614190"
-        },
-        {
-          "marketId": "7800",
-          "title": "Atlético Madrid",
-          "yesTokenId": "72061299132355168701487287403921664078158676036281729824308408623149866917765",
-          "noTokenId": "81420512678864332268883192851955653115866110259163078096600313151607443301401"
-        },
-        {
-          "marketId": "7801",
-          "title": "Inter Milan",
-          "yesTokenId": "51679179787277560955324957070475718308619681445311141718713006620959818150702",
-          "noTokenId": "38455582329801724888103236790368086417765893760244523969680289808092942410276"
-        },
-        {
-          "marketId": "7802",
-          "title": "Bodø/Glimt",
-          "yesTokenId": "44519167403222422423964712490244125480639350584109207027313252570273062151938",
-          "noTokenId": "38918246375896272048069029073099148469439250786489250066988547083155481818435"
-        },
-        {
-          "marketId": "7803",
-          "title": "Club Brugge",
-          "yesTokenId": "38257903420035939741313260544154384315841185459466118900600205764815947749839",
-          "noTokenId": "106643692555203355071592204840631286706895281008382836175514952142372498262177"
-        },
-        {
-          "marketId": "7808",
-          "title": "Olympiacos",
-          "yesTokenId": "96691449902749690850255090575453172725897243669255239877070504058133708325823",
-          "noTokenId": "33280853271174921553823533182027209597529218427175792288501107201276842427003"
-        },
-        {
-          "marketId": "7809",
-          "title": "Qarabağ",
-          "yesTokenId": "94325906661560331054955508137003170699611180116557091095022774373998560674693",
-          "noTokenId": "8045090569345280583879217120260723424862912759731314127481621382891228242944"
-        }
-      ]
-    },
     "398": {
       "title": "What company will be the main target of ZachXBT's upcoming investigation?",
       "url": "https://app.opinion.trade/market/398?ref=opinion_hud",
@@ -6569,42 +6371,6 @@
       },
       "type": "binary"
     },
-    "7752": {
-      "title": "Dota2 - DreamLeague: PARI vs FAL (Feb. 26 2:30PM ET)",
-      "url": "https://app.opinion.trade/market/7752?ref=opinion_hud",
-      "yesTokenId": "34556840831655006315864548068804222375081115972468559401800513563365438439960",
-      "noTokenId": "29957434450719873870813911652035591791331533485636967684985835295993015450028",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "PARI ",
-        "noLabel": "FAL"
-      },
-      "type": "binary"
-    },
-    "7756": {
-      "title": "Dota2 - DreamLeague: MOUZ vs TL (Feb. 26 8:30AM ET)",
-      "url": "https://app.opinion.trade/market/7756?ref=opinion_hud",
-      "yesTokenId": "47908966331906905906381404240651406502363013074012419309177278933826146413598",
-      "noTokenId": "106706898704761158373929129433101266506780959798252567225209681223763066343004",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "MOUZ",
-        "noLabel": "TL"
-      },
-      "type": "binary"
-    },
-    "7751": {
-      "title": "Dota2 - DreamLeague: AUR vs XG (Feb. 26 11:30AM ET)",
-      "url": "https://app.opinion.trade/market/7751?ref=opinion_hud",
-      "yesTokenId": "12343783556741391912395937077211287545315834533088879660887478129897412912699",
-      "noTokenId": "67324618023915064635050456521391947955895932350349012028209556895120961958050",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "AUR",
-        "noLabel": "XG"
-      },
-      "type": "binary"
-    },
     "7750": {
       "title": "KPL: EDG.M vs ESP (Feb. 26 1:00AM ET)",
       "url": "https://app.opinion.trade/market/7750?ref=opinion_hud",
@@ -6617,42 +6383,6 @@
       },
       "type": "binary"
     },
-    "7845": {
-      "title": "NBA: Nets vs Celtics (Feb. 27 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/7845?ref=opinion_hud",
-      "yesTokenId": "94884209936427889368412827668005476782754100359436913218985098733790450474040",
-      "noTokenId": "60557832631718048099465500098816766114078033375997644512050242095450408698707",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Nets",
-        "noLabel": "Celtics"
-      },
-      "type": "binary"
-    },
-    "7846": {
-      "title": "NBA: Knicks vs Bucks (Feb. 27 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/7846?ref=opinion_hud",
-      "yesTokenId": "2119830555514637882490232818537922521522456689959184955119885797223189786481",
-      "noTokenId": "12242216759744366059998246754398822476477140782756489018931170387729991660792",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Knicks",
-        "noLabel": "Bucks"
-      },
-      "type": "binary"
-    },
-    "7847": {
-      "title": "NBA: Grizzlies vs Mavericks (Feb. 27 8:30PM ET)",
-      "url": "https://app.opinion.trade/market/7847?ref=opinion_hud",
-      "yesTokenId": "77982102911362007089246980663399720195505588256741834604899804073294377371725",
-      "noTokenId": "35140787880004102964637943677595106796395587935952457903051001539655962759281",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Grizzlies",
-        "noLabel": "Mavericks"
-      },
-      "type": "binary"
-    },
     "7919": {
       "title": "NBA: Rockets vs Heat (Feb. 28 3:30PM ET)",
       "url": "https://app.opinion.trade/market/7919?ref=opinion_hud",
@@ -6662,18 +6392,6 @@
       "labels": {
         "yesLabel": "Rockets",
         "noLabel": "Heat"
-      },
-      "type": "binary"
-    },
-    "7902": {
-      "title": "LCS: LYON vs TLAW (Feb. 27 4:00PM ET)",
-      "url": "https://app.opinion.trade/market/7902?ref=opinion_hud",
-      "yesTokenId": "9672333361371295616803360058950853788280089761344697037905363722183692084428",
-      "noTokenId": "48283631170137047115544227041715340455531558290236218074715999155419975130403",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "LYON ",
-        "noLabel": "TLAW"
       },
       "type": "binary"
     },
@@ -6701,54 +6419,6 @@
       },
       "type": "binary"
     },
-    "7900": {
-      "title": "Dota2 - DreamLeague: PARI vs MOUZ (Feb. 27 2:30PM ET)",
-      "url": "https://app.opinion.trade/market/7900?ref=opinion_hud",
-      "yesTokenId": "100855781886766266478499327839527751358770734383336921265781735038400666798009",
-      "noTokenId": "26029992394237803989289626091624409158566478613409558572399295370974256620703",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "PARI",
-        "noLabel": "MOUZ"
-      },
-      "type": "binary"
-    },
-    "7904": {
-      "title": "KPL: WB vs TTG (Feb. 27 7:00AM ET)",
-      "url": "https://app.opinion.trade/market/7904?ref=opinion_hud",
-      "yesTokenId": "103383020738024509629376200106693789680721416302650424402516689233291340711137",
-      "noTokenId": "11247495151749148999104130379094236846467721923644183799245745104155589888039",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "WB",
-        "noLabel": "TTG"
-      },
-      "type": "binary"
-    },
-    "7898": {
-      "title": "LEC: GX vs KC (Feb. 27 11:00AM ET)",
-      "url": "https://app.opinion.trade/market/7898?ref=opinion_hud",
-      "yesTokenId": "93609080788035826531839232390792984839649319841255535530140137226412774294916",
-      "noTokenId": "9872793428853902357670293916255459919381998934540403467797523374872767373103",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "GX",
-        "noLabel": "KC"
-      },
-      "type": "binary"
-    },
-    "7901": {
-      "title": "KPL: AG.SP vs RW (Feb. 27 4:00AM ET)",
-      "url": "https://app.opinion.trade/market/7901?ref=opinion_hud",
-      "yesTokenId": "95720277022637912191941923615184463890777525008966115152227889238902846274679",
-      "noTokenId": "97522562682854937521307423084558200642107097772861436428040826482439152595193",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "AG.SP",
-        "noLabel": "RW"
-      },
-      "type": "binary"
-    },
     "7897": {
       "title": "KPL: LGD.NBW vs RNG.M (Feb. 27 1:00AM ET)",
       "url": "https://app.opinion.trade/market/7897?ref=opinion_hud",
@@ -6758,30 +6428,6 @@
       "labels": {
         "yesLabel": "LGD.NBW",
         "noLabel": "RNG.M"
-      },
-      "type": "binary"
-    },
-    "7905": {
-      "title": "Dota2 - DreamLeague: AUR vs BB (Feb. 27 8:30AM ET)",
-      "url": "https://app.opinion.trade/market/7905?ref=opinion_hud",
-      "yesTokenId": "44121930183796363229046499771538915116454204871207795836799835528102186656348",
-      "noTokenId": "99625820046160556013476747098050036436578401544277425646420052166137795477684",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "AUR",
-        "noLabel": "BB"
-      },
-      "type": "binary"
-    },
-    "7903": {
-      "title": "Dota2 - DreamLeague: TUNDRA vs TL (Feb. 27 5:30AM ET)",
-      "url": "https://app.opinion.trade/market/7903?ref=opinion_hud",
-      "yesTokenId": "88982402854410915726099057544966817658888995507306944634654000655457292530034",
-      "noTokenId": "61890746369572034017247873721973506763516463271951520274600119025948967006145",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "TUNDRA",
-        "noLabel": "TL"
       },
       "type": "binary"
     },
@@ -6806,18 +6452,6 @@
       "labels": {
         "yesLabel": "Trail Blazers",
         "noLabel": "Hornets"
-      },
-      "type": "binary"
-    },
-    "7899": {
-      "title": "Dota2 - DreamLeague: XG vs FAL (Feb. 27 11:30AM ET)",
-      "url": "https://app.opinion.trade/market/7899?ref=opinion_hud",
-      "yesTokenId": "61833453710499839766322170053432855233829642496858680105109425733450760066883",
-      "noTokenId": "94399724221070358088533490613723129960820510155765990386256331994844045993247",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "XG",
-        "noLabel": "FAL "
       },
       "type": "binary"
     },
@@ -6929,11 +6563,11 @@
       },
       "type": "binary"
     },
-    "7989": {
-      "title": "Bitcoin Up or Down on February 27?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/7989?ref=opinion_hud",
-      "yesTokenId": "55060576326924503282733160133459284096789467569043730807867089911934514553838",
-      "noTokenId": "75487638850274398259719031515263740766100973073412024449686496406197730754931",
+    "8037": {
+      "title": "BTC Up or Down - Hourly (Feb 27, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/8037?ref=opinion_hud",
+      "yesTokenId": "717585475879471112685360477954890532894438390080549442241919888528853958271",
+      "noTokenId": "49550931579437950073411721240352936375970768261025822784678910339270450096797",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -6941,11 +6575,11 @@
       },
       "type": "binary"
     },
-    "8009": {
-      "title": "ETH Up or Down - Hourly (Feb 26, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/8009?ref=opinion_hud",
-      "yesTokenId": "90520071106728983800354538804396316936185945417924039821708204457101822046839",
-      "noTokenId": "84351412407786219007019061762019309380684232301024229003993062469854857877041",
+    "8036": {
+      "title": "BNB Up or Down - Hourly (Feb 27, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/8036?ref=opinion_hud",
+      "yesTokenId": "40314585134460637485651099928133401812087700860646001404970185239779507514708",
+      "noTokenId": "74789632713254409934229999633931191717084933820268481029022123830361057141046",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -6953,23 +6587,11 @@
       },
       "type": "binary"
     },
-    "8008": {
-      "title": "BTC Up or Down - Hourly (Feb 26, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/8008?ref=opinion_hud",
-      "yesTokenId": "103031896397900724858593559122689218789172894475874344148476110807004317390777",
-      "noTokenId": "96245442540551805503429259335644679749702959693769725991254615212494935271682",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "8007": {
-      "title": "BNB Up or Down - Hourly (Feb 26, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/8007?ref=opinion_hud",
-      "yesTokenId": "82274755892309562192174619464726969355191672794816643424598380336711756220293",
-      "noTokenId": "60978339698000164964134928290146304534377408353071631590786759378714954220332",
+    "8038": {
+      "title": "ETH Up or Down - Hourly (Feb 27, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/8038?ref=opinion_hud",
+      "yesTokenId": "19129446768470748580452015406034134276931775339828277542232451846959225089813",
+      "noTokenId": "69042801084206914998838447995968335605883998730035196709122455245820402775820",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7155,9 +6777,6 @@
     ],
     "address": [
       "3365"
-    ],
-    "advance round": [
-      "399"
     ],
     "advisory": [
       "3369"
@@ -7513,12 +7132,6 @@
     "challenges": [
       "376"
     ],
-    "champions league": [
-      "399"
-    ],
-    "champions league which": [
-      "399"
-    ],
     "changpeng zhao": [
       "3369"
     ],
@@ -7590,9 +7203,6 @@
     ],
     "cloudflare status": [
       "3357"
-    ],
-    "clubs": [
-      "399"
     ],
     "coalition": [
       "383"
@@ -7997,12 +7607,6 @@
     "ethereum all time": [
       "3364"
     ],
-    "european cup": [
-      "399"
-    ],
-    "european football": [
-      "399"
-    ],
     "evm": [
       "1721",
       "392"
@@ -8104,9 +7708,6 @@
     ],
     "flowering": [
       "379"
-    ],
-    "football": [
-      "399"
     ],
     "forecast": [
       "379"
@@ -8225,9 +7826,6 @@
     "great earthquake": [
       "2668",
       "3356"
-    ],
-    "group stage": [
-      "399"
     ],
     "hack": [
       "3360"
@@ -8493,9 +8091,6 @@
     "karen wheeler": [
       "3222"
     ],
-    "knockout stage": [
-      "399"
-    ],
     "kraken": [
       "3362"
     ],
@@ -8558,12 +8153,6 @@
     ],
     "leadership change": [
       "2368"
-    ],
-    "league which": [
-      "399"
-    ],
-    "league which teams": [
-      "399"
     ],
     "league winner": [
       "388"
@@ -9185,9 +8774,6 @@
       "2668",
       "3356"
     ],
-    "qualification": [
-      "399"
-    ],
     "qualifying": [
       "371"
     ],
@@ -9365,9 +8951,6 @@
       "3506",
       "3525"
     ],
-    "round of 16": [
-      "399"
-    ],
     "rug pull": [
       "398"
     ],
@@ -9526,9 +9109,6 @@
     "snapshot": [
       "392"
     ],
-    "soccer": [
-      "399"
-    ],
     "specific date": [
       "3449"
     ],
@@ -9657,14 +9237,7 @@
       "1546"
     ],
     "teams": [
-      "371",
-      "399"
-    ],
-    "teams advance": [
-      "399"
-    ],
-    "teams advance round": [
-      "399"
+      "371"
     ],
     "teams make": [
       "371"
@@ -9882,12 +9455,6 @@
       "3221",
       "3224"
     ],
-    "ucl": [
-      "399"
-    ],
-    "uefa": [
-      "399"
-    ],
     "uk": [
       "382"
     ],
@@ -10038,11 +9605,7 @@
       "386"
     ],
     "which teams": [
-      "371",
-      "399"
-    ],
-    "which teams advance": [
-      "399"
+      "371"
     ],
     "which teams make": [
       "371"
@@ -10189,9 +9752,6 @@
     "最高法院": [
       "1546"
     ],
-    "欧洲冠军联赛": [
-      "399"
-    ],
     "比特币": [
       "3256",
       "3365"
@@ -10326,9 +9886,6 @@
     "actor": [
       "389"
     ],
-    "advance round": [
-      "399"
-    ],
     "after launch": [
       "394",
       "396"
@@ -10433,12 +9990,6 @@
     "challenges": [
       "376"
     ],
-    "champions league": [
-      "399"
-    ],
-    "champions league which": [
-      "399"
-    ],
     "cherry blossom": [
       "379"
     ],
@@ -10462,9 +10013,6 @@
     ],
     "climate data": [
       "378"
-    ],
-    "clubs": [
-      "399"
     ],
     "coalition": [
       "383"
@@ -10609,12 +10157,6 @@
     "ethereum": [
       "118"
     ],
-    "european cup": [
-      "399"
-    ],
-    "european football": [
-      "399"
-    ],
     "evm": [
       "392"
     ],
@@ -10651,9 +10193,6 @@
     ],
     "flowering": [
       "379"
-    ],
-    "football": [
-      "399"
     ],
     "forecast": [
       "379"
@@ -10727,9 +10266,6 @@
     "government control": [
       "390"
     ],
-    "group stage": [
-      "399"
-    ],
     "heat record": [
       "378"
     ],
@@ -10802,9 +10338,6 @@
     "jma cherry blossoms": [
       "379"
     ],
-    "knockout stage": [
-      "399"
-    ],
     "kremlin": [
       "387"
     ],
@@ -10833,12 +10366,6 @@
     ],
     "leaders": [
       "386"
-    ],
-    "league which": [
-      "399"
-    ],
-    "league which teams": [
-      "399"
     ],
     "league winner": [
       "388"
@@ -11147,9 +10674,6 @@
     "putin meet zelenskyy": [
       "387"
     ],
-    "qualification": [
-      "399"
-    ],
     "qualifying": [
       "371"
     ],
@@ -11192,9 +10716,6 @@
     ],
     "rnc": [
       "381"
-    ],
-    "round of 16": [
-      "399"
     ],
     "rug pull": [
       "398"
@@ -11251,9 +10772,6 @@
     "snapshot": [
       "392"
     ],
-    "soccer": [
-      "399"
-    ],
     "speculation": [
       "394",
       "395"
@@ -11294,14 +10812,7 @@
       "398"
     ],
     "teams": [
-      "371",
-      "399"
-    ],
-    "teams advance": [
-      "399"
-    ],
-    "teams advance round": [
-      "399"
+      "371"
     ],
     "teams make": [
       "371"
@@ -11389,12 +10900,6 @@
     "trump putin meet": [
       "386"
     ],
-    "ucl": [
-      "399"
-    ],
-    "uefa": [
-      "399"
-    ],
     "uk": [
       "382"
     ],
@@ -11465,11 +10970,7 @@
       "386"
     ],
     "which teams": [
-      "371",
-      "399"
-    ],
-    "which teams advance": [
-      "399"
+      "371"
     ],
     "which teams make": [
       "371"
@@ -11554,9 +11055,6 @@
     ],
     "最热年份": [
       "378"
-    ],
-    "欧洲冠军联赛": [
-      "399"
     ],
     "民主党": [
       "380"
