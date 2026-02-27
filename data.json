@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27 10:49:18 UTC+8",
+    "generatedAt": "2026-02-27 16:56:27 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 200,
-      "markets": 185,
+      "kept": 197,
+      "markets": 182,
       "keywords": 986,
       "events": {
         "events": 21
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 800,
+        "cutoff_expired": 803,
         "cutoff_zero_kept": 6,
         "resolved": 0,
         "missing_id": 0,
@@ -6560,42 +6560,6 @@
       "labels": {
         "yesLabel": "YES",
         "noLabel": "NO"
-      },
-      "type": "binary"
-    },
-    "8037": {
-      "title": "BTC Up or Down - Hourly (Feb 27, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/8037?ref=opinion_hud",
-      "yesTokenId": "717585475879471112685360477954890532894438390080549442241919888528853958271",
-      "noTokenId": "49550931579437950073411721240352936375970768261025822784678910339270450096797",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "8036": {
-      "title": "BNB Up or Down - Hourly (Feb 27, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/8036?ref=opinion_hud",
-      "yesTokenId": "40314585134460637485651099928133401812087700860646001404970185239779507514708",
-      "noTokenId": "74789632713254409934229999633931191717084933820268481029022123830361057141046",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "8038": {
-      "title": "ETH Up or Down - Hourly (Feb 27, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/8038?ref=opinion_hud",
-      "yesTokenId": "19129446768470748580452015406034134276931775339828277542232451846959225089813",
-      "noTokenId": "69042801084206914998838447995968335605883998730035196709122455245820402775820",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     }
