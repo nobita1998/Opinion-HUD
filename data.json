@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-28 00:53:27 UTC+8",
+    "generatedAt": "2026-02-28 10:37:30 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 197,
-      "markets": 182,
+      "kept": 183,
+      "markets": 168,
       "keywords": 986,
       "events": {
         "events": 21
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 803,
+        "cutoff_expired": 817,
         "cutoff_zero_kept": 6,
         "resolved": 0,
         "missing_id": 0,
@@ -5189,18 +5189,6 @@
       },
       "type": "binary"
     },
-    "7328": {
-      "title": "Valorant - VCT Masters: XLG vs NRG (Feb. 28 3:00PM ET)",
-      "url": "https://app.opinion.trade/market/7328?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "7326": {
       "title": "KPL: RW vs WE (Feb. 24 1:00AM ET)",
       "url": "https://app.opinion.trade/market/7326?ref=opinion_hud",
@@ -5210,30 +5198,6 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "7325": {
-      "title": "Valorant - VCT Masters: M8 vs EDG (Feb. 28 12:00PM ET)",
-      "url": "https://app.opinion.trade/market/7325?ref=opinion_hud",
-      "yesTokenId": "77612370840644794096419689501907877789800230399211062311244051073063850809558",
-      "noTokenId": "4417365613887880746322417296491441190185936530196951484981940023503312802739",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "M8 ",
-        "noLabel": "EDG"
-      },
-      "type": "binary"
-    },
-    "7324": {
-      "title": "LCP: SHG vs GZ (Feb. 27 1:00AM ET)",
-      "url": "https://app.opinion.trade/market/7324?ref=opinion_hud",
-      "yesTokenId": "760496826110841504116521942432612573493070185049786624415972899823778947269",
-      "noTokenId": "39496744493666387718380456701836260747912617221929919446697849649816237970290",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "SHG",
-        "noLabel": "GZ"
       },
       "type": "binary"
     },
@@ -6383,30 +6347,6 @@
       },
       "type": "binary"
     },
-    "7919": {
-      "title": "NBA: Rockets vs Heat (Feb. 28 3:30PM ET)",
-      "url": "https://app.opinion.trade/market/7919?ref=opinion_hud",
-      "yesTokenId": "87865860276897755893288887275569362468078480382750916315404274738282603048744",
-      "noTokenId": "107264015798551351408333433642543271005285244371207363126445549063852786797374",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Rockets",
-        "noLabel": "Heat"
-      },
-      "type": "binary"
-    },
-    "7920": {
-      "title": "NBA: Lakers vs Warriors (Feb. 28 8:30PM ET)",
-      "url": "https://app.opinion.trade/market/7920?ref=opinion_hud",
-      "yesTokenId": "110729361176678700116679856046391160168990724281685681407672003607384698526588",
-      "noTokenId": "53424630955134663004837639436038421349125024879091174574831306397641027450681",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Lakers",
-        "noLabel": "Warriors"
-      },
-      "type": "binary"
-    },
     "7882": {
       "title": "Will U.S. Unemployment Hit 10.2% by Mid-2028?",
       "url": "https://app.opinion.trade/market/7882?ref=opinion_hud",
@@ -6416,18 +6356,6 @@
       "labels": {
         "yesLabel": "YES",
         "noLabel": "NO"
-      },
-      "type": "binary"
-    },
-    "7897": {
-      "title": "KPL: LGD.NBW vs RNG.M (Feb. 27 1:00AM ET)",
-      "url": "https://app.opinion.trade/market/7897?ref=opinion_hud",
-      "yesTokenId": "82660738719204004722796061640498086224740692099569739638562347176213565710801",
-      "noTokenId": "19525631899822838101810953493888804588776712085454280419684939434217485416922",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "LGD.NBW",
-        "noLabel": "RNG.M"
       },
       "type": "binary"
     },
@@ -6443,42 +6371,6 @@
       },
       "type": "binary"
     },
-    "7918": {
-      "title": "NBA: Trail Blazers vs Hornets (Feb. 28 1:00PM ET)",
-      "url": "https://app.opinion.trade/market/7918?ref=opinion_hud",
-      "yesTokenId": "82679583852832595407911337957189073621012892010093062142777021382236539783695",
-      "noTokenId": "77821706282903629705285333995386415958923472995004099043946101874595012133732",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Trail Blazers",
-        "noLabel": "Hornets"
-      },
-      "type": "binary"
-    },
-    "7975": {
-      "title": "LCK: BFX vs DK (Feb. 28 3:00AM ET)",
-      "url": "https://app.opinion.trade/market/7975?ref=opinion_hud",
-      "yesTokenId": "16810746164617985558956299152480022004477061770162483100915457311143342040972",
-      "noTokenId": "77734426884212425389240792610060349756137753221625938103043341868586349275359",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "BFX",
-        "noLabel": "DK"
-      },
-      "type": "binary"
-    },
-    "7973": {
-      "title": "KPL: ESP vs DRG (Feb. 28 1:00AM ET)",
-      "url": "https://app.opinion.trade/market/7973?ref=opinion_hud",
-      "yesTokenId": "94107635817359317159855559782659115755767311388902579573324450565032086865708",
-      "noTokenId": "80135889267601426785270041580455830563466934224594948761861877839121413439450",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "ESP",
-        "noLabel": "DRG"
-      },
-      "type": "binary"
-    },
     "7991": {
       "title": "SEBI Finds Jane Street Manipulated Markets by 2026？",
       "url": "https://app.opinion.trade/market/7991?ref=opinion_hud",
@@ -6488,66 +6380,6 @@
       "labels": {
         "yesLabel": "YES",
         "noLabel": "NO"
-      },
-      "type": "binary"
-    },
-    "7981": {
-      "title": "KPL: WOL vs DYG (Feb. 28 7:00AM ET)",
-      "url": "https://app.opinion.trade/market/7981?ref=opinion_hud",
-      "yesTokenId": "100254999871587198033086288352906058897159082447953762997906242181827345768847",
-      "noTokenId": "63361479098048867021210429827442377736586913989382059426504660840955039431658",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "WOL",
-        "noLabel": "DYG"
-      },
-      "type": "binary"
-    },
-    "7979": {
-      "title": "KPL: HERO vs JDG (Feb. 28 4:00AM ET)",
-      "url": "https://app.opinion.trade/market/7979?ref=opinion_hud",
-      "yesTokenId": "61362265181427181138918252318529492779224088535566169765206952900495738956599",
-      "noTokenId": "89834930146651689637666130833054714280476221779486245680863883647159154555507",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "HERO",
-        "noLabel": "JDG"
-      },
-      "type": "binary"
-    },
-    "7974": {
-      "title": "CBLOL: RED vs FUR (Feb. 28 11:00AM ET)",
-      "url": "https://app.opinion.trade/market/7974?ref=opinion_hud",
-      "yesTokenId": "3174537820087226350399294407576029261957688720485624863406377574396937739785",
-      "noTokenId": "87321909837219354331703601117182103653648213498073111356635100642214930926534",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "RED",
-        "noLabel": "FUR"
-      },
-      "type": "binary"
-    },
-    "7980": {
-      "title": "LPL: TES vs WE (Feb. 28 4:00AM ET)",
-      "url": "https://app.opinion.trade/market/7980?ref=opinion_hud",
-      "yesTokenId": "96423222575951404502393185492152895002695055068256353221080237418538776438212",
-      "noTokenId": "60272441880856667163210086445461616456331618888141262337725500857047707589460",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "TES",
-        "noLabel": "WE"
-      },
-      "type": "binary"
-    },
-    "7972": {
-      "title": "LPL: WBG vs BLG (Feb. 27 4:00AM ET)",
-      "url": "https://app.opinion.trade/market/7972?ref=opinion_hud",
-      "yesTokenId": "95114862263055870287826498669621056791621808605797009777368537733755278278788",
-      "noTokenId": "80393954569853912552857971066670240960222180542332201906156519354151271698347",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "WBG",
-        "noLabel": "BLG"
       },
       "type": "binary"
     },
