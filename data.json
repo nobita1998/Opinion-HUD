@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-01 16:46:06 UTC+8",
+    "generatedAt": "2026-03-02 00:41:33 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 250,
-      "markets": 180,
-      "keywords": 1035,
+      "kept": 281,
+      "markets": 197,
+      "keywords": 1006,
       "events": {
-        "events": 28
+        "events": 29
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 750,
+        "cutoff_expired": 719,
         "cutoff_zero_kept": 6,
         "resolved": 0,
         "missing_id": 0,
@@ -28,126 +28,18 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 28,
+        "reused": 26,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
+        "calls": 3,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 3,
         "errors": 0
       }
     }
   },
   "events": {
-    "379": {
-      "title": "2026 Tokyo (JMA) Cherry Blossoms Full Bloom Date",
-      "marketIds": [
-        "379"
-      ],
-      "bestMarketId": "379",
-      "bestLabels": null,
-      "keywords": [
-        "cherry blossom",
-        "sakura",
-        "tokyo",
-        "jma",
-        "japan meteorological agency",
-        "full bloom",
-        "mankai",
-        "bloom date",
-        "flowering",
-        "spring",
-        "forecast",
-        "2026",
-        "phenology",
-        "cherry tree",
-        "blossom season",
-        "2026 tokyo",
-        "tokyo jma",
-        "jma cherry",
-        "cherry blossoms",
-        "blossoms full",
-        "2026 tokyo jma",
-        "tokyo jma cherry",
-        "jma cherry blossoms",
-        "cherry blossoms full",
-        "blossoms full bloom"
-      ],
-      "entities": [
-        "cherry blossom",
-        "tokyo"
-      ],
-      "entityGroups": [
-        [
-          "cherry blossom",
-          "cherry blossoms"
-        ],
-        [
-          "tokyo",
-          "jma",
-          "日本气象厅"
-        ]
-      ],
-      "sig": "89e02b4f",
-      "sigFull": "89e02b4f",
-      "sigCore": "89923e2c",
-      "reused": false
-    },
-    "378": {
-      "title": "Where will 2026 rank among the hottest years on record?",
-      "marketIds": [
-        "378"
-      ],
-      "bestMarketId": "378",
-      "bestLabels": null,
-      "keywords": [
-        "global warming",
-        "climate change",
-        "temperature anomaly",
-        "heat record",
-        "2026 weather",
-        "noaa climate",
-        "nasa giss",
-        "copernicus climate",
-        "el niño",
-        "la niña",
-        "warmest year",
-        "climate data",
-        "global temps",
-        "heatwave",
-        "extreme weather",
-        "where 2026",
-        "2026 rank",
-        "rank among",
-        "among hottest",
-        "hottest years",
-        "years record",
-        "where 2026 rank",
-        "2026 rank among",
-        "rank among hottest",
-        "among hottest years",
-        "hottest years record"
-      ],
-      "entities": [
-        "2026年",
-        "hottest year"
-      ],
-      "entityGroups": [
-        [
-          "2026年"
-        ],
-        [
-          "hottest year",
-          "最热年份",
-          "气温记录"
-        ]
-      ],
-      "sig": "ccd9b3e3",
-      "sigFull": "ccd9b3e3",
-      "sigCore": "0247af80",
-      "reused": false
-    },
     "382": {
       "title": "Next UK Prime Minister in 2026?",
       "marketIds": [
@@ -1294,6 +1186,144 @@
       "sig": "f8a1ad44",
       "sigFull": "f8a1ad44",
       "sigCore": "fe41c2d6",
+      "reused": false
+    },
+    "410": {
+      "title": "What price will Bitcoin hit in March?",
+      "marketIds": [
+        "410"
+      ],
+      "bestMarketId": "410",
+      "bestLabels": null,
+      "keywords": [
+        "bitcoin",
+        "btc",
+        "crypto",
+        "cryptocurrency",
+        "digital gold",
+        "price",
+        "trading",
+        "market",
+        "volatility",
+        "satoshi",
+        "blockchain",
+        "halving",
+        "bull run",
+        "spot etf",
+        "resistance",
+        "what price",
+        "price bitcoin",
+        "bitcoin hit",
+        "hit march",
+        "what price bitcoin",
+        "price bitcoin hit",
+        "bitcoin hit march"
+      ],
+      "entities": [
+        "bitcoin"
+      ],
+      "entityGroups": [
+        [
+          "bitcoin",
+          "btc",
+          "比特币"
+        ]
+      ],
+      "sig": "eb6f5bdc",
+      "sigFull": "eb6f5bdc",
+      "sigCore": "94d1a6c7",
+      "reused": false
+    },
+    "411": {
+      "title": "What price will BNB hit in March?",
+      "marketIds": [
+        "411"
+      ],
+      "bestMarketId": "411",
+      "bestLabels": null,
+      "keywords": [
+        "bnb",
+        "binance coin",
+        "binance",
+        "crypto",
+        "cryptocurrency",
+        "token",
+        "altcoin",
+        "bnb price",
+        "trading",
+        "market value",
+        "digital asset",
+        "bnbusdt",
+        "blockchain",
+        "defi",
+        "bnb coin",
+        "what price",
+        "price bnb",
+        "bnb hit",
+        "hit march",
+        "what price bnb",
+        "price bnb hit",
+        "bnb hit march"
+      ],
+      "entities": [
+        "bnb"
+      ],
+      "entityGroups": [
+        [
+          "bnb",
+          "币安币"
+        ]
+      ],
+      "sig": "e485e9ae",
+      "sigFull": "e485e9ae",
+      "sigCore": "a75042f1",
+      "reused": false
+    },
+    "409": {
+      "title": "What price will Ethereum hit in March?",
+      "marketIds": [
+        "409"
+      ],
+      "bestMarketId": "409",
+      "bestLabels": null,
+      "keywords": [
+        "ethereum",
+        "eth",
+        "ether",
+        "crypto",
+        "cryptocurrency",
+        "altcoin",
+        "price",
+        "trading",
+        "market",
+        "blockchain",
+        "defi",
+        "smart contracts",
+        "digital asset",
+        "token",
+        "coin",
+        "what price",
+        "price ethereum",
+        "ethereum hit",
+        "hit march",
+        "what price ethereum",
+        "price ethereum hit",
+        "ethereum hit march"
+      ],
+      "entities": [
+        "ethereum"
+      ],
+      "entityGroups": [
+        [
+          "ethereum",
+          "eth",
+          "ether",
+          "以太坊"
+        ]
+      ],
+      "sig": "75416992",
+      "sigFull": "75416992",
+      "sigCore": "f693eede",
       "reused": false
     }
   },
@@ -4015,184 +4045,6 @@
       },
       "type": "binary"
     },
-    "379": {
-      "title": "2026 Tokyo (JMA) Cherry Blossoms Full Bloom Date",
-      "url": "https://app.opinion.trade/market/379?ref=opinion_hud",
-      "yesTokenId": "87568781057467223291458986938690477469502383302413011871464817123120407580989",
-      "noTokenId": "45229727547660921162925008607084702112197879427315125764670186289473976720092",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "cherry blossom",
-        "sakura",
-        "tokyo",
-        "jma",
-        "japan meteorological agency",
-        "full bloom",
-        "mankai",
-        "bloom date",
-        "flowering",
-        "spring",
-        "forecast",
-        "2026",
-        "phenology",
-        "cherry tree",
-        "blossom season",
-        "2026 tokyo",
-        "tokyo jma",
-        "jma cherry",
-        "cherry blossoms",
-        "blossoms full",
-        "2026 tokyo jma",
-        "tokyo jma cherry",
-        "jma cherry blossoms",
-        "cherry blossoms full",
-        "blossoms full bloom"
-      ],
-      "entities": [
-        "cherry blossom",
-        "tokyo"
-      ],
-      "entityGroups": [
-        [
-          "cherry blossom",
-          "cherry blossoms"
-        ],
-        [
-          "tokyo",
-          "jma",
-          "日本气象厅"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6760",
-          "title": "On or before March 23, 2026",
-          "yesTokenId": "13456640274412849519801988469828511057911959870855773514349255332951736354163",
-          "noTokenId": "56665430540799186152271107223560753721826377631899426179438756741428169655962"
-        },
-        {
-          "marketId": "6761",
-          "title": "March 24–March 27, 2026",
-          "yesTokenId": "87568781057467223291458986938690477469502383302413011871464817123120407580989",
-          "noTokenId": "45229727547660921162925008607084702112197879427315125764670186289473976720092"
-        },
-        {
-          "marketId": "6762",
-          "title": "March 28–March 31, 2026",
-          "yesTokenId": "13212894106842137904432033658425241445628896487555433920773552859295304461526",
-          "noTokenId": "51134446799214551038057121924151162335894035524950190367562165199041074968194"
-        },
-        {
-          "marketId": "6763",
-          "title": "On or after April 1, 2026",
-          "yesTokenId": "63733257230762645051226783599945579574888127644750890631726133989444297913041",
-          "noTokenId": "47391249821383099522805700821650120883523074030929232991802406823220213727539"
-        },
-        {
-          "marketId": "6764",
-          "title": "No JMA Tokyo bloom by Jun 30",
-          "yesTokenId": "4694938352468559546097273731243280164783787005633511972241957496265106056112",
-          "noTokenId": "88938505227346526307911601471103133828149897413523059729166591512617136579384"
-        }
-      ]
-    },
-    "378": {
-      "title": "Where will 2026 rank among the hottest years on record?",
-      "url": "https://app.opinion.trade/market/378?ref=opinion_hud",
-      "yesTokenId": "4393064746503556813639080152060870033100800913895719307674542466595663992945",
-      "noTokenId": "42744778218874600491279002277949778102474036372452115591179849177717388857340",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "global warming",
-        "climate change",
-        "temperature anomaly",
-        "heat record",
-        "2026 weather",
-        "noaa climate",
-        "nasa giss",
-        "copernicus climate",
-        "el niño",
-        "la niña",
-        "warmest year",
-        "climate data",
-        "global temps",
-        "heatwave",
-        "extreme weather",
-        "where 2026",
-        "2026 rank",
-        "rank among",
-        "among hottest",
-        "hottest years",
-        "years record",
-        "where 2026 rank",
-        "2026 rank among",
-        "rank among hottest",
-        "among hottest years",
-        "hottest years record"
-      ],
-      "entities": [
-        "2026年",
-        "hottest year"
-      ],
-      "entityGroups": [
-        [
-          "2026年"
-        ],
-        [
-          "hottest year",
-          "最热年份",
-          "气温记录"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6754",
-          "title": "1",
-          "yesTokenId": "50290596489108280822959408628372767828090692158793970242596539310112057303588",
-          "noTokenId": "67076226836911483146570888638419448751537290725245613386708495664078487398174"
-        },
-        {
-          "marketId": "6755",
-          "title": "2",
-          "yesTokenId": "9533787037558772300829593970430302534040040101311297370498275579168790418733",
-          "noTokenId": "93152332781663464779910776819777178500001973807098752946684888797732216566962"
-        },
-        {
-          "marketId": "6756",
-          "title": "3",
-          "yesTokenId": "4393064746503556813639080152060870033100800913895719307674542466595663992945",
-          "noTokenId": "42744778218874600491279002277949778102474036372452115591179849177717388857340"
-        },
-        {
-          "marketId": "6757",
-          "title": "4",
-          "yesTokenId": "69851036670026643279052754752984930699418687993967098404986662736214596391224",
-          "noTokenId": "110152294302712458871767931411310933946867120206087122517966147532402319405873"
-        },
-        {
-          "marketId": "6758",
-          "title": "5",
-          "yesTokenId": "44102588030474547862015508613456481781290022536741231333898900885897541210212",
-          "noTokenId": "96566905679048615037575398518881120679905901165077237557861653593419973208546"
-        },
-        {
-          "marketId": "6759",
-          "title": "6 or lower",
-          "yesTokenId": "37826722065223200745988075477272237971100232511699133316511342935115477245433",
-          "noTokenId": "57953639558661631977563219396577152637288575534559840456150838587571827771606"
-        }
-      ]
-    },
     "6750": {
       "title": "10–15 Years",
       "url": "https://app.opinion.trade/market/6750?ref=opinion_hud",
@@ -5857,12 +5709,6 @@
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "7658",
-          "title": "February 28, 2026",
-          "yesTokenId": "19013602272405619144214544502533894379135941411622200458006718660446044860259",
-          "noTokenId": "109110504954711759615036972404792707518491807802012312472257072357269822594350"
-        },
-        {
           "marketId": "7659",
           "title": "March 15, 2026",
           "yesTokenId": "69563051145660532261550916000868569715675895685518609437447983052383949189703",
@@ -5873,6 +5719,12 @@
           "title": "June 30, 2026",
           "yesTokenId": "12452386467933756323286407887185316729463283071468813304838678085663428941157",
           "noTokenId": "66367038762831733965796993809527831745604254696219370302078798343036709326151"
+        },
+        {
+          "marketId": "7658",
+          "title": "February 28, 2026",
+          "yesTokenId": "19013602272405619144214544502533894379135941411622200458006718660446044860259",
+          "noTokenId": "109110504954711759615036972404792707518491807802012312472257072357269822594350"
         }
       ]
     },
@@ -7240,6 +7092,510 @@
           "noTokenId": "22175378628758370213989610218900093365613599301041594280717834879988750718682"
         }
       ]
+    },
+    "8373": {
+      "title": "KPL: Q9 vs JDG (Mar. 4 1:00AM ET)",
+      "url": "https://app.opinion.trade/market/8373?ref=opinion_hud",
+      "yesTokenId": "37146179192477716921005278388781602493159521313544639124755596598851745600953",
+      "noTokenId": "49818901601248132476270568211718769330565631438375921618046837507734716715080",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Q9",
+        "noLabel": "JDG"
+      },
+      "type": "binary"
+    },
+    "8375": {
+      "title": "LPL: WBG vs TES (Mar. 2 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/8375?ref=opinion_hud",
+      "yesTokenId": "69033120027279308333521797921243623794451740776594299099917647982852798644070",
+      "noTokenId": "43812963083484920632065141283869685440546517748919750845927723810766097937240",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "WBG",
+        "noLabel": "TES"
+      },
+      "type": "binary"
+    },
+    "8377": {
+      "title": "LPL: JDG vs BLG (Mar. 4 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/8377?ref=opinion_hud",
+      "yesTokenId": "61687617947087868075040967055028674746642590963306326844648701295875960939294",
+      "noTokenId": "97188772595183615408409651186610739512258888495347533533868406751328582666295",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "JDG",
+        "noLabel": "BLG"
+      },
+      "type": "binary"
+    },
+    "8362": {
+      "title": "ETH Up or Down - Hourly (Mar 01, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/8362?ref=opinion_hud",
+      "yesTokenId": "54361484561670091250010292114627246158448138939235583189047894435792999547293",
+      "noTokenId": "89255489864988929946435984796901664191487128549929415124499078524530850540330",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "8374": {
+      "title": "KPL: TTG vs AG.SP (Mar. 4 6:00AM ET)",
+      "url": "https://app.opinion.trade/market/8374?ref=opinion_hud",
+      "yesTokenId": "108903938753500409301505905070740078099147707044055879978865749366754671125666",
+      "noTokenId": "85356317173983438700997983408667751957081440049526493350337111653002289154291",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "TTG",
+        "noLabel": "No"
+      },
+      "type": "binary"
+    },
+    "8360": {
+      "title": "BNB Up or Down - Hourly (Mar 01, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/8360?ref=opinion_hud",
+      "yesTokenId": "111137390531131606640752462581366237849291341519024229801658531886596908847953",
+      "noTokenId": "107489136817479874006937854142958739349336664448498487931372589461110631972410",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "8371": {
+      "title": "KPL: WE vs ESP (Mar. 3 1:00AM ET)",
+      "url": "https://app.opinion.trade/market/8371?ref=opinion_hud",
+      "yesTokenId": "23898000816838880664052549923067546538581801219331483112255238540409998745970",
+      "noTokenId": "69590761748337996924156956739640656983538402343921852717778847451838536032333",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "WE",
+        "noLabel": "ESP"
+      },
+      "type": "binary"
+    },
+    "8368": {
+      "title": "Dota2 - DreamLeague: TUNDRA vs AUR (Mar .1 10:00AM ET)",
+      "url": "https://app.opinion.trade/market/8368?ref=opinion_hud",
+      "yesTokenId": "66150352367936881352125545500566811806624365476139200720456062912329551998464",
+      "noTokenId": "49492869507754390947117783339163983117869582996138341805099545544529906706112",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "TUNDRA",
+        "noLabel": "AUR"
+      },
+      "type": "binary"
+    },
+    "8372": {
+      "title": "KPL: RW vs LGD.NBW (Mar. 3 6:00AM ET)",
+      "url": "https://app.opinion.trade/market/8372?ref=opinion_hud",
+      "yesTokenId": "89849248227288483365662149430009144482297293424465367417928178763130698017445",
+      "noTokenId": "54284118108559161856870394473534028784358551708322315584008572572922650232244",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "RW",
+        "noLabel": "LGD.NBW"
+      },
+      "type": "binary"
+    },
+    "8361": {
+      "title": "BTC Up or Down - Hourly (Mar 01, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/8361?ref=opinion_hud",
+      "yesTokenId": "85655636285177275913686628491290129199952360531086654438772866497814811963002",
+      "noTokenId": "52572100184872431408271043246876737494077461317455793053093502300557617274328",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "8376": {
+      "title": "LPL: AL vs IG (Mar. 3 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/8376?ref=opinion_hud",
+      "yesTokenId": "26737655060078663336066095663612306932816529007671096196901322686131329609294",
+      "noTokenId": "21716532503556608250512906046351871501729857117347267193814040950562954584832",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "AL",
+        "noLabel": "IG"
+      },
+      "type": "binary"
+    },
+    "8298": {
+      "title": "NBA: Hawks vs Bucks (Mar. 4 9:30PM ET)",
+      "url": "https://app.opinion.trade/market/8298?ref=opinion_hud",
+      "yesTokenId": "35976046239138442133380153028918352754104317203009785938154099054247314391946",
+      "noTokenId": "35203653372721804665717939249126160625695477380366368955165985816298074221132",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Hawks",
+        "noLabel": "Bucks"
+      },
+      "type": "binary"
+    },
+    "410": {
+      "title": "What price will Bitcoin hit in March?",
+      "url": "https://app.opinion.trade/market/410?ref=opinion_hud",
+      "yesTokenId": "47629549899543994667624094354450074294072121517107124300907227342429791825877",
+      "noTokenId": "81458626619093382453845500311466732782954109857060739429758587711734333652212",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "bitcoin",
+        "btc",
+        "crypto",
+        "cryptocurrency",
+        "digital gold",
+        "price",
+        "trading",
+        "market",
+        "volatility",
+        "satoshi",
+        "blockchain",
+        "halving",
+        "bull run",
+        "spot etf",
+        "resistance",
+        "what price",
+        "price bitcoin",
+        "bitcoin hit",
+        "hit march",
+        "what price bitcoin",
+        "price bitcoin hit",
+        "bitcoin hit march"
+      ],
+      "entities": [
+        "bitcoin"
+      ],
+      "entityGroups": [
+        [
+          "bitcoin",
+          "btc",
+          "比特币"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "8316",
+          "title": "↑ 90,000",
+          "yesTokenId": "21763901558818854081204646249914520509448777450942216321611865282706470828236",
+          "noTokenId": "2312281519037234891447409405026316205853336672467315368933002031168908334014"
+        },
+        {
+          "marketId": "8317",
+          "title": "↑ 85,000",
+          "yesTokenId": "52443118126783453947699413822274571295278716002053110960596726776693700359790",
+          "noTokenId": "36681406003829414664729302456264325033119000764517300930327316857373417897682"
+        },
+        {
+          "marketId": "8318",
+          "title": "↑ 80,000",
+          "yesTokenId": "90695479603328402044024582319415097631675585252962750384936207775046820567837",
+          "noTokenId": "85025634306216849906004764231189993106939880886526329584339955183286349100867"
+        },
+        {
+          "marketId": "8319",
+          "title": "↑ 75,000",
+          "yesTokenId": "106682959402858660555180871362041155278140960275661291503827703213494662975611",
+          "noTokenId": "20858197525740292393259473320415009024873244349135708272732679102973955868377"
+        },
+        {
+          "marketId": "8320",
+          "title": "↑ 70,000",
+          "yesTokenId": "18868415347671379927677526822836851072755214125958827302003977613794096790047",
+          "noTokenId": "14001951345777312074991910005314168210863019082540720901652868198130511172808"
+        },
+        {
+          "marketId": "8321",
+          "title": "↓ 65,000",
+          "yesTokenId": "47629549899543994667624094354450074294072121517107124300907227342429791825877",
+          "noTokenId": "81458626619093382453845500311466732782954109857060739429758587711734333652212"
+        },
+        {
+          "marketId": "8322",
+          "title": "↓ 60,000",
+          "yesTokenId": "41906220039392724647206543779740873887138317466491221610628537959639160398987",
+          "noTokenId": "8821008822314410680252699570520884754675503186938983566168356488130175090341"
+        },
+        {
+          "marketId": "8323",
+          "title": "↓ 55,000",
+          "yesTokenId": "46871425507304453922894659329339236285569739305150855713446630781163971218152",
+          "noTokenId": "85340698506992074468945180208520229619318825576698950561070517353412817744417"
+        },
+        {
+          "marketId": "8324",
+          "title": "↓ 50,000",
+          "yesTokenId": "79237761664026382787620559364275725913025300853168530927975331289361017727531",
+          "noTokenId": "74067123009965240695464462223911304756347009023842155070774239534773887470933"
+        },
+        {
+          "marketId": "8325",
+          "title": "↓ 45,000",
+          "yesTokenId": "94249979181319328608011049639452587368559940431593665440936472930045910842197",
+          "noTokenId": "99839681572191025674959086559599502647064729357591082594661069712385033556424"
+        }
+      ]
+    },
+    "8339": {
+      "title": "LEC: G2 vs KC (Mar. 1 11:00AM ET)",
+      "url": "https://app.opinion.trade/market/8339?ref=opinion_hud",
+      "yesTokenId": "85225472847432091632801091745341872433475898726348758493719215675319377632822",
+      "noTokenId": "78662355525400248254543814782828393042372091718954531294149205210512077445129",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "G2",
+        "noLabel": "KC"
+      },
+      "type": "binary"
+    },
+    "8300": {
+      "title": "Bitcoin Up or Down on March 2?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/8300?ref=opinion_hud",
+      "yesTokenId": "51144007419711044723418751655873502079802296304659810027486393703363440794578",
+      "noTokenId": "79114993532267767278531506588678730654927950080129387461970386081393993424036",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "8297": {
+      "title": "NBA: Hornets vs Celtics (Mar. 4 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/8297?ref=opinion_hud",
+      "yesTokenId": "49948059487770389343493607409271055940433513931106171694414655960586734294817",
+      "noTokenId": "52895973468261425121766480330593564327461507022301317845862297698169448005146",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Hornets",
+        "noLabel": "Celtics"
+      },
+      "type": "binary"
+    },
+    "8299": {
+      "title": "NBA: Pacers vs Clippers (Mar. 4 10:30PM ET)",
+      "url": "https://app.opinion.trade/market/8299?ref=opinion_hud",
+      "yesTokenId": "37809938168207889137466269920285587504658012452211577544884749681277571324724",
+      "noTokenId": "44515989658515997759614069767003733732173884492438661724985569552152271122558",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Pacers",
+        "noLabel": "Clippers"
+      },
+      "type": "binary"
+    },
+    "411": {
+      "title": "What price will BNB hit in March?",
+      "url": "https://app.opinion.trade/market/411?ref=opinion_hud",
+      "yesTokenId": "89064924648827599990212235368617942148696437797123122825128387592469244468023",
+      "noTokenId": "51818348551132853396920049655618943747223547362785603916576806386675659203443",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "bnb",
+        "binance coin",
+        "binance",
+        "crypto",
+        "cryptocurrency",
+        "token",
+        "altcoin",
+        "bnb price",
+        "trading",
+        "market value",
+        "digital asset",
+        "bnbusdt",
+        "blockchain",
+        "defi",
+        "bnb coin",
+        "what price",
+        "price bnb",
+        "bnb hit",
+        "hit march",
+        "what price bnb",
+        "price bnb hit",
+        "bnb hit march"
+      ],
+      "entities": [
+        "bnb"
+      ],
+      "entityGroups": [
+        [
+          "bnb",
+          "币安币"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "8326",
+          "title": "↑ 1,000",
+          "yesTokenId": "113717971944535610571004390598317532562641627151230731578141755757759811996519",
+          "noTokenId": "14620925800509562277727660429577057557156133575585231795809974420045721451919"
+        },
+        {
+          "marketId": "8327",
+          "title": "↑ 900",
+          "yesTokenId": "85061403110174141947763564762221980193795165542009834155058248983754906689947",
+          "noTokenId": "58852122333317839903755948549719343259217963045011714065065222873945809982103"
+        },
+        {
+          "marketId": "8328",
+          "title": "↑ 800",
+          "yesTokenId": "71494453401777827931040557097292395862072454330490654950201584984362961606695",
+          "noTokenId": "63360660993511712537955109453084532508774698572472436214590075749773581927989"
+        },
+        {
+          "marketId": "8329",
+          "title": "↑ 700",
+          "yesTokenId": "44164833160110343174088897739836971860762180640733070755250728598514223825696",
+          "noTokenId": "44991556253323412399585487339467332524147903981623738593423263396372927991725"
+        },
+        {
+          "marketId": "8330",
+          "title": "↓ 600",
+          "yesTokenId": "89064924648827599990212235368617942148696437797123122825128387592469244468023",
+          "noTokenId": "51818348551132853396920049655618943747223547362785603916576806386675659203443"
+        },
+        {
+          "marketId": "8331",
+          "title": "↓ 500",
+          "yesTokenId": "70812224019750684822326273209002945547479120907878336738451916666969724149366",
+          "noTokenId": "44168803237671515154547716309797399878720884012299899530110314147213065581281"
+        },
+        {
+          "marketId": "8332",
+          "title": "↓ 400",
+          "yesTokenId": "15239898924771889870563503429767640751877837379386699798027582065907797794816",
+          "noTokenId": "80268520087917175127716038594100233936778230809806117444422500153616792725554"
+        },
+        {
+          "marketId": "8333",
+          "title": "↓ 300",
+          "yesTokenId": "97315805899040931775842163158017112993445654062434381702014722929838242831850",
+          "noTokenId": "42533707819786151552047503952296269766627362363277754748376363509766354234005"
+        }
+      ]
+    },
+    "409": {
+      "title": "What price will Ethereum hit in March?",
+      "url": "https://app.opinion.trade/market/409?ref=opinion_hud",
+      "yesTokenId": "2827047630219840337053758576626715211679454974622433042064670661921421734065",
+      "noTokenId": "111197784757181941538774449441832350701164983204414121590362625381893755360868",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "ethereum",
+        "eth",
+        "ether",
+        "crypto",
+        "cryptocurrency",
+        "altcoin",
+        "price",
+        "trading",
+        "market",
+        "blockchain",
+        "defi",
+        "smart contracts",
+        "digital asset",
+        "token",
+        "coin",
+        "what price",
+        "price ethereum",
+        "ethereum hit",
+        "hit march",
+        "what price ethereum",
+        "price ethereum hit",
+        "ethereum hit march"
+      ],
+      "entities": [
+        "ethereum"
+      ],
+      "entityGroups": [
+        [
+          "ethereum",
+          "eth",
+          "ether",
+          "以太坊"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "8307",
+          "title": "↑ 3,000",
+          "yesTokenId": "73337443410129304434313394264007403130706867519163798222003399905818216308458",
+          "noTokenId": "87957678376611140620549547151629018396085121851494379992201332310172131919866"
+        },
+        {
+          "marketId": "8308",
+          "title": "↑ 2,800",
+          "yesTokenId": "66013029065420003521247758053072832661910416872109581125105019192411315369601",
+          "noTokenId": "84399497778526083261951614950960945282113970906585906408941932721995191520608"
+        },
+        {
+          "marketId": "8309",
+          "title": "↑ 2,600",
+          "yesTokenId": "76144176761605259113229984546043988457228060056935949329432496614667172873857",
+          "noTokenId": "9571813238058147311240521397574142498106724926565055681653289750163618400673"
+        },
+        {
+          "marketId": "8310",
+          "title": "↑ 2,400",
+          "yesTokenId": "45451450433064722850538400787794462522744331686738576535322647327318832747389",
+          "noTokenId": "33784689422725606576534417090916963773631327657651315753887018352737013026652"
+        },
+        {
+          "marketId": "8311",
+          "title": "↑ 2,200",
+          "yesTokenId": "81369637061135948007890190837595129186292482491711149003054127128513308218233",
+          "noTokenId": "110033246621100267824306113585944409651359974544694992646923507054836946612964"
+        },
+        {
+          "marketId": "8312",
+          "title": "↓ 2,000",
+          "yesTokenId": "43621893772419232778199173147915127278993528100222936493690354454740348686890",
+          "noTokenId": "3054551658041363326037816520286705061633289520012296589629529593159462779106"
+        },
+        {
+          "marketId": "8313",
+          "title": "↓ 1,800",
+          "yesTokenId": "1837553509433159922122883743290598099042236453104316990057723486167940581212",
+          "noTokenId": "16424962679626140924933793487091512815767942192543608618228575577305824310951"
+        },
+        {
+          "marketId": "8314",
+          "title": "↓ 1,600",
+          "yesTokenId": "7446290417308361498223685325012546643962617806598014220386539156227851229906",
+          "noTokenId": "107844361002794484657461847364676546830054687942372445933790141935672662552359"
+        },
+        {
+          "marketId": "8315",
+          "title": "↓ 1,400",
+          "yesTokenId": "2827047630219840337053758576626715211679454974622433042064670661921421734065",
+          "noTokenId": "111197784757181941538774449441832350701164983204414121590362625381893755360868"
+        },
+        {
+          "marketId": "8337",
+          "title": "↓ 1,200",
+          "yesTokenId": "83699525408763405917996728819254658699370118349423582775171878409246810763443",
+          "noTokenId": "42517838178967139958457965212953308114965561884322364947363054338452650514595"
+        }
+      ]
     }
   },
   "index": {
@@ -7283,7 +7639,6 @@
       "3449",
       "3508",
       "3509",
-      "379",
       "400"
     ],
     "2026 election": [
@@ -7301,21 +7656,6 @@
     "2026 nfl draft": [
       "3072"
     ],
-    "2026 rank": [
-      "378"
-    ],
-    "2026 rank among": [
-      "378"
-    ],
-    "2026 tokyo": [
-      "379"
-    ],
-    "2026 tokyo jma": [
-      "379"
-    ],
-    "2026 weather": [
-      "378"
-    ],
     "2026 winner": [
       "400"
     ],
@@ -7324,9 +7664,6 @@
     ],
     "2026-12-31": [
       "3509"
-    ],
-    "2026年": [
-      "378"
     ],
     "2026年12月31日": [
       "3509"
@@ -7489,7 +7826,9 @@
     "altcoin": [
       "3364",
       "3367",
-      "3368"
+      "3368",
+      "409",
+      "411"
     ],
     "amazon": [
       "402"
@@ -7502,12 +7841,6 @@
     ],
     "american actress": [
       "3158"
-    ],
-    "among hottest": [
-      "378"
-    ],
-    "among hottest years": [
-      "378"
     ],
     "amount": [
       "3505"
@@ -7631,21 +7964,30 @@
     ],
     "binance": [
       "3368",
-      "3369"
+      "3369",
+      "411"
     ],
     "binance 1q2026": [
       "3369"
     ],
     "binance coin": [
       "3367",
-      "3368"
+      "3368",
+      "411"
     ],
     "bitcoin": [
       "3256",
-      "3365"
+      "3365",
+      "410"
     ],
     "bitcoin 2026": [
       "3365"
+    ],
+    "bitcoin hit": [
+      "410"
+    ],
+    "bitcoin hit march": [
+      "410"
     ],
     "bitcoin replace": [
       "3256"
@@ -7669,22 +8011,13 @@
       "1721",
       "3361",
       "3364",
-      "3365"
+      "3365",
+      "409",
+      "410",
+      "411"
     ],
     "blockchain upgrade": [
       "3256"
-    ],
-    "bloom date": [
-      "379"
-    ],
-    "blossom season": [
-      "379"
-    ],
-    "blossoms full": [
-      "379"
-    ],
-    "blossoms full bloom": [
-      "379"
     ],
     "blʌͻkpiиk": [
       "2178"
@@ -7692,7 +8025,8 @@
     "bnb": [
       "3367",
       "3368",
-      "3369"
+      "3369",
+      "411"
     ],
     "bnb all": [
       "3368"
@@ -7700,17 +8034,28 @@
     "bnb all time": [
       "3368"
     ],
+    "bnb coin": [
+      "411"
+    ],
     "bnb hit": [
-      "3367"
+      "3367",
+      "411"
     ],
     "bnb hit $1500": [
       "3367"
     ],
+    "bnb hit march": [
+      "411"
+    ],
     "bnb price": [
-      "3368"
+      "3368",
+      "411"
     ],
     "bnb token": [
       "3368"
+    ],
+    "bnbusdt": [
+      "411"
     ],
     "bombing": [
       "3039"
@@ -7745,10 +8090,14 @@
     ],
     "btc": [
       "3256",
-      "3365"
+      "3365",
+      "410"
     ],
     "buckingham": [
       "391"
+    ],
+    "bull run": [
+      "410"
     ],
     "bullish": [
       "3367"
@@ -7829,18 +8178,6 @@
     "charlotte hale": [
       "3158"
     ],
-    "cherry blossom": [
-      "379"
-    ],
-    "cherry blossoms": [
-      "379"
-    ],
-    "cherry blossoms full": [
-      "379"
-    ],
-    "cherry tree": [
-      "379"
-    ],
     "china": [
       "1856"
     ],
@@ -7867,12 +8204,6 @@
     ],
     "claim": [
       "392"
-    ],
-    "climate change": [
-      "378"
-    ],
-    "climate data": [
-      "378"
     ],
     "close": [
       "402",
@@ -7921,6 +8252,9 @@
     ],
     "coalition": [
       "383"
+    ],
+    "coin": [
+      "409"
     ],
     "coin offering": [
       "397"
@@ -7971,9 +8305,6 @@
     "cook out apple": [
       "2368"
     ],
-    "copernicus climate": [
-      "378"
-    ],
     "cornyn": [
       "391"
     ],
@@ -8012,7 +8343,10 @@
       "3364",
       "3367",
       "3368",
-      "394"
+      "394",
+      "409",
+      "410",
+      "411"
     ],
     "crypto exchange": [
       "3362",
@@ -8038,7 +8372,10 @@
     ],
     "cryptocurrency": [
       "3364",
-      "3367"
+      "3367",
+      "409",
+      "410",
+      "411"
     ],
     "cryptographic vulnerability": [
       "3256"
@@ -8109,7 +8446,9 @@
       "118",
       "1721",
       "3361",
-      "395"
+      "395",
+      "409",
+      "411"
     ],
     "defi hack": [
       "3360"
@@ -8155,6 +8494,13 @@
     ],
     "dex": [
       "3361"
+    ],
+    "digital asset": [
+      "409",
+      "411"
+    ],
+    "digital gold": [
+      "410"
     ],
     "dip": [
       "402"
@@ -8237,9 +8583,6 @@
     ],
     "ecosystem": [
       "3366"
-    ],
-    "el niño": [
-      "378"
     ],
     "election": [
       "380",
@@ -8332,21 +8675,30 @@
       "401"
     ],
     "eth": [
-      "3364"
+      "3364",
+      "409"
     ],
     "ether": [
-      "3364"
+      "3364",
+      "409"
     ],
     "ethereum": [
       "118",
       "1721",
-      "3364"
+      "3364",
+      "409"
     ],
     "ethereum all": [
       "3364"
     ],
     "ethereum all time": [
       "3364"
+    ],
+    "ethereum hit": [
+      "409"
+    ],
+    "ethereum hit march": [
+      "409"
     ],
     "evm": [
       "1721",
@@ -8381,9 +8733,6 @@
     ],
     "extradition": [
       "1856"
-    ],
-    "extreme weather": [
-      "378"
     ],
     "face-to-face": [
       "386",
@@ -8447,12 +8796,6 @@
     "flash loan attack": [
       "3360"
     ],
-    "flowering": [
-      "379"
-    ],
-    "forecast": [
-      "379"
-    ],
     "founder": [
       "3369"
     ],
@@ -8464,9 +8807,6 @@
     ],
     "fugitive": [
       "1856"
-    ],
-    "full bloom": [
-      "379"
     ],
     "fully diluted valuation": [
       "394",
@@ -8515,12 +8855,6 @@
     ],
     "girl group": [
       "2178"
-    ],
-    "global temps": [
-      "378"
-    ],
-    "global warming": [
-      "378"
     ],
     "go live": [
       "397"
@@ -8595,6 +8929,9 @@
     "hack over $100m": [
       "3360"
     ],
+    "halving": [
+      "410"
+    ],
     "hard fork": [
       "3256"
     ],
@@ -8612,12 +8949,6 @@
     ],
     "hbo": [
       "2398"
-    ],
-    "heat record": [
-      "378"
-    ],
-    "heatwave": [
-      "378"
     ],
     "heisman": [
       "3072"
@@ -8653,6 +8984,11 @@
     "hit $1500 2026": [
       "3367"
     ],
+    "hit march": [
+      "409",
+      "410",
+      "411"
+    ],
     "holly wheeler": [
       "3222"
     ],
@@ -8663,15 +8999,6 @@
       "3221",
       "3222",
       "3223"
-    ],
-    "hottest year": [
-      "378"
-    ],
-    "hottest years": [
-      "378"
-    ],
-    "hottest years record": [
-      "378"
     ],
     "house": [
       "390"
@@ -8794,9 +9121,6 @@
     "james bond actor": [
       "389"
     ],
-    "japan meteorological agency": [
-      "379"
-    ],
     "jd vance": [
       "3055"
     ],
@@ -8814,15 +9138,6 @@
     ],
     "jia yueting": [
       "1856"
-    ],
-    "jma": [
-      "379"
-    ],
-    "jma cherry": [
-      "379"
-    ],
-    "jma cherry blossoms": [
-      "379"
     ],
     "jonathan byers": [
       "3221",
@@ -8872,9 +9187,6 @@
     "l2": [
       "3366",
       "392"
-    ],
-    "la niña": [
-      "378"
     ],
     "labour": [
       "382"
@@ -8973,9 +9285,6 @@
     "mainnet launch": [
       "397"
     ],
-    "mankai": [
-      "379"
-    ],
     "march": [
       "405",
       "408"
@@ -9003,7 +9312,9 @@
       "405",
       "406",
       "407",
-      "408"
+      "408",
+      "409",
+      "410"
     ],
     "market cap": [
       "3505",
@@ -9011,6 +9322,9 @@
       "394",
       "396",
       "404"
+    ],
+    "market value": [
+      "411"
     ],
     "marvel": [
       "3158"
@@ -9217,9 +9531,6 @@
       "3222",
       "3223"
     ],
-    "nasa giss": [
-      "378"
-    ],
     "nasdaq": [
       "402",
       "403",
@@ -9292,9 +9603,6 @@
     ],
     "nfl draft": [
       "3072"
-    ],
-    "noaa climate": [
-      "378"
     ],
     "nomination": [
       "380",
@@ -9417,9 +9725,6 @@
     "perpetuals": [
       "3361"
     ],
-    "phenology": [
-      "379"
-    ],
     "pick 2026": [
       "3072"
     ],
@@ -9507,7 +9812,27 @@
       "405",
       "406",
       "407",
-      "408"
+      "408",
+      "409",
+      "410"
+    ],
+    "price bitcoin": [
+      "410"
+    ],
+    "price bitcoin hit": [
+      "410"
+    ],
+    "price bnb": [
+      "411"
+    ],
+    "price bnb hit": [
+      "411"
+    ],
+    "price ethereum": [
+      "409"
+    ],
+    "price ethereum hit": [
+      "409"
     ],
     "price peak": [
       "3364"
@@ -9631,12 +9956,6 @@
       "3368",
       "402"
     ],
-    "rank among": [
-      "378"
-    ],
-    "rank among hottest": [
-      "378"
-    ],
     "rapture": [
       "2670"
     ],
@@ -9730,7 +10049,8 @@
       "3062"
     ],
     "resistance": [
-      "3367"
+      "3367",
+      "410"
     ],
     "resolution date": [
       "3509"
@@ -9808,9 +10128,6 @@
     "s23 winner": [
       "401"
     ],
-    "sakura": [
-      "379"
-    ],
     "santiago": [
       "400"
     ],
@@ -9821,7 +10138,8 @@
       "400"
     ],
     "satoshi": [
-      "3365"
+      "3365",
+      "410"
     ],
     "satoshi move": [
       "3365"
@@ -9959,6 +10277,9 @@
     "smart contract bug": [
       "3360"
     ],
+    "smart contracts": [
+      "409"
+    ],
     "snapshot": [
       "392"
     ],
@@ -9972,8 +10293,8 @@
     "spend": [
       "3365"
     ],
-    "spring": [
-      "379"
+    "spot etf": [
+      "410"
     ],
     "spy": [
       "389"
@@ -10116,9 +10437,6 @@
       "2668",
       "3356"
     ],
-    "temperature anomaly": [
-      "378"
-    ],
     "tesla": [
       "408"
     ],
@@ -10223,7 +10541,9 @@
       "1721",
       "3367",
       "392",
-      "394"
+      "394",
+      "409",
+      "411"
     ],
     "token 2026": [
       "3366"
@@ -10252,15 +10572,6 @@
       "395",
       "396"
     ],
-    "tokyo": [
-      "379"
-    ],
-    "tokyo jma": [
-      "379"
-    ],
-    "tokyo jma cherry": [
-      "379"
-    ],
     "top flight italy": [
       "388"
     ],
@@ -10287,7 +10598,10 @@
       "405",
       "406",
       "407",
-      "408"
+      "408",
+      "409",
+      "410",
+      "411"
     ],
     "transfer": [
       "3365"
@@ -10448,7 +10762,8 @@
     "volatility": [
       "3367",
       "402",
-      "404"
+      "404",
+      "410"
     ],
     "volodymyr": [
       "387"
@@ -10469,9 +10784,6 @@
     ],
     "war": [
       "3039"
-    ],
-    "warmest year": [
-      "378"
     ],
     "warner bros": [
       "2398"
@@ -10494,14 +10806,22 @@
     "westworld": [
       "3158"
     ],
+    "what price": [
+      "409",
+      "410",
+      "411"
+    ],
+    "what price bitcoin": [
+      "410"
+    ],
+    "what price bnb": [
+      "411"
+    ],
+    "what price ethereum": [
+      "409"
+    ],
     "wheeler family": [
       "3222"
-    ],
-    "where 2026": [
-      "378"
-    ],
-    "where 2026 rank": [
-      "378"
     ],
     "where trump": [
       "386"
@@ -10520,9 +10840,6 @@
     ],
     "will byers": [
       "3221"
-    ],
-    "years record": [
-      "378"
     ],
     "yg entertainment": [
       "2178"
@@ -10558,7 +10875,8 @@
       "1721",
       "3359",
       "3364",
-      "392"
+      "392",
+      "409"
     ],
     "以色列": [
       "3039"
@@ -10595,7 +10913,8 @@
     ],
     "币安币": [
       "3367",
-      "3368"
+      "3368",
+      "411"
     ],
     "微策略": [
       "3257"
@@ -10618,24 +10937,16 @@
     "无畏契约大师赛": [
       "400"
     ],
-    "日本气象厅": [
-      "379"
-    ],
-    "最热年份": [
-      "378"
-    ],
     "最高法院": [
       "1546"
     ],
     "比特币": [
       "3256",
-      "3365"
+      "3365",
+      "410"
     ],
     "民主党": [
       "380"
-    ],
-    "气温记录": [
-      "378"
     ],
     "泰莎·汤普森": [
       "3158"
@@ -10706,7 +11017,6 @@
       "389"
     ],
     "2026": [
-      "379",
       "400"
     ],
     "2026 election": [
@@ -10718,26 +11028,8 @@
     "2026 midterms": [
       "390"
     ],
-    "2026 rank": [
-      "378"
-    ],
-    "2026 rank among": [
-      "378"
-    ],
-    "2026 tokyo": [
-      "379"
-    ],
-    "2026 tokyo jma": [
-      "379"
-    ],
-    "2026 weather": [
-      "378"
-    ],
     "2026 winner": [
       "400"
-    ],
-    "2026年": [
-      "378"
     ],
     "2027": [
       "163"
@@ -10797,6 +11089,10 @@
     "alphabet": [
       "405"
     ],
+    "altcoin": [
+      "409",
+      "411"
+    ],
     "amazon": [
       "402"
     ],
@@ -10805,12 +11101,6 @@
     ],
     "amazon amzn close": [
       "402"
-    ],
-    "among hottest": [
-      "378"
-    ],
-    "among hottest years": [
-      "378"
     ],
     "amzn": [
       "402"
@@ -10848,17 +11138,43 @@
     "bilateral": [
       "386"
     ],
-    "bloom date": [
-      "379"
+    "binance": [
+      "411"
     ],
-    "blossom season": [
-      "379"
+    "binance coin": [
+      "411"
     ],
-    "blossoms full": [
-      "379"
+    "bitcoin": [
+      "410"
     ],
-    "blossoms full bloom": [
-      "379"
+    "bitcoin hit": [
+      "410"
+    ],
+    "bitcoin hit march": [
+      "410"
+    ],
+    "blockchain": [
+      "409",
+      "410",
+      "411"
+    ],
+    "bnb": [
+      "411"
+    ],
+    "bnb coin": [
+      "411"
+    ],
+    "bnb hit": [
+      "411"
+    ],
+    "bnb hit march": [
+      "411"
+    ],
+    "bnb price": [
+      "411"
+    ],
+    "bnbusdt": [
+      "411"
     ],
     "bond": [
       "389"
@@ -10869,8 +11185,14 @@
     "british": [
       "389"
     ],
+    "btc": [
+      "410"
+    ],
     "buckingham": [
       "391"
+    ],
+    "bull run": [
+      "410"
     ],
     "bytedance": [
       "163"
@@ -10909,18 +11231,6 @@
     "championship": [
       "400"
     ],
-    "cherry blossom": [
-      "379"
-    ],
-    "cherry blossoms": [
-      "379"
-    ],
-    "cherry blossoms full": [
-      "379"
-    ],
-    "cherry tree": [
-      "379"
-    ],
     "chip": [
       "406"
     ],
@@ -10929,12 +11239,6 @@
     ],
     "claim": [
       "392"
-    ],
-    "climate change": [
-      "378"
-    ],
-    "climate data": [
-      "378"
     ],
     "close": [
       "402",
@@ -10966,6 +11270,9 @@
     "coalition": [
       "383"
     ],
+    "coin": [
+      "409"
+    ],
     "coin offering": [
       "397"
     ],
@@ -10984,9 +11291,6 @@
     "convention": [
       "380"
     ],
-    "copernicus climate": [
-      "378"
-    ],
     "cornyn": [
       "391"
     ],
@@ -10995,7 +11299,10 @@
     ],
     "crypto": [
       "118",
-      "394"
+      "394",
+      "409",
+      "410",
+      "411"
     ],
     "crypto price": [
       "396"
@@ -11005,6 +11312,11 @@
     ],
     "crypto token": [
       "395"
+    ],
+    "cryptocurrency": [
+      "409",
+      "410",
+      "411"
     ],
     "cs2": [
       "401"
@@ -11035,7 +11347,9 @@
     ],
     "defi": [
       "118",
-      "395"
+      "395",
+      "409",
+      "411"
     ],
     "democrat": [
       "380"
@@ -11051,6 +11365,13 @@
     ],
     "democrats": [
       "390"
+    ],
+    "digital asset": [
+      "409",
+      "411"
+    ],
+    "digital gold": [
+      "410"
     ],
     "dip": [
       "402"
@@ -11076,9 +11397,6 @@
       "404",
       "405",
       "408"
-    ],
-    "el niño": [
-      "378"
     ],
     "election": [
       "380",
@@ -11129,14 +11447,24 @@
       "400",
       "401"
     ],
+    "eth": [
+      "409"
+    ],
+    "ether": [
+      "409"
+    ],
     "ethereum": [
-      "118"
+      "118",
+      "409"
+    ],
+    "ethereum hit": [
+      "409"
+    ],
+    "ethereum hit march": [
+      "409"
     ],
     "evm": [
       "392"
-    ],
-    "extreme weather": [
-      "378"
     ],
     "face-to-face": [
       "386",
@@ -11166,20 +11494,11 @@
     "finals": [
       "401"
     ],
-    "flowering": [
-      "379"
-    ],
-    "forecast": [
-      "379"
-    ],
     "fps": [
       "400"
     ],
     "franchise": [
       "389"
-    ],
-    "full bloom": [
-      "379"
     ],
     "fully diluted valuation": [
       "394",
@@ -11200,12 +11519,6 @@
     "general election": [
       "382",
       "383"
-    ],
-    "global temps": [
-      "378"
-    ],
-    "global warming": [
-      "378"
     ],
     "go live": [
       "397"
@@ -11259,20 +11572,13 @@
     "gpu": [
       "406"
     ],
-    "heat record": [
-      "378"
+    "halving": [
+      "410"
     ],
-    "heatwave": [
-      "378"
-    ],
-    "hottest year": [
-      "378"
-    ],
-    "hottest years": [
-      "378"
-    ],
-    "hottest years record": [
-      "378"
+    "hit march": [
+      "409",
+      "410",
+      "411"
     ],
     "house": [
       "390"
@@ -11313,29 +11619,14 @@
     "james bond actor": [
       "389"
     ],
-    "japan meteorological agency": [
-      "379"
-    ],
     "jensen huang": [
       "406"
-    ],
-    "jma": [
-      "379"
-    ],
-    "jma cherry": [
-      "379"
-    ],
-    "jma cherry blossoms": [
-      "379"
     ],
     "kremlin": [
       "387"
     ],
     "l2": [
       "392"
-    ],
-    "la niña": [
-      "378"
     ],
     "labour": [
       "382"
@@ -11391,9 +11682,6 @@
     "mainnet launch": [
       "397"
     ],
-    "mankai": [
-      "379"
-    ],
     "march": [
       "405",
       "408"
@@ -11404,12 +11692,17 @@
       "405",
       "406",
       "407",
-      "408"
+      "408",
+      "409",
+      "410"
     ],
     "market cap": [
       "394",
       "396",
       "404"
+    ],
+    "market value": [
+      "411"
     ],
     "masters": [
       "400"
@@ -11506,9 +11799,6 @@
     "msft close above": [
       "404"
     ],
-    "nasa giss": [
-      "378"
-    ],
     "nasdaq": [
       "402",
       "403",
@@ -11542,9 +11832,6 @@
     "next prime minister": [
       "382",
       "383"
-    ],
-    "noaa climate": [
-      "378"
     ],
     "nomination": [
       "380",
@@ -11612,9 +11899,6 @@
     "performance": [
       "408"
     ],
-    "phenology": [
-      "379"
-    ],
     "platform": [
       "394"
     ],
@@ -11681,7 +11965,27 @@
       "405",
       "406",
       "407",
-      "408"
+      "408",
+      "409",
+      "410"
+    ],
+    "price bitcoin": [
+      "410"
+    ],
+    "price bitcoin hit": [
+      "410"
+    ],
+    "price bnb": [
+      "411"
+    ],
+    "price bnb hit": [
+      "411"
+    ],
+    "price ethereum": [
+      "409"
+    ],
+    "price ethereum hit": [
+      "409"
     ],
     "primary": [
       "380",
@@ -11751,12 +12055,6 @@
     "rally": [
       "402"
     ],
-    "rank among": [
-      "378"
-    ],
-    "rank among hottest": [
-      "378"
-    ],
     "republican": [
       "381",
       "391"
@@ -11782,6 +12080,9 @@
     "republicans": [
       "390"
     ],
+    "resistance": [
+      "410"
+    ],
     "retroactive": [
       "392"
     ],
@@ -11800,9 +12101,6 @@
     "s23 winner": [
       "401"
     ],
-    "sakura": [
-      "379"
-    ],
     "santiago": [
       "400"
     ],
@@ -11811,6 +12109,9 @@
     ],
     "santiago 2026 winner": [
       "400"
+    ],
+    "satoshi": [
+      "410"
     ],
     "scudetto": [
       "388"
@@ -11862,6 +12163,9 @@
     "sit-down": [
       "386"
     ],
+    "smart contracts": [
+      "409"
+    ],
     "snapshot": [
       "392"
     ],
@@ -11869,8 +12173,8 @@
       "394",
       "395"
     ],
-    "spring": [
-      "379"
+    "spot etf": [
+      "410"
     ],
     "spy": [
       "389"
@@ -11917,9 +12221,6 @@
     "tech stock": [
       "404"
     ],
-    "temperature anomaly": [
-      "378"
-    ],
     "tesla": [
       "408"
     ],
@@ -11958,7 +12259,9 @@
     "token": [
       "118",
       "392",
-      "394"
+      "394",
+      "409",
+      "411"
     ],
     "token event": [
       "395"
@@ -11982,15 +12285,6 @@
       "395",
       "396"
     ],
-    "tokyo": [
-      "379"
-    ],
-    "tokyo jma": [
-      "379"
-    ],
-    "tokyo jma cherry": [
-      "379"
-    ],
     "top flight italy": [
       "388"
     ],
@@ -12006,7 +12300,10 @@
       "405",
       "406",
       "407",
-      "408"
+      "408",
+      "409",
+      "410",
+      "411"
     ],
     "trophy": [
       "401"
@@ -12082,7 +12379,8 @@
     ],
     "volatility": [
       "402",
-      "404"
+      "404",
+      "410"
     ],
     "volodymyr": [
       "387"
@@ -12097,29 +12395,31 @@
     "wallet": [
       "118"
     ],
-    "warmest year": [
-      "378"
-    ],
     "web3": [
       "118"
     ],
     "westminster": [
       "382"
     ],
-    "where 2026": [
-      "378"
+    "what price": [
+      "409",
+      "410",
+      "411"
     ],
-    "where 2026 rank": [
-      "378"
+    "what price bitcoin": [
+      "410"
+    ],
+    "what price bnb": [
+      "411"
+    ],
+    "what price ethereum": [
+      "409"
     ],
     "where trump": [
       "386"
     ],
     "where trump putin": [
       "386"
-    ],
-    "years record": [
-      "378"
     ],
     "zelenskyy": [
       "387"
@@ -12134,7 +12434,8 @@
       "402"
     ],
     "以太坊": [
-      "392"
+      "392",
+      "409"
     ],
     "公开募股": [
       "163"
@@ -12150,6 +12451,9 @@
     ],
     "小狐狸": [
       "118"
+    ],
+    "币安币": [
+      "411"
     ],
     "德克萨斯": [
       "391"
@@ -12169,17 +12473,11 @@
     "无畏契约大师赛": [
       "400"
     ],
-    "日本气象厅": [
-      "379"
-    ],
-    "最热年份": [
-      "378"
+    "比特币": [
+      "410"
     ],
     "民主党": [
       "380"
-    ],
-    "气温记录": [
-      "378"
     ],
     "泽连斯基": [
       "387"
