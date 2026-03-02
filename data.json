@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-02 00:41:33 UTC+8",
+    "generatedAt": "2026-03-02 10:51:23 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 281,
-      "markets": 197,
+      "kept": 269,
+      "markets": 185,
       "keywords": 1006,
       "events": {
         "events": 29
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 719,
+        "cutoff_expired": 731,
         "cutoff_zero_kept": 6,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 26,
+        "reused": 29,
         "regenerated_empty_entitygroups": 0,
-        "calls": 3,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 3,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -5022,18 +5022,6 @@
         }
       ]
     },
-    "7330": {
-      "title": "Valorant - VCT Masters: T1 vs TL (Mar. 1 3:00PM ET)",
-      "url": "https://app.opinion.trade/market/7330?ref=opinion_hud",
-      "yesTokenId": "44990871655434079793540644578588287088896622046442479386828677786774435672264",
-      "noTokenId": "114806753451065644441785982204075148343633992883821932376968291049844624391191",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "T1",
-        "noLabel": "TL"
-      },
-      "type": "binary"
-    },
     "7327": {
       "title": "KPL: LGD.NBW vs TCG (Feb. 24 4:00AM ET)",
       "url": "https://app.opinion.trade/market/7327?ref=opinion_hud",
@@ -5043,18 +5031,6 @@
       "labels": {
         "yesLabel": "LGD.NBW",
         "noLabel": "TCG"
-      },
-      "type": "binary"
-    },
-    "7329": {
-      "title": "Valorant - VCT Masters: G2 vs PRX (Mar. 1 12:00PM ET)",
-      "url": "https://app.opinion.trade/market/7329?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
       },
       "type": "binary"
     },
@@ -6549,42 +6525,6 @@
         }
       ]
     },
-    "8167": {
-      "title": "NBA: Celtics vs Bucks (Mar. 2 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/8167?ref=opinion_hud",
-      "yesTokenId": "3659894705500354101360394585045849014968945404385843711559689889312496398613",
-      "noTokenId": "36275614605367523273773370278701245967312031625752209505282476556867609025580",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Celtics",
-        "noLabel": "Bucks"
-      },
-      "type": "binary"
-    },
-    "8168": {
-      "title": "NBA: Clippers vs Warriors (Mar. 2 10:00PM ET)",
-      "url": "https://app.opinion.trade/market/8168?ref=opinion_hud",
-      "yesTokenId": "36274495605759662937959055924594427972113096194138795732445317153847706648252",
-      "noTokenId": "59875827128734762909464340521525642354673460448772834454664582094992718097457",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Clippers",
-        "noLabel": "Warriors"
-      },
-      "type": "binary"
-    },
-    "8166": {
-      "title": "NBA: Rockets vs Wizards (Mar. 2 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/8166?ref=opinion_hud",
-      "yesTokenId": "39332941258898554198762446630489524274211152336398925442096881932845924150507",
-      "noTokenId": "111784239614756184105156565303336026337737639805296427336732053186672894506196",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Rockets",
-        "noLabel": "Wizards"
-      },
-      "type": "binary"
-    },
     "407": {
       "title": "Will Apple (AAPL) close above ... end of March?",
       "url": "https://app.opinion.trade/market/407?ref=opinion_hud",
@@ -7105,18 +7045,6 @@
       },
       "type": "binary"
     },
-    "8375": {
-      "title": "LPL: WBG vs TES (Mar. 2 4:00AM ET)",
-      "url": "https://app.opinion.trade/market/8375?ref=opinion_hud",
-      "yesTokenId": "69033120027279308333521797921243623794451740776594299099917647982852798644070",
-      "noTokenId": "43812963083484920632065141283869685440546517748919750845927723810766097937240",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "WBG",
-        "noLabel": "TES"
-      },
-      "type": "binary"
-    },
     "8377": {
       "title": "LPL: JDG vs BLG (Mar. 4 4:00AM ET)",
       "url": "https://app.opinion.trade/market/8377?ref=opinion_hud",
@@ -7126,18 +7054,6 @@
       "labels": {
         "yesLabel": "JDG",
         "noLabel": "BLG"
-      },
-      "type": "binary"
-    },
-    "8362": {
-      "title": "ETH Up or Down - Hourly (Mar 01, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/8362?ref=opinion_hud",
-      "yesTokenId": "54361484561670091250010292114627246158448138939235583189047894435792999547293",
-      "noTokenId": "89255489864988929946435984796901664191487128549929415124499078524530850540330",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
@@ -7153,18 +7069,6 @@
       },
       "type": "binary"
     },
-    "8360": {
-      "title": "BNB Up or Down - Hourly (Mar 01, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/8360?ref=opinion_hud",
-      "yesTokenId": "111137390531131606640752462581366237849291341519024229801658531886596908847953",
-      "noTokenId": "107489136817479874006937854142958739349336664448498487931372589461110631972410",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "8371": {
       "title": "KPL: WE vs ESP (Mar. 3 1:00AM ET)",
       "url": "https://app.opinion.trade/market/8371?ref=opinion_hud",
@@ -7177,18 +7081,6 @@
       },
       "type": "binary"
     },
-    "8368": {
-      "title": "Dota2 - DreamLeague: TUNDRA vs AUR (Mar .1 10:00AM ET)",
-      "url": "https://app.opinion.trade/market/8368?ref=opinion_hud",
-      "yesTokenId": "66150352367936881352125545500566811806624365476139200720456062912329551998464",
-      "noTokenId": "49492869507754390947117783339163983117869582996138341805099545544529906706112",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "TUNDRA",
-        "noLabel": "AUR"
-      },
-      "type": "binary"
-    },
     "8372": {
       "title": "KPL: RW vs LGD.NBW (Mar. 3 6:00AM ET)",
       "url": "https://app.opinion.trade/market/8372?ref=opinion_hud",
@@ -7198,18 +7090,6 @@
       "labels": {
         "yesLabel": "RW",
         "noLabel": "LGD.NBW"
-      },
-      "type": "binary"
-    },
-    "8361": {
-      "title": "BTC Up or Down - Hourly (Mar 01, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/8361?ref=opinion_hud",
-      "yesTokenId": "85655636285177275913686628491290129199952360531086654438772866497814811963002",
-      "noTokenId": "52572100184872431408271043246876737494077461317455793053093502300557617274328",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
@@ -7344,30 +7224,6 @@
           "noTokenId": "99839681572191025674959086559599502647064729357591082594661069712385033556424"
         }
       ]
-    },
-    "8339": {
-      "title": "LEC: G2 vs KC (Mar. 1 11:00AM ET)",
-      "url": "https://app.opinion.trade/market/8339?ref=opinion_hud",
-      "yesTokenId": "85225472847432091632801091745341872433475898726348758493719215675319377632822",
-      "noTokenId": "78662355525400248254543814782828393042372091718954531294149205210512077445129",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "G2",
-        "noLabel": "KC"
-      },
-      "type": "binary"
-    },
-    "8300": {
-      "title": "Bitcoin Up or Down on March 2?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/8300?ref=opinion_hud",
-      "yesTokenId": "51144007419711044723418751655873502079802296304659810027486393703363440794578",
-      "noTokenId": "79114993532267767278531506588678730654927950080129387461970386081393993424036",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
     },
     "8297": {
       "title": "NBA: Hornets vs Celtics (Mar. 4 7:30PM ET)",
