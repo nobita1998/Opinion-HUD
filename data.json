@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-02 16:58:33 UTC+8",
+    "generatedAt": "2026-03-03 01:02:26 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 269,
-      "markets": 185,
-      "keywords": 1006,
+      "kept": 284,
+      "markets": 196,
+      "keywords": 1050,
       "events": {
-        "events": 29
+        "events": 32
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 731,
-        "cutoff_zero_kept": 6,
+        "cutoff_expired": 716,
+        "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
@@ -28,154 +28,18 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 29,
+        "reused": 26,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
+        "calls": 6,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 6,
         "errors": 0
       }
     }
   },
   "events": {
-    "382": {
-      "title": "Next UK Prime Minister in 2026?",
-      "marketIds": [
-        "382"
-      ],
-      "bestMarketId": "382",
-      "bestLabels": null,
-      "keywords": [
-        "uk",
-        "prime minister",
-        "pm",
-        "downing street",
-        "general election",
-        "2026 election",
-        "conservative",
-        "labour",
-        "party leader",
-        "politics",
-        "government",
-        "westminster",
-        "parliament",
-        "number 10",
-        "election",
-        "next prime",
-        "minister 2026",
-        "next prime minister",
-        "prime minister 2026"
-      ],
-      "entities": [
-        "uk prime minister"
-      ],
-      "entityGroups": [
-        [
-          "uk prime minister",
-          "prime minister",
-          "英国首相"
-        ]
-      ],
-      "sig": "f3be4f89",
-      "sigFull": "f3be4f89",
-      "sigCore": "5ace29a1",
-      "reused": false
-    },
-    "381": {
-      "title": "Republican Presidential Nominee 2028",
-      "marketIds": [
-        "381"
-      ],
-      "bestMarketId": "381",
-      "bestLabels": null,
-      "keywords": [
-        "gop",
-        "republican",
-        "republican party",
-        "2028 election",
-        "presidential nominee",
-        "gop primary",
-        "rnc",
-        "republican candidate",
-        "2028 race",
-        "gop convention",
-        "primary election",
-        "nomination",
-        "elephant",
-        "gop ticket",
-        "republican presidential",
-        "nominee 2028",
-        "republican presidential nominee",
-        "presidential nominee 2028"
-      ],
-      "entities": [
-        "republican",
-        "presidential nominee"
-      ],
-      "entityGroups": [
-        [
-          "republican",
-          "共和党"
-        ],
-        [
-          "presidential nominee",
-          "总统候选人"
-        ]
-      ],
-      "sig": "e179915a",
-      "sigFull": "e179915a",
-      "sigCore": "e34da0da",
-      "reused": false
-    },
-    "380": {
-      "title": "Democratic Presidential Nominee 2028",
-      "marketIds": [
-        "380"
-      ],
-      "bestMarketId": "380",
-      "bestLabels": null,
-      "keywords": [
-        "democrat",
-        "democratic party",
-        "nominee",
-        "nomination",
-        "primary",
-        "election",
-        "president",
-        "2028",
-        "potus",
-        "dnc",
-        "convention",
-        "candidate",
-        "ticket",
-        "us politics",
-        "campaign",
-        "democratic presidential",
-        "presidential nominee",
-        "nominee 2028",
-        "democratic presidential nominee",
-        "presidential nominee 2028"
-      ],
-      "entities": [
-        "民主党",
-        "presidential nominee"
-      ],
-      "entityGroups": [
-        [
-          "民主党"
-        ],
-        [
-          "presidential nominee",
-          "总统提名"
-        ]
-      ],
-      "sig": "d855a5f8",
-      "sigFull": "d855a5f8",
-      "sigCore": "36cdb4d0",
-      "reused": false
-    },
     "383": {
       "title": "Next Prime Minister of Thailand",
       "marketIds": [
@@ -1324,6 +1188,283 @@
       "sig": "75416992",
       "sigFull": "75416992",
       "sigCore": "f693eede",
+      "reused": false
+    },
+    "417": {
+      "title": "Who will become the next supreme leader of Iran?",
+      "marketIds": [
+        "417"
+      ],
+      "bestMarketId": "417",
+      "bestLabels": null,
+      "keywords": [
+        "iran",
+        "supreme leader",
+        "ayatollah",
+        "succession",
+        "tehran",
+        "islamic republic",
+        "regime",
+        "cleric",
+        "leadership",
+        "politics",
+        "khamenei",
+        "revolution",
+        "assembly of experts",
+        "guardian council",
+        "who become",
+        "become next",
+        "next supreme",
+        "leader iran",
+        "who become next",
+        "become next supreme",
+        "next supreme leader",
+        "supreme leader iran"
+      ],
+      "entities": [
+        "iran",
+        "supreme leader"
+      ],
+      "entityGroups": [
+        [
+          "iran"
+        ],
+        [
+          "supreme leader",
+          "最高领袖"
+        ]
+      ],
+      "sig": "3de7fcab",
+      "sigFull": "3de7fcab",
+      "sigCore": "37446037",
+      "reused": false
+    },
+    "416": {
+      "title": "Iran x Israel/US conflict ends by...?",
+      "marketIds": [
+        "416"
+      ],
+      "bestMarketId": "416",
+      "bestLabels": null,
+      "keywords": [
+        "iran",
+        "israel",
+        "usa",
+        "conflict",
+        "war",
+        "ceasefire",
+        "hostilities",
+        "middle east",
+        "tensions",
+        "military",
+        "escalation",
+        "peace",
+        "tehran",
+        "jerusalem",
+        "washington",
+        "iran israel/us",
+        "israel/us conflict",
+        "conflict ends",
+        "iran israel/us conflict",
+        "israel/us conflict ends"
+      ],
+      "entities": [
+        "iran",
+        "israel"
+      ],
+      "entityGroups": [
+        [
+          "iran"
+        ],
+        [
+          "israel",
+          "以色列"
+        ]
+      ],
+      "sig": "43d0d6a8",
+      "sigFull": "43d0d6a8",
+      "sigCore": "83299573",
+      "reused": false
+    },
+    "412": {
+      "title": "Champions League: Which teams advance to Quarter-final?",
+      "marketIds": [
+        "412"
+      ],
+      "bestMarketId": "412",
+      "bestLabels": null,
+      "keywords": [
+        "champions league",
+        "ucl",
+        "uefa",
+        "quarter-final",
+        "last 8",
+        "knockout",
+        "round of 16",
+        "soccer",
+        "football",
+        "european cup",
+        "club competition",
+        "advancement",
+        "qualification",
+        "tie",
+        "leg",
+        "league which",
+        "which teams",
+        "teams advance",
+        "advance quarter-final",
+        "champions league which",
+        "league which teams",
+        "which teams advance",
+        "teams advance quarter-final"
+      ],
+      "entities": [
+        "champions league"
+      ],
+      "entityGroups": [
+        [
+          "champions league",
+          "欧洲冠军联赛"
+        ]
+      ],
+      "sig": "a957a4f9",
+      "sigFull": "a957a4f9",
+      "sigCore": "3f6d83c5",
+      "reused": false
+    },
+    "414": {
+      "title": "Which countries will strike Iran by March 31?",
+      "marketIds": [
+        "414"
+      ],
+      "bestMarketId": "414",
+      "bestLabels": null,
+      "keywords": [
+        "iran",
+        "strike",
+        "attack",
+        "military",
+        "missile",
+        "drone",
+        "tehran",
+        "conflict",
+        "war",
+        "retaliation",
+        "air strike",
+        "bombardment",
+        "escalation",
+        "middle east",
+        "which countries",
+        "countries strike",
+        "strike iran",
+        "iran march",
+        "which countries strike",
+        "countries strike iran",
+        "strike iran march"
+      ],
+      "entities": [
+        "iran"
+      ],
+      "entityGroups": [
+        [
+          "iran"
+        ]
+      ],
+      "sig": "eccd9c10",
+      "sigFull": "eccd9c10",
+      "sigCore": "23b39a26",
+      "reused": false
+    },
+    "415": {
+      "title": "Trump announces end of military operations against Iran by ...?",
+      "marketIds": [
+        "415"
+      ],
+      "bestMarketId": "415",
+      "bestLabels": null,
+      "keywords": [
+        "trump",
+        "iran",
+        "military operations",
+        "war",
+        "conflict",
+        "ceasefire",
+        "peace deal",
+        "withdrawal",
+        "troops",
+        "strike",
+        "hostilities",
+        "persian gulf",
+        "end war",
+        "iran war",
+        "trump iran",
+        "trump announces",
+        "announces military",
+        "operations against",
+        "against iran",
+        "trump announces military",
+        "announces military operations",
+        "military operations against",
+        "operations against iran"
+      ],
+      "entities": [
+        "trump",
+        "iran"
+      ],
+      "entityGroups": [
+        [
+          "trump",
+          "特朗普"
+        ],
+        [
+          "iran"
+        ]
+      ],
+      "sig": "07af54e5",
+      "sigFull": "07af54e5",
+      "sigCore": "d20f830c",
+      "reused": false
+    },
+    "413": {
+      "title": "What will Iran strike by March 31?",
+      "marketIds": [
+        "413"
+      ],
+      "bestMarketId": "413",
+      "bestLabels": null,
+      "keywords": [
+        "iran",
+        "iranian",
+        "strike",
+        "attack",
+        "missile",
+        "drone",
+        "retaliation",
+        "middle east",
+        "conflict",
+        "war",
+        "military",
+        "target",
+        "tehran",
+        "irgc",
+        "islamic republic",
+        "what iran",
+        "iran strike",
+        "strike march",
+        "what iran strike",
+        "iran strike march"
+      ],
+      "entities": [
+        "iran"
+      ],
+      "entityGroups": [
+        [
+          "iran"
+        ]
+      ],
+      "sig": "28b2401d",
+      "sigFull": "28b2401d",
+      "sigCore": "d3e01bcb",
       "reused": false
     }
   },
@@ -4105,81 +4246,6 @@
       },
       "type": "binary"
     },
-    "382": {
-      "title": "Next UK Prime Minister in 2026?",
-      "url": "https://app.opinion.trade/market/382?ref=opinion_hud",
-      "yesTokenId": "26495827518236503029405519606005894787462437154373878126582622808907868613495",
-      "noTokenId": "29650332706077509048612561032837277241529305021270124793063520408095542708823",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "uk",
-        "prime minister",
-        "pm",
-        "downing street",
-        "general election",
-        "2026 election",
-        "conservative",
-        "labour",
-        "party leader",
-        "politics",
-        "government",
-        "westminster",
-        "parliament",
-        "number 10",
-        "election",
-        "next prime",
-        "minister 2026",
-        "next prime minister",
-        "prime minister 2026"
-      ],
-      "entities": [
-        "uk prime minister"
-      ],
-      "entityGroups": [
-        [
-          "uk prime minister",
-          "prime minister",
-          "英国首相"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6842",
-          "title": "Shabana Mahmood",
-          "yesTokenId": "80902038432321611038443467518446809897691427542710509298327805728707610982758",
-          "noTokenId": "57930059987743599411091264742669359518358746886268747932148254724016008554282"
-        },
-        {
-          "marketId": "6843",
-          "title": "Andy Burnham",
-          "yesTokenId": "88355148947042095777123400494034925632091380503925567205417054619825232783387",
-          "noTokenId": "79911079996203091228381621092279741024040421638347744023784034396861018154926"
-        },
-        {
-          "marketId": "6844",
-          "title": "Nigel Farage",
-          "yesTokenId": "26495827518236503029405519606005894787462437154373878126582622808907868613495",
-          "noTokenId": "29650332706077509048612561032837277241529305021270124793063520408095542708823"
-        },
-        {
-          "marketId": "6845",
-          "title": "Al Carns",
-          "yesTokenId": "25280301109353904173862568612456537395782760126671591128539445382609322937636",
-          "noTokenId": "79011385822581563892714104094358966322548551937259041483284273945095112277942"
-        },
-        {
-          "marketId": "6846",
-          "title": "Lucy Powell",
-          "yesTokenId": "70211519783647372291084446106161305904934913619290278806464256739294849427596",
-          "noTokenId": "8528386139768395707251546742092693658428865859974922213674571771071283917156"
-        }
-      ]
-    },
     "6840": {
       "title": "Ed Miliband",
       "url": "https://app.opinion.trade/market/6840?ref=opinion_hud",
@@ -4239,283 +4305,6 @@
         "noLabel": ""
       },
       "type": "binary"
-    },
-    "381": {
-      "title": "Republican Presidential Nominee 2028",
-      "url": "https://app.opinion.trade/market/381?ref=opinion_hud",
-      "yesTokenId": "115766419742279218079453277166587817227540965815820263234834809226947716793560",
-      "noTokenId": "44421930778067381561386600878058093735727204225276361378107343535475988266743",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "gop",
-        "republican",
-        "republican party",
-        "2028 election",
-        "presidential nominee",
-        "gop primary",
-        "rnc",
-        "republican candidate",
-        "2028 race",
-        "gop convention",
-        "primary election",
-        "nomination",
-        "elephant",
-        "gop ticket",
-        "republican presidential",
-        "nominee 2028",
-        "republican presidential nominee",
-        "presidential nominee 2028"
-      ],
-      "entities": [
-        "republican",
-        "presidential nominee"
-      ],
-      "entityGroups": [
-        [
-          "republican",
-          "共和党"
-        ],
-        [
-          "presidential nominee",
-          "总统候选人"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6818",
-          "title": "J.D. Vance",
-          "yesTokenId": "61908768341985307215863936616184305901797585387451011044094800295609497556204",
-          "noTokenId": "3981893548504100103157109394164875789833120783641682717747363530619627361436"
-        },
-        {
-          "marketId": "6819",
-          "title": "Marco Rubio",
-          "yesTokenId": "7503770124210293806741070059367532835627105943565954708611532199001611998031",
-          "noTokenId": "6080060703897894838248479191361596924030355884171944997659113211920227842531"
-        },
-        {
-          "marketId": "6820",
-          "title": "Donald Trump",
-          "yesTokenId": "115766419742279218079453277166587817227540965815820263234834809226947716793560",
-          "noTokenId": "44421930778067381561386600878058093735727204225276361378107343535475988266743"
-        },
-        {
-          "marketId": "6821",
-          "title": "Ron DeSantis",
-          "yesTokenId": "30223820684776226286754281809527240288929835317763530130049624623234867847129",
-          "noTokenId": "45463878729081271246333286624177659022150254484282994918830058530456481027523"
-        },
-        {
-          "marketId": "6822",
-          "title": "Donald Trump Jr.",
-          "yesTokenId": "62641612045167820703188968624426403110961700950458012483045729814767553329897",
-          "noTokenId": "59024564885742969704375802558097659121795306891276829559391988147798379264871"
-        },
-        {
-          "marketId": "6823",
-          "title": "Ted Cruz",
-          "yesTokenId": "108415485092987485364062229714399610946914507372032987789759462881262340173515",
-          "noTokenId": "30065010056581785391996899823758539213029032565242728041620923011800743544530"
-        },
-        {
-          "marketId": "6824",
-          "title": "Glenn Youngkin",
-          "yesTokenId": "70152565946535239521982715689688848364095619203713260497641106698538970422419",
-          "noTokenId": "13033460482856363883836617847701852581083147334081116138160957031119530567532"
-        },
-        {
-          "marketId": "6825",
-          "title": "Tucker Carlson",
-          "yesTokenId": "10781331056507556241584741978162125205501437692105996980544657254488157897439",
-          "noTokenId": "86627603946854682676903534000734111636294275514150288314038506198650603304660"
-        },
-        {
-          "marketId": "6826",
-          "title": "Marjorie Taylor Greene",
-          "yesTokenId": "7411266256311585288348580435989946230431207842148336463294874316424265585076",
-          "noTokenId": "45143757922205939683740397118603197580535779437942451750969545247698595172931"
-        },
-        {
-          "marketId": "6827",
-          "title": "Thomas Massie",
-          "yesTokenId": "7719914886558344950921510728913303809603406904876321972347387511959432941260",
-          "noTokenId": "100241609481762763351474991062522574390471514512959767839583907870957424416414"
-        },
-        {
-          "marketId": "6828",
-          "title": "Nikki Haley",
-          "yesTokenId": "11774717638922067367406847839959220210539681264512614293349934454041740918638",
-          "noTokenId": "105720172631826133513601134216973292261830890409958972590819904878541708051457"
-        },
-        {
-          "marketId": "6829",
-          "title": "Vivek Ramaswamy",
-          "yesTokenId": "57161734247361548652991726546938315100737463819286269254511212844379194911941",
-          "noTokenId": "41380102028715220872882391906865594827089237569236004842348619348550119738913"
-        },
-        {
-          "marketId": "6830",
-          "title": "Josh Hawley",
-          "yesTokenId": "40184926925047483501075307503839571681494257539725320096397621401669207288534",
-          "noTokenId": "111515017664115387931555872085617504386010572968994213984327867097930187436623"
-        },
-        {
-          "marketId": "6831",
-          "title": "Rand Paul",
-          "yesTokenId": "31644376689201769808305523029294934558479661149870218778621387151543134376655",
-          "noTokenId": "34260531897711203383988340956991054097331824334692976220575593841166549769968"
-        },
-        {
-          "marketId": "6832",
-          "title": "Tulsi Gabbard",
-          "yesTokenId": "17271752921219410079222072654690587105409412395117271573637098891576629455277",
-          "noTokenId": "84194788439899411696765462187339739716710220382735668228394439482487147048241"
-        }
-      ]
-    },
-    "380": {
-      "title": "Democratic Presidential Nominee 2028",
-      "url": "https://app.opinion.trade/market/380?ref=opinion_hud",
-      "yesTokenId": "13729959306836510972223965710644646340074439406164323825236685509341761671404",
-      "noTokenId": "26879528398136772326630051675587732888449792012457249431502849667785114753941",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "keywords": [
-        "democrat",
-        "democratic party",
-        "nominee",
-        "nomination",
-        "primary",
-        "election",
-        "president",
-        "2028",
-        "potus",
-        "dnc",
-        "convention",
-        "candidate",
-        "ticket",
-        "us politics",
-        "campaign",
-        "democratic presidential",
-        "presidential nominee",
-        "nominee 2028",
-        "democratic presidential nominee",
-        "presidential nominee 2028"
-      ],
-      "entities": [
-        "民主党",
-        "presidential nominee"
-      ],
-      "entityGroups": [
-        [
-          "民主党"
-        ],
-        [
-          "presidential nominee",
-          "总统提名"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6804",
-          "title": "Gavin Newsom",
-          "yesTokenId": "7406949728254171104471570547656954413364478589149651129444530374993752988616",
-          "noTokenId": "78810382046900329890716358340533619018790445908323536704160071638289216293692"
-        },
-        {
-          "marketId": "6805",
-          "title": "Alexandria Ocasio-Cortez",
-          "yesTokenId": "17779148239933001858934721772949313143427436241807238850376441916606979517250",
-          "noTokenId": "17465337153542812385281748983163592099271759199888728264409310091458489174761"
-        },
-        {
-          "marketId": "6806",
-          "title": "Kamala Harris",
-          "yesTokenId": "46914435089813129119674140933887216406563361155127048247794981609185507175293",
-          "noTokenId": "63431520684574338334584495897786085987302335582883151181236215036096328808778"
-        },
-        {
-          "marketId": "6807",
-          "title": "Josh Shapiro",
-          "yesTokenId": "37285876110607078520781304522622596351581035995970703857913541988510405743022",
-          "noTokenId": "50061898338590927119739627926943460213063501460709670424255434104036785671100"
-        },
-        {
-          "marketId": "6808",
-          "title": "Jon Ossoff",
-          "yesTokenId": "14719249864995864508322227741512946577613023808131354873500399350581436497630",
-          "noTokenId": "6914253094954714134670247698040406665487661831266603652208852113007035352880"
-        },
-        {
-          "marketId": "6809",
-          "title": "Pete Buttigieg",
-          "yesTokenId": "25897220860704663686853163385401775339809882719685892536593106956091517067252",
-          "noTokenId": "53094587985860323525937986693926375408908434350239861819676451947178503156136"
-        },
-        {
-          "marketId": "6810",
-          "title": "Andy Beshear",
-          "yesTokenId": "114589317347560115642471139169913194046634169159207087221408380599904516382585",
-          "noTokenId": "31128076826572512639751523607431275146068308763652137394917322869023436931692"
-        },
-        {
-          "marketId": "6811",
-          "title": "J.B. Pritzker",
-          "yesTokenId": "53869269866439457477122655001819011458448836373012471347323862991950916216324",
-          "noTokenId": "4262352547937339394451682586300629559952568675224304377768966239585849230812"
-        },
-        {
-          "marketId": "6812",
-          "title": "Gretchen Whitmer",
-          "yesTokenId": "27739638622870675748947369877327005694647520519906335172528422727417322021765",
-          "noTokenId": "10451601908889658461295090427092248226700864972015201775617472628942602533613"
-        },
-        {
-          "marketId": "6813",
-          "title": "Jon Stewart",
-          "yesTokenId": "21043913869881065607215919074829140610015436783098184385410879030819277433658",
-          "noTokenId": "68126173769293536303961685544008923073687966074415278117017280441396041572165"
-        },
-        {
-          "marketId": "6814",
-          "title": "Mark Kelly",
-          "yesTokenId": "77429056000292292364463482788439258874550491601455748849543163759081445461080",
-          "noTokenId": "58077615053283069565733670051493747834074063288654860521929653968104946325998"
-        },
-        {
-          "marketId": "6815",
-          "title": "Wes Moore",
-          "yesTokenId": "26015100886669003460905753934188995983619256486869035547632729918175197637831",
-          "noTokenId": "49597919757937315797998511229387762692524739074062417270948019347875304890741"
-        },
-        {
-          "marketId": "6816",
-          "title": "Rahm Emanuel",
-          "yesTokenId": "13729959306836510972223965710644646340074439406164323825236685509341761671404",
-          "noTokenId": "26879528398136772326630051675587732888449792012457249431502849667785114753941"
-        },
-        {
-          "marketId": "6817",
-          "title": "Ruben Gallego",
-          "yesTokenId": "39396929247235574496011705399626413002981155053120747991424534053719643677194",
-          "noTokenId": "102145008606844868601748946721706797942641898783315944631357221937491564568413"
-        },
-        {
-          "marketId": "6834",
-          "title": "Stephen A. Smith",
-          "yesTokenId": "49251803291595447783531530304750933537873057583421965524977320207574510161306",
-          "noTokenId": "6668681434638864028299375859944752810417493602779377301540362017963375265391"
-        }
-      ]
     },
     "6909": {
       "title": "LCK: DNF vs DRX (Feb. 19 3:00AM ET)",
@@ -7452,6 +7241,673 @@
           "noTokenId": "42517838178967139958457965212953308114965561884322364947363054338452650514595"
         }
       ]
+    },
+    "8505": {
+      "title": "Valorant - VCT Masters: EDG vs G2 (Mar. 3 1:00PM ET)",
+      "url": "https://app.opinion.trade/market/8505?ref=opinion_hud",
+      "yesTokenId": "62538976086397112693431479535597394992507431883292718122602986306996393514923",
+      "noTokenId": "66365650210134560047126139175184009273778532538464038667257438548652276662916",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "EDG",
+        "noLabel": "G2"
+      },
+      "type": "binary"
+    },
+    "8506": {
+      "title": "Valorant - VCT Masters: XLG vs T1 (Mar. 3 4:00PM ET)",
+      "url": "https://app.opinion.trade/market/8506?ref=opinion_hud",
+      "yesTokenId": "12947392692909539575164857974271578051184176722275958053146843515783727279779",
+      "noTokenId": "74841615703516515414099933165457652480042671096710369790542476109192371784304",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "XLG",
+        "noLabel": "T1"
+      },
+      "type": "binary"
+    },
+    "417": {
+      "title": "Who will become the next supreme leader of Iran?",
+      "url": "https://app.opinion.trade/market/417?ref=opinion_hud",
+      "yesTokenId": "99493078599735693706267413735573567592877845009690112037692937257898637306398",
+      "noTokenId": "41104623889691769698119985666768930583724801040941110639982779421584042806208",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "iran",
+        "supreme leader",
+        "ayatollah",
+        "succession",
+        "tehran",
+        "islamic republic",
+        "regime",
+        "cleric",
+        "leadership",
+        "politics",
+        "khamenei",
+        "revolution",
+        "assembly of experts",
+        "guardian council",
+        "who become",
+        "become next",
+        "next supreme",
+        "leader iran",
+        "who become next",
+        "become next supreme",
+        "next supreme leader",
+        "supreme leader iran"
+      ],
+      "entities": [
+        "iran",
+        "supreme leader"
+      ],
+      "entityGroups": [
+        [
+          "iran"
+        ],
+        [
+          "supreme leader",
+          "最高领袖"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "8479",
+          "title": "Hassan Khomeini",
+          "yesTokenId": "101518654328506184715101813292964536625907418005663954577137964979298297760348",
+          "noTokenId": "36548146662754488424490279382245930455765889251982567133042488857827980070998"
+        },
+        {
+          "marketId": "8480",
+          "title": "Position abolished",
+          "yesTokenId": "99493078599735693706267413735573567592877845009690112037692937257898637306398",
+          "noTokenId": "41104623889691769698119985666768930583724801040941110639982779421584042806208"
+        },
+        {
+          "marketId": "8481",
+          "title": "Gholam-Hossein Mohseni-Eje'i",
+          "yesTokenId": "39018920994233027743684152203140946537020621659271348000144527362461332201619",
+          "noTokenId": "98061638453817615463584563687967541920748341170837990779075449430432417996162"
+        },
+        {
+          "marketId": "8482",
+          "title": "Alireza Arafi",
+          "yesTokenId": "21516582432569689789854405302607472975873803776065379784122379804777665477022",
+          "noTokenId": "111749417253059201031852792447103745609595693476457451041297335956823386141088"
+        },
+        {
+          "marketId": "8483",
+          "title": "Ali Larijani",
+          "yesTokenId": "69451384465481078509976988366502002236282593985372404109432927370884532409234",
+          "noTokenId": "67217174384916357578930858370654832682635023144606928365893971234830659679424"
+        },
+        {
+          "marketId": "8484",
+          "title": "Mojtaba Khamenei",
+          "yesTokenId": "21475125513953617737833788517008830239261290400839768056423933313693050146269",
+          "noTokenId": "88440166380960989331484923745670574561728694523706505050676867753843773912844"
+        },
+        {
+          "marketId": "8485",
+          "title": "None by June 30",
+          "yesTokenId": "67946016251615155220243091946623340869327262168313653163324445214373112425211",
+          "noTokenId": "84569475085009721220364547025503706059917500957888707128456876777326153706110"
+        }
+      ]
+    },
+    "8427": {
+      "title": "NBA: Lakers vs Nuggets (Mar. 5 10:00PM ET)",
+      "url": "https://app.opinion.trade/market/8427?ref=opinion_hud",
+      "yesTokenId": "76880410315786572231578837038681076589059803431425503342574903302169834998640",
+      "noTokenId": "39628856820305631154573411467226279183864563153096066866637098712166886117314",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Lakers",
+        "noLabel": "Nuggets"
+      },
+      "type": "binary"
+    },
+    "8453": {
+      "title": "Will Reza Pahlavi lead Iran in 2026?",
+      "url": "https://app.opinion.trade/market/8453?ref=opinion_hud",
+      "yesTokenId": "108761232996648696094986810839467600058532112370676838004575692955272599068666",
+      "noTokenId": "1793563387748901178305754283884242631241656865404004807132684174456387442413",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "type": "binary"
+    },
+    "8426": {
+      "title": "NBA: Raptors vs Timberwolves (Mar. 5 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/8426?ref=opinion_hud",
+      "yesTokenId": "62526316456157645224231185187493747628926866455381823805679417541059061933624",
+      "noTokenId": "59402895843859634346350351402349340472331777292757592168954028142353428882988",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Raptors",
+        "noLabel": "Timberwolves"
+      },
+      "type": "binary"
+    },
+    "8424": {
+      "title": "Bitcoin Up or Down on March 3?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/8424?ref=opinion_hud",
+      "yesTokenId": "111325818348433370781983395009607328552619813114618148637031250095067655535825",
+      "noTokenId": "71995495951526084217066977739941963830114190212015190332225882807427621219116",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "8425": {
+      "title": "NBA: Warriors vs Rockets (Mar. 5 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/8425?ref=opinion_hud",
+      "yesTokenId": "31622628644428001619501954076730539265920610426397468440214871277743945846235",
+      "noTokenId": "35612814967167912453549701210757951649781525658010058134720349052115308342683",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Warriors",
+        "noLabel": "Rockets"
+      },
+      "type": "binary"
+    },
+    "8454": {
+      "title": "Will another country strike Iran by March 31?",
+      "url": "https://app.opinion.trade/market/8454?ref=opinion_hud",
+      "yesTokenId": "103547191944275927319397930923247617986892997705650343876979549360205217332131",
+      "noTokenId": "95933159348436273793467930293360901943306121878636949789959401877323845099525",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "type": "binary"
+    },
+    "416": {
+      "title": "Iran x Israel/US conflict ends by...?",
+      "url": "https://app.opinion.trade/market/416?ref=opinion_hud",
+      "yesTokenId": "67129738220739634778627764930104442343310879400893880446444543078447327911577",
+      "noTokenId": "31694914401891819561027171211020004727305838689580066822492050897826842152749",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "iran",
+        "israel",
+        "usa",
+        "conflict",
+        "war",
+        "ceasefire",
+        "hostilities",
+        "middle east",
+        "tensions",
+        "military",
+        "escalation",
+        "peace",
+        "tehran",
+        "jerusalem",
+        "washington",
+        "iran israel/us",
+        "israel/us conflict",
+        "conflict ends",
+        "iran israel/us conflict",
+        "israel/us conflict ends"
+      ],
+      "entities": [
+        "iran",
+        "israel"
+      ],
+      "entityGroups": [
+        [
+          "iran"
+        ],
+        [
+          "israel",
+          "以色列"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "8476",
+          "title": "March 7, 2026",
+          "yesTokenId": "93185153689956747600437055326806163971418647095626796147123879850522013318354",
+          "noTokenId": "92769776062564217812948104237900090599333787742208377868857389589564681140981"
+        },
+        {
+          "marketId": "8477",
+          "title": "March 15, 2026",
+          "yesTokenId": "68432033547954553639406186941043903167978501216216263842067902504155187247063",
+          "noTokenId": "47811580885698260857205956358229659315920197460083337029889254433261899249353"
+        },
+        {
+          "marketId": "8478",
+          "title": "March 31, 2026",
+          "yesTokenId": "67129738220739634778627764930104442343310879400893880446444543078447327911577",
+          "noTokenId": "31694914401891819561027171211020004727305838689580066822492050897826842152749"
+        }
+      ]
+    },
+    "412": {
+      "title": "Champions League: Which teams advance to Quarter-final?",
+      "url": "https://app.opinion.trade/market/412?ref=opinion_hud",
+      "yesTokenId": "4643736701501993078866478358398987569537857919122085749488527426370335107450",
+      "noTokenId": "227525585532369933946887269524340339696201036157459157612550810341878285089",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "champions league",
+        "ucl",
+        "uefa",
+        "quarter-final",
+        "last 8",
+        "knockout",
+        "round of 16",
+        "soccer",
+        "football",
+        "european cup",
+        "club competition",
+        "advancement",
+        "qualification",
+        "tie",
+        "leg",
+        "league which",
+        "which teams",
+        "teams advance",
+        "advance quarter-final",
+        "champions league which",
+        "league which teams",
+        "which teams advance",
+        "teams advance quarter-final"
+      ],
+      "entities": [
+        "champions league"
+      ],
+      "entityGroups": [
+        [
+          "champions league",
+          "欧洲冠军联赛"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "8431",
+          "title": "Paris Saint-Germain",
+          "yesTokenId": "46586511530311599341038110725600443117690766927374404923033200223168022046034",
+          "noTokenId": "111426953119308431818101643793815884848234529240179641044999788708851866606380"
+        },
+        {
+          "marketId": "8432",
+          "title": "Chelsea",
+          "yesTokenId": "49523754952088044681722725546026586077935828475456599860329833388154189628387",
+          "noTokenId": "49498877735929280731600865862076166568280693894733445900433723476504454827702"
+        },
+        {
+          "marketId": "8433",
+          "title": "Galatasaray",
+          "yesTokenId": "16010158126638113230699825425911774442784817743786642395648499480178127205991",
+          "noTokenId": "32977078683134621825234948101094918255238869549881277035280290118590157694635"
+        },
+        {
+          "marketId": "8434",
+          "title": "Liverpool",
+          "yesTokenId": "67682169081129755269351541134507128847905060814591853637675372933802870669703",
+          "noTokenId": "83525567470050164950176212431266196774511158059164136524157843116103576443026"
+        },
+        {
+          "marketId": "8435",
+          "title": "Real Madrid",
+          "yesTokenId": "19138712387912764840580528882183894385699578846820230459890258914105474861610",
+          "noTokenId": "76023401018222323404189358396501040853108735229481238243258909798649652118630"
+        },
+        {
+          "marketId": "8436",
+          "title": "Manchester City",
+          "yesTokenId": "70215460878115609113654173910850069944283771623406387630791036992141635646533",
+          "noTokenId": "8750432465210230046757699834166141295801445458059331539998641368524143596077"
+        },
+        {
+          "marketId": "8437",
+          "title": "Atalanta",
+          "yesTokenId": "47772043655125005793885508972200148340358345979939467114146069939677886819283",
+          "noTokenId": "79349231007968971005735510430738705277766076348595287521822459040956884480378"
+        },
+        {
+          "marketId": "8438",
+          "title": "Bayern Munich",
+          "yesTokenId": "18125457268859930672712844692606393924167086856546104069249013399933353855141",
+          "noTokenId": "14327298309405761636135913697070642866895382636580749795340949875658289392004"
+        },
+        {
+          "marketId": "8439",
+          "title": "Newcastle",
+          "yesTokenId": "40503983275959758329343746716071226885127426568286897089592066166980739113230",
+          "noTokenId": "94999109783719813610846276658748704533296437642160169885394083792056172260504"
+        },
+        {
+          "marketId": "8440",
+          "title": "Barcelona",
+          "yesTokenId": "32129102125709590954275128209557295598401910861541421749832424855203845667041",
+          "noTokenId": "12838636714549138758500941079750665650276961605063008311447862149536887531557"
+        },
+        {
+          "marketId": "8441",
+          "title": "Atletico Madrid",
+          "yesTokenId": "57814351289822631588491451476612967049765101099518128314259952732491068587706",
+          "noTokenId": "7446851892546629016947518858599280045093201850196561761602821031646074594543"
+        },
+        {
+          "marketId": "8442",
+          "title": "Tottenham",
+          "yesTokenId": "14242457730324324029801001973727257015190431735389845121890563813886139767070",
+          "noTokenId": "79426600606728285889192648350233716543904853067104598897946346928061210114476"
+        },
+        {
+          "marketId": "8443",
+          "title": "Bodø/Glimt",
+          "yesTokenId": "59780108218125867782917238479217498322643772201080030684653637429205224879485",
+          "noTokenId": "94730833342222498542919701591816451962795982791976404227409958823947521526669"
+        },
+        {
+          "marketId": "8444",
+          "title": "Sporting CP",
+          "yesTokenId": "50362564766341034011250316953553156317054684994859598964768795362006794270276",
+          "noTokenId": "2859536279925664957757358759089481743396551169972361043103172112315210319425"
+        },
+        {
+          "marketId": "8445",
+          "title": "Leverkusen",
+          "yesTokenId": "4643736701501993078866478358398987569537857919122085749488527426370335107450",
+          "noTokenId": "227525585532369933946887269524340339696201036157459157612550810341878285089"
+        },
+        {
+          "marketId": "8446",
+          "title": "Arsenal",
+          "yesTokenId": "108367808762739505725501959849366437473871799077603199329152813158232659956264",
+          "noTokenId": "85135045885934978823997040747111975583318102729086250106340244784368137437207"
+        }
+      ]
+    },
+    "414": {
+      "title": "Which countries will strike Iran by March 31?",
+      "url": "https://app.opinion.trade/market/414?ref=opinion_hud",
+      "yesTokenId": "51347802435587645551073726402145407872695986786056509041870310741365121862436",
+      "noTokenId": "76901576696829948510717101389038364368882699490032109396892923730071845338909",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "iran",
+        "strike",
+        "attack",
+        "military",
+        "missile",
+        "drone",
+        "tehran",
+        "conflict",
+        "war",
+        "retaliation",
+        "air strike",
+        "bombardment",
+        "escalation",
+        "middle east",
+        "which countries",
+        "countries strike",
+        "strike iran",
+        "iran march",
+        "which countries strike",
+        "countries strike iran",
+        "strike iran march"
+      ],
+      "entities": [
+        "iran"
+      ],
+      "entityGroups": [
+        [
+          "iran"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "8462",
+          "title": "Saudi Arabia",
+          "yesTokenId": "77273556993305732564693310008398005445163119858949587839522029221801313883515",
+          "noTokenId": "108476683875493529011965433399993490067771377203451941786404391729987705027028"
+        },
+        {
+          "marketId": "8463",
+          "title": "UAE",
+          "yesTokenId": "51347802435587645551073726402145407872695986786056509041870310741365121862436",
+          "noTokenId": "76901576696829948510717101389038364368882699490032109396892923730071845338909"
+        },
+        {
+          "marketId": "8464",
+          "title": "UK",
+          "yesTokenId": "106070142707161222243168079056665010589534553432089877977793186226324369580626",
+          "noTokenId": "66896833567133500517546326644939897365693423977669672076710999703940751422034"
+        },
+        {
+          "marketId": "8465",
+          "title": "Qatar",
+          "yesTokenId": "104607297638713505765688554491061357464279474434243809806444819386532763107180",
+          "noTokenId": "3317332016920668754227077959022295110058953517423608785311444538842257522864"
+        },
+        {
+          "marketId": "8466",
+          "title": "France",
+          "yesTokenId": "28562774260251258022650954981179731944889238651184564913031041274124185650729",
+          "noTokenId": "29879110298133183303927935543559319618204766928605836039885747147976413044781"
+        },
+        {
+          "marketId": "8467",
+          "title": "Bahrain",
+          "yesTokenId": "28418684977063039584585200126045474511987815464324249459573561062102864197446",
+          "noTokenId": "111300568812599486188324014593572660665840670226029896079878705086860469026079"
+        },
+        {
+          "marketId": "8468",
+          "title": "Turkey",
+          "yesTokenId": "81860402258336949743071229948564219185086885750650955333512891627254464719230",
+          "noTokenId": "107941205229084170104706437934959647685242926611393664522720832303404049934100"
+        },
+        {
+          "marketId": "8469",
+          "title": "Germany",
+          "yesTokenId": "4877031050195974884610021207530881918084140833331921136510298481563971557869",
+          "noTokenId": "33191477596692716960253740552884606879023979692426989515428199024015201473486"
+        },
+        {
+          "marketId": "8470",
+          "title": "Jordan",
+          "yesTokenId": "111769058390689214495037390085496264286379355797520513419453055224602952400419",
+          "noTokenId": "43985776705828333091731241300955392699458052859196666755432190223449456997141"
+        },
+        {
+          "marketId": "8471",
+          "title": "Canada",
+          "yesTokenId": "39939580186307160127522486730923980397955246344826455249994746684595156549300",
+          "noTokenId": "5505675347373480329374179367790081352196551320848466157184489045738537529330"
+        }
+      ]
+    },
+    "415": {
+      "title": "Trump announces end of military operations against Iran by ...?",
+      "url": "https://app.opinion.trade/market/415?ref=opinion_hud",
+      "yesTokenId": "23157063364169271852776890721168198080562323326672793977226846720302403347006",
+      "noTokenId": "29667690231844087067276241813080664432038852936893432765481039244804495279561",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "trump",
+        "iran",
+        "military operations",
+        "war",
+        "conflict",
+        "ceasefire",
+        "peace deal",
+        "withdrawal",
+        "troops",
+        "strike",
+        "hostilities",
+        "persian gulf",
+        "end war",
+        "iran war",
+        "trump iran",
+        "trump announces",
+        "announces military",
+        "operations against",
+        "against iran",
+        "trump announces military",
+        "announces military operations",
+        "military operations against",
+        "operations against iran"
+      ],
+      "entities": [
+        "trump",
+        "iran"
+      ],
+      "entityGroups": [
+        [
+          "trump",
+          "特朗普"
+        ],
+        [
+          "iran"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "8472",
+          "title": "March 2, 2026",
+          "yesTokenId": "23157063364169271852776890721168198080562323326672793977226846720302403347006",
+          "noTokenId": "29667690231844087067276241813080664432038852936893432765481039244804495279561"
+        },
+        {
+          "marketId": "8473",
+          "title": "March 7, 2026",
+          "yesTokenId": "113758984573030766158019362886876693259312709886054129374970477663530595539088",
+          "noTokenId": "85711551944436220308107200973732829106755421952433637245661960775001285647061"
+        },
+        {
+          "marketId": "8474",
+          "title": "March 15, 2026",
+          "yesTokenId": "14074038339115625078427817390327243143394882801009228741851837561760725678389",
+          "noTokenId": "55889000230728445184439138398430680077049868635947359669175563682314196530384"
+        },
+        {
+          "marketId": "8475",
+          "title": "March 31, 2026",
+          "yesTokenId": "82328584884124981891580206116193958702322441519733574488020952603628280939735",
+          "noTokenId": "89406223880971551086039568285322358495527974568270866661974752527289572342868"
+        }
+      ]
+    },
+    "413": {
+      "title": "What will Iran strike by March 31?",
+      "url": "https://app.opinion.trade/market/413?ref=opinion_hud",
+      "yesTokenId": "22025707285588852032925264376727817051332654617613381221657674203246158765768",
+      "noTokenId": "36586907353002192713227303170823076492951730725323463281627146793248017069716",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "iran",
+        "iranian",
+        "strike",
+        "attack",
+        "missile",
+        "drone",
+        "retaliation",
+        "middle east",
+        "conflict",
+        "war",
+        "military",
+        "target",
+        "tehran",
+        "irgc",
+        "islamic republic",
+        "what iran",
+        "iran strike",
+        "strike march",
+        "what iran strike",
+        "iran strike march"
+      ],
+      "entities": [
+        "iran"
+      ],
+      "entityGroups": [
+        [
+          "iran"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "8455",
+          "title": "Dimona (Shimon Peres Negev Nuclear Research Center)",
+          "yesTokenId": "48025211704247466581376134677329461615838626107038200395611936979323456872405",
+          "noTokenId": "105332199011267979821169742060449533721187915185604413013308313689569280636067"
+        },
+        {
+          "marketId": "8456",
+          "title": "Ruwais Refinery",
+          "yesTokenId": "51701294660272836133256763059714864503457994251795490342587989517130342901524",
+          "noTokenId": "30172749868985641210106214826935102309291053580153298192707037773411237932"
+        },
+        {
+          "marketId": "8457",
+          "title": "Ghawar Field",
+          "yesTokenId": "83807443377765322078128189603469610950574274703199694661433667789160365710562",
+          "noTokenId": "59657191116523737550226226355727571604841612961411459397610543514538900116658"
+        },
+        {
+          "marketId": "8458",
+          "title": "Safaniya Field",
+          "yesTokenId": "21039679517332230393106441563437639488766559883674455974430419173116259559276",
+          "noTokenId": "107541927141718251060982351582754864562057671701839195505364337032056180997098"
+        },
+        {
+          "marketId": "8459",
+          "title": "Abqaiq oil processing facility",
+          "yesTokenId": "72261736160926739120252202344585495409978273776149039944841500541776151166201",
+          "noTokenId": "58428730993134861241540892005044851289155843076149991577375638172498834258339"
+        },
+        {
+          "marketId": "8460",
+          "title": "Mina Al-Ahmadi Refinery",
+          "yesTokenId": "80961901345287591314423989150309532670910673847384041205963032145228029391891",
+          "noTokenId": "20377362888046134018651480441190272496915855606234269046787368505942425129574"
+        },
+        {
+          "marketId": "8461",
+          "title": "Al Zour Refinery",
+          "yesTokenId": "22025707285588852032925264376727817051332654617613381221657674203246158765768",
+          "noTokenId": "36586907353002192713227303170823076492951730725323463281627146793248017069716"
+        }
+      ]
     }
   },
   "index": {
@@ -7497,9 +7953,6 @@
       "3509",
       "400"
     ],
-    "2026 election": [
-      "382"
-    ],
     "2026 elections": [
       "390"
     ],
@@ -7540,15 +7993,8 @@
     "2027": [
       "163"
     ],
-    "2028": [
-      "380"
-    ],
     "2028 election": [
-      "3055",
-      "381"
-    ],
-    "2028 race": [
-      "381"
+      "3055"
     ],
     "25th amendment": [
       "3062"
@@ -7633,6 +8079,12 @@
     "address": [
       "3365"
     ],
+    "advance quarter-final": [
+      "412"
+    ],
+    "advancement": [
+      "412"
+    ],
     "advisory": [
       "3369"
     ],
@@ -7641,11 +8093,15 @@
       "394",
       "396"
     ],
+    "against iran": [
+      "415"
+    ],
     "ai": [
       "406"
     ],
     "air strike": [
-      "3039"
+      "3039",
+      "414"
     ],
     "airdrop": [
       "118",
@@ -7713,6 +8169,12 @@
     "announcement": [
       "3257"
     ],
+    "announces military": [
+      "415"
+    ],
+    "announces military operations": [
+      "415"
+    ],
     "another critical": [
       "3357"
     ],
@@ -7753,13 +8215,21 @@
     "armageddon": [
       "2670"
     ],
+    "assembly of experts": [
+      "417"
+    ],
     "ath": [
       "3364",
       "3367",
       "3368"
     ],
     "attack": [
-      "3039"
+      "3039",
+      "413",
+      "414"
+    ],
+    "ayatollah": [
+      "417"
     ],
     "back": [
       "1856"
@@ -7799,6 +8269,12 @@
     ],
     "bear market": [
       "3265"
+    ],
+    "become next": [
+      "417"
+    ],
+    "become next supreme": [
+      "417"
     ],
     "bei return": [
       "1856"
@@ -7913,6 +8389,9 @@
     "bnbusdt": [
       "411"
     ],
+    "bombardment": [
+      "414"
+    ],
     "bombing": [
       "3039"
     ],
@@ -7979,14 +8458,8 @@
       "3449",
       "3509"
     ],
-    "campaign": [
-      "380"
-    ],
     "campionato": [
       "388"
-    ],
-    "candidate": [
-      "380"
     ],
     "canva": [
       "163"
@@ -8003,6 +8476,10 @@
     "casting": [
       "389"
     ],
+    "ceasefire": [
+      "415",
+      "416"
+    ],
     "celebrity": [
       "3158"
     ],
@@ -8018,6 +8495,12 @@
     ],
     "champion": [
       "401"
+    ],
+    "champions league": [
+      "412"
+    ],
+    "champions league which": [
+      "412"
     ],
     "championship": [
       "400"
@@ -8060,6 +8543,9 @@
     ],
     "claim": [
       "392"
+    ],
+    "cleric": [
+      "417"
     ],
     "close": [
       "402",
@@ -8106,6 +8592,9 @@
     "cloudflare status": [
       "3357"
     ],
+    "club competition": [
+      "412"
+    ],
     "coalition": [
       "383"
     ],
@@ -8135,7 +8624,14 @@
       "386"
     ],
     "conflict": [
-      "3039"
+      "3039",
+      "413",
+      "414",
+      "415",
+      "416"
+    ],
+    "conflict ends": [
+      "416"
     ],
     "congress": [
       "390"
@@ -8143,17 +8639,11 @@
     "consensys": [
       "118"
     ],
-    "conservative": [
-      "382"
-    ],
     "consolidation": [
       "2398"
     ],
     "contraction": [
       "3265"
-    ],
-    "convention": [
-      "380"
     ],
     "cook out": [
       "2368"
@@ -8166,6 +8656,12 @@
     ],
     "counter-strike 2": [
       "401"
+    ],
+    "countries strike": [
+      "414"
+    ],
+    "countries strike iran": [
+      "414"
     ],
     "court decision": [
       "1546"
@@ -8318,18 +8814,6 @@
     "delisting": [
       "3257"
     ],
-    "democrat": [
-      "380"
-    ],
-    "democratic party": [
-      "380"
-    ],
-    "democratic presidential": [
-      "380"
-    ],
-    "democratic presidential nominee": [
-      "380"
-    ],
     "democrats": [
       "390"
     ],
@@ -8369,17 +8853,11 @@
       "392",
       "397"
     ],
-    "dnc": [
-      "380"
-    ],
     "dollar": [
       "3359"
     ],
     "donald trump": [
       "3055"
-    ],
-    "downing street": [
-      "382"
     ],
     "downtime": [
       "3357"
@@ -8400,7 +8878,9 @@
       "3360"
     ],
     "drone": [
-      "3039"
+      "3039",
+      "413",
+      "414"
     ],
     "due date": [
       "3448"
@@ -8441,16 +8921,11 @@
       "3366"
     ],
     "election": [
-      "380",
-      "382",
       "383",
       "391"
     ],
     "election results": [
       "390"
-    ],
-    "elephant": [
-      "381"
     ],
     "eleven": [
       "3223"
@@ -8476,6 +8951,9 @@
     ],
     "end times": [
       "2670"
+    ],
+    "end war": [
+      "415"
     ],
     "endorse": [
       "3055"
@@ -8512,7 +8990,9 @@
       "118"
     ],
     "escalation": [
-      "3039"
+      "3039",
+      "414",
+      "416"
     ],
     "eschatology": [
       "2670"
@@ -8555,6 +9035,9 @@
     ],
     "ethereum hit march": [
       "409"
+    ],
+    "european cup": [
+      "412"
     ],
     "evm": [
       "1721",
@@ -8652,6 +9135,9 @@
     "flash loan attack": [
       "3360"
     ],
+    "football": [
+      "412"
+    ],
     "founder": [
       "3369"
     ],
@@ -8703,7 +9189,6 @@
       "3265"
     ],
     "general election": [
-      "382",
       "383"
     ],
     "genesis": [
@@ -8743,19 +9228,11 @@
       "3256"
     ],
     "gop": [
-      "381",
       "390",
       "391"
     ],
-    "gop convention": [
-      "381"
-    ],
     "gop primary": [
-      "3055",
-      "381"
-    ],
-    "gop ticket": [
-      "381"
+      "3055"
     ],
     "governance token": [
       "118",
@@ -8763,7 +9240,6 @@
       "395"
     ],
     "government": [
-      "382",
       "383"
     ],
     "government control": [
@@ -8775,6 +9251,9 @@
     "great earthquake": [
       "2668",
       "3356"
+    ],
+    "guardian council": [
+      "417"
     ],
     "hack": [
       "3360"
@@ -8855,6 +9334,10 @@
       "3221",
       "3222",
       "3223"
+    ],
+    "hostilities": [
+      "415",
+      "416"
     ],
     "house": [
       "390"
@@ -8939,25 +9422,61 @@
       "163"
     ],
     "iran": [
-      "3039"
+      "3039",
+      "413",
+      "414",
+      "415",
+      "416",
+      "417"
+    ],
+    "iran israel/us": [
+      "416"
+    ],
+    "iran israel/us conflict": [
+      "416"
     ],
     "iran march": [
-      "3039"
+      "3039",
+      "414"
     ],
     "iran march 2026": [
       "3039"
     ],
+    "iran strike": [
+      "413"
+    ],
+    "iran strike march": [
+      "413"
+    ],
+    "iran war": [
+      "415"
+    ],
+    "iranian": [
+      "413"
+    ],
     "irgc": [
-      "3039"
+      "3039",
+      "413"
+    ],
+    "islamic republic": [
+      "413",
+      "417"
     ],
     "israel": [
-      "3039"
+      "3039",
+      "416"
     ],
     "israel strikes": [
       "3039"
     ],
     "israel strikes iran": [
       "3039"
+    ],
+    "israel/us conflict": [
+      "416"
+    ],
+    "israel/us conflict ends": [
+      "416"
     ],
     "italian football": [
       "388"
@@ -8982,6 +9501,9 @@
     ],
     "jensen huang": [
       "406"
+    ],
+    "jerusalem": [
+      "416"
     ],
     "jesus": [
       "2670"
@@ -9018,6 +9540,12 @@
     "karen wheeler": [
       "3222"
     ],
+    "khamenei": [
+      "417"
+    ],
+    "knockout": [
+      "412"
+    ],
     "kraken": [
       "3362"
     ],
@@ -9044,12 +9572,12 @@
       "3366",
       "392"
     ],
-    "labour": [
-      "382"
-    ],
     "lan": [
       "400",
       "401"
+    ],
+    "last 8": [
+      "412"
     ],
     "launch": [
       "394"
@@ -9073,11 +9601,15 @@
     "leader": [
       "383"
     ],
+    "leader iran": [
+      "417"
+    ],
     "leaders": [
       "386"
     ],
     "leadership": [
-      "3369"
+      "3369",
+      "417"
     ],
     "leadership change": [
       "2368"
@@ -9088,6 +9620,12 @@
     "league s23 winner": [
       "401"
     ],
+    "league which": [
+      "412"
+    ],
+    "league which teams": [
+      "412"
+    ],
     "league winner": [
       "388"
     ],
@@ -9096,6 +9634,9 @@
     ],
     "leeco": [
       "1856"
+    ],
+    "leg": [
+      "412"
     ],
     "lega serie a": [
       "388"
@@ -9294,6 +9835,11 @@
     "mid-year 2026": [
       "3508"
     ],
+    "middle east": [
+      "413",
+      "414",
+      "416"
+    ],
     "midterm elections": [
       "390"
     ],
@@ -9309,17 +9855,27 @@
       "3508",
       "3525"
     ],
+    "military": [
+      "413",
+      "414",
+      "416"
+    ],
+    "military operations": [
+      "415"
+    ],
+    "military operations against": [
+      "415"
+    ],
     "mining algorithm": [
       "3256"
-    ],
-    "minister 2026": [
-      "382"
     ],
     "minister thailand": [
       "383"
     ],
     "missile": [
-      "3039"
+      "3039",
+      "413",
+      "414"
     ],
     "mm": [
       "118"
@@ -9450,29 +10006,19 @@
       "389"
     ],
     "next prime": [
-      "382",
       "383"
     ],
     "next prime minister": [
-      "382",
       "383"
+    ],
+    "next supreme": [
+      "417"
+    ],
+    "next supreme leader": [
+      "417"
     ],
     "nfl draft": [
       "3072"
-    ],
-    "nomination": [
-      "380",
-      "381"
-    ],
-    "nominee": [
-      "380"
-    ],
-    "nominee 2028": [
-      "380",
-      "381"
-    ],
-    "number 10": [
-      "382"
     ],
     "number one pick": [
       "3072"
@@ -9516,6 +10062,12 @@
     "opening price": [
       "396"
     ],
+    "operations against": [
+      "415"
+    ],
+    "operations against iran": [
+      "415"
+    ],
     "opposition": [
       "383"
     ],
@@ -9554,17 +10106,19 @@
       "1721"
     ],
     "parliament": [
-      "382",
       "383"
     ],
     "parousia": [
       "2670"
     ],
-    "party leader": [
-      "382"
-    ],
     "paxton": [
       "391"
+    ],
+    "peace": [
+      "416"
+    ],
+    "peace deal": [
+      "415"
     ],
     "peace talks": [
       "387"
@@ -9580,6 +10134,9 @@
     ],
     "perpetuals": [
       "3361"
+    ],
+    "persian gulf": [
+      "415"
     ],
     "pick 2026": [
       "3072"
@@ -9597,13 +10154,12 @@
       "401"
     ],
     "pm": [
-      "382",
       "383"
     ],
     "politics": [
-      "382",
       "383",
-      "391"
+      "391",
+      "417"
     ],
     "polls": [
       "391"
@@ -9612,8 +10168,7 @@
       "3256"
     ],
     "potus": [
-      "3062",
-      "380"
+      "3062"
     ],
     "power 2026": [
       "390"
@@ -9640,8 +10195,7 @@
       "395"
     ],
     "president": [
-      "3062",
-      "380"
+      "3062"
     ],
     "president 2027": [
       "3055",
@@ -9649,14 +10203,6 @@
     ],
     "presidential candidate": [
       "3055"
-    ],
-    "presidential nominee": [
-      "380",
-      "381"
-    ],
-    "presidential nominee 2028": [
-      "380",
-      "381"
     ],
     "price": [
       "3359",
@@ -9697,21 +10243,13 @@
       "3506"
     ],
     "primary": [
-      "380",
       "391"
-    ],
-    "primary election": [
-      "381"
     ],
     "primary winner": [
       "391"
     ],
     "prime minister": [
-      "382",
       "383"
-    ],
-    "prime minister 2026": [
-      "382"
     ],
     "prime minister thailand": [
       "383"
@@ -9790,6 +10328,9 @@
       "2668",
       "3356"
     ],
+    "qualification": [
+      "412"
+    ],
     "quantum computing": [
       "3256"
     ],
@@ -9798,6 +10339,9 @@
     ],
     "quarter": [
       "408"
+    ],
+    "quarter-final": [
+      "412"
     ],
     "quarterback": [
       "3072"
@@ -9834,6 +10378,9 @@
     "red status": [
       "3357"
     ],
+    "regime": [
+      "417"
+    ],
     "rehire": [
       "3369"
     ],
@@ -9869,23 +10416,10 @@
       "2368"
     ],
     "republican": [
-      "381",
       "391"
-    ],
-    "republican candidate": [
-      "381"
     ],
     "republican nomination": [
       "3055"
-    ],
-    "republican party": [
-      "381"
-    ],
-    "republican presidential": [
-      "381"
-    ],
-    "republican presidential nominee": [
-      "381"
     ],
     "republican senate": [
       "391"
@@ -9915,7 +10449,9 @@
       "2670"
     ],
     "retaliation": [
-      "3039"
+      "3039",
+      "413",
+      "414"
     ],
     "retroactive": [
       "392"
@@ -9945,15 +10481,15 @@
     "revelation": [
       "2670"
     ],
+    "revolution": [
+      "417"
+    ],
     "richter scale": [
       "2668",
       "3356"
     ],
     "riot games": [
       "400"
-    ],
-    "rnc": [
-      "381"
     ],
     "rollup": [
       "3366"
@@ -9962,6 +10498,9 @@
       "3505",
       "3506",
       "3525"
+    ],
+    "round of 16": [
+      "412"
     ],
     "rugpull": [
       "3360"
@@ -10139,6 +10678,9 @@
     "snapshot": [
       "392"
     ],
+    "soccer": [
+      "412"
+    ],
     "specific date": [
       "3449"
     ],
@@ -10206,7 +10748,19 @@
       "2398"
     ],
     "strike": [
-      "3039"
+      "3039",
+      "413",
+      "414",
+      "415"
+    ],
+    "strike iran": [
+      "414"
+    ],
+    "strike iran march": [
+      "414"
+    ],
+    "strike march": [
+      "413"
     ],
     "strikes iran": [
       "3039"
@@ -10216,6 +10770,9 @@
     ],
     "studio album": [
       "2178"
+    ],
+    "succession": [
+      "417"
     ],
     "successor": [
       "2368",
@@ -10233,6 +10790,12 @@
     ],
     "supreme court rules": [
       "1546"
+    ],
+    "supreme leader": [
+      "417"
+    ],
+    "supreme leader iran": [
+      "417"
     ],
     "swap": [
       "3365"
@@ -10256,7 +10819,8 @@
     "target": [
       "3449",
       "3505",
-      "3506"
+      "3506",
+      "413"
     ],
     "target date": [
       "3448",
@@ -10265,6 +10829,12 @@
     ],
     "tariffs": [
       "1546"
+    ],
+    "teams advance": [
+      "412"
+    ],
+    "teams advance quarter-final": [
+      "412"
     ],
     "tech": [
       "402",
@@ -10287,11 +10857,18 @@
       "3222"
     ],
     "tehran": [
-      "3039"
+      "3039",
+      "413",
+      "414",
+      "416",
+      "417"
     ],
     "temblor": [
       "2668",
       "3356"
+    ],
+    "tensions": [
+      "416"
     ],
     "tesla": [
       "408"
@@ -10360,8 +10937,8 @@
       "3257",
       "3362"
     ],
-    "ticket": [
-      "380"
+    "tie": [
+      "412"
     ],
     "tim cook": [
       "2368",
@@ -10469,6 +11046,9 @@
     "tribulation": [
       "2670"
     ],
+    "troops": [
+      "415"
+    ],
     "trophy": [
       "401"
     ],
@@ -10476,13 +11056,23 @@
       "1546",
       "3055",
       "3062",
-      "386"
+      "386",
+      "415"
+    ],
+    "trump announces": [
+      "415"
+    ],
+    "trump announces military": [
+      "415"
     ],
     "trump endorse": [
       "3055"
     ],
     "trump endorse vance": [
       "3055"
+    ],
+    "trump iran": [
+      "415"
     ],
     "trump out": [
       "3062"
@@ -10512,11 +11102,11 @@
       "3221",
       "3224"
     ],
-    "uk": [
-      "382"
+    "ucl": [
+      "412"
     ],
-    "uk prime minister": [
-      "382"
+    "uefa": [
+      "412"
     ],
     "ukraine": [
       "387"
@@ -10535,8 +11125,8 @@
     "us economy": [
       "3265"
     ],
-    "us politics": [
-      "380"
+    "usa": [
+      "416"
     ],
     "usdt": [
       "3359",
@@ -10639,7 +11229,11 @@
       "3365"
     ],
     "war": [
-      "3039"
+      "3039",
+      "413",
+      "414",
+      "415",
+      "416"
     ],
     "warner bros": [
       "2398"
@@ -10650,17 +11244,23 @@
     "warner bros.": [
       "2398"
     ],
+    "washington": [
+      "416"
+    ],
     "wbd": [
       "2398"
     ],
     "web3": [
       "118"
     ],
-    "westminster": [
-      "382"
-    ],
     "westworld": [
       "3158"
+    ],
+    "what iran": [
+      "413"
+    ],
+    "what iran strike": [
+      "413"
     ],
     "what price": [
       "409",
@@ -10685,8 +11285,26 @@
     "where trump putin": [
       "386"
     ],
+    "which countries": [
+      "414"
+    ],
+    "which countries strike": [
+      "414"
+    ],
+    "which teams": [
+      "412"
+    ],
+    "which teams advance": [
+      "412"
+    ],
     "white house": [
       "3062"
+    ],
+    "who become": [
+      "417"
+    ],
+    "who become next": [
+      "417"
     ],
     "who higher": [
       "1721"
@@ -10696,6 +11314,9 @@
     ],
     "will byers": [
       "3221"
+    ],
+    "withdrawal": [
+      "415"
     ],
     "yg entertainment": [
       "2178"
@@ -10735,13 +11356,11 @@
       "409"
     ],
     "以色列": [
-      "3039"
+      "3039",
+      "416"
     ],
     "公开募股": [
       "163"
-    ],
-    "共和党": [
-      "381"
     ],
     "共和党参议院初选": [
       "391"
@@ -10778,12 +11397,6 @@
     "德克萨斯": [
       "391"
     ],
-    "总统候选人": [
-      "381"
-    ],
-    "总统提名": [
-      "380"
-    ],
     "数字货币": [
       "397"
     ],
@@ -10796,13 +11409,16 @@
     "最高法院": [
       "1546"
     ],
+    "最高领袖": [
+      "417"
+    ],
+    "欧洲冠军联赛": [
+      "412"
+    ],
     "比特币": [
       "3256",
       "3365",
       "410"
-    ],
-    "民主党": [
-      "380"
     ],
     "泰莎·汤普森": [
       "3158"
@@ -10823,7 +11439,8 @@
       "1546",
       "3055",
       "3062",
-      "386"
+      "386",
+      "415"
     ],
     "第23赛季": [
       "401"
@@ -10836,9 +11453,6 @@
     ],
     "英伟达": [
       "406"
-    ],
-    "英国首相": [
-      "382"
     ],
     "蒂姆·库克": [
       "2368"
@@ -10875,9 +11489,6 @@
     "2026": [
       "400"
     ],
-    "2026 election": [
-      "382"
-    ],
     "2026 elections": [
       "390"
     ],
@@ -10889,15 +11500,6 @@
     ],
     "2027": [
       "163"
-    ],
-    "2028": [
-      "380"
-    ],
-    "2028 election": [
-      "381"
-    ],
-    "2028 race": [
-      "381"
     ],
     "aapl": [
       "407"
@@ -10928,12 +11530,24 @@
     "actor": [
       "389"
     ],
+    "advance quarter-final": [
+      "412"
+    ],
+    "advancement": [
+      "412"
+    ],
     "after launch": [
       "394",
       "396"
     ],
+    "against iran": [
+      "415"
+    ],
     "ai": [
       "406"
+    ],
+    "air strike": [
+      "414"
     ],
     "airdrop": [
       "118",
@@ -10967,6 +11581,12 @@
     "amzn close above": [
       "402"
     ],
+    "announces military": [
+      "415"
+    ],
+    "announces military operations": [
+      "415"
+    ],
     "apple": [
       "407"
     ],
@@ -10975,6 +11595,16 @@
     ],
     "apple aapl close": [
       "407"
+    ],
+    "assembly of experts": [
+      "417"
+    ],
+    "attack": [
+      "413",
+      "414"
+    ],
+    "ayatollah": [
+      "417"
     ],
     "balance of power": [
       "390"
@@ -10987,6 +11617,12 @@
     ],
     "bangkok": [
       "383"
+    ],
+    "become next": [
+      "417"
+    ],
+    "become next supreme": [
+      "417"
     ],
     "big tech": [
       "404"
@@ -11032,6 +11668,9 @@
     "bnbusdt": [
       "411"
     ],
+    "bombardment": [
+      "414"
+    ],
     "bond": [
       "389"
     ],
@@ -11059,14 +11698,8 @@
     "calcio": [
       "388"
     ],
-    "campaign": [
-      "380"
-    ],
     "campionato": [
       "388"
-    ],
-    "candidate": [
-      "380"
     ],
     "canva": [
       "163"
@@ -11078,11 +11711,21 @@
     "casting": [
       "389"
     ],
+    "ceasefire": [
+      "415",
+      "416"
+    ],
     "cerebras": [
       "163"
     ],
     "champion": [
       "401"
+    ],
+    "champions league": [
+      "412"
+    ],
+    "champions league which": [
+      "412"
     ],
     "championship": [
       "400"
@@ -11095,6 +11738,9 @@
     ],
     "claim": [
       "392"
+    ],
+    "cleric": [
+      "417"
     ],
     "close": [
       "402",
@@ -11123,6 +11769,9 @@
     "close price": [
       "404"
     ],
+    "club competition": [
+      "412"
+    ],
     "coalition": [
       "383"
     ],
@@ -11135,23 +11784,32 @@
     "conference": [
       "386"
     ],
+    "conflict": [
+      "413",
+      "414",
+      "415",
+      "416"
+    ],
+    "conflict ends": [
+      "416"
+    ],
     "congress": [
       "390"
     ],
     "consensys": [
       "118"
     ],
-    "conservative": [
-      "382"
-    ],
-    "convention": [
-      "380"
-    ],
     "cornyn": [
       "391"
     ],
     "counter-strike 2": [
       "401"
+    ],
+    "countries strike": [
+      "414"
+    ],
+    "countries strike iran": [
+      "414"
     ],
     "crypto": [
       "118",
@@ -11207,18 +11865,6 @@
       "409",
       "411"
     ],
-    "democrat": [
-      "380"
-    ],
-    "democratic party": [
-      "380"
-    ],
-    "democratic presidential": [
-      "380"
-    ],
-    "democratic presidential nominee": [
-      "380"
-    ],
     "democrats": [
       "390"
     ],
@@ -11240,11 +11886,9 @@
       "392",
       "397"
     ],
-    "dnc": [
-      "380"
-    ],
-    "downing street": [
-      "382"
+    "drone": [
+      "413",
+      "414"
     ],
     "e-commerce": [
       "402"
@@ -11255,22 +11899,20 @@
       "408"
     ],
     "election": [
-      "380",
-      "382",
       "383",
       "391"
     ],
     "election results": [
       "390"
     ],
-    "elephant": [
-      "381"
-    ],
     "eligibility": [
       "392"
     ],
     "encounter": [
       "386"
+    ],
+    "end war": [
+      "415"
     ],
     "eon productions": [
       "389"
@@ -11289,6 +11931,10 @@
     ],
     "erc20": [
       "118"
+    ],
+    "escalation": [
+      "414",
+      "416"
     ],
     "esl pro": [
       "401"
@@ -11318,6 +11964,9 @@
     ],
     "ethereum hit march": [
       "409"
+    ],
+    "european cup": [
+      "412"
     ],
     "evm": [
       "392"
@@ -11350,6 +11999,9 @@
     "finals": [
       "401"
     ],
+    "football": [
+      "412"
+    ],
     "fps": [
       "400"
     ],
@@ -11373,7 +12025,6 @@
       "395"
     ],
     "general election": [
-      "382",
       "383"
     ],
     "go live": [
@@ -11401,25 +12052,14 @@
       "405"
     ],
     "gop": [
-      "381",
       "390",
       "391"
-    ],
-    "gop convention": [
-      "381"
-    ],
-    "gop primary": [
-      "381"
-    ],
-    "gop ticket": [
-      "381"
     ],
     "governance token": [
       "118",
       "395"
     ],
     "government": [
-      "382",
       "383"
     ],
     "government control": [
@@ -11428,6 +12068,9 @@
     "gpu": [
       "406"
     ],
+    "guardian council": [
+      "417"
+    ],
     "halving": [
       "410"
     ],
@@ -11435,6 +12078,10 @@
       "409",
       "410",
       "411"
+    ],
+    "hostilities": [
+      "415",
+      "416"
     ],
     "house": [
       "390"
@@ -11460,6 +12107,50 @@
     "ipos 2027": [
       "163"
     ],
+    "iran": [
+      "413",
+      "414",
+      "415",
+      "416",
+      "417"
+    ],
+    "iran israel/us": [
+      "416"
+    ],
+    "iran israel/us conflict": [
+      "416"
+    ],
+    "iran march": [
+      "414"
+    ],
+    "iran strike": [
+      "413"
+    ],
+    "iran strike march": [
+      "413"
+    ],
+    "iran war": [
+      "415"
+    ],
+    "iranian": [
+      "413"
+    ],
+    "irgc": [
+      "413"
+    ],
+    "islamic republic": [
+      "413",
+      "417"
+    ],
+    "israel": [
+      "416"
+    ],
+    "israel/us conflict": [
+      "416"
+    ],
+    "israel/us conflict ends": [
+      "416"
+    ],
     "italian football": [
       "388"
     ],
@@ -11478,18 +12169,27 @@
     "jensen huang": [
       "406"
     ],
+    "jerusalem": [
+      "416"
+    ],
+    "khamenei": [
+      "417"
+    ],
+    "knockout": [
+      "412"
+    ],
     "kremlin": [
       "387"
     ],
     "l2": [
       "392"
     ],
-    "labour": [
-      "382"
-    ],
     "lan": [
       "400",
       "401"
+    ],
+    "last 8": [
+      "412"
     ],
     "launch": [
       "394"
@@ -11505,8 +12205,14 @@
     "leader": [
       "383"
     ],
+    "leader iran": [
+      "417"
+    ],
     "leaders": [
       "386"
+    ],
+    "leadership": [
+      "417"
     ],
     "league s23": [
       "401"
@@ -11514,8 +12220,17 @@
     "league s23 winner": [
       "401"
     ],
+    "league which": [
+      "412"
+    ],
+    "league which teams": [
+      "412"
+    ],
     "league winner": [
       "388"
+    ],
+    "leg": [
+      "412"
     ],
     "lega serie a": [
       "388"
@@ -11628,17 +12343,34 @@
     "microsoft msft close": [
       "404"
     ],
+    "middle east": [
+      "413",
+      "414",
+      "416"
+    ],
     "midterm elections": [
       "390"
     ],
     "midterms": [
       "390"
     ],
-    "minister 2026": [
-      "382"
+    "military": [
+      "413",
+      "414",
+      "416"
+    ],
+    "military operations": [
+      "415"
+    ],
+    "military operations against": [
+      "415"
     ],
     "minister thailand": [
       "383"
+    ],
+    "missile": [
+      "413",
+      "414"
     ],
     "mm": [
       "118"
@@ -11682,26 +12414,16 @@
       "389"
     ],
     "next prime": [
-      "382",
       "383"
     ],
     "next prime minister": [
-      "382",
       "383"
     ],
-    "nomination": [
-      "380",
-      "381"
+    "next supreme": [
+      "417"
     ],
-    "nominee": [
-      "380"
-    ],
-    "nominee 2028": [
-      "380",
-      "381"
-    ],
-    "number 10": [
-      "382"
+    "next supreme leader": [
+      "417"
     ],
     "nvda": [
       "406"
@@ -11732,6 +12454,12 @@
     "opening price": [
       "396"
     ],
+    "operations against": [
+      "415"
+    ],
+    "operations against iran": [
+      "415"
+    ],
     "opposition": [
       "383"
     ],
@@ -11740,20 +12468,25 @@
       "405"
     ],
     "parliament": [
-      "382",
       "383"
-    ],
-    "party leader": [
-      "382"
     ],
     "paxton": [
       "391"
+    ],
+    "peace": [
+      "416"
+    ],
+    "peace deal": [
+      "415"
     ],
     "peace talks": [
       "387"
     ],
     "performance": [
       "408"
+    ],
+    "persian gulf": [
+      "415"
     ],
     "platform": [
       "394"
@@ -11765,19 +12498,15 @@
       "401"
     ],
     "pm": [
-      "382",
       "383"
     ],
     "politics": [
-      "382",
       "383",
-      "391"
+      "391",
+      "417"
     ],
     "polls": [
       "391"
-    ],
-    "potus": [
-      "380"
     ],
     "power 2026": [
       "390"
@@ -11802,17 +12531,6 @@
     "prediction market": [
       "394",
       "395"
-    ],
-    "president": [
-      "380"
-    ],
-    "presidential nominee": [
-      "380",
-      "381"
-    ],
-    "presidential nominee 2028": [
-      "380",
-      "381"
     ],
     "price": [
       "394",
@@ -11844,21 +12562,13 @@
       "409"
     ],
     "primary": [
-      "380",
       "391"
-    ],
-    "primary election": [
-      "381"
     ],
     "primary winner": [
       "391"
     ],
     "prime minister": [
-      "382",
       "383"
-    ],
-    "prime minister 2026": [
-      "382"
     ],
     "prime minister thailand": [
       "383"
@@ -11905,27 +12615,23 @@
     "q1": [
       "408"
     ],
+    "qualification": [
+      "412"
+    ],
     "quarter": [
       "408"
+    ],
+    "quarter-final": [
+      "412"
     ],
     "rally": [
       "402"
     ],
+    "regime": [
+      "417"
+    ],
     "republican": [
-      "381",
       "391"
-    ],
-    "republican candidate": [
-      "381"
-    ],
-    "republican party": [
-      "381"
-    ],
-    "republican presidential": [
-      "381"
-    ],
-    "republican presidential nominee": [
-      "381"
     ],
     "republican senate": [
       "391"
@@ -11939,14 +12645,21 @@
     "resistance": [
       "410"
     ],
+    "retaliation": [
+      "413",
+      "414"
+    ],
     "retroactive": [
       "392"
+    ],
+    "revolution": [
+      "417"
     ],
     "riot games": [
       "400"
     ],
-    "rnc": [
-      "381"
+    "round of 16": [
+      "412"
     ],
     "russia": [
       "387"
@@ -12025,6 +12738,9 @@
     "snapshot": [
       "392"
     ],
+    "soccer": [
+      "412"
+    ],
     "speculation": [
       "394",
       "395"
@@ -12047,12 +12763,35 @@
     "stock market": [
       "163"
     ],
+    "strike": [
+      "413",
+      "414",
+      "415"
+    ],
+    "strike iran": [
+      "414"
+    ],
+    "strike iran march": [
+      "414"
+    ],
+    "strike march": [
+      "413"
+    ],
+    "succession": [
+      "417"
+    ],
     "successor": [
       "389"
     ],
     "summit": [
       "386",
       "387"
+    ],
+    "supreme leader": [
+      "417"
+    ],
+    "supreme leader iran": [
+      "417"
     ],
     "sweep": [
       "390"
@@ -12063,6 +12802,15 @@
     "talks": [
       "386",
       "387"
+    ],
+    "target": [
+      "413"
+    ],
+    "teams advance": [
+      "412"
+    ],
+    "teams advance quarter-final": [
+      "412"
     ],
     "tech": [
       "402",
@@ -12076,6 +12824,15 @@
     ],
     "tech stock": [
       "404"
+    ],
+    "tehran": [
+      "413",
+      "414",
+      "416",
+      "417"
+    ],
+    "tensions": [
+      "416"
     ],
     "tesla": [
       "408"
@@ -12106,8 +12863,8 @@
     "thailand": [
       "383"
     ],
-    "ticket": [
-      "380"
+    "tie": [
+      "412"
     ],
     "tim cook": [
       "407"
@@ -12161,11 +12918,24 @@
       "410",
       "411"
     ],
+    "troops": [
+      "415"
+    ],
     "trophy": [
       "401"
     ],
     "trump": [
-      "386"
+      "386",
+      "415"
+    ],
+    "trump announces": [
+      "415"
+    ],
+    "trump announces military": [
+      "415"
+    ],
+    "trump iran": [
+      "415"
     ],
     "trump putin": [
       "386"
@@ -12182,11 +12952,11 @@
     "tsla close above": [
       "408"
     ],
-    "uk": [
-      "382"
+    "ucl": [
+      "412"
     ],
-    "uk prime minister": [
-      "382"
+    "uefa": [
+      "412"
     ],
     "ukraine": [
       "387"
@@ -12194,8 +12964,8 @@
     "unicorns": [
       "163"
     ],
-    "us politics": [
-      "380"
+    "usa": [
+      "416"
     ],
     "valorant": [
       "400"
@@ -12251,11 +13021,23 @@
     "wallet": [
       "118"
     ],
+    "war": [
+      "413",
+      "414",
+      "415",
+      "416"
+    ],
+    "washington": [
+      "416"
+    ],
     "web3": [
       "118"
     ],
-    "westminster": [
-      "382"
+    "what iran": [
+      "413"
+    ],
+    "what iran strike": [
+      "413"
     ],
     "what price": [
       "409",
@@ -12277,6 +13059,27 @@
     "where trump putin": [
       "386"
     ],
+    "which countries": [
+      "414"
+    ],
+    "which countries strike": [
+      "414"
+    ],
+    "which teams": [
+      "412"
+    ],
+    "which teams advance": [
+      "412"
+    ],
+    "who become": [
+      "417"
+    ],
+    "who become next": [
+      "417"
+    ],
+    "withdrawal": [
+      "415"
+    ],
     "zelenskyy": [
       "387"
     ],
@@ -12293,11 +13096,11 @@
       "392",
       "409"
     ],
+    "以色列": [
+      "416"
+    ],
     "公开募股": [
       "163"
-    ],
-    "共和党": [
-      "381"
     ],
     "共和党参议院初选": [
       "391"
@@ -12314,12 +13117,6 @@
     "德克萨斯": [
       "391"
     ],
-    "总统候选人": [
-      "381"
-    ],
-    "总统提名": [
-      "380"
-    ],
     "数字货币": [
       "397"
     ],
@@ -12329,11 +13126,14 @@
     "无畏契约大师赛": [
       "400"
     ],
+    "最高领袖": [
+      "417"
+    ],
+    "欧洲冠军联赛": [
+      "412"
+    ],
     "比特币": [
       "410"
-    ],
-    "民主党": [
-      "380"
     ],
     "泽连斯基": [
       "387"
@@ -12342,16 +13142,14 @@
       "408"
     ],
     "特朗普": [
-      "386"
+      "386",
+      "415"
     ],
     "第23赛季": [
       "401"
     ],
     "英伟达": [
       "406"
-    ],
-    "英国首相": [
-      "382"
     ],
     "詹姆斯·邦德": [
       "389"
