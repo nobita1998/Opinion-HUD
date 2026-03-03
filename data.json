@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-03 01:02:26 UTC+8",
+    "generatedAt": "2026-03-03 10:54:44 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 284,
-      "markets": 196,
+      "kept": 270,
+      "markets": 187,
       "keywords": 1050,
       "events": {
-        "events": 32
+        "events": 31
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 716,
+        "cutoff_expired": 730,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 26,
+        "reused": 31,
         "regenerated_empty_entitygroups": 0,
-        "calls": 6,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 6,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -5792,42 +5792,6 @@
       },
       "type": "binary"
     },
-    "8269": {
-      "title": "NBA: Pelicans vs Lakers (Mar. 3 10:30PM ET)",
-      "url": "https://app.opinion.trade/market/8269?ref=opinion_hud",
-      "yesTokenId": "45692611765457967817923986657979292710347740109556522819990597880717785436401",
-      "noTokenId": "15038873108331114823939890315526122266315450008296498367238598113914988777452",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Pelicans",
-        "noLabel": "Lakers"
-      },
-      "type": "binary"
-    },
-    "8267": {
-      "title": "NBA: Pistons vs Cavaliers (Mar. 3 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/8267?ref=opinion_hud",
-      "yesTokenId": "110052442273557448128811031980222118931503212925877252582714538462029228685363",
-      "noTokenId": "90116908527711054476661838460677922404061202584757610291859766497061178876889",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Pistons",
-        "noLabel": "Cavaliers"
-      },
-      "type": "binary"
-    },
-    "8268": {
-      "title": "NBA: Spurs vs 76ers (Mar. 3 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/8268?ref=opinion_hud",
-      "yesTokenId": "90132768574450297300414450002070836578076318000159461432044884899665221092895",
-      "noTokenId": "17052404710066827449833825646033612685688537097969022991522859053527011835416",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Spurs",
-        "noLabel": "76ers"
-      },
-      "type": "binary"
-    },
     "401": {
       "title": "CS2 ESL Pro League S23 Winner",
       "url": "https://app.opinion.trade/market/401?ref=opinion_hud",
@@ -6858,42 +6822,6 @@
       },
       "type": "binary"
     },
-    "8371": {
-      "title": "KPL: WE vs ESP (Mar. 3 1:00AM ET)",
-      "url": "https://app.opinion.trade/market/8371?ref=opinion_hud",
-      "yesTokenId": "23898000816838880664052549923067546538581801219331483112255238540409998745970",
-      "noTokenId": "69590761748337996924156956739640656983538402343921852717778847451838536032333",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "WE",
-        "noLabel": "ESP"
-      },
-      "type": "binary"
-    },
-    "8372": {
-      "title": "KPL: RW vs LGD.NBW (Mar. 3 6:00AM ET)",
-      "url": "https://app.opinion.trade/market/8372?ref=opinion_hud",
-      "yesTokenId": "89849248227288483365662149430009144482297293424465367417928178763130698017445",
-      "noTokenId": "54284118108559161856870394473534028784358551708322315584008572572922650232244",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "RW",
-        "noLabel": "LGD.NBW"
-      },
-      "type": "binary"
-    },
-    "8376": {
-      "title": "LPL: AL vs IG (Mar. 3 4:00AM ET)",
-      "url": "https://app.opinion.trade/market/8376?ref=opinion_hud",
-      "yesTokenId": "26737655060078663336066095663612306932816529007671096196901322686131329609294",
-      "noTokenId": "21716532503556608250512906046351871501729857117347267193814040950562954584832",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "AL",
-        "noLabel": "IG"
-      },
-      "type": "binary"
-    },
     "8298": {
       "title": "NBA: Hawks vs Bucks (Mar. 4 9:30PM ET)",
       "url": "https://app.opinion.trade/market/8298?ref=opinion_hud",
@@ -7242,30 +7170,6 @@
         }
       ]
     },
-    "8505": {
-      "title": "Valorant - VCT Masters: EDG vs G2 (Mar. 3 1:00PM ET)",
-      "url": "https://app.opinion.trade/market/8505?ref=opinion_hud",
-      "yesTokenId": "62538976086397112693431479535597394992507431883292718122602986306996393514923",
-      "noTokenId": "66365650210134560047126139175184009273778532538464038667257438548652276662916",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "EDG",
-        "noLabel": "G2"
-      },
-      "type": "binary"
-    },
-    "8506": {
-      "title": "Valorant - VCT Masters: XLG vs T1 (Mar. 3 4:00PM ET)",
-      "url": "https://app.opinion.trade/market/8506?ref=opinion_hud",
-      "yesTokenId": "12947392692909539575164857974271578051184176722275958053146843515783727279779",
-      "noTokenId": "74841615703516515414099933165457652480042671096710369790542476109192371784304",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "XLG",
-        "noLabel": "T1"
-      },
-      "type": "binary"
-    },
     "417": {
       "title": "Who will become the next supreme leader of Iran?",
       "url": "https://app.opinion.trade/market/417?ref=opinion_hud",
@@ -7392,18 +7296,6 @@
       "labels": {
         "yesLabel": "Raptors",
         "noLabel": "Timberwolves"
-      },
-      "type": "binary"
-    },
-    "8424": {
-      "title": "Bitcoin Up or Down on March 3?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/8424?ref=opinion_hud",
-      "yesTokenId": "111325818348433370781983395009607328552619813114618148637031250095067655535825",
-      "noTokenId": "71995495951526084217066977739941963830114190212015190332225882807427621219116",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
