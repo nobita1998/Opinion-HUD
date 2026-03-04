@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-04 10:47:30 UTC+8",
+    "generatedAt": "2026-03-04 16:54:23 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 262,
-      "markets": 181,
+      "kept": 263,
+      "markets": 182,
       "keywords": 1050,
       "events": {
         "events": 31
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 738,
+        "cutoff_expired": 737,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -7728,6 +7728,18 @@
           "noTokenId": "36586907353002192713227303170823076492951730725323463281627146793248017069716"
         }
       ]
+    },
+    "8636": {
+      "title": "Bitcoin Up or Down on March 5?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/8636?ref=opinion_hud",
+      "yesTokenId": "64792086156150004434496970783240627553285561737315488903087186148244081022348",
+      "noTokenId": "12110740337094073085357708144090709784678323036769410581629264800549395876215",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
