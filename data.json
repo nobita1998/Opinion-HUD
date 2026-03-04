@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-04 01:02:34 UTC+8",
+    "generatedAt": "2026-03-04 10:47:30 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 269,
-      "markets": 188,
+      "kept": 262,
+      "markets": 181,
       "keywords": 1050,
       "events": {
         "events": 31
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 731,
+        "cutoff_expired": 738,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -6786,54 +6786,6 @@
         }
       ]
     },
-    "8373": {
-      "title": "KPL: Q9 vs JDG (Mar. 4 1:00AM ET)",
-      "url": "https://app.opinion.trade/market/8373?ref=opinion_hud",
-      "yesTokenId": "37146179192477716921005278388781602493159521313544639124755596598851745600953",
-      "noTokenId": "49818901601248132476270568211718769330565631438375921618046837507734716715080",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Q9",
-        "noLabel": "JDG"
-      },
-      "type": "binary"
-    },
-    "8377": {
-      "title": "LPL: JDG vs BLG (Mar. 4 4:00AM ET)",
-      "url": "https://app.opinion.trade/market/8377?ref=opinion_hud",
-      "yesTokenId": "61687617947087868075040967055028674746642590963306326844648701295875960939294",
-      "noTokenId": "97188772595183615408409651186610739512258888495347533533868406751328582666295",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "JDG",
-        "noLabel": "BLG"
-      },
-      "type": "binary"
-    },
-    "8374": {
-      "title": "KPL: TTG vs AG.SP (Mar. 4 6:00AM ET)",
-      "url": "https://app.opinion.trade/market/8374?ref=opinion_hud",
-      "yesTokenId": "108903938753500409301505905070740078099147707044055879978865749366754671125666",
-      "noTokenId": "85356317173983438700997983408667751957081440049526493350337111653002289154291",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "TTG",
-        "noLabel": "No"
-      },
-      "type": "binary"
-    },
-    "8298": {
-      "title": "NBA: Hawks vs Bucks (Mar. 4 9:30PM ET)",
-      "url": "https://app.opinion.trade/market/8298?ref=opinion_hud",
-      "yesTokenId": "35976046239138442133380153028918352754104317203009785938154099054247314391946",
-      "noTokenId": "35203653372721804665717939249126160625695477380366368955165985816298074221132",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Hawks",
-        "noLabel": "Bucks"
-      },
-      "type": "binary"
-    },
     "410": {
       "title": "What price will Bitcoin hit in March?",
       "url": "https://app.opinion.trade/market/410?ref=opinion_hud",
@@ -6941,30 +6893,6 @@
           "noTokenId": "14001951345777312074991910005314168210863019082540720901652868198130511172808"
         }
       ]
-    },
-    "8297": {
-      "title": "NBA: Hornets vs Celtics (Mar. 4 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/8297?ref=opinion_hud",
-      "yesTokenId": "49948059487770389343493607409271055940433513931106171694414655960586734294817",
-      "noTokenId": "52895973468261425121766480330593564327461507022301317845862297698169448005146",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Hornets",
-        "noLabel": "Celtics"
-      },
-      "type": "binary"
-    },
-    "8299": {
-      "title": "NBA: Pacers vs Clippers (Mar. 4 10:30PM ET)",
-      "url": "https://app.opinion.trade/market/8299?ref=opinion_hud",
-      "yesTokenId": "37809938168207889137466269920285587504658012452211577544884749681277571324724",
-      "noTokenId": "44515989658515997759614069767003733732173884492438661724985569552152271122558",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Pacers",
-        "noLabel": "Clippers"
-      },
-      "type": "binary"
     },
     "411": {
       "title": "What price will BNB hit in March?",
@@ -7800,18 +7728,6 @@
           "noTokenId": "36586907353002192713227303170823076492951730725323463281627146793248017069716"
         }
       ]
-    },
-    "8569": {
-      "title": "Bitcoin Up or Down on March 4?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/8569?ref=opinion_hud",
-      "yesTokenId": "90037867403590083376275004242174563434603702047890188939566009426500941473058",
-      "noTokenId": "67453470304884950501673642120279059200022200702406031567965464570598134705883",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
     }
   },
   "index": {
