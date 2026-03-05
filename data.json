@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-05 01:00:06 UTC+8",
+    "generatedAt": "2026-03-05 10:50:13 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 263,
-      "markets": 182,
-      "keywords": 1050,
+      "kept": 252,
+      "markets": 177,
+      "keywords": 1035,
       "events": {
-        "events": 31
+        "events": 30
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 737,
+        "cutoff_expired": 748,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 31,
+        "reused": 30,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -40,51 +40,6 @@
     }
   },
   "events": {
-    "383": {
-      "title": "Next Prime Minister of Thailand",
-      "marketIds": [
-        "383"
-      ],
-      "bestMarketId": "383",
-      "bestLabels": null,
-      "keywords": [
-        "thailand",
-        "thai",
-        "prime minister",
-        "pm",
-        "election",
-        "politics",
-        "government",
-        "bangkok",
-        "parliament",
-        "vote",
-        "coalition",
-        "leader",
-        "cabinet",
-        "general election",
-        "opposition",
-        "next prime",
-        "minister thailand",
-        "next prime minister",
-        "prime minister thailand"
-      ],
-      "entities": [
-        "thailand",
-        "prime minister"
-      ],
-      "entityGroups": [
-        [
-          "thailand"
-        ],
-        [
-          "prime minister"
-        ]
-      ],
-      "sig": "1761593b",
-      "sigFull": "1761593b",
-      "sigCore": "e36461db",
-      "reused": false
-    },
     "391": {
       "title": "Texas Republican Senate Primary Winner",
       "marketIds": [
@@ -4318,95 +4273,6 @@
       },
       "type": "binary"
     },
-    "383": {
-      "title": "Next Prime Minister of Thailand",
-      "url": "https://app.opinion.trade/market/383?ref=opinion_hud",
-      "yesTokenId": "825502945074105563041430210480130468679523921803550611340686285554357346042",
-      "noTokenId": "99545692538582465002412512220415610700032887876113605798790581146839869190435",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "keywords": [
-        "thailand",
-        "thai",
-        "prime minister",
-        "pm",
-        "election",
-        "politics",
-        "government",
-        "bangkok",
-        "parliament",
-        "vote",
-        "coalition",
-        "leader",
-        "cabinet",
-        "general election",
-        "opposition",
-        "next prime",
-        "minister thailand",
-        "next prime minister",
-        "prime minister thailand"
-      ],
-      "entities": [
-        "thailand",
-        "prime minister"
-      ],
-      "entityGroups": [
-        [
-          "thailand"
-        ],
-        [
-          "prime minister"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "6978",
-          "title": "Anutin Charnvirakul",
-          "yesTokenId": "15156183953699151197325366358013464640317633612130716141814320765980477533447",
-          "noTokenId": "24761897751812130979351399642534017370005544231063985338879818599257714371286"
-        },
-        {
-          "marketId": "6979",
-          "title": "Yodchanan Wongsawat",
-          "yesTokenId": "83336577514555106053859511451177733721115053857822584018216406037131009137287",
-          "noTokenId": "17747388570179122490682313876849656634731579944447895303577618751655976279654"
-        },
-        {
-          "marketId": "6980",
-          "title": "Natthaphong Ruengpanyawut",
-          "yesTokenId": "825502945074105563041430210480130468679523921803550611340686285554357346042",
-          "noTokenId": "99545692538582465002412512220415610700032887876113605798790581146839869190435"
-        },
-        {
-          "marketId": "6981",
-          "title": "Julapun Amornvivat",
-          "yesTokenId": "53441061774092397792978912561944024346881147172187729574440038287042189475922",
-          "noTokenId": "87128328563953754166357210374026124074540076589885418913076443897329399985578"
-        },
-        {
-          "marketId": "6982",
-          "title": "Paetongtarn Shinawatra",
-          "yesTokenId": "101618580485805439936397740665305663155519835873389129491085656975242640735844",
-          "noTokenId": "28645403769840163139126807345394557574288382427189696845247175160494608421665"
-        },
-        {
-          "marketId": "6983",
-          "title": "Chaikasem Nitisiri",
-          "yesTokenId": "35467967833563408836508802979044258877622403659270398890788914671730722551696",
-          "noTokenId": "77223854896845060278635834810330341383294857957684597364629239541552393222582"
-        },
-        {
-          "marketId": "6984",
-          "title": "Prawit Wongsuwan",
-          "yesTokenId": "100832555312675063100663055249430988734304969197115657198079976094359249804007",
-          "noTokenId": "55225803794147559844419613154379583825160314232165625501428455769467595092830"
-        }
-      ]
-    },
     "7242": {
       "title": "CS2 - PGL: MOUZ vs NAVI (Feb. 20 6:00AM ET)",
       "url": "https://app.opinion.trade/market/7242?ref=opinion_hud",
@@ -7191,18 +7057,6 @@
         }
       ]
     },
-    "8427": {
-      "title": "NBA: Lakers vs Nuggets (Mar. 5 10:00PM ET)",
-      "url": "https://app.opinion.trade/market/8427?ref=opinion_hud",
-      "yesTokenId": "76880410315786572231578837038681076589059803431425503342574903302169834998640",
-      "noTokenId": "39628856820305631154573411467226279183864563153096066866637098712166886117314",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Lakers",
-        "noLabel": "Nuggets"
-      },
-      "type": "binary"
-    },
     "8453": {
       "title": "Will Reza Pahlavi lead Iran in 2026?",
       "url": "https://app.opinion.trade/market/8453?ref=opinion_hud",
@@ -7212,30 +7066,6 @@
       "labels": {
         "yesLabel": "YES",
         "noLabel": "NO"
-      },
-      "type": "binary"
-    },
-    "8426": {
-      "title": "NBA: Raptors vs Timberwolves (Mar. 5 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/8426?ref=opinion_hud",
-      "yesTokenId": "62526316456157645224231185187493747628926866455381823805679417541059061933624",
-      "noTokenId": "59402895843859634346350351402349340472331777292757592168954028142353428882988",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Raptors",
-        "noLabel": "Timberwolves"
-      },
-      "type": "binary"
-    },
-    "8425": {
-      "title": "NBA: Warriors vs Rockets (Mar. 5 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/8425?ref=opinion_hud",
-      "yesTokenId": "31622628644428001619501954076730539265920610426397468440214871277743945846235",
-      "noTokenId": "35612814967167912453549701210757951649781525658010058134720349052115308342683",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Warriors",
-        "noLabel": "Rockets"
       },
       "type": "binary"
     },
@@ -7728,18 +7558,6 @@
           "noTokenId": "36586907353002192713227303170823076492951730725323463281627146793248017069716"
         }
       ]
-    },
-    "8636": {
-      "title": "Bitcoin Up or Down on March 5?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/8636?ref=opinion_hud",
-      "yesTokenId": "64792086156150004434496970783240627553285561737315488903087186148244081022348",
-      "noTokenId": "12110740337094073085357708144090709784678323036769410581629264800549395876215",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
     }
   },
   "index": {
@@ -8078,9 +7896,6 @@
     "balance power 2026": [
       "390"
     ],
-    "bangkok": [
-      "383"
-    ],
     "base": [
       "3366"
     ],
@@ -8279,8 +8094,7 @@
       "163"
     ],
     "cabinet": [
-      "3062",
-      "383"
+      "3062"
     ],
     "calcio": [
       "388"
@@ -8426,9 +8240,6 @@
     ],
     "club competition": [
       "412"
-    ],
-    "coalition": [
-      "383"
     ],
     "coin": [
       "409"
@@ -8753,7 +8564,6 @@
       "3366"
     ],
     "election": [
-      "383",
       "391"
     ],
     "election results": [
@@ -9020,9 +8830,6 @@
     "gdp contraction": [
       "3265"
     ],
-    "general election": [
-      "383"
-    ],
     "genesis": [
       "3365"
     ],
@@ -9070,9 +8877,6 @@
       "118",
       "3366",
       "395"
-    ],
-    "government": [
-      "383"
     ],
     "government control": [
       "390"
@@ -9430,9 +9234,6 @@
       "3366",
       "392"
     ],
-    "leader": [
-      "383"
-    ],
     "leader iran": [
       "417"
     ],
@@ -9701,9 +9502,6 @@
     "mining algorithm": [
       "3256"
     ],
-    "minister thailand": [
-      "383"
-    ],
     "missile": [
       "3039",
       "413",
@@ -9837,12 +9635,6 @@
     "next james bond": [
       "389"
     ],
-    "next prime": [
-      "383"
-    ],
-    "next prime minister": [
-      "383"
-    ],
     "next supreme": [
       "417"
     ],
@@ -9900,9 +9692,6 @@
     "operations against iran": [
       "415"
     ],
-    "opposition": [
-      "383"
-    ],
     "options": [
       "404",
       "405"
@@ -9936,9 +9725,6 @@
     ],
     "parallel execution": [
       "1721"
-    ],
-    "parliament": [
-      "383"
     ],
     "parousia": [
       "2670"
@@ -9985,11 +9771,7 @@
     "playoffs": [
       "401"
     ],
-    "pm": [
-      "383"
-    ],
     "politics": [
-      "383",
       "391",
       "417"
     ],
@@ -10079,12 +9861,6 @@
     ],
     "primary winner": [
       "391"
-    ],
-    "prime minister": [
-      "383"
-    ],
-    "prime minister thailand": [
-      "383"
     ],
     "private key compromise": [
       "3360"
@@ -10744,12 +10520,6 @@
       "396",
       "397"
     ],
-    "thai": [
-      "383"
-    ],
-    "thailand": [
-      "383"
-    ],
     "the post": [
       "3223"
     ],
@@ -11047,7 +10817,6 @@
       "387"
     ],
     "vote": [
-      "383",
       "391"
     ],
     "vp": [
@@ -11447,9 +11216,6 @@
     "balance power 2026": [
       "390"
     ],
-    "bangkok": [
-      "383"
-    ],
     "become next": [
       "417"
     ],
@@ -11523,9 +11289,6 @@
     ],
     "bytedance": [
       "163"
-    ],
-    "cabinet": [
-      "383"
     ],
     "calcio": [
       "388"
@@ -11603,9 +11366,6 @@
     ],
     "club competition": [
       "412"
-    ],
-    "coalition": [
-      "383"
     ],
     "coin": [
       "409"
@@ -11731,7 +11491,6 @@
       "408"
     ],
     "election": [
-      "383",
       "391"
     ],
     "election results": [
@@ -11856,9 +11615,6 @@
     "fun launch token": [
       "395"
     ],
-    "general election": [
-      "383"
-    ],
     "go live": [
       "397"
     ],
@@ -11890,9 +11646,6 @@
     "governance token": [
       "118",
       "395"
-    ],
-    "government": [
-      "383"
     ],
     "government control": [
       "390"
@@ -12033,9 +11786,6 @@
     ],
     "layer 2": [
       "392"
-    ],
-    "leader": [
-      "383"
     ],
     "leader iran": [
       "417"
@@ -12197,9 +11947,6 @@
     "military operations against": [
       "415"
     ],
-    "minister thailand": [
-      "383"
-    ],
     "missile": [
       "413",
       "414"
@@ -12245,12 +11992,6 @@
     "next james bond": [
       "389"
     ],
-    "next prime": [
-      "383"
-    ],
-    "next prime minister": [
-      "383"
-    ],
     "next supreme": [
       "417"
     ],
@@ -12292,15 +12033,9 @@
     "operations against iran": [
       "415"
     ],
-    "opposition": [
-      "383"
-    ],
     "options": [
       "404",
       "405"
-    ],
-    "parliament": [
-      "383"
     ],
     "paxton": [
       "391"
@@ -12329,11 +12064,7 @@
     "playoffs": [
       "401"
     ],
-    "pm": [
-      "383"
-    ],
     "politics": [
-      "383",
       "391",
       "417"
     ],
@@ -12398,12 +12129,6 @@
     ],
     "primary winner": [
       "391"
-    ],
-    "prime minister": [
-      "383"
-    ],
-    "prime minister thailand": [
-      "383"
     ],
     "pro league": [
       "401"
@@ -12689,12 +12414,6 @@
       "396",
       "397"
     ],
-    "thai": [
-      "383"
-    ],
-    "thailand": [
-      "383"
-    ],
     "tie": [
       "412"
     ],
@@ -12844,7 +12563,6 @@
       "387"
     ],
     "vote": [
-      "383",
       "391"
     ],
     "wall street": [
