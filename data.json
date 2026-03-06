@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-06 02:16:29 UTC+8",
+    "generatedAt": "2026-03-06 10:47:47 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 259,
-      "markets": 187,
+      "kept": 255,
+      "markets": 183,
       "keywords": 1035,
       "events": {
         "events": 30
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 741,
+        "cutoff_expired": 745,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -7607,42 +7607,6 @@
       },
       "type": "binary"
     },
-    "8730": {
-      "title": "NBA: Pacers vs Lakers (Mar. 6 10:30PM ET)",
-      "url": "https://app.opinion.trade/market/8730?ref=opinion_hud",
-      "yesTokenId": "27064633212088497795783147071666706166191117030505767770146249922063113311243",
-      "noTokenId": "46981335137310132822469811531412041016557859014985117462235961101194989464434",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Pacers",
-        "noLabel": "Lakers"
-      },
-      "type": "binary"
-    },
-    "8728": {
-      "title": "NBA: Mavericks vs Celtics (Mar. 6 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/8728?ref=opinion_hud",
-      "yesTokenId": "23703250531940307369152796361574078359780452368296627084732448658573341706781",
-      "noTokenId": "71384023348794327928209391971873415659207293631330688048319232028940895645821",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Mavericks",
-        "noLabel": "Celtics"
-      },
-      "type": "binary"
-    },
-    "8729": {
-      "title": "NBA: Knicks vs Nuggets (Mar. 6 9:00PM ET)",
-      "url": "https://app.opinion.trade/market/8729?ref=opinion_hud",
-      "yesTokenId": "67318289851040663047719484391150294692985936742972967489376446285070559907242",
-      "noTokenId": "92985583616038296768940100746340828674490711333192683681968795019719116555836",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Knicks",
-        "noLabel": "Nuggets"
-      },
-      "type": "binary"
-    },
     "8732": {
       "title": "NBA: Nets vs Pistons (Mar. 7 6:00PM ET)",
       "url": "https://app.opinion.trade/market/8732?ref=opinion_hud",
@@ -7652,18 +7616,6 @@
       "labels": {
         "yesLabel": "Nets",
         "noLabel": "Pistons"
-      },
-      "type": "binary"
-    },
-    "8731": {
-      "title": "Bitcoin Up or Down on March 6?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/8731?ref=opinion_hud",
-      "yesTokenId": "40264139360200804570812222500980764526248234488739729892980657294741484769774",
-      "noTokenId": "14608448143478074564746627814517314677221350898944796013507610161535460637727",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
