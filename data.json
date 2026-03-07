@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-07 10:41:32 UTC+8",
+    "generatedAt": "2026-03-07 16:46:12 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 257,
-      "markets": 186,
+      "kept": 260,
+      "markets": 189,
       "keywords": 1035,
       "events": {
         "events": 30
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 743,
+        "cutoff_expired": 740,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -7664,6 +7664,42 @@
       "labels": {
         "yesLabel": "JDG",
         "noLabel": "WOL"
+      },
+      "type": "binary"
+    },
+    "8882": {
+      "title": "ETH Up or Down - Hourly (Mar 07, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/8882?ref=opinion_hud",
+      "yesTokenId": "81578004643433394107628617508536617820084099798866504897257249034556312545007",
+      "noTokenId": "62284095564687171561336755317819088481575528557894003479322673198015028848353",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "8881": {
+      "title": "BTC Up or Down - Hourly (Mar 07, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/8881?ref=opinion_hud",
+      "yesTokenId": "94945108928802683477962212322600624302002855570912173028107373105999037887752",
+      "noTokenId": "69921430986821879990178683548582130196785888070615812343354145599927316821156",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "8880": {
+      "title": "BNB Up or Down - Hourly (Mar 07, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/8880?ref=opinion_hud",
+      "yesTokenId": "21890508375845693230823845823294779739006982561310718634498435359858424959877",
+      "noTokenId": "16695126551801777710991289804811307713111146661763837887081880053773074934351",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
