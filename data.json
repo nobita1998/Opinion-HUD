@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-07 16:46:12 UTC+8",
+    "generatedAt": "2026-03-08 00:40:11 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 260,
-      "markets": 189,
+      "kept": 261,
+      "markets": 191,
       "keywords": 1035,
       "events": {
         "events": 30
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 740,
+        "cutoff_expired": 739,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -7400,8 +7400,8 @@
     "415": {
       "title": "Trump announces end of military operations against Iran by ...?",
       "url": "https://app.opinion.trade/market/415?ref=opinion_hud",
-      "yesTokenId": "23157063364169271852776890721168198080562323326672793977226846720302403347006",
-      "noTokenId": "29667690231844087067276241813080664432038852936893432765481039244804495279561",
+      "yesTokenId": "14074038339115625078427817390327243143394882801009228741851837561760725678389",
+      "noTokenId": "55889000230728445184439138398430680077049868635947359669175563682314196530384",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7448,12 +7448,6 @@
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "8472",
-          "title": "March 2, 2026",
-          "yesTokenId": "23157063364169271852776890721168198080562323326672793977226846720302403347006",
-          "noTokenId": "29667690231844087067276241813080664432038852936893432765481039244804495279561"
-        },
-        {
           "marketId": "8473",
           "title": "March 7, 2026",
           "yesTokenId": "113758984573030766158019362886876693259312709886054129374970477663530595539088",
@@ -7470,6 +7464,12 @@
           "title": "March 31, 2026",
           "yesTokenId": "82328584884124981891580206116193958702322441519733574488020952603628280939735",
           "noTokenId": "89406223880971551086039568285322358495527974568270866661974752527289572342868"
+        },
+        {
+          "marketId": "8472",
+          "title": "March 2, 2026",
+          "yesTokenId": "23157063364169271852776890721168198080562323326672793977226846720302403347006",
+          "noTokenId": "29667690231844087067276241813080664432038852936893432765481039244804495279561"
         }
       ]
     },
@@ -7667,11 +7667,11 @@
       },
       "type": "binary"
     },
-    "8882": {
-      "title": "ETH Up or Down - Hourly (Mar 07, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/8882?ref=opinion_hud",
-      "yesTokenId": "81578004643433394107628617508536617820084099798866504897257249034556312545007",
-      "noTokenId": "62284095564687171561336755317819088481575528557894003479322673198015028848353",
+    "8908": {
+      "title": "BNB Up or Down - Hourly (Mar 07, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/8908?ref=opinion_hud",
+      "yesTokenId": "60226235887138728271554914673761576263132218230247043328145761927065742567786",
+      "noTokenId": "52494595254549631096553155401415954810135548843778915931828601463556590960986",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7679,11 +7679,11 @@
       },
       "type": "binary"
     },
-    "8881": {
-      "title": "BTC Up or Down - Hourly (Mar 07, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/8881?ref=opinion_hud",
-      "yesTokenId": "94945108928802683477962212322600624302002855570912173028107373105999037887752",
-      "noTokenId": "69921430986821879990178683548582130196785888070615812343354145599927316821156",
+    "8910": {
+      "title": "ETH Up or Down - Hourly (Mar 07, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/8910?ref=opinion_hud",
+      "yesTokenId": "74397781053887225811009782658320244150585424020621897375861356974131967062882",
+      "noTokenId": "88445022573948937517594723182916952088390393682912887445510133849084412366142",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7691,11 +7691,35 @@
       },
       "type": "binary"
     },
-    "8880": {
-      "title": "BNB Up or Down - Hourly (Mar 07, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/8880?ref=opinion_hud",
-      "yesTokenId": "21890508375845693230823845823294779739006982561310718634498435359858424959877",
-      "noTokenId": "16695126551801777710991289804811307713111146661763837887081880053773074934351",
+    "8909": {
+      "title": "BTC Up or Down - Hourly (Mar 07, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/8909?ref=opinion_hud",
+      "yesTokenId": "17651841034847246809718245054903787054007330492853727254915967374428333030654",
+      "noTokenId": "114584892221730343378548066075682456834343537843783951753161877281279850747760",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "8911": {
+      "title": "LPL: BLG vs JDG (Mar. 8 5:00AM ET)",
+      "url": "https://app.opinion.trade/market/8911?ref=opinion_hud",
+      "yesTokenId": "94207321754532111204602234462771279966750642079264100749105590254723903926541",
+      "noTokenId": "79993228046990905013695292969653932258107089975965825117957693256169769591684",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "BLG",
+        "noLabel": "JDG"
+      },
+      "type": "binary"
+    },
+    "8901": {
+      "title": "Bitcoin Up or Down on March 8?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/8901?ref=opinion_hud",
+      "yesTokenId": "54858877081238655676080535338833283092845757822774917732863357647675761266401",
+      "noTokenId": "33340153684243260759337606412804150267767325429853781726920289078919000546670",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
