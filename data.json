@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-08 10:53:44 UTC+8",
+    "generatedAt": "2026-03-08 16:46:38 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 250,
-      "markets": 180,
-      "keywords": 1035,
+      "kept": 258,
+      "markets": 185,
+      "keywords": 1059,
       "events": {
-        "events": 30
+        "events": 31
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 750,
+        "cutoff_expired": 742,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -30,11 +30,11 @@
         "onlyAiForNew": true,
         "reused": 30,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
+        "calls": 1,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 1,
         "errors": 0
       }
     }
@@ -1420,6 +1420,52 @@
       "sig": "28b2401d",
       "sigFull": "28b2401d",
       "sigCore": "d3e01bcb",
+      "reused": false
+    },
+    "418": {
+      "title": "ECB Rates Decision (DFR) APR",
+      "marketIds": [
+        "418"
+      ],
+      "bestMarketId": "418",
+      "bestLabels": null,
+      "keywords": [
+        "ecb",
+        "european central bank",
+        "interest rates",
+        "monetary policy",
+        "deposit facility rate",
+        "dfr",
+        "christine lagarde",
+        "eurozone",
+        "rate cut",
+        "rate hike",
+        "inflation",
+        "policy meeting",
+        "frankfurt",
+        "euro",
+        "monetary easing",
+        "ecb rates",
+        "rates decision",
+        "decision dfr",
+        "dfr apr",
+        "ecb rates decision",
+        "rates decision dfr",
+        "decision dfr apr"
+      ],
+      "entities": [
+        "ecb"
+      ],
+      "entityGroups": [
+        [
+          "ecb",
+          "欧洲央行",
+          "欧洲中央银行"
+        ]
+      ],
+      "sig": "309f59e9",
+      "sigFull": "309f59e9",
+      "sigCore": "5aad0a21",
       "reused": false
     }
   },
@@ -7594,6 +7640,126 @@
         "noLabel": "Nets"
       },
       "type": "binary"
+    },
+    "8962": {
+      "title": "Bitcoin Up or Down on March 9?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/8962?ref=opinion_hud",
+      "yesTokenId": "8898758163863437929567874050785088783202622565834855699278350188347466070912",
+      "noTokenId": "107301780265200976755572196465740518819922813112285592402697871559773541672338",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "8955": {
+      "title": "NBA: Pistons vs Nets (Mar. 10 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/8955?ref=opinion_hud",
+      "yesTokenId": "56692947100891601512456898165320705925132749054260022240863552490608021410369",
+      "noTokenId": "89757498778068362353034035319202624103498321743679843175911236223984403673157",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Pistons",
+        "noLabel": "Nets"
+      },
+      "type": "binary"
+    },
+    "8954": {
+      "title": "NBA: Mavericks vs Hawks (Mar. 10 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/8954?ref=opinion_hud",
+      "yesTokenId": "28614495003509791840482139377695685227364561055616557973170222489603906777267",
+      "noTokenId": "2771513563842390354183667373102710841342541270313065773532598169220757187110",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Mavericks",
+        "noLabel": "Hawks"
+      },
+      "type": "binary"
+    },
+    "8956": {
+      "title": "NBA: Celtics vs Spurs (Mar. 10 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/8956?ref=opinion_hud",
+      "yesTokenId": "42595377199820222868654443388551626224245424812452736260950993554597409192702",
+      "noTokenId": "80370222475161483803466184641012648526518355418151876136835161788329987605829",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Celtics",
+        "noLabel": "Spurs"
+      },
+      "type": "binary"
+    },
+    "418": {
+      "title": "ECB Rates Decision (DFR) APR",
+      "url": "https://app.opinion.trade/market/418?ref=opinion_hud",
+      "yesTokenId": "80399243111831739047382918617630815207450564414352316711831685215498599453767",
+      "noTokenId": "48870497814298548487296186555635982275465049689866264144710694011434794102757",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "ecb",
+        "european central bank",
+        "interest rates",
+        "monetary policy",
+        "deposit facility rate",
+        "dfr",
+        "christine lagarde",
+        "eurozone",
+        "rate cut",
+        "rate hike",
+        "inflation",
+        "policy meeting",
+        "frankfurt",
+        "euro",
+        "monetary easing",
+        "ecb rates",
+        "rates decision",
+        "decision dfr",
+        "dfr apr",
+        "ecb rates decision",
+        "rates decision dfr",
+        "decision dfr apr"
+      ],
+      "entities": [
+        "ecb"
+      ],
+      "entityGroups": [
+        [
+          "ecb",
+          "欧洲央行",
+          "欧洲中央银行"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "8958",
+          "title": "50+ bps decrease",
+          "yesTokenId": "35554946474322955955919893380102081954182588481738999165205066364034247878716",
+          "noTokenId": "74543483942234009008179324958354654622662210966587630280522538309759010603435"
+        },
+        {
+          "marketId": "8959",
+          "title": "25 bps decrease",
+          "yesTokenId": "34378962732688334382090496805547727781730706264132276336321019311984495477896",
+          "noTokenId": "64779477329432673984006391199310481394775336998538059831466339055688094899104"
+        },
+        {
+          "marketId": "8960",
+          "title": "No change",
+          "yesTokenId": "8736194131661634434572980659182375299962708932869499123217905700884161867724",
+          "noTokenId": "40001716823794059909880059261817273712348945985966033209467859118518961267424"
+        },
+        {
+          "marketId": "8961",
+          "title": "Increase",
+          "yesTokenId": "80399243111831739047382918617630815207450564414352316711831685215498599453767",
+          "noTokenId": "48870497814298548487296186555635982275465049689866264144710694011434794102757"
+        }
+      ]
     }
   },
   "index": {
@@ -8220,6 +8386,9 @@
     "christianity": [
       "2670"
     ],
+    "christine lagarde": [
+      "418"
+    ],
     "circulating supply": [
       "396"
     ],
@@ -8473,6 +8642,12 @@
     "december 2026": [
       "3509"
     ],
+    "decision dfr": [
+      "418"
+    ],
+    "decision dfr apr": [
+      "418"
+    ],
     "defi": [
       "118",
       "1721",
@@ -8508,11 +8683,20 @@
     "depeg 1q2026": [
       "3359"
     ],
+    "deposit facility rate": [
+      "418"
+    ],
     "depression": [
       "3265"
     ],
     "dex": [
       "3361"
+    ],
+    "dfr": [
+      "418"
+    ],
+    "dfr apr": [
+      "418"
     ],
     "digital asset": [
       "409",
@@ -8589,6 +8773,15 @@
     ],
     "earthquake 2027": [
       "2668"
+    ],
+    "ecb": [
+      "418"
+    ],
+    "ecb rates": [
+      "418"
+    ],
+    "ecb rates decision": [
+      "418"
     ],
     "economic crisis": [
       "3265"
@@ -8714,8 +8907,17 @@
     "ethereum hit march": [
       "409"
     ],
+    "euro": [
+      "418"
+    ],
+    "european central bank": [
+      "418"
+    ],
     "european cup": [
       "412"
+    ],
+    "eurozone": [
+      "418"
     ],
     "evm": [
       "1721",
@@ -8824,6 +9026,9 @@
     ],
     "franchise": [
       "389"
+    ],
+    "frankfurt": [
+      "418"
     ],
     "fugitive": [
       "1856"
@@ -9068,11 +9273,17 @@
     "index march": [
       "3257"
     ],
+    "inflation": [
+      "418"
+    ],
     "initial public offering": [
       "3362"
     ],
     "initial valuation": [
       "396"
+    ],
+    "interest rates": [
+      "418"
     ],
     "investment": [
       "3505",
@@ -9555,6 +9766,12 @@
     "monad megaeth who": [
       "1721"
     ],
+    "monetary easing": [
+      "418"
+    ],
+    "monetary policy": [
+      "418"
+    ],
     "money": [
       "3505",
       "3525"
@@ -9807,6 +10024,9 @@
     "playoffs": [
       "401"
     ],
+    "policy meeting": [
+      "418"
+    ],
     "politics": [
       "391",
       "417"
@@ -10002,6 +10222,18 @@
     ],
     "rapture": [
       "2670"
+    ],
+    "rate cut": [
+      "418"
+    ],
+    "rate hike": [
+      "418"
+    ],
+    "rates decision": [
+      "418"
+    ],
+    "rates decision dfr": [
+      "418"
     ],
     "real gdp": [
       "3265"
@@ -11049,8 +11281,14 @@
     "最高领袖": [
       "417"
     ],
+    "欧洲中央银行": [
+      "418"
+    ],
     "欧洲冠军联赛": [
       "412"
+    ],
+    "欧洲央行": [
+      "418"
     ],
     "比特币": [
       "3256",
@@ -11364,6 +11602,9 @@
     "chip": [
       "406"
     ],
+    "christine lagarde": [
+      "418"
+    ],
     "circulating supply": [
       "396"
     ],
@@ -11487,6 +11728,12 @@
       "394",
       "396"
     ],
+    "decision dfr": [
+      "418"
+    ],
+    "decision dfr apr": [
+      "418"
+    ],
     "defi": [
       "118",
       "395",
@@ -11495,6 +11742,15 @@
     ],
     "democrats": [
       "390"
+    ],
+    "deposit facility rate": [
+      "418"
+    ],
+    "dfr": [
+      "418"
+    ],
+    "dfr apr": [
+      "418"
     ],
     "digital asset": [
       "409",
@@ -11525,6 +11781,15 @@
       "404",
       "405",
       "408"
+    ],
+    "ecb": [
+      "418"
+    ],
+    "ecb rates": [
+      "418"
+    ],
+    "ecb rates decision": [
+      "418"
     ],
     "election": [
       "391"
@@ -11592,8 +11857,17 @@
     "ethereum hit march": [
       "409"
     ],
+    "euro": [
+      "418"
+    ],
+    "european central bank": [
+      "418"
+    ],
     "european cup": [
       "412"
+    ],
+    "eurozone": [
+      "418"
     ],
     "evm": [
       "392"
@@ -11634,6 +11908,9 @@
     ],
     "franchise": [
       "389"
+    ],
+    "frankfurt": [
+      "418"
     ],
     "fully diluted valuation": [
       "394",
@@ -11716,8 +11993,14 @@
     "ido": [
       "397"
     ],
+    "inflation": [
+      "418"
+    ],
     "initial valuation": [
       "396"
+    ],
+    "interest rates": [
+      "418"
     ],
     "iphone": [
       "407"
@@ -11990,6 +12273,12 @@
     "mm": [
       "118"
     ],
+    "monetary easing": [
+      "418"
+    ],
+    "monetary policy": [
+      "418"
+    ],
     "movie": [
       "389"
     ],
@@ -12099,6 +12388,9 @@
     ],
     "playoffs": [
       "401"
+    ],
+    "policy meeting": [
+      "418"
     ],
     "politics": [
       "391",
@@ -12219,6 +12511,18 @@
     ],
     "rally": [
       "402"
+    ],
+    "rate cut": [
+      "418"
+    ],
+    "rate hike": [
+      "418"
+    ],
+    "rates decision": [
+      "418"
+    ],
+    "rates decision dfr": [
+      "418"
     ],
     "regime": [
       "417"
@@ -12715,8 +13019,14 @@
     "最高领袖": [
       "417"
     ],
+    "欧洲中央银行": [
+      "418"
+    ],
     "欧洲冠军联赛": [
       "412"
+    ],
+    "欧洲央行": [
+      "418"
     ],
     "比特币": [
       "410"
