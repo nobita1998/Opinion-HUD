@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-09 16:58:46 UTC+8",
+    "generatedAt": "2026-03-10 01:05:13 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 265,
-      "markets": 189,
-      "keywords": 1077,
+      "kept": 258,
+      "markets": 188,
+      "keywords": 1059,
       "events": {
-        "events": 32
+        "events": 31
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 735,
+        "cutoff_expired": 742,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 32,
+        "reused": 31,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -1143,55 +1143,6 @@
       "sig": "75416992",
       "sigFull": "75416992",
       "sigCore": "f693eede",
-      "reused": false
-    },
-    "417": {
-      "title": "Who will become the next supreme leader of Iran?",
-      "marketIds": [
-        "417"
-      ],
-      "bestMarketId": "417",
-      "bestLabels": null,
-      "keywords": [
-        "iran",
-        "supreme leader",
-        "ayatollah",
-        "succession",
-        "tehran",
-        "islamic republic",
-        "regime",
-        "cleric",
-        "leadership",
-        "politics",
-        "khamenei",
-        "revolution",
-        "assembly of experts",
-        "guardian council",
-        "who become",
-        "become next",
-        "next supreme",
-        "leader iran",
-        "who become next",
-        "become next supreme",
-        "next supreme leader",
-        "supreme leader iran"
-      ],
-      "entities": [
-        "iran",
-        "supreme leader"
-      ],
-      "entityGroups": [
-        [
-          "iran"
-        ],
-        [
-          "supreme leader",
-          "最高领袖"
-        ]
-      ],
-      "sig": "3de7fcab",
-      "sigFull": "3de7fcab",
-      "sigCore": "37446037",
       "reused": false
     },
     "416": {
@@ -7060,99 +7011,6 @@
         }
       ]
     },
-    "417": {
-      "title": "Who will become the next supreme leader of Iran?",
-      "url": "https://app.opinion.trade/market/417?ref=opinion_hud",
-      "yesTokenId": "99493078599735693706267413735573567592877845009690112037692937257898637306398",
-      "noTokenId": "41104623889691769698119985666768930583724801040941110639982779421584042806208",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "iran",
-        "supreme leader",
-        "ayatollah",
-        "succession",
-        "tehran",
-        "islamic republic",
-        "regime",
-        "cleric",
-        "leadership",
-        "politics",
-        "khamenei",
-        "revolution",
-        "assembly of experts",
-        "guardian council",
-        "who become",
-        "become next",
-        "next supreme",
-        "leader iran",
-        "who become next",
-        "become next supreme",
-        "next supreme leader",
-        "supreme leader iran"
-      ],
-      "entities": [
-        "iran",
-        "supreme leader"
-      ],
-      "entityGroups": [
-        [
-          "iran"
-        ],
-        [
-          "supreme leader",
-          "最高领袖"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8479",
-          "title": "Hassan Khomeini",
-          "yesTokenId": "101518654328506184715101813292964536625907418005663954577137964979298297760348",
-          "noTokenId": "36548146662754488424490279382245930455765889251982567133042488857827980070998"
-        },
-        {
-          "marketId": "8480",
-          "title": "Position abolished",
-          "yesTokenId": "99493078599735693706267413735573567592877845009690112037692937257898637306398",
-          "noTokenId": "41104623889691769698119985666768930583724801040941110639982779421584042806208"
-        },
-        {
-          "marketId": "8481",
-          "title": "Gholam-Hossein Mohseni-Eje'i",
-          "yesTokenId": "39018920994233027743684152203140946537020621659271348000144527362461332201619",
-          "noTokenId": "98061638453817615463584563687967541920748341170837990779075449430432417996162"
-        },
-        {
-          "marketId": "8482",
-          "title": "Alireza Arafi",
-          "yesTokenId": "21516582432569689789854405302607472975873803776065379784122379804777665477022",
-          "noTokenId": "111749417253059201031852792447103745609595693476457451041297335956823386141088"
-        },
-        {
-          "marketId": "8483",
-          "title": "Ali Larijani",
-          "yesTokenId": "69451384465481078509976988366502002236282593985372404109432927370884532409234",
-          "noTokenId": "67217174384916357578930858370654832682635023144606928365893971234830659679424"
-        },
-        {
-          "marketId": "8484",
-          "title": "Mojtaba Khamenei",
-          "yesTokenId": "21475125513953617737833788517008830239261290400839768056423933313693050146269",
-          "noTokenId": "88440166380960989331484923745670574561728694523706505050676867753843773912844"
-        },
-        {
-          "marketId": "8485",
-          "title": "None by June 30",
-          "yesTokenId": "67946016251615155220243091946623340869327262168313653163324445214373112425211",
-          "noTokenId": "84569475085009721220364547025503706059917500957888707128456876777326153706110"
-        }
-      ]
-    },
     "8453": {
       "title": "Will Reza Pahlavi lead Iran in 2026?",
       "url": "https://app.opinion.trade/market/8453?ref=opinion_hud",
@@ -8260,9 +8118,6 @@
     "armageddon": [
       "2670"
     ],
-    "assembly of experts": [
-      "417"
-    ],
     "ath": [
       "3364",
       "3367",
@@ -8272,9 +8127,6 @@
       "3039",
       "413",
       "414"
-    ],
-    "ayatollah": [
-      "417"
     ],
     "back": [
       "1856"
@@ -8311,12 +8163,6 @@
     ],
     "bear market": [
       "3265"
-    ],
-    "become next": [
-      "417"
-    ],
-    "become next supreme": [
-      "417"
     ],
     "bei return": [
       "1856"
@@ -8588,9 +8434,6 @@
     ],
     "claim": [
       "392"
-    ],
-    "cleric": [
-      "417"
     ],
     "close": [
       "402",
@@ -9337,9 +9180,6 @@
       "2668",
       "3356"
     ],
-    "guardian council": [
-      "417"
-    ],
     "hack": [
       "3360"
     ],
@@ -9517,8 +9357,7 @@
       "413",
       "414",
       "415",
-      "416",
-      "417"
+      "416"
     ],
     "iran israel/us": [
       "416"
@@ -9550,8 +9389,7 @@
       "413"
     ],
     "islamic republic": [
-      "413",
-      "417"
+      "413"
     ],
     "israel": [
       "3039",
@@ -9631,9 +9469,6 @@
     "karen wheeler": [
       "3222"
     ],
-    "khamenei": [
-      "417"
-    ],
     "knockout": [
       "412"
     ],
@@ -9689,15 +9524,11 @@
       "3366",
       "392"
     ],
-    "leader iran": [
-      "417"
-    ],
     "leaders": [
       "386"
     ],
     "leadership": [
-      "3369",
-      "417"
+      "3369"
     ],
     "leadership change": [
       "2368"
@@ -10114,12 +9945,6 @@
     "next james bond": [
       "389"
     ],
-    "next supreme": [
-      "417"
-    ],
-    "next supreme leader": [
-      "417"
-    ],
     "nfl draft": [
       "3072"
     ],
@@ -10254,8 +10079,7 @@
       "418"
     ],
     "politics": [
-      "391",
-      "417"
+      "391"
     ],
     "polls": [
       "391"
@@ -10483,9 +10307,6 @@
     "red status": [
       "3357"
     ],
-    "regime": [
-      "417"
-    ],
     "rehire": [
       "3369"
     ],
@@ -10585,9 +10406,6 @@
     ],
     "revelation": [
       "2670"
-    ],
-    "revolution": [
-      "417"
     ],
     "richter scale": [
       "2668",
@@ -10883,9 +10701,6 @@
     "studio album": [
       "2178"
     ],
-    "succession": [
-      "417"
-    ],
     "successor": [
       "2368",
       "389"
@@ -10905,12 +10720,6 @@
     ],
     "supreme court rules": [
       "1546"
-    ],
-    "supreme leader": [
-      "417"
-    ],
-    "supreme leader iran": [
-      "417"
     ],
     "swap": [
       "3365"
@@ -10975,8 +10784,7 @@
       "3039",
       "413",
       "414",
-      "416",
-      "417"
+      "416"
     ],
     "temblor": [
       "2668",
@@ -11412,12 +11220,6 @@
     "white house": [
       "3062"
     ],
-    "who become": [
-      "417"
-    ],
-    "who become next": [
-      "417"
-    ],
     "who higher": [
       "1721"
     ],
@@ -11520,9 +11322,6 @@
     ],
     "最高法院": [
       "1546"
-    ],
-    "最高领袖": [
-      "417"
     ],
     "欧洲中央银行": [
       "418"
@@ -11724,15 +11523,9 @@
     "apple aapl close": [
       "407"
     ],
-    "assembly of experts": [
-      "417"
-    ],
     "attack": [
       "413",
       "414"
-    ],
-    "ayatollah": [
-      "417"
     ],
     "balance of power": [
       "390"
@@ -11742,12 +11535,6 @@
     ],
     "balance power 2026": [
       "390"
-    ],
-    "become next": [
-      "417"
-    ],
-    "become next supreme": [
-      "417"
     ],
     "big tech": [
       "404"
@@ -11864,9 +11651,6 @@
     ],
     "claim": [
       "392"
-    ],
-    "cleric": [
-      "417"
     ],
     "close": [
       "402",
@@ -12234,9 +12018,6 @@
     "gpu": [
       "406"
     ],
-    "guardian council": [
-      "417"
-    ],
     "halving": [
       "410"
     ],
@@ -12283,8 +12064,7 @@
       "413",
       "414",
       "415",
-      "416",
-      "417"
+      "416"
     ],
     "iran israel/us": [
       "416"
@@ -12311,8 +12091,7 @@
       "413"
     ],
     "islamic republic": [
-      "413",
-      "417"
+      "413"
     ],
     "israel": [
       "416"
@@ -12344,9 +12123,6 @@
     "jerusalem": [
       "416"
     ],
-    "khamenei": [
-      "417"
-    ],
     "knockout": [
       "412"
     ],
@@ -12374,14 +12150,8 @@
     "layer 2": [
       "392"
     ],
-    "leader iran": [
-      "417"
-    ],
     "leaders": [
       "386"
-    ],
-    "leadership": [
-      "417"
     ],
     "league": [
       "419"
@@ -12603,12 +12373,6 @@
     "next james bond": [
       "389"
     ],
-    "next supreme": [
-      "417"
-    ],
-    "next supreme leader": [
-      "417"
-    ],
     "nvda": [
       "406"
     ],
@@ -12679,8 +12443,7 @@
       "418"
     ],
     "politics": [
-      "391",
-      "417"
+      "391"
     ],
     "polls": [
       "391"
@@ -12813,9 +12576,6 @@
     "rates decision dfr": [
       "418"
     ],
-    "regime": [
-      "417"
-    ],
     "republican": [
       "391"
     ],
@@ -12837,9 +12597,6 @@
     ],
     "retroactive": [
       "392"
-    ],
-    "revolution": [
-      "417"
     ],
     "riot games": [
       "400",
@@ -12970,9 +12727,6 @@
     "strike march": [
       "413"
     ],
-    "succession": [
-      "417"
-    ],
     "successor": [
       "389"
     ],
@@ -12982,12 +12736,6 @@
     ],
     "summoner's rift": [
       "419"
-    ],
-    "supreme leader": [
-      "417"
-    ],
-    "supreme leader iran": [
-      "417"
     ],
     "sweep": [
       "390"
@@ -13024,8 +12772,7 @@
     "tehran": [
       "413",
       "414",
-      "416",
-      "417"
+      "416"
     ],
     "tensions": [
       "416"
@@ -13264,12 +13011,6 @@
     "which teams advance": [
       "412"
     ],
-    "who become": [
-      "417"
-    ],
-    "who become next": [
-      "417"
-    ],
     "withdrawal": [
       "415"
     ],
@@ -13318,9 +13059,6 @@
     ],
     "无畏契约大师赛": [
       "400"
-    ],
-    "最高领袖": [
-      "417"
     ],
     "欧洲中央银行": [
       "418"
