@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-09 00:42:25 UTC+8",
+    "generatedAt": "2026-03-09 11:12:36 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 266,
-      "markets": 188,
+      "kept": 260,
+      "markets": 182,
       "keywords": 1077,
       "events": {
         "events": 32
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 734,
+        "cutoff_expired": 740,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 31,
+        "reused": 32,
         "regenerated_empty_entitygroups": 0,
-        "calls": 1,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 1,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -7655,54 +7655,6 @@
         }
       ]
     },
-    "8800": {
-      "title": "NBA: 76ers vs Cavaliers (Mar. 9 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/8800?ref=opinion_hud",
-      "yesTokenId": "98100280654526155508409112794649332318929186399456257556043066172261428641210",
-      "noTokenId": "2396676377754553569447794263206414514624126530347187880374142953484884688308",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "76ers",
-        "noLabel": "Cavaliers"
-      },
-      "type": "binary"
-    },
-    "8802": {
-      "title": "NBA: Warriors vs Jazz (Mar. 9 9:00PM ET)",
-      "url": "https://app.opinion.trade/market/8802?ref=opinion_hud",
-      "yesTokenId": "19807701889072675594629239059213241332236574201124643215992329832604415102015",
-      "noTokenId": "96170276187909253962925350975231627428062613173538624274836118147699777713906",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Warriors",
-        "noLabel": "Jazz"
-      },
-      "type": "binary"
-    },
-    "8801": {
-      "title": "NBA: Grizzlies vs Nets (Mar. 9 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/8801?ref=opinion_hud",
-      "yesTokenId": "103062905671407738320758327918131012006082409369673703516407110543899476706137",
-      "noTokenId": "70783136388016228769762430481741722398680597164274266721076868627563513881353",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Grizzlies",
-        "noLabel": "Nets"
-      },
-      "type": "binary"
-    },
-    "8962": {
-      "title": "Bitcoin Up or Down on March 9?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/8962?ref=opinion_hud",
-      "yesTokenId": "8898758163863437929567874050785088783202622565834855699278350188347466070912",
-      "noTokenId": "107301780265200976755572196465740518819922813112285592402697871559773541672338",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "8955": {
       "title": "NBA: Pistons vs Nets (Mar. 10 7:30PM ET)",
       "url": "https://app.opinion.trade/market/8955?ref=opinion_hud",
@@ -7810,30 +7762,6 @@
           "noTokenId": "48870497814298548487296186555635982275465049689866264144710694011434794102757"
         }
       ]
-    },
-    "8990": {
-      "title": "Valorant - VCT Masters: PRX vs NRG (Mar. 9 5:00PM ET)",
-      "url": "https://app.opinion.trade/market/8990?ref=opinion_hud",
-      "yesTokenId": "52158266439394668328466640436791399704766819260414039605746387797682393159715",
-      "noTokenId": "102032130861456295607717046543175557754852453102090369988681322344518986174334",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "PRX",
-        "noLabel": "NRG"
-      },
-      "type": "binary"
-    },
-    "8989": {
-      "title": "Valorant - VCT Masters: NS vs G2 (Mar. 9 2:00PM ET)",
-      "url": "https://app.opinion.trade/market/8989?ref=opinion_hud",
-      "yesTokenId": "76547934730632857726789068796087838377419691621608411898678830492138890624645",
-      "noTokenId": "4485367077408791295015622582208272105779158623842226451423995883192079372884",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "NS",
-        "noLabel": "G2"
-      },
-      "type": "binary"
     },
     "419": {
       "title": "LoL 2026 First Stand Tournament: Winner",
