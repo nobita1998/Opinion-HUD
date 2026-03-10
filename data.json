@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-10 16:57:40 UTC+8",
+    "generatedAt": "2026-03-11 01:05:09 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 254,
-      "markets": 184,
+      "kept": 261,
+      "markets": 191,
       "keywords": 1059,
       "events": {
         "events": 31
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 746,
+        "cutoff_expired": 739,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -7754,6 +7754,90 @@
       "labels": {
         "yesLabel": "WB",
         "noLabel": "WOL"
+      },
+      "type": "binary"
+    },
+    "9152": {
+      "title": "KPL: AG.SP vs KSG (Mar. 14 8:00AM ET)",
+      "url": "https://app.opinion.trade/market/9152?ref=opinion_hud",
+      "yesTokenId": "93388789737590293300466441168117403107407407335700928851186107253310089416288",
+      "noTokenId": "65879616840188278932254590603022034138368926894007615301338483350325420866168",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "AG.SP",
+        "noLabel": "KSG"
+      },
+      "type": "binary"
+    },
+    "9146": {
+      "title": "NBA: Knicks vs Jazz (Mar. 11 9:00PM ET)",
+      "url": "https://app.opinion.trade/market/9146?ref=opinion_hud",
+      "yesTokenId": "19431958698416040087356508277318023181460342278039083819009576240411207868390",
+      "noTokenId": "7041548006253196976963205666923654120275862321019113210459210427544228508495",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Knicks",
+        "noLabel": "Jazz"
+      },
+      "type": "binary"
+    },
+    "9151": {
+      "title": "KPL: WOL vs DYG (Mar. 14 5:00AM ET)",
+      "url": "https://app.opinion.trade/market/9151?ref=opinion_hud",
+      "yesTokenId": "49732628521643845738635367964697505000655698473156154103569045092972190690372",
+      "noTokenId": "49213101342069034591817550346424079182191287091266137364803175251928876302154",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "WOL",
+        "noLabel": "DYG"
+      },
+      "type": "binary"
+    },
+    "9148": {
+      "title": "NBA: Hornets vs Kings (Mar. 11 10:00PM ET)",
+      "url": "https://app.opinion.trade/market/9148?ref=opinion_hud",
+      "yesTokenId": "99086112004423153503015979289701457371900854574644535618462047116817249536020",
+      "noTokenId": "78412914942319303125814058168046089971956527332532097267156042265130664048364",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Hornets",
+        "noLabel": "Kings"
+      },
+      "type": "binary"
+    },
+    "9150": {
+      "title": "KPL: WB vs JDG (Mar. 14 2:00AM ET)",
+      "url": "https://app.opinion.trade/market/9150?ref=opinion_hud",
+      "yesTokenId": "86018753739196001951852250686286533355365987080750799328879595583350867774872",
+      "noTokenId": "42472648403248445666533572895132771436152848008501656839061294588660628351970",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "WB",
+        "noLabel": "JDG"
+      },
+      "type": "binary"
+    },
+    "9147": {
+      "title": "NBA: Rockets vs Nuggets (Mar. 11 10:00PM ET)",
+      "url": "https://app.opinion.trade/market/9147?ref=opinion_hud",
+      "yesTokenId": "42104733715152088215859017765185156106965534393157576578468295447890908490313",
+      "noTokenId": "56124717075274437684083557034172335116204557485051567101686667841595456383996",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Rockets",
+        "noLabel": "Nuggets"
+      },
+      "type": "binary"
+    },
+    "9149": {
+      "title": "Bitcoin Up or Down on March 11?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/9149?ref=opinion_hud",
+      "yesTokenId": "86377447899515759882597323023501180945905000380799858814433618417076675644047",
+      "noTokenId": "99923802670536859218285704351604173438336311943761430641065064996430061109305",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
