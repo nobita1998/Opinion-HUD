@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-10 01:05:13 UTC+8",
+    "generatedAt": "2026-03-10 10:47:17 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 258,
-      "markets": 188,
+      "kept": 254,
+      "markets": 184,
       "keywords": 1059,
       "events": {
         "events": 31
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 742,
+        "cutoff_expired": 746,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -7513,42 +7513,6 @@
         }
       ]
     },
-    "8955": {
-      "title": "NBA: Pistons vs Nets (Mar. 10 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/8955?ref=opinion_hud",
-      "yesTokenId": "56692947100891601512456898165320705925132749054260022240863552490608021410369",
-      "noTokenId": "89757498778068362353034035319202624103498321743679843175911236223984403673157",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Pistons",
-        "noLabel": "Nets"
-      },
-      "type": "binary"
-    },
-    "8954": {
-      "title": "NBA: Mavericks vs Hawks (Mar. 10 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/8954?ref=opinion_hud",
-      "yesTokenId": "28614495003509791840482139377695685227364561055616557973170222489603906777267",
-      "noTokenId": "2771513563842390354183667373102710841342541270313065773532598169220757187110",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Mavericks",
-        "noLabel": "Hawks"
-      },
-      "type": "binary"
-    },
-    "8956": {
-      "title": "NBA: Celtics vs Spurs (Mar. 10 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/8956?ref=opinion_hud",
-      "yesTokenId": "42595377199820222868654443388551626224245424812452736260950993554597409192702",
-      "noTokenId": "80370222475161483803466184641012648526518355418151876136835161788329987605829",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Celtics",
-        "noLabel": "Spurs"
-      },
-      "type": "binary"
-    },
     "418": {
       "title": "ECB Rates Decision (DFR) APR",
       "url": "https://app.opinion.trade/market/418?ref=opinion_hud",
@@ -7778,18 +7742,6 @@
       "labels": {
         "yesLabel": "JDG",
         "noLabel": "KSG"
-      },
-      "type": "binary"
-    },
-    "9058": {
-      "title": "Bitcoin Up or Down on March 10?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/9058?ref=opinion_hud",
-      "yesTokenId": "92528044272439575088181058311539797049762319454914788059065907770384212800633",
-      "noTokenId": "84363767692056787980367416350187008259900232589890311983841108255069485136836",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
