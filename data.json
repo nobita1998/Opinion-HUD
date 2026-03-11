@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-11 16:56:44 UTC+8",
+    "generatedAt": "2026-03-12 01:05:05 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 237,
-      "markets": 185,
+      "kept": 244,
+      "markets": 192,
       "keywords": 1059,
       "events": {
         "events": 31
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 763,
+        "cutoff_expired": 756,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -7766,6 +7766,90 @@
       "labels": {
         "yesLabel": "WB",
         "noLabel": "JDG"
+      },
+      "type": "binary"
+    },
+    "9218": {
+      "title": "NBA: Celtics vs Thunder (Mar. 12  9:30PM ET)",
+      "url": "https://app.opinion.trade/market/9218?ref=opinion_hud",
+      "yesTokenId": "103098790799638581932976706224123042212789624822815879848522349820407448635789",
+      "noTokenId": "16166304371239226763648131094096600127535928114680035902468762654320833557840",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Celtics",
+        "noLabel": "Thunder"
+      },
+      "type": "binary"
+    },
+    "9220": {
+      "title": "Bitcoin Up or Down on March 12?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/9220?ref=opinion_hud",
+      "yesTokenId": "81069229361860590245708049619839884222099616475895421226952862002801068271930",
+      "noTokenId": "86724541305182424858446603919763566841352876877092645426316460953672265253128",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9221": {
+      "title": "NBA: Cavaliers vs Mavericks (Mar. 13 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/9221?ref=opinion_hud",
+      "yesTokenId": "51549565277315069188906120681184314301024168469005963908921777042329817371024",
+      "noTokenId": "75171312053576893956392092490490365513438786204890368769010404164786572440111",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Cavaliers",
+        "noLabel": "Mavericks"
+      },
+      "type": "binary"
+    },
+    "9217": {
+      "title": "NBA: Nuggets vs Spurs (Mar. 12 9:00PM ET)",
+      "url": "https://app.opinion.trade/market/9217?ref=opinion_hud",
+      "yesTokenId": "12492045299013501514886502440801948560964221485562939962378501215071820051176",
+      "noTokenId": "72533257066497676946010138375851468647588596432610710249096809131243518749062",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Nuggets",
+        "noLabel": "Spurs"
+      },
+      "type": "binary"
+    },
+    "9219": {
+      "title": "NBA: Bulls vs Lakers (Mar. 12 10:30PM ET)",
+      "url": "https://app.opinion.trade/market/9219?ref=opinion_hud",
+      "yesTokenId": "98022655985128640980772515196372144493707981389916378242974699632337523746453",
+      "noTokenId": "12811670100836470160130063268565100659427596828458189953024752320504240951811",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Bulls",
+        "noLabel": "Lakers"
+      },
+      "type": "binary"
+    },
+    "9223": {
+      "title": "NBA: Bulls vs Clippers (Mar. 13 10:30PM ET)",
+      "url": "https://app.opinion.trade/market/9223?ref=opinion_hud",
+      "yesTokenId": "27864636881331139885002016864861818031976006436585875497489824021135601739358",
+      "noTokenId": "114388407560132611394385859563355233382774658914695648610615933227916457064284",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Bulls",
+        "noLabel": "Clippers"
+      },
+      "type": "binary"
+    },
+    "9222": {
+      "title": "NBA: Knicks vs Pacers (Mar. 13 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/9222?ref=opinion_hud",
+      "yesTokenId": "10656666128171823899825983139649861235486859485504159878457418787566367909851",
+      "noTokenId": "98128981028605075274960091026198380917530641585059142913507589077798968306984",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Knicks",
+        "noLabel": "Pacers"
       },
       "type": "binary"
     }
