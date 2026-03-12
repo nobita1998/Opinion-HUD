@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-12 16:57:34 UTC+8",
+    "generatedAt": "2026-03-13 01:08:13 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 236,
-      "markets": 186,
-      "keywords": 1059,
+      "kept": 226,
+      "markets": 194,
+      "keywords": 1035,
       "events": {
-        "events": 31
+        "events": 30
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 764,
+        "cutoff_expired": 774,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 31,
+        "reused": 29,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
+        "calls": 1,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 1,
         "errors": 0
       }
     }
@@ -206,98 +206,6 @@
       "sig": "ff68007b",
       "sigFull": "ff68007b",
       "sigCore": "99778bd9",
-      "reused": false
-    },
-    "387": {
-      "title": "Will Putin meet with Zelenskyy by ...?",
-      "marketIds": [
-        "387"
-      ],
-      "bestMarketId": "387",
-      "bestLabels": null,
-      "keywords": [
-        "putin",
-        "zelenskyy",
-        "meeting",
-        "summit",
-        "peace talks",
-        "negotiations",
-        "diplomatic",
-        "russia",
-        "ukraine",
-        "vladimir",
-        "volodymyr",
-        "face-to-face",
-        "talks",
-        "kremlin",
-        "putin meet",
-        "meet zelenskyy",
-        "putin meet zelenskyy"
-      ],
-      "entities": [
-        "putin",
-        "zelenskyy"
-      ],
-      "entityGroups": [
-        [
-          "putin"
-        ],
-        [
-          "zelenskyy",
-          "泽连斯基"
-        ]
-      ],
-      "sig": "78de3f8b",
-      "sigFull": "78de3f8b",
-      "sigCore": "cbce207b",
-      "reused": false
-    },
-    "386": {
-      "title": "Where will Trump and Putin meet next?",
-      "marketIds": [
-        "386"
-      ],
-      "bestMarketId": "386",
-      "bestLabels": null,
-      "keywords": [
-        "trump",
-        "putin",
-        "meeting",
-        "summit",
-        "talks",
-        "diplomatic",
-        "visit",
-        "negotiation",
-        "bilateral",
-        "conference",
-        "encounter",
-        "sit-down",
-        "leaders",
-        "face-to-face",
-        "where trump",
-        "trump putin",
-        "putin meet",
-        "meet next",
-        "where trump putin",
-        "trump putin meet",
-        "putin meet next"
-      ],
-      "entities": [
-        "trump",
-        "putin"
-      ],
-      "entityGroups": [
-        [
-          "trump",
-          "特朗普"
-        ],
-        [
-          "putin"
-        ]
-      ],
-      "sig": "a885c75f",
-      "sigFull": "a885c75f",
-      "sigCore": "b40df051",
       "reused": false
     },
     "397": {
@@ -1467,6 +1375,54 @@
       "sig": "ef1d72de",
       "sigFull": "ef1d72de",
       "sigCore": "97e02547",
+      "reused": false
+    },
+    "95": {
+      "title": "Backpack FDV above ... one day after launch?",
+      "marketIds": [
+        "95"
+      ],
+      "bestMarketId": "95",
+      "bestLabels": null,
+      "keywords": [
+        "backpack",
+        "backpack exchange",
+        "fdv",
+        "fully diluted valuation",
+        "crypto exchange",
+        "token launch",
+        "market cap",
+        "valuation",
+        "trading",
+        "listing",
+        "tge",
+        "token price",
+        "exchange launch",
+        "initial valuation",
+        "backpack fdv",
+        "fdv above",
+        "above one",
+        "one day",
+        "day after",
+        "after launch",
+        "backpack fdv above",
+        "fdv above one",
+        "above one day",
+        "one day after",
+        "day after launch"
+      ],
+      "entities": [
+        "backpack"
+      ],
+      "entityGroups": [
+        [
+          "backpack",
+          "backpack 交易所"
+        ]
+      ],
+      "sig": "2c3d154b",
+      "sigFull": "2c3d154b",
+      "sigCore": "0b6865cd",
       "reused": false
     }
   },
@@ -4642,8 +4598,8 @@
     "388": {
       "title": "Serie A League Winner",
       "url": "https://app.opinion.trade/market/388?ref=opinion_hud",
-      "yesTokenId": "113659676582691829119858126408811373879297139542061991846111627267492242748982",
-      "noTokenId": "94872446515427646372434869940297953859166334966512880354761247155043186151354",
+      "yesTokenId": "38765670049102586233753607441854718344331833992380018465395337403953319346094",
+      "noTokenId": "68793851339502394402712025266106432502704281139509796299099444724549457262532",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4771,204 +4727,6 @@
         "noLabel": "IG"
       },
       "type": "binary"
-    },
-    "387": {
-      "title": "Will Putin meet with Zelenskyy by ...?",
-      "url": "https://app.opinion.trade/market/387?ref=opinion_hud",
-      "yesTokenId": "39289158119153218364362809388196167543433753873259139767197388795636059321748",
-      "noTokenId": "36112819775317622365628605952510046491903383227267874060622211793960667259260",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "putin",
-        "zelenskyy",
-        "meeting",
-        "summit",
-        "peace talks",
-        "negotiations",
-        "diplomatic",
-        "russia",
-        "ukraine",
-        "vladimir",
-        "volodymyr",
-        "face-to-face",
-        "talks",
-        "kremlin",
-        "putin meet",
-        "meet zelenskyy",
-        "putin meet zelenskyy"
-      ],
-      "entities": [
-        "putin",
-        "zelenskyy"
-      ],
-      "entityGroups": [
-        [
-          "putin"
-        ],
-        [
-          "zelenskyy",
-          "泽连斯基"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7313",
-          "title": "March 31, 2026",
-          "yesTokenId": "41554789898934053840668716704640854366526458555764857478923142308759077755043",
-          "noTokenId": "113321866816636537153962378716086214099547433940297041840226597161181184153475"
-        },
-        {
-          "marketId": "7314",
-          "title": "June 30, 2026",
-          "yesTokenId": "39289158119153218364362809388196167543433753873259139767197388795636059321748",
-          "noTokenId": "36112819775317622365628605952510046491903383227267874060622211793960667259260"
-        }
-      ]
-    },
-    "386": {
-      "title": "Where will Trump and Putin meet next?",
-      "url": "https://app.opinion.trade/market/386?ref=opinion_hud",
-      "yesTokenId": "58639220232739088821031306701711916632275652243432551093437289179972343076565",
-      "noTokenId": "111306175804521349985911612259515555271877659734183598386120295984154384011888",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "trump",
-        "putin",
-        "meeting",
-        "summit",
-        "talks",
-        "diplomatic",
-        "visit",
-        "negotiation",
-        "bilateral",
-        "conference",
-        "encounter",
-        "sit-down",
-        "leaders",
-        "face-to-face",
-        "where trump",
-        "trump putin",
-        "putin meet",
-        "meet next",
-        "where trump putin",
-        "trump putin meet",
-        "putin meet next"
-      ],
-      "entities": [
-        "trump",
-        "putin"
-      ],
-      "entityGroups": [
-        [
-          "trump",
-          "特朗普"
-        ],
-        [
-          "putin"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7297",
-          "title": "No meeting by June 30",
-          "yesTokenId": "94684304061736011123084782269820342276417881749684837926979773396708552840212",
-          "noTokenId": "56597982333935572629181855068418072313220293715737259873896107023938631782723"
-        },
-        {
-          "marketId": "7298",
-          "title": "Other EU country",
-          "yesTokenId": "107026528818990160351952083874352407005355550952456216351806345874229529528343",
-          "noTokenId": "72775098674509771375310225461531895183844788893103077993114709087492837002305"
-        },
-        {
-          "marketId": "7299",
-          "title": "Russia",
-          "yesTokenId": "17473004886586724456814642771293322017393509723401263891417044056677799051904",
-          "noTokenId": "65840564227892327962211769616444542761064219364011841735996866973410000721861"
-        },
-        {
-          "marketId": "7300",
-          "title": "United States",
-          "yesTokenId": "94362825196812530690769168622565337565229308229659968031185977304636162634232",
-          "noTokenId": "29030014758230179274636204240873573741832620699607995017559869157649642714347"
-        },
-        {
-          "marketId": "7301",
-          "title": "Switzerland",
-          "yesTokenId": "58639220232739088821031306701711916632275652243432551093437289179972343076565",
-          "noTokenId": "111306175804521349985911612259515555271877659734183598386120295984154384011888"
-        },
-        {
-          "marketId": "7302",
-          "title": "Gulf country",
-          "yesTokenId": "47076957980392316542152379044655521813385504821029260961398078931987823484002",
-          "noTokenId": "23692870192617231057183067894169255930545914668830893754949502905598917631017"
-        },
-        {
-          "marketId": "7303",
-          "title": "China",
-          "yesTokenId": "94340071362582620430150852595399561693122013330751914638186500478526474965617",
-          "noTokenId": "26555793218821899128531581415623769832261851762788057813000109506845089664338"
-        },
-        {
-          "marketId": "7304",
-          "title": "Belarus",
-          "yesTokenId": "65055737627713394626938821418149372195427751546354609408250885848213461581189",
-          "noTokenId": "69695391463943410946309580597301625261091876058264479323344720110232385963277"
-        },
-        {
-          "marketId": "7305",
-          "title": "Ukraine",
-          "yesTokenId": "62172184263640868153622469981033942843433543971433981347140520832721716075766",
-          "noTokenId": "57914389595216081087383590290857641166708536675691327104461022945502880224331"
-        },
-        {
-          "marketId": "7306",
-          "title": "Turkey",
-          "yesTokenId": "62660700715319543265473254085979100436611021832840905701543066444204721927673",
-          "noTokenId": "26644539355320357195080014215470326579485536667734317673009126923896457313191"
-        },
-        {
-          "marketId": "7307",
-          "title": "Finland",
-          "yesTokenId": "87886453718842072639142804420387741944393706329850230699432312129702574817406",
-          "noTokenId": "40810349736175830905281120292938244740529527443056099477440416425041336806402"
-        },
-        {
-          "marketId": "7308",
-          "title": "Other",
-          "yesTokenId": "54348908581759958169453945055997983255410222459472557935064024010141359857506",
-          "noTokenId": "80341686179317074477647754361791809616243935899792084334875729864515061841365"
-        },
-        {
-          "marketId": "7309",
-          "title": "South Korea",
-          "yesTokenId": "2020041873975409279994361490444435639369966151711241326384033759325378398111",
-          "noTokenId": "25379516341047192460924427492397810067375797555832883390435463500801727882814"
-        },
-        {
-          "marketId": "7310",
-          "title": "Japan",
-          "yesTokenId": "21638807028153419606141239717082781193178307718698970644632496949100415042691",
-          "noTokenId": "46835732976537113330760158658255256944294604384274278011287395197384950474195"
-        },
-        {
-          "marketId": "7311",
-          "title": "Australia",
-          "yesTokenId": "35833376691376919346765314893838043608837875509316973964026623517650711105741",
-          "noTokenId": "100817905664569847250809424670718862628529475440959774309640290403015391260056"
-        }
-      ]
     },
     "7315": {
       "title": "Will the US confirm that aliens exist before 2027?",
@@ -7780,6 +7538,218 @@
         "noLabel": "Pacers"
       },
       "type": "binary"
+    },
+    "9319": {
+      "title": "KPL: HERO vs WE (Mar. 15 5:00AM ET)",
+      "url": "https://app.opinion.trade/market/9319?ref=opinion_hud",
+      "yesTokenId": "60081411908899836291685544452899922475978681621084858637283379902738024941284",
+      "noTokenId": "68964004238546108413271653004240639220863622848750754265963175639224385777260",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "HERO",
+        "noLabel": "WE"
+      },
+      "type": "binary"
+    },
+    "9293": {
+      "title": "Bitcoin Up or Down on March 13?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/9293?ref=opinion_hud",
+      "yesTokenId": "99773798865496897038601271992311033008300632613421986540423591694571261002411",
+      "noTokenId": "62851876141252630591105196294293555118897058890375288458231422835476176784423",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9320": {
+      "title": "KPL: LGD.NBW vs TTG (Mar. 15 8:00AM ET)",
+      "url": "https://app.opinion.trade/market/9320?ref=opinion_hud",
+      "yesTokenId": "45918319844203075739031219172315377561265059476247248786401812541297987117292",
+      "noTokenId": "96524299667190741388535455841446933783528599302708840577584628947127249050770",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "LGD.NBW",
+        "noLabel": "TTG"
+      },
+      "type": "binary"
+    },
+    "9290": {
+      "title": "NBA: Hornets vs Spurs (Mar. 14 3:30PM ET)",
+      "url": "https://app.opinion.trade/market/9290?ref=opinion_hud",
+      "yesTokenId": "55719963521512881171365152292954489246845670757576811093627053104836463147632",
+      "noTokenId": "99778005547682906753758270022817167517478459408196396498443477770739667333838",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Hornets",
+        "noLabel": "Spurs"
+      },
+      "type": "binary"
+    },
+    "9318": {
+      "title": "KPL: TES.A vs Q9 (Mar. 15 2:00AM ET)",
+      "url": "https://app.opinion.trade/market/9318?ref=opinion_hud",
+      "yesTokenId": "106911379265000836916375815196187088137652939764631207737033148459306118958343",
+      "noTokenId": "23390432274638360613420907533861265440836846350569959197667304700960449404466",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "TES.A",
+        "noLabel": "Q9"
+      },
+      "type": "binary"
+    },
+    "9316": {
+      "title": "LoL - FST: BLG vs BFX (Mar. 16 9:00AM ET)",
+      "url": "https://app.opinion.trade/market/9316?ref=opinion_hud",
+      "yesTokenId": "79174451365861255033392695835786494364618257130646484077820111999886398424421",
+      "noTokenId": "88081887891807634248960020728450108645528642867935843928940709243426299873826",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "BLG",
+        "noLabel": "BFX"
+      },
+      "type": "binary"
+    },
+    "9291": {
+      "title": "NBA: Wizards vs Celtics (Mar. 14 6:00PM ET)",
+      "url": "https://app.opinion.trade/market/9291?ref=opinion_hud",
+      "yesTokenId": "15643891680769281899546843933308430836943580237261974972687317619088641559992",
+      "noTokenId": "59848754124965651183020914435172105969422657561886451945400293091919701287227",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Wizards",
+        "noLabel": "Celtics"
+      },
+      "type": "binary"
+    },
+    "9317": {
+      "title": "LoL - FST: G2 vs TSW (Mar. 16 2:00PM ET)",
+      "url": "https://app.opinion.trade/market/9317?ref=opinion_hud",
+      "yesTokenId": "1366885604250789280537643299954648484388070160774849570331517062816173336076",
+      "noTokenId": "84595416213701486510759058703127472585437620119804707923165052216698682968475",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "G2",
+        "noLabel": "TSW"
+      },
+      "type": "binary"
+    },
+    "9292": {
+      "title": "NBA: Nuggets vs Lakers (Mar. 14 8:30PM ET)",
+      "url": "https://app.opinion.trade/market/9292?ref=opinion_hud",
+      "yesTokenId": "68925503579115780383299139444863416426207930919982933866735626346894586089272",
+      "noTokenId": "44328232805448126978931510773527080174286134845158785466995464489135429003616",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Nuggets",
+        "noLabel": "Lakers"
+      },
+      "type": "binary"
+    },
+    "95": {
+      "title": "Backpack FDV above ... one day after launch?",
+      "url": "https://app.opinion.trade/market/95?ref=opinion_hud",
+      "yesTokenId": "90395542606350859238403926487903928664496101979876846060267456354596525131581",
+      "noTokenId": "27711196036595156371904703738314711275929859089388171300992837784686788855742",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "backpack",
+        "backpack exchange",
+        "fdv",
+        "fully diluted valuation",
+        "crypto exchange",
+        "token launch",
+        "market cap",
+        "valuation",
+        "trading",
+        "listing",
+        "tge",
+        "token price",
+        "exchange launch",
+        "initial valuation",
+        "backpack fdv",
+        "fdv above",
+        "above one",
+        "one day",
+        "day after",
+        "after launch",
+        "backpack fdv above",
+        "fdv above one",
+        "above one day",
+        "one day after",
+        "day after launch"
+      ],
+      "entities": [
+        "backpack"
+      ],
+      "entityGroups": [
+        [
+          "backpack",
+          "backpack 交易所"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "1770",
+          "title": "$1B",
+          "yesTokenId": "28344807126881202209615667683342755194340563571297472717594388939000528031146",
+          "noTokenId": "105037746151635658183722041917146475007873934799335245036294152918909571837036"
+        },
+        {
+          "marketId": "1771",
+          "title": "$2B",
+          "yesTokenId": "26943662771113153309349188978591539459905180988691528623108811438107757493280",
+          "noTokenId": "114584781826770082316207161597312277022652142730296137217057911012299546474393"
+        },
+        {
+          "marketId": "1772",
+          "title": "$3B",
+          "yesTokenId": "106555916844721350460793178421231056427315805347770447750948294026871882888221",
+          "noTokenId": "80055550438974740757785854922428084298011315643438858179747853579006731078312"
+        },
+        {
+          "marketId": "1773",
+          "title": "$4B",
+          "yesTokenId": "48638358498196167070989659311045733300732882388569732248894905340738868490231",
+          "noTokenId": "12376906555062351551252509108425285628521015624061021786151925823370087803141"
+        },
+        {
+          "marketId": "1774",
+          "title": "$5B",
+          "yesTokenId": "30263922152791071979891737016383166449695193128206344912224798892698496443551",
+          "noTokenId": "78095378181540686696636708658095436011913926234370634415849216312825297680858"
+        },
+        {
+          "marketId": "3503",
+          "title": "$700M",
+          "yesTokenId": "41332564841887264670382276564793607937272322141578300217289855080335265359029",
+          "noTokenId": "3047311905991592776753099005494346394490835747876382547036000392052515466284"
+        },
+        {
+          "marketId": "9300",
+          "title": "$500M",
+          "yesTokenId": "91539367089963976780978758482642359567775631432098484949727918288159232226606",
+          "noTokenId": "96221416434393756654525597973986566643730089041051638150216127724722353147118"
+        },
+        {
+          "marketId": "9301",
+          "title": "$200M",
+          "yesTokenId": "72262470578759783438222922860419502647941048504995015488552383056763094143",
+          "noTokenId": "23344500985204921870127900848895483356252067552142299594937065053194367429057"
+        },
+        {
+          "marketId": "9302",
+          "title": "$300M",
+          "yesTokenId": "90395542606350859238403926487903928664496101979876846060267456354596525131581",
+          "noTokenId": "27711196036595156371904703738314711275929859089388171300992837784686788855742"
+        }
+      ]
     }
   },
   "index": {
@@ -7937,11 +7907,13 @@
     ],
     "above one": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "above one day": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "acquisition": [
       "2398"
@@ -7970,7 +7942,8 @@
     "after launch": [
       "1721",
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "against iran": [
       "415"
@@ -8110,6 +8083,21 @@
     "backing": [
       "3055"
     ],
+    "backpack": [
+      "95"
+    ],
+    "backpack exchange": [
+      "95"
+    ],
+    "backpack fdv": [
+      "95"
+    ],
+    "backpack fdv above": [
+      "95"
+    ],
+    "backpack 交易所": [
+      "95"
+    ],
     "balance of power": [
       "390"
     ],
@@ -8154,9 +8142,6 @@
     ],
     "big tech": [
       "404"
-    ],
-    "bilateral": [
-      "386"
     ],
     "binance": [
       "3368",
@@ -8484,9 +8469,6 @@
     "competitive": [
       "419"
     ],
-    "conference": [
-      "386"
-    ],
     "conflict": [
       "3039",
       "413",
@@ -8566,7 +8548,8 @@
     ],
     "crypto exchange": [
       "3362",
-      "3369"
+      "3369",
+      "95"
     ],
     "crypto hack": [
       "3360"
@@ -8629,10 +8612,12 @@
     "day after": [
       "1721",
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "day after launch": [
-      "396"
+      "396",
+      "95"
     ],
     "deadline": [
       "3448",
@@ -8723,10 +8708,6 @@
     ],
     "dip": [
       "402"
-    ],
-    "diplomatic": [
-      "386",
-      "387"
     ],
     "distribution": [
       "392",
@@ -8819,9 +8800,6 @@
     ],
     "eligibility": [
       "392"
-    ],
-    "encounter": [
-      "386"
     ],
     "encryption": [
       "3256"
@@ -8940,6 +8918,9 @@
       "1721",
       "392"
     ],
+    "exchange launch": [
+      "95"
+    ],
     "exclusion": [
       "3257"
     ],
@@ -8970,10 +8951,6 @@
     "extradition": [
       "1856"
     ],
-    "face-to-face": [
-      "386",
-      "387"
-    ],
     "facebook": [
       "403"
     ],
@@ -8995,15 +8972,18 @@
     ],
     "fdv": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "fdv above": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "fdv above one": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "fdv one": [
       "1721"
@@ -9059,7 +9039,8 @@
     ],
     "fully diluted valuation": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "fun fdv": [
       "394"
@@ -9304,7 +9285,8 @@
       "3362"
     ],
     "initial valuation": [
-      "396"
+      "396",
+      "95"
     ],
     "interest rates": [
       "418"
@@ -9463,9 +9445,6 @@
     "kraken交易所": [
       "3362"
     ],
-    "kremlin": [
-      "387"
-    ],
     "l1": [
       "1721",
       "3361"
@@ -9499,9 +9478,6 @@
     "layer 2": [
       "3366",
       "392"
-    ],
-    "leaders": [
-      "386"
     ],
     "leadership": [
       "3369"
@@ -9553,7 +9529,8 @@
       "3362",
       "395",
       "396",
-      "397"
+      "397",
+      "95"
     ],
     "lol": [
       "419"
@@ -9628,7 +9605,8 @@
       "3506",
       "394",
       "396",
-      "404"
+      "404",
+      "95"
     ],
     "market value": [
       "411"
@@ -9650,16 +9628,6 @@
     ],
     "max": [
       "2398"
-    ],
-    "meet next": [
-      "386"
-    ],
-    "meet zelenskyy": [
-      "387"
-    ],
-    "meeting": [
-      "386",
-      "387"
     ],
     "mega eth": [
       "392"
@@ -9880,12 +9848,6 @@
     "negative growth": [
       "3265"
     ],
-    "negotiation": [
-      "386"
-    ],
-    "negotiations": [
-      "387"
-    ],
     "netflix": [
       "2398",
       "3221",
@@ -9954,11 +9916,13 @@
     "one day": [
       "1721",
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "one day after": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "op stack": [
       "3366"
@@ -10017,9 +9981,6 @@
     ],
     "peace deal": [
       "415"
-    ],
-    "peace talks": [
-      "387"
     ],
     "peg": [
       "3359"
@@ -10184,20 +10145,6 @@
     "pump": [
       "3364",
       "3368"
-    ],
-    "putin": [
-      "386",
-      "387"
-    ],
-    "putin meet": [
-      "386",
-      "387"
-    ],
-    "putin meet next": [
-      "386"
-    ],
-    "putin meet zelenskyy": [
-      "387"
     ],
     "q1": [
       "408"
@@ -10414,9 +10361,6 @@
     "running mate": [
       "3055"
     ],
-    "russia": [
-      "387"
-    ],
     "s23": [
       "401"
     ],
@@ -10559,9 +10503,6 @@
     "single album": [
       "2178"
     ],
-    "sit-down": [
-      "386"
-    ],
     "slowdown": [
       "3265"
     ],
@@ -10681,10 +10622,6 @@
       "2368",
       "389"
     ],
-    "summit": [
-      "386",
-      "387"
-    ],
     "summoner's rift": [
       "419"
     ],
@@ -10711,10 +10648,6 @@
     ],
     "takeover": [
       "2398"
-    ],
-    "talks": [
-      "386",
-      "387"
     ],
     "target": [
       "3449",
@@ -10809,7 +10742,8 @@
       "1721",
       "395",
       "396",
-      "397"
+      "397",
+      "95"
     ],
     "the post": [
       "3223"
@@ -10886,7 +10820,11 @@
       "3366",
       "395",
       "396",
-      "397"
+      "397",
+      "95"
+    ],
+    "token price": [
+      "95"
     ],
     "token sale": [
       "118",
@@ -10931,7 +10869,8 @@
       "408",
       "409",
       "410",
-      "411"
+      "411",
+      "95"
     ],
     "transfer": [
       "3365"
@@ -10953,7 +10892,6 @@
       "1546",
       "3055",
       "3062",
-      "386",
       "415"
     ],
     "trump announces": [
@@ -10977,12 +10915,6 @@
     "trump out president": [
       "3062"
     ],
-    "trump putin": [
-      "386"
-    ],
-    "trump putin meet": [
-      "386"
-    ],
     "trump tariffs": [
       "1546"
     ],
@@ -11004,9 +10936,6 @@
     ],
     "uefa": [
       "412"
-    ],
-    "ukraine": [
-      "387"
     ],
     "underclassmen": [
       "3072"
@@ -11064,7 +10993,8 @@
       "3525",
       "394",
       "396",
-      "408"
+      "408",
+      "95"
     ],
     "van duyne": [
       "391"
@@ -11096,20 +11026,11 @@
     "victory": [
       "401"
     ],
-    "visit": [
-      "386"
-    ],
-    "vladimir": [
-      "387"
-    ],
     "volatility": [
       "3367",
       "402",
       "404",
       "410"
-    ],
-    "volodymyr": [
-      "387"
     ],
     "vote": [
       "391"
@@ -11175,12 +11096,6 @@
     "wheeler family": [
       "3222"
     ],
-    "where trump": [
-      "386"
-    ],
-    "where trump putin": [
-      "386"
-    ],
     "which countries": [
       "414"
     ],
@@ -11210,9 +11125,6 @@
     ],
     "yg entertainment": [
       "2178"
-    ],
-    "zelenskyy": [
-      "387"
     ],
     "zhao": [
       "3369"
@@ -11319,9 +11231,6 @@
     "泰达币": [
       "3359"
     ],
-    "泽连斯基": [
-      "387"
-    ],
     "特大地震": [
       "3356"
     ],
@@ -11332,7 +11241,6 @@
       "1546",
       "3055",
       "3062",
-      "386",
       "415"
     ],
     "第23赛季": [
@@ -11424,11 +11332,13 @@
     ],
     "above one": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "above one day": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "actor": [
       "389"
@@ -11441,7 +11351,8 @@
     ],
     "after launch": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "against iran": [
       "415"
@@ -11503,6 +11414,21 @@
       "413",
       "414"
     ],
+    "backpack": [
+      "95"
+    ],
+    "backpack exchange": [
+      "95"
+    ],
+    "backpack fdv": [
+      "95"
+    ],
+    "backpack fdv above": [
+      "95"
+    ],
+    "backpack 交易所": [
+      "95"
+    ],
     "balance of power": [
       "390"
     ],
@@ -11514,9 +11440,6 @@
     ],
     "big tech": [
       "404"
-    ],
-    "bilateral": [
-      "386"
     ],
     "binance": [
       "411"
@@ -11667,9 +11590,6 @@
     "competitive": [
       "419"
     ],
-    "conference": [
-      "386"
-    ],
     "conflict": [
       "413",
       "414",
@@ -11704,6 +11624,9 @@
       "410",
       "411"
     ],
+    "crypto exchange": [
+      "95"
+    ],
     "crypto price": [
       "396"
     ],
@@ -11735,10 +11658,12 @@
     ],
     "day after": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "day after launch": [
-      "396"
+      "396",
+      "95"
     ],
     "debut": [
       "163",
@@ -11779,10 +11704,6 @@
     "dip": [
       "402"
     ],
-    "diplomatic": [
-      "386",
-      "387"
-    ],
     "distribution": [
       "392",
       "397"
@@ -11816,9 +11737,6 @@
     ],
     "eligibility": [
       "392"
-    ],
-    "encounter": [
-      "386"
     ],
     "end war": [
       "415"
@@ -11890,9 +11808,8 @@
     "evm": [
       "392"
     ],
-    "face-to-face": [
-      "386",
-      "387"
+    "exchange launch": [
+      "95"
     ],
     "facebook": [
       "403"
@@ -11902,15 +11819,18 @@
     ],
     "fdv": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "fdv above": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "fdv above one": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "film": [
       "389"
@@ -11939,7 +11859,8 @@
     ],
     "fully diluted valuation": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "fun fdv": [
       "394"
@@ -12022,7 +11943,8 @@
       "418"
     ],
     "initial valuation": [
-      "396"
+      "396",
+      "95"
     ],
     "interest rates": [
       "418"
@@ -12102,9 +12024,6 @@
     "knockout": [
       "412"
     ],
-    "kremlin": [
-      "387"
-    ],
     "l2": [
       "392"
     ],
@@ -12125,9 +12044,6 @@
     ],
     "layer 2": [
       "392"
-    ],
-    "leaders": [
-      "386"
     ],
     "league": [
       "419"
@@ -12163,7 +12079,8 @@
       "163",
       "395",
       "396",
-      "397"
+      "397",
+      "95"
     ],
     "lol": [
       "419"
@@ -12200,7 +12117,8 @@
     "market cap": [
       "394",
       "396",
-      "404"
+      "404",
+      "95"
     ],
     "market value": [
       "411"
@@ -12216,16 +12134,6 @@
     ],
     "masters santiago 2026": [
       "400"
-    ],
-    "meet next": [
-      "386"
-    ],
-    "meet zelenskyy": [
-      "387"
-    ],
-    "meeting": [
-      "386",
-      "387"
     ],
     "mega eth": [
       "392"
@@ -12334,12 +12242,6 @@
     "native token": [
       "395"
     ],
-    "negotiation": [
-      "386"
-    ],
-    "negotiations": [
-      "387"
-    ],
     "next bond": [
       "389"
     ],
@@ -12369,11 +12271,13 @@
     ],
     "one day": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "one day after": [
       "394",
-      "396"
+      "396",
+      "95"
     ],
     "opening price": [
       "396"
@@ -12396,9 +12300,6 @@
     ],
     "peace deal": [
       "415"
-    ],
-    "peace talks": [
-      "387"
     ],
     "performance": [
       "408"
@@ -12511,20 +12412,6 @@
       "163",
       "397"
     ],
-    "putin": [
-      "386",
-      "387"
-    ],
-    "putin meet": [
-      "386",
-      "387"
-    ],
-    "putin meet next": [
-      "386"
-    ],
-    "putin meet zelenskyy": [
-      "387"
-    ],
     "q1": [
       "408"
     ],
@@ -12580,9 +12467,6 @@
     ],
     "round of 16": [
       "412"
-    ],
-    "russia": [
-      "387"
     ],
     "s23": [
       "401"
@@ -12649,9 +12533,6 @@
     "shein": [
       "163"
     ],
-    "sit-down": [
-      "386"
-    ],
     "smart contracts": [
       "409"
     ],
@@ -12706,10 +12587,6 @@
     "successor": [
       "389"
     ],
-    "summit": [
-      "386",
-      "387"
-    ],
     "summoner's rift": [
       "419"
     ],
@@ -12718,10 +12595,6 @@
     ],
     "tactical shooter": [
       "400"
-    ],
-    "talks": [
-      "386",
-      "387"
     ],
     "target": [
       "413"
@@ -12774,7 +12647,8 @@
     "tge": [
       "395",
       "396",
-      "397"
+      "397",
+      "95"
     ],
     "tie": [
       "412"
@@ -12800,7 +12674,11 @@
       "118",
       "395",
       "396",
-      "397"
+      "397",
+      "95"
+    ],
+    "token price": [
+      "95"
     ],
     "token sale": [
       "118",
@@ -12833,7 +12711,8 @@
       "408",
       "409",
       "410",
-      "411"
+      "411",
+      "95"
     ],
     "troops": [
       "415"
@@ -12842,7 +12721,6 @@
       "401"
     ],
     "trump": [
-      "386",
       "415"
     ],
     "trump announces": [
@@ -12853,12 +12731,6 @@
     ],
     "trump iran": [
       "415"
-    ],
-    "trump putin": [
-      "386"
-    ],
-    "trump putin meet": [
-      "386"
     ],
     "tsla": [
       "408"
@@ -12874,9 +12746,6 @@
     ],
     "uefa": [
       "412"
-    ],
-    "ukraine": [
-      "387"
     ],
     "unicorns": [
       "163"
@@ -12900,7 +12769,8 @@
       "163",
       "394",
       "396",
-      "408"
+      "408",
+      "95"
     ],
     "van duyne": [
       "391"
@@ -12914,19 +12784,10 @@
     "victory": [
       "401"
     ],
-    "visit": [
-      "386"
-    ],
-    "vladimir": [
-      "387"
-    ],
     "volatility": [
       "402",
       "404",
       "410"
-    ],
-    "volodymyr": [
-      "387"
     ],
     "vote": [
       "391"
@@ -12969,12 +12830,6 @@
     "what price ethereum": [
       "409"
     ],
-    "where trump": [
-      "386"
-    ],
-    "where trump putin": [
-      "386"
-    ],
     "which countries": [
       "414"
     ],
@@ -12989,9 +12844,6 @@
     ],
     "withdrawal": [
       "415"
-    ],
-    "zelenskyy": [
-      "387"
     ],
     "zuckerberg": [
       "403"
@@ -13048,14 +12900,10 @@
     "比特币": [
       "410"
     ],
-    "泽连斯基": [
-      "387"
-    ],
     "特斯拉": [
       "408"
     ],
     "特朗普": [
-      "386",
       "415"
     ],
     "第23赛季": [
