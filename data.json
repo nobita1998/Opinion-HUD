@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-12 01:05:05 UTC+8",
+    "generatedAt": "2026-03-12 10:52:03 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 244,
-      "markets": 192,
+      "kept": 236,
+      "markets": 186,
       "keywords": 1059,
       "events": {
         "events": 31
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 756,
+        "cutoff_expired": 764,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -4833,8 +4833,8 @@
     "386": {
       "title": "Where will Trump and Putin meet next?",
       "url": "https://app.opinion.trade/market/386?ref=opinion_hud",
-      "yesTokenId": "107026528818990160351952083874352407005355550952456216351806345874229529528343",
-      "noTokenId": "72775098674509771375310225461531895183844788893103077993114709087492837002305",
+      "yesTokenId": "58639220232739088821031306701711916632275652243432551093437289179972343076565",
+      "noTokenId": "111306175804521349985911612259515555271877659734183598386120295984154384011888",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -7697,30 +7697,6 @@
       },
       "type": "binary"
     },
-    "9054": {
-      "title": "KPL: TES.A vs WE (Mar. 12 5:00AM ET)",
-      "url": "https://app.opinion.trade/market/9054?ref=opinion_hud",
-      "yesTokenId": "69937532194440907568789993049322752065855313648399491272220668136059570477756",
-      "noTokenId": "38785128051459900555987607316418245468943733314886736133266973582411368181683",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "TES.A",
-        "noLabel": "WE"
-      },
-      "type": "binary"
-    },
-    "9055": {
-      "title": "KPL: AG.SP vs DYG (Mar. 12 8:00AM ET)",
-      "url": "https://app.opinion.trade/market/9055?ref=opinion_hud",
-      "yesTokenId": "100734765899702255503238711506413043324598753240301345374261689672048858741528",
-      "noTokenId": "104014600266966288078187493301049659907943427041060451038546532702024876730464",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "AG.SP",
-        "noLabel": "DYG"
-      },
-      "type": "binary"
-    },
     "9056": {
       "title": "KPL: TTG vs Q9 (Mar. 13 5:00AM ET)",
       "url": "https://app.opinion.trade/market/9056?ref=opinion_hud",
@@ -7769,30 +7745,6 @@
       },
       "type": "binary"
     },
-    "9218": {
-      "title": "NBA: Celtics vs Thunder (Mar. 12  9:30PM ET)",
-      "url": "https://app.opinion.trade/market/9218?ref=opinion_hud",
-      "yesTokenId": "103098790799638581932976706224123042212789624822815879848522349820407448635789",
-      "noTokenId": "16166304371239226763648131094096600127535928114680035902468762654320833557840",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Celtics",
-        "noLabel": "Thunder"
-      },
-      "type": "binary"
-    },
-    "9220": {
-      "title": "Bitcoin Up or Down on March 12?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/9220?ref=opinion_hud",
-      "yesTokenId": "81069229361860590245708049619839884222099616475895421226952862002801068271930",
-      "noTokenId": "86724541305182424858446603919763566841352876877092645426316460953672265253128",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "9221": {
       "title": "NBA: Cavaliers vs Mavericks (Mar. 13 7:30PM ET)",
       "url": "https://app.opinion.trade/market/9221?ref=opinion_hud",
@@ -7802,30 +7754,6 @@
       "labels": {
         "yesLabel": "Cavaliers",
         "noLabel": "Mavericks"
-      },
-      "type": "binary"
-    },
-    "9217": {
-      "title": "NBA: Nuggets vs Spurs (Mar. 12 9:00PM ET)",
-      "url": "https://app.opinion.trade/market/9217?ref=opinion_hud",
-      "yesTokenId": "12492045299013501514886502440801948560964221485562939962378501215071820051176",
-      "noTokenId": "72533257066497676946010138375851468647588596432610710249096809131243518749062",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Nuggets",
-        "noLabel": "Spurs"
-      },
-      "type": "binary"
-    },
-    "9219": {
-      "title": "NBA: Bulls vs Lakers (Mar. 12 10:30PM ET)",
-      "url": "https://app.opinion.trade/market/9219?ref=opinion_hud",
-      "yesTokenId": "98022655985128640980772515196372144493707981389916378242974699632337523746453",
-      "noTokenId": "12811670100836470160130063268565100659427596828458189953024752320504240951811",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Bulls",
-        "noLabel": "Lakers"
       },
       "type": "binary"
     },
