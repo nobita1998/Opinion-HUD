@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-13 01:08:13 UTC+8",
+    "generatedAt": "2026-03-13 10:49:36 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 226,
-      "markets": 194,
-      "keywords": 1035,
+      "kept": 207,
+      "markets": 190,
+      "keywords": 962,
       "events": {
-        "events": 30
+        "events": 27
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 774,
+        "cutoff_expired": 793,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -28,186 +28,18 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 29,
+        "reused": 27,
         "regenerated_empty_entitygroups": 0,
-        "calls": 1,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 1,
+        "non_empty": 0,
         "errors": 0
       }
     }
   },
   "events": {
-    "391": {
-      "title": "Texas Republican Senate Primary Winner",
-      "marketIds": [
-        "391"
-      ],
-      "bestMarketId": "391",
-      "bestLabels": null,
-      "keywords": [
-        "texas",
-        "senate",
-        "republican",
-        "gop",
-        "primary",
-        "election",
-        "politics",
-        "vote",
-        "polls",
-        "cornyn",
-        "paxton",
-        "hunt",
-        "van duyne",
-        "buckingham",
-        "texas republican",
-        "republican senate",
-        "senate primary",
-        "primary winner",
-        "texas republican senate",
-        "republican senate primary",
-        "senate primary winner"
-      ],
-      "entities": [
-        "texas",
-        "republican senate primary"
-      ],
-      "entityGroups": [
-        [
-          "texas",
-          "德克萨斯"
-        ],
-        [
-          "republican senate primary",
-          "共和党参议院初选"
-        ]
-      ],
-      "sig": "13360236",
-      "sigFull": "13360236",
-      "sigCore": "1dcb365b",
-      "reused": false
-    },
-    "389": {
-      "title": "Next James Bond actor?",
-      "marketIds": [
-        "389"
-      ],
-      "bestMarketId": "389",
-      "bestLabels": null,
-      "keywords": [
-        "james bond",
-        "007",
-        "bond",
-        "casting",
-        "actor",
-        "next bond",
-        "successor",
-        "franchise",
-        "spy",
-        "mi6",
-        "eon productions",
-        "mgm",
-        "british",
-        "film",
-        "movie",
-        "next james",
-        "bond actor",
-        "next james bond",
-        "james bond actor"
-      ],
-      "entities": [
-        "james bond"
-      ],
-      "entityGroups": [
-        [
-          "james bond",
-          "bond",
-          "詹姆斯·邦德"
-        ]
-      ],
-      "sig": "5614301d",
-      "sigFull": "5614301d",
-      "sigCore": "6497f904",
-      "reused": false
-    },
-    "390": {
-      "title": "Balance of Power: 2026 Midterms",
-      "marketIds": [
-        "390"
-      ],
-      "bestMarketId": "390",
-      "bestLabels": null,
-      "keywords": [
-        "midterms",
-        "midterm elections",
-        "congress",
-        "senate",
-        "house",
-        "balance of power",
-        "2026 elections",
-        "gop",
-        "democrats",
-        "republicans",
-        "legislative control",
-        "government control",
-        "election results",
-        "sweep",
-        "balance power",
-        "power 2026",
-        "2026 midterms",
-        "balance power 2026",
-        "power 2026 midterms"
-      ],
-      "entities": [
-        "中期选举"
-      ],
-      "entityGroups": [
-        [
-          "中期选举"
-        ]
-      ],
-      "sig": "140a2b8e",
-      "sigFull": "140a2b8e",
-      "sigCore": "78d182cb",
-      "reused": false
-    },
-    "388": {
-      "title": "Serie A League Winner",
-      "marketIds": [
-        "388"
-      ],
-      "bestMarketId": "388",
-      "bestLabels": null,
-      "keywords": [
-        "serie a",
-        "calcio",
-        "scudetto",
-        "italian football",
-        "italian soccer",
-        "serie a title",
-        "campionato",
-        "lega serie a",
-        "italy league",
-        "top flight italy",
-        "serie league",
-        "league winner",
-        "serie league winner"
-      ],
-      "entities": [
-        "serie a"
-      ],
-      "entityGroups": [
-        [
-          "serie a"
-        ]
-      ],
-      "sig": "ff68007b",
-      "sigFull": "ff68007b",
-      "sigCore": "99778bd9",
-      "reused": false
-    },
     "397": {
       "title": "Probable launch a token by ...?",
       "marketIds": [
@@ -4324,362 +4156,6 @@
       },
       "type": "binary"
     },
-    "391": {
-      "title": "Texas Republican Senate Primary Winner",
-      "url": "https://app.opinion.trade/market/391?ref=opinion_hud",
-      "yesTokenId": "62837417646000622304728333339592914321311517609846431150494600197571727208233",
-      "noTokenId": "54744276899606841313544737800173496756601114656961251025830174456926901093163",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "texas",
-        "senate",
-        "republican",
-        "gop",
-        "primary",
-        "election",
-        "politics",
-        "vote",
-        "polls",
-        "cornyn",
-        "paxton",
-        "hunt",
-        "van duyne",
-        "buckingham",
-        "texas republican",
-        "republican senate",
-        "senate primary",
-        "primary winner",
-        "texas republican senate",
-        "republican senate primary",
-        "senate primary winner"
-      ],
-      "entities": [
-        "texas",
-        "republican senate primary"
-      ],
-      "entityGroups": [
-        [
-          "texas",
-          "德克萨斯"
-        ],
-        [
-          "republican senate primary",
-          "共和党参议院初选"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7356",
-          "title": "Ken Paxton",
-          "yesTokenId": "66612571101546883728341057705064122509915241310199027335919297523624491390030",
-          "noTokenId": "51973177206101443434090748434141281042288708036210732341250508875949160925343"
-        },
-        {
-          "marketId": "7357",
-          "title": "John Cornyn",
-          "yesTokenId": "107507867753693104784226976510320196716025179383944598347967521757195540788641",
-          "noTokenId": "62977251153236401797582323027167212724589816659179794925502256203659128009498"
-        },
-        {
-          "marketId": "7358",
-          "title": "Wesley Hunt",
-          "yesTokenId": "16880144991069570383364618719917922323758759783780862420785818500154290232448",
-          "noTokenId": "5932990032207137904759949132803985268049766746471722313638929555524184425865"
-        },
-        {
-          "marketId": "7359",
-          "title": "Dawn Buckingham",
-          "yesTokenId": "62837417646000622304728333339592914321311517609846431150494600197571727208233",
-          "noTokenId": "54744276899606841313544737800173496756601114656961251025830174456926901093163"
-        },
-        {
-          "marketId": "7360",
-          "title": "Beth Van Duyne",
-          "yesTokenId": "47671701555550109686250692667076160004284184343817475477963340873215433464300",
-          "noTokenId": "15141309422234894858374781800243428929786999650490372868250162762415884543267"
-        }
-      ]
-    },
-    "389": {
-      "title": "Next James Bond actor?",
-      "url": "https://app.opinion.trade/market/389?ref=opinion_hud",
-      "yesTokenId": "70526268716302459730585711380961764912400554352423936236564348283050462525548",
-      "noTokenId": "52367403465015874471487033834493793440032519378308582824354197069167496566298",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "james bond",
-        "007",
-        "bond",
-        "casting",
-        "actor",
-        "next bond",
-        "successor",
-        "franchise",
-        "spy",
-        "mi6",
-        "eon productions",
-        "mgm",
-        "british",
-        "film",
-        "movie",
-        "next james",
-        "bond actor",
-        "next james bond",
-        "james bond actor"
-      ],
-      "entities": [
-        "james bond"
-      ],
-      "entityGroups": [
-        [
-          "james bond",
-          "bond",
-          "詹姆斯·邦德"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7339",
-          "title": "No Bond chosen",
-          "yesTokenId": "75194233865931842715228047348506882640029034677140228052816760785457381434334",
-          "noTokenId": "109611783456511051899579314455726748454509256270221362146962613589557309423905"
-        },
-        {
-          "marketId": "7340",
-          "title": "Callum Turner",
-          "yesTokenId": "106467529350033196271665120489903959081005992945115004548016285583103985701312",
-          "noTokenId": "110759559982495246984849151751706296550275542843133657302638759863625869467808"
-        },
-        {
-          "marketId": "7341",
-          "title": "Jacob Elordi",
-          "yesTokenId": "76663847399959315000325555506083727246338850600478516694536228796421384360471",
-          "noTokenId": "60346841611959832294800565894437395400292036237148395132582092215143521613796"
-        },
-        {
-          "marketId": "7342",
-          "title": "Aaron Taylor-Johnson",
-          "yesTokenId": "83214804222143243061551170976087021414817691060444418025869638468706281943072",
-          "noTokenId": "97201908631005499781950828499563049674446892413589540084922252332408019454518"
-        },
-        {
-          "marketId": "7343",
-          "title": "Henry Cavill",
-          "yesTokenId": "60496294075996334106238379189101341175655574337842894734310228334612111883707",
-          "noTokenId": "13447878723138241925320011807523249015495580776410016032835969001737830973536"
-        },
-        {
-          "marketId": "7344",
-          "title": "Harris Dickinson",
-          "yesTokenId": "53445495041981088133332260996989965872149878371349603542735621986608970485993",
-          "noTokenId": "85931321259474211692299117459103945288075406867998268435162348464552809428295"
-        },
-        {
-          "marketId": "7345",
-          "title": "Tom Holland",
-          "yesTokenId": "62378120352250654088253347913813097452765445399759504087072280427937984353181",
-          "noTokenId": "68146239829949641337939735351119968076565424102069401279682845677234752531234"
-        },
-        {
-          "marketId": "7346",
-          "title": "Jack Lowdon",
-          "yesTokenId": "70526268716302459730585711380961764912400554352423936236564348283050462525548",
-          "noTokenId": "52367403465015874471487033834493793440032519378308582824354197069167496566298"
-        },
-        {
-          "marketId": "7347",
-          "title": "James Norton",
-          "yesTokenId": "8220505442469989662976231344850873153931662166606987971054046133118508557365",
-          "noTokenId": "104263079709078289126747030221025724188774108140713068296908856197950115549348"
-        },
-        {
-          "marketId": "7348",
-          "title": "Tom Hardy",
-          "yesTokenId": "76419917743181436473066130537203629743112709911508060481855405964058583006085",
-          "noTokenId": "113546508875661250842002582292316984725221506338439091529077106285355416252688"
-        },
-        {
-          "marketId": "7349",
-          "title": "Paul Mescal",
-          "yesTokenId": "36015244169226127519175951464555050176008414265458403850510920443368132929865",
-          "noTokenId": "26005261017246862535187902952245560853668370439441152768272423745684142962590"
-        },
-        {
-          "marketId": "7350",
-          "title": "Pierce Brosnan",
-          "yesTokenId": "64249963983607795953557429638485938732714493293384268124175091122989291008478",
-          "noTokenId": "86936344713249380431270138888670391830821680897645608902801180458580268613830"
-        }
-      ]
-    },
-    "390": {
-      "title": "Balance of Power: 2026 Midterms",
-      "url": "https://app.opinion.trade/market/390?ref=opinion_hud",
-      "yesTokenId": "112238601957589688689749615913336022534428512444830074294077273512739533884693",
-      "noTokenId": "44914051349833348218471308369497026887178333982899682821680631847750012776730",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "midterms",
-        "midterm elections",
-        "congress",
-        "senate",
-        "house",
-        "balance of power",
-        "2026 elections",
-        "gop",
-        "democrats",
-        "republicans",
-        "legislative control",
-        "government control",
-        "election results",
-        "sweep",
-        "balance power",
-        "power 2026",
-        "2026 midterms",
-        "balance power 2026",
-        "power 2026 midterms"
-      ],
-      "entities": [
-        "中期选举"
-      ],
-      "entityGroups": [
-        [
-          "中期选举"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7351",
-          "title": "Democrats Sweep",
-          "yesTokenId": "55627553564407261696259099212798344512382699327118071189005019322439057189156",
-          "noTokenId": "75671866622288443052383360236132934399135864815317706326985808047282882052"
-        },
-        {
-          "marketId": "7352",
-          "title": "D Senate, R House",
-          "yesTokenId": "112238601957589688689749615913336022534428512444830074294077273512739533884693",
-          "noTokenId": "44914051349833348218471308369497026887178333982899682821680631847750012776730"
-        },
-        {
-          "marketId": "7353",
-          "title": "R Senate, D House",
-          "yesTokenId": "113094450747156601139035587632339908912359864868979067439366068001829423236854",
-          "noTokenId": "103542953671965948801639909883983228646824900393323310118674809676983650650827"
-        },
-        {
-          "marketId": "7354",
-          "title": "Republicans Sweep",
-          "yesTokenId": "89078552026720072449518963791807588022537901885959814119667569949883424909488",
-          "noTokenId": "73649142811132860352044479164104830792756723884527434162471545995614298605741"
-        },
-        {
-          "marketId": "7355",
-          "title": "Other",
-          "yesTokenId": "81372045560465989126904098546363291061076831593406331937956170207144920643041",
-          "noTokenId": "6355557450049993922139634412650025201416057054892210197068681168998627847661"
-        }
-      ]
-    },
-    "388": {
-      "title": "Serie A League Winner",
-      "url": "https://app.opinion.trade/market/388?ref=opinion_hud",
-      "yesTokenId": "38765670049102586233753607441854718344331833992380018465395337403953319346094",
-      "noTokenId": "68793851339502394402712025266106432502704281139509796299099444724549457262532",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "serie a",
-        "calcio",
-        "scudetto",
-        "italian football",
-        "italian soccer",
-        "serie a title",
-        "campionato",
-        "lega serie a",
-        "italy league",
-        "top flight italy",
-        "serie league",
-        "league winner",
-        "serie league winner"
-      ],
-      "entities": [
-        "serie a"
-      ],
-      "entityGroups": [
-        [
-          "serie a"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7331",
-          "title": "Inter",
-          "yesTokenId": "110341621580385908670752757485535346553756565231027093311216693817529437228041",
-          "noTokenId": "88150213880226864775737036624206546843737187324096426954691013907993799027195"
-        },
-        {
-          "marketId": "7332",
-          "title": "AC Milan",
-          "yesTokenId": "38450734793689682396133017192311626434073050719309436111556727826066715370527",
-          "noTokenId": "18360743834104382076019461894327052809514021438159715282479375925197857880612"
-        },
-        {
-          "marketId": "7333",
-          "title": "Juventus",
-          "yesTokenId": "113659676582691829119858126408811373879297139542061991846111627267492242748982",
-          "noTokenId": "94872446515427646372434869940297953859166334966512880354761247155043186151354"
-        },
-        {
-          "marketId": "7334",
-          "title": "Napoli",
-          "yesTokenId": "19169634660935302854755299718521536681139940533327864984758004866722824944988",
-          "noTokenId": "94986552347005878877276554150275933254899742912723334366972806069668070477721"
-        },
-        {
-          "marketId": "7335",
-          "title": "Roma",
-          "yesTokenId": "82446291316862693477857786719861384221625209007654923989988224540144777743084",
-          "noTokenId": "46903906475418080286816385285335916231061632190549525454726698619863344557496"
-        },
-        {
-          "marketId": "7336",
-          "title": "Bologna",
-          "yesTokenId": "38838251564360647497577942528441055623486596054929116211602191475010556653399",
-          "noTokenId": "106743730821169773409632682389668474748932346352755909740798424836424304563793"
-        },
-        {
-          "marketId": "7337",
-          "title": "Lazio",
-          "yesTokenId": "79598373855008647849339236732186814680134074835879805917921598261627194981740",
-          "noTokenId": "90489107800217936430263914658203141702563814177879036895607226709143175364809"
-        },
-        {
-          "marketId": "7338",
-          "title": "Como",
-          "yesTokenId": "38765670049102586233753607441854718344331833992380018465395337403953319346094",
-          "noTokenId": "68793851339502394402712025266106432502704281139509796299099444724549457262532"
-        }
-      ]
-    },
     "7327": {
       "title": "KPL: LGD.NBW vs TCG (Feb. 24 4:00AM ET)",
       "url": "https://app.opinion.trade/market/7327?ref=opinion_hud",
@@ -7443,30 +6919,6 @@
         }
       ]
     },
-    "9057": {
-      "title": "KPL: HERO vs LGD.NBW (Mar. 13 8:00AM ET)",
-      "url": "https://app.opinion.trade/market/9057?ref=opinion_hud",
-      "yesTokenId": "88040072980530536349280838868591539942622258791287515943472275716165721625190",
-      "noTokenId": "90058164312813127360606285409055940929507543317618323132863025378627416404324",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "HERO",
-        "noLabel": "LGD.NBW"
-      },
-      "type": "binary"
-    },
-    "9056": {
-      "title": "KPL: TTG vs Q9 (Mar. 13 5:00AM ET)",
-      "url": "https://app.opinion.trade/market/9056?ref=opinion_hud",
-      "yesTokenId": "43611611191881155241554485514504104046679240662292133696722970692496878011889",
-      "noTokenId": "33622881484342018090103003986248774531834082136829968813154598679098279899694",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "TTG ",
-        "noLabel": "Q9"
-      },
-      "type": "binary"
-    },
     "9152": {
       "title": "KPL: AG.SP vs KSG (Mar. 14 8:00AM ET)",
       "url": "https://app.opinion.trade/market/9152?ref=opinion_hud",
@@ -7503,42 +6955,6 @@
       },
       "type": "binary"
     },
-    "9221": {
-      "title": "NBA: Cavaliers vs Mavericks (Mar. 13 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/9221?ref=opinion_hud",
-      "yesTokenId": "51549565277315069188906120681184314301024168469005963908921777042329817371024",
-      "noTokenId": "75171312053576893956392092490490365513438786204890368769010404164786572440111",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Cavaliers",
-        "noLabel": "Mavericks"
-      },
-      "type": "binary"
-    },
-    "9223": {
-      "title": "NBA: Bulls vs Clippers (Mar. 13 10:30PM ET)",
-      "url": "https://app.opinion.trade/market/9223?ref=opinion_hud",
-      "yesTokenId": "27864636881331139885002016864861818031976006436585875497489824021135601739358",
-      "noTokenId": "114388407560132611394385859563355233382774658914695648610615933227916457064284",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Bulls",
-        "noLabel": "Clippers"
-      },
-      "type": "binary"
-    },
-    "9222": {
-      "title": "NBA: Knicks vs Pacers (Mar. 13 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/9222?ref=opinion_hud",
-      "yesTokenId": "10656666128171823899825983139649861235486859485504159878457418787566367909851",
-      "noTokenId": "98128981028605075274960091026198380917530641585059142913507589077798968306984",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Knicks",
-        "noLabel": "Pacers"
-      },
-      "type": "binary"
-    },
     "9319": {
       "title": "KPL: HERO vs WE (Mar. 15 5:00AM ET)",
       "url": "https://app.opinion.trade/market/9319?ref=opinion_hud",
@@ -7548,18 +6964,6 @@
       "labels": {
         "yesLabel": "HERO",
         "noLabel": "WE"
-      },
-      "type": "binary"
-    },
-    "9293": {
-      "title": "Bitcoin Up or Down on March 13?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/9293?ref=opinion_hud",
-      "yesTokenId": "99773798865496897038601271992311033008300632613421986540423591694571261002411",
-      "noTokenId": "62851876141252630591105196294293555118897058890375288458231422835476176784423",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
@@ -7750,6 +7154,78 @@
           "noTokenId": "27711196036595156371904703738314711275929859089388171300992837784686788855742"
         }
       ]
+    },
+    "9373": {
+      "title": "NBA: Mavericks vs Cavaliers (Mar. 15 3:30PM ET)",
+      "url": "https://app.opinion.trade/market/9373?ref=opinion_hud",
+      "yesTokenId": "73534176969019372599462072282321420713470819324806021814582794694976755594350",
+      "noTokenId": "22245935859714056058517335686060723101065157849697349293158661341646097641696",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Mavericks",
+        "noLabel": "Cavaliers"
+      },
+      "type": "binary"
+    },
+    "9375": {
+      "title": "NBA: Jazz vs Kings (Mar. 15 10:30PM ET)",
+      "url": "https://app.opinion.trade/market/9375?ref=opinion_hud",
+      "yesTokenId": "67193213593270363238481430786546615440808225001742202853787704445937490269685",
+      "noTokenId": "16588075040450623067059583640646107847810010506904723911928149117321201802066",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Jazz",
+        "noLabel": "Kings"
+      },
+      "type": "binary"
+    },
+    "9374": {
+      "title": "NBA: Warriors vs Knicks (Mar. 15 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/9374?ref=opinion_hud",
+      "yesTokenId": "14410778839473369339174723078667070747509387696373085021881157925647892323078",
+      "noTokenId": "73531555181653835465093020142292353633386852118001141522101867306733344899040",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Warriors",
+        "noLabel": "Knicks"
+      },
+      "type": "binary"
+    },
+    "9363": {
+      "title": "ETH Up or Down - Hourly (Mar 13, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9363?ref=opinion_hud",
+      "yesTokenId": "4346326475967708775355804567556109551413326901236173917708550323835932315129",
+      "noTokenId": "81484008405037004354905536955273523693326788153241580368179398360462765216430",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9362": {
+      "title": "BTC Up or Down - Hourly (Mar 13, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9362?ref=opinion_hud",
+      "yesTokenId": "53397768903123597359866473071312149405773451885624015725592498862587216393818",
+      "noTokenId": "45878456055428511155429865022870708877841560369617093315111168664219386003978",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9361": {
+      "title": "BNB Up or Down - Hourly (Mar 13, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9361?ref=opinion_hud",
+      "yesTokenId": "93869983448357412109710865167395532973875360806455424153314826000635893044685",
+      "noTokenId": "85180993178175092188035506689327067764133173596341906769049874451288060975652",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -7765,9 +7241,6 @@
     ],
     "$300m": [
       "3506"
-    ],
-    "007": [
-      "389"
     ],
     "1:1": [
       "3359"
@@ -7796,17 +7269,11 @@
       "400",
       "419"
     ],
-    "2026 elections": [
-      "390"
-    ],
     "2026 first": [
       "419"
     ],
     "2026 first stand": [
       "419"
-    ],
-    "2026 midterms": [
-      "390"
     ],
     "2026 nfl": [
       "3072"
@@ -7920,9 +7387,6 @@
     ],
     "acquisition 2026": [
       "2398"
-    ],
-    "actor": [
-      "389"
     ],
     "actress": [
       "3158"
@@ -8098,15 +7562,6 @@
     "backpack 交易所": [
       "95"
     ],
-    "balance of power": [
-      "390"
-    ],
-    "balance power": [
-      "390"
-    ],
-    "balance power 2026": [
-      "390"
-    ],
     "base": [
       "3366"
     ],
@@ -8244,12 +7699,6 @@
     "bombing": [
       "3039"
     ],
-    "bond": [
-      "389"
-    ],
-    "bond actor": [
-      "389"
-    ],
     "bp": [
       "2178"
     ],
@@ -8263,9 +7712,6 @@
     "bridge hack": [
       "3360"
     ],
-    "british": [
-      "389"
-    ],
     "bros acquisition": [
       "2398"
     ],
@@ -8276,9 +7722,6 @@
       "3256",
       "3365",
       "410"
-    ],
-    "buckingham": [
-      "391"
     ],
     "bull run": [
       "410"
@@ -8298,16 +7741,10 @@
     "cabinet": [
       "3062"
     ],
-    "calcio": [
-      "388"
-    ],
     "calendar": [
       "3448",
       "3449",
       "3509"
-    ],
-    "campionato": [
-      "388"
     ],
     "canva": [
       "163"
@@ -8320,9 +7757,6 @@
       "3505",
       "3506",
       "3525"
-    ],
-    "casting": [
-      "389"
     ],
     "ceasefire": [
       "415",
@@ -8479,9 +7913,6 @@
     "conflict ends": [
       "416"
     ],
-    "congress": [
-      "390"
-    ],
     "consensys": [
       "118"
     ],
@@ -8496,9 +7927,6 @@
     ],
     "cook out apple": [
       "2368"
-    ],
-    "cornyn": [
-      "391"
     ],
     "counter-strike 2": [
       "401"
@@ -8669,9 +8097,6 @@
     "delisting": [
       "3257"
     ],
-    "democrats": [
-      "390"
-    ],
     "demodogs": [
       "3224"
     ],
@@ -8789,12 +8214,6 @@
     "ecosystem": [
       "3366"
     ],
-    "election": [
-      "391"
-    ],
-    "election results": [
-      "390"
-    ],
     "eleven": [
       "3223"
     ],
@@ -8831,9 +8250,6 @@
     ],
     "endorsement": [
       "3055"
-    ],
-    "eon productions": [
-      "389"
     ],
     "epicenter": [
       "2668",
@@ -8991,9 +8407,6 @@
     "federal circuit": [
       "1546"
     ],
-    "film": [
-      "389"
-    ],
     "finals": [
       "401",
       "419"
@@ -9027,9 +8440,6 @@
     ],
     "fps": [
       "400"
-    ],
-    "franchise": [
-      "389"
     ],
     "frankfurt": [
       "418"
@@ -9115,10 +8525,6 @@
     "google willow": [
       "3256"
     ],
-    "gop": [
-      "390",
-      "391"
-    ],
     "gop primary": [
       "3055"
     ],
@@ -9126,9 +8532,6 @@
       "118",
       "3366",
       "395"
-    ],
-    "government control": [
-      "390"
     ],
     "gpu": [
       "406"
@@ -9220,12 +8623,6 @@
     "hostilities": [
       "415",
       "416"
-    ],
-    "house": [
-      "390"
-    ],
-    "hunt": [
-      "391"
     ],
     "hype": [
       "3361"
@@ -9365,23 +8762,8 @@
     "israel/us conflict ends": [
       "416"
     ],
-    "italian football": [
-      "388"
-    ],
-    "italian soccer": [
-      "388"
-    ],
-    "italy league": [
-      "388"
-    ],
     "jackpot": [
       "3505"
-    ],
-    "james bond": [
-      "389"
-    ],
-    "james bond actor": [
-      "389"
     ],
     "jd vance": [
       "3055"
@@ -9503,9 +8885,6 @@
     "league which teams": [
       "412"
     ],
-    "league winner": [
-      "388"
-    ],
     "leave": [
       "2368"
     ],
@@ -9515,14 +8894,8 @@
     "leg": [
       "412"
     ],
-    "lega serie a": [
-      "388"
-    ],
     "legal ruling": [
       "1546"
-    ],
-    "legislative control": [
-      "390"
     ],
     "listing": [
       "163",
@@ -9683,12 +9056,6 @@
     "metamask launch token": [
       "118"
     ],
-    "mgm": [
-      "389"
-    ],
-    "mi6": [
-      "389"
-    ],
     "microsoft": [
       "404"
     ],
@@ -9717,12 +9084,6 @@
       "413",
       "414",
       "416"
-    ],
-    "midterm elections": [
-      "390"
-    ],
-    "midterms": [
-      "390"
     ],
     "mike wheeler": [
       "3222"
@@ -9785,9 +9146,6 @@
     ],
     "move any bitcoin": [
       "3365"
-    ],
-    "movie": [
-      "389"
     ],
     "msci": [
       "3257"
@@ -9873,15 +9231,6 @@
     ],
     "new year's eve": [
       "3509"
-    ],
-    "next bond": [
-      "389"
-    ],
-    "next james": [
-      "389"
-    ],
-    "next james bond": [
-      "389"
     ],
     "nfl draft": [
       "3072"
@@ -9973,9 +9322,6 @@
     "parousia": [
       "2670"
     ],
-    "paxton": [
-      "391"
-    ],
     "peace": [
       "416"
     ],
@@ -10015,23 +9361,11 @@
     "policy meeting": [
       "418"
     ],
-    "politics": [
-      "391"
-    ],
-    "polls": [
-      "391"
-    ],
     "post-quantum": [
       "3256"
     ],
     "potus": [
       "3062"
-    ],
-    "power 2026": [
-      "390"
-    ],
-    "power 2026 midterms": [
-      "390"
     ],
     "predict fun": [
       "394",
@@ -10098,12 +9432,6 @@
     ],
     "price target": [
       "3506"
-    ],
-    "primary": [
-      "391"
-    ],
-    "primary winner": [
-      "391"
     ],
     "private key compromise": [
       "3360"
@@ -10264,20 +9592,8 @@
     "replaced": [
       "2368"
     ],
-    "republican": [
-      "391"
-    ],
     "republican nomination": [
       "3055"
-    ],
-    "republican senate": [
-      "391"
-    ],
-    "republican senate primary": [
-      "391"
-    ],
-    "republicans": [
-      "390"
     ],
     "resign": [
       "2368",
@@ -10402,9 +9718,6 @@
     "scotus": [
       "1546"
     ],
-    "scudetto": [
-      "388"
-    ],
     "season 23": [
       "401"
     ],
@@ -10432,28 +9745,6 @@
     ],
     "semiconductor": [
       "406"
-    ],
-    "senate": [
-      "390",
-      "391"
-    ],
-    "senate primary": [
-      "391"
-    ],
-    "senate primary winner": [
-      "391"
-    ],
-    "serie a": [
-      "388"
-    ],
-    "serie a title": [
-      "388"
-    ],
-    "serie league": [
-      "388"
-    ],
-    "serie league winner": [
-      "388"
     ],
     "series": [
       "3525"
@@ -10534,9 +9825,6 @@
     ],
     "spot etf": [
       "410"
-    ],
-    "spy": [
-      "389"
     ],
     "st": [
       "3222"
@@ -10619,8 +9907,7 @@
       "2178"
     ],
     "successor": [
-      "2368",
-      "389"
+      "2368"
     ],
     "summoner's rift": [
       "419"
@@ -10636,9 +9923,6 @@
     ],
     "swap": [
       "3365"
-    ],
-    "sweep": [
-      "390"
     ],
     "system failure": [
       "3357"
@@ -10728,15 +10012,6 @@
     ],
     "tether usd": [
       "3359"
-    ],
-    "texas": [
-      "391"
-    ],
-    "texas republican": [
-      "391"
-    ],
-    "texas republican senate": [
-      "391"
     ],
     "tge": [
       "1721",
@@ -10835,9 +10110,6 @@
       "3361",
       "395",
       "396"
-    ],
-    "top flight italy": [
-      "388"
     ],
     "top pick": [
       "3072"
@@ -10996,9 +10268,6 @@
       "408",
       "95"
     ],
-    "van duyne": [
-      "391"
-    ],
     "vance": [
       "3055"
     ],
@@ -11031,9 +10300,6 @@
       "402",
       "404",
       "410"
-    ],
-    "vote": [
-      "391"
     ],
     "vp": [
       "3055"
@@ -11138,9 +10404,6 @@
     "zuckerberg": [
       "403"
     ],
-    "中期选举": [
-      "390"
-    ],
     "中本聪": [
       "3365"
     ],
@@ -11163,9 +10426,6 @@
     ],
     "公开募股": [
       "163"
-    ],
-    "共和党参议院初选": [
-      "391"
     ],
     "加密货币": [
       "397"
@@ -11195,9 +10455,6 @@
     ],
     "微策略": [
       "3257"
-    ],
-    "德克萨斯": [
-      "391"
     ],
     "数字货币": [
       "397"
@@ -11264,9 +10521,6 @@
     "蒙纳德": [
       "1721"
     ],
-    "詹姆斯·邦德": [
-      "389"
-    ],
     "贾跃亭": [
       "1856"
     ],
@@ -11287,24 +10541,15 @@
     ]
   },
   "eventIndex": {
-    "007": [
-      "389"
-    ],
     "2026": [
       "400",
       "419"
-    ],
-    "2026 elections": [
-      "390"
     ],
     "2026 first": [
       "419"
     ],
     "2026 first stand": [
       "419"
-    ],
-    "2026 midterms": [
-      "390"
     ],
     "2026 winner": [
       "400"
@@ -11339,9 +10584,6 @@
       "394",
       "396",
       "95"
-    ],
-    "actor": [
-      "389"
     ],
     "advance quarter-final": [
       "412"
@@ -11429,15 +10671,6 @@
     "backpack 交易所": [
       "95"
     ],
-    "balance of power": [
-      "390"
-    ],
-    "balance power": [
-      "390"
-    ],
-    "balance power 2026": [
-      "390"
-    ],
     "big tech": [
       "404"
     ],
@@ -11482,20 +10715,8 @@
     "bombardment": [
       "414"
     ],
-    "bond": [
-      "389"
-    ],
-    "bond actor": [
-      "389"
-    ],
-    "british": [
-      "389"
-    ],
     "btc": [
       "410"
-    ],
-    "buckingham": [
-      "391"
     ],
     "bull run": [
       "410"
@@ -11503,21 +10724,12 @@
     "bytedance": [
       "163"
     ],
-    "calcio": [
-      "388"
-    ],
-    "campionato": [
-      "388"
-    ],
     "canva": [
       "163"
     ],
     "cap": [
       "403",
       "407"
-    ],
-    "casting": [
-      "389"
     ],
     "ceasefire": [
       "415",
@@ -11599,14 +10811,8 @@
     "conflict ends": [
       "416"
     ],
-    "congress": [
-      "390"
-    ],
     "consensys": [
       "118"
-    ],
-    "cornyn": [
-      "391"
     ],
     "counter-strike 2": [
       "401"
@@ -11682,9 +10888,6 @@
       "409",
       "411"
     ],
-    "democrats": [
-      "390"
-    ],
     "deposit facility rate": [
       "418"
     ],
@@ -11729,20 +10932,11 @@
     "ecb rates decision": [
       "418"
     ],
-    "election": [
-      "391"
-    ],
-    "election results": [
-      "390"
-    ],
     "eligibility": [
       "392"
     ],
     "end war": [
       "415"
-    ],
-    "eon productions": [
-      "389"
     ],
     "epl": [
       "401"
@@ -11832,9 +11026,6 @@
       "396",
       "95"
     ],
-    "film": [
-      "389"
-    ],
     "finals": [
       "401",
       "419"
@@ -11850,9 +11041,6 @@
     ],
     "fps": [
       "400"
-    ],
-    "franchise": [
-      "389"
     ],
     "frankfurt": [
       "418"
@@ -11901,16 +11089,9 @@
     "google googl close": [
       "405"
     ],
-    "gop": [
-      "390",
-      "391"
-    ],
     "governance token": [
       "118",
       "395"
-    ],
-    "government control": [
-      "390"
     ],
     "gpu": [
       "406"
@@ -11926,12 +11107,6 @@
     "hostilities": [
       "415",
       "416"
-    ],
-    "house": [
-      "390"
-    ],
-    "hunt": [
-      "391"
     ],
     "ico": [
       "397"
@@ -12000,21 +11175,6 @@
     "israel/us conflict ends": [
       "416"
     ],
-    "italian football": [
-      "388"
-    ],
-    "italian soccer": [
-      "388"
-    ],
-    "italy league": [
-      "388"
-    ],
-    "james bond": [
-      "389"
-    ],
-    "james bond actor": [
-      "389"
-    ],
     "jensen huang": [
       "406"
     ],
@@ -12063,17 +11223,8 @@
     "league which teams": [
       "412"
     ],
-    "league winner": [
-      "388"
-    ],
     "leg": [
       "412"
-    ],
-    "lega serie a": [
-      "388"
-    ],
-    "legislative control": [
-      "390"
     ],
     "listing": [
       "163",
@@ -12166,12 +11317,6 @@
     "metamask launch token": [
       "118"
     ],
-    "mgm": [
-      "389"
-    ],
-    "mi6": [
-      "389"
-    ],
     "microsoft": [
       "404"
     ],
@@ -12185,12 +11330,6 @@
       "413",
       "414",
       "416"
-    ],
-    "midterm elections": [
-      "390"
-    ],
-    "midterms": [
-      "390"
     ],
     "military": [
       "413",
@@ -12219,9 +11358,6 @@
     "monetary policy": [
       "418"
     ],
-    "movie": [
-      "389"
-    ],
     "msft": [
       "404"
     ],
@@ -12241,15 +11377,6 @@
     ],
     "native token": [
       "395"
-    ],
-    "next bond": [
-      "389"
-    ],
-    "next james": [
-      "389"
-    ],
-    "next james bond": [
-      "389"
     ],
     "nvda": [
       "406"
@@ -12292,9 +11419,6 @@
       "404",
       "405"
     ],
-    "paxton": [
-      "391"
-    ],
     "peace": [
       "416"
     ],
@@ -12318,18 +11442,6 @@
     ],
     "policy meeting": [
       "418"
-    ],
-    "politics": [
-      "391"
-    ],
-    "polls": [
-      "391"
-    ],
-    "power 2026": [
-      "390"
-    ],
-    "power 2026 midterms": [
-      "390"
     ],
     "predict fun": [
       "394",
@@ -12377,12 +11489,6 @@
     ],
     "price ethereum hit": [
       "409"
-    ],
-    "primary": [
-      "391"
-    ],
-    "primary winner": [
-      "391"
     ],
     "pro league": [
       "401"
@@ -12439,18 +11545,6 @@
     "rates decision dfr": [
       "418"
     ],
-    "republican": [
-      "391"
-    ],
-    "republican senate": [
-      "391"
-    ],
-    "republican senate primary": [
-      "391"
-    ],
-    "republicans": [
-      "390"
-    ],
     "resistance": [
       "410"
     ],
@@ -12486,36 +11580,11 @@
     "satoshi": [
       "410"
     ],
-    "scudetto": [
-      "388"
-    ],
     "season 23": [
       "401"
     ],
     "semiconductor": [
       "406"
-    ],
-    "senate": [
-      "390",
-      "391"
-    ],
-    "senate primary": [
-      "391"
-    ],
-    "senate primary winner": [
-      "391"
-    ],
-    "serie a": [
-      "388"
-    ],
-    "serie a title": [
-      "388"
-    ],
-    "serie league": [
-      "388"
-    ],
-    "serie league winner": [
-      "388"
     ],
     "share": [
       "403",
@@ -12549,9 +11618,6 @@
     "spot etf": [
       "410"
     ],
-    "spy": [
-      "389"
-    ],
     "stand tournament": [
       "419"
     ],
@@ -12584,14 +11650,8 @@
     "strike march": [
       "413"
     ],
-    "successor": [
-      "389"
-    ],
     "summoner's rift": [
       "419"
-    ],
-    "sweep": [
-      "390"
     ],
     "tactical shooter": [
       "400"
@@ -12634,15 +11694,6 @@
     ],
     "tesla tsla close": [
       "408"
-    ],
-    "texas": [
-      "391"
-    ],
-    "texas republican": [
-      "391"
-    ],
-    "texas republican senate": [
-      "391"
     ],
     "tge": [
       "395",
@@ -12688,9 +11739,6 @@
       "118",
       "395",
       "396"
-    ],
-    "top flight italy": [
-      "388"
     ],
     "tournament": [
       "400",
@@ -12772,9 +11820,6 @@
       "408",
       "95"
     ],
-    "van duyne": [
-      "391"
-    ],
     "vct": [
       "400"
     ],
@@ -12788,9 +11833,6 @@
       "402",
       "404",
       "410"
-    ],
-    "vote": [
-      "391"
     ],
     "wall street": [
       "404"
@@ -12848,9 +11890,6 @@
     "zuckerberg": [
       "403"
     ],
-    "中期选举": [
-      "390"
-    ],
     "亚马逊": [
       "402"
     ],
@@ -12864,9 +11903,6 @@
     "公开募股": [
       "163"
     ],
-    "共和党参议院初选": [
-      "391"
-    ],
     "加密货币": [
       "397"
     ],
@@ -12875,9 +11911,6 @@
     ],
     "币安币": [
       "411"
-    ],
-    "德克萨斯": [
-      "391"
     ],
     "数字货币": [
       "397"
@@ -12914,9 +11947,6 @@
     ],
     "英雄联盟": [
       "419"
-    ],
-    "詹姆斯·邦德": [
-      "389"
     ]
   }
 }
