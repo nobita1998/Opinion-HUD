@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-15 00:46:03 UTC+8",
+    "generatedAt": "2026-03-15 11:28:10 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 199,
-      "markets": 188,
+      "kept": 185,
+      "markets": 181,
       "keywords": 962,
       "events": {
-        "events": 27
+        "events": 25
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 801,
+        "cutoff_expired": 815,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 27,
+        "reused": 25,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -6919,42 +6919,6 @@
         }
       ]
     },
-    "9319": {
-      "title": "KPL: HERO vs WE (Mar. 15 5:00AM ET)",
-      "url": "https://app.opinion.trade/market/9319?ref=opinion_hud",
-      "yesTokenId": "60081411908899836291685544452899922475978681621084858637283379902738024941284",
-      "noTokenId": "68964004238546108413271653004240639220863622848750754265963175639224385777260",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "HERO",
-        "noLabel": "WE"
-      },
-      "type": "binary"
-    },
-    "9320": {
-      "title": "KPL: LGD.NBW vs TTG (Mar. 15 8:00AM ET)",
-      "url": "https://app.opinion.trade/market/9320?ref=opinion_hud",
-      "yesTokenId": "45918319844203075739031219172315377561265059476247248786401812541297987117292",
-      "noTokenId": "96524299667190741388535455841446933783528599302708840577584628947127249050770",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "LGD.NBW",
-        "noLabel": "TTG"
-      },
-      "type": "binary"
-    },
-    "9318": {
-      "title": "KPL: TES.A vs Q9 (Mar. 15 2:00AM ET)",
-      "url": "https://app.opinion.trade/market/9318?ref=opinion_hud",
-      "yesTokenId": "106911379265000836916375815196187088137652939764631207737033148459306118958343",
-      "noTokenId": "23390432274638360613420907533861265440836846350569959197667304700960449404466",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "TES.A",
-        "noLabel": "Q9"
-      },
-      "type": "binary"
-    },
     "9316": {
       "title": "LoL - FST: BLG vs BFX (Mar. 16 9:00AM ET)",
       "url": "https://app.opinion.trade/market/9316?ref=opinion_hud",
@@ -7083,78 +7047,6 @@
         }
       ]
     },
-    "9373": {
-      "title": "NBA: Mavericks vs Cavaliers (Mar. 15 3:30PM ET)",
-      "url": "https://app.opinion.trade/market/9373?ref=opinion_hud",
-      "yesTokenId": "73534176969019372599462072282321420713470819324806021814582794694976755594350",
-      "noTokenId": "22245935859714056058517335686060723101065157849697349293158661341646097641696",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Mavericks",
-        "noLabel": "Cavaliers"
-      },
-      "type": "binary"
-    },
-    "9375": {
-      "title": "NBA: Jazz vs Kings (Mar. 15 10:30PM ET)",
-      "url": "https://app.opinion.trade/market/9375?ref=opinion_hud",
-      "yesTokenId": "67193213593270363238481430786546615440808225001742202853787704445937490269685",
-      "noTokenId": "16588075040450623067059583640646107847810010506904723911928149117321201802066",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Jazz",
-        "noLabel": "Kings"
-      },
-      "type": "binary"
-    },
-    "9374": {
-      "title": "NBA: Warriors vs Knicks (Mar. 15 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/9374?ref=opinion_hud",
-      "yesTokenId": "14410778839473369339174723078667070747509387696373085021881157925647892323078",
-      "noTokenId": "73531555181653835465093020142292353633386852118001141522101867306733344899040",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Warriors",
-        "noLabel": "Knicks"
-      },
-      "type": "binary"
-    },
-    "9487": {
-      "title": "BNB Up or Down - Hourly (Mar 14, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9487?ref=opinion_hud",
-      "yesTokenId": "90280028885257948857895561341218229192544498742738709562581790301047254127654",
-      "noTokenId": "112338422500656148906977766294428765591437143763080391417498479549847163622426",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "9489": {
-      "title": "ETH Up or Down - Hourly (Mar 14, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9489?ref=opinion_hud",
-      "yesTokenId": "53999564943966209003188902339997540821754669404668980697265825187850876466961",
-      "noTokenId": "80684931989850107610175956035950434329727966559534835639237415917483460978850",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "9488": {
-      "title": "BTC Up or Down - Hourly (Mar 14, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9488?ref=opinion_hud",
-      "yesTokenId": "76946764287644929042577076846545844240655847300066115021210435188752668503361",
-      "noTokenId": "83510319615343459948925369888433884386921753701309111749464183424309811192516",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "9471": {
       "title": "NBA: Suns vs Celtics (Mar. 16 7:30PM ET)",
       "url": "https://app.opinion.trade/market/9471?ref=opinion_hud",
@@ -7179,18 +7071,6 @@
       },
       "type": "binary"
     },
-    "9474": {
-      "title": "Bitcoin Up or Down on March 15?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/9474?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "9472": {
       "title": "NBA: Lakers vs Rockets (Mar. 16 9:30PM ET)",
       "url": "https://app.opinion.trade/market/9472?ref=opinion_hud",
@@ -7200,6 +7080,42 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "9522": {
+      "title": "ETH Up or Down - Hourly (Mar 15, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9522?ref=opinion_hud",
+      "yesTokenId": "47554848014373504948053800634151716385246628139934835714893459762175558288574",
+      "noTokenId": "44045085298641617708010828189282584856851978747990764430676163467160688315050",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9521": {
+      "title": "BTC Up or Down - Hourly (Mar 15, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9521?ref=opinion_hud",
+      "yesTokenId": "17801207086247037065048371014158663704459023745248167262830168558399185307700",
+      "noTokenId": "38222179086345463891116840765114855701466804967446358473314919384635603980687",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9520": {
+      "title": "BNB Up or Down - Hourly (Mar 15, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9520?ref=opinion_hud",
+      "yesTokenId": "106404490461543821000188675177340884406756784955462910960208077630811383875819",
+      "noTokenId": "114520319513405541501835235088753449939225684716442232080860838595181742408386",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
