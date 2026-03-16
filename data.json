@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-16 00:46:49 UTC+8",
+    "generatedAt": "2026-03-16 11:30:45 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 181,
-      "markets": 182,
-      "keywords": 962,
+      "kept": 149,
+      "markets": 171,
+      "keywords": 922,
       "events": {
-        "events": 25
+        "events": 20
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 819,
+        "cutoff_expired": 851,
         "cutoff_zero_kept": 1,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 25,
+        "reused": 20,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -40,222 +40,6 @@
     }
   },
   "events": {
-    "397": {
-      "title": "Probable launch a token by ...?",
-      "marketIds": [
-        "397"
-      ],
-      "bestMarketId": "397",
-      "bestLabels": null,
-      "keywords": [
-        "token launch",
-        "airdrop",
-        "ico",
-        "ido",
-        "tge",
-        "coin offering",
-        "crypto release",
-        "token generation",
-        "go live",
-        "mainnet launch",
-        "token sale",
-        "public offering",
-        "listing",
-        "distribution",
-        "probable launch",
-        "launch token",
-        "probable launch token"
-      ],
-      "entities": [
-        "加密货币"
-      ],
-      "entityGroups": [
-        [
-          "加密货币",
-          "数字资产",
-          "数字货币"
-        ]
-      ],
-      "sig": "2f26d6ce",
-      "sigFull": "2f26d6ce",
-      "sigCore": "bdd5dc02",
-      "reused": false
-    },
-    "394": {
-      "title": "Predict.fun FDV  above ... one day after launch?",
-      "marketIds": [
-        "394"
-      ],
-      "bestMarketId": "394",
-      "bestLabels": null,
-      "keywords": [
-        "predict.fun",
-        "prediction market",
-        "valuation",
-        "fdv",
-        "fully diluted valuation",
-        "launch",
-        "token",
-        "crypto",
-        "trading",
-        "platform",
-        "debut",
-        "market cap",
-        "price",
-        "airdrop",
-        "speculation",
-        "predict fun",
-        "fun fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "predict fun fdv",
-        "fun fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after"
-      ],
-      "entities": [
-        "predict.fun"
-      ],
-      "entityGroups": [
-        [
-          "predict.fun"
-        ]
-      ],
-      "sig": "9c590de3",
-      "sigFull": "9c590de3",
-      "sigCore": "da5e929f",
-      "reused": false
-    },
-    "395": {
-      "title": "Predict.fun launch a token by ...?",
-      "marketIds": [
-        "395"
-      ],
-      "bestMarketId": "395",
-      "bestLabels": null,
-      "keywords": [
-        "predict.fun",
-        "prediction market",
-        "token launch",
-        "airdrop",
-        "tge",
-        "tokenomics",
-        "crypto token",
-        "governance token",
-        "platform token",
-        "listing",
-        "defi",
-        "speculation",
-        "token event",
-        "native token",
-        "token generation",
-        "predict fun",
-        "fun launch",
-        "launch token",
-        "predict fun launch",
-        "fun launch token"
-      ],
-      "entities": [
-        "predict.fun"
-      ],
-      "entityGroups": [
-        [
-          "predict.fun"
-        ]
-      ],
-      "sig": "d15bc769",
-      "sigFull": "d15bc769",
-      "sigCore": "9885301d",
-      "reused": false
-    },
-    "396": {
-      "title": "Probable FDV  above ... one day after launch?",
-      "marketIds": [
-        "396"
-      ],
-      "bestMarketId": "396",
-      "bestLabels": null,
-      "keywords": [
-        "fdv",
-        "fully diluted valuation",
-        "market cap",
-        "token launch",
-        "tge",
-        "listing",
-        "debut",
-        "valuation",
-        "crypto price",
-        "opening price",
-        "initial valuation",
-        "tokenomics",
-        "circulating supply",
-        "probable fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "probable fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "probable"
-      ],
-      "entityGroups": [
-        [
-          "probable"
-        ]
-      ],
-      "sig": "4fea4d08",
-      "sigFull": "4fea4d08",
-      "sigCore": "d0e3ab44",
-      "reused": false
-    },
-    "392": {
-      "title": "MegaETH airdrop by...?",
-      "marketIds": [
-        "392"
-      ],
-      "bestMarketId": "392",
-      "bestLabels": null,
-      "keywords": [
-        "megaeth",
-        "mega eth",
-        "airdrop",
-        "claim",
-        "distribution",
-        "token",
-        "l2",
-        "layer 2",
-        "evm",
-        "mainnet",
-        "snapshot",
-        "eligibility",
-        "retroactive",
-        "megaeth airdrop"
-      ],
-      "entities": [
-        "megaeth"
-      ],
-      "entityGroups": [
-        [
-          "megaeth",
-          "mega eth",
-          "以太坊"
-        ]
-      ],
-      "sig": "434ab5ed",
-      "sigFull": "434ab5ed",
-      "sigCore": "10cb3a6a",
-      "reused": false
-    },
     "163": {
       "title": "IPOs before 2027?",
       "marketIds": [
@@ -4228,418 +4012,6 @@
       },
       "type": "binary"
     },
-    "397": {
-      "title": "Probable launch a token by ...?",
-      "url": "https://app.opinion.trade/market/397?ref=opinion_hud",
-      "yesTokenId": "66036996239487443092912961924597773603397154474243138189746453456017579474140",
-      "noTokenId": "68020330284945472279919999984917016193557046782110928368769490972981062194896",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "token launch",
-        "airdrop",
-        "ico",
-        "ido",
-        "tge",
-        "coin offering",
-        "crypto release",
-        "token generation",
-        "go live",
-        "mainnet launch",
-        "token sale",
-        "public offering",
-        "listing",
-        "distribution",
-        "probable launch",
-        "launch token",
-        "probable launch token"
-      ],
-      "entities": [
-        "加密货币"
-      ],
-      "entityGroups": [
-        [
-          "加密货币",
-          "数字资产",
-          "数字货币"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7685",
-          "title": "March 31, 2026",
-          "yesTokenId": "70249635218821388034607049594374380872086186366535501613068498146031991848072",
-          "noTokenId": "34430456109492656083612061297513805621788029475335196445830392951861270611108"
-        },
-        {
-          "marketId": "7686",
-          "title": "June 30, 2026",
-          "yesTokenId": "45327874932008980807637522867047992163668195400672227297538936496240323544358",
-          "noTokenId": "101782207612728924790151549692119362017261298588297800407688495962793322798306"
-        },
-        {
-          "marketId": "7687",
-          "title": "September 30, 2026",
-          "yesTokenId": "58935976099987913366635271795925171444725024544488881784742621906705139374275",
-          "noTokenId": "99025776679889671630081101548241849056347627002299416810894518541639986421157"
-        },
-        {
-          "marketId": "7688",
-          "title": "December 31, 2026",
-          "yesTokenId": "66036996239487443092912961924597773603397154474243138189746453456017579474140",
-          "noTokenId": "68020330284945472279919999984917016193557046782110928368769490972981062194896"
-        },
-        {
-          "marketId": "7689",
-          "title": "March 31, 2027",
-          "yesTokenId": "41168269203940267721213332063204506757782247648873925347186227222557409665886",
-          "noTokenId": "99696362731092941833138907054496961374886273105843023449885903528685864512412"
-        },
-        {
-          "marketId": "7690",
-          "title": "June 30, 2027",
-          "yesTokenId": "30936222935785187480820133755295769581282713386907066164918617571402058774300",
-          "noTokenId": "48106466154452476945184418995919935032250935723418198896505802895468742598235"
-        },
-        {
-          "marketId": "7693",
-          "title": "September 30, 2027",
-          "yesTokenId": "41991074970949242715184007460687541736969320704607118545449808190588084878183",
-          "noTokenId": "40269300248622774708649303439211000737634196976146703572755593006628596227069"
-        },
-        {
-          "marketId": "7694",
-          "title": "December 31, 2027",
-          "yesTokenId": "51360119900516376655357048076719273095333442091493473104876879464136720779151",
-          "noTokenId": "46569125395914467566799789743593145410741404114281958204058535767314047549913"
-        }
-      ]
-    },
-    "394": {
-      "title": "Predict.fun FDV  above ... one day after launch?",
-      "url": "https://app.opinion.trade/market/394?ref=opinion_hud",
-      "yesTokenId": "79652996250730871765959028033399495396719838399869937282724912666412796733747",
-      "noTokenId": "40982332688404869797371698254141402485387510362727213544610437304043848691950",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "predict.fun",
-        "prediction market",
-        "valuation",
-        "fdv",
-        "fully diluted valuation",
-        "launch",
-        "token",
-        "crypto",
-        "trading",
-        "platform",
-        "debut",
-        "market cap",
-        "price",
-        "airdrop",
-        "speculation",
-        "predict fun",
-        "fun fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "predict fun fdv",
-        "fun fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after"
-      ],
-      "entities": [
-        "predict.fun"
-      ],
-      "entityGroups": [
-        [
-          "predict.fun"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7667",
-          "title": "$25M",
-          "yesTokenId": "94113756128432037665416349714688661213581255090063056373492944400062431007038",
-          "noTokenId": "89985884522480305304855978389456804876669521710712594093258435008045062062103"
-        },
-        {
-          "marketId": "7668",
-          "title": "$50M",
-          "yesTokenId": "105083076806011472229262013773297373654279212966608952185143946253444829240650",
-          "noTokenId": "26091885224479399673311594401677499502536175843338955637324929201316999417078"
-        },
-        {
-          "marketId": "7669",
-          "title": "$100M",
-          "yesTokenId": "4520369073036277343571690889668011582794186953075042042870389472999420621858",
-          "noTokenId": "20728936845582861690383796689420739190894871880244685560485402685596196091070"
-        },
-        {
-          "marketId": "7670",
-          "title": "$150M",
-          "yesTokenId": "31158085611705062999601093588781910396534685899193683751948131901560929312489",
-          "noTokenId": "6782758433016592989797112411065465280457292957174366717997943583421882141527"
-        },
-        {
-          "marketId": "7671",
-          "title": "$200M",
-          "yesTokenId": "79652996250730871765959028033399495396719838399869937282724912666412796733747",
-          "noTokenId": "40982332688404869797371698254141402485387510362727213544610437304043848691950"
-        },
-        {
-          "marketId": "7672",
-          "title": "$500M",
-          "yesTokenId": "51292198351055202671724836375249918336942592813030958023610322993588474084341",
-          "noTokenId": "18122649680160953160420372219004915454206751710268370745689318266820661448521"
-        }
-      ]
-    },
-    "395": {
-      "title": "Predict.fun launch a token by ...?",
-      "url": "https://app.opinion.trade/market/395?ref=opinion_hud",
-      "yesTokenId": "43018201956552104146528063971884237861245038494701953685170540861321991409476",
-      "noTokenId": "38587037413544937148536135630148067862624444972262417540015677490456434452967",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "predict.fun",
-        "prediction market",
-        "token launch",
-        "airdrop",
-        "tge",
-        "tokenomics",
-        "crypto token",
-        "governance token",
-        "platform token",
-        "listing",
-        "defi",
-        "speculation",
-        "token event",
-        "native token",
-        "token generation",
-        "predict fun",
-        "fun launch",
-        "launch token",
-        "predict fun launch",
-        "fun launch token"
-      ],
-      "entities": [
-        "predict.fun"
-      ],
-      "entityGroups": [
-        [
-          "predict.fun"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7673",
-          "title": "March 31, 2026",
-          "yesTokenId": "43018201956552104146528063971884237861245038494701953685170540861321991409476",
-          "noTokenId": "38587037413544937148536135630148067862624444972262417540015677490456434452967"
-        },
-        {
-          "marketId": "7674",
-          "title": "June 30, 2026",
-          "yesTokenId": "41226874032498277853587058031121577811230609500423079616055840650213929975960",
-          "noTokenId": "106963787533851731374694143460586268168807089219567485655013194913498972875454"
-        },
-        {
-          "marketId": "7675",
-          "title": "September 30, 2026",
-          "yesTokenId": "20027734426092921833981608402518731268870880746822007946195873305173372441593",
-          "noTokenId": "54945122749539250534418989712144084204822730889087353407168376141189979931090"
-        },
-        {
-          "marketId": "7676",
-          "title": "December 31, 2026",
-          "yesTokenId": "112626463969386374306053851422702327898967358845852311275505699074475832904539",
-          "noTokenId": "28194573703029548362518692035798728396956627920128101893707130813315824911661"
-        },
-        {
-          "marketId": "7677",
-          "title": "March 31, 2027",
-          "yesTokenId": "39560513719467842741890736510582589606268802910707264546144217272285939768579",
-          "noTokenId": "11214899929236798071779645550750458188413957644191547193055738609273791295598"
-        },
-        {
-          "marketId": "7678",
-          "title": "June 30, 2027",
-          "yesTokenId": "50354003464919681431415862577572655055828089604488553418608073946258812190348",
-          "noTokenId": "51017927936434276811198665593277120533398507732812745395981743546873139853932"
-        },
-        {
-          "marketId": "7691",
-          "title": "September 30, 2027",
-          "yesTokenId": "87577379320073451805711009742234889194265047137315615374143061735067815087577",
-          "noTokenId": "93862441772659379754537108446359114480714365374421324109528567391072758222040"
-        },
-        {
-          "marketId": "7692",
-          "title": "December 31, 2027",
-          "yesTokenId": "23632518463508565625166662200193299891142004801552565799717763790651569345428",
-          "noTokenId": "109543084310699280453093551350772267114696156996474394610423553820588641860276"
-        }
-      ]
-    },
-    "396": {
-      "title": "Probable FDV  above ... one day after launch?",
-      "url": "https://app.opinion.trade/market/396?ref=opinion_hud",
-      "yesTokenId": "62309539538244467777563817282081840520954180982078951469852885876373055539760",
-      "noTokenId": "86623583603473947282346058004683418941573538503883986989007410326847959604570",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "fdv",
-        "fully diluted valuation",
-        "market cap",
-        "token launch",
-        "tge",
-        "listing",
-        "debut",
-        "valuation",
-        "crypto price",
-        "opening price",
-        "initial valuation",
-        "tokenomics",
-        "circulating supply",
-        "probable fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "probable fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "probable"
-      ],
-      "entityGroups": [
-        [
-          "probable"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7679",
-          "title": "$25M",
-          "yesTokenId": "68673929826273180167751460175051370963881794069428196983705932552134061835309",
-          "noTokenId": "78269056220888126321213984041802203525421507513424188375213407649245832909878"
-        },
-        {
-          "marketId": "7680",
-          "title": "$50M",
-          "yesTokenId": "5369937399326556248223489006083563490221976737198760905716877326459600331616",
-          "noTokenId": "9905924021934465168089417012372840143792119781542244003718789501165006865748"
-        },
-        {
-          "marketId": "7681",
-          "title": "$100M",
-          "yesTokenId": "18384687127779374108691059470990457949593522316499891664300424482275030401582",
-          "noTokenId": "109311260161111633414237030402560118434351660190487707366505648900908519609266"
-        },
-        {
-          "marketId": "7682",
-          "title": "$150M",
-          "yesTokenId": "73289093631938887921028805584245257606432641846614673519577718433581143101594",
-          "noTokenId": "115756944357094793923406343862346576692913854114122222843462063829892616121034"
-        },
-        {
-          "marketId": "7683",
-          "title": "$200M",
-          "yesTokenId": "62309539538244467777563817282081840520954180982078951469852885876373055539760",
-          "noTokenId": "86623583603473947282346058004683418941573538503883986989007410326847959604570"
-        },
-        {
-          "marketId": "7684",
-          "title": "$500M",
-          "yesTokenId": "84338128608730514242549412281226755355007252397269493784357876732777392446354",
-          "noTokenId": "108048145883330511784491278926592290951888830679483130997249548965864366902090"
-        }
-      ]
-    },
-    "392": {
-      "title": "MegaETH airdrop by...?",
-      "url": "https://app.opinion.trade/market/392?ref=opinion_hud",
-      "yesTokenId": "69563051145660532261550916000868569715675895685518609437447983052383949189703",
-      "noTokenId": "892271383168162763786501120323682277109576268140322433173460912232603493942",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "megaeth",
-        "mega eth",
-        "airdrop",
-        "claim",
-        "distribution",
-        "token",
-        "l2",
-        "layer 2",
-        "evm",
-        "mainnet",
-        "snapshot",
-        "eligibility",
-        "retroactive",
-        "megaeth airdrop"
-      ],
-      "entities": [
-        "megaeth"
-      ],
-      "entityGroups": [
-        [
-          "megaeth",
-          "mega eth",
-          "以太坊"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "7659",
-          "title": "March 15, 2026",
-          "yesTokenId": "69563051145660532261550916000868569715675895685518609437447983052383949189703",
-          "noTokenId": "892271383168162763786501120323682277109576268140322433173460912232603493942"
-        },
-        {
-          "marketId": "7660",
-          "title": "June 30, 2026",
-          "yesTokenId": "12452386467933756323286407887185316729463283071468813304838678085663428941157",
-          "noTokenId": "66367038762831733965796993809527831745604254696219370302078798343036709326151"
-        },
-        {
-          "marketId": "7658",
-          "title": "February 28, 2026",
-          "yesTokenId": "19013602272405619144214544502533894379135941411622200458006718660446044860259",
-          "noTokenId": "109110504954711759615036972404792707518491807802012312472257072357269822594350"
-        }
-      ]
-    },
     "7653": {
       "title": "Will USD1 depeg before 2027?",
       "url": "https://app.opinion.trade/market/7653?ref=opinion_hud",
@@ -6919,30 +6291,6 @@
         }
       ]
     },
-    "9316": {
-      "title": "LoL - FST: BLG vs BFX (Mar. 16 9:00AM ET)",
-      "url": "https://app.opinion.trade/market/9316?ref=opinion_hud",
-      "yesTokenId": "79174451365861255033392695835786494364618257130646484077820111999886398424421",
-      "noTokenId": "88081887891807634248960020728450108645528642867935843928940709243426299873826",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "BLG",
-        "noLabel": "BFX"
-      },
-      "type": "binary"
-    },
-    "9317": {
-      "title": "LoL - FST: G2 vs TSW (Mar. 16 2:00PM ET)",
-      "url": "https://app.opinion.trade/market/9317?ref=opinion_hud",
-      "yesTokenId": "1366885604250789280537643299954648484388070160774849570331517062816173336076",
-      "noTokenId": "84595416213701486510759058703127472585437620119804707923165052216698682968475",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "G2",
-        "noLabel": "TSW"
-      },
-      "type": "binary"
-    },
     "95": {
       "title": "Backpack FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/95?ref=opinion_hud",
@@ -7047,47 +6395,11 @@
         }
       ]
     },
-    "9471": {
-      "title": "NBA: Suns vs Celtics (Mar. 16 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/9471?ref=opinion_hud",
-      "yesTokenId": "81258065795192898699470648331031162795500994473969356074580237968600758322240",
-      "noTokenId": "4490617048242697568075472348100641174117367507832810104281664408729482382068",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Suns",
-        "noLabel": "Celtics"
-      },
-      "type": "binary"
-    },
-    "9473": {
-      "title": "NBA: Spurs vs Clippers (Mar. 16 10:00PM ET)",
-      "url": "https://app.opinion.trade/market/9473?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9472": {
-      "title": "NBA: Lakers vs Rockets (Mar. 16 9:30PM ET)",
-      "url": "https://app.opinion.trade/market/9472?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9561": {
-      "title": "BTC Up or Down - Hourly (Mar 15, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9561?ref=opinion_hud",
-      "yesTokenId": "69637388481626185930671415642868042593141078066136645968011393574118195883315",
-      "noTokenId": "108115523697519812529234598807677783862101123599707342919796268578964015119579",
+    "9594": {
+      "title": "BTC Up or Down - Hourly (Mar 16, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9594?ref=opinion_hud",
+      "yesTokenId": "93164468743712768488003425085247444129907345832505693492274582027825847256235",
+      "noTokenId": "70529300577807398554633024868126745581033126606238498326256632733599674178649",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7095,11 +6407,11 @@
       },
       "type": "binary"
     },
-    "9562": {
-      "title": "ETH Up or Down - Hourly (Mar 15, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9562?ref=opinion_hud",
-      "yesTokenId": "101855388513036462356649375891195332765031067560543034628970421309805449270552",
-      "noTokenId": "56591027318802092058892260989348355856229733645138101796322901767593102975132",
+    "9595": {
+      "title": "ETH Up or Down - Hourly (Mar 16, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9595?ref=opinion_hud",
+      "yesTokenId": "17702834530888920967998431618580733968863510086812622455640724103422537640320",
+      "noTokenId": "72459526931550995953547983022167340790288423762787705793110922685224392901576",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -7107,27 +6419,15 @@
       },
       "type": "binary"
     },
-    "9560": {
-      "title": "BNB Up or Down - Hourly (Mar 15, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9560?ref=opinion_hud",
-      "yesTokenId": "91981613694065492670477884717534234830362885147964102568732901440469368060172",
-      "noTokenId": "94353284963570251742767693516872070843227960090801522031072376261127477074147",
+    "9593": {
+      "title": "BNB Up or Down - Hourly (Mar 16, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9593?ref=opinion_hud",
+      "yesTokenId": "74313299236805079096079559898348025376336747465897712756296147011736874388359",
+      "noTokenId": "19543209544464514535055436950053201255465694865065223767269610362402293501463",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "9556": {
-      "title": "Bitcoin Up or Down on March 16?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/9556?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
       },
       "type": "binary"
     }
@@ -7277,13 +6577,9 @@
       "408"
     ],
     "above one": [
-      "394",
-      "396",
       "95"
     ],
     "above one day": [
-      "394",
-      "396",
       "95"
     ],
     "acquisition": [
@@ -7309,8 +6605,6 @@
     ],
     "after launch": [
       "1721",
-      "394",
-      "396",
       "95"
     ],
     "against iran": [
@@ -7327,11 +6621,7 @@
       "118",
       "1721",
       "3361",
-      "3366",
-      "392",
-      "394",
-      "395",
-      "397"
+      "3366"
     ],
     "album": [
       "2178"
@@ -7728,12 +7018,6 @@
     "christine lagarde": [
       "418"
     ],
-    "circulating supply": [
-      "396"
-    ],
-    "claim": [
-      "392"
-    ],
     "close": [
       "402",
       "405",
@@ -7784,9 +7068,6 @@
     ],
     "coin": [
       "409"
-    ],
-    "coin offering": [
-      "397"
     ],
     "coinbase": [
       "3366"
@@ -7873,7 +7154,6 @@
       "3364",
       "3367",
       "3368",
-      "394",
       "409",
       "410",
       "411"
@@ -7889,17 +7169,8 @@
     "crypto hack over": [
       "3360"
     ],
-    "crypto price": [
-      "396"
-    ],
-    "crypto release": [
-      "397"
-    ],
     "crypto theft": [
       "3360"
-    ],
-    "crypto token": [
-      "395"
     ],
     "cryptocurrency": [
       "3364",
@@ -7943,12 +7214,9 @@
     ],
     "day after": [
       "1721",
-      "394",
-      "396",
       "95"
     ],
     "day after launch": [
-      "396",
       "95"
     ],
     "deadline": [
@@ -7965,9 +7233,7 @@
       "1856"
     ],
     "debut": [
-      "163",
-      "394",
-      "396"
+      "163"
     ],
     "december": [
       "3509"
@@ -7985,7 +7251,6 @@
       "118",
       "1721",
       "3361",
-      "395",
       "409",
       "411"
     ],
@@ -8037,10 +7302,6 @@
     ],
     "dip": [
       "402"
-    ],
-    "distribution": [
-      "392",
-      "397"
     ],
     "dollar": [
       "3359"
@@ -8120,9 +7381,6 @@
     ],
     "eleven": [
       "3223"
-    ],
-    "eligibility": [
-      "392"
     ],
     "encryption": [
       "3256"
@@ -8235,8 +7493,7 @@
       "418"
     ],
     "evm": [
-      "1721",
-      "392"
+      "1721"
     ],
     "exchange launch": [
       "95"
@@ -8291,18 +7548,12 @@
       "403"
     ],
     "fdv": [
-      "394",
-      "396",
       "95"
     ],
     "fdv above": [
-      "394",
-      "396",
       "95"
     ],
     "fdv above one": [
-      "394",
-      "396",
       "95"
     ],
     "fdv one": [
@@ -8352,21 +7603,7 @@
       "1856"
     ],
     "fully diluted valuation": [
-      "394",
-      "396",
       "95"
-    ],
-    "fun fdv": [
-      "394"
-    ],
-    "fun fdv above": [
-      "394"
-    ],
-    "fun launch": [
-      "395"
-    ],
-    "fun launch token": [
-      "395"
     ],
     "funding": [
       "3505",
@@ -8398,9 +7635,6 @@
     ],
     "girl group": [
       "2178"
-    ],
-    "go live": [
-      "397"
     ],
     "going public": [
       "3362"
@@ -8434,8 +7668,7 @@
     ],
     "governance token": [
       "118",
-      "3366",
-      "395"
+      "3366"
     ],
     "gpu": [
       "406"
@@ -8543,14 +7776,8 @@
     "hyperliquid all time": [
       "3361"
     ],
-    "ico": [
-      "397"
-    ],
     "idf": [
       "3039"
-    ],
-    "ido": [
-      "397"
     ],
     "ieepa": [
       "1546"
@@ -8586,7 +7813,6 @@
       "3362"
     ],
     "initial valuation": [
-      "396",
       "95"
     ],
     "interest rates": [
@@ -8736,8 +7962,7 @@
       "3361"
     ],
     "l2": [
-      "3366",
-      "392"
+      "3366"
     ],
     "lan": [
       "400",
@@ -8746,14 +7971,9 @@
     "last 8": [
       "412"
     ],
-    "launch": [
-      "394"
-    ],
     "launch token": [
       "118",
-      "3366",
-      "395",
-      "397"
+      "3366"
     ],
     "launch token 2026": [
       "3366"
@@ -8762,8 +7982,7 @@
       "1721"
     ],
     "layer 2": [
-      "3366",
-      "392"
+      "3366"
     ],
     "leadership": [
       "3369"
@@ -8804,9 +8023,6 @@
     "listing": [
       "163",
       "3362",
-      "395",
-      "396",
-      "397",
       "95"
     ],
     "lol": [
@@ -8840,11 +8056,7 @@
       "1856"
     ],
     "mainnet": [
-      "3366",
-      "392"
-    ],
-    "mainnet launch": [
-      "397"
+      "3366"
     ],
     "march": [
       "405",
@@ -8880,8 +8092,6 @@
     "market cap": [
       "3505",
       "3506",
-      "394",
-      "396",
       "404",
       "95"
     ],
@@ -8906,15 +8116,8 @@
     "max": [
       "2398"
     ],
-    "mega eth": [
-      "392"
-    ],
     "megaeth": [
-      "1721",
-      "392"
-    ],
-    "megaeth airdrop": [
-      "392"
+      "1721"
     ],
     "megaeth who": [
       "1721"
@@ -9098,8 +8301,7 @@
       "407"
     ],
     "native token": [
-      "3366",
-      "395"
+      "3366"
     ],
     "natural disaster": [
       "3356"
@@ -9168,20 +8370,13 @@
     ],
     "one day": [
       "1721",
-      "394",
-      "396",
       "95"
     ],
     "one day after": [
-      "394",
-      "396",
       "95"
     ],
     "op stack": [
       "3366"
-    ],
-    "opening price": [
-      "396"
     ],
     "operations against": [
       "415"
@@ -9253,12 +8448,6 @@
     "pick 2026 nfl": [
       "3072"
     ],
-    "platform": [
-      "394"
-    ],
-    "platform token": [
-      "395"
-    ],
     "playoffs": [
       "401"
     ],
@@ -9270,24 +8459,6 @@
     ],
     "potus": [
       "3062"
-    ],
-    "predict fun": [
-      "394",
-      "395"
-    ],
-    "predict fun fdv": [
-      "394"
-    ],
-    "predict fun launch": [
-      "395"
-    ],
-    "predict.fun": [
-      "394",
-      "395"
-    ],
-    "prediction market": [
-      "394",
-      "395"
     ],
     "president": [
       "3062"
@@ -9303,7 +8474,6 @@
       "3359",
       "3361",
       "3367",
-      "394",
       "402",
       "403",
       "405",
@@ -9349,21 +8519,6 @@
     "pro play": [
       "419"
     ],
-    "probable": [
-      "396"
-    ],
-    "probable fdv": [
-      "396"
-    ],
-    "probable fdv above": [
-      "396"
-    ],
-    "probable launch": [
-      "397"
-    ],
-    "probable launch token": [
-      "397"
-    ],
     "proof of work": [
       "3256"
     ],
@@ -9371,8 +8526,7 @@
       "3362"
     ],
     "public offering": [
-      "163",
-      "397"
+      "163"
     ],
     "pump": [
       "3364",
@@ -9521,9 +8675,6 @@
       "3039",
       "413",
       "414"
-    ],
-    "retroactive": [
-      "392"
     ],
     "return": [
       "1856",
@@ -9711,18 +8862,11 @@
     "smart contracts": [
       "409"
     ],
-    "snapshot": [
-      "392"
-    ],
     "soccer": [
       "412"
     ],
     "specific date": [
       "3449"
-    ],
-    "speculation": [
-      "394",
-      "395"
     ],
     "spend": [
       "3365"
@@ -9919,9 +9063,6 @@
     ],
     "tge": [
       "1721",
-      "395",
-      "396",
-      "397",
       "95"
     ],
     "the post": [
@@ -9979,41 +9120,26 @@
       "118",
       "1721",
       "3367",
-      "392",
-      "394",
       "409",
       "411"
     ],
     "token 2026": [
       "3366"
     ],
-    "token event": [
-      "395"
-    ],
-    "token generation": [
-      "395",
-      "397"
-    ],
     "token launch": [
       "118",
       "3366",
-      "395",
-      "396",
-      "397",
       "95"
     ],
     "token price": [
       "95"
     ],
     "token sale": [
-      "118",
-      "397"
+      "118"
     ],
     "tokenomics": [
       "118",
-      "3361",
-      "395",
-      "396"
+      "3361"
     ],
     "top pick": [
       "3072"
@@ -10035,7 +9161,6 @@
     "trading": [
       "3361",
       "3367",
-      "394",
       "402",
       "403",
       "404",
@@ -10167,8 +9292,6 @@
       "3505",
       "3506",
       "3525",
-      "394",
-      "396",
       "408",
       "95"
     ],
@@ -10321,7 +9444,6 @@
       "1721",
       "3359",
       "3364",
-      "392",
       "409"
     ],
     "以色列": [
@@ -10330,9 +9452,6 @@
     ],
     "公开募股": [
       "163"
-    ],
-    "加密货币": [
-      "397"
     ],
     "加密货币漏洞利用": [
       "3360"
@@ -10359,12 +9478,6 @@
     ],
     "微策略": [
       "3257"
-    ],
-    "数字货币": [
-      "397"
-    ],
-    "数字资产": [
-      "397"
     ],
     "无畏契约大师赛": [
       "400"
@@ -10480,13 +9593,9 @@
       "408"
     ],
     "above one": [
-      "394",
-      "396",
       "95"
     ],
     "above one day": [
-      "394",
-      "396",
       "95"
     ],
     "advance quarter-final": [
@@ -10496,8 +9605,6 @@
       "412"
     ],
     "after launch": [
-      "394",
-      "396",
       "95"
     ],
     "against iran": [
@@ -10510,11 +9617,7 @@
       "414"
     ],
     "airdrop": [
-      "118",
-      "392",
-      "394",
-      "395",
-      "397"
+      "118"
     ],
     "alphabet": [
       "405"
@@ -10661,12 +9764,6 @@
     "christine lagarde": [
       "418"
     ],
-    "circulating supply": [
-      "396"
-    ],
-    "claim": [
-      "392"
-    ],
     "close": [
       "402",
       "405",
@@ -10700,9 +9797,6 @@
     "coin": [
       "409"
     ],
-    "coin offering": [
-      "397"
-    ],
     "competitive": [
       "419"
     ],
@@ -10729,22 +9823,12 @@
     ],
     "crypto": [
       "118",
-      "394",
       "409",
       "410",
       "411"
     ],
     "crypto exchange": [
       "95"
-    ],
-    "crypto price": [
-      "396"
-    ],
-    "crypto release": [
-      "397"
-    ],
-    "crypto token": [
-      "395"
     ],
     "cryptocurrency": [
       "409",
@@ -10767,18 +9851,13 @@
       "163"
     ],
     "day after": [
-      "394",
-      "396",
       "95"
     ],
     "day after launch": [
-      "396",
       "95"
     ],
     "debut": [
-      "163",
-      "394",
-      "396"
+      "163"
     ],
     "decision dfr": [
       "418"
@@ -10788,7 +9867,6 @@
     ],
     "defi": [
       "118",
-      "395",
       "409",
       "411"
     ],
@@ -10811,10 +9889,6 @@
     "dip": [
       "402"
     ],
-    "distribution": [
-      "392",
-      "397"
-    ],
     "drone": [
       "413",
       "414"
@@ -10835,9 +9909,6 @@
     ],
     "ecb rates decision": [
       "418"
-    ],
-    "eligibility": [
-      "392"
     ],
     "end war": [
       "415"
@@ -10903,9 +9974,6 @@
     "eurozone": [
       "418"
     ],
-    "evm": [
-      "392"
-    ],
     "exchange launch": [
       "95"
     ],
@@ -10916,18 +9984,12 @@
       "403"
     ],
     "fdv": [
-      "394",
-      "396",
       "95"
     ],
     "fdv above": [
-      "394",
-      "396",
       "95"
     ],
     "fdv above one": [
-      "394",
-      "396",
       "95"
     ],
     "finals": [
@@ -10950,27 +10012,10 @@
       "418"
     ],
     "fully diluted valuation": [
-      "394",
-      "396",
       "95"
-    ],
-    "fun fdv": [
-      "394"
-    ],
-    "fun fdv above": [
-      "394"
-    ],
-    "fun launch": [
-      "395"
-    ],
-    "fun launch token": [
-      "395"
     ],
     "gaming": [
       "419"
-    ],
-    "go live": [
-      "397"
     ],
     "goog": [
       "405"
@@ -10994,8 +10039,7 @@
       "405"
     ],
     "governance token": [
-      "118",
-      "395"
+      "118"
     ],
     "gpu": [
       "406"
@@ -11012,17 +10056,10 @@
       "415",
       "416"
     ],
-    "ico": [
-      "397"
-    ],
-    "ido": [
-      "397"
-    ],
     "inflation": [
       "418"
     ],
     "initial valuation": [
-      "396",
       "95"
     ],
     "interest rates": [
@@ -11088,9 +10125,6 @@
     "knockout": [
       "412"
     ],
-    "l2": [
-      "392"
-    ],
     "lan": [
       "400",
       "401"
@@ -11098,16 +10132,8 @@
     "last 8": [
       "412"
     ],
-    "launch": [
-      "394"
-    ],
     "launch token": [
-      "118",
-      "395",
-      "397"
-    ],
-    "layer 2": [
-      "392"
+      "118"
     ],
     "league": [
       "419"
@@ -11132,9 +10158,6 @@
     ],
     "listing": [
       "163",
-      "395",
-      "396",
-      "397",
       "95"
     ],
     "lol": [
@@ -11148,12 +10171,6 @@
     ],
     "mac": [
       "407"
-    ],
-    "mainnet": [
-      "392"
-    ],
-    "mainnet launch": [
-      "397"
     ],
     "march": [
       "405",
@@ -11170,8 +10187,6 @@
       "410"
     ],
     "market cap": [
-      "394",
-      "396",
       "404",
       "95"
     ],
@@ -11189,15 +10204,6 @@
     ],
     "masters santiago 2026": [
       "400"
-    ],
-    "mega eth": [
-      "392"
-    ],
-    "megaeth": [
-      "392"
-    ],
-    "megaeth airdrop": [
-      "392"
     ],
     "meta": [
       "118",
@@ -11279,9 +10285,6 @@
       "406",
       "407"
     ],
-    "native token": [
-      "395"
-    ],
     "nvda": [
       "406"
     ],
@@ -11301,17 +10304,10 @@
       "406"
     ],
     "one day": [
-      "394",
-      "396",
       "95"
     ],
     "one day after": [
-      "394",
-      "396",
       "95"
-    ],
-    "opening price": [
-      "396"
     ],
     "operations against": [
       "415"
@@ -11335,38 +10331,13 @@
     "persian gulf": [
       "415"
     ],
-    "platform": [
-      "394"
-    ],
-    "platform token": [
-      "395"
-    ],
     "playoffs": [
       "401"
     ],
     "policy meeting": [
       "418"
     ],
-    "predict fun": [
-      "394",
-      "395"
-    ],
-    "predict fun fdv": [
-      "394"
-    ],
-    "predict fun launch": [
-      "395"
-    ],
-    "predict.fun": [
-      "394",
-      "395"
-    ],
-    "prediction market": [
-      "394",
-      "395"
-    ],
     "price": [
-      "394",
       "402",
       "403",
       "405",
@@ -11403,24 +10374,8 @@
     "pro play": [
       "419"
     ],
-    "probable": [
-      "396"
-    ],
-    "probable fdv": [
-      "396"
-    ],
-    "probable fdv above": [
-      "396"
-    ],
-    "probable launch": [
-      "397"
-    ],
-    "probable launch token": [
-      "397"
-    ],
     "public offering": [
-      "163",
-      "397"
+      "163"
     ],
     "q1": [
       "408"
@@ -11455,9 +10410,6 @@
     "retaliation": [
       "413",
       "414"
-    ],
-    "retroactive": [
-      "392"
     ],
     "riot games": [
       "400",
@@ -11509,15 +10461,8 @@
     "smart contracts": [
       "409"
     ],
-    "snapshot": [
-      "392"
-    ],
     "soccer": [
       "412"
-    ],
-    "speculation": [
-      "394",
-      "395"
     ],
     "spot etf": [
       "410"
@@ -11600,9 +10545,6 @@
       "408"
     ],
     "tge": [
-      "395",
-      "396",
-      "397",
       "95"
     ],
     "tie": [
@@ -11613,36 +10555,21 @@
     ],
     "token": [
       "118",
-      "392",
-      "394",
       "409",
       "411"
     ],
-    "token event": [
-      "395"
-    ],
-    "token generation": [
-      "395",
-      "397"
-    ],
     "token launch": [
       "118",
-      "395",
-      "396",
-      "397",
       "95"
     ],
     "token price": [
       "95"
     ],
     "token sale": [
-      "118",
-      "397"
+      "118"
     ],
     "tokenomics": [
-      "118",
-      "395",
-      "396"
+      "118"
     ],
     "tournament": [
       "400",
@@ -11653,7 +10580,6 @@
       "419"
     ],
     "trading": [
-      "394",
       "402",
       "403",
       "404",
@@ -11719,8 +10645,6 @@
     ],
     "valuation": [
       "163",
-      "394",
-      "396",
       "408",
       "95"
     ],
@@ -11798,7 +10722,6 @@
       "402"
     ],
     "以太坊": [
-      "392",
       "409"
     ],
     "以色列": [
@@ -11807,20 +10730,11 @@
     "公开募股": [
       "163"
     ],
-    "加密货币": [
-      "397"
-    ],
     "小狐狸": [
       "118"
     ],
     "币安币": [
       "411"
-    ],
-    "数字货币": [
-      "397"
-    ],
-    "数字资产": [
-      "397"
     ],
     "无畏契约大师赛": [
       "400"
