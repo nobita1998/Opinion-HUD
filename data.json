@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-17 17:04:14 UTC+8",
+    "generatedAt": "2026-03-18 01:15:29 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 151,
-      "markets": 171,
+      "kept": 156,
+      "markets": 178,
       "keywords": 861,
       "events": {
         "events": 18
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 849,
+        "cutoff_expired": 844,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -5029,12 +5029,6 @@
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "8477",
-          "title": "March 15, 2026",
-          "yesTokenId": "68432033547954553639406186941043903167978501216216263842067902504155187247063",
-          "noTokenId": "47811580885698260857205956358229659315920197460083337029889254433261899249353"
-        },
-        {
           "marketId": "8478",
           "title": "March 31, 2026",
           "yesTokenId": "67129738220739634778627764930104442343310879400893880446444543078447327911577",
@@ -5075,6 +5069,12 @@
           "title": "March 7, 2026",
           "yesTokenId": "93185153689956747600437055326806163971418647095626796147123879850522013318354",
           "noTokenId": "92769776062564217812948104237900090599333787742208377868857389589564681140981"
+        },
+        {
+          "marketId": "8477",
+          "title": "March 15, 2026",
+          "yesTokenId": "68432033547954553639406186941043903167978501216216263842067902504155187247063",
+          "noTokenId": "47811580885698260857205956358229659315920197460083337029889254433261899249353"
         }
       ]
     },
@@ -5330,8 +5330,8 @@
     "415": {
       "title": "Trump announces end of military operations against Iran by ...?",
       "url": "https://app.opinion.trade/market/415?ref=opinion_hud",
-      "yesTokenId": "14074038339115625078427817390327243143394882801009228741851837561760725678389",
-      "noTokenId": "55889000230728445184439138398430680077049868635947359669175563682314196530384",
+      "yesTokenId": "82328584884124981891580206116193958702322441519733574488020952603628280939735",
+      "noTokenId": "89406223880971551086039568285322358495527974568270866661974752527289572342868",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5378,12 +5378,6 @@
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "8474",
-          "title": "March 15, 2026",
-          "yesTokenId": "14074038339115625078427817390327243143394882801009228741851837561760725678389",
-          "noTokenId": "55889000230728445184439138398430680077049868635947359669175563682314196530384"
-        },
-        {
           "marketId": "8475",
           "title": "March 31, 2026",
           "yesTokenId": "82328584884124981891580206116193958702322441519733574488020952603628280939735",
@@ -5412,6 +5406,12 @@
           "title": "March 7, 2026",
           "yesTokenId": "113758984573030766158019362886876693259312709886054129374970477663530595539088",
           "noTokenId": "85711551944436220308107200973732829106755421952433637245661960775001285647061"
+        },
+        {
+          "marketId": "8474",
+          "title": "March 15, 2026",
+          "yesTokenId": "14074038339115625078427817390327243143394882801009228741851837561760725678389",
+          "noTokenId": "55889000230728445184439138398430680077049868635947359669175563682314196530384"
         }
       ]
     },
@@ -5852,6 +5852,90 @@
     "9710": {
       "title": "KPL: WE vs Q9 (Mar. 19 5:00AM ET)",
       "url": "https://app.opinion.trade/market/9710?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "9731": {
+      "title": "BNB Up or Down - Hourly (Mar 17, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9731?ref=opinion_hud",
+      "yesTokenId": "114204238161062999483837951381643085178963295925282323018064605219553338088065",
+      "noTokenId": "87567609473280184227247191352017770744320352581407522578927272816064318291073",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9732": {
+      "title": "BTC Up or Down - Hourly (Mar 17, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9732?ref=opinion_hud",
+      "yesTokenId": "7660872857002430321721605923085030571610238371662292043968467091902818271782",
+      "noTokenId": "27094229417672973121398118746458112341409867394758583543900441866242811943988",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9733": {
+      "title": "ETH Up or Down - Hourly (Mar 17, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9733?ref=opinion_hud",
+      "yesTokenId": "98389453388997634318026782249690524699869498606738138523449529875388130333830",
+      "noTokenId": "9012889726988839258152795923223498766861500088633428676410683786521740996785",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9717": {
+      "title": "NBA: Lakers vs Heat (Mar. 19 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/9717?ref=opinion_hud",
+      "yesTokenId": "57276155915392899368379078196626572014665277926165318982069247323708258138264",
+      "noTokenId": "49468735438073087043099408394994571239599186400465690916775360305356432103572",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Lakers",
+        "noLabel": "Heat"
+      },
+      "type": "binary"
+    },
+    "9721": {
+      "title": "Bitcoin Up or Down on March 18?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/9721?ref=opinion_hud",
+      "yesTokenId": "48231536341245124303962317199233828243745355058414592604409041288104761945683",
+      "noTokenId": "102097520280171605352972395183971168390593353491459288005289955167264032383559",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9715": {
+      "title": "NBA: Magic vs Hornets (Mar. 19 7:00PM ET)",
+      "url": "https://app.opinion.trade/market/9715?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "9716": {
+      "title": "NBA: Suns vs Spurs (Mar. 19 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/9716?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
