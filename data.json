@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-18 01:15:29 UTC+8",
+    "generatedAt": "2026-03-18 11:16:24 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 156,
-      "markets": 178,
+      "kept": 146,
+      "markets": 172,
       "keywords": 861,
       "events": {
         "events": 18
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 844,
+        "cutoff_expired": 854,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -4164,8 +4164,8 @@
     "405": {
       "title": "Will Google (GOOGL) close above ... end of March?",
       "url": "https://app.opinion.trade/market/405?ref=opinion_hud",
-      "yesTokenId": "28907944260410203369790132975885195242377328494339264898619381536567233217086",
-      "noTokenId": "29329289421204813700331504041844293786762021524145280951886990530917970798144",
+      "yesTokenId": "114744083619599862473666160354764061848922136063580954572033497082787811117964",
+      "noTokenId": "16761479804612083891310499814125875927806035700200830631122454604382281680154",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4355,8 +4355,8 @@
     "406": {
       "title": "Will NVIDIA (NVDA) close above ... end of March?",
       "url": "https://app.opinion.trade/market/406?ref=opinion_hud",
-      "yesTokenId": "114465500736887250691577215950712195415658335335089953556696816858550445831121",
-      "noTokenId": "16206474300323573733795034712712940478943568395704118687053072414044534373304",
+      "yesTokenId": "63305664884177583618330100061684859544199238075651579435247158866125506352128",
+      "noTokenId": "73337704859331574004624446258693751814008160220624134351121230280474148185661",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4547,8 +4547,8 @@
     "404": {
       "title": "Will Microsoft (MSFT) close above ... end of March?",
       "url": "https://app.opinion.trade/market/404?ref=opinion_hud",
-      "yesTokenId": "14265175704287427684781960491362218062398957185656882107675948219925666173888",
-      "noTokenId": "25950298710028628051579945299157211074828979604667003360502342224900524785138",
+      "yesTokenId": "2917542606724270668031829916760405010735006321178572310020887556310178361565",
+      "noTokenId": "7655133539901567256616189374607759921116309767850720146237256803841762194533",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5777,66 +5777,6 @@
         }
       ]
     },
-    "9640": {
-      "title": "NBA: Warriors vs Celtics (Mar. 18 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/9640?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9642": {
-      "title": "NBA: Lakers vs Rockets (Mar. 18 9:30PM ET)",
-      "url": "https://app.opinion.trade/market/9642?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9641": {
-      "title": "NBA: Raptors vs Bulls (Mar. 18 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/9641?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9625": {
-      "title": "KPL: WOL vs KSG (Mar. 18 5:00AM ET)",
-      "url": "https://app.opinion.trade/market/9625?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9626": {
-      "title": "KPL: AG.SP vs JDG (Mar. 18 8:00AM ET)",
-      "url": "https://app.opinion.trade/market/9626?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "9711": {
       "title": "KPL: WB vs DYG (Mar. 19 8:00AM ET)",
       "url": "https://app.opinion.trade/market/9711?ref=opinion_hud",
@@ -5861,42 +5801,6 @@
       },
       "type": "binary"
     },
-    "9731": {
-      "title": "BNB Up or Down - Hourly (Mar 17, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9731?ref=opinion_hud",
-      "yesTokenId": "114204238161062999483837951381643085178963295925282323018064605219553338088065",
-      "noTokenId": "87567609473280184227247191352017770744320352581407522578927272816064318291073",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "9732": {
-      "title": "BTC Up or Down - Hourly (Mar 17, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9732?ref=opinion_hud",
-      "yesTokenId": "7660872857002430321721605923085030571610238371662292043968467091902818271782",
-      "noTokenId": "27094229417672973121398118746458112341409867394758583543900441866242811943988",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "9733": {
-      "title": "ETH Up or Down - Hourly (Mar 17, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9733?ref=opinion_hud",
-      "yesTokenId": "98389453388997634318026782249690524699869498606738138523449529875388130333830",
-      "noTokenId": "9012889726988839258152795923223498766861500088633428676410683786521740996785",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "9717": {
       "title": "NBA: Lakers vs Heat (Mar. 19 8:00PM ET)",
       "url": "https://app.opinion.trade/market/9717?ref=opinion_hud",
@@ -5906,18 +5810,6 @@
       "labels": {
         "yesLabel": "Lakers",
         "noLabel": "Heat"
-      },
-      "type": "binary"
-    },
-    "9721": {
-      "title": "Bitcoin Up or Down on March 18?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/9721?ref=opinion_hud",
-      "yesTokenId": "48231536341245124303962317199233828243745355058414592604409041288104761945683",
-      "noTokenId": "102097520280171605352972395183971168390593353491459288005289955167264032383559",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
@@ -5942,6 +5834,42 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "9761": {
+      "title": "BNB Up or Down - Hourly (Mar 18, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9761?ref=opinion_hud",
+      "yesTokenId": "102121780381376246960764240391749961683202228385195238867957441648990711127061",
+      "noTokenId": "103366630646980080730317756180873225549868543118029588304070471056041816282366",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9763": {
+      "title": "ETH Up or Down - Hourly (Mar 18, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9763?ref=opinion_hud",
+      "yesTokenId": "100418470905909890140134632441116495110990901413269040572212660395841831675236",
+      "noTokenId": "93472001594088897649507937471043542963061579098422416906753686256353618248544",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9762": {
+      "title": "BTC Up or Down - Hourly (Mar 18, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9762?ref=opinion_hud",
+      "yesTokenId": "33468648615358969497063893334606509535209468580753671667023297382887116583179",
+      "noTokenId": "12760688973640033142579985238058775396875490935886696238804086532635468521213",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
