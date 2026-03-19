@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-19 01:15:12 UTC+8",
+    "generatedAt": "2026-03-19 11:17:08 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 107,
-      "markets": 178,
-      "keywords": 841,
+      "kept": 61,
+      "markets": 161,
+      "keywords": 786,
       "events": {
-        "events": 16
+        "events": 10
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 893,
+        "cutoff_expired": 939,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 16,
+        "reused": 10,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -40,230 +40,6 @@
     }
   },
   "events": {
-    "408": {
-      "title": "Will Tesla (TSLA) close above ___ end of March?",
-      "marketIds": [
-        "408"
-      ],
-      "bestMarketId": "408",
-      "bestLabels": null,
-      "keywords": [
-        "tesla",
-        "tsla",
-        "stock",
-        "price",
-        "close",
-        "march",
-        "shares",
-        "equity",
-        "market",
-        "trading",
-        "q1",
-        "quarter",
-        "performance",
-        "earnings",
-        "valuation",
-        "tesla tsla",
-        "tsla close",
-        "close above",
-        "above march",
-        "tesla tsla close",
-        "tsla close above",
-        "close above march"
-      ],
-      "entities": [
-        "tesla"
-      ],
-      "entityGroups": [
-        [
-          "tesla",
-          "tsla",
-          "特斯拉"
-        ]
-      ],
-      "sig": "be6e5d99",
-      "sigFull": "be6e5d99",
-      "sigCore": "b0859266",
-      "reused": false
-    },
-    "403": {
-      "title": "Will Meta (META) close above ... end of March?",
-      "marketIds": [
-        "403"
-      ],
-      "bestMarketId": "403",
-      "bestLabels": null,
-      "keywords": [
-        "meta",
-        "facebook",
-        "fb",
-        "stock",
-        "share",
-        "price",
-        "trading",
-        "nasdaq",
-        "tech",
-        "equity",
-        "zuckerberg",
-        "market",
-        "cap",
-        "meta close",
-        "close above",
-        "above march",
-        "meta meta close",
-        "meta close above",
-        "close above march"
-      ],
-      "entities": [
-        "meta"
-      ],
-      "entityGroups": [
-        [
-          "meta"
-        ]
-      ],
-      "sig": "e16f0aee",
-      "sigFull": "e16f0aee",
-      "sigCore": "b7aa3a94",
-      "reused": false
-    },
-    "405": {
-      "title": "Will Google (GOOGL) close above ... end of March?",
-      "marketIds": [
-        "405"
-      ],
-      "bestMarketId": "405",
-      "bestLabels": null,
-      "keywords": [
-        "google",
-        "googl",
-        "alphabet",
-        "stock",
-        "price",
-        "shares",
-        "equity",
-        "market",
-        "trading",
-        "nasdaq",
-        "tech",
-        "close",
-        "march",
-        "earnings",
-        "options",
-        "google googl",
-        "googl close",
-        "close above",
-        "above march",
-        "google googl close",
-        "googl close above",
-        "close above march"
-      ],
-      "entities": [
-        "google"
-      ],
-      "entityGroups": [
-        [
-          "google",
-          "googl",
-          "goog"
-        ]
-      ],
-      "sig": "124ecfb7",
-      "sigFull": "124ecfb7",
-      "sigCore": "182d0a1b",
-      "reused": false
-    },
-    "407": {
-      "title": "Will Apple (AAPL) close above ... end of March?",
-      "marketIds": [
-        "407"
-      ],
-      "bestMarketId": "407",
-      "bestLabels": null,
-      "keywords": [
-        "apple",
-        "aapl",
-        "stock",
-        "shares",
-        "price",
-        "equity",
-        "tech",
-        "iphone",
-        "mac",
-        "tim cook",
-        "nasdaq",
-        "trading",
-        "close",
-        "market",
-        "cap",
-        "apple aapl",
-        "aapl close",
-        "close above",
-        "above march",
-        "apple aapl close",
-        "aapl close above",
-        "close above march"
-      ],
-      "entities": [
-        "apple"
-      ],
-      "entityGroups": [
-        [
-          "apple",
-          "aapl"
-        ]
-      ],
-      "sig": "77049616",
-      "sigFull": "77049616",
-      "sigCore": "aae75f36",
-      "reused": false
-    },
-    "406": {
-      "title": "Will NVIDIA (NVDA) close above ... end of March?",
-      "marketIds": [
-        "406"
-      ],
-      "bestMarketId": "406",
-      "bestLabels": null,
-      "keywords": [
-        "nvidia",
-        "nvda",
-        "stock",
-        "share",
-        "price",
-        "tech",
-        "ai",
-        "gpu",
-        "semiconductor",
-        "chip",
-        "jensen huang",
-        "nasdaq",
-        "market",
-        "trading",
-        "equity",
-        "nvidia nvda",
-        "nvda close",
-        "close above",
-        "above march",
-        "nvidia nvda close",
-        "nvda close above",
-        "close above march"
-      ],
-      "entities": [
-        "nvidia"
-      ],
-      "entityGroups": [
-        [
-          "nvidia",
-          "nvda",
-          "英伟达"
-        ]
-      ],
-      "sig": "7102b3e2",
-      "sigFull": "7102b3e2",
-      "sigCore": "32a2a48a",
-      "reused": false
-    },
     "410": {
       "title": "What price will Bitcoin hit in March?",
       "marketIds": [
@@ -3877,491 +3653,11 @@
       },
       "type": "binary"
     },
-    "408": {
-      "title": "Will Tesla (TSLA) close above ___ end of March?",
-      "url": "https://app.opinion.trade/market/408?ref=opinion_hud",
-      "yesTokenId": "87408996090695504065261884083660173651443180922741718043336141641838129508548",
-      "noTokenId": "4983906495234198630117006648463625909536821916726162597529752675330721960297",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "tesla",
-        "tsla",
-        "stock",
-        "price",
-        "close",
-        "march",
-        "shares",
-        "equity",
-        "market",
-        "trading",
-        "q1",
-        "quarter",
-        "performance",
-        "earnings",
-        "valuation",
-        "tesla tsla",
-        "tsla close",
-        "close above",
-        "above march",
-        "tesla tsla close",
-        "tsla close above",
-        "close above march"
-      ],
-      "entities": [
-        "tesla"
-      ],
-      "entityGroups": [
-        [
-          "tesla",
-          "tsla",
-          "特斯拉"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8218",
-          "title": "$370",
-          "yesTokenId": "87408996090695504065261884083660173651443180922741718043336141641838129508548",
-          "noTokenId": "4983906495234198630117006648463625909536821916726162597529752675330721960297"
-        },
-        {
-          "marketId": "8219",
-          "title": "$380",
-          "yesTokenId": "15468087989983965906228303878676093516013932979747010747960047399558222404183",
-          "noTokenId": "42798447846882807214458455186823318492784492500511891733210957756167129298869"
-        },
-        {
-          "marketId": "8220",
-          "title": "$390",
-          "yesTokenId": "66116582876355893520063655400994768700967747551773575054500806680095051606476",
-          "noTokenId": "105846826143910319734382157788492842257632133794365742648375833601011958037075"
-        },
-        {
-          "marketId": "8221",
-          "title": "$400",
-          "yesTokenId": "85962478594927157631565381820992340668737052624801522917518914721612641474849",
-          "noTokenId": "52002041660499250187165045139836032204000841559076583883705228700958796751670"
-        },
-        {
-          "marketId": "8222",
-          "title": "$410",
-          "yesTokenId": "23710622070971797881519113326517397683494450840244479006519591954865787980398",
-          "noTokenId": "42144763532000375960712786257396025435102559561791986529549859791643249636496"
-        },
-        {
-          "marketId": "8223",
-          "title": "$420",
-          "yesTokenId": "93164037853583098647159394712439649276600381030688914006259945963382492558342",
-          "noTokenId": "36888297989544687801147069062557176042507457733946205441147882915714080065856"
-        },
-        {
-          "marketId": "8224",
-          "title": "$430",
-          "yesTokenId": "59422601217116642780434714415350476405102615226989294046669038540355836583436",
-          "noTokenId": "55144379244822215644394813327986549627960052804617282384582238638722987484566"
-        },
-        {
-          "marketId": "8225",
-          "title": "$440",
-          "yesTokenId": "18938868593315108713622570697409046964106687739584901638822998006906464519277",
-          "noTokenId": "53899658825595796383901051078271444034064179948363061257329148973196757028926"
-        },
-        {
-          "marketId": "8226",
-          "title": "$450",
-          "yesTokenId": "83319560885897762819112547068656366978785298327027443456689554398807466313824",
-          "noTokenId": "60284154126111160795672624491648041577355932850749430274009280105150365693439"
-        }
-      ]
-    },
-    "403": {
-      "title": "Will Meta (META) close above ... end of March?",
-      "url": "https://app.opinion.trade/market/403?ref=opinion_hud",
-      "yesTokenId": "7690961380977491127965276191017305546234377864707503036771460307124168128784",
-      "noTokenId": "23155275148972492746189757733651960025453850906402368133102583166152086209837",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "meta",
-        "facebook",
-        "fb",
-        "stock",
-        "share",
-        "price",
-        "trading",
-        "nasdaq",
-        "tech",
-        "equity",
-        "zuckerberg",
-        "market",
-        "cap",
-        "meta close",
-        "close above",
-        "above march",
-        "meta meta close",
-        "meta close above",
-        "close above march"
-      ],
-      "entities": [
-        "meta"
-      ],
-      "entityGroups": [
-        [
-          "meta"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8177",
-          "title": "$560",
-          "yesTokenId": "41035514922096053877516019164819876617485138316227738815075014001267995315280",
-          "noTokenId": "60085924856592678755936198153679422300498059192647628592212794777371904868435"
-        },
-        {
-          "marketId": "8178",
-          "title": "$580",
-          "yesTokenId": "67471807110579646950911605702884628426487771511240722744809938083370345162394",
-          "noTokenId": "47623195873132871950508067985186425820284994942090609323832391106205959021661"
-        },
-        {
-          "marketId": "8179",
-          "title": "$620",
-          "yesTokenId": "105926822333055631593498763064312453276648487673803433663474514747475489023220",
-          "noTokenId": "33372809909632458356670655646822689131884256510939066953581244191109963401350"
-        },
-        {
-          "marketId": "8180",
-          "title": "$640",
-          "yesTokenId": "21348919647900687365708437814435425081124925440831040653352615249215341540245",
-          "noTokenId": "40473968504760810894078887772303174635107294410513706031629095391697148480971"
-        },
-        {
-          "marketId": "8181",
-          "title": "$660",
-          "yesTokenId": "43862826567565146506453469730528916920254295056643532551542046716308934497062",
-          "noTokenId": "26235819598286862077744174875864237842239930118037246497464158587591638712094"
-        },
-        {
-          "marketId": "8182",
-          "title": "$680",
-          "yesTokenId": "79499244903540682501364928706534077321721408893352625460042563767152724467014",
-          "noTokenId": "75083569812783813655146351595394948433793593129009233636555952941164105796047"
-        },
-        {
-          "marketId": "8183",
-          "title": "$700",
-          "yesTokenId": "7690961380977491127965276191017305546234377864707503036771460307124168128784",
-          "noTokenId": "23155275148972492746189757733651960025453850906402368133102583166152086209837"
-        },
-        {
-          "marketId": "8184",
-          "title": "$720",
-          "yesTokenId": "81677841841615587362897871313219778269570973404583944966881487176233005042867",
-          "noTokenId": "48233819465027837949162211196097715207852954588699254277315722668825922113770"
-        }
-      ]
-    },
-    "405": {
-      "title": "Will Google (GOOGL) close above ... end of March?",
-      "url": "https://app.opinion.trade/market/405?ref=opinion_hud",
-      "yesTokenId": "24846183547278289925755302066287190064867299259295373390058047828686377740291",
-      "noTokenId": "31509161384121954703877277348646963150885738412703714701836613376454297624593",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "google",
-        "googl",
-        "alphabet",
-        "stock",
-        "price",
-        "shares",
-        "equity",
-        "market",
-        "trading",
-        "nasdaq",
-        "tech",
-        "close",
-        "march",
-        "earnings",
-        "options",
-        "google googl",
-        "googl close",
-        "close above",
-        "above march",
-        "google googl close",
-        "googl close above",
-        "close above march"
-      ],
-      "entities": [
-        "google"
-      ],
-      "entityGroups": [
-        [
-          "google",
-          "googl",
-          "goog"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8194",
-          "title": "$280",
-          "yesTokenId": "51132735777587736509749330538756827064004958348969352771692109761240863414236",
-          "noTokenId": "103225007096157732176926204212705585924845512992607276159944720619395386425458"
-        },
-        {
-          "marketId": "8195",
-          "title": "$290",
-          "yesTokenId": "24846183547278289925755302066287190064867299259295373390058047828686377740291",
-          "noTokenId": "31509161384121954703877277348646963150885738412703714701836613376454297624593"
-        },
-        {
-          "marketId": "8196",
-          "title": "$300",
-          "yesTokenId": "62731107194934918577172973277506120600038149063324813237008494686181460843371",
-          "noTokenId": "63790595026579635474477905445281861412743292161428237789217567285248645493182"
-        },
-        {
-          "marketId": "8197",
-          "title": "$310",
-          "yesTokenId": "114744083619599862473666160354764061848922136063580954572033497082787811117964",
-          "noTokenId": "16761479804612083891310499814125875927806035700200830631122454604382281680154"
-        },
-        {
-          "marketId": "8198",
-          "title": "$320",
-          "yesTokenId": "113354689995811036159906603777932723930826736043451246883716129298967075045868",
-          "noTokenId": "15037616791567152648970163282957985966313226386646070245003278491383819414041"
-        },
-        {
-          "marketId": "8199",
-          "title": "$330",
-          "yesTokenId": "28907944260410203369790132975885195242377328494339264898619381536567233217086",
-          "noTokenId": "29329289421204813700331504041844293786762021524145280951886990530917970798144"
-        },
-        {
-          "marketId": "8200",
-          "title": "$340",
-          "yesTokenId": "42803987530601445685147964730492788445936558909991008251717941158881272091040",
-          "noTokenId": "23145009147939163724699225242984253225833067340445273444173340330813814493997"
-        },
-        {
-          "marketId": "8201",
-          "title": "$350",
-          "yesTokenId": "66399517921701362461722820345328810475624901517766389497344216544678819135601",
-          "noTokenId": "24446318551808595907161081465589699084012263858348043115067194859209298270293"
-        }
-      ]
-    },
-    "407": {
-      "title": "Will Apple (AAPL) close above ... end of March?",
-      "url": "https://app.opinion.trade/market/407?ref=opinion_hud",
-      "yesTokenId": "35334753433908940070140500145829612041564919510860410537631346495875416748452",
-      "noTokenId": "19248325810645693561590073578778216546866869204912493267217799103845783852239",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "apple",
-        "aapl",
-        "stock",
-        "shares",
-        "price",
-        "equity",
-        "tech",
-        "iphone",
-        "mac",
-        "tim cook",
-        "nasdaq",
-        "trading",
-        "close",
-        "market",
-        "cap",
-        "apple aapl",
-        "aapl close",
-        "close above",
-        "above march",
-        "apple aapl close",
-        "aapl close above",
-        "close above march"
-      ],
-      "entities": [
-        "apple"
-      ],
-      "entityGroups": [
-        [
-          "apple",
-          "aapl"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8210",
-          "title": "$240",
-          "yesTokenId": "35334753433908940070140500145829612041564919510860410537631346495875416748452",
-          "noTokenId": "19248325810645693561590073578778216546866869204912493267217799103845783852239"
-        },
-        {
-          "marketId": "8211",
-          "title": "$250",
-          "yesTokenId": "35416534039457337212854988748910190467694069565087654785322545449369749193523",
-          "noTokenId": "69551410626836494428597950023240234646922367831168221508087716195952840137181"
-        },
-        {
-          "marketId": "8212",
-          "title": "$260",
-          "yesTokenId": "15177148981395294209513140744578881787405754931987255315381737881403177767410",
-          "noTokenId": "46134291157926045135196512047069286405087871374739645465800372684525043651705"
-        },
-        {
-          "marketId": "8213",
-          "title": "$270",
-          "yesTokenId": "76345622020613570229221330547608876715031218037316793489784032098440497673394",
-          "noTokenId": "67740772094596628615191235128304733161328278986250070380819414543249541332"
-        },
-        {
-          "marketId": "8214",
-          "title": "$280",
-          "yesTokenId": "105297479335806133818546699727952222799410254534832332312230110024957259787878",
-          "noTokenId": "113402234622498973012687477808950736919808408761663174509170905744922027860117"
-        },
-        {
-          "marketId": "8215",
-          "title": "$290",
-          "yesTokenId": "1000230390632345259439456416676376609275194585149347791159238696497234142448",
-          "noTokenId": "22704514148930225252949910257594175758323244860776421590667481828725140440575"
-        },
-        {
-          "marketId": "8216",
-          "title": "$300",
-          "yesTokenId": "67071000211075009452527785094229346281554426005660420337597407733219577014644",
-          "noTokenId": "28496591228718412835862722005739814747255709103627105619807107119179081589833"
-        },
-        {
-          "marketId": "8217",
-          "title": "$310",
-          "yesTokenId": "64341377752249205238488548201420989614485751589658159628798472736671659893292",
-          "noTokenId": "46688948458220095406165674672886944494536282037741047772629421361516849993983"
-        }
-      ]
-    },
-    "406": {
-      "title": "Will NVIDIA (NVDA) close above ... end of March?",
-      "url": "https://app.opinion.trade/market/406?ref=opinion_hud",
-      "yesTokenId": "83255675315965042779070142770442804382073665490777044434324408262753018244610",
-      "noTokenId": "58864275256073051642695158447117832332010040664117448000028228059386388372672",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "nvidia",
-        "nvda",
-        "stock",
-        "share",
-        "price",
-        "tech",
-        "ai",
-        "gpu",
-        "semiconductor",
-        "chip",
-        "jensen huang",
-        "nasdaq",
-        "market",
-        "trading",
-        "equity",
-        "nvidia nvda",
-        "nvda close",
-        "close above",
-        "above march",
-        "nvidia nvda close",
-        "nvda close above",
-        "close above march"
-      ],
-      "entities": [
-        "nvidia"
-      ],
-      "entityGroups": [
-        [
-          "nvidia",
-          "nvda",
-          "英伟达"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8202",
-          "title": "$140",
-          "yesTokenId": "27447942515738737331856694526542087812658415934540125331783921592031826268728",
-          "noTokenId": "110125680086428927481680879489810196685064106724214518955157428618253568193858"
-        },
-        {
-          "marketId": "8203",
-          "title": "$150",
-          "yesTokenId": "63305664884177583618330100061684859544199238075651579435247158866125506352128",
-          "noTokenId": "73337704859331574004624446258693751814008160220624134351121230280474148185661"
-        },
-        {
-          "marketId": "8204",
-          "title": "$160",
-          "yesTokenId": "83255675315965042779070142770442804382073665490777044434324408262753018244610",
-          "noTokenId": "58864275256073051642695158447117832332010040664117448000028228059386388372672"
-        },
-        {
-          "marketId": "8205",
-          "title": "$170",
-          "yesTokenId": "114465500736887250691577215950712195415658335335089953556696816858550445831121",
-          "noTokenId": "16206474300323573733795034712712940478943568395704118687053072414044534373304"
-        },
-        {
-          "marketId": "8206",
-          "title": "$180",
-          "yesTokenId": "47190726430213492902762850767306134037371739149262951804829060945643121573274",
-          "noTokenId": "12403614367633867849340228515696259665546367510534453781075842726445238344677"
-        },
-        {
-          "marketId": "8207",
-          "title": "$190",
-          "yesTokenId": "50760169407702387746060930618517102320024466493321843722124905315392279960107",
-          "noTokenId": "65864872439395605191728424810934203634912237218305411557840652768141240400168"
-        },
-        {
-          "marketId": "8208",
-          "title": "$200",
-          "yesTokenId": "104196637310469954657031471844871711233868617971650150596209030436998812807668",
-          "noTokenId": "19300098257920311175917856984323680555894308237650090512601431635679685856093"
-        },
-        {
-          "marketId": "8209",
-          "title": "$210",
-          "yesTokenId": "36295095683924128728181338033105081201373931864127649591030396425657486467826",
-          "noTokenId": "99396816910252447380899560279959607188493774296078208643833096618040566791707"
-        }
-      ]
-    },
     "410": {
       "title": "What price will Bitcoin hit in March?",
       "url": "https://app.opinion.trade/market/410?ref=opinion_hud",
-      "yesTokenId": "47629549899543994667624094354450074294072121517107124300907227342429791825877",
-      "noTokenId": "81458626619093382453845500311466732782954109857060739429758587711734333652212",
+      "yesTokenId": "94249979181319328608011049639452587368559940431593665440936472930045910842197",
+      "noTokenId": "99839681572191025674959086559599502647064729357591082594661069712385033556424",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4468,8 +3764,8 @@
     "411": {
       "title": "What price will BNB hit in March?",
       "url": "https://app.opinion.trade/market/411?ref=opinion_hud",
-      "yesTokenId": "89064924648827599990212235368617942148696437797123122825128387592469244468023",
-      "noTokenId": "51818348551132853396920049655618943747223547362785603916576806386675659203443",
+      "yesTokenId": "70812224019750684822326273209002945547479120907878336738451916666969724149366",
+      "noTokenId": "44168803237671515154547716309797399878720884012299899530110314147213065581281",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4563,8 +3859,8 @@
     "409": {
       "title": "What price will Ethereum hit in March?",
       "url": "https://app.opinion.trade/market/409?ref=opinion_hud",
-      "yesTokenId": "2827047630219840337053758576626715211679454974622433042064670661921421734065",
-      "noTokenId": "111197784757181941538774449441832350701164983204414121590362625381893755360868",
+      "yesTokenId": "7446290417308361498223685325012546643962617806598014220386539156227851229906",
+      "noTokenId": "107844361002794484657461847364676546830054687942372445933790141935672662552359",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -5489,153 +4785,9 @@
         }
       ]
     },
-    "9711": {
-      "title": "KPL: WB vs DYG (Mar. 19 8:00AM ET)",
-      "url": "https://app.opinion.trade/market/9711?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9710": {
-      "title": "KPL: WE vs Q9 (Mar. 19 5:00AM ET)",
-      "url": "https://app.opinion.trade/market/9710?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9717": {
-      "title": "NBA: Lakers vs Heat (Mar. 19 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/9717?ref=opinion_hud",
-      "yesTokenId": "57276155915392899368379078196626572014665277926165318982069247323708258138264",
-      "noTokenId": "49468735438073087043099408394994571239599186400465690916775360305356432103572",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Lakers",
-        "noLabel": "Heat"
-      },
-      "type": "binary"
-    },
-    "9715": {
-      "title": "NBA: Magic vs Hornets (Mar. 19 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/9715?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9716": {
-      "title": "NBA: Suns vs Spurs (Mar. 19 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/9716?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9808": {
-      "title": "BTC Up or Down - Hourly (Mar 18, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9808?ref=opinion_hud",
-      "yesTokenId": "44876042735432725751323252130645646690346160609460040972998834698490939973704",
-      "noTokenId": "34111138639974515907432740799464333248355977854110514906779289011918342069323",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "9809": {
-      "title": "ETH Up or Down - Hourly (Mar 18, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9809?ref=opinion_hud",
-      "yesTokenId": "72162913093859084686828125680011905088345729637897649067259566409661970348927",
-      "noTokenId": "23889400132414098654528329006108429251624538723008830779014642082374570999449",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "9807": {
-      "title": "BNB Up or Down - Hourly (Mar 18, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9807?ref=opinion_hud",
-      "yesTokenId": "97917658376994293293117890254282763899036040974695997165024780513662409905215",
-      "noTokenId": "98999224280998716613918852426898255679045708453207158665416746207286795127300",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "9811": {
-      "title": "LoL - FST: GEN vs LYON (Mar. 19 9:00AM ET)",
-      "url": "https://app.opinion.trade/market/9811?ref=opinion_hud",
-      "yesTokenId": "45035285538228627477666645059310590111643682715108097109592115836359737782785",
-      "noTokenId": "84105385941591670027995512620721323738475056428864538915717105976589109340372",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "GEN",
-        "noLabel": "LYON"
-      },
-      "type": "binary"
-    },
     "9814": {
       "title": "KPL: LGD.NBW vs TES.A (Mar. 20 8:00AM ET)",
       "url": "https://app.opinion.trade/market/9814?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9812": {
-      "title": "KPL: HERO vs TTG (Mar. 20 5:00AM ET)",
-      "url": "https://app.opinion.trade/market/9812?ref=opinion_hud",
-      "yesTokenId": "88305715506402904037093133339404993369644299003800066691685103898343914091433",
-      "noTokenId": "79862461430469450035007732915339011957282818913130970829259602415486046426922",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "HERO",
-        "noLabel": "TTG"
-      },
-      "type": "binary"
-    },
-    "9813": {
-      "title": "LoL - FST: JDG vs LOUD (Mar. 19 2:00PM ET)",
-      "url": "https://app.opinion.trade/market/9813?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9803": {
-      "title": "Bitcoin Up or Down on March 19?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/9803?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -5795,27 +4947,13 @@
       "3223"
     ],
     "aapl": [
-      "2368",
-      "407"
-    ],
-    "aapl close": [
-      "407"
-    ],
-    "aapl close above": [
-      "407"
+      "2368"
     ],
     "above earthquake": [
       "2668"
     ],
     "above earthquake 2027": [
       "2668"
-    ],
-    "above march": [
-      "403",
-      "405",
-      "406",
-      "407",
-      "408"
     ],
     "above one": [
       "95"
@@ -5851,9 +4989,6 @@
     "against iran": [
       "415"
     ],
-    "ai": [
-      "406"
-    ],
     "air strike": [
       "3039",
       "414"
@@ -5881,9 +5016,6 @@
       "3361",
       "3364",
       "3368"
-    ],
-    "alphabet": [
-      "405"
     ],
     "altcoin": [
       "3364",
@@ -5926,14 +5058,7 @@
       "1546"
     ],
     "apple": [
-      "2368",
-      "407"
-    ],
-    "apple aapl": [
-      "407"
-    ],
-    "apple aapl close": [
-      "407"
+      "2368"
     ],
     "apple ceo": [
       "2368"
@@ -6156,10 +5281,6 @@
       "3449",
       "3509"
     ],
-    "cap": [
-      "403",
-      "407"
-    ],
     "capital": [
       "3505",
       "3506",
@@ -6209,9 +5330,6 @@
     "china jia yueting": [
       "1856"
     ],
-    "chip": [
-      "406"
-    ],
     "christ return": [
       "2670"
     ],
@@ -6223,25 +5341,6 @@
     ],
     "christine lagarde": [
       "418"
-    ],
-    "close": [
-      "405",
-      "407",
-      "408"
-    ],
-    "close above": [
-      "403",
-      "405",
-      "406",
-      "407",
-      "408"
-    ],
-    "close above march": [
-      "403",
-      "405",
-      "406",
-      "407",
-      "408"
     ],
     "close warner": [
       "2398"
@@ -6515,10 +5614,6 @@
     "dustin henderson": [
       "3224"
     ],
-    "earnings": [
-      "405",
-      "408"
-    ],
     "earthquake": [
       "2668",
       "3356"
@@ -6581,13 +5676,6 @@
     "epicenter": [
       "2668",
       "3356"
-    ],
-    "equity": [
-      "403",
-      "405",
-      "406",
-      "407",
-      "408"
     ],
     "escalation": [
       "3039",
@@ -6673,9 +5761,6 @@
     "extradition": [
       "1856"
     ],
-    "facebook": [
-      "403"
-    ],
     "faraday future": [
       "1856"
     ],
@@ -6688,9 +5773,6 @@
     ],
     "favor trump tariffs": [
       "1546"
-    ],
-    "fb": [
-      "403"
     ],
     "fdv": [
       "95"
@@ -6780,27 +5862,6 @@
     "going public": [
       "3362"
     ],
-    "goog": [
-      "405"
-    ],
-    "googl": [
-      "405"
-    ],
-    "googl close": [
-      "405"
-    ],
-    "googl close above": [
-      "405"
-    ],
-    "google": [
-      "405"
-    ],
-    "google googl": [
-      "405"
-    ],
-    "google googl close": [
-      "405"
-    ],
     "google willow": [
       "3256"
     ],
@@ -6809,9 +5870,6 @@
     ],
     "governance token": [
       "3366"
-    ],
-    "gpu": [
-      "406"
     ],
     "great earthquake": [
       "2668",
@@ -6963,9 +6021,6 @@
       "3506",
       "3525"
     ],
-    "iphone": [
-      "407"
-    ],
     "ipo": [
       "3362",
       "3525"
@@ -7033,9 +6088,6 @@
     ],
     "jd vance": [
       "3055"
-    ],
-    "jensen huang": [
-      "406"
     ],
     "jerusalem": [
       "416"
@@ -7164,9 +6216,6 @@
     "m&a": [
       "2398"
     ],
-    "mac": [
-      "407"
-    ],
     "maga": [
       "3055"
     ],
@@ -7181,10 +6230,6 @@
     ],
     "mainnet": [
       "3366"
-    ],
-    "march": [
-      "405",
-      "408"
     ],
     "march 2026": [
       "3039",
@@ -7204,11 +6249,6 @@
     ],
     "market": [
       "3361",
-      "403",
-      "405",
-      "406",
-      "407",
-      "408",
       "409",
       "410"
     ],
@@ -7250,18 +6290,6 @@
     ],
     "messiah": [
       "2670"
-    ],
-    "meta": [
-      "403"
-    ],
-    "meta close": [
-      "403"
-    ],
-    "meta close above": [
-      "403"
-    ],
-    "meta meta close": [
-      "403"
     ],
     "microstrategy": [
       "3257"
@@ -7371,12 +6399,6 @@
       "3222",
       "3223"
     ],
-    "nasdaq": [
-      "403",
-      "405",
-      "406",
-      "407"
-    ],
     "native token": [
       "3366"
     ],
@@ -7421,24 +6443,6 @@
     "number one pick": [
       "3072"
     ],
-    "nvda": [
-      "406"
-    ],
-    "nvda close": [
-      "406"
-    ],
-    "nvda close above": [
-      "406"
-    ],
-    "nvidia": [
-      "406"
-    ],
-    "nvidia nvda": [
-      "406"
-    ],
-    "nvidia nvda close": [
-      "406"
-    ],
     "office": [
       "3062"
     ],
@@ -7460,9 +6464,6 @@
     ],
     "operations against iran": [
       "415"
-    ],
-    "options": [
-      "405"
     ],
     "ousted": [
       "2368"
@@ -7506,9 +6507,6 @@
     "peg": [
       "3359"
     ],
-    "performance": [
-      "408"
-    ],
     "permanent role": [
       "3369"
     ],
@@ -7547,11 +6545,6 @@
       "3359",
       "3361",
       "3367",
-      "403",
-      "405",
-      "406",
-      "407",
-      "408",
       "409",
       "410"
     ],
@@ -7595,9 +6588,6 @@
       "3364",
       "3368"
     ],
-    "q1": [
-      "408"
-    ],
     "q1 2026": [
       "3362",
       "3368",
@@ -7625,9 +6615,6 @@
     ],
     "quantum resistance": [
       "3256"
-    ],
-    "quarter": [
-      "408"
     ],
     "quarter-final": [
       "412"
@@ -7841,9 +6828,6 @@
     "seismology": [
       "2668"
     ],
-    "semiconductor": [
-      "406"
-    ],
     "series": [
       "3525"
     ],
@@ -7865,15 +6849,8 @@
     "sha256": [
       "3256"
     ],
-    "share": [
-      "403",
-      "406"
-    ],
     "shares": [
-      "3362",
-      "405",
-      "407",
-      "408"
+      "3362"
     ],
     "shock": [
       "2668",
@@ -7942,12 +6919,7 @@
       "3223"
     ],
     "stock": [
-      "3257",
-      "403",
-      "405",
-      "406",
-      "407",
-      "408"
+      "3257"
     ],
     "stock market debut": [
       "3362"
@@ -8029,12 +7001,6 @@
     "teams advance quarter-final": [
       "412"
     ],
-    "tech": [
-      "403",
-      "405",
-      "406",
-      "407"
-    ],
     "tectonic": [
       "2668",
       "3356"
@@ -8054,15 +7020,6 @@
     ],
     "tensions": [
       "416"
-    ],
-    "tesla": [
-      "408"
-    ],
-    "tesla tsla": [
-      "408"
-    ],
-    "tesla tsla close": [
-      "408"
     ],
     "tessa": [
       "3158"
@@ -8109,8 +7066,7 @@
       "412"
     ],
     "tim cook": [
-      "2368",
-      "407"
+      "2368"
     ],
     "tim cook out": [
       "2368"
@@ -8174,11 +7130,6 @@
     "trading": [
       "3361",
       "3367",
-      "403",
-      "405",
-      "406",
-      "407",
-      "408",
       "409",
       "410",
       "411",
@@ -8226,15 +7177,6 @@
     ],
     "trump tariffs": [
       "1546"
-    ],
-    "tsla": [
-      "408"
-    ],
-    "tsla close": [
-      "408"
-    ],
-    "tsla close above": [
-      "408"
     ],
     "tv show": [
       "3221",
@@ -8284,7 +7226,6 @@
       "3505",
       "3506",
       "3525",
-      "408",
       "95"
     ],
     "vance": [
@@ -8402,9 +7343,6 @@
     "zhao bei return": [
       "1856"
     ],
-    "zuckerberg": [
-      "403"
-    ],
     "中本聪": [
       "3365"
     ],
@@ -8470,9 +7408,6 @@
     "特大地震": [
       "3356"
     ],
-    "特斯拉": [
-      "408"
-    ],
     "特朗普": [
       "1546",
       "3055",
@@ -8484,9 +7419,6 @@
     ],
     "耶稣基督": [
       "2670"
-    ],
-    "英伟达": [
-      "406"
     ],
     "英雄联盟": [
       "419"
@@ -8526,22 +7458,6 @@
     "2026 first stand": [
       "419"
     ],
-    "aapl": [
-      "407"
-    ],
-    "aapl close": [
-      "407"
-    ],
-    "aapl close above": [
-      "407"
-    ],
-    "above march": [
-      "403",
-      "405",
-      "406",
-      "407",
-      "408"
-    ],
     "above one": [
       "95"
     ],
@@ -8560,14 +7476,8 @@
     "against iran": [
       "415"
     ],
-    "ai": [
-      "406"
-    ],
     "air strike": [
       "414"
-    ],
-    "alphabet": [
-      "405"
     ],
     "altcoin": [
       "409",
@@ -8578,15 +7488,6 @@
     ],
     "announces military operations": [
       "415"
-    ],
-    "apple": [
-      "407"
-    ],
-    "apple aapl": [
-      "407"
-    ],
-    "apple aapl close": [
-      "407"
     ],
     "attack": [
       "413",
@@ -8654,10 +7555,6 @@
     "bull run": [
       "410"
     ],
-    "cap": [
-      "403",
-      "407"
-    ],
     "ceasefire": [
       "415",
       "416"
@@ -8671,30 +7568,8 @@
     "championship": [
       "419"
     ],
-    "chip": [
-      "406"
-    ],
     "christine lagarde": [
       "418"
-    ],
-    "close": [
-      "405",
-      "407",
-      "408"
-    ],
-    "close above": [
-      "403",
-      "405",
-      "406",
-      "407",
-      "408"
-    ],
-    "close above march": [
-      "403",
-      "405",
-      "406",
-      "407",
-      "408"
     ],
     "club competition": [
       "412"
@@ -8769,10 +7644,6 @@
       "413",
       "414"
     ],
-    "earnings": [
-      "405",
-      "408"
-    ],
     "ecb": [
       "418"
     ],
@@ -8784,13 +7655,6 @@
     ],
     "end war": [
       "415"
-    ],
-    "equity": [
-      "403",
-      "405",
-      "406",
-      "407",
-      "408"
     ],
     "escalation": [
       "414",
@@ -8829,12 +7693,6 @@
     "exchange launch": [
       "95"
     ],
-    "facebook": [
-      "403"
-    ],
-    "fb": [
-      "403"
-    ],
     "fdv": [
       "95"
     ],
@@ -8865,30 +7723,6 @@
     "gaming": [
       "419"
     ],
-    "goog": [
-      "405"
-    ],
-    "googl": [
-      "405"
-    ],
-    "googl close": [
-      "405"
-    ],
-    "googl close above": [
-      "405"
-    ],
-    "google": [
-      "405"
-    ],
-    "google googl": [
-      "405"
-    ],
-    "google googl close": [
-      "405"
-    ],
-    "gpu": [
-      "406"
-    ],
     "halving": [
       "410"
     ],
@@ -8909,9 +7743,6 @@
     ],
     "interest rates": [
       "418"
-    ],
-    "iphone": [
-      "407"
     ],
     "iran": [
       "413",
@@ -8955,9 +7786,6 @@
     "israel/us conflict ends": [
       "416"
     ],
-    "jensen huang": [
-      "406"
-    ],
     "jerusalem": [
       "416"
     ],
@@ -8994,19 +7822,7 @@
     "lol 2026 first": [
       "419"
     ],
-    "mac": [
-      "407"
-    ],
-    "march": [
-      "405",
-      "408"
-    ],
     "market": [
-      "403",
-      "405",
-      "406",
-      "407",
-      "408",
       "409",
       "410"
     ],
@@ -9015,18 +7831,6 @@
     ],
     "market value": [
       "411"
-    ],
-    "meta": [
-      "403"
-    ],
-    "meta close": [
-      "403"
-    ],
-    "meta close above": [
-      "403"
-    ],
-    "meta meta close": [
-      "403"
     ],
     "middle east": [
       "413",
@@ -9057,30 +7861,6 @@
     "monetary policy": [
       "418"
     ],
-    "nasdaq": [
-      "403",
-      "405",
-      "406",
-      "407"
-    ],
-    "nvda": [
-      "406"
-    ],
-    "nvda close": [
-      "406"
-    ],
-    "nvda close above": [
-      "406"
-    ],
-    "nvidia": [
-      "406"
-    ],
-    "nvidia nvda": [
-      "406"
-    ],
-    "nvidia nvda close": [
-      "406"
-    ],
     "one day": [
       "95"
     ],
@@ -9093,17 +7873,11 @@
     "operations against iran": [
       "415"
     ],
-    "options": [
-      "405"
-    ],
     "peace": [
       "416"
     ],
     "peace deal": [
       "415"
-    ],
-    "performance": [
-      "408"
     ],
     "persian gulf": [
       "415"
@@ -9112,11 +7886,6 @@
       "418"
     ],
     "price": [
-      "403",
-      "405",
-      "406",
-      "407",
-      "408",
       "409",
       "410"
     ],
@@ -9141,14 +7910,8 @@
     "pro play": [
       "419"
     ],
-    "q1": [
-      "408"
-    ],
     "qualification": [
       "412"
-    ],
-    "quarter": [
-      "408"
     ],
     "quarter-final": [
       "412"
@@ -9181,18 +7944,6 @@
     "satoshi": [
       "410"
     ],
-    "semiconductor": [
-      "406"
-    ],
-    "share": [
-      "403",
-      "406"
-    ],
-    "shares": [
-      "405",
-      "407",
-      "408"
-    ],
     "smart contracts": [
       "409"
     ],
@@ -9207,13 +7958,6 @@
     ],
     "stand tournament winner": [
       "419"
-    ],
-    "stock": [
-      "403",
-      "405",
-      "406",
-      "407",
-      "408"
     ],
     "strike": [
       "413",
@@ -9241,12 +7985,6 @@
     "teams advance quarter-final": [
       "412"
     ],
-    "tech": [
-      "403",
-      "405",
-      "406",
-      "407"
-    ],
     "tehran": [
       "413",
       "414",
@@ -9255,23 +7993,11 @@
     "tensions": [
       "416"
     ],
-    "tesla": [
-      "408"
-    ],
-    "tesla tsla": [
-      "408"
-    ],
-    "tesla tsla close": [
-      "408"
-    ],
     "tge": [
       "95"
     ],
     "tie": [
       "412"
-    ],
-    "tim cook": [
-      "407"
     ],
     "token": [
       "409",
@@ -9290,11 +8016,6 @@
       "419"
     ],
     "trading": [
-      "403",
-      "405",
-      "406",
-      "407",
-      "408",
       "409",
       "410",
       "411",
@@ -9315,15 +8036,6 @@
     "trump iran": [
       "415"
     ],
-    "tsla": [
-      "408"
-    ],
-    "tsla close": [
-      "408"
-    ],
-    "tsla close above": [
-      "408"
-    ],
     "ucl": [
       "412"
     ],
@@ -9334,7 +8046,6 @@
       "416"
     ],
     "valuation": [
-      "408",
       "95"
     ],
     "volatility": [
@@ -9384,9 +8095,6 @@
     "withdrawal": [
       "415"
     ],
-    "zuckerberg": [
-      "403"
-    ],
     "以太坊": [
       "409"
     ],
@@ -9408,14 +8116,8 @@
     "比特币": [
       "410"
     ],
-    "特斯拉": [
-      "408"
-    ],
     "特朗普": [
       "415"
-    ],
-    "英伟达": [
-      "406"
     ],
     "英雄联盟": [
       "419"
