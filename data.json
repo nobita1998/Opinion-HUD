@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-19 11:17:08 UTC+8",
+    "generatedAt": "2026-03-19 16:58:17 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 61,
-      "markets": 161,
+      "kept": 55,
+      "markets": 166,
       "keywords": 786,
       "events": {
         "events": 10
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 939,
+        "cutoff_expired": 945,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -3656,8 +3656,8 @@
     "410": {
       "title": "What price will Bitcoin hit in March?",
       "url": "https://app.opinion.trade/market/410?ref=opinion_hud",
-      "yesTokenId": "94249979181319328608011049639452587368559940431593665440936472930045910842197",
-      "noTokenId": "99839681572191025674959086559599502647064729357591082594661069712385033556424",
+      "yesTokenId": "41906220039392724647206543779740873887138317466491221610628537959639160398987",
+      "noTokenId": "8821008822314410680252699570520884754675503186938983566168356488130175090341",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -3764,8 +3764,8 @@
     "411": {
       "title": "What price will BNB hit in March?",
       "url": "https://app.opinion.trade/market/411?ref=opinion_hud",
-      "yesTokenId": "70812224019750684822326273209002945547479120907878336738451916666969724149366",
-      "noTokenId": "44168803237671515154547716309797399878720884012299899530110314147213065581281",
+      "yesTokenId": "113717971944535610571004390598317532562641627151230731578141755757759811996519",
+      "noTokenId": "14620925800509562277727660429577057557156133575585231795809974420045721451919",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -3859,8 +3859,8 @@
     "409": {
       "title": "What price will Ethereum hit in March?",
       "url": "https://app.opinion.trade/market/409?ref=opinion_hud",
-      "yesTokenId": "7446290417308361498223685325012546643962617806598014220386539156227851229906",
-      "noTokenId": "107844361002794484657461847364676546830054687942372445933790141935672662552359",
+      "yesTokenId": "66013029065420003521247758053072832661910416872109581125105019192411315369601",
+      "noTokenId": "84399497778526083261951614950960945282113970906585906408941932721995191520608",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4662,12 +4662,6 @@
           "noTokenId": "65842351553381335905715781267695849139163048937652061770122007989661478257832"
         },
         {
-          "marketId": "8984",
-          "title": "TSW",
-          "yesTokenId": "34779533973966233647147059375806011016879323062386979473527350941384766619673",
-          "noTokenId": "19007263710069399189900192221404773974177807134174270337939965787706979035235"
-        },
-        {
           "marketId": "8985",
           "title": "LYON",
           "yesTokenId": "68356581651526337675757657959633477910849873165926020341974222763444414282920",
@@ -4678,6 +4672,12 @@
           "title": "LOUD",
           "yesTokenId": "101159538958959456411486663812127572533342260953224641732414865246114384548211",
           "noTokenId": "1009294030002189374355309921940013922940791319808568232179300288127944771828"
+        },
+        {
+          "marketId": "8984",
+          "title": "TSW",
+          "yesTokenId": "34779533973966233647147059375806011016879323062386979473527350941384766619673",
+          "noTokenId": "19007263710069399189900192221404773974177807134174270337939965787706979035235"
         }
       ]
     },
@@ -4830,6 +4830,66 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "9870": {
+      "title": "LoL - FST: G2 vs BFX (Mar. 20 9:00AM ET)",
+      "url": "https://app.opinion.trade/market/9870?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "9871": {
+      "title": "KPL: LGD.NBW vs TES.A (Mar. 20 8:00AM ET)",
+      "url": "https://app.opinion.trade/market/9871?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "9858": {
+      "title": "BNB Up or Down - Hourly (Mar 19, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9858?ref=opinion_hud",
+      "yesTokenId": "112374069195378876786533300145086304744454962366018511220403222932289105621",
+      "noTokenId": "56618432893155543047972513389954071072392580207591470356229407151594301680908",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9859": {
+      "title": "BTC Up or Down - Hourly (Mar 19, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9859?ref=opinion_hud",
+      "yesTokenId": "102212038970001609091948844234134170151362878250393097613188136389222864032130",
+      "noTokenId": "6423370207342998667638633265674566910282175407780378306986141472503642008299",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9860": {
+      "title": "ETH Up or Down - Hourly (Mar 19, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9860?ref=opinion_hud",
+      "yesTokenId": "1613609772815635034222641357920835987458349154698616236396155232778731356813",
+      "noTokenId": "14862208400749689439708062347821975252628106217527463279662724671816169176015",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
