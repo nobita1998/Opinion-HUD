@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-19 16:58:17 UTC+8",
+    "generatedAt": "2026-03-20 01:10:25 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 55,
-      "markets": 166,
-      "keywords": 786,
+      "kept": 60,
+      "markets": 164,
+      "keywords": 754,
       "events": {
-        "events": 10
+        "events": 8
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 945,
+        "cutoff_expired": 940,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -28,156 +28,18 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 10,
+        "reused": 7,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
+        "calls": 1,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 1,
         "errors": 0
       }
     }
   },
   "events": {
-    "410": {
-      "title": "What price will Bitcoin hit in March?",
-      "marketIds": [
-        "410"
-      ],
-      "bestMarketId": "410",
-      "bestLabels": null,
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "cryptocurrency",
-        "digital gold",
-        "price",
-        "trading",
-        "market",
-        "volatility",
-        "satoshi",
-        "blockchain",
-        "halving",
-        "bull run",
-        "spot etf",
-        "resistance",
-        "what price",
-        "price bitcoin",
-        "bitcoin hit",
-        "hit march",
-        "what price bitcoin",
-        "price bitcoin hit",
-        "bitcoin hit march"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc",
-          "比特币"
-        ]
-      ],
-      "sig": "eb6f5bdc",
-      "sigFull": "eb6f5bdc",
-      "sigCore": "94d1a6c7",
-      "reused": false
-    },
-    "411": {
-      "title": "What price will BNB hit in March?",
-      "marketIds": [
-        "411"
-      ],
-      "bestMarketId": "411",
-      "bestLabels": null,
-      "keywords": [
-        "bnb",
-        "binance coin",
-        "binance",
-        "crypto",
-        "cryptocurrency",
-        "token",
-        "altcoin",
-        "bnb price",
-        "trading",
-        "market value",
-        "digital asset",
-        "bnbusdt",
-        "blockchain",
-        "defi",
-        "bnb coin",
-        "what price",
-        "price bnb",
-        "bnb hit",
-        "hit march",
-        "what price bnb",
-        "price bnb hit",
-        "bnb hit march"
-      ],
-      "entities": [
-        "bnb"
-      ],
-      "entityGroups": [
-        [
-          "bnb",
-          "币安币"
-        ]
-      ],
-      "sig": "e485e9ae",
-      "sigFull": "e485e9ae",
-      "sigCore": "a75042f1",
-      "reused": false
-    },
-    "409": {
-      "title": "What price will Ethereum hit in March?",
-      "marketIds": [
-        "409"
-      ],
-      "bestMarketId": "409",
-      "bestLabels": null,
-      "keywords": [
-        "ethereum",
-        "eth",
-        "ether",
-        "crypto",
-        "cryptocurrency",
-        "altcoin",
-        "price",
-        "trading",
-        "market",
-        "blockchain",
-        "defi",
-        "smart contracts",
-        "digital asset",
-        "token",
-        "coin",
-        "what price",
-        "price ethereum",
-        "ethereum hit",
-        "hit march",
-        "what price ethereum",
-        "price ethereum hit",
-        "ethereum hit march"
-      ],
-      "entities": [
-        "ethereum"
-      ],
-      "entityGroups": [
-        [
-          "ethereum",
-          "eth",
-          "ether",
-          "以太坊"
-        ]
-      ],
-      "sig": "75416992",
-      "sigFull": "75416992",
-      "sigCore": "f693eede",
-      "reused": false
-    },
     "416": {
       "title": "Iran x Israel/US conflict ends by...?",
       "marketIds": [
@@ -223,52 +85,6 @@
       "sig": "43d0d6a8",
       "sigFull": "43d0d6a8",
       "sigCore": "83299573",
-      "reused": false
-    },
-    "412": {
-      "title": "Champions League: Which teams advance to Quarter-final?",
-      "marketIds": [
-        "412"
-      ],
-      "bestMarketId": "412",
-      "bestLabels": null,
-      "keywords": [
-        "champions league",
-        "ucl",
-        "uefa",
-        "quarter-final",
-        "last 8",
-        "knockout",
-        "round of 16",
-        "soccer",
-        "football",
-        "european cup",
-        "club competition",
-        "advancement",
-        "qualification",
-        "tie",
-        "leg",
-        "league which",
-        "which teams",
-        "teams advance",
-        "advance quarter-final",
-        "champions league which",
-        "league which teams",
-        "which teams advance",
-        "teams advance quarter-final"
-      ],
-      "entities": [
-        "champions league"
-      ],
-      "entityGroups": [
-        [
-          "champions league",
-          "欧洲冠军联赛"
-        ]
-      ],
-      "sig": "a957a4f9",
-      "sigFull": "a957a4f9",
-      "sigCore": "3f6d83c5",
       "reused": false
     },
     "414": {
@@ -548,6 +364,47 @@
       "sig": "2c3d154b",
       "sigFull": "2c3d154b",
       "sigCore": "0b6865cd",
+      "reused": false
+    },
+    "420": {
+      "title": "Will Crude Oil (CL) hit ... by end of March?",
+      "marketIds": [
+        "420"
+      ],
+      "bestMarketId": "420",
+      "bestLabels": null,
+      "keywords": [
+        "crude oil",
+        "cl",
+        "wti",
+        "petroleum",
+        "oil prices",
+        "energy",
+        "commodities",
+        "futures",
+        "black gold",
+        "barrel",
+        "nymex",
+        "opec",
+        "wti crude",
+        "oil market",
+        "energy sector",
+        "oil hit",
+        "hit march",
+        "crude oil hit",
+        "oil hit march"
+      ],
+      "entities": [
+        "crude oil"
+      ],
+      "entityGroups": [
+        [
+          "crude oil"
+        ]
+      ],
+      "sig": "e17be0cb",
+      "sigFull": "e17be0cb",
+      "sigCore": "4bcea8e9",
       "reused": false
     }
   },
@@ -3653,318 +3510,6 @@
       },
       "type": "binary"
     },
-    "410": {
-      "title": "What price will Bitcoin hit in March?",
-      "url": "https://app.opinion.trade/market/410?ref=opinion_hud",
-      "yesTokenId": "41906220039392724647206543779740873887138317466491221610628537959639160398987",
-      "noTokenId": "8821008822314410680252699570520884754675503186938983566168356488130175090341",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bitcoin",
-        "btc",
-        "crypto",
-        "cryptocurrency",
-        "digital gold",
-        "price",
-        "trading",
-        "market",
-        "volatility",
-        "satoshi",
-        "blockchain",
-        "halving",
-        "bull run",
-        "spot etf",
-        "resistance",
-        "what price",
-        "price bitcoin",
-        "bitcoin hit",
-        "hit march",
-        "what price bitcoin",
-        "price bitcoin hit",
-        "bitcoin hit march"
-      ],
-      "entities": [
-        "bitcoin"
-      ],
-      "entityGroups": [
-        [
-          "bitcoin",
-          "btc",
-          "比特币"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8316",
-          "title": "↑ 90,000",
-          "yesTokenId": "21763901558818854081204646249914520509448777450942216321611865282706470828236",
-          "noTokenId": "2312281519037234891447409405026316205853336672467315368933002031168908334014"
-        },
-        {
-          "marketId": "8317",
-          "title": "↑ 85,000",
-          "yesTokenId": "52443118126783453947699413822274571295278716002053110960596726776693700359790",
-          "noTokenId": "36681406003829414664729302456264325033119000764517300930327316857373417897682"
-        },
-        {
-          "marketId": "8318",
-          "title": "↑ 80,000",
-          "yesTokenId": "90695479603328402044024582319415097631675585252962750384936207775046820567837",
-          "noTokenId": "85025634306216849906004764231189993106939880886526329584339955183286349100867"
-        },
-        {
-          "marketId": "8319",
-          "title": "↑ 75,000",
-          "yesTokenId": "106682959402858660555180871362041155278140960275661291503827703213494662975611",
-          "noTokenId": "20858197525740292393259473320415009024873244349135708272732679102973955868377"
-        },
-        {
-          "marketId": "8321",
-          "title": "↓ 65,000",
-          "yesTokenId": "47629549899543994667624094354450074294072121517107124300907227342429791825877",
-          "noTokenId": "81458626619093382453845500311466732782954109857060739429758587711734333652212"
-        },
-        {
-          "marketId": "8322",
-          "title": "↓ 60,000",
-          "yesTokenId": "41906220039392724647206543779740873887138317466491221610628537959639160398987",
-          "noTokenId": "8821008822314410680252699570520884754675503186938983566168356488130175090341"
-        },
-        {
-          "marketId": "8323",
-          "title": "↓ 55,000",
-          "yesTokenId": "46871425507304453922894659329339236285569739305150855713446630781163971218152",
-          "noTokenId": "85340698506992074468945180208520229619318825576698950561070517353412817744417"
-        },
-        {
-          "marketId": "8324",
-          "title": "↓ 50,000",
-          "yesTokenId": "79237761664026382787620559364275725913025300853168530927975331289361017727531",
-          "noTokenId": "74067123009965240695464462223911304756347009023842155070774239534773887470933"
-        },
-        {
-          "marketId": "8325",
-          "title": "↓ 45,000",
-          "yesTokenId": "94249979181319328608011049639452587368559940431593665440936472930045910842197",
-          "noTokenId": "99839681572191025674959086559599502647064729357591082594661069712385033556424"
-        },
-        {
-          "marketId": "8320",
-          "title": "↑ 70,000",
-          "yesTokenId": "18868415347671379927677526822836851072755214125958827302003977613794096790047",
-          "noTokenId": "14001951345777312074991910005314168210863019082540720901652868198130511172808"
-        }
-      ]
-    },
-    "411": {
-      "title": "What price will BNB hit in March?",
-      "url": "https://app.opinion.trade/market/411?ref=opinion_hud",
-      "yesTokenId": "113717971944535610571004390598317532562641627151230731578141755757759811996519",
-      "noTokenId": "14620925800509562277727660429577057557156133575585231795809974420045721451919",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bnb",
-        "binance coin",
-        "binance",
-        "crypto",
-        "cryptocurrency",
-        "token",
-        "altcoin",
-        "bnb price",
-        "trading",
-        "market value",
-        "digital asset",
-        "bnbusdt",
-        "blockchain",
-        "defi",
-        "bnb coin",
-        "what price",
-        "price bnb",
-        "bnb hit",
-        "hit march",
-        "what price bnb",
-        "price bnb hit",
-        "bnb hit march"
-      ],
-      "entities": [
-        "bnb"
-      ],
-      "entityGroups": [
-        [
-          "bnb",
-          "币安币"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8326",
-          "title": "↑ 1,000",
-          "yesTokenId": "113717971944535610571004390598317532562641627151230731578141755757759811996519",
-          "noTokenId": "14620925800509562277727660429577057557156133575585231795809974420045721451919"
-        },
-        {
-          "marketId": "8327",
-          "title": "↑ 900",
-          "yesTokenId": "85061403110174141947763564762221980193795165542009834155058248983754906689947",
-          "noTokenId": "58852122333317839903755948549719343259217963045011714065065222873945809982103"
-        },
-        {
-          "marketId": "8328",
-          "title": "↑ 800",
-          "yesTokenId": "71494453401777827931040557097292395862072454330490654950201584984362961606695",
-          "noTokenId": "63360660993511712537955109453084532508774698572472436214590075749773581927989"
-        },
-        {
-          "marketId": "8329",
-          "title": "↑ 700",
-          "yesTokenId": "44164833160110343174088897739836971860762180640733070755250728598514223825696",
-          "noTokenId": "44991556253323412399585487339467332524147903981623738593423263396372927991725"
-        },
-        {
-          "marketId": "8330",
-          "title": "↓ 600",
-          "yesTokenId": "89064924648827599990212235368617942148696437797123122825128387592469244468023",
-          "noTokenId": "51818348551132853396920049655618943747223547362785603916576806386675659203443"
-        },
-        {
-          "marketId": "8331",
-          "title": "↓ 500",
-          "yesTokenId": "70812224019750684822326273209002945547479120907878336738451916666969724149366",
-          "noTokenId": "44168803237671515154547716309797399878720884012299899530110314147213065581281"
-        },
-        {
-          "marketId": "8332",
-          "title": "↓ 400",
-          "yesTokenId": "15239898924771889870563503429767640751877837379386699798027582065907797794816",
-          "noTokenId": "80268520087917175127716038594100233936778230809806117444422500153616792725554"
-        },
-        {
-          "marketId": "8333",
-          "title": "↓ 300",
-          "yesTokenId": "97315805899040931775842163158017112993445654062434381702014722929838242831850",
-          "noTokenId": "42533707819786151552047503952296269766627362363277754748376363509766354234005"
-        }
-      ]
-    },
-    "409": {
-      "title": "What price will Ethereum hit in March?",
-      "url": "https://app.opinion.trade/market/409?ref=opinion_hud",
-      "yesTokenId": "66013029065420003521247758053072832661910416872109581125105019192411315369601",
-      "noTokenId": "84399497778526083261951614950960945282113970906585906408941932721995191520608",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "ethereum",
-        "eth",
-        "ether",
-        "crypto",
-        "cryptocurrency",
-        "altcoin",
-        "price",
-        "trading",
-        "market",
-        "blockchain",
-        "defi",
-        "smart contracts",
-        "digital asset",
-        "token",
-        "coin",
-        "what price",
-        "price ethereum",
-        "ethereum hit",
-        "hit march",
-        "what price ethereum",
-        "price ethereum hit",
-        "ethereum hit march"
-      ],
-      "entities": [
-        "ethereum"
-      ],
-      "entityGroups": [
-        [
-          "ethereum",
-          "eth",
-          "ether",
-          "以太坊"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8307",
-          "title": "↑ 3,000",
-          "yesTokenId": "73337443410129304434313394264007403130706867519163798222003399905818216308458",
-          "noTokenId": "87957678376611140620549547151629018396085121851494379992201332310172131919866"
-        },
-        {
-          "marketId": "8308",
-          "title": "↑ 2,800",
-          "yesTokenId": "66013029065420003521247758053072832661910416872109581125105019192411315369601",
-          "noTokenId": "84399497778526083261951614950960945282113970906585906408941932721995191520608"
-        },
-        {
-          "marketId": "8309",
-          "title": "↑ 2,600",
-          "yesTokenId": "76144176761605259113229984546043988457228060056935949329432496614667172873857",
-          "noTokenId": "9571813238058147311240521397574142498106724926565055681653289750163618400673"
-        },
-        {
-          "marketId": "8310",
-          "title": "↑ 2,400",
-          "yesTokenId": "45451450433064722850538400787794462522744331686738576535322647327318832747389",
-          "noTokenId": "33784689422725606576534417090916963773631327657651315753887018352737013026652"
-        },
-        {
-          "marketId": "8313",
-          "title": "↓ 1,800",
-          "yesTokenId": "1837553509433159922122883743290598099042236453104316990057723486167940581212",
-          "noTokenId": "16424962679626140924933793487091512815767942192543608618228575577305824310951"
-        },
-        {
-          "marketId": "8314",
-          "title": "↓ 1,600",
-          "yesTokenId": "7446290417308361498223685325012546643962617806598014220386539156227851229906",
-          "noTokenId": "107844361002794484657461847364676546830054687942372445933790141935672662552359"
-        },
-        {
-          "marketId": "8315",
-          "title": "↓ 1,400",
-          "yesTokenId": "2827047630219840337053758576626715211679454974622433042064670661921421734065",
-          "noTokenId": "111197784757181941538774449441832350701164983204414121590362625381893755360868"
-        },
-        {
-          "marketId": "8337",
-          "title": "↓ 1,200",
-          "yesTokenId": "83699525408763405917996728819254658699370118349423582775171878409246810763443",
-          "noTokenId": "42517838178967139958457965212953308114965561884322364947363054338452650514595"
-        },
-        {
-          "marketId": "8311",
-          "title": "↑ 2,200",
-          "yesTokenId": "81369637061135948007890190837595129186292482491711149003054127128513308218233",
-          "noTokenId": "110033246621100267824306113585944409651359974544694992646923507054836946612964"
-        },
-        {
-          "marketId": "8312",
-          "title": "↓ 2,000",
-          "yesTokenId": "43621893772419232778199173147915127278993528100222936493690354454740348686890",
-          "noTokenId": "3054551658041363326037816520286705061633289520012296589629529593159462779106"
-        }
-      ]
-    },
     "8453": {
       "title": "Will Reza Pahlavi lead Iran in 2026?",
       "url": "https://app.opinion.trade/market/8453?ref=opinion_hud",
@@ -4083,150 +3628,6 @@
           "title": "March 15, 2026",
           "yesTokenId": "68432033547954553639406186941043903167978501216216263842067902504155187247063",
           "noTokenId": "47811580885698260857205956358229659315920197460083337029889254433261899249353"
-        }
-      ]
-    },
-    "412": {
-      "title": "Champions League: Which teams advance to Quarter-final?",
-      "url": "https://app.opinion.trade/market/412?ref=opinion_hud",
-      "yesTokenId": "4643736701501993078866478358398987569537857919122085749488527426370335107450",
-      "noTokenId": "227525585532369933946887269524340339696201036157459157612550810341878285089",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "champions league",
-        "ucl",
-        "uefa",
-        "quarter-final",
-        "last 8",
-        "knockout",
-        "round of 16",
-        "soccer",
-        "football",
-        "european cup",
-        "club competition",
-        "advancement",
-        "qualification",
-        "tie",
-        "leg",
-        "league which",
-        "which teams",
-        "teams advance",
-        "advance quarter-final",
-        "champions league which",
-        "league which teams",
-        "which teams advance",
-        "teams advance quarter-final"
-      ],
-      "entities": [
-        "champions league"
-      ],
-      "entityGroups": [
-        [
-          "champions league",
-          "欧洲冠军联赛"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8431",
-          "title": "Paris Saint-Germain",
-          "yesTokenId": "46586511530311599341038110725600443117690766927374404923033200223168022046034",
-          "noTokenId": "111426953119308431818101643793815884848234529240179641044999788708851866606380"
-        },
-        {
-          "marketId": "8432",
-          "title": "Chelsea",
-          "yesTokenId": "49523754952088044681722725546026586077935828475456599860329833388154189628387",
-          "noTokenId": "49498877735929280731600865862076166568280693894733445900433723476504454827702"
-        },
-        {
-          "marketId": "8433",
-          "title": "Galatasaray",
-          "yesTokenId": "16010158126638113230699825425911774442784817743786642395648499480178127205991",
-          "noTokenId": "32977078683134621825234948101094918255238869549881277035280290118590157694635"
-        },
-        {
-          "marketId": "8434",
-          "title": "Liverpool",
-          "yesTokenId": "67682169081129755269351541134507128847905060814591853637675372933802870669703",
-          "noTokenId": "83525567470050164950176212431266196774511158059164136524157843116103576443026"
-        },
-        {
-          "marketId": "8435",
-          "title": "Real Madrid",
-          "yesTokenId": "19138712387912764840580528882183894385699578846820230459890258914105474861610",
-          "noTokenId": "76023401018222323404189358396501040853108735229481238243258909798649652118630"
-        },
-        {
-          "marketId": "8436",
-          "title": "Manchester City",
-          "yesTokenId": "70215460878115609113654173910850069944283771623406387630791036992141635646533",
-          "noTokenId": "8750432465210230046757699834166141295801445458059331539998641368524143596077"
-        },
-        {
-          "marketId": "8437",
-          "title": "Atalanta",
-          "yesTokenId": "47772043655125005793885508972200148340358345979939467114146069939677886819283",
-          "noTokenId": "79349231007968971005735510430738705277766076348595287521822459040956884480378"
-        },
-        {
-          "marketId": "8438",
-          "title": "Bayern Munich",
-          "yesTokenId": "18125457268859930672712844692606393924167086856546104069249013399933353855141",
-          "noTokenId": "14327298309405761636135913697070642866895382636580749795340949875658289392004"
-        },
-        {
-          "marketId": "8439",
-          "title": "Newcastle",
-          "yesTokenId": "40503983275959758329343746716071226885127426568286897089592066166980739113230",
-          "noTokenId": "94999109783719813610846276658748704533296437642160169885394083792056172260504"
-        },
-        {
-          "marketId": "8440",
-          "title": "Barcelona",
-          "yesTokenId": "32129102125709590954275128209557295598401910861541421749832424855203845667041",
-          "noTokenId": "12838636714549138758500941079750665650276961605063008311447862149536887531557"
-        },
-        {
-          "marketId": "8441",
-          "title": "Atletico Madrid",
-          "yesTokenId": "57814351289822631588491451476612967049765101099518128314259952732491068587706",
-          "noTokenId": "7446851892546629016947518858599280045093201850196561761602821031646074594543"
-        },
-        {
-          "marketId": "8442",
-          "title": "Tottenham",
-          "yesTokenId": "14242457730324324029801001973727257015190431735389845121890563813886139767070",
-          "noTokenId": "79426600606728285889192648350233716543904853067104598897946346928061210114476"
-        },
-        {
-          "marketId": "8443",
-          "title": "Bodø/Glimt",
-          "yesTokenId": "59780108218125867782917238479217498322643772201080030684653637429205224879485",
-          "noTokenId": "94730833342222498542919701591816451962795982791976404227409958823947521526669"
-        },
-        {
-          "marketId": "8444",
-          "title": "Sporting CP",
-          "yesTokenId": "50362564766341034011250316953553156317054684994859598964768795362006794270276",
-          "noTokenId": "2859536279925664957757358759089481743396551169972361043103172112315210319425"
-        },
-        {
-          "marketId": "8445",
-          "title": "Leverkusen",
-          "yesTokenId": "4643736701501993078866478358398987569537857919122085749488527426370335107450",
-          "noTokenId": "227525585532369933946887269524340339696201036157459157612550810341878285089"
-        },
-        {
-          "marketId": "8446",
-          "title": "Arsenal",
-          "yesTokenId": "108367808762739505725501959849366437473871799077603199329152813158232659956264",
-          "noTokenId": "85135045885934978823997040747111975583318102729086250106340244784368137437207"
         }
       ]
     },
@@ -4857,11 +4258,11 @@
       },
       "type": "binary"
     },
-    "9858": {
-      "title": "BNB Up or Down - Hourly (Mar 19, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9858?ref=opinion_hud",
-      "yesTokenId": "112374069195378876786533300145086304744454962366018511220403222932289105621",
-      "noTokenId": "56618432893155543047972513389954071072392580207591470356229407151594301680908",
+    "9899": {
+      "title": "Bitcoin Up or Down on March 20?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/9899?ref=opinion_hud",
+      "yesTokenId": "70036096714086818185257978154034591549733630607895995475100824865779740171885",
+      "noTokenId": "5541529182910098199681580920837719148165242791753635791726003269818989503518",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -4869,29 +4270,138 @@
       },
       "type": "binary"
     },
-    "9859": {
-      "title": "BTC Up or Down - Hourly (Mar 19, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9859?ref=opinion_hud",
-      "yesTokenId": "102212038970001609091948844234134170151362878250393097613188136389222864032130",
-      "noTokenId": "6423370207342998667638633265674566910282175407780378306986141472503642008299",
+    "9897": {
+      "title": "NBA: Heat vs Rockets (Mar. 21 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/9897?ref=opinion_hud",
+      "yesTokenId": "28811662597587246124638542375351851318439008482432781796980960576758929058373",
+      "noTokenId": "70905020615071207161918083937837407503948734754810443564078506052768916730835",
       "volume": 0.0,
       "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
+        "yesLabel": "Heat",
+        "noLabel": "Rockets"
       },
       "type": "binary"
     },
-    "9860": {
-      "title": "ETH Up or Down - Hourly (Mar 19, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9860?ref=opinion_hud",
-      "yesTokenId": "1613609772815635034222641357920835987458349154698616236396155232778731356813",
-      "noTokenId": "14862208400749689439708062347821975252628106217527463279662724671816169176015",
+    "9898": {
+      "title": "NBA: Warriors vs Hawks (Mar. 21 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/9898?ref=opinion_hud",
+      "yesTokenId": "1809676125118206272458649757534642083932261510297400526519890711362436404853",
+      "noTokenId": "48106286005377355941490305245582197991378374572017083733387979096772132572060",
       "volume": 0.0,
       "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
+        "yesLabel": "Warriors",
+        "noLabel": "Hawks"
       },
       "type": "binary"
+    },
+    "9896": {
+      "title": "NBA: Lakers vs Magic (Mar. 21 7:00PM ET)",
+      "url": "https://app.opinion.trade/market/9896?ref=opinion_hud",
+      "yesTokenId": "25084205010335974380568343930426663321322318523999186843226926152784631433063",
+      "noTokenId": "81860706580411763161562502241215997122196137395711060341751562350873233926176",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Lakers",
+        "noLabel": "Magic"
+      },
+      "type": "binary"
+    },
+    "420": {
+      "title": "Will Crude Oil (CL) hit ... by end of March?",
+      "url": "https://app.opinion.trade/market/420?ref=opinion_hud",
+      "yesTokenId": "86033293541070136081196770969250124346158391800170626497617996019523938371236",
+      "noTokenId": "16289453918557378533858469656830670260406988914855495560459389370891061952402",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "crude oil",
+        "cl",
+        "wti",
+        "petroleum",
+        "oil prices",
+        "energy",
+        "commodities",
+        "futures",
+        "black gold",
+        "barrel",
+        "nymex",
+        "opec",
+        "wti crude",
+        "oil market",
+        "energy sector",
+        "oil hit",
+        "hit march",
+        "crude oil hit",
+        "oil hit march"
+      ],
+      "entities": [
+        "crude oil"
+      ],
+      "entityGroups": [
+        [
+          "crude oil"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "9887",
+          "title": "↑ $130",
+          "yesTokenId": "11022502778548227861855072442833279816080001023991557704828589434359006943218",
+          "noTokenId": "17872708104663710286080068875065762404947368972366073902295733379826234844148"
+        },
+        {
+          "marketId": "9888",
+          "title": "↑ $120",
+          "yesTokenId": "43601917663822189467015107176407370911755081002362024828135215289125501455808",
+          "noTokenId": "71665642619631265378440281782011206529965055551219325982761745909140851717274"
+        },
+        {
+          "marketId": "9889",
+          "title": "↑ $110",
+          "yesTokenId": "86033293541070136081196770969250124346158391800170626497617996019523938371236",
+          "noTokenId": "16289453918557378533858469656830670260406988914855495560459389370891061952402"
+        },
+        {
+          "marketId": "9890",
+          "title": "↑ $105",
+          "yesTokenId": "83593033304557006436279027556478148973494332872052925987756439704714947081347",
+          "noTokenId": "1512222687124756477468246335489063155322926334885345073394825978622516013322"
+        },
+        {
+          "marketId": "9891",
+          "title": "↑ $100",
+          "yesTokenId": "50690266527852102480942887358571840746067594620364810358158787197800492287496",
+          "noTokenId": "9912448385991770050813128465142781384047484471983113961213901999035883137268"
+        },
+        {
+          "marketId": "9892",
+          "title": "↓ $80",
+          "yesTokenId": "97489417851969942243520868448064607978414659493948049674982596219603667114843",
+          "noTokenId": "42639757796491671543216404960352000211689442370489464828818091165850395044996"
+        },
+        {
+          "marketId": "9893",
+          "title": "↓ $75",
+          "yesTokenId": "25501128635212335167857235067481966907906197588417997991023801846599211449243",
+          "noTokenId": "67045211578215762610923211035252353472070556025185377764098309325557384667298"
+        },
+        {
+          "marketId": "9894",
+          "title": "↓ $70",
+          "yesTokenId": "36459224104629835258368043482946354048862323116373714716212297201379473846980",
+          "noTokenId": "36940297238236802836369450089935002095376340971139560809277789586218900542928"
+        },
+        {
+          "marketId": "9895",
+          "title": "↓ $65",
+          "yesTokenId": "104631215563374298274102605741912726555132562113443859537448342485555096854985",
+          "noTokenId": "50941815006725660475730669473821124515475092481850889498405524597666608942998"
+        }
+      ]
     }
   },
   "index": {
@@ -5033,12 +4543,6 @@
     "address": [
       "3365"
     ],
-    "advance quarter-final": [
-      "412"
-    ],
-    "advancement": [
-      "412"
-    ],
     "advisory": [
       "3369"
     ],
@@ -5080,9 +4584,7 @@
     "altcoin": [
       "3364",
       "3367",
-      "3368",
-      "409",
-      "411"
+      "3368"
     ],
     "american actress": [
       "3158"
@@ -5163,6 +4665,9 @@
     "backpack 交易所": [
       "95"
     ],
+    "barrel": [
+      "420"
+    ],
     "base": [
       "3366"
     ],
@@ -5198,36 +4703,30 @@
     ],
     "binance": [
       "3368",
-      "3369",
-      "411"
+      "3369"
     ],
     "binance 1q2026": [
       "3369"
     ],
     "binance coin": [
       "3367",
-      "3368",
-      "411"
+      "3368"
     ],
     "bitcoin": [
       "3256",
-      "3365",
-      "410"
+      "3365"
     ],
     "bitcoin 2026": [
       "3365"
-    ],
-    "bitcoin hit": [
-      "410"
-    ],
-    "bitcoin hit march": [
-      "410"
     ],
     "bitcoin replace": [
       "3256"
     ],
     "bitcoin replace sha-256": [
       "3256"
+    ],
+    "black gold": [
+      "420"
     ],
     "blackpink": [
       "2178"
@@ -5245,10 +4744,7 @@
       "1721",
       "3361",
       "3364",
-      "3365",
-      "409",
-      "410",
-      "411"
+      "3365"
     ],
     "blockchain upgrade": [
       "3256"
@@ -5259,8 +4755,7 @@
     "bnb": [
       "3367",
       "3368",
-      "3369",
-      "411"
+      "3369"
     ],
     "bnb all": [
       "3368"
@@ -5268,28 +4763,17 @@
     "bnb all time": [
       "3368"
     ],
-    "bnb coin": [
-      "411"
-    ],
     "bnb hit": [
-      "3367",
-      "411"
+      "3367"
     ],
     "bnb hit $1500": [
       "3367"
     ],
-    "bnb hit march": [
-      "411"
-    ],
     "bnb price": [
-      "3368",
-      "411"
+      "3368"
     ],
     "bnb token": [
       "3368"
-    ],
-    "bnbusdt": [
-      "411"
     ],
     "bombardment": [
       "414"
@@ -5318,11 +4802,7 @@
     ],
     "btc": [
       "3256",
-      "3365",
-      "410"
-    ],
-    "bull run": [
-      "410"
+      "3365"
     ],
     "bullish": [
       "3367"
@@ -5360,12 +4840,6 @@
     "ceo march": [
       "2368"
     ],
-    "champions league": [
-      "412"
-    ],
-    "champions league which": [
-      "412"
-    ],
     "championship": [
       "419"
     ],
@@ -5402,6 +4876,9 @@
     "christine lagarde": [
       "418"
     ],
+    "cl": [
+      "420"
+    ],
     "close warner": [
       "2398"
     ],
@@ -5420,12 +4897,6 @@
     "cloudflare status": [
       "3357"
     ],
-    "club competition": [
-      "412"
-    ],
-    "coin": [
-      "409"
-    ],
     "coinbase": [
       "3366"
     ],
@@ -5441,6 +4912,9 @@
     "comeback": [
       "2178",
       "3369"
+    ],
+    "commodities": [
+      "420"
     ],
     "competitive": [
       "419"
@@ -5497,16 +4971,19 @@
     "critical cloudflare incident": [
       "3357"
     ],
+    "crude oil": [
+      "420"
+    ],
+    "crude oil hit": [
+      "420"
+    ],
     "crypto": [
       "1721",
       "3359",
       "3361",
       "3364",
       "3367",
-      "3368",
-      "409",
-      "410",
-      "411"
+      "3368"
     ],
     "crypto exchange": [
       "3362",
@@ -5524,10 +5001,7 @@
     ],
     "cryptocurrency": [
       "3364",
-      "3367",
-      "409",
-      "410",
-      "411"
+      "3367"
     ],
     "cryptographic vulnerability": [
       "3256"
@@ -5581,9 +5055,7 @@
     ],
     "defi": [
       "1721",
-      "3361",
-      "409",
-      "411"
+      "3361"
     ],
     "defi hack": [
       "3360"
@@ -5623,13 +5095,6 @@
     ],
     "dfr apr": [
       "418"
-    ],
-    "digital asset": [
-      "409",
-      "411"
-    ],
-    "digital gold": [
-      "410"
     ],
     "dollar": [
       "3359"
@@ -5733,6 +5198,12 @@
     "endorsement": [
       "3055"
     ],
+    "energy": [
+      "420"
+    ],
+    "energy sector": [
+      "420"
+    ],
     "epicenter": [
       "2668",
       "3356"
@@ -5749,17 +5220,14 @@
       "419"
     ],
     "eth": [
-      "3364",
-      "409"
+      "3364"
     ],
     "ether": [
-      "3364",
-      "409"
+      "3364"
     ],
     "ethereum": [
       "1721",
-      "3364",
-      "409"
+      "3364"
     ],
     "ethereum all": [
       "3364"
@@ -5767,20 +5235,11 @@
     "ethereum all time": [
       "3364"
     ],
-    "ethereum hit": [
-      "409"
-    ],
-    "ethereum hit march": [
-      "409"
-    ],
     "euro": [
       "418"
     ],
     "european central bank": [
       "418"
-    ],
-    "european cup": [
-      "412"
     ],
     "eurozone": [
       "418"
@@ -5873,9 +5332,6 @@
     "flash loan attack": [
       "3360"
     ],
-    "football": [
-      "412"
-    ],
     "founder": [
       "3369"
     ],
@@ -5899,7 +5355,8 @@
       "3509"
     ],
     "futures": [
-      "3361"
+      "3361",
+      "420"
     ],
     "gaming": [
       "419"
@@ -5943,9 +5400,6 @@
     ],
     "hack over $100m": [
       "3360"
-    ],
-    "halving": [
-      "410"
     ],
     "hard fork": [
       "3256"
@@ -6000,9 +5454,7 @@
       "3367"
     ],
     "hit march": [
-      "409",
-      "410",
-      "411"
+      "420"
     ],
     "holly wheeler": [
       "3222"
@@ -6187,9 +5639,6 @@
     "karen wheeler": [
       "3222"
     ],
-    "knockout": [
-      "412"
-    ],
     "kraken": [
       "3362"
     ],
@@ -6211,9 +5660,6 @@
     ],
     "l2": [
       "3366"
-    ],
-    "last 8": [
-      "412"
     ],
     "launch token": [
       "3366"
@@ -6239,20 +5685,11 @@
     "league of legends": [
       "419"
     ],
-    "league which": [
-      "412"
-    ],
-    "league which teams": [
-      "412"
-    ],
     "leave": [
       "2368"
     ],
     "leeco": [
       "1856"
-    ],
-    "leg": [
-      "412"
     ],
     "legal ruling": [
       "1546"
@@ -6308,17 +5745,12 @@
       "3361"
     ],
     "market": [
-      "3361",
-      "409",
-      "410"
+      "3361"
     ],
     "market cap": [
       "3505",
       "3506",
       "95"
-    ],
-    "market value": [
-      "411"
     ],
     "marvel": [
       "3158"
@@ -6503,11 +5935,26 @@
     "number one pick": [
       "3072"
     ],
+    "nymex": [
+      "420"
+    ],
     "office": [
       "3062"
     ],
     "official": [
       "3257"
+    ],
+    "oil hit": [
+      "420"
+    ],
+    "oil hit march": [
+      "420"
+    ],
+    "oil market": [
+      "420"
+    ],
+    "oil prices": [
+      "420"
     ],
     "one day": [
       "1721",
@@ -6518,6 +5965,9 @@
     ],
     "op stack": [
       "3366"
+    ],
+    "opec": [
+      "420"
     ],
     "operations against": [
       "415"
@@ -6576,6 +6026,9 @@
     "persian gulf": [
       "415"
     ],
+    "petroleum": [
+      "420"
+    ],
     "pick 2026": [
       "3072"
     ],
@@ -6604,27 +6057,7 @@
     "price": [
       "3359",
       "3361",
-      "3367",
-      "409",
-      "410"
-    ],
-    "price bitcoin": [
-      "410"
-    ],
-    "price bitcoin hit": [
-      "410"
-    ],
-    "price bnb": [
-      "411"
-    ],
-    "price bnb hit": [
-      "411"
-    ],
-    "price ethereum": [
-      "409"
-    ],
-    "price ethereum hit": [
-      "409"
+      "3367"
     ],
     "price peak": [
       "3364"
@@ -6667,17 +6100,11 @@
       "2668",
       "3356"
     ],
-    "qualification": [
-      "412"
-    ],
     "quantum computing": [
       "3256"
     ],
     "quantum resistance": [
       "3256"
-    ],
-    "quarter-final": [
-      "412"
     ],
     "quarterback": [
       "3072"
@@ -6771,8 +6198,7 @@
       "3062"
     ],
     "resistance": [
-      "3367",
-      "410"
+      "3367"
     ],
     "resolution date": [
       "3509"
@@ -6825,9 +6251,6 @@
       "3506",
       "3525"
     ],
-    "round of 16": [
-      "412"
-    ],
     "rugpull": [
       "3360"
     ],
@@ -6841,8 +6264,7 @@
       "3055"
     ],
     "satoshi": [
-      "3365",
-      "410"
+      "3365"
     ],
     "satoshi move": [
       "3365"
@@ -6932,20 +6354,11 @@
     "smart contract bug": [
       "3360"
     ],
-    "smart contracts": [
-      "409"
-    ],
-    "soccer": [
-      "412"
-    ],
     "specific date": [
       "3449"
     ],
     "spend": [
       "3365"
-    ],
-    "spot etf": [
-      "410"
     ],
     "st": [
       "3222"
@@ -7055,12 +6468,6 @@
     "tariffs": [
       "1546"
     ],
-    "teams advance": [
-      "412"
-    ],
-    "teams advance quarter-final": [
-      "412"
-    ],
     "tectonic": [
       "2668",
       "3356"
@@ -7122,9 +6529,6 @@
       "3257",
       "3362"
     ],
-    "tie": [
-      "412"
-    ],
     "tim cook": [
       "2368"
     ],
@@ -7155,9 +6559,7 @@
     ],
     "token": [
       "1721",
-      "3367",
-      "409",
-      "411"
+      "3367"
     ],
     "token 2026": [
       "3366"
@@ -7190,9 +6592,6 @@
     "trading": [
       "3361",
       "3367",
-      "409",
-      "410",
-      "411",
       "95"
     ],
     "transfer": [
@@ -7241,12 +6640,6 @@
     "tv show": [
       "3221",
       "3224"
-    ],
-    "ucl": [
-      "412"
-    ],
-    "uefa": [
-      "412"
     ],
     "underclassmen": [
       "3072"
@@ -7307,8 +6700,7 @@
       "3062"
     ],
     "volatility": [
-      "3367",
-      "410"
+      "3367"
     ],
     "vp": [
       "3055"
@@ -7347,20 +6739,6 @@
     "what iran strike": [
       "413"
     ],
-    "what price": [
-      "409",
-      "410",
-      "411"
-    ],
-    "what price bitcoin": [
-      "410"
-    ],
-    "what price bnb": [
-      "411"
-    ],
-    "what price ethereum": [
-      "409"
-    ],
     "wheeler family": [
       "3222"
     ],
@@ -7369,12 +6747,6 @@
     ],
     "which countries strike": [
       "414"
-    ],
-    "which teams": [
-      "412"
-    ],
-    "which teams advance": [
-      "412"
     ],
     "white house": [
       "3062"
@@ -7390,6 +6762,12 @@
     ],
     "withdrawal": [
       "415"
+    ],
+    "wti": [
+      "420"
+    ],
+    "wti crude": [
+      "420"
     ],
     "yg entertainment": [
       "2178"
@@ -7412,8 +6790,7 @@
     "以太坊": [
       "1721",
       "3359",
-      "3364",
-      "409"
+      "3364"
     ],
     "以色列": [
       "3039",
@@ -7436,8 +6813,7 @@
     ],
     "币安币": [
       "3367",
-      "3368",
-      "411"
+      "3368"
     ],
     "微策略": [
       "3257"
@@ -7448,16 +6824,12 @@
     "欧洲中央银行": [
       "418"
     ],
-    "欧洲冠军联赛": [
-      "412"
-    ],
     "欧洲央行": [
       "418"
     ],
     "比特币": [
       "3256",
-      "3365",
-      "410"
+      "3365"
     ],
     "泰莎·汤普森": [
       "3158"
@@ -7524,12 +6896,6 @@
     "above one day": [
       "95"
     ],
-    "advance quarter-final": [
-      "412"
-    ],
-    "advancement": [
-      "412"
-    ],
     "after launch": [
       "95"
     ],
@@ -7538,10 +6904,6 @@
     ],
     "air strike": [
       "414"
-    ],
-    "altcoin": [
-      "409",
-      "411"
     ],
     "announces military": [
       "415"
@@ -7568,62 +6930,18 @@
     "backpack 交易所": [
       "95"
     ],
-    "binance": [
-      "411"
+    "barrel": [
+      "420"
     ],
-    "binance coin": [
-      "411"
-    ],
-    "bitcoin": [
-      "410"
-    ],
-    "bitcoin hit": [
-      "410"
-    ],
-    "bitcoin hit march": [
-      "410"
-    ],
-    "blockchain": [
-      "409",
-      "410",
-      "411"
-    ],
-    "bnb": [
-      "411"
-    ],
-    "bnb coin": [
-      "411"
-    ],
-    "bnb hit": [
-      "411"
-    ],
-    "bnb hit march": [
-      "411"
-    ],
-    "bnb price": [
-      "411"
-    ],
-    "bnbusdt": [
-      "411"
+    "black gold": [
+      "420"
     ],
     "bombardment": [
       "414"
     ],
-    "btc": [
-      "410"
-    ],
-    "bull run": [
-      "410"
-    ],
     "ceasefire": [
       "415",
       "416"
-    ],
-    "champions league": [
-      "412"
-    ],
-    "champions league which": [
-      "412"
     ],
     "championship": [
       "419"
@@ -7631,11 +6949,11 @@
     "christine lagarde": [
       "418"
     ],
-    "club competition": [
-      "412"
+    "cl": [
+      "420"
     ],
-    "coin": [
-      "409"
+    "commodities": [
+      "420"
     ],
     "competitive": [
       "419"
@@ -7655,18 +6973,14 @@
     "countries strike iran": [
       "414"
     ],
-    "crypto": [
-      "409",
-      "410",
-      "411"
+    "crude oil": [
+      "420"
+    ],
+    "crude oil hit": [
+      "420"
     ],
     "crypto exchange": [
       "95"
-    ],
-    "cryptocurrency": [
-      "409",
-      "410",
-      "411"
     ],
     "day after": [
       "95"
@@ -7680,10 +6994,6 @@
     "decision dfr apr": [
       "418"
     ],
-    "defi": [
-      "409",
-      "411"
-    ],
     "deposit facility rate": [
       "418"
     ],
@@ -7692,13 +7002,6 @@
     ],
     "dfr apr": [
       "418"
-    ],
-    "digital asset": [
-      "409",
-      "411"
-    ],
-    "digital gold": [
-      "410"
     ],
     "drone": [
       "413",
@@ -7716,6 +7019,12 @@
     "end war": [
       "415"
     ],
+    "energy": [
+      "420"
+    ],
+    "energy sector": [
+      "420"
+    ],
     "escalation": [
       "414",
       "416"
@@ -7723,29 +7032,11 @@
     "esports": [
       "419"
     ],
-    "eth": [
-      "409"
-    ],
-    "ether": [
-      "409"
-    ],
-    "ethereum": [
-      "409"
-    ],
-    "ethereum hit": [
-      "409"
-    ],
-    "ethereum hit march": [
-      "409"
-    ],
     "euro": [
       "418"
     ],
     "european central bank": [
       "418"
-    ],
-    "european cup": [
-      "412"
     ],
     "eurozone": [
       "418"
@@ -7771,25 +7062,20 @@
     "first stand tournament": [
       "419"
     ],
-    "football": [
-      "412"
-    ],
     "frankfurt": [
       "418"
     ],
     "fully diluted valuation": [
       "95"
     ],
+    "futures": [
+      "420"
+    ],
     "gaming": [
       "419"
     ],
-    "halving": [
-      "410"
-    ],
     "hit march": [
-      "409",
-      "410",
-      "411"
+      "420"
     ],
     "hostilities": [
       "415",
@@ -7849,26 +7135,11 @@
     "jerusalem": [
       "416"
     ],
-    "knockout": [
-      "412"
-    ],
-    "last 8": [
-      "412"
-    ],
     "league": [
       "419"
     ],
     "league of legends": [
       "419"
-    ],
-    "league which": [
-      "412"
-    ],
-    "league which teams": [
-      "412"
-    ],
-    "leg": [
-      "412"
     ],
     "listing": [
       "95"
@@ -7882,15 +7153,8 @@
     "lol 2026 first": [
       "419"
     ],
-    "market": [
-      "409",
-      "410"
-    ],
     "market cap": [
       "95"
-    ],
-    "market value": [
-      "411"
     ],
     "middle east": [
       "413",
@@ -7921,11 +7185,29 @@
     "monetary policy": [
       "418"
     ],
+    "nymex": [
+      "420"
+    ],
+    "oil hit": [
+      "420"
+    ],
+    "oil hit march": [
+      "420"
+    ],
+    "oil market": [
+      "420"
+    ],
+    "oil prices": [
+      "420"
+    ],
     "one day": [
       "95"
     ],
     "one day after": [
       "95"
+    ],
+    "opec": [
+      "420"
     ],
     "operations against": [
       "415"
@@ -7942,39 +7224,14 @@
     "persian gulf": [
       "415"
     ],
+    "petroleum": [
+      "420"
+    ],
     "policy meeting": [
       "418"
     ],
-    "price": [
-      "409",
-      "410"
-    ],
-    "price bitcoin": [
-      "410"
-    ],
-    "price bitcoin hit": [
-      "410"
-    ],
-    "price bnb": [
-      "411"
-    ],
-    "price bnb hit": [
-      "411"
-    ],
-    "price ethereum": [
-      "409"
-    ],
-    "price ethereum hit": [
-      "409"
-    ],
     "pro play": [
       "419"
-    ],
-    "qualification": [
-      "412"
-    ],
-    "quarter-final": [
-      "412"
     ],
     "rate cut": [
       "418"
@@ -7988,30 +7245,12 @@
     "rates decision dfr": [
       "418"
     ],
-    "resistance": [
-      "410"
-    ],
     "retaliation": [
       "413",
       "414"
     ],
     "riot games": [
       "419"
-    ],
-    "round of 16": [
-      "412"
-    ],
-    "satoshi": [
-      "410"
-    ],
-    "smart contracts": [
-      "409"
-    ],
-    "soccer": [
-      "412"
-    ],
-    "spot etf": [
-      "410"
     ],
     "stand tournament": [
       "419"
@@ -8039,12 +7278,6 @@
     "target": [
       "413"
     ],
-    "teams advance": [
-      "412"
-    ],
-    "teams advance quarter-final": [
-      "412"
-    ],
     "tehran": [
       "413",
       "414",
@@ -8055,13 +7288,6 @@
     ],
     "tge": [
       "95"
-    ],
-    "tie": [
-      "412"
-    ],
-    "token": [
-      "409",
-      "411"
     ],
     "token launch": [
       "95"
@@ -8076,9 +7302,6 @@
       "419"
     ],
     "trading": [
-      "409",
-      "410",
-      "411",
       "95"
     ],
     "troops": [
@@ -8096,20 +7319,11 @@
     "trump iran": [
       "415"
     ],
-    "ucl": [
-      "412"
-    ],
-    "uefa": [
-      "412"
-    ],
     "usa": [
       "416"
     ],
     "valuation": [
       "95"
-    ],
-    "volatility": [
-      "410"
     ],
     "war": [
       "413",
@@ -8126,55 +7340,29 @@
     "what iran strike": [
       "413"
     ],
-    "what price": [
-      "409",
-      "410",
-      "411"
-    ],
-    "what price bitcoin": [
-      "410"
-    ],
-    "what price bnb": [
-      "411"
-    ],
-    "what price ethereum": [
-      "409"
-    ],
     "which countries": [
       "414"
     ],
     "which countries strike": [
       "414"
     ],
-    "which teams": [
-      "412"
-    ],
-    "which teams advance": [
-      "412"
-    ],
     "withdrawal": [
       "415"
     ],
-    "以太坊": [
-      "409"
+    "wti": [
+      "420"
+    ],
+    "wti crude": [
+      "420"
     ],
     "以色列": [
       "416"
     ],
-    "币安币": [
-      "411"
-    ],
     "欧洲中央银行": [
       "418"
     ],
-    "欧洲冠军联赛": [
-      "412"
-    ],
     "欧洲央行": [
       "418"
-    ],
-    "比特币": [
-      "410"
     ],
     "特朗普": [
       "415"
