@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-20 10:51:07 UTC+8",
+    "generatedAt": "2026-03-20 16:56:07 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 44,
-      "markets": 160,
-      "keywords": 754,
+      "kept": 37,
+      "markets": 159,
+      "keywords": 740,
       "events": {
-        "events": 8
+        "events": 6
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 956,
+        "cutoff_expired": 963,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 8,
+        "reused": 6,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -87,49 +87,6 @@
       "sigCore": "83299573",
       "reused": false
     },
-    "414": {
-      "title": "Which countries will strike Iran by March 31?",
-      "marketIds": [
-        "414"
-      ],
-      "bestMarketId": "414",
-      "bestLabels": null,
-      "keywords": [
-        "iran",
-        "strike",
-        "attack",
-        "military",
-        "missile",
-        "drone",
-        "tehran",
-        "conflict",
-        "war",
-        "retaliation",
-        "air strike",
-        "bombardment",
-        "escalation",
-        "middle east",
-        "which countries",
-        "countries strike",
-        "strike iran",
-        "iran march",
-        "which countries strike",
-        "countries strike iran",
-        "strike iran march"
-      ],
-      "entities": [
-        "iran"
-      ],
-      "entityGroups": [
-        [
-          "iran"
-        ]
-      ],
-      "sig": "eccd9c10",
-      "sigFull": "eccd9c10",
-      "sigCore": "23b39a26",
-      "reused": false
-    },
     "415": {
       "title": "Trump announces end of military operations against Iran by ...?",
       "marketIds": [
@@ -178,48 +135,6 @@
       "sig": "07af54e5",
       "sigFull": "07af54e5",
       "sigCore": "d20f830c",
-      "reused": false
-    },
-    "413": {
-      "title": "What will Iran strike by March 31?",
-      "marketIds": [
-        "413"
-      ],
-      "bestMarketId": "413",
-      "bestLabels": null,
-      "keywords": [
-        "iran",
-        "iranian",
-        "strike",
-        "attack",
-        "missile",
-        "drone",
-        "retaliation",
-        "middle east",
-        "conflict",
-        "war",
-        "military",
-        "target",
-        "tehran",
-        "irgc",
-        "islamic republic",
-        "what iran",
-        "iran strike",
-        "strike march",
-        "what iran strike",
-        "iran strike march"
-      ],
-      "entities": [
-        "iran"
-      ],
-      "entityGroups": [
-        [
-          "iran"
-        ]
-      ],
-      "sig": "28b2401d",
-      "sigFull": "28b2401d",
-      "sigCore": "d3e01bcb",
       "reused": false
     },
     "418": {
@@ -3631,116 +3546,11 @@
         }
       ]
     },
-    "414": {
-      "title": "Which countries will strike Iran by March 31?",
-      "url": "https://app.opinion.trade/market/414?ref=opinion_hud",
-      "yesTokenId": "111769058390689214495037390085496264286379355797520513419453055224602952400419",
-      "noTokenId": "43985776705828333091731241300955392699458052859196666755432190223449456997141",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "iran",
-        "strike",
-        "attack",
-        "military",
-        "missile",
-        "drone",
-        "tehran",
-        "conflict",
-        "war",
-        "retaliation",
-        "air strike",
-        "bombardment",
-        "escalation",
-        "middle east",
-        "which countries",
-        "countries strike",
-        "strike iran",
-        "iran march",
-        "which countries strike",
-        "countries strike iran",
-        "strike iran march"
-      ],
-      "entities": [
-        "iran"
-      ],
-      "entityGroups": [
-        [
-          "iran"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8462",
-          "title": "Saudi Arabia",
-          "yesTokenId": "77273556993305732564693310008398005445163119858949587839522029221801313883515",
-          "noTokenId": "108476683875493529011965433399993490067771377203451941786404391729987705027028"
-        },
-        {
-          "marketId": "8463",
-          "title": "UAE",
-          "yesTokenId": "51347802435587645551073726402145407872695986786056509041870310741365121862436",
-          "noTokenId": "76901576696829948510717101389038364368882699490032109396892923730071845338909"
-        },
-        {
-          "marketId": "8464",
-          "title": "UK",
-          "yesTokenId": "106070142707161222243168079056665010589534553432089877977793186226324369580626",
-          "noTokenId": "66896833567133500517546326644939897365693423977669672076710999703940751422034"
-        },
-        {
-          "marketId": "8465",
-          "title": "Qatar",
-          "yesTokenId": "104607297638713505765688554491061357464279474434243809806444819386532763107180",
-          "noTokenId": "3317332016920668754227077959022295110058953517423608785311444538842257522864"
-        },
-        {
-          "marketId": "8466",
-          "title": "France",
-          "yesTokenId": "28562774260251258022650954981179731944889238651184564913031041274124185650729",
-          "noTokenId": "29879110298133183303927935543559319618204766928605836039885747147976413044781"
-        },
-        {
-          "marketId": "8467",
-          "title": "Bahrain",
-          "yesTokenId": "28418684977063039584585200126045474511987815464324249459573561062102864197446",
-          "noTokenId": "111300568812599486188324014593572660665840670226029896079878705086860469026079"
-        },
-        {
-          "marketId": "8468",
-          "title": "Turkey",
-          "yesTokenId": "81860402258336949743071229948564219185086885750650955333512891627254464719230",
-          "noTokenId": "107941205229084170104706437934959647685242926611393664522720832303404049934100"
-        },
-        {
-          "marketId": "8469",
-          "title": "Germany",
-          "yesTokenId": "4877031050195974884610021207530881918084140833331921136510298481563971557869",
-          "noTokenId": "33191477596692716960253740552884606879023979692426989515428199024015201473486"
-        },
-        {
-          "marketId": "8470",
-          "title": "Jordan",
-          "yesTokenId": "111769058390689214495037390085496264286379355797520513419453055224602952400419",
-          "noTokenId": "43985776705828333091731241300955392699458052859196666755432190223449456997141"
-        },
-        {
-          "marketId": "8471",
-          "title": "Canada",
-          "yesTokenId": "39939580186307160127522486730923980397955246344826455249994746684595156549300",
-          "noTokenId": "5505675347373480329374179367790081352196551320848466157184489045738537529330"
-        }
-      ]
-    },
     "415": {
       "title": "Trump announces end of military operations against Iran by ...?",
       "url": "https://app.opinion.trade/market/415?ref=opinion_hud",
-      "yesTokenId": "82328584884124981891580206116193958702322441519733574488020952603628280939735",
-      "noTokenId": "89406223880971551086039568285322358495527974568270866661974752527289572342868",
+      "yesTokenId": "54769103024298403111836216130733849440015939369179743706183033479470383866129",
+      "noTokenId": "60119236716870287644559118459424734901757716230104534861942777494365867513363",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -3821,92 +3631,6 @@
           "title": "March 15, 2026",
           "yesTokenId": "14074038339115625078427817390327243143394882801009228741851837561760725678389",
           "noTokenId": "55889000230728445184439138398430680077049868635947359669175563682314196530384"
-        }
-      ]
-    },
-    "413": {
-      "title": "What will Iran strike by March 31?",
-      "url": "https://app.opinion.trade/market/413?ref=opinion_hud",
-      "yesTokenId": "72261736160926739120252202344585495409978273776149039944841500541776151166201",
-      "noTokenId": "58428730993134861241540892005044851289155843076149991577375638172498834258339",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "iran",
-        "iranian",
-        "strike",
-        "attack",
-        "missile",
-        "drone",
-        "retaliation",
-        "middle east",
-        "conflict",
-        "war",
-        "military",
-        "target",
-        "tehran",
-        "irgc",
-        "islamic republic",
-        "what iran",
-        "iran strike",
-        "strike march",
-        "what iran strike",
-        "iran strike march"
-      ],
-      "entities": [
-        "iran"
-      ],
-      "entityGroups": [
-        [
-          "iran"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8455",
-          "title": "Dimona (Shimon Peres Negev Nuclear Research Center)",
-          "yesTokenId": "48025211704247466581376134677329461615838626107038200395611936979323456872405",
-          "noTokenId": "105332199011267979821169742060449533721187915185604413013308313689569280636067"
-        },
-        {
-          "marketId": "8457",
-          "title": "Ghawar Field",
-          "yesTokenId": "83807443377765322078128189603469610950574274703199694661433667789160365710562",
-          "noTokenId": "59657191116523737550226226355727571604841612961411459397610543514538900116658"
-        },
-        {
-          "marketId": "8458",
-          "title": "Safaniya Field",
-          "yesTokenId": "21039679517332230393106441563437639488766559883674455974430419173116259559276",
-          "noTokenId": "107541927141718251060982351582754864562057671701839195505364337032056180997098"
-        },
-        {
-          "marketId": "8459",
-          "title": "Abqaiq oil processing facility",
-          "yesTokenId": "72261736160926739120252202344585495409978273776149039944841500541776151166201",
-          "noTokenId": "58428730993134861241540892005044851289155843076149991577375638172498834258339"
-        },
-        {
-          "marketId": "8460",
-          "title": "Mina Al-Ahmadi Refinery",
-          "yesTokenId": "80961901345287591314423989150309532670910673847384041205963032145228029391891",
-          "noTokenId": "20377362888046134018651480441190272496915855606234269046787368505942425129574"
-        },
-        {
-          "marketId": "8461",
-          "title": "Al Zour Refinery",
-          "yesTokenId": "22025707285588852032925264376727817051332654617613381221657674203246158765768",
-          "noTokenId": "36586907353002192713227303170823076492951730725323463281627146793248017069716"
-        },
-        {
-          "marketId": "8456",
-          "title": "Ruwais Refinery",
-          "yesTokenId": "51701294660272836133256763059714864503457994251795490342587989517130342901524",
-          "noTokenId": "30172749868985641210106214826935102309291053580153298192707037773411237932"
         }
       ]
     },
@@ -4319,11 +4043,11 @@
         }
       ]
     },
-    "9927": {
-      "title": "BNB Up or Down - Hourly (Mar 20, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9927?ref=opinion_hud",
-      "yesTokenId": "103763184368039563697146961768058716936401729286579268203297722219676702371034",
-      "noTokenId": "29358800596162907022142732401723247060907682494211945217067594306476840401603",
+    "9947": {
+      "title": "ETH Up or Down - Hourly (Mar 20, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9947?ref=opinion_hud",
+      "yesTokenId": "98892899330730736754342432060917240672684392762354803669989772176805697894167",
+      "noTokenId": "46284542454867692491721769029055902602781265005548731126841995196892212510045",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -4331,11 +4055,11 @@
       },
       "type": "binary"
     },
-    "9928": {
-      "title": "BTC Up or Down - Hourly (Mar 20, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9928?ref=opinion_hud",
-      "yesTokenId": "63632042626007500168721653988906244844305011752590661224728814156782775263666",
-      "noTokenId": "107485086795895248689925009679105341585765129697828529402497163310620225759124",
+    "9946": {
+      "title": "BTC Up or Down - Hourly (Mar 20, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9946?ref=opinion_hud",
+      "yesTokenId": "82301559924536378831483544285716745078165951124052049324606707315718924343562",
+      "noTokenId": "49462449002491556246885605744979928824650114793387283507608799411600548114048",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -4343,15 +4067,27 @@
       },
       "type": "binary"
     },
-    "9929": {
-      "title": "ETH Up or Down - Hourly (Mar 20, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9929?ref=opinion_hud",
-      "yesTokenId": "97811982981583786686852798582265231031305279225857806739103859036433075644962",
-      "noTokenId": "43362195260473485403037563379459528186596107655450125574435886249930615510172",
+    "9945": {
+      "title": "BNB Up or Down - Hourly (Mar 20, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9945?ref=opinion_hud",
+      "yesTokenId": "65022872849091206132756533141422811051497035696841695237168974191676201246514",
+      "noTokenId": "2723615125001978356103996540593745906546126710381487119275894946885288843378",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9955": {
+      "title": "Bitcoin Up or Down on March 21?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/9955?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
       },
       "type": "binary"
     }
@@ -4506,8 +4242,7 @@
       "415"
     ],
     "air strike": [
-      "3039",
-      "414"
+      "3039"
     ],
     "airdrop": [
       "1721",
@@ -4592,9 +4327,7 @@
       "3368"
     ],
     "attack": [
-      "3039",
-      "413",
-      "414"
+      "3039"
     ],
     "back": [
       "1856"
@@ -4726,9 +4459,6 @@
     ],
     "bnb token": [
       "3368"
-    ],
-    "bombardment": [
-      "414"
     ],
     "bombing": [
       "3039"
@@ -4873,8 +4603,6 @@
     ],
     "conflict": [
       "3039",
-      "413",
-      "414",
       "415",
       "416"
     ],
@@ -4892,12 +4620,6 @@
     ],
     "cook out apple": [
       "2368"
-    ],
-    "countries strike": [
-      "414"
-    ],
-    "countries strike iran": [
-      "414"
     ],
     "court decision": [
       "1546"
@@ -5073,9 +4795,7 @@
       "3360"
     ],
     "drone": [
-      "3039",
-      "413",
-      "414"
+      "3039"
     ],
     "due date": [
       "3448"
@@ -5162,7 +4882,6 @@
     ],
     "escalation": [
       "3039",
-      "414",
       "416"
     ],
     "eschatology": [
@@ -5494,8 +5213,6 @@
     ],
     "iran": [
       "3039",
-      "413",
-      "414",
       "415",
       "416"
     ],
@@ -5506,30 +5223,16 @@
       "416"
     ],
     "iran march": [
-      "3039",
-      "414"
+      "3039"
     ],
     "iran march 2026": [
       "3039"
     ],
-    "iran strike": [
-      "413"
-    ],
-    "iran strike march": [
-      "413"
-    ],
     "iran war": [
       "415"
     ],
-    "iranian": [
-      "413"
-    ],
     "irgc": [
-      "3039",
-      "413"
-    ],
-    "islamic republic": [
-      "413"
+      "3039"
     ],
     "israel": [
       "3039",
@@ -5751,8 +5454,6 @@
       "3508"
     ],
     "middle east": [
-      "413",
-      "414",
       "416"
     ],
     "mike wheeler": [
@@ -5765,8 +5466,6 @@
       "3525"
     ],
     "military": [
-      "413",
-      "414",
       "416"
     ],
     "military operations": [
@@ -5779,9 +5478,7 @@
       "3256"
     ],
     "missile": [
-      "3039",
-      "413",
-      "414"
+      "3039"
     ],
     "moba": [
       "419"
@@ -6159,9 +5856,7 @@
       "2670"
     ],
     "retaliation": [
-      "3039",
-      "413",
-      "414"
+      "3039"
     ],
     "return": [
       "1856",
@@ -6360,18 +6055,7 @@
     ],
     "strike": [
       "3039",
-      "413",
-      "414",
       "415"
-    ],
-    "strike iran": [
-      "414"
-    ],
-    "strike iran march": [
-      "414"
-    ],
-    "strike march": [
-      "413"
     ],
     "strikes iran": [
       "3039"
@@ -6409,8 +6093,7 @@
     "target": [
       "3449",
       "3505",
-      "3506",
-      "413"
+      "3506"
     ],
     "target date": [
       "3448",
@@ -6429,8 +6112,6 @@
     ],
     "tehran": [
       "3039",
-      "413",
-      "414",
       "416"
     ],
     "temblor": [
@@ -6662,8 +6343,6 @@
     ],
     "war": [
       "3039",
-      "413",
-      "414",
       "415",
       "416"
     ],
@@ -6685,20 +6364,8 @@
     "westworld": [
       "3158"
     ],
-    "what iran": [
-      "413"
-    ],
-    "what iran strike": [
-      "413"
-    ],
     "wheeler family": [
       "3222"
-    ],
-    "which countries": [
-      "414"
-    ],
-    "which countries strike": [
-      "414"
     ],
     "white house": [
       "3062"
@@ -6854,18 +6521,11 @@
     "against iran": [
       "415"
     ],
-    "air strike": [
-      "414"
-    ],
     "announces military": [
       "415"
     ],
     "announces military operations": [
       "415"
-    ],
-    "attack": [
-      "413",
-      "414"
     ],
     "backpack": [
       "95"
@@ -6888,9 +6548,6 @@
     "black gold": [
       "420"
     ],
-    "bombardment": [
-      "414"
-    ],
     "ceasefire": [
       "415",
       "416"
@@ -6911,19 +6568,11 @@
       "419"
     ],
     "conflict": [
-      "413",
-      "414",
       "415",
       "416"
     ],
     "conflict ends": [
       "416"
-    ],
-    "countries strike": [
-      "414"
-    ],
-    "countries strike iran": [
-      "414"
     ],
     "crude oil": [
       "420"
@@ -6955,10 +6604,6 @@
     "dfr apr": [
       "418"
     ],
-    "drone": [
-      "413",
-      "414"
-    ],
     "ecb": [
       "418"
     ],
@@ -6978,7 +6623,6 @@
       "420"
     ],
     "escalation": [
-      "414",
       "416"
     ],
     "esports": [
@@ -7043,8 +6687,6 @@
       "418"
     ],
     "iran": [
-      "413",
-      "414",
       "415",
       "416"
     ],
@@ -7054,26 +6696,8 @@
     "iran israel/us conflict": [
       "416"
     ],
-    "iran march": [
-      "414"
-    ],
-    "iran strike": [
-      "413"
-    ],
-    "iran strike march": [
-      "413"
-    ],
     "iran war": [
       "415"
-    ],
-    "iranian": [
-      "413"
-    ],
-    "irgc": [
-      "413"
-    ],
-    "islamic republic": [
-      "413"
     ],
     "israel": [
       "416"
@@ -7109,13 +6733,9 @@
       "95"
     ],
     "middle east": [
-      "413",
-      "414",
       "416"
     ],
     "military": [
-      "413",
-      "414",
       "416"
     ],
     "military operations": [
@@ -7123,10 +6743,6 @@
     ],
     "military operations against": [
       "415"
-    ],
-    "missile": [
-      "413",
-      "414"
     ],
     "moba": [
       "419"
@@ -7197,10 +6813,6 @@
     "rates decision dfr": [
       "418"
     ],
-    "retaliation": [
-      "413",
-      "414"
-    ],
     "riot games": [
       "419"
     ],
@@ -7211,28 +6823,12 @@
       "419"
     ],
     "strike": [
-      "413",
-      "414",
       "415"
-    ],
-    "strike iran": [
-      "414"
-    ],
-    "strike iran march": [
-      "414"
-    ],
-    "strike march": [
-      "413"
     ],
     "summoner's rift": [
       "419"
     ],
-    "target": [
-      "413"
-    ],
     "tehran": [
-      "413",
-      "414",
       "416"
     ],
     "tensions": [
@@ -7278,25 +6874,11 @@
       "95"
     ],
     "war": [
-      "413",
-      "414",
       "415",
       "416"
     ],
     "washington": [
       "416"
-    ],
-    "what iran": [
-      "413"
-    ],
-    "what iran strike": [
-      "413"
-    ],
-    "which countries": [
-      "414"
-    ],
-    "which countries strike": [
-      "414"
     ],
     "withdrawal": [
       "415"
