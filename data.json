@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-20 01:10:25 UTC+8",
+    "generatedAt": "2026-03-20 10:51:07 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 60,
-      "markets": 164,
+      "kept": 44,
+      "markets": 160,
       "keywords": 754,
       "events": {
         "events": 8
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 940,
+        "cutoff_expired": 956,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 7,
+        "reused": 8,
         "regenerated_empty_entitygroups": 0,
-        "calls": 1,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 1,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -3537,8 +3537,8 @@
     "416": {
       "title": "Iran x Israel/US conflict ends by...?",
       "url": "https://app.opinion.trade/market/416?ref=opinion_hud",
-      "yesTokenId": "67129738220739634778627764930104442343310879400893880446444543078447327911577",
-      "noTokenId": "31694914401891819561027171211020004727305838689580066822492050897826842152749",
+      "yesTokenId": "108409873121467635451637378008739342775105562643227378303891293028393432781442",
+      "noTokenId": "52327361842247330480015223005188958322349176444974068493668281019678289932046",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -3634,8 +3634,8 @@
     "414": {
       "title": "Which countries will strike Iran by March 31?",
       "url": "https://app.opinion.trade/market/414?ref=opinion_hud",
-      "yesTokenId": "51347802435587645551073726402145407872695986786056509041870310741365121862436",
-      "noTokenId": "76901576696829948510717101389038364368882699490032109396892923730071845338909",
+      "yesTokenId": "111769058390689214495037390085496264286379355797520513419453055224602952400419",
+      "noTokenId": "43985776705828333091731241300955392699458052859196666755432190223449456997141",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -3827,8 +3827,8 @@
     "413": {
       "title": "What will Iran strike by March 31?",
       "url": "https://app.opinion.trade/market/413?ref=opinion_hud",
-      "yesTokenId": "22025707285588852032925264376727817051332654617613381221657674203246158765768",
-      "noTokenId": "36586907353002192713227303170823076492951730725323463281627146793248017069716",
+      "yesTokenId": "72261736160926739120252202344585495409978273776149039944841500541776151166201",
+      "noTokenId": "58428730993134861241540892005044851289155843076149991577375638172498834258339",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -4186,90 +4186,6 @@
         }
       ]
     },
-    "9814": {
-      "title": "KPL: LGD.NBW vs TES.A (Mar. 20 8:00AM ET)",
-      "url": "https://app.opinion.trade/market/9814?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9800": {
-      "title": "NBA: Warriors vs Pistons (Mar. 20 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/9800?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9802": {
-      "title": "NBA: Raptors vs Nuggets (Mar. 20 9:00PM ET)",
-      "url": "https://app.opinion.trade/market/9802?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9801": {
-      "title": "NBA: Trail Blazers vs Timberwolves (Mar. 20 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/9801?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9870": {
-      "title": "LoL - FST: G2 vs BFX (Mar. 20 9:00AM ET)",
-      "url": "https://app.opinion.trade/market/9870?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9871": {
-      "title": "KPL: LGD.NBW vs TES.A (Mar. 20 8:00AM ET)",
-      "url": "https://app.opinion.trade/market/9871?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9899": {
-      "title": "Bitcoin Up or Down on March 20?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/9899?ref=opinion_hud",
-      "yesTokenId": "70036096714086818185257978154034591549733630607895995475100824865779740171885",
-      "noTokenId": "5541529182910098199681580920837719148165242791753635791726003269818989503518",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "9897": {
       "title": "NBA: Heat vs Rockets (Mar. 21 8:00PM ET)",
       "url": "https://app.opinion.trade/market/9897?ref=opinion_hud",
@@ -4402,6 +4318,42 @@
           "noTokenId": "50941815006725660475730669473821124515475092481850889498405524597666608942998"
         }
       ]
+    },
+    "9927": {
+      "title": "BNB Up or Down - Hourly (Mar 20, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9927?ref=opinion_hud",
+      "yesTokenId": "103763184368039563697146961768058716936401729286579268203297722219676702371034",
+      "noTokenId": "29358800596162907022142732401723247060907682494211945217067594306476840401603",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9928": {
+      "title": "BTC Up or Down - Hourly (Mar 20, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9928?ref=opinion_hud",
+      "yesTokenId": "63632042626007500168721653988906244844305011752590661224728814156782775263666",
+      "noTokenId": "107485086795895248689925009679105341585765129697828529402497163310620225759124",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "9929": {
+      "title": "ETH Up or Down - Hourly (Mar 20, 2026 03:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/9929?ref=opinion_hud",
+      "yesTokenId": "97811982981583786686852798582265231031305279225857806739103859036433075644962",
+      "noTokenId": "43362195260473485403037563379459528186596107655450125574435886249930615510172",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
