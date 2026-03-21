@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-21 16:48:14 UTC+8",
+    "generatedAt": "2026-03-22 00:44:02 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,7 +8,7 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 51,
+      "kept": 50,
       "markets": 164,
       "keywords": 776,
       "events": {
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 949,
+        "cutoff_expired": 950,
         "cutoff_zero_kept": 2,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 6,
+        "reused": 9,
         "regenerated_empty_entitygroups": 0,
-        "calls": 3,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 3,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -3916,12 +3916,6 @@
           "noTokenId": "65842351553381335905715781267695849139163048937652061770122007989661478257832"
         },
         {
-          "marketId": "8985",
-          "title": "LYON",
-          "yesTokenId": "68356581651526337675757657959633477910849873165926020341974222763444414282920",
-          "noTokenId": "14889433728296510627464105085106819069749963190386812113322154566067898776992"
-        },
-        {
           "marketId": "8980",
           "title": "BFX",
           "yesTokenId": "110439656358314727591287692861310940126691879918537487882896139775932280146219",
@@ -3932,6 +3926,12 @@
           "title": "TSW",
           "yesTokenId": "34779533973966233647147059375806011016879323062386979473527350941384766619673",
           "noTokenId": "19007263710069399189900192221404773974177807134174270337939965787706979035235"
+        },
+        {
+          "marketId": "8985",
+          "title": "LYON",
+          "yesTokenId": "68356581651526337675757657959633477910849873165926020341974222763444414282920",
+          "noTokenId": "14889433728296510627464105085106819069749963190386812113322154566067898776992"
         },
         {
           "marketId": "8986",
@@ -4202,42 +4202,6 @@
       },
       "type": "binary"
     },
-    "10030": {
-      "title": "ETH Up or Down - Hourly (Mar 21, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10030?ref=opinion_hud",
-      "yesTokenId": "36355871052911254967453212596258632025460738026552697318416578675003101655890",
-      "noTokenId": "96552426257707604408958638764540221405769108137319661975494484917392246331199",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10029": {
-      "title": "BTC Up or Down - Hourly (Mar 21, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10029?ref=opinion_hud",
-      "yesTokenId": "29224295395475434090609752342545250141337004963694164051134343236444828234067",
-      "noTokenId": "109887920576234125475739312255657154027118890239567003041216203992968894358757",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10028": {
-      "title": "BNB Up or Down - Hourly (Mar 21, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10028?ref=opinion_hud",
-      "yesTokenId": "31752000958213769275787887686494422434892908621741756300664478482154840558744",
-      "noTokenId": "36993781696194166927915634190767112720686630534995442702306109876113596107788",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "423": {
       "title": "Bank of Japan Decision in June 2026?",
       "url": "https://app.opinion.trade/market/423?ref=opinion_hud",
@@ -4468,6 +4432,42 @@
       "url": "https://app.opinion.trade/market/10045?ref=opinion_hud",
       "yesTokenId": "110608491132806704812076787334445853367601186352891320076842186981090486872657",
       "noTokenId": "80921985719852895725485462399230352090656193674172159680514540116495974248240",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10069": {
+      "title": "BNB Up or Down - Hourly (Mar 21, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10069?ref=opinion_hud",
+      "yesTokenId": "1413243184551949040663039175004989527550036275887792149741801819605883510580",
+      "noTokenId": "94393106034373348058424284076967023495330678488938646045479761193018017467578",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10071": {
+      "title": "ETH Up or Down - Hourly (Mar 21, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10071?ref=opinion_hud",
+      "yesTokenId": "98658875905164632834344087913345103509366058223989723818963987431950403619592",
+      "noTokenId": "55048158184189751105353552082163223906620492354395713627532810762627096544532",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10070": {
+      "title": "BTC Up or Down - Hourly (Mar 21, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10070?ref=opinion_hud",
+      "yesTokenId": "6534293478850637321930047087904540445616807516519754515764493462273597921168",
+      "noTokenId": "55815002408924313989877558337395089715836189122045638249927696342100613637714",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
