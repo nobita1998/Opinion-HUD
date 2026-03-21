@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-21 10:45:24 UTC+8",
+    "generatedAt": "2026-03-21 16:48:14 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 34,
-      "markets": 157,
-      "keywords": 740,
+      "kept": 51,
+      "markets": 164,
+      "keywords": 776,
       "events": {
-        "events": 6
+        "events": 9
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 966,
+        "cutoff_expired": 949,
         "cutoff_zero_kept": 2,
         "resolved": 0,
         "missing_id": 0,
@@ -30,11 +30,11 @@
         "onlyAiForNew": true,
         "reused": 6,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
+        "calls": 3,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 3,
         "errors": 0
       }
     }
@@ -320,6 +320,141 @@
       "sig": "e17be0cb",
       "sigFull": "e17be0cb",
       "sigCore": "4bcea8e9",
+      "reused": false
+    },
+    "423": {
+      "title": "Bank of Japan Decision in June 2026?",
+      "marketIds": [
+        "423"
+      ],
+      "bestMarketId": "423",
+      "bestLabels": null,
+      "keywords": [
+        "bank of japan",
+        "boj",
+        "interest rates",
+        "monetary policy",
+        "policy rate",
+        "june 2026",
+        "kazuo ueda",
+        "policy board",
+        "short-term rates",
+        "yen",
+        "jpy",
+        "central bank",
+        "rate decision",
+        "ueda",
+        "bank japan",
+        "japan decision",
+        "decision june",
+        "bank japan decision",
+        "japan decision june",
+        "decision june 2026"
+      ],
+      "entities": [
+        "bank of japan"
+      ],
+      "entityGroups": [
+        [
+          "bank of japan",
+          "日本央行",
+          "日本银行"
+        ]
+      ],
+      "sig": "b3678b8a",
+      "sigFull": "b3678b8a",
+      "sigCore": "1c602ef5",
+      "reused": false
+    },
+    "421": {
+      "title": "US Fed Decision in July?",
+      "marketIds": [
+        "421"
+      ],
+      "bestMarketId": "421",
+      "bestLabels": null,
+      "keywords": [
+        "fed",
+        "federal reserve",
+        "fomc",
+        "interest rates",
+        "rate cut",
+        "rate hike",
+        "monetary policy",
+        "jerome powell",
+        "inflation",
+        "cpi",
+        "central bank",
+        "us economy",
+        "basis points",
+        "dot plot",
+        "beige book",
+        "fed decision",
+        "decision july",
+        "fed decision july"
+      ],
+      "entities": [
+        "fed"
+      ],
+      "entityGroups": [
+        [
+          "fed",
+          "federal reserve",
+          "fomc",
+          "美联储"
+        ]
+      ],
+      "sig": "0b43b99d",
+      "sigFull": "0b43b99d",
+      "sigCore": "e5829ed9",
+      "reused": false
+    },
+    "422": {
+      "title": "ECB Rates Decision (DFR): June 2026",
+      "marketIds": [
+        "422"
+      ],
+      "bestMarketId": "422",
+      "bestLabels": null,
+      "keywords": [
+        "ecb",
+        "european central bank",
+        "interest rates",
+        "monetary policy",
+        "deposit facility rate",
+        "dfr",
+        "rate decision",
+        "eurozone",
+        "christine lagarde",
+        "inflation",
+        "monetary easing",
+        "monetary tightening",
+        "euro",
+        "central bank",
+        "governing council",
+        "ecb rates",
+        "rates decision",
+        "decision dfr",
+        "dfr june",
+        "june 2026",
+        "ecb rates decision",
+        "rates decision dfr",
+        "decision dfr june",
+        "dfr june 2026"
+      ],
+      "entities": [
+        "ecb"
+      ],
+      "entityGroups": [
+        [
+          "ecb",
+          "欧洲央行",
+          "欧洲中央银行"
+        ]
+      ],
+      "sig": "a4b9c8b8",
+      "sigFull": "a4b9c8b8",
+      "sigCore": "b097cd14",
       "reused": false
     }
   },
@@ -3763,12 +3898,6 @@
           "noTokenId": "39373036110476931837188974377398453893881131471294365773268324663131235493087"
         },
         {
-          "marketId": "8980",
-          "title": "BFX",
-          "yesTokenId": "110439656358314727591287692861310940126691879918537487882896139775932280146219",
-          "noTokenId": "22190657979615620700854854877563452748164007656996844073817813942859880473793"
-        },
-        {
           "marketId": "8981",
           "title": "BLG",
           "yesTokenId": "81394110583867895034064528323352686358681754286553913119737666361711553735185",
@@ -3791,6 +3920,12 @@
           "title": "LYON",
           "yesTokenId": "68356581651526337675757657959633477910849873165926020341974222763444414282920",
           "noTokenId": "14889433728296510627464105085106819069749963190386812113322154566067898776992"
+        },
+        {
+          "marketId": "8980",
+          "title": "BFX",
+          "yesTokenId": "110439656358314727591287692861310940126691879918537487882896139775932280146219",
+          "noTokenId": "22190657979615620700854854877563452748164007656996844073817813942859880473793"
         },
         {
           "marketId": "8984",
@@ -4066,6 +4201,279 @@
         "noLabel": ""
       },
       "type": "binary"
+    },
+    "10030": {
+      "title": "ETH Up or Down - Hourly (Mar 21, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10030?ref=opinion_hud",
+      "yesTokenId": "36355871052911254967453212596258632025460738026552697318416578675003101655890",
+      "noTokenId": "96552426257707604408958638764540221405769108137319661975494484917392246331199",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10029": {
+      "title": "BTC Up or Down - Hourly (Mar 21, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10029?ref=opinion_hud",
+      "yesTokenId": "29224295395475434090609752342545250141337004963694164051134343236444828234067",
+      "noTokenId": "109887920576234125475739312255657154027118890239567003041216203992968894358757",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10028": {
+      "title": "BNB Up or Down - Hourly (Mar 21, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10028?ref=opinion_hud",
+      "yesTokenId": "31752000958213769275787887686494422434892908621741756300664478482154840558744",
+      "noTokenId": "36993781696194166927915634190767112720686630534995442702306109876113596107788",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "423": {
+      "title": "Bank of Japan Decision in June 2026?",
+      "url": "https://app.opinion.trade/market/423?ref=opinion_hud",
+      "yesTokenId": "44147726455487132027149221428432942539195964955038820113510574654617146046656",
+      "noTokenId": "104456633873631268149452111187957133453805092161188308025391366403244914115186",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "bank of japan",
+        "boj",
+        "interest rates",
+        "monetary policy",
+        "policy rate",
+        "june 2026",
+        "kazuo ueda",
+        "policy board",
+        "short-term rates",
+        "yen",
+        "jpy",
+        "central bank",
+        "rate decision",
+        "ueda",
+        "bank japan",
+        "japan decision",
+        "decision june",
+        "bank japan decision",
+        "japan decision june",
+        "decision june 2026"
+      ],
+      "entities": [
+        "bank of japan"
+      ],
+      "entityGroups": [
+        [
+          "bank of japan",
+          "日本央行",
+          "日本银行"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "10041",
+          "title": "Decrease rates",
+          "yesTokenId": "57896944611346317662672174005647609882439170833172959959867269823564063821205",
+          "noTokenId": "85156703139020412006429846003819626200979409978287912577972511164607003193464"
+        },
+        {
+          "marketId": "10042",
+          "title": "No change",
+          "yesTokenId": "74547990449652929800247959126167784976042596805768358770011553487032408721298",
+          "noTokenId": "50779136263127295487710453753376045806359378996104255068020923403609274152474"
+        },
+        {
+          "marketId": "10043",
+          "title": "25 bps increase",
+          "yesTokenId": "72454678942444802608953765830058397583976406384959486222319896682076159379472",
+          "noTokenId": "106140478383992538831810772809241043083168158466948936747686851917007532892845"
+        },
+        {
+          "marketId": "10044",
+          "title": "50+ bps increase",
+          "yesTokenId": "44147726455487132027149221428432942539195964955038820113510574654617146046656",
+          "noTokenId": "104456633873631268149452111187957133453805092161188308025391366403244914115186"
+        }
+      ]
+    },
+    "421": {
+      "title": "US Fed Decision in July?",
+      "url": "https://app.opinion.trade/market/421?ref=opinion_hud",
+      "yesTokenId": "13753689769505483685407929346331824827499625890836159201812116021594794537604",
+      "noTokenId": "94454258687501874646628525934019540019998314479889054381218143601142338365854",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "fed",
+        "federal reserve",
+        "fomc",
+        "interest rates",
+        "rate cut",
+        "rate hike",
+        "monetary policy",
+        "jerome powell",
+        "inflation",
+        "cpi",
+        "central bank",
+        "us economy",
+        "basis points",
+        "dot plot",
+        "beige book",
+        "fed decision",
+        "decision july",
+        "fed decision july"
+      ],
+      "entities": [
+        "fed"
+      ],
+      "entityGroups": [
+        [
+          "fed",
+          "federal reserve",
+          "fomc",
+          "美联储"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "10031",
+          "title": "50+ bps decrease",
+          "yesTokenId": "30847619629442456644341357780686560158527003737092067213400523188979760282258",
+          "noTokenId": "103674526602776771104681350821539174356696986900477001174667797563932255607175"
+        },
+        {
+          "marketId": "10032",
+          "title": "25 bps decrease",
+          "yesTokenId": "57873422369502173665186123710187492524113366612543072680046163457799883739737",
+          "noTokenId": "47670101065284892269280060793443634317647515220899752503282544396800360326275"
+        },
+        {
+          "marketId": "10033",
+          "title": "No change",
+          "yesTokenId": "13753689769505483685407929346331824827499625890836159201812116021594794537604",
+          "noTokenId": "94454258687501874646628525934019540019998314479889054381218143601142338365854"
+        },
+        {
+          "marketId": "10034",
+          "title": "25 bps increase",
+          "yesTokenId": "67845718231975750702754947953239076483031689165768542767542262955448030343513",
+          "noTokenId": "16141815606285384967376716732551730882675600414141320722584612922959367290584"
+        },
+        {
+          "marketId": "10035",
+          "title": "50+ bps increase",
+          "yesTokenId": "78166141035752667404586556594958528526569491870650565498686871276175567898591",
+          "noTokenId": "50965244612399246718165305703867461481355986468331083645456056852384671335109"
+        }
+      ]
+    },
+    "422": {
+      "title": "ECB Rates Decision (DFR): June 2026",
+      "url": "https://app.opinion.trade/market/422?ref=opinion_hud",
+      "yesTokenId": "60309053368255711455179679544263303329135260663311205320825854311137625792508",
+      "noTokenId": "3837824512174676273664303814063539504788937282185355141842353094201909359891",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "ecb",
+        "european central bank",
+        "interest rates",
+        "monetary policy",
+        "deposit facility rate",
+        "dfr",
+        "rate decision",
+        "eurozone",
+        "christine lagarde",
+        "inflation",
+        "monetary easing",
+        "monetary tightening",
+        "euro",
+        "central bank",
+        "governing council",
+        "ecb rates",
+        "rates decision",
+        "decision dfr",
+        "dfr june",
+        "june 2026",
+        "ecb rates decision",
+        "rates decision dfr",
+        "decision dfr june",
+        "dfr june 2026"
+      ],
+      "entities": [
+        "ecb"
+      ],
+      "entityGroups": [
+        [
+          "ecb",
+          "欧洲央行",
+          "欧洲中央银行"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "10036",
+          "title": "50+ bps decrease",
+          "yesTokenId": "66189764981639986517848850200883564947444845338614894288240268804138107469870",
+          "noTokenId": "106314915248942230618107710364475911927092302294541060306286673612036009228004"
+        },
+        {
+          "marketId": "10037",
+          "title": "25 bps decrease",
+          "yesTokenId": "39696882473823527325948654756087991333720585972644422203084188214540726681768",
+          "noTokenId": "115055045372484645045854990080494403054577162387062716489972749308249709385246"
+        },
+        {
+          "marketId": "10038",
+          "title": "No change",
+          "yesTokenId": "81665278133540370755887964808285703598082738623255815407481104481603550686385",
+          "noTokenId": "95408720776356557133421232861042576845833479781724516090861418104968852382074"
+        },
+        {
+          "marketId": "10039",
+          "title": "25 bps Increase",
+          "yesTokenId": "23590798549302995484401869850847468501308720357041828507137774718089177201368",
+          "noTokenId": "18376805803392060122975482461215660736863196335547629599867281867904167058911"
+        },
+        {
+          "marketId": "10040",
+          "title": "50+ bps increase",
+          "yesTokenId": "60309053368255711455179679544263303329135260663311205320825854311137625792508",
+          "noTokenId": "3837824512174676273664303814063539504788937282185355141842353094201909359891"
+        }
+      ]
+    },
+    "10045": {
+      "title": "Bitcoin Up or Down on March 22?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/10045?ref=opinion_hud",
+      "yesTokenId": "110608491132806704812076787334445853367601186352891320076842186981090486872657",
+      "noTokenId": "80921985719852895725485462399230352090656193674172159680514540116495974248240",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -4326,6 +4734,15 @@
     "backpack 交易所": [
       "95"
     ],
+    "bank japan": [
+      "423"
+    ],
+    "bank japan decision": [
+      "423"
+    ],
+    "bank of japan": [
+      "423"
+    ],
     "barrel": [
       "420"
     ],
@@ -4347,6 +4764,9 @@
     "base链": [
       "3366"
     ],
+    "basis points": [
+      "421"
+    ],
     "bear market": [
       "3265"
     ],
@@ -4355,6 +4775,9 @@
     ],
     "bei return china": [
       "1856"
+    ],
+    "beige book": [
+      "421"
     ],
     "bianca": [
       "3158"
@@ -4436,6 +4859,9 @@
     "bnb token": [
       "3368"
     ],
+    "boj": [
+      "423"
+    ],
     "bombing": [
       "3039"
     ],
@@ -4491,6 +4917,11 @@
     "celebrity": [
       "3158"
     ],
+    "central bank": [
+      "421",
+      "422",
+      "423"
+    ],
     "ceo": [
       "2368",
       "3369"
@@ -4532,7 +4963,8 @@
       "2670"
     ],
     "christine lagarde": [
-      "418"
+      "418",
+      "422"
     ],
     "cl": [
       "420"
@@ -4605,6 +5037,9 @@
     ],
     "court rules favor": [
       "1546"
+    ],
+    "cpi": [
+      "421"
     ],
     "crash": [
       "3359"
@@ -4698,10 +5133,23 @@
       "3509"
     ],
     "decision dfr": [
-      "418"
+      "418",
+      "422"
     ],
     "decision dfr apr": [
       "418"
+    ],
+    "decision dfr june": [
+      "422"
+    ],
+    "decision july": [
+      "421"
+    ],
+    "decision june": [
+      "423"
+    ],
+    "decision june 2026": [
+      "423"
     ],
     "defi": [
       "1721",
@@ -4732,7 +5180,8 @@
       "3359"
     ],
     "deposit facility rate": [
-      "418"
+      "418",
+      "422"
     ],
     "depression": [
       "3265"
@@ -4741,16 +5190,26 @@
       "3361"
     ],
     "dfr": [
-      "418"
+      "418",
+      "422"
     ],
     "dfr apr": [
       "418"
+    ],
+    "dfr june": [
+      "422"
+    ],
+    "dfr june 2026": [
+      "422"
     ],
     "dollar": [
       "3359"
     ],
     "donald trump": [
       "3055"
+    ],
+    "dot plot": [
+      "421"
     ],
     "downtime": [
       "3357"
@@ -4795,13 +5254,16 @@
       "2668"
     ],
     "ecb": [
-      "418"
+      "418",
+      "422"
     ],
     "ecb rates": [
-      "418"
+      "418",
+      "422"
     ],
     "ecb rates decision": [
-      "418"
+      "418",
+      "422"
     ],
     "economic crisis": [
       "3265"
@@ -4883,13 +5345,16 @@
       "3364"
     ],
     "euro": [
-      "418"
+      "418",
+      "422"
     ],
     "european central bank": [
-      "418"
+      "418",
+      "422"
     ],
     "eurozone": [
-      "418"
+      "418",
+      "422"
     ],
     "evm": [
       "1721"
@@ -4952,8 +5417,20 @@
     "fdv one": [
       "1721"
     ],
+    "fed": [
+      "421"
+    ],
+    "fed decision": [
+      "421"
+    ],
+    "fed decision july": [
+      "421"
+    ],
     "federal circuit": [
       "1546"
+    ],
+    "federal reserve": [
+      "421"
     ],
     "finals": [
       "419"
@@ -4978,6 +5455,9 @@
     ],
     "flash loan attack": [
       "3360"
+    ],
+    "fomc": [
+      "421"
     ],
     "founder": [
       "3369"
@@ -5034,6 +5514,9 @@
     ],
     "governance token": [
       "3366"
+    ],
+    "governing council": [
+      "422"
     ],
     "great earthquake": [
       "2668",
@@ -5164,7 +5647,9 @@
       "3257"
     ],
     "inflation": [
-      "418"
+      "418",
+      "421",
+      "422"
     ],
     "initial public offering": [
       "3362"
@@ -5173,7 +5658,10 @@
       "95"
     ],
     "interest rates": [
-      "418"
+      "418",
+      "421",
+      "422",
+      "423"
     ],
     "investment": [
       "3505",
@@ -5229,8 +5717,17 @@
     "jackpot": [
       "3505"
     ],
+    "japan decision": [
+      "423"
+    ],
+    "japan decision june": [
+      "423"
+    ],
     "jd vance": [
       "3055"
+    ],
+    "jerome powell": [
+      "421"
     ],
     "jerusalem": [
       "416"
@@ -5254,9 +5751,14 @@
     "joyce byers": [
       "3221"
     ],
+    "jpy": [
+      "423"
+    ],
     "june 2026": [
       "3449",
-      "3508"
+      "3508",
+      "422",
+      "423"
     ],
     "june 30 2026": [
       "3508"
@@ -5269,6 +5771,9 @@
     ],
     "karen wheeler": [
       "3222"
+    ],
+    "kazuo ueda": [
+      "423"
     ],
     "kraken": [
       "3362"
@@ -5469,10 +5974,17 @@
       "1721"
     ],
     "monetary easing": [
-      "418"
+      "418",
+      "422"
     ],
     "monetary policy": [
-      "418"
+      "418",
+      "421",
+      "422",
+      "423"
+    ],
+    "monetary tightening": [
+      "422"
     ],
     "money": [
       "3505",
@@ -5660,8 +6172,14 @@
     "pick 2026 nfl": [
       "3072"
     ],
+    "policy board": [
+      "423"
+    ],
     "policy meeting": [
       "418"
+    ],
+    "policy rate": [
+      "423"
     ],
     "post-quantum": [
       "3256"
@@ -5747,16 +6265,24 @@
       "2670"
     ],
     "rate cut": [
-      "418"
+      "418",
+      "421"
+    ],
+    "rate decision": [
+      "422",
+      "423"
     ],
     "rate hike": [
-      "418"
+      "418",
+      "421"
     ],
     "rates decision": [
-      "418"
+      "418",
+      "422"
     ],
     "rates decision dfr": [
-      "418"
+      "418",
+      "422"
     ],
     "real gdp": [
       "3265"
@@ -5960,6 +6486,9 @@
     "shock": [
       "2668",
       "3356"
+    ],
+    "short-term rates": [
+      "423"
     ],
     "signal caller": [
       "3072"
@@ -6250,6 +6779,9 @@
       "3221",
       "3224"
     ],
+    "ueda": [
+      "423"
+    ],
     "underclassmen": [
       "3072"
     ],
@@ -6259,7 +6791,8 @@
       "3223"
     ],
     "us economy": [
-      "3265"
+      "3265",
+      "421"
     ],
     "usa": [
       "416"
@@ -6364,6 +6897,9 @@
     "wti crude": [
       "420"
     ],
+    "yen": [
+      "423"
+    ],
     "yg entertainment": [
       "2178"
     ],
@@ -6413,14 +6949,22 @@
     "微策略": [
       "3257"
     ],
+    "日本央行": [
+      "423"
+    ],
+    "日本银行": [
+      "423"
+    ],
     "最高法院": [
       "1546"
     ],
     "欧洲中央银行": [
-      "418"
+      "418",
+      "422"
     ],
     "欧洲央行": [
-      "418"
+      "418",
+      "422"
     ],
     "比特币": [
       "3256",
@@ -6443,6 +6987,9 @@
     ],
     "经济衰退": [
       "3265"
+    ],
+    "美联储": [
+      "421"
     ],
     "耶稣基督": [
       "2670"
@@ -6518,21 +7065,45 @@
     "backpack 交易所": [
       "95"
     ],
+    "bank japan": [
+      "423"
+    ],
+    "bank japan decision": [
+      "423"
+    ],
+    "bank of japan": [
+      "423"
+    ],
     "barrel": [
       "420"
     ],
+    "basis points": [
+      "421"
+    ],
+    "beige book": [
+      "421"
+    ],
     "black gold": [
       "420"
+    ],
+    "boj": [
+      "423"
     ],
     "ceasefire": [
       "415",
       "416"
     ],
+    "central bank": [
+      "421",
+      "422",
+      "423"
+    ],
     "championship": [
       "419"
     ],
     "christine lagarde": [
-      "418"
+      "418",
+      "422"
     ],
     "cl": [
       "420"
@@ -6550,6 +7121,9 @@
     "conflict ends": [
       "416"
     ],
+    "cpi": [
+      "421"
+    ],
     "crude oil": [
       "420"
     ],
@@ -6566,28 +7140,55 @@
       "95"
     ],
     "decision dfr": [
-      "418"
+      "418",
+      "422"
     ],
     "decision dfr apr": [
       "418"
     ],
+    "decision dfr june": [
+      "422"
+    ],
+    "decision july": [
+      "421"
+    ],
+    "decision june": [
+      "423"
+    ],
+    "decision june 2026": [
+      "423"
+    ],
     "deposit facility rate": [
-      "418"
+      "418",
+      "422"
     ],
     "dfr": [
-      "418"
+      "418",
+      "422"
     ],
     "dfr apr": [
       "418"
     ],
+    "dfr june": [
+      "422"
+    ],
+    "dfr june 2026": [
+      "422"
+    ],
+    "dot plot": [
+      "421"
+    ],
     "ecb": [
-      "418"
+      "418",
+      "422"
     ],
     "ecb rates": [
-      "418"
+      "418",
+      "422"
     ],
     "ecb rates decision": [
-      "418"
+      "418",
+      "422"
     ],
     "end war": [
       "415"
@@ -6605,13 +7206,16 @@
       "419"
     ],
     "euro": [
-      "418"
+      "418",
+      "422"
     ],
     "european central bank": [
-      "418"
+      "418",
+      "422"
     ],
     "eurozone": [
-      "418"
+      "418",
+      "422"
     ],
     "exchange launch": [
       "95"
@@ -6625,6 +7229,18 @@
     "fdv above one": [
       "95"
     ],
+    "fed": [
+      "421"
+    ],
+    "fed decision": [
+      "421"
+    ],
+    "fed decision july": [
+      "421"
+    ],
+    "federal reserve": [
+      "421"
+    ],
     "finals": [
       "419"
     ],
@@ -6633,6 +7249,9 @@
     ],
     "first stand tournament": [
       "419"
+    ],
+    "fomc": [
+      "421"
     ],
     "frankfurt": [
       "418"
@@ -6646,6 +7265,9 @@
     "gaming": [
       "419"
     ],
+    "governing council": [
+      "422"
+    ],
     "hit march": [
       "420"
     ],
@@ -6654,13 +7276,18 @@
       "416"
     ],
     "inflation": [
-      "418"
+      "418",
+      "421",
+      "422"
     ],
     "initial valuation": [
       "95"
     ],
     "interest rates": [
-      "418"
+      "418",
+      "421",
+      "422",
+      "423"
     ],
     "iran": [
       "415",
@@ -6684,8 +7311,27 @@
     "israel/us conflict ends": [
       "416"
     ],
+    "japan decision": [
+      "423"
+    ],
+    "japan decision june": [
+      "423"
+    ],
+    "jerome powell": [
+      "421"
+    ],
     "jerusalem": [
       "416"
+    ],
+    "jpy": [
+      "423"
+    ],
+    "june 2026": [
+      "422",
+      "423"
+    ],
+    "kazuo ueda": [
+      "423"
     ],
     "league": [
       "419"
@@ -6724,10 +7370,17 @@
       "419"
     ],
     "monetary easing": [
-      "418"
+      "418",
+      "422"
     ],
     "monetary policy": [
-      "418"
+      "418",
+      "421",
+      "422",
+      "423"
+    ],
+    "monetary tightening": [
+      "422"
     ],
     "nymex": [
       "420"
@@ -6771,26 +7424,43 @@
     "petroleum": [
       "420"
     ],
+    "policy board": [
+      "423"
+    ],
     "policy meeting": [
       "418"
+    ],
+    "policy rate": [
+      "423"
     ],
     "pro play": [
       "419"
     ],
     "rate cut": [
-      "418"
+      "418",
+      "421"
+    ],
+    "rate decision": [
+      "422",
+      "423"
     ],
     "rate hike": [
-      "418"
+      "418",
+      "421"
     ],
     "rates decision": [
-      "418"
+      "418",
+      "422"
     ],
     "rates decision dfr": [
-      "418"
+      "418",
+      "422"
     ],
     "riot games": [
       "419"
+    ],
+    "short-term rates": [
+      "423"
     ],
     "stand tournament": [
       "419"
@@ -6843,6 +7513,12 @@
     "trump iran": [
       "415"
     ],
+    "ueda": [
+      "423"
+    ],
+    "us economy": [
+      "421"
+    ],
     "usa": [
       "416"
     ],
@@ -6865,17 +7541,31 @@
     "wti crude": [
       "420"
     ],
+    "yen": [
+      "423"
+    ],
     "以色列": [
       "416"
     ],
+    "日本央行": [
+      "423"
+    ],
+    "日本银行": [
+      "423"
+    ],
     "欧洲中央银行": [
-      "418"
+      "418",
+      "422"
     ],
     "欧洲央行": [
-      "418"
+      "418",
+      "422"
     ],
     "特朗普": [
       "415"
+    ],
+    "美联储": [
+      "421"
     ],
     "英雄联盟": [
       "419"
