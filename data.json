@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-21 00:58:20 UTC+8",
+    "generatedAt": "2026-03-21 10:45:24 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 44,
-      "markets": 167,
+      "kept": 34,
+      "markets": 157,
       "keywords": 740,
       "events": {
         "events": 6
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 956,
+        "cutoff_expired": 966,
         "cutoff_zero_kept": 2,
         "resolved": 0,
         "missing_id": 0,
@@ -3910,42 +3910,6 @@
         }
       ]
     },
-    "9897": {
-      "title": "NBA: Heat vs Rockets (Mar. 21 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/9897?ref=opinion_hud",
-      "yesTokenId": "28811662597587246124638542375351851318439008482432781796980960576758929058373",
-      "noTokenId": "70905020615071207161918083937837407503948734754810443564078506052768916730835",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Heat",
-        "noLabel": "Rockets"
-      },
-      "type": "binary"
-    },
-    "9898": {
-      "title": "NBA: Warriors vs Hawks (Mar. 21 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/9898?ref=opinion_hud",
-      "yesTokenId": "1809676125118206272458649757534642083932261510297400526519890711362436404853",
-      "noTokenId": "48106286005377355941490305245582197991378374572017083733387979096772132572060",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Warriors",
-        "noLabel": "Hawks"
-      },
-      "type": "binary"
-    },
-    "9896": {
-      "title": "NBA: Lakers vs Magic (Mar. 21 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/9896?ref=opinion_hud",
-      "yesTokenId": "25084205010335974380568343930426663321322318523999186843226926152784631433063",
-      "noTokenId": "81860706580411763161562502241215997122196137395711060341751562350873233926176",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Lakers",
-        "noLabel": "Magic"
-      },
-      "type": "binary"
-    },
     "420": {
       "title": "Will Crude Oil (CL) hit ... by end of March?",
       "url": "https://app.opinion.trade/market/420?ref=opinion_hud",
@@ -4043,54 +4007,6 @@
         }
       ]
     },
-    "9955": {
-      "title": "Bitcoin Up or Down on March 21?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/9955?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9979": {
-      "title": "BNB Up or Down - Hourly (Mar 20, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9979?ref=opinion_hud",
-      "yesTokenId": "68479127129073577514203156361470660101790923420282550185066427576784731058025",
-      "noTokenId": "38547058867505667918599607773694285818015859323904151881646585559185421711358",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "9980": {
-      "title": "BTC Up or Down - Hourly (Mar 20, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9980?ref=opinion_hud",
-      "yesTokenId": "68707221170925620382824712614099798943884682962644996120865626892120364753109",
-      "noTokenId": "43247229821429481782517588011206548901232144164905936233035728036162623338686",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "9981": {
-      "title": "ETH Up or Down - Hourly (Mar 20, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/9981?ref=opinion_hud",
-      "yesTokenId": "81941338939782845161097126881634147967827812720984119940596346384465814312983",
-      "noTokenId": "71920105334209715279020765984573117630714206530418905177070175270417081525476",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "9974": {
       "title": "May 31, 2026",
       "url": "https://app.opinion.trade/market/9974?ref=opinion_hud",
@@ -4115,18 +4031,6 @@
       },
       "type": "binary"
     },
-    "9965": {
-      "title": "KPL: WB vs KSG (Mar. 21 2:00AM ET)",
-      "url": "https://app.opinion.trade/market/9965?ref=opinion_hud",
-      "yesTokenId": "15777993602727403741281310739892884181325452149940568046462867315441353146245",
-      "noTokenId": "66467168362003626327315967133872002352687771333344754327516574948965592307104",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "WB",
-        "noLabel": "KSG"
-      },
-      "type": "binary"
-    },
     "9968": {
       "title": "KPL: HERO vs TES.A (Mar. 22 2:00AM ET)",
       "url": "https://app.opinion.trade/market/9968?ref=opinion_hud",
@@ -4139,18 +4043,6 @@
       },
       "type": "binary"
     },
-    "9967": {
-      "title": "KPL: WOL vs AG.SP (Mar. 21 8:00AM ET)",
-      "url": "https://app.opinion.trade/market/9967?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "9970": {
       "title": "KPL: WE vs TTG (Mar. 22 8:00AM ET)",
       "url": "https://app.opinion.trade/market/9970?ref=opinion_hud",
@@ -4160,18 +4052,6 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "9966": {
-      "title": "KPL: JDG vs DYG (Mar. 21 5:00AM ET)",
-      "url": "https://app.opinion.trade/market/9966?ref=opinion_hud",
-      "yesTokenId": "36311754735269462721188520294717830340330397458961172497360294482651667295843",
-      "noTokenId": "7439970075219809287415380663354494618508109652386515331373000486906871531321",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "JDG",
-        "noLabel": "DYG"
       },
       "type": "binary"
     },
