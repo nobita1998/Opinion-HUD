@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-23 11:20:10 UTC+8",
+    "generatedAt": "2026-03-23 17:10:11 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 46,
-      "markets": 163,
-      "keywords": 753,
+      "kept": 54,
+      "markets": 162,
+      "keywords": 777,
       "events": {
-        "events": 8
+        "events": 9
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 954,
+        "cutoff_expired": 946,
         "cutoff_zero_kept": 2,
         "resolved": 0,
         "missing_id": 0,
@@ -30,11 +30,11 @@
         "onlyAiForNew": true,
         "reused": 8,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
+        "calls": 1,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 1,
         "errors": 0
       }
     }
@@ -405,6 +405,56 @@
       "sig": "a4b9c8b8",
       "sigFull": "a4b9c8b8",
       "sigCore": "b097cd14",
+      "reused": false
+    },
+    "424": {
+      "title": "King Pro League Spring 2026: Winner",
+      "marketIds": [
+        "424"
+      ],
+      "bestMarketId": "424",
+      "bestLabels": null,
+      "keywords": [
+        "kpl",
+        "king pro league",
+        "honor of kings",
+        "hok",
+        "esports",
+        "spring split",
+        "2026",
+        "finals",
+        "playoffs",
+        "tencent",
+        "timi",
+        "wangzhe rongyao",
+        "mobile game",
+        "tournament",
+        "championship",
+        "king pro",
+        "pro league",
+        "league spring",
+        "spring 2026",
+        "2026 winner",
+        "pro league spring",
+        "league spring 2026",
+        "spring 2026 winner"
+      ],
+      "entities": [
+        "king pro league",
+        "2026年春季赛"
+      ],
+      "entityGroups": [
+        [
+          "king pro league",
+          "王者荣耀职业联赛"
+        ],
+        [
+          "2026年春季赛"
+        ]
+      ],
+      "sig": "c8f923d9",
+      "sigFull": "c8f923d9",
+      "sigCore": "80e67351",
       "reused": false
     }
   },
@@ -4241,42 +4291,6 @@
         }
       ]
     },
-    "10178": {
-      "title": "ETH Up or Down - Hourly (Mar 23, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10178?ref=opinion_hud",
-      "yesTokenId": "25411106630575582072672752111344584581562840390394476524658778536086831229370",
-      "noTokenId": "62688757733431420753163260354127852038094169553290108063226240385401919237593",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10177": {
-      "title": "BTC Up or Down - Hourly (Mar 23, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10177?ref=opinion_hud",
-      "yesTokenId": "112261606220136258905928047222740613043897264413782748994431287607437234560859",
-      "noTokenId": "97837441098222477426907549663017508578325552355858961287974415628184381421745",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10176": {
-      "title": "BNB Up or Down - Hourly (Mar 23, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10176?ref=opinion_hud",
-      "yesTokenId": "29042504824562339115304105362054077737228984596104571899684948957383773040277",
-      "noTokenId": "110613513377061261144506336718970602356347504404295120878701778935470866955093",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "10190": {
       "title": "NBA: Magic vs Cavaliers (Mar. 24 8:00PM ET)",
       "url": "https://app.opinion.trade/market/10190?ref=opinion_hud",
@@ -4324,6 +4338,130 @@
         "noLabel": "DOWN"
       },
       "type": "binary"
+    },
+    "424": {
+      "title": "King Pro League Spring 2026: Winner",
+      "url": "https://app.opinion.trade/market/424?ref=opinion_hud",
+      "yesTokenId": "109269735358127535852910349821931224156958628736581001425309608035929366981599",
+      "noTokenId": "63261390625422928240981473726478724288871017669656276609101278377126242960193",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Yes",
+        "noLabel": "No"
+      },
+      "keywords": [
+        "kpl",
+        "king pro league",
+        "honor of kings",
+        "hok",
+        "esports",
+        "spring split",
+        "2026",
+        "finals",
+        "playoffs",
+        "tencent",
+        "timi",
+        "wangzhe rongyao",
+        "mobile game",
+        "tournament",
+        "championship",
+        "king pro",
+        "pro league",
+        "league spring",
+        "spring 2026",
+        "2026 winner",
+        "pro league spring",
+        "league spring 2026",
+        "spring 2026 winner"
+      ],
+      "entities": [
+        "king pro league",
+        "2026年春季赛"
+      ],
+      "entityGroups": [
+        [
+          "king pro league",
+          "王者荣耀职业联赛"
+        ],
+        [
+          "2026年春季赛"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "10208",
+          "title": "LGDNBW",
+          "yesTokenId": "109269735358127535852910349821931224156958628736581001425309608035929366981599",
+          "noTokenId": "63261390625422928240981473726478724288871017669656276609101278377126242960193"
+        },
+        {
+          "marketId": "10209",
+          "title": "Q9",
+          "yesTokenId": "87321089528170862439786917888427371063464894368765980509695838282540995914803",
+          "noTokenId": "70115744689958108822435586382252128808410405977241642279619269425799574916052"
+        },
+        {
+          "marketId": "10210",
+          "title": "HERO",
+          "yesTokenId": "68616542450572814081597530400396002651975343124835151356490169846554175462300",
+          "noTokenId": "80623998535262579249907557007393761295223471713378828399474551073428607863805"
+        },
+        {
+          "marketId": "10211",
+          "title": "TTG",
+          "yesTokenId": "70056179126708437113208711889639111253423671003074931035477900544832930027856",
+          "noTokenId": "13077052370539829701447834274055903986112377385378803362742082833376375112945"
+        },
+        {
+          "marketId": "10212",
+          "title": "JDG",
+          "yesTokenId": "62737748370143393807848476131776262547608332839085655125758792003918245675473",
+          "noTokenId": "61760386230562935290532530917112345786077997482823325401586897167180856906563"
+        },
+        {
+          "marketId": "10213",
+          "title": "AGSP",
+          "yesTokenId": "90486778066233988993938833947438568385406090053444216812043472604825709964360",
+          "noTokenId": "95718333496076937530206505503246500068086348495494571503847850673931975379708"
+        },
+        {
+          "marketId": "10214",
+          "title": "WOL",
+          "yesTokenId": "94600072391811287711741707396714924093188370611535908945940696592706413264090",
+          "noTokenId": "78305833401215334996611480159515427751440758871666954308772858448816299188848"
+        },
+        {
+          "marketId": "10215",
+          "title": "KSG",
+          "yesTokenId": "37935361830850164934786522453519372883338016239155775185825283539399914949277",
+          "noTokenId": "5315457111443364042584238315243598755785086138668812588427875452420386199284"
+        },
+        {
+          "marketId": "10216",
+          "title": "WB",
+          "yesTokenId": "63728979476309061136107988732139106502109846681235446543482617745877178537657",
+          "noTokenId": "6263064172612706726245074712916086265307616004241293677518213271122281437680"
+        },
+        {
+          "marketId": "10217",
+          "title": "DYG",
+          "yesTokenId": "115127117036958851059239761556433609908946106823305613592342050696410203473090",
+          "noTokenId": "1884479094985677025936033837980110753082739705379081383091953299337681590686"
+        }
+      ]
+    },
+    "10207": {
+      "title": "KPL Spring 2026: LGD.NBW vs Q9 (Mar. 26 6:30AM ET)",
+      "url": "https://app.opinion.trade/market/10207?ref=opinion_hud",
+      "yesTokenId": "86354603622934922832782333271200936961697800296402792698484900118267757758552",
+      "noTokenId": "25786649047039287666123800489513988073455937533690661646666764875210430908551",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "LGD.NBW",
+        "noLabel": "Q9"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -4363,13 +4501,17 @@
       "3448",
       "3449",
       "3508",
-      "3509"
+      "3509",
+      "424"
     ],
     "2026 nfl": [
       "3072"
     ],
     "2026 nfl draft": [
       "3072"
+    ],
+    "2026 winner": [
+      "424"
     ],
     "2026-06-30": [
       "3508"
@@ -4389,6 +4531,9 @@
     ],
     "2026年nfl选秀": [
       "3072"
+    ],
+    "2026年春季赛": [
+      "424"
     ],
     "2026年选秀": [
       "3072"
@@ -4771,6 +4916,9 @@
     ],
     "ceo march": [
       "2368"
+    ],
+    "championship": [
+      "424"
     ],
     "changpeng zhao": [
       "3369"
@@ -5162,6 +5310,9 @@
     "eschatology": [
       "2670"
     ],
+    "esports": [
+      "424"
+    ],
     "eth": [
       "3364"
     ],
@@ -5265,6 +5416,9 @@
     ],
     "federal reserve": [
       "421"
+    ],
+    "finals": [
+      "424"
     ],
     "finance": [
       "3525"
@@ -5408,11 +5562,17 @@
     "hit march": [
       "420"
     ],
+    "hok": [
+      "424"
+    ],
     "holly wheeler": [
       "3222"
     ],
     "hollywood": [
       "3158"
+    ],
+    "honor of kings": [
+      "424"
     ],
     "horror": [
       "3221",
@@ -5597,6 +5757,15 @@
     "kazuo ueda": [
       "423"
     ],
+    "king pro": [
+      "424"
+    ],
+    "king pro league": [
+      "424"
+    ],
+    "kpl": [
+      "424"
+    ],
     "kraken": [
       "3362"
     ],
@@ -5636,6 +5805,12 @@
     ],
     "leadership change": [
       "2368"
+    ],
+    "league spring": [
+      "424"
+    ],
+    "league spring 2026": [
+      "424"
     ],
     "leave": [
       "2368"
@@ -5767,6 +5942,9 @@
     ],
     "missile": [
       "3039"
+    ],
+    "mobile game": [
+      "424"
     ],
     "monad": [
       "1721"
@@ -5976,6 +6154,9 @@
     "pick 2026 nfl": [
       "3072"
     ],
+    "playoffs": [
+      "424"
+    ],
     "policy board": [
       "423"
     ],
@@ -6014,6 +6195,12 @@
     ],
     "private key compromise": [
       "3360"
+    ],
+    "pro league": [
+      "424"
+    ],
+    "pro league spring": [
+      "424"
     ],
     "proof of work": [
       "3256"
@@ -6310,6 +6497,15 @@
     "spend": [
       "3365"
     ],
+    "spring 2026": [
+      "424"
+    ],
+    "spring 2026 winner": [
+      "424"
+    ],
+    "spring split": [
+      "424"
+    ],
     "st": [
       "3222"
     ],
@@ -6412,6 +6608,9 @@
       "2668",
       "3356"
     ],
+    "tencent": [
+      "424"
+    ],
     "tensions": [
       "416"
     ],
@@ -6484,6 +6683,9 @@
       "3449",
       "3509"
     ],
+    "timi": [
+      "424"
+    ],
     "token": [
       "1721",
       "3367"
@@ -6503,6 +6705,9 @@
     ],
     "top pick": [
       "3072"
+    ],
+    "tournament": [
+      "424"
     ],
     "trade policy": [
       "1546"
@@ -6632,6 +6837,9 @@
     ],
     "wallet": [
       "3365"
+    ],
+    "wangzhe rongyao": [
+      "424"
     ],
     "war": [
       "3039",
@@ -6768,6 +6976,9 @@
       "3062",
       "415"
     ],
+    "王者荣耀职业联赛": [
+      "424"
+    ],
     "经济衰退": [
       "3265"
     ],
@@ -6803,6 +7014,15 @@
     ]
   },
   "eventIndex": {
+    "2026": [
+      "424"
+    ],
+    "2026 winner": [
+      "424"
+    ],
+    "2026年春季赛": [
+      "424"
+    ],
     "above one": [
       "95"
     ],
@@ -6868,6 +7088,9 @@
       "421",
       "422",
       "423"
+    ],
+    "championship": [
+      "424"
     ],
     "christine lagarde": [
       "418",
@@ -6967,6 +7190,9 @@
     "escalation": [
       "416"
     ],
+    "esports": [
+      "424"
+    ],
     "euro": [
       "418",
       "422"
@@ -7003,6 +7229,9 @@
     "federal reserve": [
       "421"
     ],
+    "finals": [
+      "424"
+    ],
     "fomc": [
       "421"
     ],
@@ -7020,6 +7249,12 @@
     ],
     "hit march": [
       "420"
+    ],
+    "hok": [
+      "424"
+    ],
+    "honor of kings": [
+      "424"
     ],
     "hostilities": [
       "415",
@@ -7083,6 +7318,21 @@
     "kazuo ueda": [
       "423"
     ],
+    "king pro": [
+      "424"
+    ],
+    "king pro league": [
+      "424"
+    ],
+    "kpl": [
+      "424"
+    ],
+    "league spring": [
+      "424"
+    ],
+    "league spring 2026": [
+      "424"
+    ],
     "listing": [
       "95"
     ],
@@ -7100,6 +7350,9 @@
     ],
     "military operations against": [
       "415"
+    ],
+    "mobile game": [
+      "424"
     ],
     "monetary easing": [
       "418",
@@ -7156,6 +7409,9 @@
     "petroleum": [
       "420"
     ],
+    "playoffs": [
+      "424"
+    ],
     "policy board": [
       "423"
     ],
@@ -7164,6 +7420,12 @@
     ],
     "policy rate": [
       "423"
+    ],
+    "pro league": [
+      "424"
+    ],
+    "pro league spring": [
+      "424"
     ],
     "rate cut": [
       "418",
@@ -7188,11 +7450,23 @@
     "short-term rates": [
       "423"
     ],
+    "spring 2026": [
+      "424"
+    ],
+    "spring 2026 winner": [
+      "424"
+    ],
+    "spring split": [
+      "424"
+    ],
     "strike": [
       "415"
     ],
     "tehran": [
       "416"
+    ],
+    "tencent": [
+      "424"
     ],
     "tensions": [
       "416"
@@ -7200,11 +7474,17 @@
     "tge": [
       "95"
     ],
+    "timi": [
+      "424"
+    ],
     "token launch": [
       "95"
     ],
     "token price": [
       "95"
+    ],
+    "tournament": [
+      "424"
     ],
     "trading": [
       "95"
@@ -7235,6 +7515,9 @@
     ],
     "valuation": [
       "95"
+    ],
+    "wangzhe rongyao": [
+      "424"
     ],
     "war": [
       "415",
@@ -7274,6 +7557,9 @@
     ],
     "特朗普": [
       "415"
+    ],
+    "王者荣耀职业联赛": [
+      "424"
     ],
     "美联储": [
       "421"
