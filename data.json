@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-23 00:44:33 UTC+8",
+    "generatedAt": "2026-03-23 11:20:10 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 43,
-      "markets": 161,
-      "keywords": 776,
+      "kept": 46,
+      "markets": 163,
+      "keywords": 753,
       "events": {
         "events": 8
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 957,
+        "cutoff_expired": 954,
         "cutoff_zero_kept": 2,
         "resolved": 0,
         "missing_id": 0,
@@ -181,56 +181,6 @@
       "sig": "309f59e9",
       "sigFull": "309f59e9",
       "sigCore": "5aad0a21",
-      "reused": false
-    },
-    "419": {
-      "title": "LoL 2026 First Stand Tournament: Winner",
-      "marketIds": [
-        "419"
-      ],
-      "bestMarketId": "419",
-      "bestLabels": null,
-      "keywords": [
-        "league of legends",
-        "lol",
-        "first stand",
-        "2026",
-        "esports",
-        "riot games",
-        "tournament",
-        "competitive",
-        "pro play",
-        "summoner's rift",
-        "moba",
-        "league",
-        "gaming",
-        "championship",
-        "finals",
-        "lol 2026",
-        "2026 first",
-        "stand tournament",
-        "tournament winner",
-        "lol 2026 first",
-        "2026 first stand",
-        "first stand tournament",
-        "stand tournament winner"
-      ],
-      "entities": [
-        "lol",
-        "first stand"
-      ],
-      "entityGroups": [
-        [
-          "lol",
-          "英雄联盟"
-        ],
-        [
-          "first stand"
-        ]
-      ],
-      "sig": "ef1d72de",
-      "sigFull": "ef1d72de",
-      "sigCore": "97e02547",
       "reused": false
     },
     "95": {
@@ -3841,106 +3791,6 @@
         }
       ]
     },
-    "419": {
-      "title": "LoL 2026 First Stand Tournament: Winner",
-      "url": "https://app.opinion.trade/market/419?ref=opinion_hud",
-      "yesTokenId": "30432726544085630636619249954576481518996488570504394781858952866231036121066",
-      "noTokenId": "65842351553381335905715781267695849139163048937652061770122007989661478257832",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Yes",
-        "noLabel": "No"
-      },
-      "keywords": [
-        "league of legends",
-        "lol",
-        "first stand",
-        "2026",
-        "esports",
-        "riot games",
-        "tournament",
-        "competitive",
-        "pro play",
-        "summoner's rift",
-        "moba",
-        "league",
-        "gaming",
-        "championship",
-        "finals",
-        "lol 2026",
-        "2026 first",
-        "stand tournament",
-        "tournament winner",
-        "lol 2026 first",
-        "2026 first stand",
-        "first stand tournament",
-        "stand tournament winner"
-      ],
-      "entities": [
-        "lol",
-        "first stand"
-      ],
-      "entityGroups": [
-        [
-          "lol",
-          "英雄联盟"
-        ],
-        [
-          "first stand"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8981",
-          "title": "BLG",
-          "yesTokenId": "81394110583867895034064528323352686358681754286553913119737666361711553735185",
-          "noTokenId": "44358021281998372495006581832436287505976083858783410204746524282577218246317"
-        },
-        {
-          "marketId": "8982",
-          "title": "JDG",
-          "yesTokenId": "84842856328387770144737805991364321613484514443478953651590123475212806132736",
-          "noTokenId": "21263814742105503480101075896199744845716046642882208623743691738680662346918"
-        },
-        {
-          "marketId": "8983",
-          "title": "G2",
-          "yesTokenId": "30432726544085630636619249954576481518996488570504394781858952866231036121066",
-          "noTokenId": "65842351553381335905715781267695849139163048937652061770122007989661478257832"
-        },
-        {
-          "marketId": "8979",
-          "title": "GEN",
-          "yesTokenId": "40193178944868727320273609368337830937212630189445616736644025191611906961276",
-          "noTokenId": "39373036110476931837188974377398453893881131471294365773268324663131235493087"
-        },
-        {
-          "marketId": "8980",
-          "title": "BFX",
-          "yesTokenId": "110439656358314727591287692861310940126691879918537487882896139775932280146219",
-          "noTokenId": "22190657979615620700854854877563452748164007656996844073817813942859880473793"
-        },
-        {
-          "marketId": "8984",
-          "title": "TSW",
-          "yesTokenId": "34779533973966233647147059375806011016879323062386979473527350941384766619673",
-          "noTokenId": "19007263710069399189900192221404773974177807134174270337939965787706979035235"
-        },
-        {
-          "marketId": "8985",
-          "title": "LYON",
-          "yesTokenId": "68356581651526337675757657959633477910849873165926020341974222763444414282920",
-          "noTokenId": "14889433728296510627464105085106819069749963190386812113322154566067898776992"
-        },
-        {
-          "marketId": "8986",
-          "title": "LOUD",
-          "yesTokenId": "101159538958959456411486663812127572533342260953224641732414865246114384548211",
-          "noTokenId": "1009294030002189374355309921940013922940791319808568232179300288127944771828"
-        }
-      ]
-    },
     "95": {
       "title": "Backpack FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/95?ref=opinion_hud",
@@ -4391,11 +4241,11 @@
         }
       ]
     },
-    "10143": {
-      "title": "BNB Up or Down - Hourly (Mar 22, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10143?ref=opinion_hud",
-      "yesTokenId": "28487260766499720287887818549496532484002423189578547866573936618610099159154",
-      "noTokenId": "34721284871742198932241869225544499917643346155324173047667611388527489412728",
+    "10178": {
+      "title": "ETH Up or Down - Hourly (Mar 23, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10178?ref=opinion_hud",
+      "yesTokenId": "25411106630575582072672752111344584581562840390394476524658778536086831229370",
+      "noTokenId": "62688757733431420753163260354127852038094169553290108063226240385401919237593",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -4403,11 +4253,11 @@
       },
       "type": "binary"
     },
-    "10144": {
-      "title": "BTC Up or Down - Hourly (Mar 22, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10144?ref=opinion_hud",
-      "yesTokenId": "1164381542387275979107167920640009592832110154574843637985301910414824371514",
-      "noTokenId": "91843862286030725770208808299271956089565567173083672483472124594965024853135",
+    "10177": {
+      "title": "BTC Up or Down - Hourly (Mar 23, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10177?ref=opinion_hud",
+      "yesTokenId": "112261606220136258905928047222740613043897264413782748994431287607437234560859",
+      "noTokenId": "97837441098222477426907549663017508578325552355858961287974415628184381421745",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -4415,11 +4265,11 @@
       },
       "type": "binary"
     },
-    "10145": {
-      "title": "ETH Up or Down - Hourly (Mar 22, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10145?ref=opinion_hud",
-      "yesTokenId": "98210957551280656698742769565295455895816247875483977630482207828039939403097",
-      "noTokenId": "36949773430325146328175235748839370448733527127924554691467824314694119515546",
+    "10176": {
+      "title": "BNB Up or Down - Hourly (Mar 23, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10176?ref=opinion_hud",
+      "yesTokenId": "29042504824562339115304105362054077737228984596104571899684948957383773040277",
+      "noTokenId": "110613513377061261144506336718970602356347504404295120878701778935470866955093",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -4427,11 +4277,47 @@
       },
       "type": "binary"
     },
-    "10142": {
-      "title": "Bitcoin Up or Down on March 23?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/10142?ref=opinion_hud",
-      "yesTokenId": "95247599635313129263807133899629095021594113843225621738163468652482283954338",
-      "noTokenId": "104624215027692496911392914973656093177995177039441348844606657012021706362779",
+    "10190": {
+      "title": "NBA: Magic vs Cavaliers (Mar. 24 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/10190?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "10189": {
+      "title": "NBA: Pelicans vs Knicks (Mar. 24 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/10189?ref=opinion_hud",
+      "yesTokenId": "61571617954694348991089921699108718796348527651456152187997443478608433091948",
+      "noTokenId": "78796503963852408747124699625101195194589951048611295815556254282501694958251",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Pelicans",
+        "noLabel": "Knicks"
+      },
+      "type": "binary"
+    },
+    "10191": {
+      "title": "NBA: Nuggets vs Suns (Mar. 24 11:00PM ET)",
+      "url": "https://app.opinion.trade/market/10191?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "10188": {
+      "title": "Bitcoin Up or Down on March 24?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/10188?ref=opinion_hud",
+      "yesTokenId": "16918709526294620578220314287134757978404908071473663767035260833305322588419",
+      "noTokenId": "92637329171929913532087858498457993688179682208991961010851681202554528800257",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -4477,14 +4363,7 @@
       "3448",
       "3449",
       "3508",
-      "3509",
-      "419"
-    ],
-    "2026 first": [
-      "419"
-    ],
-    "2026 first stand": [
-      "419"
+      "3509"
     ],
     "2026 nfl": [
       "3072"
@@ -4893,9 +4772,6 @@
     "ceo march": [
       "2368"
     ],
-    "championship": [
-      "419"
-    ],
     "changpeng zhao": [
       "3369"
     ],
@@ -4969,9 +4845,6 @@
     ],
     "commodities": [
       "420"
-    ],
-    "competitive": [
-      "419"
     ],
     "conflict": [
       "3039",
@@ -5289,9 +5162,6 @@
     "eschatology": [
       "2670"
     ],
-    "esports": [
-      "419"
-    ],
     "eth": [
       "3364"
     ],
@@ -5396,9 +5266,6 @@
     "federal reserve": [
       "421"
     ],
-    "finals": [
-      "419"
-    ],
     "finance": [
       "3525"
     ],
@@ -5410,12 +5277,6 @@
     ],
     "first overall": [
       "3072"
-    ],
-    "first stand": [
-      "419"
-    ],
-    "first stand tournament": [
-      "419"
     ],
     "flash loan attack": [
       "3360"
@@ -5448,9 +5309,6 @@
     "futures": [
       "3361",
       "420"
-    ],
-    "gaming": [
-      "419"
     ],
     "gaten": [
       "3224"
@@ -5779,12 +5637,6 @@
     "leadership change": [
       "2368"
     ],
-    "league": [
-      "419"
-    ],
-    "league of legends": [
-      "419"
-    ],
     "leave": [
       "2368"
     ],
@@ -5797,15 +5649,6 @@
     "listing": [
       "3362",
       "95"
-    ],
-    "lol": [
-      "419"
-    ],
-    "lol 2026": [
-      "419"
-    ],
-    "lol 2026 first": [
-      "419"
     ],
     "lp": [
       "2178"
@@ -5924,9 +5767,6 @@
     ],
     "missile": [
       "3039"
-    ],
-    "moba": [
-      "419"
     ],
     "monad": [
       "1721"
@@ -6175,9 +6015,6 @@
     "private key compromise": [
       "3360"
     ],
-    "pro play": [
-      "419"
-    ],
     "proof of work": [
       "3256"
     ],
@@ -6353,9 +6190,6 @@
       "2668",
       "3356"
     ],
-    "riot games": [
-      "419"
-    ],
     "rollup": [
       "3366"
     ],
@@ -6488,12 +6322,6 @@
     "stagnation": [
       "3265"
     ],
-    "stand tournament": [
-      "419"
-    ],
-    "stand tournament winner": [
-      "419"
-    ],
     "star": [
       "3158"
     ],
@@ -6537,9 +6365,6 @@
     ],
     "successor": [
       "2368"
-    ],
-    "summoner's rift": [
-      "419"
     ],
     "support": [
       "3055"
@@ -6678,12 +6503,6 @@
     ],
     "top pick": [
       "3072"
-    ],
-    "tournament": [
-      "419"
-    ],
-    "tournament winner": [
-      "419"
     ],
     "trade policy": [
       "1546"
@@ -6958,9 +6777,6 @@
     "耶稣基督": [
       "2670"
     ],
-    "英雄联盟": [
-      "419"
-    ],
     "蒂姆·库克": [
       "2368"
     ],
@@ -6987,15 +6803,6 @@
     ]
   },
   "eventIndex": {
-    "2026": [
-      "419"
-    ],
-    "2026 first": [
-      "419"
-    ],
-    "2026 first stand": [
-      "419"
-    ],
     "above one": [
       "95"
     ],
@@ -7062,9 +6869,6 @@
       "422",
       "423"
     ],
-    "championship": [
-      "419"
-    ],
     "christine lagarde": [
       "418",
       "422"
@@ -7074,9 +6878,6 @@
     ],
     "commodities": [
       "420"
-    ],
-    "competitive": [
-      "419"
     ],
     "conflict": [
       "415",
@@ -7166,9 +6967,6 @@
     "escalation": [
       "416"
     ],
-    "esports": [
-      "419"
-    ],
     "euro": [
       "418",
       "422"
@@ -7205,15 +7003,6 @@
     "federal reserve": [
       "421"
     ],
-    "finals": [
-      "419"
-    ],
-    "first stand": [
-      "419"
-    ],
-    "first stand tournament": [
-      "419"
-    ],
     "fomc": [
       "421"
     ],
@@ -7225,9 +7014,6 @@
     ],
     "futures": [
       "420"
-    ],
-    "gaming": [
-      "419"
     ],
     "governing council": [
       "422"
@@ -7297,23 +7083,8 @@
     "kazuo ueda": [
       "423"
     ],
-    "league": [
-      "419"
-    ],
-    "league of legends": [
-      "419"
-    ],
     "listing": [
       "95"
-    ],
-    "lol": [
-      "419"
-    ],
-    "lol 2026": [
-      "419"
-    ],
-    "lol 2026 first": [
-      "419"
     ],
     "market cap": [
       "95"
@@ -7329,9 +7100,6 @@
     ],
     "military operations against": [
       "415"
-    ],
-    "moba": [
-      "419"
     ],
     "monetary easing": [
       "418",
@@ -7397,9 +7165,6 @@
     "policy rate": [
       "423"
     ],
-    "pro play": [
-      "419"
-    ],
     "rate cut": [
       "418",
       "421"
@@ -7420,23 +7185,11 @@
       "418",
       "422"
     ],
-    "riot games": [
-      "419"
-    ],
     "short-term rates": [
       "423"
     ],
-    "stand tournament": [
-      "419"
-    ],
-    "stand tournament winner": [
-      "419"
-    ],
     "strike": [
       "415"
-    ],
-    "summoner's rift": [
-      "419"
     ],
     "tehran": [
       "416"
@@ -7452,12 +7205,6 @@
     ],
     "token price": [
       "95"
-    ],
-    "tournament": [
-      "419"
-    ],
-    "tournament winner": [
-      "419"
     ],
     "trading": [
       "95"
@@ -7530,9 +7277,6 @@
     ],
     "美联储": [
       "421"
-    ],
-    "英雄联盟": [
-      "419"
     ]
   }
 }
