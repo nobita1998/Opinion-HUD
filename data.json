@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-23 17:10:11 UTC+8",
+    "generatedAt": "2026-03-24 01:05:07 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 54,
-      "markets": 162,
-      "keywords": 777,
+      "kept": 50,
+      "markets": 161,
+      "keywords": 773,
       "events": {
-        "events": 9
+        "events": 8
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 946,
+        "cutoff_expired": 950,
         "cutoff_zero_kept": 2,
         "resolved": 0,
         "missing_id": 0,
@@ -30,11 +30,11 @@
         "onlyAiForNew": true,
         "reused": 8,
         "regenerated_empty_entitygroups": 0,
-        "calls": 1,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 1,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -135,52 +135,6 @@
       "sig": "07af54e5",
       "sigFull": "07af54e5",
       "sigCore": "d20f830c",
-      "reused": false
-    },
-    "418": {
-      "title": "ECB Rates Decision (DFR) APR",
-      "marketIds": [
-        "418"
-      ],
-      "bestMarketId": "418",
-      "bestLabels": null,
-      "keywords": [
-        "ecb",
-        "european central bank",
-        "interest rates",
-        "monetary policy",
-        "deposit facility rate",
-        "dfr",
-        "christine lagarde",
-        "eurozone",
-        "rate cut",
-        "rate hike",
-        "inflation",
-        "policy meeting",
-        "frankfurt",
-        "euro",
-        "monetary easing",
-        "ecb rates",
-        "rates decision",
-        "decision dfr",
-        "dfr apr",
-        "ecb rates decision",
-        "rates decision dfr",
-        "decision dfr apr"
-      ],
-      "entities": [
-        "ecb"
-      ],
-      "entityGroups": [
-        [
-          "ecb",
-          "欧洲央行",
-          "欧洲中央银行"
-        ]
-      ],
-      "sig": "309f59e9",
-      "sigFull": "309f59e9",
-      "sigCore": "5aad0a21",
       "reused": false
     },
     "95": {
@@ -3769,78 +3723,6 @@
         }
       ]
     },
-    "418": {
-      "title": "ECB Rates Decision (DFR) APR",
-      "url": "https://app.opinion.trade/market/418?ref=opinion_hud",
-      "yesTokenId": "80399243111831739047382918617630815207450564414352316711831685215498599453767",
-      "noTokenId": "48870497814298548487296186555635982275465049689866264144710694011434794102757",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "ecb",
-        "european central bank",
-        "interest rates",
-        "monetary policy",
-        "deposit facility rate",
-        "dfr",
-        "christine lagarde",
-        "eurozone",
-        "rate cut",
-        "rate hike",
-        "inflation",
-        "policy meeting",
-        "frankfurt",
-        "euro",
-        "monetary easing",
-        "ecb rates",
-        "rates decision",
-        "decision dfr",
-        "dfr apr",
-        "ecb rates decision",
-        "rates decision dfr",
-        "decision dfr apr"
-      ],
-      "entities": [
-        "ecb"
-      ],
-      "entityGroups": [
-        [
-          "ecb",
-          "欧洲央行",
-          "欧洲中央银行"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "8958",
-          "title": "50+ bps decrease",
-          "yesTokenId": "35554946474322955955919893380102081954182588481738999165205066364034247878716",
-          "noTokenId": "74543483942234009008179324958354654622662210966587630280522538309759010603435"
-        },
-        {
-          "marketId": "8959",
-          "title": "25 bps decrease",
-          "yesTokenId": "34378962732688334382090496805547727781730706264132276336321019311984495477896",
-          "noTokenId": "64779477329432673984006391199310481394775336998538059831466339055688094899104"
-        },
-        {
-          "marketId": "8960",
-          "title": "No change",
-          "yesTokenId": "8736194131661634434572980659182375299962708932869499123217905700884161867724",
-          "noTokenId": "40001716823794059909880059261817273712348945985966033209467859118518961267424"
-        },
-        {
-          "marketId": "8961",
-          "title": "Increase",
-          "yesTokenId": "80399243111831739047382918617630815207450564414352316711831685215498599453767",
-          "noTokenId": "48870497814298548487296186555635982275465049689866264144710694011434794102757"
-        }
-      ]
-    },
     "95": {
       "title": "Backpack FDV above ... one day after launch?",
       "url": "https://app.opinion.trade/market/95?ref=opinion_hud",
@@ -4951,7 +4833,6 @@
       "2670"
     ],
     "christine lagarde": [
-      "418",
       "422"
     ],
     "cl": [
@@ -5118,11 +4999,7 @@
       "3509"
     ],
     "decision dfr": [
-      "418",
       "422"
-    ],
-    "decision dfr apr": [
-      "418"
     ],
     "decision dfr june": [
       "422"
@@ -5165,7 +5042,6 @@
       "3359"
     ],
     "deposit facility rate": [
-      "418",
       "422"
     ],
     "depression": [
@@ -5175,11 +5051,7 @@
       "3361"
     ],
     "dfr": [
-      "418",
       "422"
-    ],
-    "dfr apr": [
-      "418"
     ],
     "dfr june": [
       "422"
@@ -5239,15 +5111,12 @@
       "2668"
     ],
     "ecb": [
-      "418",
       "422"
     ],
     "ecb rates": [
-      "418",
       "422"
     ],
     "ecb rates decision": [
-      "418",
       "422"
     ],
     "economic crisis": [
@@ -5330,15 +5199,12 @@
       "3364"
     ],
     "euro": [
-      "418",
       "422"
     ],
     "european central bank": [
-      "418",
       "422"
     ],
     "eurozone": [
-      "418",
       "422"
     ],
     "evm": [
@@ -5440,9 +5306,6 @@
     ],
     "founder": [
       "3369"
-    ],
-    "frankfurt": [
-      "418"
     ],
     "fugitive": [
       "1856"
@@ -5629,7 +5492,6 @@
       "3257"
     ],
     "inflation": [
-      "418",
       "421",
       "422"
     ],
@@ -5640,7 +5502,6 @@
       "95"
     ],
     "interest rates": [
-      "418",
       "421",
       "422",
       "423"
@@ -5956,11 +5817,9 @@
       "1721"
     ],
     "monetary easing": [
-      "418",
       "422"
     ],
     "monetary policy": [
-      "418",
       "421",
       "422",
       "423"
@@ -6160,9 +6019,6 @@
     "policy board": [
       "423"
     ],
-    "policy meeting": [
-      "418"
-    ],
     "policy rate": [
       "423"
     ],
@@ -6253,7 +6109,6 @@
       "2670"
     ],
     "rate cut": [
-      "418",
       "421"
     ],
     "rate decision": [
@@ -6261,15 +6116,12 @@
       "423"
     ],
     "rate hike": [
-      "418",
       "421"
     ],
     "rates decision": [
-      "418",
       "422"
     ],
     "rates decision dfr": [
-      "418",
       "422"
     ],
     "real gdp": [
@@ -6950,11 +6802,9 @@
       "1546"
     ],
     "欧洲中央银行": [
-      "418",
       "422"
     ],
     "欧洲央行": [
-      "418",
       "422"
     ],
     "比特币": [
@@ -7093,7 +6943,6 @@
       "424"
     ],
     "christine lagarde": [
-      "418",
       "422"
     ],
     "cl": [
@@ -7128,11 +6977,7 @@
       "95"
     ],
     "decision dfr": [
-      "418",
       "422"
-    ],
-    "decision dfr apr": [
-      "418"
     ],
     "decision dfr june": [
       "422"
@@ -7147,15 +6992,10 @@
       "423"
     ],
     "deposit facility rate": [
-      "418",
       "422"
     ],
     "dfr": [
-      "418",
       "422"
-    ],
-    "dfr apr": [
-      "418"
     ],
     "dfr june": [
       "422"
@@ -7167,15 +7007,12 @@
       "421"
     ],
     "ecb": [
-      "418",
       "422"
     ],
     "ecb rates": [
-      "418",
       "422"
     ],
     "ecb rates decision": [
-      "418",
       "422"
     ],
     "end war": [
@@ -7194,15 +7031,12 @@
       "424"
     ],
     "euro": [
-      "418",
       "422"
     ],
     "european central bank": [
-      "418",
       "422"
     ],
     "eurozone": [
-      "418",
       "422"
     ],
     "exchange launch": [
@@ -7235,9 +7069,6 @@
     "fomc": [
       "421"
     ],
-    "frankfurt": [
-      "418"
-    ],
     "fully diluted valuation": [
       "95"
     ],
@@ -7261,7 +7092,6 @@
       "416"
     ],
     "inflation": [
-      "418",
       "421",
       "422"
     ],
@@ -7269,7 +7099,6 @@
       "95"
     ],
     "interest rates": [
-      "418",
       "421",
       "422",
       "423"
@@ -7355,11 +7184,9 @@
       "424"
     ],
     "monetary easing": [
-      "418",
       "422"
     ],
     "monetary policy": [
-      "418",
       "421",
       "422",
       "423"
@@ -7415,9 +7242,6 @@
     "policy board": [
       "423"
     ],
-    "policy meeting": [
-      "418"
-    ],
     "policy rate": [
       "423"
     ],
@@ -7428,7 +7252,6 @@
       "424"
     ],
     "rate cut": [
-      "418",
       "421"
     ],
     "rate decision": [
@@ -7436,15 +7259,12 @@
       "423"
     ],
     "rate hike": [
-      "418",
       "421"
     ],
     "rates decision": [
-      "418",
       "422"
     ],
     "rates decision dfr": [
-      "418",
       "422"
     ],
     "short-term rates": [
@@ -7548,11 +7368,9 @@
       "423"
     ],
     "欧洲中央银行": [
-      "418",
       "422"
     ],
     "欧洲央行": [
-      "418",
       "422"
     ],
     "特朗普": [
