@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-24 01:05:07 UTC+8",
+    "generatedAt": "2026-03-24 10:52:59 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 50,
-      "markets": 161,
+      "kept": 46,
+      "markets": 157,
       "keywords": 773,
       "events": {
         "events": 8
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 950,
+        "cutoff_expired": 954,
         "cutoff_zero_kept": 2,
         "resolved": 0,
         "missing_id": 0,
@@ -4172,54 +4172,6 @@
           "noTokenId": "3837824512174676273664303814063539504788937282185355141842353094201909359891"
         }
       ]
-    },
-    "10190": {
-      "title": "NBA: Magic vs Cavaliers (Mar. 24 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/10190?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "10189": {
-      "title": "NBA: Pelicans vs Knicks (Mar. 24 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/10189?ref=opinion_hud",
-      "yesTokenId": "61571617954694348991089921699108718796348527651456152187997443478608433091948",
-      "noTokenId": "78796503963852408747124699625101195194589951048611295815556254282501694958251",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Pelicans",
-        "noLabel": "Knicks"
-      },
-      "type": "binary"
-    },
-    "10191": {
-      "title": "NBA: Nuggets vs Suns (Mar. 24 11:00PM ET)",
-      "url": "https://app.opinion.trade/market/10191?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "10188": {
-      "title": "Bitcoin Up or Down on March 24?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/10188?ref=opinion_hud",
-      "yesTokenId": "16918709526294620578220314287134757978404908071473663767035260833305322588419",
-      "noTokenId": "92637329171929913532087858498457993688179682208991961010851681202554528800257",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
     },
     "424": {
       "title": "King Pro League Spring 2026: Winner",
