@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-24 17:04:50 UTC+8",
+    "generatedAt": "2026-03-25 01:12:11 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 57,
-      "markets": 163,
+      "kept": 59,
+      "markets": 165,
       "keywords": 791,
       "events": {
         "events": 9
@@ -17,8 +17,8 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 943,
-        "cutoff_zero_kept": 2,
+        "cutoff_expired": 941,
+        "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 8,
+        "reused": 9,
         "regenerated_empty_entitygroups": 0,
-        "calls": 1,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 1,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -4490,6 +4490,30 @@
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10312": {
+      "title": "Draw",
+      "url": "https://app.opinion.trade/market/10312?ref=opinion_hud",
+      "yesTokenId": "89274240574897420261085228825956726278399228596375186976481258836347464004906",
+      "noTokenId": "24079787417024600567787269612836161936376377041019673976455305082633809874115",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Yes",
+        "noLabel": "No"
+      },
+      "type": "binary"
+    },
+    "10311": {
+      "title": "MOUZ",
+      "url": "https://app.opinion.trade/market/10311?ref=opinion_hud",
+      "yesTokenId": "43711746543498930034812826756442219127523422189164286963167357408276792819427",
+      "noTokenId": "75700797792040516543764487486410208170613313802655759002679925718132370462672",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Yes",
+        "noLabel": "No"
       },
       "type": "binary"
     }
