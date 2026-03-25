@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-25 01:12:11 UTC+8",
+    "generatedAt": "2026-03-25 11:15:15 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 59,
-      "markets": 165,
+      "kept": 55,
+      "markets": 161,
       "keywords": 791,
       "events": {
         "events": 9
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 941,
+        "cutoff_expired": 945,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -4444,54 +4444,6 @@
           "noTokenId": "28028207290586120846734714009877275871025829303061263810975874139938826156407"
         }
       ]
-    },
-    "10279": {
-      "title": "NBA: Mavericks vs Nuggets (Mar. 25 10:00PM ET)",
-      "url": "https://app.opinion.trade/market/10279?ref=opinion_hud",
-      "yesTokenId": "14726748418840069534642342033324940531209900240885612572856004332113311010265",
-      "noTokenId": "11891356443601169308971544601518537313053930681448963917986862121203151364666",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Mavericks",
-        "noLabel": "Nuggets"
-      },
-      "type": "binary"
-    },
-    "10277": {
-      "title": "NBA: Lakers vs Pacers (Mar. 25 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/10277?ref=opinion_hud",
-      "yesTokenId": "115236246613835085086971869223501263337143607806885535561288547378819959097619",
-      "noTokenId": "36482454181658946872493018330576642754855475268163788479022370857529932409408",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Lakers",
-        "noLabel": "Pacers"
-      },
-      "type": "binary"
-    },
-    "10278": {
-      "title": "NBA: Thunder vs Celtics (Mar. 25 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/10278?ref=opinion_hud",
-      "yesTokenId": "16447701051234848049545242904069920671749591685307013769607718125894769410475",
-      "noTokenId": "26176070258056273988405770403892398229981636133702646982696322910799242156063",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Thunder",
-        "noLabel": "Celtics"
-      },
-      "type": "binary"
-    },
-    "10280": {
-      "title": "Bitcoin Up or Down on March 25?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/10280?ref=opinion_hud",
-      "yesTokenId": "70497952435753960848339191702190965550185077485954138518150804867714079125516",
-      "noTokenId": "19763551406574869708338840075094658073990834580313988799045409749339901867118",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
     },
     "10312": {
       "title": "Draw",
