@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-25 11:15:15 UTC+8",
+    "generatedAt": "2026-03-25 17:04:00 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 55,
-      "markets": 161,
-      "keywords": 791,
+      "kept": 56,
+      "markets": 164,
+      "keywords": 775,
       "events": {
-        "events": 9
+        "events": 8
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 945,
+        "cutoff_expired": 944,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 9,
+        "reused": 8,
         "regenerated_empty_entitygroups": 0,
         "calls": 0,
         "retries": 0,
@@ -135,54 +135,6 @@
       "sig": "07af54e5",
       "sigFull": "07af54e5",
       "sigCore": "d20f830c",
-      "reused": false
-    },
-    "95": {
-      "title": "Backpack FDV above ... one day after launch?",
-      "marketIds": [
-        "95"
-      ],
-      "bestMarketId": "95",
-      "bestLabels": null,
-      "keywords": [
-        "backpack",
-        "backpack exchange",
-        "fdv",
-        "fully diluted valuation",
-        "crypto exchange",
-        "token launch",
-        "market cap",
-        "valuation",
-        "trading",
-        "listing",
-        "tge",
-        "token price",
-        "exchange launch",
-        "initial valuation",
-        "backpack fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "backpack fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "backpack"
-      ],
-      "entityGroups": [
-        [
-          "backpack",
-          "backpack 交易所"
-        ]
-      ],
-      "sig": "2c3d154b",
-      "sigFull": "2c3d154b",
-      "sigCore": "0b6865cd",
       "reused": false
     },
     "420": {
@@ -3772,110 +3724,6 @@
         }
       ]
     },
-    "95": {
-      "title": "Backpack FDV above ... one day after launch?",
-      "url": "https://app.opinion.trade/market/95?ref=opinion_hud",
-      "yesTokenId": "90395542606350859238403926487903928664496101979876846060267456354596525131581",
-      "noTokenId": "27711196036595156371904703738314711275929859089388171300992837784686788855742",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "backpack",
-        "backpack exchange",
-        "fdv",
-        "fully diluted valuation",
-        "crypto exchange",
-        "token launch",
-        "market cap",
-        "valuation",
-        "trading",
-        "listing",
-        "tge",
-        "token price",
-        "exchange launch",
-        "initial valuation",
-        "backpack fdv",
-        "fdv above",
-        "above one",
-        "one day",
-        "day after",
-        "after launch",
-        "backpack fdv above",
-        "fdv above one",
-        "above one day",
-        "one day after",
-        "day after launch"
-      ],
-      "entities": [
-        "backpack"
-      ],
-      "entityGroups": [
-        [
-          "backpack",
-          "backpack 交易所"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "1770",
-          "title": "$1B",
-          "yesTokenId": "28344807126881202209615667683342755194340563571297472717594388939000528031146",
-          "noTokenId": "105037746151635658183722041917146475007873934799335245036294152918909571837036"
-        },
-        {
-          "marketId": "1771",
-          "title": "$2B",
-          "yesTokenId": "26943662771113153309349188978591539459905180988691528623108811438107757493280",
-          "noTokenId": "114584781826770082316207161597312277022652142730296137217057911012299546474393"
-        },
-        {
-          "marketId": "1772",
-          "title": "$3B",
-          "yesTokenId": "106555916844721350460793178421231056427315805347770447750948294026871882888221",
-          "noTokenId": "80055550438974740757785854922428084298011315643438858179747853579006731078312"
-        },
-        {
-          "marketId": "1773",
-          "title": "$4B",
-          "yesTokenId": "48638358498196167070989659311045733300732882388569732248894905340738868490231",
-          "noTokenId": "12376906555062351551252509108425285628521015624061021786151925823370087803141"
-        },
-        {
-          "marketId": "1774",
-          "title": "$5B",
-          "yesTokenId": "30263922152791071979891737016383166449695193128206344912224798892698496443551",
-          "noTokenId": "78095378181540686696636708658095436011913926234370634415849216312825297680858"
-        },
-        {
-          "marketId": "3503",
-          "title": "$700M",
-          "yesTokenId": "41332564841887264670382276564793607937272322141578300217289855080335265359029",
-          "noTokenId": "3047311905991592776753099005494346394490835747876382547036000392052515466284"
-        },
-        {
-          "marketId": "9300",
-          "title": "$500M",
-          "yesTokenId": "91539367089963976780978758482642359567775631432098484949727918288159232226606",
-          "noTokenId": "96221416434393756654525597973986566643730089041051638150216127724722353147118"
-        },
-        {
-          "marketId": "9301",
-          "title": "$200M",
-          "yesTokenId": "72262470578759783438222922860419502647941048504995015488552383056763094143",
-          "noTokenId": "23344500985204921870127900848895483356252067552142299594937065053194367429057"
-        },
-        {
-          "marketId": "9302",
-          "title": "$300M",
-          "yesTokenId": "90395542606350859238403926487903928664496101979876846060267456354596525131581",
-          "noTokenId": "27711196036595156371904703738314711275929859089388171300992837784686788855742"
-        }
-      ]
-    },
     "420": {
       "title": "Will Crude Oil (CL) hit ... by end of March?",
       "url": "https://app.opinion.trade/market/420?ref=opinion_hud",
@@ -4468,6 +4316,54 @@
         "noLabel": "No"
       },
       "type": "binary"
+    },
+    "10381": {
+      "title": "Bitcoin Up or Down on March 26?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/10381?ref=opinion_hud",
+      "yesTokenId": "19543760988995641725136747313762066439424951689161352899654351904031545213391",
+      "noTokenId": "8489130401000098015028348347137349234696526233151126103545392199351773802325",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10366": {
+      "title": "NBA: Pelicans vs Pistons (Mar. 26 7:00PM ET)",
+      "url": "https://app.opinion.trade/market/10366?ref=opinion_hud",
+      "yesTokenId": "86278903219457627979877584033824901657589934883737278825829405473451790070354",
+      "noTokenId": "34906914317854761027761563997046352439738151081199518161852966611987321713887",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Pelicans",
+        "noLabel": "Pistons"
+      },
+      "type": "binary"
+    },
+    "10367": {
+      "title": "NBA: Kings vs Magic (Mar. 26 7:00PM ET)",
+      "url": "https://app.opinion.trade/market/10367?ref=opinion_hud",
+      "yesTokenId": "47423884969125612425137387971402636313851603058244952373558199451664483589202",
+      "noTokenId": "76263935149409080830566954233124096163154560330485801082909234548935297008663",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Kings",
+        "noLabel": "Magic"
+      },
+      "type": "binary"
+    },
+    "10368": {
+      "title": "NBA: Knicks vs Hornets (Mar. 26 7:00PM ET)",
+      "url": "https://app.opinion.trade/market/10368?ref=opinion_hud",
+      "yesTokenId": "78683626169058781762963059794655104842852598595348693803219643598388202723370",
+      "noTokenId": "26021270603649840428251202281317325768100249593123880889909029665493718541405",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Knicks",
+        "noLabel": "Hornets"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -4592,12 +4488,6 @@
     "above earthquake 2027": [
       "2668"
     ],
-    "above one": [
-      "95"
-    ],
-    "above one day": [
-      "95"
-    ],
     "acquisition": [
       "2398"
     ],
@@ -4614,8 +4504,7 @@
       "3369"
     ],
     "after launch": [
-      "1721",
-      "95"
+      "1721"
     ],
     "against iran": [
       "415"
@@ -4713,21 +4602,6 @@
     ],
     "backing": [
       "3055"
-    ],
-    "backpack": [
-      "95"
-    ],
-    "backpack exchange": [
-      "95"
-    ],
-    "backpack fdv": [
-      "95"
-    ],
-    "backpack fdv above": [
-      "95"
-    ],
-    "backpack 交易所": [
-      "95"
     ],
     "bank japan": [
       "423"
@@ -5090,8 +4964,7 @@
     ],
     "crypto exchange": [
       "3362",
-      "3369",
-      "95"
+      "3369"
     ],
     "crypto hack": [
       "3360"
@@ -5143,11 +5016,7 @@
       "3509"
     ],
     "day after": [
-      "1721",
-      "95"
-    ],
-    "day after launch": [
-      "95"
+      "1721"
     ],
     "deadline": [
       "3448",
@@ -5381,9 +5250,6 @@
     "evm": [
       "1721"
     ],
-    "exchange launch": [
-      "95"
-    ],
     "exclusion": [
       "3257"
     ],
@@ -5426,15 +5292,6 @@
     ],
     "favor trump tariffs": [
       "1546"
-    ],
-    "fdv": [
-      "95"
-    ],
-    "fdv above": [
-      "95"
-    ],
-    "fdv above one": [
-      "95"
     ],
     "fdv one": [
       "1721"
@@ -5480,9 +5337,6 @@
     ],
     "fugitive": [
       "1856"
-    ],
-    "fully diluted valuation": [
-      "95"
     ],
     "funding": [
       "3505",
@@ -5669,9 +5523,6 @@
     "initial public offering": [
       "3362"
     ],
-    "initial valuation": [
-      "95"
-    ],
     "interest rates": [
       "421",
       "422",
@@ -5854,8 +5705,7 @@
       "1546"
     ],
     "listing": [
-      "3362",
-      "95"
+      "3362"
     ],
     "lp": [
       "2178"
@@ -5899,8 +5749,7 @@
     ],
     "market cap": [
       "3505",
-      "3506",
-      "95"
+      "3506"
     ],
     "marvel": [
       "3158"
@@ -6106,11 +5955,7 @@
       "420"
     ],
     "one day": [
-      "1721",
-      "95"
-    ],
-    "one day after": [
-      "95"
+      "1721"
     ],
     "op stack": [
       "3366"
@@ -6664,8 +6509,7 @@
       "3359"
     ],
     "tge": [
-      "1721",
-      "95"
+      "1721"
     ],
     "the post": [
       "3223"
@@ -6725,11 +6569,7 @@
       "3366"
     ],
     "token launch": [
-      "3366",
-      "95"
-    ],
-    "token price": [
-      "95"
+      "3366"
     ],
     "tokenomics": [
       "3361"
@@ -6749,8 +6589,7 @@
     ],
     "trading": [
       "3361",
-      "3367",
-      "95"
+      "3367"
     ],
     "transfer": [
       "3365"
@@ -6840,8 +6679,7 @@
       "3362",
       "3505",
       "3506",
-      "3525",
-      "95"
+      "3525"
     ],
     "vance": [
       "3055"
@@ -7057,15 +6895,6 @@
     "2026年春季赛": [
       "424"
     ],
-    "above one": [
-      "95"
-    ],
-    "above one day": [
-      "95"
-    ],
-    "after launch": [
-      "95"
-    ],
     "against iran": [
       "415"
     ],
@@ -7074,21 +6903,6 @@
     ],
     "announces military operations": [
       "415"
-    ],
-    "backpack": [
-      "95"
-    ],
-    "backpack exchange": [
-      "95"
-    ],
-    "backpack fdv": [
-      "95"
-    ],
-    "backpack fdv above": [
-      "95"
-    ],
-    "backpack 交易所": [
-      "95"
     ],
     "bank japan": [
       "423"
@@ -7178,9 +6992,6 @@
     "crude oil hit": [
       "420"
     ],
-    "crypto exchange": [
-      "95"
-    ],
     "cs2": [
       "425"
     ],
@@ -7198,12 +7009,6 @@
     ],
     "csgo": [
       "425"
-    ],
-    "day after": [
-      "95"
-    ],
-    "day after launch": [
-      "95"
     ],
     "decision dfr": [
       "422"
@@ -7269,18 +7074,6 @@
     "eurozone": [
       "422"
     ],
-    "exchange launch": [
-      "95"
-    ],
-    "fdv": [
-      "95"
-    ],
-    "fdv above": [
-      "95"
-    ],
-    "fdv above one": [
-      "95"
-    ],
     "fed": [
       "421"
     ],
@@ -7298,9 +7091,6 @@
     ],
     "fomc": [
       "421"
-    ],
-    "fully diluted valuation": [
-      "95"
     ],
     "futures": [
       "420"
@@ -7324,9 +7114,6 @@
     "inflation": [
       "421",
       "422"
-    ],
-    "initial valuation": [
-      "95"
     ],
     "interest rates": [
       "421",
@@ -7392,12 +7179,6 @@
     "league spring 2026": [
       "424"
     ],
-    "listing": [
-      "95"
-    ],
-    "market cap": [
-      "95"
-    ],
     "middle east": [
       "416"
     ],
@@ -7438,12 +7219,6 @@
     ],
     "oil prices": [
       "420"
-    ],
-    "one day": [
-      "95"
-    ],
-    "one day after": [
-      "95"
     ],
     "opec": [
       "420"
@@ -7529,24 +7304,12 @@
     "tensions": [
       "416"
     ],
-    "tge": [
-      "95"
-    ],
     "timi": [
       "424"
-    ],
-    "token launch": [
-      "95"
-    ],
-    "token price": [
-      "95"
     ],
     "tournament": [
       "424",
       "425"
-    ],
-    "trading": [
-      "95"
     ],
     "troops": [
       "415"
@@ -7571,9 +7334,6 @@
     ],
     "usa": [
       "416"
-    ],
-    "valuation": [
-      "95"
     ],
     "wangzhe rongyao": [
       "424"
