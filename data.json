@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-25 17:04:00 UTC+8",
+    "generatedAt": "2026-03-26 01:15:34 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 56,
-      "markets": 164,
+      "kept": 60,
+      "markets": 168,
       "keywords": 775,
       "events": {
         "events": 8
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 944,
+        "cutoff_expired": 940,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -4362,6 +4362,54 @@
       "labels": {
         "yesLabel": "Knicks",
         "noLabel": "Hornets"
+      },
+      "type": "binary"
+    },
+    "10417": {
+      "title": "BTC Up or Down - Hourly (Mar 25, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10417?ref=opinion_hud",
+      "yesTokenId": "69574983176163328886690943511568699815924805053816642449687168308570430425676",
+      "noTokenId": "13565150495311632599116763423655681102221646589489187108451416482419665994447",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10416": {
+      "title": "BNB Up or Down - Hourly (Mar 25, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10416?ref=opinion_hud",
+      "yesTokenId": "111506437685152845863426630426194948914574318376986832492952761122912841786264",
+      "noTokenId": "107591287792082280114041429528920751077918144895902971991216368353504827352079",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10418": {
+      "title": "ETH Up or Down - Hourly (Mar 25, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10418?ref=opinion_hud",
+      "yesTokenId": "43898976446739492386484415961805075620990226544622515372037318993051288099774",
+      "noTokenId": "78181689145391425066068639251192047388013653311372483079454367157824870491784",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10400": {
+      "title": "KPL Spring 2026: JDG vs AG.SP (Mar. 28 6:30AM ET)",
+      "url": "https://app.opinion.trade/market/10400?ref=opinion_hud",
+      "yesTokenId": "84816435880171219383005708208959133092114149635134851086784624619671874090761",
+      "noTokenId": "93428619814585713623469496409616129951873689439258472342841150885473949556512",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "JDG",
+        "noLabel": "AG.SP"
       },
       "type": "binary"
     }
