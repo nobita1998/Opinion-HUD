@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-26 17:10:28 UTC+8",
+    "generatedAt": "2026-03-27 01:16:14 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 68,
-      "markets": 168,
-      "keywords": 783,
+      "kept": 71,
+      "markets": 171,
+      "keywords": 794,
       "events": {
         "events": 9
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 932,
+        "cutoff_expired": 929,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -29,12 +29,12 @@
         "fullAiRefresh": false,
         "onlyAiForNew": true,
         "reused": 8,
-        "regenerated_empty_entitygroups": 0,
+        "regenerated_empty_entitygroups": 1,
         "calls": 1,
-        "retries": 1,
+        "retries": 0,
         "fallback": 0,
-        "empty": 1,
-        "non_empty": 0,
+        "empty": 0,
+        "non_empty": 1,
         "errors": 0
       }
     }
@@ -420,8 +420,22 @@
       "bestMarketId": "431",
       "bestLabels": null,
       "keywords": [
-        "dota2 esl",
+        "dota 2",
         "esl one",
+        "birmingham",
+        "tournament",
+        "esports",
+        "moba",
+        "valve",
+        "lan",
+        "major",
+        "finals",
+        "playoffs",
+        "championship",
+        "pro scene",
+        "gaming",
+        "competitive",
+        "dota2 esl",
         "one birmingham",
         "birmingham 2026",
         "2026 winner",
@@ -430,8 +444,21 @@
         "one birmingham 2026",
         "birmingham 2026 winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "dota 2",
+        "esl one birmingham"
+      ],
+      "entityGroups": [
+        [
+          "dota 2",
+          "dota2"
+        ],
+        [
+          "esl one birmingham",
+          "esl one",
+          "esl one 伯明翰"
+        ]
+      ],
       "sig": "919c2260",
       "sigFull": "919c2260",
       "sigCore": "fd340c2f",
@@ -4353,8 +4380,22 @@
         "noLabel": "No"
       },
       "keywords": [
-        "dota2 esl",
+        "dota 2",
         "esl one",
+        "birmingham",
+        "tournament",
+        "esports",
+        "moba",
+        "valve",
+        "lan",
+        "major",
+        "finals",
+        "playoffs",
+        "championship",
+        "pro scene",
+        "gaming",
+        "competitive",
+        "dota2 esl",
         "one birmingham",
         "birmingham 2026",
         "2026 winner",
@@ -4363,8 +4404,21 @@
         "one birmingham 2026",
         "birmingham 2026 winner"
       ],
-      "entities": [],
-      "entityGroups": [],
+      "entities": [
+        "dota 2",
+        "esl one birmingham"
+      ],
+      "entityGroups": [
+        [
+          "dota 2",
+          "dota2"
+        ],
+        [
+          "esl one birmingham",
+          "esl one",
+          "esl one 伯明翰"
+        ]
+      ],
       "type": "multi",
       "subMarkets": [
         {
@@ -4504,6 +4558,42 @@
       "labels": {
         "yesLabel": "Bulls",
         "noLabel": "Grizzlies"
+      },
+      "type": "binary"
+    },
+    "10512": {
+      "title": "BNB Up or Down - Hourly (Mar 26, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10512?ref=opinion_hud",
+      "yesTokenId": "72760725986273755234733838952635662535225099652664497581987550389503150691731",
+      "noTokenId": "50785713003687664279322482629760624429430821468942394048134058872785108795197",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10513": {
+      "title": "BTC Up or Down - Hourly (Mar 26, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10513?ref=opinion_hud",
+      "yesTokenId": "40870944376844980192639550661320308913754191161789558126151310838298641125262",
+      "noTokenId": "30722726601743487403271507698850795849147063587814303868432243857012379686418",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10514": {
+      "title": "ETH Up or Down - Hourly (Mar 26, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10514?ref=opinion_hud",
+      "yesTokenId": "48385837054602368195387946492507999326735051179859689852783373796757627695382",
+      "noTokenId": "111638015180488116785952216584829705253565671086720838257095494181171428145152",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
@@ -4808,6 +4898,9 @@
       "3367",
       "3368"
     ],
+    "birmingham": [
+      "431"
+    ],
     "birmingham 2026": [
       "431"
     ],
@@ -4969,7 +5062,8 @@
       "2368"
     ],
     "championship": [
-      "424"
+      "424",
+      "431"
     ],
     "changpeng zhao": [
       "3369"
@@ -5043,6 +5137,9 @@
     ],
     "commodities": [
       "420"
+    ],
+    "competitive": [
+      "431"
     ],
     "conflict": [
       "3039",
@@ -5256,6 +5353,12 @@
     "dot plot": [
       "421"
     ],
+    "dota 2": [
+      "431"
+    ],
+    "dota2": [
+      "431"
+    ],
     "dota2 esl": [
       "431"
     ],
@@ -5379,9 +5482,13 @@
     "esl one birmingham": [
       "431"
     ],
+    "esl one 伯明翰": [
+      "431"
+    ],
     "esports": [
       "424",
-      "425"
+      "425",
+      "431"
     ],
     "eth": [
       "3364"
@@ -5473,7 +5580,8 @@
       "421"
     ],
     "finals": [
-      "424"
+      "424",
+      "431"
     ],
     "finance": [
       "3525"
@@ -5512,6 +5620,9 @@
     "futures": [
       "3361",
       "420"
+    ],
+    "gaming": [
+      "431"
     ],
     "gaten": [
       "3224"
@@ -5832,6 +5943,9 @@
     "l2": [
       "3366"
     ],
+    "lan": [
+      "431"
+    ],
     "launch token": [
       "3366"
     ],
@@ -5888,6 +6002,9 @@
     ],
     "mainnet": [
       "3366"
+    ],
+    "major": [
+      "431"
     ],
     "march 2026": [
       "3039",
@@ -5984,6 +6101,9 @@
     ],
     "missile": [
       "3039"
+    ],
+    "moba": [
+      "431"
     ],
     "mobile game": [
       "424"
@@ -6203,7 +6323,8 @@
       "3072"
     ],
     "playoffs": [
-      "424"
+      "424",
+      "431"
     ],
     "policy board": [
       "423"
@@ -6246,6 +6367,9 @@
     ],
     "pro league spring": [
       "424"
+    ],
+    "pro scene": [
+      "431"
     ],
     "proof of work": [
       "3256"
@@ -6746,7 +6870,8 @@
     ],
     "tournament": [
       "424",
-      "425"
+      "425",
+      "431"
     ],
     "trade policy": [
       "1546"
@@ -6847,6 +6972,9 @@
       "3505",
       "3506",
       "3525"
+    ],
+    "valve": [
+      "431"
     ],
     "vance": [
       "3055"
@@ -7090,6 +7218,9 @@
     "beige book": [
       "421"
     ],
+    "birmingham": [
+      "431"
+    ],
     "birmingham 2026": [
       "431"
     ],
@@ -7133,7 +7264,8 @@
       "423"
     ],
     "championship": [
-      "424"
+      "424",
+      "431"
     ],
     "christine lagarde": [
       "422"
@@ -7143,6 +7275,9 @@
     ],
     "commodities": [
       "420"
+    ],
+    "competitive": [
+      "431"
     ],
     "conflict": [
       "415",
@@ -7214,6 +7349,12 @@
     "dot plot": [
       "421"
     ],
+    "dota 2": [
+      "431"
+    ],
+    "dota2": [
+      "431"
+    ],
     "dota2 esl": [
       "431"
     ],
@@ -7247,9 +7388,13 @@
     "esl one birmingham": [
       "431"
     ],
+    "esl one 伯明翰": [
+      "431"
+    ],
     "esports": [
       "424",
-      "425"
+      "425",
+      "431"
     ],
     "euro": [
       "422"
@@ -7273,13 +7418,17 @@
       "421"
     ],
     "finals": [
-      "424"
+      "424",
+      "431"
     ],
     "fomc": [
       "421"
     ],
     "futures": [
       "420"
+    ],
+    "gaming": [
+      "431"
     ],
     "governing council": [
       "422"
@@ -7359,11 +7508,17 @@
     "kpl": [
       "424"
     ],
+    "lan": [
+      "431"
+    ],
     "league spring": [
       "424"
     ],
     "league spring 2026": [
       "424"
+    ],
+    "major": [
+      "431"
     ],
     "middle east": [
       "416"
@@ -7376,6 +7531,9 @@
     ],
     "military operations against": [
       "415"
+    ],
+    "moba": [
+      "431"
     ],
     "mobile game": [
       "424"
@@ -7440,7 +7598,8 @@
       "420"
     ],
     "playoffs": [
-      "424"
+      "424",
+      "431"
     ],
     "policy board": [
       "423"
@@ -7453,6 +7612,9 @@
     ],
     "pro league spring": [
       "424"
+    ],
+    "pro scene": [
+      "431"
     ],
     "rate cut": [
       "421"
@@ -7501,7 +7663,8 @@
     ],
     "tournament": [
       "424",
-      "425"
+      "425",
+      "431"
     ],
     "troops": [
       "415"
@@ -7526,6 +7689,9 @@
     ],
     "usa": [
       "416"
+    ],
+    "valve": [
+      "431"
     ],
     "wangzhe rongyao": [
       "424"
