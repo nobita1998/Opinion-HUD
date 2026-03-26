@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-26 11:22:52 UTC+8",
+    "generatedAt": "2026-03-26 17:10:28 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 52,
-      "markets": 160,
-      "keywords": 775,
+      "kept": 68,
+      "markets": 168,
+      "keywords": 783,
       "events": {
-        "events": 8
+        "events": 9
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 948,
+        "cutoff_expired": 932,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -30,10 +30,10 @@
         "onlyAiForNew": true,
         "reused": 8,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
-        "retries": 0,
+        "calls": 1,
+        "retries": 1,
         "fallback": 0,
-        "empty": 0,
+        "empty": 1,
         "non_empty": 0,
         "errors": 0
       }
@@ -410,6 +410,31 @@
       "sig": "0a489101",
       "sigFull": "0a489101",
       "sigCore": "7d2e64d4",
+      "reused": false
+    },
+    "431": {
+      "title": "Dota2 ESL One Birmingham 2026: Winner",
+      "marketIds": [
+        "431"
+      ],
+      "bestMarketId": "431",
+      "bestLabels": null,
+      "keywords": [
+        "dota2 esl",
+        "esl one",
+        "one birmingham",
+        "birmingham 2026",
+        "2026 winner",
+        "dota2 esl one",
+        "esl one birmingham",
+        "one birmingham 2026",
+        "birmingham 2026 winner"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "919c2260",
+      "sigFull": "919c2260",
+      "sigCore": "fd340c2f",
       "reused": false
     }
   },
@@ -4316,6 +4341,171 @@
         "noLabel": "AG.SP"
       },
       "type": "binary"
+    },
+    "431": {
+      "title": "Dota2 ESL One Birmingham 2026: Winner",
+      "url": "https://app.opinion.trade/market/431?ref=opinion_hud",
+      "yesTokenId": "45590714335120590505965395245748529720440470819326952860928713533475264623681",
+      "noTokenId": "96881135349602532493326692671683981592964437419153370812317246807334973588037",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Yes",
+        "noLabel": "No"
+      },
+      "keywords": [
+        "dota2 esl",
+        "esl one",
+        "one birmingham",
+        "birmingham 2026",
+        "2026 winner",
+        "dota2 esl one",
+        "esl one birmingham",
+        "one birmingham 2026",
+        "birmingham 2026 winner"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "10480",
+          "title": "Yandex",
+          "yesTokenId": "81077361605303619229681567813622529925259160460477921028729695701208006352991",
+          "noTokenId": "37238683672291772694747312052988852621456062961017769329365402031832416371610"
+        },
+        {
+          "marketId": "10481",
+          "title": "Spirit",
+          "yesTokenId": "83746772613523523308800093233779082939055020534858310786459857727327946124656",
+          "noTokenId": "36389459210553041636545520146808715906542627597130338120232607254299727501591"
+        },
+        {
+          "marketId": "10482",
+          "title": "Aurora",
+          "yesTokenId": "7071141593097712071903699625266016240758786109804834082997721843291426702406",
+          "noTokenId": "192206732292610178657483651859344619914938453464758520999717738513987950069"
+        },
+        {
+          "marketId": "10483",
+          "title": "Tundra",
+          "yesTokenId": "88534380208930132584207338557022655028309725323957975779374555029138160598589",
+          "noTokenId": "3459591719423046731611474788718811309131894164555948292334143089289734182017"
+        },
+        {
+          "marketId": "10484",
+          "title": "MOUZ",
+          "yesTokenId": "79812982677229892279414321950429900853514425117992519214366004971389114221916",
+          "noTokenId": "28982885609910498241472299462759817415563356673869677261410923429486468334343"
+        },
+        {
+          "marketId": "10485",
+          "title": "XG",
+          "yesTokenId": "93913363280303232508100029830938448752239416511130706242453105279520744428871",
+          "noTokenId": "33356792867478739649075695946728305365086871669957725311987551581784128623155"
+        },
+        {
+          "marketId": "10486",
+          "title": "Falcons",
+          "yesTokenId": "45590714335120590505965395245748529720440470819326952860928713533475264623681",
+          "noTokenId": "96881135349602532493326692671683981592964437419153370812317246807334973588037"
+        },
+        {
+          "marketId": "10487",
+          "title": "PARI",
+          "yesTokenId": "31185082485740972423913893632707265930503098322370288720805914063478930705306",
+          "noTokenId": "65971803598070296380926085472230950130940315368628843935347314863345018107783"
+        },
+        {
+          "marketId": "10488",
+          "title": "Other",
+          "yesTokenId": "77006353388524201653842724237801482012433547244070963680925523670138899715049",
+          "noTokenId": "46305615257775682245566825273725788738821176473347563103829646925984328956708"
+        }
+      ]
+    },
+    "10460": {
+      "title": "NBA: Hawks vs Celtics (Mar. 27 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/10460?ref=opinion_hud",
+      "yesTokenId": "31661870975524944139583693367237858252863067270878426421473587547558971865726",
+      "noTokenId": "95899868440808786091619332052109375006289006170405360557033489998020460932128",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Hawks",
+        "noLabel": "Celtics"
+      },
+      "type": "binary"
+    },
+    "10463": {
+      "title": "Bitcoin Up or Down on March 27?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/10463?ref=opinion_hud",
+      "yesTokenId": "115540868802418296831042512801995245037370060788629329226334106005602800521502",
+      "noTokenId": "1260792406296251999012375677326882407580461381378951905624046865056535535713",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10461": {
+      "title": "NBA: Warriors vs Wizards (Mar. 27 10:00PM ET)",
+      "url": "https://app.opinion.trade/market/10461?ref=opinion_hud",
+      "yesTokenId": "65030422339154505280183473815558335126952004816843664475553427835968164688730",
+      "noTokenId": "86709985482265682301199388452723374458585390517058997723875961151622874371645",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Warriors",
+        "noLabel": "Wizards"
+      },
+      "type": "binary"
+    },
+    "10466": {
+      "title": "NBA: Jazz vs Suns (Mar. 28 10:00PM ET)",
+      "url": "https://app.opinion.trade/market/10466?ref=opinion_hud",
+      "yesTokenId": "80735376149014110117976367044112916902181099508795540215789330892448198087177",
+      "noTokenId": "27336362627326852341892497642019002152223956002681194808685222481883678952305",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Jazz",
+        "noLabel": "Suns"
+      },
+      "type": "binary"
+    },
+    "10462": {
+      "title": "NBA: Nets vs Lakers (Mar. 27 10:30PM ET)",
+      "url": "https://app.opinion.trade/market/10462?ref=opinion_hud",
+      "yesTokenId": "48400278639111469784289315305601769977213513068628431487534362873755817585287",
+      "noTokenId": "37787497076382120631067625035404595020484400391021698132327861003284791146927",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Nets",
+        "noLabel": "Lakers"
+      },
+      "type": "binary"
+    },
+    "10464": {
+      "title": "NBA: Spurs vs Bucks (Mar. 28 3:00PM ET)",
+      "url": "https://app.opinion.trade/market/10464?ref=opinion_hud",
+      "yesTokenId": "18697723872602998723597797051574726104620165077599062283942187718829395533490",
+      "noTokenId": "59695107146201650095912342580009461180271519316828472102638349798652924504201",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Spurs",
+        "noLabel": "Bucks"
+      },
+      "type": "binary"
+    },
+    "10465": {
+      "title": "NBA: Bulls vs Grizzlies (Mar. 28 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/10465?ref=opinion_hud",
+      "yesTokenId": "27810149242848091054649836340099997294132190619442618651040333534242856258185",
+      "noTokenId": "49921274896268779318421877693425697728986843060461088550917841832075393978185",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Bulls",
+        "noLabel": "Grizzlies"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -4366,7 +4556,8 @@
     ],
     "2026 winner": [
       "424",
-      "425"
+      "425",
+      "431"
     ],
     "2026-06-30": [
       "3508"
@@ -4616,6 +4807,12 @@
     "binance coin": [
       "3367",
       "3368"
+    ],
+    "birmingham 2026": [
+      "431"
+    ],
+    "birmingham 2026 winner": [
+      "431"
     ],
     "bitcoin": [
       "3256",
@@ -5059,6 +5256,12 @@
     "dot plot": [
       "421"
     ],
+    "dota2 esl": [
+      "431"
+    ],
+    "dota2 esl one": [
+      "431"
+    ],
     "downtime": [
       "3357"
     ],
@@ -5169,6 +5372,12 @@
     ],
     "eschatology": [
       "2670"
+    ],
+    "esl one": [
+      "431"
+    ],
+    "esl one birmingham": [
+      "431"
     ],
     "esports": [
       "424",
@@ -5905,6 +6114,12 @@
     ],
     "oil prices": [
       "420"
+    ],
+    "one birmingham": [
+      "431"
+    ],
+    "one birmingham 2026": [
+      "431"
     ],
     "one day": [
       "1721"
@@ -6842,7 +7057,8 @@
     ],
     "2026 winner": [
       "424",
-      "425"
+      "425",
+      "431"
     ],
     "2026年春季赛": [
       "424"
@@ -6873,6 +7089,12 @@
     ],
     "beige book": [
       "421"
+    ],
+    "birmingham 2026": [
+      "431"
+    ],
+    "birmingham 2026 winner": [
+      "431"
     ],
     "black gold": [
       "420"
@@ -6992,6 +7214,12 @@
     "dot plot": [
       "421"
     ],
+    "dota2 esl": [
+      "431"
+    ],
+    "dota2 esl one": [
+      "431"
+    ],
     "ecb": [
       "422"
     ],
@@ -7012,6 +7240,12 @@
     ],
     "escalation": [
       "416"
+    ],
+    "esl one": [
+      "431"
+    ],
+    "esl one birmingham": [
+      "431"
     ],
     "esports": [
       "424",
@@ -7171,6 +7405,12 @@
     ],
     "oil prices": [
       "420"
+    ],
+    "one birmingham": [
+      "431"
+    ],
+    "one birmingham 2026": [
+      "431"
     ],
     "opec": [
       "420"
