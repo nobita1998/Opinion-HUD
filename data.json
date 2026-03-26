@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-26 01:15:34 UTC+8",
+    "generatedAt": "2026-03-26 11:22:52 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 60,
-      "markets": 168,
+      "kept": 52,
+      "markets": 160,
       "keywords": 775,
       "events": {
         "events": 8
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 940,
+        "cutoff_expired": 948,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -4182,18 +4182,6 @@
         }
       ]
     },
-    "10207": {
-      "title": "KPL Spring 2026: LGD.NBW vs Q9 (Mar. 26 6:30AM ET)",
-      "url": "https://app.opinion.trade/market/10207?ref=opinion_hud",
-      "yesTokenId": "86354603622934922832782333271200936961697800296402792698484900118267757758552",
-      "noTokenId": "25786649047039287666123800489513988073455937533690661646666764875210430908551",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "LGD.NBW",
-        "noLabel": "Q9"
-      },
-      "type": "binary"
-    },
     "10293": {
       "title": "KPL Spring 2026: HERO vs TTG (Mar. 27 6:30AM ET)",
       "url": "https://app.opinion.trade/market/10293?ref=opinion_hud",
@@ -4314,90 +4302,6 @@
       "labels": {
         "yesLabel": "Yes",
         "noLabel": "No"
-      },
-      "type": "binary"
-    },
-    "10381": {
-      "title": "Bitcoin Up or Down on March 26?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/10381?ref=opinion_hud",
-      "yesTokenId": "19543760988995641725136747313762066439424951689161352899654351904031545213391",
-      "noTokenId": "8489130401000098015028348347137349234696526233151126103545392199351773802325",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10366": {
-      "title": "NBA: Pelicans vs Pistons (Mar. 26 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/10366?ref=opinion_hud",
-      "yesTokenId": "86278903219457627979877584033824901657589934883737278825829405473451790070354",
-      "noTokenId": "34906914317854761027761563997046352439738151081199518161852966611987321713887",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Pelicans",
-        "noLabel": "Pistons"
-      },
-      "type": "binary"
-    },
-    "10367": {
-      "title": "NBA: Kings vs Magic (Mar. 26 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/10367?ref=opinion_hud",
-      "yesTokenId": "47423884969125612425137387971402636313851603058244952373558199451664483589202",
-      "noTokenId": "76263935149409080830566954233124096163154560330485801082909234548935297008663",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Kings",
-        "noLabel": "Magic"
-      },
-      "type": "binary"
-    },
-    "10368": {
-      "title": "NBA: Knicks vs Hornets (Mar. 26 7:00PM ET)",
-      "url": "https://app.opinion.trade/market/10368?ref=opinion_hud",
-      "yesTokenId": "78683626169058781762963059794655104842852598595348693803219643598388202723370",
-      "noTokenId": "26021270603649840428251202281317325768100249593123880889909029665493718541405",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Knicks",
-        "noLabel": "Hornets"
-      },
-      "type": "binary"
-    },
-    "10417": {
-      "title": "BTC Up or Down - Hourly (Mar 25, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10417?ref=opinion_hud",
-      "yesTokenId": "69574983176163328886690943511568699815924805053816642449687168308570430425676",
-      "noTokenId": "13565150495311632599116763423655681102221646589489187108451416482419665994447",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10416": {
-      "title": "BNB Up or Down - Hourly (Mar 25, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10416?ref=opinion_hud",
-      "yesTokenId": "111506437685152845863426630426194948914574318376986832492952761122912841786264",
-      "noTokenId": "107591287792082280114041429528920751077918144895902971991216368353504827352079",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10418": {
-      "title": "ETH Up or Down - Hourly (Mar 25, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10418?ref=opinion_hud",
-      "yesTokenId": "43898976446739492386484415961805075620990226544622515372037318993051288099774",
-      "noTokenId": "78181689145391425066068639251192047388013653311372483079454367157824870491784",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
