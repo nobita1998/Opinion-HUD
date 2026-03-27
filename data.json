@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-27 01:16:14 UTC+8",
+    "generatedAt": "2026-03-27 11:26:38 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 71,
-      "markets": 171,
+      "kept": 63,
+      "markets": 163,
       "keywords": 794,
       "events": {
         "events": 9
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 929,
+        "cutoff_expired": 937,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -28,13 +28,13 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 8,
-        "regenerated_empty_entitygroups": 1,
-        "calls": 1,
+        "reused": 9,
+        "regenerated_empty_entitygroups": 0,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 1,
+        "non_empty": 0,
         "errors": 0
       }
     }
@@ -4234,18 +4234,6 @@
         }
       ]
     },
-    "10293": {
-      "title": "KPL Spring 2026: HERO vs TTG (Mar. 27 6:30AM ET)",
-      "url": "https://app.opinion.trade/market/10293?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "425": {
       "title": "CS2 BLAST Open Spring 2026: Winner",
       "url": "https://app.opinion.trade/market/425?ref=opinion_hud",
@@ -4477,42 +4465,6 @@
         }
       ]
     },
-    "10460": {
-      "title": "NBA: Hawks vs Celtics (Mar. 27 7:30PM ET)",
-      "url": "https://app.opinion.trade/market/10460?ref=opinion_hud",
-      "yesTokenId": "31661870975524944139583693367237858252863067270878426421473587547558971865726",
-      "noTokenId": "95899868440808786091619332052109375006289006170405360557033489998020460932128",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Hawks",
-        "noLabel": "Celtics"
-      },
-      "type": "binary"
-    },
-    "10463": {
-      "title": "Bitcoin Up or Down on March 27?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/10463?ref=opinion_hud",
-      "yesTokenId": "115540868802418296831042512801995245037370060788629329226334106005602800521502",
-      "noTokenId": "1260792406296251999012375677326882407580461381378951905624046865056535535713",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10461": {
-      "title": "NBA: Warriors vs Wizards (Mar. 27 10:00PM ET)",
-      "url": "https://app.opinion.trade/market/10461?ref=opinion_hud",
-      "yesTokenId": "65030422339154505280183473815558335126952004816843664475553427835968164688730",
-      "noTokenId": "86709985482265682301199388452723374458585390517058997723875961151622874371645",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Warriors",
-        "noLabel": "Wizards"
-      },
-      "type": "binary"
-    },
     "10466": {
       "title": "NBA: Jazz vs Suns (Mar. 28 10:00PM ET)",
       "url": "https://app.opinion.trade/market/10466?ref=opinion_hud",
@@ -4522,18 +4474,6 @@
       "labels": {
         "yesLabel": "Jazz",
         "noLabel": "Suns"
-      },
-      "type": "binary"
-    },
-    "10462": {
-      "title": "NBA: Nets vs Lakers (Mar. 27 10:30PM ET)",
-      "url": "https://app.opinion.trade/market/10462?ref=opinion_hud",
-      "yesTokenId": "48400278639111469784289315305601769977213513068628431487534362873755817585287",
-      "noTokenId": "37787497076382120631067625035404595020484400391021698132327861003284791146927",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Nets",
-        "noLabel": "Lakers"
       },
       "type": "binary"
     },
@@ -4558,42 +4498,6 @@
       "labels": {
         "yesLabel": "Bulls",
         "noLabel": "Grizzlies"
-      },
-      "type": "binary"
-    },
-    "10512": {
-      "title": "BNB Up or Down - Hourly (Mar 26, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10512?ref=opinion_hud",
-      "yesTokenId": "72760725986273755234733838952635662535225099652664497581987550389503150691731",
-      "noTokenId": "50785713003687664279322482629760624429430821468942394048134058872785108795197",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10513": {
-      "title": "BTC Up or Down - Hourly (Mar 26, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10513?ref=opinion_hud",
-      "yesTokenId": "40870944376844980192639550661320308913754191161789558126151310838298641125262",
-      "noTokenId": "30722726601743487403271507698850795849147063587814303868432243857012379686418",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10514": {
-      "title": "ETH Up or Down - Hourly (Mar 26, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10514?ref=opinion_hud",
-      "yesTokenId": "48385837054602368195387946492507999326735051179859689852783373796757627695382",
-      "noTokenId": "111638015180488116785952216584829705253565671086720838257095494181171428145152",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     }
