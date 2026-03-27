@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-27 11:26:38 UTC+8",
+    "generatedAt": "2026-03-27 17:05:11 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 63,
-      "markets": 163,
+      "kept": 66,
+      "markets": 166,
       "keywords": 794,
       "events": {
         "events": 9
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 937,
+        "cutoff_expired": 934,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -4498,6 +4498,42 @@
       "labels": {
         "yesLabel": "Bulls",
         "noLabel": "Grizzlies"
+      },
+      "type": "binary"
+    },
+    "10559": {
+      "title": "KPL Spring 2026: WB vs LGD.NBW (Mar. 30 6:30AM ET)",
+      "url": "https://app.opinion.trade/market/10559?ref=opinion_hud",
+      "yesTokenId": "84550285587351994125712682368703926862479269943500799285951315169128800263099",
+      "noTokenId": "45229366606643244046372384150049935232664768159859243922528005960855472367495",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "WB",
+        "noLabel": "LGD.NBW"
+      },
+      "type": "binary"
+    },
+    "10562": {
+      "title": "DOTA2 - ESL: Yandex vs Tundra (Mar. 28 11:30AM ET)",
+      "url": "https://app.opinion.trade/market/10562?ref=opinion_hud",
+      "yesTokenId": "26345575369729278970849701406946324481217038833433461394197222334362239520874",
+      "noTokenId": "107820742260617940390134962118625526586916374937048144246627348786504145916228",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Yandex",
+        "noLabel": "Tundra"
+      },
+      "type": "binary"
+    },
+    "10558": {
+      "title": "KPL Spring 2026: WOL vs KSG (Mar. 29 6:30AM ET)",
+      "url": "https://app.opinion.trade/market/10558?ref=opinion_hud",
+      "yesTokenId": "10222320721806118956931034848822057559473724731655676185019763798575177012008",
+      "noTokenId": "43940901619175261780460038735330549370149540218069831692569301916530937569046",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "WOL",
+        "noLabel": "KSG"
       },
       "type": "binary"
     }
