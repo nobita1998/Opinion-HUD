@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-27 17:05:11 UTC+8",
+    "generatedAt": "2026-03-28 01:05:54 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 66,
-      "markets": 166,
+      "kept": 67,
+      "markets": 167,
       "keywords": 794,
       "events": {
         "events": 9
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 934,
+        "cutoff_expired": 933,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -4534,6 +4534,18 @@
       "labels": {
         "yesLabel": "WOL",
         "noLabel": "KSG"
+      },
+      "type": "binary"
+    },
+    "10578": {
+      "title": "Bitcoin Up or Down on March 28?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/10578?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
       },
       "type": "binary"
     }
