@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-29 16:55:21 UTC+8",
+    "generatedAt": "2026-03-30 00:49:46 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 49,
-      "markets": 165,
+      "kept": 52,
+      "markets": 168,
       "keywords": 794,
       "events": {
         "events": 7
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 951,
+        "cutoff_expired": 948,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -4477,47 +4477,83 @@
       },
       "type": "binary"
     },
-    "10714": {
-      "title": "BNB Up or Down - Hourly (Mar 29, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10714?ref=opinion_hud",
-      "yesTokenId": "110491694346494503070312860379001729458584017787386592530993662315702131275828",
-      "noTokenId": "50364256913404369173746866261844962147312088166657889079191361264137661099201",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10715": {
-      "title": "BTC Up or Down - Hourly (Mar 29, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10715?ref=opinion_hud",
-      "yesTokenId": "12076204609478965585793218976327569406545387625746543083344220205351789084059",
-      "noTokenId": "112882337481068914196286567433486506703598052965842336173287954939394019839387",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10716": {
-      "title": "ETH Up or Down - Hourly (Mar 29, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10716?ref=opinion_hud",
-      "yesTokenId": "40161309552319989479375138051274865431612927407534060523317196463537089248753",
-      "noTokenId": "39921284289887366870223047320314614298716202787314748421003190454337450975397",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "10729": {
       "title": "Bitcoin Up or Down on March 30?(12:00 ET)",
       "url": "https://app.opinion.trade/market/10729?ref=opinion_hud",
       "yesTokenId": "94833189532584568571184814665440303588007865864208895261025389996435596642584",
       "noTokenId": "80109715037761258512505741468132874075083775755367666034874480835688950350061",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10755": {
+      "title": "NBA: Knicks vs Rockets (Mar. 31 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/10755?ref=opinion_hud",
+      "yesTokenId": "56706145860504813334751712138123935551326473443918560886764534673005497167035",
+      "noTokenId": "109729442187150226583137099453115345977413890979424230840630864237269992194417",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Knicks",
+        "noLabel": "Rockets"
+      },
+      "type": "binary"
+    },
+    "10756": {
+      "title": "NBA: Suns vs Magic (Mar. 31 7:00PM ET)",
+      "url": "https://app.opinion.trade/market/10756?ref=opinion_hud",
+      "yesTokenId": "104463725882340385825855437031638866055202640515116629689254871537129416929821",
+      "noTokenId": "95838527388439011021332927501793642727406364141592861450841573728391403440537",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Suns",
+        "noLabel": "Magic"
+      },
+      "type": "binary"
+    },
+    "10754": {
+      "title": "NBA: Cavaliers vs Lakers (Mar. 31 10:30PM ET)",
+      "url": "https://app.opinion.trade/market/10754?ref=opinion_hud",
+      "yesTokenId": "42571786440897625423479588405970568221921177028696952725525916692232856759771",
+      "noTokenId": "95679814273737408837134271909694208749677964552998855339341586905779596914621",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Cavaliers",
+        "noLabel": "Lakers"
+      },
+      "type": "binary"
+    },
+    "10743": {
+      "title": "BTC Up or Down - Hourly (Mar 29, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10743?ref=opinion_hud",
+      "yesTokenId": "15903262686968049666360274945915476797670395794284301144630641526610844905241",
+      "noTokenId": "25040899907929235119574894929389560439036421520201753625104149670160399849021",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10742": {
+      "title": "BNB Up or Down - Hourly (Mar 29, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10742?ref=opinion_hud",
+      "yesTokenId": "71449051609909600295052409273426889457008250845851146647094752655303406403037",
+      "noTokenId": "88392044760046438639871993183126150658583403701869599210233507805151782662193",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10744": {
+      "title": "ETH Up or Down - Hourly (Mar 29, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10744?ref=opinion_hud",
+      "yesTokenId": "32004766684917138048522899641656428620867513900049627274444767630725193715850",
+      "noTokenId": "50259453693623058856357139562275877966627750681245151818161022026961956778518",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
