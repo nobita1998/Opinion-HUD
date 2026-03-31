@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-31 17:14:19 UTC+8",
+    "generatedAt": "2026-04-01 01:11:01 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 48,
-      "markets": 170,
-      "keywords": 811,
+      "kept": 49,
+      "markets": 169,
+      "keywords": 774,
       "events": {
         "events": 5
       },
       "skipped": {
         "statusEnum": 1,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 951,
+        "cutoff_expired": 950,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -361,107 +361,6 @@
       "sig": "c8f923d9",
       "sigFull": "c8f923d9",
       "sigCore": "80e67351",
-      "reused": false
-    },
-    "425": {
-      "title": "CS2 BLAST Open Spring 2026: Winner",
-      "marketIds": [
-        "425"
-      ],
-      "bestMarketId": "425",
-      "bestLabels": null,
-      "keywords": [
-        "cs2",
-        "counter-strike 2",
-        "blast open",
-        "spring 2026",
-        "esports",
-        "counter-strike",
-        "blast premier",
-        "cs:go",
-        "csgo",
-        "blast",
-        "tournament",
-        "cs2 esports",
-        "blast spring",
-        "blast open 2026",
-        "cs2 blast",
-        "open spring",
-        "2026 winner",
-        "cs2 blast open",
-        "blast open spring",
-        "open spring 2026",
-        "spring 2026 winner"
-      ],
-      "entities": [
-        "blast open",
-        "cs2"
-      ],
-      "entityGroups": [
-        [
-          "blast open",
-          "blast 春季赛"
-        ],
-        [
-          "cs2",
-          "反恐精英 2"
-        ]
-      ],
-      "sig": "0a489101",
-      "sigFull": "0a489101",
-      "sigCore": "7d2e64d4",
-      "reused": false
-    },
-    "431": {
-      "title": "Dota2 ESL One Birmingham 2026: Winner",
-      "marketIds": [
-        "431"
-      ],
-      "bestMarketId": "431",
-      "bestLabels": null,
-      "keywords": [
-        "dota 2",
-        "esl one",
-        "birmingham",
-        "tournament",
-        "esports",
-        "moba",
-        "valve",
-        "lan",
-        "major",
-        "finals",
-        "playoffs",
-        "championship",
-        "pro scene",
-        "gaming",
-        "competitive",
-        "dota2 esl",
-        "one birmingham",
-        "birmingham 2026",
-        "2026 winner",
-        "dota2 esl one",
-        "esl one birmingham",
-        "one birmingham 2026",
-        "birmingham 2026 winner"
-      ],
-      "entities": [
-        "dota 2",
-        "esl one birmingham"
-      ],
-      "entityGroups": [
-        [
-          "dota 2",
-          "dota2"
-        ],
-        [
-          "esl one birmingham",
-          "esl one",
-          "esl one 伯明翰"
-        ]
-      ],
-      "sig": "919c2260",
-      "sigFull": "919c2260",
-      "sigCore": "fd340c2f",
       "reused": false
     },
     "432": {
@@ -4284,93 +4183,6 @@
         }
       ]
     },
-    "425": {
-      "title": "CS2 BLAST Open Spring 2026: Winner",
-      "url": "https://app.opinion.trade/market/425?ref=opinion_hud",
-      "yesTokenId": "56060229862055976444496623775798118900370561981186799996924861235835109064497",
-      "noTokenId": "80437683546278403778729633622614079531531298093245412253243962103941690740363",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Yes",
-        "noLabel": "No"
-      },
-      "keywords": [
-        "cs2",
-        "counter-strike 2",
-        "blast open",
-        "spring 2026",
-        "esports",
-        "counter-strike",
-        "blast premier",
-        "cs:go",
-        "csgo",
-        "blast",
-        "tournament",
-        "cs2 esports",
-        "blast spring",
-        "blast open 2026",
-        "cs2 blast",
-        "open spring",
-        "2026 winner",
-        "cs2 blast open",
-        "blast open spring",
-        "open spring 2026",
-        "spring 2026 winner"
-      ],
-      "entities": [
-        "blast open",
-        "cs2"
-      ],
-      "entityGroups": [
-        [
-          "blast open",
-          "blast 春季赛"
-        ],
-        [
-          "cs2",
-          "反恐精英 2"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "10287",
-          "title": "Aurora Gaming",
-          "yesTokenId": "82858424830954640012961191899452977229853968798576793911490627967350678211190",
-          "noTokenId": "49090801725444263807696522822631368582430829196394990999144394867128864950015"
-        },
-        {
-          "marketId": "10288",
-          "title": "Natus Vincere",
-          "yesTokenId": "39749141451067537415481054908252870033648601306613308253530787391709210659870",
-          "noTokenId": "21286237147084196405695438722879258318669012088904617501166399399759189667224"
-        },
-        {
-          "marketId": "10289",
-          "title": "Team Vitality",
-          "yesTokenId": "56060229862055976444496623775798118900370561981186799996924861235835109064497",
-          "noTokenId": "80437683546278403778729633622614079531531298093245412253243962103941690740363"
-        },
-        {
-          "marketId": "10290",
-          "title": "PARIVISION",
-          "yesTokenId": "47270558401527517203459721486300100573062334931002086986138937428153185408572",
-          "noTokenId": "11241657226383485249357018779051711800308977480279935723265253328724995053433"
-        },
-        {
-          "marketId": "10291",
-          "title": "Team Falcons",
-          "yesTokenId": "37784976677694946621385868271225640485181665725048107409987715224090027877147",
-          "noTokenId": "106851809470672347961087557298780988688169124932666183209130103512726041360130"
-        },
-        {
-          "marketId": "10292",
-          "title": "The MongolZ",
-          "yesTokenId": "50058233471668011786721164494283976430269535156593112968248641636970774465381",
-          "noTokenId": "28028207290586120846734714009877275871025829303061263810975874139938826156407"
-        }
-      ]
-    },
     "10312": {
       "title": "Draw",
       "url": "https://app.opinion.trade/market/10312?ref=opinion_hud",
@@ -4394,114 +4206,6 @@
         "noLabel": "No"
       },
       "type": "binary"
-    },
-    "431": {
-      "title": "Dota2 ESL One Birmingham 2026: Winner",
-      "url": "https://app.opinion.trade/market/431?ref=opinion_hud",
-      "yesTokenId": "45590714335120590505965395245748529720440470819326952860928713533475264623681",
-      "noTokenId": "96881135349602532493326692671683981592964437419153370812317246807334973588037",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Yes",
-        "noLabel": "No"
-      },
-      "keywords": [
-        "dota 2",
-        "esl one",
-        "birmingham",
-        "tournament",
-        "esports",
-        "moba",
-        "valve",
-        "lan",
-        "major",
-        "finals",
-        "playoffs",
-        "championship",
-        "pro scene",
-        "gaming",
-        "competitive",
-        "dota2 esl",
-        "one birmingham",
-        "birmingham 2026",
-        "2026 winner",
-        "dota2 esl one",
-        "esl one birmingham",
-        "one birmingham 2026",
-        "birmingham 2026 winner"
-      ],
-      "entities": [
-        "dota 2",
-        "esl one birmingham"
-      ],
-      "entityGroups": [
-        [
-          "dota 2",
-          "dota2"
-        ],
-        [
-          "esl one birmingham",
-          "esl one",
-          "esl one 伯明翰"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "10480",
-          "title": "Yandex",
-          "yesTokenId": "81077361605303619229681567813622529925259160460477921028729695701208006352991",
-          "noTokenId": "37238683672291772694747312052988852621456062961017769329365402031832416371610"
-        },
-        {
-          "marketId": "10481",
-          "title": "Spirit",
-          "yesTokenId": "83746772613523523308800093233779082939055020534858310786459857727327946124656",
-          "noTokenId": "36389459210553041636545520146808715906542627597130338120232607254299727501591"
-        },
-        {
-          "marketId": "10482",
-          "title": "Aurora",
-          "yesTokenId": "7071141593097712071903699625266016240758786109804834082997721843291426702406",
-          "noTokenId": "192206732292610178657483651859344619914938453464758520999717738513987950069"
-        },
-        {
-          "marketId": "10483",
-          "title": "Tundra",
-          "yesTokenId": "88534380208930132584207338557022655028309725323957975779374555029138160598589",
-          "noTokenId": "3459591719423046731611474788718811309131894164555948292334143089289734182017"
-        },
-        {
-          "marketId": "10484",
-          "title": "MOUZ",
-          "yesTokenId": "79812982677229892279414321950429900853514425117992519214366004971389114221916",
-          "noTokenId": "28982885609910498241472299462759817415563356673869677261410923429486468334343"
-        },
-        {
-          "marketId": "10485",
-          "title": "XG",
-          "yesTokenId": "93913363280303232508100029830938448752239416511130706242453105279520744428871",
-          "noTokenId": "33356792867478739649075695946728305365086871669957725311987551581784128623155"
-        },
-        {
-          "marketId": "10486",
-          "title": "Falcons",
-          "yesTokenId": "45590714335120590505965395245748529720440470819326952860928713533475264623681",
-          "noTokenId": "96881135349602532493326692671683981592964437419153370812317246807334973588037"
-        },
-        {
-          "marketId": "10487",
-          "title": "PARI",
-          "yesTokenId": "31185082485740972423913893632707265930503098322370288720805914063478930705306",
-          "noTokenId": "65971803598070296380926085472230950130940315368628843935347314863345018107783"
-        },
-        {
-          "marketId": "10488",
-          "title": "Other",
-          "yesTokenId": "77006353388524201653842724237801482012433547244070963680925523670138899715049",
-          "noTokenId": "46305615257775682245566825273725788738821176473347563103829646925984328956708"
-        }
-      ]
     },
     "432": {
       "title": "LoL - LEC 2026 Spring: Winner",
@@ -4621,42 +4325,6 @@
         }
       ]
     },
-    "10902": {
-      "title": "BTC Up or Down - Hourly (Mar 31, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10902?ref=opinion_hud",
-      "yesTokenId": "37533207838972015519198831297971838760092093528150783775506977379262274203151",
-      "noTokenId": "53037334266954991864704603494716862206077397293467107935059889037897504806545",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10903": {
-      "title": "ETH Up or Down - Hourly (Mar 31, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10903?ref=opinion_hud",
-      "yesTokenId": "100074383356326261869382117525974304996261324210012719816704840292434799280841",
-      "noTokenId": "73324166600251542845192368065721753415516445220654764711849937313537738705650",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "10901": {
-      "title": "BNB Up or Down - Hourly (Mar 31, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10901?ref=opinion_hud",
-      "yesTokenId": "33498224943608976526297885291099890316403204670955612892456194154202167274193",
-      "noTokenId": "112816894158035617940758067865749843527982581857059077707359459128322560423973",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "10888": {
       "title": "NBA: Nuggets vs Jazz (Apr. 1 9:00PM ET)",
       "url": "https://app.opinion.trade/market/10888?ref=opinion_hud",
@@ -4740,6 +4408,54 @@
         "noLabel": ""
       },
       "type": "binary"
+    },
+    "10928": {
+      "title": "ETH Up or Down - Hourly (Mar 31, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10928?ref=opinion_hud",
+      "yesTokenId": "106865007117783313319669421817412773911055026914037729164647359605246746653124",
+      "noTokenId": "44379293300148928831853689008691128427688989606630848432864432196002845510716",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10927": {
+      "title": "BTC Up or Down - Hourly (Mar 31, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10927?ref=opinion_hud",
+      "yesTokenId": "100492590742652827583690941436854564015290633821762691387225694442437671085772",
+      "noTokenId": "96780425134001128851267333114214834000635531298276531360400613039397280967815",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10926": {
+      "title": "BNB Up or Down - Hourly (Mar 31, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10926?ref=opinion_hud",
+      "yesTokenId": "109227109657754261166379740089993467201763975243730349523603343157799610621061",
+      "noTokenId": "51567374809760881888097024129407587762805276426155760937606041569729072229135",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10929": {
+      "title": "Bitcoin Up or Down on April 1?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/10929?ref=opinion_hud",
+      "yesTokenId": "27279721822182326401431200210580561559025320975246464958556727367289749448018",
+      "noTokenId": "114727445730864631806684689606777809474873825069934968880527675995294327174865",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -4796,9 +4512,7 @@
       "432"
     ],
     "2026 winner": [
-      "424",
-      "425",
-      "431"
+      "424"
     ],
     "2026-06-30": [
       "3508"
@@ -5049,15 +4763,6 @@
       "3367",
       "3368"
     ],
-    "birmingham": [
-      "431"
-    ],
-    "birmingham 2026": [
-      "431"
-    ],
-    "birmingham 2026 winner": [
-      "431"
-    ],
     "bitcoin": [
       "3256",
       "3365"
@@ -5082,27 +4787,6 @@
     ],
     "blackpink release album": [
       "2178"
-    ],
-    "blast": [
-      "425"
-    ],
-    "blast open": [
-      "425"
-    ],
-    "blast open 2026": [
-      "425"
-    ],
-    "blast open spring": [
-      "425"
-    ],
-    "blast premier": [
-      "425"
-    ],
-    "blast spring": [
-      "425"
-    ],
-    "blast 春季赛": [
-      "425"
     ],
     "blinks": [
       "2178"
@@ -5214,7 +4898,6 @@
     ],
     "championship": [
       "424",
-      "431",
       "432"
     ],
     "changpeng zhao": [
@@ -5290,9 +4973,6 @@
     "commodities": [
       "420"
     ],
-    "competitive": [
-      "431"
-    ],
     "conflict": [
       "3039",
       "415",
@@ -5312,12 +4992,6 @@
     ],
     "cook out apple": [
       "2368"
-    ],
-    "counter-strike": [
-      "425"
-    ],
-    "counter-strike 2": [
-      "425"
     ],
     "court decision": [
       "1546"
@@ -5382,24 +5056,6 @@
     ],
     "cryptography": [
       "3256"
-    ],
-    "cs2": [
-      "425"
-    ],
-    "cs2 blast": [
-      "425"
-    ],
-    "cs2 blast open": [
-      "425"
-    ],
-    "cs2 esports": [
-      "425"
-    ],
-    "cs:go": [
-      "425"
-    ],
-    "csgo": [
-      "425"
     ],
     "customs duties": [
       "1546"
@@ -5504,18 +5160,6 @@
     ],
     "dot plot": [
       "421"
-    ],
-    "dota 2": [
-      "431"
-    ],
-    "dota2": [
-      "431"
-    ],
-    "dota2 esl": [
-      "431"
-    ],
-    "dota2 esl one": [
-      "431"
     ],
     "downtime": [
       "3357"
@@ -5631,19 +5275,8 @@
     "eschatology": [
       "2670"
     ],
-    "esl one": [
-      "431"
-    ],
-    "esl one birmingham": [
-      "431"
-    ],
-    "esl one 伯明翰": [
-      "431"
-    ],
     "esports": [
       "424",
-      "425",
-      "431",
       "432"
     ],
     "eth": [
@@ -5737,7 +5370,6 @@
     ],
     "finals": [
       "424",
-      "431",
       "432"
     ],
     "finance": [
@@ -5777,9 +5409,6 @@
     "futures": [
       "3361",
       "420"
-    ],
-    "gaming": [
-      "431"
     ],
     "gaten": [
       "3224"
@@ -6100,9 +5729,6 @@
     "l2": [
       "3366"
     ],
-    "lan": [
-      "431"
-    ],
     "launch token": [
       "3366"
     ],
@@ -6183,9 +5809,6 @@
     ],
     "mainnet": [
       "3366"
-    ],
-    "major": [
-      "431"
     ],
     "march 2026": [
       "3039",
@@ -6282,9 +5905,6 @@
     ],
     "missile": [
       "3039"
-    ],
-    "moba": [
-      "431"
     ],
     "mobile game": [
       "424"
@@ -6416,12 +6036,6 @@
     "oil prices": [
       "420"
     ],
-    "one birmingham": [
-      "431"
-    ],
-    "one birmingham 2026": [
-      "431"
-    ],
     "one day": [
       "1721"
     ],
@@ -6430,12 +6044,6 @@
     ],
     "opec": [
       "420"
-    ],
-    "open spring": [
-      "425"
-    ],
-    "open spring 2026": [
-      "425"
     ],
     "operations against": [
       "415"
@@ -6505,7 +6113,6 @@
     ],
     "playoffs": [
       "424",
-      "431",
       "432"
     ],
     "policy board": [
@@ -6549,9 +6156,6 @@
     ],
     "pro league spring": [
       "424"
-    ],
-    "pro scene": [
-      "431"
     ],
     "proof of work": [
       "3256"
@@ -6854,12 +6458,10 @@
       "432"
     ],
     "spring 2026": [
-      "424",
-      "425"
+      "424"
     ],
     "spring 2026 winner": [
-      "424",
-      "425"
+      "424"
     ],
     "spring split": [
       "424",
@@ -7065,8 +6667,6 @@
     ],
     "tournament": [
       "424",
-      "425",
-      "431",
       "432"
     ],
     "trade policy": [
@@ -7168,9 +6768,6 @@
       "3505",
       "3506",
       "3525"
-    ],
-    "valve": [
-      "431"
     ],
     "vance": [
       "3055"
@@ -7294,9 +6891,6 @@
     "南茜·惠勒": [
       "3223"
     ],
-    "反恐精英 2": [
-      "425"
-    ],
     "币安币": [
       "3367",
       "3368"
@@ -7393,9 +6987,7 @@
       "432"
     ],
     "2026 winner": [
-      "424",
-      "425",
-      "431"
+      "424"
     ],
     "2026年春季赛": [
       "424"
@@ -7427,38 +7019,8 @@
     "beige book": [
       "421"
     ],
-    "birmingham": [
-      "431"
-    ],
-    "birmingham 2026": [
-      "431"
-    ],
-    "birmingham 2026 winner": [
-      "431"
-    ],
     "black gold": [
       "420"
-    ],
-    "blast": [
-      "425"
-    ],
-    "blast open": [
-      "425"
-    ],
-    "blast open 2026": [
-      "425"
-    ],
-    "blast open spring": [
-      "425"
-    ],
-    "blast premier": [
-      "425"
-    ],
-    "blast spring": [
-      "425"
-    ],
-    "blast 春季赛": [
-      "425"
     ],
     "boj": [
       "423"
@@ -7474,7 +7036,6 @@
     ],
     "championship": [
       "424",
-      "431",
       "432"
     ],
     "christine lagarde": [
@@ -7486,21 +7047,12 @@
     "commodities": [
       "420"
     ],
-    "competitive": [
-      "431"
-    ],
     "conflict": [
       "415",
       "416"
     ],
     "conflict ends": [
       "416"
-    ],
-    "counter-strike": [
-      "425"
-    ],
-    "counter-strike 2": [
-      "425"
     ],
     "cpi": [
       "421"
@@ -7510,24 +7062,6 @@
     ],
     "crude oil hit": [
       "420"
-    ],
-    "cs2": [
-      "425"
-    ],
-    "cs2 blast": [
-      "425"
-    ],
-    "cs2 blast open": [
-      "425"
-    ],
-    "cs2 esports": [
-      "425"
-    ],
-    "cs:go": [
-      "425"
-    ],
-    "csgo": [
-      "425"
     ],
     "decision dfr": [
       "422"
@@ -7559,18 +7093,6 @@
     "dot plot": [
       "421"
     ],
-    "dota 2": [
-      "431"
-    ],
-    "dota2": [
-      "431"
-    ],
-    "dota2 esl": [
-      "431"
-    ],
-    "dota2 esl one": [
-      "431"
-    ],
     "ecb": [
       "422"
     ],
@@ -7595,19 +7117,8 @@
     "escalation": [
       "416"
     ],
-    "esl one": [
-      "431"
-    ],
-    "esl one birmingham": [
-      "431"
-    ],
-    "esl one 伯明翰": [
-      "431"
-    ],
     "esports": [
       "424",
-      "425",
-      "431",
       "432"
     ],
     "euro": [
@@ -7633,7 +7144,6 @@
     ],
     "finals": [
       "424",
-      "431",
       "432"
     ],
     "fomc": [
@@ -7641,9 +7151,6 @@
     ],
     "futures": [
       "420"
-    ],
-    "gaming": [
-      "431"
     ],
     "governing council": [
       "422"
@@ -7723,9 +7230,6 @@
     "kpl": [
       "424"
     ],
-    "lan": [
-      "431"
-    ],
     "league": [
       "432"
     ],
@@ -7756,9 +7260,6 @@
     "lol lec 2026": [
       "432"
     ],
-    "major": [
-      "431"
-    ],
     "middle east": [
       "416"
     ],
@@ -7770,9 +7271,6 @@
     ],
     "military operations against": [
       "415"
-    ],
-    "moba": [
-      "431"
     ],
     "mobile game": [
       "424"
@@ -7803,20 +7301,8 @@
     "oil prices": [
       "420"
     ],
-    "one birmingham": [
-      "431"
-    ],
-    "one birmingham 2026": [
-      "431"
-    ],
     "opec": [
       "420"
-    ],
-    "open spring": [
-      "425"
-    ],
-    "open spring 2026": [
-      "425"
     ],
     "operations against": [
       "415"
@@ -7838,7 +7324,6 @@
     ],
     "playoffs": [
       "424",
-      "431",
       "432"
     ],
     "policy board": [
@@ -7852,9 +7337,6 @@
     ],
     "pro league spring": [
       "424"
-    ],
-    "pro scene": [
-      "431"
     ],
     "rate cut": [
       "421"
@@ -7885,12 +7367,10 @@
       "432"
     ],
     "spring 2026": [
-      "424",
-      "425"
+      "424"
     ],
     "spring 2026 winner": [
-      "424",
-      "425"
+      "424"
     ],
     "spring split": [
       "424",
@@ -7916,8 +7396,6 @@
     ],
     "tournament": [
       "424",
-      "425",
-      "431",
       "432"
     ],
     "troops": [
@@ -7944,9 +7422,6 @@
     "usa": [
       "416"
     ],
-    "valve": [
-      "431"
-    ],
     "wangzhe rongyao": [
       "424"
     ],
@@ -7971,9 +7446,6 @@
     ],
     "以色列": [
       "416"
-    ],
-    "反恐精英 2": [
-      "425"
     ],
     "日本央行": [
       "423"
