@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-31 11:25:39 UTC+8",
+    "generatedAt": "2026-03-31 17:14:19 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 41,
-      "markets": 163,
+      "kept": 48,
+      "markets": 170,
       "keywords": 811,
       "events": {
         "events": 5
       },
       "skipped": {
-        "statusEnum": 0,
+        "statusEnum": 1,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 959,
+        "cutoff_expired": 951,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -4621,11 +4621,11 @@
         }
       ]
     },
-    "10871": {
-      "title": "ETH Up or Down - Hourly (Mar 31, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10871?ref=opinion_hud",
-      "yesTokenId": "16186587565402914562058416900558877371804317477803177328901740347828898000140",
-      "noTokenId": "94268275990408256290533344443640518980169208469004438593012450620836117220656",
+    "10902": {
+      "title": "BTC Up or Down - Hourly (Mar 31, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10902?ref=opinion_hud",
+      "yesTokenId": "37533207838972015519198831297971838760092093528150783775506977379262274203151",
+      "noTokenId": "53037334266954991864704603494716862206077397293467107935059889037897504806545",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -4633,11 +4633,11 @@
       },
       "type": "binary"
     },
-    "10870": {
-      "title": "BTC Up or Down - Hourly (Mar 31, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10870?ref=opinion_hud",
-      "yesTokenId": "99201079351748294986201294355712638268035184180014717817880331528812030721440",
-      "noTokenId": "101534241001981639903905669614468941974751331438770481777374327163477788225544",
+    "10903": {
+      "title": "ETH Up or Down - Hourly (Mar 31, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10903?ref=opinion_hud",
+      "yesTokenId": "100074383356326261869382117525974304996261324210012719816704840292434799280841",
+      "noTokenId": "73324166600251542845192368065721753415516445220654764711849937313537738705650",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -4645,15 +4645,99 @@
       },
       "type": "binary"
     },
-    "10869": {
-      "title": "BNB Up or Down - Hourly (Mar 31, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10869?ref=opinion_hud",
-      "yesTokenId": "102124660986709381547855233009293003382863867654518386190775208376703329382463",
-      "noTokenId": "90895338271725640606690119432419725527283007146338997101434439318557986115031",
+    "10901": {
+      "title": "BNB Up or Down - Hourly (Mar 31, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10901?ref=opinion_hud",
+      "yesTokenId": "33498224943608976526297885291099890316403204670955612892456194154202167274193",
+      "noTokenId": "112816894158035617940758067865749843527982581857059077707359459128322560423973",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10888": {
+      "title": "NBA: Nuggets vs Jazz (Apr. 1 9:00PM ET)",
+      "url": "https://app.opinion.trade/market/10888?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "10887": {
+      "title": "NBA: 76ers vs Wizards (Apr. 1 7:00PM ET)",
+      "url": "https://app.opinion.trade/market/10887?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "10885": {
+      "title": "LCK 2026 Season: HLE vs BRO (Apr. 1 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/10885?ref=opinion_hud",
+      "yesTokenId": "75259611235789861173267622828737068901711728963840656192914795211529865973369",
+      "noTokenId": "103998357145906489048354184171957157816696212710113855890986612069912821351292",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "HLE",
+        "noLabel": "BRO"
+      },
+      "type": "binary"
+    },
+    "10886": {
+      "title": "LCK 2026 Season: T1 vs KT (Apr. 1 6:00AM ET)",
+      "url": "https://app.opinion.trade/market/10886?ref=opinion_hud",
+      "yesTokenId": "62351955957004326055046164395668255769684502024745472444413499978028813507624",
+      "noTokenId": "13592405846868637705834449726949911820427973886852906976142272022018135546429",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "T1",
+        "noLabel": "KT"
+      },
+      "type": "binary"
+    },
+    "10889": {
+      "title": "NBA: Spurs vs Warriors (Apr. 1 10:00PM ET)",
+      "url": "https://app.opinion.trade/market/10889?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "10882": {
+      "title": "KPL Spring 2026: AG.SP vs WOL (Apr. 3 6:30AM ET)",
+      "url": "https://app.opinion.trade/market/10882?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "10881": {
+      "title": "KPL Spring 2026: JDG vs WB (Apr. 1 6:30AM ET)",
+      "url": "https://app.opinion.trade/market/10881?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
       },
       "type": "binary"
     }
