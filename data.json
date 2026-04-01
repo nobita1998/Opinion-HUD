@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-01 11:38:02 UTC+8",
+    "generatedAt": "2026-04-01 17:20:15 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 42,
-      "markets": 162,
+      "kept": 43,
+      "markets": 163,
       "keywords": 774,
       "events": {
         "events": 5
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 2,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 956,
+        "cutoff_expired": 955,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -4337,11 +4337,11 @@
       },
       "type": "binary"
     },
-    "10958": {
-      "title": "BTC Up or Down - Hourly (Apr 01, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10958?ref=opinion_hud",
-      "yesTokenId": "106235117204064081292511660309637135977961863131097068996543203404210381103598",
-      "noTokenId": "53333895961887355859477998022344220817796833793208896028607261804184685992252",
+    "10982": {
+      "title": "BTC Up or Down - Hourly (Apr 01, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10982?ref=opinion_hud",
+      "yesTokenId": "99961794391260952062504911381626688871768507758359090936124218235225109384258",
+      "noTokenId": "102990207615774543419594283915531886989412910812802994002630432578966879296589",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -4349,11 +4349,11 @@
       },
       "type": "binary"
     },
-    "10959": {
-      "title": "ETH Up or Down - Hourly (Apr 01, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10959?ref=opinion_hud",
-      "yesTokenId": "92189746704451391068944273750914239739046671234335428648069112136031376076824",
-      "noTokenId": "17753883733213557704390224288221400308563057749087321611147851203917558316554",
+    "10983": {
+      "title": "ETH Up or Down - Hourly (Apr 01, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10983?ref=opinion_hud",
+      "yesTokenId": "41461320801054417369560252129519781643081148901937622551766420915350710113884",
+      "noTokenId": "108633572776959744521267535257470337098832402604765402139873763685756414984053",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -4361,15 +4361,27 @@
       },
       "type": "binary"
     },
-    "10957": {
-      "title": "BNB Up or Down - Hourly (Apr 01, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/10957?ref=opinion_hud",
-      "yesTokenId": "113916957083723227819056204979726572657856222759191322035323449058000770323630",
-      "noTokenId": "36287235523203228861860141842417783563347108346675647115935415087917896994051",
+    "10981": {
+      "title": "BNB Up or Down - Hourly (Apr 01, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/10981?ref=opinion_hud",
+      "yesTokenId": "115577497258260068458070532254785951527760832768521929315773282928125447041898",
+      "noTokenId": "106918252983691290079775505213765200473870436485736756014029218113149178966171",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "10973": {
+      "title": "KPL Spring 2026: KSG vs DYG (Apr. 2 6:30AM ET)",
+      "url": "https://app.opinion.trade/market/10973?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
       },
       "type": "binary"
     }
