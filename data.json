@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-02 01:08:20 UTC+8",
+    "generatedAt": "2026-04-02 11:22:00 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 41,
-      "markets": 161,
-      "keywords": 774,
+      "kept": 45,
+      "markets": 164,
+      "keywords": 756,
       "events": {
         "events": 5
       },
       "skipped": {
-        "statusEnum": 4,
+        "statusEnum": 2,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 955,
+        "cutoff_expired": 953,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -135,47 +135,6 @@
       "sig": "07af54e5",
       "sigFull": "07af54e5",
       "sigCore": "d20f830c",
-      "reused": false
-    },
-    "420": {
-      "title": "Will Crude Oil (CL) hit ... by end of March?",
-      "marketIds": [
-        "420"
-      ],
-      "bestMarketId": "420",
-      "bestLabels": null,
-      "keywords": [
-        "crude oil",
-        "cl",
-        "wti",
-        "petroleum",
-        "oil prices",
-        "energy",
-        "commodities",
-        "futures",
-        "black gold",
-        "barrel",
-        "nymex",
-        "opec",
-        "wti crude",
-        "oil market",
-        "energy sector",
-        "oil hit",
-        "hit march",
-        "crude oil hit",
-        "oil hit march"
-      ],
-      "entities": [
-        "crude oil"
-      ],
-      "entityGroups": [
-        [
-          "crude oil"
-        ]
-      ],
-      "sig": "e17be0cb",
-      "sigFull": "e17be0cb",
-      "sigCore": "4bcea8e9",
       "reused": false
     },
     "423": {
@@ -3588,12 +3547,6 @@
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "8478",
-          "title": "March 31, 2026",
-          "yesTokenId": "67129738220739634778627764930104442343310879400893880446444543078447327911577",
-          "noTokenId": "31694914401891819561027171211020004727305838689580066822492050897826842152749"
-        },
-        {
           "marketId": "9690",
           "title": "April 15, 2026",
           "yesTokenId": "108409873121467635451637378008739342775105562643227378303891293028393432781442",
@@ -3634,6 +3587,12 @@
           "title": "March 15, 2026",
           "yesTokenId": "68432033547954553639406186941043903167978501216216263842067902504155187247063",
           "noTokenId": "47811580885698260857205956358229659315920197460083337029889254433261899249353"
+        },
+        {
+          "marketId": "8478",
+          "title": "March 31, 2026",
+          "yesTokenId": "67129738220739634778627764930104442343310879400893880446444543078447327911577",
+          "noTokenId": "31694914401891819561027171211020004727305838689580066822492050897826842152749"
         }
       ]
     },
@@ -3688,12 +3647,6 @@
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "8475",
-          "title": "March 31, 2026",
-          "yesTokenId": "82328584884124981891580206116193958702322441519733574488020952603628280939735",
-          "noTokenId": "89406223880971551086039568285322358495527974568270866661974752527289572342868"
-        },
-        {
           "marketId": "9688",
           "title": "April 30, 2026",
           "yesTokenId": "109422476036959073802377009316285909770792794355078652203967236578921709789325",
@@ -3722,103 +3675,12 @@
           "title": "March 15, 2026",
           "yesTokenId": "14074038339115625078427817390327243143394882801009228741851837561760725678389",
           "noTokenId": "55889000230728445184439138398430680077049868635947359669175563682314196530384"
-        }
-      ]
-    },
-    "420": {
-      "title": "Will Crude Oil (CL) hit ... by end of March?",
-      "url": "https://app.opinion.trade/market/420?ref=opinion_hud",
-      "yesTokenId": "86033293541070136081196770969250124346158391800170626497617996019523938371236",
-      "noTokenId": "16289453918557378533858469656830670260406988914855495560459389370891061952402",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "crude oil",
-        "cl",
-        "wti",
-        "petroleum",
-        "oil prices",
-        "energy",
-        "commodities",
-        "futures",
-        "black gold",
-        "barrel",
-        "nymex",
-        "opec",
-        "wti crude",
-        "oil market",
-        "energy sector",
-        "oil hit",
-        "hit march",
-        "crude oil hit",
-        "oil hit march"
-      ],
-      "entities": [
-        "crude oil"
-      ],
-      "entityGroups": [
-        [
-          "crude oil"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "9887",
-          "title": "↑ $130",
-          "yesTokenId": "11022502778548227861855072442833279816080001023991557704828589434359006943218",
-          "noTokenId": "17872708104663710286080068875065762404947368972366073902295733379826234844148"
         },
         {
-          "marketId": "9888",
-          "title": "↑ $120",
-          "yesTokenId": "43601917663822189467015107176407370911755081002362024828135215289125501455808",
-          "noTokenId": "71665642619631265378440281782011206529965055551219325982761745909140851717274"
-        },
-        {
-          "marketId": "9889",
-          "title": "↑ $110",
-          "yesTokenId": "86033293541070136081196770969250124346158391800170626497617996019523938371236",
-          "noTokenId": "16289453918557378533858469656830670260406988914855495560459389370891061952402"
-        },
-        {
-          "marketId": "9890",
-          "title": "↑ $105",
-          "yesTokenId": "83593033304557006436279027556478148973494332872052925987756439704714947081347",
-          "noTokenId": "1512222687124756477468246335489063155322926334885345073394825978622516013322"
-        },
-        {
-          "marketId": "9892",
-          "title": "↓ $80",
-          "yesTokenId": "97489417851969942243520868448064607978414659493948049674982596219603667114843",
-          "noTokenId": "42639757796491671543216404960352000211689442370489464828818091165850395044996"
-        },
-        {
-          "marketId": "9893",
-          "title": "↓ $75",
-          "yesTokenId": "25501128635212335167857235067481966907906197588417997991023801846599211449243",
-          "noTokenId": "67045211578215762610923211035252353472070556025185377764098309325557384667298"
-        },
-        {
-          "marketId": "9894",
-          "title": "↓ $70",
-          "yesTokenId": "36459224104629835258368043482946354048862323116373714716212297201379473846980",
-          "noTokenId": "36940297238236802836369450089935002095376340971139560809277789586218900542928"
-        },
-        {
-          "marketId": "9895",
-          "title": "↓ $65",
-          "yesTokenId": "104631215563374298274102605741912726555132562113443859537448342485555096854985",
-          "noTokenId": "50941815006725660475730669473821124515475092481850889498405524597666608942998"
-        },
-        {
-          "marketId": "9891",
-          "title": "↑ $100",
-          "yesTokenId": "50690266527852102480942887358571840746067594620364810358158787197800492287496",
-          "noTokenId": "9912448385991770050813128465142781384047484471983113961213901999035883137268"
+          "marketId": "8475",
+          "title": "March 31, 2026",
+          "yesTokenId": "82328584884124981891580206116193958702322441519733574488020952603628280939735",
+          "noTokenId": "89406223880971551086039568285322358495527974568270866661974752527289572342868"
         }
       ]
     },
@@ -4337,9 +4199,45 @@
       },
       "type": "binary"
     },
-    "10973": {
-      "title": "KPL Spring 2026: KSG vs DYG (Apr. 2 6:30AM ET)",
-      "url": "https://app.opinion.trade/market/10973?ref=opinion_hud",
+    "11042": {
+      "title": "BTC Up or Down - Hourly (Apr 02, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11042?ref=opinion_hud",
+      "yesTokenId": "43732393375247550887769409879264860951356675513974278422610973391408658853936",
+      "noTokenId": "85731431260685804192035337759073886012019001154514421600666274402862182236514",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "11043": {
+      "title": "ETH Up or Down - Hourly (Apr 02, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11043?ref=opinion_hud",
+      "yesTokenId": "106166067929465106801739356708305013615548627123752530415084661099809227822213",
+      "noTokenId": "29019695334461070138340353612028407242362570315669048605978816175483185840041",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "11041": {
+      "title": "BNB Up or Down - Hourly (Apr 02, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11041?ref=opinion_hud",
+      "yesTokenId": "59622235430543959409746765097236130348136056686448742750753704667191481896499",
+      "noTokenId": "9814645986558120836829281579787663854819715042859613543065013381162783801911",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "11024": {
+      "title": "NBA: Cavaliers vs Warriors (Apr. 2 10:00PM ET)",
+      "url": "https://app.opinion.trade/market/11024?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -4349,9 +4247,21 @@
       },
       "type": "binary"
     },
-    "10995": {
-      "title": "Bitcoin Up or Down on April 2?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/10995?ref=opinion_hud",
+    "11023": {
+      "title": "NBA: Lakers vs Thunder (Apr. 2 9:30PM ET)",
+      "url": "https://app.opinion.trade/market/11023?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11025": {
+      "title": "NBA: Spurs vs Clippers (Apr. 2 10:30PM ET)",
+      "url": "https://app.opinion.trade/market/11025?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -4614,9 +4524,6 @@
     "bank of japan": [
       "423"
     ],
-    "barrel": [
-      "420"
-    ],
     "base": [
       "3366"
     ],
@@ -4679,9 +4586,6 @@
     ],
     "bitcoin replace sha-256": [
       "3256"
-    ],
-    "black gold": [
-      "420"
     ],
     "blackpink": [
       "2178"
@@ -4837,9 +4741,6 @@
     "christine lagarde": [
       "422"
     ],
-    "cl": [
-      "420"
-    ],
     "close warner": [
       "2398"
     ],
@@ -4873,9 +4774,6 @@
     "comeback": [
       "2178",
       "3369"
-    ],
-    "commodities": [
-      "420"
     ],
     "conflict": [
       "3039",
@@ -4923,12 +4821,6 @@
     ],
     "critical cloudflare incident": [
       "3357"
-    ],
-    "crude oil": [
-      "420"
-    ],
-    "crude oil hit": [
-      "420"
     ],
     "crypto": [
       "1721",
@@ -5162,12 +5054,6 @@
     "endorsement": [
       "3055"
     ],
-    "energy": [
-      "420"
-    ],
-    "energy sector": [
-      "420"
-    ],
     "epicenter": [
       "2668",
       "3356"
@@ -5311,8 +5197,7 @@
       "3509"
     ],
     "futures": [
-      "3361",
-      "420"
+      "3361"
     ],
     "gaten": [
       "3224"
@@ -5408,9 +5293,6 @@
     ],
     "hit $1500 2026": [
       "3367"
-    ],
-    "hit march": [
-      "420"
     ],
     "hok": [
       "424"
@@ -5919,35 +5801,17 @@
     "number one pick": [
       "3072"
     ],
-    "nymex": [
-      "420"
-    ],
     "office": [
       "3062"
     ],
     "official": [
       "3257"
     ],
-    "oil hit": [
-      "420"
-    ],
-    "oil hit march": [
-      "420"
-    ],
-    "oil market": [
-      "420"
-    ],
-    "oil prices": [
-      "420"
-    ],
     "one day": [
       "1721"
     ],
     "op stack": [
       "3366"
-    ],
-    "opec": [
-      "420"
     ],
     "operations against": [
       "415"
@@ -6005,9 +5869,6 @@
     ],
     "persian gulf": [
       "415"
-    ],
-    "petroleum": [
-      "420"
     ],
     "pick 2026": [
       "3072"
@@ -6744,12 +6605,6 @@
     "withdrawal": [
       "415"
     ],
-    "wti": [
-      "420"
-    ],
-    "wti crude": [
-      "420"
-    ],
     "yen": [
       "423"
     ],
@@ -6914,17 +6769,11 @@
     "bank of japan": [
       "423"
     ],
-    "barrel": [
-      "420"
-    ],
     "basis points": [
       "421"
     ],
     "beige book": [
       "421"
-    ],
-    "black gold": [
-      "420"
     ],
     "boj": [
       "423"
@@ -6945,12 +6794,6 @@
     "christine lagarde": [
       "422"
     ],
-    "cl": [
-      "420"
-    ],
-    "commodities": [
-      "420"
-    ],
     "conflict": [
       "415",
       "416"
@@ -6960,12 +6803,6 @@
     ],
     "cpi": [
       "421"
-    ],
-    "crude oil": [
-      "420"
-    ],
-    "crude oil hit": [
-      "420"
     ],
     "decision dfr": [
       "422"
@@ -7012,12 +6849,6 @@
     "end war": [
       "415"
     ],
-    "energy": [
-      "420"
-    ],
-    "energy sector": [
-      "420"
-    ],
     "escalation": [
       "416"
     ],
@@ -7053,14 +6884,8 @@
     "fomc": [
       "421"
     ],
-    "futures": [
-      "420"
-    ],
     "governing council": [
       "422"
-    ],
-    "hit march": [
-      "420"
     ],
     "hok": [
       "424"
@@ -7190,24 +7015,6 @@
     "monetary tightening": [
       "422"
     ],
-    "nymex": [
-      "420"
-    ],
-    "oil hit": [
-      "420"
-    ],
-    "oil hit march": [
-      "420"
-    ],
-    "oil market": [
-      "420"
-    ],
-    "oil prices": [
-      "420"
-    ],
-    "opec": [
-      "420"
-    ],
     "operations against": [
       "415"
     ],
@@ -7222,9 +7029,6 @@
     ],
     "persian gulf": [
       "415"
-    ],
-    "petroleum": [
-      "420"
     ],
     "playoffs": [
       "424",
@@ -7338,12 +7142,6 @@
     ],
     "withdrawal": [
       "415"
-    ],
-    "wti": [
-      "420"
-    ],
-    "wti crude": [
-      "420"
     ],
     "yen": [
       "423"
