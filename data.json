@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-03 17:07:12 UTC+8",
+    "generatedAt": "2026-04-04 00:54:53 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 38,
-      "markets": 155,
+      "kept": 45,
+      "markets": 162,
       "keywords": 726,
       "events": {
         "events": 5
       },
       "skipped": {
-        "statusEnum": 2,
+        "statusEnum": 9,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 960,
+        "cutoff_expired": 946,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -3904,6 +3904,90 @@
           "noTokenId": "42047747462927111407912929598242574729927126448117742167466341405424006035529"
         }
       ]
+    },
+    "11178": {
+      "title": "BTC Up or Down - Hourly (Apr 03, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11178?ref=opinion_hud",
+      "yesTokenId": "75733147645445913378080148201977593151109774660476978820046197543229599029484",
+      "noTokenId": "104156416509807803956926606767064895555637275864214048955502365531542962564872",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "11177": {
+      "title": "BNB Up or Down - Hourly (Apr 03, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11177?ref=opinion_hud",
+      "yesTokenId": "53671528563661732252994966921345247609832725051655402126540832420302269764244",
+      "noTokenId": "69237500916278540616603540512479927062035235635487808413340453541465677778494",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "11179": {
+      "title": "ETH Up or Down - Hourly (Apr 03, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11179?ref=opinion_hud",
+      "yesTokenId": "96937008310504634127070141410922714486087898114091269932189980523138310643958",
+      "noTokenId": "75587139204390475627377156936954828371465848568122691089640175117418581135370",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "11173": {
+      "title": "NBA: Pistons vs 76ers (Apr. 4 7:00PM ET)",
+      "url": "https://app.opinion.trade/market/11173?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11172": {
+      "title": "NBA: Wizards vs Heat (Apr. 4 3:00PM ET)",
+      "url": "https://app.opinion.trade/market/11172?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11170": {
+      "title": "Bitcoin Up or Down on April 4?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/11170?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11171": {
+      "title": "NBA: Spurs vs Nuggets (Apr. 4 3:00PM ET)",
+      "url": "https://app.opinion.trade/market/11171?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
     }
   },
   "index": {
