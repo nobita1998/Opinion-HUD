@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-04 10:54:58 UTC+8",
+    "generatedAt": "2026-04-04 16:55:10 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 41,
-      "markets": 158,
+      "kept": 44,
+      "markets": 161,
       "keywords": 726,
       "events": {
         "events": 5
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 2,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 957,
+        "cutoff_expired": 954,
         "cutoff_zero_kept": 4,
         "resolved": 0,
         "missing_id": 0,
@@ -3905,11 +3905,47 @@
         }
       ]
     },
-    "11210": {
-      "title": "ETH Up or Down - Hourly (Apr 04, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11210?ref=opinion_hud",
-      "yesTokenId": "42354062925178511461323916155003210169874647177142701918714569475417525262757",
-      "noTokenId": "35634198423264728116415524562602627426646437882885136516667691772758716254310",
+    "11238": {
+      "title": "NBA: Raptors vs Celtics (Apr. 5 3:30PM ET)",
+      "url": "https://app.opinion.trade/market/11238?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11239": {
+      "title": "NBA: Lakers vs Mavericks (Apr. 5 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/11239?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11240": {
+      "title": "NBA: Rockets vs Warriors (Apr. 5 10:00PM ET)",
+      "url": "https://app.opinion.trade/market/11240?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11227": {
+      "title": "BTC Up or Down - Hourly (Apr 04, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11227?ref=opinion_hud",
+      "yesTokenId": "3800535618853546625810292271891987676957363676744706889819675253673681589168",
+      "noTokenId": "84803286656709050642787559373327059711396061492520920138161501730890083099105",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -3917,11 +3953,11 @@
       },
       "type": "binary"
     },
-    "11208": {
-      "title": "BNB Up or Down - Hourly (Apr 04, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11208?ref=opinion_hud",
-      "yesTokenId": "107224322342702898840490089383502912556373293673220376881879556961973571823172",
-      "noTokenId": "19936849870847119537235769826156635898002586928090008972099241461655449600421",
+    "11226": {
+      "title": "BNB Up or Down - Hourly (Apr 04, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11226?ref=opinion_hud",
+      "yesTokenId": "89864709909704330765580785007810222591492579268978037686291876457734203358538",
+      "noTokenId": "44040786659206572413803773279268875219862190318775769514218322674138445953779",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -3929,11 +3965,11 @@
       },
       "type": "binary"
     },
-    "11209": {
-      "title": "BTC Up or Down - Hourly (Apr 04, 2026 03:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11209?ref=opinion_hud",
-      "yesTokenId": "45523522716422673268774303930352733953899481441330479894409156295623742837997",
-      "noTokenId": "38706429599119113297230929502197733690889069865071369076193302512351450594536",
+    "11228": {
+      "title": "ETH Up or Down - Hourly (Apr 04, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11228?ref=opinion_hud",
+      "yesTokenId": "47585799744801942977823201332481191972200725612240764831749137442741518272601",
+      "noTokenId": "100295152895831819715253356910963594069388333353374262719561186815950953940075",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
