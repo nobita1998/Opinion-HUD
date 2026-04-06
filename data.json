@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-06 11:35:55 UTC+8",
+    "generatedAt": "2026-04-06 17:21:23 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 33,
-      "markets": 158,
+      "kept": 30,
+      "markets": 159,
       "keywords": 726,
       "events": {
         "events": 5
       },
       "skipped": {
-        "statusEnum": 11,
+        "statusEnum": 2,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 956,
+        "cutoff_expired": 968,
         "cutoff_zero_kept": 2,
         "resolved": 0,
         "missing_id": 0,
@@ -3429,8 +3429,8 @@
     "423": {
       "title": "Bank of Japan Decision in June 2026?",
       "url": "https://app.opinion.trade/market/423?ref=opinion_hud",
-      "yesTokenId": "44147726455487132027149221428432942539195964955038820113510574654617146046656",
-      "noTokenId": "104456633873631268149452111187957133453805092161188308025391366403244914115186",
+      "yesTokenId": "57896944611346317662672174005647609882439170833172959959867269823564063821205",
+      "noTokenId": "85156703139020412006429846003819626200979409978287912577972511164607003193464",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -3499,8 +3499,8 @@
     "421": {
       "title": "US Fed Decision in July?",
       "url": "https://app.opinion.trade/market/421?ref=opinion_hud",
-      "yesTokenId": "13753689769505483685407929346331824827499625890836159201812116021594794537604",
-      "noTokenId": "94454258687501874646628525934019540019998314479889054381218143601142338365854",
+      "yesTokenId": "78166141035752667404586556594958528526569491870650565498686871276175567898591",
+      "noTokenId": "50965244612399246718165305703867461481355986468331083645456056852384671335109",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -3574,8 +3574,8 @@
     "422": {
       "title": "ECB Rates Decision (DFR): June 2026",
       "url": "https://app.opinion.trade/market/422?ref=opinion_hud",
-      "yesTokenId": "60309053368255711455179679544263303329135260663311205320825854311137625792508",
-      "noTokenId": "3837824512174676273664303814063539504788937282185355141842353094201909359891",
+      "yesTokenId": "23590798549302995484401869850847468501308720357041828507137774718089177201368",
+      "noTokenId": "18376805803392060122975482461215660736863196335547629599867281867904167058911",
       "volume": 0.0,
       "labels": {
         "yesLabel": "YES",
@@ -3905,11 +3905,11 @@
         }
       ]
     },
-    "11368": {
-      "title": "BTC Up or Down - Hourly (Apr 06, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11368?ref=opinion_hud",
-      "yesTokenId": "26913545848473839608383946251276472762508410880738656834063852328805414495919",
-      "noTokenId": "34331907143023230836413651710722426765466680097032543582781934465559981566519",
+    "11388": {
+      "title": "BNB Up or Down - Hourly (Apr 06, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11388?ref=opinion_hud",
+      "yesTokenId": "55950964115792655728813551222432275876281632352716139398302403639655630372198",
+      "noTokenId": "100966982016597275725016863861214187960244854669334252631596342872010969804399",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -3917,11 +3917,11 @@
       },
       "type": "binary"
     },
-    "11367": {
-      "title": "BNB Up or Down - Hourly (Apr 06, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11367?ref=opinion_hud",
-      "yesTokenId": "20230002349195583675640342438130603249572553778125627937960527339859909899545",
-      "noTokenId": "93002491270197338221765253640519851770920397118083940544896282064994212579864",
+    "11390": {
+      "title": "ETH Up or Down - Hourly (Apr 06, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11390?ref=opinion_hud",
+      "yesTokenId": "6182864793932161634928292489447502523948499129297261419743387383998001133845",
+      "noTokenId": "87119329882823010988619292048815797132708474517683806991778643296617036166842",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -3929,15 +3929,27 @@
       },
       "type": "binary"
     },
-    "11369": {
-      "title": "ETH Up or Down - Hourly (Apr 06, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11369?ref=opinion_hud",
-      "yesTokenId": "63448776783438025071080721505345264233559744428755405246048074834132511251778",
-      "noTokenId": "24453681776610714675842371295633104517757753706513795779001482393579613083929",
+    "11389": {
+      "title": "BTC Up or Down - Hourly (Apr 06, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11389?ref=opinion_hud",
+      "yesTokenId": "87922823355283743030157705545489677389033239024394252255219789351820257647628",
+      "noTokenId": "81838648175572956054564447158629602316915635551220571776064176917872178852573",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "11382": {
+      "title": "KPL Spring 2026: WOL vs KSG (Apr. 11 6:00AM ET)",
+      "url": "https://app.opinion.trade/market/11382?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
       },
       "type": "binary"
     }
