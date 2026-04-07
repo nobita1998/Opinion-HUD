@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-07 11:26:42 UTC+8",
+    "generatedAt": "2026-04-07 17:17:40 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 19,
-      "markets": 156,
-      "keywords": 670,
+      "kept": 22,
+      "markets": 157,
+      "keywords": 695,
       "events": {
-        "events": 2
+        "events": 3
       },
       "skipped": {
         "statusEnum": 2,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 979,
+        "cutoff_expired": 976,
         "cutoff_zero_kept": 2,
         "resolved": 0,
         "missing_id": 0,
@@ -30,11 +30,11 @@
         "onlyAiForNew": true,
         "reused": 2,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
+        "calls": 1,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 1,
         "errors": 0
       }
     }
@@ -138,6 +138,57 @@
       "sig": "8def09f5",
       "sigFull": "8def09f5",
       "sigCore": "c377270c",
+      "reused": false
+    },
+    "433": {
+      "title": "Premier League: Chelsea vs Man City (Apr. 12 15:30 UTC)",
+      "marketIds": [
+        "433"
+      ],
+      "bestMarketId": "433",
+      "bestLabels": null,
+      "keywords": [
+        "chelsea",
+        "man city",
+        "manchester city",
+        "premier league",
+        "epl",
+        "football",
+        "soccer",
+        "match",
+        "game",
+        "blues",
+        "citizens",
+        "stamford bridge",
+        "etihad",
+        "pl",
+        "english football",
+        "league chelsea",
+        "chelsea man",
+        "city apr",
+        "apr utc",
+        "premier league chelsea",
+        "league chelsea man",
+        "chelsea man city",
+        "man city apr",
+        "city apr utc"
+      ],
+      "entities": [
+        "chelsea",
+        "man city"
+      ],
+      "entityGroups": [
+        [
+          "chelsea",
+          "切尔西"
+        ],
+        [
+          "man city"
+        ]
+      ],
+      "sig": "398201ca",
+      "sigFull": "398201ca",
+      "sigCore": "f21902c2",
       "reused": false
     }
   },
@@ -3557,11 +3608,11 @@
       },
       "type": "binary"
     },
-    "11448": {
-      "title": "ETH Up or Down - Hourly (Apr 07, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11448?ref=opinion_hud",
-      "yesTokenId": "27092822950289339771019252530901084149088927361237807730152350726623170299224",
-      "noTokenId": "54306464272951413508228169682438969658805602103638658400941214001647837269775",
+    "11469": {
+      "title": "ETH Up or Down - Hourly (Apr 07, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11469?ref=opinion_hud",
+      "yesTokenId": "33211040923342605963142856834451494361995573413523805849412099060197348444030",
+      "noTokenId": "21322399622998583738833992888972306278379613438713591847678711423871007006828",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -3569,11 +3620,11 @@
       },
       "type": "binary"
     },
-    "11447": {
-      "title": "BTC Up or Down - Hourly (Apr 07, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11447?ref=opinion_hud",
-      "yesTokenId": "23246935129407080530996609681965981609401479807546884540657148541582520266072",
-      "noTokenId": "110711838235739480049439059349056706533973200922066633012423093703801976827906",
+    "11467": {
+      "title": "BNB Up or Down - Hourly (Apr 07, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11467?ref=opinion_hud",
+      "yesTokenId": "34924276054269749696365335758703849780340679939780439462907998182176032996385",
+      "noTokenId": "64038679100092790106306519207952790433463482382406666824299741013244859423038",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -3581,17 +3632,88 @@
       },
       "type": "binary"
     },
-    "11446": {
-      "title": "BNB Up or Down - Hourly (Apr 07, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11446?ref=opinion_hud",
-      "yesTokenId": "75516001732370933197065980605296058517195694721788531984583192879442645288254",
-      "noTokenId": "5915514515013284596947334358336033425328075953163430133369477534258627425651",
+    "11468": {
+      "title": "BTC Up or Down - Hourly (Apr 07, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11468?ref=opinion_hud",
+      "yesTokenId": "39754278029754093543449593912744072248139562728635603056712882468573617614626",
+      "noTokenId": "10119070646078863529709170643822641464436864152180103613142185623590683834101",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
       },
       "type": "binary"
+    },
+    "433": {
+      "title": "Premier League: Chelsea vs Man City (Apr. 12 15:30 UTC)",
+      "url": "https://app.opinion.trade/market/433?ref=opinion_hud",
+      "yesTokenId": "32969116929131065706311150415666944574822827677432302328188935363577153438221",
+      "noTokenId": "105630054920740944122700221765942545976044768053835410359643095391937698690302",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "chelsea",
+        "man city",
+        "manchester city",
+        "premier league",
+        "epl",
+        "football",
+        "soccer",
+        "match",
+        "game",
+        "blues",
+        "citizens",
+        "stamford bridge",
+        "etihad",
+        "pl",
+        "english football",
+        "league chelsea",
+        "chelsea man",
+        "city apr",
+        "apr utc",
+        "premier league chelsea",
+        "league chelsea man",
+        "chelsea man city",
+        "man city apr",
+        "city apr utc"
+      ],
+      "entities": [
+        "chelsea",
+        "man city"
+      ],
+      "entityGroups": [
+        [
+          "chelsea",
+          "切尔西"
+        ],
+        [
+          "man city"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "11458",
+          "title": "CHE",
+          "yesTokenId": "32969116929131065706311150415666944574822827677432302328188935363577153438221",
+          "noTokenId": "105630054920740944122700221765942545976044768053835410359643095391937698690302"
+        },
+        {
+          "marketId": "11459",
+          "title": "DRAW",
+          "yesTokenId": "85852463646672432424555613243534923686863631071604735919666560035284923122804",
+          "noTokenId": "47208776033478916165919291747300635865015190497206471323608873640723310582649"
+        },
+        {
+          "marketId": "11460",
+          "title": "MCI",
+          "yesTokenId": "69854098088692843202168887723832606867583212418024992964194121781461368548309",
+          "noTokenId": "43548500049481024593937535306470007276097108021346703246785034690743012238366"
+        }
+      ]
     }
   },
   "index": {
@@ -3808,6 +3930,9 @@
     "apple ceo march": [
       "2368"
     ],
+    "apr utc": [
+      "433"
+    ],
     "arkham": [
       "3365"
     ],
@@ -3905,6 +4030,9 @@
     ],
     "blockchain upgrade": [
       "3256"
+    ],
+    "blues": [
+      "433"
     ],
     "blʌͻkpiиk": [
       "2178"
@@ -4006,6 +4134,15 @@
     "charlotte hale": [
       "3158"
     ],
+    "chelsea": [
+      "433"
+    ],
+    "chelsea man": [
+      "433"
+    ],
+    "chelsea man city": [
+      "433"
+    ],
     "china": [
       "1856"
     ],
@@ -4023,6 +4160,15 @@
     ],
     "christianity": [
       "2670"
+    ],
+    "citizens": [
+      "433"
+    ],
+    "city apr": [
+      "433"
+    ],
+    "city apr utc": [
+      "433"
     ],
     "close warner": [
       "2398"
@@ -4287,9 +4433,15 @@
     "endorsement": [
       "3055"
     ],
+    "english football": [
+      "433"
+    ],
     "epicenter": [
       "2668",
       "3356"
+    ],
+    "epl": [
+      "433"
     ],
     "escalation": [
       "3039"
@@ -4316,6 +4468,9 @@
     ],
     "ethereum all time": [
       "3364"
+    ],
+    "etihad": [
+      "433"
     ],
     "evm": [
       "1721"
@@ -4388,6 +4543,9 @@
     "flash loan attack": [
       "3360"
     ],
+    "football": [
+      "433"
+    ],
     "founder": [
       "3369"
     ],
@@ -4406,6 +4564,9 @@
     ],
     "futures": [
       "3361"
+    ],
+    "game": [
+      "433"
     ],
     "gaten": [
       "3224"
@@ -4690,6 +4851,12 @@
     "league": [
       "432"
     ],
+    "league chelsea": [
+      "433"
+    ],
+    "league chelsea man": [
+      "433"
+    ],
     "league of legends": [
       "432"
     ],
@@ -4750,6 +4917,15 @@
     "mainnet": [
       "3366"
     ],
+    "man city": [
+      "433"
+    ],
+    "man city apr": [
+      "433"
+    ],
+    "manchester city": [
+      "433"
+    ],
     "march 2026": [
       "3039",
       "3357",
@@ -4775,6 +4951,9 @@
     ],
     "marvel": [
       "3158"
+    ],
+    "match": [
+      "433"
     ],
     "max": [
       "2398"
@@ -4992,6 +5171,9 @@
     "pick 2026 nfl": [
       "3072"
     ],
+    "pl": [
+      "433"
+    ],
     "playoffs": [
       "424",
       "432"
@@ -5001,6 +5183,12 @@
     ],
     "potus": [
       "3062"
+    ],
+    "premier league": [
+      "433"
+    ],
+    "premier league chelsea": [
+      "433"
     ],
     "president": [
       "3062"
@@ -5304,6 +5492,9 @@
     "smart contract bug": [
       "3360"
     ],
+    "soccer": [
+      "433"
+    ],
     "specific date": [
       "3449"
     ],
@@ -5337,6 +5528,9 @@
     ],
     "stagnation": [
       "3265"
+    ],
+    "stamford bridge": [
+      "433"
     ],
     "star": [
       "3158"
@@ -5689,6 +5883,9 @@
     "以色列": [
       "3039"
     ],
+    "切尔西": [
+      "433"
+    ],
     "加密货币漏洞利用": [
       "3360"
     ],
@@ -5789,20 +5986,59 @@
     "2026年春季赛": [
       "424"
     ],
+    "apr utc": [
+      "433"
+    ],
+    "blues": [
+      "433"
+    ],
     "championship": [
       "424",
       "432"
     ],
+    "chelsea": [
+      "433"
+    ],
+    "chelsea man": [
+      "433"
+    ],
+    "chelsea man city": [
+      "433"
+    ],
+    "citizens": [
+      "433"
+    ],
+    "city apr": [
+      "433"
+    ],
+    "city apr utc": [
+      "433"
+    ],
     "emea": [
       "432"
+    ],
+    "english football": [
+      "433"
+    ],
+    "epl": [
+      "433"
     ],
     "esports": [
       "424",
       "432"
     ],
+    "etihad": [
+      "433"
+    ],
     "finals": [
       "424",
       "432"
+    ],
+    "football": [
+      "433"
+    ],
+    "game": [
+      "433"
     ],
     "hok": [
       "424"
@@ -5821,6 +6057,12 @@
     ],
     "league": [
       "432"
+    ],
+    "league chelsea": [
+      "433"
+    ],
+    "league chelsea man": [
+      "433"
     ],
     "league of legends": [
       "432"
@@ -5849,12 +6091,33 @@
     "lol lec 2026": [
       "432"
     ],
+    "man city": [
+      "433"
+    ],
+    "man city apr": [
+      "433"
+    ],
+    "manchester city": [
+      "433"
+    ],
+    "match": [
+      "433"
+    ],
     "mobile game": [
       "424"
+    ],
+    "pl": [
+      "433"
     ],
     "playoffs": [
       "424",
       "432"
+    ],
+    "premier league": [
+      "433"
+    ],
+    "premier league chelsea": [
+      "433"
     ],
     "pro league": [
       "424"
@@ -5867,6 +6130,9 @@
     ],
     "season": [
       "432"
+    ],
+    "soccer": [
+      "433"
     ],
     "spring": [
       "432"
@@ -5884,6 +6150,9 @@
     "spring winner": [
       "432"
     ],
+    "stamford bridge": [
+      "433"
+    ],
     "tencent": [
       "424"
     ],
@@ -5896,6 +6165,9 @@
     ],
     "wangzhe rongyao": [
       "424"
+    ],
+    "切尔西": [
+      "433"
     ],
     "欧洲联赛": [
       "432"
