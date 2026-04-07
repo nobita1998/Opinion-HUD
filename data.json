@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-07 01:02:13 UTC+8",
+    "generatedAt": "2026-04-07 11:26:42 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 21,
-      "markets": 157,
+      "kept": 19,
+      "markets": 156,
       "keywords": 670,
       "events": {
         "events": 2
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 2,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 977,
+        "cutoff_expired": 979,
         "cutoff_zero_kept": 2,
         "resolved": 0,
         "missing_id": 0,
@@ -3342,12 +3342,6 @@
       "type": "multi",
       "subMarkets": [
         {
-          "marketId": "10213",
-          "title": "AGSP",
-          "yesTokenId": "90486778066233988993938833947438568385406090053444216812043472604825709964360",
-          "noTokenId": "95718333496076937530206505503246500068086348495494571503847850673931975379708"
-        },
-        {
           "marketId": "10214",
           "title": "WOL",
           "yesTokenId": "94600072391811287711741707396714924093188370611535908945940696592706413264090",
@@ -3388,6 +3382,12 @@
           "title": "JDG",
           "yesTokenId": "62737748370143393807848476131776262547608332839085655125758792003918245675473",
           "noTokenId": "61760386230562935290532530917112345786077997482823325401586897167180856906563"
+        },
+        {
+          "marketId": "10213",
+          "title": "AGSP",
+          "yesTokenId": "90486778066233988993938833947438568385406090053444216812043472604825709964360",
+          "noTokenId": "95718333496076937530206505503246500068086348495494571503847850673931975379708"
         },
         {
           "marketId": "10216",
@@ -3557,51 +3557,39 @@
       },
       "type": "binary"
     },
-    "11421": {
-      "title": "NBA: Hornets vs Celtics (Apr. 7 8:00PM ET)",
-      "url": "https://app.opinion.trade/market/11421?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
+    "11448": {
+      "title": "ETH Up or Down - Hourly (Apr 07, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11448?ref=opinion_hud",
+      "yesTokenId": "27092822950289339771019252530901084149088927361237807730152350726623170299224",
+      "noTokenId": "54306464272951413508228169682438969658805602103638658400941214001647837269775",
       "volume": 0.0,
       "labels": {
-        "yesLabel": "",
-        "noLabel": ""
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     },
-    "11424": {
-      "title": "Bitcoin Up or Down on April 7?",
-      "url": "https://app.opinion.trade/market/11424?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
+    "11447": {
+      "title": "BTC Up or Down - Hourly (Apr 07, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11447?ref=opinion_hud",
+      "yesTokenId": "23246935129407080530996609681965981609401479807546884540657148541582520266072",
+      "noTokenId": "110711838235739480049439059349056706533973200922066633012423093703801976827906",
       "volume": 0.0,
       "labels": {
-        "yesLabel": "",
-        "noLabel": ""
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     },
-    "11423": {
-      "title": "NBA: Mavericks vs Clippers (Apr. 7 10:30PM ET)",
-      "url": "https://app.opinion.trade/market/11423?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
+    "11446": {
+      "title": "BNB Up or Down - Hourly (Apr 07, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11446?ref=opinion_hud",
+      "yesTokenId": "75516001732370933197065980605296058517195694721788531984583192879442645288254",
+      "noTokenId": "5915514515013284596947334358336033425328075953163430133369477534258627425651",
       "volume": 0.0,
       "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "11422": {
-      "title": "NBA: Thunder vs Lakers (Apr. 7 10:30PM ET)",
-      "url": "https://app.opinion.trade/market/11422?ref=opinion_hud",
-      "yesTokenId": "74557232715304671948697286189682994930791499326917921712063171224076075674169",
-      "noTokenId": "88509208492940347559088959635017743444842427941353198456847138447163779722491",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Thunder",
-        "noLabel": "Lakers"
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
