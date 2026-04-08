@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-08 11:28:22 UTC+8",
+    "generatedAt": "2026-04-08 17:16:10 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,17 +8,17 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 22,
-      "markets": 157,
-      "keywords": 695,
+      "kept": 93,
+      "markets": 205,
+      "keywords": 736,
       "events": {
-        "events": 3
+        "events": 6
       },
       "skipped": {
-        "statusEnum": 2,
+        "statusEnum": 14,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 976,
-        "cutoff_zero_kept": 2,
+        "cutoff_expired": 893,
+        "cutoff_zero_kept": 43,
         "resolved": 0,
         "missing_id": 0,
         "missing_title": 0,
@@ -28,68 +28,18 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 3,
+        "reused": 2,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
+        "calls": 4,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 4,
         "errors": 0
       }
     }
   },
   "events": {
-    "424": {
-      "title": "King Pro League Spring 2026: Winner",
-      "marketIds": [
-        "424"
-      ],
-      "bestMarketId": "424",
-      "bestLabels": null,
-      "keywords": [
-        "kpl",
-        "king pro league",
-        "honor of kings",
-        "hok",
-        "esports",
-        "spring split",
-        "2026",
-        "finals",
-        "playoffs",
-        "tencent",
-        "timi",
-        "wangzhe rongyao",
-        "mobile game",
-        "tournament",
-        "championship",
-        "king pro",
-        "pro league",
-        "league spring",
-        "spring 2026",
-        "2026 winner",
-        "pro league spring",
-        "league spring 2026",
-        "spring 2026 winner"
-      ],
-      "entities": [
-        "king pro league",
-        "2026年春季赛"
-      ],
-      "entityGroups": [
-        [
-          "king pro league",
-          "王者荣耀职业联赛"
-        ],
-        [
-          "2026年春季赛"
-        ]
-      ],
-      "sig": "c8f923d9",
-      "sigFull": "c8f923d9",
-      "sigCore": "80e67351",
-      "reused": false
-    },
     "432": {
       "title": "LoL - LEC 2026 Spring: Winner",
       "marketIds": [
@@ -189,6 +139,176 @@
       "sig": "398201ca",
       "sigFull": "398201ca",
       "sigCore": "f21902c2",
+      "reused": false
+    },
+    "438": {
+      "title": "French Ligue 1 Winner",
+      "marketIds": [
+        "438"
+      ],
+      "bestMarketId": "438",
+      "bestLabels": null,
+      "keywords": [
+        "ligue 1",
+        "french ligue 1",
+        "french football",
+        "french soccer",
+        "ligue 1 uber eats",
+        "le championnat",
+        "france league",
+        "french top flight",
+        "football",
+        "soccer",
+        "championship",
+        "title race",
+        "domestic league",
+        "ligue 1 season",
+        "french league table",
+        "french ligue",
+        "ligue winner",
+        "french ligue winner"
+      ],
+      "entities": [
+        "ligue 1"
+      ],
+      "entityGroups": [
+        [
+          "ligue 1",
+          "french ligue 1",
+          "法国足球甲级联赛"
+        ]
+      ],
+      "sig": "62690b99",
+      "sigFull": "62690b99",
+      "sigCore": "8d5adf0a",
+      "reused": false
+    },
+    "437": {
+      "title": "Brazil Presidential Election",
+      "marketIds": [
+        "437"
+      ],
+      "bestMarketId": "437",
+      "bestLabels": null,
+      "keywords": [
+        "brazil",
+        "brazilian",
+        "election",
+        "presidential",
+        "vote",
+        "ballot",
+        "politics",
+        "president",
+        "runoff",
+        "campaign",
+        "polling",
+        "lula",
+        "bolsonaro",
+        "pt",
+        "al",
+        "brazil presidential",
+        "presidential election",
+        "brazil presidential election"
+      ],
+      "entities": [
+        "brazil",
+        "presidential election"
+      ],
+      "entityGroups": [
+        [
+          "brazil"
+        ],
+        [
+          "presidential election",
+          "总统选举"
+        ]
+      ],
+      "sig": "e37490f7",
+      "sigFull": "e37490f7",
+      "sigCore": "e5b89ad5",
+      "reused": false
+    },
+    "435": {
+      "title": "Presidential Election Winner 2028",
+      "marketIds": [
+        "435"
+      ],
+      "bestMarketId": "435",
+      "bestLabels": null,
+      "keywords": [
+        "election",
+        "president",
+        "2028",
+        "potus",
+        "white house",
+        "campaign",
+        "vote",
+        "ballot",
+        "politics",
+        "race",
+        "candidate",
+        "oval office",
+        "commander in chief",
+        "polls",
+        "primaries",
+        "presidential election",
+        "election winner",
+        "winner 2028",
+        "presidential election winner",
+        "election winner 2028"
+      ],
+      "entities": [
+        "presidential election"
+      ],
+      "entityGroups": [
+        [
+          "presidential election",
+          "总统选举",
+          "美国大选"
+        ]
+      ],
+      "sig": "dc5d8bdd",
+      "sigFull": "dc5d8bdd",
+      "sigCore": "5ecd81d0",
+      "reused": false
+    },
+    "434": {
+      "title": "Netanyahu out by...?",
+      "marketIds": [
+        "434"
+      ],
+      "bestMarketId": "434",
+      "bestLabels": null,
+      "keywords": [
+        "netanyahu",
+        "benjamin netanyahu",
+        "bibi",
+        "israel",
+        "prime minister",
+        "pm",
+        "resignation",
+        "ouster",
+        "likud",
+        "coalition",
+        "government",
+        "election",
+        "knesset",
+        "politics",
+        "stepping down",
+        "netanyahu out"
+      ],
+      "entities": [
+        "netanyahu"
+      ],
+      "entityGroups": [
+        [
+          "netanyahu",
+          "内塔尼亚胡"
+        ]
+      ],
+      "sig": "27c5a7df",
+      "sigFull": "27c5a7df",
+      "sigCore": "6f880143",
       "reused": false
     }
   },
@@ -3342,118 +3462,6 @@
       },
       "type": "binary"
     },
-    "424": {
-      "title": "King Pro League Spring 2026: Winner",
-      "url": "https://app.opinion.trade/market/424?ref=opinion_hud",
-      "yesTokenId": "94600072391811287711741707396714924093188370611535908945940696592706413264090",
-      "noTokenId": "78305833401215334996611480159515427751440758871666954308772858448816299188848",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Yes",
-        "noLabel": "No"
-      },
-      "keywords": [
-        "kpl",
-        "king pro league",
-        "honor of kings",
-        "hok",
-        "esports",
-        "spring split",
-        "2026",
-        "finals",
-        "playoffs",
-        "tencent",
-        "timi",
-        "wangzhe rongyao",
-        "mobile game",
-        "tournament",
-        "championship",
-        "king pro",
-        "pro league",
-        "league spring",
-        "spring 2026",
-        "2026 winner",
-        "pro league spring",
-        "league spring 2026",
-        "spring 2026 winner"
-      ],
-      "entities": [
-        "king pro league",
-        "2026年春季赛"
-      ],
-      "entityGroups": [
-        [
-          "king pro league",
-          "王者荣耀职业联赛"
-        ],
-        [
-          "2026年春季赛"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "10214",
-          "title": "WOL",
-          "yesTokenId": "94600072391811287711741707396714924093188370611535908945940696592706413264090",
-          "noTokenId": "78305833401215334996611480159515427751440758871666954308772858448816299188848"
-        },
-        {
-          "marketId": "10215",
-          "title": "KSG",
-          "yesTokenId": "37935361830850164934786522453519372883338016239155775185825283539399914949277",
-          "noTokenId": "5315457111443364042584238315243598755785086138668812588427875452420386199284"
-        },
-        {
-          "marketId": "10208",
-          "title": "LGD.NBW",
-          "yesTokenId": "109269735358127535852910349821931224156958628736581001425309608035929366981599",
-          "noTokenId": "63261390625422928240981473726478724288871017669656276609101278377126242960193"
-        },
-        {
-          "marketId": "10209",
-          "title": "Q9",
-          "yesTokenId": "87321089528170862439786917888427371063464894368765980509695838282540995914803",
-          "noTokenId": "70115744689958108822435586382252128808410405977241642279619269425799574916052"
-        },
-        {
-          "marketId": "10210",
-          "title": "HERO",
-          "yesTokenId": "68616542450572814081597530400396002651975343124835151356490169846554175462300",
-          "noTokenId": "80623998535262579249907557007393761295223471713378828399474551073428607863805"
-        },
-        {
-          "marketId": "10211",
-          "title": "TTG",
-          "yesTokenId": "70056179126708437113208711889639111253423671003074931035477900544832930027856",
-          "noTokenId": "13077052370539829701447834274055903986112377385378803362742082833376375112945"
-        },
-        {
-          "marketId": "10212",
-          "title": "JDG",
-          "yesTokenId": "62737748370143393807848476131776262547608332839085655125758792003918245675473",
-          "noTokenId": "61760386230562935290532530917112345786077997482823325401586897167180856906563"
-        },
-        {
-          "marketId": "10213",
-          "title": "AGSP",
-          "yesTokenId": "90486778066233988993938833947438568385406090053444216812043472604825709964360",
-          "noTokenId": "95718333496076937530206505503246500068086348495494571503847850673931975379708"
-        },
-        {
-          "marketId": "10216",
-          "title": "WB",
-          "yesTokenId": "63728979476309061136107988732139106502109846681235446543482617745877178537657",
-          "noTokenId": "6263064172612706726245074712916086265307616004241293677518213271122281437680"
-        },
-        {
-          "marketId": "10217",
-          "title": "DYG",
-          "yesTokenId": "115127117036958851059239761556433609908946106823305613592342050696410203473090",
-          "noTokenId": "1884479094985677025936033837980110753082739705379081383091953299337681590686"
-        }
-      ]
-    },
     "10312": {
       "title": "Draw",
       "url": "https://app.opinion.trade/market/10312?ref=opinion_hud",
@@ -3679,11 +3687,11 @@
         }
       ]
     },
-    "11531": {
-      "title": "BTC Up or Down - Hourly (Apr 08, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11531?ref=opinion_hud",
-      "yesTokenId": "15313295850184939534090032671458235023107498105335160370595420937592602729371",
-      "noTokenId": "72542201270100380725240244466333615469905732143795055654770612599073561601785",
+    "11628": {
+      "title": "BTC Up or Down - Hourly (Apr 08, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11628?ref=opinion_hud",
+      "yesTokenId": "75929875549908707704253631313768415557955025371126458844102678527445517134002",
+      "noTokenId": "47095035294601098473046759950217851390207986918187222088346163647282111279972",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -3691,11 +3699,11 @@
       },
       "type": "binary"
     },
-    "11530": {
-      "title": "BNB Up or Down - Hourly (Apr 08, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11530?ref=opinion_hud",
-      "yesTokenId": "45061301490810967183273400386491581927784697528785860509528120243407495847320",
-      "noTokenId": "8004743641606824196508819716662323024654829888600655455300530910472251408224",
+    "11629": {
+      "title": "ETH Up or Down - Hourly (Apr 08, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11629?ref=opinion_hud",
+      "yesTokenId": "98228202142833085898283908875517078817318419999624063764186923048932662620494",
+      "noTokenId": "59999641822902232324502831534966952957785900632078837070219463578240799856206",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -3703,17 +3711,915 @@
       },
       "type": "binary"
     },
-    "11532": {
-      "title": "ETH Up or Down - Hourly (Apr 08, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11532?ref=opinion_hud",
-      "yesTokenId": "59167582798056579890134806426570913784483512651167627815156818029338767652046",
-      "noTokenId": "45217564499547013029717621437751635335996466120978680994033798400220586150651",
+    "11627": {
+      "title": "BNB Up or Down - Hourly (Apr 08, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11627?ref=opinion_hud",
+      "yesTokenId": "70318039646305349686018604056428328290319610747397447382895384975569381938097",
+      "noTokenId": "101207993766209574286916495763454267348774466209407571860685119758132414159354",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
       },
       "type": "binary"
+    },
+    "11623": {
+      "title": "Bitcoin Up or Down on April 9?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/11623?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11619": {
+      "title": "NBA: Lakers vs Warriors (Apr. 9 10:00PM ET)",
+      "url": "https://app.opinion.trade/market/11619?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11618": {
+      "title": "NBA: 76ers vs Rockets (Apr. 9 8:00PM ET)",
+      "url": "https://app.opinion.trade/market/11618?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "438": {
+      "title": "French Ligue 1 Winner",
+      "url": "https://app.opinion.trade/market/438?ref=opinion_hud",
+      "yesTokenId": "1908962948508082796235033176887870464132672855160037363251247618695087006162",
+      "noTokenId": "52463821655508173713827414478690349329099807440818401089864360033658556821027",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Yes",
+        "noLabel": "No"
+      },
+      "keywords": [
+        "ligue 1",
+        "french ligue 1",
+        "french football",
+        "french soccer",
+        "ligue 1 uber eats",
+        "le championnat",
+        "france league",
+        "french top flight",
+        "football",
+        "soccer",
+        "championship",
+        "title race",
+        "domestic league",
+        "ligue 1 season",
+        "french league table",
+        "french ligue",
+        "ligue winner",
+        "french ligue winner"
+      ],
+      "entities": [
+        "ligue 1"
+      ],
+      "entityGroups": [
+        [
+          "ligue 1",
+          "french ligue 1",
+          "法国足球甲级联赛"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "11620",
+          "title": "PSG",
+          "yesTokenId": "1908962948508082796235033176887870464132672855160037363251247618695087006162",
+          "noTokenId": "52463821655508173713827414478690349329099807440818401089864360033658556821027"
+        },
+        {
+          "marketId": "11621",
+          "title": "Lens",
+          "yesTokenId": "100759030775238766943871908986265868063932584673691186923109165942240497566129",
+          "noTokenId": "94793283518361826367649939415750967870589885918481549433817870674584374190310"
+        },
+        {
+          "marketId": "11622",
+          "title": "Lyon",
+          "yesTokenId": "2351028338552264782400063565738254503738246658016443031124798321628016205678",
+          "noTokenId": "72984647201680622564018084980804807652011250240583573469711638523213890163487"
+        }
+      ]
+    },
+    "437": {
+      "title": "Brazil Presidential Election",
+      "url": "https://app.opinion.trade/market/437?ref=opinion_hud",
+      "yesTokenId": "80725782329918831248610998612330923944005866028343963004458095953753436882283",
+      "noTokenId": "53689949944898627512998696438029453709082796658069487167068419523370674058218",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Yes",
+        "noLabel": "No"
+      },
+      "keywords": [
+        "brazil",
+        "brazilian",
+        "election",
+        "presidential",
+        "vote",
+        "ballot",
+        "politics",
+        "president",
+        "runoff",
+        "campaign",
+        "polling",
+        "lula",
+        "bolsonaro",
+        "pt",
+        "al",
+        "brazil presidential",
+        "presidential election",
+        "brazil presidential election"
+      ],
+      "entities": [
+        "brazil",
+        "presidential election"
+      ],
+      "entityGroups": [
+        [
+          "brazil"
+        ],
+        [
+          "presidential election",
+          "总统选举"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "11606",
+          "title": "Luiz Inácio Lula da Silva",
+          "yesTokenId": "25634814125549826305861298469723394842492923559338325649998286670650782921304",
+          "noTokenId": "3084096334338615684104147150705104541729018506688379525535091097038168956208"
+        },
+        {
+          "marketId": "11607",
+          "title": "Flávio Bolsonaro",
+          "yesTokenId": "110391403580211100901612088356866791833159615118882012118663198701905424156036",
+          "noTokenId": "30192876525393618875164353921583237791607063960254890916702335025192430756011"
+        },
+        {
+          "marketId": "11608",
+          "title": "Renan Santos",
+          "yesTokenId": "80725782329918831248610998612330923944005866028343963004458095953753436882283",
+          "noTokenId": "53689949944898627512998696438029453709082796658069487167068419523370674058218"
+        },
+        {
+          "marketId": "11609",
+          "title": "Fernando Haddad",
+          "yesTokenId": "61183279351077561482845637887223078438486480330336633016424952067228518348990",
+          "noTokenId": "82751546376858104931133936441529817191154353253700834906002030431452272927855"
+        },
+        {
+          "marketId": "11610",
+          "title": "Ronaldo Caiado",
+          "yesTokenId": "58417775441550497124835442587985382677353523446641613594367495306329753047771",
+          "noTokenId": "5275800650349326802968734760111346119882909739764795006440187412611697486201"
+        },
+        {
+          "marketId": "11611",
+          "title": "Romeu Zema",
+          "yesTokenId": "106077984587640512904926969649831912830361696795065781966803579076660165551057",
+          "noTokenId": "57079826055062763869570739154220516486648582316858645331277291541765613875819"
+        },
+        {
+          "marketId": "11612",
+          "title": "Camilo Santana",
+          "yesTokenId": "2827740004748313321143843966389818325287190090419946950697373703801669138980",
+          "noTokenId": "52163511192526520746081590675182105591812490209482514153203494260748574372433"
+        },
+        {
+          "marketId": "11613",
+          "title": "Aldo Rebelo",
+          "yesTokenId": "88670256464858979442583098206518770420290174031418730328040874055533632287307",
+          "noTokenId": "81729977433198239555088902992157344513925460977328902073119750469416012301570"
+        },
+        {
+          "marketId": "11614",
+          "title": "Jair Bolsonaro",
+          "yesTokenId": "76395899427158851634531584711631569900584267577585454450425913718846653316685",
+          "noTokenId": "22677656824034198356885628821350618062242244280852888474502555100062430949309"
+        },
+        {
+          "marketId": "11615",
+          "title": "Geraldo Alckmin",
+          "yesTokenId": "55533478993023206299317236628288738400917769909298874972639815228976939332619",
+          "noTokenId": "67437577099333589710025173214842538247051280093160209720641310959080943864443"
+        }
+      ]
+    },
+    "11616": {
+      "title": "Market icon GTA VI released before June 2026?",
+      "url": "https://app.opinion.trade/market/11616?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11617": {
+      "title": "NBA: Pacers vs Nets (Apr. 9 7:30PM ET)",
+      "url": "https://app.opinion.trade/market/11617?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11597": {
+      "title": "Ukraine",
+      "url": "https://app.opinion.trade/market/11597?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11595": {
+      "title": "Italy",
+      "url": "https://app.opinion.trade/market/11595?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11590": {
+      "title": "Denmark",
+      "url": "https://app.opinion.trade/market/11590?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11602": {
+      "title": "Moldova",
+      "url": "https://app.opinion.trade/market/11602?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11596": {
+      "title": "Sweden",
+      "url": "https://app.opinion.trade/market/11596?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11592": {
+      "title": "Greece",
+      "url": "https://app.opinion.trade/market/11592?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11588": {
+      "title": "Finland",
+      "url": "https://app.opinion.trade/market/11588?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11600": {
+      "title": "Bulgaria",
+      "url": "https://app.opinion.trade/market/11600?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11589": {
+      "title": "France",
+      "url": "https://app.opinion.trade/market/11589?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11604": {
+      "title": "Norway",
+      "url": "https://app.opinion.trade/market/11604?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11603": {
+      "title": "Luxembourg",
+      "url": "https://app.opinion.trade/market/11603?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11598": {
+      "title": "Czechia",
+      "url": "https://app.opinion.trade/market/11598?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11605": {
+      "title": "Lithuania",
+      "url": "https://app.opinion.trade/market/11605?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11594": {
+      "title": "Romania",
+      "url": "https://app.opinion.trade/market/11594?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11599": {
+      "title": "Cyprus",
+      "url": "https://app.opinion.trade/market/11599?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11593": {
+      "title": "Israel",
+      "url": "https://app.opinion.trade/market/11593?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11591": {
+      "title": "Australia",
+      "url": "https://app.opinion.trade/market/11591?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11601": {
+      "title": "Malta",
+      "url": "https://app.opinion.trade/market/11601?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11563": {
+      "title": "James Talarico",
+      "url": "https://app.opinion.trade/market/11563?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11554": {
+      "title": "Kamala Harris",
+      "url": "https://app.opinion.trade/market/11554?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11569": {
+      "title": "Elon Musk",
+      "url": "https://app.opinion.trade/market/11569?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "435": {
+      "title": "Presidential Election Winner 2028",
+      "url": "https://app.opinion.trade/market/435?ref=opinion_hud",
+      "yesTokenId": "99741677417316227807541843312609161272953192511022948465369802528273772733698",
+      "noTokenId": "36220112392455906390813017801529222244230004851482030183067289298302069638717",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Yes",
+        "noLabel": "No"
+      },
+      "keywords": [
+        "election",
+        "president",
+        "2028",
+        "potus",
+        "white house",
+        "campaign",
+        "vote",
+        "ballot",
+        "politics",
+        "race",
+        "candidate",
+        "oval office",
+        "commander in chief",
+        "polls",
+        "primaries",
+        "presidential election",
+        "election winner",
+        "winner 2028",
+        "presidential election winner",
+        "election winner 2028"
+      ],
+      "entities": [
+        "presidential election"
+      ],
+      "entityGroups": [
+        [
+          "presidential election",
+          "总统选举",
+          "美国大选"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "11571",
+          "title": "Donald Trump Jr.",
+          "yesTokenId": "56851655778249129517252612881714411793256644805915173142241170274174475748086",
+          "noTokenId": "59578378863469399333171110673026790038779135168107308471200883144296311100892"
+        },
+        {
+          "marketId": "11572",
+          "title": "Ro Khanna",
+          "yesTokenId": "43985564082891796860549614333975254944711855331627266378260751512343858669875",
+          "noTokenId": "14174896936569629470540943988121960814676731396904193425607421980273363381347"
+        },
+        {
+          "marketId": "11573",
+          "title": "Wes Moore",
+          "yesTokenId": "99741677417316227807541843312609161272953192511022948465369802528273772733698",
+          "noTokenId": "36220112392455906390813017801529222244230004851482030183067289298302069638717"
+        },
+        {
+          "marketId": "11574",
+          "title": "Glenn Youngkin",
+          "yesTokenId": "91910681505741118586226459908668593220772820391313430704597464360190690082665",
+          "noTokenId": "6087342166339674928335415016893474738226136084382726816326121754032804376024"
+        },
+        {
+          "marketId": "11575",
+          "title": "Stephen Smith",
+          "yesTokenId": "15696426485874441692738315255107935413071797219103386632654040043824721723908",
+          "noTokenId": "100752784649806146891725242202346776380761151152794197592050982084447968719278"
+        },
+        {
+          "marketId": "11576",
+          "title": "Nikki Haley",
+          "yesTokenId": "48323713698219969551494282177646224329370020303683168056552624085166146614298",
+          "noTokenId": "47450603423514651994221385974408574464204848766358033148169967279201350119986"
+        },
+        {
+          "marketId": "11577",
+          "title": "Zohran Mamdani",
+          "yesTokenId": "78628164937239586062800624327232127430765891322057155265477176152386970321052",
+          "noTokenId": "80619389474374169409832013643431421427693128629849685928598350575475832347915"
+        },
+        {
+          "marketId": "11578",
+          "title": "Eric Trump",
+          "yesTokenId": "94172161054362590922007835218095306676087450521924163721659688446490864653712",
+          "noTokenId": "55450072711489864225767666469874387154900279507618636857103776436610408447708"
+        },
+        {
+          "marketId": "11579",
+          "title": "Tim Walz",
+          "yesTokenId": "99200068819581297292003325717385541651991470104987465109613297348112653066620",
+          "noTokenId": "22482599792699310762749636021172418149588911624797094914769112315833603361171"
+        },
+        {
+          "marketId": "11580",
+          "title": "Tulsi Gabbard",
+          "yesTokenId": "42689895656424417945606932735612168785858406187079306293861002852323648193193",
+          "noTokenId": "46481281014875553126217203154139284405119756939222666757033710900758454767565"
+        },
+        {
+          "marketId": "11581",
+          "title": "Vivek Ramaswamy",
+          "yesTokenId": "61309359209674615687544622113976481534496707043391247360234728683070078232559",
+          "noTokenId": "30977877551149438241606967884302436202665264836527359044009763648560688855142"
+        },
+        {
+          "marketId": "11582",
+          "title": "Kim Kardashian",
+          "yesTokenId": "2474044105684345813222853488760914700575937768456244856354229364767906894964",
+          "noTokenId": "35410659596830082223800303196818102570555176815826005780804809854898726746044"
+        },
+        {
+          "marketId": "11583",
+          "title": "LeBron James",
+          "yesTokenId": "72382957633325772161556399750176127138845418893659885136943471444441348646600",
+          "noTokenId": "26719554517222676357437159371648114869316346827891590192544390335123291987222"
+        },
+        {
+          "marketId": "11584",
+          "title": "Pete Hegseth",
+          "yesTokenId": "109950730244592232188378341670164141168126596842797735442694778501141495315442",
+          "noTokenId": "76080983619778755150025766514331822481307164731141892299655322362925323781393"
+        }
+      ]
+    },
+    "11570": {
+      "title": "Ivanka Trump",
+      "url": "https://app.opinion.trade/market/11570?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11551": {
+      "title": "Marco Rubio",
+      "url": "https://app.opinion.trade/market/11551?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11549": {
+      "title": "JD Vance",
+      "url": "https://app.opinion.trade/market/11549?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11564": {
+      "title": "Thomas Massie",
+      "url": "https://app.opinion.trade/market/11564?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11566": {
+      "title": "Jamie Dimon",
+      "url": "https://app.opinion.trade/market/11566?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11552": {
+      "title": "Alexandria Ocasio-Cortez",
+      "url": "https://app.opinion.trade/market/11552?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11556": {
+      "title": "Donald Trump",
+      "url": "https://app.opinion.trade/market/11556?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11568": {
+      "title": "Michelle Obama",
+      "url": "https://app.opinion.trade/market/11568?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11567": {
+      "title": "Greg Abbott",
+      "url": "https://app.opinion.trade/market/11567?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11555": {
+      "title": "Tucker Carlson",
+      "url": "https://app.opinion.trade/market/11555?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11562": {
+      "title": "Dwayne 'The Rock' Johnson",
+      "url": "https://app.opinion.trade/market/11562?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11550": {
+      "title": "Gavin Newsom",
+      "url": "https://app.opinion.trade/market/11550?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11558": {
+      "title": "Josh Shapiro",
+      "url": "https://app.opinion.trade/market/11558?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11553": {
+      "title": "Jon Ossoff",
+      "url": "https://app.opinion.trade/market/11553?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11565": {
+      "title": "Gretchen Whitmer",
+      "url": "https://app.opinion.trade/market/11565?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11560": {
+      "title": "JB Pritzker",
+      "url": "https://app.opinion.trade/market/11560?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11557": {
+      "title": "Ron DeSantis",
+      "url": "https://app.opinion.trade/market/11557?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11559": {
+      "title": "Pete Buttigieg",
+      "url": "https://app.opinion.trade/market/11559?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11561": {
+      "title": "Andy Beshear",
+      "url": "https://app.opinion.trade/market/11561?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "434": {
+      "title": "Netanyahu out by...?",
+      "url": "https://app.opinion.trade/market/434?ref=opinion_hud",
+      "yesTokenId": "11058813355638367871672094040936095769502778934184574499598713436203555552014",
+      "noTokenId": "98972159738363891430208999502607638908381756607129745137095790258091544165892",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Yes",
+        "noLabel": "No"
+      },
+      "keywords": [
+        "netanyahu",
+        "benjamin netanyahu",
+        "bibi",
+        "israel",
+        "prime minister",
+        "pm",
+        "resignation",
+        "ouster",
+        "likud",
+        "coalition",
+        "government",
+        "election",
+        "knesset",
+        "politics",
+        "stepping down",
+        "netanyahu out"
+      ],
+      "entities": [
+        "netanyahu"
+      ],
+      "entityGroups": [
+        [
+          "netanyahu",
+          "内塔尼亚胡"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "11546",
+          "title": "April 30",
+          "yesTokenId": "59295645178823555840338672295490221820716329454908314329463469954412029715470",
+          "noTokenId": "22530621866996027802603858502796187121972280412883397756385504327227604716588"
+        },
+        {
+          "marketId": "11547",
+          "title": "June 30",
+          "yesTokenId": "11058813355638367871672094040936095769502778934184574499598713436203555552014",
+          "noTokenId": "98972159738363891430208999502607638908381756607129745137095790258091544165892"
+        },
+        {
+          "marketId": "11548",
+          "title": "December 31",
+          "yesTokenId": "34909181978480720160545541459945924544654271568156896853466677638973629772565",
+          "noTokenId": "47915516827696310727151881538873495751512715386224002185582845731309672180477"
+        }
+      ]
     }
   },
   "index": {
@@ -3754,7 +4660,6 @@
       "3449",
       "3508",
       "3509",
-      "424",
       "432"
     ],
     "2026 nfl": [
@@ -3768,9 +4673,6 @@
     ],
     "2026 spring winner": [
       "432"
-    ],
-    "2026 winner": [
-      "424"
     ],
     "2026-06-30": [
       "3508"
@@ -3791,11 +4693,11 @@
     "2026年nfl选秀": [
       "3072"
     ],
-    "2026年春季赛": [
-      "424"
-    ],
     "2026年选秀": [
       "3072"
+    ],
+    "2028": [
+      "435"
     ],
     "2028 election": [
       "3055"
@@ -3869,6 +4771,9 @@
       "1721",
       "3361",
       "3366"
+    ],
+    "al": [
+      "437"
     ],
     "album": [
       "2178"
@@ -3953,6 +4858,10 @@
     "backing": [
       "3055"
     ],
+    "ballot": [
+      "435",
+      "437"
+    ],
     "base": [
       "3366"
     ],
@@ -3980,8 +4889,14 @@
     "bei return china": [
       "1856"
     ],
+    "benjamin netanyahu": [
+      "434"
+    ],
     "bianca": [
       "3158"
+    ],
+    "bibi": [
+      "434"
     ],
     "bible prophecy": [
       "2670"
@@ -4060,11 +4975,26 @@
     "bnb token": [
       "3368"
     ],
+    "bolsonaro": [
+      "437"
+    ],
     "bombing": [
       "3039"
     ],
     "bp": [
       "2178"
+    ],
+    "brazil": [
+      "437"
+    ],
+    "brazil presidential": [
+      "437"
+    ],
+    "brazil presidential election": [
+      "437"
+    ],
+    "brazilian": [
+      "437"
     ],
     "breakout": [
       "3364",
@@ -4103,6 +5033,13 @@
       "3449",
       "3509"
     ],
+    "campaign": [
+      "435",
+      "437"
+    ],
+    "candidate": [
+      "435"
+    ],
     "capital": [
       "3505",
       "3506",
@@ -4119,8 +5056,8 @@
       "2368"
     ],
     "championship": [
-      "424",
-      "432"
+      "432",
+      "438"
     ],
     "changpeng zhao": [
       "3369"
@@ -4188,6 +5125,9 @@
     "cloudflare status": [
       "3357"
     ],
+    "coalition": [
+      "434"
+    ],
     "coinbase": [
       "3366"
     ],
@@ -4203,6 +5143,9 @@
     "comeback": [
       "2178",
       "3369"
+    ],
+    "commander in chief": [
+      "435"
     ],
     "conflict": [
       "3039"
@@ -4345,6 +5288,9 @@
     "dollar": [
       "3359"
     ],
+    "domestic league": [
+      "438"
+    ],
     "donald trump": [
       "3055"
     ],
@@ -4399,6 +5345,17 @@
     "ecosystem": [
       "3366"
     ],
+    "election": [
+      "434",
+      "435",
+      "437"
+    ],
+    "election winner": [
+      "435"
+    ],
+    "election winner 2028": [
+      "435"
+    ],
     "eleven": [
       "3223"
     ],
@@ -4450,7 +5407,6 @@
       "2670"
     ],
     "esports": [
-      "424",
       "432"
     ],
     "eth": [
@@ -4525,7 +5481,6 @@
       "1546"
     ],
     "finals": [
-      "424",
       "432"
     ],
     "finance": [
@@ -4544,10 +5499,35 @@
       "3360"
     ],
     "football": [
-      "433"
+      "433",
+      "438"
     ],
     "founder": [
       "3369"
+    ],
+    "france league": [
+      "438"
+    ],
+    "french football": [
+      "438"
+    ],
+    "french league table": [
+      "438"
+    ],
+    "french ligue": [
+      "438"
+    ],
+    "french ligue 1": [
+      "438"
+    ],
+    "french ligue winner": [
+      "438"
+    ],
+    "french soccer": [
+      "438"
+    ],
+    "french top flight": [
+      "438"
     ],
     "fugitive": [
       "1856"
@@ -4594,6 +5574,9 @@
     ],
     "governance token": [
       "3366"
+    ],
+    "government": [
+      "434"
     ],
     "great earthquake": [
       "2668",
@@ -4660,17 +5643,11 @@
     "hit $1500 2026": [
       "3367"
     ],
-    "hok": [
-      "424"
-    ],
     "holly wheeler": [
       "3222"
     ],
     "hollywood": [
       "3158"
-    ],
-    "honor of kings": [
-      "424"
     ],
     "horror": [
       "3221",
@@ -4750,7 +5727,8 @@
       "3039"
     ],
     "israel": [
-      "3039"
+      "3039",
+      "434"
     ],
     "israel strikes": [
       "3039"
@@ -4799,14 +5777,8 @@
     "karen wheeler": [
       "3222"
     ],
-    "king pro": [
-      "424"
-    ],
-    "king pro league": [
-      "424"
-    ],
-    "kpl": [
-      "424"
+    "knesset": [
+      "434"
     ],
     "kraken": [
       "3362"
@@ -4842,6 +5814,9 @@
     "layer 2": [
       "3366"
     ],
+    "le championnat": [
+      "438"
+    ],
     "leadership": [
       "3369"
     ],
@@ -4859,12 +5834,6 @@
     ],
     "league of legends": [
       "432"
-    ],
-    "league spring": [
-      "424"
-    ],
-    "league spring 2026": [
-      "424"
     ],
     "leave": [
       "2368"
@@ -4884,6 +5853,21 @@
     "legal ruling": [
       "1546"
     ],
+    "ligue 1": [
+      "438"
+    ],
+    "ligue 1 season": [
+      "438"
+    ],
+    "ligue 1 uber eats": [
+      "438"
+    ],
+    "ligue winner": [
+      "438"
+    ],
+    "likud": [
+      "434"
+    ],
     "listing": [
       "3362"
     ],
@@ -4898,6 +5882,9 @@
     ],
     "lp": [
       "2178"
+    ],
+    "lula": [
+      "437"
     ],
     "m&a": [
       "2398"
@@ -5013,9 +6000,6 @@
     "missile": [
       "3039"
     ],
-    "mobile game": [
-      "424"
-    ],
     "monad": [
       "1721"
     ],
@@ -5079,6 +6063,12 @@
     "negative growth": [
       "3265"
     ],
+    "netanyahu": [
+      "434"
+    ],
+    "netanyahu out": [
+      "434"
+    ],
     "netflix": [
       "2398",
       "3221",
@@ -5126,6 +6116,9 @@
     "ousted": [
       "2368"
     ],
+    "ouster": [
+      "434"
+    ],
     "out apple": [
       "2368"
     ],
@@ -5143,6 +6136,9 @@
     ],
     "outflow": [
       "3365"
+    ],
+    "oval office": [
+      "435"
     ],
     "over $100m": [
       "3360"
@@ -5175,14 +6171,28 @@
       "433"
     ],
     "playoffs": [
-      "424",
       "432"
+    ],
+    "pm": [
+      "434"
+    ],
+    "politics": [
+      "434",
+      "435",
+      "437"
+    ],
+    "polling": [
+      "437"
+    ],
+    "polls": [
+      "435"
     ],
     "post-quantum": [
       "3256"
     ],
     "potus": [
-      "3062"
+      "3062",
+      "435"
     ],
     "premier league": [
       "433"
@@ -5191,14 +6201,26 @@
       "433"
     ],
     "president": [
-      "3062"
+      "3062",
+      "435",
+      "437"
     ],
     "president 2027": [
       "3055",
       "3062"
     ],
+    "presidential": [
+      "437"
+    ],
     "presidential candidate": [
       "3055"
+    ],
+    "presidential election": [
+      "435",
+      "437"
+    ],
+    "presidential election winner": [
+      "435"
     ],
     "price": [
       "3359",
@@ -5211,17 +6233,20 @@
     "price target": [
       "3506"
     ],
+    "primaries": [
+      "435"
+    ],
+    "prime minister": [
+      "434"
+    ],
     "private key compromise": [
       "3360"
     ],
-    "pro league": [
-      "424"
-    ],
-    "pro league spring": [
-      "424"
-    ],
     "proof of work": [
       "3256"
+    ],
+    "pt": [
+      "437"
     ],
     "public listing": [
       "3362"
@@ -5257,6 +6282,9 @@
     ],
     "quarterback": [
       "3072"
+    ],
+    "race": [
+      "435"
     ],
     "raise": [
       "3505",
@@ -5332,7 +6360,8 @@
     ],
     "resignation": [
       "2368",
-      "3062"
+      "3062",
+      "434"
     ],
     "resistance": [
       "3367"
@@ -5397,6 +6426,9 @@
     ],
     "running mate": [
       "3055"
+    ],
+    "runoff": [
+      "437"
     ],
     "satoshi": [
       "3365"
@@ -5493,7 +6525,8 @@
       "3360"
     ],
     "soccer": [
-      "433"
+      "433",
+      "438"
     ],
     "specific date": [
       "3449"
@@ -5504,14 +6537,7 @@
     "spring": [
       "432"
     ],
-    "spring 2026": [
-      "424"
-    ],
-    "spring 2026 winner": [
-      "424"
-    ],
     "spring split": [
-      "424",
       "432"
     ],
     "spring winner": [
@@ -5541,6 +6567,9 @@
     "step down": [
       "2368",
       "3062"
+    ],
+    "stepping down": [
+      "434"
     ],
     "steve harrington": [
       "3223"
@@ -5620,9 +6649,6 @@
       "2668",
       "3356"
     ],
-    "tencent": [
-      "424"
-    ],
     "tessa": [
       "3158"
     ],
@@ -5691,8 +6717,8 @@
       "3449",
       "3509"
     ],
-    "timi": [
-      "424"
+    "title race": [
+      "438"
     ],
     "token": [
       "1721",
@@ -5711,7 +6737,6 @@
       "3072"
     ],
     "tournament": [
-      "424",
       "432"
     ],
     "trade policy": [
@@ -5815,14 +6840,15 @@
     "volatility": [
       "3367"
     ],
+    "vote": [
+      "435",
+      "437"
+    ],
     "vp": [
       "3055"
     ],
     "wallet": [
       "3365"
-    ],
-    "wangzhe rongyao": [
-      "424"
     ],
     "war": [
       "3039"
@@ -5846,7 +6872,8 @@
       "3222"
     ],
     "white house": [
-      "3062"
+      "3062",
+      "435"
     ],
     "who higher": [
       "1721"
@@ -5856,6 +6883,9 @@
     ],
     "will byers": [
       "3221"
+    ],
+    "winner 2028": [
+      "435"
     ],
     "yg entertainment": [
       "2178"
@@ -5883,6 +6913,9 @@
     "以色列": [
       "3039"
     ],
+    "内塔尼亚胡": [
+      "434"
+    ],
     "切尔西": [
       "433"
     ],
@@ -5908,6 +6941,10 @@
     "微策略": [
       "3257"
     ],
+    "总统选举": [
+      "435",
+      "437"
+    ],
     "最高法院": [
       "1546"
     ],
@@ -5917,6 +6954,9 @@
     "比特币": [
       "3256",
       "3365"
+    ],
+    "法国足球甲级联赛": [
+      "438"
     ],
     "泰莎·汤普森": [
       "3158"
@@ -5932,11 +6972,11 @@
       "3055",
       "3062"
     ],
-    "王者荣耀职业联赛": [
-      "424"
-    ],
     "经济衰退": [
       "3265"
+    ],
+    "美国大选": [
+      "435"
     ],
     "耶稣基督": [
       "2670"
@@ -5971,7 +7011,6 @@
   },
   "eventIndex": {
     "2026": [
-      "424",
       "432"
     ],
     "2026 spring": [
@@ -5980,21 +7019,53 @@
     "2026 spring winner": [
       "432"
     ],
-    "2026 winner": [
-      "424"
+    "2028": [
+      "435"
     ],
-    "2026年春季赛": [
-      "424"
+    "al": [
+      "437"
     ],
     "apr utc": [
       "433"
     ],
+    "ballot": [
+      "435",
+      "437"
+    ],
+    "benjamin netanyahu": [
+      "434"
+    ],
+    "bibi": [
+      "434"
+    ],
     "blues": [
       "433"
     ],
+    "bolsonaro": [
+      "437"
+    ],
+    "brazil": [
+      "437"
+    ],
+    "brazil presidential": [
+      "437"
+    ],
+    "brazil presidential election": [
+      "437"
+    ],
+    "brazilian": [
+      "437"
+    ],
+    "campaign": [
+      "435",
+      "437"
+    ],
+    "candidate": [
+      "435"
+    ],
     "championship": [
-      "424",
-      "432"
+      "432",
+      "438"
     ],
     "chelsea": [
       "433"
@@ -6014,6 +7085,26 @@
     "city apr utc": [
       "433"
     ],
+    "coalition": [
+      "434"
+    ],
+    "commander in chief": [
+      "435"
+    ],
+    "domestic league": [
+      "438"
+    ],
+    "election": [
+      "434",
+      "435",
+      "437"
+    ],
+    "election winner": [
+      "435"
+    ],
+    "election winner 2028": [
+      "435"
+    ],
     "emea": [
       "432"
     ],
@@ -6024,36 +7115,56 @@
       "433"
     ],
     "esports": [
-      "424",
       "432"
     ],
     "etihad": [
       "433"
     ],
     "finals": [
-      "424",
       "432"
     ],
     "football": [
-      "433"
+      "433",
+      "438"
+    ],
+    "france league": [
+      "438"
+    ],
+    "french football": [
+      "438"
+    ],
+    "french league table": [
+      "438"
+    ],
+    "french ligue": [
+      "438"
+    ],
+    "french ligue 1": [
+      "438"
+    ],
+    "french ligue winner": [
+      "438"
+    ],
+    "french soccer": [
+      "438"
+    ],
+    "french top flight": [
+      "438"
     ],
     "game": [
       "433"
     ],
-    "hok": [
-      "424"
+    "government": [
+      "434"
     ],
-    "honor of kings": [
-      "424"
+    "israel": [
+      "434"
     ],
-    "king pro": [
-      "424"
+    "knesset": [
+      "434"
     ],
-    "king pro league": [
-      "424"
-    ],
-    "kpl": [
-      "424"
+    "le championnat": [
+      "438"
     ],
     "league": [
       "432"
@@ -6067,12 +7178,6 @@
     "league of legends": [
       "432"
     ],
-    "league spring": [
-      "424"
-    ],
-    "league spring 2026": [
-      "424"
-    ],
     "lec": [
       "432"
     ],
@@ -6082,6 +7187,21 @@
     "lec 2026 spring": [
       "432"
     ],
+    "ligue 1": [
+      "438"
+    ],
+    "ligue 1 season": [
+      "438"
+    ],
+    "ligue 1 uber eats": [
+      "438"
+    ],
+    "ligue winner": [
+      "438"
+    ],
+    "likud": [
+      "434"
+    ],
     "lol": [
       "432"
     ],
@@ -6090,6 +7210,9 @@
     ],
     "lol lec 2026": [
       "432"
+    ],
+    "lula": [
+      "437"
     ],
     "man city": [
       "433"
@@ -6103,15 +7226,40 @@
     "match": [
       "433"
     ],
-    "mobile game": [
-      "424"
+    "netanyahu": [
+      "434"
+    ],
+    "netanyahu out": [
+      "434"
+    ],
+    "ouster": [
+      "434"
+    ],
+    "oval office": [
+      "435"
     ],
     "pl": [
       "433"
     ],
     "playoffs": [
-      "424",
       "432"
+    ],
+    "pm": [
+      "434"
+    ],
+    "politics": [
+      "434",
+      "435",
+      "437"
+    ],
+    "polling": [
+      "437"
+    ],
+    "polls": [
+      "435"
+    ],
+    "potus": [
+      "435"
     ],
     "premier league": [
       "433"
@@ -6119,32 +7267,52 @@
     "premier league chelsea": [
       "433"
     ],
-    "pro league": [
-      "424"
+    "president": [
+      "435",
+      "437"
     ],
-    "pro league spring": [
-      "424"
+    "presidential": [
+      "437"
+    ],
+    "presidential election": [
+      "435",
+      "437"
+    ],
+    "presidential election winner": [
+      "435"
+    ],
+    "primaries": [
+      "435"
+    ],
+    "prime minister": [
+      "434"
+    ],
+    "pt": [
+      "437"
+    ],
+    "race": [
+      "435"
+    ],
+    "resignation": [
+      "434"
     ],
     "riot games": [
       "432"
+    ],
+    "runoff": [
+      "437"
     ],
     "season": [
       "432"
     ],
     "soccer": [
-      "433"
+      "433",
+      "438"
     ],
     "spring": [
       "432"
     ],
-    "spring 2026": [
-      "424"
-    ],
-    "spring 2026 winner": [
-      "424"
-    ],
     "spring split": [
-      "424",
       "432"
     ],
     "spring winner": [
@@ -6153,27 +7321,43 @@
     "stamford bridge": [
       "433"
     ],
-    "tencent": [
-      "424"
+    "stepping down": [
+      "434"
     ],
-    "timi": [
-      "424"
+    "title race": [
+      "438"
     ],
     "tournament": [
-      "424",
       "432"
     ],
-    "wangzhe rongyao": [
-      "424"
+    "vote": [
+      "435",
+      "437"
+    ],
+    "white house": [
+      "435"
+    ],
+    "winner 2028": [
+      "435"
+    ],
+    "内塔尼亚胡": [
+      "434"
     ],
     "切尔西": [
       "433"
     ],
+    "总统选举": [
+      "435",
+      "437"
+    ],
     "欧洲联赛": [
       "432"
     ],
-    "王者荣耀职业联赛": [
-      "424"
+    "法国足球甲级联赛": [
+      "438"
+    ],
+    "美国大选": [
+      "435"
     ],
     "英雄联盟": [
       "432"
