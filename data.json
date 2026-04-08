@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-08 17:16:10 UTC+8",
+    "generatedAt": "2026-04-09 01:18:12 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 93,
-      "markets": 205,
-      "keywords": 736,
+      "kept": 144,
+      "markets": 221,
+      "keywords": 807,
       "events": {
-        "events": 6
+        "events": 10
       },
       "skipped": {
-        "statusEnum": 14,
+        "statusEnum": 2,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 893,
+        "cutoff_expired": 854,
         "cutoff_zero_kept": 43,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 2,
+        "reused": 6,
         "regenerated_empty_entitygroups": 0,
         "calls": 4,
         "retries": 0,
@@ -309,6 +309,181 @@
       "sig": "27c5a7df",
       "sigFull": "27c5a7df",
       "sigCore": "6f880143",
+      "reused": false
+    },
+    "442": {
+      "title": "F1 Constructors' Champion",
+      "marketIds": [
+        "442"
+      ],
+      "bestMarketId": "442",
+      "bestLabels": null,
+      "keywords": [
+        "f1",
+        "formula 1",
+        "formula one",
+        "constructors",
+        "constructors' championship",
+        "teams",
+        "grand prix",
+        "racing",
+        "standings",
+        "season",
+        "motorsport",
+        "paddock",
+        "grid",
+        "pit stop",
+        "podium",
+        "constructors champion"
+      ],
+      "entities": [
+        "一级方程式",
+        "车队冠军"
+      ],
+      "entityGroups": [
+        [
+          "一级方程式"
+        ],
+        [
+          "车队冠军"
+        ]
+      ],
+      "sig": "9fd815a1",
+      "sigFull": "9fd815a1",
+      "sigCore": "42a6fb20",
+      "reused": false
+    },
+    "441": {
+      "title": "Largest Company end of April?",
+      "marketIds": [
+        "441"
+      ],
+      "bestMarketId": "441",
+      "bestLabels": null,
+      "keywords": [
+        "market cap",
+        "valuation",
+        "largest company",
+        "biggest company",
+        "top stock",
+        "ranking",
+        "market leader",
+        "corporate giant",
+        "trillion",
+        "stock price",
+        "equity",
+        "big tech",
+        "market value",
+        "top company",
+        "corporate ranking",
+        "company april",
+        "largest company april"
+      ],
+      "entities": [
+        "largest company"
+      ],
+      "entityGroups": [
+        [
+          "largest company",
+          "最大公司"
+        ]
+      ],
+      "sig": "e7e0ac47",
+      "sigFull": "e7e0ac47",
+      "sigCore": "77255ea6",
+      "reused": false
+    },
+    "440": {
+      "title": "Next French Presidential Election",
+      "marketIds": [
+        "440"
+      ],
+      "bestMarketId": "440",
+      "bestLabels": null,
+      "keywords": [
+        "france",
+        "french",
+        "presidential",
+        "election",
+        "vote",
+        "poll",
+        "ballot",
+        "elysee",
+        "president",
+        "politics",
+        "campaign",
+        "race",
+        "2027",
+        "head of state",
+        "next french",
+        "french presidential",
+        "presidential election",
+        "next french presidential",
+        "french presidential election"
+      ],
+      "entities": [
+        "french presidential election"
+      ],
+      "entityGroups": [
+        [
+          "french presidential election",
+          "法国总统选举",
+          "法国大选"
+        ]
+      ],
+      "sig": "9167c58b",
+      "sigFull": "9167c58b",
+      "sigCore": "f27ea946",
+      "reused": false
+    },
+    "439": {
+      "title": "What will WTI Crude Oil (WTI) hit in April 2026?",
+      "marketIds": [
+        "439"
+      ],
+      "bestMarketId": "439",
+      "bestLabels": null,
+      "keywords": [
+        "wti",
+        "crude oil",
+        "west texas intermediate",
+        "oil",
+        "petroleum",
+        "energy",
+        "commodities",
+        "futures",
+        "spot price",
+        "nymex",
+        "opec",
+        "brent",
+        "us oil",
+        "black gold",
+        "light sweet crude",
+        "what wti",
+        "wti crude",
+        "oil wti",
+        "wti hit",
+        "hit april",
+        "april 2026",
+        "what wti crude",
+        "wti crude oil",
+        "crude oil wti",
+        "oil wti hit",
+        "wti hit april"
+      ],
+      "entities": [
+        "wti"
+      ],
+      "entityGroups": [
+        [
+          "wti",
+          "crude oil",
+          "wti原油"
+        ]
+      ],
+      "sig": "11beaac6",
+      "sigFull": "11beaac6",
+      "sigCore": "4f64efd3",
       "reused": false
     }
   },
@@ -3687,42 +3862,6 @@
         }
       ]
     },
-    "11628": {
-      "title": "BTC Up or Down - Hourly (Apr 08, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11628?ref=opinion_hud",
-      "yesTokenId": "75929875549908707704253631313768415557955025371126458844102678527445517134002",
-      "noTokenId": "47095035294601098473046759950217851390207986918187222088346163647282111279972",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "11629": {
-      "title": "ETH Up or Down - Hourly (Apr 08, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11629?ref=opinion_hud",
-      "yesTokenId": "98228202142833085898283908875517078817318419999624063764186923048932662620494",
-      "noTokenId": "59999641822902232324502831534966952957785900632078837070219463578240799856206",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "11627": {
-      "title": "BNB Up or Down - Hourly (Apr 08, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/11627?ref=opinion_hud",
-      "yesTokenId": "70318039646305349686018604056428328290319610747397447382895384975569381938097",
-      "noTokenId": "101207993766209574286916495763454267348774466209407571860685119758132414159354",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "11623": {
       "title": "Bitcoin Up or Down on April 9?(12:00 ET)",
       "url": "https://app.opinion.trade/market/11623?ref=opinion_hud",
@@ -4620,6 +4759,603 @@
           "noTokenId": "47915516827696310727151881538873495751512715386224002185582845731309672180477"
         }
       ]
+    },
+    "11748": {
+      "title": "ETH Up or Down - Hourly (Apr 08, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11748?ref=opinion_hud",
+      "yesTokenId": "82211760857882421718427865932402089796744061558005419697616389248840161693815",
+      "noTokenId": "70227132174375640948124762320846802213914072870297665573129573379806686404011",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "11746": {
+      "title": "BNB Up or Down - Hourly (Apr 08, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11746?ref=opinion_hud",
+      "yesTokenId": "49065326692467435752259455754717667142186029657091847147691700661361181515615",
+      "noTokenId": "102218480913805622771771317906893753289170286696496437648916032881313802955249",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "11747": {
+      "title": "BTC Up or Down - Hourly (Apr 08, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/11747?ref=opinion_hud",
+      "yesTokenId": "60524402337809591956329044726225553358455278377694045052009210133401999745304",
+      "noTokenId": "3847352971569988333460793937656705785025744937091686041825761495240481348477",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "11697": {
+      "title": "Liverpool wins",
+      "url": "https://app.opinion.trade/market/11697?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11699": {
+      "title": "Draw",
+      "url": "https://app.opinion.trade/market/11699?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11695": {
+      "title": "Atletico Madrid wins",
+      "url": "https://app.opinion.trade/market/11695?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11701": {
+      "title": "Barcelona wins",
+      "url": "https://app.opinion.trade/market/11701?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11700": {
+      "title": "Atletico Madrid wins",
+      "url": "https://app.opinion.trade/market/11700?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11698": {
+      "title": "Paris Saint Germain wins",
+      "url": "https://app.opinion.trade/market/11698?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11691": {
+      "title": "Paris Saint Germain wins",
+      "url": "https://app.opinion.trade/market/11691?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11693": {
+      "title": "Draw",
+      "url": "https://app.opinion.trade/market/11693?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11696": {
+      "title": "Draw",
+      "url": "https://app.opinion.trade/market/11696?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11692": {
+      "title": "Liverpool wins",
+      "url": "https://app.opinion.trade/market/11692?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11702": {
+      "title": "Draw",
+      "url": "https://app.opinion.trade/market/11702?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "11694": {
+      "title": "Barcelona wins",
+      "url": "https://app.opinion.trade/market/11694?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "442": {
+      "title": "F1 Constructors' Champion",
+      "url": "https://app.opinion.trade/market/442?ref=opinion_hud",
+      "yesTokenId": "65826996120580884030035317764206387091027760327302995420286603946035502996819",
+      "noTokenId": "65337181073292436898908349039660946140105187063623311887363956098693156924297",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "f1",
+        "formula 1",
+        "formula one",
+        "constructors",
+        "constructors' championship",
+        "teams",
+        "grand prix",
+        "racing",
+        "standings",
+        "season",
+        "motorsport",
+        "paddock",
+        "grid",
+        "pit stop",
+        "podium",
+        "constructors champion"
+      ],
+      "entities": [
+        "一级方程式",
+        "车队冠军"
+      ],
+      "entityGroups": [
+        [
+          "一级方程式"
+        ],
+        [
+          "车队冠军"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "11680",
+          "title": "Mercedes",
+          "yesTokenId": "22320356089951091109172603169043622603602625212839358485393000912930999996521",
+          "noTokenId": "18305381974584711846613793119733223183804188836334682712110164776302876448547"
+        },
+        {
+          "marketId": "11681",
+          "title": "Ferrari",
+          "yesTokenId": "30924124474325126563607245931744426094231418851447463135493034429912116759491",
+          "noTokenId": "4310121263189344571986186390043951806213451177739079287657377314519674059916"
+        },
+        {
+          "marketId": "11682",
+          "title": "McLaren",
+          "yesTokenId": "114020049629943451803024386068502540974153500261882542187339428772858391448142",
+          "noTokenId": "18525673008692310703372901448166482034774301967050023848845642169860039013760"
+        },
+        {
+          "marketId": "11683",
+          "title": "Red Bull Racing",
+          "yesTokenId": "65826996120580884030035317764206387091027760327302995420286603946035502996819",
+          "noTokenId": "65337181073292436898908349039660946140105187063623311887363956098693156924297"
+        },
+        {
+          "marketId": "11684",
+          "title": "Aston Martin",
+          "yesTokenId": "46492953808397384440364894310385646210124268712924678156109715512020363350652",
+          "noTokenId": "80639365251251050448725938398396777140008397544229257328881132759201946969786"
+        },
+        {
+          "marketId": "11685",
+          "title": "Audi",
+          "yesTokenId": "64232358756131059732236646718008395148624011092375780325441928792154120574569",
+          "noTokenId": "41156774295073881244194371154101625284608104276182967556316833831484498317105"
+        },
+        {
+          "marketId": "11686",
+          "title": "Williams",
+          "yesTokenId": "35736661198557911883498783108416832098657814194724591433065703574991827484074",
+          "noTokenId": "84477026203984104308217302360202385407177260833055245071078462537313638893933"
+        },
+        {
+          "marketId": "11687",
+          "title": "Racing Bulls",
+          "yesTokenId": "62949716704760894676265149690992616479120425486803660977512576812819183008184",
+          "noTokenId": "27574964118078479358084799354362077235588448312874604778475053292001168160420"
+        },
+        {
+          "marketId": "11688",
+          "title": "Haas",
+          "yesTokenId": "34909719307070763097841203912134656521582205222535328444532758120336339104915",
+          "noTokenId": "7053851846321715064162374512876173852829452295368065502449134347955168843000"
+        },
+        {
+          "marketId": "11689",
+          "title": "Alpine",
+          "yesTokenId": "14256304426751325035180015278953542311241296393309605878849149225649694007909",
+          "noTokenId": "56838675261514386305913630129657795756400262454755958271852674036442242477841"
+        },
+        {
+          "marketId": "11690",
+          "title": "Cadillac",
+          "yesTokenId": "114234195446177086722587143266294099787802498711529547933554630089347738417764",
+          "noTokenId": "57599675497548362244116288538488355792637832562585068083988420219571158358706"
+        }
+      ]
+    },
+    "441": {
+      "title": "Largest Company end of April?",
+      "url": "https://app.opinion.trade/market/441?ref=opinion_hud",
+      "yesTokenId": "81032850298790717112043659962704301895881620461302838095248029464984959505936",
+      "noTokenId": "105553189799646106643164974534197258934678278214840459740304717058494049652878",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "market cap",
+        "valuation",
+        "largest company",
+        "biggest company",
+        "top stock",
+        "ranking",
+        "market leader",
+        "corporate giant",
+        "trillion",
+        "stock price",
+        "equity",
+        "big tech",
+        "market value",
+        "top company",
+        "corporate ranking",
+        "company april",
+        "largest company april"
+      ],
+      "entities": [
+        "largest company"
+      ],
+      "entityGroups": [
+        [
+          "largest company",
+          "最大公司"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "11673",
+          "title": "NVIDIA",
+          "yesTokenId": "44839687135207915196172151322212168738774543873496216753198926541931246603654",
+          "noTokenId": "49027754871496722604747224671939951566060902089011878473186641252748727236043"
+        },
+        {
+          "marketId": "11674",
+          "title": "Apple",
+          "yesTokenId": "40457549299414837419700658517596160711492829996563070320241284313096982891167",
+          "noTokenId": "34443861563494284828091023168285816857500925939297391668042956297050608602472"
+        },
+        {
+          "marketId": "11675",
+          "title": "Alphabet",
+          "yesTokenId": "112242229993970545799364049835622146710395147061691263661357182734669806958933",
+          "noTokenId": "70499602314779003562859564431508231522654057886243335623160401616274134164389"
+        },
+        {
+          "marketId": "11676",
+          "title": "Microsoft",
+          "yesTokenId": "289638780693349712283947641732543053444623107982176083861272027633203902850",
+          "noTokenId": "23886344301300192559093816757415031482899604921346088657789084648149010464100"
+        },
+        {
+          "marketId": "11677",
+          "title": "Tesla",
+          "yesTokenId": "96736650049149658797284849111639313843971495876199937294431967464970795789038",
+          "noTokenId": "11819795738099672116671074324728486866788337923364453531630060630703920458268"
+        },
+        {
+          "marketId": "11678",
+          "title": "Saudi Aramco",
+          "yesTokenId": "81032850298790717112043659962704301895881620461302838095248029464984959505936",
+          "noTokenId": "105553189799646106643164974534197258934678278214840459740304717058494049652878"
+        },
+        {
+          "marketId": "11679",
+          "title": "Amazon",
+          "yesTokenId": "4522294225289047720684089044281703572011434097055273249541241615574589457962",
+          "noTokenId": "103264389331404373026843434007086277726106906072483642700932362352424293730050"
+        }
+      ]
+    },
+    "440": {
+      "title": "Next French Presidential Election",
+      "url": "https://app.opinion.trade/market/440?ref=opinion_hud",
+      "yesTokenId": "64749142135520236790955026245009136915872633524828781123390886978370530356964",
+      "noTokenId": "25959864342056099873627768598918853860036768265869776986817634066363370728460",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "france",
+        "french",
+        "presidential",
+        "election",
+        "vote",
+        "poll",
+        "ballot",
+        "elysee",
+        "president",
+        "politics",
+        "campaign",
+        "race",
+        "2027",
+        "head of state",
+        "next french",
+        "french presidential",
+        "presidential election",
+        "next french presidential",
+        "french presidential election"
+      ],
+      "entities": [
+        "french presidential election"
+      ],
+      "entityGroups": [
+        [
+          "french presidential election",
+          "法国总统选举",
+          "法国大选"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "11661",
+          "title": "Édouard Philippe",
+          "yesTokenId": "38351322510280267895334694328522835229155166670078507799968347998902720722182",
+          "noTokenId": "14462351512118127835318994061042154177619052133366167102042000991209010433220"
+        },
+        {
+          "marketId": "11662",
+          "title": "Jordan Bardella",
+          "yesTokenId": "12655433042955024842022917369819825364764508701788383100652835813348548889399",
+          "noTokenId": "39691928404362996842878814249553549036754653490790245994398443700385836808921"
+        },
+        {
+          "marketId": "11663",
+          "title": "Marine Le Pen",
+          "yesTokenId": "64080780512396605749730388458745021576570017831978009734839566703424102175019",
+          "noTokenId": "92421854244436307224029759037997909985556387806410568937436459923721548253899"
+        },
+        {
+          "marketId": "11664",
+          "title": "Dominique de Villepin",
+          "yesTokenId": "53841798900492298318464130173384843802622580951539331461217365183344130469403",
+          "noTokenId": "113110332539306417382580909742805486788483284365292288082630095290160030327002"
+        },
+        {
+          "marketId": "11665",
+          "title": "David Lisnard",
+          "yesTokenId": "109157485109003704803484598963557687051794378248679208669440513955181963498655",
+          "noTokenId": "103612509962438514077682778495691245477496124459152659041524584244827393893779"
+        },
+        {
+          "marketId": "11666",
+          "title": "Jean-Luc Mélenchon",
+          "yesTokenId": "27806857773668294905992015450104742463408488518831244352512874834548829922398",
+          "noTokenId": "5557261656460194527128726977847910613771151412626263993711670447404103427579"
+        },
+        {
+          "marketId": "11667",
+          "title": "François Hollande",
+          "yesTokenId": "10042731365854022510182888901105189016855087542093137207343544456825141067992",
+          "noTokenId": "110935024399624019198494702105536339406641577376899315471968206104896925520972"
+        },
+        {
+          "marketId": "11668",
+          "title": "Bruno Retailleau",
+          "yesTokenId": "56606943110532175571778033996699259939975394639977055833364146268186001246258",
+          "noTokenId": "12891749106521262283594552362208683986471855315140914890747816318620789686908"
+        },
+        {
+          "marketId": "11669",
+          "title": "Raphaël Glucksmann",
+          "yesTokenId": "10476439304839381505609299884654144849335294420051152637634807081426077167084",
+          "noTokenId": "34799634583767671980696370976813437200227431245974829230028810271778167642067"
+        },
+        {
+          "marketId": "11670",
+          "title": "Jean Castex",
+          "yesTokenId": "64749142135520236790955026245009136915872633524828781123390886978370530356964",
+          "noTokenId": "25959864342056099873627768598918853860036768265869776986817634066363370728460"
+        },
+        {
+          "marketId": "11671",
+          "title": "Gabriel Attal",
+          "yesTokenId": "82512099720964774062982561967235746958598266090127660409489591069525441928013",
+          "noTokenId": "3959924296282855366995577537062107111209310027813875518227049043689336825176"
+        },
+        {
+          "marketId": "11672",
+          "title": "Sarah Knafo",
+          "yesTokenId": "85906939039247112119765020100640021155747451438713636334278293215462635320096",
+          "noTokenId": "49963264139032783893000564424155311479361203952292484551914197727559142753243"
+        }
+      ]
+    },
+    "439": {
+      "title": "What will WTI Crude Oil (WTI) hit in April 2026?",
+      "url": "https://app.opinion.trade/market/439?ref=opinion_hud",
+      "yesTokenId": "22377796928706960571780188326918483240748041839220766565157883819206386751675",
+      "noTokenId": "93171983324042026868545474280868075279767408794910803054589595966882009360519",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "wti",
+        "crude oil",
+        "west texas intermediate",
+        "oil",
+        "petroleum",
+        "energy",
+        "commodities",
+        "futures",
+        "spot price",
+        "nymex",
+        "opec",
+        "brent",
+        "us oil",
+        "black gold",
+        "light sweet crude",
+        "what wti",
+        "wti crude",
+        "oil wti",
+        "wti hit",
+        "hit april",
+        "april 2026",
+        "what wti crude",
+        "wti crude oil",
+        "crude oil wti",
+        "oil wti hit",
+        "wti hit april"
+      ],
+      "entities": [
+        "wti"
+      ],
+      "entityGroups": [
+        [
+          "wti",
+          "crude oil",
+          "wti原油"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "11652",
+          "title": "↑ $150",
+          "yesTokenId": "32282158053664057661128447806482637493123842313290355976071437323953203830274",
+          "noTokenId": "27787703561444710501496209832920407423840742105095139703137521420558669886813"
+        },
+        {
+          "marketId": "11653",
+          "title": "↑ $140",
+          "yesTokenId": "22377796928706960571780188326918483240748041839220766565157883819206386751675",
+          "noTokenId": "93171983324042026868545474280868075279767408794910803054589595966882009360519"
+        },
+        {
+          "marketId": "11654",
+          "title": "↑ $130",
+          "yesTokenId": "83972555646708920704200261691948860153633667819895392630206705211689238567250",
+          "noTokenId": "29229097095142770343728544821260195597021460232414369577977614556724060883563"
+        },
+        {
+          "marketId": "11655",
+          "title": "↑ $120",
+          "yesTokenId": "66830600603059666980453060292779136442274150570634206062059121956046384549860",
+          "noTokenId": "86718940112498509839180596622461952048821989497455876564729688350896655702379"
+        },
+        {
+          "marketId": "11656",
+          "title": "↓ $90",
+          "yesTokenId": "102192482065577186815737847092592575005354093403896783919131918391579065357262",
+          "noTokenId": "36029361320632745359036072726240798552971601975505284127634371169165899698298"
+        },
+        {
+          "marketId": "11657",
+          "title": "↓ $80",
+          "yesTokenId": "59364434643924614824525204494098437846315811802226740847289202499719984654103",
+          "noTokenId": "47747776591076674268901684194446921581310602193919246887277943942439735804436"
+        },
+        {
+          "marketId": "11658",
+          "title": "↓ $70",
+          "yesTokenId": "49967861545688933263724057373983230270030988412923937017467170015731096125213",
+          "noTokenId": "89179139902393943052612778506182996537268885330944386818167204291357162991960"
+        },
+        {
+          "marketId": "11659",
+          "title": "↓ $60",
+          "yesTokenId": "106441925404135367687617228827751515933085496454977297762968358000819230662996",
+          "noTokenId": "91800622865724961756643912132551645382915661203874042632987485076615602738409"
+        },
+        {
+          "marketId": "11660",
+          "title": "↓ $50",
+          "yesTokenId": "40386785779935052268705776606081313415810967982648221865563140982378081463320",
+          "noTokenId": "52080993208579420912361268648667206155048877748967321170690266613435995590514"
+        }
+      ]
     }
   },
   "index": {
@@ -4695,6 +5431,9 @@
     ],
     "2026年选秀": [
       "3072"
+    ],
+    "2027": [
+      "440"
     ],
     "2028": [
       "435"
@@ -4838,6 +5577,9 @@
     "apr utc": [
       "433"
     ],
+    "april 2026": [
+      "439"
+    ],
     "arkham": [
       "3365"
     ],
@@ -4860,7 +5602,8 @@
     ],
     "ballot": [
       "435",
-      "437"
+      "437",
+      "440"
     ],
     "base": [
       "3366"
@@ -4901,6 +5644,12 @@
     "bible prophecy": [
       "2670"
     ],
+    "big tech": [
+      "441"
+    ],
+    "biggest company": [
+      "441"
+    ],
     "binance": [
       "3368",
       "3369"
@@ -4924,6 +5673,9 @@
     ],
     "bitcoin replace sha-256": [
       "3256"
+    ],
+    "black gold": [
+      "439"
     ],
     "blackpink": [
       "2178"
@@ -5000,6 +5752,9 @@
       "3364",
       "3367"
     ],
+    "brent": [
+      "439"
+    ],
     "bridge exploit": [
       "3360"
     ],
@@ -5035,7 +5790,8 @@
     ],
     "campaign": [
       "435",
-      "437"
+      "437",
+      "440"
     ],
     "candidate": [
       "435"
@@ -5147,11 +5903,26 @@
     "commander in chief": [
       "435"
     ],
+    "commodities": [
+      "439"
+    ],
+    "company april": [
+      "441"
+    ],
     "conflict": [
       "3039"
     ],
     "consolidation": [
       "2398"
+    ],
+    "constructors": [
+      "442"
+    ],
+    "constructors champion": [
+      "442"
+    ],
+    "constructors' championship": [
+      "442"
     ],
     "contraction": [
       "3265"
@@ -5161,6 +5932,12 @@
     ],
     "cook out apple": [
       "2368"
+    ],
+    "corporate giant": [
+      "441"
+    ],
+    "corporate ranking": [
+      "441"
     ],
     "court decision": [
       "1546"
@@ -5185,6 +5962,12 @@
     ],
     "critical cloudflare incident": [
       "3357"
+    ],
+    "crude oil": [
+      "439"
+    ],
+    "crude oil wti": [
+      "439"
     ],
     "crypto": [
       "1721",
@@ -5348,7 +6131,8 @@
     "election": [
       "434",
       "435",
-      "437"
+      "437",
+      "440"
     ],
     "election winner": [
       "435"
@@ -5358,6 +6142,9 @@
     ],
     "eleven": [
       "3223"
+    ],
+    "elysee": [
+      "440"
     ],
     "emea": [
       "432"
@@ -5390,6 +6177,9 @@
     "endorsement": [
       "3055"
     ],
+    "energy": [
+      "439"
+    ],
     "english football": [
       "433"
     ],
@@ -5399,6 +6189,9 @@
     ],
     "epl": [
       "433"
+    ],
+    "equity": [
+      "441"
     ],
     "escalation": [
       "3039"
@@ -5461,6 +6254,9 @@
     "extradition": [
       "1856"
     ],
+    "f1": [
+      "442"
+    ],
     "faraday future": [
       "1856"
     ],
@@ -5502,11 +6298,23 @@
       "433",
       "438"
     ],
+    "formula 1": [
+      "442"
+    ],
+    "formula one": [
+      "442"
+    ],
     "founder": [
       "3369"
     ],
+    "france": [
+      "440"
+    ],
     "france league": [
       "438"
+    ],
+    "french": [
+      "440"
     ],
     "french football": [
       "438"
@@ -5522,6 +6330,12 @@
     ],
     "french ligue winner": [
       "438"
+    ],
+    "french presidential": [
+      "440"
+    ],
+    "french presidential election": [
+      "440"
     ],
     "french soccer": [
       "438"
@@ -5543,7 +6357,8 @@
       "3509"
     ],
     "futures": [
-      "3361"
+      "3361",
+      "439"
     ],
     "game": [
       "433"
@@ -5578,9 +6393,15 @@
     "government": [
       "434"
     ],
+    "grand prix": [
+      "442"
+    ],
     "great earthquake": [
       "2668",
       "3356"
+    ],
+    "grid": [
+      "442"
     ],
     "hack": [
       "3360"
@@ -5608,6 +6429,9 @@
     ],
     "hbo": [
       "2398"
+    ],
+    "head of state": [
+      "440"
     ],
     "heisman": [
       "3072"
@@ -5642,6 +6466,9 @@
     ],
     "hit $1500 2026": [
       "3367"
+    ],
+    "hit april": [
+      "439"
     ],
     "holly wheeler": [
       "3222"
@@ -5802,6 +6629,12 @@
     "l2": [
       "3366"
     ],
+    "largest company": [
+      "441"
+    ],
+    "largest company april": [
+      "441"
+    ],
     "launch token": [
       "3366"
     ],
@@ -5852,6 +6685,9 @@
     ],
     "legal ruling": [
       "1546"
+    ],
+    "light sweet crude": [
+      "439"
     ],
     "ligue 1": [
       "438"
@@ -5934,7 +6770,14 @@
     ],
     "market cap": [
       "3505",
-      "3506"
+      "3506",
+      "441"
+    ],
+    "market leader": [
+      "441"
+    ],
+    "market value": [
+      "441"
     ],
     "marvel": [
       "3158"
@@ -6012,6 +6855,9 @@
     "money": [
       "3505",
       "3525"
+    ],
+    "motorsport": [
+      "442"
     ],
     "move": [
       "3365"
@@ -6095,11 +6941,20 @@
     "new year's eve": [
       "3509"
     ],
+    "next french": [
+      "440"
+    ],
+    "next french presidential": [
+      "440"
+    ],
     "nfl draft": [
       "3072"
     ],
     "number one pick": [
       "3072"
+    ],
+    "nymex": [
+      "439"
     ],
     "office": [
       "3062"
@@ -6107,11 +6962,23 @@
     "official": [
       "3257"
     ],
+    "oil": [
+      "439"
+    ],
+    "oil wti": [
+      "439"
+    ],
+    "oil wti hit": [
+      "439"
+    ],
     "one day": [
       "1721"
     ],
     "op stack": [
       "3366"
+    ],
+    "opec": [
+      "439"
     ],
     "ousted": [
       "2368"
@@ -6146,6 +7013,9 @@
     "over $100m 1q2026": [
       "3360"
     ],
+    "paddock": [
+      "442"
+    ],
     "parallel execution": [
       "1721"
     ],
@@ -6161,11 +7031,17 @@
     "perpetuals": [
       "3361"
     ],
+    "petroleum": [
+      "439"
+    ],
     "pick 2026": [
       "3072"
     ],
     "pick 2026 nfl": [
       "3072"
+    ],
+    "pit stop": [
+      "442"
     ],
     "pl": [
       "433"
@@ -6176,10 +7052,17 @@
     "pm": [
       "434"
     ],
+    "podium": [
+      "442"
+    ],
     "politics": [
       "434",
       "435",
-      "437"
+      "437",
+      "440"
+    ],
+    "poll": [
+      "440"
     ],
     "polling": [
       "437"
@@ -6203,21 +7086,24 @@
     "president": [
       "3062",
       "435",
-      "437"
+      "437",
+      "440"
     ],
     "president 2027": [
       "3055",
       "3062"
     ],
     "presidential": [
-      "437"
+      "437",
+      "440"
     ],
     "presidential candidate": [
       "3055"
     ],
     "presidential election": [
       "435",
-      "437"
+      "437",
+      "440"
     ],
     "presidential election winner": [
       "435"
@@ -6284,7 +7170,11 @@
       "3072"
     ],
     "race": [
-      "435"
+      "435",
+      "440"
+    ],
+    "racing": [
+      "442"
     ],
     "raise": [
       "3505",
@@ -6294,6 +7184,9 @@
       "3364",
       "3367",
       "3368"
+    ],
+    "ranking": [
+      "441"
     ],
     "rapture": [
       "2670"
@@ -6456,7 +7349,8 @@
       "1546"
     ],
     "season": [
-      "432"
+      "432",
+      "442"
     ],
     "season 5": [
       "3221",
@@ -6534,6 +7428,9 @@
     "spend": [
       "3365"
     ],
+    "spot price": [
+      "439"
+    ],
     "spring": [
       "432"
     ],
@@ -6558,6 +7455,9 @@
     "stamford bridge": [
       "433"
     ],
+    "standings": [
+      "442"
+    ],
     "star": [
       "3158"
     ],
@@ -6579,6 +7479,9 @@
     ],
     "stock market debut": [
       "3362"
+    ],
+    "stock price": [
+      "441"
     ],
     "stranger things": [
       "3221",
@@ -6634,6 +7537,9 @@
     ],
     "tariffs": [
       "1546"
+    ],
+    "teams": [
+      "442"
     ],
     "tectonic": [
       "2668",
@@ -6733,8 +7639,14 @@
     "tokenomics": [
       "3361"
     ],
+    "top company": [
+      "441"
+    ],
     "top pick": [
       "3072"
+    ],
+    "top stock": [
+      "441"
     ],
     "tournament": [
       "432"
@@ -6758,6 +7670,9 @@
     ],
     "tribulation": [
       "2670"
+    ],
+    "trillion": [
+      "441"
     ],
     "trump": [
       "1546",
@@ -6794,6 +7709,9 @@
     "us economy": [
       "3265"
     ],
+    "us oil": [
+      "439"
+    ],
     "usdt": [
       "3359",
       "3367"
@@ -6817,7 +7735,8 @@
       "3362",
       "3505",
       "3506",
-      "3525"
+      "3525",
+      "441"
     ],
     "vance": [
       "3055"
@@ -6842,7 +7761,8 @@
     ],
     "vote": [
       "435",
-      "437"
+      "437",
+      "440"
     ],
     "vp": [
       "3055"
@@ -6865,8 +7785,17 @@
     "wbd": [
       "2398"
     ],
+    "west texas intermediate": [
+      "439"
+    ],
     "westworld": [
       "3158"
+    ],
+    "what wti": [
+      "439"
+    ],
+    "what wti crude": [
+      "439"
     ],
     "wheeler family": [
       "3222"
@@ -6887,6 +7816,24 @@
     "winner 2028": [
       "435"
     ],
+    "wti": [
+      "439"
+    ],
+    "wti crude": [
+      "439"
+    ],
+    "wti crude oil": [
+      "439"
+    ],
+    "wti hit": [
+      "439"
+    ],
+    "wti hit april": [
+      "439"
+    ],
+    "wti原油": [
+      "439"
+    ],
     "yg entertainment": [
       "2178"
     ],
@@ -6898,6 +7845,9 @@
     ],
     "zhao bei return": [
       "1856"
+    ],
+    "一级方程式": [
+      "442"
     ],
     "中本聪": [
       "3365"
@@ -6945,6 +7895,9 @@
       "435",
       "437"
     ],
+    "最大公司": [
+      "441"
+    ],
     "最高法院": [
       "1546"
     ],
@@ -6954,6 +7907,12 @@
     "比特币": [
       "3256",
       "3365"
+    ],
+    "法国大选": [
+      "440"
+    ],
+    "法国总统选举": [
+      "440"
     ],
     "法国足球甲级联赛": [
       "438"
@@ -6999,6 +7958,9 @@
     "超级地震": [
       "3356"
     ],
+    "车队冠军": [
+      "442"
+    ],
     "达斯汀": [
       "3224"
     ],
@@ -7019,6 +7981,9 @@
     "2026 spring winner": [
       "432"
     ],
+    "2027": [
+      "440"
+    ],
     "2028": [
       "435"
     ],
@@ -7028,15 +7993,28 @@
     "apr utc": [
       "433"
     ],
+    "april 2026": [
+      "439"
+    ],
     "ballot": [
       "435",
-      "437"
+      "437",
+      "440"
     ],
     "benjamin netanyahu": [
       "434"
     ],
     "bibi": [
       "434"
+    ],
+    "big tech": [
+      "441"
+    ],
+    "biggest company": [
+      "441"
+    ],
+    "black gold": [
+      "439"
     ],
     "blues": [
       "433"
@@ -7056,9 +8034,13 @@
     "brazilian": [
       "437"
     ],
+    "brent": [
+      "439"
+    ],
     "campaign": [
       "435",
-      "437"
+      "437",
+      "440"
     ],
     "candidate": [
       "435"
@@ -7091,13 +8073,41 @@
     "commander in chief": [
       "435"
     ],
+    "commodities": [
+      "439"
+    ],
+    "company april": [
+      "441"
+    ],
+    "constructors": [
+      "442"
+    ],
+    "constructors champion": [
+      "442"
+    ],
+    "constructors' championship": [
+      "442"
+    ],
+    "corporate giant": [
+      "441"
+    ],
+    "corporate ranking": [
+      "441"
+    ],
+    "crude oil": [
+      "439"
+    ],
+    "crude oil wti": [
+      "439"
+    ],
     "domestic league": [
       "438"
     ],
     "election": [
       "434",
       "435",
-      "437"
+      "437",
+      "440"
     ],
     "election winner": [
       "435"
@@ -7105,8 +8115,14 @@
     "election winner 2028": [
       "435"
     ],
+    "elysee": [
+      "440"
+    ],
     "emea": [
       "432"
+    ],
+    "energy": [
+      "439"
     ],
     "english football": [
       "433"
@@ -7114,11 +8130,17 @@
     "epl": [
       "433"
     ],
+    "equity": [
+      "441"
+    ],
     "esports": [
       "432"
     ],
     "etihad": [
       "433"
+    ],
+    "f1": [
+      "442"
     ],
     "finals": [
       "432"
@@ -7127,8 +8149,20 @@
       "433",
       "438"
     ],
+    "formula 1": [
+      "442"
+    ],
+    "formula one": [
+      "442"
+    ],
+    "france": [
+      "440"
+    ],
     "france league": [
       "438"
+    ],
+    "french": [
+      "440"
     ],
     "french football": [
       "438"
@@ -7145,11 +8179,20 @@
     "french ligue winner": [
       "438"
     ],
+    "french presidential": [
+      "440"
+    ],
+    "french presidential election": [
+      "440"
+    ],
     "french soccer": [
       "438"
     ],
     "french top flight": [
       "438"
+    ],
+    "futures": [
+      "439"
     ],
     "game": [
       "433"
@@ -7157,11 +8200,29 @@
     "government": [
       "434"
     ],
+    "grand prix": [
+      "442"
+    ],
+    "grid": [
+      "442"
+    ],
+    "head of state": [
+      "440"
+    ],
+    "hit april": [
+      "439"
+    ],
     "israel": [
       "434"
     ],
     "knesset": [
       "434"
+    ],
+    "largest company": [
+      "441"
+    ],
+    "largest company april": [
+      "441"
     ],
     "le championnat": [
       "438"
@@ -7186,6 +8247,9 @@
     ],
     "lec 2026 spring": [
       "432"
+    ],
+    "light sweet crude": [
+      "439"
     ],
     "ligue 1": [
       "438"
@@ -7223,8 +8287,20 @@
     "manchester city": [
       "433"
     ],
+    "market cap": [
+      "441"
+    ],
+    "market leader": [
+      "441"
+    ],
+    "market value": [
+      "441"
+    ],
     "match": [
       "433"
+    ],
+    "motorsport": [
+      "442"
     ],
     "netanyahu": [
       "434"
@@ -7232,11 +8308,41 @@
     "netanyahu out": [
       "434"
     ],
+    "next french": [
+      "440"
+    ],
+    "next french presidential": [
+      "440"
+    ],
+    "nymex": [
+      "439"
+    ],
+    "oil": [
+      "439"
+    ],
+    "oil wti": [
+      "439"
+    ],
+    "oil wti hit": [
+      "439"
+    ],
+    "opec": [
+      "439"
+    ],
     "ouster": [
       "434"
     ],
     "oval office": [
       "435"
+    ],
+    "paddock": [
+      "442"
+    ],
+    "petroleum": [
+      "439"
+    ],
+    "pit stop": [
+      "442"
     ],
     "pl": [
       "433"
@@ -7247,10 +8353,17 @@
     "pm": [
       "434"
     ],
+    "podium": [
+      "442"
+    ],
     "politics": [
       "434",
       "435",
-      "437"
+      "437",
+      "440"
+    ],
+    "poll": [
+      "440"
     ],
     "polling": [
       "437"
@@ -7269,14 +8382,17 @@
     ],
     "president": [
       "435",
-      "437"
+      "437",
+      "440"
     ],
     "presidential": [
-      "437"
+      "437",
+      "440"
     ],
     "presidential election": [
       "435",
-      "437"
+      "437",
+      "440"
     ],
     "presidential election winner": [
       "435"
@@ -7291,7 +8407,14 @@
       "437"
     ],
     "race": [
-      "435"
+      "435",
+      "440"
+    ],
+    "racing": [
+      "442"
+    ],
+    "ranking": [
+      "441"
     ],
     "resignation": [
       "434"
@@ -7303,11 +8426,15 @@
       "437"
     ],
     "season": [
-      "432"
+      "432",
+      "442"
     ],
     "soccer": [
       "433",
       "438"
+    ],
+    "spot price": [
+      "439"
     ],
     "spring": [
       "432"
@@ -7321,24 +8448,79 @@
     "stamford bridge": [
       "433"
     ],
+    "standings": [
+      "442"
+    ],
     "stepping down": [
       "434"
+    ],
+    "stock price": [
+      "441"
+    ],
+    "teams": [
+      "442"
     ],
     "title race": [
       "438"
     ],
+    "top company": [
+      "441"
+    ],
+    "top stock": [
+      "441"
+    ],
     "tournament": [
       "432"
     ],
+    "trillion": [
+      "441"
+    ],
+    "us oil": [
+      "439"
+    ],
+    "valuation": [
+      "441"
+    ],
     "vote": [
       "435",
-      "437"
+      "437",
+      "440"
+    ],
+    "west texas intermediate": [
+      "439"
+    ],
+    "what wti": [
+      "439"
+    ],
+    "what wti crude": [
+      "439"
     ],
     "white house": [
       "435"
     ],
     "winner 2028": [
       "435"
+    ],
+    "wti": [
+      "439"
+    ],
+    "wti crude": [
+      "439"
+    ],
+    "wti crude oil": [
+      "439"
+    ],
+    "wti hit": [
+      "439"
+    ],
+    "wti hit april": [
+      "439"
+    ],
+    "wti原油": [
+      "439"
+    ],
+    "一级方程式": [
+      "442"
     ],
     "内塔尼亚胡": [
       "434"
@@ -7350,8 +8532,17 @@
       "435",
       "437"
     ],
+    "最大公司": [
+      "441"
+    ],
     "欧洲联赛": [
       "432"
+    ],
+    "法国大选": [
+      "440"
+    ],
+    "法国总统选举": [
+      "440"
     ],
     "法国足球甲级联赛": [
       "438"
@@ -7361,6 +8552,9 @@
     ],
     "英雄联盟": [
       "432"
+    ],
+    "车队冠军": [
+      "442"
     ]
   }
 }
