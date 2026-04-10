@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-10 17:21:38 UTC+8",
+    "generatedAt": "2026-04-11 01:02:38 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 131,
-      "markets": 208,
-      "keywords": 807,
+      "kept": 173,
+      "markets": 242,
+      "keywords": 867,
       "events": {
-        "events": 10
+        "events": 14
       },
       "skipped": {
         "statusEnum": 2,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 867,
+        "cutoff_expired": 825,
         "cutoff_zero_kept": 43,
         "resolved": 0,
         "missing_id": 0,
@@ -30,11 +30,11 @@
         "onlyAiForNew": true,
         "reused": 10,
         "regenerated_empty_entitygroups": 0,
-        "calls": 0,
+        "calls": 4,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 0,
+        "non_empty": 4,
         "errors": 0
       }
     }
@@ -484,6 +484,188 @@
       "sig": "11beaac6",
       "sigFull": "11beaac6",
       "sigCore": "4f64efd3",
+      "reused": false
+    },
+    "455": {
+      "title": "Liverpool vs Paris Saint Germain",
+      "marketIds": [
+        "455"
+      ],
+      "bestMarketId": "455",
+      "bestLabels": null,
+      "keywords": [
+        "liverpool",
+        "psg",
+        "paris saint germain",
+        "lfc",
+        "football",
+        "soccer",
+        "match",
+        "game",
+        "reds",
+        "parisians",
+        "vs",
+        "versus",
+        "fixture",
+        "clash",
+        "friendly",
+        "liverpool paris",
+        "paris saint",
+        "saint germain",
+        "liverpool paris saint"
+      ],
+      "entities": [
+        "liverpool",
+        "paris saint germain"
+      ],
+      "entityGroups": [
+        [
+          "liverpool",
+          "利物浦"
+        ],
+        [
+          "paris saint germain",
+          "巴黎圣日耳曼"
+        ]
+      ],
+      "sig": "6d476f11",
+      "sigFull": "6d476f11",
+      "sigCore": "38537253",
+      "reused": false
+    },
+    "456": {
+      "title": "Atletico Madrid vs Barcelona",
+      "marketIds": [
+        "456"
+      ],
+      "bestMarketId": "456",
+      "bestLabels": null,
+      "keywords": [
+        "atletico madrid",
+        "barcelona",
+        "la liga",
+        "football",
+        "soccer",
+        "match",
+        "draw",
+        "colchoneros",
+        "culers",
+        "spanish league",
+        "el madrileño",
+        "wanda metropolitano",
+        "camp nou",
+        "derby",
+        "laliga",
+        "madrid barcelona",
+        "atletico madrid barcelona"
+      ],
+      "entities": [
+        "atletico madrid",
+        "barcelona"
+      ],
+      "entityGroups": [
+        [
+          "atletico madrid",
+          "atletico",
+          "马德里竞技"
+        ],
+        [
+          "barcelona",
+          "巴塞罗那"
+        ]
+      ],
+      "sig": "b5843211",
+      "sigFull": "b5843211",
+      "sigCore": "db8f7bc3",
+      "reused": false
+    },
+    "453": {
+      "title": "Arsenal vs Sporting CP",
+      "marketIds": [
+        "453"
+      ],
+      "bestMarketId": "453",
+      "bestLabels": null,
+      "keywords": [
+        "arsenal",
+        "sporting cp",
+        "sporting lisbon",
+        "gunners",
+        "lions",
+        "soccer",
+        "football",
+        "match",
+        "draw",
+        "tie",
+        "regular time",
+        "90 mins",
+        "premier league",
+        "primeira liga",
+        "arsenal sporting"
+      ],
+      "entities": [
+        "arsenal",
+        "sporting cp"
+      ],
+      "entityGroups": [
+        [
+          "arsenal",
+          "阿森纳"
+        ],
+        [
+          "sporting cp",
+          "葡萄牙体育"
+        ]
+      ],
+      "sig": "94047e15",
+      "sigFull": "94047e15",
+      "sigCore": "38347c65",
+      "reused": false
+    },
+    "454": {
+      "title": "Bayern München vs Real Madrid",
+      "marketIds": [
+        "454"
+      ],
+      "bestMarketId": "454",
+      "bestLabels": null,
+      "keywords": [
+        "bayern munich",
+        "real madrid",
+        "soccer",
+        "football",
+        "match",
+        "game",
+        "draw",
+        "tie",
+        "ucl",
+        "champions league",
+        "bundesliga",
+        "la liga",
+        "fc bayern",
+        "los blancos",
+        "bayern nchen",
+        "nchen real",
+        "bayern nchen real",
+        "nchen real madrid"
+      ],
+      "entities": [
+        "bayern münchen",
+        "real madrid"
+      ],
+      "entityGroups": [
+        [
+          "bayern münchen",
+          "拜仁慕尼黑"
+        ],
+        [
+          "real madrid",
+          "皇家马德里"
+        ]
+      ],
+      "sig": "83ac77cd",
+      "sigFull": "83ac77cd",
+      "sigCore": "2e0fcf81",
       "reused": false
     }
   },
@@ -5200,6 +5382,628 @@
           "noTokenId": "52080993208579420912361268648667206155048877748967321170690266613435995590514"
         }
       ]
+    },
+    "12805": {
+      "title": "Memphis Grizzlies vs Utah Jazz",
+      "url": "https://app.opinion.trade/market/12805?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12822": {
+      "title": "Utah Jazz vs Los Angeles Lakers",
+      "url": "https://app.opinion.trade/market/12822?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12799": {
+      "title": "Philadelphia 76ers vs Indiana Pacers",
+      "url": "https://app.opinion.trade/market/12799?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12812": {
+      "title": "Detroit Pistons vs Indiana Pacers",
+      "url": "https://app.opinion.trade/market/12812?ref=opinion_hud",
+      "yesTokenId": "103705612362910371537294448526796653559112430297489718932233553477268942036145",
+      "noTokenId": "73381982969746167521252810584206702943130465113123391997557399770387322537757",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Detroit Pistons",
+        "noLabel": "Indiana Pacers"
+      },
+      "type": "binary"
+    },
+    "12811": {
+      "title": "Washington Wizards vs Cleveland Cavaliers",
+      "url": "https://app.opinion.trade/market/12811?ref=opinion_hud",
+      "yesTokenId": "113884216275149344252337528561871409604985390644090938922702300967258004242527",
+      "noTokenId": "27996118193472645636159437779693003758195609313178187203875808101888983602259",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Washington Wizards",
+        "noLabel": "Cleveland Cavaliers"
+      },
+      "type": "binary"
+    },
+    "12802": {
+      "title": "Minnesota Timberwolves vs Houston Rockets",
+      "url": "https://app.opinion.trade/market/12802?ref=opinion_hud",
+      "yesTokenId": "27151588973612505367864312321795463394576775845276925301803719747935994150364",
+      "noTokenId": "113941936125752170302025663397806863587217889702071303308115570622459586570317",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Minnesota Timberwolves",
+        "noLabel": "Houston Rockets"
+      },
+      "type": "binary"
+    },
+    "12806": {
+      "title": "Oklahoma City Thunder vs Denver Nuggets",
+      "url": "https://app.opinion.trade/market/12806?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12808": {
+      "title": "Golden State Warriors vs Sacramento Kings",
+      "url": "https://app.opinion.trade/market/12808?ref=opinion_hud",
+      "yesTokenId": "45463472713800163773631257576871678147979123774680646979344588410372264749484",
+      "noTokenId": "83125689268316649020101615149000969454667407867933548508357544537645756606479",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Golden State Warriors",
+        "noLabel": "Sacramento Kings"
+      },
+      "type": "binary"
+    },
+    "12817": {
+      "title": "Chicago Bulls vs Dallas Mavericks",
+      "url": "https://app.opinion.trade/market/12817?ref=opinion_hud",
+      "yesTokenId": "54035055205871849244830639102743113921022489326958520764416295796482807671389",
+      "noTokenId": "28152744858360215182583799381960033225100073448323489202546137696509861838738",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Chicago Bulls",
+        "noLabel": "Dallas Mavericks"
+      },
+      "type": "binary"
+    },
+    "12820": {
+      "title": "Phoenix Suns vs Oklahoma City Thunder",
+      "url": "https://app.opinion.trade/market/12820?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12804": {
+      "title": "Dallas Mavericks vs San Antonio Spurs",
+      "url": "https://app.opinion.trade/market/12804?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12797": {
+      "title": "Cleveland Cavaliers vs Atlanta Hawks",
+      "url": "https://app.opinion.trade/market/12797?ref=opinion_hud",
+      "yesTokenId": "103524117671766345055424312481553772078032882703662726532507270866067567858107",
+      "noTokenId": "31272539927853949717025886218873222877660320991400303312933303012208140481942",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Cleveland Cavaliers",
+        "noLabel": "Atlanta Hawks"
+      },
+      "type": "binary"
+    },
+    "12803": {
+      "title": "Brooklyn Nets vs Milwaukee Bucks",
+      "url": "https://app.opinion.trade/market/12803?ref=opinion_hud",
+      "yesTokenId": "56374837960455298945617981644875659461464296214736985274148930871144511287803",
+      "noTokenId": "53746207697159512685425752645854218112124818086184155099675549260229498239846",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Brooklyn Nets",
+        "noLabel": "Milwaukee Bucks"
+      },
+      "type": "binary"
+    },
+    "12814": {
+      "title": "Charlotte Hornets vs New York Knicks",
+      "url": "https://app.opinion.trade/market/12814?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12810": {
+      "title": "Orlando Magic vs Boston Celtics",
+      "url": "https://app.opinion.trade/market/12810?ref=opinion_hud",
+      "yesTokenId": "91210707301955145392646710978702395733096121821469581231868730116081775026237",
+      "noTokenId": "81796422857456824079318264508683992365284675446675110340621601922441365989937",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Orlando Magic",
+        "noLabel": "Boston Celtics"
+      },
+      "type": "binary"
+    },
+    "12818": {
+      "title": "Memphis Grizzlies vs Houston Rockets",
+      "url": "https://app.opinion.trade/market/12818?ref=opinion_hud",
+      "yesTokenId": "35525234640799113358031726978150607147175107928689961435268050135597352395314",
+      "noTokenId": "81587742643788284791208566399776595429972929900191260370256178217378024619837",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Memphis Grizzlies",
+        "noLabel": "Houston Rockets"
+      },
+      "type": "binary"
+    },
+    "12796": {
+      "title": "Detroit Pistons vs Charlotte Hornets",
+      "url": "https://app.opinion.trade/market/12796?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12823": {
+      "title": "Golden State Warriors vs LA Clippers",
+      "url": "https://app.opinion.trade/market/12823?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12809": {
+      "title": "Phoenix Suns vs Los Angeles Lakers",
+      "url": "https://app.opinion.trade/market/12809?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12801": {
+      "title": "Orlando Magic vs Chicago Bulls",
+      "url": "https://app.opinion.trade/market/12801?ref=opinion_hud",
+      "yesTokenId": "70922984857439230073861232238088500039754783751267006804473923728396607898334",
+      "noTokenId": "39280596370664846856066076405699726375312334342767820676389084988476496664781",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Orlando Magic",
+        "noLabel": "Chicago Bulls"
+      },
+      "type": "binary"
+    },
+    "12815": {
+      "title": "Milwaukee Bucks vs Philadelphia 76ers",
+      "url": "https://app.opinion.trade/market/12815?ref=opinion_hud",
+      "yesTokenId": "8105919763383795923077513716230261922983795602747413035224454947729193625865",
+      "noTokenId": "50379345648537688455592550587333655779549947559504479605021670656303303241023",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Milwaukee Bucks",
+        "noLabel": "Philadelphia 76ers"
+      },
+      "type": "binary"
+    },
+    "12816": {
+      "title": "Brooklyn Nets vs Toronto Raptors",
+      "url": "https://app.opinion.trade/market/12816?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12821": {
+      "title": "Denver Nuggets vs San Antonio Spurs",
+      "url": "https://app.opinion.trade/market/12821?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12798": {
+      "title": "New Orleans Pelicans vs Boston Celtics",
+      "url": "https://app.opinion.trade/market/12798?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12813": {
+      "title": "Atlanta Hawks vs Miami Heat",
+      "url": "https://app.opinion.trade/market/12813?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12807": {
+      "title": "LA Clippers vs Portland Trail Blazers",
+      "url": "https://app.opinion.trade/market/12807?ref=opinion_hud",
+      "yesTokenId": "34231856017412380437021809172149852278892960007660269868440008591916963121489",
+      "noTokenId": "40093345630438333592003343360504978980898424733997880021577599598699933163910",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "LA Clippers",
+        "noLabel": "Portland Trail Blazers"
+      },
+      "type": "binary"
+    },
+    "12800": {
+      "title": "Toronto Raptors vs New York Knicks",
+      "url": "https://app.opinion.trade/market/12800?ref=opinion_hud",
+      "yesTokenId": "106661119715722874693343090540534448370233077066460866711694933374095440381051",
+      "noTokenId": "4603598090871334881955314949618592459880768954352272370927732929063768343082",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Toronto Raptors",
+        "noLabel": "New York Knicks"
+      },
+      "type": "binary"
+    },
+    "12819": {
+      "title": "New Orleans Pelicans vs Minnesota Timberwolves",
+      "url": "https://app.opinion.trade/market/12819?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "455": {
+      "title": "Liverpool vs Paris Saint Germain",
+      "url": "https://app.opinion.trade/market/455?ref=opinion_hud",
+      "yesTokenId": "77972679546695544647254259126464903749864641617697553087235331252553699523393",
+      "noTokenId": "110911210308212745339083279117254481789580347750772917085806486031156825665026",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "liverpool",
+        "psg",
+        "paris saint germain",
+        "lfc",
+        "football",
+        "soccer",
+        "match",
+        "game",
+        "reds",
+        "parisians",
+        "vs",
+        "versus",
+        "fixture",
+        "clash",
+        "friendly",
+        "liverpool paris",
+        "paris saint",
+        "saint germain",
+        "liverpool paris saint"
+      ],
+      "entities": [
+        "liverpool",
+        "paris saint germain"
+      ],
+      "entityGroups": [
+        [
+          "liverpool",
+          "利物浦"
+        ],
+        [
+          "paris saint germain",
+          "巴黎圣日耳曼"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "12790",
+          "title": "Liverpool wins",
+          "yesTokenId": "90669127863992871858050074488060603854434349827756332578627519741458061449244",
+          "noTokenId": "9569207776088678747861439326962677066624975055976150557165577773021717139542"
+        },
+        {
+          "marketId": "12791",
+          "title": "Paris Saint Germain wins",
+          "yesTokenId": "77972679546695544647254259126464903749864641617697553087235331252553699523393",
+          "noTokenId": "110911210308212745339083279117254481789580347750772917085806486031156825665026"
+        },
+        {
+          "marketId": "12792",
+          "title": "Draw",
+          "yesTokenId": "14238724927514252443581664441055072478915394524164804732837122698806034877841",
+          "noTokenId": "87453025395450702901317063225764209818894445732204651200972691472042357069777"
+        }
+      ]
+    },
+    "456": {
+      "title": "Atletico Madrid vs Barcelona",
+      "url": "https://app.opinion.trade/market/456?ref=opinion_hud",
+      "yesTokenId": "47350749679870284571323214850991860056676840708981551489112563837204514053446",
+      "noTokenId": "65233159293912964548694620375337458409895148857374077721309513336117548385552",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "atletico madrid",
+        "barcelona",
+        "la liga",
+        "football",
+        "soccer",
+        "match",
+        "draw",
+        "colchoneros",
+        "culers",
+        "spanish league",
+        "el madrileño",
+        "wanda metropolitano",
+        "camp nou",
+        "derby",
+        "laliga",
+        "madrid barcelona",
+        "atletico madrid barcelona"
+      ],
+      "entities": [
+        "atletico madrid",
+        "barcelona"
+      ],
+      "entityGroups": [
+        [
+          "atletico madrid",
+          "atletico",
+          "马德里竞技"
+        ],
+        [
+          "barcelona",
+          "巴塞罗那"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "12793",
+          "title": "Atletico Madrid wins",
+          "yesTokenId": "25552330150745160452899705739596341534286768608650938189823196371353682929684",
+          "noTokenId": "29020755940820309427237780626017645069827577691814441778828788804334279489811"
+        },
+        {
+          "marketId": "12794",
+          "title": "Barcelona wins",
+          "yesTokenId": "47350749679870284571323214850991860056676840708981551489112563837204514053446",
+          "noTokenId": "65233159293912964548694620375337458409895148857374077721309513336117548385552"
+        },
+        {
+          "marketId": "12795",
+          "title": "Draw",
+          "yesTokenId": "85642144494822417993556777376504565817506452898390562327888276014740829154092",
+          "noTokenId": "57185469843139033511664280668804935064053992338431260071880888617515472844341"
+        }
+      ]
+    },
+    "12783": {
+      "title": "Sacramento Kings vs Portland Trail Blazers",
+      "url": "https://app.opinion.trade/market/12783?ref=opinion_hud",
+      "yesTokenId": "68683652359038968378370324068415310881175602569987053690690347005816907356657",
+      "noTokenId": "89234912844711352361534230551060700168851738705768664600774775211105696466043",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Sacramento Kings",
+        "noLabel": "Portland Trail Blazers"
+      },
+      "type": "binary"
+    },
+    "453": {
+      "title": "Arsenal vs Sporting CP",
+      "url": "https://app.opinion.trade/market/453?ref=opinion_hud",
+      "yesTokenId": "19211469289008054814672415418877017519107395225410864019778812716545560021900",
+      "noTokenId": "89673297609932839884043984751493762112251364645248448277231212926269036676427",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "arsenal",
+        "sporting cp",
+        "sporting lisbon",
+        "gunners",
+        "lions",
+        "soccer",
+        "football",
+        "match",
+        "draw",
+        "tie",
+        "regular time",
+        "90 mins",
+        "premier league",
+        "primeira liga",
+        "arsenal sporting"
+      ],
+      "entities": [
+        "arsenal",
+        "sporting cp"
+      ],
+      "entityGroups": [
+        [
+          "arsenal",
+          "阿森纳"
+        ],
+        [
+          "sporting cp",
+          "葡萄牙体育"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "12784",
+          "title": "Arsenal wins",
+          "yesTokenId": "7909389864219204652733553655273402840008567643429613763471860401809995055979",
+          "noTokenId": "2924718166900113210982602735945592474345918325517889329971777501179412088178"
+        },
+        {
+          "marketId": "12785",
+          "title": "Sporting CP wins",
+          "yesTokenId": "19211469289008054814672415418877017519107395225410864019778812716545560021900",
+          "noTokenId": "89673297609932839884043984751493762112251364645248448277231212926269036676427"
+        },
+        {
+          "marketId": "12786",
+          "title": "Draw",
+          "yesTokenId": "72726657874433210112146954753871001787754471784948705610847503953214955807536",
+          "noTokenId": "3520351024988075980326189556704619370001287807612266089673504182947361778809"
+        }
+      ]
+    },
+    "454": {
+      "title": "Bayern München vs Real Madrid",
+      "url": "https://app.opinion.trade/market/454?ref=opinion_hud",
+      "yesTokenId": "77871573956538004663566238529497816552401141602460838910901754685506541291860",
+      "noTokenId": "96189158706441643078105418112286894087213130102483477600032222473602696339091",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "bayern munich",
+        "real madrid",
+        "soccer",
+        "football",
+        "match",
+        "game",
+        "draw",
+        "tie",
+        "ucl",
+        "champions league",
+        "bundesliga",
+        "la liga",
+        "fc bayern",
+        "los blancos",
+        "bayern nchen",
+        "nchen real",
+        "bayern nchen real",
+        "nchen real madrid"
+      ],
+      "entities": [
+        "bayern münchen",
+        "real madrid"
+      ],
+      "entityGroups": [
+        [
+          "bayern münchen",
+          "拜仁慕尼黑"
+        ],
+        [
+          "real madrid",
+          "皇家马德里"
+        ]
+      ],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "12787",
+          "title": "Bayern München wins",
+          "yesTokenId": "77871573956538004663566238529497816552401141602460838910901754685506541291860",
+          "noTokenId": "96189158706441643078105418112286894087213130102483477600032222473602696339091"
+        },
+        {
+          "marketId": "12788",
+          "title": "Real Madrid wins",
+          "yesTokenId": "93025263720765795518431747216802427174658291777589227312734320330875020637975",
+          "noTokenId": "95846775831928629040418549768660030100501660421658508971669678026647143151275"
+        },
+        {
+          "marketId": "12789",
+          "title": "Draw",
+          "yesTokenId": "93385716175087750905711712856744062477482921025552480999527941310471156039001",
+          "noTokenId": "32456180796438342931767870117567644395621843887932727910558686096639264973442"
+        }
+      ]
+    },
+    "12779": {
+      "title": "Bitcoin Up or Down on April 11?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/12779?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -5320,6 +6124,9 @@
     "80s": [
       "3223"
     ],
+    "90 mins": [
+      "453"
+    ],
     "aapl": [
       "2368"
     ],
@@ -5430,10 +6237,25 @@
     "armageddon": [
       "2670"
     ],
+    "arsenal": [
+      "453"
+    ],
+    "arsenal sporting": [
+      "453"
+    ],
     "ath": [
       "3364",
       "3367",
       "3368"
+    ],
+    "atletico": [
+      "456"
+    ],
+    "atletico madrid": [
+      "456"
+    ],
+    "atletico madrid barcelona": [
+      "456"
     ],
     "attack": [
       "3039"
@@ -5448,6 +6270,9 @@
       "435",
       "437",
       "440"
+    ],
+    "barcelona": [
+      "456"
     ],
     "base": [
       "3366"
@@ -5466,6 +6291,18 @@
     ],
     "base链": [
       "3366"
+    ],
+    "bayern munich": [
+      "454"
+    ],
+    "bayern münchen": [
+      "454"
+    ],
+    "bayern nchen": [
+      "454"
+    ],
+    "bayern nchen real": [
+      "454"
     ],
     "bear market": [
       "3265"
@@ -5618,6 +6455,9 @@
     "bullish": [
       "3367"
     ],
+    "bundesliga": [
+      "454"
+    ],
     "business cycle": [
       "3265"
     ],
@@ -5631,6 +6471,9 @@
       "3448",
       "3449",
       "3509"
+    ],
+    "camp nou": [
+      "456"
     ],
     "campaign": [
       "435",
@@ -5654,6 +6497,9 @@
     ],
     "ceo march": [
       "2368"
+    ],
+    "champions league": [
+      "454"
     ],
     "championship": [
       "432",
@@ -5707,6 +6553,9 @@
     "city apr utc": [
       "433"
     ],
+    "clash": [
+      "455"
+    ],
     "close warner": [
       "2398"
     ],
@@ -5733,6 +6582,9 @@
     ],
     "coins": [
       "3365"
+    ],
+    "colchoneros": [
+      "456"
     ],
     "collapse": [
       "3359"
@@ -5844,6 +6696,9 @@
     "cryptography": [
       "3256"
     ],
+    "culers": [
+      "456"
+    ],
     "customs duties": [
       "1546"
     ],
@@ -5909,6 +6764,9 @@
     "depression": [
       "3265"
     ],
+    "derby": [
+      "456"
+    ],
     "dex": [
       "3361"
     ],
@@ -5938,6 +6796,11 @@
     ],
     "drain": [
       "3360"
+    ],
+    "draw": [
+      "453",
+      "454",
+      "456"
     ],
     "drone": [
       "3039"
@@ -5971,6 +6834,9 @@
     ],
     "ecosystem": [
       "3366"
+    ],
+    "el madrileño": [
+      "456"
     ],
     "election": [
       "434",
@@ -6114,6 +6980,9 @@
     "favor trump tariffs": [
       "1546"
     ],
+    "fc bayern": [
+      "454"
+    ],
     "fdv one": [
       "1721"
     ],
@@ -6135,12 +7004,19 @@
     "first overall": [
       "3072"
     ],
+    "fixture": [
+      "455"
+    ],
     "flash loan attack": [
       "3360"
     ],
     "football": [
       "433",
-      "438"
+      "438",
+      "453",
+      "454",
+      "455",
+      "456"
     ],
     "formula 1": [
       "442"
@@ -6187,6 +7063,9 @@
     "french top flight": [
       "438"
     ],
+    "friendly": [
+      "455"
+    ],
     "fugitive": [
       "1856"
     ],
@@ -6205,7 +7084,9 @@
       "439"
     ],
     "game": [
-      "433"
+      "433",
+      "454",
+      "455"
     ],
     "gaten": [
       "3224"
@@ -6246,6 +7127,9 @@
     ],
     "grid": [
       "442"
+    ],
+    "gunners": [
+      "453"
     ],
     "hack": [
       "3360"
@@ -6473,6 +7357,13 @@
     "l2": [
       "3366"
     ],
+    "la liga": [
+      "454",
+      "456"
+    ],
+    "laliga": [
+      "456"
+    ],
     "largest company": [
       "441"
     ],
@@ -6530,6 +7421,9 @@
     "legal ruling": [
       "1546"
     ],
+    "lfc": [
+      "455"
+    ],
     "light sweet crude": [
       "439"
     ],
@@ -6548,8 +7442,20 @@
     "likud": [
       "434"
     ],
+    "lions": [
+      "453"
+    ],
     "listing": [
       "3362"
+    ],
+    "liverpool": [
+      "455"
+    ],
+    "liverpool paris": [
+      "455"
+    ],
+    "liverpool paris saint": [
+      "455"
     ],
     "lol": [
       "432"
@@ -6560,6 +7466,9 @@
     "lol lec 2026": [
       "432"
     ],
+    "los blancos": [
+      "454"
+    ],
     "lp": [
       "2178"
     ],
@@ -6568,6 +7477,9 @@
     ],
     "m&a": [
       "2398"
+    ],
+    "madrid barcelona": [
+      "456"
     ],
     "maga": [
       "3055"
@@ -6627,7 +7539,11 @@
       "3158"
     ],
     "match": [
-      "433"
+      "433",
+      "453",
+      "454",
+      "455",
+      "456"
     ],
     "max": [
       "2398"
@@ -6750,6 +7666,12 @@
     "nber": [
       "3265"
     ],
+    "nchen real": [
+      "454"
+    ],
+    "nchen real madrid": [
+      "454"
+    ],
     "negative growth": [
       "3265"
     ],
@@ -6863,6 +7785,15 @@
     "parallel execution": [
       "1721"
     ],
+    "paris saint": [
+      "455"
+    ],
+    "paris saint germain": [
+      "455"
+    ],
+    "parisians": [
+      "455"
+    ],
     "parousia": [
       "2670"
     ],
@@ -6922,7 +7853,8 @@
       "435"
     ],
     "premier league": [
-      "433"
+      "433",
+      "453"
     ],
     "premier league chelsea": [
       "433"
@@ -6969,11 +7901,17 @@
     "prime minister": [
       "434"
     ],
+    "primeira liga": [
+      "453"
+    ],
     "private key compromise": [
       "3360"
     ],
     "proof of work": [
       "3256"
+    ],
+    "psg": [
+      "455"
     ],
     "pt": [
       "437"
@@ -7038,6 +7976,9 @@
     "real gdp": [
       "3265"
     ],
+    "real madrid": [
+      "454"
+    ],
     "rebalancing": [
       "3257"
     ],
@@ -7053,6 +7994,12 @@
     ],
     "red status": [
       "3357"
+    ],
+    "reds": [
+      "455"
+    ],
+    "regular time": [
+      "453"
     ],
     "rehire": [
       "3369"
@@ -7167,6 +8114,9 @@
     "runoff": [
       "437"
     ],
+    "saint germain": [
+      "455"
+    ],
     "satoshi": [
       "3365"
     ],
@@ -7264,13 +8214,26 @@
     ],
     "soccer": [
       "433",
-      "438"
+      "438",
+      "453",
+      "454",
+      "455",
+      "456"
+    ],
+    "spanish league": [
+      "456"
     ],
     "specific date": [
       "3449"
     ],
     "spend": [
       "3365"
+    ],
+    "sporting cp": [
+      "453"
+    ],
+    "sporting lisbon": [
+      "453"
     ],
     "spot price": [
       "439"
@@ -7439,6 +8402,10 @@
       "3257",
       "3362"
     ],
+    "tie": [
+      "453",
+      "454"
+    ],
     "tim cook": [
       "2368"
     ],
@@ -7542,6 +8509,9 @@
       "3221",
       "3224"
     ],
+    "ucl": [
+      "454"
+    ],
     "underclassmen": [
       "3072"
     ],
@@ -7597,6 +8567,9 @@
     "venture": [
       "3525"
     ],
+    "versus": [
+      "455"
+    ],
     "vice president": [
       "3062"
     ],
@@ -7611,8 +8584,14 @@
     "vp": [
       "3055"
     ],
+    "vs": [
+      "455"
+    ],
     "wallet": [
       "3365"
+    ],
+    "wanda metropolitano": [
+      "456"
     ],
     "war": [
       "3039"
@@ -7713,6 +8692,9 @@
     "切尔西": [
       "433"
     ],
+    "利物浦": [
+      "455"
+    ],
     "加密货币漏洞利用": [
       "3360"
     ],
@@ -7728,6 +8710,12 @@
     "南茜·惠勒": [
       "3223"
     ],
+    "巴塞罗那": [
+      "456"
+    ],
+    "巴黎圣日耳曼": [
+      "455"
+    ],
     "币安币": [
       "3367",
       "3368"
@@ -7738,6 +8726,9 @@
     "总统选举": [
       "435",
       "437"
+    ],
+    "拜仁慕尼黑": [
+      "454"
     ],
     "最大公司": [
       "441"
@@ -7775,6 +8766,9 @@
       "3055",
       "3062"
     ],
+    "皇家马德里": [
+      "454"
+    ],
     "经济衰退": [
       "3265"
     ],
@@ -7786,6 +8780,9 @@
     ],
     "英雄联盟": [
       "432"
+    ],
+    "葡萄牙体育": [
+      "453"
     ],
     "蒂姆·库克": [
       "2368"
@@ -7811,8 +8808,14 @@
     "达斯汀·亨德森": [
       "3224"
     ],
+    "阿森纳": [
+      "453"
+    ],
     "霍莉·惠勒": [
       "3222"
+    ],
+    "马德里竞技": [
+      "456"
     ]
   },
   "eventIndex": {
@@ -7831,6 +8834,9 @@
     "2028": [
       "435"
     ],
+    "90 mins": [
+      "453"
+    ],
     "al": [
       "437"
     ],
@@ -7840,10 +8846,40 @@
     "april 2026": [
       "439"
     ],
+    "arsenal": [
+      "453"
+    ],
+    "arsenal sporting": [
+      "453"
+    ],
+    "atletico": [
+      "456"
+    ],
+    "atletico madrid": [
+      "456"
+    ],
+    "atletico madrid barcelona": [
+      "456"
+    ],
     "ballot": [
       "435",
       "437",
       "440"
+    ],
+    "barcelona": [
+      "456"
+    ],
+    "bayern munich": [
+      "454"
+    ],
+    "bayern münchen": [
+      "454"
+    ],
+    "bayern nchen": [
+      "454"
+    ],
+    "bayern nchen real": [
+      "454"
     ],
     "benjamin netanyahu": [
       "434"
@@ -7881,6 +8917,12 @@
     "brent": [
       "439"
     ],
+    "bundesliga": [
+      "454"
+    ],
+    "camp nou": [
+      "456"
+    ],
     "campaign": [
       "435",
       "437",
@@ -7888,6 +8930,9 @@
     ],
     "candidate": [
       "435"
+    ],
+    "champions league": [
+      "454"
     ],
     "championship": [
       "432",
@@ -7911,8 +8956,14 @@
     "city apr utc": [
       "433"
     ],
+    "clash": [
+      "455"
+    ],
     "coalition": [
       "434"
+    ],
+    "colchoneros": [
+      "456"
     ],
     "commander in chief": [
       "435"
@@ -7944,8 +8995,22 @@
     "crude oil wti": [
       "439"
     ],
+    "culers": [
+      "456"
+    ],
+    "derby": [
+      "456"
+    ],
     "domestic league": [
       "438"
+    ],
+    "draw": [
+      "453",
+      "454",
+      "456"
+    ],
+    "el madrileño": [
+      "456"
     ],
     "election": [
       "434",
@@ -7986,12 +9051,22 @@
     "f1": [
       "442"
     ],
+    "fc bayern": [
+      "454"
+    ],
     "finals": [
       "432"
     ],
+    "fixture": [
+      "455"
+    ],
     "football": [
       "433",
-      "438"
+      "438",
+      "453",
+      "454",
+      "455",
+      "456"
     ],
     "formula 1": [
       "442"
@@ -8035,11 +9110,16 @@
     "french top flight": [
       "438"
     ],
+    "friendly": [
+      "455"
+    ],
     "futures": [
       "439"
     ],
     "game": [
-      "433"
+      "433",
+      "454",
+      "455"
     ],
     "government": [
       "434"
@@ -8049,6 +9129,9 @@
     ],
     "grid": [
       "442"
+    ],
+    "gunners": [
+      "453"
     ],
     "head of state": [
       "440"
@@ -8061,6 +9144,13 @@
     ],
     "knesset": [
       "434"
+    ],
+    "la liga": [
+      "454",
+      "456"
+    ],
+    "laliga": [
+      "456"
     ],
     "largest company": [
       "441"
@@ -8092,6 +9182,9 @@
     "lec 2026 spring": [
       "432"
     ],
+    "lfc": [
+      "455"
+    ],
     "light sweet crude": [
       "439"
     ],
@@ -8110,6 +9203,18 @@
     "likud": [
       "434"
     ],
+    "lions": [
+      "453"
+    ],
+    "liverpool": [
+      "455"
+    ],
+    "liverpool paris": [
+      "455"
+    ],
+    "liverpool paris saint": [
+      "455"
+    ],
     "lol": [
       "432"
     ],
@@ -8119,8 +9224,14 @@
     "lol lec 2026": [
       "432"
     ],
+    "los blancos": [
+      "454"
+    ],
     "lula": [
       "437"
+    ],
+    "madrid barcelona": [
+      "456"
     ],
     "man city": [
       "433"
@@ -8141,10 +9252,20 @@
       "441"
     ],
     "match": [
-      "433"
+      "433",
+      "453",
+      "454",
+      "455",
+      "456"
     ],
     "motorsport": [
       "442"
+    ],
+    "nchen real": [
+      "454"
+    ],
+    "nchen real madrid": [
+      "454"
     ],
     "netanyahu": [
       "434"
@@ -8181,6 +9302,15 @@
     ],
     "paddock": [
       "442"
+    ],
+    "paris saint": [
+      "455"
+    ],
+    "paris saint germain": [
+      "455"
+    ],
+    "parisians": [
+      "455"
     ],
     "petroleum": [
       "439"
@@ -8219,7 +9349,8 @@
       "435"
     ],
     "premier league": [
-      "433"
+      "433",
+      "453"
     ],
     "premier league chelsea": [
       "433"
@@ -8247,6 +9378,12 @@
     "prime minister": [
       "434"
     ],
+    "primeira liga": [
+      "453"
+    ],
+    "psg": [
+      "455"
+    ],
     "pt": [
       "437"
     ],
@@ -8260,6 +9397,15 @@
     "ranking": [
       "441"
     ],
+    "real madrid": [
+      "454"
+    ],
+    "reds": [
+      "455"
+    ],
+    "regular time": [
+      "453"
+    ],
     "resignation": [
       "434"
     ],
@@ -8269,13 +9415,29 @@
     "runoff": [
       "437"
     ],
+    "saint germain": [
+      "455"
+    ],
     "season": [
       "432",
       "442"
     ],
     "soccer": [
       "433",
-      "438"
+      "438",
+      "453",
+      "454",
+      "455",
+      "456"
+    ],
+    "spanish league": [
+      "456"
+    ],
+    "sporting cp": [
+      "453"
+    ],
+    "sporting lisbon": [
+      "453"
     ],
     "spot price": [
       "439"
@@ -8304,6 +9466,10 @@
     "teams": [
       "442"
     ],
+    "tie": [
+      "453",
+      "454"
+    ],
     "title race": [
       "438"
     ],
@@ -8319,16 +9485,28 @@
     "trillion": [
       "441"
     ],
+    "ucl": [
+      "454"
+    ],
     "us oil": [
       "439"
     ],
     "valuation": [
       "441"
     ],
+    "versus": [
+      "455"
+    ],
     "vote": [
       "435",
       "437",
       "440"
+    ],
+    "vs": [
+      "455"
+    ],
+    "wanda metropolitano": [
+      "456"
     ],
     "west texas intermediate": [
       "439"
@@ -8372,9 +9550,21 @@
     "切尔西": [
       "433"
     ],
+    "利物浦": [
+      "455"
+    ],
+    "巴塞罗那": [
+      "456"
+    ],
+    "巴黎圣日耳曼": [
+      "455"
+    ],
     "总统选举": [
       "435",
       "437"
+    ],
+    "拜仁慕尼黑": [
+      "454"
     ],
     "最大公司": [
       "441"
@@ -8391,14 +9581,26 @@
     "法国足球甲级联赛": [
       "438"
     ],
+    "皇家马德里": [
+      "454"
+    ],
     "美国大选": [
       "435"
     ],
     "英雄联盟": [
       "432"
     ],
+    "葡萄牙体育": [
+      "453"
+    ],
     "车队冠军": [
       "442"
+    ],
+    "阿森纳": [
+      "453"
+    ],
+    "马德里竞技": [
+      "456"
     ]
   }
 }
