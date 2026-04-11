@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-11 11:15:31 UTC+8",
+    "generatedAt": "2026-04-11 16:57:43 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 149,
-      "markets": 228,
+      "kept": 153,
+      "markets": 232,
       "keywords": 846,
       "events": {
         "events": 13
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 2,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 849,
+        "cutoff_expired": 845,
         "cutoff_zero_kept": 43,
         "resolved": 0,
         "missing_id": 0,
@@ -5645,11 +5645,11 @@
         }
       ]
     },
-    "12853": {
-      "title": "ETH Up or Down - Hourly (Apr 11, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/12853?ref=opinion_hud",
-      "yesTokenId": "25162762898982968083846612301792213245126925990097141425379452814087762490358",
-      "noTokenId": "52513276149219901572155526524013320115433153262197442005760819087360045522817",
+    "12874": {
+      "title": "BNB Up or Down - Hourly (Apr 11, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/12874?ref=opinion_hud",
+      "yesTokenId": "5364902392357099038673009564947940099051040501518644139291215989285359308879",
+      "noTokenId": "514320263957020138637223543644854932512919024011758254860113772049269487648",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -5657,11 +5657,11 @@
       },
       "type": "binary"
     },
-    "12851": {
-      "title": "BNB Up or Down - Hourly (Apr 11, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/12851?ref=opinion_hud",
-      "yesTokenId": "4581253789473238171518535056092516748504327434837214943944821256879792679058",
-      "noTokenId": "77600226416884757473248900964938627936006727328202773343651764009303339618537",
+    "12876": {
+      "title": "ETH Up or Down - Hourly (Apr 11, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/12876?ref=opinion_hud",
+      "yesTokenId": "98380018301635509119365007630785919736329837779529239668125912813786478046641",
+      "noTokenId": "63664277751139824701792549086411074509759144524062393727307979524519086622198",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -5669,15 +5669,63 @@
       },
       "type": "binary"
     },
-    "12852": {
-      "title": "BTC Up or Down - Hourly (Apr 11, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/12852?ref=opinion_hud",
-      "yesTokenId": "18379874463545751109252257957942929939034333065110709255243380486333204456313",
-      "noTokenId": "64878667984990663895880520058164428198859819955862792629323284757372417055636",
+    "12875": {
+      "title": "BTC Up or Down - Hourly (Apr 11, 2026 09:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/12875?ref=opinion_hud",
+      "yesTokenId": "53253533771085732019293300324216748111494044451786466239872210426269531744200",
+      "noTokenId": "59430082800141753341137858767599320346240610214860084892329705953986700210948",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "12873": {
+      "title": "LPL 2026 Split 2: WBG vs BLG (Apr. 12 7:00AM ET)",
+      "url": "https://app.opinion.trade/market/12873?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12870": {
+      "title": "LCK 2026 Season: BFX vs DNS (Apr. 12 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/12870?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12871": {
+      "title": "LPL 2026 Split 2: OMG vs LGD (Apr. 12 5:00AM ET)",
+      "url": "https://app.opinion.trade/market/12871?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12872": {
+      "title": "LCK 2026 Season: BRO vs KT (Apr. 12 6:00AM ET)",
+      "url": "https://app.opinion.trade/market/12872?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
       },
       "type": "binary"
     }
