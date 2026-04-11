@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-11 01:02:38 UTC+8",
+    "generatedAt": "2026-04-11 11:15:31 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 173,
-      "markets": 242,
-      "keywords": 867,
+      "kept": 149,
+      "markets": 228,
+      "keywords": 846,
       "events": {
-        "events": 14
+        "events": 13
       },
       "skipped": {
         "statusEnum": 2,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 825,
+        "cutoff_expired": 849,
         "cutoff_zero_kept": 43,
         "resolved": 0,
         "missing_id": 0,
@@ -28,68 +28,18 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 10,
+        "reused": 13,
         "regenerated_empty_entitygroups": 0,
-        "calls": 4,
+        "calls": 0,
         "retries": 0,
         "fallback": 0,
         "empty": 0,
-        "non_empty": 4,
+        "non_empty": 0,
         "errors": 0
       }
     }
   },
   "events": {
-    "432": {
-      "title": "LoL - LEC 2026 Spring: Winner",
-      "marketIds": [
-        "432"
-      ],
-      "bestMarketId": "432",
-      "bestLabels": null,
-      "keywords": [
-        "lol",
-        "league of legends",
-        "lec",
-        "emea",
-        "spring split",
-        "2026",
-        "riot games",
-        "esports",
-        "league",
-        "championship",
-        "spring",
-        "playoffs",
-        "finals",
-        "season",
-        "tournament",
-        "lol lec",
-        "lec 2026",
-        "2026 spring",
-        "spring winner",
-        "lol lec 2026",
-        "lec 2026 spring",
-        "2026 spring winner"
-      ],
-      "entities": [
-        "lol",
-        "lec"
-      ],
-      "entityGroups": [
-        [
-          "lol",
-          "英雄联盟"
-        ],
-        [
-          "lec",
-          "欧洲联赛"
-        ]
-      ],
-      "sig": "8def09f5",
-      "sigFull": "8def09f5",
-      "sigCore": "c377270c",
-      "reused": false
-    },
     "433": {
       "title": "Premier League: Chelsea vs Man City (Apr. 12 15:30 UTC)",
       "marketIds": [
@@ -3843,136 +3793,6 @@
       },
       "type": "binary"
     },
-    "432": {
-      "title": "LoL - LEC 2026 Spring: Winner",
-      "url": "https://app.opinion.trade/market/432?ref=opinion_hud",
-      "yesTokenId": "38213365949849441571840633175696164076548225243648890374691921880511926704206",
-      "noTokenId": "42047747462927111407912929598242574729927126448117742167466341405424006035529",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Yes",
-        "noLabel": "No"
-      },
-      "keywords": [
-        "lol",
-        "league of legends",
-        "lec",
-        "emea",
-        "spring split",
-        "2026",
-        "riot games",
-        "esports",
-        "league",
-        "championship",
-        "spring",
-        "playoffs",
-        "finals",
-        "season",
-        "tournament",
-        "lol lec",
-        "lec 2026",
-        "2026 spring",
-        "spring winner",
-        "lol lec 2026",
-        "lec 2026 spring",
-        "2026 spring winner"
-      ],
-      "entities": [
-        "lol",
-        "lec"
-      ],
-      "entityGroups": [
-        [
-          "lol",
-          "英雄联盟"
-        ],
-        [
-          "lec",
-          "欧洲联赛"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "10792",
-          "title": "Fnatic",
-          "yesTokenId": "41034360065499392061026774101712428884621634642650509684361089291880225704511",
-          "noTokenId": "96810169015103368054466741826988676103072638676314271014630831806440539752065"
-        },
-        {
-          "marketId": "10793",
-          "title": "G2 Esports",
-          "yesTokenId": "49840447798197705662814550677620066256297427156234283261544051409100057440471",
-          "noTokenId": "82981226413510117956958558337564556681823308933916739297748258111959476758755"
-        },
-        {
-          "marketId": "10794",
-          "title": "GIANTX",
-          "yesTokenId": "19210862209657009546425696853315653942587576714157949988391617503017567121652",
-          "noTokenId": "9245656828268438876361934043540253931393380408018367482024812800894638307262"
-        },
-        {
-          "marketId": "10795",
-          "title": "Karmine Corp",
-          "yesTokenId": "73221097532942531843698939405977220042425878995878408595836211311021470397531",
-          "noTokenId": "98688017122271172410498108463406019610958922313005762285620643319513401820897"
-        },
-        {
-          "marketId": "10796",
-          "title": "Movistar KOI",
-          "yesTokenId": "104097062714866657795897344298896778871378944400123484225243025944630292010532",
-          "noTokenId": "34248461287023343610578020447978551254622956806147840066524374808618172666436"
-        },
-        {
-          "marketId": "10797",
-          "title": "Natus Vincere",
-          "yesTokenId": "57519558603945724585968682341195049397380816343607464254087847818118199146871",
-          "noTokenId": "43715714977310279712737964455722526236668765372195871385122124570906263286203"
-        },
-        {
-          "marketId": "10798",
-          "title": "Shifters",
-          "yesTokenId": "62163302860571896083248269653518735474260140014396999812470161287199913967260",
-          "noTokenId": "12706935027022621735035019414714838294979026585561825117772631059977265342400"
-        },
-        {
-          "marketId": "10799",
-          "title": "SK Gaming",
-          "yesTokenId": "61979250046132785346323757129563328815919519029613702046440760309972992902362",
-          "noTokenId": "42727470255369309493434884308246085174494838505463354893680297256620499757728"
-        },
-        {
-          "marketId": "10800",
-          "title": "Team Heretics",
-          "yesTokenId": "99958742246538312017239514252034229059703447005563600360795254052487084199396",
-          "noTokenId": "1824752560470060240287959824958262974134067863530303326144111934751689320017"
-        },
-        {
-          "marketId": "10801",
-          "title": "Team Vitality",
-          "yesTokenId": "10477797751484978251694538825380869056341136383120910155768028304869589098043",
-          "noTokenId": "21786814515867317439176340807604049355238058650549174208066328612398562383727"
-        },
-        {
-          "marketId": "10802",
-          "title": "Other",
-          "yesTokenId": "38213365949849441571840633175696164076548225243648890374691921880511926704206",
-          "noTokenId": "42047747462927111407912929598242574729927126448117742167466341405424006035529"
-        }
-      ]
-    },
-    "11382": {
-      "title": "KPL Spring 2026: WOL vs KSG (Apr. 11 6:00AM ET)",
-      "url": "https://app.opinion.trade/market/11382?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "433": {
       "title": "Premier League: Chelsea vs Man City (Apr. 12 15:30 UTC)",
       "url": "https://app.opinion.trade/market/433?ref=opinion_hud",
@@ -5383,33 +5203,9 @@
         }
       ]
     },
-    "12805": {
-      "title": "Memphis Grizzlies vs Utah Jazz",
-      "url": "https://app.opinion.trade/market/12805?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "12822": {
       "title": "Utah Jazz vs Los Angeles Lakers",
       "url": "https://app.opinion.trade/market/12822?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "12799": {
-      "title": "Philadelphia 76ers vs Indiana Pacers",
-      "url": "https://app.opinion.trade/market/12799?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -5443,42 +5239,6 @@
       },
       "type": "binary"
     },
-    "12802": {
-      "title": "Minnesota Timberwolves vs Houston Rockets",
-      "url": "https://app.opinion.trade/market/12802?ref=opinion_hud",
-      "yesTokenId": "27151588973612505367864312321795463394576775845276925301803719747935994150364",
-      "noTokenId": "113941936125752170302025663397806863587217889702071303308115570622459586570317",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Minnesota Timberwolves",
-        "noLabel": "Houston Rockets"
-      },
-      "type": "binary"
-    },
-    "12806": {
-      "title": "Oklahoma City Thunder vs Denver Nuggets",
-      "url": "https://app.opinion.trade/market/12806?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "12808": {
-      "title": "Golden State Warriors vs Sacramento Kings",
-      "url": "https://app.opinion.trade/market/12808?ref=opinion_hud",
-      "yesTokenId": "45463472713800163773631257576871678147979123774680646979344588410372264749484",
-      "noTokenId": "83125689268316649020101615149000969454667407867933548508357544537645756606479",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Golden State Warriors",
-        "noLabel": "Sacramento Kings"
-      },
-      "type": "binary"
-    },
     "12817": {
       "title": "Chicago Bulls vs Dallas Mavericks",
       "url": "https://app.opinion.trade/market/12817?ref=opinion_hud",
@@ -5500,42 +5260,6 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "12804": {
-      "title": "Dallas Mavericks vs San Antonio Spurs",
-      "url": "https://app.opinion.trade/market/12804?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "12797": {
-      "title": "Cleveland Cavaliers vs Atlanta Hawks",
-      "url": "https://app.opinion.trade/market/12797?ref=opinion_hud",
-      "yesTokenId": "103524117671766345055424312481553772078032882703662726532507270866067567858107",
-      "noTokenId": "31272539927853949717025886218873222877660320991400303312933303012208140481942",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Cleveland Cavaliers",
-        "noLabel": "Atlanta Hawks"
-      },
-      "type": "binary"
-    },
-    "12803": {
-      "title": "Brooklyn Nets vs Milwaukee Bucks",
-      "url": "https://app.opinion.trade/market/12803?ref=opinion_hud",
-      "yesTokenId": "56374837960455298945617981644875659461464296214736985274148930871144511287803",
-      "noTokenId": "53746207697159512685425752645854218112124818086184155099675549260229498239846",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Brooklyn Nets",
-        "noLabel": "Milwaukee Bucks"
       },
       "type": "binary"
     },
@@ -5575,18 +5299,6 @@
       },
       "type": "binary"
     },
-    "12796": {
-      "title": "Detroit Pistons vs Charlotte Hornets",
-      "url": "https://app.opinion.trade/market/12796?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "12823": {
       "title": "Golden State Warriors vs LA Clippers",
       "url": "https://app.opinion.trade/market/12823?ref=opinion_hud",
@@ -5596,30 +5308,6 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "12809": {
-      "title": "Phoenix Suns vs Los Angeles Lakers",
-      "url": "https://app.opinion.trade/market/12809?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "12801": {
-      "title": "Orlando Magic vs Chicago Bulls",
-      "url": "https://app.opinion.trade/market/12801?ref=opinion_hud",
-      "yesTokenId": "70922984857439230073861232238088500039754783751267006804473923728396607898334",
-      "noTokenId": "39280596370664846856066076405699726375312334342767820676389084988476496664781",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Orlando Magic",
-        "noLabel": "Chicago Bulls"
       },
       "type": "binary"
     },
@@ -5659,18 +5347,6 @@
       },
       "type": "binary"
     },
-    "12798": {
-      "title": "New Orleans Pelicans vs Boston Celtics",
-      "url": "https://app.opinion.trade/market/12798?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "12813": {
       "title": "Atlanta Hawks vs Miami Heat",
       "url": "https://app.opinion.trade/market/12813?ref=opinion_hud",
@@ -5680,30 +5356,6 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "12807": {
-      "title": "LA Clippers vs Portland Trail Blazers",
-      "url": "https://app.opinion.trade/market/12807?ref=opinion_hud",
-      "yesTokenId": "34231856017412380437021809172149852278892960007660269868440008591916963121489",
-      "noTokenId": "40093345630438333592003343360504978980898424733997880021577599598699933163910",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "LA Clippers",
-        "noLabel": "Portland Trail Blazers"
-      },
-      "type": "binary"
-    },
-    "12800": {
-      "title": "Toronto Raptors vs New York Knicks",
-      "url": "https://app.opinion.trade/market/12800?ref=opinion_hud",
-      "yesTokenId": "106661119715722874693343090540534448370233077066460866711694933374095440381051",
-      "noTokenId": "4603598090871334881955314949618592459880768954352272370927732929063768343082",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Toronto Raptors",
-        "noLabel": "New York Knicks"
       },
       "type": "binary"
     },
@@ -5993,15 +5645,39 @@
         }
       ]
     },
-    "12779": {
-      "title": "Bitcoin Up or Down on April 11?(12:00 ET)",
-      "url": "https://app.opinion.trade/market/12779?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
+    "12853": {
+      "title": "ETH Up or Down - Hourly (Apr 11, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/12853?ref=opinion_hud",
+      "yesTokenId": "25162762898982968083846612301792213245126925990097141425379452814087762490358",
+      "noTokenId": "52513276149219901572155526524013320115433153262197442005760819087360045522817",
       "volume": 0.0,
       "labels": {
-        "yesLabel": "",
-        "noLabel": ""
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "12851": {
+      "title": "BNB Up or Down - Hourly (Apr 11, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/12851?ref=opinion_hud",
+      "yesTokenId": "4581253789473238171518535056092516748504327434837214943944821256879792679058",
+      "noTokenId": "77600226416884757473248900964938627936006727328202773343651764009303339618537",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "12852": {
+      "title": "BTC Up or Down - Hourly (Apr 11, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/12852?ref=opinion_hud",
+      "yesTokenId": "18379874463545751109252257957942929939034333065110709255243380486333204456313",
+      "noTokenId": "64878667984990663895880520058164428198859819955862792629323284757372417055636",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
@@ -6043,20 +5719,13 @@
       "3448",
       "3449",
       "3508",
-      "3509",
-      "432"
+      "3509"
     ],
     "2026 nfl": [
       "3072"
     ],
     "2026 nfl draft": [
       "3072"
-    ],
-    "2026 spring": [
-      "432"
-    ],
-    "2026 spring winner": [
-      "432"
     ],
     "2026-06-30": [
       "3508"
@@ -6502,7 +6171,6 @@
       "454"
     ],
     "championship": [
-      "432",
       "438"
     ],
     "changpeng zhao": [
@@ -6856,9 +6524,6 @@
     "elysee": [
       "440"
     ],
-    "emea": [
-      "432"
-    ],
     "encryption": [
       "3256"
     ],
@@ -6908,9 +6573,6 @@
     ],
     "eschatology": [
       "2670"
-    ],
-    "esports": [
-      "432"
     ],
     "eth": [
       "3364"
@@ -6988,9 +6650,6 @@
     ],
     "federal circuit": [
       "1546"
-    ],
-    "finals": [
-      "432"
     ],
     "finance": [
       "3525"
@@ -7391,29 +7050,14 @@
     "leadership change": [
       "2368"
     ],
-    "league": [
-      "432"
-    ],
     "league chelsea": [
       "433"
     ],
     "league chelsea man": [
       "433"
     ],
-    "league of legends": [
-      "432"
-    ],
     "leave": [
       "2368"
-    ],
-    "lec": [
-      "432"
-    ],
-    "lec 2026": [
-      "432"
-    ],
-    "lec 2026 spring": [
-      "432"
     ],
     "leeco": [
       "1856"
@@ -7456,15 +7100,6 @@
     ],
     "liverpool paris saint": [
       "455"
-    ],
-    "lol": [
-      "432"
-    ],
-    "lol lec": [
-      "432"
-    ],
-    "lol lec 2026": [
-      "432"
     ],
     "los blancos": [
       "454"
@@ -7821,9 +7456,6 @@
     "pl": [
       "433"
     ],
-    "playoffs": [
-      "432"
-    ],
     "pm": [
       "434"
     ],
@@ -8088,9 +7720,6 @@
       "2668",
       "3356"
     ],
-    "riot games": [
-      "432"
-    ],
     "rollup": [
       "3366"
     ],
@@ -8143,7 +7772,6 @@
       "1546"
     ],
     "season": [
-      "432",
       "442"
     ],
     "season 5": [
@@ -8237,15 +7865,6 @@
     ],
     "spot price": [
       "439"
-    ],
-    "spring": [
-      "432"
-    ],
-    "spring split": [
-      "432"
-    ],
-    "spring winner": [
-      "432"
     ],
     "st": [
       "3222"
@@ -8458,9 +8077,6 @@
     ],
     "top stock": [
       "441"
-    ],
-    "tournament": [
-      "432"
     ],
     "trade policy": [
       "1546"
@@ -8736,9 +8352,6 @@
     "最高法院": [
       "1546"
     ],
-    "欧洲联赛": [
-      "432"
-    ],
     "比特币": [
       "3256",
       "3365"
@@ -8778,9 +8391,6 @@
     "耶稣基督": [
       "2670"
     ],
-    "英雄联盟": [
-      "432"
-    ],
     "葡萄牙体育": [
       "453"
     ],
@@ -8819,15 +8429,6 @@
     ]
   },
   "eventIndex": {
-    "2026": [
-      "432"
-    ],
-    "2026 spring": [
-      "432"
-    ],
-    "2026 spring winner": [
-      "432"
-    ],
     "2027": [
       "440"
     ],
@@ -8935,7 +8536,6 @@
       "454"
     ],
     "championship": [
-      "432",
       "438"
     ],
     "chelsea": [
@@ -9027,9 +8627,6 @@
     "elysee": [
       "440"
     ],
-    "emea": [
-      "432"
-    ],
     "energy": [
       "439"
     ],
@@ -9042,9 +8639,6 @@
     "equity": [
       "441"
     ],
-    "esports": [
-      "432"
-    ],
     "etihad": [
       "433"
     ],
@@ -9053,9 +8647,6 @@
     ],
     "fc bayern": [
       "454"
-    ],
-    "finals": [
-      "432"
     ],
     "fixture": [
       "455"
@@ -9161,26 +8752,11 @@
     "le championnat": [
       "438"
     ],
-    "league": [
-      "432"
-    ],
     "league chelsea": [
       "433"
     ],
     "league chelsea man": [
       "433"
-    ],
-    "league of legends": [
-      "432"
-    ],
-    "lec": [
-      "432"
-    ],
-    "lec 2026": [
-      "432"
-    ],
-    "lec 2026 spring": [
-      "432"
     ],
     "lfc": [
       "455"
@@ -9214,15 +8790,6 @@
     ],
     "liverpool paris saint": [
       "455"
-    ],
-    "lol": [
-      "432"
-    ],
-    "lol lec": [
-      "432"
-    ],
-    "lol lec 2026": [
-      "432"
     ],
     "los blancos": [
       "454"
@@ -9321,9 +8888,6 @@
     "pl": [
       "433"
     ],
-    "playoffs": [
-      "432"
-    ],
     "pm": [
       "434"
     ],
@@ -9409,9 +8973,6 @@
     "resignation": [
       "434"
     ],
-    "riot games": [
-      "432"
-    ],
     "runoff": [
       "437"
     ],
@@ -9419,7 +8980,6 @@
       "455"
     ],
     "season": [
-      "432",
       "442"
     ],
     "soccer": [
@@ -9441,15 +9001,6 @@
     ],
     "spot price": [
       "439"
-    ],
-    "spring": [
-      "432"
-    ],
-    "spring split": [
-      "432"
-    ],
-    "spring winner": [
-      "432"
     ],
     "stamford bridge": [
       "433"
@@ -9478,9 +9029,6 @@
     ],
     "top stock": [
       "441"
-    ],
-    "tournament": [
-      "432"
     ],
     "trillion": [
       "441"
@@ -9569,9 +9117,6 @@
     "最大公司": [
       "441"
     ],
-    "欧洲联赛": [
-      "432"
-    ],
     "法国大选": [
       "440"
     ],
@@ -9586,9 +9131,6 @@
     ],
     "美国大选": [
       "435"
-    ],
-    "英雄联盟": [
-      "432"
     ],
     "葡萄牙体育": [
       "453"
