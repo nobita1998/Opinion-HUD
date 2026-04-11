@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-11 16:57:43 UTC+8",
+    "generatedAt": "2026-04-12 00:51:52 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 153,
-      "markets": 232,
+      "kept": 154,
+      "markets": 233,
       "keywords": 846,
       "events": {
         "events": 13
       },
       "skipped": {
-        "statusEnum": 2,
+        "statusEnum": 6,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 845,
+        "cutoff_expired": 840,
         "cutoff_zero_kept": 43,
         "resolved": 0,
         "missing_id": 0,
@@ -5645,42 +5645,6 @@
         }
       ]
     },
-    "12874": {
-      "title": "BNB Up or Down - Hourly (Apr 11, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/12874?ref=opinion_hud",
-      "yesTokenId": "5364902392357099038673009564947940099051040501518644139291215989285359308879",
-      "noTokenId": "514320263957020138637223543644854932512919024011758254860113772049269487648",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "12876": {
-      "title": "ETH Up or Down - Hourly (Apr 11, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/12876?ref=opinion_hud",
-      "yesTokenId": "98380018301635509119365007630785919736329837779529239668125912813786478046641",
-      "noTokenId": "63664277751139824701792549086411074509759144524062393727307979524519086622198",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "12875": {
-      "title": "BTC Up or Down - Hourly (Apr 11, 2026 09:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/12875?ref=opinion_hud",
-      "yesTokenId": "53253533771085732019293300324216748111494044451786466239872210426269531744200",
-      "noTokenId": "59430082800141753341137858767599320346240610214860084892329705953986700210948",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "12873": {
       "title": "LPL 2026 Split 2: WBG vs BLG (Apr. 12 7:00AM ET)",
       "url": "https://app.opinion.trade/market/12873?ref=opinion_hud",
@@ -5720,6 +5684,54 @@
     "12872": {
       "title": "LCK 2026 Season: BRO vs KT (Apr. 12 6:00AM ET)",
       "url": "https://app.opinion.trade/market/12872?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "12898": {
+      "title": "BNB Up or Down - Hourly (Apr 11, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/12898?ref=opinion_hud",
+      "yesTokenId": "97796700671039170032623131698735711265121639478739415859204008393207049363211",
+      "noTokenId": "92583196730123535429527064606714468883946084811125425166553185343455443207392",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "12900": {
+      "title": "ETH Up or Down - Hourly (Apr 11, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/12900?ref=opinion_hud",
+      "yesTokenId": "98091921673273221146076803344265534235338641332829147731895673145066571154556",
+      "noTokenId": "44129879332881537023061417314264711686824903436930484949013909895226422197565",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "12899": {
+      "title": "BTC Up or Down - Hourly (Apr 11, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/12899?ref=opinion_hud",
+      "yesTokenId": "11938945797392754173919046861791367815754148914737896426227160307908788375985",
+      "noTokenId": "66695661020294615680058005540120945645647894310997964235710329216549149031112",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "12904": {
+      "title": "Bitcoin Up or Down on April 12?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/12904?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
