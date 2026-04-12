@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-12 17:01:44 UTC+8",
+    "generatedAt": "2026-04-13 00:53:36 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 143,
-      "markets": 225,
+      "kept": 146,
+      "markets": 228,
       "keywords": 846,
       "events": {
         "events": 12
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 1,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 856,
+        "cutoff_expired": 853,
         "cutoff_zero_kept": 43,
         "resolved": 0,
         "missing_id": 0,
@@ -5644,6 +5644,42 @@
           "noTokenId": "32456180796438342931767870117567644395621843887932727910558686096639264973442"
         }
       ]
+    },
+    "12973": {
+      "title": "ETH Up or Down - Hourly (Apr 12, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/12973?ref=opinion_hud",
+      "yesTokenId": "66330327205485103894039602990712751601625571053633756768550349022563514929068",
+      "noTokenId": "68968768682026086401071545501742368043055937809969288875420508123975904289578",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "12971": {
+      "title": "BNB Up or Down - Hourly (Apr 12, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/12971?ref=opinion_hud",
+      "yesTokenId": "108553786242277198203149808716516223460231877758166866372454514500074267891895",
+      "noTokenId": "9679119865219978661533525357949958371167806931942864791291505112676672613928",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "12972": {
+      "title": "BTC Up or Down - Hourly (Apr 12, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/12972?ref=opinion_hud",
+      "yesTokenId": "86314884524294593428177781158973131414738954026243203118019712212753822795243",
+      "noTokenId": "79497942596805978677154931256284830788407977638895860723439326411313448713720",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
