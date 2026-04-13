@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-13 11:48:50 UTC+8",
+    "generatedAt": "2026-04-13 18:04:28 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 141,
-      "markets": 223,
+      "kept": 145,
+      "markets": 227,
       "keywords": 846,
       "events": {
         "events": 12
       },
       "skipped": {
-        "statusEnum": 7,
+        "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 852,
+        "cutoff_expired": 855,
         "cutoff_zero_kept": 43,
         "resolved": 0,
         "missing_id": 0,
@@ -5513,42 +5513,6 @@
       },
       "type": "binary"
     },
-    "13006": {
-      "title": "BTC Up or Down - Hourly (Apr 13, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13006?ref=opinion_hud",
-      "yesTokenId": "28657820309209283374744907897646767184255610067640284795762936839207337051037",
-      "noTokenId": "104795422058524225594539701973246427533890413436192562265384921300301372631323",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "13005": {
-      "title": "BNB Up or Down - Hourly (Apr 13, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13005?ref=opinion_hud",
-      "yesTokenId": "51995522018130960086249720907573101321014970930608391941962769207456962361773",
-      "noTokenId": "62896962469520750132531706333317219394634934714142679380163893364761319137848",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "13007": {
-      "title": "ETH Up or Down - Hourly (Apr 13, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13007?ref=opinion_hud",
-      "yesTokenId": "30369443061735367261057238246318381842572239780801184499154041203091613981032",
-      "noTokenId": "3835155398049961476352107216441997996076811174825974932769103249927141801627",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "13018": {
       "title": "Miami Heat vs Charlotte Hornets",
       "url": "https://app.opinion.trade/market/13018?ref=opinion_hud",
@@ -5612,6 +5576,90 @@
     "13014": {
       "title": "Toronto Raptors vs Cleveland Cavaliers",
       "url": "https://app.opinion.trade/market/13014?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13037": {
+      "title": "LPL 2026 Split 2: UP vs TT (Apr. 15 5:00AM ET)",
+      "url": "https://app.opinion.trade/market/13037?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13039": {
+      "title": "LPL 2026 Split 2: WBG vs IG (Apr. 15 5:00AM ET)",
+      "url": "https://app.opinion.trade/market/13039?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13038": {
+      "title": "LCK 2026 Season: KT vs DK (Apr. 15 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/13038?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13036": {
+      "title": "LCK 2026 Season: NS vs BFX (Apr. 15 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/13036?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13035": {
+      "title": "Bitcoin Up or Down on April 14?(12:00 ET)",
+      "url": "https://app.opinion.trade/market/13035?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13031": {
+      "title": "Houston Rockets vs Los Angeles Lakers",
+      "url": "https://app.opinion.trade/market/13031?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13030": {
+      "title": "Atlanta Hawks vs New York Knicks",
+      "url": "https://app.opinion.trade/market/13030?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
