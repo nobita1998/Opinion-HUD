@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-17 17:43:06 UTC+8",
+    "generatedAt": "2026-04-18 01:03:27 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 406,
-      "markets": 383,
-      "keywords": 969,
+      "kept": 413,
+      "markets": 390,
+      "keywords": 976,
       "events": {
-        "events": 108
+        "events": 109
       },
       "skipped": {
-        "statusEnum": 0,
+        "statusEnum": 6,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 594,
+        "cutoff_expired": 581,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -29,11 +29,11 @@
         "fullAiRefresh": false,
         "onlyAiForNew": true,
         "reused": 16,
-        "regenerated_empty_entitygroups": 34,
-        "calls": 92,
-        "retries": 92,
+        "regenerated_empty_entitygroups": 92,
+        "calls": 93,
+        "retries": 93,
         "fallback": 0,
-        "empty": 92,
+        "empty": 93,
         "non_empty": 0,
         "errors": 0
       }
@@ -2396,6 +2396,29 @@
       "sig": "2d96c32b",
       "sigFull": "2d96c32b",
       "sigCore": "8c876790",
+      "reused": false
+    },
+    "83": {
+      "title": "UEFA Champions League Winner 2026",
+      "marketIds": [
+        "83"
+      ],
+      "bestMarketId": "83",
+      "bestLabels": null,
+      "keywords": [
+        "uefa champions",
+        "champions league",
+        "league winner",
+        "winner 2026",
+        "uefa champions league",
+        "champions league winner",
+        "league winner 2026"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "64975662",
+      "sigFull": "64975662",
+      "sigCore": "c98608cd",
       "reused": false
     }
   },
@@ -8373,45 +8396,9 @@
       },
       "type": "binary"
     },
-    "13223": {
-      "title": "Sassuolo wins",
-      "url": "https://app.opinion.trade/market/13223?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "13227": {
       "title": "1. FC Köln wins",
       "url": "https://app.opinion.trade/market/13227?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "13225": {
-      "title": "Draw",
-      "url": "https://app.opinion.trade/market/13225?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "13224": {
-      "title": "Como wins",
-      "url": "https://app.opinion.trade/market/13224?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -8840,42 +8827,6 @@
           "noTokenId": "68867003363621532402300492848826568965734539077987013153246314452140915991315"
         }
       ]
-    },
-    "13737": {
-      "title": "BTC Up or Down - Hourly (Apr 17, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13737?ref=opinion_hud",
-      "yesTokenId": "21776931241055618787805766938240284942377126538297615419437574509635965595369",
-      "noTokenId": "94770655233389377534302807039639833527015438823181918655972143247847722857483",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "13736": {
-      "title": "BNB Up or Down - Hourly (Apr 17, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13736?ref=opinion_hud",
-      "yesTokenId": "108908235000942232784806931594577986839625867089257851314446481532675791822701",
-      "noTokenId": "82898760932084245081935174975127393808239231211975063971604681399762534688445",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "13738": {
-      "title": "ETH Up or Down - Hourly (Apr 17, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13738?ref=opinion_hud",
-      "yesTokenId": "113182913410350449416303049972400543392783163274859069841435076777179042461081",
-      "noTokenId": "76921806726548075730267120483897208242253480125771169028819891622708187191304",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
     },
     "568": {
       "title": "Ecuador vs Germany",
@@ -11578,6 +11529,229 @@
           "noTokenId": "20932086722908126027717967551106744980007217603052514418764452301223992349196"
         }
       ]
+    },
+    "83": {
+      "title": "UEFA Champions League Winner 2026",
+      "url": "https://app.opinion.trade/market/83?ref=opinion_hud",
+      "yesTokenId": "58621985453480987165654020189234709907240295334899803769452098795484324448380",
+      "noTokenId": "102935062040914064706223786897697668813748046069056988812521412116976043504995",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "uefa champions",
+        "champions league",
+        "league winner",
+        "winner 2026",
+        "uefa champions league",
+        "champions league winner",
+        "league winner 2026"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "13776",
+          "title": "Atletico Madrid",
+          "yesTokenId": "58621985453480987165654020189234709907240295334899803769452098795484324448380",
+          "noTokenId": "102935062040914064706223786897697668813748046069056988812521412116976043504995"
+        },
+        {
+          "marketId": "1447",
+          "title": "Arsenal",
+          "yesTokenId": "36017216838459985283268911847081434101442520487966145406366031609103744653616",
+          "noTokenId": "107121254808120755558168267123337086615228833681651138971633789989974096835407"
+        },
+        {
+          "marketId": "1448",
+          "title": "PSG",
+          "yesTokenId": "64495587539258456393885684478281241159993941709983422239394035599740209946593",
+          "noTokenId": "50460658861204598080968153273499083857297789009353050083710570189759654904166"
+        },
+        {
+          "marketId": "1449",
+          "title": "Bayern Munich",
+          "yesTokenId": "112190686258195895338436967175230527385361738805789879534794789415356874352697",
+          "noTokenId": "15798499715256083735803548128600210021894085069867560292453210958609073289893"
+        },
+        {
+          "marketId": "1450",
+          "title": "Barcelona",
+          "yesTokenId": "17692208453063978860353705377976342952970399122595642556792141567631313362962",
+          "noTokenId": "17386868589903726433263930397453284995554709541175980887584612435259816650108"
+        },
+        {
+          "marketId": "1451",
+          "title": "Real Madrid",
+          "yesTokenId": "33416819636610476757145491745709729397231706662687441096863958217112889036034",
+          "noTokenId": "47082413459450607304028477518120044324025196557912557861918018405626363908294"
+        },
+        {
+          "marketId": "1452",
+          "title": "Liverpool",
+          "yesTokenId": "82786796617519062018438976367743821641954147847714775416547912439421761980950",
+          "noTokenId": "70066004561824064081552786338696292293576777061513875786145760775351877859756"
+        },
+        {
+          "marketId": "2283",
+          "title": "Man City",
+          "yesTokenId": "101770709914327622238322922318705061337396692148547916678352558458550982558928",
+          "noTokenId": "103441629251915687985756466086877965852396078853123390429816542562484379473467"
+        },
+        {
+          "marketId": "2284",
+          "title": "Chelsea",
+          "yesTokenId": "19219253512106834718612281430472802630858377350648476807254195985245563523963",
+          "noTokenId": "57938055365437271719115847466273532877806118728235778475049873832354074451843"
+        }
+      ]
+    },
+    "13769": {
+      "title": "New York Knicks vs Atlanta Hawks",
+      "url": "https://app.opinion.trade/market/13769?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13766": {
+      "title": "Philadelphia 76ers vs Boston Celtics",
+      "url": "https://app.opinion.trade/market/13766?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13761": {
+      "title": "Charlotte Hornets vs Orlando Magic",
+      "url": "https://app.opinion.trade/market/13761?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13764": {
+      "title": "Atlanta Hawks vs New York Knicks",
+      "url": "https://app.opinion.trade/market/13764?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13768": {
+      "title": "Houston Rockets vs Los Angeles Lakers",
+      "url": "https://app.opinion.trade/market/13768?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13765": {
+      "title": "Minnesota Timberwolves vs Denver Nuggets",
+      "url": "https://app.opinion.trade/market/13765?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13763": {
+      "title": "Toronto Raptors vs Cleveland Cavaliers",
+      "url": "https://app.opinion.trade/market/13763?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13772": {
+      "title": "Boston Celtics vs Philadelphia 76ers",
+      "url": "https://app.opinion.trade/market/13772?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13762": {
+      "title": "Golden State Warriors vs Phoenix Suns",
+      "url": "https://app.opinion.trade/market/13762?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13767": {
+      "title": "Portland Trail Blazers vs San Antonio Spurs",
+      "url": "https://app.opinion.trade/market/13767?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13771": {
+      "title": "Denver Nuggets vs Minnesota Timberwolves",
+      "url": "https://app.opinion.trade/market/13771?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13770": {
+      "title": "Cleveland Cavaliers vs Toronto Raptors",
+      "url": "https://app.opinion.trade/market/13770?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -12180,6 +12354,12 @@
     ],
     "ceo march": [
       "2368"
+    ],
+    "champions league": [
+      "83"
+    ],
+    "champions league winner": [
+      "83"
     ],
     "changpeng zhao": [
       "3369"
@@ -13166,6 +13346,12 @@
     ],
     "leadership change": [
       "2368"
+    ],
+    "league winner": [
+      "83"
+    ],
+    "league winner 2026": [
+      "83"
     ],
     "leave": [
       "2368"
@@ -14413,6 +14599,12 @@
     "udinese parma": [
       "462"
     ],
+    "uefa champions": [
+      "83"
+    ],
+    "uefa champions league": [
+      "83"
+    ],
     "underclassmen": [
       "3072"
     ],
@@ -14572,6 +14764,9 @@
     ],
     "will byers": [
       "3221"
+    ],
+    "winner 2026": [
+      "83"
     ],
     "wolfsburg": [
       "466"
@@ -14992,6 +15187,12 @@
     "celta vigo": [
       "504"
     ],
+    "champions league": [
+      "83"
+    ],
+    "champions league winner": [
+      "83"
+    ],
     "chelsea": [
       "497"
     ],
@@ -15310,6 +15511,12 @@
     ],
     "la real": [
       "503"
+    ],
+    "league winner": [
+      "83"
+    ],
+    "league winner 2026": [
+      "83"
     ],
     "lecce fiorentina": [
       "493"
@@ -15755,6 +15962,12 @@
     "udinese parma": [
       "462"
     ],
+    "uefa champions": [
+      "83"
+    ],
+    "uefa champions league": [
+      "83"
+    ],
     "union berlin": [
       "466"
     ],
@@ -15818,6 +16031,9 @@
     ],
     "whites": [
       "500"
+    ],
+    "winner 2026": [
+      "83"
     ],
     "wolfsburg": [
       "466"
