@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-17 01:39:00 UTC+8",
+    "generatedAt": "2026-04-17 11:38:31 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 281,
-      "markets": 279,
-      "keywords": 1019,
+      "kept": 300,
+      "markets": 289,
+      "keywords": 1014,
       "events": {
-        "events": 54
+        "events": 58
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 719,
+        "cutoff_expired": 700,
         "cutoff_zero_kept": 43,
         "resolved": 0,
         "missing_id": 0,
@@ -30,67 +30,16 @@
         "onlyAiForNew": true,
         "reused": 24,
         "regenerated_empty_entitygroups": 30,
-        "calls": 30,
-        "retries": 30,
+        "calls": 34,
+        "retries": 34,
         "fallback": 0,
-        "empty": 30,
+        "empty": 34,
         "non_empty": 0,
         "errors": 0
       }
     }
   },
   "events": {
-    "433": {
-      "title": "Premier League: Chelsea vs Man City (Apr. 12 15:30 UTC)",
-      "marketIds": [
-        "433"
-      ],
-      "bestMarketId": "433",
-      "bestLabels": null,
-      "keywords": [
-        "chelsea",
-        "man city",
-        "manchester city",
-        "premier league",
-        "epl",
-        "football",
-        "soccer",
-        "match",
-        "game",
-        "blues",
-        "citizens",
-        "stamford bridge",
-        "etihad",
-        "pl",
-        "english football",
-        "league chelsea",
-        "chelsea man",
-        "city apr",
-        "apr utc",
-        "premier league chelsea",
-        "league chelsea man",
-        "chelsea man city",
-        "man city apr",
-        "city apr utc"
-      ],
-      "entities": [
-        "chelsea",
-        "man city"
-      ],
-      "entityGroups": [
-        [
-          "chelsea",
-          "切尔西"
-        ],
-        [
-          "man city"
-        ]
-      ],
-      "sig": "398201ca",
-      "sigFull": "398201ca",
-      "sigCore": "f21902c2",
-      "reused": false
-    },
     "438": {
       "title": "French Ligue 1 Winner",
       "marketIds": [
@@ -1690,6 +1639,82 @@
       "sig": "d3bb52b1",
       "sigFull": "d3bb52b1",
       "sigCore": "bbdcf8a3",
+      "reused": false
+    },
+    "511": {
+      "title": "Napoli vs Cremonese",
+      "marketIds": [
+        "511"
+      ],
+      "bestMarketId": "511",
+      "bestLabels": null,
+      "keywords": [
+        "napoli cremonese"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "a564dcff",
+      "sigFull": "a564dcff",
+      "sigCore": "f776145a",
+      "reused": false
+    },
+    "509": {
+      "title": "Sunderland vs Nottingham Forest",
+      "marketIds": [
+        "509"
+      ],
+      "bestMarketId": "509",
+      "bestLabels": null,
+      "keywords": [
+        "sunderland nottingham",
+        "nottingham forest",
+        "sunderland nottingham forest"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "7e4e898f",
+      "sigFull": "7e4e898f",
+      "sigCore": "c76b6b12",
+      "reused": false
+    },
+    "512": {
+      "title": "Stade Brestois 29 vs Lens",
+      "marketIds": [
+        "512"
+      ],
+      "bestMarketId": "512",
+      "bestLabels": null,
+      "keywords": [
+        "stade brestois",
+        "brestois lens",
+        "stade brestois lens"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "3efe1529",
+      "sigFull": "3efe1529",
+      "sigCore": "9bbd3bef",
+      "reused": false
+    },
+    "510": {
+      "title": "Real Betis vs Real Madrid",
+      "marketIds": [
+        "510"
+      ],
+      "bestMarketId": "510",
+      "bestLabels": null,
+      "keywords": [
+        "real betis",
+        "betis real",
+        "real madrid",
+        "real betis real",
+        "betis real madrid"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "42fc2ad7",
+      "sigFull": "42fc2ad7",
+      "sigCore": "1de5f766",
       "reused": false
     }
   },
@@ -4866,77 +4891,6 @@
         "noLabel": "No"
       },
       "type": "binary"
-    },
-    "433": {
-      "title": "Premier League: Chelsea vs Man City (Apr. 12 15:30 UTC)",
-      "url": "https://app.opinion.trade/market/433?ref=opinion_hud",
-      "yesTokenId": "32969116929131065706311150415666944574822827677432302328188935363577153438221",
-      "noTokenId": "105630054920740944122700221765942545976044768053835410359643095391937698690302",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "chelsea",
-        "man city",
-        "manchester city",
-        "premier league",
-        "epl",
-        "football",
-        "soccer",
-        "match",
-        "game",
-        "blues",
-        "citizens",
-        "stamford bridge",
-        "etihad",
-        "pl",
-        "english football",
-        "league chelsea",
-        "chelsea man",
-        "city apr",
-        "apr utc",
-        "premier league chelsea",
-        "league chelsea man",
-        "chelsea man city",
-        "man city apr",
-        "city apr utc"
-      ],
-      "entities": [
-        "chelsea",
-        "man city"
-      ],
-      "entityGroups": [
-        [
-          "chelsea",
-          "切尔西"
-        ],
-        [
-          "man city"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "11458",
-          "title": "CHE",
-          "yesTokenId": "32969116929131065706311150415666944574822827677432302328188935363577153438221",
-          "noTokenId": "105630054920740944122700221765942545976044768053835410359643095391937698690302"
-        },
-        {
-          "marketId": "11459",
-          "title": "DRAW",
-          "yesTokenId": "85852463646672432424555613243534923686863631071604735919666560035284923122804",
-          "noTokenId": "47208776033478916165919291747300635865015190497206471323608873640723310582649"
-        },
-        {
-          "marketId": "11460",
-          "title": "MCI",
-          "yesTokenId": "69854098088692843202168887723832606867583212418024992964194121781461368548309",
-          "noTokenId": "43548500049481024593937535306470007276097108021346703246785034690743012238366"
-        }
-      ]
     },
     "438": {
       "title": "French Ligue 1 Winner",
@@ -8585,54 +8539,6 @@
       },
       "type": "binary"
     },
-    "13416": {
-      "title": "LPL 2026 Split 2: TT vs OMG (Apr. 17 5:00AM ET)",
-      "url": "https://app.opinion.trade/market/13416?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "13415": {
-      "title": "LCK 2026 Season: KRX vs BFX (Apr. 17 4:00AM ET)",
-      "url": "https://app.opinion.trade/market/13415?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "13417": {
-      "title": "LCK 2026 Season: DK vs T1 (Apr. 17 4:00AM ET)",
-      "url": "https://app.opinion.trade/market/13417?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "13418": {
-      "title": "LPL 2026 Split 2: NIP vs JDG (Apr. 17 5:00AM ET)",
-      "url": "https://app.opinion.trade/market/13418?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "13399": {
       "title": "Draw",
       "url": "https://app.opinion.trade/market/13399?ref=opinion_hud",
@@ -8741,11 +8647,11 @@
       },
       "type": "binary"
     },
-    "13449": {
-      "title": "BNB Up or Down - Hourly (Apr 16, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13449?ref=opinion_hud",
-      "yesTokenId": "75206524247507769872612237098091275912998694891200978409955251831158559431701",
-      "noTokenId": "49119200652428159391763323602191832987161509492655295950243130867920710015756",
+    "13481": {
+      "title": "ETH Up or Down - Hourly (Apr 17, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/13481?ref=opinion_hud",
+      "yesTokenId": "25577248615194256155722628034827545951604017861424906940825416972881578893962",
+      "noTokenId": "35933393799273170521693247929238979096989427294655923897116582200749363553986",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -8753,11 +8659,23 @@
       },
       "type": "binary"
     },
-    "13451": {
-      "title": "ETH Up or Down - Hourly (Apr 16, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13451?ref=opinion_hud",
-      "yesTokenId": "106161208928495774752877113688882296263896761324619673905611168639488023339966",
-      "noTokenId": "96735636239861052769602224002391895441791145699681310876817238624853183121585",
+    "13513": {
+      "title": "LPL 2026 Split 2: BLG vs AL (Apr. 19 7:00AM ET)",
+      "url": "https://app.opinion.trade/market/13513?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13479": {
+      "title": "BNB Up or Down - Hourly (Apr 17, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/13479?ref=opinion_hud",
+      "yesTokenId": "35125084170777498010093737650254690191620320797601798899582314905696193394784",
+      "noTokenId": "5294991286277182979379075680634074024625115229448684162407856878207390930538",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -8765,17 +8683,293 @@
       },
       "type": "binary"
     },
-    "13450": {
-      "title": "BTC Up or Down - Hourly (Apr 16, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13450?ref=opinion_hud",
-      "yesTokenId": "78344001693538940884856415353994447819986855076489395723097065482920726635830",
-      "noTokenId": "6058617978448465024168550040110325243840893239941044455524067143109204592761",
+    "13511": {
+      "title": "LPL 2026 Split 2: TES vs IG (Apr. 19 5:00AM ET)",
+      "url": "https://app.opinion.trade/market/13511?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13507": {
+      "title": "LCK 2026 Season: BRO vs NS (Apr. 19 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/13507?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13480": {
+      "title": "BTC Up or Down - Hourly (Apr 17, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/13480?ref=opinion_hud",
+      "yesTokenId": "9645542435496257821611639459150468154430937863089617949392763924862818362364",
+      "noTokenId": "97809055993955391001358076501329727385761806561612385187915495882624188032877",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
       },
       "type": "binary"
+    },
+    "13512": {
+      "title": "LCK 2026 Season: KRX vs T1 (Apr. 19 6:00AM ET)",
+      "url": "https://app.opinion.trade/market/13512?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13505": {
+      "title": "LCK 2026 Season: DNS vs KT (Apr. 18 6:00AM ET)",
+      "url": "https://app.opinion.trade/market/13505?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13506": {
+      "title": "LPL 2026 Split 2: WBG vs JDG (Apr. 18 7:00AM ET)",
+      "url": "https://app.opinion.trade/market/13506?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13504": {
+      "title": "LPL 2026 Split 2: IG vs BLG (Apr. 18 5:00AM ET)",
+      "url": "https://app.opinion.trade/market/13504?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13503": {
+      "title": "LCK 2026 Season: HLE vs GEN (Apr. 18 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/13503?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13497": {
+      "title": "RB Leipzig wins",
+      "url": "https://app.opinion.trade/market/13497?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13498": {
+      "title": "Union Berlin wins",
+      "url": "https://app.opinion.trade/market/13498?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13499": {
+      "title": "Draw",
+      "url": "https://app.opinion.trade/market/13499?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "511": {
+      "title": "Napoli vs Cremonese",
+      "url": "https://app.opinion.trade/market/511?ref=opinion_hud",
+      "yesTokenId": "84291709199989387694787380429560259262776801241879086155063686004587761215072",
+      "noTokenId": "32708868851961635784423345302812035924576199979942824761318152480700854315556",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "napoli cremonese"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "13488",
+          "title": "Napoli wins",
+          "yesTokenId": "11698529123866840407453562667165205476588502973910388827434156767408303364546",
+          "noTokenId": "64116350162240245541719903175908613588082627778701416980663697118369465738727"
+        },
+        {
+          "marketId": "13489",
+          "title": "Cremonese wins",
+          "yesTokenId": "84291709199989387694787380429560259262776801241879086155063686004587761215072",
+          "noTokenId": "32708868851961635784423345302812035924576199979942824761318152480700854315556"
+        },
+        {
+          "marketId": "13490",
+          "title": "Draw",
+          "yesTokenId": "2034684871102760786663494526648390576590119161199953440979969703804507103507",
+          "noTokenId": "62589952798259788566287313377054980879854499451074347444724569112657609703207"
+        }
+      ]
+    },
+    "509": {
+      "title": "Sunderland vs Nottingham Forest",
+      "url": "https://app.opinion.trade/market/509?ref=opinion_hud",
+      "yesTokenId": "70409361381927873623969866367143091706891738631217484692465033537745253298141",
+      "noTokenId": "112660775819182437545888242784762959714760586754724959005758660044139590915270",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "sunderland nottingham",
+        "nottingham forest",
+        "sunderland nottingham forest"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "13482",
+          "title": "Sunderland wins",
+          "yesTokenId": "70409361381927873623969866367143091706891738631217484692465033537745253298141",
+          "noTokenId": "112660775819182437545888242784762959714760586754724959005758660044139590915270"
+        },
+        {
+          "marketId": "13483",
+          "title": "Nottingham Forest wins",
+          "yesTokenId": "33632732684201733131543585520571673107544227995623884498992685307714489602066",
+          "noTokenId": "64633341842333391830548160333399509292585765258140502678910024888610340995700"
+        },
+        {
+          "marketId": "13484",
+          "title": "Draw",
+          "yesTokenId": "7366001892417613206318556326510167595627051743211483260680227051065106019530",
+          "noTokenId": "46553147826283057938326962196461160913025150524910164364068939627783133866441"
+        }
+      ]
+    },
+    "512": {
+      "title": "Stade Brestois 29 vs Lens",
+      "url": "https://app.opinion.trade/market/512?ref=opinion_hud",
+      "yesTokenId": "84511659902887498764611465100033233975994331937578540161537920725941313629093",
+      "noTokenId": "88269646998359360464316291166988777372425267693187785976469802254255237749670",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "stade brestois",
+        "brestois lens",
+        "stade brestois lens"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "13491",
+          "title": "Stade Brestois 29 wins",
+          "yesTokenId": "84511659902887498764611465100033233975994331937578540161537920725941313629093",
+          "noTokenId": "88269646998359360464316291166988777372425267693187785976469802254255237749670"
+        },
+        {
+          "marketId": "13492",
+          "title": "Lens wins",
+          "yesTokenId": "31253043690205530072786910524415394919932248678135399818952582825200402721638",
+          "noTokenId": "113170698963589845099275351540580664295183828645850958889809304062408875668382"
+        },
+        {
+          "marketId": "13493",
+          "title": "Draw",
+          "yesTokenId": "41200534842158886447314714701286409678109706424500498542838210763421879852961",
+          "noTokenId": "83879356868871890882633075763016566508862593061554585992519507707201903779828"
+        }
+      ]
+    },
+    "510": {
+      "title": "Real Betis vs Real Madrid",
+      "url": "https://app.opinion.trade/market/510?ref=opinion_hud",
+      "yesTokenId": "54470473880428503949821383698613698989044634190646150368334014204295719697514",
+      "noTokenId": "68867003363621532402300492848826568965734539077987013153246314452140915991315",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "real betis",
+        "betis real",
+        "real madrid",
+        "real betis real",
+        "betis real madrid"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "13485",
+          "title": "Real Betis wins",
+          "yesTokenId": "30663165247035657123612276247385078552867416483642552212652048845883638503967",
+          "noTokenId": "81894744060247115351868279705940620048322191511543885565067806878938096431348"
+        },
+        {
+          "marketId": "13486",
+          "title": "Real Madrid wins",
+          "yesTokenId": "2340136263584199419372292283003039097281231949952900065652927317456839038720",
+          "noTokenId": "76010381405294292160655245073643839547087235298858974057563579082736124320571"
+        },
+        {
+          "marketId": "13487",
+          "title": "Draw",
+          "yesTokenId": "54470473880428503949821383698613698989044634190646150368334014204295719697514",
+          "noTokenId": "68867003363621532402300492848826568965734539077987013153246314452140915991315"
+        }
+      ]
     }
   },
   "index": {
@@ -9017,9 +9211,6 @@
     "apple ceo march": [
       "2368"
     ],
-    "apr utc": [
-      "433"
-    ],
     "april 2026": [
       "439"
     ],
@@ -9150,6 +9341,12 @@
     "betis": [
       "499"
     ],
+    "betis real": [
+      "510"
+    ],
+    "betis real madrid": [
+      "510"
+    ],
     "betting": [
       "502"
     ],
@@ -9217,7 +9414,6 @@
       "3256"
     ],
     "blues": [
-      "433",
       "497"
     ],
     "blʌͻkpiиk": [
@@ -9300,6 +9496,9 @@
     ],
     "brentford fulham": [
       "461"
+    ],
+    "brestois lens": [
+      "512"
     ],
     "bridge exploit": [
       "3360"
@@ -9403,14 +9602,7 @@
       "3158"
     ],
     "chelsea": [
-      "433",
       "497"
-    ],
-    "chelsea man": [
-      "433"
-    ],
-    "chelsea man city": [
-      "433"
     ],
     "chelsea manchester": [
       "475"
@@ -9440,14 +9632,7 @@
       "2670"
     ],
     "citizens": [
-      "433",
       "501"
-    ],
-    "city apr": [
-      "433"
-    ],
-    "city apr utc": [
-      "433"
     ],
     "city arsenal": [
       "487"
@@ -9834,15 +10019,11 @@
     "energy": [
       "439"
     ],
-    "english football": [
-      "433"
-    ],
     "epicenter": [
       "2668",
       "3356"
     ],
     "epl": [
-      "433",
       "461",
       "497",
       "501"
@@ -9871,9 +10052,6 @@
     ],
     "ethereum all time": [
       "3364"
-    ],
-    "etihad": [
-      "433"
     ],
     "everton liverpool": [
       "478"
@@ -9968,7 +10146,6 @@
       "3360"
     ],
     "football": [
-      "433",
       "438",
       "460",
       "461",
@@ -10072,7 +10249,6 @@
       "439"
     ],
     "game": [
-      "433",
       "460",
       "463",
       "464",
@@ -10442,12 +10618,6 @@
     "leadership change": [
       "2368"
     ],
-    "league chelsea": [
-      "433"
-    ],
-    "league chelsea man": [
-      "433"
-    ],
     "leave": [
       "2368"
     ],
@@ -10555,14 +10725,9 @@
       "496"
     ],
     "man city": [
-      "433",
       "501"
     ],
-    "man city apr": [
-      "433"
-    ],
     "manchester city": [
-      "433",
       "487",
       "501"
     ],
@@ -10606,7 +10771,6 @@
       "3158"
     ],
     "match": [
-      "433",
       "460",
       "461",
       "463",
@@ -10757,6 +10921,9 @@
     "nantes stade brestois": [
       "484"
     ],
+    "napoli cremonese": [
+      "511"
+    ],
     "napoli lazio": [
       "470"
     ],
@@ -10832,7 +10999,8 @@
       "463"
     ],
     "nottingham forest": [
-      "479"
+      "479",
+      "509"
     ],
     "nottingham forest burnley": [
       "479"
@@ -10947,9 +11115,6 @@
     "pit stop": [
       "442"
     ],
-    "pl": [
-      "433"
-    ],
     "pm": [
       "434"
     ],
@@ -10983,13 +11148,9 @@
       "505"
     ],
     "premier league": [
-      "433",
       "461",
       "497",
       "501"
-    ],
-    "premier league chelsea": [
-      "433"
     ],
     "president": [
       "3062",
@@ -11118,13 +11279,18 @@
       "485"
     ],
     "real betis": [
-      "499"
+      "499",
+      "510"
+    ],
+    "real betis real": [
+      "510"
     ],
     "real gdp": [
       "3265"
     ],
     "real madrid": [
-      "498"
+      "498",
+      "510"
     ],
     "real madrid alaves": [
       "498"
@@ -11399,7 +11565,6 @@
       "3360"
     ],
     "soccer": [
-      "433",
       "438",
       "460",
       "461",
@@ -11445,7 +11610,11 @@
       "3359"
     ],
     "stade brestois": [
-      "484"
+      "484",
+      "512"
+    ],
+    "stade brestois lens": [
+      "512"
     ],
     "stade de la meinau": [
       "485"
@@ -11461,9 +11630,6 @@
     ],
     "stalemate": [
       "460"
-    ],
-    "stamford bridge": [
-      "433"
     ],
     "standings": [
       "442"
@@ -11522,6 +11688,12 @@
     ],
     "successor": [
       "2368"
+    ],
+    "sunderland nottingham": [
+      "509"
+    ],
+    "sunderland nottingham forest": [
+      "509"
     ],
     "support": [
       "3055"
@@ -11978,7 +12150,6 @@
       "434"
     ],
     "切尔西": [
-      "433",
       "497"
     ],
     "利兹联": [
@@ -12186,9 +12357,6 @@
     "angers havre": [
       "473"
     ],
-    "apr utc": [
-      "433"
-    ],
     "april 2026": [
       "439"
     ],
@@ -12272,6 +12440,12 @@
     "betis": [
       "499"
     ],
+    "betis real": [
+      "510"
+    ],
+    "betis real madrid": [
+      "510"
+    ],
     "betting": [
       "502"
     ],
@@ -12288,7 +12462,6 @@
       "439"
     ],
     "blues": [
-      "433",
       "497"
     ],
     "bolsonaro": [
@@ -12336,6 +12509,9 @@
     "brentford fulham": [
       "461"
     ],
+    "brestois lens": [
+      "512"
+    ],
     "brighton": [
       "497"
     ],
@@ -12378,14 +12554,7 @@
       "438"
     ],
     "chelsea": [
-      "433",
       "497"
-    ],
-    "chelsea man": [
-      "433"
-    ],
-    "chelsea man city": [
-      "433"
     ],
     "chelsea manchester": [
       "475"
@@ -12397,14 +12566,7 @@
       "500"
     ],
     "citizens": [
-      "433",
       "501"
-    ],
-    "city apr": [
-      "433"
-    ],
-    "city apr utc": [
-      "433"
     ],
     "city arsenal": [
       "487"
@@ -12531,20 +12693,13 @@
     "energy": [
       "439"
     ],
-    "english football": [
-      "433"
-    ],
     "epl": [
-      "433",
       "461",
       "497",
       "501"
     ],
     "equity": [
       "441"
-    ],
-    "etihad": [
-      "433"
     ],
     "everton liverpool": [
       "478"
@@ -12572,7 +12727,6 @@
       "505"
     ],
     "football": [
-      "433",
       "438",
       "460",
       "461",
@@ -12659,7 +12813,6 @@
       "439"
     ],
     "game": [
-      "433",
       "460",
       "463",
       "464",
@@ -12766,12 +12919,6 @@
     "le championnat": [
       "438"
     ],
-    "league chelsea": [
-      "433"
-    ],
-    "league chelsea man": [
-      "433"
-    ],
     "lecce fiorentina": [
       "493"
     ],
@@ -12846,14 +12993,9 @@
       "496"
     ],
     "man city": [
-      "433",
       "501"
     ],
-    "man city apr": [
-      "433"
-    ],
     "manchester city": [
-      "433",
       "487",
       "501"
     ],
@@ -12873,7 +13015,6 @@
       "441"
     ],
     "match": [
-      "433",
       "460",
       "461",
       "463",
@@ -12915,6 +13056,9 @@
     "nantes stade brestois": [
       "484"
     ],
+    "napoli cremonese": [
+      "511"
+    ],
     "napoli lazio": [
       "470"
     ],
@@ -12949,7 +13093,8 @@
       "463"
     ],
     "nottingham forest": [
-      "479"
+      "479",
+      "509"
     ],
     "nottingham forest burnley": [
       "479"
@@ -13001,9 +13146,6 @@
     "pit stop": [
       "442"
     ],
-    "pl": [
-      "433"
-    ],
     "pm": [
       "434"
     ],
@@ -13033,13 +13175,9 @@
       "505"
     ],
     "premier league": [
-      "433",
       "461",
       "497",
       "501"
-    ],
-    "premier league chelsea": [
-      "433"
     ],
     "president": [
       "435",
@@ -13096,10 +13234,15 @@
       "485"
     ],
     "real betis": [
-      "499"
+      "499",
+      "510"
+    ],
+    "real betis real": [
+      "510"
     ],
     "real madrid": [
-      "498"
+      "498",
+      "510"
     ],
     "real madrid alaves": [
       "498"
@@ -13163,7 +13306,6 @@
       "442"
     ],
     "soccer": [
-      "433",
       "438",
       "460",
       "461",
@@ -13194,7 +13336,11 @@
       "439"
     ],
     "stade brestois": [
-      "484"
+      "484",
+      "512"
+    ],
+    "stade brestois lens": [
+      "512"
     ],
     "stade de la meinau": [
       "485"
@@ -13207,9 +13353,6 @@
     ],
     "stalemate": [
       "460"
-    ],
-    "stamford bridge": [
-      "433"
     ],
     "standings": [
       "442"
@@ -13225,6 +13368,12 @@
     ],
     "strasbourg rennes": [
       "485"
+    ],
+    "sunderland nottingham": [
+      "509"
+    ],
+    "sunderland nottingham forest": [
+      "509"
     ],
     "teams": [
       "442"
@@ -13390,7 +13539,6 @@
       "434"
     ],
     "切尔西": [
-      "433",
       "497"
     ],
     "利兹联": [
