@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-18 17:02:35 UTC+8",
+    "generatedAt": "2026-04-19 00:55:07 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 464,
-      "markets": 428,
-      "keywords": 977,
+      "kept": 437,
+      "markets": 436,
+      "keywords": 967,
       "events": {
-        "events": 116
+        "events": 104
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 536,
+        "cutoff_expired": 563,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -28,12 +28,12 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 15,
-        "regenerated_empty_entitygroups": 101,
-        "calls": 101,
-        "retries": 101,
+        "reused": 10,
+        "regenerated_empty_entitygroups": 94,
+        "calls": 94,
+        "retries": 94,
         "fallback": 0,
-        "empty": 101,
+        "empty": 94,
         "non_empty": 0,
         "errors": 0
       }
@@ -442,49 +442,6 @@
       "sig": "b9faa1cb",
       "sigFull": "b9faa1cb",
       "sigCore": "35ca7520",
-      "reused": false
-    },
-    "461": {
-      "title": "Brentford vs Fulham",
-      "marketIds": [
-        "461"
-      ],
-      "bestMarketId": "461",
-      "bestLabels": null,
-      "keywords": [
-        "brentford",
-        "fulham",
-        "bees",
-        "cottagers",
-        "premier league",
-        "epl",
-        "football",
-        "soccer",
-        "match",
-        "draw",
-        "tie",
-        "london derby",
-        "craven cottage",
-        "gtech community stadium",
-        "brentford fulham"
-      ],
-      "entities": [
-        "brentford",
-        "fulham"
-      ],
-      "entityGroups": [
-        [
-          "brentford",
-          "布伦特福德"
-        ],
-        [
-          "fulham",
-          "富勒姆"
-        ]
-      ],
-      "sig": "c738037d",
-      "sigFull": "c738037d",
-      "sigCore": "6ef45d39",
       "reused": false
     },
     "465": {
@@ -6857,69 +6814,6 @@
         }
       ]
     },
-    "461": {
-      "title": "Brentford vs Fulham",
-      "url": "https://app.opinion.trade/market/461?ref=opinion_hud",
-      "yesTokenId": "5585927922403072780150627919189523931634817112190596584057574174413940606134",
-      "noTokenId": "3020820904424566299732512522504242795608152879538097444110127086909507909882",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "brentford",
-        "fulham",
-        "bees",
-        "cottagers",
-        "premier league",
-        "epl",
-        "football",
-        "soccer",
-        "match",
-        "draw",
-        "tie",
-        "london derby",
-        "craven cottage",
-        "gtech community stadium",
-        "brentford fulham"
-      ],
-      "entities": [
-        "brentford",
-        "fulham"
-      ],
-      "entityGroups": [
-        [
-          "brentford",
-          "布伦特福德"
-        ],
-        [
-          "fulham",
-          "富勒姆"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13235",
-          "title": "Brentford wins",
-          "yesTokenId": "3437208732800791740337476500207597715658967441923419359664248309405320032374",
-          "noTokenId": "13736856799735738108928071294285729763927376684037541094717953931514544019027"
-        },
-        {
-          "marketId": "13236",
-          "title": "Fulham wins",
-          "yesTokenId": "81837758121261740732787545226843533949588682575808084198547700359871908224687",
-          "noTokenId": "27215846987402175955574379359666931959909390485722807833328037839466973027507"
-        },
-        {
-          "marketId": "13237",
-          "title": "Draw",
-          "yesTokenId": "5585927922403072780150627919189523931634817112190596584057574174413940606134",
-          "noTokenId": "3020820904424566299732512522504242795608152879538097444110127086909507909882"
-        }
-      ]
-    },
     "465": {
       "title": "Bayer Leverkusen vs FC Augsburg",
       "url": "https://app.opinion.trade/market/465?ref=opinion_hud",
@@ -12460,6 +12354,114 @@
         "noLabel": ""
       },
       "type": "binary"
+    },
+    "13919": {
+      "title": "ETH Up or Down - Hourly (Apr 18, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/13919?ref=opinion_hud",
+      "yesTokenId": "20937702770649699781851159872656335505360375928827964350153078802649869399932",
+      "noTokenId": "24917254847108109346405807312576311129625362857666482088267604556986424284442",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "13918": {
+      "title": "BTC Up or Down - Hourly (Apr 18, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/13918?ref=opinion_hud",
+      "yesTokenId": "108827538879003865004302044944582991475915952592143001797563424329148781476874",
+      "noTokenId": "34866918884238120945445292678568191094713027488018482993845580463161805559871",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "13917": {
+      "title": "BNB Up or Down - Hourly (Apr 18, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/13917?ref=opinion_hud",
+      "yesTokenId": "70166844670544034055258293662873432093050224116163161571147890010862537774760",
+      "noTokenId": "21145007343692527061629969181632500220474685317250490910970267857044146992539",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "13906": {
+      "title": "Orlando Magic vs Detroit Pistons",
+      "url": "https://app.opinion.trade/market/13906?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13907": {
+      "title": "Orlando Magic vs Detroit Pistons",
+      "url": "https://app.opinion.trade/market/13907?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13908": {
+      "title": "Phoenix Suns vs Oklahoma City Thunder",
+      "url": "https://app.opinion.trade/market/13908?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13909": {
+      "title": "Detroit Pistons vs Orlando Magic",
+      "url": "https://app.opinion.trade/market/13909?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13910": {
+      "title": "Oklahoma City Thunder vs Phoenix Suns",
+      "url": "https://app.opinion.trade/market/13910?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "13905": {
+      "title": "Phoenix Suns vs Oklahoma City Thunder",
+      "url": "https://app.opinion.trade/market/13905?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -12819,9 +12821,6 @@
     "bear market": [
       "3265"
     ],
-    "bees": [
-      "461"
-    ],
     "bei return": [
       "1856"
     ],
@@ -12975,12 +12974,6 @@
     ],
     "bremen hamburger": [
       "463"
-    ],
-    "brentford": [
-      "461"
-    ],
-    "brentford fulham": [
-      "461"
     ],
     "brestois lens": [
       "512"
@@ -13198,9 +13191,6 @@
     "cook out apple": [
       "2368"
     ],
-    "cottagers": [
-      "461"
-    ],
     "court decision": [
       "1546"
     ],
@@ -13212,9 +13202,6 @@
     ],
     "crash": [
       "3359"
-    ],
-    "craven cottage": [
-      "461"
     ],
     "creed": [
       "3158"
@@ -13383,7 +13370,6 @@
       "3360"
     ],
     "draw": [
-      "461",
       "463",
       "464",
       "465",
@@ -13503,7 +13489,6 @@
       "3356"
     ],
     "epl": [
-      "461",
       "497",
       "501"
     ],
@@ -13618,7 +13603,6 @@
       "3360"
     ],
     "football": [
-      "461",
       "463",
       "464",
       "465",
@@ -13660,9 +13644,6 @@
     ],
     "fugitive": [
       "1856"
-    ],
-    "fulham": [
-      "461"
     ],
     "full time": [
       "465",
@@ -13756,9 +13737,6 @@
     "great earthquake": [
       "2668",
       "3356"
-    ],
-    "gtech community stadium": [
-      "461"
     ],
     "hack": [
       "3360"
@@ -14118,9 +14096,6 @@
     "listing": [
       "3362"
     ],
-    "london derby": [
-      "461"
-    ],
     "lorient marseille": [
       "469"
     ],
@@ -14201,7 +14176,6 @@
       "3158"
     ],
     "match": [
-      "461",
       "463",
       "464",
       "465",
@@ -14559,7 +14533,6 @@
       "505"
     ],
     "premier league": [
-      "461",
       "497",
       "501"
     ],
@@ -14962,7 +14935,6 @@
       "3360"
     ],
     "soccer": [
-      "461",
       "463",
       "464",
       "465",
@@ -15187,7 +15159,6 @@
       "3362"
     ],
     "tie": [
-      "461",
       "463",
       "464",
       "465",
@@ -15569,9 +15540,6 @@
     "奥格斯堡": [
       "465"
     ],
-    "富勒姆": [
-      "461"
-    ],
     "巴塞罗那": [
       "504"
     ],
@@ -15581,9 +15549,6 @@
     "币安币": [
       "3367",
       "3368"
-    ],
-    "布伦特福德": [
-      "461"
     ],
     "布莱顿": [
       "497"
@@ -15793,9 +15758,6 @@
     "bayern nchen vfb": [
       "488"
     ],
-    "bees": [
-      "461"
-    ],
     "belgium iran": [
       "551"
     ],
@@ -15856,12 +15818,6 @@
     ],
     "bremen hamburger": [
       "463"
-    ],
-    "brentford": [
-      "461"
-    ],
-    "brentford fulham": [
-      "461"
     ],
     "brestois lens": [
       "512"
@@ -15952,12 +15908,6 @@
     "congo uzbekistan": [
       "583"
     ],
-    "cottagers": [
-      "461"
-    ],
-    "craven cottage": [
-      "461"
-    ],
     "cremonese torino": [
       "477"
     ],
@@ -15990,7 +15940,6 @@
       "464"
     ],
     "draw": [
-      "461",
       "463",
       "464",
       "465",
@@ -16042,7 +15991,6 @@
       "559"
     ],
     "epl": [
-      "461",
       "497",
       "501"
     ],
@@ -16068,7 +16016,6 @@
       "505"
     ],
     "football": [
-      "461",
       "463",
       "464",
       "465",
@@ -16104,9 +16051,6 @@
     ],
     "fsv mainz": [
       "490"
-    ],
-    "fulham": [
-      "461"
     ],
     "full time": [
       "465",
@@ -16156,9 +16100,6 @@
     ],
     "girona real betis": [
       "499"
-    ],
-    "gtech community stadium": [
-      "461"
     ],
     "hamburg": [
       "463"
@@ -16272,9 +16213,6 @@
     "lille nice": [
       "476"
     ],
-    "london derby": [
-      "461"
-    ],
     "lorient marseille": [
       "469"
     ],
@@ -16308,7 +16246,6 @@
       "475"
     ],
     "match": [
-      "461",
       "463",
       "464",
       "465",
@@ -16447,7 +16384,6 @@
       "505"
     ],
     "premier league": [
-      "461",
       "497",
       "501"
     ],
@@ -16560,7 +16496,6 @@
       "574"
     ],
     "soccer": [
-      "461",
       "463",
       "464",
       "465",
@@ -16639,7 +16574,6 @@
       "562"
     ],
     "tie": [
-      "461",
       "463",
       "464",
       "465",
@@ -16796,17 +16730,11 @@
     "奥格斯堡": [
       "465"
     ],
-    "富勒姆": [
-      "461"
-    ],
     "巴塞罗那": [
       "504"
     ],
     "巴黎圣日耳曼": [
       "505"
-    ],
-    "布伦特福德": [
-      "461"
     ],
     "布莱顿": [
       "497"
