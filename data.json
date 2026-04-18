@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-18 11:26:21 UTC+8",
+    "generatedAt": "2026-04-18 17:02:35 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 467,
-      "markets": 432,
-      "keywords": 986,
+      "kept": 464,
+      "markets": 428,
+      "keywords": 977,
       "events": {
         "events": 116
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 533,
+        "cutoff_expired": 536,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -29,7 +29,7 @@
         "fullAiRefresh": false,
         "onlyAiForNew": true,
         "reused": 15,
-        "regenerated_empty_entitygroups": 93,
+        "regenerated_empty_entitygroups": 101,
         "calls": 101,
         "retries": 101,
         "fallback": 0,
@@ -485,49 +485,6 @@
       "sig": "c738037d",
       "sigFull": "c738037d",
       "sigCore": "6ef45d39",
-      "reused": false
-    },
-    "460": {
-      "title": "Lens vs Toulouse",
-      "marketIds": [
-        "460"
-      ],
-      "bestMarketId": "460",
-      "bestLabels": null,
-      "keywords": [
-        "lens",
-        "toulouse",
-        "rc lens",
-        "toulouse fc",
-        "football",
-        "soccer",
-        "match",
-        "ligue 1",
-        "draw",
-        "tie",
-        "stalemate",
-        "racing club de lens",
-        "toulouse football club",
-        "fixture",
-        "game",
-        "lens toulouse"
-      ],
-      "entities": [
-        "lens",
-        "toulouse"
-      ],
-      "entityGroups": [
-        [
-          "lens"
-        ],
-        [
-          "toulouse",
-          "图卢兹"
-        ]
-      ],
-      "sig": "ab17b57b",
-      "sigFull": "ab17b57b",
-      "sigCore": "12e503a8",
       "reused": false
     },
     "465": {
@@ -6963,69 +6920,6 @@
         }
       ]
     },
-    "460": {
-      "title": "Lens vs Toulouse",
-      "url": "https://app.opinion.trade/market/460?ref=opinion_hud",
-      "yesTokenId": "22583588787236246261287332737273932917766699490605332724733200959382469476813",
-      "noTokenId": "63120268583065373896951243192705373152968514902344012222409362571530452868743",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "lens",
-        "toulouse",
-        "rc lens",
-        "toulouse fc",
-        "football",
-        "soccer",
-        "match",
-        "ligue 1",
-        "draw",
-        "tie",
-        "stalemate",
-        "racing club de lens",
-        "toulouse football club",
-        "fixture",
-        "game",
-        "lens toulouse"
-      ],
-      "entities": [
-        "lens",
-        "toulouse"
-      ],
-      "entityGroups": [
-        [
-          "lens"
-        ],
-        [
-          "toulouse",
-          "图卢兹"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13232",
-          "title": "Lens wins",
-          "yesTokenId": "9007997813278548913374788254801931836480595750892752787492281884079654292348",
-          "noTokenId": "109196204423609862257994920579341032792091572526823327559334752617139938941662"
-        },
-        {
-          "marketId": "13233",
-          "title": "Toulouse wins",
-          "yesTokenId": "30712829333234534245722074897413429195884202466594854529707697816307765846275",
-          "noTokenId": "71090900464421839008066083546166103029525362037226570561231316568697789566291"
-        },
-        {
-          "marketId": "13234",
-          "title": "Draw",
-          "yesTokenId": "22583588787236246261287332737273932917766699490605332724733200959382469476813",
-          "noTokenId": "63120268583065373896951243192705373152968514902344012222409362571530452868743"
-        }
-      ]
-    },
     "465": {
       "title": "Bayer Leverkusen vs FC Augsburg",
       "url": "https://app.opinion.trade/market/465?ref=opinion_hud",
@@ -11753,42 +11647,6 @@
       },
       "type": "binary"
     },
-    "13804": {
-      "title": "BNB Up or Down - Hourly (Apr 18, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13804?ref=opinion_hud",
-      "yesTokenId": "113819186555540509293503254917468750546977319329547810340495342915403292843731",
-      "noTokenId": "26721871970884364258745711051523926955386489654916109511888475748522622941923",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "13805": {
-      "title": "BTC Up or Down - Hourly (Apr 18, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13805?ref=opinion_hud",
-      "yesTokenId": "59291868154921239170207445104487035409159048448056899537192190405109220888401",
-      "noTokenId": "96969403581847766040954804402240205392720120958738532046128351176441297957672",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "13806": {
-      "title": "ETH Up or Down - Hourly (Apr 18, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13806?ref=opinion_hud",
-      "yesTokenId": "56292793100965830215403183027096994907164500757448715433706851892513848495222",
-      "noTokenId": "74535748558009661935973575422449955559673538294632844331385657706506803564550",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "13870": {
       "title": "Los Angeles Lakers vs Houston Rockets",
       "url": "https://app.opinion.trade/market/13870?ref=opinion_hud",
@@ -13525,7 +13383,6 @@
       "3360"
     ],
     "draw": [
-      "460",
       "461",
       "463",
       "464",
@@ -13752,7 +13609,6 @@
       "3072"
     ],
     "fixture": [
-      "460",
       "497",
       "499",
       "500",
@@ -13762,7 +13618,6 @@
       "3360"
     ],
     "football": [
-      "460",
       "461",
       "463",
       "464",
@@ -13827,7 +13682,6 @@
       "3361"
     ],
     "game": [
-      "460",
       "463",
       "464",
       "497",
@@ -14245,12 +14099,6 @@
     "legal ruling": [
       "1546"
     ],
-    "lens": [
-      "460"
-    ],
-    "lens toulouse": [
-      "460"
-    ],
     "level score": [
       "500"
     ],
@@ -14261,7 +14109,6 @@
       "465"
     ],
     "ligue 1": [
-      "460",
       "485",
       "505"
     ],
@@ -14354,7 +14201,6 @@
       "3158"
     ],
     "match": [
-      "460",
       "461",
       "463",
       "464",
@@ -14785,9 +14631,6 @@
     "racing club": [
       "485"
     ],
-    "racing club de lens": [
-      "460"
-    ],
     "raise": [
       "3505",
       "3525"
@@ -14802,9 +14645,6 @@
     ],
     "rc celta": [
       "504"
-    ],
-    "rc lens": [
-      "460"
     ],
     "rc strasbourg": [
       "485"
@@ -15122,7 +14962,6 @@
       "3360"
     ],
     "soccer": [
-      "460",
       "461",
       "463",
       "464",
@@ -15197,9 +15036,6 @@
     ],
     "stagnation": [
       "3265"
-    ],
-    "stalemate": [
-      "460"
     ],
     "star": [
       "3158"
@@ -15351,7 +15187,6 @@
       "3362"
     ],
     "tie": [
-      "460",
       "461",
       "463",
       "464",
@@ -15413,15 +15248,6 @@
     ],
     "tottenham brighton": [
       "471"
-    ],
-    "toulouse": [
-      "460"
-    ],
-    "toulouse fc": [
-      "460"
-    ],
-    "toulouse football club": [
-      "460"
     ],
     "toulouse monaco": [
       "606"
@@ -15730,9 +15556,6 @@
     ],
     "南茜·惠勒": [
       "3223"
-    ],
-    "图卢兹": [
-      "460"
     ],
     "埃尔切": [
       "502"
@@ -16167,7 +15990,6 @@
       "464"
     ],
     "draw": [
-      "460",
       "461",
       "463",
       "464",
@@ -16240,14 +16062,12 @@
       "466"
     ],
     "fixture": [
-      "460",
       "497",
       "499",
       "500",
       "505"
     ],
     "football": [
-      "460",
       "461",
       "463",
       "464",
@@ -16293,7 +16113,6 @@
       "505"
     ],
     "game": [
-      "460",
       "463",
       "464",
       "497",
@@ -16437,12 +16256,6 @@
     "leeds wolves": [
       "468"
     ],
-    "lens": [
-      "460"
-    ],
-    "lens toulouse": [
-      "460"
-    ],
     "level score": [
       "500"
     ],
@@ -16453,7 +16266,6 @@
       "465"
     ],
     "ligue 1": [
-      "460",
       "485",
       "505"
     ],
@@ -16496,7 +16308,6 @@
       "475"
     ],
     "match": [
-      "460",
       "461",
       "463",
       "464",
@@ -16646,14 +16457,8 @@
     "racing club": [
       "485"
     ],
-    "racing club de lens": [
-      "460"
-    ],
     "rc celta": [
       "504"
-    ],
-    "rc lens": [
-      "460"
     ],
     "rc strasbourg": [
       "485"
@@ -16755,7 +16560,6 @@
       "574"
     ],
     "soccer": [
-      "460",
       "461",
       "463",
       "464",
@@ -16813,9 +16617,6 @@
     "stade rennais fc": [
       "485"
     ],
-    "stalemate": [
-      "460"
-    ],
     "strasbourg": [
       "485"
     ],
@@ -16838,7 +16639,6 @@
       "562"
     ],
     "tie": [
-      "460",
       "461",
       "463",
       "464",
@@ -16856,15 +16656,6 @@
     ],
     "tottenham brighton": [
       "471"
-    ],
-    "toulouse": [
-      "460"
-    ],
-    "toulouse fc": [
-      "460"
-    ],
-    "toulouse football club": [
-      "460"
     ],
     "toulouse monaco": [
       "606"
@@ -16992,9 +16783,6 @@
     ],
     "勒沃库森": [
       "465"
-    ],
-    "图卢兹": [
-      "460"
     ],
     "埃尔切": [
       "502"
