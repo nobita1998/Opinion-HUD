@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-19 11:45:58 UTC+8",
+    "generatedAt": "2026-04-19 17:04:06 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 464,
-      "markets": 463,
-      "keywords": 920,
+      "kept": 461,
+      "markets": 453,
+      "keywords": 909,
       "events": {
         "events": 102
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 536,
+        "cutoff_expired": 539,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -29,7 +29,7 @@
         "fullAiRefresh": false,
         "onlyAiForNew": true,
         "reused": 10,
-        "regenerated_empty_entitygroups": 90,
+        "regenerated_empty_entitygroups": 92,
         "calls": 92,
         "retries": 92,
         "fallback": 0,
@@ -486,112 +486,6 @@
       "sigCore": "ab80e1ad",
       "reused": false
     },
-    "470": {
-      "title": "Napoli vs Lazio",
-      "marketIds": [
-        "470"
-      ],
-      "bestMarketId": "470",
-      "bestLabels": null,
-      "keywords": [
-        "napoli lazio"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "4552487b",
-      "sigFull": "4552487b",
-      "sigCore": "abf6e038",
-      "reused": false
-    },
-    "471": {
-      "title": "Tottenham vs Brighton",
-      "marketIds": [
-        "471"
-      ],
-      "bestMarketId": "471",
-      "bestLabels": null,
-      "keywords": [
-        "tottenham brighton"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "d06b61f9",
-      "sigFull": "d06b61f9",
-      "sigCore": "d1774d47",
-      "reused": false
-    },
-    "472": {
-      "title": "Eintracht Frankfurt vs RB Leipzig",
-      "marketIds": [
-        "472"
-      ],
-      "bestMarketId": "472",
-      "bestLabels": null,
-      "keywords": [
-        "eintracht frankfurt",
-        "frankfurt leipzig",
-        "eintracht frankfurt leipzig"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "da16c091",
-      "sigFull": "da16c091",
-      "sigCore": "8dde9613",
-      "reused": false
-    },
-    "473": {
-      "title": "Angers vs Le Havre",
-      "marketIds": [
-        "473"
-      ],
-      "bestMarketId": "473",
-      "bestLabels": null,
-      "keywords": [
-        "angers havre"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "4ccca505",
-      "sigFull": "4ccca505",
-      "sigCore": "12d1251d",
-      "reused": false
-    },
-    "474": {
-      "title": "AS Roma vs Atalanta",
-      "marketIds": [
-        "474"
-      ],
-      "bestMarketId": "474",
-      "bestLabels": null,
-      "keywords": [
-        "roma atalanta"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "71fbc089",
-      "sigFull": "71fbc089",
-      "sigCore": "70c0c99f",
-      "reused": false
-    },
-    "475": {
-      "title": "Chelsea vs Manchester United",
-      "marketIds": [
-        "475"
-      ],
-      "bestMarketId": "475",
-      "bestLabels": null,
-      "keywords": [
-        "chelsea manchester",
-        "manchester united",
-        "chelsea manchester united"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "98f760a7",
-      "sigFull": "98f760a7",
-      "sigCore": "8c26b3fe",
-      "reused": false
-    },
     "479": {
       "title": "Nottingham Forest vs Burnley",
       "marketIds": [
@@ -924,23 +818,6 @@
       "sig": "be1d5629",
       "sigFull": "be1d5629",
       "sigCore": "0f69835f",
-      "reused": false
-    },
-    "476": {
-      "title": "Lille vs Nice",
-      "marketIds": [
-        "476"
-      ],
-      "bestMarketId": "476",
-      "bestLabels": null,
-      "keywords": [
-        "lille nice"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "e6d1aef9",
-      "sigFull": "e6d1aef9",
-      "sigCore": "75781c47",
       "reused": false
     },
     "478": {
@@ -6588,232 +6465,6 @@
         }
       ]
     },
-    "470": {
-      "title": "Napoli vs Lazio",
-      "url": "https://app.opinion.trade/market/470?ref=opinion_hud",
-      "yesTokenId": "58398102174601324176285189131467818489415553180821181731593302191828634696348",
-      "noTokenId": "6250888666422389591125777721477046253021718527543462382829680351230905817372",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "napoli lazio"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13262",
-          "title": "Napoli wins",
-          "yesTokenId": "49145926160635525488603521929447861641989711697061114673688745459118302141557",
-          "noTokenId": "20972400067961949965688414848436174348789059173445065554946789818888862470467"
-        },
-        {
-          "marketId": "13263",
-          "title": "Lazio wins",
-          "yesTokenId": "99134108942741639552716045032783905822177546571192347738727690065605541628366",
-          "noTokenId": "9684213885699323001552597993112701677000828173304377975184027153477291434649"
-        },
-        {
-          "marketId": "13264",
-          "title": "Draw",
-          "yesTokenId": "58398102174601324176285189131467818489415553180821181731593302191828634696348",
-          "noTokenId": "6250888666422389591125777721477046253021718527543462382829680351230905817372"
-        }
-      ]
-    },
-    "471": {
-      "title": "Tottenham vs Brighton",
-      "url": "https://app.opinion.trade/market/471?ref=opinion_hud",
-      "yesTokenId": "89971038323774457332086614780921223094577517174069423597832609665761008927889",
-      "noTokenId": "104349998007759679812745136956692916274022063497428178286601263066951838451882",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "tottenham brighton"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13265",
-          "title": "Tottenham wins",
-          "yesTokenId": "82297309470614675418874225623959025772652401147409196808481499158061700942449",
-          "noTokenId": "36450085456271499198662348481293599048538498389861843776032478943311737687853"
-        },
-        {
-          "marketId": "13266",
-          "title": "Brighton wins",
-          "yesTokenId": "88356399413951855943136303757832878792549928767627726144184536153117347600400",
-          "noTokenId": "99861842965723750582930170211876628374949438024997291095320866020795051297130"
-        },
-        {
-          "marketId": "13267",
-          "title": "Draw",
-          "yesTokenId": "89971038323774457332086614780921223094577517174069423597832609665761008927889",
-          "noTokenId": "104349998007759679812745136956692916274022063497428178286601263066951838451882"
-        }
-      ]
-    },
-    "472": {
-      "title": "Eintracht Frankfurt vs RB Leipzig",
-      "url": "https://app.opinion.trade/market/472?ref=opinion_hud",
-      "yesTokenId": "21253263642258260919526456958969717529265837654858794994885649750160336520775",
-      "noTokenId": "105482328985866610422152058541490987392717306915548102274550905597966159221235",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "eintracht frankfurt",
-        "frankfurt leipzig",
-        "eintracht frankfurt leipzig"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13268",
-          "title": "Eintracht Frankfurt wins",
-          "yesTokenId": "37058771628094978390048093272939219118361308944740138607725807703174040615469",
-          "noTokenId": "115500397343375870711818005449602114442528685218567372557431572147365811553393"
-        },
-        {
-          "marketId": "13269",
-          "title": "RB Leipzig wins",
-          "yesTokenId": "39523019908525434869475432373045284260055660562766567173639795555289410068680",
-          "noTokenId": "21790955925817979667032772432207177663574842151939650009864735605433269353210"
-        },
-        {
-          "marketId": "13270",
-          "title": "Draw",
-          "yesTokenId": "21253263642258260919526456958969717529265837654858794994885649750160336520775",
-          "noTokenId": "105482328985866610422152058541490987392717306915548102274550905597966159221235"
-        }
-      ]
-    },
-    "473": {
-      "title": "Angers vs Le Havre",
-      "url": "https://app.opinion.trade/market/473?ref=opinion_hud",
-      "yesTokenId": "79042510410265817600622769855453131219898665305124028292847457056858595649895",
-      "noTokenId": "16680440737551006910231268237361320236872822485263599816683787843712296576729",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "angers havre"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13271",
-          "title": "Angers wins",
-          "yesTokenId": "66606919912295842614472122448731502668082121229442967355712215758194864875876",
-          "noTokenId": "33439167914912984749188738131196636304020516720473395052312989509721007211667"
-        },
-        {
-          "marketId": "13272",
-          "title": "Le Havre wins",
-          "yesTokenId": "112388111928543844075424378641690002890286330544815044416827111513323054913828",
-          "noTokenId": "41790005040509370786331123220359329256314636883592886776867857423262920007177"
-        },
-        {
-          "marketId": "13273",
-          "title": "Draw",
-          "yesTokenId": "79042510410265817600622769855453131219898665305124028292847457056858595649895",
-          "noTokenId": "16680440737551006910231268237361320236872822485263599816683787843712296576729"
-        }
-      ]
-    },
-    "474": {
-      "title": "AS Roma vs Atalanta",
-      "url": "https://app.opinion.trade/market/474?ref=opinion_hud",
-      "yesTokenId": "84685396751477264515537447469416755843671596959812738035945216839081575788624",
-      "noTokenId": "60763514397035428583206349764224597727231784243369924637285802357400233054313",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "roma atalanta"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13274",
-          "title": "AS Roma wins",
-          "yesTokenId": "8969833655464334695798323529491567513039056402148190138559336288223484276075",
-          "noTokenId": "59077101820850647826240258665349609352711849963800001103973438560111717049274"
-        },
-        {
-          "marketId": "13275",
-          "title": "Atalanta wins",
-          "yesTokenId": "68576100526378275848325559784057449862458275178383513314295000319385322935986",
-          "noTokenId": "70999196015034717053079055328678705751965392077150592300450297605628364466936"
-        },
-        {
-          "marketId": "13276",
-          "title": "Draw",
-          "yesTokenId": "84685396751477264515537447469416755843671596959812738035945216839081575788624",
-          "noTokenId": "60763514397035428583206349764224597727231784243369924637285802357400233054313"
-        }
-      ]
-    },
-    "475": {
-      "title": "Chelsea vs Manchester United",
-      "url": "https://app.opinion.trade/market/475?ref=opinion_hud",
-      "yesTokenId": "73369593101688498019055595874303524545433102740657807102659508868515074828655",
-      "noTokenId": "102603731429264489044810779241801401046740733026820194799638302826288094381104",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "chelsea manchester",
-        "manchester united",
-        "chelsea manchester united"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13277",
-          "title": "Chelsea wins",
-          "yesTokenId": "798137302698444337266209102785432157826683599082420071981846674288982766996",
-          "noTokenId": "74184766848030059268522495547258543401460285285099667864974990635561602794318"
-        },
-        {
-          "marketId": "13278",
-          "title": "Manchester United wins",
-          "yesTokenId": "84223646645118620582284386592032112238185088700736593697878180850009381737472",
-          "noTokenId": "97699947955412862114976514473957818825616107001934082498392701515720121997773"
-        },
-        {
-          "marketId": "13279",
-          "title": "Draw",
-          "yesTokenId": "73369593101688498019055595874303524545433102740657807102659508868515074828655",
-          "noTokenId": "102603731429264489044810779241801401046740733026820194799638302826288094381104"
-        }
-      ]
-    },
     "479": {
       "title": "Nottingham Forest vs Burnley",
       "url": "https://app.opinion.trade/market/479?ref=opinion_hud",
@@ -7505,43 +7156,6 @@
           "title": "Draw",
           "yesTokenId": "113265780271371846312421408674657661207286125898056340586889254412477830245933",
           "noTokenId": "58558769068539702377536283417667857733681041668912688232225793578454012326161"
-        }
-      ]
-    },
-    "476": {
-      "title": "Lille vs Nice",
-      "url": "https://app.opinion.trade/market/476?ref=opinion_hud",
-      "yesTokenId": "40357333047784257761704906535476758931995095726695002088737238206491602014988",
-      "noTokenId": "84500398275409845072013477656273104919883784223833680096029164449379245395957",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "lille nice"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13280",
-          "title": "Lille wins",
-          "yesTokenId": "9984666849650788234635812616461869252294342239589474500746517304488514365263",
-          "noTokenId": "10606915218149264388583279953239293496507231288351003582989615698863370559241"
-        },
-        {
-          "marketId": "13281",
-          "title": "Nice wins",
-          "yesTokenId": "48061971517829016997145849938743918765434387107235743178046029116089554217691",
-          "noTokenId": "7219780538339172974661340819237153285138727316977264142624329919468034473588"
-        },
-        {
-          "marketId": "13282",
-          "title": "Draw",
-          "yesTokenId": "40357333047784257761704906535476758931995095726695002088737238206491602014988",
-          "noTokenId": "84500398275409845072013477656273104919883784223833680096029164449379245395957"
         }
       ]
     },
@@ -11681,42 +11295,6 @@
       },
       "type": "binary"
     },
-    "13952": {
-      "title": "ETH Up or Down - Hourly (Apr 19, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13952?ref=opinion_hud",
-      "yesTokenId": "87058770388394218324909980755040898794849498904130698875251451121316001272250",
-      "noTokenId": "32467071642494164853484541847486514505897406242851960918512936941725419072440",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "13950": {
-      "title": "BNB Up or Down - Hourly (Apr 19, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13950?ref=opinion_hud",
-      "yesTokenId": "97657813147380737885305901421060695521853324251763880550042668283799094571009",
-      "noTokenId": "37402982648613467728520115861554844776083067431332552868638563314967404682214",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "13951": {
-      "title": "BTC Up or Down - Hourly (Apr 19, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/13951?ref=opinion_hud",
-      "yesTokenId": "24334875534769017843212995740492457448620459713290086716376301113261719745403",
-      "noTokenId": "100052864692169977372487530473178752006491603621525844479180736661308767862487",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "13998": {
       "title": "Denver Nuggets vs Minnesota Timberwolves",
       "url": "https://app.opinion.trade/market/13998?ref=opinion_hud",
@@ -12502,9 +12080,6 @@
     "amount": [
       "3505"
     ],
-    "angers havre": [
-      "473"
-    ],
     "angers paris": [
       "605"
     ],
@@ -12888,12 +12463,6 @@
     "chelsea": [
       "497"
     ],
-    "chelsea manchester": [
-      "475"
-    ],
-    "chelsea manchester united": [
-      "475"
-    ],
     "cherries": [
       "500"
     ],
@@ -13219,12 +12788,6 @@
     "egypt iran": [
       "578"
     ],
-    "eintracht frankfurt": [
-      "472"
-    ],
-    "eintracht frankfurt leipzig": [
-      "472"
-    ],
     "el glorioso": [
       "498"
     ],
@@ -13415,9 +12978,6 @@
     ],
     "franjiverdes": [
       "502"
-    ],
-    "frankfurt leipzig": [
-      "472"
     ],
     "freiburg heidenheim": [
       "483"
@@ -13840,9 +13400,6 @@
       "485",
       "505"
     ],
-    "lille nice": [
-      "476"
-    ],
     "listing": [
       "3362"
     ],
@@ -13892,9 +13449,6 @@
     ],
     "manchester city arsenal": [
       "487"
-    ],
-    "manchester united": [
-      "475"
     ],
     "march 2026": [
       "3039",
@@ -14078,9 +13632,6 @@
     ],
     "napoli cremonese": [
       "511"
-    ],
-    "napoli lazio": [
-      "470"
     ],
     "native token": [
       "3366"
@@ -14528,9 +14079,6 @@
     "rollup": [
       "3366"
     ],
-    "roma atalanta": [
-      "474"
-    ],
     "round": [
       "3505",
       "3506",
@@ -14951,9 +14499,6 @@
     "top pick": [
       "3072"
     ],
-    "tottenham brighton": [
-      "471"
-    ],
     "toulouse monaco": [
       "606"
     ],
@@ -15340,9 +14885,6 @@
     "algeria austria": [
       "584"
     ],
-    "angers havre": [
-      "473"
-    ],
     "angers paris": [
       "605"
     ],
@@ -15502,12 +15044,6 @@
     "chelsea": [
       "497"
     ],
-    "chelsea manchester": [
-      "475"
-    ],
-    "chelsea manchester united": [
-      "475"
-    ],
     "cherries": [
       "500"
     ],
@@ -15586,12 +15122,6 @@
     "egypt iran": [
       "578"
     ],
-    "eintracht frankfurt": [
-      "472"
-    ],
-    "eintracht frankfurt leipzig": [
-      "472"
-    ],
     "el glorioso": [
       "498"
     ],
@@ -15655,9 +15185,6 @@
     ],
     "franjiverdes": [
       "502"
-    ],
-    "frankfurt leipzig": [
-      "472"
     ],
     "freiburg heidenheim": [
       "483"
@@ -15790,9 +15317,6 @@
       "485",
       "505"
     ],
-    "lille nice": [
-      "476"
-    ],
     "los blancos": [
       "498"
     ],
@@ -15818,9 +15342,6 @@
     ],
     "manchester city arsenal": [
       "487"
-    ],
-    "manchester united": [
-      "475"
     ],
     "marseille nice": [
       "621"
@@ -15869,9 +15390,6 @@
     ],
     "napoli cremonese": [
       "511"
-    ],
-    "napoli lazio": [
-      "470"
     ],
     "nchen vfb": [
       "488"
@@ -16027,9 +15545,6 @@
     "roazhon park": [
       "485"
     ],
-    "roma atalanta": [
-      "474"
-    ],
     "saint germain": [
       "492",
       "505",
@@ -16151,9 +15666,6 @@
       "503",
       "504",
       "505"
-    ],
-    "tottenham brighton": [
-      "471"
     ],
     "toulouse monaco": [
       "606"
