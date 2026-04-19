@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-19 17:04:06 UTC+8",
+    "generatedAt": "2026-04-20 00:55:19 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 461,
-      "markets": 453,
+      "kept": 425,
+      "markets": 456,
       "keywords": 909,
       "events": {
-        "events": 102
+        "events": 89
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 539,
+        "cutoff_expired": 575,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -28,12 +28,12 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 10,
-        "regenerated_empty_entitygroups": 92,
-        "calls": 92,
-        "retries": 92,
+        "reused": 9,
+        "regenerated_empty_entitygroups": 80,
+        "calls": 80,
+        "retries": 80,
         "fallback": 0,
-        "empty": 92,
+        "empty": 80,
         "non_empty": 0,
         "errors": 0
       }
@@ -11884,6 +11884,42 @@
           "noTokenId": "87821555585181931754769916912427360017504602587903126144244935720694257324197"
         }
       ]
+    },
+    "14042": {
+      "title": "ETH Up or Down - Hourly (Apr 19, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14042?ref=opinion_hud",
+      "yesTokenId": "11819873057441549301026923746260399376360396236580061968347245701796436809587",
+      "noTokenId": "102662880744735647211377568171055958556058386100995202011332128773517687156508",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14040": {
+      "title": "BNB Up or Down - Hourly (Apr 19, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14040?ref=opinion_hud",
+      "yesTokenId": "114521716896854647901632610294795123474273945004720235940456419573618224346185",
+      "noTokenId": "105934318836557828839119977032528278760372430474287857984596328471393537136437",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14041": {
+      "title": "BTC Up or Down - Hourly (Apr 19, 2026 17:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14041?ref=opinion_hud",
+      "yesTokenId": "48880367124033845419310357796936826712781422337612582157036167686761862558749",
+      "noTokenId": "49310366703411965094881305050006357385934711459186638543241706500560149818351",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
