@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-20 11:48:15 UTC+8",
+    "generatedAt": "2026-04-20 18:06:46 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 434,
-      "markets": 466,
-      "keywords": 915,
+      "kept": 431,
+      "markets": 447,
+      "keywords": 875,
       "events": {
         "events": 90
       },
       "skipped": {
-        "statusEnum": 55,
+        "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 511,
+        "cutoff_expired": 569,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -29,7 +29,7 @@
         "fullAiRefresh": false,
         "onlyAiForNew": true,
         "reused": 9,
-        "regenerated_empty_entitygroups": 77,
+        "regenerated_empty_entitygroups": 81,
         "calls": 81,
         "retries": 81,
         "fallback": 0,
@@ -444,289 +444,6 @@
       "sigCore": "35ca7520",
       "reused": false
     },
-    "485": {
-      "title": "Strasbourg vs Rennes",
-      "marketIds": [
-        "485"
-      ],
-      "bestMarketId": "485",
-      "bestLabels": null,
-      "keywords": [
-        "strasbourg",
-        "rennes",
-        "rc strasbourg",
-        "stade rennais",
-        "ligue 1",
-        "football",
-        "soccer",
-        "match",
-        "draw",
-        "tie",
-        "stade de la meinau",
-        "roazhon park",
-        "racing club",
-        "stade rennais fc",
-        "strasbourg rennes"
-      ],
-      "entities": [
-        "strasbourg",
-        "rennes"
-      ],
-      "entityGroups": [
-        [
-          "strasbourg",
-          "斯特拉斯堡"
-        ],
-        [
-          "rennes"
-        ]
-      ],
-      "sig": "75a6cb85",
-      "sigFull": "75a6cb85",
-      "sigCore": "ab80e1ad",
-      "reused": false
-    },
-    "479": {
-      "title": "Nottingham Forest vs Burnley",
-      "marketIds": [
-        "479"
-      ],
-      "bestMarketId": "479",
-      "bestLabels": null,
-      "keywords": [
-        "nottingham forest",
-        "forest burnley",
-        "nottingham forest burnley"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "41bb4691",
-      "sigFull": "41bb4691",
-      "sigCore": "48792463",
-      "reused": false
-    },
-    "480": {
-      "title": "Aston Villa vs Sunderland",
-      "marketIds": [
-        "480"
-      ],
-      "bestMarketId": "480",
-      "bestLabels": null,
-      "keywords": [
-        "aston villa",
-        "villa sunderland",
-        "aston villa sunderland"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "93297fb1",
-      "sigFull": "93297fb1",
-      "sigCore": "7f5ab823",
-      "reused": false
-    },
-    "481": {
-      "title": "Hellas Verona vs AC Milan",
-      "marketIds": [
-        "481"
-      ],
-      "bestMarketId": "481",
-      "bestLabels": null,
-      "keywords": [
-        "hellas verona",
-        "verona milan",
-        "hellas verona milan"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "607578c9",
-      "sigFull": "607578c9",
-      "sigCore": "403eb3af",
-      "reused": false
-    },
-    "482": {
-      "title": "Monaco vs Auxerre",
-      "marketIds": [
-        "482"
-      ],
-      "bestMarketId": "482",
-      "bestLabels": null,
-      "keywords": [
-        "monaco auxerre"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "6077caa9",
-      "sigFull": "6077caa9",
-      "sigCore": "7fd25e8f",
-      "reused": false
-    },
-    "483": {
-      "title": "SC Freiburg vs 1. FC Heidenheim",
-      "marketIds": [
-        "483"
-      ],
-      "bestMarketId": "483",
-      "bestLabels": null,
-      "keywords": [
-        "freiburg heidenheim"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "9d1dca7f",
-      "sigFull": "9d1dca7f",
-      "sigCore": "1f7e897a",
-      "reused": false
-    },
-    "484": {
-      "title": "Nantes vs Stade Brestois 29",
-      "marketIds": [
-        "484"
-      ],
-      "bestMarketId": "484",
-      "bestLabels": null,
-      "keywords": [
-        "nantes stade",
-        "stade brestois",
-        "nantes stade brestois"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "e4e75a97",
-      "sigFull": "e4e75a97",
-      "sigCore": "d73fa5e6",
-      "reused": false
-    },
-    "488": {
-      "title": "Bayern München vs VfB Stuttgart",
-      "marketIds": [
-        "488"
-      ],
-      "bestMarketId": "488",
-      "bestLabels": null,
-      "keywords": [
-        "bayern nchen",
-        "nchen vfb",
-        "vfb stuttgart",
-        "bayern nchen vfb",
-        "nchen vfb stuttgart"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "3894fba3",
-      "sigFull": "3894fba3",
-      "sigCore": "3707babc",
-      "reused": false
-    },
-    "477": {
-      "title": "Cremonese vs Torino",
-      "marketIds": [
-        "477"
-      ],
-      "bestMarketId": "477",
-      "bestLabels": null,
-      "keywords": [
-        "cremonese torino"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "78ba8daf",
-      "sigFull": "78ba8daf",
-      "sigCore": "aafc61b2",
-      "reused": false
-    },
-    "486": {
-      "title": "Metz vs Paris FC",
-      "marketIds": [
-        "486"
-      ],
-      "bestMarketId": "486",
-      "bestLabels": null,
-      "keywords": [
-        "metz paris"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "6d343d67",
-      "sigFull": "6d343d67",
-      "sigCore": "a9baa3de",
-      "reused": false
-    },
-    "489": {
-      "title": "Pisa vs Genoa",
-      "marketIds": [
-        "489"
-      ],
-      "bestMarketId": "489",
-      "bestLabels": null,
-      "keywords": [
-        "pisa genoa"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "89715d45",
-      "sigFull": "89715d45",
-      "sigCore": "76a3872d",
-      "reused": false
-    },
-    "490": {
-      "title": "Borussia Mönchengladbach vs FSV Mainz 05",
-      "marketIds": [
-        "490"
-      ],
-      "bestMarketId": "490",
-      "bestLabels": null,
-      "keywords": [
-        "borussia nchengladbach",
-        "nchengladbach fsv",
-        "fsv mainz",
-        "borussia nchengladbach fsv",
-        "nchengladbach fsv mainz"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "1da26b37",
-      "sigFull": "1da26b37",
-      "sigCore": "5e6e65e6",
-      "reused": false
-    },
-    "491": {
-      "title": "Juventus vs Bologna",
-      "marketIds": [
-        "491"
-      ],
-      "bestMarketId": "491",
-      "bestLabels": null,
-      "keywords": [
-        "juventus bologna"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "99772203",
-      "sigFull": "99772203",
-      "sigCore": "227ed77c",
-      "reused": false
-    },
-    "492": {
-      "title": "Paris Saint Germain vs Lyon",
-      "marketIds": [
-        "492"
-      ],
-      "bestMarketId": "492",
-      "bestLabels": null,
-      "keywords": [
-        "paris saint",
-        "saint germain",
-        "germain lyon",
-        "paris saint germain",
-        "saint germain lyon"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "9b19017d",
-      "sigFull": "9b19017d",
-      "sigCore": "2547d119",
-      "reused": false
-    },
     "493": {
       "title": "Lecce vs Fiorentina",
       "marketIds": [
@@ -799,42 +516,6 @@
       "sig": "4c61dc73",
       "sigFull": "4c61dc73",
       "sigCore": "c33d4924",
-      "reused": false
-    },
-    "487": {
-      "title": "Manchester City vs Arsenal",
-      "marketIds": [
-        "487"
-      ],
-      "bestMarketId": "487",
-      "bestLabels": null,
-      "keywords": [
-        "manchester city",
-        "city arsenal",
-        "manchester city arsenal"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "be1d5629",
-      "sigFull": "be1d5629",
-      "sigCore": "0f69835f",
-      "reused": false
-    },
-    "478": {
-      "title": "Everton vs Liverpool",
-      "marketIds": [
-        "478"
-      ],
-      "bestMarketId": "478",
-      "bestLabels": null,
-      "keywords": [
-        "everton liverpool"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "cbb8afd5",
-      "sigFull": "cbb8afd5",
-      "sigCore": "bce9c7b5",
       "reused": false
     },
     "511": {
@@ -6461,569 +6142,6 @@
         }
       ]
     },
-    "485": {
-      "title": "Strasbourg vs Rennes",
-      "url": "https://app.opinion.trade/market/485?ref=opinion_hud",
-      "yesTokenId": "43859379317952486598306767427527268346226764903035332308963112045583171614291",
-      "noTokenId": "16011660489570794498972473105175600346192507103010178231498899769003159761737",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "strasbourg",
-        "rennes",
-        "rc strasbourg",
-        "stade rennais",
-        "ligue 1",
-        "football",
-        "soccer",
-        "match",
-        "draw",
-        "tie",
-        "stade de la meinau",
-        "roazhon park",
-        "racing club",
-        "stade rennais fc",
-        "strasbourg rennes"
-      ],
-      "entities": [
-        "strasbourg",
-        "rennes"
-      ],
-      "entityGroups": [
-        [
-          "strasbourg",
-          "斯特拉斯堡"
-        ],
-        [
-          "rennes"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13307",
-          "title": "Strasbourg wins",
-          "yesTokenId": "82565703456840602336279622571617846430243947081700556766132583333144484716729",
-          "noTokenId": "93737711403352764619710827298410115479012714421220484583033936506179118573127"
-        },
-        {
-          "marketId": "13308",
-          "title": "Rennes wins",
-          "yesTokenId": "95438038693286225715895796092725530977216576641853766575570951944782063130046",
-          "noTokenId": "36440870075421686518584458053748387274136116734284993747338935298664277688407"
-        },
-        {
-          "marketId": "13309",
-          "title": "Draw",
-          "yesTokenId": "43859379317952486598306767427527268346226764903035332308963112045583171614291",
-          "noTokenId": "16011660489570794498972473105175600346192507103010178231498899769003159761737"
-        }
-      ]
-    },
-    "479": {
-      "title": "Nottingham Forest vs Burnley",
-      "url": "https://app.opinion.trade/market/479?ref=opinion_hud",
-      "yesTokenId": "12071676637629932587438408855957903249775395610925152300713566566564326934932",
-      "noTokenId": "20320849398753800628250954421739084412234356736578221455094532901163963028160",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "nottingham forest",
-        "forest burnley",
-        "nottingham forest burnley"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13289",
-          "title": "Nottingham Forest wins",
-          "yesTokenId": "12071676637629932587438408855957903249775395610925152300713566566564326934932",
-          "noTokenId": "20320849398753800628250954421739084412234356736578221455094532901163963028160"
-        },
-        {
-          "marketId": "13290",
-          "title": "Burnley wins",
-          "yesTokenId": "80056333053853728131860926676560080345927916919920376854956286560542430360112",
-          "noTokenId": "90619568091550352859011314302709223029954033712117545574865940262017017189878"
-        },
-        {
-          "marketId": "13291",
-          "title": "Draw",
-          "yesTokenId": "65035756707338101202275720121436390828247690628317414020655826371794632263933",
-          "noTokenId": "14649466270229538453283024173352477245300350987927061851427231376314683205281"
-        }
-      ]
-    },
-    "480": {
-      "title": "Aston Villa vs Sunderland",
-      "url": "https://app.opinion.trade/market/480?ref=opinion_hud",
-      "yesTokenId": "51232024713441767437413301629414162349480472453131234224134102131896240924683",
-      "noTokenId": "46477119172734053399269049992909313263274462200226069862517141703885108741547",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "aston villa",
-        "villa sunderland",
-        "aston villa sunderland"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13292",
-          "title": "Aston Villa wins",
-          "yesTokenId": "105621905110990110743229324444532559065353576336051714569636152716654680773722",
-          "noTokenId": "69502167076983828707735774931722467560524319922088529979331860298422694088434"
-        },
-        {
-          "marketId": "13293",
-          "title": "Sunderland wins",
-          "yesTokenId": "16277913981838537304254018974127279004323355120320301900354527998795508018584",
-          "noTokenId": "58480099083223747887160386659249310491686099141551266219096307865119849175147"
-        },
-        {
-          "marketId": "13294",
-          "title": "Draw",
-          "yesTokenId": "51232024713441767437413301629414162349480472453131234224134102131896240924683",
-          "noTokenId": "46477119172734053399269049992909313263274462200226069862517141703885108741547"
-        }
-      ]
-    },
-    "481": {
-      "title": "Hellas Verona vs AC Milan",
-      "url": "https://app.opinion.trade/market/481?ref=opinion_hud",
-      "yesTokenId": "69086175375236252480899996394940936617371914934723361564429799079681774301362",
-      "noTokenId": "71284303748379202901006484403427387284874644453038965661479176894652200234581",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "hellas verona",
-        "verona milan",
-        "hellas verona milan"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13295",
-          "title": "Hellas Verona wins",
-          "yesTokenId": "56910500484608218134466706601145041029315195387206785435138496173258361987397",
-          "noTokenId": "51481057527301705709177329795893753255816270106500686757060034889989792311422"
-        },
-        {
-          "marketId": "13296",
-          "title": "AC Milan wins",
-          "yesTokenId": "18997646564528481936657748785451299648550187008374123205502483411866775250145",
-          "noTokenId": "35976422396026308961335547038528459643116134632603065270069300817886269087294"
-        },
-        {
-          "marketId": "13297",
-          "title": "Draw",
-          "yesTokenId": "69086175375236252480899996394940936617371914934723361564429799079681774301362",
-          "noTokenId": "71284303748379202901006484403427387284874644453038965661479176894652200234581"
-        }
-      ]
-    },
-    "482": {
-      "title": "Monaco vs Auxerre",
-      "url": "https://app.opinion.trade/market/482?ref=opinion_hud",
-      "yesTokenId": "21144049866372937630672165379979287474016475859816464238565700822306199348300",
-      "noTokenId": "8477022753376462637086504167472587722937054744742157615372632083414692262750",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "monaco auxerre"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13298",
-          "title": "Monaco wins",
-          "yesTokenId": "107522876567492532233062060027957318272942802363352979298012275844739009143886",
-          "noTokenId": "58216372521894205752778562474766225652550587560793743536748380539668359039863"
-        },
-        {
-          "marketId": "13299",
-          "title": "Auxerre wins",
-          "yesTokenId": "21818295343329693200375779152292832923766924902580307250351354692146159345159",
-          "noTokenId": "50799779433608140482403765586695431630984610651835029983782800600873819366763"
-        },
-        {
-          "marketId": "13300",
-          "title": "Draw",
-          "yesTokenId": "21144049866372937630672165379979287474016475859816464238565700822306199348300",
-          "noTokenId": "8477022753376462637086504167472587722937054744742157615372632083414692262750"
-        }
-      ]
-    },
-    "483": {
-      "title": "SC Freiburg vs 1. FC Heidenheim",
-      "url": "https://app.opinion.trade/market/483?ref=opinion_hud",
-      "yesTokenId": "9191967551741964651874012805530419821136746221501902515004244521438890897858",
-      "noTokenId": "87759793666631923645887609866886964311687896817416648032152006583218547864956",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "freiburg heidenheim"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13301",
-          "title": "SC Freiburg wins",
-          "yesTokenId": "83944474235169198229705857977718844111780657908846255021042066386076025455108",
-          "noTokenId": "109074119818374732782393521864644480016191154819302837532263281399056450780184"
-        },
-        {
-          "marketId": "13302",
-          "title": "1. FC Heidenheim wins",
-          "yesTokenId": "91552314525430567462296725616636823602051967811683983221416148696009153471320",
-          "noTokenId": "62520585182038539852717076678161197633249525653379605102447182347738816053520"
-        },
-        {
-          "marketId": "13303",
-          "title": "Draw",
-          "yesTokenId": "9191967551741964651874012805530419821136746221501902515004244521438890897858",
-          "noTokenId": "87759793666631923645887609866886964311687896817416648032152006583218547864956"
-        }
-      ]
-    },
-    "484": {
-      "title": "Nantes vs Stade Brestois 29",
-      "url": "https://app.opinion.trade/market/484?ref=opinion_hud",
-      "yesTokenId": "10799624638263175813637735263486556289858783099946858641959654937531729976901",
-      "noTokenId": "47829740330120740287831628363841038954030692763109481956246549035827674857773",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "nantes stade",
-        "stade brestois",
-        "nantes stade brestois"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13304",
-          "title": "Nantes wins",
-          "yesTokenId": "93678548136563587221293693459952618966671624463335789657630179932013317234395",
-          "noTokenId": "102588206323488254314329778252857266823112840996258656949748790448929670596474"
-        },
-        {
-          "marketId": "13305",
-          "title": "Stade Brestois 29 wins",
-          "yesTokenId": "51003085029498511558696795237777182058168864729040535599288184381426159137071",
-          "noTokenId": "101496395645533482082578990373778876690408623439582769805341182932007053949832"
-        },
-        {
-          "marketId": "13306",
-          "title": "Draw",
-          "yesTokenId": "10799624638263175813637735263486556289858783099946858641959654937531729976901",
-          "noTokenId": "47829740330120740287831628363841038954030692763109481956246549035827674857773"
-        }
-      ]
-    },
-    "488": {
-      "title": "Bayern München vs VfB Stuttgart",
-      "url": "https://app.opinion.trade/market/488?ref=opinion_hud",
-      "yesTokenId": "47147696186951641628785674515100725767640801767642019327908629212302258364441",
-      "noTokenId": "3739938769190378793403785975067239441975619070767051627288205750030664472115",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bayern nchen",
-        "nchen vfb",
-        "vfb stuttgart",
-        "bayern nchen vfb",
-        "nchen vfb stuttgart"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13316",
-          "title": "Bayern München wins",
-          "yesTokenId": "113408786193727902734574113168306966939115169821258810358650173701474024152987",
-          "noTokenId": "43108501951883978539108274190787445412019858434217727946592244239469513137733"
-        },
-        {
-          "marketId": "13317",
-          "title": "VfB Stuttgart wins",
-          "yesTokenId": "47147696186951641628785674515100725767640801767642019327908629212302258364441",
-          "noTokenId": "3739938769190378793403785975067239441975619070767051627288205750030664472115"
-        },
-        {
-          "marketId": "13318",
-          "title": "Draw",
-          "yesTokenId": "27196214141034915751046082278922233180368115839069368905857554612191692471249",
-          "noTokenId": "91551257147420380082262492319726619756954189598708752738504076852214732080822"
-        }
-      ]
-    },
-    "477": {
-      "title": "Cremonese vs Torino",
-      "url": "https://app.opinion.trade/market/477?ref=opinion_hud",
-      "yesTokenId": "18932550252673461649525705024828082908436185722822119329606589788684487371689",
-      "noTokenId": "77570797076667113783106509019980697701930031629860643052118566874013173187191",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "cremonese torino"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13283",
-          "title": "Cremonese wins",
-          "yesTokenId": "108149591426795013717489750361441935621208368966994108146612752322153648569098",
-          "noTokenId": "60057286725511789878332017680165460440346406668440236132552809004325586806689"
-        },
-        {
-          "marketId": "13284",
-          "title": "Torino wins",
-          "yesTokenId": "48949912680627243887539238088217904306726500292549371956573782769602821393035",
-          "noTokenId": "85049816799741386932579113159943897708165969063224519695401650249954938257713"
-        },
-        {
-          "marketId": "13285",
-          "title": "Draw",
-          "yesTokenId": "18932550252673461649525705024828082908436185722822119329606589788684487371689",
-          "noTokenId": "77570797076667113783106509019980697701930031629860643052118566874013173187191"
-        }
-      ]
-    },
-    "486": {
-      "title": "Metz vs Paris FC",
-      "url": "https://app.opinion.trade/market/486?ref=opinion_hud",
-      "yesTokenId": "73183684911711302133546366231732866859974480159928406536494514750446125501481",
-      "noTokenId": "68888769314998915716501116404442167230197676301107470205649384623978380397973",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "metz paris"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13310",
-          "title": "Metz wins",
-          "yesTokenId": "58615694135683736481404298385982899654867302709669018189634749293018363920022",
-          "noTokenId": "7499428859224363317714385804514381294759906624046278874510029620805516273304"
-        },
-        {
-          "marketId": "13311",
-          "title": "Paris FC wins",
-          "yesTokenId": "73183684911711302133546366231732866859974480159928406536494514750446125501481",
-          "noTokenId": "68888769314998915716501116404442167230197676301107470205649384623978380397973"
-        },
-        {
-          "marketId": "13312",
-          "title": "Draw",
-          "yesTokenId": "38344310164981511430583933943378632847968611974700152458778876367720236018112",
-          "noTokenId": "69833693125064101237023899726309271681353180865414975055184524108073741760698"
-        }
-      ]
-    },
-    "489": {
-      "title": "Pisa vs Genoa",
-      "url": "https://app.opinion.trade/market/489?ref=opinion_hud",
-      "yesTokenId": "15073778240251645786828957551622950812081172603151700481287334799657367294971",
-      "noTokenId": "7318787757452129037259654340394386448922922799186933017863578800537160778261",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "pisa genoa"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13319",
-          "title": "Pisa wins",
-          "yesTokenId": "67838701321408432749200719145566033905225070025897778122657576066883585265509",
-          "noTokenId": "81933501031101530714254353330840964473465498521623491050431099218348532432186"
-        },
-        {
-          "marketId": "13320",
-          "title": "Genoa wins",
-          "yesTokenId": "105865058406539828562667088759198694450709272053067045258592750434308587223367",
-          "noTokenId": "14134889554407635915600537079925400858433118963446174455019953712480715580850"
-        },
-        {
-          "marketId": "13321",
-          "title": "Draw",
-          "yesTokenId": "15073778240251645786828957551622950812081172603151700481287334799657367294971",
-          "noTokenId": "7318787757452129037259654340394386448922922799186933017863578800537160778261"
-        }
-      ]
-    },
-    "490": {
-      "title": "Borussia Mönchengladbach vs FSV Mainz 05",
-      "url": "https://app.opinion.trade/market/490?ref=opinion_hud",
-      "yesTokenId": "40046193961617397916536783813319235394809865713907801751836111891963004005898",
-      "noTokenId": "63194524350958154278261863327184623244419857982955168716244279252063962006071",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "borussia nchengladbach",
-        "nchengladbach fsv",
-        "fsv mainz",
-        "borussia nchengladbach fsv",
-        "nchengladbach fsv mainz"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13322",
-          "title": "Borussia Mönchengladbach wins",
-          "yesTokenId": "74658876883556826182132542111953428550052250403098502492966485150426105412858",
-          "noTokenId": "67221056732283843356588945565273245826256942682733528024943898804736724860494"
-        },
-        {
-          "marketId": "13323",
-          "title": "FSV Mainz 05 wins",
-          "yesTokenId": "75526242321441040987047209799258604559189386475063169728894083532332816704428",
-          "noTokenId": "11269024200555424506035287352043469671370959801502483846070528527799795703454"
-        },
-        {
-          "marketId": "13324",
-          "title": "Draw",
-          "yesTokenId": "40046193961617397916536783813319235394809865713907801751836111891963004005898",
-          "noTokenId": "63194524350958154278261863327184623244419857982955168716244279252063962006071"
-        }
-      ]
-    },
-    "491": {
-      "title": "Juventus vs Bologna",
-      "url": "https://app.opinion.trade/market/491?ref=opinion_hud",
-      "yesTokenId": "22155989114652312732582728347286092607169477636390053930537674439095108986627",
-      "noTokenId": "12772260067889739664204019479502367460437436142503845398380557582589286295248",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "juventus bologna"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13325",
-          "title": "Juventus wins",
-          "yesTokenId": "62662396554807268751944819749789980353601193356676048325691205382234231167992",
-          "noTokenId": "64564309907337962563339921956256704531393968643285190794360417779417843280561"
-        },
-        {
-          "marketId": "13326",
-          "title": "Bologna wins",
-          "yesTokenId": "55459396308569843378739333027693013817249860976779706088751042415733557587577",
-          "noTokenId": "31364939885503876315428669534912817271556207415552451892489390360612479218800"
-        },
-        {
-          "marketId": "13327",
-          "title": "Draw",
-          "yesTokenId": "22155989114652312732582728347286092607169477636390053930537674439095108986627",
-          "noTokenId": "12772260067889739664204019479502367460437436142503845398380557582589286295248"
-        }
-      ]
-    },
-    "492": {
-      "title": "Paris Saint Germain vs Lyon",
-      "url": "https://app.opinion.trade/market/492?ref=opinion_hud",
-      "yesTokenId": "35714647658985733817187811632483285000112317913240707226858032720519205076634",
-      "noTokenId": "44980903237444409503166825011464088160041627227895585733468059768569589281308",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "paris saint",
-        "saint germain",
-        "germain lyon",
-        "paris saint germain",
-        "saint germain lyon"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13328",
-          "title": "Paris Saint Germain wins",
-          "yesTokenId": "60423541452547832963861645989421030756780233773453842781883066197453507851326",
-          "noTokenId": "57528098018656910345472282798548131886999905849073311373819191315709194658987"
-        },
-        {
-          "marketId": "13329",
-          "title": "Lyon wins",
-          "yesTokenId": "2368539963584282487981895886390478506162642206254239870907613972022171767618",
-          "noTokenId": "32268746657483481646778174032842074736229818239910223225388238222652116152086"
-        },
-        {
-          "marketId": "13330",
-          "title": "Draw",
-          "yesTokenId": "35714647658985733817187811632483285000112317913240707226858032720519205076634",
-          "noTokenId": "44980903237444409503166825011464088160041627227895585733468059768569589281308"
-        }
-      ]
-    },
     "493": {
       "title": "Lecce vs Fiorentina",
       "url": "https://app.opinion.trade/market/493?ref=opinion_hud",
@@ -7175,82 +6293,6 @@
           "title": "Draw",
           "yesTokenId": "54845250778895946718773341935841075931752313592677256171386434425011314315019",
           "noTokenId": "79378559992765304791339791865208998426343967220295645565412682736842141640004"
-        }
-      ]
-    },
-    "487": {
-      "title": "Manchester City vs Arsenal",
-      "url": "https://app.opinion.trade/market/487?ref=opinion_hud",
-      "yesTokenId": "113265780271371846312421408674657661207286125898056340586889254412477830245933",
-      "noTokenId": "58558769068539702377536283417667857733681041668912688232225793578454012326161",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "manchester city",
-        "city arsenal",
-        "manchester city arsenal"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13313",
-          "title": "Manchester City wins",
-          "yesTokenId": "41352594750544571257120854785651069777531917685446088518332762406304261192589",
-          "noTokenId": "61084069099101154717545048778628416451218376110975093869828064263634658837859"
-        },
-        {
-          "marketId": "13314",
-          "title": "Arsenal wins",
-          "yesTokenId": "7022920910926769438122930514345904129706125111914669269191444436283276792405",
-          "noTokenId": "91901851480207800786806235070456573947791655445714382627964117710448763960613"
-        },
-        {
-          "marketId": "13315",
-          "title": "Draw",
-          "yesTokenId": "113265780271371846312421408674657661207286125898056340586889254412477830245933",
-          "noTokenId": "58558769068539702377536283417667857733681041668912688232225793578454012326161"
-        }
-      ]
-    },
-    "478": {
-      "title": "Everton vs Liverpool",
-      "url": "https://app.opinion.trade/market/478?ref=opinion_hud",
-      "yesTokenId": "23764993527625609557371441522217982451332984720964902210966465144225606320709",
-      "noTokenId": "79472882083571045656621432446490968345383564207343590883675098580955994120826",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "everton liverpool"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13286",
-          "title": "Everton wins",
-          "yesTokenId": "54972122713222904120761419328917650280336023961812127519030049409079725116969",
-          "noTokenId": "22500402400179512842562178747561693842540816992974406463568661979144425218071"
-        },
-        {
-          "marketId": "13287",
-          "title": "Liverpool wins",
-          "yesTokenId": "23764993527625609557371441522217982451332984720964902210966465144225606320709",
-          "noTokenId": "79472882083571045656621432446490968345383564207343590883675098580955994120826"
-        },
-        {
-          "marketId": "13288",
-          "title": "Draw",
-          "yesTokenId": "12672155691671495414772375434459672899041414884517953010628418008264088137102",
-          "noTokenId": "41825395752899977051208152950305968476111605720481782503195678223634750153952"
         }
       ]
     },
@@ -11979,42 +11021,6 @@
       },
       "type": "binary"
     },
-    "14073": {
-      "title": "BNB Up or Down - Hourly (Apr 20, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14073?ref=opinion_hud",
-      "yesTokenId": "107889304646781262582625095428103436144870461395209262277719915489489184038152",
-      "noTokenId": "35536827004262514605686280114715223645296765101717946381152923622694049711083",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14074": {
-      "title": "BTC Up or Down - Hourly (Apr 20, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14074?ref=opinion_hud",
-      "yesTokenId": "52225055620898578541506289496228496899017369660250160217944253522234991205785",
-      "noTokenId": "47773045641863060592117680036555828809498358516727020867049380076952344547141",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14075": {
-      "title": "ETH Up or Down - Hourly (Apr 20, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14075?ref=opinion_hud",
-      "yesTokenId": "56424538821956094403218475638693462344269518125519935818125679963528856065123",
-      "noTokenId": "43304545113711434911769025677062172508577195278784886660634081506367995350964",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "14088": {
       "title": "Los Angeles Lakers vs Houston Rockets",
       "url": "https://app.opinion.trade/market/14088?ref=opinion_hud",
@@ -12459,12 +11465,6 @@
     "armageddon": [
       "2670"
     ],
-    "aston villa": [
-      "480"
-    ],
-    "aston villa sunderland": [
-      "480"
-    ],
     "ath": [
       "3364",
       "3367",
@@ -12538,12 +11538,6 @@
     ],
     "bayer leverkusen": [
       "599"
-    ],
-    "bayern nchen": [
-      "488"
-    ],
-    "bayern nchen vfb": [
-      "488"
     ],
     "bear market": [
       "3265"
@@ -12657,12 +11651,6 @@
     ],
     "bombing": [
       "3039"
-    ],
-    "borussia nchengladbach": [
-      "490"
-    ],
-    "borussia nchengladbach fsv": [
-      "490"
     ],
     "bosnia herzegovina": [
       "539",
@@ -12818,9 +11806,6 @@
     "citizens": [
       "501"
     ],
-    "city arsenal": [
-      "487"
-    ],
     "clarets": [
       "501"
     ],
@@ -12905,9 +11890,6 @@
     ],
     "creed": [
       "3158"
-    ],
-    "cremonese torino": [
-      "477"
     ],
     "critical": [
       "3357"
@@ -13067,7 +12049,6 @@
       "3360"
     ],
     "draw": [
-      "485",
       "497",
       "499",
       "500",
@@ -13204,9 +12185,6 @@
     "ethereum all time": [
       "3364"
     ],
-    "everton liverpool": [
-      "478"
-    ],
     "evm": [
       "1721"
     ],
@@ -13287,7 +12265,6 @@
       "3360"
     ],
     "football": [
-      "485",
       "497",
       "498",
       "499",
@@ -13297,9 +12274,6 @@
       "503",
       "504",
       "505"
-    ],
-    "forest burnley": [
-      "479"
     ],
     "founder": [
       "3369"
@@ -13312,12 +12286,6 @@
     ],
     "franjiverdes": [
       "502"
-    ],
-    "freiburg heidenheim": [
-      "483"
-    ],
-    "fsv mainz": [
-      "490"
     ],
     "fugitive": [
       "1856"
@@ -13356,9 +12324,6 @@
     ],
     "genesis": [
       "3365"
-    ],
-    "germain lyon": [
-      "492"
     ],
     "germain nantes": [
       "505"
@@ -13449,14 +12414,10 @@
       "3360"
     ],
     "hellas verona": [
-      "481",
       "603"
     ],
     "hellas verona lecce": [
       "603"
-    ],
-    "hellas verona milan": [
-      "481"
     ],
     "hellfire club": [
       "3224"
@@ -13644,9 +12605,6 @@
     "june 30th": [
       "3508"
     ],
-    "juventus bologna": [
-      "491"
-    ],
     "k-pop": [
       "2178"
     ],
@@ -13734,7 +12692,6 @@
       "500"
     ],
     "ligue 1": [
-      "485",
       "505"
     ],
     "listing": [
@@ -13781,11 +12738,7 @@
       "501"
     ],
     "manchester city": [
-      "487",
       "501"
-    ],
-    "manchester city arsenal": [
-      "487"
     ],
     "manchester united": [
       "622"
@@ -13823,7 +12776,6 @@
       "3158"
     ],
     "match": [
-      "485",
       "497",
       "498",
       "499",
@@ -13868,9 +12820,6 @@
     "messiah": [
       "2670"
     ],
-    "metz paris": [
-      "486"
-    ],
     "mexico south": [
       "541"
     ],
@@ -13906,9 +12855,6 @@
     ],
     "missile": [
       "3039"
-    ],
-    "monaco auxerre": [
-      "482"
     ],
     "monad": [
       "1721"
@@ -13967,12 +12913,6 @@
     "nantes": [
       "505"
     ],
-    "nantes stade": [
-      "484"
-    ],
-    "nantes stade brestois": [
-      "484"
-    ],
     "napoli cremonese": [
       "511"
     ],
@@ -13984,18 +12924,6 @@
     ],
     "nber": [
       "3265"
-    ],
-    "nchen vfb": [
-      "488"
-    ],
-    "nchen vfb stuttgart": [
-      "488"
-    ],
-    "nchengladbach fsv": [
-      "490"
-    ],
-    "nchengladbach fsv mainz": [
-      "490"
     ],
     "negative growth": [
       "3265"
@@ -14050,11 +12978,7 @@
       "556"
     ],
     "nottingham forest": [
-      "479",
       "509"
-    ],
-    "nottingham forest burnley": [
-      "479"
     ],
     "number one pick": [
       "3072"
@@ -14120,12 +13044,10 @@
       "620"
     ],
     "paris saint": [
-      "492",
       "505",
       "605"
     ],
     "paris saint germain": [
-      "492",
       "505",
       "605"
     ],
@@ -14149,9 +13071,6 @@
     ],
     "pick 2026 nfl": [
       "3072"
-    ],
-    "pisa genoa": [
-      "489"
     ],
     "portugal congo": [
       "534"
@@ -14238,9 +13157,6 @@
     "quarterback": [
       "3072"
     ],
-    "racing club": [
-      "485"
-    ],
     "raise": [
       "3505",
       "3525"
@@ -14255,9 +13171,6 @@
     ],
     "rc celta": [
       "504"
-    ],
-    "rc strasbourg": [
-      "485"
     ],
     "real betis": [
       "499",
@@ -14327,9 +13240,6 @@
     ],
     "removed from office": [
       "3062"
-    ],
-    "rennes": [
-      "485"
     ],
     "repackage": [
       "2178"
@@ -14416,9 +13326,6 @@
     "rm vs ala": [
       "498"
     ],
-    "roazhon park": [
-      "485"
-    ],
     "rollup": [
       "3366"
     ],
@@ -14440,12 +13347,8 @@
       "3055"
     ],
     "saint germain": [
-      "492",
       "505",
       "605"
-    ],
-    "saint germain lyon": [
-      "492"
     ],
     "saint germain nantes": [
       "505"
@@ -14568,7 +13471,6 @@
       "3360"
     ],
     "soccer": [
-      "485",
       "497",
       "498",
       "499",
@@ -14620,20 +13522,10 @@
       "3359"
     ],
     "stade brestois": [
-      "484",
       "512"
     ],
     "stade brestois lens": [
       "512"
-    ],
-    "stade de la meinau": [
-      "485"
-    ],
-    "stade rennais": [
-      "485"
-    ],
-    "stade rennais fc": [
-      "485"
     ],
     "stagnation": [
       "3265"
@@ -14662,12 +13554,6 @@
       "3222",
       "3223",
       "3224"
-    ],
-    "strasbourg": [
-      "485"
-    ],
-    "strasbourg rennes": [
-      "485"
     ],
     "streaming": [
       "2398"
@@ -14788,7 +13674,6 @@
       "3362"
     ],
     "tie": [
-      "485",
       "497",
       "499",
       "500",
@@ -14980,23 +13865,14 @@
     "verona lecce": [
       "603"
     ],
-    "verona milan": [
-      "481"
-    ],
     "versus": [
       "499"
-    ],
-    "vfb stuttgart": [
-      "488"
     ],
     "vice president": [
       "3062"
     ],
     "vigo": [
       "504"
-    ],
-    "villa sunderland": [
-      "480"
     ],
     "volatility": [
       "3367"
@@ -15130,9 +14006,6 @@
     "微策略": [
       "3257"
     ],
-    "斯特拉斯堡": [
-      "485"
-    ],
     "最高法院": [
       "1546"
     ],
@@ -15246,12 +14119,6 @@
     "argentina austria": [
       "554"
     ],
-    "aston villa": [
-      "480"
-    ],
-    "aston villa sunderland": [
-      "480"
-    ],
     "athletic club": [
       "495"
     ],
@@ -15294,12 +14161,6 @@
     "bayer leverkusen": [
       "599"
     ],
-    "bayern nchen": [
-      "488"
-    ],
-    "bayern nchen vfb": [
-      "488"
-    ],
     "belgium iran": [
       "551"
     ],
@@ -15323,12 +14184,6 @@
     ],
     "bologna roma": [
       "602"
-    ],
-    "borussia nchengladbach": [
-      "490"
-    ],
-    "borussia nchengladbach fsv": [
-      "490"
     ],
     "bosnia herzegovina": [
       "539",
@@ -15399,9 +14254,6 @@
     "citizens": [
       "501"
     ],
-    "city arsenal": [
-      "487"
-    ],
     "clarets": [
       "501"
     ],
@@ -15422,9 +14274,6 @@
     ],
     "congo uzbekistan": [
       "583"
-    ],
-    "cremonese torino": [
-      "477"
     ],
     "croatia ghana": [
       "580"
@@ -15452,7 +14301,6 @@
       "538"
     ],
     "draw": [
-      "485",
       "497",
       "499",
       "500",
@@ -15499,9 +14347,6 @@
     "espanyol levante": [
       "623"
     ],
-    "everton liverpool": [
-      "478"
-    ],
     "fc barcelona": [
       "504"
     ],
@@ -15515,7 +14360,6 @@
       "505"
     ],
     "football": [
-      "485",
       "497",
       "498",
       "499",
@@ -15526,9 +14370,6 @@
       "504",
       "505"
     ],
-    "forest burnley": [
-      "479"
-    ],
     "france iraq": [
       "555"
     ],
@@ -15537,12 +14378,6 @@
     ],
     "franjiverdes": [
       "502"
-    ],
-    "freiburg heidenheim": [
-      "483"
-    ],
-    "fsv mainz": [
-      "490"
     ],
     "full time": [
       "505"
@@ -15553,9 +14388,6 @@
       "501",
       "502",
       "504"
-    ],
-    "germain lyon": [
-      "492"
     ],
     "germain nantes": [
       "505"
@@ -15594,14 +14426,10 @@
       "600"
     ],
     "hellas verona": [
-      "481",
       "603"
     ],
     "hellas verona lecce": [
       "603"
-    ],
-    "hellas verona milan": [
-      "481"
     ],
     "herzegovina qatar": [
       "563"
@@ -15633,9 +14461,6 @@
     ],
     "jordan argentina": [
       "585"
-    ],
-    "juventus bologna": [
-      "491"
     ],
     "la liga": [
       "498",
@@ -15669,7 +14494,6 @@
       "500"
     ],
     "ligue 1": [
-      "485",
       "505"
     ],
     "los blancos": [
@@ -15692,11 +14516,7 @@
       "501"
     ],
     "manchester city": [
-      "487",
       "501"
-    ],
-    "manchester city arsenal": [
-      "487"
     ],
     "manchester united": [
       "622"
@@ -15708,7 +14528,6 @@
       "621"
     ],
     "match": [
-      "485",
       "497",
       "498",
       "499",
@@ -15725,17 +14544,11 @@
     "mendizorroza": [
       "498"
     ],
-    "metz paris": [
-      "486"
-    ],
     "mexico south": [
       "541"
     ],
     "mexico south korea": [
       "541"
-    ],
-    "monaco auxerre": [
-      "482"
     ],
     "morocco haiti": [
       "564"
@@ -15743,26 +14556,8 @@
     "nantes": [
       "505"
     ],
-    "nantes stade": [
-      "484"
-    ],
-    "nantes stade brestois": [
-      "484"
-    ],
     "napoli cremonese": [
       "511"
-    ],
-    "nchen vfb": [
-      "488"
-    ],
-    "nchen vfb stuttgart": [
-      "488"
-    ],
-    "nchengladbach fsv": [
-      "490"
-    ],
-    "nchengladbach fsv mainz": [
-      "490"
     ],
     "netherlands sweden": [
       "546"
@@ -15785,11 +14580,7 @@
       "556"
     ],
     "nottingham forest": [
-      "479",
       "509"
-    ],
-    "nottingham forest burnley": [
-      "479"
     ],
     "palace west": [
       "494"
@@ -15810,20 +14601,15 @@
       "620"
     ],
     "paris saint": [
-      "492",
       "505",
       "605"
     ],
     "paris saint germain": [
-      "492",
       "505",
       "605"
     ],
     "parma pisa": [
       "601"
-    ],
-    "pisa genoa": [
-      "489"
     ],
     "portugal congo": [
       "534"
@@ -15842,14 +14628,8 @@
     "psg": [
       "505"
     ],
-    "racing club": [
-      "485"
-    ],
     "rc celta": [
       "504"
-    ],
-    "rc strasbourg": [
-      "485"
     ],
     "real betis": [
       "499",
@@ -15879,9 +14659,6 @@
       "500",
       "505"
     ],
-    "rennes": [
-      "485"
-    ],
     "republic mexico": [
       "566"
     ],
@@ -15903,16 +14680,9 @@
     "rm vs ala": [
       "498"
     ],
-    "roazhon park": [
-      "485"
-    ],
     "saint germain": [
-      "492",
       "505",
       "605"
-    ],
-    "saint germain lyon": [
-      "492"
     ],
     "saint germain nantes": [
       "505"
@@ -15944,7 +14714,6 @@
       "574"
     ],
     "soccer": [
-      "485",
       "497",
       "498",
       "499",
@@ -15981,26 +14750,10 @@
       "503"
     ],
     "stade brestois": [
-      "484",
       "512"
     ],
     "stade brestois lens": [
       "512"
-    ],
-    "stade de la meinau": [
-      "485"
-    ],
-    "stade rennais": [
-      "485"
-    ],
-    "stade rennais fc": [
-      "485"
-    ],
-    "strasbourg": [
-      "485"
-    ],
-    "strasbourg rennes": [
-      "485"
     ],
     "sunderland nottingham": [
       "509"
@@ -16018,7 +14771,6 @@
       "562"
     ],
     "tie": [
-      "485",
       "497",
       "499",
       "500",
@@ -16071,20 +14823,11 @@
     "verona lecce": [
       "603"
     ],
-    "verona milan": [
-      "481"
-    ],
     "versus": [
       "499"
     ],
-    "vfb stuttgart": [
-      "488"
-    ],
     "vigo": [
       "504"
-    ],
-    "villa sunderland": [
-      "480"
     ],
     "west ham": [
       "494"
@@ -16127,9 +14870,6 @@
     ],
     "布莱顿": [
       "497"
-    ],
-    "斯特拉斯堡": [
-      "485"
     ],
     "皇家社会": [
       "503"
