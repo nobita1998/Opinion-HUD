@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-20 00:55:19 UTC+8",
+    "generatedAt": "2026-04-20 11:48:15 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 425,
-      "markets": 456,
-      "keywords": 909,
+      "kept": 434,
+      "markets": 466,
+      "keywords": 915,
       "events": {
-        "events": 89
+        "events": 90
       },
       "skipped": {
-        "statusEnum": 0,
+        "statusEnum": 55,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 575,
+        "cutoff_expired": 511,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -29,11 +29,11 @@
         "fullAiRefresh": false,
         "onlyAiForNew": true,
         "reused": 9,
-        "regenerated_empty_entitygroups": 80,
-        "calls": 80,
-        "retries": 80,
+        "regenerated_empty_entitygroups": 77,
+        "calls": 81,
+        "retries": 81,
         "fallback": 0,
-        "empty": 80,
+        "empty": 81,
         "non_empty": 0,
         "errors": 0
       }
@@ -2138,6 +2138,76 @@
       "sig": "34d75651",
       "sigFull": "34d75651",
       "sigCore": "795a93b3",
+      "reused": false
+    },
+    "623": {
+      "title": "Espanyol vs Levante",
+      "marketIds": [
+        "623"
+      ],
+      "bestMarketId": "623",
+      "bestLabels": null,
+      "keywords": [
+        "espanyol levante"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "f25e06eb",
+      "sigFull": "f25e06eb",
+      "sigCore": "15fe8670",
+      "reused": false
+    },
+    "622": {
+      "title": "Manchester United vs Brentford",
+      "marketIds": [
+        "622"
+      ],
+      "bestMarketId": "622",
+      "bestLabels": null,
+      "keywords": [
+        "manchester united",
+        "united brentford",
+        "manchester united brentford"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "36c4cd49",
+      "sigFull": "36c4cd49",
+      "sigCore": "7280984f",
+      "reused": false
+    },
+    "624": {
+      "title": "Cagliari vs Atalanta",
+      "marketIds": [
+        "624"
+      ],
+      "bestMarketId": "624",
+      "bestLabels": null,
+      "keywords": [
+        "cagliari atalanta"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "acae74db",
+      "sigFull": "acae74db",
+      "sigCore": "eef652d8",
+      "reused": false
+    },
+    "625": {
+      "title": "Lazio vs Udinese",
+      "marketIds": [
+        "625"
+      ],
+      "bestMarketId": "625",
+      "bestLabels": null,
+      "keywords": [
+        "lazio udinese"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "67618a2f",
+      "sigFull": "67618a2f",
+      "sigCore": "2670ed82",
       "reused": false
     }
   },
@@ -5807,18 +5877,6 @@
       },
       "type": "binary"
     },
-    "13191": {
-      "title": "Portland Trail Blazers vs San Antonio Spurs",
-      "url": "https://app.opinion.trade/market/13191?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "502": {
       "title": "Elche vs Atletico Madrid",
       "url": "https://app.opinion.trade/market/502?ref=opinion_hud",
@@ -7195,18 +7253,6 @@
           "noTokenId": "41825395752899977051208152950305968476111605720481782503195678223634750153952"
         }
       ]
-    },
-    "13207": {
-      "title": "Philadelphia 76ers vs Boston Celtics",
-      "url": "https://app.opinion.trade/market/13207?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
     },
     "13399": {
       "title": "Draw",
@@ -11223,18 +11269,6 @@
       },
       "type": "binary"
     },
-    "13906": {
-      "title": "Orlando Magic vs Detroit Pistons",
-      "url": "https://app.opinion.trade/market/13906?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "13907": {
       "title": "Orlando Magic vs Detroit Pistons",
       "url": "https://app.opinion.trade/market/13907?ref=opinion_hud",
@@ -11274,18 +11308,6 @@
     "13910": {
       "title": "Oklahoma City Thunder vs Phoenix Suns",
       "url": "https://app.opinion.trade/market/13910?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "13905": {
-      "title": "Phoenix Suns vs Oklahoma City Thunder",
-      "url": "https://app.opinion.trade/market/13905?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -11885,11 +11907,83 @@
         }
       ]
     },
-    "14042": {
-      "title": "ETH Up or Down - Hourly (Apr 19, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14042?ref=opinion_hud",
-      "yesTokenId": "11819873057441549301026923746260399376360396236580061968347245701796436809587",
-      "noTokenId": "102662880744735647211377568171055958556058386100995202011332128773517687156508",
+    "14108": {
+      "title": "LPL Split 2: WBG vs WE (Apr. 22 5:00AM ET)",
+      "url": "https://app.opinion.trade/market/14108?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14104": {
+      "title": "EWC NA: C9 vs SEN (Apr. 21 5:00PM ET)",
+      "url": "https://app.opinion.trade/market/14104?ref=opinion_hud",
+      "yesTokenId": "113109032454549640223566828651158376788567744280683307413878129876889033870235",
+      "noTokenId": "8835204368819956392841688828754078872122501124405903843718756452469356362684",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "C9",
+        "noLabel": "SEN"
+      },
+      "type": "binary"
+    },
+    "14106": {
+      "title": "LCK 2026 Season: HLE vs NS (Apr. 22 6:00AM ET)",
+      "url": "https://app.opinion.trade/market/14106?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14107": {
+      "title": "LPL Split 2: NIP vs AL (Apr. 22 7:00AM ET)",
+      "url": "https://app.opinion.trade/market/14107?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14105": {
+      "title": "LCK 2026 Season: KT vs KRX (Apr. 22 4:00AM ET)",
+      "url": "https://app.opinion.trade/market/14105?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14103": {
+      "title": "EWC NA: LYON vs FLY (Apr. 21 2:00PM ET)",
+      "url": "https://app.opinion.trade/market/14103?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14073": {
+      "title": "BNB Up or Down - Hourly (Apr 20, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14073?ref=opinion_hud",
+      "yesTokenId": "107889304646781262582625095428103436144870461395209262277719915489489184038152",
+      "noTokenId": "35536827004262514605686280114715223645296765101717946381152923622694049711083",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -11897,11 +11991,11 @@
       },
       "type": "binary"
     },
-    "14040": {
-      "title": "BNB Up or Down - Hourly (Apr 19, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14040?ref=opinion_hud",
-      "yesTokenId": "114521716896854647901632610294795123474273945004720235940456419573618224346185",
-      "noTokenId": "105934318836557828839119977032528278760372430474287857984596328471393537136437",
+    "14074": {
+      "title": "BTC Up or Down - Hourly (Apr 20, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14074?ref=opinion_hud",
+      "yesTokenId": "52225055620898578541506289496228496899017369660250160217944253522234991205785",
+      "noTokenId": "47773045641863060592117680036555828809498358516727020867049380076952344547141",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -11909,17 +12003,215 @@
       },
       "type": "binary"
     },
-    "14041": {
-      "title": "BTC Up or Down - Hourly (Apr 19, 2026 17:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14041?ref=opinion_hud",
-      "yesTokenId": "48880367124033845419310357796936826712781422337612582157036167686761862558749",
-      "noTokenId": "49310366703411965094881305050006357385934711459186638543241706500560149818351",
+    "14075": {
+      "title": "ETH Up or Down - Hourly (Apr 20, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14075?ref=opinion_hud",
+      "yesTokenId": "56424538821956094403218475638693462344269518125519935818125679963528856065123",
+      "noTokenId": "43304545113711434911769025677062172508577195278784886660634081506367995350964",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
       },
       "type": "binary"
+    },
+    "14088": {
+      "title": "Los Angeles Lakers vs Houston Rockets",
+      "url": "https://app.opinion.trade/market/14088?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14089": {
+      "title": "Minnesota Timberwolves vs Denver Nuggets",
+      "url": "https://app.opinion.trade/market/14089?ref=opinion_hud",
+      "yesTokenId": "546679128529091015695823731930912737645095490346102711385557085025594006005",
+      "noTokenId": "82961980125297873466855097214777142062815445841019838517253682209014777534387",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Minnesota Timberwolves",
+        "noLabel": "Denver Nuggets"
+      },
+      "type": "binary"
+    },
+    "14090": {
+      "title": "Oklahoma City Thunder vs Phoenix Suns",
+      "url": "https://app.opinion.trade/market/14090?ref=opinion_hud",
+      "yesTokenId": "107024291977005866846228780392482770303302818281667103257484521471429220477312",
+      "noTokenId": "58534453710418693641774296208548021168631793357619789195308778857567482236772",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Oklahoma City Thunder",
+        "noLabel": "Phoenix Suns"
+      },
+      "type": "binary"
+    },
+    "14091": {
+      "title": "Detroit Pistons vs Orlando Magic",
+      "url": "https://app.opinion.trade/market/14091?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "623": {
+      "title": "Espanyol vs Levante",
+      "url": "https://app.opinion.trade/market/623?ref=opinion_hud",
+      "yesTokenId": "21278121285719329293992750450222280388988753846343105522605359537443092584705",
+      "noTokenId": "2770154730742159538121088718700127331969454911668260631672707610936408006649",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "espanyol levante"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "14079",
+          "title": "Espanyol wins",
+          "yesTokenId": "21278121285719329293992750450222280388988753846343105522605359537443092584705",
+          "noTokenId": "2770154730742159538121088718700127331969454911668260631672707610936408006649"
+        },
+        {
+          "marketId": "14080",
+          "title": "Levante wins",
+          "yesTokenId": "86850466069666128611309573619854148342434320842031764434625117287963498352657",
+          "noTokenId": "30602479155532009982385975339562235007902294794544704458504602282940902971056"
+        },
+        {
+          "marketId": "14081",
+          "title": "Draw",
+          "yesTokenId": "76657808007252058403433651917552579355294203616066501213854521733402213718032",
+          "noTokenId": "85664533863590867697876660330863153445943458389973778989107693350048184581561"
+        }
+      ]
+    },
+    "622": {
+      "title": "Manchester United vs Brentford",
+      "url": "https://app.opinion.trade/market/622?ref=opinion_hud",
+      "yesTokenId": "892224064837020252919915483990234003255463676374942051515003138361243961606",
+      "noTokenId": "70862102905592075841725193348234549303811673768910663041191931706847506740958",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "manchester united",
+        "united brentford",
+        "manchester united brentford"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "14076",
+          "title": "Manchester United wins",
+          "yesTokenId": "88578476548612974544331938182942118412771892467537363152195495556991943231335",
+          "noTokenId": "55307126446392090733742657640578919394825808829133543053696450113243056791009"
+        },
+        {
+          "marketId": "14077",
+          "title": "Brentford wins",
+          "yesTokenId": "892224064837020252919915483990234003255463676374942051515003138361243961606",
+          "noTokenId": "70862102905592075841725193348234549303811673768910663041191931706847506740958"
+        },
+        {
+          "marketId": "14078",
+          "title": "Draw",
+          "yesTokenId": "19121479187999661851531863676621334793640294702949829847468974650913316415933",
+          "noTokenId": "53979576749675300953206934048326343539382860057320480397367005706617747524258"
+        }
+      ]
+    },
+    "624": {
+      "title": "Cagliari vs Atalanta",
+      "url": "https://app.opinion.trade/market/624?ref=opinion_hud",
+      "yesTokenId": "17380916006302409941640377270107816769238775338036356783061852659644172681495",
+      "noTokenId": "68112640558160249000001213999719673783971517192055710340074170233913324713343",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "cagliari atalanta"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "14082",
+          "title": "Cagliari wins",
+          "yesTokenId": "29818635280025176628978149385675059785183407581358692414702540199796796336102",
+          "noTokenId": "31851449133394471744140642895575001934667273191653172440511926776954368644984"
+        },
+        {
+          "marketId": "14083",
+          "title": "Atalanta wins",
+          "yesTokenId": "32790646007267252782745350828338205211603634468666824221101301594213623949137",
+          "noTokenId": "46781466326139801187113478915475493053624773911301384924673677319597654219582"
+        },
+        {
+          "marketId": "14084",
+          "title": "Draw",
+          "yesTokenId": "17380916006302409941640377270107816769238775338036356783061852659644172681495",
+          "noTokenId": "68112640558160249000001213999719673783971517192055710340074170233913324713343"
+        }
+      ]
+    },
+    "625": {
+      "title": "Lazio vs Udinese",
+      "url": "https://app.opinion.trade/market/625?ref=opinion_hud",
+      "yesTokenId": "112831025698484422400747801555277385763812473450735766061839764305996940046669",
+      "noTokenId": "55495438660803280974393281574810648141282405169912383158896289397343916804176",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "lazio udinese"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "14085",
+          "title": "Lazio wins",
+          "yesTokenId": "112831025698484422400747801555277385763812473450735766061839764305996940046669",
+          "noTokenId": "55495438660803280974393281574810648141282405169912383158896289397343916804176"
+        },
+        {
+          "marketId": "14086",
+          "title": "Udinese wins",
+          "yesTokenId": "47434619672294750634926306200190838490332603686079251867705801829981785224082",
+          "noTokenId": "9432551292734440883911672722175345315779681351126402718996345516163214644383"
+        },
+        {
+          "marketId": "14087",
+          "title": "Draw",
+          "yesTokenId": "102273018488194042600013106940444467244949792243651269073951207459837666199969",
+          "noTokenId": "47512829918325917698893931107670106181430586053979805175744349635649040963661"
+        }
+      ]
     }
   },
   "index": {
@@ -12441,6 +12733,9 @@
     "cabinet": [
       "3062"
     ],
+    "cagliari atalanta": [
+      "624"
+    ],
     "calendar": [
       "3448",
       "3449",
@@ -12889,6 +13184,9 @@
     ],
     "eschatology": [
       "2670"
+    ],
+    "espanyol levante": [
+      "623"
     ],
     "eth": [
       "3364"
@@ -13399,6 +13697,9 @@
     "layer 2": [
       "3366"
     ],
+    "lazio udinese": [
+      "625"
+    ],
     "leadership": [
       "3369"
     ],
@@ -13485,6 +13786,12 @@
     ],
     "manchester city arsenal": [
       "487"
+    ],
+    "manchester united": [
+      "622"
+    ],
+    "manchester united brentford": [
+      "622"
     ],
     "march 2026": [
       "3039",
@@ -14597,6 +14904,9 @@
     "underclassmen": [
       "3072"
     ],
+    "united brentford": [
+      "622"
+    ],
     "upside down": [
       "3221",
       "3222",
@@ -15054,6 +15364,9 @@
     "burnley manchester city": [
       "501"
     ],
+    "cagliari atalanta": [
+      "624"
+    ],
     "canada qatar": [
       "540"
     ],
@@ -15182,6 +15495,9 @@
     "epl": [
       "497",
       "501"
+    ],
+    "espanyol levante": [
+      "623"
     ],
     "everton liverpool": [
       "478"
@@ -15331,6 +15647,9 @@
     "la real": [
       "503"
     ],
+    "lazio udinese": [
+      "625"
+    ],
     "league winner": [
       "83"
     ],
@@ -15378,6 +15697,12 @@
     ],
     "manchester city arsenal": [
       "487"
+    ],
+    "manchester united": [
+      "622"
+    ],
+    "manchester united brentford": [
+      "622"
     ],
     "marseille nice": [
       "621"
@@ -15717,6 +16042,9 @@
     ],
     "uefa champions league": [
       "83"
+    ],
+    "united brentford": [
+      "622"
     ],
     "uruguay cape": [
       "552"
