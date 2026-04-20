@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-20 18:06:46 UTC+8",
+    "generatedAt": "2026-04-21 01:17:05 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 431,
-      "markets": 447,
+      "kept": 434,
+      "markets": 450,
       "keywords": 875,
       "events": {
         "events": 90
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 569,
+        "cutoff_expired": 566,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -11218,6 +11218,42 @@
           "noTokenId": "47512829918325917698893931107670106181430586053979805175744349635649040963661"
         }
       ]
+    },
+    "14140": {
+      "title": "BTC Up or Down - Hourly (Apr 20, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14140?ref=opinion_hud",
+      "yesTokenId": "50728818553344234582619244324267905462993728450373815014357447983724979973707",
+      "noTokenId": "14901547445145079841177755283009790138638753282989574238728613454215921029406",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14139": {
+      "title": "BNB Up or Down - Hourly (Apr 20, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14139?ref=opinion_hud",
+      "yesTokenId": "42386465262648030473822939200038500212521105489925635013559552813836560371810",
+      "noTokenId": "95500965031018636792580401384848819458448282648557546470760445342227832817144",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14141": {
+      "title": "ETH Up or Down - Hourly (Apr 20, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14141?ref=opinion_hud",
+      "yesTokenId": "53493729061778109596421618961874092359432715733308103128517236493460233746446",
+      "noTokenId": "45932552959724795702035745792772813474974488929914081858471156463392173308614",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
     }
   },
   "index": {
