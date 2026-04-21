@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-21 11:40:07 UTC+8",
+    "generatedAt": "2026-04-21 17:48:03 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -9,15 +9,15 @@
     "counts": {
       "seen": 1000,
       "kept": 426,
-      "markets": 448,
-      "keywords": 875,
+      "markets": 446,
+      "keywords": 869,
       "events": {
         "events": 88
       },
       "skipped": {
-        "statusEnum": 8,
+        "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 566,
+        "cutoff_expired": 574,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -442,44 +442,6 @@
       "sig": "b9faa1cb",
       "sigFull": "b9faa1cb",
       "sigCore": "35ca7520",
-      "reused": false
-    },
-    "493": {
-      "title": "Lecce vs Fiorentina",
-      "marketIds": [
-        "493"
-      ],
-      "bestMarketId": "493",
-      "bestLabels": null,
-      "keywords": [
-        "lecce fiorentina"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "79b8a4ed",
-      "sigFull": "79b8a4ed",
-      "sigCore": "9c79a0c1",
-      "reused": false
-    },
-    "494": {
-      "title": "Crystal Palace vs West Ham",
-      "marketIds": [
-        "494"
-      ],
-      "bestMarketId": "494",
-      "bestLabels": null,
-      "keywords": [
-        "crystal palace",
-        "palace west",
-        "west ham",
-        "crystal palace west",
-        "palace west ham"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "4be739b9",
-      "sigFull": "4be739b9",
-      "sigCore": "818463f7",
       "reused": false
     },
     "495": {
@@ -6142,84 +6104,6 @@
         }
       ]
     },
-    "493": {
-      "title": "Lecce vs Fiorentina",
-      "url": "https://app.opinion.trade/market/493?ref=opinion_hud",
-      "yesTokenId": "46065232076472207412089323056211613439204791055380808129979590980514051757456",
-      "noTokenId": "55229993671473771031846964735549770665893229788187648844949196792340460309117",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "lecce fiorentina"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13331",
-          "title": "Lecce wins",
-          "yesTokenId": "16261520359505324220496834090291487574958113811398479229737298253460398419255",
-          "noTokenId": "2465986454341690503408320505635197917138011860771671938023648377346802873352"
-        },
-        {
-          "marketId": "13332",
-          "title": "Fiorentina wins",
-          "yesTokenId": "78280584710991236526048940373047094445901350428312661499497440234642096271423",
-          "noTokenId": "106029195170033460737377055641233168561088347142680916799984409185702986545559"
-        },
-        {
-          "marketId": "13333",
-          "title": "Draw",
-          "yesTokenId": "46065232076472207412089323056211613439204791055380808129979590980514051757456",
-          "noTokenId": "55229993671473771031846964735549770665893229788187648844949196792340460309117"
-        }
-      ]
-    },
-    "494": {
-      "title": "Crystal Palace vs West Ham",
-      "url": "https://app.opinion.trade/market/494?ref=opinion_hud",
-      "yesTokenId": "41747330310049927138393304166068424589313392737037101064982361976863444671000",
-      "noTokenId": "71334075019471731614893680540807164048669018016992222097316799044179375062125",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "crystal palace",
-        "palace west",
-        "west ham",
-        "crystal palace west",
-        "palace west ham"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13334",
-          "title": "Crystal Palace wins",
-          "yesTokenId": "24338555191888144557005160582177167179300064947412877183069003971856919834900",
-          "noTokenId": "72328653327041599216312323987528438554269198432264128246299167540661144592778"
-        },
-        {
-          "marketId": "13335",
-          "title": "West Ham wins",
-          "yesTokenId": "40096764183501402570050046781339933051223388455490420146218083549530934757897",
-          "noTokenId": "38894419059832674492121399518784215022068138655973931621977335551093276451049"
-        },
-        {
-          "marketId": "13336",
-          "title": "Draw",
-          "yesTokenId": "41747330310049927138393304166068424589313392737037101064982361976863444671000",
-          "noTokenId": "71334075019471731614893680540807164048669018016992222097316799044179375062125"
-        }
-      ]
-    },
     "495": {
       "title": "Athletic Club vs Osasuna",
       "url": "https://app.opinion.trade/market/495?ref=opinion_hud",
@@ -11159,42 +11043,6 @@
         }
       ]
     },
-    "14170": {
-      "title": "BTC Up or Down - Hourly (Apr 21, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14170?ref=opinion_hud",
-      "yesTokenId": "69090203148776686767500294338276772499634630553793809658103511666483488984327",
-      "noTokenId": "57911602110033926525291115678469532025609645447542237437592396872086137918946",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14169": {
-      "title": "BNB Up or Down - Hourly (Apr 21, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14169?ref=opinion_hud",
-      "yesTokenId": "36266232951349045358668741972196182981310821487112465684557557847012733347123",
-      "noTokenId": "56274182971335925374529024481619325483209844626247570273018614011263315895947",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14171": {
-      "title": "ETH Up or Down - Hourly (Apr 21, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14171?ref=opinion_hud",
-      "yesTokenId": "32429962529689551224895026586475013073581016503649235228793194308610470148673",
-      "noTokenId": "84608534205912285868260206910171288917998915582200779248536067686837580531212",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "14172": {
       "title": "Portland Trail Blazers vs San Antonio Spurs",
       "url": "https://app.opinion.trade/market/14172?ref=opinion_hud",
@@ -11228,6 +11076,42 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14190": {
+      "title": "BNB Up or Down - Hourly (Apr 21, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14190?ref=opinion_hud",
+      "yesTokenId": "49782001698452879421740975642800396524170431680485984049105763100170455880910",
+      "noTokenId": "115487314233856625959685452008429095084098746727311200180149560737531411255611",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14192": {
+      "title": "ETH Up or Down - Hourly (Apr 21, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14192?ref=opinion_hud",
+      "yesTokenId": "85234158730611258862820145359523001907749211505376120323528017594985746149861",
+      "noTokenId": "26629889207505841485256087825473540291982390000586878424057677802033117995255",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14191": {
+      "title": "BTC Up or Down - Hourly (Apr 21, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14191?ref=opinion_hud",
+      "yesTokenId": "65662332304419450882783204129098597532992616886939799158835868248454611444374",
+      "noTokenId": "6475463385040874893389691471576317262906230249130679224565873808491736316174",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
@@ -11945,12 +11829,6 @@
     ],
     "cryptography": [
       "3256"
-    ],
-    "crystal palace": [
-      "494"
-    ],
-    "crystal palace west": [
-      "494"
     ],
     "cura ivory": [
       "569"
@@ -12685,9 +12563,6 @@
     "leave": [
       "2368"
     ],
-    "lecce fiorentina": [
-      "493"
-    ],
     "leeco": [
       "1856"
     ],
@@ -13033,12 +12908,6 @@
     ],
     "over $100m 1q2026": [
       "3360"
-    ],
-    "palace west": [
-      "494"
-    ],
-    "palace west ham": [
-      "494"
     ],
     "panama croatia": [
       "560"
@@ -13910,9 +13779,6 @@
     "wbd": [
       "2398"
     ],
-    "west ham": [
-      "494"
-    ],
     "westworld": [
       "3158"
     ],
@@ -14290,12 +14156,6 @@
     "croatia ghana": [
       "580"
     ],
-    "crystal palace": [
-      "494"
-    ],
-    "crystal palace west": [
-      "494"
-    ],
     "cura ivory": [
       "569"
     ],
@@ -14493,9 +14353,6 @@
     "league winner 2026": [
       "83"
     ],
-    "lecce fiorentina": [
-      "493"
-    ],
     "leeds": [
       "500"
     ],
@@ -14593,12 +14450,6 @@
     ],
     "nottingham forest": [
       "509"
-    ],
-    "palace west": [
-      "494"
-    ],
-    "palace west ham": [
-      "494"
     ],
     "panama croatia": [
       "560"
@@ -14840,9 +14691,6 @@
     ],
     "vigo": [
       "504"
-    ],
-    "west ham": [
-      "494"
     ],
     "whites": [
       "500"
