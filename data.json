@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-21 17:48:03 UTC+8",
+    "generatedAt": "2026-04-22 01:14:18 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 426,
-      "markets": 446,
+      "kept": 453,
+      "markets": 479,
       "keywords": 869,
       "events": {
-        "events": 88
+        "events": 86
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 574,
+        "cutoff_expired": 547,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -29,11 +29,11 @@
         "fullAiRefresh": false,
         "onlyAiForNew": true,
         "reused": 9,
-        "regenerated_empty_entitygroups": 79,
-        "calls": 79,
-        "retries": 79,
+        "regenerated_empty_entitygroups": 77,
+        "calls": 77,
+        "retries": 77,
         "fallback": 0,
-        "empty": 79,
+        "empty": 77,
         "non_empty": 0,
         "errors": 0
       }
@@ -11079,11 +11079,11 @@
       },
       "type": "binary"
     },
-    "14190": {
-      "title": "BNB Up or Down - Hourly (Apr 21, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14190?ref=opinion_hud",
-      "yesTokenId": "49782001698452879421740975642800396524170431680485984049105763100170455880910",
-      "noTokenId": "115487314233856625959685452008429095084098746727311200180149560737531411255611",
+    "14216": {
+      "title": "ETH Up or Down - Hourly (Apr 21, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14216?ref=opinion_hud",
+      "yesTokenId": "56770970196389188609394871674296372043747508498279928628865951519793181509747",
+      "noTokenId": "28311586548806874617500516056496845581932883582011723127832095967254559679869",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -11091,11 +11091,11 @@
       },
       "type": "binary"
     },
-    "14192": {
-      "title": "ETH Up or Down - Hourly (Apr 21, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14192?ref=opinion_hud",
-      "yesTokenId": "85234158730611258862820145359523001907749211505376120323528017594985746149861",
-      "noTokenId": "26629889207505841485256087825473540291982390000586878424057677802033117995255",
+    "14215": {
+      "title": "BTC Up or Down - Hourly (Apr 21, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14215?ref=opinion_hud",
+      "yesTokenId": "110257664455102180624761170957800396320937638111175542779786458255342788167493",
+      "noTokenId": "86148612763348205639456307215973745670526879828833877868866590783391378314489",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -11103,15 +11103,411 @@
       },
       "type": "binary"
     },
-    "14191": {
-      "title": "BTC Up or Down - Hourly (Apr 21, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14191?ref=opinion_hud",
-      "yesTokenId": "65662332304419450882783204129098597532992616886939799158835868248454611444374",
-      "noTokenId": "6475463385040874893389691471576317262906230249130679224565873808491736316174",
+    "14214": {
+      "title": "BNB Up or Down - Hourly (Apr 21, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14214?ref=opinion_hud",
+      "yesTokenId": "40287095931353881678677490790841907428690031822434634431253901441244361776030",
+      "noTokenId": "38222818823871494018948170558113691568219788645377980861384054310820020626675",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14246": {
+      "title": "FlyQuest vs Dignitas",
+      "url": "https://app.opinion.trade/market/14246?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14247": {
+      "title": "Cloud9 vs Shopify Rebellion",
+      "url": "https://app.opinion.trade/market/14247?ref=opinion_hud",
+      "yesTokenId": "107892156635017721051131805589931313582918604622675413244953708259685164625791",
+      "noTokenId": "29258565928561023069962519839760967107221999305586747145110309454596406176646",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Cloud9",
+        "noLabel": "Shopify Rebellion"
+      },
+      "type": "binary"
+    },
+    "14248": {
+      "title": "LYON vs Disguised",
+      "url": "https://app.opinion.trade/market/14248?ref=opinion_hud",
+      "yesTokenId": "36290930125300422534503709398090001614551811871786951219127718741430402275426",
+      "noTokenId": "57628215575733256560075848746000845593380980308271212820903845691689129719540",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "LYON",
+        "noLabel": "Disguised"
+      },
+      "type": "binary"
+    },
+    "14249": {
+      "title": "Team Liquid vs Sentinels",
+      "url": "https://app.opinion.trade/market/14249?ref=opinion_hud",
+      "yesTokenId": "2267291586218495027941314927021484662388880660437774602610910002394623259013",
+      "noTokenId": "12791550005382126275086570344198387554910936508732186323715624964050726268274",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Team Liquid",
+        "noLabel": "Sentinels"
+      },
+      "type": "binary"
+    },
+    "14238": {
+      "title": "T1 vs BNK FEARX",
+      "url": "https://app.opinion.trade/market/14238?ref=opinion_hud",
+      "yesTokenId": "43167994429931571054198944529086219279135218980953502573145716247861866237460",
+      "noTokenId": "76771910309630287646077683645681118379646530525641376308402152820763037943654",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "T1",
+        "noLabel": "BNK FEARX"
+      },
+      "type": "binary"
+    },
+    "14239": {
+      "title": "Nongshim Red Force vs Gen.G",
+      "url": "https://app.opinion.trade/market/14239?ref=opinion_hud",
+      "yesTokenId": "56090201486804526737312708271498161863098356098141310460459337252750471007691",
+      "noTokenId": "51297172802281481889056319727105604904762275293098774896836258911945838154731",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Nongshim Red Force",
+        "noLabel": "Gen.G"
+      },
+      "type": "binary"
+    },
+    "14240": {
+      "title": "Shifters vs Fnatic",
+      "url": "https://app.opinion.trade/market/14240?ref=opinion_hud",
+      "yesTokenId": "17194084146362220430892377791811786248659235462843413116177770313784844231004",
+      "noTokenId": "23801313198121966973139764546711948184365772755104123629624218276078093134837",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Shifters",
+        "noLabel": "Fnatic"
+      },
+      "type": "binary"
+    },
+    "14241": {
+      "title": "Natus Vincere vs Karmine Corp",
+      "url": "https://app.opinion.trade/market/14241?ref=opinion_hud",
+      "yesTokenId": "17333111847449886746049115764319299762436286382791145706983705790492109332193",
+      "noTokenId": "49010290202605908790568922626302910256362228403113230022764845640996831579535",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Natus Vincere",
+        "noLabel": "Karmine Corp"
+      },
+      "type": "binary"
+    },
+    "14242": {
+      "title": "Fnatic vs Natus Vincere",
+      "url": "https://app.opinion.trade/market/14242?ref=opinion_hud",
+      "yesTokenId": "55907371580246809815032711674953580634650942189920873644198379266627997442653",
+      "noTokenId": "45547801962767478458993038061737910696076915165719921370378738539126564182761",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Fnatic",
+        "noLabel": "Natus Vincere"
+      },
+      "type": "binary"
+    },
+    "14243": {
+      "title": "Karmine Corp vs Shifters",
+      "url": "https://app.opinion.trade/market/14243?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14244": {
+      "title": "Shifters vs Natus Vincere",
+      "url": "https://app.opinion.trade/market/14244?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14245": {
+      "title": "Karmine Corp vs Fnatic",
+      "url": "https://app.opinion.trade/market/14245?ref=opinion_hud",
+      "yesTokenId": "67500454875297058860660176834301858940398122095677171797903322814010182733577",
+      "noTokenId": "24173849081721632933560363370802007150836482486020696750289091622724982447499",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Karmine Corp",
+        "noLabel": "Fnatic"
+      },
+      "type": "binary"
+    },
+    "14228": {
+      "title": "Invictus Gaming vs Anyone's Legend",
+      "url": "https://app.opinion.trade/market/14228?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14234": {
+      "title": "BNK FEARX vs KT Rolster",
+      "url": "https://app.opinion.trade/market/14234?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14235": {
+      "title": "Hanwha Life Esports vs Kiwoom DRX",
+      "url": "https://app.opinion.trade/market/14235?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14223": {
+      "title": "Top Esports vs Ninjas in Pyjamas",
+      "url": "https://app.opinion.trade/market/14223?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14237": {
+      "title": "Dplus KIA vs DN SOOPers",
+      "url": "https://app.opinion.trade/market/14237?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14233": {
+      "title": "Gen.G vs DN SOOPers",
+      "url": "https://app.opinion.trade/market/14233?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14220": {
+      "title": "Ninjas in Pyjamas vs Bilibili Gaming",
+      "url": "https://app.opinion.trade/market/14220?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14232": {
+      "title": "HANJIN BRION vs Dplus KIA",
+      "url": "https://app.opinion.trade/market/14232?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14230": {
+      "title": "KT Rolster vs Kiwoom DRX",
+      "url": "https://app.opinion.trade/market/14230?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14224": {
+      "title": "Team WE vs JD Gaming",
+      "url": "https://app.opinion.trade/market/14224?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14227": {
+      "title": "Weibo Gaming vs Bilibili Gaming",
+      "url": "https://app.opinion.trade/market/14227?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14226": {
+      "title": "Ultra Prime vs LGD Gaming",
+      "url": "https://app.opinion.trade/market/14226?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14236": {
+      "title": "T1 vs HANJIN BRION",
+      "url": "https://app.opinion.trade/market/14236?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14217": {
+      "title": "Weibo Gaming vs Team WE",
+      "url": "https://app.opinion.trade/market/14217?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14218": {
+      "title": "Ninjas in Pyjamas vs Anyone's Legend",
+      "url": "https://app.opinion.trade/market/14218?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14229": {
+      "title": "Weibo Gaming vs Top Esports",
+      "url": "https://app.opinion.trade/market/14229?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14221": {
+      "title": "Oh My God vs LNG Esports",
+      "url": "https://app.opinion.trade/market/14221?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14231": {
+      "title": "Hanwha Life Esports vs Nongshim Red Force",
+      "url": "https://app.opinion.trade/market/14231?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14219": {
+      "title": "LGD Gaming vs EDward Gaming",
+      "url": "https://app.opinion.trade/market/14219?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14222": {
+      "title": "JD Gaming vs Invictus Gaming",
+      "url": "https://app.opinion.trade/market/14222?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14225": {
+      "title": "Weibo Gaming vs Anyone's Legend",
+      "url": "https://app.opinion.trade/market/14225?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
       },
       "type": "binary"
     }
