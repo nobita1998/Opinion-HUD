@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-21 01:17:05 UTC+8",
+    "generatedAt": "2026-04-21 11:40:07 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,14 +8,14 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 434,
-      "markets": 450,
+      "kept": 426,
+      "markets": 448,
       "keywords": 875,
       "events": {
-        "events": 90
+        "events": 88
       },
       "skipped": {
-        "statusEnum": 0,
+        "statusEnum": 8,
         "cutoff_missing_or_invalid": 0,
         "cutoff_expired": 566,
         "cutoff_zero_kept": 0,
@@ -29,11 +29,11 @@
         "fullAiRefresh": false,
         "onlyAiForNew": true,
         "reused": 9,
-        "regenerated_empty_entitygroups": 81,
-        "calls": 81,
-        "retries": 81,
+        "regenerated_empty_entitygroups": 79,
+        "calls": 79,
+        "retries": 79,
         "fallback": 0,
-        "empty": 81,
+        "empty": 79,
         "non_empty": 0,
         "errors": 0
       }
@@ -9401,45 +9401,9 @@
       },
       "type": "binary"
     },
-    "13764": {
-      "title": "Atlanta Hawks vs New York Knicks",
-      "url": "https://app.opinion.trade/market/13764?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "13768": {
       "title": "Houston Rockets vs Los Angeles Lakers",
       "url": "https://app.opinion.trade/market/13768?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "13765": {
-      "title": "Minnesota Timberwolves vs Denver Nuggets",
-      "url": "https://app.opinion.trade/market/13765?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "13763": {
-      "title": "Toronto Raptors vs Cleveland Cavaliers",
-      "url": "https://app.opinion.trade/market/13763?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -10961,18 +10925,6 @@
       },
       "type": "binary"
     },
-    "14104": {
-      "title": "EWC NA: C9 vs SEN (Apr. 21 5:00PM ET)",
-      "url": "https://app.opinion.trade/market/14104?ref=opinion_hud",
-      "yesTokenId": "113109032454549640223566828651158376788567744280683307413878129876889033870235",
-      "noTokenId": "8835204368819956392841688828754078872122501124405903843718756452469356362684",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "C9",
-        "noLabel": "SEN"
-      },
-      "type": "binary"
-    },
     "14106": {
       "title": "LCK 2026 Season: HLE vs NS (Apr. 22 6:00AM ET)",
       "url": "https://app.opinion.trade/market/14106?ref=opinion_hud",
@@ -11000,18 +10952,6 @@
     "14105": {
       "title": "LCK 2026 Season: KT vs KRX (Apr. 22 4:00AM ET)",
       "url": "https://app.opinion.trade/market/14105?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "14103": {
-      "title": "EWC NA: LYON vs FLY (Apr. 21 2:00PM ET)",
-      "url": "https://app.opinion.trade/market/14103?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -11219,11 +11159,11 @@
         }
       ]
     },
-    "14140": {
-      "title": "BTC Up or Down - Hourly (Apr 20, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14140?ref=opinion_hud",
-      "yesTokenId": "50728818553344234582619244324267905462993728450373815014357447983724979973707",
-      "noTokenId": "14901547445145079841177755283009790138638753282989574238728613454215921029406",
+    "14170": {
+      "title": "BTC Up or Down - Hourly (Apr 21, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14170?ref=opinion_hud",
+      "yesTokenId": "69090203148776686767500294338276772499634630553793809658103511666483488984327",
+      "noTokenId": "57911602110033926525291115678469532025609645447542237437592396872086137918946",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -11231,11 +11171,11 @@
       },
       "type": "binary"
     },
-    "14139": {
-      "title": "BNB Up or Down - Hourly (Apr 20, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14139?ref=opinion_hud",
-      "yesTokenId": "42386465262648030473822939200038500212521105489925635013559552813836560371810",
-      "noTokenId": "95500965031018636792580401384848819458448282648557546470760445342227832817144",
+    "14169": {
+      "title": "BNB Up or Down - Hourly (Apr 21, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14169?ref=opinion_hud",
+      "yesTokenId": "36266232951349045358668741972196182981310821487112465684557557847012733347123",
+      "noTokenId": "56274182971335925374529024481619325483209844626247570273018614011263315895947",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -11243,15 +11183,51 @@
       },
       "type": "binary"
     },
-    "14141": {
-      "title": "ETH Up or Down - Hourly (Apr 20, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14141?ref=opinion_hud",
-      "yesTokenId": "53493729061778109596421618961874092359432715733308103128517236493460233746446",
-      "noTokenId": "45932552959724795702035745792772813474974488929914081858471156463392173308614",
+    "14171": {
+      "title": "ETH Up or Down - Hourly (Apr 21, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14171?ref=opinion_hud",
+      "yesTokenId": "32429962529689551224895026586475013073581016503649235228793194308610470148673",
+      "noTokenId": "84608534205912285868260206910171288917998915582200779248536067686837580531212",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14172": {
+      "title": "Portland Trail Blazers vs San Antonio Spurs",
+      "url": "https://app.opinion.trade/market/14172?ref=opinion_hud",
+      "yesTokenId": "84661198600578830288693950850474212709130508991211647483443798058337391658134",
+      "noTokenId": "29505964155619076017655072211561996918654297456126153583584779746920978193472",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "Portland Trail Blazers",
+        "noLabel": "San Antonio Spurs"
+      },
+      "type": "binary"
+    },
+    "14173": {
+      "title": "Atlanta Hawks vs New York Knicks",
+      "url": "https://app.opinion.trade/market/14173?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14174": {
+      "title": "Philadelphia 76ers vs Boston Celtics",
+      "url": "https://app.opinion.trade/market/14174?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
       },
       "type": "binary"
     }
