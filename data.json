@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-22 11:36:35 UTC+8",
+    "generatedAt": "2026-04-22 17:46:37 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 445,
-      "markets": 475,
+      "kept": 443,
+      "markets": 473,
       "keywords": 835,
       "events": {
         "events": 83
       },
       "skipped": {
-        "statusEnum": 1,
+        "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 554,
+        "cutoff_expired": 557,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -10793,18 +10793,6 @@
       },
       "type": "binary"
     },
-    "14230": {
-      "title": "KT Rolster vs Kiwoom DRX",
-      "url": "https://app.opinion.trade/market/14230?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "14224": {
       "title": "Team WE vs JD Gaming",
       "url": "https://app.opinion.trade/market/14224?ref=opinion_hud",
@@ -10844,18 +10832,6 @@
     "14236": {
       "title": "T1 vs HANJIN BRION",
       "url": "https://app.opinion.trade/market/14236?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "14217": {
-      "title": "Weibo Gaming vs Team WE",
-      "url": "https://app.opinion.trade/market/14217?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -10946,42 +10922,6 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "14278": {
-      "title": "BNB Up or Down - Hourly (Apr 22, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14278?ref=opinion_hud",
-      "yesTokenId": "35333646357236590761549585476420151696112355137650446226712307157005428385318",
-      "noTokenId": "7044646446966629705794652042470556296235173685229363585199988462320324265742",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14280": {
-      "title": "ETH Up or Down - Hourly (Apr 22, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14280?ref=opinion_hud",
-      "yesTokenId": "29646558891461532071931079516271914307871270300032653186615321419120683382049",
-      "noTokenId": "42043053093563679024888608312298920770041975098366324549161191205439029294408",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14279": {
-      "title": "BTC Up or Down - Hourly (Apr 22, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14279?ref=opinion_hud",
-      "yesTokenId": "79393639998179343220698105331757451206251794762301088903539572721722894511634",
-      "noTokenId": "55655498792321391423005612785027175164446981807232361533119331045816846499075",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
@@ -11078,6 +11018,42 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14306": {
+      "title": "ETH Up or Down - Hourly (Apr 22, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14306?ref=opinion_hud",
+      "yesTokenId": "70023248173433520127304342923630093325625143660976140225521755590738626507486",
+      "noTokenId": "66510412371959420500572044854900384396632259570331124804309827440258328568103",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14304": {
+      "title": "BNB Up or Down - Hourly (Apr 22, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14304?ref=opinion_hud",
+      "yesTokenId": "90208859008192467876308526908069236995943023728301826747043848258244572330765",
+      "noTokenId": "9039534264549754988893622012095929303539466666920289262870832147177823450362",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14305": {
+      "title": "BTC Up or Down - Hourly (Apr 22, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14305?ref=opinion_hud",
+      "yesTokenId": "75196944967641763279591958958469030590038927597189017191922460398275774790334",
+      "noTokenId": "101034474054384427038542006102859169364736813633449415199761402790401876811411",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
