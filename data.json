@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-22 01:14:18 UTC+8",
+    "generatedAt": "2026-04-22 11:36:35 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 453,
-      "markets": 479,
-      "keywords": 869,
+      "kept": 445,
+      "markets": 475,
+      "keywords": 835,
       "events": {
-        "events": 86
+        "events": 83
       },
       "skipped": {
-        "statusEnum": 0,
+        "statusEnum": 1,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 547,
+        "cutoff_expired": 554,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -28,7 +28,7 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 9,
+        "reused": 6,
         "regenerated_empty_entitygroups": 77,
         "calls": 77,
         "retries": 77,
@@ -84,141 +84,6 @@
       "sig": "de5e57e5",
       "sigFull": "de5e57e5",
       "sigCore": "16c9eafd",
-      "reused": false
-    },
-    "497": {
-      "title": "Brighton vs Chelsea",
-      "marketIds": [
-        "497"
-      ],
-      "bestMarketId": "497",
-      "bestLabels": null,
-      "keywords": [
-        "brighton",
-        "chelsea",
-        "match",
-        "game",
-        "football",
-        "soccer",
-        "draw",
-        "tie",
-        "premier league",
-        "epl",
-        "seagulls",
-        "blues",
-        "score",
-        "fixture",
-        "clash",
-        "brighton chelsea"
-      ],
-      "entities": [
-        "brighton",
-        "chelsea"
-      ],
-      "entityGroups": [
-        [
-          "brighton",
-          "布莱顿"
-        ],
-        [
-          "chelsea",
-          "切尔西"
-        ]
-      ],
-      "sig": "f2b7e91b",
-      "sigFull": "f2b7e91b",
-      "sigCore": "875a3ee8",
-      "reused": false
-    },
-    "498": {
-      "title": "Real Madrid vs Alaves",
-      "marketIds": [
-        "498"
-      ],
-      "bestMarketId": "498",
-      "bestLabels": null,
-      "keywords": [
-        "real madrid",
-        "alaves",
-        "la liga",
-        "football",
-        "soccer",
-        "match",
-        "game",
-        "los blancos",
-        "babazorros",
-        "el glorioso",
-        "spanish football",
-        "rm vs ala",
-        "real madrid vs alaves",
-        "mendizorroza",
-        "bernabeu",
-        "madrid alaves",
-        "real madrid alaves"
-      ],
-      "entities": [
-        "real madrid",
-        "alaves"
-      ],
-      "entityGroups": [
-        [
-          "real madrid",
-          "皇家马德里",
-          "madrid"
-        ],
-        [
-          "alaves",
-          "阿拉维斯"
-        ]
-      ],
-      "sig": "441151f9",
-      "sigFull": "441151f9",
-      "sigCore": "91e61e67",
-      "reused": false
-    },
-    "499": {
-      "title": "Girona vs Real Betis",
-      "marketIds": [
-        "499"
-      ],
-      "bestMarketId": "499",
-      "bestLabels": null,
-      "keywords": [
-        "girona",
-        "real betis",
-        "betis",
-        "girona fc",
-        "football",
-        "soccer",
-        "match",
-        "draw",
-        "tie",
-        "1-1",
-        "regular time",
-        "la liga",
-        "spanish football",
-        "fixture",
-        "versus",
-        "girona real",
-        "girona real betis"
-      ],
-      "entities": [
-        "girona",
-        "real betis"
-      ],
-      "entityGroups": [
-        [
-          "girona",
-          "赫罗纳"
-        ],
-        [
-          "real betis",
-          "皇家贝蒂斯"
-        ]
-      ],
-      "sig": "4ed23e8d",
-      "sigFull": "4ed23e8d",
-      "sigCore": "9a3efdd1",
       "reused": false
     },
     "500": {
@@ -442,42 +307,6 @@
       "sig": "b9faa1cb",
       "sigFull": "b9faa1cb",
       "sigCore": "35ca7520",
-      "reused": false
-    },
-    "495": {
-      "title": "Athletic Club vs Osasuna",
-      "marketIds": [
-        "495"
-      ],
-      "bestMarketId": "495",
-      "bestLabels": null,
-      "keywords": [
-        "athletic club",
-        "club osasuna",
-        "athletic club osasuna"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "7eea3253",
-      "sigFull": "7eea3253",
-      "sigCore": "025c9a44",
-      "reused": false
-    },
-    "496": {
-      "title": "Mallorca vs Valencia",
-      "marketIds": [
-        "496"
-      ],
-      "bestMarketId": "496",
-      "bestLabels": null,
-      "keywords": [
-        "mallorca valencia"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "sig": "4c61dc73",
-      "sigFull": "4c61dc73",
-      "sigCore": "c33d4924",
       "reused": false
     },
     "511": {
@@ -5586,201 +5415,6 @@
         }
       ]
     },
-    "497": {
-      "title": "Brighton vs Chelsea",
-      "url": "https://app.opinion.trade/market/497?ref=opinion_hud",
-      "yesTokenId": "82371577923633042977577543659171785839080826966463060522836188003252403481664",
-      "noTokenId": "50148243874824366645882966643092761888284191155079600756534274361610579914890",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "brighton",
-        "chelsea",
-        "match",
-        "game",
-        "football",
-        "soccer",
-        "draw",
-        "tie",
-        "premier league",
-        "epl",
-        "seagulls",
-        "blues",
-        "score",
-        "fixture",
-        "clash",
-        "brighton chelsea"
-      ],
-      "entities": [
-        "brighton",
-        "chelsea"
-      ],
-      "entityGroups": [
-        [
-          "brighton",
-          "布莱顿"
-        ],
-        [
-          "chelsea",
-          "切尔西"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13343",
-          "title": "Brighton wins",
-          "yesTokenId": "82371577923633042977577543659171785839080826966463060522836188003252403481664",
-          "noTokenId": "50148243874824366645882966643092761888284191155079600756534274361610579914890"
-        },
-        {
-          "marketId": "13344",
-          "title": "Chelsea wins",
-          "yesTokenId": "13530990906915268300202545884018824756735375816544964918907761144147392014068",
-          "noTokenId": "99902215607273608893854617075078179780213650495656430165711831337874703618047"
-        },
-        {
-          "marketId": "13345",
-          "title": "Draw",
-          "yesTokenId": "6605026908934705861659032295506515479103319814599011000699435146825594356900",
-          "noTokenId": "64042637797294775528781537123149748312844509508133562199123615970480002622666"
-        }
-      ]
-    },
-    "498": {
-      "title": "Real Madrid vs Alaves",
-      "url": "https://app.opinion.trade/market/498?ref=opinion_hud",
-      "yesTokenId": "32328008223622839876003151278123202819612747035661947659218421640557853109428",
-      "noTokenId": "102814523566371210592464956586489087085446395105266365483019119252303428742513",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "real madrid",
-        "alaves",
-        "la liga",
-        "football",
-        "soccer",
-        "match",
-        "game",
-        "los blancos",
-        "babazorros",
-        "el glorioso",
-        "spanish football",
-        "rm vs ala",
-        "real madrid vs alaves",
-        "mendizorroza",
-        "bernabeu",
-        "madrid alaves",
-        "real madrid alaves"
-      ],
-      "entities": [
-        "real madrid",
-        "alaves"
-      ],
-      "entityGroups": [
-        [
-          "real madrid",
-          "皇家马德里",
-          "madrid"
-        ],
-        [
-          "alaves",
-          "阿拉维斯"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13346",
-          "title": "Real Madrid wins",
-          "yesTokenId": "114797374264457245043872766234911504868499593008408040424657029670979195665877",
-          "noTokenId": "41963649846515275545716380342569815788344046076982775950421301007097465456627"
-        },
-        {
-          "marketId": "13347",
-          "title": "Alaves wins",
-          "yesTokenId": "42816450082952861899439301492283004154796903294555868345535790089766279660825",
-          "noTokenId": "48499114740022241967241842365811709491192854459074741830936324555783581101651"
-        },
-        {
-          "marketId": "13348",
-          "title": "Draw",
-          "yesTokenId": "32328008223622839876003151278123202819612747035661947659218421640557853109428",
-          "noTokenId": "102814523566371210592464956586489087085446395105266365483019119252303428742513"
-        }
-      ]
-    },
-    "499": {
-      "title": "Girona vs Real Betis",
-      "url": "https://app.opinion.trade/market/499?ref=opinion_hud",
-      "yesTokenId": "108967547046741860867590648945806880912300094901890302624917592742776715612725",
-      "noTokenId": "46394394477665440055149793006563711917041359766073262188884539016215484283804",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "girona",
-        "real betis",
-        "betis",
-        "girona fc",
-        "football",
-        "soccer",
-        "match",
-        "draw",
-        "tie",
-        "1-1",
-        "regular time",
-        "la liga",
-        "spanish football",
-        "fixture",
-        "versus",
-        "girona real",
-        "girona real betis"
-      ],
-      "entities": [
-        "girona",
-        "real betis"
-      ],
-      "entityGroups": [
-        [
-          "girona",
-          "赫罗纳"
-        ],
-        [
-          "real betis",
-          "皇家贝蒂斯"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13349",
-          "title": "Girona wins",
-          "yesTokenId": "2091873793923785353466918161422850512493020415551340610986921922487237232747",
-          "noTokenId": "48856840478770699183633178955996771414335831465453497893122334874702278784263"
-        },
-        {
-          "marketId": "13350",
-          "title": "Real Betis wins",
-          "yesTokenId": "64590225548874005596397543709253008144628740760526313058944911979045469521848",
-          "noTokenId": "99762943738530040579918291346666289892794718867943719933285128707416482027008"
-        },
-        {
-          "marketId": "13351",
-          "title": "Draw",
-          "yesTokenId": "108967547046741860867590648945806880912300094901890302624917592742776715612725",
-          "noTokenId": "46394394477665440055149793006563711917041359766073262188884539016215484283804"
-        }
-      ]
-    },
     "500": {
       "title": "Bournemouth vs Leeds",
       "url": "https://app.opinion.trade/market/500?ref=opinion_hud",
@@ -6101,82 +5735,6 @@
           "title": "Draw",
           "yesTokenId": "73017776281320605174369709882078235255625086450920427299114201339843002660990",
           "noTokenId": "111011818802144316585285424497106362341937675849181110643902932080350147122625"
-        }
-      ]
-    },
-    "495": {
-      "title": "Athletic Club vs Osasuna",
-      "url": "https://app.opinion.trade/market/495?ref=opinion_hud",
-      "yesTokenId": "37491295505700855645587781154654532545432444768414161778160362403357607692730",
-      "noTokenId": "66580354264509513437897752316466620234054078522795282386753142115960746648514",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "athletic club",
-        "club osasuna",
-        "athletic club osasuna"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13337",
-          "title": "Athletic Club wins",
-          "yesTokenId": "5399629603023896652717123781443318761105775172860720583773287227378318838948",
-          "noTokenId": "103074836525418955881857876082820087531493040594757787584155013273052680315177"
-        },
-        {
-          "marketId": "13338",
-          "title": "Osasuna wins",
-          "yesTokenId": "26756124947421312743595405223236147024548790312421541267518651287866791374193",
-          "noTokenId": "63804795169938292834925136846311841467392511886195223442405076631249037939006"
-        },
-        {
-          "marketId": "13339",
-          "title": "Draw",
-          "yesTokenId": "37491295505700855645587781154654532545432444768414161778160362403357607692730",
-          "noTokenId": "66580354264509513437897752316466620234054078522795282386753142115960746648514"
-        }
-      ]
-    },
-    "496": {
-      "title": "Mallorca vs Valencia",
-      "url": "https://app.opinion.trade/market/496?ref=opinion_hud",
-      "yesTokenId": "94143908321433351054341861972662495520664293583345612602612718254506763580562",
-      "noTokenId": "104774681853119036829545300229085143211869896658751378597826789368961024037434",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "mallorca valencia"
-      ],
-      "entities": [],
-      "entityGroups": [],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13340",
-          "title": "Mallorca wins",
-          "yesTokenId": "19763503320231908092130713094577512608889624387752309794873668192073470603463",
-          "noTokenId": "58867972321470889229767836422418257581229888316027940174931536438706949591782"
-        },
-        {
-          "marketId": "13341",
-          "title": "Valencia wins",
-          "yesTokenId": "94143908321433351054341861972662495520664293583345612602612718254506763580562",
-          "noTokenId": "104774681853119036829545300229085143211869896658751378597826789368961024037434"
-        },
-        {
-          "marketId": "13342",
-          "title": "Draw",
-          "yesTokenId": "54845250778895946718773341935841075931752313592677256171386434425011314315019",
-          "noTokenId": "79378559992765304791339791865208998426343967220295645565412682736842141640004"
         }
       ]
     },
@@ -9273,45 +8831,9 @@
       },
       "type": "binary"
     },
-    "13766": {
-      "title": "Philadelphia 76ers vs Boston Celtics",
-      "url": "https://app.opinion.trade/market/13766?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "13768": {
-      "title": "Houston Rockets vs Los Angeles Lakers",
-      "url": "https://app.opinion.trade/market/13768?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "13772": {
       "title": "Boston Celtics vs Philadelphia 76ers",
       "url": "https://app.opinion.trade/market/13772?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "13767": {
-      "title": "Portland Trail Blazers vs San Antonio Spurs",
-      "url": "https://app.opinion.trade/market/13767?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -10797,54 +10319,6 @@
         }
       ]
     },
-    "14108": {
-      "title": "LPL Split 2: WBG vs WE (Apr. 22 5:00AM ET)",
-      "url": "https://app.opinion.trade/market/14108?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "14106": {
-      "title": "LCK 2026 Season: HLE vs NS (Apr. 22 6:00AM ET)",
-      "url": "https://app.opinion.trade/market/14106?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "14107": {
-      "title": "LPL Split 2: NIP vs AL (Apr. 22 7:00AM ET)",
-      "url": "https://app.opinion.trade/market/14107?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "14105": {
-      "title": "LCK 2026 Season: KT vs KRX (Apr. 22 4:00AM ET)",
-      "url": "https://app.opinion.trade/market/14105?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "14088": {
       "title": "Los Angeles Lakers vs Houston Rockets",
       "url": "https://app.opinion.trade/market/14088?ref=opinion_hud",
@@ -11076,42 +10550,6 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "14216": {
-      "title": "ETH Up or Down - Hourly (Apr 21, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14216?ref=opinion_hud",
-      "yesTokenId": "56770970196389188609394871674296372043747508498279928628865951519793181509747",
-      "noTokenId": "28311586548806874617500516056496845581932883582011723127832095967254559679869",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14215": {
-      "title": "BTC Up or Down - Hourly (Apr 21, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14215?ref=opinion_hud",
-      "yesTokenId": "110257664455102180624761170957800396320937638111175542779786458255342788167493",
-      "noTokenId": "86148612763348205639456307215973745670526879828833877868866590783391378314489",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14214": {
-      "title": "BNB Up or Down - Hourly (Apr 21, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14214?ref=opinion_hud",
-      "yesTokenId": "40287095931353881678677490790841907428690031822434634431253901441244361776030",
-      "noTokenId": "38222818823871494018948170558113691568219788645377980861384054310820020626675",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
       },
       "type": "binary"
     },
@@ -11510,6 +10948,138 @@
         "noLabel": ""
       },
       "type": "binary"
+    },
+    "14278": {
+      "title": "BNB Up or Down - Hourly (Apr 22, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14278?ref=opinion_hud",
+      "yesTokenId": "35333646357236590761549585476420151696112355137650446226712307157005428385318",
+      "noTokenId": "7044646446966629705794652042470556296235173685229363585199988462320324265742",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14280": {
+      "title": "ETH Up or Down - Hourly (Apr 22, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14280?ref=opinion_hud",
+      "yesTokenId": "29646558891461532071931079516271914307871270300032653186615321419120683382049",
+      "noTokenId": "42043053093563679024888608312298920770041975098366324549161191205439029294408",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14279": {
+      "title": "BTC Up or Down - Hourly (Apr 22, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14279?ref=opinion_hud",
+      "yesTokenId": "79393639998179343220698105331757451206251794762301088903539572721722894511634",
+      "noTokenId": "55655498792321391423005612785027175164446981807232361533119331045816846499075",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14282": {
+      "title": "Houston Rockets vs Los Angeles Lakers",
+      "url": "https://app.opinion.trade/market/14282?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14287": {
+      "title": "Nongshim Red Force vs T1",
+      "url": "https://app.opinion.trade/market/14287?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14283": {
+      "title": "Phoenix Suns vs Oklahoma City Thunder",
+      "url": "https://app.opinion.trade/market/14283?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14285": {
+      "title": "Ninjas in Pyjamas vs JD Gaming",
+      "url": "https://app.opinion.trade/market/14285?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14286": {
+      "title": "Team WE vs Bilibili Gaming",
+      "url": "https://app.opinion.trade/market/14286?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14281": {
+      "title": "Toronto Raptors vs Cleveland Cavaliers",
+      "url": "https://app.opinion.trade/market/14281?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14284": {
+      "title": "Orlando Magic vs Detroit Pistons",
+      "url": "https://app.opinion.trade/market/14284?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14288": {
+      "title": "KT Rolster vs Hanwha Life Esports",
+      "url": "https://app.opinion.trade/market/14288?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
     }
   },
   "index": {
@@ -11525,9 +11095,6 @@
     ],
     "$300m": [
       "3506"
-    ],
-    "1-1": [
-      "499"
     ],
     "1899 hoffenheim": [
       "600"
@@ -11670,9 +11237,6 @@
       "3361",
       "3366"
     ],
-    "alaves": [
-      "498"
-    ],
     "album": [
       "2178"
     ],
@@ -11762,12 +11326,6 @@
       "3367",
       "3368"
     ],
-    "athletic club": [
-      "495"
-    ],
-    "athletic club osasuna": [
-      "495"
-    ],
     "atleti": [
       "502"
     ],
@@ -11785,9 +11343,6 @@
     ],
     "azulones": [
       "503"
-    ],
-    "babazorros": [
-      "498"
     ],
     "back": [
       "1856"
@@ -11842,12 +11397,6 @@
     ],
     "belgium iran": [
       "551"
-    ],
-    "bernabeu": [
-      "498"
-    ],
-    "betis": [
-      "499"
     ],
     "betis real": [
       "510"
@@ -11908,9 +11457,6 @@
     ],
     "blockchain upgrade": [
       "3256"
-    ],
-    "blues": [
-      "497"
     ],
     "blʌͻkpiиk": [
       "2178"
@@ -11975,12 +11521,6 @@
     ],
     "bridge hack": [
       "3360"
-    ],
-    "brighton": [
-      "497"
-    ],
-    "brighton chelsea": [
-      "497"
     ],
     "bros acquisition": [
       "2398"
@@ -12071,9 +11611,6 @@
     "charlotte hale": [
       "3158"
     ],
-    "chelsea": [
-      "497"
-    ],
     "cherries": [
       "500"
     ],
@@ -12101,9 +11638,6 @@
     "clarets": [
       "501"
     ],
-    "clash": [
-      "497"
-    ],
     "close warner": [
       "2398"
     ],
@@ -12121,9 +11655,6 @@
     ],
     "cloudflare status": [
       "3357"
-    ],
-    "club osasuna": [
-      "495"
     ],
     "coinbase": [
       "3366"
@@ -12335,8 +11866,6 @@
       "3360"
     ],
     "draw": [
-      "497",
-      "499",
       "500",
       "501",
       "502",
@@ -12385,9 +11914,6 @@
     ],
     "egypt iran": [
       "578"
-    ],
-    "el glorioso": [
-      "498"
     ],
     "elche": [
       "502"
@@ -12443,7 +11969,6 @@
       "3356"
     ],
     "epl": [
-      "497",
       "501"
     ],
     "escalation": [
@@ -12542,8 +12067,6 @@
       "3072"
     ],
     "fixture": [
-      "497",
-      "499",
       "500",
       "505"
     ],
@@ -12551,9 +12074,6 @@
       "3360"
     ],
     "football": [
-      "497",
-      "498",
-      "499",
       "500",
       "501",
       "502",
@@ -12593,8 +12113,6 @@
       "3361"
     ],
     "game": [
-      "497",
-      "498",
       "501",
       "502",
       "504"
@@ -12631,18 +12149,6 @@
     ],
     "girl group": [
       "2178"
-    ],
-    "girona": [
-      "499"
-    ],
-    "girona fc": [
-      "499"
-    ],
-    "girona real": [
-      "499"
-    ],
-    "girona real betis": [
-      "499"
     ],
     "going public": [
       "3362"
@@ -12920,8 +12426,6 @@
       "3366"
     ],
     "la liga": [
-      "498",
-      "499",
       "502",
       "503",
       "504"
@@ -12980,9 +12484,6 @@
     "listing": [
       "3362"
     ],
-    "los blancos": [
-      "498"
-    ],
     "lp": [
       "2178"
     ],
@@ -12993,11 +12494,7 @@
       "2398"
     ],
     "madrid": [
-      "498",
       "503"
-    ],
-    "madrid alaves": [
-      "498"
     ],
     "maga": [
       "3055"
@@ -13013,9 +12510,6 @@
     ],
     "mainnet": [
       "3366"
-    ],
-    "mallorca valencia": [
-      "496"
     ],
     "man city": [
       "501"
@@ -13059,9 +12553,6 @@
       "3158"
     ],
     "match": [
-      "497",
-      "498",
-      "499",
       "500",
       "501",
       "502",
@@ -13093,9 +12584,6 @@
     ],
     "megaquake march 31st": [
       "3356"
-    ],
-    "mendizorroza": [
-      "498"
     ],
     "merger": [
       "2398"
@@ -13366,7 +12854,6 @@
       "505"
     ],
     "premier league": [
-      "497",
       "501"
     ],
     "president": [
@@ -13450,7 +12937,6 @@
       "504"
     ],
     "real betis": [
-      "499",
       "510"
     ],
     "real betis real": [
@@ -13460,14 +12946,7 @@
       "3265"
     ],
     "real madrid": [
-      "498",
       "510"
-    ],
-    "real madrid alaves": [
-      "498"
-    ],
-    "real madrid vs alaves": [
-      "498"
     ],
     "real sociedad": [
       "503"
@@ -13492,7 +12971,6 @@
       "3357"
     ],
     "regular time": [
-      "499",
       "500",
       "505"
     ],
@@ -13600,9 +13078,6 @@
     "rkiye usa": [
       "572"
     ],
-    "rm vs ala": [
-      "498"
-    ],
     "rollup": [
       "3366"
     ],
@@ -13663,9 +13138,6 @@
       "3223",
       "3224"
     ],
-    "score": [
-      "497"
-    ],
     "scotland brazil": [
       "565"
     ],
@@ -13674,9 +13146,6 @@
     ],
     "scotus": [
       "1546"
-    ],
-    "seagulls": [
-      "497"
     ],
     "season 5": [
       "3221",
@@ -13748,9 +13217,6 @@
       "3360"
     ],
     "soccer": [
-      "497",
-      "498",
-      "499",
       "500",
       "501",
       "502",
@@ -13779,8 +13245,6 @@
       "550"
     ],
     "spanish football": [
-      "498",
-      "499",
       "503"
     ],
     "specific date": [
@@ -13951,8 +13415,6 @@
       "3362"
     ],
     "tie": [
-      "497",
-      "499",
       "500",
       "501",
       "502",
@@ -14142,9 +13604,6 @@
     "verona lecce": [
       "603"
     ],
-    "versus": [
-      "499"
-    ],
     "vice president": [
       "3062"
     ],
@@ -14237,9 +13696,6 @@
     "伯恩茅斯": [
       "500"
     ],
-    "切尔西": [
-      "497"
-    ],
     "利兹联": [
       "500"
     ],
@@ -14274,9 +13730,6 @@
       "3367",
       "3368"
     ],
-    "布莱顿": [
-      "497"
-    ],
     "微策略": [
       "3257"
     ],
@@ -14304,12 +13757,6 @@
     "皇家社会": [
       "503"
     ],
-    "皇家贝蒂斯": [
-      "499"
-    ],
-    "皇家马德里": [
-      "498"
-    ],
     "经济衰退": [
       "3265"
     ],
@@ -14328,9 +13775,6 @@
     "赫塔费": [
       "503"
     ],
-    "赫罗纳": [
-      "499"
-    ],
     "赵长鹏": [
       "3369"
     ],
@@ -14343,9 +13787,6 @@
     "达斯汀·亨德森": [
       "3224"
     ],
-    "阿拉维斯": [
-      "498"
-    ],
     "霍莉·惠勒": [
       "3222"
     ],
@@ -14354,9 +13795,6 @@
     ]
   },
   "eventIndex": {
-    "1-1": [
-      "499"
-    ],
     "1899 hoffenheim": [
       "600"
     ],
@@ -14371,9 +13809,6 @@
     ],
     "africa south korea": [
       "567"
-    ],
-    "alaves": [
-      "498"
     ],
     "algeria austria": [
       "584"
@@ -14393,12 +13828,6 @@
     "argentina austria": [
       "554"
     ],
-    "athletic club": [
-      "495"
-    ],
-    "athletic club osasuna": [
-      "495"
-    ],
     "atleti": [
       "502"
     ],
@@ -14413,9 +13842,6 @@
     ],
     "azulones": [
       "503"
-    ],
-    "babazorros": [
-      "498"
     ],
     "barca": [
       "504"
@@ -14438,12 +13864,6 @@
     "belgium iran": [
       "551"
     ],
-    "bernabeu": [
-      "498"
-    ],
-    "betis": [
-      "499"
-    ],
     "betis real": [
       "510"
     ],
@@ -14452,9 +13872,6 @@
     ],
     "betting": [
       "502"
-    ],
-    "blues": [
-      "497"
     ],
     "bologna roma": [
       "602"
@@ -14477,12 +13894,6 @@
     ],
     "brestois lens": [
       "512"
-    ],
-    "brighton": [
-      "497"
-    ],
-    "brighton chelsea": [
-      "497"
     ],
     "burnley": [
       "501"
@@ -14519,9 +13930,6 @@
     "champions league winner": [
       "83"
     ],
-    "chelsea": [
-      "497"
-    ],
     "cherries": [
       "500"
     ],
@@ -14530,12 +13938,6 @@
     ],
     "clarets": [
       "501"
-    ],
-    "clash": [
-      "497"
-    ],
-    "club osasuna": [
-      "495"
     ],
     "colchoneros": [
       "502"
@@ -14569,8 +13971,6 @@
       "538"
     ],
     "draw": [
-      "497",
-      "499",
       "500",
       "501",
       "502",
@@ -14586,9 +13986,6 @@
     ],
     "egypt iran": [
       "578"
-    ],
-    "el glorioso": [
-      "498"
     ],
     "elche": [
       "502"
@@ -14609,7 +14006,6 @@
       "559"
     ],
     "epl": [
-      "497",
       "501"
     ],
     "espanyol levante": [
@@ -14622,15 +14018,10 @@
       "505"
     ],
     "fixture": [
-      "497",
-      "499",
       "500",
       "505"
     ],
     "football": [
-      "497",
-      "498",
-      "499",
       "500",
       "501",
       "502",
@@ -14651,8 +14042,6 @@
       "505"
     ],
     "game": [
-      "497",
-      "498",
       "501",
       "502",
       "504"
@@ -14674,18 +14063,6 @@
     ],
     "ghana panama": [
       "536"
-    ],
-    "girona": [
-      "499"
-    ],
-    "girona fc": [
-      "499"
-    ],
-    "girona real": [
-      "499"
-    ],
-    "girona real betis": [
-      "499"
     ],
     "hamburger 1899": [
       "600"
@@ -14731,8 +14108,6 @@
       "585"
     ],
     "la liga": [
-      "498",
-      "499",
       "502",
       "503",
       "504"
@@ -14761,21 +14136,11 @@
     "ligue 1": [
       "505"
     ],
-    "los blancos": [
-      "498"
-    ],
     "lyon auxerre": [
       "604"
     ],
     "madrid": [
-      "498",
       "503"
-    ],
-    "madrid alaves": [
-      "498"
-    ],
-    "mallorca valencia": [
-      "496"
     ],
     "man city": [
       "501"
@@ -14793,9 +14158,6 @@
       "621"
     ],
     "match": [
-      "497",
-      "498",
-      "499",
       "500",
       "501",
       "502",
@@ -14805,9 +14167,6 @@
     ],
     "mcfc": [
       "501"
-    ],
-    "mendizorroza": [
-      "498"
     ],
     "mexico south": [
       "541"
@@ -14881,7 +14240,6 @@
       "505"
     ],
     "premier league": [
-      "497",
       "501"
     ],
     "psg": [
@@ -14891,21 +14249,13 @@
       "504"
     ],
     "real betis": [
-      "499",
       "510"
     ],
     "real betis real": [
       "510"
     ],
     "real madrid": [
-      "498",
       "510"
-    ],
-    "real madrid alaves": [
-      "498"
-    ],
-    "real madrid vs alaves": [
-      "498"
     ],
     "real sociedad": [
       "503"
@@ -14914,7 +14264,6 @@
       "503"
     ],
     "regular time": [
-      "499",
       "500",
       "505"
     ],
@@ -14936,9 +14285,6 @@
     "rkiye usa": [
       "572"
     ],
-    "rm vs ala": [
-      "498"
-    ],
     "saint germain": [
       "505",
       "605"
@@ -14957,25 +14303,16 @@
     "saudi arabia uruguay": [
       "528"
     ],
-    "score": [
-      "497"
-    ],
     "scotland brazil": [
       "565"
     ],
     "scotland morocco": [
       "543"
     ],
-    "seagulls": [
-      "497"
-    ],
     "senegal iraq": [
       "574"
     ],
     "soccer": [
-      "497",
-      "498",
-      "499",
       "500",
       "501",
       "502",
@@ -15004,8 +14341,6 @@
       "550"
     ],
     "spanish football": [
-      "498",
-      "499",
       "503"
     ],
     "stade brestois": [
@@ -15030,8 +14365,6 @@
       "562"
     ],
     "tie": [
-      "497",
-      "499",
       "500",
       "501",
       "502",
@@ -15082,9 +14415,6 @@
     "verona lecce": [
       "603"
     ],
-    "versus": [
-      "499"
-    ],
     "vigo": [
       "504"
     ],
@@ -15106,9 +14436,6 @@
     "伯恩茅斯": [
       "500"
     ],
-    "切尔西": [
-      "497"
-    ],
     "利兹联": [
       "500"
     ],
@@ -15124,26 +14451,11 @@
     "巴黎圣日耳曼": [
       "505"
     ],
-    "布莱顿": [
-      "497"
-    ],
     "皇家社会": [
       "503"
     ],
-    "皇家贝蒂斯": [
-      "499"
-    ],
-    "皇家马德里": [
-      "498"
-    ],
     "赫塔费": [
       "503"
-    ],
-    "赫罗纳": [
-      "499"
-    ],
-    "阿拉维斯": [
-      "498"
     ],
     "马德里竞技": [
       "502"
