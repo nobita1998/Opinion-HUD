@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-22 17:46:37 UTC+8",
+    "generatedAt": "2026-04-23 01:12:49 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 443,
-      "markets": 473,
-      "keywords": 835,
+      "kept": 441,
+      "markets": 475,
+      "keywords": 841,
       "events": {
         "events": 83
       },
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 557,
+        "cutoff_expired": 559,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -28,12 +28,12 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 6,
+        "reused": 4,
         "regenerated_empty_entitygroups": 77,
-        "calls": 77,
-        "retries": 77,
+        "calls": 79,
+        "retries": 79,
         "fallback": 0,
-        "empty": 77,
+        "empty": 79,
         "non_empty": 0,
         "errors": 0
       }
@@ -1680,6 +1680,48 @@
       "sig": "67618a2f",
       "sigFull": "67618a2f",
       "sigCore": "2670ed82",
+      "reused": false
+    },
+    "627": {
+      "title": "Atletico Madrid vs Arsenal",
+      "marketIds": [
+        "627"
+      ],
+      "bestMarketId": "627",
+      "bestLabels": null,
+      "keywords": [
+        "atletico madrid",
+        "madrid arsenal",
+        "atletico madrid arsenal"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "042676af",
+      "sigFull": "042676af",
+      "sigCore": "c8e06bc2",
+      "reused": false
+    },
+    "626": {
+      "title": "Paris Saint Germain vs Bayern München",
+      "marketIds": [
+        "626"
+      ],
+      "bestMarketId": "626",
+      "bestLabels": null,
+      "keywords": [
+        "paris saint",
+        "saint germain",
+        "germain bayern",
+        "bayern nchen",
+        "paris saint germain",
+        "saint germain bayern",
+        "germain bayern nchen"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "sig": "5e9c3485",
+      "sigFull": "5e9c3485",
+      "sigCore": "b6a8294d",
       "reused": false
     }
   },
@@ -11021,11 +11063,11 @@
       },
       "type": "binary"
     },
-    "14306": {
-      "title": "ETH Up or Down - Hourly (Apr 22, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14306?ref=opinion_hud",
-      "yesTokenId": "70023248173433520127304342923630093325625143660976140225521755590738626507486",
-      "noTokenId": "66510412371959420500572044854900384396632259570331124804309827440258328568103",
+    "14330": {
+      "title": "ETH Up or Down - Hourly (Apr 22, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14330?ref=opinion_hud",
+      "yesTokenId": "108786717221047091141840762964925029795157674033857365123018785241258614493617",
+      "noTokenId": "102586939225621065383576380716347293191982341504614149457811871635990910832419",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -11033,11 +11075,11 @@
       },
       "type": "binary"
     },
-    "14304": {
-      "title": "BNB Up or Down - Hourly (Apr 22, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14304?ref=opinion_hud",
-      "yesTokenId": "90208859008192467876308526908069236995943023728301826747043848258244572330765",
-      "noTokenId": "9039534264549754988893622012095929303539466666920289262870832147177823450362",
+    "14329": {
+      "title": "BTC Up or Down - Hourly (Apr 22, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14329?ref=opinion_hud",
+      "yesTokenId": "71941795417751976802140786512132569324855120110236828525980062353933757114883",
+      "noTokenId": "46980165742921597447604880227453661380889170000457303172425667182595437904422",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -11045,17 +11087,99 @@
       },
       "type": "binary"
     },
-    "14305": {
-      "title": "BTC Up or Down - Hourly (Apr 22, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14305?ref=opinion_hud",
-      "yesTokenId": "75196944967641763279591958958469030590038927597189017191922460398275774790334",
-      "noTokenId": "101034474054384427038542006102859169364736813633449415199761402790401876811411",
+    "14328": {
+      "title": "BNB Up or Down - Hourly (Apr 22, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14328?ref=opinion_hud",
+      "yesTokenId": "24143661747691037098573113444967346729172979529944375673619759135724830363505",
+      "noTokenId": "114835115189906982612915690979889494811965229417463195112192798651083038420178",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
         "noLabel": "DOWN"
       },
       "type": "binary"
+    },
+    "627": {
+      "title": "Atletico Madrid vs Arsenal",
+      "url": "https://app.opinion.trade/market/627?ref=opinion_hud",
+      "yesTokenId": "7917347805363184154466558642160863111155784517906774112324569691492953581494",
+      "noTokenId": "14876943092557908842706974520421259443800729108337328865140571820446801127238",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "atletico madrid",
+        "madrid arsenal",
+        "atletico madrid arsenal"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "14334",
+          "title": "Atletico Madrid wins",
+          "yesTokenId": "7917347805363184154466558642160863111155784517906774112324569691492953581494",
+          "noTokenId": "14876943092557908842706974520421259443800729108337328865140571820446801127238"
+        },
+        {
+          "marketId": "14335",
+          "title": "Arsenal wins",
+          "yesTokenId": "107173354024863032055615362141708020262136954371733348338242019154203306089225",
+          "noTokenId": "3379370201837801532757964244917988774283525964962685555163332312568734842973"
+        },
+        {
+          "marketId": "14336",
+          "title": "Draw",
+          "yesTokenId": "102149534866927607617349325203416362933079869093827703772242748145187178732554",
+          "noTokenId": "69102045414704451415393918302561309144512034596888174014954151252047334752703"
+        }
+      ]
+    },
+    "626": {
+      "title": "Paris Saint Germain vs Bayern München",
+      "url": "https://app.opinion.trade/market/626?ref=opinion_hud",
+      "yesTokenId": "114925037047501268133444049001267625954404841650964656141300078408404733141130",
+      "noTokenId": "98713651018005833246817114209031710632264219306456450289484797020108387848858",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "YES",
+        "noLabel": "NO"
+      },
+      "keywords": [
+        "paris saint",
+        "saint germain",
+        "germain bayern",
+        "bayern nchen",
+        "paris saint germain",
+        "saint germain bayern",
+        "germain bayern nchen"
+      ],
+      "entities": [],
+      "entityGroups": [],
+      "type": "multi",
+      "subMarkets": [
+        {
+          "marketId": "14331",
+          "title": "Paris Saint Germain wins",
+          "yesTokenId": "89155267388738387976954611342883554965319986632291629210266488439164366704102",
+          "noTokenId": "65632407075450970550846108618079026847608182284590107353241851324608090161042"
+        },
+        {
+          "marketId": "14332",
+          "title": "Bayern München wins",
+          "yesTokenId": "63022076680784537275781028700364442014935561378365599046571573056342289517922",
+          "noTokenId": "94330868622312877016903442320967307015798743230323629489246177273260282948338"
+        },
+        {
+          "marketId": "14333",
+          "title": "Draw",
+          "yesTokenId": "114925037047501268133444049001267625954404841650964656141300078408404733141130",
+          "noTokenId": "98713651018005833246817114209031710632264219306456450289484797020108387848858"
+        }
+      ]
     }
   },
   "index": {
@@ -11309,7 +11433,11 @@
       "502"
     ],
     "atletico madrid": [
-      "502"
+      "502",
+      "627"
+    ],
+    "atletico madrid arsenal": [
+      "627"
     ],
     "attack": [
       "3039"
@@ -11361,6 +11489,9 @@
     ],
     "bayer leverkusen": [
       "599"
+    ],
+    "bayern nchen": [
+      "626"
     ],
     "bear market": [
       "3265"
@@ -12105,6 +12236,12 @@
     "genesis": [
       "3365"
     ],
+    "germain bayern": [
+      "626"
+    ],
+    "germain bayern nchen": [
+      "626"
+    ],
     "germain nantes": [
       "505"
     ],
@@ -12472,6 +12609,9 @@
     "madrid": [
       "503"
     ],
+    "madrid arsenal": [
+      "627"
+    ],
     "maga": [
       "3055"
     ],
@@ -12786,11 +12926,13 @@
     ],
     "paris saint": [
       "505",
-      "605"
+      "605",
+      "626"
     ],
     "paris saint germain": [
       "505",
-      "605"
+      "605",
+      "626"
     ],
     "parma pisa": [
       "601"
@@ -13076,7 +13218,11 @@
     ],
     "saint germain": [
       "505",
-      "605"
+      "605",
+      "626"
+    ],
+    "saint germain bayern": [
+      "626"
     ],
     "saint germain nantes": [
       "505"
@@ -13811,7 +13957,11 @@
       "502"
     ],
     "atletico madrid": [
-      "502"
+      "502",
+      "627"
+    ],
+    "atletico madrid arsenal": [
+      "627"
     ],
     "austria jordan": [
       "533"
@@ -13836,6 +13986,9 @@
     ],
     "bayer leverkusen": [
       "599"
+    ],
+    "bayern nchen": [
+      "626"
     ],
     "belgium iran": [
       "551"
@@ -14022,6 +14175,12 @@
       "502",
       "504"
     ],
+    "germain bayern": [
+      "626"
+    ],
+    "germain bayern nchen": [
+      "626"
+    ],
     "germain nantes": [
       "505"
     ],
@@ -14118,6 +14277,9 @@
     "madrid": [
       "503"
     ],
+    "madrid arsenal": [
+      "627"
+    ],
     "man city": [
       "501"
     ],
@@ -14196,11 +14358,13 @@
     ],
     "paris saint": [
       "505",
-      "605"
+      "605",
+      "626"
     ],
     "paris saint germain": [
       "505",
-      "605"
+      "605",
+      "626"
     ],
     "parma pisa": [
       "601"
@@ -14263,7 +14427,11 @@
     ],
     "saint germain": [
       "505",
-      "605"
+      "605",
+      "626"
+    ],
+    "saint germain bayern": [
+      "626"
     ],
     "saint germain nantes": [
       "505"
