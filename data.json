@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-23 01:12:49 UTC+8",
+    "generatedAt": "2026-04-23 11:41:27 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 441,
-      "markets": 475,
+      "kept": 435,
+      "markets": 481,
       "keywords": 841,
       "events": {
-        "events": 83
+        "events": 79
       },
       "skipped": {
-        "statusEnum": 0,
+        "statusEnum": 18,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 559,
+        "cutoff_expired": 547,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -28,8 +28,8 @@
         "previousLoaded": true,
         "fullAiRefresh": false,
         "onlyAiForNew": true,
-        "reused": 4,
-        "regenerated_empty_entitygroups": 77,
+        "reused": 0,
+        "regenerated_empty_entitygroups": 79,
         "calls": 79,
         "retries": 79,
         "fallback": 0,
@@ -9723,30 +9723,6 @@
       },
       "type": "binary"
     },
-    "13907": {
-      "title": "Orlando Magic vs Detroit Pistons",
-      "url": "https://app.opinion.trade/market/13907?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "13908": {
-      "title": "Phoenix Suns vs Oklahoma City Thunder",
-      "url": "https://app.opinion.trade/market/13908?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "13909": {
       "title": "Detroit Pistons vs Orlando Magic",
       "url": "https://app.opinion.trade/market/13909?ref=opinion_hud",
@@ -11063,42 +11039,6 @@
       },
       "type": "binary"
     },
-    "14330": {
-      "title": "ETH Up or Down - Hourly (Apr 22, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14330?ref=opinion_hud",
-      "yesTokenId": "108786717221047091141840762964925029795157674033857365123018785241258614493617",
-      "noTokenId": "102586939225621065383576380716347293191982341504614149457811871635990910832419",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14329": {
-      "title": "BTC Up or Down - Hourly (Apr 22, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14329?ref=opinion_hud",
-      "yesTokenId": "71941795417751976802140786512132569324855120110236828525980062353933757114883",
-      "noTokenId": "46980165742921597447604880227453661380889170000457303172425667182595437904422",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14328": {
-      "title": "BNB Up or Down - Hourly (Apr 22, 2026 18:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14328?ref=opinion_hud",
-      "yesTokenId": "24143661747691037098573113444967346729172979529944375673619759135724830363505",
-      "noTokenId": "114835115189906982612915690979889494811965229417463195112192798651083038420178",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "627": {
       "title": "Atletico Madrid vs Arsenal",
       "url": "https://app.opinion.trade/market/627?ref=opinion_hud",
@@ -11180,6 +11120,138 @@
           "noTokenId": "98713651018005833246817114209031710632264219306456450289484797020108387848858"
         }
       ]
+    },
+    "14364": {
+      "title": "BNB Up or Down - Hourly (Apr 23, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14364?ref=opinion_hud",
+      "yesTokenId": "91574636883818487276016643225901635897367809796351809709256332799517079272274",
+      "noTokenId": "59268751967880856064034310044633973936058708563467756027453832255779902240013",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14365": {
+      "title": "BTC Up or Down - Hourly (Apr 23, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14365?ref=opinion_hud",
+      "yesTokenId": "64947221605055344150412333741181160537069629239715595143958459686467444886101",
+      "noTokenId": "97731224036454952875650379974412463136937740459141193747163697691759282437183",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14366": {
+      "title": "ETH Up or Down - Hourly (Apr 23, 2026 04:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14366?ref=opinion_hud",
+      "yesTokenId": "16395748866033049802585566140131260260701211202547027575833291405962467415287",
+      "noTokenId": "28422981060592181131155213242492236065183517054169977327817489856718058803905",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14370": {
+      "title": "Boston Celtics vs Philadelphia 76ers",
+      "url": "https://app.opinion.trade/market/14370?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14374": {
+      "title": "BNK FEARX vs Dplus KIA",
+      "url": "https://app.opinion.trade/market/14374?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14372": {
+      "title": "Ultra Prime vs EDward Gaming",
+      "url": "https://app.opinion.trade/market/14372?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14367": {
+      "title": "San Antonio Spurs vs Portland Trail Blazers",
+      "url": "https://app.opinion.trade/market/14367?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14369": {
+      "title": "Denver Nuggets vs Minnesota Timberwolves",
+      "url": "https://app.opinion.trade/market/14369?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14371": {
+      "title": "ThunderTalk Gaming vs LGD Gaming",
+      "url": "https://app.opinion.trade/market/14371?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14373": {
+      "title": "Gen.G vs Kiwoom DRX",
+      "url": "https://app.opinion.trade/market/14373?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14368": {
+      "title": "New York Knicks vs Atlanta Hawks",
+      "url": "https://app.opinion.trade/market/14368?ref=opinion_hud",
+      "yesTokenId": "",
+      "noTokenId": "",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "",
+        "noLabel": ""
+      },
+      "type": "binary"
     }
   },
   "index": {
