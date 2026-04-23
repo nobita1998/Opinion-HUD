@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-23 11:41:27 UTC+8",
+    "generatedAt": "2026-04-23 17:54:26 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 435,
-      "markets": 481,
-      "keywords": 841,
+      "kept": 433,
+      "markets": 473,
+      "keywords": 765,
       "events": {
         "events": 79
       },
       "skipped": {
-        "statusEnum": 18,
+        "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 547,
+        "cutoff_expired": 567,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -40,275 +40,6 @@
     }
   },
   "events": {
-    "502": {
-      "title": "Elche vs Atletico Madrid",
-      "marketIds": [
-        "502"
-      ],
-      "bestMarketId": "502",
-      "bestLabels": null,
-      "keywords": [
-        "elche",
-        "atletico madrid",
-        "la liga",
-        "football",
-        "soccer",
-        "match",
-        "game",
-        "elche cf",
-        "atleti",
-        "colchoneros",
-        "franjiverdes",
-        "draw",
-        "tie",
-        "prediction",
-        "betting",
-        "elche atletico",
-        "elche atletico madrid"
-      ],
-      "entities": [
-        "elche",
-        "atletico madrid"
-      ],
-      "entityGroups": [
-        [
-          "elche",
-          "埃尔切"
-        ],
-        [
-          "atletico madrid",
-          "atletico",
-          "马德里竞技"
-        ]
-      ],
-      "sig": "de5e57e5",
-      "sigFull": "de5e57e5",
-      "sigCore": "16c9eafd",
-      "reused": false
-    },
-    "500": {
-      "title": "Bournemouth vs Leeds",
-      "marketIds": [
-        "500"
-      ],
-      "bestMarketId": "500",
-      "bestLabels": null,
-      "keywords": [
-        "bournemouth",
-        "leeds",
-        "leeds united",
-        "afc bournemouth",
-        "cherries",
-        "whites",
-        "football",
-        "soccer",
-        "draw",
-        "tie",
-        "match",
-        "fixture",
-        "regular time",
-        "90 minutes",
-        "level score",
-        "bournemouth leeds"
-      ],
-      "entities": [
-        "bournemouth",
-        "leeds"
-      ],
-      "entityGroups": [
-        [
-          "bournemouth",
-          "伯恩茅斯"
-        ],
-        [
-          "leeds",
-          "利兹联"
-        ]
-      ],
-      "sig": "f0c50781",
-      "sigFull": "f0c50781",
-      "sigCore": "843a003b",
-      "reused": false
-    },
-    "501": {
-      "title": "Burnley vs Manchester City",
-      "marketIds": [
-        "501"
-      ],
-      "bestMarketId": "501",
-      "bestLabels": null,
-      "keywords": [
-        "burnley",
-        "manchester city",
-        "man city",
-        "mcfc",
-        "clarets",
-        "citizens",
-        "football",
-        "soccer",
-        "match",
-        "game",
-        "draw",
-        "tie",
-        "premier league",
-        "epl",
-        "burnley manchester",
-        "burnley manchester city"
-      ],
-      "entities": [
-        "burnley",
-        "manchester city"
-      ],
-      "entityGroups": [
-        [
-          "burnley",
-          "伯恩利"
-        ],
-        [
-          "manchester city"
-        ]
-      ],
-      "sig": "4787a95f",
-      "sigFull": "4787a95f",
-      "sigCore": "9f13c6fa",
-      "reused": false
-    },
-    "503": {
-      "title": "Real Sociedad vs Getafe",
-      "marketIds": [
-        "503"
-      ],
-      "bestMarketId": "503",
-      "bestLabels": null,
-      "keywords": [
-        "real sociedad",
-        "getafe",
-        "la real",
-        "getafe cf",
-        "football",
-        "soccer",
-        "match",
-        "la liga",
-        "draw",
-        "tie",
-        "san sebastian",
-        "azulones",
-        "basque",
-        "madrid",
-        "spanish football",
-        "sociedad getafe",
-        "real sociedad getafe"
-      ],
-      "entities": [
-        "real sociedad",
-        "getafe"
-      ],
-      "entityGroups": [
-        [
-          "real sociedad",
-          "皇家社会"
-        ],
-        [
-          "getafe",
-          "赫塔费"
-        ]
-      ],
-      "sig": "396cdf6f",
-      "sigFull": "396cdf6f",
-      "sigCore": "70bb9fe2",
-      "reused": false
-    },
-    "504": {
-      "title": "Barcelona vs Celta Vigo",
-      "marketIds": [
-        "504"
-      ],
-      "bestMarketId": "504",
-      "bestLabels": null,
-      "keywords": [
-        "barcelona",
-        "celta",
-        "vigo",
-        "fc barcelona",
-        "rc celta",
-        "la liga",
-        "football",
-        "soccer",
-        "match",
-        "draw",
-        "tie",
-        "game",
-        "barca",
-        "celta vigo",
-        "barcelona celta",
-        "barcelona celta vigo"
-      ],
-      "entities": [
-        "barcelona",
-        "celta vigo"
-      ],
-      "entityGroups": [
-        [
-          "barcelona",
-          "巴塞罗那"
-        ],
-        [
-          "celta vigo",
-          "celta",
-          "塞尔塔"
-        ]
-      ],
-      "sig": "64e47d01",
-      "sigFull": "64e47d01",
-      "sigCore": "55fdca5b",
-      "reused": false
-    },
-    "505": {
-      "title": "Paris Saint Germain vs Nantes",
-      "marketIds": [
-        "505"
-      ],
-      "bestMarketId": "505",
-      "bestLabels": null,
-      "keywords": [
-        "psg",
-        "paris saint germain",
-        "nantes",
-        "fc nantes",
-        "ligue 1",
-        "football",
-        "soccer",
-        "match",
-        "draw",
-        "tie",
-        "regular time",
-        "full time",
-        "result",
-        "prediction",
-        "fixture",
-        "paris saint",
-        "saint germain",
-        "germain nantes",
-        "saint germain nantes"
-      ],
-      "entities": [
-        "paris saint germain",
-        "nantes"
-      ],
-      "entityGroups": [
-        [
-          "paris saint germain",
-          "巴黎圣日耳曼"
-        ],
-        [
-          "nantes"
-        ]
-      ],
-      "sig": "b9faa1cb",
-      "sigFull": "b9faa1cb",
-      "sigCore": "35ca7520",
-      "reused": false
-    },
     "511": {
       "title": "Napoli vs Cremonese",
       "marketIds": [
@@ -5391,395 +5122,6 @@
       },
       "type": "binary"
     },
-    "502": {
-      "title": "Elche vs Atletico Madrid",
-      "url": "https://app.opinion.trade/market/502?ref=opinion_hud",
-      "yesTokenId": "62624782627140840757196917205667917959582328218519895001742660819316279042626",
-      "noTokenId": "25733956078015846794563143245835375338060647671263618997713786439558955626960",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "elche",
-        "atletico madrid",
-        "la liga",
-        "football",
-        "soccer",
-        "match",
-        "game",
-        "elche cf",
-        "atleti",
-        "colchoneros",
-        "franjiverdes",
-        "draw",
-        "tie",
-        "prediction",
-        "betting",
-        "elche atletico",
-        "elche atletico madrid"
-      ],
-      "entities": [
-        "elche",
-        "atletico madrid"
-      ],
-      "entityGroups": [
-        [
-          "elche",
-          "埃尔切"
-        ],
-        [
-          "atletico madrid",
-          "atletico",
-          "马德里竞技"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13358",
-          "title": "Elche wins",
-          "yesTokenId": "111283631402465445312512960109628517409126154004030299745210442209316337668537",
-          "noTokenId": "855869820173006764122381517406006124988064434135250568248176964360631838950"
-        },
-        {
-          "marketId": "13359",
-          "title": "Atletico Madrid wins",
-          "yesTokenId": "89579937157828045049981020692606349319696685651168633203794830076633868188188",
-          "noTokenId": "13391761417783331027740125792469363285584916014114492883473031634447526635549"
-        },
-        {
-          "marketId": "13360",
-          "title": "Draw",
-          "yesTokenId": "62624782627140840757196917205667917959582328218519895001742660819316279042626",
-          "noTokenId": "25733956078015846794563143245835375338060647671263618997713786439558955626960"
-        }
-      ]
-    },
-    "500": {
-      "title": "Bournemouth vs Leeds",
-      "url": "https://app.opinion.trade/market/500?ref=opinion_hud",
-      "yesTokenId": "32803897901961311070276139849968275837278164303170955062686584858707975286011",
-      "noTokenId": "103875250515441359682801892549182335910448091340028259717857994633840442946480",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "bournemouth",
-        "leeds",
-        "leeds united",
-        "afc bournemouth",
-        "cherries",
-        "whites",
-        "football",
-        "soccer",
-        "draw",
-        "tie",
-        "match",
-        "fixture",
-        "regular time",
-        "90 minutes",
-        "level score",
-        "bournemouth leeds"
-      ],
-      "entities": [
-        "bournemouth",
-        "leeds"
-      ],
-      "entityGroups": [
-        [
-          "bournemouth",
-          "伯恩茅斯"
-        ],
-        [
-          "leeds",
-          "利兹联"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13352",
-          "title": "Bournemouth wins",
-          "yesTokenId": "27851653557703791097427488599728404315927585650657333452865126509195333377610",
-          "noTokenId": "6989083589443915730610943380283206326510433950702359362895415385007847395852"
-        },
-        {
-          "marketId": "13353",
-          "title": "Leeds wins",
-          "yesTokenId": "46813071688873655226520365346458481660184756494114361237265342317133586158662",
-          "noTokenId": "20046903278775295017513628332612029863715305592768387611279400608719224022819"
-        },
-        {
-          "marketId": "13354",
-          "title": "Draw",
-          "yesTokenId": "32803897901961311070276139849968275837278164303170955062686584858707975286011",
-          "noTokenId": "103875250515441359682801892549182335910448091340028259717857994633840442946480"
-        }
-      ]
-    },
-    "501": {
-      "title": "Burnley vs Manchester City",
-      "url": "https://app.opinion.trade/market/501?ref=opinion_hud",
-      "yesTokenId": "67661268630538659923065351558531597853153477480245381764304986394070871367283",
-      "noTokenId": "65241317224228430711812360796015639881429159184082766320845194054011222543125",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "burnley",
-        "manchester city",
-        "man city",
-        "mcfc",
-        "clarets",
-        "citizens",
-        "football",
-        "soccer",
-        "match",
-        "game",
-        "draw",
-        "tie",
-        "premier league",
-        "epl",
-        "burnley manchester",
-        "burnley manchester city"
-      ],
-      "entities": [
-        "burnley",
-        "manchester city"
-      ],
-      "entityGroups": [
-        [
-          "burnley",
-          "伯恩利"
-        ],
-        [
-          "manchester city"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13355",
-          "title": "Burnley wins",
-          "yesTokenId": "44254098969634335285573665561509673258037908409161260193755390826561714308349",
-          "noTokenId": "56377939698577489363765992173622702207467901060932587763764702610026807965622"
-        },
-        {
-          "marketId": "13356",
-          "title": "Manchester City wins",
-          "yesTokenId": "79697446331758882737495432606257779261557200691905169564528637592648070522676",
-          "noTokenId": "1866653745052882028544333963359346508337248725975353857035312039345944843215"
-        },
-        {
-          "marketId": "13357",
-          "title": "Draw",
-          "yesTokenId": "67661268630538659923065351558531597853153477480245381764304986394070871367283",
-          "noTokenId": "65241317224228430711812360796015639881429159184082766320845194054011222543125"
-        }
-      ]
-    },
-    "503": {
-      "title": "Real Sociedad vs Getafe",
-      "url": "https://app.opinion.trade/market/503?ref=opinion_hud",
-      "yesTokenId": "46940340398773283000002138940437475439944118752525056666468006398842678659427",
-      "noTokenId": "108475106908384273744265455922821488157456054878355727135841631728773345455663",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "real sociedad",
-        "getafe",
-        "la real",
-        "getafe cf",
-        "football",
-        "soccer",
-        "match",
-        "la liga",
-        "draw",
-        "tie",
-        "san sebastian",
-        "azulones",
-        "basque",
-        "madrid",
-        "spanish football",
-        "sociedad getafe",
-        "real sociedad getafe"
-      ],
-      "entities": [
-        "real sociedad",
-        "getafe"
-      ],
-      "entityGroups": [
-        [
-          "real sociedad",
-          "皇家社会"
-        ],
-        [
-          "getafe",
-          "赫塔费"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13361",
-          "title": "Real Sociedad wins",
-          "yesTokenId": "70486732818795062535139919055386145140436329650090365994330196615973830989201",
-          "noTokenId": "42689205834906980235772315841392270725664159024729909018961504922231828910826"
-        },
-        {
-          "marketId": "13362",
-          "title": "Getafe wins",
-          "yesTokenId": "45479693647154979340145589664052112668385278443979292182313389298028833217238",
-          "noTokenId": "79064335339783881050710348487400821525984199552373740264468044915102931637654"
-        },
-        {
-          "marketId": "13363",
-          "title": "Draw",
-          "yesTokenId": "46940340398773283000002138940437475439944118752525056666468006398842678659427",
-          "noTokenId": "108475106908384273744265455922821488157456054878355727135841631728773345455663"
-        }
-      ]
-    },
-    "504": {
-      "title": "Barcelona vs Celta Vigo",
-      "url": "https://app.opinion.trade/market/504?ref=opinion_hud",
-      "yesTokenId": "52311417981954748883258565511084016239401517831378239093348530473820270686442",
-      "noTokenId": "65079464774450292290909549024857987496165138089716400901784942891789620359129",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "barcelona",
-        "celta",
-        "vigo",
-        "fc barcelona",
-        "rc celta",
-        "la liga",
-        "football",
-        "soccer",
-        "match",
-        "draw",
-        "tie",
-        "game",
-        "barca",
-        "celta vigo",
-        "barcelona celta",
-        "barcelona celta vigo"
-      ],
-      "entities": [
-        "barcelona",
-        "celta vigo"
-      ],
-      "entityGroups": [
-        [
-          "barcelona",
-          "巴塞罗那"
-        ],
-        [
-          "celta vigo",
-          "celta",
-          "塞尔塔"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13364",
-          "title": "Barcelona wins",
-          "yesTokenId": "20537256593492649806204015360868997657202058999555252867121413036861440040693",
-          "noTokenId": "93813794233586256041783931545430032470515964356185764261575762692481388764484"
-        },
-        {
-          "marketId": "13365",
-          "title": "Celta Vigo wins",
-          "yesTokenId": "63646920848007802636552958837694889329443411144993226986853358806252519316792",
-          "noTokenId": "83539482363088666794053163317627095684785168813342024008510510391571488074863"
-        },
-        {
-          "marketId": "13366",
-          "title": "Draw",
-          "yesTokenId": "52311417981954748883258565511084016239401517831378239093348530473820270686442",
-          "noTokenId": "65079464774450292290909549024857987496165138089716400901784942891789620359129"
-        }
-      ]
-    },
-    "505": {
-      "title": "Paris Saint Germain vs Nantes",
-      "url": "https://app.opinion.trade/market/505?ref=opinion_hud",
-      "yesTokenId": "73017776281320605174369709882078235255625086450920427299114201339843002660990",
-      "noTokenId": "111011818802144316585285424497106362341937675849181110643902932080350147122625",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "YES",
-        "noLabel": "NO"
-      },
-      "keywords": [
-        "psg",
-        "paris saint germain",
-        "nantes",
-        "fc nantes",
-        "ligue 1",
-        "football",
-        "soccer",
-        "match",
-        "draw",
-        "tie",
-        "regular time",
-        "full time",
-        "result",
-        "prediction",
-        "fixture",
-        "paris saint",
-        "saint germain",
-        "germain nantes",
-        "saint germain nantes"
-      ],
-      "entities": [
-        "paris saint germain",
-        "nantes"
-      ],
-      "entityGroups": [
-        [
-          "paris saint germain",
-          "巴黎圣日耳曼"
-        ],
-        [
-          "nantes"
-        ]
-      ],
-      "type": "multi",
-      "subMarkets": [
-        {
-          "marketId": "13367",
-          "title": "Paris Saint Germain wins",
-          "yesTokenId": "43527975646123078709736363930413404711098961882636376457536252843643669919050",
-          "noTokenId": "51173847937034135149969436198118932371379820018525830144113323581036362582050"
-        },
-        {
-          "marketId": "13368",
-          "title": "Nantes wins",
-          "yesTokenId": "70730465263980524626420395044025409177829750227887001076439803110952847881067",
-          "noTokenId": "103014108412786919374082727179483397862512595076784488245655891582248031871865"
-        },
-        {
-          "marketId": "13369",
-          "title": "Draw",
-          "yesTokenId": "73017776281320605174369709882078235255625086450920427299114201339843002660990",
-          "noTokenId": "111011818802144316585285424497106362341937675849181110643902932080350147122625"
-        }
-      ]
-    },
     "13399": {
       "title": "Draw",
       "url": "https://app.opinion.trade/market/13399?ref=opinion_hud",
@@ -10799,18 +10141,6 @@
       },
       "type": "binary"
     },
-    "14232": {
-      "title": "HANJIN BRION vs Dplus KIA",
-      "url": "https://app.opinion.trade/market/14232?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "14224": {
       "title": "Team WE vs JD Gaming",
       "url": "https://app.opinion.trade/market/14224?ref=opinion_hud",
@@ -10898,18 +10228,6 @@
     "14231": {
       "title": "Hanwha Life Esports vs Nongshim Red Force",
       "url": "https://app.opinion.trade/market/14231?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "14219": {
-      "title": "LGD Gaming vs EDward Gaming",
-      "url": "https://app.opinion.trade/market/14219?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -11121,42 +10439,6 @@
         }
       ]
     },
-    "14364": {
-      "title": "BNB Up or Down - Hourly (Apr 23, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14364?ref=opinion_hud",
-      "yesTokenId": "91574636883818487276016643225901635897367809796351809709256332799517079272274",
-      "noTokenId": "59268751967880856064034310044633973936058708563467756027453832255779902240013",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14365": {
-      "title": "BTC Up or Down - Hourly (Apr 23, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14365?ref=opinion_hud",
-      "yesTokenId": "64947221605055344150412333741181160537069629239715595143958459686467444886101",
-      "noTokenId": "97731224036454952875650379974412463136937740459141193747163697691759282437183",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14366": {
-      "title": "ETH Up or Down - Hourly (Apr 23, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14366?ref=opinion_hud",
-      "yesTokenId": "16395748866033049802585566140131260260701211202547027575833291405962467415287",
-      "noTokenId": "28422981060592181131155213242492236065183517054169977327817489856718058803905",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "14370": {
       "title": "Boston Celtics vs Philadelphia 76ers",
       "url": "https://app.opinion.trade/market/14370?ref=opinion_hud",
@@ -11250,6 +10532,42 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14392": {
+      "title": "ETH Up or Down - Hourly (Apr 23, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14392?ref=opinion_hud",
+      "yesTokenId": "4068039020760879510613304262325506399072312342917254652346629076194652157723",
+      "noTokenId": "9605554078888736641624755371777740434026391160682087184356528651405009559840",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14391": {
+      "title": "BTC Up or Down - Hourly (Apr 23, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14391?ref=opinion_hud",
+      "yesTokenId": "80705325671979024513087892009819837148073282305986945956366790562583084276098",
+      "noTokenId": "51205675641218771163487970293435596778579811284602555530980555280764884064042",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14390": {
+      "title": "BNB Up or Down - Hourly (Apr 23, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14390?ref=opinion_hud",
+      "yesTokenId": "38383544345904611219247861455267791473830163460037556383928068932637269514128",
+      "noTokenId": "70186042048198265036106169904934735323401819437512003031009168164800417378691",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
@@ -11362,9 +10680,6 @@
     "80s": [
       "3223"
     ],
-    "90 minutes": [
-      "500"
-    ],
     "aapl": [
       "2368"
     ],
@@ -11388,9 +10703,6 @@
     ],
     "advisory": [
       "3369"
-    ],
-    "afc bournemouth": [
-      "500"
     ],
     "africa south": [
       "567"
@@ -11498,14 +10810,7 @@
       "3367",
       "3368"
     ],
-    "atleti": [
-      "502"
-    ],
-    "atletico": [
-      "502"
-    ],
     "atletico madrid": [
-      "502",
       "627"
     ],
     "atletico madrid arsenal": [
@@ -11517,26 +10822,11 @@
     "austria jordan": [
       "533"
     ],
-    "azulones": [
-      "503"
-    ],
     "back": [
       "1856"
     ],
     "backing": [
       "3055"
-    ],
-    "barca": [
-      "504"
-    ],
-    "barcelona": [
-      "504"
-    ],
-    "barcelona celta": [
-      "504"
-    ],
-    "barcelona celta vigo": [
-      "504"
     ],
     "base": [
       "3366"
@@ -11555,9 +10845,6 @@
     ],
     "base链": [
       "3366"
-    ],
-    "basque": [
-      "503"
     ],
     "bayer leverkusen": [
       "599"
@@ -11582,9 +10869,6 @@
     ],
     "betis real madrid": [
       "510"
-    ],
-    "betting": [
-      "502"
     ],
     "bianca": [
       "3158"
@@ -11676,12 +10960,6 @@
     "bosnia herzegovina qatar": [
       "563"
     ],
-    "bournemouth": [
-      "500"
-    ],
-    "bournemouth leeds": [
-      "500"
-    ],
     "bp": [
       "2178"
     ],
@@ -11713,15 +10991,6 @@
     ],
     "bullish": [
       "3367"
-    ],
-    "burnley": [
-      "501"
-    ],
-    "burnley manchester": [
-      "501"
-    ],
-    "burnley manchester city": [
-      "501"
     ],
     "business cycle": [
       "3265"
@@ -11759,12 +11028,6 @@
     "celebrity": [
       "3158"
     ],
-    "celta": [
-      "504"
-    ],
-    "celta vigo": [
-      "504"
-    ],
     "ceo": [
       "2368",
       "3369"
@@ -11790,9 +11053,6 @@
     "charlotte hale": [
       "3158"
     ],
-    "cherries": [
-      "500"
-    ],
     "china": [
       "1856"
     ],
@@ -11810,12 +11070,6 @@
     ],
     "christianity": [
       "2670"
-    ],
-    "citizens": [
-      "501"
-    ],
-    "clarets": [
-      "501"
     ],
     "close warner": [
       "2398"
@@ -11840,9 +11094,6 @@
     ],
     "coins": [
       "3365"
-    ],
-    "colchoneros": [
-      "502"
     ],
     "collapse": [
       "3359"
@@ -12044,14 +11295,6 @@
     "drain": [
       "3360"
     ],
-    "draw": [
-      "500",
-      "501",
-      "502",
-      "503",
-      "504",
-      "505"
-    ],
     "drone": [
       "3039"
     ],
@@ -12094,18 +11337,6 @@
     "egypt iran": [
       "578"
     ],
-    "elche": [
-      "502"
-    ],
-    "elche atletico": [
-      "502"
-    ],
-    "elche atletico madrid": [
-      "502"
-    ],
-    "elche cf": [
-      "502"
-    ],
     "eleven": [
       "3223"
     ],
@@ -12146,9 +11377,6 @@
     "epicenter": [
       "2668",
       "3356"
-    ],
-    "epl": [
-      "501"
     ],
     "escalation": [
       "3039"
@@ -12221,12 +11449,6 @@
     "favor trump tariffs": [
       "1546"
     ],
-    "fc barcelona": [
-      "504"
-    ],
-    "fc nantes": [
-      "505"
-    ],
     "fdv one": [
       "1721"
     ],
@@ -12245,20 +11467,8 @@
     "first overall": [
       "3072"
     ],
-    "fixture": [
-      "500",
-      "505"
-    ],
     "flash loan attack": [
       "3360"
-    ],
-    "football": [
-      "500",
-      "501",
-      "502",
-      "503",
-      "504",
-      "505"
     ],
     "founder": [
       "3369"
@@ -12269,14 +11479,8 @@
     "france senegal": [
       "530"
     ],
-    "franjiverdes": [
-      "502"
-    ],
     "fugitive": [
       "1856"
-    ],
-    "full time": [
-      "505"
     ],
     "funding": [
       "3505",
@@ -12290,11 +11494,6 @@
     ],
     "futures": [
       "3361"
-    ],
-    "game": [
-      "501",
-      "502",
-      "504"
     ],
     "gaten": [
       "3224"
@@ -12314,20 +11513,11 @@
     "germain bayern nchen": [
       "626"
     ],
-    "germain nantes": [
-      "505"
-    ],
     "germany ivory": [
       "547"
     ],
     "germany ivory coast": [
       "547"
-    ],
-    "getafe": [
-      "503"
-    ],
-    "getafe cf": [
-      "503"
     ],
     "ghana panama": [
       "536"
@@ -12610,14 +11800,6 @@
     "l2": [
       "3366"
     ],
-    "la liga": [
-      "502",
-      "503",
-      "504"
-    ],
-    "la real": [
-      "503"
-    ],
     "launch token": [
       "3366"
     ],
@@ -12651,20 +11833,8 @@
     "leeco": [
       "1856"
     ],
-    "leeds": [
-      "500"
-    ],
-    "leeds united": [
-      "500"
-    ],
     "legal ruling": [
       "1546"
-    ],
-    "level score": [
-      "500"
-    ],
-    "ligue 1": [
-      "505"
     ],
     "listing": [
       "3362"
@@ -12677,9 +11847,6 @@
     ],
     "m&a": [
       "2398"
-    ],
-    "madrid": [
-      "503"
     ],
     "madrid arsenal": [
       "627"
@@ -12698,12 +11865,6 @@
     ],
     "mainnet": [
       "3366"
-    ],
-    "man city": [
-      "501"
-    ],
-    "manchester city": [
-      "501"
     ],
     "manchester united": [
       "622"
@@ -12740,19 +11901,8 @@
     "marvel": [
       "3158"
     ],
-    "match": [
-      "500",
-      "501",
-      "502",
-      "503",
-      "504",
-      "505"
-    ],
     "max": [
       "2398"
-    ],
-    "mcfc": [
-      "501"
     ],
     "megaeth": [
       "1721"
@@ -12868,9 +12018,6 @@
       "3221",
       "3222",
       "3223"
-    ],
-    "nantes": [
-      "505"
     ],
     "napoli cremonese": [
       "511"
@@ -12997,12 +12144,10 @@
       "620"
     ],
     "paris saint": [
-      "505",
       "605",
       "626"
     ],
     "paris saint germain": [
-      "505",
       "605",
       "626"
     ],
@@ -13039,13 +12184,6 @@
     "potus": [
       "3062"
     ],
-    "prediction": [
-      "502",
-      "505"
-    ],
-    "premier league": [
-      "501"
-    ],
     "president": [
       "3062"
     ],
@@ -13072,9 +12210,6 @@
     ],
     "proof of work": [
       "3256"
-    ],
-    "psg": [
-      "505"
     ],
     "public listing": [
       "3362"
@@ -13123,9 +12258,6 @@
     "rapture": [
       "2670"
     ],
-    "rc celta": [
-      "504"
-    ],
     "real betis": [
       "510"
     ],
@@ -13137,12 +12269,6 @@
     ],
     "real madrid": [
       "510"
-    ],
-    "real sociedad": [
-      "503"
-    ],
-    "real sociedad getafe": [
-      "503"
     ],
     "rebalancing": [
       "3257"
@@ -13159,10 +12285,6 @@
     ],
     "red status": [
       "3357"
-    ],
-    "regular time": [
-      "500",
-      "505"
     ],
     "rehire": [
       "3369"
@@ -13223,9 +12345,6 @@
     ],
     "resolution date": [
       "3509"
-    ],
-    "result": [
-      "505"
     ],
     "resurrection": [
       "2670"
@@ -13289,18 +12408,11 @@
       "3055"
     ],
     "saint germain": [
-      "505",
       "605",
       "626"
     ],
     "saint germain bayern": [
       "626"
-    ],
-    "saint germain nantes": [
-      "505"
-    ],
-    "san sebastian": [
-      "503"
     ],
     "satoshi": [
       "3365"
@@ -13410,17 +12522,6 @@
     "smart contract bug": [
       "3360"
     ],
-    "soccer": [
-      "500",
-      "501",
-      "502",
-      "503",
-      "504",
-      "505"
-    ],
-    "sociedad getafe": [
-      "503"
-    ],
     "south africa": [
       "538",
       "567"
@@ -13437,9 +12538,6 @@
     ],
     "spain saudi arabia": [
       "550"
-    ],
-    "spanish football": [
-      "503"
     ],
     "specific date": [
       "3449"
@@ -13607,14 +12705,6 @@
     "ticker": [
       "3257",
       "3362"
-    ],
-    "tie": [
-      "500",
-      "501",
-      "502",
-      "503",
-      "504",
-      "505"
     ],
     "tim cook": [
       "2368"
@@ -13801,9 +12891,6 @@
     "vice president": [
       "3062"
     ],
-    "vigo": [
-      "504"
-    ],
     "volatility": [
       "3367"
     ],
@@ -13836,9 +12923,6 @@
     ],
     "white house": [
       "3062"
-    ],
-    "whites": [
-      "500"
     ],
     "who higher": [
       "1721"
@@ -13884,15 +12968,6 @@
     "以色列": [
       "3039"
     ],
-    "伯恩利": [
-      "501"
-    ],
-    "伯恩茅斯": [
-      "500"
-    ],
-    "利兹联": [
-      "500"
-    ],
     "加密货币漏洞利用": [
       "3360"
     ],
@@ -13907,18 +12982,6 @@
     ],
     "南茜·惠勒": [
       "3223"
-    ],
-    "埃尔切": [
-      "502"
-    ],
-    "塞尔塔": [
-      "504"
-    ],
-    "巴塞罗那": [
-      "504"
-    ],
-    "巴黎圣日耳曼": [
-      "505"
     ],
     "币安币": [
       "3367",
@@ -13948,9 +13011,6 @@
       "3055",
       "3062"
     ],
-    "皇家社会": [
-      "503"
-    ],
     "经济衰退": [
       "3265"
     ],
@@ -13966,9 +13026,6 @@
     "贾跃亭": [
       "1856"
     ],
-    "赫塔费": [
-      "503"
-    ],
     "赵长鹏": [
       "3369"
     ],
@@ -13983,20 +13040,11 @@
     ],
     "霍莉·惠勒": [
       "3222"
-    ],
-    "马德里竞技": [
-      "502"
     ]
   },
   "eventIndex": {
     "1899 hoffenheim": [
       "600"
-    ],
-    "90 minutes": [
-      "500"
-    ],
-    "afc bournemouth": [
-      "500"
     ],
     "africa south": [
       "567"
@@ -14022,14 +13070,7 @@
     "argentina austria": [
       "554"
     ],
-    "atleti": [
-      "502"
-    ],
-    "atletico": [
-      "502"
-    ],
     "atletico madrid": [
-      "502",
       "627"
     ],
     "atletico madrid arsenal": [
@@ -14037,24 +13078,6 @@
     ],
     "austria jordan": [
       "533"
-    ],
-    "azulones": [
-      "503"
-    ],
-    "barca": [
-      "504"
-    ],
-    "barcelona": [
-      "504"
-    ],
-    "barcelona celta": [
-      "504"
-    ],
-    "barcelona celta vigo": [
-      "504"
-    ],
-    "basque": [
-      "503"
     ],
     "bayer leverkusen": [
       "599"
@@ -14071,9 +13094,6 @@
     "betis real madrid": [
       "510"
     ],
-    "betting": [
-      "502"
-    ],
     "bologna roma": [
       "602"
     ],
@@ -14084,26 +13104,11 @@
     "bosnia herzegovina qatar": [
       "563"
     ],
-    "bournemouth": [
-      "500"
-    ],
-    "bournemouth leeds": [
-      "500"
-    ],
     "brazil haiti": [
       "544"
     ],
     "brestois lens": [
       "512"
-    ],
-    "burnley": [
-      "501"
-    ],
-    "burnley manchester": [
-      "501"
-    ],
-    "burnley manchester city": [
-      "501"
     ],
     "cagliari atalanta": [
       "624"
@@ -14119,29 +13124,11 @@
       "552",
       "577"
     ],
-    "celta": [
-      "504"
-    ],
-    "celta vigo": [
-      "504"
-    ],
     "champions league": [
       "83"
     ],
     "champions league winner": [
       "83"
-    ],
-    "cherries": [
-      "500"
-    ],
-    "citizens": [
-      "501"
-    ],
-    "clarets": [
-      "501"
-    ],
-    "colchoneros": [
-      "502"
     ],
     "colombia congo": [
       "561"
@@ -14171,14 +13158,6 @@
     "czech republic south": [
       "538"
     ],
-    "draw": [
-      "500",
-      "501",
-      "502",
-      "503",
-      "504",
-      "505"
-    ],
     "ecuador cura": [
       "548"
     ],
@@ -14188,47 +13167,14 @@
     "egypt iran": [
       "578"
     ],
-    "elche": [
-      "502"
-    ],
-    "elche atletico": [
-      "502"
-    ],
-    "elche atletico madrid": [
-      "502"
-    ],
-    "elche cf": [
-      "502"
-    ],
     "england croatia": [
       "535"
     ],
     "england ghana": [
       "559"
     ],
-    "epl": [
-      "501"
-    ],
     "espanyol levante": [
       "623"
-    ],
-    "fc barcelona": [
-      "504"
-    ],
-    "fc nantes": [
-      "505"
-    ],
-    "fixture": [
-      "500",
-      "505"
-    ],
-    "football": [
-      "500",
-      "501",
-      "502",
-      "503",
-      "504",
-      "505"
     ],
     "france iraq": [
       "555"
@@ -14236,37 +13182,17 @@
     "france senegal": [
       "530"
     ],
-    "franjiverdes": [
-      "502"
-    ],
-    "full time": [
-      "505"
-    ],
-    "game": [
-      "501",
-      "502",
-      "504"
-    ],
     "germain bayern": [
       "626"
     ],
     "germain bayern nchen": [
       "626"
     ],
-    "germain nantes": [
-      "505"
-    ],
     "germany ivory": [
       "547"
     ],
     "germany ivory coast": [
       "547"
-    ],
-    "getafe": [
-      "503"
-    ],
-    "getafe cf": [
-      "503"
     ],
     "ghana panama": [
       "536"
@@ -14314,14 +13240,6 @@
     "jordan argentina": [
       "585"
     ],
-    "la liga": [
-      "502",
-      "503",
-      "504"
-    ],
-    "la real": [
-      "503"
-    ],
     "lazio udinese": [
       "625"
     ],
@@ -14331,32 +13249,11 @@
     "league winner 2026": [
       "83"
     ],
-    "leeds": [
-      "500"
-    ],
-    "leeds united": [
-      "500"
-    ],
-    "level score": [
-      "500"
-    ],
-    "ligue 1": [
-      "505"
-    ],
     "lyon auxerre": [
       "604"
     ],
-    "madrid": [
-      "503"
-    ],
     "madrid arsenal": [
       "627"
-    ],
-    "man city": [
-      "501"
-    ],
-    "manchester city": [
-      "501"
     ],
     "manchester united": [
       "622"
@@ -14367,17 +13264,6 @@
     "marseille nice": [
       "621"
     ],
-    "match": [
-      "500",
-      "501",
-      "502",
-      "503",
-      "504",
-      "505"
-    ],
-    "mcfc": [
-      "501"
-    ],
     "mexico south": [
       "541"
     ],
@@ -14386,9 +13272,6 @@
     ],
     "morocco haiti": [
       "564"
-    ],
-    "nantes": [
-      "505"
     ],
     "napoli cremonese": [
       "511"
@@ -14429,12 +13312,10 @@
       "620"
     ],
     "paris saint": [
-      "505",
       "605",
       "626"
     ],
     "paris saint germain": [
-      "505",
       "605",
       "626"
     ],
@@ -14447,19 +13328,6 @@
     "portugal uzbekistan": [
       "558"
     ],
-    "prediction": [
-      "502",
-      "505"
-    ],
-    "premier league": [
-      "501"
-    ],
-    "psg": [
-      "505"
-    ],
-    "rc celta": [
-      "504"
-    ],
     "real betis": [
       "510"
     ],
@@ -14468,16 +13336,6 @@
     ],
     "real madrid": [
       "510"
-    ],
-    "real sociedad": [
-      "503"
-    ],
-    "real sociedad getafe": [
-      "503"
-    ],
-    "regular time": [
-      "500",
-      "505"
     ],
     "republic mexico": [
       "566"
@@ -14488,9 +13346,6 @@
     "republic south africa": [
       "538"
     ],
-    "result": [
-      "505"
-    ],
     "rkiye paraguay": [
       "545"
     ],
@@ -14498,18 +13353,11 @@
       "572"
     ],
     "saint germain": [
-      "505",
       "605",
       "626"
     ],
     "saint germain bayern": [
       "626"
-    ],
-    "saint germain nantes": [
-      "505"
-    ],
-    "san sebastian": [
-      "503"
     ],
     "saudi arabia": [
       "528",
@@ -14528,17 +13376,6 @@
     "senegal iraq": [
       "574"
     ],
-    "soccer": [
-      "500",
-      "501",
-      "502",
-      "503",
-      "504",
-      "505"
-    ],
-    "sociedad getafe": [
-      "503"
-    ],
     "south africa": [
       "538",
       "567"
@@ -14555,9 +13392,6 @@
     ],
     "spain saudi arabia": [
       "550"
-    ],
-    "spanish football": [
-      "503"
     ],
     "stade brestois": [
       "512"
@@ -14579,14 +13413,6 @@
     ],
     "switzerland canada": [
       "562"
-    ],
-    "tie": [
-      "500",
-      "501",
-      "502",
-      "503",
-      "504",
-      "505"
     ],
     "toulouse monaco": [
       "606"
@@ -14631,12 +13457,6 @@
     "verona lecce": [
       "603"
     ],
-    "vigo": [
-      "504"
-    ],
-    "whites": [
-      "500"
-    ],
     "winner 2026": [
       "83"
     ],
@@ -14645,36 +13465,6 @@
     ],
     "zealand egypt": [
       "553"
-    ],
-    "伯恩利": [
-      "501"
-    ],
-    "伯恩茅斯": [
-      "500"
-    ],
-    "利兹联": [
-      "500"
-    ],
-    "埃尔切": [
-      "502"
-    ],
-    "塞尔塔": [
-      "504"
-    ],
-    "巴塞罗那": [
-      "504"
-    ],
-    "巴黎圣日耳曼": [
-      "505"
-    ],
-    "皇家社会": [
-      "503"
-    ],
-    "赫塔费": [
-      "503"
-    ],
-    "马德里竞技": [
-      "502"
     ]
   }
 }
