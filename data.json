@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-23 17:54:26 UTC+8",
+    "generatedAt": "2026-04-24 01:42:16 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 433,
-      "markets": 473,
+      "kept": 428,
+      "markets": 468,
       "keywords": 765,
       "events": {
         "events": 79
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 567,
+        "cutoff_expired": 572,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -5122,45 +5122,9 @@
       },
       "type": "binary"
     },
-    "13399": {
-      "title": "Draw",
-      "url": "https://app.opinion.trade/market/13399?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "13401": {
       "title": "Espanyol wins",
       "url": "https://app.opinion.trade/market/13401?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "13398": {
-      "title": "Sevilla wins",
-      "url": "https://app.opinion.trade/market/13398?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "13397": {
-      "title": "Levante wins",
-      "url": "https://app.opinion.trade/market/13397?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -10117,30 +10081,6 @@
       },
       "type": "binary"
     },
-    "14233": {
-      "title": "Gen.G vs DN SOOPers",
-      "url": "https://app.opinion.trade/market/14233?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "14220": {
-      "title": "Ninjas in Pyjamas vs Bilibili Gaming",
-      "url": "https://app.opinion.trade/market/14220?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "14224": {
       "title": "Team WE vs JD Gaming",
       "url": "https://app.opinion.trade/market/14224?ref=opinion_hud",
@@ -10535,11 +10475,11 @@
       },
       "type": "binary"
     },
-    "14392": {
-      "title": "ETH Up or Down - Hourly (Apr 23, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14392?ref=opinion_hud",
-      "yesTokenId": "4068039020760879510613304262325506399072312342917254652346629076194652157723",
-      "noTokenId": "9605554078888736641624755371777740434026391160682087184356528651405009559840",
+    "14416": {
+      "title": "ETH Up or Down - Hourly (Apr 23, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14416?ref=opinion_hud",
+      "yesTokenId": "54706458995023495856405346014895364240791976825789552766140717130905758814078",
+      "noTokenId": "89800507435340160847002384675092970899210838027553778526033843342715462607817",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -10547,11 +10487,11 @@
       },
       "type": "binary"
     },
-    "14391": {
-      "title": "BTC Up or Down - Hourly (Apr 23, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14391?ref=opinion_hud",
-      "yesTokenId": "80705325671979024513087892009819837148073282305986945956366790562583084276098",
-      "noTokenId": "51205675641218771163487970293435596778579811284602555530980555280764884064042",
+    "14414": {
+      "title": "BNB Up or Down - Hourly (Apr 23, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14414?ref=opinion_hud",
+      "yesTokenId": "51577686404866553436299849699483398684119955965035842617900587018602533448066",
+      "noTokenId": "101563384401869452462038122977771052787567477696349522287573324442435650740856",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -10559,11 +10499,11 @@
       },
       "type": "binary"
     },
-    "14390": {
-      "title": "BNB Up or Down - Hourly (Apr 23, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14390?ref=opinion_hud",
-      "yesTokenId": "38383544345904611219247861455267791473830163460037556383928068932637269514128",
-      "noTokenId": "70186042048198265036106169904934735323401819437512003031009168164800417378691",
+    "14415": {
+      "title": "BTC Up or Down - Hourly (Apr 23, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14415?ref=opinion_hud",
+      "yesTokenId": "107818751456875159108969451488425287075161140202941878553681599132796761985324",
+      "noTokenId": "14069589604429045530915644665764761462985877882609888832282254024914167939087",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
