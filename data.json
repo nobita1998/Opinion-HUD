@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-24 11:45:30 UTC+8",
+    "generatedAt": "2026-04-24 17:53:02 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,16 +8,16 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 436,
-      "markets": 482,
+      "kept": 434,
+      "markets": 480,
       "keywords": 765,
       "events": {
         "events": 79
       },
       "skipped": {
-        "statusEnum": 2,
+        "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 562,
+        "cutoff_expired": 566,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -9997,18 +9997,6 @@
       },
       "type": "binary"
     },
-    "14234": {
-      "title": "BNK FEARX vs KT Rolster",
-      "url": "https://app.opinion.trade/market/14234?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
     "14235": {
       "title": "Hanwha Life Esports vs Kiwoom DRX",
       "url": "https://app.opinion.trade/market/14235?ref=opinion_hud",
@@ -10108,18 +10096,6 @@
     "14229": {
       "title": "Weibo Gaming vs Top Esports",
       "url": "https://app.opinion.trade/market/14229?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "14221": {
-      "title": "Oh My God vs LNG Esports",
-      "url": "https://app.opinion.trade/market/14221?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -10439,42 +10415,6 @@
       },
       "type": "binary"
     },
-    "14446": {
-      "title": "ETH Up or Down - Hourly (Apr 24, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14446?ref=opinion_hud",
-      "yesTokenId": "51949881564065868752263074242058603876543527684953997072564765301550128392044",
-      "noTokenId": "45902385562193304228521080046456831105077810985387548520546312096636251058304",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14444": {
-      "title": "BNB Up or Down - Hourly (Apr 24, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14444?ref=opinion_hud",
-      "yesTokenId": "105431019286305896555987132681219544244177000261447052996130224549868135501213",
-      "noTokenId": "90192023106651034661160737259279230091575566649788278160999043075265654193381",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
-    "14445": {
-      "title": "BTC Up or Down - Hourly (Apr 24, 2026 04:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14445?ref=opinion_hud",
-      "yesTokenId": "25904170366817471006325403329806667815593005931479417848718216729832790019202",
-      "noTokenId": "103295310115899991787672072819653293991289129234786501524633585326968235746199",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "UP",
-        "noLabel": "DOWN"
-      },
-      "type": "binary"
-    },
     "14459": {
       "title": "Detroit Pistons vs Orlando Magic",
       "url": "https://app.opinion.trade/market/14459?ref=opinion_hud",
@@ -10676,6 +10616,42 @@
       "labels": {
         "yesLabel": "",
         "noLabel": ""
+      },
+      "type": "binary"
+    },
+    "14479": {
+      "title": "BNB Up or Down - Hourly (Apr 24, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14479?ref=opinion_hud",
+      "yesTokenId": "93235393543503101335920046351049730598965856428640227439129380044599375157223",
+      "noTokenId": "46674441384295567018844401575261998486201166176944250887422803078248036438696",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14480": {
+      "title": "BTC Up or Down - Hourly (Apr 24, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14480?ref=opinion_hud",
+      "yesTokenId": "46393835875262793743398846636958158677914230520651413279272084707405964371836",
+      "noTokenId": "105837797055421034385970852480832179332578100589739433793326111210058295389468",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
+      },
+      "type": "binary"
+    },
+    "14481": {
+      "title": "ETH Up or Down - Hourly (Apr 24, 2026 10:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14481?ref=opinion_hud",
+      "yesTokenId": "106761540668779488194108673898546664396924195225182289165222053843761682724195",
+      "noTokenId": "37151634519021303307440046838750388108379884203271092949928328533654746283530",
+      "volume": 0.0,
+      "labels": {
+        "yesLabel": "UP",
+        "noLabel": "DOWN"
       },
       "type": "binary"
     }
