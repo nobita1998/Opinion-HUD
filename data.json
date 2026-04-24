@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-24 17:53:02 UTC+8",
+    "generatedAt": "2026-04-25 01:10:11 UTC+8",
     "source": "http://opinion.api.predictscan.dev:10001/api/markets",
     "frontendBaseUrl": "https://app.opinion.trade",
     "model": "GLM-4.7",
@@ -8,8 +8,8 @@
     "debug": false,
     "counts": {
       "seen": 1000,
-      "kept": 434,
-      "markets": 480,
+      "kept": 430,
+      "markets": 476,
       "keywords": 765,
       "events": {
         "events": 79
@@ -17,7 +17,7 @@
       "skipped": {
         "statusEnum": 0,
         "cutoff_missing_or_invalid": 0,
-        "cutoff_expired": 566,
+        "cutoff_expired": 570,
         "cutoff_zero_kept": 0,
         "resolved": 0,
         "missing_id": 0,
@@ -9913,30 +9913,6 @@
       },
       "type": "binary"
     },
-    "14240": {
-      "title": "Shifters vs Fnatic",
-      "url": "https://app.opinion.trade/market/14240?ref=opinion_hud",
-      "yesTokenId": "17194084146362220430892377791811786248659235462843413116177770313784844231004",
-      "noTokenId": "23801313198121966973139764546711948184365772755104123629624218276078093134837",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Shifters",
-        "noLabel": "Fnatic"
-      },
-      "type": "binary"
-    },
-    "14241": {
-      "title": "Natus Vincere vs Karmine Corp",
-      "url": "https://app.opinion.trade/market/14241?ref=opinion_hud",
-      "yesTokenId": "17333111847449886746049115764319299762436286382791145706983705790492109332193",
-      "noTokenId": "49010290202605908790568922626302910256362228403113230022764845640996831579535",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "Natus Vincere",
-        "noLabel": "Karmine Corp"
-      },
-      "type": "binary"
-    },
     "14242": {
       "title": "Fnatic vs Natus Vincere",
       "url": "https://app.opinion.trade/market/14242?ref=opinion_hud",
@@ -9988,18 +9964,6 @@
     "14228": {
       "title": "Invictus Gaming vs Anyone's Legend",
       "url": "https://app.opinion.trade/market/14228?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "14235": {
-      "title": "Hanwha Life Esports vs Kiwoom DRX",
-      "url": "https://app.opinion.trade/market/14235?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -10108,18 +10072,6 @@
     "14231": {
       "title": "Hanwha Life Esports vs Nongshim Red Force",
       "url": "https://app.opinion.trade/market/14231?ref=opinion_hud",
-      "yesTokenId": "",
-      "noTokenId": "",
-      "volume": 0.0,
-      "labels": {
-        "yesLabel": "",
-        "noLabel": ""
-      },
-      "type": "binary"
-    },
-    "14222": {
-      "title": "JD Gaming vs Invictus Gaming",
-      "url": "https://app.opinion.trade/market/14222?ref=opinion_hud",
       "yesTokenId": "",
       "noTokenId": "",
       "volume": 0.0,
@@ -10619,11 +10571,11 @@
       },
       "type": "binary"
     },
-    "14479": {
-      "title": "BNB Up or Down - Hourly (Apr 24, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14479?ref=opinion_hud",
-      "yesTokenId": "93235393543503101335920046351049730598965856428640227439129380044599375157223",
-      "noTokenId": "46674441384295567018844401575261998486201166176944250887422803078248036438696",
+    "14504": {
+      "title": "BTC Up or Down - Hourly (Apr 24, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14504?ref=opinion_hud",
+      "yesTokenId": "30686770175965836328581824266575093550671354032683023728932844233332529253768",
+      "noTokenId": "115727317674382788602509020865075029291083913745058768190767598814466545541475",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -10631,11 +10583,11 @@
       },
       "type": "binary"
     },
-    "14480": {
-      "title": "BTC Up or Down - Hourly (Apr 24, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14480?ref=opinion_hud",
-      "yesTokenId": "46393835875262793743398846636958158677914230520651413279272084707405964371836",
-      "noTokenId": "105837797055421034385970852480832179332578100589739433793326111210058295389468",
+    "14505": {
+      "title": "ETH Up or Down - Hourly (Apr 24, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14505?ref=opinion_hud",
+      "yesTokenId": "59535917999732553005575428128508069233573753012187761161868694789081065398035",
+      "noTokenId": "52034094023542177997969647892764708985860903604688984212082153701510798285394",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
@@ -10643,11 +10595,11 @@
       },
       "type": "binary"
     },
-    "14481": {
-      "title": "ETH Up or Down - Hourly (Apr 24, 2026 10:00 UTC Close)",
-      "url": "https://app.opinion.trade/market/14481?ref=opinion_hud",
-      "yesTokenId": "106761540668779488194108673898546664396924195225182289165222053843761682724195",
-      "noTokenId": "37151634519021303307440046838750388108379884203271092949928328533654746283530",
+    "14503": {
+      "title": "BNB Up or Down - Hourly (Apr 24, 2026 18:00 UTC Close)",
+      "url": "https://app.opinion.trade/market/14503?ref=opinion_hud",
+      "yesTokenId": "78774488739400913681120507813844492921964991037375447624084226342288962730145",
+      "noTokenId": "97898636194796438368737938647229715807898591885967274811264698842334521060837",
       "volume": 0.0,
       "labels": {
         "yesLabel": "UP",
